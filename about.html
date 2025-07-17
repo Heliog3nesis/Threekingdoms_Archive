@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - A Three Kingdoms Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="about-container">
+    <section class="about-text">
+      <h2>About This Archive</h2>
+      <p>
+        This archive is dedicated to storing and sharing my works on historical 
+        maps and translations related to the Three Kingdoms period. It also features artefacts 
+        I’ve seen during visits to various museums and historical sites.
+      </p>
+      <br>
+      <p>
+        This is a hobby project, so updates may not be regular. However, feel free to reach out 
+        if you have any questions, suggestions, or spot any bugs.
+      </p>
+    </section>
+    <section class="about-image">
+      <img src="images/whc.jpg" />
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    async function includeHTML(id, file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    includeHTML("navbar", "nav.html");
+    includeHTML("footer", "footer.html");
+  </script>
+
+  <style>
+    .about-container {
+      display: flex;
+      gap: 2rem;
+      padding: 120px 40px 40px; /* top space for nav */
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about-text {
+      flex: 1 1 50%;
+    }
+    .about-image {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+    }
+    .about-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+      }
+      .about-text {
+        order: 1;
+      }
+      .about-image {
+        order: 2;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</body>
+</html>
