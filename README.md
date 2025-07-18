@@ -7,8 +7,8 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 ## Current Features
 
 -  **Interactive map** of provinces with tooltips and navigation
--  **English translations** of certain classical Chinese texts
--  **Photographs** and **background** of  artefacts
+-  **English translations** of some classical Chinese texts
+-  **Photographs** and **backgrounds** of  historical artefacts
 -  **Bilingual support** for English and Chinese
 
 ## Future Plans
