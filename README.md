@@ -1,6 +1,7 @@
 # Three Kingdoms Archive
 
-An online archive dedicated to the history, geography, and legacy of the Three Kingdoms period (c. 220–280 AD) in ancient China.  
+An online archive dedicated to the history, geography, and legacy of the Three Kingdoms period (c. 220–280 AD) in ancient China.
+
 This site primarily compiles personal maps, translations, and commentary, as well as relevant artefacts from various museums and sites.
 
 ## Current Features
@@ -21,6 +22,6 @@ Currently a solo project. If you're interested in contributing in any way, feel 
 
 ## License
 
-All translations and original maps are © the site owner.  
+All photos, translations and original maps are © the site owner.  
 Historical texts and public-domain sources are cited where applicable.  
 Artefact photos remain under their respective rights and are included here strictly for educational and non-commercial use. All credit belongs to the original institutions where applicable.
