@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      background: #000;
+      background-color: rgba(0, 0, 0, 1); 
       color: #fff;
     }
     .tab {
@@ -203,6 +203,50 @@
         }
       }
     
-      
-      
+.map-container {
+  width: 100%;
+  max-width: 90vw;     
+  height: 90vh;     
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 4rem
+}
+
+.map-container svg {
+  height: 100%;
+  width: auto;
+  display: block;
+  transform: scale(1.1) ;
+}
+
+@media (max-width: 1000px) {
+  .map-container {
+    width: 90vw;     
+    height: 50vh;    
+  }
+
+  .map-container svg {
+    margin-top: 2rem;
+    max-width: 90vw;
+    transform: scale(1.5) translateX(5%);
+    transform-origin: center;
+  }
+}
+
+.map-intro {
+  max-width: 900px;
+  padding: 0 1rem;
+  margin-top: 4rem;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  .map-intro {
+    font-size:13px;
+  }
+}
   

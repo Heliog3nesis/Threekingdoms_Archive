@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>三国典汇</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <header>
+    <img src="../images/cover.jpg" alt="Cover Image" />
+  </header>
+
+  <section class="tabs">
+    <a class="tab" href="map_overall_zh.html" style="background-image: url('../images/map.jpg');">地图</a>
+    <a class="tab" href="translation.html" style="background-image: url('../images/trans.jpg');">翻译</a>
+    <a class="tab" href="artefact.html" style="background-image: url('../images/art2.jpg');">文物</a>
+  </section>
+
+  <div id="footer"></div>
+
+  <script>
+    async function includeHTML(id, file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    includeHTML("navbar", "nav_zh.html");
+    includeHTML("footer", "../footer.html");
+  </script>
+
+
+</body>
+</html>
