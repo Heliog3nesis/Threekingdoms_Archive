@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three Kingdoms Archive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <header>
+    <img src="../images/cover.jpg" alt="Cover Image" />
+  </header>
+
+  <section class="category-grid">
+  <article class="cat-box">
+    <h2>古籍</h2>
+    <ul>
+       <li><a href="https://zgongjin.tumblr.com/jkmap">金陵古今图考中的东晋都建康图 (明代) </a></li>
+        <br>
+       <li><i>三国志 (与ZL181合作)</i> :</li>
+        <ul>
+            <li><a href="https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-09">三国志9 夏侯惇、夏侯渊、曹仁、曹真、曹休传</a></li>
+            <li><a href="https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-18">三国志18 李典、李通传</a></li>
+        </ul>
+    </ul>
+  </article>
+
+  <article class="cat-box">
+    <h2>专题</h2>
+    <ul>
+      <li><a href="thing-a.html">短故事翻译</a></li>
+      <br>
+      <li><i>三国官职</i> :</li>
+      <ul>
+            <li><a href="translations/excellencies_ministers">公卿表</a>(建议使用电脑访问)</li>
+            <br>
+           
+        </ul>
+    </ul>
+  </article>
+</section>
+
+<div id="footer"></div>
+
+  <script>
+    async function includeHTML(id, file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    includeHTML("navbar", "nav_zh.html");
+    includeHTML("footer", "../footer.html");
+  </script>
+</body>
+</html>

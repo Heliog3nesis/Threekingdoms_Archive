@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Table of Excellencies and Ministers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    h1{
+        font-size:18px;
+        margin-top:3rem;
+        margin-left: 2rem;
+    }
+    table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    background: #222;
+    overflow-x: auto;
+    font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 6px 10px;
+      color: white;
+    }
+</style>
+</head>
+
+<body>
+<div id="navbar"></div>
+<h1>Table of Salaries</h1>
+<table>
+  <thead>
+    <tr>
+      <th colspan="6" style="text-align: center; padding: 10px;">月俸 Salary</th>
+    </tr>
+    <tr>
+      <th colspan="6" style="text-align: center; font-weight: normal;">
+        Salary Table of the Han. Estimation for missing values/adjusted values by Bielenstein [1] in <span style="color: #3399ff;">blue</span>.
+      </th>
+    </tr>
+    <tr>
+      <th colspan="6" style="text-align: center; font-weight: normal; font-size: 13px;">
+        1. The salaries of the officials (Chapter 5) – The Bureaucracy of Han Times<br>
+        2. 《漢書‧百官公卿表》(Book of Han, Table of nobility ranks and government offices)<br>
+        3. 《後漢書‧百官志》(Book of the Later Han, Treatise of the Hundred Offices)
+      </th>
+    </tr>
+    <tr>
+      <th>Annual Salary Rank (dan) <sup>2 3</sup></th>
+      <th colspan="2">Monthly Salary - Unhusked Grain (hu) <br><span style="font-weight: normal;">[<i>Former Han</i>, Later Han AD 50 or <u>both</u>] <sup>1 2</sup></span></th>
+      <th>Calculated Actual Annual dan/hu</th>
+      <th>Monthly Salary in Coin<br><span style="font-weight: normal;">[Later Han 106 AD] <sup>2 3</sup></span></th>
+      <th>Monthly Salary in Husked Grain (hu)<br><span style="font-weight: normal;">[Later Han 106 AD] <sup>2 3</sup> </span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>萬 10000</td><td colspan="2"><u>350</u></td><td>4200</td><td>17500</td><td><span style="color: #3399ff;">105</span></td></tr>
+    <tr><td>中二千 Fully 2000</td><td colspan="2"><u>180</u></td><td>2160</td><td>9000</td><td>72, <span style="color: #3399ff;">54</span></td></tr>
+    <tr><td>真二千 2000</td><td colspan="2"><u>150</u></td><td>1800</td><td rowspan="2">6500, <span style="color: #3399ff;">6000</span></td><td rowspan="2">36</td></tr>
+    <tr><td>二千2000</td><td colspan="2"><u>120</u></td><td>1440</td></tr>
+    <tr><td>比二千 Equivalent to 2000</td><td colspan="2"><u>100</u></td><td>1200</td><td>5000</td><td>34, <span style="color: #3399ff;">30</span></td></tr>
+    <tr><td>千 1000</td><td colspan="2"><i>90</i>, 80</td><td>960-1080</td><td>4000, <span style="color: #3399ff;">4500</span></td><td>30, <span style="color: #3399ff;">27</span></td></tr>
+    <tr><td>比千 Equivalent to 1000</td><td colspan="2"><i>80</i></td><td>960</td><td><span style="color: #3399ff;">4000</span></td><td><span style="color: #3399ff;">24</span></td></tr>
+    <tr><td>六百 600</td><td colspan="2"><u>70</u></td><td>840</td><td>3500</td><td>21</td></tr>
+    <tr><td>比六百 Equivalent to 600</td><td colspan="2"><i>60</i>, 50</td><td>600-720</td><td><span style="color: #3399ff;">3000</span></td><td><span style="color: #3399ff;">18</span></td></tr>
+    <tr><td>四百 400</td><td colspan="2"><i></i>50, 45</td><td>540-600</td><td>2500</td><td>15</td></tr>
+    <tr><td>比四百 Equivalent to 400</td><td colspan="2"><i>45</i>, 40</td><td>480-540</td><td><span style="color: #3399ff;">2250</span></td><td><span style="color: #3399ff;">13.5</span></td></tr>
+    <tr><td>三百 300</td><td colspan="2"><u>40</u></td><td>480</td><td><span style="color: #3399ff;">1850</span></td><td>12</td></tr>
+    <tr><td>比三百 Equivalent to 300</td><td colspan="2"><u>37</u></td><td>444</td><td><span style="color: #3399ff;">1850</span></td><td><span style="color: #3399ff;">11.1</span></td></tr>
+    <tr><td>二百 200</td><td colspan="2"><u>30</u></td><td>360</td><td>1000, <span style="color: #3399ff;">1500</span></td><td>9</td></tr>
+    <tr><td>比二百 Equivalent to 200</td><td colspan="2"><u>27</u></td><td>324</td><td><span style="color: #3399ff;">1350</span></td><td><span style="color: #3399ff;">8.1</span></td></tr>
+    <tr><td>一百 100</td><td colspan="2"><u>16</u></td><td>192</td><td>800</td><td>4.8</td></tr>
+    <tr><td>斗食 Paid in Dou</td><td colspan="2">11</td><td>132</td><td><span style="color: #3399ff;">550</td><td><span style="color: #3399ff;">3.3</span></td></tr>
+    <tr><td>佐吏 Accessory Clerks</td><td colspan="2">8</td><td>96</td><td><span style="color: #3399ff;">400</span></td><td><span style="color: #3399ff;">2.4</span></td></tr>
+  </tbody>
+</table>
+
+
+
+<div id="footer"></div>
+
+  <script>
+    async function includeHTML(id, file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    includeHTML("navbar", "../nav.html");
+    includeHTML("footer", "../footer.html");
+  </script>
+</body>
+</html>

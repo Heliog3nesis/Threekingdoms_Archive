@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Table of Excellencies and Ministers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    h1{
+        font-size:18px;
+        margin-top:3rem;
+        margin-left: 2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      font-size: 16px;
+    }
+    .custom-sheet, .sheet-selector {
+    margin-left: 2rem;
+    font-size: 14px;
+    }
+    select {
+      padding: 0.5rem;
+      background: #222;
+      color: white;
+      border: 1px solid #555;
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+    table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    background: #222;
+    overflow-x: auto;
+    font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #555;
+      padding: 6px 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar"></div>
+  <h1>Table of Excellencies and Ministers</h1>
+
+    <h2>Guide</h2>
+    <div class="custom-sheet">
+    <p>This is a work compiled primarily from information in <i>List of official positions of Three Kingdoms</i> by Qing scholar Hong Yisun. 
+        A calculation of salaries can be found <u><a href="salary.html">here</a></u>, and the table below provides a quick guide on how to read the sheets.</p>
+    <br> </div>
+<table style="border-collapse: collapse; width: 80%; font-size: 14px; text-align: center;">
+  <tr>
+    <th>名(魏)<br>Name (Wei)</th>
+    <th>名(蜀)<br>Name (Shu)</th>
+    <th>名(吳)<br>Name (Wu)</th>
+  </tr>
+  <tr>
+    <td style="color: red;">
+      郎中令 Court Gentleman Prefect<br>
+      光祿勳 Minister of the Household
+    </td>
+    <td style="color: red;">
+      光祿勳 Minister of the Household
+    </td>
+    <td style="color: red;">
+      郎中令 Court Gentleman Prefect<br>
+      光祿勳 Minister of the Household
+    </td>
+    
+  </tr>
+  <tr>
+    <td>虎賁中郎將 General of the Inner Gentleman of the Rapid Tigers</td>
+    <td>虎賁中郎將 General of the Inner Gentleman of the Rapid Tigers</td>
+    <td>？</td>
+    
+  </tr>
+  <tr>
+    <td style="color: blue;">虎賁侍郎 Attendant Gentleman of the Rapid Tigers</td>
+    <td style="color: #4682b4;">虎賁侍郎 Attendant Gentleman of the Rapid Tigers</td>
+    <td>？</td>
+   
+  </tr>
+  <tr>
+    <td colspan="4">
+    <div style="display: flex; justify-content: space-between; font-size: 14px;">
+      <div style="text-align: left;">
+        <span style="color: red;">Red : Dignitary officials</span><br>
+        <span style="color: white;">White: Secondary Officials subordinate to Dignitary officials</span><br>
+        <span style="color: #4682b4;">Blue: Minor Officials subordinate to Secondary officials</span>
+      </div>
+      <div style="text-align: right;">
+        (?)：Unknown
+        <br>
+        (-)：No such position
+      </div>
+    </div>
+    </td>
+  </tr>
+</table>
+
+
+  <h2>Categories</h2>
+  <div class="sheet-selector">
+  <label for="sheet-select">Select Sheet:</label>
+  <select id="sheet-select"></select>
+  </div>
+  <div id="table-container"></div>
+
+  <script>
+    let sheetData = {};
+
+    fetch("excellencies_ministers.json")
+      .then(res => res.json())
+      .then(data => {
+        const sheetNames = Object.keys(data);
+        const remainingSheets = sheetNames.slice(1); // skip first
+        sheetData = data;
+
+        const selector = document.getElementById("sheet-select");
+        remainingSheets.forEach(sheet => {
+          const opt = document.createElement("option");
+          opt.value = sheet;
+          opt.textContent = sheet;
+          selector.appendChild(opt);
+        });
+
+        selector.addEventListener("change", () => renderSheet(selector.value));
+        renderSheet(remainingSheets[0]);
+      });
+
+    function renderSheet(sheetName) {
+      const rows = sheetData[sheetName];
+      const container = document.getElementById("table-container");
+      let html = "<table>";
+
+      for (let i = 0; i < rows.length; i++) {
+        html += "<tr>";
+        for (let j = 0; j < rows[i].length; j++) {
+          const cell = rows[i][j];
+          if (!cell) continue;
+
+          const value = cell.text || "";
+          const color = cell.color ? `color:#${cell.color};` : "";
+          const rowspan = cell.rowspan ? `rowspan="${cell.rowspan}"` : "";
+          const colspan = cell.colspan ? `colspan="${cell.colspan}"` : "";
+
+          html += `<td style="${color}" ${rowspan} ${colspan}>${value}</td>`;
+        }
+        html += "</tr>";
+      }
+
+      html += "</table>";
+      container.innerHTML = html;
+    }
+  </script>
+  <div id="footer"></div>
+
+  <script>
+    async function includeHTML(id, file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+    }
+    includeHTML("navbar", "../nav.html");
+    includeHTML("footer", "../footer.html");
+  </script>
+</body>
+</html>
+

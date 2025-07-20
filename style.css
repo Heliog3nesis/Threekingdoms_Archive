@@ -116,6 +116,7 @@
       margin: 40px auto;
       max-width: 1000px;
       padding: 0 20px;
+      z-index: 1;   
     }
     .tab {
         flex: 0 1 calc(33.333% - 20px);
@@ -184,6 +185,7 @@
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px); 
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 10;   
     }
     @media (max-width: 600px) {
         footer {
@@ -249,4 +251,69 @@
     font-size:13px;
   }
 }
-  
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.cat-box {
+  border: 1px solid rgba(255,255,255,0.25);     
+  border-radius: 8px;
+  padding: 1.25rem;
+  color: #eee;
+  transition: border-color 0.15s, transform 0.15s;
+  background: rgba(255,255,255,0.05);         
+}
+
+.cat-box:hover {
+  border-color: rgba(255,255,255,0.6);
+  transform: translateY(-2px);
+}
+
+.cat-box h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cat-box ul {
+  list-style: disc;
+  margin: 0 0 0 1.25rem; 
+  font-size: 16px;
+  padding: 0;
+}
+
+.cat-box li {
+  margin-bottom: 0.5rem;
+}
+
+.cat-box a {
+  color: #0af;
+  text-decoration: none;
+}
+
+.cat-box a:hover,
+.cat-box a:focus {
+  text-decoration: underline;
+}
+
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
