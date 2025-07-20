@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <title>Table of Salaries</title>
+  <title>月俸表</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
@@ -30,21 +30,21 @@
 
 <body>
 <div id="navbar"></div>
-<h1>Table of Salaries</h1>
+<h1>月俸表</h1>
 <button onclick="window.history.back()" style="margin: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color:white;">
-  ← Return
+  ← 返回
 </button>
-<p style="text-align: left; font-weight: normal; font-size: 14px; margin-left: 2rem; margin-bottom: 2rem;">Salary Table of the Han. Estimation for missing values/adjusted values by Bielenstein [1] in <span style="color: #3399ff;">blue</span>.
+<p style="text-align: left; font-weight: normal; font-size: 14px; margin-left: 2rem; margin-bottom: 2rem;">漢代月俸表. <span style="color: #3399ff;">藍色</span>部分為Bielenstein [1] 的估算和調整.
 
 </p>
 <table>
   <thead>
     <tr>
-      <th>Annual Salary Rank (dan) <sup>2 3</sup></th>
-      <th colspan="2">Monthly Salary - Unhusked Grain (hu) <br><span style="font-weight: normal;">[<i>Former Han</i>, Later Han AD 50 or <u>both</u>] <sup>2 3</sup></span></th>
-      <th>Calculated Actual Annual dan/hu</th>
-      <th>Monthly Salary in Coin<br><span style="font-weight: normal;">[Later Han 106 AD] <sup>1 2 3</sup></span></th>
-      <th>Monthly Salary in Husked Grain (hu)<br><span style="font-weight: normal;">[Later Han 106 AD] <sup>1 2 3</sup> </span></th>
+      <th>年俸 (石) <sup>2 3</sup></th>
+      <th colspan="2">月粟米 (斛) <br><span style="font-weight: normal;">[<i>西漢</i>, 東漢 AD 50 或 <u>兩漢</u>] <sup>2 3</sup></span></th>
+      <th>實際年俸 (石) </th>
+      <th>月俸錢<br><span style="font-weight: normal;">[東漢 106 AD] <sup>1 2 3</sup></span></th>
+      <th>月俸穀 (斛)<br><span style="font-weight: normal;">[東漢 106 AD] <sup>1 2 3</sup> </span></th>
     </tr>
   </thead>
   <tbody>
@@ -84,7 +84,7 @@
       const html = await res.text();
       document.getElementById(id).innerHTML = html;
     }
-    includeHTML("navbar", "../nav.html");
+    includeHTML("navbar", "nav_zh.html");
     includeHTML("footer", "../footer.html");
   </script>
 </body>
