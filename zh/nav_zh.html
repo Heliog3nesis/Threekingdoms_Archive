@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-  <meta charset="UTF-8">
-  <title>Three Kingdoms Archive</title>
-  <script>
-    const base = document.createElement("base");
-    const pathParts = window.location.pathname.split("/");
-    const basePath = pathParts.length > 1 && pathParts[1] !== "" ? `/${pathParts[1]}/` : "/";
-    base.href = basePath;
-    document.head.appendChild(base);
-  </script>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 <nav>
-    <div class="nav-left">
-       <strong>三國典匯</strong>
-    
-    </div>
-    <div class="nav-right">
-      <a id="lang-switch" href="/index.html" title="Switch to English">EN</a>
-      <a href="/zh/index_zh.html">主頁</a>
-      <a href="/zh/about_zh.html">關於</a>
-    </div>
-  </nav>
-  
+  <div class="nav-left">
+    <strong>三國典匯</strong>
+  </div>
+  <div class="nav-right">
+    <a id="lang-switch">EN</a>
+    <a id="home-link">主頁</a>
+    <a id="about-link">關於</a>
+  </div>
+</nav>

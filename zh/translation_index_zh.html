@@ -46,14 +46,42 @@
 
 <div id="footer"></div>
 
-  <script>
-    async function includeHTML(id, file) {
-      const res = await fetch(file);
-      const html = await res.text();
-      document.getElementById(id).innerHTML = html;
-    }
-    includeHTML("navbar", "nav_zh.html");
-    includeHTML("footer", "../footer.html");
-  </script>
+<script>
+  async function includeHTML(id, file, callback) {
+    const res = await fetch(file);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+
+    if (callback) callback();
+  }
+
+  
+  includeHTML("navbar", "nav_zh.html", () => {
+
+    const script = document.createElement("script");
+    script.src = "scripts/navbar_zh.js"; 
+    script.defer = true;
+
+
+    script.onload = () => {
+      const isGithub = location.hostname.includes("github.io");
+      const pathParts = window.location.pathname.split("/");
+      const repoName = pathParts[1] || "";
+      const basePath = isGithub ? `/${repoName}/` : "/";
+
+      if (typeof setNavLinks === "function") {
+        setNavLinks(basePath);
+      } else {
+        console.warn("Navbar logic (setNavLinks) did not load");
+      }
+    };
+
+    document.head.appendChild(script);
+  });
+
+ 
+  includeHTML("footer", "../footer.html");
+</script>
+
 </body>
 </html>
