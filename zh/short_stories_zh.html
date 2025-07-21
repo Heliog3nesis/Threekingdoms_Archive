@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
     <head><meta charset="utf-8"/>
-        <title>Short Stories Collection</title>
+        <title>短故事合集</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="../style.css">
@@ -194,8 +194,7 @@
     within the stone tied to my elbow!" Zhai Zun, who carried out the execution, shattered the stone with a mallet for him. Zhang Feng then finally realized 
     he had been deceived. Looking up to the sky, he sighed, "I should die! I have no regrets!"– Book of the Later Han, Biography of Zhai Zun </p>
     <br>
-        <p><i>There was an entry in the SGZ about Yuan Shao holding a seal by the elbow and showing to Cao Cao, to which Cao Cao laughed. 
-        This story might be the reference for the joke.</i></p>
+        <p><i>三國志有載袁紹以玉印指肘示曹操，曹操笑而惡之，或許就是在引用此典故。</i></p>
     
     <br><br>
     <h2 id="item-10" class="localized-heading"></h2>
@@ -334,7 +333,7 @@
 
 </div>
 <div id="toc">
-    <h2 style="font-size: 20px;">Table of Contents</h2>
+    <h2 style="font-size: 20px;">目錄</h2>
     <ul id="toc-list" style="font-size: 13px;"></ul>
   </div>
 
@@ -345,7 +344,7 @@
  const lang = document.documentElement.lang;
 
   const script = document.createElement('script');
-  script.src = 'stories_headings.js';
+  script.src = '../translations/stories_headings.js';
   script.onload = () => {
     const tocList = document.getElementById("toc-list");
     const headers = document.querySelectorAll("#content h2");
@@ -378,10 +377,10 @@
       const html = await res.text();
       document.getElementById(id).innerHTML = html;
     }
-    includeHTML("navbar", "../nav.html");
+    includeHTML("navbar", "nav_zh.html");
     includeHTML("footer", "../footer.html");
   </script>
-<button id="toc-toggle" onclick="toggleTOC()">☰ TOC</button>
+<button id="toc-toggle" onclick="toggleTOC()">☰ 目錄</button>
 <script>
   function toggleTOC() {
     const toc = document.getElementById('toc');
