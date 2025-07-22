@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文物</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 10px;
+      grid-template-columns: repeat(4, 1fr); 
+        gap: 10px;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .gallery-item {
+        aspect-ratio: 4/ 3;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+}
+    .gallery-item img:hover {
+      transform: scale(1.03);
+    }
+
+    .preview {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      z-index: 9999;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .preview-image, .preview-desc {
+      width: 50%;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .preview-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .preview {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .preview-image, .preview-desc {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+  <h2 style="text-align:left; margin-left: 2rem; margin-right: 2rem; margin-top:4rem; font-size: 20px;">文物展示</h2>
+  <p style="text-align:left; margin-left: 2rem; margin-right: 2rem; font-size: 15px;">雖然主要為三國主題，但我也收錄了一些其他朝代的有趣文物。</p>
+  <hr><br> 
+  <div style="margin: auto ; display: flex; gap: 10px; justify-content:center">
+    <select id="filter-period" onchange="filterGallery()">
+      <option value="all">所有時期</option>
+      <option value="Q&PQ">先秦與秦</option>
+      <option value="Han">兩漢</option>
+      <option value="Wei-Jin">魏晉</option>
+      <option value="N/S Dynasties">南北朝</option>
+      <option value="Tang">唐</option>
+    </select>
+    <select id="filter-location" onchange="filterGallery()">
+      <option value="all">所有地區</option>
+      <option value="Chengdu">成都</option>
+      <option value="Luoyang">洛陽</option>
+      <option value="Nanjing">南京</option>
+      <option value="XA">西安</option>
+     
+    </select>
+  </div>
+  
+
+  <div class="gallery" id="gallery">
+    <div class="gallery-item" data-id="img1">
+      <img src="../images/artefacts/羊俑.jpg" alt="Image 1">
+    </div>
+        <div class="gallery-item" data-id="img2">
+      <img src="../images/artefacts/蜀郡太守章.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item" data-id="img3">
+      <img src="../images/artefacts/木名刺.jpg" alt="Image 3">
+    </div>
+     <div class="gallery-item" data-id="img4">
+      <img src="../images/artefacts/虎符.jpg" alt="Image 4">
+    </div>
+      
+  </div>
+
+  <div class="preview" id="preview" style="display: none;">
+    <div class="preview-image">
+      <img id="preview-img" src="">
+    </div>
+    <div class="preview-desc" id="preview-desc"></div>
+    <span class="close-btn" onclick="closePreview()">x</span>
+  </div>
+
+  <div id="footer"></div>
+
+ <script>
+  let descriptions = [];
+
+  fetch("artefacts_desc_zh.json")
+    .then(res => res.json())
+    .then(data => {
+      descriptions = data;
+
+      const gallery = document.getElementById("gallery");
+
+      data.forEach(item => {
+  const div = document.querySelector(`.gallery-item[data-id="${item.id}"]`);
+  if (div) {
+    div.dataset.period = item.period;
+    div.dataset.location = item.location;
+  
+        gallery.appendChild(div);}
+
+
+      });
+    });
+
+  document.addEventListener("click", function (e) {
+    const item = e.target.closest(".gallery-item");
+    if (!item) return;
+
+    const id = item.dataset.id;
+    const imgSrc = item.querySelector("img").src;
+    const match = descriptions.find(d => d.id === id);
+
+    if (match) {
+      document.getElementById("preview-img").src = imgSrc;
+      document.getElementById("preview-desc").innerHTML = `
+        <h3>${match.title}</h3><br>
+        <div class="tags">
+          <span class="tag"><i>${match.location_zh}</i></span>,
+          <span class="tag"><i>${match.period_zh}</i></span>
+        </div><br>
+        <p>${match.text}</p>
+        
+      `;
+      document.getElementById("preview").style.display = "flex";
+    } else {
+      document.getElementById("preview-desc").innerHTML = "<p>No description available.</p>";
+    }
+  });
+
+  function closePreview() {
+    document.getElementById("preview").style.display = "none";
+  }
+</script>
+
+
+
+<script>
+function filterGallery() {
+  const period = document.getElementById("filter-period").value;
+  const location = document.getElementById("filter-location").value;
+
+  document.querySelectorAll(".gallery-item").forEach(el => {
+    const matchPeriod = period === "all" || el.dataset.period === period;
+    const matchLocation = location === "all" || el.dataset.location === location;
+    el.style.display = (matchPeriod && matchLocation) ? "inline-block" : "none";
+  });
+}
+</script>
+
+ <script>
+  async function includeHTML(id, file, callback) {
+    const res = await fetch(file);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+
+    if (callback) callback();
+  }
+
+  
+  includeHTML("navbar", "nav_zh.html", () => {
+
+    const script = document.createElement("script");
+    script.src = "scripts/navbar_zh.js"; 
+    script.defer = true;
+
+
+    script.onload = () => {
+      const isGithub = location.hostname.includes("github.io");
+      const pathParts = window.location.pathname.split("/");
+      const repoName = pathParts[1] || "";
+      const basePath = isGithub ? `/${repoName}/` : "/";
+
+      if (typeof setNavLinks === "function") {
+        setNavLinks(basePath);
+      } else {
+        console.warn("Navbar logic (setNavLinks) did not load");
+      }
+    };
+
+    document.head.appendChild(script);
+  });
+
+ 
+  includeHTML("footer", "../footer.html");
+</script>
+</body>
+</html>
