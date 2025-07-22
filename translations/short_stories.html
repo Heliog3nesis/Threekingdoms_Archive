@@ -409,5 +409,13 @@
   includeHTML("footer", "../footer.html");
 </script>
 
+<button id="toc-toggle" onclick="toggleTOC()">☰ 目錄</button>
+<script>
+  function toggleTOC() {
+    const toc = document.getElementById('toc');
+    toc.classList.toggle('open');
+  }
+</script>
+
 </body>
 </html>
