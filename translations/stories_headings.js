@@ -97,5 +97,16 @@ window.headings = {
     "zh": "汗如出漿，汗不敢出",
     "en": "To sweat or not to sweat"
   },
- 
+  "item-25":{
+    "zh": "望梅止渴",
+    "en": "A sip of imagination"
+  },
+  "item-26":{
+    "zh": "國家機密",
+    "en": "Top secret"
+  },
+  "item-27":{
+    "zh": "我，汝兄耳",
+    "en": "I am not your father"
+  }
 };
