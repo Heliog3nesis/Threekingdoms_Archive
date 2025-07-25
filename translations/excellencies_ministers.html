@@ -31,17 +31,19 @@
     }
     table {
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
     margin: 0 auto 2rem auto;
     background: #222;
     overflow-x: auto;
     font-size: 14px;
+     table-layout: auto;
     }
 
     th, td {
       border: 1px solid #555;
       padding: 6px 10px;
       color: white;
+      min-width: 10ch;
     }
   </style>
 </head>
@@ -85,7 +87,7 @@
   <tr>
     <td style="color: #4682b4;">虎賁侍郎 Attendant Gentleman of the Rapid Tigers</td>
     <td style="color: #4682b4;">虎賁侍郎 Attendant Gentleman of the Rapid Tigers</td>
-    <td>？</td>
+    <td style="color: #4682b4;">？</td>
    
   </tr>
   <tr>
@@ -121,7 +123,7 @@
       .then(res => res.json())
       .then(data => {
         const sheetNames = Object.keys(data);
-        const remainingSheets = sheetNames.slice(1); // skip first
+        const remainingSheets = sheetNames.slice(1); 
         sheetData = data;
 
         const selector = document.getElementById("sheet-select");

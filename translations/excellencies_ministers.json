@@ -1187,47 +1187,47 @@
     [
       {
         "text": "名(魏) ",
-        "color": null
+        "color":"ffff00"
       },
       {
         "text": "Name (Wei)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(蜀) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Shu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(吳) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "职",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Jobscope",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "品秩员",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Grade, Salary, No.",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "注 Notes",
-        "color": null
+        "color": "ffff00"
       }
     ],
     [
@@ -4952,47 +4952,47 @@
     [
       {
         "text": "名(魏) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wei)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(蜀) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Shu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(吳) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "职",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Jobscope",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "品秩员",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Grade, Salary, No.",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "注 Notes",
-        "color": null
+        "color": "ffff00"
       }
     ],
     [
@@ -6534,47 +6534,47 @@
     [
       {
         "text": "名(魏) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wei)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(蜀) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Shu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(吳) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "职",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Jobscope",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "品秩员",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Grade, Salary, No.",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "注 Notes",
-        "color": null
+        "color": "ffff00"
       }
     ],
     [
@@ -6720,47 +6720,47 @@
     [
       {
         "text": "名(魏) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wei)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(蜀) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Shu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(吳) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "职",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Jobscope",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "品秩员",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Grade, Salary, No.",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "注 Notes",
-        "color": null
+        "color": "ffff00"
       }
     ],
     [
@@ -10409,19 +10409,19 @@
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
@@ -10455,20 +10455,20 @@
         "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -10501,19 +10501,19 @@
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
@@ -10547,20 +10547,20 @@
         "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
-        "text": "",
-        "color": null
+        "text": "?",
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -10593,19 +10593,19 @@
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
@@ -10634,47 +10634,47 @@
     [
       {
         "text": "名(魏) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wei)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(蜀) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Shu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(吳) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "职",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Jobscope",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "品秩员",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Grade, Salary, No.",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "注 Notes",
-        "color": null
+        "color": "ffff00"
       }
     ],
     [
@@ -11926,47 +11926,47 @@
     [
       {
         "text": "名(魏) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wei)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(蜀) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Shu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "名(吳) ",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Name (Wu)",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "职",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Jobscope",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "品秩员",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "Grade, Salary, No.",
-        "color": null
+        "color": "ffff00"
       },
       {
         "text": "注 Notes",
-        "color": null
+        "color": "ffff00"
       }
     ],
     [
@@ -12135,19 +12135,19 @@
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
@@ -12181,19 +12181,19 @@
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
@@ -12227,19 +12227,19 @@
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
-        "text": "",
+        "text": "?",
         "color": "0070C0"
       },
       {
@@ -12412,19 +12412,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -12504,19 +12504,19 @@
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -12596,19 +12596,19 @@
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -12688,19 +12688,19 @@
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -12780,19 +12780,19 @@
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -12872,19 +12872,19 @@
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -12964,19 +12964,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13056,19 +13056,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13240,19 +13240,19 @@
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "-",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13332,19 +13332,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "主藥",
@@ -13424,19 +13424,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "主飲食",
@@ -13474,19 +13474,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "主膳具，諸甘肥",
@@ -13514,19 +13514,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "主酒",
@@ -13554,19 +13554,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "主果",
@@ -13640,19 +13640,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13732,19 +13732,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13778,19 +13778,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13824,19 +13824,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "主苑中離宮",
@@ -13870,19 +13870,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13916,19 +13916,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -13962,19 +13962,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -14054,19 +14054,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -14099,11 +14099,11 @@
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
@@ -14146,19 +14146,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -14191,11 +14191,11 @@
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
-        "text": "",
+        "text": "?",
         "color": null
       },
       {
@@ -14238,19 +14238,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",
@@ -14273,5 +14273,376 @@
         "color": null
       }
     ]
+   
+  ] ,
+  "其他 Others": [
+    [
+    {
+      "text": "名(魏) ",
+      "color": "ffff00"
+    },
+    {
+      "text": "Name (Wei)",
+      "color": "ffff00"
+    },
+    {
+      "text": "名(蜀) ",
+      "color": "ffff00"
+    },
+    {
+      "text": "Name (Shu)",
+      "color": "ffff00"
+    },
+    {
+      "text": "名(吳) ",
+      "color": "ffff00"
+    },
+    {
+      "text": "Name (Wu)",
+      "color": "ffff00"
+    },
+    {
+      "text": "职",
+      "color": "ffff00"
+    },
+    {
+      "text": "Jobscope",
+      "color": "ffff00"
+    },
+    {
+      "text": "品秩员",
+      "color": "ffff00"
+    },
+    {
+      "text": "Grade, Salary, No.",
+      "color": "ffff00"
+    },
+    {
+      "text": "注 Notes",
+      "color": "ffff00"
+    }
+  ],
+  [
+    {
+      "text": "執金吾<br><br>中尉",
+      "color": "C00000"
+    },
+    {
+      "text": "Bearer of the Golden Mace<br><br>Commandant of the Capital",
+      "color": "C00000"
+    },
+    {
+      "text": "執金吾 ",
+      "color": "C00000"
+    },
+    {
+      "text": "Bearer of the Golden Mace",
+      "color": "C00000"
+    },
+    {
+      "text": "執金吾 ",
+      "color": "C00000"
+    },
+    {
+      "text": "Bearer of the Golden Mace",
+      "color": "C00000"
+    },
+    {
+      "text": "掌宮外戒司非常水火之事，及主兵器。",
+      "color": "C00000"
+    },
+    {
+      "text": "Responsible for security outside the palace and extraordinary incidents involving fire and water, and oversees weapons",
+      "color": "C00000"
+    },
+    {
+      "text": "三品，中二千石，一人",
+      "color": "C00000"
+    },
+    {
+      "text": "Third grade, Fully 2000 dan, 1 person",
+      "color": "C00000"
+    },
+    {
+      "text": "魏為王時為中尉，称帝后改執金吾<br>When Wei was still king they had Commandant of the Capital, after ascension changed to Bearer of the Golden Mace<br><br>月三繞行宮外<br>Patrol outside the palace three times a month ",
+      "color": "C00000"
+    }
+  ],
+  [
+    {
+      "text": "執金吾丞",
+      "color": null
+    },
+    {
+      "text": "Assistant to the Bearer of the Golden Mace",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "",
+      "color": null
+    },
+    {
+      "text": "",
+      "color": null
+    },
+    {
+      "text": "七品，比千石，一人",
+      "color": null
+    },
+    {
+      "text": "Seventh grade, Equivalent to 1000 dan, 1 person",
+      "color": null
+    },
+    {
+      "text": "",
+      "color": null
+    }
+  ],
+  [
+    {
+      "text": "武庫令 ",
+      "color": null
+    },
+    {
+      "text": "Director of the Armory",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "武庫令 ",
+      "color": null
+    },
+    {
+      "text": "Director of the Armory",
+      "color": null
+    },
+    {
+      "text": "主兵器",
+      "color": null
+    },
+    {
+      "text": "In charged of weapons",
+      "color": null
+    },
+    {
+      "text": "七品，六百石，一人",
+      "color": null
+    },
+    {
+      "text": " Seventh grade, 600 dan, 1 person",
+      "color": null
+    },
+    {
+      "text": "",
+      "color": null
+    }
+  ],
+  [
+    {
+      "text": "武庫丞",
+      "color": "0070C0"
+    },
+    {
+      "text": "Assistant to the Director of the Armory",
+      "color": "0070C0"
+    },
+    {
+      "text": "?",
+      "color": "0070C0"
+    },
+    {
+      "text": "?",
+      "color": "0070C0"
+    },
+    {
+      "text": "?",
+      "color": "0070C0"
+    },
+    {
+      "text": "?",
+      "color": "0070C0"
+    },
+    {
+      "text": "",
+      "color": "0070C0"
+    },
+    {
+      "text": "",
+      "color": "0070C0"
+    },
+    {
+      "text": "九品，三百石，一人",
+      "color": "0070C0"
+    },
+    {
+      "text": "Ninth grade, 300 dan, 1 person",
+      "color": "0070C0"
+    },
+    {
+      "text": "",
+      "color": "0070C0"
+    }
+  ],
+  [
+    {
+      "text": "將作大臣",
+      "color": "C00000"
+    },
+    {
+      "text": " Court Architect",
+      "color": "C00000"
+    },
+    {
+      "text": "?",
+      "color": "C00000"
+    },
+    {
+      "text": "?",
+      "color": "C00000"
+    },
+    {
+      "text": "將作大臣",
+      "color": "C00000"
+    },
+    {
+      "text": " Court Architect",
+      "color": "C00000"
+    },
+    {
+      "text": "掌修作宗廟路寢宮室陵園土木之功，并樹桐梓之類，列于道側",
+      "color": "C00000"
+    },
+    {
+      "text": "Oversee the construction and repair works of ancestral temples, roads, palaces, royal residences, tomb complexes, and other architectural projects, as well as the planting of trees such as parasol tree and catalpas, aligning them by the roads ",
+      "color": "C00000"
+    },
+    {
+      "text": "三品，二千石，一人",
+      "color": "C00000"
+    },
+    {
+      "text": "Third grade, 2000 dan, 1 person",
+      "color": "C00000"
+    },
+    {
+      "text": "",
+      "color": "C00000"
+    }
+  ],
+  [
+    {
+      "text": "將作丞",
+      "color": null
+    },
+    {
+      "text": "Assistant to the Court Architect",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "",
+      "color": null
+    },
+    {
+      "text": "",
+      "color": null
+    },
+    {
+      "text": "七品，六百石，一人",
+      "color": null
+    },
+    {
+      "text": " Seventh grade, 600 dan, 1 person",
+      "color": null
+    },
+    {
+      "text": "",
+      "color": null
+    }
+  ],
+  [
+    {
+      "text": "右校令",
+      "color": null
+    },
+    {
+      "text": "Director of the Workshop on the Right",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "?",
+      "color": null
+    },
+    {
+      "text": "掌右工徒",
+      "color": null
+    },
+    {
+      "text": "In charged of the laborers on the Right",
+      "color": null
+    },
+    {
+      "text": "七品，六百石，一人",
+      "color": null
+    },
+    {
+      "text": " Seventh grade, 600 dan, 1 person",
+      "color": null
+    },
+    {
+      "text": "左校掌營搆木作採材等事，右校掌營土作瓦泥并燒石灰廁溷等事。故魏并左校于材官，而右校仍屬大匠<br>The Left Workshop was responsible for constructing wooden structures, procuring timber, and related tasks, while the Right Workshop was responsible for earthworks, tile-making, as well as lime-burning and latrines management. Therefore, during the Wei, the Left Workshop was merged under the Colonel of Construction, while the Right Workshop remained subordinate to the Court Architect",
+      "color": null
+    }
+  ]
   ]
 }
