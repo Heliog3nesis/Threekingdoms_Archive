@@ -31,7 +31,7 @@
     }
     table {
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
     margin: 0 auto 2rem auto;
     background: #222;
     overflow-x: auto;
@@ -42,6 +42,7 @@
       border: 1px solid #555;
       padding: 6px 10px;
       color: white;
+      min-width: 10ch;
     }
   </style>
 </head>
@@ -117,7 +118,7 @@
   <script>
     let sheetData = {};
 
-    fetch("../translations/excellencies_ministers.json")
+    fetch("../translations/excellencies_ministers_updated.json")
       .then(res => res.json())
       .then(data => {
         const sheetNames = Object.keys(data);
