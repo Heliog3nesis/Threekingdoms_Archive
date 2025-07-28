@@ -38,10 +38,37 @@
   {
     "id": "img5",
     "title": "Zhibai Wuzhu (直百五銖)",
-    "text": "The Zhibai Wuzhu was an important coin minted by the Shu during the Three Kingdoms period. The coin is round on the outside and square on the inside, and the inscription is arranged in a circular reading order — top, bottom, right, then left. The characters 'Zhibai' are written in clerical script, while 'Wuzhu' is in small seal script. The character '直' is a phonetic loan for '值' (value), and 'Wuzhu' refers to a standard coin type from the Han dynasty. Thus,'Zhibai Wuzhu' literally means 'Coin worth one hundred Wuzhu'. Archaeological discoveries of these coins far outnumbered those of their Wei and Wu counterparts, and they saw wide circulation — remaining in use among the populace even into the Southern Liang dynasty, some 200 years later.",
+    "text": "The Zhibai Wuzhu was an important coin minted by the Shu during the Three Kingdoms period. The coin is round on the outside and square on the inside, and the inscription is arranged in a circular reading order — top, bottom, right, then left. The characters “Zhibai” were written in clerical script, while “Wuzhu” were in small seal script. The character “直” is a phonetic loan for “值” (value), and “Wuzhu” refers to a standard coin type from the Han dynasty. Thus, “Zhibai Wuzhu” literally means “Coin worth one hundred Wuzhu. Archaeological discoveries of these coins far outnumbered those of their Wei and Wu counterparts, and they saw wide circulation — remaining in use among the populace even into the Southern Liang dynasty, some 200 years later.",
     "location": "Chengdu",
     "location_en": "Chengdu",
     "period": "Wei-Jin",
     "period_en": "Three Kingdoms"
+  },
+  {
+    "id": "img6",
+    "title": "Tang Sancai Camel",
+    "text": "This camel figurine was unearthed from the joint tomb of General An Pu and his wife, located in the southern suburbs of Luoyang. An Pu, a Sogdian, was born in the Western Regions, died in Chang’an, and buried in Luoyang — a life both far-reaching and extraordinary. The figurine is vivid and lifelike in form: its head is held high, mouth open in a braying cry; its back is richly adorned with a floral seating carpet and travel gear, such as a saddlebag shaped like a beast's face. As a remarkable example of Tang Sancai — literally meaning “Tang three colors” — the piece features a harmonious blend of white, green, and brown glazes, vividly reflecting the prosperity of the Silk Road trades and the rich cultural interactions that flourished during the period.",
+    "location":"Luoyang",
+    "location_en": "Luoyang",
+    "period": "Tang",
+    "period_en": "Tang"
+  },
+  {
+    "id":"img7",
+    "title":"The Multi-faced Seal of Dugu Xin",
+    "text":"This seal belonged to Dugu Xin, a Xianbei noble and one of the Eight Pillar-Generals of Western Wei. Carved from jet stone, the seal is composed of 26 square and triangular faces of varying sizes. Among them, 14 square faces bear engraved inscriptions. The inscriptions fall into three categories: (1) for issuing official documents, (2) for submitting memorials to the emperor, and (3) for private correspondence. The seal’s unique design makes it a distinctive and exceptional example among all ancient seals known to date.",
+    "location": "XA",
+    "location_en": "Xi'an",
+    "period": "N/S Dynasties",
+    "period_en": "Western Wei"
+  },
+  {
+    "id":"img8",
+    "title":"Celadon Tiger Vessel",
+    "text":"The Tiger Vessel, taking its name from its distinctive tiger-like form, originated during the Warring States period and became widespread from the Han dynasty through the North/South Dynasties. During the Southern Dynasties, Celadon Tiger Vessels were commonly placed as burial goods in tombs. They typically feature a tiger’s head raised upward, forming the spout, with an arched handle on the back serving as the grip. Scholars remain divided over their intended function: some propose that they were used to hold water, while others argue that they served as chamber pots.",
+    "location": "Nanjing",
+    "location_en": "Nanjing",
+    "period": "N/S Dynasties",
+    "period_en": "Southern Dynasties"
   }
 ]
