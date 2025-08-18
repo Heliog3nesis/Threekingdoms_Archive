@@ -43,11 +43,14 @@ function searchTowns(term, fuzzy = true) {
     ];
 
     return fields.some((field) => {
-      const fieldNormalized = normalize(field);
-      return fuzzy
-        ? fieldNormalized.includes(keyword)
-        : fieldNormalized === keyword;
-    });
+        const fieldNormalized = normalize(field);
+        if (fuzzy) {
+            return fieldNormalized.includes(keyword);
+        } else {
+            // Support slash-separated aliases like "A/B"
+            return fieldNormalized.split("/").some(part => part.trim() === keyword);
+        }
+        });
   });
 }
 
