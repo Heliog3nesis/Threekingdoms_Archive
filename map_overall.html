@@ -52,7 +52,7 @@
     <li>Fuzzy search includes partial matches; turn off for precise matches</li>
   <br>
   <input type="text" id="searchInput" placeholder="Enter place name..." />
-<button style="background-color:#daa520; padding:3px; color:black"; onclick="handleSearch()">Search</button> <label>
+  <button style="background-color:#daa520; padding:3px; color:black"; onclick="handleSearch()">Search</button> <label>
   <input type="checkbox" id="fuzzyToggle" checked />
   Fuzzy
 </label>
@@ -4984,7 +4984,6 @@ EZDYDQERkNgNARGQ2A0BEZDYBSMhsBoCIyGwGgIjIbAaAiMhsBoCIyGwGgIADbUQwAAwD82FxpE+W0AA
   </script>
   
   <div id="footer"></div>
-
   <script>
   async function includeHTML(id, file, callback) {
     const res = await fetch(file);
@@ -5020,8 +5019,19 @@ EZDYDQERkNgNARGQ2A0BEZDYBSMhsBoCIyGwGgIjIbAaAiMhsBoCIyGwGgIADbUQwAAwD82FxpE+W0AA
 
  
   includeHTML("footer", "footer.html");
+  
+  
+    // Load location_finder.js with resolved path
+  const isGithub = location.hostname.includes("github.io");
+  const pathParts = window.location.pathname.split("/");
+  const repoName = pathParts[1] || "";
+  const basePath = isGithub ? `/${repoName}/` : "/";
+
+  const finderScript = document.createElement("script");
+  finderScript.src = basePath + "scripts/location_finder.js";
+  document.head.appendChild(finderScript);
+
 </script>
 <script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js"></script>
-<script src="../scripts/location_finder.js"></script>
 </body>
 </html>
