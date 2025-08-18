@@ -252,6 +252,32 @@
   }
 }
 
+.map-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.map-intro, .location-finder {
+  flex: 1 1 45%;
+}
+
+.location-finder {
+  color: white;
+  margin-top: 4rem;
+  padding: 0 1rem;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .map-intro, .location-finder {
+    flex: 1 1 100%;
+    font-size:13px;
+  }
+}
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));

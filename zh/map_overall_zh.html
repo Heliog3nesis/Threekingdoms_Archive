@@ -35,13 +35,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
+<div class="map-layout">
 <div class="map-intro">
   <p>景元三年 (262) 時的三國地圖, 以譚其驤的<b>中國歷史圖集</b>為底圖, 並參考HydroSHEDS的3弧秒 (~100米) 分辨率高程模型，對偏差處做了調整。
     整套地圖也在 <u><a href="https://kongming.net/map/">KMA</a></u> 上發佈。</p>
 <br>
-  <p> <u><a href="../maps/Xiyu.png">西域圖</a></u> |  <u><a href="../maps/3K.png">全圖(簡)</a></u> | <u><a href="../maps/3k_Overall_lowres.png">全圖</a></u> </p>
+  <p> <u><a href="../maps/Xiyu.png">西域圖</a></u> |  <u><a href="../maps/3k.png">全圖(簡)</a></u> | <u><a href="../maps/Overall_detailed.png">全圖</a></u> </p>
 <br>
   <P> 若需高清版地圖，或有其它定制需求，歡迎隨時聯係。</P>
+</div>
+
+<div class="location-finder"><h3>地名檢索</h3>
+    <li>支持中英輸入</li>
+    <li>顯示英文+繁體結果</li>
+    <li>模糊：（開）所有相關内容 /（關）精準匹配</li>
+  <br>
+  <input type="text" id="searchInput" placeholder="輸入地名..." />
+<button style="background-color:#daa520; padding:1px; color:black"; onclick="handleSearch()">檢索</button> <label>
+  <input type="checkbox" id="fuzzyToggle" checked />
+  模糊
+</label>
+
+<div id="searchWarning"></div>
+<br>
+<div id="searchResult"></div>
 </div>
 
 <div class="map-container">
@@ -5000,6 +5017,7 @@ EZDYDQERkNgNARGQ2A0BEZDYBSMhsBoCIyGwGgIjIbAaAiMhsBoCIyGwGgIADbUQwAAwD82FxpE+W0AA
  
   includeHTML("footer", "../footer.html");
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js"></script>
+<script src="../scripts/location_finder.js"></script>
 </body>
 </html>

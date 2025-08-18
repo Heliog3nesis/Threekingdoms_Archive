@@ -34,16 +34,35 @@
 <div id="navbar"></div>
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
+<div class="map-layout">
 <div class="map-intro">
   <p>This is a map collection of the Three Kingdoms in the 3rd year of Jingyuan (262) is digitised from Tan Qixiang's <i>The Historical Atlas of China</i>, 
     with some personal adjustments based on HydroSHEDS elevation data at 3 arc seconds (~100 m) resolution. A map of the Western Regions is 
     available <u><a href="maps/Xiyu.png">here</a></u>, and the maps are also available on <u><a href="https://kongming.net/map/">KMA</a></u>.</P>
 <br>
-  <p>The overall map can be viewed in two versions: <br><li>One showing <u><a href="maps/3K.png">only commanderies and capitals</a></u></li>
-  <li>One with <u><a href="maps/3k_Overall_lowres.png">all features</li></u></a></p>
+  <p>The overall map can be viewed in two versions: <br><li>One showing <u><a href="maps/3k.png">only commanderies and capitals</a></u></li>
+  <li>One with <u><a href="maps/Overall_detailed.png">all features</li></u></a></p>
 <br>
   If you would like higher-resolution versions of the maps — or have specific requests for maps — please feel free to contact me.
+</div>
+
+<div class="location-finder"><h3>Location Finder Tool</h3>
+    <li>Accepts input in both English and Chinese</li>
+    <li>Returns names in English and Traditional Chinese</li>
+    <li>Fuzzy search includes partial matches; turn off for precise matches</li>
+  <br>
+  <input type="text" id="searchInput" placeholder="Enter place name..." />
+<button style="background-color:#daa520; padding:3px; color:black"; onclick="handleSearch()">Search</button> <label>
+  <input type="checkbox" id="fuzzyToggle" checked />
+  Fuzzy
+</label>
+
+<div id="searchWarning"></div>
+<br>
+<div id="searchResult"></div>
+
+
+</div>
 </div>
 
 <div class="map-container">
@@ -5002,5 +5021,7 @@ EZDYDQERkNgNARGQ2A0BEZDYBSMhsBoCIyGwGgIjIbAaAiMhsBoCIyGwGgIADbUQwAAwD82FxpE+W0AA
  
   includeHTML("footer", "footer.html");
 </script>
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js"></script>
+<script src="../scripts/location_finder.js"></script>
 </body>
 </html>
