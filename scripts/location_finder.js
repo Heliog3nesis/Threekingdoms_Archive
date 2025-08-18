@@ -1,7 +1,10 @@
 let townsData = [];
+const isGithubjs = location.hostname.includes("github.io");
+const pathPartsjs = window.location.pathname.split("/");
+const repoNamejs = pathPartsjs[1] || "";
+const basePathjs = isGithubjs ? `/${repoName}/` : "/";
 
-// Load the JSON file
-fetch("../maps/All_Towns.json")
+fetch(basePathjs + "maps/All_Towns.json")
   .then((res) => res.json())
   .then((data) => {
     townsData = data.All_Towns_Details;
