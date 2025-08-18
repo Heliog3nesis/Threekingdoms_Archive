@@ -16,6 +16,7 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 - 📖 **English translations** of classical Chinese texts  
 - 📸 **Photographs** and **backgrounds** of historical artefacts  
 - 🌐 **Bilingual support** (English & 中文)
+- 📝 View [full changelog](CHANGELOG.md)
 
 ## 🔭 Future Plans
 
