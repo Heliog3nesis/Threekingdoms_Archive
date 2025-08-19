@@ -6097,8 +6097,8 @@
       "Annotation": ""
     },
     {
-      "Town_EN": "Hanshou (Jiameng)",
-      "Town_CH": "漢壽 (葭萌)",
+      "Town_EN": "Hanshou/Jiameng",
+      "Town_CH": "漢壽/葭萌",
       "Type": "County Seat",
       "Longitude": 105.75500496,
       "Latitude": 32.14420623,
@@ -7025,8 +7025,8 @@
       "Annotation": ""
     },
     {
-      "Town_EN": "Ji Valley (South entrance)",
-      "Town_CH": "箕谷 (南谷口)",
+      "Town_EN": "Ji Valley",
+      "Town_CH": "箕谷",
       "Type": "Landmark",
       "Longitude": 107.00414369,
       "Latitude": 33.27982225,
@@ -7169,8 +7169,8 @@
       "Annotation": ""
     },
     {
-      "Town_EN": "Jiange (Jianmenguan)",
-      "Town_CH": "劍閣 (劍門關)",
+      "Town_EN": "Jiange/Jianmenguan",
+      "Town_CH": "劍閣/劍門關",
       "Type": "Others",
       "Longitude": 105.59602367,
       "Latitude": 32.2293287,
