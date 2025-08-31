@@ -246,7 +246,7 @@
   color: white;
   font-size: 16px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .map-intro {
     font-size:13px;
   }
@@ -271,12 +271,187 @@
   font-size: 16px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .map-intro, .location-finder {
     flex: 1 1 100%;
     font-size:13px;
+    width: 90vw;
   }
 }
+
+.about-button {
+    padding: 0.5em;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #87CEEB; 
+    color: #000;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1000px) {
+    .about-button {
+      font-size: 13px;
+    }
+  }
+
+  .about-button:hover {
+  background-color: #60c5f3;
+}
+
+.about-container {
+      display: flex;
+      gap: 2rem;
+      padding: 40px 40px 40px; 
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about-text {
+      flex: 1 1 50%;
+      font-size: 16px;
+    }
+    .about-image {
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+    }
+    .about-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .about-container.image-left .about-image {
+      order: 1;
+    }
+    .about-container.image-left .about-text {
+      order: 2;
+    }
+    .about-container.image-right .about-image {
+      order: 2;
+    }
+    .about-container.image-right .about-text {
+      order: 1;
+    }
+    @media (max-width: 1000px) {
+      .about-container {
+        flex-direction: column;
+        padding: 40px 40px 40px;
+      }
+      .about-text {
+        order: 1;
+        font-size: 13px;
+      }
+      .about-image {
+        order: 2;
+        margin-top: 20px;
+      }
+      .about-container.image-left .about-image,
+      .about-container.image-left .about-text,
+      .about-container.image-right .about-image,
+      .about-container.image-right .about-text {
+        order: unset;
+      }
+    }
+
+.qna {
+  margin: 2rem auto;
+  max-width: 95vw;
+  margin: 2rem auto;           
+  background: rgba(30, 30, 30, 0.85); 
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;         
+  padding: 1rem 1.5rem;        
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5); 
+  color: #fff; 
+  font-size: 16px;     
+}
+
+@media (max-width: 1000px) {
+  .qna {
+    font-size: 14px;
+  }
+}
+
+.qna details {
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  padding: 0.75rem 0;
+}
+
+.qna summary {
+  font-weight: 800;   
+  color: #fff;                
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;; 
+}
+
+.qna summary::-webkit-details-marker {
+  display: none;
+}
+
+.qna .chev {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  stroke: #cfd6e6; 
+  stroke-width: 2;
+  fill: none;
+  transition: transform 0.25s ease;
+}
+
+.qna details[open] .chev {
+  transform: rotate(180deg);
+}
+
+.qna__a {
+  padding: 0.25rem 0 0.8rem 0.1rem;
+  color: #fff; 
+  line-height: 1.6;
+}
+
+.footnotes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;                        
+  padding: 40px 40px 40px;         
+  max-width: 1200px;               
+  margin: 0 auto;                   
+  align-items: flex-start;          
+  flex-wrap: wrap;
+  font-size: 15px;                
+  color: #fff;                      
+  border-top: 1px solid rgba(255,255,255,0.2); 
+  overflow-wrap: anywhere;       
+  word-break: break-word; 
+}
+
+.footnotes ol {
+  padding-left: 1.2em;              
+  margin: 0;
+}
+
+.footnotes li {
+  line-height: 1.6;
+}
+
+.footnotes a {
+  color: #7fbf7f;                   
+  text-decoration: none;
+}
+
+.footnotes a:hover {
+  text-decoration: underline;
+}
+@media (max-width:1060px) {
+.footnotes{
+  font-size: 13px;
+}
+
+
+}
+
 
 .category-grid {
   display: grid;
@@ -364,7 +539,6 @@ a:hover {
   transform: scale(1.03);
 }
 
-/* Expanded Preview Overlay */
 .preview {
   position: fixed;
   top: 0;
@@ -408,7 +582,7 @@ select {
   border-radius: 5px;
 }
 
-@media (max-width: 960px) {
+@media (max-width:1060px) {
   .filter-bar {
     flex-direction: column;
     align-items: flex-start;

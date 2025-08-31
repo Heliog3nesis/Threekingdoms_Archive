@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About: Maps</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <button 
+  onclick="location.href='map_overall.html';" 
+  style="margin-top: 3rem; margin-left: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">
+  ← Return
+</button>
+
+  <main class="about-container image-left">
+    <section class="about-text">
+      <h2>About: Maps</h2>
+      <p>
+        The Historical Atlas of China (中國歷史地圖集)<sup id="fnref1"><a href="#fn1">1</a></sup> is a multi-volume work compiled by Tan Qixiang in the 1980s. 
+        While <u><a href="https://history-map.osgeo.cn/#/" target="_blank">some websites</a></u> have scanned sections of the atlas and superimposed them over modern basemaps, 
+        I'm not aware of any effort to translate and digitize it into a structured, topography-integrated database. This project aims to fill that gap.
+      </p>
+      <br>
+      <p>
+        Below is a short Q&A outlining the key stylistic choices and conventions I've adopted in this project.
+      </p>
+    </section>
+    <section class="about-image">
+      <img src="maps/Res.png" />
+    </section>
+  </main>
+
+<div class="qna">
+  <details close>
+    <summary>
+      <span>Why use Tan Qixiang's Historical Atlas of China? Should I trust these maps?</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      Tan Qixiang's Historical Atlas of China is the most authoritative atlas of Chinese history and remains a standard reference for historical geography.<sup id="fnref2"><a href="#fn2">2</a></sup> 
+      
+      <br><br>Like all historical cartography, however, it inevitably involved a degree of approximation and educated guesswork. 
+      Compiled in the 1980s, before comprehensive data and easy access were available, some errors and uncertainties were unavoidable. While the maps cannot 
+      be considered 100% accurate, they remain among the best available estimates of where places were located and what their surroundings looked like.
+  </details>
+
+  <details close>
+    <summary>
+      <span>Why are some locations mentioned in the Romance of the Three Kingdoms, games, or certain historical texts missing from the maps?</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      These maps reflect the administrative geography of the 260s, whereas games and the Romance of the Three Kingdoms often focus on the 
+      earlier part of the era. By the 260s, many counties and towns had been merged, abolished, or renamed, and certain landmarks or military outposts had 
+      fallen out of use or no longer held any significance. 
+      <br><br>In addition, some locations featured in stories or games are fictional, or have been conflated with later place names, and are therefore not represented on these maps.
+    </div>
+  </details>
+
+  <details close>
+    <summary>
+      <span>How does this project modify or build on Tan Qixiang's maps?</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      This project georeferences Tan's maps with modern towns and cities that also appear in the original atlas, using them as anchor points for alignment. 
+      Topography from HydroSHEDS<sup id="fnref3"><a href="#fn3">3</a></sup> has been incorporated to provide elevation context. 
+      
+      <br><br>In some cases, rivers in the original atlas do not align with valleys in the modern topography. Where possible, they have been adjusted to follow the nearest valley trajectory; 
+      where no clear correspondence exists, they are left as originally drawn. These adjustments are not foolproof — river courses may have shifted considerably 
+      since antiquity, especially in flatter regions. Even so, the integration of elevation data should provide a closer approximation of the geography.
+  </details>
+
+  <details close>
+    <summary>
+      <span>How were pronunciations for names determined?</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      In most cases, the standard modern Hanyu Pinyin system is used. For more obscure or ambiguous names, I've traced the root meaning of the characters and 
+      matched them with the most appropriate modern Pinyin pronunciation. 
+      <br><br>A particular example is Jianwei/Qianwei. Today, the town is known as Qianwei (犍爲), and indeed the first character is usually given only the 
+      Qian- pronunciation. However, when looking at the records and artefacts, this is not always the case: in Han times, the commandery was only referred 
+      to as Jianwei (楗為), with a wood (木) radical rather than a cow (牛) radical.<sup id="fnref4"><a href="#fn4">4</a></sup> <sup id="fnref5"><a href="#fn5">5</a></sup>
+      <sup id="fnref6"><a href="#fn6">6</a></sup> At some point after the Han, the character and its pronunciation somehow shifted. 
+      In the maps, both pronunciations are included for accessibility, since it is unclear whether the change had already occurred 
+      by the Three Kingdoms period.
+      <br><br>Inevitably, a few cases may have been missed or interpreted differently — if you notice any errors or would like to discuss particular names, please feel free to reach out!
+    </div>
+  </details>
+
+  <details close>
+    <summary>
+      <span>What qualifies as a canal, and what does not?</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      Generally, waterways with the character 渠 (<i>qu</i>, "canal") in their names can be identified as canals, since these were deliberately constructed or 
+      engineered channels. In flatter, agriculturally intensive regions — especially downstream of the Yellow River — the distinction becomes less clear. 
+      Channels were often excavated, altered, redirected, or reinforced to serve irrigation and transport purposes, effectively functioning as canals even if not 
+      entirely man-made. 
+      
+      <br><br> For this project, I've included only the major canal-rivers. I didn't explicitly marked their many tributaries and connecting 
+      channels as canals, though I recognize that they were most likely part of the broader network.
+    </div>
+  </details>
+
+</div>
+<section class="footnotes">
+  <h2>References</h2>
+  <ol>
+    <li id="fn1">
+      Tan, Qixiang. <em>Historical Atlas of China</em> (中國歷史地圖集). Beijing: China Cartographic Publishing House, 1982-1988. 
+      <a href="#fnref1">↩</a>
+    </li>
+    <li id="fn2">
+      Wilkinson, Endymion. <em>Chinese History: A New Manual</em>. Cambridge, MA: Harvard University Asia Center, 2013, p. 245.
+      <a href="#fnref2">↩</a>
+    </li>
+        <li id="fn3">
+      Lehner, Bernhard, K. Verdin, and A. Jarvis. “New Global Hydrography Derived from Spaceborne Elevation Data.” Eos, Transactions, 
+      American Geophysical Union 89, no. 10 (2008): 93-94. <a href="https://doi.org/10.1029/2008EO100001">https://doi.org/10.1029/2008EO100001</a>.
+      <a href="#fnref3">↩</a>
+    </li>
+    </li>
+        <li id="fn4">
+      Shimen Eulogy Rubbing (石門頌〈司隸校尉楗為楊君頌〉拓本). Wikimedia Commons, last modified 2023, 
+      <a href="https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%97%A8%E9%A2%82">https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%97%A8%E9%A2%82</a>.
+      <a href="#fnref4">↩</a>
+    </li>
+    </li>
+        <li id="fn5">
+      Tong Chun-fung (唐俊峰). “The Organization and Administration of Tianguan in Hexi during the Western Han Dynasty.” Journal of the Institute of 
+      Chinese Culture (《中國文化研究所學報》), no. 59 (July 2014): 87-120. <a href="https://doi.org/10.29708/JCS.CUHK.201407_(59).0004">https://doi.org/10.29708/JCS.CUHK.201407_(59).0004</a>.
+      <a href="#fnref5">↩</a>
+    </li>
+    </li>
+        <li id="fn6">
+      Ni Tao. A Record of One of the Six Arts, vol. 53 (《六藝之一錄·卷五十三》). Chinese Text Project. <a href="https://ctext.org/wiki.pl?if=gb&chapter=79374">https://ctext.org/wiki.pl?if=gb&chapter=79374</a>.
+    <a href="#fnref6">↩</a>
+  </li>
+  </ol>
+</section>
+
+
+
+  <div id="footer"></div>
+
+ <script>
+  async function includeHTML(id, file, callback) {
+    const res = await fetch(file);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+
+    if (callback) callback();
+  }
+
+  
+  includeHTML("navbar", "nav.html", () => {
+
+    const script = document.createElement("script");
+    script.src = "scripts/navbar.js"; 
+    script.defer = true;
+
+
+    script.onload = () => {
+      const isGithub = location.hostname.includes("github.io");
+      const pathParts = window.location.pathname.split("/");
+      const repoName = pathParts[1] || "";
+      const basePath = isGithub ? `/${repoName}/` : "/";
+
+      if (typeof setNavLinks === "function") {
+        setNavLinks(basePath);
+      } else {
+        console.warn("Navbar logic (setNavLinks) did not load");
+      }
+    };
+
+    document.head.appendChild(script);
+  });
+
+ 
+  includeHTML("footer", "footer.html");
+</script>
+</body>
+</html>

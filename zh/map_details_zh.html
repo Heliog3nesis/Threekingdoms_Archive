@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About: Maps</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <button 
+  onclick="location.href='map_overall_zh.html';" 
+  style="margin-top: 3rem; margin-left: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">
+  ← 返回
+</button>
+
+  <main class="about-container image-left">
+    <section class="about-text">
+      <h2>關於: 地圖</h2>
+      <p>
+        《中國歷史地圖集》<sup id="fnref1"><a href="#fn1">1</a></sup> 是由譚其驤先生在上世紀八十年代主持編纂的歷代地理著作。
+        目前已有<u><a href="https://history-map.osgeo.cn/#/" target="_blank">網站</a></u>對該圖集內容進行了掃描處理，並將其與現代底圖疊加，
+        但似乎尚未出現融合地形要素及英文翻譯的數字化圖集與數據庫。本項目旨在填補這一空白。
+      </p>
+      <br>
+      <p>
+        以下是關於本人地圖中的一些簡答說明。
+      </p>
+    </section>
+    <section class="about-image">
+      <img src="../maps/Res.png" />
+    </section>
+  </main>
+
+<div class="qna">
+  <details close>
+    <summary>
+      <span>為何選用譚其驤的《中國歷史地圖集》？譚圖是否值得信賴？</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      譚其驤主編的《中國歷史地圖集》（簡稱「譚圖」），是中國歷史地理學界最具權威性的地圖集，至今仍是該領域的標準參考。<sup id="fnref2"><a href="#fn2">2</a></sup> 
+      
+      <br><br>當然，所有歷史地圖的編纂都無可避免地帶有某種程度的推測，此圖集亦不例外。譚圖成於1980年代，
+      受當時資料完整度與測繪技術所限，些許誤差和不確定性也實屬難免。儘管如此，這套地圖依然是現存關於古代地名位置與地理環境最可靠的學術成果之一。
+  </details>
+
+  <details close>
+    <summary>
+      <span>為何《三國演義》、遊戲或某些史料中提及的地點未在地圖中呈現？</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      譚圖主要反映公元260年代的三國行政地理格局，而相關遊戲與《三國演義》的敘事多集中於三國前期。至三國中後期，許多縣治鄉鎮或已被合併、廢止、更名，
+      部分具有特殊意義的軍事要塞也可能因失去戰略價值而荒廢。
+
+      <br><br>此外，文學作品與遊戲中涉及的某些地點或存在虛構成分，或與後世地名混淆嫁接，所以未納入測繪範疇。
+    </div>
+  </details>
+
+  <details close>
+    <summary>
+      <span>此圖集與譚圖有何不同？</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      此圖集通過將譚圖中出現的大型城鎮作為地理配準的基準點，將其與現代地標進行對應參照，同時整合HydroSHEDS地形數據，<sup id="fnref3"><a href="#fn3">3</a></sup> 
+      以呈現海拔環境。
+      
+      
+      <br><br>在某些情況下，譚圖所繪河流與現代地形中的河谷走向並不一致。本人已盡可能將其調整至最接近的河谷軌跡；如無明確對應關係，
+      則保留原繪河道。當然，這些調整並非絕對準確——尤其在平原地區，河道自古以來可能經歷大幅變遷。儘管如此，結合現代高程數據仍可提供更接近實際地理狀況的復原。
+  </details>
+
+  <details close>
+    <summary>
+      <span>地名發音是如何確定的？</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      在大多數情況下，本人採用標準現代漢語拼音方案。對於較生僻或可能存在歧義的地名，則追溯字符的本義，並匹配最合適的現代拼音發音。 
+      <br><br>一個具體的例子是「楗為／犍為」（Jiànwéi/Qiánwéi）, 如今該地普遍被稱為「犍為」，且「犍」字在現代通常僅讀作「Qián」。
+      然據歷史文獻與文物，情況並一直如此：在漢代，該郡僅被寫作帶「木」旁的「楗」，而非「牛」旁的「犍」。<sup id="fnref4"><a href="#fn4">4</a></sup> <sup id="fnref5"><a href="#fn5">5</a></sup>
+      <sup id="fnref6"><a href="#fn6">6</a></sup> 四至六世紀間的某個時期，該字的寫法與發音逐漸發生變化。考慮到這一轉變是否於三國時期已然發生尚不明確，
+      為兼顧可及性，本圖集中同時收錄兩種發音。
+      <br><br>不可避免地，部分名稱的考證或有疏漏或存在不同解讀——如您發現任何謬誤，或希望就特定名稱進行討論，歡迎隨時聯繫。
+  </details>
+
+  <details close>
+    <summary>
+      <span>如何區分漕運水道？</span>
+      <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </summary>
+    <div class="qna__a">
+      一般來說，名稱中帶有「渠」字的水道可認定為運河，因為這類渠道屬於人工開鑿或工程修建的河道。但在地勢平坦、農業密集的地區——尤其是黃河下游一帶——區分標準就變得模糊。
+      當地為灌溉與運輸之需，常會開挖、改造、導引或加固已有地形或河道；這類水道即便非全為人工建造，實際上也發揮著類似運河的功能。
+      <br><br> 本圖集僅標注主要運河、水渠。雖其附屬與連接水道多屬同一漕運體系，但本人未將所有相關水道明確標註為運河。
+    </div>
+  </details>
+
+</div>
+<section class="footnotes">
+  <h2>參考資料</h2>
+  <ol>
+    <li id="fn1">
+     譚其驤. <em>中國歷史地圖集</em>. 北京: 	中國地圖出版社, 1982-1988. 
+      <a href="#fnref1">↩</a>
+    </li>
+    <li id="fn2">
+      Wilkinson, Endymion. <em>Chinese History: A New Manual</em>. Cambridge, MA: Harvard University Asia Center, 2013, p. 245.
+      <a href="#fnref2">↩</a>
+    </li>
+        <li id="fn3">
+      Lehner, Bernhard, K. Verdin, and A. Jarvis. “New Global Hydrography Derived from Spaceborne Elevation Data.” Eos, Transactions, 
+      American Geophysical Union 89, no. 10 (2008): 93-94. <a href="https://doi.org/10.1029/2008EO100001">https://doi.org/10.1029/2008EO100001</a>.
+      <a href="#fnref3">↩</a>
+    </li>
+    </li>
+        <li id="fn4">
+      石門頌〈司隸校尉楗為楊君頌〉拓本. Wikimedia Commons, 
+      <a href="https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%97%A8%E9%A2%82">https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%97%A8%E9%A2%82</a>.
+      <a href="#fnref4">↩</a>
+    </li>
+    </li>
+        <li id="fn5">
+      唐俊峰. “西漢河西田官的組織與行政： 以居延、肩水地區的田官為中心.” 《中國文化研究所學報》, no. 59 (2014): 87-120. <a href="https://doi.org/10.29708/JCS.CUHK.201407_(59).0004">https://doi.org/10.29708/JCS.CUHK.201407_(59).0004</a>.
+      <a href="#fnref5">↩</a>
+    </li>
+    </li>
+        <li id="fn6">
+      倪濤. 《六藝之一錄·卷五十三》. 中國哲學書電子化計劃. <a href="https://ctext.org/wiki.pl?if=gb&chapter=79374">https://ctext.org/wiki.pl?if=gb&chapter=79374</a>.
+    <a href="#fnref6">↩</a>
+  </li>
+  </ol>
+</section>
+
+
+
+  <div id="footer"></div>
+
+ <script>
+  async function includeHTML(id, file, callback) {
+    const res = await fetch(file);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+
+    if (callback) callback();
+  }
+
+  
+  includeHTML("navbar", "nav_zh.html", () => {
+
+    const script = document.createElement("script");
+    script.src = "scripts/navbar_zh.js"; 
+    script.defer = true;
+
+
+    script.onload = () => {
+      const isGithub = location.hostname.includes("github.io");
+      const pathParts = window.location.pathname.split("/");
+      const repoName = pathParts[1] || "";
+      const basePath = isGithub ? `/${repoName}/` : "../";
+
+      if (typeof setNavLinks === "function") {
+        setNavLinks(basePath);
+      } else {
+        console.warn("Navbar logic (setNavLinks) did not load");
+      }
+    };
+
+    document.head.appendChild(script);
+  });
+
+ 
+  includeHTML("footer", "footer.html");
+</script>
+</body>
+</html>

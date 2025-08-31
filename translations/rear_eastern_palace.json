@@ -1,0 +1,1693 @@
+{
+  "太后 Empress Dowager": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "太后三卿：衛尉﹑太僕﹑少府，皆隨太后宮為官號，蜀吳同。<br>The Three Ministers of the Empress Dowager: Commandant of the Guards, Minister Coachman and Minister of the Lesser Treasury, all followed the Empress Dowager’s palace name as their official name, this was the same in Shu and Wu.<br><br>本在九卿上，魏改漢制，在九卿下<br>Originally ranked above the Nine Ministers, [but] Wei changed the Han’s standards, [and placed them] below the Nine Ministers",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "永壽衛尉<br><br>永安衛尉<br><br>永寧衛尉",
+        "color": "C00000"
+      },
+      {
+        "text": "Commandant of the Guards for <br><br>Yongshou Palace<br>Yong'an Palace<br>Yongning Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "長樂衛尉",
+        "color": "C00000"
+      },
+      {
+        "text": "Commandant of the Guards for Changle Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "升平衛尉",
+        "color": "C00000"
+      },
+      {
+        "text": "Commandant of the Guards for Shengping Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "掌宮門衛士宮中徼循事",
+        "color": "C00000"
+      },
+      {
+        "text": "In charge of the guards at palace gates and patrol matters in the palace ",
+        "color": "C00000"
+      },
+      {
+        "text": "三品，中二千石，一人",
+        "color": "C00000"
+      },
+      {
+        "text": "Third grade, Fully 2000 dan, 1 person",
+        "color": "C00000"
+      },
+      {
+        "text": "魏文帝母武宣卞后稱永壽宮，明帝母文德郭后稱永安宮，少帝母明元郭后稱永寧宮<br>Emperor Wen of Wei's mother Wuxuan Empress Bian resided in Yongshou Palace, Emperor Ming's mother Wende Empress Guo resided in Yong’an Palace, and the Lesser Emperor's mother Mingyuan Empress Guo resided in Yongning Palace<br><br>後主母穆皇后稱長樂宮<br>The [Shu] Latter Lord's mother Empress Mu resided in Changle Palace<br><br>孫晧母何皇后稱升平宮<br>Sun Hao's mother Empress He resided in Shengping Palace",
+        "color": "C00000",
+        "rowspan": 3
+      }
+    ],
+    [
+      {
+        "text": "永壽太僕<br><br>永安太僕<br><br>永寧太僕",
+        "color": "C00000"
+      },
+      {
+        "text": "Minister Coachman for <br><br>Yongshou Palace<br>Yong'an Palace<br>Yongning Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "長樂太僕",
+        "color": "C00000"
+      },
+      {
+        "text": "Minister Coachman for Changle Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "升平太僕",
+        "color": "C00000"
+      },
+      {
+        "text": "Minister Coachman for Shengping Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "掌車馬，太后每出，奏駕上鹵簿用，大駕則執御",
+        "color": "C00000"
+      },
+      {
+        "text": "In charge of chariots and horses, whenever the empress dowager travels, prepare chariots, retinues and ceremonial escorts, and personally control the grand carriage",
+        "color": "C00000"
+      },
+      {
+        "text": "三品，中二千石，一人",
+        "color": "C00000"
+      },
+      {
+        "text": "Third grade, Fully 2000 dan, 1 person",
+        "color": "C00000"
+      }
+    ],
+    [
+      {
+        "text": "永壽少府<br><br>永安少府<br><br>永寧少府",
+        "color": "C00000"
+      },
+      {
+        "text": "Minister of the Lesser Treasury for <br><br>Yongshou Palace<br>Yong'an Palace<br>Yongning Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "長樂少府",
+        "color": "C00000"
+      },
+      {
+        "text": "Minister of the Lesser Treasury for Changle Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "升平少府",
+        "color": "C00000"
+      },
+      {
+        "text": "Minister of the Lesser Treasury for Shengping Palace",
+        "color": "C00000"
+      },
+      {
+        "text": "掌中服御諸物，衣服寶貨，珍膳之屬",
+        "color": "C00000"
+      },
+      {
+        "text": "Manage various garments and accessories in the palace, including clothing, treasures, delicacies and the likes",
+        "color": "C00000"
+      },
+      {
+        "text": "三品，中二千石，一人",
+        "color": "C00000"
+      },
+      {
+        "text": "Third grade, Fully 2000 dan, 1 person",
+        "color": "C00000"
+      }
+    ],
+    [
+      {
+        "text": "丞 ",
+        "color": null
+      },
+      {
+        "text": "Assistant ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品，比千石，各一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, Equivalent to 1000 dan, 1 person for each minster",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "永寧署令 ",
+        "color": "0070C0"
+      },
+      {
+        "text": "Director of Yongning Office",
+        "color": "0070C0"
+      },
+      {
+        "text": "-",
+        "color": "0070C0"
+      },
+      {
+        "text": "-",
+        "color": "0070C0"
+      },
+      {
+        "text": "-",
+        "color": "0070C0"
+      },
+      {
+        "text": "-",
+        "color": "0070C0"
+      },
+      {
+        "text": "主永寧宮",
+        "color": "0070C0"
+      },
+      {
+        "text": "In charge of the Yongning Palace",
+        "color": "0070C0"
+      },
+      {
+        "text": "第七品，六百石，一人",
+        "color": "0070C0"
+      },
+      {
+        "text": "Seventh grade, 600 dan, 1 person",
+        "color": "0070C0"
+      },
+      {
+        "text": "洪飴孫：此官不知何屬，疑屬永寧衞尉，今列于此<br>Hong Yisun: It is not known where this position belonged, but it is suspected to be under the Commandant of the Guards for Yongning Palace, hence listed here",
+        "color": "0070C0"
+      }
+    ]
+  ],
+  "皇后 Empress": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "大長秋 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Grand Chamberlain to the Empress",
+        "color": "C00000"
+      },
+      {
+        "text": "大長秋 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Grand Chamberlain to the Empress",
+        "color": "C00000"
+      },
+      {
+        "text": "大長秋 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Grand Chamberlain to the Empress",
+        "color": "C00000"
+      },
+      {
+        "text": "職掌奉宣中宮命，凡給賜宗親及宗親當謁見者，關通之，中宮出則從。",
+        "color": "C00000"
+      },
+      {
+        "text": "Convey and execute the orders of the empress, coordinate visits by imperial relatives and distribute rewards and gifts to them. Also accompany the empress when she went out",
+        "color": "C00000"
+      },
+      {
+        "text": "第三品，二千石，一人",
+        "color": "C00000"
+      },
+      {
+        "text": "Third grade, 2000 dan, 1 person",
+        "color": "C00000"
+      },
+      {
+        "text": "",
+        "color": "C00000"
+      }
+    ],
+    [
+      {
+        "text": "大長秋丞 ",
+        "color": null
+      },
+      {
+        "text": "Assistant to the Grand Chamberlain to the Empress",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "東宮 Eastern Palace": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "魏明帝已後，東宮制度廢闕，官司不具，惟置衛率令典兵，二傅並攝衆事，他皆闕焉。<br>After Emperor Ming of Wei, the Eastern Palace system was defunct, and offices were vacant, only the Captain of the Crown Prince Guards was established to command soldiers, and the two tutors to together oversee various matters, the others were all not filled.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "太子太傅 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Grand Tutor of the Crown Prince",
+        "color": "C00000"
+      },
+      {
+        "text": "太子太傅 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Grand Tutor of the Crown Prince",
+        "color": "C00000"
+      },
+      {
+        "text": "太子太傅 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Grand Tutor of the Crown Prince",
+        "color": "C00000"
+      },
+      {
+        "text": "職掌輔導太子",
+        "color": "C00000"
+      },
+      {
+        "text": "In charge of assisting and guiding the Crown Prince ",
+        "color": "C00000"
+      },
+      {
+        "text": "三品，中二千石，一人",
+        "color": "C00000"
+      },
+      {
+        "text": "Third grade, Fully 2000 dan, 1 person",
+        "color": "C00000"
+      },
+      {
+        "text": "太子于二傅執弟子禮，皆為書不曰令，少傅稱臣，而太傅不臣。二傅與尚書東曹並選太子諸侯官屬<br>The Crown Prince observed the etiquette of a student toward the two Tutors, and when the tutors issued instructions, they were expressed as written requests rather than orders. The Junior Tutor would refer to himself as 'subject,' but the Grand Tutor would not. The two tutors and the Imperial Secretariat Eastern Section officials together selected various subordinate officials of the Crown Prince and Marquises ",
+        "color": "C00000",
+        "rowspan": 3
+      }
+    ],
+    [
+      {
+        "text": "太子太傅丞",
+        "color": null
+      },
+      {
+        "text": "Assistant to the Grand Tutor of the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子少傅",
+        "color": "C00000"
+      },
+      {
+        "text": "Junior Tutor of the Crown Prince",
+        "color": "C00000"
+      },
+      {
+        "text": "?",
+        "color": "C00000"
+      },
+      {
+        "text": "?",
+        "color": "C00000"
+      },
+      {
+        "text": "太子少傅",
+        "color": "C00000"
+      },
+      {
+        "text": "Junior Tutor of the Crown Prince",
+        "color": "C00000"
+      },
+      {
+        "text": "職掌輔導太子",
+        "color": "C00000"
+      },
+      {
+        "text": "In charge of assisting and guiding the Crown Prince ",
+        "color": "C00000"
+      },
+      {
+        "text": "三品，二千石，一人",
+        "color": "C00000"
+      },
+      {
+        "text": "Third grade, 2000 dan, 1 person",
+        "color": "C00000"
+      }
+    ],
+    [
+      {
+        "text": "太子詹事",
+        "color": "C00000"
+      },
+      {
+        "text": "Chamberlain to the Crown Prince",
+        "color": "C00000"
+      },
+      {
+        "text": "?",
+        "color": "C00000"
+      },
+      {
+        "text": "?",
+        "color": "C00000"
+      },
+      {
+        "text": "?",
+        "color": "C00000"
+      },
+      {
+        "text": "?",
+        "color": "C00000"
+      },
+      {
+        "text": "掌東宮內外衆務",
+        "color": "C00000"
+      },
+      {
+        "text": "In charge of various inner and outer matters in the Eastern Palace ",
+        "color": "C00000"
+      },
+      {
+        "text": "三品，二千石，一人",
+        "color": "C00000"
+      },
+      {
+        "text": "Third grade, 2000 dan, 1 person",
+        "color": "C00000"
+      },
+      {
+        "text": "",
+        "color": "C00000"
+      }
+    ],
+    [
+      {
+        "text": "太子詹事丞",
+        "color": null
+      },
+      {
+        "text": "Assistant to the Chamberlain to the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子家令 ",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Household Director",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主庫穀飲食，職似司農少府",
+        "color": null
+      },
+      {
+        "text": "Responsible for provisions storage and meals, duties similar to that of the Minister of Agriculture and Minister of the Lesser Treasury ",
+        "color": null
+      },
+      {
+        "text": "第五品，一千石，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1000 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "太子家令、太子率更令、太子僕共爲太子三卿<br>Crown Prince Household Director, Crown Prince Watch Director and Crown Prince Coachman are together known as the Three Ministers of the Crown Prince",
+        "color": null,
+        "rowspan": 4
+      }
+    ],
+    [
+      {
+        "text": "太子率更令 ",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Watch Director",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "太子率更令 ",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Watch Director",
+        "color": null
+      },
+      {
+        "text": "主庶子舍人更直，職似光祿",
+        "color": null
+      },
+      {
+        "text": "Responsible for arranging duty shifts for the Members of the Suite and Cadets, duties similar to that of the Minister of the Household ",
+        "color": null
+      },
+      {
+        "text": "第五品，一千石，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1000 dan, 1 person",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子率更丞",
+        "color": "0070C0"
+      },
+      {
+        "text": "Assistant to the Crown Prince Watch Director",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "",
+        "color": "0070C0"
+      },
+      {
+        "text": "",
+        "color": "0070C0"
+      },
+      {
+        "text": "四百石，二人",
+        "color": "0070C0"
+      },
+      {
+        "text": "400 dan, 2 people",
+        "color": "0070C0"
+      }
+    ],
+    [
+      {
+        "text": "太子僕",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Coachman",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主車馬，職如太僕",
+        "color": null
+      },
+      {
+        "text": "Responsible for chariots and horses, duties similar to that of the Minister Coachman ",
+        "color": null
+      },
+      {
+        "text": "第五品，一千石，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1000 dan, 1 person",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子中庶子",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Palace Cadet",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "太子中庶子",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Palace Cadet",
+        "color": null
+      },
+      {
+        "text": "職如侍中",
+        "color": null
+      },
+      {
+        "text": "Duties similar to that of Attendants ",
+        "color": null
+      },
+      {
+        "text": "第五品，六百石，五人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 600 dan, 5 people",
+        "color": null
+      },
+      {
+        "text": "或爲諸庶子之長<br>Might have been the more senior or high ranking individuals within the Cadets",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子庶子 ",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Cadet",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "太子庶子 ",
+        "color": null
+      },
+      {
+        "text": "Crown Prince Cadet",
+        "color": null
+      },
+      {
+        "text": "職如三署郞",
+        "color": null
+      },
+      {
+        "text": "Duties similar to that of the Three Department Gentlemen ",
+        "color": null
+      },
+      {
+        "text": "第五品，四百石，無員",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 400 dan, not fixed",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子衛率 ",
+        "color": null
+      },
+      {
+        "text": "Captain of the Crown Prince Guards",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主門衞士",
+        "color": null
+      },
+      {
+        "text": "In charge of guards at the gate",
+        "color": null
+      },
+      {
+        "text": "第五品，四百石，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 400 dan, 1  person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子侍講 ",
+        "color": null
+      },
+      {
+        "text": "Expositor to the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "都講祭酒 ",
+        "color": null
+      },
+      {
+        "text": "Expositor Libationer to the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "教學",
+        "color": null
+      },
+      {
+        "text": "Teach",
+        "color": null
+      },
+      {
+        "text": "(魏) 六品，一人",
+        "color": null
+      },
+      {
+        "text": "(Wei) Sixth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子門大夫 ",
+        "color": null
+      },
+      {
+        "text": "Gate Master of the Crown Prince ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "職比郎將",
+        "color": null
+      },
+      {
+        "text": "Duties similar to that of Gentleman Generals ",
+        "color": null
+      },
+      {
+        "text": "第六品，六百石，二人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 600 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子食官令 ",
+        "color": null
+      },
+      {
+        "text": "Director of the Crown Prince's Food Office",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主飲食",
+        "color": null
+      },
+      {
+        "text": "In charge of meals",
+        "color": null
+      },
+      {
+        "text": "第七品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子洗馬 ",
+        "color": null
+      },
+      {
+        "text": "Frontrider of the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "職如謁者，太子出，則當直者在前導威儀",
+        "color": null
+      },
+      {
+        "text": "Duties similar to that of the Internuncio. When the Crown Prince went out, those on duty will be at the front leading the procession with proper decorum ",
+        "color": null
+      },
+      {
+        "text": "第七品，比六百石，十六人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, Equivalent to 600 dan, 16 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子廏長 ",
+        "color": null
+      },
+      {
+        "text": "Chief of the Crown Prince's Stables",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主車馬",
+        "color": null
+      },
+      {
+        "text": "In charge of chariots and horses ",
+        "color": null
+      },
+      {
+        "text": "第七品，四百石，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 400 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子常從",
+        "color": null
+      },
+      {
+        "text": "Regular Attendant of the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第六品，員數無考",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Sixth grade, numbers unable to be determined",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子虎賁督 <br><br>太子司馬督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Crown Prince’s Rapid Tigers<br><br>Commander of the Crown Prince‘s Cavalry",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子舍人 ",
+        "color": null
+      },
+      {
+        "text": "Members of the Suite of the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "更直宿衞如三署郞中",
+        "color": null
+      },
+      {
+        "text": "On rotating palace guard duties similar to that of the Three Department Court Gentlemen",
+        "color": null
+      },
+      {
+        "text": "第七品，二百石，無員",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 200 dan, not fixed",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "東宮摘句郞 ",
+        "color": null
+      },
+      {
+        "text": "Eastern Palace Literary Selection Gentleman",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第八品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, numbers unable to be determined",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子掌固 <br><br>主事候郞 ",
+        "color": null
+      },
+      {
+        "text": "Clerk of the Crown Prince<br><br>Administrative Gentleman",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第九品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Ninth grade, numbers unable to be determined",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太子文學",
+        "color": null
+      },
+      {
+        "text": "Crown Prince's Scholar ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "員數品秩無考",
+        "color": null
+      },
+      {
+        "text": "Number of people and the grade cannot be determined",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "太子賓客 ",
+        "color": null
+      },
+      {
+        "text": "Advisor to the Crown Prince",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "左輔都尉 <br><br>右弼都尉 <br><br>輔正都尉 <br><br>翼正都尉 ",
+        "color": null
+      },
+      {
+        "text": "Commandant Bulwark on the Left<br><br>Commandant Supporter on the Right<br><br>Commandant for Assisting Rectitude<br><br>Commandant for Protecting Rectitude",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": null
+      },
+      {
+        "text": "1 person each",
+        "color": null
+      },
+      {
+        "text": "為太子四友<br>Together known as the Crown Prince’s Four Companions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "輔義都尉 ",
+        "color": null
+      },
+      {
+        "text": "Commandant for Assisting Righteousness",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "一人",
+        "color": null
+      },
+      {
+        "text": "1 person   ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "太子左、右部督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Crown Prince's Left/Right Guard ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": null
+      },
+      {
+        "text": "1 person each",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ]
+}

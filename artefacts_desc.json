@@ -70,5 +70,21 @@
     "location_en": "Nanjing",
     "period": "N/S Dynasties",
     "period_en": "Southern Dynasties"
+  },
+  {
+    "id":"img9",
+    "title":"Jade Burial Suit",
+    "text":"This jade burial suit was unearthed from the tomb of Liu Fei, Prince of Jiangdu. A son of Emperor Jing of Han and elder half-brother to Emperor Wu, Liu Fei took part in quelling the famous Rebellion of the Seven States. The suit is composed of over two thousand individual jade pieces, meticulously strung together — a process that would have taken several years to complete. In the Han dynasty, it was believed that if the body remained uncorrupted after death and the vital “qi” within could be preserved, one might ascend to the realm of the immortals. The most effective way to achieve this, it was thought, was to tightly encase the corpse in materials of eternal endurance, like jade. Today, the jade burial suits displayed in museums may, in a symbolic sense, have fulfilled their owners' hopes for everlasting life.",
+    "location_en": "Nanjing",
+    "period": "Han",
+    "period_en": "Han"
+  },
+  {
+    "id":"img10",
+    "title":"Cao Quan Stele",
+    "text":"The Cao Quan Stele — or The Stele of Cao Quan, Magistrate of Heyang — was carved in the second year of Zhongping during the Eastern Han dynasty, and was later unearthed in Heyang County during the Ming Wanli period. The inscription provides a detailed account of Magistrate Cao Quan's lineage, life, and achievements, including his suppression of the Yellow Turban Rebellion. The stele stands approximately 3 meters tall and 1.5 meters wide, bearing a total of 1165 characters. With its graceful, expressive strokes, the work has long stood as a canonical exemplar of clerical script. To this day, it remains one of the most esteemed Han dynasty steles and serves as a valued touchstone for students of calligraphy.",
+    "location_en": "Xi'an",
+    "period": "Han",
+    "period_en": "Han"
   }
 ]

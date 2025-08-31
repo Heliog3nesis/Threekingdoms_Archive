@@ -4,6 +4,12 @@ A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
 
+## 🗓️ 2025-08-31 — Minor Update
+- 🗺️ Added details page for Maps
+- 📸 Added 2 more artefacts: Jade Burial Suit, Cao Quan Stele
+
+---
+
 ## 🗓️ 2025-08-18 — Initial Launch
 - 🗺️ Updated Maps, adding missing rivers
 - 🗺️ Added a detailed overall map of topography and all locations

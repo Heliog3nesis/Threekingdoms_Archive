@@ -10,6 +10,7 @@
 <body>
   <div id="navbar"></div>
 
+  <div style="margin-top: 3rem;"> 
   <main class="about-container">
     <section class="about-text">
       <h2>About This Archive</h2>
@@ -28,6 +29,7 @@
       <img src="images/whc.jpg" />
     </section>
   </main>
+  </div>
 
   <div id="footer"></div>
 
@@ -67,42 +69,5 @@
  
   includeHTML("footer", "footer.html");
 </script>
-
-  <style>
-    .about-container {
-      display: flex;
-      gap: 2rem;
-      padding: 120px 40px 40px; 
-      max-width: 1200px;
-      margin: 0 auto;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .about-text {
-      flex: 1 1 50%;
-    }
-    .about-image {
-      flex: 1 1 40%;
-      display: flex;
-      justify-content: center;
-    }
-    .about-image img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 768px) {
-      .about-container {
-        flex-direction: column;
-      }
-      .about-text {
-        order: 1;
-      }
-      .about-image {
-        order: 2;
-        margin-top: 20px;
-      }
-    }
-  </style>
 </body>
 </html>

@@ -36,14 +36,18 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <div class="map-layout">
 <div class="map-intro">
-  <p>This is a map collection of the Three Kingdoms in the 3rd year of Jingyuan (262) is digitised from Tan Qixiang's <i>The Historical Atlas of China</i>, 
+  <p>This map collection of the Three Kingdoms in the 3rd year of Jingyuan (262) is digitised from Tan Qixiang's <i>The Historical Atlas of China</i>, 
     with some personal adjustments based on HydroSHEDS elevation data at 3 arc seconds (~100 m) resolution. A map of the Western Regions is 
-    available <u><a href="maps/Xiyu.png">here</a></u>, and the maps are also available on <u><a href="https://kongming.net/map/">KMA</a></u>.</P>
+    available <u><a href="maps/Xiyu.png" target="_blank">here</a></u>, and the maps are also available on <u><a href="https://kongming.net/map/" target="_blank">KMA</a></u>.</P>
 <br>
-  <p>The overall map can be viewed in two versions: <br><li>One showing <u><a href="maps/Overall.png">only commanderies and capitals</a></u></li>
-  <li>One with <u><a href="maps/Overall_detailed.png">all features</li></u></a></p>
+  <p>The overall map can be viewed in two versions: <br><li>One showing <u><a href="maps/Overall.png" target="_blank">only commanderies and capitals</a></u></li>
+  <li>One with <u><a href="maps/Overall_detailed.png" target="_blank">all features</li></u></a></p>
 <br>
-  If you would like higher-resolution versions of the maps — or have specific requests for maps — please feel free to contact me.
+  <p>If you would like higher-resolution versions of the maps — or have specific requests for maps — please feel free to contact me.</p>
+<br>
+<button class= "about-button" onclick="window.location.href='map_details.html'">
+  More about this project ➤
+</button>
 </div>
 
 <div class="location-finder"><h3>Location Finder Tool</h3>
@@ -5021,7 +5025,7 @@ EZDYDQERkNgNARGQ2A0BEZDYBSMhsBoCIyGwGgIjIbAaAiMhsBoCIyGwGgIADbUQwAAwD82FxpE+W0AA
   includeHTML("footer", "footer.html");
   
   
-    // Load location_finder.js with resolved path
+   
   const isGithub = location.hostname.includes("github.io");
   const pathParts = window.location.pathname.split("/");
   const repoName = pathParts[1] || "";
