@@ -160,7 +160,7 @@
       const isGithub = location.hostname.includes("github.io");
       const pathParts = window.location.pathname.split("/");
       const repoName = pathParts[1] || "";
-      const basePath = isGithub ? `/${repoName}/` : "../";
+      const basePath = isGithub ? `/${repoName}/` : "/";
 
       if (typeof setNavLinks === "function") {
         setNavLinks(basePath);
@@ -173,7 +173,7 @@
   });
 
  
-  includeHTML("footer", "footer.html");
+  includeHTML("footer", "../footer.html");
 </script>
 </body>
 </html>
