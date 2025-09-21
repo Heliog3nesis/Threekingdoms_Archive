@@ -241,7 +241,7 @@
 .map-intro {
   max-width: 900px;
   padding: 0 1rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   text-align: left;
   color: white;
   font-size: 16px;
@@ -258,6 +258,8 @@
   gap: 2rem;
   flex-wrap: wrap;
   max-width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .map-intro, .location-finder {
@@ -591,5 +593,45 @@ select {
 
   .filter-bar select {
     width: 100%;
+  }
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+
+.card1 { background: #002B4D; }  /* very dark navy blue */
+.card2 { background: #4D0000; }  /* deep blood red */
+.card3 { background: #806000; }  /* dark ochre / bronze */
+.card4 { background: #004020; }  /* deep forest green */
+.card5 { background: #2E004D; }  /* dark royal purple */
+
+@media (max-width: 600px) {
+  .link-grid {
+    grid-template-columns: 1fr;
   }
 }

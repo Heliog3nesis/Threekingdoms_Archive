@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../style.css">
   <style>
     h1{
-        font-size:18px;
+        font-size:20px;
         margin-top:3rem;
         margin-left: 2rem;
     }
@@ -49,65 +49,11 @@
 <body>
 <div id="navbar"></div>
   <h1>公卿表</h1>
-<button onclick="window.history.back()" style="margin: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color:white;">
+<button 
+  onclick="location.href='officials_table_index_zh.html';" 
+  style="margin-left: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">
   ← 返回
 </button>
-    <h2>指南</h2>
-    <div class="custom-sheet">
-    <p>本表主要整理自清人洪飴孫之《三國職官表》。
-      漢代月俸的粗略估算請另見<u><a href="salary_zh.html">此表</a></u>；下表為簡略查閲指引。</p>
-    <br> </div>
-<table style="border-collapse: collapse; width: 80%; font-size: 14px; text-align: center;">
-  <tr>
-    <th>名(魏)<br>Name (Wei)</th>
-    <th>名(蜀)<br>Name (Shu)</th>
-    <th>名(吳)<br>Name (Wu)</th>
-  </tr>
-  <tr>
-    <td style="color: red;">
-      郎中令 Court Gentleman Prefect<br>
-      光祿勳 Minister of the Household
-    </td>
-    <td style="color: red;">
-      光祿勳 Minister of the Household
-    </td>
-    <td style="color: red;">
-      郎中令 Court Gentleman Prefect<br>
-      光祿勳 Minister of the Household
-    </td>
-    
-  </tr>
-  <tr>
-    <td>虎賁中郎將 General of the Inner Gentleman of the Rapid Tigers</td>
-    <td>虎賁中郎將 General of the Inner Gentleman of the Rapid Tigers</td>
-    <td>？</td>
-    
-  </tr>
-  <tr>
-    <td style="color: #4682b4;">虎賁侍郎 Attendant Gentleman of the Rapid Tigers</td>
-    <td style="color: #4682b4;">虎賁侍郎 Attendant Gentleman of the Rapid Tigers</td>
-    <td>？</td>
-   
-  </tr>
-  <tr>
-    <td colspan="4">
-    <div style="display: flex; justify-content: space-between; font-size: 14px;">
-      <div style="text-align: left;">
-        <span style="color: red;">紅 : 長官</span><br>
-        <span style="color: white;">白: 長官直系屬官</span><br>
-        <span style="color: #4682b4;">藍: 屬官下的從吏</span>
-      </div>
-      <div style="text-align: right;">
-        (?)：無考
-        <br>
-        (-)：無
-      </div>
-    </div>
-    </td>
-  </tr>
-</table>
-
-
   <h2>類別</h2>
   <div class="sheet-selector">
   <label for="sheet-select">請選擇:</label>
@@ -118,11 +64,11 @@
   <script>
     let sheetData = {};
 
-    fetch("../translations/excellencies_ministers_updated.json")
+    fetch("../translations/excellencies_ministers_webdisplay.json")
       .then(res => res.json())
       .then(data => {
         const sheetNames = Object.keys(data);
-        const remainingSheets = sheetNames.slice(1); // skip first
+        const remainingSheets = sheetNames.slice(1); 
         sheetData = data;
 
         const selector = document.getElementById("sheet-select");

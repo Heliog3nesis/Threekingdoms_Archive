@@ -233,47 +233,47 @@
     [
       {
         "text": "永寧署令 ",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "Director of Yongning Office",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "-",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "-",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "-",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "-",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "主永寧宮",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "In charge of the Yongning Palace",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "第七品，六百石，一人",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "Seventh grade, 600 dan, 1 person",
-        "color": "0070C0"
+        "color": null
       },
       {
         "text": "洪飴孫：此官不知何屬，疑屬永寧衞尉，今列于此<br>Hong Yisun: It is not known where this position belonged, but it is suspected to be under the Commandant of the Guards for Yongning Palace, hence listed here",
-        "color": "0070C0"
+        "color": null
       }
     ]
   ],
@@ -1274,7 +1274,7 @@
         "rowspan": 2
       },
       {
-        "text": "Sixth grade, numbers unable to be determined",
+        "text": "Sixth grade, numbers unknown",
         "color": null,
         "rowspan": 2
       },
@@ -1405,7 +1405,7 @@
         "color": null
       },
       {
-        "text": "Eighth grade, numbers unable to be determined",
+        "text": "Eighth grade, numbers unknown",
         "color": null
       },
       {
@@ -1451,7 +1451,7 @@
         "color": null
       },
       {
-        "text": "Ninth grade, numbers unable to be determined",
+        "text": "Ninth grade, numbers unknown",
         "color": null
       },
       {
@@ -1497,7 +1497,7 @@
         "color": null
       },
       {
-        "text": "Number of people and the grade cannot be determined",
+        "text": "Number of people and the grade unknown",
         "color": null
       },
       {

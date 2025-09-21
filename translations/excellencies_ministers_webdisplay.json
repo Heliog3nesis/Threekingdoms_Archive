@@ -3,7 +3,7 @@
     [
       {
         "text": "This is a work compiled primarily from information in 三國職官表 “List of official positions of Three Kingdoms” by Qing scholar 洪飴孫 Hong Yisun<br><br>@ Zhou Gongjin",
-        "color": null,
+        "color": "FFFF00",
         "colspan": 10
       }
     ],
@@ -1096,51 +1096,51 @@
     ]
   ],
   "上公 Superior Excellency": [
-    [ 
-    {
-      "text": "名(魏) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wei)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(蜀) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Shu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(吳) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "职",
-      "color": "ffff00"
-    },
-    {
-      "text": "Jobscope",
-      "color": "ffff00"
-    },
-    {
-      "text": "品秩员",
-      "color": "ffff00"
-    },
-    {
-      "text": "Grade, Salary, No.",
-      "color": "ffff00"
-    },
-    {
-      "text": "注 Notes",
-      "color": "ffff00"
-    }
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
     ],
     [
       {
@@ -1148,7 +1148,7 @@
         "color": "C00000"
       },
       {
-        "text": "Chancellor of State <br><br>  Excellency over the Masses",
+        "text": "Chancellor of State<br><br> Excellency over the Masses",
         "color": "C00000"
       },
       {
@@ -4805,51 +4805,50 @@
   ],
   "三公 Three Excellencies": [
     [
-    
-    {
-      "text": "名(魏) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wei)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(蜀) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Shu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(吳) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "职",
-      "color": "ffff00"
-    },
-    {
-      "text": "Jobscope",
-      "color": "ffff00"
-    },
-    {
-      "text": "品秩员",
-      "color": "ffff00"
-    },
-    {
-      "text": "Grade, Salary, No.",
-      "color": "ffff00"
-    },
-    {
-      "text": "注 Notes",
-      "color": "ffff00"
-    }
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
     ],
     [
       {
@@ -5382,7 +5381,7 @@
         "color": "C00000"
       },
       {
-        "text": "司徒 <br>大司徒 ",
+        "text": "司徒 <br><br>大司徒 ",
         "color": "C00000"
       },
       {
@@ -6373,50 +6372,50 @@
   ],
   "文散官 Civil Honorary Officials": [
     [
-    {
-      "text": "名(魏) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wei)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(蜀) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Shu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(吳) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "职",
-      "color": "ffff00"
-    },
-    {
-      "text": "Jobscope",
-      "color": "ffff00"
-    },
-    {
-      "text": "品秩员",
-      "color": "ffff00"
-    },
-    {
-      "text": "Grade, Salary, No.",
-      "color": "ffff00"
-    },
-    {
-      "text": "注 Notes",
-      "color": "ffff00"
-    }
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
     ],
     [
       {
@@ -6559,50 +6558,50 @@
   ],
   "九卿(一) Nine Ministers I": [
     [
-    {
-      "text": "名(魏) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wei)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(蜀) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Shu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(吳) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "职",
-      "color": "ffff00"
-    },
-    {
-      "text": "Jobscope",
-      "color": "ffff00"
-    },
-    {
-      "text": "品秩员",
-      "color": "ffff00"
-    },
-    {
-      "text": "Grade, Salary, No.",
-      "color": "ffff00"
-    },
-    {
-      "text": "注 Notes",
-      "color": "ffff00"
-    }
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
     ],
     [
       {
@@ -9428,19 +9427,19 @@
     [
       {
         "text": "謁者",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "Emissary",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "謁者",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "Emissary",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
@@ -10391,50 +10390,50 @@
   ],
   "九卿(二) Nine Ministers II": [
     [
-    {
-      "text": "名(魏) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wei)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(蜀) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Shu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(吳) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "职",
-      "color": "ffff00"
-    },
-    {
-      "text": "Jobscope",
-      "color": "ffff00"
-    },
-    {
-      "text": "品秩员",
-      "color": "ffff00"
-    },
-    {
-      "text": "Grade, Salary, No.",
-      "color": "ffff00"
-    },
-    {
-      "text": "注 Notes",
-      "color": "ffff00"
-    }
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
     ],
     [
       {
@@ -11660,50 +11659,50 @@
   ],
   "九卿(三) Nine Ministers IIII": [
     [
-    {
-      "text": "名(魏) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wei)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(蜀) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Shu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(吳) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "职",
-      "color": "ffff00"
-    },
-    {
-      "text": "Jobscope",
-      "color": "ffff00"
-    },
-    {
-      "text": "品秩员",
-      "color": "ffff00"
-    },
-    {
-      "text": "Grade, Salary, No.",
-      "color": "ffff00"
-    },
-    {
-      "text": "注 Notes",
-      "color": "ffff00"
-    }
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
     ],
     [
       {
@@ -12950,7 +12949,7 @@
         "color": null
       },
       {
-        "text": "魏併左校于材官，則材官校尉兼主工徒也<br>The Wei combined the Left Workshop with Colonel of Construction, then the Colonel was also responsible for craftsmen",
+        "text": "魏併左校于材官，則材官校尉兼主工徒也<br>The Wei combined the Left Workshop with Colonel of Construction, then the Colone was also responsible for craftsmen",
         "color": null
       }
     ],
@@ -13993,50 +13992,50 @@
   ],
   "其他 Others": [
     [
-    {
-      "text": "名(魏) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wei)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(蜀) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Shu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "名(吳) ",
-      "color": "ffff00"
-    },
-    {
-      "text": "Name (Wu)",
-      "color": "ffff00"
-    },
-    {
-      "text": "职",
-      "color": "ffff00"
-    },
-    {
-      "text": "Jobscope",
-      "color": "ffff00"
-    },
-    {
-      "text": "品秩员",
-      "color": "ffff00"
-    },
-    {
-      "text": "Grade, Salary, No.",
-      "color": "ffff00"
-    },
-    {
-      "text": "注 Notes",
-      "color": "ffff00"
-    }
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
     ],
     [
       {
@@ -14187,19 +14186,19 @@
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "?",
-        "color": null
+        "color": "0070C0"
       },
       {
         "text": "",

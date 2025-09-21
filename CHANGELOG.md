@@ -4,6 +4,12 @@ A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
 
+## 🗓️ 2025-09-21 — Major Update
+- 📖 Revamped Three Kingdom Official Positions main page
+- 📖 Added officials positions in the Rear and Eastern Palaces
+
+---
+
 ## 🗓️ 2025-08-31 — Minor Update
 - 🗺️ Added details page for Maps
 - 📸 Added 2 more artefacts: Jade Burial Suit, Cao Quan Stele

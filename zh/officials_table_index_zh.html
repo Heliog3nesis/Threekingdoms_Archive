@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>職官表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    h1 {
+    font-size: 30px;
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 0;
+    }
+        @media (max-width: 1000px) {
+    h1 {
+        font-size: 20px;
+    }
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      font-size: 20px;
+    }
+
+    table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    background: #222;
+    overflow-x: auto;
+    font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 6px 10px;
+      color: white;
+    }
+    
+#toc {
+display: none;
+  position: fixed;
+  top: auto;
+  bottom: 3.2em;       
+  right: 1em;
+  max-height: 60vh;    
+  width: 220px;        
+  background: black;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px;
+  padding: 0.75em;
+  z-index: 998;
+  overflow-y: auto;   
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  padding-left: 1.5em; 
+}
+
+#toc h2 {
+  margin-top: 0;
+  font-size: 1.1em;
+}
+
+#toc ul {
+  list-style-type: disc;
+  padding-left: 0.5em;
+}
+
+#toc li::marker { color: white; }
+
+#toc li { margin: 0.5em 0; }
+
+#toc a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+p { line-height: 1.6; }
+
+
+#toc-toggle {
+display: block;          
+  position: fixed;        
+  bottom: 1em;
+  right: 1em;
+  z-index: 999;
+  background: black;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;     
+}
+#toc.open {
+  display: block;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div id="navbar"></div>
+    <button 
+  onclick="location.href='../translation_index.html';" 
+  style="margin-top: 3rem; margin-left: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">
+  ← 返回
+    </button>
+
+    <h1 style="margin-top: 0rem;">三國職官表</h1>
+<div class="map-layout">
+<div class="map-intro" style="margin-top: 0rem;">
+    <section id="Introduction" class="section">
+<p>本官職匯編主要整合自清代學者洪飴孫的《三國職官表》, 也參考了呂宗力的《中國歷代官制大辭典》、洪武雄的《『三國職官表』蜀漢部分考釋》及楊晨的《三國會要》。 </p>
+<br><br>
+<p>英譯名之選取擬定僅爲個人考量，但也參照了以下中譯英著作：華盛頓大學的《漢代官名英譯》，張磊夫(Rafe de Crespigny)的《漢代官制辭典》，
+    魯惟一(Michael Loewe)的《秦、前漢與新莽時期官制辭典》，以及賀凱(Charles Hucker)的《中國古代官名辭典》。
+</p>
+</section>
+</div>
+<!--
+<div class="location-finder" style="margin-top: 0.5rem;"><h3>官職檢索</h3>
+    <li>支持中英輸入</li>
+    <li>顯示英文+繁體結果</li>
+  <br>
+  <input type="text" id="searchInput" placeholder="輸入官職..." />
+<button style="background-color:#daa520; padding:1px; color:black"; onclick="handleSearch()">檢索</button>
+
+<div id="searchWarning"></div>
+<br>
+<div id="searchResult"></div>
+</div> -->
+</div>
+
+<section id="Guide" class="section">
+    <h2>指南</h2>
+<table style="border-collapse: collapse; width: 80%; font-size: 14px; text-align: center;">
+  <tr>
+    <th>名(魏)<br>Name (Wei)</th>
+    <th>名(吳)<br>Name (Wu)</th>
+  </tr>
+  <tr>
+    <td style="color: red;">
+      郎中令 Court Gentleman Prefect<br>
+      光祿勳 Minister of the Household
+    </td>
+    <td style="color: red;">
+      郎中令 Court Gentleman Prefect<br>
+      光祿勳 Minister of the Household
+    </td>
+    
+  </tr>
+  <tr>
+    <td>虎賁中郎將 General of the Inner Gentleman of the Rapid Tigers</td>
+    <td>?</td>
+    
+  </tr>
+  <tr>
+    <td style="color: #4682b4;">虎賁侍郎 Attendant Gentleman of the Rapid Tigers</td>
+    <td style="color: #4682b4;">?</td>
+   
+  </tr>
+  <tr>
+    <td colspan="4">
+    <div style="display: flex; justify-content: space-between; font-size: 14px;">
+      <div style="text-align: left;">
+        <span style="color: red;">紅: 長官</span><br>
+        <span style="color: white;">白: 屬官</span><br>
+        <span style="color: #4682b4;">藍: 從吏</span>
+      </div>
+      <div style="text-align: right;">
+        (?): 無考
+        <br>
+        (-):  無
+      </div>
+    </div>
+    </td>
+  </tr>
+</table>
+<br>
+<div style="margin: 0 auto; font-size: 16px; max-width: fit-content;"> 
+    <p> <b>百官分爲以下五項</b> (建議使用電腦訪問):
+        </p></div>
+<div class="link-grid">
+  <a href="excellencies_ministers_zh.html" class="card card1">公卿</a>
+  <a href="rear_eastern_palace_zh.html" class="card card2">后宮東宮</a>
+  <a href="" class="card card3">中朝臺省 (WIP)</a>
+  <a href="" class="card card4">武將 (WIP)</a>
+  <a href="" class="card card5">外官 (WIP)</a>
+</div>
+</section>
+
+<section id="Salary" class="section">
+    <h2>漢代月俸表</h2><br>
+    <div style="margin-left: 2rem; font-size: 16px; max-width: fit-content; margin-bottom: 1rem;"> 
+    <p> <span style="color: #3399ff;">藍色</span>部分為Bielenstein<sup>1</sup> 的估算和調整。
+        </p></div>
+    
+<table>
+  <thead>
+    <tr>
+      <th>年俸 (石) <sup>2 3</sup></th>
+      <th colspan="2">月粟米 (斛) <br><span style="font-weight: normal;">[<i>西漢</i>, 東漢 AD 50 或 <u>兩漢</u>] <sup>2 3</sup></span></th>
+      <th>實際年俸 (石) </th>
+      <th>月俸錢<br><span style="font-weight: normal;">[東漢 106 AD] <sup>1 2 3</sup></span></th>
+      <th>月俸穀 (斛)<br><span style="font-weight: normal;">[東漢 106 AD] <sup>1 2 3</sup> </span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>萬 10000</td><td colspan="2"><u>350</u></td><td>4200</td><td>17500</td><td><span style="color: #3399ff;">105</span></td></tr>
+    <tr><td>中二千 Fully 2000</td><td colspan="2"><u>180</u></td><td>2160</td><td>9000</td><td>72, <span style="color: #3399ff;">54</span></td></tr>
+    <tr><td>真二千 2000</td><td colspan="2"><u>150</u></td><td>1800</td><td rowspan="2">6500, <span style="color: #3399ff;">6000</span></td><td rowspan="2">36</td></tr>
+    <tr><td>二千2000</td><td colspan="2"><u>120</u></td><td>1440</td></tr>
+    <tr><td>比二千 Equivalent to 2000</td><td colspan="2"><u>100</u></td><td>1200</td><td>5000</td><td>34, <span style="color: #3399ff;">30</span></td></tr>
+    <tr><td>千 1000</td><td colspan="2"><i>90</i>, 80</td><td>960-1080</td><td>4000, <span style="color: #3399ff;">4500</span></td><td>30, <span style="color: #3399ff;">27</span></td></tr>
+    <tr><td>比千 Equivalent to 1000</td><td colspan="2"><i>80</i></td><td>960</td><td><span style="color: #3399ff;">4000</span></td><td><span style="color: #3399ff;">24</span></td></tr>
+    <tr><td>六百 600</td><td colspan="2"><u>70</u></td><td>840</td><td>3500</td><td>21</td></tr>
+    <tr><td>比六百 Equivalent to 600</td><td colspan="2"><i>60</i>, 50</td><td>600-720</td><td><span style="color: #3399ff;">3000</span></td><td><span style="color: #3399ff;">18</span></td></tr>
+    <tr><td>四百 400</td><td colspan="2"><i></i>50, 45</td><td>540-600</td><td>2500</td><td>15</td></tr>
+    <tr><td>比四百 Equivalent to 400</td><td colspan="2"><i>45</i>, 40</td><td>480-540</td><td><span style="color: #3399ff;">2250</span></td><td><span style="color: #3399ff;">13.5</span></td></tr>
+    <tr><td>三百 300</td><td colspan="2"><u>40</u></td><td>480</td><td><span style="color: #3399ff;">1850</span></td><td>12</td></tr>
+    <tr><td>比三百 Equivalent to 300</td><td colspan="2"><u>37</u></td><td>444</td><td><span style="color: #3399ff;">1850</span></td><td><span style="color: #3399ff;">11.1</span></td></tr>
+    <tr><td>二百 200</td><td colspan="2"><u>30</u></td><td>360</td><td>1000, <span style="color: #3399ff;">1500</span></td><td>9</td></tr>
+    <tr><td>比二百 Equivalent to 200</td><td colspan="2"><u>27</u></td><td>324</td><td><span style="color: #3399ff;">1350</span></td><td><span style="color: #3399ff;">8.1</span></td></tr>
+    <tr><td>一百 100</td><td colspan="2"><u>16</u></td><td>192</td><td>800</td><td>4.8</td></tr>
+    <tr><td>斗食 Paid in Dou</td><td colspan="2">11</td><td>132</td><td><span style="color: #3399ff;">550</td><td><span style="color: #3399ff;">3.3</span></td></tr>
+    <tr><td>佐吏 Accessory Clerks</td><td colspan="2">8</td><td>96</td><td><span style="color: #3399ff;">400</span></td><td><span style="color: #3399ff;">2.4</span></td></tr>
+  </tbody>
+</table>
+
+<p style="text-align: left; font-weight: normal; font-size: 14px; margin-left: 2rem;">
+<br>
+ 1. The salaries of the officials (Chapter 5), in <i>The Bureaucracy of Han Times</i>, Hans Bielenstein.<br>
+ 2. 顔師古注《漢書‧百官公卿表》(Yan Shigu's annotations of Book of Han, Table of nobility ranks and government offices)<br>
+ 3. 《後漢書‧百官志》及注 (Book of the Later Han, Treatise of the Hundred Offices and annotations)<br>
+</p>
+
+</section>
+
+<section id="Glossary" class="section">
+
+</section>
+
+<button id="toc-toggle" aria-controls="toc" aria-expanded="false">
+  <span class="toc-icon">三</span> 目錄
+</button>
+<nav id="toc" aria-label="Page contents">
+  <h2>目錄</h2>
+  <ul>
+    <li><a href="#Introduction">簡介</a></li>
+    <li><a href="#Guide">指南分類</a></li>
+    <li><a href="#Salary">月俸參考</a></li>
+    <!-- <li><a href="#Glossary">Glossary</a></li> -->
+  </ul>
+</nav>
+
+<div id="footer"></div>
+
+<script>
+  const toc = document.getElementById('toc');
+  const toggle = document.getElementById('toc-toggle');
+
+  toggle.addEventListener('click', () => {
+    const open = toc.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  toc.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', () => toc.classList.remove('open'));
+  });
+</script>
+
+<script>
+  async function includeHTML(id, file, callback) {
+    const res = await fetch(file);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+
+    if (callback) callback();
+  }
+
+  
+ includeHTML("navbar", "nav_zh.html", () => {
+
+    const script = document.createElement("script");
+    script.src = "scripts/navbar_zh.js"; 
+    script.defer = true;
+
+
+    script.onload = () => {
+      const isGithub = location.hostname.includes("github.io");
+      const pathParts = window.location.pathname.split("/");
+      const repoName = pathParts[1] || "";
+      const basePath = isGithub ? `/${repoName}/` : "/";
+
+      if (typeof setNavLinks === "function") {
+        setNavLinks(basePath);
+      } else {
+        console.warn("Navbar logic (setNavLinks) did not load");
+      }
+    };
+
+    document.head.appendChild(script);
+  });
+
+ 
+  includeHTML("footer", "../footer.html");
+</script>
+</body>
+</html>
