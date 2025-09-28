@@ -1,0 +1,3388 @@
+{
+  "門下 Chancellery": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "亦稱門下省。門下即黃門之下，其署設於宮禁中，其官得出入宮禁。高官加門下者，能出入殿省，入宮議政。<br>Also known as the Chancellery Department, the 門下 (Menxia, literally “At/Within the Gates”) refers to officials historically connected with the 黃門 (Huangmen, “Yellow Gate”). These officials operated within the imperial palace complex and were granted the privilege of entering and exiting the palace freely. High-ranking officals who were conferred additional Chancellery titles were likewise permitted to pass through palace gates and attend imperial halls to participate directly in discussions of state affairs.<br><br>魏、西晉門下設侍中省、散騎省。<br>The Wei and Western Jin Chancellery had Palace Attendant Department and Cavalier Department.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "侍中省 Palace Attendant Department",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "侍中",
+        "color": null
+      },
+      {
+        "text": "Palace Attendant",
+        "color": null
+      },
+      {
+        "text": "侍中",
+        "color": null
+      },
+      {
+        "text": "Palace Attendant",
+        "color": null
+      },
+      {
+        "text": "侍中",
+        "color": null
+      },
+      {
+        "text": "Palace Attendant",
+        "color": null
+      },
+      {
+        "text": "掌儐贊, 備切問近對拾遺補闕<br><br>出征則以行臺從",
+        "color": null
+      },
+      {
+        "text": "Assist with ceremonial protocol and provide close counsel, respond to imperial queries and correct or supplement official documents<br><br>When going on a military campaign, accompany as the Acting Terrace ",
+        "color": null
+      },
+      {
+        "text": "第三品，比二千石，四人，別加官者非數",
+        "color": null
+      },
+      {
+        "text": "Third grade, Equivalent to 2000 dan, 4 people, additionally given titles were not limited ",
+        "color": null
+      },
+      {
+        "text": "大駕出，則次直侍中護駕，正直者侍中負璽陪乘<br>When the emperor’s grand entourage went out, the deputy duty attendants protected the imperial carriage, while the principal duty attendants carried the imperial seal and accompanied the emperor in the same carriage<br><br>不帶劍，皆騎從御登殿，與散騎侍郎對挾帝，侍中居左，常侍居右<br>They did not carry swords but rode alongside the emperor and accompanied him to the palace hall. Together with the Cavalier Regular Attendants, they stood flanking the emperor, with the Palace Attendants positioned on the left and the Regular Attendants on the right<br><br>功高者為祭酒，舊遷列曹尚書，美遷中領護﹑吏部尚書<br>Palace Attendants with high accomplishments were Libationers. Conventional promotions are the various sections in the Imperial Secretariat, whereas exceptional promotions would be Commander of the Central Army, Protector of the Central Army or the Imperial Secretariat of the Personnel Division",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "侍中祭酒",
+        "color": null
+      },
+      {
+        "text": "Palace Attendant Libationer",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "給事黃門侍郎 ",
+        "color": null
+      },
+      {
+        "text": "Attendant Gentleman within the Yellow Gates",
+        "color": null
+      },
+      {
+        "text": "給事黃門侍郎 ",
+        "color": null
+      },
+      {
+        "text": "Attendant Gentleman within the Yellow Gates",
+        "color": null
+      },
+      {
+        "text": "黃門郎",
+        "color": null
+      },
+      {
+        "text": "Gentleman within the Yellow Gates",
+        "color": null
+      },
+      {
+        "text": "掌侍從左右，關通中外；近侍帷幄，省尚書事",
+        "color": null
+      },
+      {
+        "text": "Attend the emperor closely, serving as a conduit between the inner palace and the outside world. Also oversee palace affairs and handle reports submitted by the State Affairs Department",
+        "color": null
+      },
+      {
+        "text": "第五品，六百石，四人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 600 dan, 4 people",
+        "color": null
+      },
+      {
+        "text": "與侍中俱出入禁中,管門下衆事<br>Together with the Palace Attendants, they enter and exit the restricted palace grounds, managing all matters within the gates ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "黃門 Yellow Gates<br>案諸葛亮出師表、董允傳，當時宦官黃門屬侍中。魏晉以來，侍中之職，轉復優重，二國疑皆與蜀相同。<br>According to Zhuge Liang’s Chushibiao and the Biography of Dong Yun, at that time the eunuchs of the Yellow Gates were subordinate to the Palace Attendants. From the Wei and Jin onward, th Palace Attendants gained significance, and it is suspected that in this respect Shu was the same as both Wei and Wu.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "黃門宂從僕射",
+        "color": null
+      },
+      {
+        "text": "Supervisor of the Auxiliary Yellow Gates Retinue",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主中黃門宂從",
+        "color": null
+      },
+      {
+        "text": "In charge of the Yellow Gates Retinue",
+        "color": null
+      },
+      {
+        "text": "第六品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中黃門宂從 ",
+        "color": null
+      },
+      {
+        "text": "Auxiliary Yellow Gates Retinue",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "居則宿衞直，守門戶，出則騎從夾乘輿車",
+        "color": null
+      },
+      {
+        "text": "In the palace stand guard at night and watch over the gates;  outside, ride alongside and flank the imperial carriage",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "小黃門 <br><br>黃門",
+        "color": null
+      },
+      {
+        "text": "Junior Yellow Gates Attendant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "中使 ",
+        "color": null
+      },
+      {
+        "text": "Palace Commissioner",
+        "color": null
+      },
+      {
+        "text": "掌侍左右，受尚書事，關通中外",
+        "color": null
+      },
+      {
+        "text": "Attend the emperor closely, receive matters from the State Affairs Department, and facilitate communication between the inner palace and the outside world",
+        "color": null
+      },
+      {
+        "text": "第七品，六百石，無員",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 600 dan, not fixed",
+        "color": null
+      },
+      {
+        "text": "受中宮已下衆事；諸公主及王太妃等有疾苦，則使問之<br>Also attend to various affairs within the inner palace; If princesses or royal consorts fall ill or are in distress, they are sent to pay visits and inquire after their well-being",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "黃門署長 ",
+        "color": null
+      },
+      {
+        "text": "Chief of the Yellow Gates Bureau",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "各主中宮別處",
+        "color": null
+      },
+      {
+        "text": "Responsible for the affairs of designated places in the central palace ",
+        "color": null
+      },
+      {
+        "text": "第七品，四百石，各一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 400 dan, 1 person each",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "黃門署丞 ",
+        "color": null
+      },
+      {
+        "text": "Assistant of the Yellow Gates Bureau",
+        "color": null
+      },
+      {
+        "text": "黃門丞 ",
+        "color": null
+      },
+      {
+        "text": "Assistant of the Yellow Gates",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主出入從",
+        "color": null
+      },
+      {
+        "text": "Responsible for accompanying the emperor in and out",
+        "color": null
+      },
+      {
+        "text": "第七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "此官與黃門令俱七品，則非黃門令之丞可知<br>This position and the Chief of the Yellow Gates were both seventh grade, then it is known that this position was not assistant to the Chief",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中黃門 ",
+        "color": null
+      },
+      {
+        "text": "Inner Yellow Gates Attendant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "中黃門 ",
+        "color": null
+      },
+      {
+        "text": "Inner Yellow Gates Attendant",
+        "color": null
+      },
+      {
+        "text": "主給事禁中",
+        "color": null
+      },
+      {
+        "text": "Responsible of providing services within the palace",
+        "color": null
+      },
+      {
+        "text": "第七品，比三百石，無員",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, Equivalent to 300 dan, not fixed",
+        "color": null
+      },
+      {
+        "text": "吴諸王亦有黃門<br>The various princes of Wu also had their own Yellow Gate Attendants",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "黃門從官 ",
+        "color": null
+      },
+      {
+        "text": " Yellow Gates Retinue",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第八品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, numbers  unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "黃門都監 ",
+        "color": null
+      },
+      {
+        "text": "Chief Superintendent of the Yellow Gates",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "無考",
+        "color": null
+      },
+      {
+        "text": "Unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "黃門監 ",
+        "color": null
+      },
+      {
+        "text": "Superintendent of the Yellow Gates",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "無考",
+        "color": null
+      },
+      {
+        "text": "Unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "散騎省 Cavalier Department",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "散騎常侍 ",
+        "color": null
+      },
+      {
+        "text": "Cavalier Regular Attendant",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "散騎常侍 <br><br>散騎中常侍 ",
+        "color": null
+      },
+      {
+        "text": "Cavalier Regular Attendant<br><br>Cavalier Regular Palace Attendant",
+        "color": null
+      },
+      {
+        "text": "平尚書奏事；典章表詔命手筆之事<br><br>",
+        "color": null
+      },
+      {
+        "text": "Review and adjudicate submissions from the State Affairs Department; draft official documents such as regulations, submissions, edicts, and decrees",
+        "color": null
+      },
+      {
+        "text": "(魏)第三品，比二千石，四人 (吳) 無考",
+        "color": null
+      },
+      {
+        "text": "(Wei) Third grade, Equivalent to 2000 dan, 4 people (Wu) Unknown",
+        "color": null
+      },
+      {
+        "text": "秦置散騎，骑而散從，故名；文帝合散騎中常侍為一官<br>Qin established the Cavaliers. They followed the emperor as he travelled, scattered and riding on horsebacks while following, hence the name. Emperor Wen merged Cavaliers and Regular Palace Attendants as one position <br><br>貂璫插右，出入侍從，與侍中﹑黃門侍郎共平尚書奏事<br>They wore marten ornaments on their right side and attended the emperor in and out of the palace, together with the Palace Attendants and Attendant Gentleman within the Yellow Gates, they reviewed and adjudicated submissions from the State Affairs Department<br><br>與上談議，不典事，後遂以為加官；久次者為祭酒<br>They engaged in discussions with the emperor without managing administrative affairs, thus later this role became an honorary title Those who served for a long time in this position becames Libationers",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "祭酒散騎常侍",
+        "color": null
+      },
+      {
+        "text": "Cavalier Regular Attendant Libationer",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "員外散騎常侍 ",
+        "color": null
+      },
+      {
+        "text": "Supernumerary Cavalier Regular Attendant",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "無員",
+        "color": null
+      },
+      {
+        "text": "Not fixed",
+        "color": null
+      },
+      {
+        "text": "魏末，是官又有在員外者，因名<br>At the end of Wei, there were Cavalier Regular Attendants outside of the formal allocations, hence the name",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "散騎侍郎 ",
+        "color": null
+      },
+      {
+        "text": " Cavalier Attendant Gentleman",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "散騎侍郎 ",
+        "color": null
+      },
+      {
+        "text": " Cavalier Attendant Gentleman",
+        "color": null
+      },
+      {
+        "text": "平尚書奏事",
+        "color": null
+      },
+      {
+        "text": "Review and adjudicate submissions from the State Affairs Department",
+        "color": null
+      },
+      {
+        "text": "第五品，六百石，四人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 600 dan, 4 people",
+        "color": null
+      },
+      {
+        "text": "與侍中﹑黃門侍郎共平尚書奏事<br>Together with the Palace Attendants and Attendant Gentleman within the Yellow Gates, they reviewed and adjudicated submissions from the State Affairs Department",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中常侍",
+        "color": null
+      },
+      {
+        "text": "Regular Palace Attendant",
+        "color": null
+      },
+      {
+        "text": "中常侍",
+        "color": null
+      },
+      {
+        "text": "Regular Palace Attendant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "掌侍左右，從入內宮，贊導內衆事，顧問應對給事",
+        "color": null
+      },
+      {
+        "text": "Attend the emperor closely, accompanying him into the inner palace. Assist in managing internal affairs, respond to inquiries, and provide service as needed",
+        "color": null
+      },
+      {
+        "text": "第三品，比二千石，無員",
+        "color": null
+      },
+      {
+        "text": "Third grade, Equivalent to 2000 dan, not fixed",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "給事中 ",
+        "color": null
+      },
+      {
+        "text": "Palace Aide",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "掌顧問應對，位次中常侍",
+        "color": null
+      },
+      {
+        "text": "Respond to inquiries and provide services, ranked second to the Regular Palace Attendant",
+        "color": null
+      },
+      {
+        "text": "第五品，無員",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, not fixed",
+        "color": null
+      },
+      {
+        "text": "或為加官，或為正，給事黃門侍郎位次之<br>Could be either an additional conferment or a regular appointment, and ranked above the Attendant Gentleman of the Yellow Gates<br><br>魏晉所加或三公、將軍等<br>In the Wei and Jin, those conferred with this additional title were the Three Excellencies, Generals, and other high-ranking officials",
+        "color": null
+      }
+    ]
+  ],
+  "中書 Palace Secretariat ": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "亦稱中書省 <br>Also called the Palace Secretariat Department",
+        "color": null,
+        "colspan": 10
+      }
+    ],
+    [
+      {
+        "text": "中書監 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Supervisor of the Palace Secretariat ",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "掌贊詔命，記會時事典，作文書，典尚書奏事",
+        "color": null
+      },
+      {
+        "text": "Assist in drafting imperial edicts, recording significant current affairs, and composing documents, also manage submissions from the State Affairs Department",
+        "color": null
+      },
+      {
+        "text": "第三品，千石，一人",
+        "color": null
+      },
+      {
+        "text": "Third grade, 1000 dan, 1 peson",
+        "color": null
+      },
+      {
+        "text": "妙選文學通識之士為之<br>Scholars with literary talent and broad knowledge were carefully selected for this role<br><br>若密詔下州郡及邊將，則不由尚書<br>If confidential edicts were sent to provinces, commanderies, or border generals, they would bypass the State Affairs Department",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中書令 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Director of the Palace Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "中書令 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Director of the Palace Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "中書令 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Director of the Palace Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "平尚書奏事",
+        "color": null
+      },
+      {
+        "text": "Review and adjudicate submissions from the State Affairs Department",
+        "color": null
+      },
+      {
+        "text": "第三品，千石，一人",
+        "color": null
+      },
+      {
+        "text": "Third grade, 1000 dan, 1 peson",
+        "color": null
+      },
+      {
+        "text": "魏制，太祖為魏王時置祕書令，典尚書奏事，黃初中改祕書令為中書令，又置監﹑令各一人，監右于令<br>In Wei, the Grand Progenitor, as King of Wei,  established the Director of the Imperial Archives, in charged of submissions from the State Affairs Department. During the Huangchu era, changed Director of the Imperial Archives to Director of the Palace Secretariat, also established the positions Supervisor and Director for one person each, with the Supervisor of higher rank than the Director ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "中書僕射 ",
+        "color": null
+      },
+      {
+        "text": "Deputy Director of the Palace Secretariat",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "元興元年後，其職省為侍中<br>After the 1st year of Yuanxing, this position was merged with that of the Palace Attendant ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "中書丞 ",
+        "color": null
+      },
+      {
+        "text": "Palace Secretariat Assistant",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "通事郎<br><br>中書侍郎 ",
+        "color": null
+      },
+      {
+        "text": "Liaison Gentleman<br><br>Palace Secretariat Attendant Gentleman",
+        "color": null
+      },
+      {
+        "text": "中書郎 ",
+        "color": null
+      },
+      {
+        "text": "Palace Secretariat Gentleman",
+        "color": null
+      },
+      {
+        "text": "中書郎 <br><br>中書侍郎 ",
+        "color": null
+      },
+      {
+        "text": "Palace Secretariat Gentleman<br><br>Palace Secretariat Attendant Gentleman",
+        "color": null
+      },
+      {
+        "text": "掌詔草",
+        "color": null
+      },
+      {
+        "text": "In charge of drafting edicts and orders",
+        "color": null
+      },
+      {
+        "text": "第五品，四人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 4 people",
+        "color": null
+      },
+      {
+        "text": "黃初初，又置通事郎，掌詔草，次黃門郎。黃門郎已署過，通事乃署名，已署，奏以入，為帝省讀，書可。<br>At the beginning of Huangchu, also established Liaison Gentleman, in charged of drafting edicts, ranking below the Attendant Gentleman within the Yellow Gates. After the Attendant Gentleman within the Yellow Gates signed on the edict, then would the Liaison Gentleman sign, and afterwards submit to the emperor. After the emperor read and reviewed the edict, he would then sign his approval<br><br>後改為中書侍郎<br>Later changed to Palace Secretariat Attendant Gentleman",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中書通事 ",
+        "color": null
+      },
+      {
+        "text": "Palace Secretariat Liaison",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "掌呈奏",
+        "color": null
+      },
+      {
+        "text": "In charge of presenting memorials ",
+        "color": null
+      },
+      {
+        "text": "第七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "高貴鄕公改為通事都尉，尋又改為通事侍郎<br>The Duke of Gaogui Village changed the name to Commandant for Liaison, soon again changed to Attendant Gentleman for Liaison",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中書主書令史 ",
+        "color": null
+      },
+      {
+        "text": "Palace Secretariat Scribe",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第八品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "著作郎 ",
+        "color": null
+      },
+      {
+        "text": "Editorial Gentleman",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "左右國史 ",
+        "color": null
+      },
+      {
+        "text": " State Historiographer on the Left/Right",
+        "color": null
+      },
+      {
+        "text": "掌修國史",
+        "color": null
+      },
+      {
+        "text": "In charge of writing the state's history ",
+        "color": null
+      },
+      {
+        "text": "(魏)第六品，一人 (吳) 二人",
+        "color": null
+      },
+      {
+        "text": "(Wei) Sixth grade, 1 person (Wu) 2 people",
+        "color": null
+      },
+      {
+        "text": "魏制，或為兼官，稱典著作<br>In Wei, sometimes as an additional concurrent position, known as In charged of Editorial Matters ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "著作佐郎 <br><br>佐著作郎",
+        "color": "0070C0"
+      },
+      {
+        "text": "Assistant Editorial Gentleman",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "掌貳著作郎修國史",
+        "color": null
+      },
+      {
+        "text": "Assist the Editorial Gentleman in writing the state’s history. ",
+        "color": null
+      },
+      {
+        "text": "第七品，三人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 3 people",
+        "color": null
+      },
+      {
+        "text": "太和中置<br>Established in the Taihe era",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "著作主書令史 ",
+        "color": null
+      },
+      {
+        "text": "Editorial Scribe",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "東觀令 ",
+        "color": null
+      },
+      {
+        "text": "Director of the Eastern Library",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "(魏)第八品，員數無考 (吳)一人",
+        "color": null
+      },
+      {
+        "text": "(Wei) Eighth grade,  nuumbers unknown (Wu) 1 person",
+        "color": null
+      },
+      {
+        "text": "按國山碑，吴東觀乃屬中書，與魏著作同<br>According to the Guoshan Stele, the Wu’s Eastern Library was subordinate to the Palace Secretariat, similar to the Wei’s Editorial Gentleman.<br><br>又按後漢書，東觀多經籍，疑吴仿漢制置此官<br>And according to the Book of the Later Han, the Eastern Library was rich with classical texts, It is suspected that Wu modeled this position after the Han system",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "東觀左右丞",
+        "color": "0070C0"
+      },
+      {
+        "text": "Left/Right Assistants of the Eastern Library",
+        "color": "0070C0"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "尚書 State Affairs": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "亦稱尚書省、尚書臺、內臺；出則爲行臺。<br>Also called the State Affairs Department, State Affairs Terrace or the Central Terrace; when out of the capital, known as the Acting Terrace.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "錄尚書事 ",
+        "color": null
+      },
+      {
+        "text": "Authority over State Affairs",
+        "color": null
+      },
+      {
+        "text": "錄尚書事 <br><br>平尚書事",
+        "color": null
+      },
+      {
+        "text": "Authority over State Affairs<br><br>Involvement in State Affairs ",
+        "color": null
+      },
+      {
+        "text": "錄尚書事 <br><br>領尚書事<br><br>平尚書事<br><br>分平尚書事<br><br>省尚書事",
+        "color": null
+      },
+      {
+        "text": "Authority over State Affairs<br><br>Direction of State Affairs<br><br>Involvement in State Affairs <br><br>Joint Involvement in State Affairs<br><br>Review of State Affairs ",
+        "color": null
+      },
+      {
+        "text": "職無不總",
+        "color": null
+      },
+      {
+        "text": "Encompass all duties",
+        "color": null
+      },
+      {
+        "text": "無常員",
+        "color": null
+      },
+      {
+        "text": "No fixed number",
+        "color": null
+      },
+      {
+        "text": "僅為加官，公卿權重者為之，凡重號將軍刺史，皆得命曹授用，惟不得施除及加節<br>Only an additional title, conferred upon Excellencies and Ministers of great influence. High-ranking generals and Inspectors could be ordered and designated under its authority, though the power did not extend to making actual appointments or conferring the Imperial Staff<br><br><br>惟知樞要者得領錄尚書，其次謂平，又次為省<br>Only those entrusted with critical affairs could have Direction or Authority Over State Affairs, next would be Involvement, followed by Review",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "尚書令 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Director of the Imperial Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "尚書令 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Director of the Imperial Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "尚書令 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Director of the Imperial Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "掌凡選署及奏下尚書文書衆事，總典綱紀，無所不統",
+        "color": null
+      },
+      {
+        "text": "In charge of all appointments, assignments, and matters mentioned in documents submitted to the various Imperial Secretariats, oversee the overall regulations and guidelines, with no areas outside their authority  ",
+        "color": null
+      },
+      {
+        "text": "第三品，千石，一人",
+        "color": null
+      },
+      {
+        "text": "Third grade, 1000 dan, 1 peson",
+        "color": null
+      },
+      {
+        "text": "漢猶隸少府，魏時政歸臺閣<br>During the Han still subordinate to the Minister of the Lesser Treasury, but by the Wei became under the State Affairs Terrace",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "尚書僕射 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Deputy Director of the Imperial Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "尚書僕射 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Deputy Director of the Imperial Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "尚書僕射 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Deputy Director of the Imperial Secretariat",
+        "color": "C00000"
+      },
+      {
+        "text": "主開封，掌授廩假錢穀；署尚書事，令不在，則奏下衆事",
+        "color": null
+      },
+      {
+        "text": "In charge of managing the records, and oversee the distribution of salaries, loans, and grains; handle submissions to Imperial Secretariats, and reported on various matters when the Director is absent",
+        "color": null
+      },
+      {
+        "text": "第三品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Third grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "魏制，置二則左右僕射；令闕，則左為省主，若左右並闕，則置尚書僕射<br>In Wei, sometimes two deputies would be appointed, and they would be Left and Right Deputy Directors; when there is no Director, then the Left Deputy will be the head of the department, if there is neither Left or Right Deputy Director, then a Deputy Director would be appointed",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "尚書",
+        "color": null
+      },
+      {
+        "text": "Imperial Secretariat ",
+        "color": null
+      },
+      {
+        "text": "尚書",
+        "color": null
+      },
+      {
+        "text": "Imperial Secretariat ",
+        "color": null
+      },
+      {
+        "text": "尚書",
+        "color": null
+      },
+      {
+        "text": "Imperial Secretariat ",
+        "color": null
+      },
+      {
+        "text": "典諸曹事",
+        "color": null
+      },
+      {
+        "text": "In charge of matters in their respective sections",
+        "color": null
+      },
+      {
+        "text": "第三品，六百石，(魏)五人",
+        "color": null
+      },
+      {
+        "text": "Third grade, 600 dan, (Wei) 5 people",
+        "color": null
+      },
+      {
+        "text": "魏有五曹：有吏部﹑左民﹑客曹﹑五兵﹑度支；吏部亦曰選曹/選部<br>Wei had 5 sections: Personnel, Civil, Guest, Troops, and Expenditure; the Personnel Section is also known as the Selection Section<br><br>蜀無考，疑承漢制，亦置選部﹑民曹﹑三公曹﹑二千石曹﹑客曹<br>The system in Shu is not known, it is suspected that Shu followed the Han’s standards, with the Selection, Civil, Three Excellencies, Two-thousand dan and Guest Sections<br><br>吳有選曹﹑戶曹﹑左曹﹑賊曹，國山碑云亦云四尚書，或數止四人<br>In Wu it is known that there were Selection, Civil Affairs, Left and Banditry Sections; The Guoshan Stele also states 4 names only, perhaps Wu only had four Imperial Secretariats",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "吏部職右于諸曹，主選事，左民主繕修功作﹑塩池園苑，客曹主外國夷狄，五兵主中兵﹑外兵﹑騎兵﹑別兵﹑都兵，度支專掌軍國支計；又以五曹尚書﹑二僕射﹑一令為八座。<br>The Personnel Section is more prestigious the other Sections, in charge of official selection matters; the Civil Section oversees repairs, construction works, salt fields, and gardens; the Guest Section manages affairs related to foreign states and tribes; the Troop Section was in charge of central troops, external troops, cavalry, specialized troops, and capital troops; the Expenditure Section exclusively manage financial planning for military and state expenditures; additionally, the five Section Imperial Secretaries, two Deputy Directors, and one Director collectively made up the Eight Seats.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "尚書左右丞 ",
+        "color": null
+      },
+      {
+        "text": " Imperial Secretariat Left/Right Assistants ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "左丞主臺內禁令﹑宗廟祠祀﹑朝儀禮制﹑選用置吏，紀諸不法。<br><br>右丞掌庫藏廬舍，凡諸器用之物﹑刑獄兵器",
+        "color": null
+      },
+      {
+        "text": "The Left Assistant is responsible for imperial edicts within the Terrace, oversees ancestral temple rituals and sacrifices, manages court ceremonies and protocols, handles the selection and appointment of officials, and records all unlawful activities. <br><br>The Right Assistant is in charge of the treasury and storage facilities, including all items for general use, and handles judicial and prison affairs and military equipment ",
+        "color": null
+      },
+      {
+        "text": "第六品，四百石，二人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 400 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "尚書諸曹典事 ",
+        "color": "0070C0"
+      },
+      {
+        "text": "Various Imperial Secretariat Sections Managers",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品",
+        "color": null
+      },
+      {
+        "text": "Seventh grade",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "尚書主書令史 ",
+        "color": "0070C0"
+      },
+      {
+        "text": "Imperial Secretariat Scribe",
+        "color": "0070C0"
+      },
+      {
+        "text": "尚書主書令史 ",
+        "color": "0070C0"
+      },
+      {
+        "text": "Imperial Secretariat Scribe",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "?",
+        "color": "0070C0"
+      },
+      {
+        "text": "書省讀",
+        "color": null
+      },
+      {
+        "text": "Copy and proofread documents",
+        "color": null
+      },
+      {
+        "text": "第八品",
+        "color": null
+      },
+      {
+        "text": "Eighth grade",
+        "color": null
+      },
+      {
+        "text": "尚書郎以草呈示令僕訖，乃付令史書之，書訖，共省讀之，內本來，臺郎統之，令史不行知也。書之不好，令史坐之<br>The Imperial Secretariat Gentlemen would draft documents and present it to the Director and Deputy Director for review. Once approved, they would be given to the Scribe to copy. After the copying was completed, the Gentlemen and Scribes would together proofread it. The contents of the documents were decided by the Gentleman, and the scribes would not be involved. If the copied document was poorly written, the scribe would be held accountable ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "尚書侍郎<br><br>尚書郎中",
+        "color": null
+      },
+      {
+        "text": "Imperial Secretariat Attendant Gentleman<br><br>Imperial Secretariat Court Gentleman",
+        "color": null
+      },
+      {
+        "text": "尚書侍郎<br><br>尚書郎中",
+        "color": null
+      },
+      {
+        "text": "Imperial Secretariat Attendant Gentleman<br><br>Imperial Secretariat Court Gentleman",
+        "color": null
+      },
+      {
+        "text": "尚書侍郎<br><br>尚書郎中",
+        "color": null
+      },
+      {
+        "text": "Imperial Secretariat Attendant Gentleman<br><br>Imperial Secretariat Court Gentleman",
+        "color": null
+      },
+      {
+        "text": "主作文書起草",
+        "color": null
+      },
+      {
+        "text": "In charge of drafting documents",
+        "color": null
+      },
+      {
+        "text": "第六品，四百石",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 400 dan",
+        "color": null
+      },
+      {
+        "text": "統稱尚書郎，資深勤能者可為侍郎<br>Collectively referred to as the Imperial Secretariat Gentleman, those who are talented and hardworking, with seniority, can become Attendant Gentleman<br><br>取年未五十有材能者，使文筆眞草；每一郎闕，白試諸孝廉能結文案者五人，謹封奏其姓名以補之<br>Appoint those below fifty years of age and of talent, had them drafting documents with clear meanings in both regular and cursive script; whenever a Gentleman position became vacant, five filial and incorrupt candidates proficient in drafting documents would be assessed, their names would be carefully sealed and submitted for approval to fill the position ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "魏有殿中﹑吏部﹑駕部﹑金部﹑虞曹﹑比部﹑南北主客﹑祠部﹑度支﹑庫部﹑農部﹑水部﹑儀曹﹑三公﹑倉部﹑民曹﹑二千石﹑中兵﹑外兵﹑都兵﹑別兵﹑考功﹑定課、都官﹑騎兵，合凡二十五部<br>Wei had a total of 25 divisions: Palace Affairs, Personnel, Carriage, Finance, Forestry, Judicial Affairs, Southern and Northern Guest, Rituals, Expenditure, Storage, Agriculture, Waterways, Rites, Three Excellencies, Granaries, Civil, Two-thousand dan, Central Troops, External Troops, Capital Troops, Specialized Troops, Merit Assessment, Ordinance, Capital Officials and Cavalry Divisions<br><br>蜀惟有吏部﹑左選﹑右選﹑度支，吳惟知有選曹，其餘無考<br>Shu only known to have Personnel, Left Selection, Right Selection and Expenditure Divisions, Wu only known to have Selection Division, others unknown",
+        "color": null,
+        "colspan": 11
+      }
+    ]
+  ],
+  "秘書 Imperial Archives ": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "魏之祕書，即漢之東觀。郡國稱敢言之士上東觀。初屬少府，及王肅為監，乃不復屬。<br>The Wei’s Imperial Archives is equivalent to the Eastern Library of the Han. Scholars of integrity from commanderies and states would be recommended to work in the Eastern Library. Initially under the Minister of the Lesser Treasury, but during Wang Su’s tenure as the Supervisor, it became independent.<br><br>又，蘭臺亦藏書籍，而御史掌之。時言蘭臺為外臺，祕書為內閣。<br>The Orchid Terrace also housed books and texts, managed by the Censorate. The Orchid Terrace is considered an outer terrace, while the Imperial Archives is regarded as an inner cabinet.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "祕書監 ",
+        "color": null
+      },
+      {
+        "text": "Supervisor of the Imperial Archives ",
+        "color": null
+      },
+      {
+        "text": "祕書令 ",
+        "color": null
+      },
+      {
+        "text": "Director of the Imperial Archives",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "掌藝文圖籍之事，或以他官領之",
+        "color": null
+      },
+      {
+        "text": "Responsible for matters regarding book collections and archival registers, sometimes concurrently held by another official",
+        "color": null
+      },
+      {
+        "text": "第三品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Third grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "魏武帝初置祕書令，亦典尚書奏事，黃初中分為中書令、祕書監 <br>Emperor Wu first established Director of the Imperial Archives, in charged of submissions to the Imperial Secretariats and book collections and archives. At the beginning of the Huangchu era, split into Director of the Palace Secretariat and Supervisor of the Imperial Archives",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "祕書左右丞 ",
+        "color": null
+      },
+      {
+        "text": "Left and Right Assistants of the Imperial Archives",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "掌文籍",
+        "color": null
+      },
+      {
+        "text": "manage texts and records",
+        "color": null
+      },
+      {
+        "text": "第六品，四百石，二人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 400 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "多以祕書郎遷之<br>Often filled by promoting Imperial Archives Gentleman to this position",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "祕書郎 ",
+        "color": null
+      },
+      {
+        "text": "Imperial Archives Gentleman",
+        "color": null
+      },
+      {
+        "text": "祕書郎 ",
+        "color": null
+      },
+      {
+        "text": "Imperial Archives Gentleman",
+        "color": null
+      },
+      {
+        "text": "祕府郎 ",
+        "color": null
+      },
+      {
+        "text": "Imperial Repository Gentleman",
+        "color": null
+      },
+      {
+        "text": "掌中外三閣經書，覆校殘缺，正定脫誤",
+        "color": null
+      },
+      {
+        "text": "Oversee the classics and books in the archives, review and patch incomplete records, and correct errors and omissions ",
+        "color": null
+      },
+      {
+        "text": "(魏、蜀)第六品，四百石，四人",
+        "color": null
+      },
+      {
+        "text": "(Wei & Shu)Sixth grade, 400 dan, 4 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "校書郎 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman for Document Reviews",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "典校祕書",
+        "color": null
+      },
+      {
+        "text": "Collect and review the archives",
+        "color": null
+      },
+      {
+        "text": "第八品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Eight grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "祕書主書令史",
+        "color": null
+      },
+      {
+        "text": "Imperial Archives Scribe",
+        "color": null
+      },
+      {
+        "text": "祕書主書令史",
+        "color": null
+      },
+      {
+        "text": "Imperial Archives Scribe",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第八品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Eight grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "祕書主圖令史<br><br>祕書主譜令史  ",
+        "color": null
+      },
+      {
+        "text": "Imperial Archives Clerk of Maps<br><br>Imperial Archives Clerk of Registers",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第八品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Eight grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "御史臺 Censorate": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "御史中丞 <br><br>宮正<br><br>臺主",
+        "color": "C00000"
+      },
+      {
+        "text": "Deputy Imperial Censor<br><br>Palace Rectifier<br><br>Master of the Censorate",
+        "color": "C00000"
+      },
+      {
+        "text": "御史中丞 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Deputy Imperial Censor",
+        "color": "C00000"
+      },
+      {
+        "text": "御史中丞 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Deputy Imperial Censor",
+        "color": "C00000"
+      },
+      {
+        "text": "督部刺史，領侍御史，受公卿奏事，舉劾彈章",
+        "color": null
+      },
+      {
+        "text": "Supervise the Inspectors, and oversee the Attendant Censors; handle memorials from Excellencies and Ministers, and initiate investigations and draft impeachments",
+        "color": null
+      },
+      {
+        "text": "第四品，一人",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "亦在殿中蘭臺掌圖籍秘書；及御史大夫轉為司空，出為御史臺率<br>Also manage documents and archives in the Orchid Terrace within the palace. When the Imperial Censor was changed to Excellency of Works, this position became the head of the Censorate<br><br>魏黃初初改為宮正，復為臺主，尋又改曰中丞<br>At the beginning of Huangchu era, Wei renamed it to Palace Rectifier, later renamed to Master of the Censorate, soon again changed back to Deputy",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "督軍御史中丞",
+        "color": null
+      },
+      {
+        "text": "Deputy Imperial Censor supervising the Army",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "黃初二年官省<br>Abolished in the 2nd year of Huangchu",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "治書執法 <br><br>持書執法",
+        "color": null
+      },
+      {
+        "text": "Secretarial Upholder of the Law",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "中﹑左﹑右執法 ",
+        "color": null
+      },
+      {
+        "text": "Central / Left / Right Upholder of the Law",
+        "color": null
+      },
+      {
+        "text": "(魏)掌奏劾; (吳)平諸官事",
+        "color": null
+      },
+      {
+        "text": "(Wei) Manage impeachment memorials; (Wu) Adjudicate various official matters",
+        "color": null
+      },
+      {
+        "text": "(魏)第六品，一人; (吳)各一人",
+        "color": null
+      },
+      {
+        "text": "(Wei) Sixth grade, 1 person; (Wu) 1 person each",
+        "color": null
+      },
+      {
+        "text": "治亦作持<br>治 (zhi) sometimes written as 持 (chi)",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "督軍糧執法 ",
+        "color": null
+      },
+      {
+        "text": "Upholder of the Law supervising Provisions",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第六品，一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "出征則置<br>Appointed when launching expeditions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "治書侍御史<br><br>持書侍御史",
+        "color": null
+      },
+      {
+        "text": "Secretarial Attendant Censor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "掌律令，分掌侍御史所掌諸曹",
+        "color": null
+      },
+      {
+        "text": "In charge of law and ordinances and the various sections under the Attendant Censors  ",
+        "color": null
+      },
+      {
+        "text": "第六品，六百石，二人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 600 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "治亦作持<br>治 (zhi) sometimes written as 持 (chi)<br><br>為御史中丞佐貳<br>As second-in-command under the Deputy Imperial Censor",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "侍御史",
+        "color": null
+      },
+      {
+        "text": "Attendant Censor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "侍御史",
+        "color": null
+      },
+      {
+        "text": "Attendant Censor",
+        "color": null
+      },
+      {
+        "text": "掌察舉非法，受公卿羣吏奏事，有遺失者，舉劾之",
+        "color": null
+      },
+      {
+        "text": "Responsible for discerning unlawful actions, receiving reports from Excellencies, Ministers, and other officials. If there were any mistakes or misconduct, they would investigate and file impeachments ",
+        "color": null
+      },
+      {
+        "text": "第七品，六百石，(魏)八人 (吳)無考",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 600 dan, (Wei) 8 people (Wu) unknown",
+        "color": null
+      },
+      {
+        "text": "魏凡八部，是以亦稱部曹御史，有治書曹，掌度支運，課第曹，掌考課，不知其餘曹<br>In Wei totalled eight divisions, thus also known as Section Attendant Censor.  Sections include Secretarial Section that manage the allocation and transportation of resources, and the Merit Section that manage evaluations and appraisals, the other sections are unknown",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "殿中侍御史",
+        "color": null
+      },
+      {
+        "text": "Palace Attendant Censor",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "居殿中，察非法",
+        "color": null
+      },
+      {
+        "text": "Station within the palace and discern unlawful conduct",
+        "color": null
+      },
+      {
+        "text": "第七品，六百石，二人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 600 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "魏初置，由蘭臺遣二御史<br>Established at the beginning of Wei, dispatched from the Orchid Terrace",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "三臺﹑五都侍御史 ",
+        "color": null
+      },
+      {
+        "text": "Attendant Censor of the Three Terraces/Five Capitals",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品，每臺、都各一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person each at each terrace/capital",
+        "color": null
+      },
+      {
+        "text": "魏以長安﹑譙﹑許都﹑鄴﹑洛陽為五都<br>The Wei designated Chang’an, Qiao, Xuchang, Ye, and Luoyang as the Five Capitals. <br><br>洪飴孫唯言三臺有尚書﹑符節，餘一臺未明<br>Hong Yisun only mentioned the Three Terraces included the State Affairs Terrace and  the Insignia Terrace, the last terrace is unclear",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "督軍糧御史 ",
+        "color": null
+      },
+      {
+        "text": "Censor supervising Provisions",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "監農御史 ",
+        "color": null
+      },
+      {
+        "text": "Censor supervising Agriculture",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "(魏) 第七品，(魏、吳) 一人",
+        "color": null
+      },
+      {
+        "text": "(Wei) Seventh grade, (Wei & Wu) 1  person",
+        "color": null
+      },
+      {
+        "text": "魏出征則置<br>The Wei position was appointed when launching expeditions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "禁防御史 ",
+        "color": null
+      },
+      {
+        "text": "Monitoring Censor",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "蘭臺令史 ",
+        "color": null
+      },
+      {
+        "text": "Orchid Terrace Scribe",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "掌奏及印工文書",
+        "color": null
+      },
+      {
+        "text": "In charge of drafting memorials and preparing document templates for seal-making ",
+        "color": null
+      },
+      {
+        "text": "第九品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Ninth grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "按後漢書，秩百石<br>Per the Book of the Later Han, salary 100 dan",
+        "color": null
+      }
+    ]
+  ],
+  "都水臺 Waterways Terrace ": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "都水使者",
+        "color": "C00000"
+      },
+      {
+        "text": "Commissioner of Waterways",
+        "color": "C00000"
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主陂池灌漑﹑保守河渠",
+        "color": null
+      },
+      {
+        "text": "Responsible for managing reservoirs and irrigation, and maintaining rivers and canals",
+        "color": null
+      },
+      {
+        "text": "第四品，一人",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "前、後、左、右、中水衡都尉 ",
+        "color": null
+      },
+      {
+        "text": "Front / Rear / Left / Right / Central Commandant of Waterways",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主天下水軍舟船器械",
+        "color": null
+      },
+      {
+        "text": "Responsible for the naval ships and equipment across the realm ",
+        "color": null
+      },
+      {
+        "text": "第六品，五人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 5 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "河隄謁者 ",
+        "color": null
+      },
+      {
+        "text": "River Dikes Emissary",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主陂池灌漑﹑保守河渠",
+        "color": null
+      },
+      {
+        "text": "Responsible for managing reservoirs and irrigation, and maintaining rivers and canals",
+        "color": null
+      },
+      {
+        "text": "第七品，五人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 5 people",
+        "color": null
+      },
+      {
+        "text": "凡五部，是以五人<br>Totalling five divisions, hence 5 people",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "都水參軍",
+        "color": null
+      },
+      {
+        "text": "Waterways Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第七品，二人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 2 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "令史",
+        "color": null
+      },
+      {
+        "text": " Foreman Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第八品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Eight grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "符節臺 Insignia Terrace": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "符節令 ",
+        "color": null
+      },
+      {
+        "text": "Director of Imperial Insignia",
+        "color": null
+      },
+      {
+        "text": "符節令 ",
+        "color": null
+      },
+      {
+        "text": "Director of Imperial Insignia",
+        "color": null
+      },
+      {
+        "text": "符節令 ",
+        "color": null
+      },
+      {
+        "text": "Director of Imperial Insignia",
+        "color": null
+      },
+      {
+        "text": "掌授節﹑銅虎符",
+        "color": null
+      },
+      {
+        "text": "In charge of issuing Staffs and bronze Tiger Tallies ",
+        "color": null
+      },
+      {
+        "text": "第五品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "魏制，位次御史中丞<br>In Wei,  ranked second to the Deputy Imperial Censor",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "符璽郎",
+        "color": null
+      },
+      {
+        "text": "Gentleman of the Seals and Tallies",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "符節郎 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman of Imperial Insignia",
+        "color": null
+      },
+      {
+        "text": "在中主璽及虎符﹑竹符之半者",
+        "color": null
+      },
+      {
+        "text": "In the palace manage the imperial seal, as well as one half of the tiger tallies and bamboo tallies",
+        "color": null
+      },
+      {
+        "text": "第七品，四人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 4 people",
+        "color": null
+      },
+      {
+        "text": "故事，遣將出征，符璽郎授斧鉞于西堂<br>Per tradition, when dispatching generals on expeditions, the Gentleman of Seals and Tallies would present the Yue in the western hall",
+        "color": null
+      }
+    ]
+  ],
+  "其餘 Others": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "崇文觀祭酒",
+        "color": null
+      },
+      {
+        "text": "Libationer of the Hall of Lofty Literature",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "崇文觀靑龍四年置，徵善屬文者充之<br>The Hall of Lofty Literature was established in the 4th year of Qinglong, recruiting individuals skilled in composing literary works to fill its positions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "殿中監 ",
+        "color": "C00000"
+      },
+      {
+        "text": "Palace Superintendent",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "-",
+        "color": "C00000"
+      },
+      {
+        "text": "掌帳設監護之事",
+        "color": null
+      },
+      {
+        "text": "In charge of curtains and hangings, as well as the guarding and supervision of the palace",
+        "color": null
+      },
+      {
+        "text": "第七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "典事",
+        "color": null
+      },
+      {
+        "text": " Manager",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "第九品，員數無考",
+        "color": null
+      },
+      {
+        "text": "Ninth grade, numbers unknown",
+        "color": null
+      },
+      {
+        "text": "屬殿中監<br>Subordinate to the Palace Superintendent",
+        "color": null
+      }
+    ]
+  ]
+}

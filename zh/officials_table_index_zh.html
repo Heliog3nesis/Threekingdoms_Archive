@@ -129,18 +129,26 @@ display: block;
 </p>
 </section>
 </div>
-<!--
-<div class="location-finder" style="margin-top: 0.5rem;"><h3>官職檢索</h3>
-    <li>支持中英輸入</li>
-    <li>顯示英文+繁體結果</li>
-  <br>
-  <input type="text" id="searchInput" placeholder="輸入官職..." />
-<button style="background-color:#daa520; padding:1px; color:black"; onclick="handleSearch()">檢索</button>
 
-<div id="searchWarning"></div>
-<br>
-<div id="searchResult"></div>
-</div> -->
+<div class="location-finder" 
+     style="margin-top:0.5rem; display:flex; flex-direction:column; align-items:center; text-align:center;">
+
+  <h3>官職檢索</h3>
+  <div style="display:flex; gap:5px; margin-bottom:0.5rem;">
+    <input type="text" id="searchInput" placeholder="輸入官職..." />
+    <button style="background-color:#b8860b; padding:3px; color:black;" onclick="handleSearch()">檢索</button> 
+  </div>
+
+  <ul style="list-style:none; padding:0; margin:0; color:grey;">
+    <li>支持中英輸入</li>
+    <li>結果將顯示在新頁面</li>
+  </ul>
+  <!-- <br><br>
+    <button style="background-color:#20c997"; class= "about-button" onclick="window.open('../index.html','_blank')">
+  官職索引 ➤
+</button> -->
+</div>
+
 </div>
 
 <section id="Guide" class="section">
@@ -183,6 +191,8 @@ display: block;
         (?): 無考
         <br>
         (-):  無
+        <br>
+        ( ): [職/品秩员] 無相關信息
       </div>
     </div>
     </td>
@@ -190,12 +200,12 @@ display: block;
 </table>
 <br>
 <div style="margin: 0 auto; font-size: 16px; max-width: fit-content;"> 
-    <p> <b>百官分爲以下五項</b> (建議使用電腦訪問):
+    <p> <b>官職分爲以下五項</b> (建議使用電腦訪問):
         </p></div>
 <div class="link-grid">
   <a href="excellencies_ministers_zh.html" class="card card1">公卿</a>
   <a href="rear_eastern_palace_zh.html" class="card card2">后宮東宮</a>
-  <a href="" class="card card3">中朝臺省 (WIP)</a>
+  <a href="central_court_zh.html" class="card card3">中朝臺省</a>
   <a href="" class="card card4">武將 (WIP)</a>
   <a href="" class="card card5">外官 (WIP)</a>
 </div>
@@ -316,6 +326,17 @@ display: block;
 
  
   includeHTML("footer", "../footer.html");
+
+     // Load location_finder.js with resolved path
+  const isGithub = location.hostname.includes("github.io");
+  const pathParts = window.location.pathname.split("/");
+  const repoName = pathParts[1] || "";
+  const basePath = isGithub ? `/${repoName}/` : "../";
+
+  const finderScript = document.createElement("script");
+  finderScript.src = basePath + "scripts/position_finder.js";
+  document.head.appendChild(finderScript);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js"></script>
 </body>
 </html>

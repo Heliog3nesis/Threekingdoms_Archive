@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>中朝臺省表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    h1{
+        font-size:20px;
+        margin-top:3rem;
+        margin-left: 2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      font-size: 16px;
+    }
+    .custom-sheet, .sheet-selector {
+    margin-left: 2rem;
+    font-size: 14px;
+    }
+    select {
+      padding: 0.5rem;
+      background: #222;
+      color: white;
+      border: 1px solid #555;
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+    table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    background: #222;
+    overflow-x: auto;
+    font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #555;
+      padding: 6px 10px;
+      color: white;
+      min-width: 10ch;
+    }
+  </style>
+</head>
+<body>
+<div id="navbar"></div>
+  <h1>中朝臺省表</h1>
+<button 
+  onclick="location.href='officials_table_index_zh.html';" 
+  style="margin-left: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">
+  ← 返回
+</button>
+  <h2>類別</h2>
+  <div class="sheet-selector">
+  <label for="sheet-select">請選擇:</label>
+  <select id="sheet-select"></select>
+  </div>
+  <div id="table-container"></div>
+
+  <script>
+    let sheetData = {};
+
+     fetch("../translations/central_court_webdisplay.json")
+    .then(res => res.json())
+    .then(data => {
+        const sheetNames = Object.keys(data);   
+        sheetData = data;
+
+        const selector = document.getElementById("sheet-select");
+        sheetNames.forEach(sheet => {           
+        const opt = document.createElement("option");
+        opt.value = sheet;
+        opt.textContent = sheet;
+        selector.appendChild(opt);
+        });
+
+        selector.addEventListener("change", () => renderSheet(selector.value));
+        renderSheet(sheetNames[0]);             
+    });
+
+
+    function renderSheet(sheetName) {
+      const rows = sheetData[sheetName];
+      const container = document.getElementById("table-container");
+      let html = "<table>";
+
+      for (let i = 0; i < rows.length; i++) {
+        html += "<tr>";
+        for (let j = 0; j < rows[i].length; j++) {
+          const cell = rows[i][j];
+          if (!cell) continue;
+
+          const value = cell.text || "";
+          const color = cell.color ? `color:#${cell.color};` : "";
+          const rowspan = cell.rowspan ? `rowspan="${cell.rowspan}"` : "";
+          const colspan = cell.colspan ? `colspan="${cell.colspan}"` : "";
+
+          html += `<td style="${color}" ${rowspan} ${colspan}>${value}</td>`;
+        }
+        html += "</tr>";
+      }
+
+      html += "</table>";
+      container.innerHTML = html;
+    }
+  </script>
+  <div id="footer"></div>
+
+  <script>
+  async function includeHTML(id, file, callback) {
+    const res = await fetch(file);
+    const html = await res.text();
+    document.getElementById(id).innerHTML = html;
+
+    if (callback) callback();
+  }
+
+  
+  includeHTML("navbar", "nav_zh.html", () => {
+
+    const script = document.createElement("script");
+    script.src = "scripts/navbar_zh.js"; 
+    script.defer = true;
+
+
+    script.onload = () => {
+      const isGithub = location.hostname.includes("github.io");
+      const pathParts = window.location.pathname.split("/");
+      const repoName = pathParts[1] || "";
+      const basePath = isGithub ? `/${repoName}/` : "/";
+
+      if (typeof setNavLinks === "function") {
+        setNavLinks(basePath);
+      } else {
+        console.warn("Navbar logic (setNavLinks) did not load");
+      }
+    };
+
+    document.head.appendChild(script);
+  });
+
+ 
+  includeHTML("footer", "../footer.html");
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Search Results</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; background: #111; color: #eee; }
+    .result-entry { margin-bottom: 1rem; }
+    hr { border: 0; border-top: 1px solid #555; }
+    a { color: #daa520; }
+    #warningBox { color: orange; margin-bottom: 1rem; }
+
+    a.file-link {
+  color: #b19cd9;
+  text-decoration: none;
+    }
+    a.file-link:hover {
+    color: #d8c5f0; 
+    text-decoration: underline; 
+    }
+
+    
+  table.result-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;   
+  }
+  table.result-table th,
+  table.result-table td {
+    vertical-align: middle;   
+    border: 1px solid #555;
+    padding: 4px;
+    text-align: left;
+  }
+
+  table.result-table th:nth-child(1),
+  table.result-table td:nth-child(1),
+  table.result-table th:nth-child(2),
+  table.result-table td:nth-child(2),
+  table.result-table th:nth-child(3),
+  table.result-table td:nth-child(3),
+  table.result-table th:nth-child(4),
+  table.result-table td:nth-child(4),
+  table.result-table th:nth-child(5),
+  table.result-table td:nth-child(5),
+  table.result-table th:nth-child(6),
+  table.result-table td:nth-child(6) {
+    width: 7%;
+  }
+
+  table.result-table th:nth-child(7),
+  table.result-table td:nth-child(7),
+  table.result-table th:nth-child(8),
+  table.result-table td:nth-child(8) {
+    width: 10%;
+  }
+
+  table.result-table th:nth-child(9),
+  table.result-table td:nth-child(9),
+  table.result-table th:nth-child(10),
+  table.result-table td:nth-child(10) {
+    width: 9%;
+  }
+  </style>
+</head>
+<body>
+  <h2 id="pageTitle"></h2>
+  <div id="warningBox"></div>
+  <div id="resultBox"></div>
+
+  <script>
+    // --- Retrieve payload from localStorage ---
+    const payload = JSON.parse(localStorage.getItem("positionSearchResults") || "{}");
+    const lang = payload.lang || "en";
+
+    // --- Repo path detection 
+    const isGithub2 = location.hostname.includes("github.io");
+    const pathParts2 = window.location.pathname.split("/");
+    const repoName2 = pathParts2[1] || "";
+    const basePath2 = isGithub2 ? `/${repoName2}/` : "/";
+
+    // --- File labels mapping ---
+    const FILE_LABELS = {
+  "excellencies_ministers_webdisplay.json": {
+    label: "公卿 Excellencies & Ministers",
+    url: {
+      zh: basePath2 + "../zh/excellencies_ministers_zh.html",
+      en: basePath2 + "translations/excellencies_ministers.html"
+    }
+  },
+  "rear_eastern_palace_webdisplay.json": {
+    label: "后宮東宮 Rear & Eastern Palaces",
+    url: {
+      zh: basePath2 + "../zh/rear_eastern_palace_zh.html",
+      en: basePath2 + "translations/rear_eastern_palace.html"
+    }
+  },
+  "central_court_webdisplay.json": {
+   label: "中朝臺省表 Privy Court & Departmental Officials",
+    url: {
+      zh: basePath2 + "../zh/central_court_zh.html",
+      en: basePath2 + "translations/central_court.html"
+    }
+  }
+};
+
+function getFileLabel(fileName, sheetName, lang) {
+  if (FILE_LABELS[fileName]) {
+    const label = FILE_LABELS[fileName].label; // bilingual label
+    const url = FILE_LABELS[fileName].url[lang] || "#";
+    const fullUrl = `${url}?file=${encodeURIComponent(fileName)}`;
+    return `<a href="${fullUrl}" target="_blank" class="file-link">${label} → ${sheetName}</a>`;
+  }
+  return `${fileName} → ${sheetName}`;
+}
+
+
+
+    // --- UI Labels ---
+    document.getElementById("pageTitle").innerText =
+      lang === "zh" ? "檢索結果" : "Search Results";
+
+    document.title = lang === "zh" ? "檢索結果" : "Search Results";
+
+    // --- Show warning if present ---
+    if (payload.warning) {
+      document.getElementById("warningBox").innerText = payload.warning;
+    }
+
+    // --- Render results ---
+    if (!payload.results || !payload.results.length) {
+    document.getElementById("resultBox").innerHTML =
+        lang === "zh" ? "<p>未找到相關內容。</p>" : "<p>No matching results found.</p>";
+    } else {
+    document.getElementById("resultBox").innerHTML = payload.results.map(r => `
+    <div class="result-entry">
+       <p><li>${getFileLabel(r.file, r.sheet, lang)}</li></p>
+
+        <table class="result-table">
+        <thead>
+            <tr style="color:#FFFF00;">
+            <th>名(魏)</th>
+            <th>Name (Wei)</th>
+            <th>名(蜀)</th>
+            <th>Name (Shu)</th>
+            <th>名(吳)</th>
+            <th>Name (Wu)</th>
+            <th>职</th>
+            <th>Jobscope</th>
+            <th>品秩员</th>
+            <th>Grade, Salary, No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>${r.weiZ}</td>
+            <td>${r.weiE}</td>
+            <td>${r.shuZ}</td>
+            <td>${r.shuE}</td>
+            <td>${r.wuZ}</td>
+            <td>${r.wuE}</td>
+            <td>${r.jobZ}</td>
+            <td>${r.jobE}</td>
+            <td>${r.gradeZ}</td>
+            <td>${r.gradeE}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    `).join("<hr>");
+    }
+
+  </script>
+</body>
+</html>

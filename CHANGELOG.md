@@ -4,6 +4,12 @@ A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
 
+## 🗓️ 2025-09-28 — Major Update
+- 🛠️ Added bilingual **Position Finder Tool** for officials positions
+- 📖 Added officials positions in the Privy Court & Departments
+
+---
+
 ## 🗓️ 2025-09-21 — Major Update
 - 📖 Revamped Three Kingdom Official Positions main page
 - 📖 Added officials positions in the Rear and Eastern Palaces

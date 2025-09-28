@@ -64,24 +64,24 @@
   <script>
     let sheetData = {};
 
-    fetch("../translations/excellencies_ministers_webdisplay.json")
-      .then(res => res.json())
-      .then(data => {
-        const sheetNames = Object.keys(data);
-        const remainingSheets = sheetNames.slice(1); 
+     fetch("../translations/excellencies_ministers_webdisplay.json")
+    .then(res => res.json())
+    .then(data => {
+        const sheetNames = Object.keys(data);   
         sheetData = data;
 
         const selector = document.getElementById("sheet-select");
-        remainingSheets.forEach(sheet => {
-          const opt = document.createElement("option");
-          opt.value = sheet;
-          opt.textContent = sheet;
-          selector.appendChild(opt);
+        sheetNames.forEach(sheet => {           
+        const opt = document.createElement("option");
+        opt.value = sheet;
+        opt.textContent = sheet;
+        selector.appendChild(opt);
         });
 
         selector.addEventListener("change", () => renderSheet(selector.value));
-        renderSheet(remainingSheets[0]);
-      });
+        renderSheet(sheetNames[0]);             
+    });
+
 
     function renderSheet(sheetName) {
       const rows = sheetData[sheetName];

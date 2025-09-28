@@ -118,7 +118,7 @@ display: block;
   ← Return
     </button>
 
-    <h1 style="margin-top: 0rem;">Three Kingdom Official Positions</h1>
+    <h1 style="margin-top: 0rem;">Three Kingdoms Official Positions</h1>
 <div class="map-layout">
 <div class="map-intro" style="margin-top: 0rem;">
     <section id="Introduction" class="section">
@@ -132,18 +132,27 @@ and Charles O. Hucker's <i>A Dictionary of Official Titles in Imperial China</i>
 </p>
 </section>
 </div>
-<!--
-<div class="location-finder" style="margin-top: 0.5rem;"><h3>Position Finder Tool</h3>
-    <li>Accepts input in both English and Chinese</li>
-    <li>Returns names in English and Traditional Chinese</li>
-  <br>
-  <input type="text" id="searchInput" placeholder="Enter official position..." />
-  <button style="background-color:#daa520; padding:3px; color:black"; onclick="handleSearch()">Search</button> 
 
-<div id="searchWarning"></div>
-<br>
-<div id="searchResult"></div>
-</div>-->
+<div class="location-finder" 
+     style="margin-top:0.5rem; display:flex; flex-direction:column; align-items:center; text-align:center;">
+
+  <h3>Position Finder Tool</h3>
+  <div style="display:flex; gap:5px; margin-bottom:0.5rem;">
+    <input type="text" id="searchInput" placeholder="Enter official position..." />
+    <button style="background-color:#b8860b; padding:3px; color:black;" onclick="handleSearch()">Search</button> 
+  </div>
+
+  <ul style="list-style:none; padding:0; margin:0; color:grey;">
+    <li>Accepts input in English and Chinese</li>
+    <li>Results redirects to new page</li>
+  </ul>
+  <!--  <br><br>  
+    <button style="background-color:#20c997"; class= "about-button" onclick="window.open('../index.html','_blank')">
+  Browse Index ➤
+</button>-->
+</div>
+
+
 </div>
 
 <section id="Guide" class="section">
@@ -185,7 +194,9 @@ and Charles O. Hucker's <i>A Dictionary of Official Titles in Imperial China</i>
       <div style="text-align: right;">
         (?): Unknown
         <br>
-        (-):  No such position
+        (-): No such position
+        <br>
+        ( ): [In Jobscope & Salary columns] No information
       </div>
     </div>
     </td>
@@ -198,7 +209,7 @@ and Charles O. Hucker's <i>A Dictionary of Official Titles in Imperial China</i>
 <div class="link-grid">
   <a href="excellencies_ministers.html" class="card card1">Excellencies and Ministers</a>
   <a href="rear_eastern_palace.html" class="card card2">Rear and Eastern Palaces</a>
-  <a href="" class="card card3">Privy Court and Departments (WIP)</a>
+  <a href="central_court.html" class="card card3">Privy Court and Departments</a>
   <a href="" class="card card4">Military Officials (WIP)</a>
   <a href="" class="card card5">Local Officials (WIP)</a>
 </div>
@@ -283,6 +294,8 @@ and Charles O. Hucker's <i>A Dictionary of Official Titles in Imperial China</i>
   });
 </script>
 
+
+
 <script>
   async function includeHTML(id, file, callback) {
     const res = await fetch(file);
@@ -318,6 +331,15 @@ and Charles O. Hucker's <i>A Dictionary of Official Titles in Imperial China</i>
 
  
   includeHTML("footer", "../footer.html");
+
+  const isGithub = location.hostname.includes("github.io");
+  const pathParts = window.location.pathname.split("/");
+  const repoName = pathParts[1] || "";
+  const basePath = isGithub ? `/${repoName}/` : "/";
+  const finderScript = document.createElement("script");
+  finderScript.src = basePath + "scripts/position_finder.js";
+  document.head.appendChild(finderScript);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js"></script>
 </body>
 </html>
