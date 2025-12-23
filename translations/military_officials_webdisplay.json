@@ -1,0 +1,9884 @@
+{
+  "中軍 Central Army": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "中領軍 <br><br>領軍將軍<br><br>行領軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Commander of the Central Army<br><br>General Commanding the Army<br><br>Acting Commander of the Army ",
+        "color": "E4705E"
+      },
+      {
+        "text": "中領軍 <br><br>領軍<br><br>前領軍<br><br>行領軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Commander of the Central Army<br><br>Commander of the Army<br><br>Commander of the Front Army<br><br>Acting Commander of the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "領軍將軍 <br><br>左領軍<br><br>右領軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Commanding the Army<br><br>General Commanding the Left Army<br><br>General Commanding the Right Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "(魏)掌禁兵",
+        "color": "E4705E"
+      },
+      {
+        "text": "(Wei) In charge of the imperial guards ",
+        "color": "E4705E"
+      },
+      {
+        "text": "三品，一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "Third grade, 1 person",
+        "color": "E4705E"
+      },
+      {
+        "text": "魏制，中領軍領五校﹑中壘﹑武衞三營；其資重者為領軍將軍，資輕者為中領軍，出征則置行領軍<br><br>In Wei, the Commander of the Central Army directed the three camps led by the Five Commandants, General of the Central Garrison and General of the Martial Guard. Those with higher prestige and experience held the title General Commanding the Army, while those of lower prestige and experienced held the title Commander of the Central Army; when on campaign, an Acting Commander of the Army would be appointed",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "中護軍 <br><br>護軍將軍 ",
+        "color": null
+      },
+      {
+        "text": "Protector of the Central Army<br><br>General Protecting the Army",
+        "color": null
+      },
+      {
+        "text": "前、後、左、右護軍護軍 <br><br>護軍<br><br>行護軍<br><br>中監軍<br><br>中、後典軍",
+        "color": null
+      },
+      {
+        "text": "Protector of the Front/Rear/Left/Right Army<br><br>Protector of the Army <br><br>Acting Protector of the Army <br><br>Supervisor of the Central Army <br><br>Director of the Central/Rear Army ",
+        "color": null
+      },
+      {
+        "text": "中、左、右護軍 <br><br>護軍",
+        "color": null
+      },
+      {
+        "text": " Protector of the Central/Left/Right Army<br><br>Protector of the Army",
+        "color": null
+      },
+      {
+        "text": "(魏)掌禁兵，亦總統諸將任，主武官選擧",
+        "color": null
+      },
+      {
+        "text": "(Wei) In charge of the imperial guards, also oversee appointments of various generals and manage the selection and promotion of military officials ",
+        "color": null
+      },
+      {
+        "text": "四品，一人",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "魏制，護軍儘以文屬領軍，領軍闕則護軍代其職; 資重者為護軍將軍，資輕者為護軍。<br>In Wei, the Protector of the Army was only a nominal bureaucratic subordinate to the Commander of the Army; when the Commander of the Army was not filled, the Protector of the Army acted in his place. Those with higher prestige and experience held the title General Protecting the Army, while those of lower prestige and experienced held the title Protector of the Central Army<br><br>蜀制，典軍次護軍，護軍次監軍<br>In Shu, the Director rank lower than the Protector, and the Protector rank lower than the Supervisor",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Chief Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，六百石，一人",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": "Seventh grade, 600 dan, 1 person",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": " ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "武衛將軍<br><br>武衛中郎將",
+        "color": null
+      },
+      {
+        "text": "General of the Martial Guards<br><br> Gentleman-General the Martial Guards",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "武衛將軍",
+        "color": null
+      },
+      {
+        "text": "General of the Martial Guards",
+        "color": null
+      },
+      {
+        "text": "典宿衞",
+        "color": null
+      },
+      {
+        "text": "Command the palace guards",
+        "color": null
+      },
+      {
+        "text": "四品，一人",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Chief Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中壘將軍",
+        "color": null
+      },
+      {
+        "text": "General of the Central Garrison",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "典宿衞",
+        "color": null
+      },
+      {
+        "text": "Command the palace guards",
+        "color": null
+      },
+      {
+        "text": "四品，一人",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Chief Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "屯騎校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of Garrison Cavalry",
+        "color": null
+      },
+      {
+        "text": "屯騎校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of Garrison Cavalry",
+        "color": null
+      },
+      {
+        "text": "屯騎校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of Garrison Cavalry",
+        "color": null
+      },
+      {
+        "text": "典宿衞",
+        "color": null,
+        "rowspan": 5
+      },
+      {
+        "text": "Command the palace guards",
+        "color": null,
+        "rowspan": 5
+      },
+      {
+        "text": "四品，比二千石，一人",
+        "color": null,
+        "rowspan": 5
+      },
+      {
+        "text": "Fourth grade, Equivalent to 2000 dan, 1 person",
+        "color": null,
+        "rowspan": 5
+      },
+      {
+        "text": "漢制，諸校尉皆領士七百人，惟長水領烏桓胡騎七百三十六人<br>During Han, each Colonel led 700 soliders, except for the Changshui Regiment which had 736 Wuhuan Hu Cavalries<br><br>又，魏晉沿漢制，但職位漸輕<br>Also, though these five colonels were inherited in the Wei-Jin period, their importance gradually declined",
+        "color": null,
+        "rowspan": 5
+      }
+    ],
+    [
+      {
+        "text": "步兵校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Footsoldiers",
+        "color": null
+      },
+      {
+        "text": "步兵校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Footsoldiers",
+        "color": null
+      },
+      {
+        "text": "步兵校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Footsoldiers",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "越騎校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Elite Cavalry",
+        "color": null
+      },
+      {
+        "text": "越騎校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Elite Cavalry",
+        "color": null
+      },
+      {
+        "text": "越騎校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Elite Cavalry",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長水校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Changshui Regiment",
+        "color": null
+      },
+      {
+        "text": "長水校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Changshui Regiment",
+        "color": null
+      },
+      {
+        "text": "長水校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Changshui Regiment",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "射聲校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Sharpshooters",
+        "color": null
+      },
+      {
+        "text": "射聲校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Sharpshooters",
+        "color": null
+      },
+      {
+        "text": "射聲校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Sharpshooters",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，千石，每校尉各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Seventh grade, 1000 dan, 1 person for each Colonel",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "功曹<br><br>功曹史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Merit Section Foreman Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "每校尉各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "1 person for each Colonel",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "主簿",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Registrar",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "錄省眾事",
+        "color": null
+      },
+      {
+        "text": "Oversee and review all affairs",
+        "color": null
+      },
+      {
+        "text": "九品，每校尉各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Ninth grade, 1 person for each Colonel",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "城門 Capital Gates": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "洛陽城十二門，東有三門，其北曰建春門，次南曰東陽門，次南曰清明門；南有四門，其東曰開陽門，次西曰平昌門，次西曰宣陽門，次西曰津陽門；西有三門，其南曰廣陽門，次北曰西明門，次北曰閶闔門；北有二門，其東曰廣莫門，其西曰大夏門<br>Luoyang City had twelve gates. On the east side were three: to the north, Jianchun Gate; then, Dongyang Gate; and then to the south, Qingming Gate. On the south side were four: starting from the east, Kaiyang Gate, followed by Pingchang Gate, then Xuanyang Gate, and furthest west, Jinyang Gate. On the west side were three: to the south, Guangyang Gate; then, Ximing Gate; and furthest north, Changhe Gate. On the north side were two gates: to the east, Guangmo Gate, and to the west, Daxia Gate",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "城門校尉",
+        "color": "E4705E"
+      },
+      {
+        "text": "Colonel of the Capital Gates",
+        "color": "E4705E"
+      },
+      {
+        "text": "?",
+        "color": "E4705E"
+      },
+      {
+        "text": "?",
+        "color": "E4705E"
+      },
+      {
+        "text": "城門校尉",
+        "color": "E4705E"
+      },
+      {
+        "text": "Colonel of the Capital Gates",
+        "color": "E4705E"
+      },
+      {
+        "text": "掌洛陽城門十二所",
+        "color": "E4705E"
+      },
+      {
+        "text": "In charge of the 12 city gates of Luoyang",
+        "color": "E4705E"
+      },
+      {
+        "text": "四品，比二千石，一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "Fourth grade, Equivalent to 2000 dan, 1 person",
+        "color": "E4705E"
+      },
+      {
+        "text": "吳仿漢制，掌京師諸門<br>Wu followed the Han system, therefore established the Colonel for the city gates of its capital",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "司馬 ",
+        "color": null
+      },
+      {
+        "text": "Major",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主兵城門",
+        "color": null
+      },
+      {
+        "text": "In charge of guarding the city gates",
+        "color": null
+      },
+      {
+        "text": "七品，千石，每門各一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1000 dan, 1 person for each gate",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門候",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Captain",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，六百石，每門各一人",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": "Seventh grade, 600 dan, 1 person for each gate",
+        "color": "3FA2FF",
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "候副",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Vice Captain",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "諸都督軍事 Various Commanders": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "大都督 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand Commander",
+        "color": "E4705E"
+      },
+      {
+        "text": "中都䕶<br><br>行都䕶",
+        "color": "E4705E"
+      },
+      {
+        "text": "Central Protector<br><br>Acting Protector",
+        "color": "E4705E"
+      },
+      {
+        "text": "大都督 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand Commander",
+        "color": "E4705E"
+      },
+      {
+        "text": "統內外軍事",
+        "color": "E4705E"
+      },
+      {
+        "text": "Direct all military affairs",
+        "color": "E4705E"
+      },
+      {
+        "text": "一品，一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "First grade, 1 person",
+        "color": "E4705E"
+      },
+      {
+        "text": "多為加官<br>Commonly only as an additional title<br><br>魏制，不常置，假黃鉞則專戮節將<br>In Wei, not regularly appointed; whenever conferred together with the Yue, the holder would be granted the authority to execute even generals boring the Imperial Staff",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "督軍",
+        "color": null
+      },
+      {
+        "text": "Army Supervisor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "參軍",
+        "color": null
+      },
+      {
+        "text": "Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "都督中外诸军",
+        "color": "E4705E"
+      },
+      {
+        "text": "Commander of All Forces",
+        "color": "E4705E"
+      },
+      {
+        "text": "督中外军事",
+        "color": "E4705E"
+      },
+      {
+        "text": "Commander of All Forces",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "同大都督",
+        "color": "E4705E"
+      },
+      {
+        "text": "Same as the Grand Commander",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      },
+      {
+        "text": "時不加大都督，但稱督中外軍事，職同<br>Sometimes not given the additional title Grand Commander, only known as Commander of All Forces; the duties are the same",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "都督<br><br>都督諸州軍事<br><br>持節都督",
+        "color": null
+      },
+      {
+        "text": "Commander<br><br>Commander of Provincial Forces<br><br>Commander with Imperial Staff",
+        "color": null
+      },
+      {
+        "text": "都督",
+        "color": null
+      },
+      {
+        "text": "Commander  ",
+        "color": null
+      },
+      {
+        "text": "都督",
+        "color": null
+      },
+      {
+        "text": "Commander  ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "四品，無定員",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, no fixed number of posts",
+        "color": null
+      },
+      {
+        "text": "黃初三年始置都督諸州軍事領剌史，使持節爲上，持節次之，假節爲下。使持節得殺二千石以下，持節殺無宫位人，若軍事得𫟋使持節同。假節惟軍事得殺犯軍令者<br>In the 3rd year of Huangchu first established Commander of Provincial Forces concurrently holding the office of Inspector. Those appointed as the Envoy with Imperial Staff ranked highest; those only bearing the Imperial Staff ranked next; those with Provisional Imperial Staff ranked below them. An official who is also Envoy with Imperial Staff can execute officials of 2000 dan and below; an official who only bears the Imperial Staff can execute civilians, though in military situations held the same authority as that of the Envoy with Imperial Staff. An official with only the Provisional Imperial Staff can execute only those who violated military law<br><br>蜀吳多於邊郡要塞置都督<br>Shu and Wu often had Commanders near borders or key strongholds",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "都督護軍",
+        "color": null
+      },
+      {
+        "text": "Protector of the Provincial Army",
+        "color": null
+      },
+      {
+        "text": "都督護軍",
+        "color": null
+      },
+      {
+        "text": "Protector of the Provincial Army",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，無定員",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, no fixed number of posts",
+        "color": null
+      },
+      {
+        "text": "皆隨諸州都督置，也稱護軍<br>Established together with the Commander of various provinces, sometimes just known as Protector of the Army",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "監軍 ",
+        "color": null
+      },
+      {
+        "text": "Army Supervisor",
+        "color": null
+      },
+      {
+        "text": "監軍 ",
+        "color": null
+      },
+      {
+        "text": "Army Supervisor",
+        "color": null
+      },
+      {
+        "text": "監軍 ",
+        "color": null
+      },
+      {
+        "text": "Army Supervisor",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "四品，無定員",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, no fixed number of posts",
+        "color": null
+      },
+      {
+        "text": "諸州時或不置都督，則加官置此官<br>Sometimes the various provinces did not appoint Commanders, then this position is conferred as an additional title<br><br>及將軍領兵出征者皆置監軍<br>When generals go on expeditions, Army Supervisors will be appointed",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "安夷䕶軍 ",
+        "color": null
+      },
+      {
+        "text": "Protector Pacifying the Yi",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "典降氐",
+        "color": null
+      },
+      {
+        "text": "Manage the submitted Di people",
+        "color": null
+      },
+      {
+        "text": "五品，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "治美陽<br>Stationed at Meiyang",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Eight grade, 1 person",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "撫夷護軍 ",
+        "color": null
+      },
+      {
+        "text": "Protector Conciliating the Yi",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "典降氐",
+        "color": null
+      },
+      {
+        "text": "Manage the submitted Di people",
+        "color": null
+      },
+      {
+        "text": "五品，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "治雲陽<br>Stationed at Yunyang",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Eight grade, 1 person",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "護軍 ",
+        "color": null
+      },
+      {
+        "text": "Protector of the Army",
+        "color": null
+      },
+      {
+        "text": "護軍 <br><br>典軍",
+        "color": null
+      },
+      {
+        "text": "Protector of the Army<br><br>Director of the Army",
+        "color": null
+      },
+      {
+        "text": "中、左、右典軍",
+        "color": null
+      },
+      {
+        "text": "Director of the Central/Left/Right Army",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，無定員",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, no fixed number of posts",
+        "color": null
+      },
+      {
+        "text": "諸要鎭及將軍領兵岀征者皆置此官<br>Various key towns and whenever generals go on expeditions, officials would be appointed for this position",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Eight grade, 1 person per Protector",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "諸大將軍 Various Grand Generals": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "驃騎將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of Agile Cavalry",
+        "color": "E4705E"
+      },
+      {
+        "text": "驃騎將軍 <br><br>右驃騎將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of Agile Cavalry<br><br>General of Agile Cavalry on the Right",
+        "color": "E4705E"
+      },
+      {
+        "text": "驃騎將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of Agile Cavalry",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "二品，一人",
+        "color": "E4705E",
+        "rowspan": 9
+      },
+      {
+        "text": "Second grade, 1 person",
+        "color": "E4705E",
+        "rowspan": 9
+      },
+      {
+        "text": "魚豢曰：魏世驃騎車騎為都督，儀與四征同，若不為都督，雖持節屬四征者，與前後左右雜號將軍同。其或散還從文官之例，則位次三司<br>Yu Huan states: In Wei, the General of Agile Cavalry and General of Chariots and Cavalry, if served as a Grand Commander, his ceremonial rank and status were equivalent to that of the Four Conquering Generals. If he did not serve as a Grand Commander, then even if he held an Imperial Staff like the Four Conquering Generals, he would only be regarded the same as Four Direction and other Miscellaneous Generals. If he was detached from military duty and returned as a civil official, he would rank just below the Three Excellencies.<br><br>蜀景耀初復増置右驃騎將軍，分置左右車騎將軍<br>At the beginning of Jingyao era, Shu added General of Agile Cavalry on the Right, and also split to establish General of Chariots and Cavalry on the Left/Right<br><br>秩比三公<br>Rank equivalent to that of the Three Excellencies",
+        "color": "E4705E",
+        "rowspan": 3
+      }
+    ],
+    [
+      {
+        "text": "車騎將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of Chariots and Cavalry",
+        "color": "E4705E"
+      },
+      {
+        "text": "車騎將軍 <br><br>左、右車騎將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of Chariots and Cavalry<br><br>General of Chariots and Cavalry on the Left/Right",
+        "color": "E4705E"
+      },
+      {
+        "text": "車騎將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of Chariots and Cavalry",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "衛將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Guards",
+        "color": "E4705E"
+      },
+      {
+        "text": "衛將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Guards",
+        "color": "E4705E"
+      },
+      {
+        "text": "衛將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Guards",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中軍大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand General of the Central Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "黃初三年置，後不常設<br>Established in the 3rd year of Huangchu, later no longer regularly appointed",
+        "color": "E4705E",
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "上軍大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand General of the Upper Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "鎭軍大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand General Who Guards the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎭軍大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand General Who Guards the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎭軍大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand General Who Guards the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "魏黃初六年置，後不常設<br>In Wei, established in the 6th year of Huangchu, later no longer regularly appointed",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "撫軍大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand General Who Conciliates the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "撫軍將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conciliates the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "撫軍將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conciliates the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "魏黃初五年置<br>In Wei, established in the 5th year of Huangchu",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "南中大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand General of the Southern Interior",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "咸熙二年置，以吳將來降拜，不常設<br>Established in the 2nd year of Xianxi, conferred to Wu generals who surrendered to Wei, not regularly appointed",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "輔國大將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand Bulwark General of the State",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "咸熙元年置，不常設<br>Established in the 1st year of Xianxi, not regularly appointed",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "以下為諸大將軍屬<br>Below are the subordinate officials under the various Grand Generals",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "軍師",
+        "color": null
+      },
+      {
+        "text": "Advisor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "軍師",
+        "color": null
+      },
+      {
+        "text": "Advisor",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長史 ",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "長史 ",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，千石，一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1000 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬 ",
+        "color": null
+      },
+      {
+        "text": "Major",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "中﹑左﹑右司馬",
+        "color": null
+      },
+      {
+        "text": "Major on the Middle/Left/Right ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，千石，(魏)一人(吳)各一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1000 dan, (Wei) 1 person (Wu) 1 person each",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "從事中郎 ",
+        "color": null
+      },
+      {
+        "text": "Assisting Inner Gentlemen",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "從事中郎 ",
+        "color": null
+      },
+      {
+        "text": "Assisting Inner Gentlemen",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，六百石，二人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 600 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "正﹑行參軍 ",
+        "color": null
+      },
+      {
+        "text": "Main & Acting Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "正﹑行參軍 ",
+        "color": null
+      },
+      {
+        "text": "Main & Acting Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，二人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 2 people",
+        "color": null
+      },
+      {
+        "text": "持節為都督者則置六人<br>If the general also held the Imperial Staff and was a Grand Commander, then there would be six people ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下督 ",
+        "color": null
+      },
+      {
+        "text": "Staff Superintendent",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下錄事<br><br>門吏<br><br>門下書吏<br><br>門令史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Staff Records Clerk<br><br>Staff Attendant<br> <br>Staff Documents Clerk<br><br>Staff Foreman Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "1 person each",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "開府則置門令史<br>Gate Foreman Clerk only appointed when an office was formally established",
+        "color": "3FA2FF"
+      }
+    ],
+    [
+      {
+        "text": "營軍督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Garrisoned Army",
+        "color": null
+      },
+      {
+        "text": "營都督",
+        "color": null
+      },
+      {
+        "text": "Commander of the Garrisons ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "刺姦督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of Treachery Inspection",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "帳下督 ",
+        "color": null
+      },
+      {
+        "text": "Commander Under the Tent",
+        "color": null
+      },
+      {
+        "text": "帳下將",
+        "color": null
+      },
+      {
+        "text": "General Under the Tent",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "記室督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Record Keepers",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "記室<br><br>省事令史<br><br>閣下記室<br><br>書令史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Record Keeper<br><br>Consultant Foreman Clerk<br><br>Pavillion Record Keeper <br><br>Documents Foreman Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "1 person each",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "開府則置<br>Only when an office was formally established",
+        "color": "3FA2FF"
+      }
+    ],
+    [
+      {
+        "text": "主簿 ",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "錄省眾事",
+        "color": null
+      },
+      {
+        "text": "Oversee and review all affairs",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "西、東閣下祭酒",
+        "color": null
+      },
+      {
+        "text": "Western/Eastern Pavillion Libationer ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": null,
+        "rowspan": 6
+      },
+      {
+        "text": "1 person each",
+        "color": null,
+        "rowspan": 6
+      },
+      {
+        "text": "開府則置<br>Only when an office was formally established",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "功曹史<br><br>書佐",
+        "color": null
+      },
+      {
+        "text": "Merit Section Foreman Clerk<br><br>Clerical Assistant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "戶曹令史、屬 <br><br>倉曹令史、屬 ",
+        "color": null
+      },
+      {
+        "text": "Civil Affairs Section Foreman Clerk/ Assistant<br><br>Granaries Section Foreman Clerk/ Assistant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "開府則置<br>Only when an office was formally established",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "兵﹑鎧﹑士﹑賊曹令史 ",
+        "color": null
+      },
+      {
+        "text": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "賊曹屬",
+        "color": null
+      },
+      {
+        "text": "Banditry Section Assistant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "開府則置<br>Only when an office was formally established",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "西曹掾、令史﹑學事<br><br>東曹掾、令史﹑學事",
+        "color": null
+      },
+      {
+        "text": "Western Section Administrator/Foreman Clerk/ Apprentice<br><br>Eastern Section Administrator/Foreman Clerk/ Apprentice",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "東西曹掾<br><br>書部從事",
+        "color": null
+      },
+      {
+        "text": "Western/Eastern Section Administrator<br><br>Documentation Office Aide",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "四征四鎮 Conquering & Garrisoning": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "征東將軍 <br><br>征東大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the East<br><br>Grand General Who Conquers the East",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "二品，二千石，一人",
+        "color": "E4705E",
+        "rowspan": 4
+      },
+      {
+        "text": "Second grade, 2000 dan, 1 person",
+        "color": "E4705E",
+        "rowspan": 4
+      },
+      {
+        "text": "黃初中位次三公；領兵屯揚州治所，統靑兖徐揚四州剌史<br>In the Huangchu era ranked second to the Three Excellencies; led troops to station at the administrative seat of Yang province, overseeing the inspectors of Qing, Yan, Xu, and Yang provinces<br><br>資深者爲大將軍<br>Those with seniority were appointed as Grand Conquering Generals",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "征南將軍 <br><br>征南大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the South<br><br>Grand General Who Conquers the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "征南將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "征南將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "魏制同征東，領兵屯新野，統荆豫二州剌史<br>In Wei similar to General Who Conquers the East; led troops to station at Xinye, overseeing the inspectors Jing and Yu provinces",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "征西將軍 <br><br>征西大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the West<br><br>Grand General Who Conquers the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "征西將軍 <br><br>征西大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the West<br><br>Grand General Who Conquers the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "征西將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "魏制同征東，領兵屯薊，統幽冀并三州剌史<br>In Wei similar to General Who Conquers the East; led troops to station at Ji, overseeing the inspectors of You, Ji and Bing provinces<br><br>蜀亦以資深者為大將軍 <br>Shu also had those with seniority appointed as Grand Conquering Generals",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "征北將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "征北將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "征北將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "魏制同征東，領兵屯長安，統雍涼二州剌史<br>In Wei similar to General Who Conquers the East; led troops to station at Chang'an, overseeing the inspectors of Yong and Liang provinces<br><br>魏時征北不常置，故也云三征<br>In Wei times, the General Who Conquers the North was not regularly appointed, hence sometimes also collectively referred to as the Three Conquering Generals",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "鎮東將軍<br><br>鎮東大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the East<br><br>Grand General Who Garrisons the East",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮東將軍<br><br>鎮東大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the East<br><br>Grand General Who Garrisons the East",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮東將軍<br><br>鎮東大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the East<br><br>Grand General Who Garrisons the East",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "二品，一人",
+        "color": "E4705E",
+        "rowspan": 4
+      },
+      {
+        "text": "Second grade, 1 person",
+        "color": "E4705E",
+        "rowspan": 4
+      },
+      {
+        "text": "位次四征，領兵如四征；惟蜀以四征次四鎮<br>Rank below the Four Conquering Generals, but command troops in the same fashion. Only Shu had the Four Conqeuring Generals below the Four Garrisoning Generals<br><br>魏制居是官者皆以功次轉四征，黄初以後諸路征鎮不並置<br>In Wei, those who held this post typically advanced to the Four Conquering Generals based on merit. After the Huangchu era, the various Conquering and Suppressing generals for different regions were no longer concurrently appointed",
+        "color": "E4705E",
+        "rowspan": 4
+      }
+    ],
+    [
+      {
+        "text": "鎮南將軍<br><br>鎮南大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the South<br><br>Grand General Who Garrisons the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮南將軍<br><br>鎮南大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the South<br><br>Grand General Who Garrisons the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮南將軍<br><br>鎮南大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the South<br><br>Grand General Who Garrisons the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "鎮西將軍<br><br>鎮西大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the West<br><br>Grand General Who Garrisons the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮西將軍<br><br>鎮西大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the West<br><br>Grand General Who Garrisons the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮西將軍<br><br>鎮西大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the West<br><br>Grand General Who Garrisons the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "鎮北將軍<br><br>鎮北大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the North<br><br>Grand General Who Garrisons the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮北將軍<br><br>鎮北大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the North<br><br>Grand General Who Garrisons the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎮北將軍<br><br>鎮北大將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons the North<br><br>Grand General Who Garrisons the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "以下為諸將軍屬<br>Below are the subordinate officials under the various Generals",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "軍師",
+        "color": null
+      },
+      {
+        "text": "Advisor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "軍師",
+        "color": null
+      },
+      {
+        "text": "Advisor",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長史 ",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "長史 ",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，千石，一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1000 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬 ",
+        "color": null
+      },
+      {
+        "text": "Major",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "中﹑左﹑右司馬",
+        "color": null
+      },
+      {
+        "text": "Major on the Middle/Left/Right ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，千石，(魏)一人(吳)各一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1000 dan, (Wei) 1 person (Wu) 1 person each",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "從事中郎 ",
+        "color": null
+      },
+      {
+        "text": "Assisting Inner Gentlemen",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "從事中郎 ",
+        "color": null
+      },
+      {
+        "text": "Assisting Inner Gentlemen",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，六百石，二人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 600 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "正﹑行參軍 ",
+        "color": null
+      },
+      {
+        "text": "Main & Acting Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "正﹑行參軍 ",
+        "color": null
+      },
+      {
+        "text": "Main & Acting Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，二人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 2 people",
+        "color": null
+      },
+      {
+        "text": "持節為都督者則置六人<br>If the general also held the Imperial Staff and was a Grand Commander, then there would be six people ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下督 ",
+        "color": null
+      },
+      {
+        "text": "Staff Superintendent",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下錄事<br><br>門吏<br><br>門下書吏<br><br>門令史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Staff Records Clerk<br><br>Staff Attendant<br> <br>Staff Documents Clerk<br><br>Staff Foreman Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "1 person each",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "開府則置門令史<br>Gate Foreman Clerk only appointed when an office was formally established",
+        "color": "3FA2FF"
+      }
+    ],
+    [
+      {
+        "text": "營軍督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Garrisoned Army",
+        "color": null
+      },
+      {
+        "text": "營都督",
+        "color": null
+      },
+      {
+        "text": "Commander of the Garrisons ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "刺姦督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of Treachery Inspection",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "帳下督 ",
+        "color": null
+      },
+      {
+        "text": "Commander Under the Tent",
+        "color": null
+      },
+      {
+        "text": "帳下將",
+        "color": null
+      },
+      {
+        "text": "General Under the Tent",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "記室督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Record Keepers",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "記室<br><br>省事令史<br><br>閣下記室<br><br>書令史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Record Keeper<br><br>Consultant Foreman Clerk<br><br>Pavillion Record Keeper <br><br>Documents Foreman Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "1 person each",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "開府則置<br>Only when an office was formally established",
+        "color": "3FA2FF"
+      }
+    ],
+    [
+      {
+        "text": "主簿 ",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "錄省眾事",
+        "color": null
+      },
+      {
+        "text": "Oversee and review all affairs",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "部曲督",
+        "color": null
+      },
+      {
+        "text": "Commander of Retainers",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品",
+        "color": null
+      },
+      {
+        "text": "Seventh grade",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "騎督",
+        "color": null
+      },
+      {
+        "text": "Cavalry Commander",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "戶曹令史、屬 <br><br>倉曹令史、屬 ",
+        "color": null
+      },
+      {
+        "text": "Civil Affairs Section Foreman Clerk/ Assistant<br><br>Granaries Section Foreman Clerk/ Assistant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "1 person each",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "開府則置<br>Only when an office was formally established",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "兵﹑鎧﹑士﹑賊曹令史 ",
+        "color": null
+      },
+      {
+        "text": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "賊曹屬",
+        "color": null
+      },
+      {
+        "text": "Banditry Section Assistant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "開府則置<br>Only when an office was formally established",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "西曹掾、令史﹑學事<br><br>東曹掾、令史﹑學事",
+        "color": null
+      },
+      {
+        "text": "Western Section Administrator/Foreman Clerk/ Apprentice<br><br>Eastern Section Administrator/Foreman Clerk/ Apprentice",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "東西曹掾<br><br>書部從事",
+        "color": null
+      },
+      {
+        "text": "Western/Eastern Section Administrator<br><br>Documentation Office Aide",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "四安四平 Pacifying & Subduing": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "安東將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the East",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "安東將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the East",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "三品，一人",
+        "color": "E4705E",
+        "rowspan": 8
+      },
+      {
+        "text": "Third grade, 1 person",
+        "color": "E4705E",
+        "rowspan": 8
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "安南將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "安南將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "安南將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "安西將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "安北將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "安北將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "平東將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the East",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "平南將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "平南將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the South",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "平西將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "平西將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "平西將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the West",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "平北將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "平北將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "平北將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "以下為諸將軍屬<br>Below are the subordinate officials under the various Generals",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "軍師",
+        "color": null
+      },
+      {
+        "text": "Advisor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "軍師",
+        "color": null
+      },
+      {
+        "text": "Advisor",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長史 ",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "長史 ",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，千石，一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1000 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬 ",
+        "color": null
+      },
+      {
+        "text": "Major",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "中﹑左﹑右司馬",
+        "color": null
+      },
+      {
+        "text": "Major on the Middle/Left/Right ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，千石，(魏)一人(吳)各一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1000 dan, (Wei) 1 person (Wu) 1 person each",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "從事中郎 ",
+        "color": null
+      },
+      {
+        "text": "Assisting Inner Gentlemen",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "從事中郎 ",
+        "color": null
+      },
+      {
+        "text": "Assisting Inner Gentlemen",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，六百石，二人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 600 dan, 2 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "正﹑行參軍 ",
+        "color": null
+      },
+      {
+        "text": "Main & Acting Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "正﹑行參軍 ",
+        "color": null
+      },
+      {
+        "text": "Main & Acting Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，二人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 2 people",
+        "color": null
+      },
+      {
+        "text": "持節為都督者則置六人<br>If the general also held the Imperial Staff and was a Grand Commander, then there would be six people ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下督 ",
+        "color": null
+      },
+      {
+        "text": "Staff Superintendent",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下錄事<br><br>門吏<br><br>門下書吏<br><br>門令史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Staff Records Clerk<br><br>Staff Attendant<br> <br>Staff Documents Clerk<br><br>Staff Foreman Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "1 person each",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "營軍督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Garrisoned Army",
+        "color": null
+      },
+      {
+        "text": "營都督",
+        "color": null
+      },
+      {
+        "text": "Commander of the Garrisons ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "刺姦督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of Treachery Inspection",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "帳下督 ",
+        "color": null
+      },
+      {
+        "text": "Commander Under the Tent",
+        "color": null
+      },
+      {
+        "text": "帳下將",
+        "color": null
+      },
+      {
+        "text": "General Under the Tent",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "記室督 ",
+        "color": null
+      },
+      {
+        "text": "Commander of the Record Keepers",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "主簿 ",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "錄省眾事",
+        "color": null
+      },
+      {
+        "text": "Oversee and review all affairs",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "部曲督",
+        "color": null
+      },
+      {
+        "text": "Commander of Retainers",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品",
+        "color": null
+      },
+      {
+        "text": "Seventh grade",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "騎督",
+        "color": null
+      },
+      {
+        "text": "Cavalry Commander",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "兵﹑鎧﹑士﹑賊曹令史 ",
+        "color": null
+      },
+      {
+        "text": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk ",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": null
+      },
+      {
+        "text": "1 person each",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "四方及雜號 Four Direction & Misc": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "前將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Front",
+        "color": "E4705E"
+      },
+      {
+        "text": "前將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Front",
+        "color": "E4705E"
+      },
+      {
+        "text": "前將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Front",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "三品，一人",
+        "color": "E4705E",
+        "rowspan": 4
+      },
+      {
+        "text": "Third grade, 1 person",
+        "color": "E4705E",
+        "rowspan": 4
+      },
+      {
+        "text": "魏四方次征鎮安平<br>In Wei, the Four Direction Generals are ranked below the Conquering, Garrisoning, Pacifying and Subduing Generals<br><br>蜀四方位鎮安平征之上<br>In Shu, the Four Direction Generals are ranked above the Garrisoning, Pacifying, Subduing and Conquering Generals",
+        "color": "E4705E",
+        "rowspan": 4
+      }
+    ],
+    [
+      {
+        "text": "後將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Rear",
+        "color": "E4705E"
+      },
+      {
+        "text": "後將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Rear",
+        "color": "E4705E"
+      },
+      {
+        "text": "後將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Rear",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "左將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Left",
+        "color": "E4705E"
+      },
+      {
+        "text": "左將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Left",
+        "color": "E4705E"
+      },
+      {
+        "text": "左將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Left",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "右將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Right",
+        "color": "E4705E"
+      },
+      {
+        "text": "右將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Right",
+        "color": "E4705E"
+      },
+      {
+        "text": "右將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Right",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "以上四方將軍，官屬同四平<br>The above are the Four Direction Generals, subordiniates same as those of the Four Subduing<br><br>以下三品雜號將者，在九卿上，官屬亦同四平<br>Those Miscellaneous Generals of the third grade rank above the Nine Ministers, subordiniates are also the same as those of the Four Subduing",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "征蜀將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers the Shu",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "三品，各一人",
+        "color": "E4705E",
+        "rowspan": 14
+      },
+      {
+        "text": "Third grade, 1 person each",
+        "color": "E4705E",
+        "rowspan": 14
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "征虜將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers Enemies",
+        "color": "E4705E"
+      },
+      {
+        "text": "征虜將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers Enemies",
+        "color": "E4705E"
+      },
+      {
+        "text": "征虜將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Conquers Enemies",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "鎭軍將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Guards the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎭軍將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Guards the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "鎭軍將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Guards the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "鎭護將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Garrisons and Protects",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "安衆將軍<br><br>安夷將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the Masses<br><br>General Who Pacifies the Yi",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "安遠將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "安遠將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "安遠將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "平寇將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the Bandits",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "平戎將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the Rong",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "平虜將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the Enemies",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "平虜將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the Enemies",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "輔國將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Bulwark General of the State",
+        "color": "E4705E"
+      },
+      {
+        "text": "輔國將軍 <br><br>輔漢將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Bulwark General of the State<br><br>Bulwark General of Han",
+        "color": "E4705E"
+      },
+      {
+        "text": "輔國將軍 <br><br>輔吳將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Bulwark General of the State<br><br>Bulwark General of Wu",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "輔吳將軍，班亞三司，不常設<br>The Bulwark General of Wu rank second to the Three Excellencies, though not regularly appointed",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "都䕶將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Protector-General",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "虎牙將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Tiger Fang General",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "虎牙將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Tiger Fang General",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "輕車將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Light Chariot General",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "渡遼將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Crosses the Liao",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "平狄將軍 <br><br>平難將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the Di<br><br>General Who Subdues Disorder",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "中堅將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Central Vanguard",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "中軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Part of the Central Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "四品，各一人",
+        "color": "E4705E",
+        "rowspan": 9
+      },
+      {
+        "text": "Fourth grade, 1 person each",
+        "color": "E4705E",
+        "rowspan": 9
+      },
+      {
+        "text": "军事，中军将最尊，居中以坚锐自辅，故曰中坚也。<br>The commander of the central army occupied the heart of the formation and was supported by elite troops; thus, the title ‘Zhongjian’ (Central Vanguard) was used",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "驍騎將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": " General of Brave Cavalry",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "中軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Part of the Central Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "游擊將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Mobile Forces",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "游擊將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Mobile Forces",
+        "color": "E4705E"
+      },
+      {
+        "text": "中軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Part of the Central Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "左軍將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Left Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "建威將軍 <br><br>建武將軍 <br><br>奮武將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Establishes Might<br><br>General Who Establishes Valor<br><br>General Who Inspires Valor",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "建威將軍 <br><br>建武將軍 <br><br>奮武將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Establishes Might<br><br>General Who Establishes Valor<br><br>General Who Inspires Valor",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "振威將軍 <br><br>奮威將軍 <br><br>揚威將軍 <br><br>揚武將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Rallies Might<br><br>General Who Inspires Might<br><br>General Who Promotes Might<br><br>General Who Promotes Valor",
+        "color": "E4705E"
+      },
+      {
+        "text": "振威將軍 <br><br>奮威將軍 <br><br>揚威將軍 <br><br>揚武將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Rallies Might<br><br>General Who Inspires Might<br><br>General Who Promotes Might<br><br>General Who Promotes Valor",
+        "color": "E4705E"
+      },
+      {
+        "text": "振威將軍 <br><br>奮威將軍 <br><br>揚威將軍 <br><br>揚武將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Rallies Might<br><br>General Who Inspires Might<br><br>General Who Promotes Might<br><br>General Who Promotes Valor",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "振武將軍<br><br>廣威將軍 <br><br>廣武將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Rallies Valor<br><br>General Who Expands Might<br><br>General Who Expands Valor",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "寧朔將軍<br><br>寧北將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Quells the North",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "也作寧北<br>'Ning Shuo' (寧朔) sometimes written as 'Ning Bei' (寧北).<br><br>晉書言司馬伷為寧朔時有軍師，非常制也<br>The Book of Jin states that when Sima Zhou held this position he had a Advisor, this was not the norm",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "左右積弩將軍<br><br>積射將軍<br><br>强弩將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Left and Right Generals of the Crossbows<br><br>General of Volley Fire<br><br>General of Strong Crossbows",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "以下為四品雜號將軍屬<br>Below are the subordiniates of fourth grade Miscellaneous Generals",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "長史 ",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬 ",
+        "color": null
+      },
+      {
+        "text": "Major",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "正﹑行參軍 ",
+        "color": null
+      },
+      {
+        "text": "Main & Acting Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，二人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 2 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "主簿 ",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "錄省眾事",
+        "color": null
+      },
+      {
+        "text": "Oversee and review all affairs",
+        "color": null
+      },
+      {
+        "text": "九品，一人",
+        "color": null
+      },
+      {
+        "text": "Ninth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "以下五品雜號將軍，屬同四品將軍屬<br>Below are the fifth grade Miscellanenous Generals, subordinates same as those of the fourth grade generals",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "鷹揚將軍<br> <br>虎烈將軍 <br><br>虎威將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Soaring Eagle General<br><br>Fierce Tiger General<br><br>Mighty Tiger General",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "虎威將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Mighty Tiger General",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，各一人",
+        "color": "E4705E",
+        "rowspan": 18
+      },
+      {
+        "text": "Fifth grade, 1 person each",
+        "color": "E4705E",
+        "rowspan": 18
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "宣威將軍<br><br>揚烈將軍 <br>",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Proclaims Might<br><br>General Who Promotes Ferocity",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "威武將軍<br><br>威烈將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Awes with Might<br><br>General Who Awes with Ferocity",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "昭武將軍 <br><br>昭烈將軍<br> <br>昭德將軍 <br><br>宣德將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Illuminates Valor<br><br>General Who Illuminates Ferocity<br><br>General Who Illuminates Virtue<br><br>General Who Proclaims Virtue",
+        "color": "E4705E"
+      },
+      {
+        "text": "昭文將軍 <br> <br>昭德將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Illuminates Brilliance<br><br>General Who Illuminates Virtue",
+        "color": "E4705E"
+      },
+      {
+        "text": "昭武將軍 <br><br>厲武將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Illuminates Valor<br><br>General Who Rouses Valor",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "建忠將軍 <br><br>立義將軍 <br><br>忠義將軍 <br><br>建節將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Establishes Loyalty<br><br>General Who Champions Righteousness<br><br>General of Loyalty and Righteousness<br><br>General Who Establishes Integrity",
+        "color": "E4705E"
+      },
+      {
+        "text": "秉忠將軍<br><br>建義將軍<br><br>奉義將軍<br><br>忠節將軍<br><br>建信將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Upholds Loyalty<br><br>General Who Establishes Righteousness<br><br>General Who Upholds Righteousness<br><br>General of Loyalty and Integrity<br><br>General Who Establishes Trust",
+        "color": "E4705E"
+      },
+      {
+        "text": "輔義將軍<br><br>扶義將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Assists Righteousness<br><br>General Who Aids Righteousness",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "折衝將軍 <br><br>威遠將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Breaks the Charge<br><br>General Who Awes the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "折衝將軍 <br><br>威遠將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Breaks the Charge<br><br>General Who Awes the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "寧遠將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Quells the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "安遠將軍<br><br>鎭遠將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the Distant<br><br>General Who Garrisons the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "綏遠將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Calms the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "翼衛將軍 <br><br>綏邊將軍 <br><br>懷遠將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Guards the Flanks<br><br>General Who Calms the Borders<br><br>General Who Conciliates the Distant",
+        "color": "E4705E"
+      },
+      {
+        "text": "綏武將軍<br><br>撫戎將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of Calming Valor<br><br>General Who Conciliates the Rong",
+        "color": "E4705E"
+      },
+      {
+        "text": "綏南將軍<br><br>撫邊將軍<br><br>撫夷將軍<br><br>撫越將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Calms the South<br><br>General Who Conciliates the Borders<br><br>General Who Conciliates the Yi<br><br>General Who Conciliates the Yue",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "伏波將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the Waves",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "伏波將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Subdues the Waves",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "盪寇將軍<br><br>討寇將軍<br><br>討逆將軍  ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Sweeps the Bandits<br><br>General Who Suppresses the Bandits<br><br>General Who Suppresses the Rebels",
+        "color": "E4705E"
+      },
+      {
+        "text": "盪寇將軍<br><br>討寇將軍 <br><br>討逆將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Sweeps the Bandits<br><br>General Who Suppresses the Bandits<br><br>General Who Suppresses the Rebels",
+        "color": "E4705E"
+      },
+      {
+        "text": "盪寇將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Sweeps the Bandits",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "吳以孫䇿爲討逆，後不復置<br>Wu had Sun Ce as General Who Suppresses the Rebels, afterwards no longer established",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "威虜將軍 <br><br>破虜將軍 <br><br>捕虜將軍 <br><br>殄夷將軍 <br><br>討夷將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Awes the Enemies<br><br>General Who Defeats the Enemies<br><br>General Who Captures the Enemies<br><br>General Who Annihilates the Yi<br><br>General Who Suppresses the Yi",
+        "color": "E4705E"
+      },
+      {
+        "text": "討虜將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Suppresses the Enemies",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "吳以孫堅爲破虜，後不復置<br>Wu had Sun Jian as General Who Defeats the Enemies, afterwards no longer established",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "殄吳將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Annihilates the Wu",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "盪魏將軍<br><br>平魏將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Sweeps the Wei<br><br>General Who Subdues the Wei",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "懷集將軍 <br><br>復土將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Gathers Allegiance<br><br>General Who Reclaims the Lands",
+        "color": "E4705E"
+      },
+      {
+        "text": "興業將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Advances the State",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "横野將軍 <br><br>横海將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Crosses the Fields<br><br>General Who Crosses the Seas",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "橫江將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Crosses the Rivers",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "淩江將軍<br><br>樓船將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Dominates the Yangtze<br><br>General of the Tower Ships",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "安漢將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the Han",
+        "color": "E4705E"
+      },
+      {
+        "text": "安國將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Pacifies the State",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "按黃龍甘露碑及免李平公文，安汉、军师次四方將軍，位九卿、鎮安平征之上<br><br>According to the Huanglong Ganlu Stele and Memorial to Remove Li Ping From Office, the General Who Pacifies the Han and the Strategist General rank just below the Four Direction Generals, above the Nine Ministers and Garrisoning, Pacifying, Subduing and Conquering Generals",
+        "color": "E4705E",
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "軍師將軍<br><br>執愼將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Strategist General<br><br>General Who Upholds Prudence",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "翊武將軍<br><br>綏軍將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General Who Supports Valor<br><br>General Who Calms the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "副軍將軍<br><br>輔軍將軍<br><br>翊軍將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "Auxiliary General<br><br>General Who Assists the Army<br><br>General Who Supports the Army",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "牙門將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Command Gate",
+        "color": "E4705E"
+      },
+      {
+        "text": "牙門將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Command Gate",
+        "color": "E4705E"
+      },
+      {
+        "text": "牙門將軍",
+        "color": "E4705E"
+      },
+      {
+        "text": "General of the Command Gate",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，無員",
+        "color": "E4705E",
+        "rowspan": 3
+      },
+      {
+        "text": "Fifth grade, no fixed number of posts",
+        "color": "E4705E",
+        "rowspan": 3
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "偏將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Adjunct General",
+        "color": "E4705E"
+      },
+      {
+        "text": "偏將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Adjunct General",
+        "color": "E4705E"
+      },
+      {
+        "text": "偏將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Adjunct General",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "禆將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Assistant General",
+        "color": "E4705E"
+      },
+      {
+        "text": "禆將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Assistant General",
+        "color": "E4705E"
+      },
+      {
+        "text": "禆將軍 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Assistant General",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "中郎將 Gentleman-Generals": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "武衛中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General of the Palace Guard",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "主宿衛",
+        "color": null
+      },
+      {
+        "text": "In charge of the palace guards",
+        "color": null
+      },
+      {
+        "text": "四品，(魏)比二千石，各一人",
+        "color": null,
+        "rowspan": 7
+      },
+      {
+        "text": "Fourth grade, (Wei) Equivalent to 2000 dan, 1 person each",
+        "color": null,
+        "rowspan": 7
+      },
+      {
+        "text": "後罷<br>Later abolished",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司金中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General for Metal Affairs",
+        "color": null
+      },
+      {
+        "text": "司金中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General for Metal Affairs",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "(魏)主冶事 (蜀) 亦典作農戰之器",
+        "color": null
+      },
+      {
+        "text": "(Wei) In chrage of metal-processing matters<br>(Shu) Also direct the production of agricultural and military equipment",
+        "color": null
+      },
+      {
+        "text": "郡國鐵官本屬司農，中興皆屬郡縣。曹公始置司金，利權盡歸于上矣<br>The Metal Offices in the commanderies and states originally were subodinates to the Minister of Agriculture, but after the Zhongxing era they were all placed under the respective commanderies and counties. Excellency Cao established the Gentleman-General of Metal Affairs, and thus all profit and authority were returned to the central government",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司律中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General for Music",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "掌樂律",
+        "color": null
+      },
+      {
+        "text": "Responsible for music standards and matters",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "䕶匈奴中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Protecting the Xiongnu",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "主䕶南單于",
+        "color": null
+      },
+      {
+        "text": "Responsible for protecting the Southern Chanyu",
+        "color": null
+      },
+      {
+        "text": "太和五年始置<br>First established in the 5th year of Taihe",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "率善中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Embodies Benevolence",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "以處降夷",
+        "color": null
+      },
+      {
+        "text": "Given to Yi (Non-Han) people that had submitted to Wei",
+        "color": null
+      },
+      {
+        "text": "俱倭國使<br>All appointees were envoys from the State of Wa",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "司巿中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Oversees the Market",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "司直中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General of Rectification",
+        "color": null
+      },
+      {
+        "text": "主彈劾非法",
+        "color": null
+      },
+      {
+        "text": "Responsible for impeaching unlawful conduct",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "彈曲",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Impeachment Aide",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "佐司直監察群臣",
+        "color": null
+      },
+      {
+        "text": "Assist the Gentleman-General of Rectification in the surveillance of officials ",
+        "color": null
+      },
+      {
+        "text": "二十人",
+        "color": null
+      },
+      {
+        "text": "20 people",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "平虜中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Subdues the Enemies",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "征虜中郎將<br><br>蕩寇中郎將<br><br>威寇中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Conquers the Enemies<br><br>Gentleman-General Who Quells Bandits<br><br>Gentleman-General Who Awes Bandits",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "四品，(魏)比二千石，各一人",
+        "color": null,
+        "rowspan": 14
+      },
+      {
+        "text": "Fourth grade, (Wei) Equivalent to 2000 dan, 1 person each",
+        "color": null,
+        "rowspan": 14
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "武略中郎將<br><br>昭武中郎將<br><br>武猛中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General of Martial Strategy<br><br>Gentleman-General Who Illuminates Valor<br><br>Gentleman-General of Martial Ferocity",
+        "color": null
+      },
+      {
+        "text": "定武中郎將<br><br>昭武中郎將<br><br>威武中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Secures with Valor<br><br>Gentleman-General Who Illuminates Valor<br><br>Gentleman-General Who Awes with Valor",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "武猛見今存蜀「武猛中郎將」印二枚<br>The Gentleman-General of Martial Ferocity is known from two surviving seals inscribed with the title<br>",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "揚武中郎將<br><br>建武中郎將<br><br>奮武中郎將<br><br>立武中郎將<br><br>建威中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Promotes Valor<br><br>Gentleman-General Who Establishes Valor<br><br>Gentleman-General Who Inspires Valor<br><br>Gentleman-General Who Champions Valor<br><br>Gentleman-General Who Establishes Might",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "建義中郎將 <br><br>奉義中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Establishes Righteousness<br><br>Gentleman-General Who Upholds Righteousness",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "輔義中郎將<br><br>昭義中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Assists Righteousness<br><br>Gentleman-General Who Illuminates Righteousness",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "篤信中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Upholds Trust",
+        "color": null
+      },
+      {
+        "text": "立信中郎將<br><br>昭信中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Champions Trust<br><br>Gentleman-General Who Illuminates Trust",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "忠節中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General of Loyalty and Integrity",
+        "color": null
+      },
+      {
+        "text": "建忠中郎將<br><br>立節中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Establishes Loyalty<br><br>Gentleman-General Who Champions Integrity",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "忠節見黃龍甘露碑<br>The Gentleman-General of Loyalty and Integrity is known from the Huanglong Ganlu Stele",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "奉車中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Escorts the Carriage",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "典軍中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Directs the Army",
+        "color": null
+      },
+      {
+        "text": "掌軍中郎將<br><br>副軍中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Commands the Army<br><br>Auxiliary Gentleman-General",
+        "color": null
+      },
+      {
+        "text": "督軍中郎將<br><br>輔軍中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Supervises the Army<br><br>Gentleman-General Who Assists the Army",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "撫軍中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Conciliates the Army",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "撫軍中郎將<br><br>安軍中郎將 ",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Conciliates the Army<br><br>Gentleman-General Who Pacifies the Army",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "綏南中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Calms the South",
+        "color": null
+      },
+      {
+        "text": "安東中郎將<br><br>征南中郎將<br><br>討越中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Pacifies the East<br><br>Gentleman-General Who Conquers the South<br><br>Gentleman-General Who Suppresses the Yue",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "軍議中郎將<br><br>軍師中郎將",
+        "color": null
+      },
+      {
+        "text": "Tactician Gentleman-General<br><br>Strategist Gentleman-General",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "羽林中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General of the Feathered Forest",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "折衝中郎將<br><br>武鋒中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Breaks the Charge<br><br>Gentleman-General of Martial Spears",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "橫野中郎將",
+        "color": null
+      },
+      {
+        "text": "Gentleman-General Who Crosses the Fields",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "校尉都尉 Colonels & Commandants": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "戊已校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Central Garrison",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "治西域",
+        "color": null
+      },
+      {
+        "text": "Administer the Western Regions",
+        "color": null
+      },
+      {
+        "text": "四品，比二千石，一人",
+        "color": null,
+        "rowspan": 5
+      },
+      {
+        "text": "Fourth grade, Equivalent to 2000 dan, 1 person",
+        "color": null,
+        "rowspan": 5
+      },
+      {
+        "text": "黃初三年西域內附始置，治高昌<br>Established in the 3rd year of Huangchu, when the Western Regions submitted to Wei, stationed at Gaochang",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "䕶羌校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Protecting the Qiang",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "䕶東羌校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Protecting the Eastern Qiang",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "䕶烏桓校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Protecting the Wuhuan",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "治廣寧，田豫屯昌平蓋非常制<br>Stationed at Guangning; when Tian Yu garrisoned  at Changping, it was likely an exception outside the norm",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "䕶鮮卑校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Protecting the Xianbei",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "治昌平<br>Stationed at Changping",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "以下為上述四品校尉屬官<br>Below are the subordinates of the above Fourth grade Colonels",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "長史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Chief Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "西域校尉<br><br>西戎校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Western Regions<br><br>Colonel of the Western Tribes",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，各一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1 person each",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "長史",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Chief Clerk",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "千人督校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Thousand-Strong",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "千人督校尉 ",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Thousand-Strong",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，無常員",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, no fixed number of posts",
+        "color": null
+      },
+      {
+        "text": "諸無名號者皆此，傳但稱校尉<br>All colonels without a specific additional title belong to this category; their biographies simply refer to them only as Colonels",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "鹽府校尉 / 司鹽校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Salt Bureau / Colonel for Salt Affairs",
+        "color": null
+      },
+      {
+        "text": "司鹽校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel for Salt Affairs",
+        "color": null
+      },
+      {
+        "text": "(蜀)較鹽鐵之利 (吳)治海鹽",
+        "color": null
+      },
+      {
+        "text": "(Shu) Account for revenus from salt and metals (Wu) In charge of sea salt affairs",
+        "color": null
+      },
+      {
+        "text": "一人",
+        "color": null
+      },
+      {
+        "text": "1 person",
+        "color": null
+      },
+      {
+        "text": "蜀兩稱并用<br>In Shu this position is known by both names",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "典曹都尉",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Commandant Who Directs Provisions",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "屬鹽府<br>Subordinate to the Salt Bureau",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "儒林校尉<br><br>典學校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Scholar Forest<br><br>Colonel of Learning",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": null,
+        "rowspan": 9
+      },
+      {
+        "text": "1 person each",
+        "color": null,
+        "rowspan": 9
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "昭信校尉<br> <br>宣信校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Who Illuminates Trust<br><br>Colonel Who Proclaims Trust",
+        "color": null
+      },
+      {
+        "text": "宣信校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Who Proclaims Trust",
+        "color": null
+      },
+      {
+        "text": "主使命",
+        "color": null
+      },
+      {
+        "text": "In charge of diplomatic missions",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "忠義校尉<br><br>恭義校尉<br><br>建義校尉<br><br>輔義校尉<br><br>昭義校尉<br><br>立信校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of Loyalty and Righteousness<br><br>Colonel of Reverence and Righteousness<br><br>Colonel Who Establishes Righteousness<br><br>Colonel Who Assists Righteousness<br><br>Colonel Who Illuminates Righteousness<br><br>Colonel Who Champions Trust",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "奮武校尉<br><br>奮威校尉<br><br>建武校尉<br><br>立武校尉<br><br>武猛校尉<br><br>定威校尉<br><br>丞烈校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Who Inspires Valor<br><br>Colonel Who Inspires Might<br><br>Colonel Who Establishes Valor<br><br>Colonel Who Champions Valor<br><br>Colonel of Martial Ferocity<br><br>Colonel Who Secures with Might<br><br>Colonel Who Aids in Ferocity",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "武衛校尉<br><br>武鋒校尉<br><br>折鋒校尉<br><br>折衝校尉<br><br>先登校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel of the Martial Guard<br><br>Colonel of the Martial Spear<br><br>Colonel Who Breaks the Spear<br><br>Colonel Who Breaks the Charge<br><br>Colonel Who Leads the Charge",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "折鋒見南京薛秋墓<br>The Colonel Who Breaks the Spear is known from Nanjing's Tomb of Xue Qiu",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "滅賊校尉<br><br>破賊校尉<br><br>盪寇校尉<br><br>威越校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Who Annihilates Bandits<br><br>Colonel Who Defeats Bandits<br><br>Colonel Who Sweeps Bandits<br><br>Colonel Who Awes the Yue",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "安南校尉<br><br>平東校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Who Pacifies the South<br><br>Colonel Who Subdues the East",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "督軍校尉<br><br>䕶軍校尉<br><br>贊軍校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel Who Supervises the Army<br><br>Colonel Who Protects the Army<br><br>Colonel Who Supports the Army",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "副軍校尉<br><br>參軍校尉",
+        "color": null
+      },
+      {
+        "text": "Auxiliary Colonel<br><br>Adjutant Colonel",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "撫軍都尉 <br><br>校事",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Conciliates the Army<br><br>Investigator",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "校事/典校/典校郎/典校事",
+        "color": null
+      },
+      {
+        "text": "Investigator",
+        "color": null
+      },
+      {
+        "text": "(魏)主刺舉 (吳)監察文書",
+        "color": null
+      },
+      {
+        "text": "(Wei) In charge of investigating and impeaching officials<br>(Wu) In charge of inspecting official documents for misconduct",
+        "color": null
+      },
+      {
+        "text": "四品，比二千石，一人",
+        "color": null
+      },
+      {
+        "text": "Fourth grade, Equivalent to 2000 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "魏先置撫軍，后改校事<br>Wei first established the Commandant Who Conciliates the Army, later changed to Investigator<br><br>吳制，校事多別名，屬中書，見長沙竹馬樓竹簡<br>In Wu, the Investigator often had multiple alternative similar names,  and was under the Palace Secretariat, as seen in the Changsha Zumalou documents",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "察戰",
+        "color": null
+      },
+      {
+        "text": "Inquisitor",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "無常員",
+        "color": null
+      },
+      {
+        "text": "No fixed number of posts",
+        "color": null
+      },
+      {
+        "text": "天子近臣，奉使出行<br>Close aides of the emperor, often sent on missions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司金都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant for Metal Affairs",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "四品，比二千石，一人",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Fourth grade, Equivalent to 2000 dan, 1 person",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "積弩都尉/典弩都尉<br><br>典鎧都尉 ",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Directs Crossbows<br><br>Commandant Who Directs Armor",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "典弩典鎧同屬積弩將軍<br>Both commandants were under the Generals of the Crossbows ",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "將兵都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Leading Troops",
+        "color": null
+      },
+      {
+        "text": "將兵都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Leading Troops",
+        "color": null
+      },
+      {
+        "text": "將兵都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Leading Troops",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，無常員",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, no fixed number of posts",
+        "color": null
+      },
+      {
+        "text": "諸無名號者皆此，傳但稱都尉<br>All commandants without a specific additional title belong to this category; their biographies simply refer to them only as Commandants",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "忠義都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant of Loyalty and Righteousness",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, 1 person  ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司鹽都尉 ",
+        "color": null
+      },
+      {
+        "text": "Commandant for Salt Affairs",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Sixth grade ",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "郡國出鹽者置<br>Established in commanderies and states with salt resources",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司竹都尉 ",
+        "color": null
+      },
+      {
+        "text": "Commandant for Timber Affairs",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "郡國有材木者置<br>Established in commanderies and states with wood resources",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "監丞",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Inspecting Assistant",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "每司鹽司竹一人<br>Each Commandant for Salt Affairs and Commandant for Timber Affairs had one such assistant",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "揚武都尉<br><br>建武都尉<br><br>承烈都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Promotes Valor<br><br>Commandant Who Establishes Valor<br><br>Commandant Who Inherits Ferocity",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "各一人",
+        "color": null,
+        "rowspan": 10
+      },
+      {
+        "text": "1 person each",
+        "color": null,
+        "rowspan": 10
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "仁義都尉<br><br>輔義都尉<br><br>立義都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant of Benevolence and Righteousness<br><br>Commandant Who Assists Righteousness<br><br>Commandant Who Champions Righteousness",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "立信都尉<br><br>建忠都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Champions Trust<br><br>Commandant Who Establishes Loyalty",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "武衞都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant of Martial Guards",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "興業都尉<br><br>安民都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Advances the State<br><br>Commandant Who Pacifies the People",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "綏戎都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Calms the Rong ",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "平北都尉<br><br>破賊都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Subdues the North<br><br>Commandant Who Defeats Bandits",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "奉禁都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant for Omens",
+        "color": null
+      },
+      {
+        "text": "占侯",
+        "color": null
+      },
+      {
+        "text": "Astrological divination",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "奉正都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant Who Upholds Rectitude",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "樓下都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant for Grain and Wine",
+        "color": null
+      },
+      {
+        "text": "典糴酤事",
+        "color": null
+      },
+      {
+        "text": "Oversee grain and liquor matters",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ]
+}

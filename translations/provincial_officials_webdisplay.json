@@ -1,0 +1,4905 @@
+{
+  "司隸 Sili ": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "司隸校尉 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Colonel of the Capital",
+        "color": "E4705E"
+      },
+      {
+        "text": "司隸校尉 ",
+        "color": "E4705E"
+      },
+      {
+        "text": "Colonel of the Capital",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "察舉百官及京師近郡犯法者<br><br>并領一州",
+        "color": "E4705E"
+      },
+      {
+        "text": "Investigates and indicts officials, as well as those who committed offenses in the capital and nearby districts<br><br>Also manage the capital province",
+        "color": "E4705E"
+      },
+      {
+        "text": "三品，比二千石，一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "Third grade, Equivalent to 2000 dan , 1 person",
+        "color": "E4705E"
+      },
+      {
+        "text": "蜀如漢制督察而已，不與州事<br>In Shu, the Colonel only conducted investigations as in the Han system, and was not involved in provincial administration",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "參軍",
+        "color": null
+      },
+      {
+        "text": " Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "無考",
+        "color": null
+      },
+      {
+        "text": "Number of posts unknown",
+        "color": null
+      },
+      {
+        "text": "從事、史、假佐一百人；又有卒三十二人<br>A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants",
+        "color": null,
+        "rowspan": 12
+      }
+    ],
+    [
+      {
+        "text": "都官從事",
+        "color": null
+      },
+      {
+        "text": "Official Supervision Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "主察百官之犯法者",
+        "color": null
+      },
+      {
+        "text": "In charge of reporting officials who committed offenses",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "功曹從事",
+        "color": null
+      },
+      {
+        "text": "Merit Section Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "主府内選用",
+        "color": null
+      },
+      {
+        "text": "In charge of promotion and appointment of personnel within the office",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "諸曹從事",
+        "color": null
+      },
+      {
+        "text": "Various Sections Aides",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "部郡從事",
+        "color": null
+      },
+      {
+        "text": "Regional Affairs Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "主督促文書，舉部郡非法",
+        "color": null
+      },
+      {
+        "text": "In charge of expediting documents and reporting illegal conduct in the local commanderies",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "武猛從事",
+        "color": null
+      },
+      {
+        "text": "Martial Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "督軍從事",
+        "color": null
+      },
+      {
+        "text": "Army Supervision Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "主簿",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "錄門下眾事，省署文書",
+        "color": null
+      },
+      {
+        "text": "Oversee all staff affairs, review and sign documentations",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "錄事",
+        "color": null
+      },
+      {
+        "text": "Records Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下書佐",
+        "color": null
+      },
+      {
+        "text": "Staff Documents Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "省事",
+        "color": null
+      },
+      {
+        "text": "Examiner",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "記室書佐<br><br>諸曹書佐",
+        "color": null
+      },
+      {
+        "text": "Record Keeper Clerk<br><br>Various Sections Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "州 Provinces": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "剌史 <br><br>牧",
+        "color": "E4705E"
+      },
+      {
+        "text": "Inspector<br><br>Governor",
+        "color": "E4705E"
+      },
+      {
+        "text": "剌史 <br><br>牧",
+        "color": "E4705E"
+      },
+      {
+        "text": "Inspector<br><br>Governor",
+        "color": "E4705E"
+      },
+      {
+        "text": "剌史 <br><br>牧",
+        "color": "E4705E"
+      },
+      {
+        "text": "Inspector<br><br>Governor",
+        "color": "E4705E"
+      },
+      {
+        "text": "巡行所部郡國，錄囚徒，考殿最，每歲遣計吏詣京都奏事",
+        "color": "E4705E"
+      },
+      {
+        "text": "Patrol the commanderies and states; inspect criminals; evaluate officials’ performance; and each year dispatches Accounts Clerks to the capital to report on affairs",
+        "color": "E4705E"
+      },
+      {
+        "text": "五品，(刺史)六百石/ (牧)二千石，各一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "Fifth grade, (Inspector) 600 dan/(Governor) 2000 dan, 1 person per province",
+        "color": "E4705E"
+      },
+      {
+        "text": "無加官者謂州單車剌史<br>Inspectors without additional titles are known as Single Chariot Inspectors<br><br>不入版圖者，亦置刺史遙領之<br>Territories not under actual control can also have Inspectors appointed to oversee in name<br><br>緣邊諸州剌史時與領兵都督並置<br>Border provinces sometimes appoint both Inspectors and Commanders",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "大中正",
+        "color": null
+      },
+      {
+        "text": "Chief Evaluator",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "大公平",
+        "color": null
+      },
+      {
+        "text": "Chief Arbiter",
+        "color": null
+      },
+      {
+        "text": "選舉人材",
+        "color": null
+      },
+      {
+        "text": "Identify and recommend talent",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "綱紀 Principal Officers<br><br>綱紀者，綜理府事，乃州郡屬吏之重者，常以指治中、別駕。<br>The Principal Officers coordinate the affairs of the office and are the most important among the subordinate staff of the provinces and commanderies, typically referring to the Administrative Aide and Deputy Aide in the Provincial office.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "治中從事",
+        "color": null
+      },
+      {
+        "text": "Administrative Aide",
+        "color": null
+      },
+      {
+        "text": "治中從事",
+        "color": null
+      },
+      {
+        "text": "Administrative Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主眾曹文書",
+        "color": null
+      },
+      {
+        "text": "Direct documentations under various sections",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "刺史闕則代守一州<br>Acts as the Inspector when that Inspector’s office is vacant",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "別駕從事",
+        "color": null
+      },
+      {
+        "text": "Deputy Aide",
+        "color": null
+      },
+      {
+        "text": "別駕從事",
+        "color": null
+      },
+      {
+        "text": "Deputy Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "從刺史行部",
+        "color": null
+      },
+      {
+        "text": "Accompany the Inspector on provincial inspection tours",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "功曹從事",
+        "color": null
+      },
+      {
+        "text": "Merit Section Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主府内選用",
+        "color": null
+      },
+      {
+        "text": "In charge of promotion and appointment of personnel within the office",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "簿曹從事",
+        "color": null
+      },
+      {
+        "text": "Fiscal Section Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主錢穀簿書",
+        "color": null
+      },
+      {
+        "text": "In charge of funds and grains",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "兵曹從事",
+        "color": null
+      },
+      {
+        "text": "Military Section Aide",
+        "color": null
+      },
+      {
+        "text": "前、後、左、右部司馬",
+        "color": null
+      },
+      {
+        "text": "Major of the Front/ Middle/Left/Right Division",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主兵馬",
+        "color": null
+      },
+      {
+        "text": "In chrage of troops",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "部郡從事",
+        "color": null
+      },
+      {
+        "text": "Regional Affairs Aide",
+        "color": null
+      },
+      {
+        "text": "部郡從事",
+        "color": null
+      },
+      {
+        "text": "Regional Affairs Aide",
+        "color": null
+      },
+      {
+        "text": "部郡從事",
+        "color": null
+      },
+      {
+        "text": "Regional Affairs Aide",
+        "color": null
+      },
+      {
+        "text": "主督促文書，舉郡國非法",
+        "color": null
+      },
+      {
+        "text": "In charge of expediting documents and reporting illegal conduct in the local commanderies",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "文學從事",
+        "color": null
+      },
+      {
+        "text": "Literary Section Aide",
+        "color": null
+      },
+      {
+        "text": "勸學從事<br><br>典學從事",
+        "color": null
+      },
+      {
+        "text": "Education Promotion Aide<br><br>Education Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主州郡教化",
+        "color": null
+      },
+      {
+        "text": "In charge of education and moral instruction in the province",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "武猛從事",
+        "color": null
+      },
+      {
+        "text": "Martial Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "主簿",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "主簿",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "錄門下眾事，省署文書",
+        "color": null
+      },
+      {
+        "text": "Oversee all staff affairs, review and sign documentations",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門亭長",
+        "color": null
+      },
+      {
+        "text": "Gatehouse Chief",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "諸曹書佐",
+        "color": null
+      },
+      {
+        "text": "Various Sections Clerks",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "計吏<br><br>上記吏",
+        "color": null
+      },
+      {
+        "text": "Accounts Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "每歲入京朝天子，對答州事，呈計簿",
+        "color": null
+      },
+      {
+        "text": "Every year travel to the capital to attend court, report on provincial matters, and submit the fiscal and census registers",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "議曹從事",
+        "color": null
+      },
+      {
+        "text": "Consultant Section Aide",
+        "color": null
+      },
+      {
+        "text": "師友從事",
+        "color": null
+      },
+      {
+        "text": "Advising Aide",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "督軍從事",
+        "color": null
+      },
+      {
+        "text": "Army Supervision Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "從事祭酒<br><br>從事",
+        "color": null
+      },
+      {
+        "text": "Aide Libationer<br><br>Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "書佐",
+        "color": null
+      },
+      {
+        "text": "Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "郡 Commanderies": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "河南尹",
+        "color": "E4705E"
+      },
+      {
+        "text": "Intendant of Henan",
+        "color": "E4705E"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "主京都",
+        "color": "E4705E"
+      },
+      {
+        "text": "In charge of the capital",
+        "color": "E4705E"
+      },
+      {
+        "text": "三品，二千石，一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "Third grade, 2000 dan , 1 person",
+        "color": "E4705E"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "河南丞",
+        "color": null
+      },
+      {
+        "text": "Assistant to the Intendant of Henan",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Seventh grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "廩犧丞",
+        "color": null
+      },
+      {
+        "text": "Granary and Sacrifice Assistant",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "主藏穀養牲供祭祀",
+        "color": null
+      },
+      {
+        "text": "In charge of the grains and animals used for sacrificial ceremonies",
+        "color": null
+      },
+      {
+        "text": "八品，四百石，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 400 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "洛陽巿長",
+        "color": null
+      },
+      {
+        "text": "Luoyang Market Directors",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "三人",
+        "color": null
+      },
+      {
+        "text": "3 people",
+        "color": null
+      },
+      {
+        "text": "洛陽三巿，大巿名金巿在大城西，南巿在大城南，馬巿在大城東<br>Luoyang had three markets: the Great Market, also called the Golden Market, located west of the main city; the South Market, located south of the main city; and the Horse Market, located east of the main city",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "洛陽巿丞",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Luoyang Market Assistants",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "九品，二百石，三人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Ninth grade, 200 dan, 3 people",
+        "color": "3FA2FF"
+      }
+    ],
+    [
+      {
+        "text": "五官掾",
+        "color": null
+      },
+      {
+        "text": "Administrator for All Purposes",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "功曹<br><br>功曹史",
+        "color": null
+      },
+      {
+        "text": "Merit Section Foreman Clerk",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "太守",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand Administrator",
+        "color": "E4705E"
+      },
+      {
+        "text": "太守",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand Administrator",
+        "color": "E4705E"
+      },
+      {
+        "text": "太守",
+        "color": "E4705E"
+      },
+      {
+        "text": "Grand Administrator",
+        "color": "E4705E"
+      },
+      {
+        "text": "掌治民，進賢，決訟，檢姦，并舉孝廉",
+        "color": "E4705E"
+      },
+      {
+        "text": "In charge of administering the people, employing the virtuous, adjudicating local disputes, investigating crimes, and recommending men of filial piety and integrity",
+        "color": "E4705E"
+      },
+      {
+        "text": "五品，二千石，各一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "Fifth grade, 2000 dan, 1 person each commandery",
+        "color": "E4705E"
+      },
+      {
+        "text": "魏制太守皆加將軍名號<br>In Wei, Grand Administrators all had a general title",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "郡丞",
+        "color": null
+      },
+      {
+        "text": "Assistant to the Grand Administrator",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，六百石，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 600 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "郡當邊戍者，丞為長史，掌兵馬<br>For commanderies near the border, the Chief Clerk replaces the Assistant, and manages troops and horses",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "長史",
+        "color": null
+      },
+      {
+        "text": "Chief Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中正",
+        "color": null
+      },
+      {
+        "text": "Evaluator",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": null
+      },
+      {
+        "text": "選舉人材",
+        "color": null
+      },
+      {
+        "text": "Identify and recommend talent",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "郡都尉",
+        "color": null
+      },
+      {
+        "text": "Commandery Commandant",
+        "color": null
+      },
+      {
+        "text": "都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant",
+        "color": null
+      },
+      {
+        "text": "都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant",
+        "color": null
+      },
+      {
+        "text": "典兵禁備盜賊",
+        "color": null
+      },
+      {
+        "text": "In charge of troops and safeguarding against thieves and bandits",
+        "color": null
+      },
+      {
+        "text": "五品，比二千石，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, Equivalent to 2000 dan, 1 person ",
+        "color": null
+      },
+      {
+        "text": "大郡或置二人，或爲東西部或爲南北部<br>Bigger commanderies may have 2 commandants, split into east/west or north/south divisions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Major",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Eighth grade, 1 person ",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "關尉",
+        "color": null
+      },
+      {
+        "text": "Pass Commandant",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "惟陰平<br>Only in Yinping Commandery",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "江關都尉",
+        "color": null
+      },
+      {
+        "text": "River-Pass Commandant",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "惟巴東<br>Only in Badong Commandery",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "淮海津都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant of the Huai Crossing",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person ",
+        "color": null
+      },
+      {
+        "text": "惟安豐<br>Only in Anfeng Commandery",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "禾伊吾都尉",
+        "color": null
+      },
+      {
+        "text": "Commandant of Heyiwu",
+        "color": null
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "-",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person ",
+        "color": null
+      },
+      {
+        "text": "惟敦煌<br>Only in Dunhuang Commandery",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "綱紀 Principal Officers<br><br>綱紀者，綜理府事，乃州郡屬吏之重者，常以指郡功曹、五官掾、主簿。<br>The Principal Officers coordinate the affairs of the office and are the most important among the subordinate staff of the provinces and commanderies, typically referring to the Merit Section officials, the All Purposes officials, and the Registrar in the Commandery office.",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "功曹掾",
+        "color": null
+      },
+      {
+        "text": "Merit Section Administrator",
+        "color": null
+      },
+      {
+        "text": "功曹掾<br><br>功曹史",
+        "color": null
+      },
+      {
+        "text": "Merit Section Administrator/Foreman Clerk",
+        "color": null
+      },
+      {
+        "text": "功曹掾",
+        "color": null
+      },
+      {
+        "text": "Merit Section Administrator",
+        "color": null
+      },
+      {
+        "text": "主府内選用",
+        "color": null
+      },
+      {
+        "text": "In charge of promotion and appointment of personnel within the office",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "五官掾",
+        "color": null
+      },
+      {
+        "text": "Administrator for All Purposes",
+        "color": null
+      },
+      {
+        "text": "五官掾",
+        "color": null
+      },
+      {
+        "text": "Administrator for All Purposes",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "署諸曹事",
+        "color": null
+      },
+      {
+        "text": "Arrange all Sections' affairs",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "主簿",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "主簿",
+        "color": null
+      },
+      {
+        "text": "Registrar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "錄門下眾事，省署文書",
+        "color": null
+      },
+      {
+        "text": "Oversee all staff affairs, review and sign documentations",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "上計掾",
+        "color": null
+      },
+      {
+        "text": "Accounts Administrator",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "門下掾<br><br>門下書佐<br><br>門下小吏",
+        "color": null
+      },
+      {
+        "text": "Staff Administrator<br><br>Staff Clerical Assistant<br><br>Staff Clerk",
+        "color": null
+      },
+      {
+        "text": "門下書佐",
+        "color": null
+      },
+      {
+        "text": "Staff Clerical Assistant",
+        "color": null
+      },
+      {
+        "text": "門下書佐",
+        "color": null
+      },
+      {
+        "text": "Staff Clerical Assistant",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "文學椽<br><br>文學祭酒",
+        "color": null
+      },
+      {
+        "text": "Literary Section Administrator/<br>Libationer",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "督郵",
+        "color": null
+      },
+      {
+        "text": "Post Marshal",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "督送郵書，監察屬縣",
+        "color": null
+      },
+      {
+        "text": "Responsible for ensuring the delivery of documents; also patrol and supervise subordinate counties",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "或有東西南北中部之分<br>Sometimes split into the north/south/east/west divisions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "主記",
+        "color": null
+      },
+      {
+        "text": "Secretary Clerk",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "循行",
+        "color": null
+      },
+      {
+        "text": "Footman",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "門下循行",
+        "color": null
+      },
+      {
+        "text": "Footman",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "鈴下",
+        "color": null
+      },
+      {
+        "text": "Bell Guard",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "塞曹掾",
+        "color": null
+      },
+      {
+        "text": "Fortification Section Administrator",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "郡當邊戍者置<br>Established in border provinces with garrisons",
+        "color": null,
+        "rowspan": 3
+      }
+    ],
+    [
+      {
+        "text": "校尉",
+        "color": null
+      },
+      {
+        "text": "Colonel",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "參軍",
+        "color": null
+      },
+      {
+        "text": "Army Adjutant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "師友祭酒",
+        "color": null
+      },
+      {
+        "text": "Advising Libationer",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "督軍從事",
+        "color": null
+      },
+      {
+        "text": "Army Supervision Aide",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "國 States": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "王國相",
+        "color": "E4705E"
+      },
+      {
+        "text": "Principality Chancellor",
+        "color": "E4705E"
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "五品，二千石，各一人",
+        "color": "E4705E",
+        "rowspan": 2
+      },
+      {
+        "text": "Fifth grade, 2000 dan, 1 person each state",
+        "color": "E4705E",
+        "rowspan": 2
+      },
+      {
+        "text": "職如太守<br>Duties similar to the Grand Administrator",
+        "color": "E4705E",
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "公國相",
+        "color": "E4705E"
+      },
+      {
+        "text": "Duchy Chancellor",
+        "color": "E4705E"
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "以下為王國公國屬<br>Below are the subordinates in Principalities and Duchies",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "國都尉",
+        "color": null
+      },
+      {
+        "text": " Principality/Duchy Commandant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "典兵禁備盜賊",
+        "color": null
+      },
+      {
+        "text": "In charge of troops and safeguarding against thieves and bandits",
+        "color": null
+      },
+      {
+        "text": "五品，比二千石，一人",
+        "color": null
+      },
+      {
+        "text": "Fifth grade, Equivalent to 2000 dan, 1 person ",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "國傅",
+        "color": null
+      },
+      {
+        "text": "Principality/Duchy Tutor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，一人",
+        "color": null,
+        "rowspan": 3
+      },
+      {
+        "text": "Sixth grade, 1 person",
+        "color": null,
+        "rowspan": 3
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "國保",
+        "color": null
+      },
+      {
+        "text": "Principality/Duchy Guardian",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "國友",
+        "color": null
+      },
+      {
+        "text": "Principality/Duchy<br>Companion",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "郎中令",
+        "color": null
+      },
+      {
+        "text": "Gentleman Prefect",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "七品，一人",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "Seventh grade, 1 person",
+        "color": null,
+        "rowspan": 4
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "中尉",
+        "color": null
+      },
+      {
+        "text": "Capital Commandant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "大農",
+        "color": null
+      },
+      {
+        "text": "Grand Agriculturist",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "司馬",
+        "color": null
+      },
+      {
+        "text": "Major",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "常侍",
+        "color": null
+      },
+      {
+        "text": "Regular Attendant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，無員",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Eighth grade, no fixed number of posts",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "侍郎",
+        "color": null
+      },
+      {
+        "text": "Attendant Gentleman",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "家令",
+        "color": null
+      },
+      {
+        "text": "Household Director",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 1 person",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "諸雜署令",
+        "color": null
+      },
+      {
+        "text": "Director of various Offices",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品",
+        "color": null
+      },
+      {
+        "text": "Eighth grade",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "諸署長",
+        "color": null
+      },
+      {
+        "text": "Chief of various Offices",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "九品",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Ninth grade",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "謁者大夫",
+        "color": null
+      },
+      {
+        "text": "Chamberlain Counsellor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "督軍",
+        "color": null
+      },
+      {
+        "text": "Army Supervisor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "一人",
+        "color": null
+      },
+      {
+        "text": "1 person",
+        "color": null
+      },
+      {
+        "text": "惟山陽公國<br>Only in the Duchy of Shanyang",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "侯國相",
+        "color": "E4705E"
+      },
+      {
+        "text": "Marquisate Chancellor",
+        "color": "E4705E"
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，三百石，各一人",
+        "color": "E4705E"
+      },
+      {
+        "text": "Eighth grade, 300 dan, 1 person each state",
+        "color": "E4705E"
+      },
+      {
+        "text": "職如縣令<br>Duties similar to the County Magistrate",
+        "color": "E4705E"
+      }
+    ],
+    [
+      {
+        "text": "家令",
+        "color": null
+      },
+      {
+        "text": "Household Director",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "家丞",
+        "color": null
+      },
+      {
+        "text": "Household Assistant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "國傅",
+        "color": null
+      },
+      {
+        "text": "Marquisate Tutor",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "監國謁者",
+        "color": null
+      },
+      {
+        "text": "Supervising Chamberlain",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "庶子",
+        "color": null
+      },
+      {
+        "text": "Cadet",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "文學",
+        "color": null
+      },
+      {
+        "text": "Scholar",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ],
+  "縣 Counties": [
+    [
+      {
+        "text": "名(魏) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wei)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(蜀) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Shu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "名(吳) ",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Name (Wu)",
+        "color": "FFFF00"
+      },
+      {
+        "text": "职",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Jobscope",
+        "color": "FFFF00"
+      },
+      {
+        "text": "品秩员",
+        "color": "FFFF00"
+      },
+      {
+        "text": "Grade, Salary, No.",
+        "color": "FFFF00"
+      },
+      {
+        "text": "注 Notes",
+        "color": "FFFF00"
+      }
+    ],
+    [
+      {
+        "text": "縣令",
+        "color": null
+      },
+      {
+        "text": "County Magistrate",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "六品，千石/六百石，各一人",
+        "color": null
+      },
+      {
+        "text": "Sixth grade, 1000 dan or 600 dan, one person each county",
+        "color": null
+      },
+      {
+        "text": "大者置令，小者置長<br>Bigger counties have Magistrates, and smaller counties have Chiefs",
+        "color": null,
+        "rowspan": 2
+      }
+    ],
+    [
+      {
+        "text": "縣長",
+        "color": null
+      },
+      {
+        "text": "County Chief",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，三百石，各一人",
+        "color": null
+      },
+      {
+        "text": "Eighth grade, 300 dan, 1 person each county",
+        "color": null
+      }
+    ],
+    [
+      { "text": "縣丞", "color": null },
+      { "text": "Assistant to the County Magistrate/Chief", "color": null },
+      { "text": "?", "color": null },
+      { "text": "?", "color": null },
+      { "text": "?", "color": null },
+      { "text": "?", "color": null },
+      { "text": "", "color": null },
+      { "text": "", "color": null },
+      { "text": "八品，四百石，一人", "color": null },
+      { "text": "Eighth grade, 400 dan, 1 person", "color": null },
+      { "text": "千石令丞<br>Assistant to 1000 dan Magistrates<br><br>洛陽令丞三人<br>The Magistrate of Luoyang has 3 assistants", "color": null }
+        ],
+    [  
+    { "text": "縣丞", "color": null },
+    { "text": "Assistant to the County Magistrate/Chief", "color": null },
+    { "text": "?", "color": null },
+    { "text": "?", "color": null },
+    { "text": "?", "color": null },
+    { "text": "?", "color": null },
+    { "text": "", "color": null },
+    { "text": "", "color": null },
+    { "text": "九品，一人", "color": null },
+    { "text": "Ninth grade, 1 person", "color": null },
+    { "text": "六百石以下丞<br>Assistant to Magistrates and Chiefs 600 dan and below", "color": null }
+    ],
+    [
+      {
+        "text": "縣尉",
+        "color": null
+      },
+      {
+        "text": "County Commandant",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主盜賊，案察姦宄",
+        "color": null
+      },
+      {
+        "text": "In charge of theft, banditry and criminal investigations",
+        "color": null
+      },
+      {
+        "text": "九品，二百石，一人",
+        "color": null
+      },
+      {
+        "text": "Ninth grade, 200 dan, 1 person",
+        "color": null
+      },
+      {
+        "text": "大縣或有二人，或分東西南北中五部各一人<br>In bigger counties may have 2 commandants, or 1 commandant per north/south/east/west division",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "校官掾",
+        "color": null
+      },
+      {
+        "text": "School Administrator",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "掌教學",
+        "color": null
+      },
+      {
+        "text": "Manage education",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "師友祭酒",
+        "color": null
+      },
+      {
+        "text": "Advising Libationer",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "決疑祭酒",
+        "color": null
+      },
+      {
+        "text": "Dispute Libationer",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "鐵官",
+        "color": null
+      },
+      {
+        "text": "Iron Office",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "堰官",
+        "color": null
+      },
+      {
+        "text": "Weir Office",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "惟都安縣<br>Only in Du'an County",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "以下為鄉官<br>Below are Township officials",
+        "color": null,
+        "colspan": 11
+      }
+    ],
+    [
+      {
+        "text": "有秩",
+        "color": null
+      },
+      {
+        "text": "Stipendiary Township Official",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "八品，百石，每鄉各一人",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "Eighth grade, 100 dan, each township 1 person",
+        "color": null,
+        "rowspan": 2
+      },
+      {
+        "text": "十亭一鄉<br>10 neighborhoods make up a township<br><br>其鄉大者署有秩，鄉小者置嗇夫<br>Bigger townships appoint Stipendiary Township Officials, smaller townships appoint Bailiffs",
+        "color": null,
+        "rowspan": 3
+      }
+    ],
+    [
+      {
+        "text": "三老",
+        "color": null
+      },
+      {
+        "text": "Three Elders",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "掌教化",
+        "color": null
+      },
+      {
+        "text": "Lead education and moral instruction",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "嗇夫",
+        "color": null
+      },
+      {
+        "text": "Bailiff",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "職聽訟，收賦稅",
+        "color": null
+      },
+      {
+        "text": "In charge of adjudicating legal cases and collecting taxes",
+        "color": null
+      },
+      {
+        "text": "九品，百石，每鄉各一人",
+        "color": null
+      },
+      {
+        "text": "Ninth grade, 100 dan, each township 1 person",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "游徼",
+        "color": null
+      },
+      {
+        "text": "Patroller",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "掌徼行，禁司奸盜",
+        "color": null
+      },
+      {
+        "text": "In charge of patrols and the suppression of crimes",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "亭長",
+        "color": null
+      },
+      {
+        "text": "Neighborhood Chief",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "主禁盜賊",
+        "color": null
+      },
+      {
+        "text": "In charge of safeguarding against thieves and bandits",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "亭所亦作通傳接待之用，漢制十里一亭<br>The local neighborhood station is also used to provide communication and reception services. Under the Han system, there would be a neighborhood station every 10 li (~ 4km)<br> <br><br>漢制，通傳接待設郵、亭、傳、驛、置。名目各異，功用類似<br>Under the Han system, facilities for communication and reception included you (posthouses), ting (neighbourhood stations), chuan (rest stations), yi (courier stations), and zhi (roadside stations). Although the terminology varied, they served broadly similar functions",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "求盜",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "Thief Searcher",
+        "color": "3FA2FF"
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "里魁<br><br>里正",
+        "color": null
+      },
+      {
+        "text": "Village Head",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "掌一里",
+        "color": null
+      },
+      {
+        "text": "Manage a village",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "百家一里<br>A Village consists of 100 households",
+        "color": null
+      }
+    ],
+    [
+      {
+        "text": "什長<br><br>伍長",
+        "color": null
+      },
+      {
+        "text": "Head of Ten Households<br><br>Head of Five Households",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "?",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      },
+      {
+        "text": "",
+        "color": null
+      }
+    ]
+  ]
+}

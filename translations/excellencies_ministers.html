@@ -6,46 +6,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
-  <style>
-    h1{
-        font-size:20px;
-        margin-top:3rem;
-        margin-left: 2rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      margin-left: 2rem;
-      font-size: 16px;
-    }
-    .custom-sheet, .sheet-selector {
+<style>
+  h1{
+    font-size:20px;
+    margin-top:3rem;
+    margin-left: 2rem;
+  }
+  h2 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 16px;
+  }
+  .custom-sheet, .sheet-selector {
     margin-left: 2rem;
     font-size: 14px;
-    }
-    select {
-      padding: 0.5rem;
-      background: #222;
-      color: white;
-      border: 1px solid #555;
-      margin-bottom: 1rem;
-      font-size: 14px;
-    }
-    table {
-    border-collapse: collapse;
+  }
+  select {
+    padding: 0.5rem;
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+
+  /* scroll container */
+  .table-wrapper{
     width: 90%;
     margin: 0 auto 2rem auto;
-    background: #222;
-    overflow-x: auto;
-    font-size: 14px;
-     table-layout: auto;
-    }
+  }
 
-    th, td {
-      border: 1px solid #555;
-      padding: 6px 10px;
-      color: white;
-      min-width: 10ch;
+  table {
+    border-collapse: collapse;
+    width: 100%;              
+    background: #222;
+    font-size: 14px;
+    table-layout: auto;
+  }
+
+  th, td {
+    border: 1px solid #555;
+    padding: 6px 10px;
+    color: white;
+    min-width: 10ch;
+  }
+
+  /* sticky first row */
+  .table-wrapper table tr:first-child > td{
+    position: sticky;
+    top: 45px;
+    z-index: 5;
+    color: #FFFF00 !important;
+    background: #111;
+    opacity: 1;
+    line-height: 1.25;
+    font-size: 1.15em;  
+    box-shadow:
+    inset 0 -2px 0 black,  
+    inset 0 2px 0 black, 
+    inset -2px 0 0 black, 
+    inset 2px 0 0 black,  
+    0 2px 6px rgba(0,0,0,0.55); 
     }
-  </style>
+  
+
+  /* Column tint backgrounds */
+  .col-wei { background: rgba(0, 204, 153, 0.14); }
+  .col-shu { background: rgba(181, 126, 255, 0.14); }
+  .col-wu  { background: rgba(255, 140, 64, 0.14); }
+
+  /* Box borders (left/right edges of each state block) */
+  .col-wei.start { border-left: 2px solid rgba(0, 204, 153, 0.55); }
+  .col-wei.end   { border-right: 2px solid rgba(0, 204, 153, 0.55); }
+
+  .col-shu.start { border-left: 2px solid rgba(181, 126, 255, 0.55); }
+  .col-shu.end   { border-right: 2px solid rgba(181, 126, 255, 0.55); }
+
+  .col-wu.start  { border-left: 2px solid rgba(255, 140, 64, 0.55); }
+  .col-wu.end    { border-right: 2px solid rgba(255, 140, 64, 0.55); }
+
+  /* Sticky row + tint compatibility */
+  .table-wrapper table tr:first-child > td.col-wei { background-color: #0b3b33 }
+  .table-wrapper table tr:first-child > td.col-shu { background-color: #2d2440 }
+  .table-wrapper table tr:first-child > td.col-wu  { background-color: #3b2a1b }
+</style>
+
 </head>
 <body>
 <div id="navbar"></div>
@@ -55,7 +100,7 @@
   style="margin-left: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">
   ← Return
     </button>
-</table>
+
 
 
   <h2>Categories</h2>
@@ -89,10 +134,12 @@
     function renderSheet(sheetName) {
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
-      let html = "<table>";
+
+      let html = `<div class="table-wrapper"><table>`;
 
       for (let i = 0; i < rows.length; i++) {
         html += "<tr>";
+
         for (let j = 0; j < rows[i].length; j++) {
           const cell = rows[i][j];
           if (!cell) continue;
@@ -100,16 +147,31 @@
           const value = cell.text || "";
           const color = cell.color ? `color:#${cell.color};` : "";
           const rowspan = cell.rowspan ? `rowspan="${cell.rowspan}"` : "";
-          const colspan = cell.colspan ? `colspan="${cell.colspan}"` : "";
+          const colspanNum = cell.colspan ? Number(cell.colspan) : 1;   
+          const colspanAttr = cell.colspan ? `colspan="${cell.colspan}"` : "";
 
-          html += `<td style="${color}" ${rowspan} ${colspan}>${value}</td>`;
+          const classes = [];
+
+          // Only tint cells that do NOT span across columns
+          if (colspanNum === 1) {
+            if (j === 0 || j === 1) classes.push("col-wei");
+            if (j === 2 || j === 3) classes.push("col-shu");
+            if (j === 4 || j === 5) classes.push("col-wu");
+
+            if (j === 0 || j === 2 || j === 4) classes.push("start");
+            if (j === 1 || j === 3 || j === 5) classes.push("end");
+          }
+
+          html += `<td class="${classes.join(" ")}" style="${color}" ${rowspan} ${colspanAttr}>${value}</td>`;
         }
+
         html += "</tr>";
       }
 
-      html += "</table>";
+      html += "</table></div>";
       container.innerHTML = html;
     }
+
   </script>
   <div id="footer"></div>
 

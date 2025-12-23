@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <title>Table of Rear and Eastern Palaces</title>
+  <title>武將表</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
-<style>
+  <style>
   h1{
     font-size:20px;
     margin-top:3rem;
@@ -90,22 +90,18 @@
   .table-wrapper table tr:first-child > td.col-shu { background-color: #2d2440 }
   .table-wrapper table tr:first-child > td.col-wu  { background-color: #3b2a1b }
 </style>
-
 </head>
 <body>
 <div id="navbar"></div>
-  <h1>Table of Rear and Eastern Palaces</h1>
+  <h1>武將表</h1>
 <button 
-  onclick="location.href='officials_table_index.html';" 
+  onclick="location.href='officials_table_index_zh.html';" 
   style="margin-left: 1rem; padding: 0.5rem 1rem; font-size: 14px; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">
-  ← Return
-    </button>
-
-
-
-  <h2>Categories</h2>
+  ← 返回
+</button>
+  <h2>類別</h2>
   <div class="sheet-selector">
-  <label for="sheet-select">Select Sheet:</label>
+  <label for="sheet-select">請選擇:</label>
   <select id="sheet-select"></select>
   </div>
   <div id="table-container"></div>
@@ -113,9 +109,9 @@
   <script>
     let sheetData = {};
 
-    fetch("rear_eastern_palace_webdisplay.json")
-      .then(res => res.json())
-          .then(data => {
+     fetch("../translations/military_officials_webdisplay.json")
+    .then(res => res.json())
+    .then(data => {
         const sheetNames = Object.keys(data);   
         sheetData = data;
 
@@ -130,6 +126,7 @@
         selector.addEventListener("change", () => renderSheet(selector.value));
         renderSheet(sheetNames[0]);             
     });
+
 
     function renderSheet(sheetName) {
       const rows = sheetData[sheetName];
@@ -175,7 +172,7 @@
   </script>
   <div id="footer"></div>
 
-<script>
+  <script>
   async function includeHTML(id, file, callback) {
     const res = await fetch(file);
     const html = await res.text();
@@ -185,10 +182,10 @@
   }
 
   
-  includeHTML("navbar", "../nav.html", () => {
+  includeHTML("navbar", "nav_zh.html", () => {
 
     const script = document.createElement("script");
-    script.src = "../scripts/navbar.js"; 
+    script.src = "scripts/navbar_zh.js"; 
     script.defer = true;
 
 
@@ -211,5 +208,8 @@
  
   includeHTML("footer", "../footer.html");
 </script>
+
 </body>
 </html>
+
+

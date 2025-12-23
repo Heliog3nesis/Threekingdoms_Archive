@@ -3,6 +3,11 @@
 A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
+## 🗓️ 2025-12-23 — Major Update
+- 📖 Added officials positions for Military and provincial officials
+- 🎨 QOL changes: header freezing and color coding by state 
+
+---
 
 ## 🗓️ 2025-09-28 — Major Update
 - 🛠️ Added bilingual **Position Finder Tool** for officials positions
@@ -11,7 +16,7 @@ A log of updates and additions to the **Three Kingdoms Archive** project.
 ---
 
 ## 🗓️ 2025-09-21 — Major Update
-- 📖 Revamped Three Kingdom Official Positions main page
+- ✨ Revamped Three Kingdom Official Positions main page
 - 📖 Added officials positions in the Rear and Eastern Palaces
 
 ---

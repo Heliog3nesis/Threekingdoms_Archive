@@ -21,8 +21,7 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 ## 🔭 Future Plans
 
 - Currently working on finishing up the Official Titles translations
-- Perhaps more maps after?
-- Or a timeline?
+- Looking at battle maps in the future
 
 ## 🤝 Contribution
 
