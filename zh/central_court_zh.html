@@ -124,7 +124,22 @@
         });
 
         selector.addEventListener("change", () => renderSheet(selector.value));
-        renderSheet(sheetNames[0]);             
+                // read sheet from URL and select it if possible
+        const params = new URLSearchParams(window.location.search);
+        const sheetFromUrlRaw = params.get("sheet") || "";
+
+        // whitespace-tolerant match (handles double spaces / trailing spaces)
+        const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+        const wanted = norm(sheetFromUrlRaw);
+
+        let initialSheet = sheetNames[0];
+        if (wanted) {
+          const match = sheetNames.find(name => norm(name) === wanted);
+          if (match) initialSheet = match;
+        }
+
+        selector.value = initialSheet;
+        renderSheet(initialSheet);               
     });
 
 

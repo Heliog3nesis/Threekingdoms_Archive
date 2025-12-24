@@ -3,9 +3,14 @@
 A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
+## 🗓️ 2025-12-24 — Minor Update
+- 🧩 QOL changes: Improved visuals and link redirects for position finder tool
+- 🧩 QOL changes: New home page quick links 
+
+---
 ## 🗓️ 2025-12-23 — Major Update
 - 📖 Added officials positions for Military and provincial officials
-- 🎨 QOL changes: header freezing and color coding by state 
+- 🧩 QOL changes: Header freezing and color coding by state 
 
 ---
 

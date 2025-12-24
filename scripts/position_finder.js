@@ -39,6 +39,8 @@ function isMergedRow(row) {
 loadPositionFile("excellencies_ministers_webdisplay.json");
 loadPositionFile("rear_eastern_palace_webdisplay.json");
 loadPositionFile("central_court_webdisplay.json");
+loadPositionFile("military_officials_webdisplay.json");
+loadPositionFile("provincial_officials_webdisplay.json");
 
 
 
@@ -103,10 +105,6 @@ function searchPositions(term) {
           shuE: row[3]?.text || "",
           wuZ:  row[4]?.text || "",
           wuE:  row[5]?.text || "",
-          jobZ: row[6]?.text || "",   
-          jobE: row[7]?.text || "",   
-          gradeZ: row[8]?.text || "", 
-          gradeE: row[9]?.text || ""  
           });
         }
       }
@@ -128,7 +126,7 @@ window.handleSearch = function () {
   let warningMsg = "";
   if ((/^[a-zA-Z]{1,3}$/).test(input) || input.length === 1) {
     warningMsg = lang === "zh"
-      ? "當前輸入較短，無法精準搜尋，請嘗試更具體的名稱。"
+      ? "當前輸入較短，或無法精準搜尋，可嘗試提供更具體的關鍵詞。"
       : "Search term is very short; you may get too many results. Consider refining your search.";
   }
 

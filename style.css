@@ -635,3 +635,42 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+.quick-links-strip {
+  margin: 2rem auto 0;
+  width: fit-content;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.quick-label {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-right: 0.5rem;
+  white-space: nowrap;
+}
+
+.quick-link {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+
+  text-decoration: none;
+  color: #eee;
+  background: rgba(255,255,255,0.04);
+
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.quick-link:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.4);
+}
