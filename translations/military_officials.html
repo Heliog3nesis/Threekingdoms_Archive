@@ -108,16 +108,61 @@
   <label for="sheet-select">Select Sheet:</label>
   <select id="sheet-select"></select>
   </div>
+  <!-- per-sheet note  -->
+  <div id="sheet-notes" style="margin: 0 auto 2rem auto; width: 90%; font-size: 0.8rem;"></div>
+
   <div id="table-container"></div>
 
   <script>
     let sheetData = {};
+
+    // whitespace-tolerant match 
+    const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+
+    const SHEET_NOTE_GROUPS = [
+    {
+      sheets: ["中軍 Central Army", "城門 Capital Gates"],
+      note: "Under the Han system, eunuchs were responsible for guarding within the inner quarters of the palace; the Minister of the Household commanded units such as the Feathered Forest to guard the palace halls and gates; the Commandant of the Guards patrolled the palace interior and its gates; and the Bearer of the Golden Mace oversaw security outside the palace. In addition, Colonels of the City Gates were responsible for the city gates, while the Five Colonels and the Northern and Southern Armies were stationed outside the capital. From the Eastern (Later) Han onward, however, the Bearer of the Golden Mace gradually became ceremonial; by the Wei–Jin period, the Commandant of the Guards and Minister of the Household likewise became relatively unimportant, and their guard responsibilities correspondingly declined.<br> <br> Amid the frequent warfare of the Three Kingdoms period, the various regimes expanded their capital guards, organizing large “Central Armies” stationed near the capital for deployment; when dispatched to support local troops in the commanderies and provinces, these forces were referred to as “Outer Armies.” Wei established new units such as the Martial Guards and Mobile Forces camps as the core of its Central Army, with the Martial Guards responsible for guarding the palace. Shu also had similar units such as the Feathered Forest and Tiger Strides camps. In Wei and Shu, though the Five Colonels were established, they were largely ceremonial, and in some cases had many officers but few troops. In Wu, palace guard forces were largely drawn from units such as the Martial Guards and the Feathered Forest. These were often commanded by members of the Sun clan, and the Five Colonels there retained something closer to the functional role once fulfilled by the Han Five Colonels."
+    },
+    {
+      sheets: ["四征四鎮 Conquering & Garrisoning","四安四平 Pacifying & Subduing", "四方及雜號 Four Direction & Misc"],
+      note: "All three states of Wei, Shu, and Wu established “Comparable to Excellencies” generals such as the Grand General and General of Agile Cavalry. Beneath them came various titled Grand Generals (e.g., Grand General Who Guards the Army), followed by the high-ranking titled generals, and finally the miscellaneous generals. <br> <br> Among the high-ranking titled generals, Wei ranked the Four Conquering Generals highest, followed by the Four Garrisoning, then the Four Pacifying and Four Subduing, with the Four Direction Generals occupying a comparatively lower rank. Shu instead accorded the highest status to specially designated titles such as General Who Pacifies the Han and Strategist General, followed by the Four Direction Generals, then those bearing Garrisoning, Pacifying, and Subduing titles, while Conquering Generals ranked lowest. Wu likewise regularly appointed Conquering, Garrisoning, Pacifying, Subduing and Direction Generals, among whom the Four Directions titles held relatively high status, resembling Shu systems. The Bulwark General of Wu ranked just below the Three Excellencies, while the relative ordering of other titles is unclear. "
+    },
+    {
+      sheets:["諸大將軍 Various Grand Generals"],
+      note: ["All three states of Wei, Shu, and Wu established “Comparable to Excellencies” generals such as the Grand General and General of Agile Cavalry. Beneath them came various titled Grand Generals (e.g., Grand General Who Guards the Army), followed by the high-ranking titled generals, and finally the miscellaneous generals."],
+    }
+  ];
+
+    const DEFAULT_SHEET_NOTE = ""; // fallback if a sheet has no note
+
+    let SHEET_NOTE_LOOKUP = {};
+
+    function buildSheetNoteLookup() {
+      const lookup = {};
+      for (const group of SHEET_NOTE_GROUPS) {
+        const names = Array.isArray(group.sheets) ? group.sheets : [group.sheets];
+        for (const name of names) {
+          lookup[norm(name)] = group.note;
+        }
+      }
+      SHEET_NOTE_LOOKUP = lookup;
+    }
+
+    function updateSheetNotes(sheetName) {
+      const el = document.getElementById("sheet-notes");
+      if (!el) return;
+
+      const note = SHEET_NOTE_LOOKUP[norm(sheetName)];
+      el.innerHTML = note ?? DEFAULT_SHEET_NOTE;
+    }
 
     fetch("military_officials_webdisplay.json")
       .then(res => res.json())
           .then(data => {
         const sheetNames = Object.keys(data);   
         sheetData = data;
+        buildSheetNoteLookup();
 
         const selector = document.getElementById("sheet-select");
         sheetNames.forEach(sheet => {           
@@ -147,6 +192,8 @@
     });
 
     function renderSheet(sheetName) {
+      // Update note whenever a sheet is rendered
+      updateSheetNotes(sheetName);
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
 

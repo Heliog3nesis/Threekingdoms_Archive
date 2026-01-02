@@ -101,39 +101,81 @@
   ← Return
     </button>
 
-
-
   <h2>Categories</h2>
   <div class="sheet-selector">
-  <label for="sheet-select">Select Sheet:</label>
-  <select id="sheet-select"></select>
+    <label for="sheet-select">Select Sheet:</label>
+    <select id="sheet-select"></select>
   </div>
+
+  <!-- per-sheet note  -->
+  <div id="sheet-notes" style="margin: 0 auto 2rem auto; width: 90%; font-size: 0.8rem;"></div>
+
   <div id="table-container"></div>
 
   <script>
     let sheetData = {};
 
+    // whitespace-tolerant match 
+    const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+
+    const SHEET_NOTE_GROUPS = [
+    {
+      sheets: ["上公 Superior Excellency"],
+      note: "Superior Excellency referred to ranks above the Three Excellencies. In the Han dynasty, such titles were most often conferred upon senior statesmen or highly trusted ministers, with Grand Tutor being the most common. In practice, however, the Superior Excellency was an honorific rank, and its political influence depended largely on the holder’s seniority, reputation, and any concurrent offices he held. After Emperor Wu’s reign, the position of Chancellor was often not established. It was only in the late Han, amid the turbulence of the Wei–Jin transition, that the office was reinstated, with senior military posts also incorporated into the rank of Superior Excellency."
+    },
+    {
+      sheets: ["三公 Three Excellencies"],
+      note: "In the early Western (Former) Han, the Three Excellencies were established in order to divide the powers of the Chancellor. By the Eastern (Later) Han, although the Three Excellencies held high rank and generous stipends and were nominally charged with overseeing the Nine Ministers, their authority in deliberating state affairs had gradually shifted to the Imperial Secretariats. This produced a situation described as “though the Three Excellencies were maintained, affairs were handled by the Secretariats.” As a result, the Three Excellencies increasingly functioned as an honorary distinction, with actual power and influence varying depending on the individual and the political circumstances of the time. During the Wei–Jin period, the Secretariat came to control most critical state matters; policy implementation, official appointments, and the submission of memorials could all be handled directly, sometimes bypassing the Three Excellencies altogether."
+    },
+    {
+      sheets: ["九卿(一) Nine Ministers I", "九卿(二) Nine Ministers II","九卿(三) Nine Ministers III","其他 Others"],
+      note: "Although the term “Nine Ministers” existed in the early Han, there was no fixed set of nine offices. Only in the Eastern (Later) Han did the nine posts starting with the Minister of Ceremonies become formally established as the Nine Ministers. Wei Zhao of Wu further distinguished these nine as the inner (or principal) ministers, while classifying the Bearer of the Golden Mace, Court Architect, and Grand Chamberlain to the Empress as outer ministers. For Bearer of the Golden Mace, Court Architect, see “其他 Others”; for Grand Chamberlain to the Empress, see “皇后 Empress” under the Rear and Eastern Palaces section. "
+    }
+  ];
+
+    const DEFAULT_SHEET_NOTE = ""; // fallback if a sheet has no note
+
+    let SHEET_NOTE_LOOKUP = {};
+
+    function buildSheetNoteLookup() {
+      const lookup = {};
+      for (const group of SHEET_NOTE_GROUPS) {
+        const names = Array.isArray(group.sheets) ? group.sheets : [group.sheets];
+        for (const name of names) {
+          lookup[norm(name)] = group.note;
+        }
+      }
+      SHEET_NOTE_LOOKUP = lookup;
+    }
+
+    function updateSheetNotes(sheetName) {
+      const el = document.getElementById("sheet-notes");
+      if (!el) return;
+
+      const note = SHEET_NOTE_LOOKUP[norm(sheetName)];
+      el.innerHTML = note ?? DEFAULT_SHEET_NOTE;
+    }
+
     fetch("excellencies_ministers_webdisplay.json")
       .then(res => res.json())
-          .then(data => {
-        const sheetNames = Object.keys(data);   
+      .then(data => {
+        const sheetNames = Object.keys(data);
         sheetData = data;
+        buildSheetNoteLookup();
 
         const selector = document.getElementById("sheet-select");
-        sheetNames.forEach(sheet => {           
-        const opt = document.createElement("option");
-        opt.value = sheet;
-        opt.textContent = sheet;
-        selector.appendChild(opt);
+        sheetNames.forEach(sheet => {
+          const opt = document.createElement("option");
+          opt.value = sheet;
+          opt.textContent = sheet;
+          selector.appendChild(opt);
         });
 
         selector.addEventListener("change", () => renderSheet(selector.value));
-                // read sheet from URL and select it if possible
+
+        // read sheet from URL and select it if possible
         const params = new URLSearchParams(window.location.search);
         const sheetFromUrlRaw = params.get("sheet") || "";
-
-        // whitespace-tolerant match (handles double spaces / trailing spaces)
-        const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
         const wanted = norm(sheetFromUrlRaw);
 
         let initialSheet = sheetNames[0];
@@ -143,10 +185,13 @@
         }
 
         selector.value = initialSheet;
-        renderSheet(initialSheet);              
-    });
+        renderSheet(initialSheet);
+      });
 
     function renderSheet(sheetName) {
+      // Update note whenever a sheet is rendered
+      updateSheetNotes(sheetName);
+
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
 
@@ -162,7 +207,7 @@
           const value = cell.text || "";
           const color = cell.color ? `color:#${cell.color};` : "";
           const rowspan = cell.rowspan ? `rowspan="${cell.rowspan}"` : "";
-          const colspanNum = cell.colspan ? Number(cell.colspan) : 1;   
+          const colspanNum = cell.colspan ? Number(cell.colspan) : 1;
           const colspanAttr = cell.colspan ? `colspan="${cell.colspan}"` : "";
 
           const classes = [];
@@ -186,7 +231,6 @@
       html += "</table></div>";
       container.innerHTML = html;
     }
-
   </script>
   <div id="footer"></div>
 

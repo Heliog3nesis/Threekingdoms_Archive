@@ -20,12 +20,16 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 
 ## 🔭 Future Plans
 
-- Currently working on finishing up the Official Titles translations
-- Looking at battle maps in the future
+- 2026 Spring/Summer: 
+    - Update Short Stories landing page
+    - Add index/glossary for Official Positions
+    - Add more artefacts and short stories
+- 2026-2027:
+    - City/capital maps
 
 ## 🤝 Contribution
 
-Currently a solo project. If you're interested in contributing in any way, feel free to open an issue or contact me.
+Currently a solo project. If you're interested in contributing in any way, feel free to contact me.
 
 ## 📜 License
 

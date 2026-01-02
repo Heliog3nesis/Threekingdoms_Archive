@@ -107,17 +107,61 @@
   <div class="sheet-selector">
   <label for="sheet-select">Select Sheet:</label>
   <select id="sheet-select"></select>
-  </div>
+  <!-- per-sheet note  -->
+  <div id="sheet-notes" style="margin: 0 auto 2rem auto; width: 90%; font-size: 0.8rem;"></div>
+
   <div id="table-container"></div>
 
   <script>
     let sheetData = {};
+
+    // whitespace-tolerant match 
+    const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+
+    const SHEET_NOTE_GROUPS = [
+    {
+      sheets: ["州 Provinces"],
+      note: "Originally, the Inspector served as a supervisory official charged with monitoring commanderies and states. Over time, however, the authority of the office steadily expanded, and inspectors frequently came to exercise administrative powers as well, effectively resembling provincial governors. From the late Western (Former) Han onward, inspectors were allowed to establish their own office and appoint subordinate officials on their own authority. <br> <br> Those appointed under such arrangements would not view the emperor as their sole sovereign; they would also treat the inspector who had recruited them as their “lord.” This situation gave rise to what Qian Mu famously described as a system of “dual allegiance.”",
+    },
+    {
+      sheets: ["郡 Commanderies"],
+      note: "Commandery Administrators were similar to Inspectors in establishing offices. With the exception of the Commandery Assistant and Commandant, who were appointed by the central court, all subordinate officials could likewise be recruited and appointed at the Administrator’s discretion. Other than the capital region and border commanderies, commandery officials were customarily drawn from the local populace. Those so appointed often regarded the Commandery Administrator as their “lord” as well, thus also exhibiting “dual allegiance.”<br><br> Although an administrator could not arbitrarily remove county magistrates appointed by the court, he was permitted to appoint acting magistrates to manage county affairs on a temporary basis. An administrator could promulgate local ordinances to guide local customs and regulate livelihoods, exercise authority over rewards and punishments, oversee judicial matters, and, in extreme cases, wield the power to execute. After serving one full year, the administrator also gains the right to make recommendations, including nominations for Filial and Incorrupt, and Worthy and Upright candidates, as well as annual recommendations.  <br> <br> Under the Han system, taxes collected within a commandery were remitted to the capital, and local expenditures allocated back by the central government. Border commanderies whose revenues proved insufficient were subsidized through transfers from interior commanderies. Commandery Administrators were also required to evaluate their subordinate officials in the autumn and winter. Preliminary assessments were conducted at the county level, reviewed at the commandery level, and then compiled into annual reports submitted to the court in the first month of the year."
+    },
+    {
+      sheets:["縣 Counties"],
+      note: "Both the Han and Wei dynasties followed Qin administrative practice in organizing households below the county level into townships and villages as units of household registration. Within each township, Neighborhood stations were also established as territorial divisions, operating alongside villages. Neighborhood stations were laid out at intervals of ten li (~4 km). Each station was a walled compound with gates and buildings, responsible for functions like relaying official communications, suppressing crime, and providing lodging for travelers. Ten such Neighborhood stations constituted a township; the station where the township seat was located would be known as the Capital Neighborhood station. ",
+    }
+  ];
+
+    const DEFAULT_SHEET_NOTE = ""; // fallback if a sheet has no note
+
+    let SHEET_NOTE_LOOKUP = {};
+
+    function buildSheetNoteLookup() {
+      const lookup = {};
+      for (const group of SHEET_NOTE_GROUPS) {
+        const names = Array.isArray(group.sheets) ? group.sheets : [group.sheets];
+        for (const name of names) {
+          lookup[norm(name)] = group.note;
+        }
+      }
+      SHEET_NOTE_LOOKUP = lookup;
+    }
+
+    function updateSheetNotes(sheetName) {
+      const el = document.getElementById("sheet-notes");
+      if (!el) return;
+
+      const note = SHEET_NOTE_LOOKUP[norm(sheetName)];
+      el.innerHTML = note ?? DEFAULT_SHEET_NOTE;
+    }
 
     fetch("provincial_officials_webdisplay.json")
       .then(res => res.json())
           .then(data => {
         const sheetNames = Object.keys(data);   
         sheetData = data;
+        buildSheetNoteLookup();
 
         const selector = document.getElementById("sheet-select");
         sheetNames.forEach(sheet => {           
@@ -148,6 +192,7 @@
     });
 
     function renderSheet(sheetName) {
+      updateSheetNotes(sheetName);
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
 

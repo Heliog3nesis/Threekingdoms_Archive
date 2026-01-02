@@ -108,32 +108,75 @@
   <label for="sheet-select">Select Sheet:</label>
   <select id="sheet-select"></select>
   </div>
+<!-- per-sheet note  -->
+  <div id="sheet-notes" style="margin: 0 auto 2rem auto; width: 90%; font-size: 0.8rem;"></div>
+
   <div id="table-container"></div>
 
   <script>
     let sheetData = {};
 
-    fetch("central_court_webdisplay.json")
+    // whitespace-tolerant match 
+    const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+
+    const SHEET_NOTE_GROUPS = [
+    {
+      sheets: ["門下 Chancellery"],
+      note: "During the Han, 門下 menxia (“At/Within the Gates”) was originally a broad, generic term, applied to officials responsible for any court duties within the palace. By the Wei–Jin period, however, its meaning had narrowed, referring specifically to close attendants serving in the inner halls of the imperial palace.<br> <br> From the mid–Eastern (Later) Han onward, the authority of the Three Excellencies gradually waned, while that of the Imperial Secretariats steadily increased. Since the Imperial Secretariats shifted from private attendants of the emperor to officials who managed the core affairs of government and participated in outside court politics, they were no longer involved in internal palace duties. To counterbalance this shift of power and to retain direct control over critical decisions, the emperor selected close palace attendants to review memorials submitted by the Imperial Secretariats and to assist in drafting and issuing responses, an arrangement that later evolved into the Chancellery Department. In some cases, separate confidential offices were also established to take over certain key duties from the Imperial Secretariats, laying the foundations for what would later be known as the Palace Secretariat Department."
+    },
+    {
+      sheets: ["中書 Palace Secretariat","尚書 State Affairs"],
+      note: "From the mid–Eastern (Later) Han onward, the authority of the Three Excellencies gradually waned, while that of the Imperial Secretariats steadily increased. Since the Imperial Secretariats shifted from private attendants of the emperor to officials who managed the core affairs of government and participated in outside court politics, they were no longer involved in internal palace duties. To counterbalance this shift of power and to retain direct control over critical decisions, the emperor selected close palace attendants to review memorials submitted by the Imperial Secretariats and to assist in drafting and issuing responses, an arrangement that later evolved into the Chancellery Department. In some cases, separate confidential offices were also established to take over certain key duties from the Imperial Secretariats, laying the foundations for what would later be known as the Palace Secretariat Department."
+    },
+    {
+      sheets: ["御史臺 Censorate"],
+      note: "In the pre-Qin period, the Censor was originally a court historian responsible for records and archives. From the Qin and Han onward, this office was maintained and further entrusted with the supervision of officials. During the Western (Former) Han, the Imperial Censor ranked just below the Chancellor and functioned as both his collaborator and institutional counterweight. By the Eastern (Later) Han, however, the Imperial Censor title was changed to Excellency of Works among the Three Excellencies, its authority gradually hollowed out, and effective control of the Censorate passed instead to the Deputy Imperial Censor. "
+    },
+  ];
+
+    const DEFAULT_SHEET_NOTE = ""; // fallback if a sheet has no note
+
+    let SHEET_NOTE_LOOKUP = {};
+
+    function buildSheetNoteLookup() {
+      const lookup = {};
+      for (const group of SHEET_NOTE_GROUPS) {
+        const names = Array.isArray(group.sheets) ? group.sheets : [group.sheets];
+        for (const name of names) {
+          lookup[norm(name)] = group.note;
+        }
+      }
+      SHEET_NOTE_LOOKUP = lookup;
+    }
+
+    function updateSheetNotes(sheetName) {
+      const el = document.getElementById("sheet-notes");
+      if (!el) return;
+
+      const note = SHEET_NOTE_LOOKUP[norm(sheetName)];
+      el.innerHTML = note ?? DEFAULT_SHEET_NOTE;
+    }
+
+    fetch("./central_court_webdisplay.json")
       .then(res => res.json())
-          .then(data => {
-        const sheetNames = Object.keys(data);   
+      .then(data => {
+        const sheetNames = Object.keys(data);
         sheetData = data;
+        buildSheetNoteLookup();
 
         const selector = document.getElementById("sheet-select");
-        sheetNames.forEach(sheet => {           
-        const opt = document.createElement("option");
-        opt.value = sheet;
-        opt.textContent = sheet;
-        selector.appendChild(opt);
+        sheetNames.forEach(sheet => {
+          const opt = document.createElement("option");
+          opt.value = sheet;
+          opt.textContent = sheet;
+          selector.appendChild(opt);
         });
 
         selector.addEventListener("change", () => renderSheet(selector.value));
-                // read sheet from URL and select it if possible
+
+        // read sheet from URL and select it if possible
         const params = new URLSearchParams(window.location.search);
         const sheetFromUrlRaw = params.get("sheet") || "";
-
-        // whitespace-tolerant match (handles double spaces / trailing spaces)
-        const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
         const wanted = norm(sheetFromUrlRaw);
 
         let initialSheet = sheetNames[0];
@@ -143,10 +186,12 @@
         }
 
         selector.value = initialSheet;
-        renderSheet(initialSheet);             
-    });
+        renderSheet(initialSheet);
+      });
 
     function renderSheet(sheetName) {
+      // Update note whenever a sheet is rendered
+      updateSheetNotes(sheetName);
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
 

@@ -103,17 +103,61 @@
   <div class="sheet-selector">
   <label for="sheet-select">請選擇:</label>
   <select id="sheet-select"></select>
-  </div>
+  <!-- per-sheet note  -->
+  <div id="sheet-notes" style="margin: 0 auto 2rem auto; width: 90%; font-size: 0.8rem;"></div>
+
   <div id="table-container"></div>
 
   <script>
     let sheetData = {};
+
+    // whitespace-tolerant match 
+    const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+
+    const SHEET_NOTE_GROUPS = [
+    {
+      sheets: ["州 Provinces"],
+      note: "刺史初為監察郡國之職，然其職權漸重，後多兼領行政，實與州牧相類。自西漢末，刺史可開府，自行徵辟掾吏。其所辟之屬，多不獨奉天子為君，亦以徵辟己之刺史為「君」，遂成錢穆所謂「二重君主观」。",
+    },
+    {
+      sheets: ["郡 Commanderies"],
+      note: "郡守與刺史相類，其屬吏除丞、尉由朝廷任命外，亦皆可開府自行徵辟署置。郡吏除去京畿及邊郡，例用本籍之人，所辟者亦多奉郡守為「君」，具「二重君主观」。郡守雖不能隨意更調朝廷所置之縣令，然可暫置守令以代理縣事。郡守可自設條教以化民俗、理民生；兼掌賞罰、司法，乃至生殺予奪。郡守任滿一歲則亦有選舉之權，可舉賢良方正、歲貢等。<br><br> 漢制，本郡稅賦歸於朝廷，郡國用度由朝廷撥付，邊郡資用不足則由內郡調濟支應。郡守亦須於秋冬課核屬吏，由屬縣先期集課，郡覆核之，并於正月彙總上計於朝廷。"
+    },
+    {
+      sheets:["縣 Counties"],
+      note: "漢魏皆沿秦制，縣下設鄉、里為戶籍單位。鄉內又以亭部作地域劃分，與里並行，以十里（長度單位，~4km）為一亭，設亭所，築門牆、樓室，掌文書傳遞、察姦捕盜等，兼供過路者住宿之便。十亭部為一鄉，治所所在之亭，則稱「都亭」。",
+    }
+  ];
+
+    const DEFAULT_SHEET_NOTE = ""; // fallback if a sheet has no note
+
+    let SHEET_NOTE_LOOKUP = {};
+
+    function buildSheetNoteLookup() {
+      const lookup = {};
+      for (const group of SHEET_NOTE_GROUPS) {
+        const names = Array.isArray(group.sheets) ? group.sheets : [group.sheets];
+        for (const name of names) {
+          lookup[norm(name)] = group.note;
+        }
+      }
+      SHEET_NOTE_LOOKUP = lookup;
+    }
+
+    function updateSheetNotes(sheetName) {
+      const el = document.getElementById("sheet-notes");
+      if (!el) return;
+
+      const note = SHEET_NOTE_LOOKUP[norm(sheetName)];
+      el.innerHTML = note ?? DEFAULT_SHEET_NOTE;
+    }
 
      fetch("../translations/provincial_officials_webdisplay.json")
     .then(res => res.json())
     .then(data => {
         const sheetNames = Object.keys(data);   
         sheetData = data;
+        buildSheetNoteLookup();
 
         const selector = document.getElementById("sheet-select");
         sheetNames.forEach(sheet => {           
@@ -144,6 +188,7 @@
 
 
     function renderSheet(sheetName) {
+      updateSheetNotes(sheetName);
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
 

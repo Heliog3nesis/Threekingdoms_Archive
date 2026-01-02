@@ -103,17 +103,61 @@
   <div class="sheet-selector">
   <label for="sheet-select">請選擇:</label>
   <select id="sheet-select"></select>
-  </div>
+  <!-- per-sheet note  -->
+  <div id="sheet-notes" style="margin: 0 auto 2rem auto; width: 90%; font-size: 0.8rem;"></div>
+
   <div id="table-container"></div>
 
   <script>
     let sheetData = {};
+
+    // whitespace-tolerant match 
+    const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+
+    const SHEET_NOTE_GROUPS = [
+    {
+      sheets: ["中軍 Central Army", "城門 Capital Gates"],
+      note: "漢制，宦者掌殿省內、禁中，光祿勳領羽林等部掌殿中、殿門，衛尉巡行宮中、宮門，執金吾主宮外戒備，復有城門校尉司城門，南北軍五校尉等駐守城外。然東漢以來，執金吾漸為虛職；至魏晉，衛尉、光祿勳亦日趨閒散，宿衛之職遂輕。<br> <br> 時值三國戰亂頻仍，諸政權多擴禁衛，組建龐大「中軍」駐紮都城，以備調遣；若遣出協援州郡，則稱「外軍」。魏新立武衛、游擊等營為中軍核心，以武衛專掌宮禁；蜀則置羽林、虎步等營。魏蜀皆設五校尉，然已徒具虛名，甚而官多兵少。惟吳之宿衛，多由武衛、羽林等組成，且常以孫氏宗室統領，似猶存漢五校尉之職。",
+    },
+    {
+      sheets: ["四征四鎮 Conquering & Garrisoning","四安四平 Pacifying & Subduing", "四方及雜號 Four Direction & Misc"],
+      note: "魏、蜀、吳三國皆置大將軍、驃騎將軍等「比公」大將軍，其下為諸名號大將軍（如鎭軍大將軍），再次為諸重號將軍，最次則為雜號將軍。諸重號將軍，魏以「四征」將軍為尊，次「四鎮」，再次為「四安」、「四平」，而「四方」將軍位階相對為下。蜀則以安漢、軍師等特殊名號將軍為尊，次列「四方」，再次為「鎮」、「安」、「平」，而以「征」將軍居末。吳亦常設征、鎮、安、平等諸重號，其中「四方」較高，頗似蜀制，又以輔吳亞三公，其餘則不詳。"
+    },
+    {
+      sheets:["諸大將軍 Various Grand Generals"],
+      note: "魏、蜀、吳三國皆置大將軍、驃騎將軍等「比公」大將軍，其下為諸名號大將軍（如鎭軍大將軍），再次為諸重號將軍，最次則為雜號將軍。",
+    }
+  ];
+
+    const DEFAULT_SHEET_NOTE = ""; // fallback if a sheet has no note
+
+    let SHEET_NOTE_LOOKUP = {};
+
+    function buildSheetNoteLookup() {
+      const lookup = {};
+      for (const group of SHEET_NOTE_GROUPS) {
+        const names = Array.isArray(group.sheets) ? group.sheets : [group.sheets];
+        for (const name of names) {
+          lookup[norm(name)] = group.note;
+        }
+      }
+      SHEET_NOTE_LOOKUP = lookup;
+    }
+
+    function updateSheetNotes(sheetName) {
+      const el = document.getElementById("sheet-notes");
+      if (!el) return;
+
+      const note = SHEET_NOTE_LOOKUP[norm(sheetName)];
+      el.innerHTML = note ?? DEFAULT_SHEET_NOTE;
+    }
 
      fetch("../translations/military_officials_webdisplay.json")
     .then(res => res.json())
     .then(data => {
         const sheetNames = Object.keys(data);   
         sheetData = data;
+        buildSheetNoteLookup();
 
         const selector = document.getElementById("sheet-select");
         sheetNames.forEach(sheet => {           
@@ -144,6 +188,7 @@
 
 
     function renderSheet(sheetName) {
+      updateSheetNotes(sheetName);
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
 

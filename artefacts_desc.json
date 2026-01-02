@@ -75,6 +75,7 @@
     "id":"img9",
     "title":"Jade Burial Suit",
     "text":"This jade burial suit was unearthed from the tomb of Liu Fei, Prince of Jiangdu. A son of Emperor Jing of Han and elder half-brother to Emperor Wu, Liu Fei took part in quelling the famous Rebellion of the Seven States. The suit is composed of over two thousand individual jade pieces, meticulously strung together — a process that would have taken several years to complete. In the Han dynasty, it was believed that if the body remained uncorrupted after death and the vital “qi” within could be preserved, one might ascend to the realm of the immortals. The most effective way to achieve this, it was thought, was to tightly encase the corpse in materials of eternal endurance, like jade. Today, the jade burial suits displayed in museums may, in a symbolic sense, have fulfilled their owners' hopes for everlasting life.",
+    "location": "Nanjing",
     "location_en": "Nanjing",
     "period": "Han",
     "period_en": "Han"
@@ -83,8 +84,27 @@
     "id":"img10",
     "title":"Cao Quan Stele",
     "text":"The Cao Quan Stele — or The Stele of Cao Quan, Magistrate of Heyang — was carved in the second year of Zhongping during the Eastern Han dynasty, and was later unearthed in Heyang County during the Ming Wanli period. The inscription provides a detailed account of Magistrate Cao Quan's lineage, life, and achievements, including his suppression of the Yellow Turban Rebellion. The stele stands approximately 3 meters tall and 1.5 meters wide, bearing a total of 1165 characters. With its graceful, expressive strokes, the work has long stood as a canonical exemplar of clerical script. To this day, it remains one of the most esteemed Han dynasty steles and serves as a valued touchstone for students of calligraphy.",
+    "location": "XA",
     "location_en": "Xi'an",
     "period": "Han",
     "period_en": "Han"
+  },
+  {
+    "id":"img11",
+    "title":"White Jade Cup",
+    "text":"This white jade cup was excavated from a Luoyang tomb dating to the Wei period. Although the tomb had been looted and its grave goods left scattered and incomplete, this cup was fortunately preserved and intact. An inscription reading “Eighth year of Zhengshi, eighth month” carved on surviving iron curtain-frame components dates the burial to the reign of Cao Fang. The cup stands 13 cm high with a mouth diameter of 5 cm, and is carved from a single piece of clear, lustrous white jade. Entirely undecorated, the cup relies on the simplicity and elegance of its form, embodying the ideal of “beauty inherent in nature.”",
+    "location": "Luoyang",
+    "location_en": "Luoyang",
+    "period": "Wei-Jin",
+    "period_en": "Three Kingdoms"
+  },
+  {
+    "id":"img12",
+    "title":"Tiger-Motif Bronze Dagger-Axe",
+    "text":"The bronze dagger-axe measures 25.2 cm in length, 13.6 cm in width, and 2.4 cm in thickness. Both sides of the rear portion of the blade are adorned with relief carvings of tiger heads, their jaws gaping wide; behind them, incised lines delineate the bodies of the tigers. Portions of the blade are also decorated with symbols associated with the Bashu culture. Among Bashu bronze artifacts, tiger motifs are among the most frequently employed decorative themes, corresponding to accounts in the Book of the Later Han that describe the Ba people’s veneration of the tiger. Comparable tiger-decorated weapons have been unearthed at sites in Chongqing and elsewhere in the region. ",
+    "location": "Chengdu",
+    "location_en": "Chengdu",
+    "period": "Q&PQ",
+    "period_en": "Warring States"
   }
 ]

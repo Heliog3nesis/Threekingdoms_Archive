@@ -104,32 +104,75 @@
   <label for="sheet-select">請選擇:</label>
   <select id="sheet-select"></select>
   </div>
+  <!-- per-sheet note  -->
+  <div id="sheet-notes" style="margin: 0 auto 2rem auto; width: 90%; font-size: 0.8rem;"></div>
+
   <div id="table-container"></div>
 
   <script>
     let sheetData = {};
 
-     fetch("../translations/excellencies_ministers_webdisplay.json")
-    .then(res => res.json())
-    .then(data => {
-        const sheetNames = Object.keys(data);   
+    // whitespace-tolerant match 
+    const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
+
+    const SHEET_NOTE_GROUPS = [
+    {
+      sheets: ["上公 Superior Excellency"],
+      note: "上公，指在三公之上。漢代多以此銜授予元老或重臣，其中以太傅最為常見。然上公實為榮銜，其政治影響多源於任者資歷、聲望及其所兼職。自武帝后，丞相多不設，至漢末魏晉動蕩之際，丞相方復起，軍事要職亦躋身上公之列。"
+    },
+    {
+      sheets: ["三公 Three Excellencies"],
+      note: "西漢初設三公以分丞相之權。及至東漢，三公雖爵高祿厚，名義上分統九卿，然其議政之權已漸移尚書台，形成「雖置三公，而事歸臺閣」之局。故此際三公，頗類榮銜，其實權與影響力因人因時而異。魏晉時，尚書台多總攬機要，凡政策執行、官吏選任、文書上奏亦可越過三公，徑行處理。"
+    },
+    {
+      sheets: ["九卿(一) Nine Ministers I", "九卿(二) Nine Ministers II","九卿(三) Nine Ministers III","其他 Others"],
+      note: "漢初雖有「九卿」之名，並無確切九官。直至東漢，方確立太常九職為「九卿」。吳韋昭又以此九卿為正卿，執金吾、將作大匠、大長秋為外卿。執金吾、將作大匠見「其他 Others」；大長秋事后宮，分錄于后宮東宮之「皇后 Empress」。 "
+    }
+  ];
+
+    const DEFAULT_SHEET_NOTE = ""; // fallback if a sheet has no note
+
+    let SHEET_NOTE_LOOKUP = {};
+
+    function buildSheetNoteLookup() {
+      const lookup = {};
+      for (const group of SHEET_NOTE_GROUPS) {
+        const names = Array.isArray(group.sheets) ? group.sheets : [group.sheets];
+        for (const name of names) {
+          lookup[norm(name)] = group.note;
+        }
+      }
+      SHEET_NOTE_LOOKUP = lookup;
+    }
+
+    function updateSheetNotes(sheetName) {
+      const el = document.getElementById("sheet-notes");
+      if (!el) return;
+
+      const note = SHEET_NOTE_LOOKUP[norm(sheetName)];
+      el.innerHTML = note ?? DEFAULT_SHEET_NOTE;
+    }
+
+    fetch("../translations/excellencies_ministers_webdisplay.json")
+      .then(res => res.json())
+      .then(data => {
+        const sheetNames = Object.keys(data);
         sheetData = data;
+        buildSheetNoteLookup();
 
         const selector = document.getElementById("sheet-select");
-        sheetNames.forEach(sheet => {           
-        const opt = document.createElement("option");
-        opt.value = sheet;
-        opt.textContent = sheet;
-        selector.appendChild(opt);
+        sheetNames.forEach(sheet => {
+          const opt = document.createElement("option");
+          opt.value = sheet;
+          opt.textContent = sheet;
+          selector.appendChild(opt);
         });
 
         selector.addEventListener("change", () => renderSheet(selector.value));
-                // read sheet from URL and select it if possible
+
+        // read sheet from URL and select it if possible
         const params = new URLSearchParams(window.location.search);
         const sheetFromUrlRaw = params.get("sheet") || "";
-
-        // whitespace-tolerant match (handles double spaces / trailing spaces)
-        const norm = (s) => String(s).replace(/\u00A0/g, " ").replace(/\s+/g, " ").trim();
         const wanted = norm(sheetFromUrlRaw);
 
         let initialSheet = sheetNames[0];
@@ -139,11 +182,13 @@
         }
 
         selector.value = initialSheet;
-        renderSheet(initialSheet);            
-    });
-
+        renderSheet(initialSheet);
+      });
 
     function renderSheet(sheetName) {
+      // Update note whenever a sheet is rendered
+      updateSheetNotes(sheetName);
+
       const rows = sheetData[sheetName];
       const container = document.getElementById("table-container");
 
