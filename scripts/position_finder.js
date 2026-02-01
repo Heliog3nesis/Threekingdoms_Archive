@@ -67,6 +67,43 @@ function getLang() {
 
 
 // --- Search across ALL loaded JSONs, sheet by sheet ---
+function buildCellMap(rows) {
+  const cellMap = [];
+  
+  for (let r = 0; r < rows.length; r++) {
+    if (!cellMap[r]) cellMap[r] = [];
+    
+    let visualCol = 0;
+    
+    for (let c = 0; c < rows[r].length; c++) {
+      const cell = rows[r][c];
+      
+      // Skip positions already occupied by cells from above rows with rowspan
+      while (cellMap[r][visualCol] !== undefined) {
+        visualCol++;
+      }
+      
+      const rowspan = cell.rowspan || 1;
+      const colspan = cell.colspan || 1;
+      
+      // Fill all positions this cell occupies
+      for (let rs = 0; rs < rowspan; rs++) {
+        for (let cs = 0; cs < colspan; cs++) {
+          const targetRow = r + rs;
+          const targetCol = visualCol + cs;
+          
+          if (!cellMap[targetRow]) cellMap[targetRow] = [];
+          cellMap[targetRow][targetCol] = cell;
+        }
+      }
+      
+      visualCol += colspan;
+    }
+  }
+  
+  return cellMap;
+}
+
 function searchPositions(term) {
   const keyword = normalize(convertToTraditional(term));
   if (!keyword) return [];
@@ -75,18 +112,18 @@ function searchPositions(term) {
 
   for (const [fileName, sheets] of Object.entries(positionSources)) {
     for (const [sheetName, rows] of Object.entries(sheets)) {
-      if (rows.length < 2) continue; // skip if only headers
+      if (rows.length < 2) continue;
 
-      const headers = rows[0].map(cell => cell.text); // row 0 = header texts
+      const cellMap = buildCellMap(rows);
 
       for (let r = 1; r < rows.length; r++) {
-        const row = rows[r];
-         if (isMergedRow(row)) continue;
+        if (isMergedRow(rows[r])) continue;
+        
+        const visualRow = cellMap[r]; // Every row has same column count
         let found = false;
 
-        // Only check first 6 columns
-        for (let c = 0; c < 6; c++) {
-          const cell = row[c];
+        for (let c = 0; c < Math.min(10, visualRow.length); c++) {
+          const cell = visualRow[c];
           if (!cell || !cell.text) continue;
 
           if (normalize(cell.text).includes(keyword)) {
@@ -96,15 +133,17 @@ function searchPositions(term) {
         }
 
         if (found) {
-         results.push({
-          file: fileName,
-          sheet: sheetName,
-          weiZ: row[0]?.text || "",
-          weiE: row[1]?.text || "",
-          shuZ: row[2]?.text || "",
-          shuE: row[3]?.text || "",
-          wuZ:  row[4]?.text || "",
-          wuE:  row[5]?.text || "",
+          results.push({
+            file: fileName,
+            sheet: sheetName,
+            weiZ: visualRow[0]?.text || "",
+            weiE: visualRow[1]?.text || "",
+            shuZ: visualRow[2]?.text || "",
+            shuE: visualRow[3]?.text || "",
+            wuZ:  visualRow[4]?.text || "",
+            wuE:  visualRow[5]?.text || "",
+            gradeZ: visualRow[8]?.text || "",
+            gradeE: visualRow[9]?.text || "",
           });
         }
       }
@@ -113,8 +152,6 @@ function searchPositions(term) {
 
   return results;
 }
-
-
 
 
 

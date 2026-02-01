@@ -3,6 +3,12 @@
 A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
+## 2026-02-02 — Minor Update
+- 🧩 QOL changes: Added grades, salary and numbers in position finder results
+- 🌐 Added Chinese Changelog
+- 📸 Added artefact: Silver Ewer with Dancing Horses
+
+---
 ## 2026-01-02 — Minor Update
 - 📖 Added introduction to some position categories
 - 📸 Added 2 more artefacts: White Jade Cup, Tiger-Motif Bronze Dagger-Axe
@@ -14,7 +20,7 @@ A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
 ## 2025-12-23 — Major Update
-- 📖 Added officials positions for Military and provincial officials
+- 📖 Added officials positions for Military and Provincial officials
 - 🧩 QOL changes: Header freezing and color coding by state 
 
 ---

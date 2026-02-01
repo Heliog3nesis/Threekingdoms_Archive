@@ -233,7 +233,7 @@
         : "<p>No matching results found.</p>";
     } else {
       const actionLabel = lang === "zh" ? "操作" : "Actions";
-      const copyLabel   = lang === "zh" ? "複製" : "Copy row";
+      const copyLabel   = lang === "zh" ? "複製所有官名" : "Copy all names";
 
       let html = `
         <div class="table-wrap">
@@ -246,6 +246,8 @@
                 <th class="col-shu">Name (Shu)</th>
                 <th class="col-wu">名(吳)</th>
                 <th class="col-wu">Name (Wu)</th>
+                <th> 品秩员 </th>
+                <th> Grade, Salary, No. </th>
                 <th>${actionLabel}</th>
               </tr>
             </thead>
@@ -274,6 +276,13 @@
             <td class="col-shu">${r.shuE || ""}</td>
             <td class="col-wu">${r.wuZ || ""}</td>
             <td class="col-wu">${r.wuE || ""}</td>
+            <td style="width:8rem;">
+              ${r.gradeZ || ""}
+            </td>
+            <td style="width:8rem;">
+              ${r.gradeE || ""}
+            </td>
+
 
             <td class="action-cell">
               <button type="button" class="copy-btn" onclick="copyRow(this)">
