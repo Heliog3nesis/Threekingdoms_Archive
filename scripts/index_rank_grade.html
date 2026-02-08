@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Official Rank Index</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+        h1 { 
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .toggle-container {
+            background: #e8f4f8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .toggle-btn {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .toggle-btn.pin {
+            border-color: #E4705E;
+            color: #E4705E;
+        }
+        .toggle-btn.pin.active,
+        .toggle-btn.pin:hover {
+            background: #E4705E;
+            color: white;
+        }
+        .toggle-btn.shi {
+            border-color: #5E8FE4;
+            color: #5E8FE4;
+        }
+        .toggle-btn.shi.active,
+        .toggle-btn.shi:hover {
+            background: #5E8FE4;
+            color: white;
+        }
+        .dropdown-container {
+            margin: 20px 0;
+        }
+        .dropdown-container select {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            min-width: 200px;
+        }
+        .dropdown-container select.pin-select {
+            border: 2px solid #E4705E;
+        }
+        .dropdown-container select.shi-select {
+            border: 2px solid #5E8FE4;
+        }
+        .category-display {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            background: white;
+        }
+        .category-display.pin-display {
+            border: 2px solid #E4705E;
+        }
+        .category-display.pin-display h2 {
+            color: #E4705E;
+        }
+        .category-display.pin-display .entry {
+            border-left: 4px solid #E4705E;
+        }
+        .category-display.shi-display {
+            border: 2px solid #5E8FE4;
+        }
+        .category-display.shi-display h2 {
+            color: #5E8FE4;
+        }
+        .category-display.shi-display .entry {
+            border-left: 4px solid #5E8FE4;
+        }
+        .category-display h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .entry {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+        .entry strong {
+            color: #333;
+        }
+        .descriptor {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .no-selection {
+            color: #999;
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Official Rank Index</h1>
+    
+    <div class="toggle-container">
+        <button class="toggle-btn pin active" id="btnPin" onclick="switchIndex('pin')">品 Ranks</button>
+        <button class="toggle-btn shi" id="btnShi" onclick="switchIndex('shi')">石 Salary Grades</button>
+    </div>
+
+    <div class="dropdown-container">
+        <select id="categorySelect" class="pin-select" onchange="displayCategory()">
+            <option value="">-- Choose a category --</option>
+        </select>
+    </div>
+
+    <div id="displayArea"></div>
+
+    <script src="./position_index.js"></script>
+    
+    <script>
+        // Constants
+        const TRANSLATIONS = {
+            pin: {
+                '一品': 'First Grade',
+                '二品': 'Second Grade',
+                '三品': 'Third Grade',
+                '四品': 'Fourth Grade',
+                '五品': 'Fifth Grade',
+                '六品': 'Sixth Grade',
+                '七品': 'Seventh Grade',
+                '八品': 'Eighth Grade',
+                '九品': 'Ninth Grade'
+            },
+            shi: {
+                '萬石':'10000 dan',
+                '中二千石': 'Fully 2000 dan',
+                '二千石': '2000 dan',
+                '比二千石': 'Equivalent to 2000 dan',
+                '千石': '1000 dan',
+                '比千石': 'Equivalent to 1000 dan',
+                '六百石': '600 dan',
+                '比六百石': 'Equivalent to 600 dan',
+                '四百石': '400 dan',
+                '比四百石': 'Equivalent to 400 dan',
+                '三百石': '300 dan',
+                '比三百石': 'Equivalent to 300 dan',
+                '二百石': '200 dan',
+                '比二百石': 'Equivalent to 200 dan',
+                '百石': '100 dan',
+                '比百石': 'Equivalent to 100 dan'
+            }
+        };
+
+        const SORT_ORDER = {
+            pin: ['一品', '二品', '三品', '四品', '五品', '六品', '七品', '八品', '九品'],
+            shi: [
+                '萬石',
+                '中二千石', '二千石', '比二千石',
+                '千石', '比千石',
+                '六百石', '比六百石',
+                '四百石', '比四百石',
+                '三百石', '比三百石',
+                '二百石', '比二百石',
+                '百石', '比百石'
+            ]
+        };
+
+        const JSON_FILES = [
+            '../translations/excellencies_ministers_webdisplay.json',
+            '../translations/central_court_webdisplay.json',
+            '../translations/rear_eastern_palace_webdisplay.json',
+            '../translations/military_officials_webdisplay.json',
+            '../translations/provincial_officials_webdisplay.json'
+        ];
+
+        // State
+        let currentIndex = 'pin';
+        let categorizedData = null;
+        let currentLanguage = 'chinese';
+
+        // Detect language from referrer or URL parameter
+        function detectLanguage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            
+            if (langParam) {
+                currentLanguage = langParam === 'en' ? 'english' : 'chinese';
+                return;
+            }
+            
+            const referrer = document.referrer;
+            if (referrer && (referrer.includes('/en/') || referrer.includes('lang=en'))) {
+                currentLanguage = 'english';
+            }
+        }
+
+        async function loadAllJsons() {
+            const allJsons = [];
+            
+            for (const file of JSON_FILES) {
+                try {
+                    const response = await fetch(file);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    const data = await response.json();
+                    allJsons.push(data);
+                } catch (error) {
+                    console.error(`Error loading ${file}:`, error);
+                }
+            }
+            
+            return allJsons;
+        }
+
+        async function initialize() {
+            detectLanguage();
+            
+            const pageTitle = currentLanguage === 'english' ? 'Index by Rank & Grade' : '官職品秩索引 ';
+            document.title = pageTitle;
+            document.querySelector('h1').textContent = pageTitle;
+            
+            const allJsons = await loadAllJsons();
+            
+            if (allJsons.length === 0) {
+                const errorText = currentLanguage === 'english' 
+                    ? 'ERROR: No JSON files loaded' 
+                    : '错误：未能加载JSON文件';
+                document.getElementById('displayArea').innerHTML = 
+                    `<div class="no-selection">${errorText}</div>`;
+                return;
+            }
+            
+            categorizedData = categorizeByDescriptors(allJsons);
+            populateDropdown();
+        }
+
+        function switchIndex(indexType) {
+            currentIndex = indexType;
+            
+            document.getElementById('btnPin').classList.toggle('active', indexType === 'pin');
+            document.getElementById('btnShi').classList.toggle('active', indexType === 'shi');
+            
+            const select = document.getElementById('categorySelect');
+            select.className = indexType === 'pin' ? 'pin-select' : 'shi-select';
+            
+            populateDropdown();
+            document.getElementById('displayArea').innerHTML = '';
+        }
+
+        function populateDropdown() {
+            const select = document.getElementById('categorySelect');
+            const placeholder = currentLanguage === 'english' 
+                ? '-- Choose a category --' 
+                : '-- 选择类别 --';
+            
+            select.innerHTML = `<option value="">${placeholder}</option>`;
+            
+            const data = currentIndex === 'pin' ? categorizedData.byPin : categorizedData.byShi;
+            const translations = TRANSLATIONS[currentIndex];
+            const customOrder = SORT_ORDER[currentIndex];
+            
+            const sortedCategories = customOrder.filter(category => data[category]);
+            
+            Object.keys(data).forEach(category => {
+                if (!sortedCategories.includes(category)) {
+                    sortedCategories.push(category);
+                }
+            });
+            
+            sortedCategories.forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = currentLanguage === 'english' 
+                    ? (translations[category] || category)
+                    : category;
+                select.appendChild(option);
+            });
+        }
+
+        function cleanText(text) {
+            if (!text) return '';
+            return text.replace(/(<br\s*\/?>\s*)+/gi, '; ').trim();
+        }
+
+        function displayCategory() {
+            const select = document.getElementById('categorySelect');
+            const selectedCategory = select.value;
+            
+            if (!selectedCategory) {
+                const noSelectionText = currentLanguage === 'english'
+                    ? 'Please select a category from the dropdown above'
+                    : '请从上方下拉菜单中选择类别';
+                document.getElementById('displayArea').innerHTML = 
+                    `<div class="no-selection">${noSelectionText}</div>`;
+                return;
+            }
+            
+            const data = currentIndex === 'pin' ? categorizedData.byPin : categorizedData.byShi;
+            const entries = data[selectedCategory];
+            const displayClass = currentIndex === 'pin' ? 'pin-display' : 'shi-display';
+            
+            const labels = currentLanguage === 'english' 
+                ? { wei: 'Wei', shu: 'Shu', wu: 'Wu' }
+                : { wei: '魏', shu: '蜀', wu: '吳' };
+            
+            const translations = TRANSLATIONS[currentIndex];
+            const categoryHeading = currentLanguage === 'english' 
+                ? (translations[selectedCategory] || selectedCategory)
+                : selectedCategory;
+            
+            let html = `<div class="category-display ${displayClass}">
+                <h2>${categoryHeading} (${entries.length})</h2>`;
+            
+            entries.forEach(entry => {
+                html += `<div class="entry">`;
+                
+                const weiText = currentLanguage === 'english' ? entry.names.wei_english : entry.names.wei_chinese;
+                const shuText = currentLanguage === 'english' ? entry.names.shu_english : entry.names.shu_chinese;
+                const wuText = currentLanguage === 'english' ? entry.names.wu_english : entry.names.wu_chinese;
+                
+                if (weiText && weiText !== '-' && weiText.trim() !== '') {
+                    html += `<strong>${labels.wei}:</strong> ${cleanText(weiText)}<br>`;
+                }
+                if (shuText && shuText !== '-' && shuText.trim() !== '') {
+                    html += `<strong>${labels.shu}:</strong> ${cleanText(shuText)}<br>`;
+                }
+                if (wuText && wuText !== '-' && wuText.trim() !== '') {
+                    html += `<strong>${labels.wu}:</strong> ${cleanText(wuText)}<br>`;
+                }
+                
+                const descriptorText = currentLanguage === 'english' ? entry.descriptor_english : entry.descriptor;
+                html += `<div class="descriptor">${descriptorText}</div>`;
+                html += `</div>`;
+            });
+            
+            html += '</div>';
+            
+            document.getElementById('displayArea').innerHTML = html;
+        }
+
+        initialize();
+    </script>
+</body>
+</html>

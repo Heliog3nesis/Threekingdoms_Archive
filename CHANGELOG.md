@@ -3,6 +3,11 @@
 A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
+## 2026-02-08 — Minor Update
+- 🧩 QOL changes: Updated Three Kingdom Official Positions main page
+- 📖 Added index for officials by rank and salary grade
+
+---
 ## 2026-02-02 — Minor Update
 - 🧩 QOL changes: Added grades, salary and numbers in position finder results
 - 🌐 Added Chinese Changelog
