@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Official Rank Index</title>
+     <link rel="stylesheet" href="style.css">
     <style>
         body { 
             font-family: Arial, sans-serif; 
             padding: 20px; 
             max-width: 1200px; 
             margin: 0 auto;
-            background-color: #f5f5f5;
+            background-color: #000000;
+            color: #ffffff;
         }
         h1 { 
-            color: #333;
+            color: #ffffff;
             margin-bottom: 20px;
         }
         .toggle-container {
-            background: #e8f4f8;
+            background: #1a1a1a;
             padding: 15px;
             margin: 20px 0;
             border-radius: 5px;
             display: flex;
             gap: 15px;
             align-items: center;
+            border: 1px solid #333;
         }
         .toggle-btn {
-            background: white;
-            border: 2px solid #ddd;
+            background: #000000;
+            border: 2px solid #666;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
             transition: all 0.3s;
+            color: #ffffff;
         }
         .toggle-btn.pin {
-            border-color: #E4705E;
-            color: #E4705E;
+            border-color: #FF6B6B;
+            color: #FF6B6B;
         }
         .toggle-btn.pin.active,
         .toggle-btn.pin:hover {
-            background: #E4705E;
-            color: white;
+            background: #FF6B6B;
+            color: #000000;
         }
         .toggle-btn.shi {
-            border-color: #5E8FE4;
-            color: #5E8FE4;
+            border-color: #4ECDC4;
+            color: #4ECDC4;
         }
         .toggle-btn.shi.active,
         .toggle-btn.shi:hover {
-            background: #5E8FE4;
-            color: white;
+            background: #4ECDC4;
+            color: #000000;
         }
         .dropdown-container {
             margin: 20px 0;
@@ -59,39 +63,44 @@
             padding: 10px 15px;
             font-size: 16px;
             border-radius: 5px;
-            background: white;
+            background: #1a1a1a;
+            color: #ffffff;
             cursor: pointer;
             min-width: 200px;
         }
+        .dropdown-container select option {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
         .dropdown-container select.pin-select {
-            border: 2px solid #E4705E;
+            border: 2px solid #FF6B6B;
         }
         .dropdown-container select.shi-select {
-            border: 2px solid #5E8FE4;
+            border: 2px solid #4ECDC4;
         }
         .category-display {
             margin: 20px 0;
             padding: 20px;
             border-radius: 8px;
-            background: white;
+            background: #0a0a0a;
         }
         .category-display.pin-display {
-            border: 2px solid #E4705E;
+            border: 2px solid #FF6B6B;
         }
         .category-display.pin-display h2 {
-            color: #E4705E;
+            color: #FF6B6B;
         }
         .category-display.pin-display .entry {
-            border-left: 4px solid #E4705E;
+            border-left: 4px solid #FF6B6B;
         }
         .category-display.shi-display {
-            border: 2px solid #5E8FE4;
+            border: 2px solid #4ECDC4;
         }
         .category-display.shi-display h2 {
-            color: #5E8FE4;
+            color: #4ECDC4;
         }
         .category-display.shi-display .entry {
-            border-left: 4px solid #5E8FE4;
+            border-left: 4px solid #4ECDC4;
         }
         .category-display h2 {
             margin-top: 0;
@@ -100,20 +109,20 @@
         .entry {
             margin: 15px 0;
             padding: 15px;
-            background: #f5f5f5;
+            background: #1a1a1a;
             border-radius: 5px;
         }
         .entry strong {
-            color: #333;
+            color: #ffffff;
         }
         .descriptor {
             margin-top: 10px;
             font-style: italic;
-            color: #666;
+            color: #999999;
             font-size: 0.9em;
         }
         .no-selection {
-            color: #999;
+            color: #666666;
             font-style: italic;
             padding: 20px;
             text-align: center;
