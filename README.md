@@ -21,8 +21,8 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 ## 🔭 Future Plans
 
 - 2026 Spring/Summer: 
-    - Update Short Stories landing page
-    - Add index/glossary for Official Positions
+    - (Completed) Update Short Stories landing page
+    - (Completed) Add index/glossary for Official Positions
     - Add more artefacts and short stories
 - 2026-2027:
     - City/capital maps

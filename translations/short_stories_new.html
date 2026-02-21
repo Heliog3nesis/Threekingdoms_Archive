@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Short Stories Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial;
+      background-color: #111;
+      color: white;
+    }
+
+    .layout {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── TOC ── */
+    #toc {
+      width: 15vw;
+      background-color: #111;
+      color: white;
+      padding: 0.5em;
+      overflow-y: auto;
+      margin-top: 2rem;
+      border-right: 1px solid #444;
+    }
+
+    #toc h2 {
+      margin-top: 0;
+      margin-bottom: 1em;
+      font-size: 0.9em;
+    }
+
+    #toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    #toc li {
+      margin: 0.25em 0;
+      padding-left: 0.5em;
+      border-left: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    #toc li:hover {
+      border-left: 1px solid #0066cc;
+    }
+
+    #toc a {
+      color: #0066cc;
+      text-decoration: none;
+      font-size: 0.7em;
+      cursor: pointer;
+    }
+
+    #toc a::before {
+      content: "› ";
+      color: white;
+    }
+
+    #toc a.active {
+      font-weight: bold;
+      color: #66aaff !important;
+    }
+
+    #toc a.active::before {
+      color: #66aaff;
+    }
+
+    /* ── Content ── */
+    #content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 2em;
+      font-size: 15px;
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    #content > h2 {
+      font-size: 2em;
+      font-weight: normal;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    /* ── Filters row ── */
+    .filter-row {
+      display: flex;
+      gap: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    .filter-select {
+      padding: 0.4em 0.8em;
+      background-color: #222;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    /* ── Story body ── */
+    #story-body h2 {
+      font-size: 1.8em;
+      font-weight: bold;
+      text-align: left;
+      border-bottom: none;
+    }
+
+
+    p {
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 1.5em;
+      margin-top: 2em;
+    }
+
+    .story-tags {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    }
+
+    .tag {
+    padding: 0.3em 0.7em;
+    border-radius: 999px;
+    font-size: 0.9em;
+    }
+
+    .tag-period {
+    background-color: #1a3a1a;
+    color: #66cc88;     
+    }
+
+    .tag-type {
+    background-color: #3a2a10;
+    color: #ffaa44;     
+    }
+
+    /* ── TOC toggle (mobile) ── */
+    #toc-toggle {
+      display: none;
+      position: fixed;
+      bottom: 1em;
+      right: 1em;
+      z-index: 999;
+      background: #111;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 960px) {
+      #toc {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background: #111;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+        z-index: 998;
+        padding: 0.5em;
+      }
+
+      #toc.open {
+        display: block;
+      }
+
+      #toc-toggle {
+        display: block;
+      }
+
+      #content {
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .filter-row {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <div class="layout">
+    <div id="toc">
+      <h2>Table of Contents</h2>
+      <ul id="toc-list"></ul>
+    </div>
+
+    <div id="content">
+      <h2>Short Stories Collection</h2><br>
+      <div class="filter-row">
+        <select id="filter-period" class="filter-select">
+          <option value="all">All Periods</option>
+        </select>
+        <select id="filter-type" class="filter-select">
+          <option value="all">All Types</option>
+        </select>
+      </div>
+      <div id="story-body"></div>
+    </div>
+  </div>
+
+  <button id="toc-toggle" onclick="toggleTOC()">☰ Contents</button>
+
+  <div id="footer"></div>
+
+  <script>
+    function toggleTOC() {
+      document.getElementById('toc').classList.toggle('open');
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tocList      = document.getElementById("toc-list");
+      const contentDiv   = document.getElementById("story-body");
+      const periodSelect = document.getElementById("filter-period");
+      const typeSelect   = document.getElementById("filter-type");
+      const tocEl        = document.getElementById("toc");
+
+      const htmlLang = document.documentElement.lang || "en";
+      const lang = htmlLang.toLowerCase().startsWith("zh") ? "zh" : "en";
+
+      let allStories      = [];
+      let filteredStories = [];
+
+      fetch("../scripts/short_stories_database.json")
+        .then(res => {
+          if (!res.ok) throw new Error("Failed to load stories.json");
+          return res.json();
+        })
+        .then(data => {
+          allStories = data.stories || [];
+          allPeriods  = data.periods || [];
+          allTypes    = data.types   || [];
+          buildPeriodFilter(data.periods || []);
+          buildTypeFilter(data.types || []);
+          filterStories();
+        })
+        .catch(err => {
+          console.error(err);
+          contentDiv.innerHTML = "<p>Error loading stories.</p>";
+        });
+
+      function buildPeriodFilter(periods) {
+        periodSelect.innerHTML = `<option value="all">All Periods</option>`;
+        periods.forEach(p => {
+          const opt = document.createElement("option");
+          opt.value = p.id;
+          opt.textContent = p.label?.[lang] ?? p.id;
+          periodSelect.appendChild(opt);
+        });
+      }
+
+      function buildTypeFilter(types) {
+        typeSelect.innerHTML = `<option value="all">All Types</option>`;
+        types.forEach(t => {
+          const opt = document.createElement("option");
+          opt.value = t.id;
+          opt.textContent = t.label?.[lang] ?? t.id;
+          typeSelect.appendChild(opt);
+        });
+      }
+
+      function filterStories() {
+        const period = periodSelect.value;
+        const type   = typeSelect.value;
+
+        filteredStories = allStories.filter(s => {
+          const matchPeriod = period === "all" || s.period_id === period;
+          const matchType   = type === "all" || s.type_id === type;
+          return matchPeriod && matchType;
+        });
+
+        buildTOC();
+
+        if (filteredStories.length > 0) {
+          renderStory(filteredStories[0].id);
+        } else {
+          contentDiv.innerHTML = "<p>No stories available.</p>";
+        }
+      }
+
+      function buildTOC() {
+        tocList.innerHTML = "";
+        filteredStories.forEach(story => {
+          const li = document.createElement("li");
+          const a  = document.createElement("a");
+
+          a.textContent = story.title?.[lang] ?? "[Missing title]";
+          a.dataset.storyId = story.id;
+          a.addEventListener("click", (e) => {
+            e.preventDefault();
+            renderStory(story.id);
+            tocEl.classList.remove("open");
+          });
+
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+      }
+
+      function renderStory(id) {
+        const story = filteredStories.find(s => s.id === id);
+        if (!story) return;
+
+        const heading = story.title?.[lang] ?? "";
+        const zhParas = Array.isArray(story.text?.zh) ? story.text.zh : [];
+        const enParas = Array.isArray(story.text?.en) ? story.text.en : [];
+
+        const period = allPeriods.find(p => p.id === story.period_id);
+        const type   = allTypes.find(t => t.id === story.type_id);
+
+        let html = `<h2>${heading}</h2>`;
+        html += `<div class="story-tags">`;
+        if (period) html += `<span class="tag tag-period">${period.label?.[lang] ?? story.period_id}</span>`;
+        if (type)   html += `<span class="tag tag-type">${type.label?.[lang] ?? story.type_id}</span>`;
+        html += `</div><br>`;
+        zhParas.forEach((p, i) => {
+          html += `<p>${p}</p>`;
+          if (i < zhParas.length - 1) html += `<br>`;
+        });
+        html += `<br><br>`;
+        enParas.forEach((p, i) => {
+          html += `<p>${p}</p>`;
+          if (i < enParas.length - 1) html += `<br>`;
+        });
+
+        contentDiv.innerHTML = html;
+
+        document.querySelectorAll("#toc a").forEach(a => {
+          a.classList.toggle("active", a.dataset.storyId === id);
+        });
+
+        document.getElementById("content").scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      periodSelect.addEventListener("change", filterStories);
+      typeSelect.addEventListener("change", filterStories);
+    });
+  </script>
+
+  <script>
+    async function includeHTML(id, file, callback) {
+      const res = await fetch(file);
+      const html = await res.text();
+      document.getElementById(id).innerHTML = html;
+
+      if (callback) callback();
+    }
+
+    
+    includeHTML("navbar", "../nav.html", () => {
+
+      const script = document.createElement("script");
+      script.src = "../scripts/navbar.js"; 
+      script.defer = true;
+
+
+      script.onload = () => {
+        const isGithub = location.hostname.includes("github.io");
+        const pathParts = window.location.pathname.split("/");
+        const repoName = pathParts[1] || "";
+        const basePath = isGithub ? `/${repoName}/` : "/";
+
+        if (typeof setNavLinks === "function") {
+          setNavLinks(basePath);
+        } else {
+          console.warn("Navbar logic (setNavLinks) did not load");
+        }
+      };
+
+      document.head.appendChild(script);
+    });
+
+  
+    includeHTML("footer", "../footer.html");
+  </script>
+
+</body>
+</html>

@@ -3,6 +3,11 @@
 A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
+## 2026-02-21 — Major Update
+- ✨ Revamped Short Stories landing page
+- 🛠️ Added filter for stories by period and type
+
+---
 ## 2026-02-08 — Minor Update
 - 🧩 QOL changes: Updated Three Kingdom Official Positions main page
 - 📖 Added index for officials by rank and salary grade
@@ -37,7 +42,7 @@ A log of updates and additions to the **Three Kingdoms Archive** project.
 ---
 
 ## 2025-09-21 — Major Update
-- ✨ Revamped Three Kingdom Official Positions main page
+- ✨ Revamped Three Kingdom Official Positions landing page
 - 📖 Added officials positions in the Rear and Eastern Palaces
 
 ---
