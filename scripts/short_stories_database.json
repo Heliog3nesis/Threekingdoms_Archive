@@ -327,7 +327,7 @@
       },
       "text": {
         "en":["Zhong Yu and Zhong Hui were renowned for their intelligence and virtuous reputations from a young age. At thirteen, Emperor Wen of Wei heard of them and said to their father, Zhong Yao, \"Let your two sons come.\" Thus, he summoned them for an audience.", "When Zhong Yu appeared before the emperor, his face was covered with sweat. The emperor asked, \"Why is your face sweating?\" Zhong Yu replied, \"Trembling with fear and reverence, my sweat flows like a stream.\"","The emperor then asked Zhong Hui, \"Why are you not sweating?\" Zhong Hui replied, \"Trembling with fear and reverence, the sweat dare not come out.\""," -- Shishuo Xinyu (A New Account of the Tales of the World), Yanyu (Speech and Conversation)"],
-        "zh":["良鍾毓、鍾會少有令譽。年十三，魏文帝聞之，語其父鍾繇曰：「可令二子來。」於是敕見。毓面有汗，帝曰：「卿面何以汗？」毓對曰：「戰戰惶惶，汗出如漿。」復問會：「卿何以不汗？」對曰：「戰戰慄慄，汗不敢出。」"," -- 《世說新語·言語》"]
+        "zh":["鍾毓、鍾會少有令譽。年十三，魏文帝聞之，語其父鍾繇曰：「可令二子來。」於是敕見。毓面有汗，帝曰：「卿面何以汗？」毓對曰：「戰戰惶惶，汗出如漿。」復問會：「卿何以不汗？」對曰：「戰戰慄慄，汗不敢出。」"," -- 《世說新語·言語》"]
       }
     },
     { "id":"top-secret",
@@ -338,9 +338,33 @@
         "zh": "國家機密"
       },
       "text": {
-        "en":["Yang Fu, after being transferred to the position of Minister of the Lesser Treasury (one of the Nine Ministers), submitted a memorial proposing the reduction of palace women, particularly those who had long fallen out of imperial favour. He then summoned a clerk from the Imperial Wardrobe to inquire about the number of women in the harem. The clerk abided by the rules of the past, and responded: \"The palace secrets cannot be revealed.\" Fu became enraged, had the official flogged with one hundred strokes, and berated: \"The state's affairs aren't entrusted to the Nine Ministers, but instead to a petty clerk like you?\""," -- Records of the Three Kingdoms, annotations to Biography of Gan, Prince of Zhao"],
+        "en":["Yang Fu, after being transferred to the position of Minister of the Lesser Treasury (one of the Nine Ministers), submitted a memorial proposing the reduction of palace women, particularly those who had long fallen out of imperial favour. He then summoned a clerk from the Imperial Wardrobe to inquire about the number of women in the harem. The clerk abided by the rules of the past, and responded: \"The palace secrets cannot be revealed.\" Fu became enraged, had the official flogged with one hundred strokes, and berated: \"The state's affairs aren't entrusted to the Nine Ministers, but instead to a petty clerk like you?\""," -- Records of the Three Kingdoms, Biography of Yang Fu"],
         "zh":["阜遷少府……上疏欲省宮人諸不見幸者，乃召御府吏問後宮人數。吏守舊令，對曰：「禁密，不得宣露。」 阜怒，杖吏一百，數之曰：「國家不與九卿為密，反與小吏為密乎？」"," -- 《三國志·楊阜傳》"]
       }
-    }
+    },
+    { "id":"regrets",
+      "period_id": "W-J",
+      "type_id": "C",
+      "title": {
+        "en": "Top secret",
+        "zh": "異同得失"
+      },
+      "text": {
+        "en":["When Wang Zijing was gravely ill, a Daoist priest, preparing a ritual petition for him to confess his wrongdoings, asked: \"Looking back, what sins have you committed in life? \" " , "Wang Zijing replied: \"Nothing else comes to mind — except divorcing my wife, Lady Xi.\""," -- Shishuo Xinyu (A New Account of the Tales of the World), Dexing (Virtuous Conduct)"],
+        "zh":["王子敬病篤，道家上章應首過，問子敬 「由來有何異同得失？」 子敬云：「不覺有餘事，惟憶與郗家離婚。」"," -- 《世説新語·德行》"]
+      }
+    } ,
+    { "id":"courage",
+      "period_id": "XQ",
+      "type_id": "C",
+      "title": {
+        "en": "The courage to tremble",
+        "zh": "仁者之勇"
+      },
+      "text": {
+        "en":["When Cui Zhu murdered Duke Zhuang of Qi, a man named Chen Buzhan heard of the crisis and rushed to aid his lord. In his haste, he dropped his spoon while eating and missed the reins while boarding his carriage. The driver asked, \"You are trembling this much, is there any point in going?\" Chen replied, \"Serving my lord unto death is righteous; and the lack of courage is personal. I will not let personal failings override public duty.\"", "He pressed on, but upon hearing the sounds of battle, he became overwhelmed by fear and died on the spot. Later commenters would say: \"Chen Buzhan embodied the courage of a benevolent man.\""," -- New Accounts: Righteous Courage"],
+        "zh":["齊崔杼弑莊公也，有陳不占者，聞君難，將赴之，比去，餐則失匕，上車失軾。禦者曰：\"怯如是，去有益乎？\"不占曰：\"死君，義也；無勇，私也。不以私害公。\"遂往，聞戰鬥之聲，恐駭而死。人曰：\"不占可謂仁者之勇也。\""," -- 《新序·義勇》"]
+      }
+    } 
   ]
 }

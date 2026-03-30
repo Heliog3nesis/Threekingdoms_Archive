@@ -3,6 +3,11 @@
 A log of updates and additions to the **Three Kingdoms Archive** project.
 
 ---
+## 2026-03-30 — Minor Update
+- 🗺️ Fixed errors in maps 
+- 📖 Added short stories
+
+---
 ## 2026-02-21 — Major Update
 - ✨ Revamped Short Stories landing page
 - 🛠️ Added filter for stories by period and type
