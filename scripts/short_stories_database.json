@@ -363,7 +363,115 @@
       },
       "text": {
         "en":["When Cui Zhu murdered Duke Zhuang of Qi, a man named Chen Buzhan heard of the crisis and rushed to aid his lord. In his haste, he dropped his spoon while eating and missed the reins while boarding his carriage. The driver asked, \"You are trembling this much, is there any point in going?\" Chen replied, \"Serving my lord unto death is righteous; and the lack of courage is personal. I will not let personal failings override public duty.\"", "He pressed on, but upon hearing the sounds of battle, he became overwhelmed by fear and died on the spot. Later commenters would say: \"Chen Buzhan embodied the courage of a benevolent man.\""," -- New Accounts: Righteous Courage"],
-        "zh":["齊崔杼弑莊公也，有陳不占者，聞君難，將赴之，比去，餐則失匕，上車失軾。禦者曰：\"怯如是，去有益乎？\"不占曰：\"死君，義也；無勇，私也。不以私害公。\"遂往，聞戰鬥之聲，恐駭而死。人曰：\"不占可謂仁者之勇也。\""," -- 《新序·義勇》"]
+        "zh":["齊崔杼弑莊公也，有陳不占者，聞君難，將赴之，比去，餐則失匕，上車失軾。禦者曰：「怯如是，去有益乎？」不占曰：「死君，義也；無勇，私也。不以私害公。」遂往，聞戰鬥之聲，恐駭而死。人曰：「不占可謂仁者之勇也。」"," -- 《新序·義勇》"]
+      }
+    } ,
+    { "id":"ambitions",
+      "period_id": "Han",
+      "type_id": "C",
+      "title": {
+        "en": "Aspiration of heroes",
+        "zh": "小子安知壯士志"
+      },
+      "text": {
+        "en":["In the 5th year of Yongping, Ban Chao's elder brother Gu was summoned to serve as a Clerk, and Chao and his mother followed Gu to Luoyang. The family was poor, and Chao often worked as a hired scribe to make a living. After long hours of labor and hard work, Chao once stopped working, threw his brush and sighed, saying, \"Real man with no other ambitions and strategies should at least be like Fu Jiezhi and Zhang Qian, achieving great deeds in foreign lands and attaining noble titles. How can one be satisfied with a life dedicated to writing?\" Those around him laughed, and Chao said, \"How can ordinary people understand the aspiration of heroes?\""," -- Book of the Later Han, Biography of Ban Chao"],
+        "zh":["永平五年，兄固被召詣校書郎，超與母隨至洛陽。家貧，常為官傭書以供養。久勞苦，嘗輟業投筆歎曰：「大丈夫無它志略，猶當效傅介子、張騫立功異域，以取封侯，安能久事筆研閒乎？」左右皆笑之。超曰：「小子安知壯士志哉！」"," -- 《後漢書 · 班超傳》"]
+      }
+    } ,
+     { "id":"unfriend",
+      "period_id": "W-J",
+      "type_id": "C",
+      "title": {
+        "en": "Not my friend",
+        "zh": "管寧割席"
+      },
+      "text": {
+        "en":["Guan Ning and Hua Xin were once hoeing vegetables together in a garden when they came across a piece of gold on the ground. Guan Ning, treating it no differently from dirt or stones, struck it aside with his hoe. Hua Xin picked it, but quickly tossed it away. On another occasion, the two were reading side by side when a grand carriage passed by their gate. Guan Ning continued reading as if nothing had happened, while Hua Xin put down his book and went out to look. Guan Ning thus cut their shared mat in two and moved away, saying: \"You are no longer my friend.\""," -- Shishuo Xinyu (A New Account of the Tales of the World), Dexing (Virtuous Conduct)"],
+        "zh":["管寧、華歆共園中鋤菜，見地有片金，管揮鋤與瓦石不異，華捉而擲去之。又嘗同席讀書，有乘軒冕過門者，寧讀如故，歆廢書出看。寧割席分坐曰：「子非吾友也。」"," -- 《世説新語·德行》"]
+      }
+    } ,
+    { "id":"splash",
+      "period_id": "XQ",
+      "type_id": "C",
+      "title": {
+        "en": "A Splash Too Far",
+        "zh": "君無戲言"
+      },
+      "text": {
+        "en":["In the 29th year of his reign, Duke Huan of Qi was boating with his consort, Lady Cai. Skilled in swimming, Lady Cai rocked the boat playfully, startling the Duke. He told her to stop, but she continued. Angered, Duke Huan sent Lady Cai back to her home state upon leaving the boat, though he did not formally divorce her. The Marquis of Cai, likewise offended, arranged another marriage for his sister. When Duke Huan learned of this, he was enraged and raised an army. In the spring of the 30th year of his reign, he led a coalition of lords to conquer Cai, and the state was swiftly defeated."," -- Records of the Grand Historian, The Hereditary House of Qi"],
+        "zh":["二十九年，桓公與夫人蔡姬戲船中。蔡姬習水，蕩公，公懼，止之，不止，出船，怒，歸蔡姬，弗絕。蔡亦怒，嫁其女。桓公聞而怒，興師往伐。三十年春，齊桓公率諸侯伐蔡，蔡潰。"," -- 《史記·齊太公世家》"]
+      }
+    } ,
+    { "id":"know-dead",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "title": {
+        "en": "Knowing the dead",
+        "zh": "未知生，焉知死"
+      },
+      "text": {
+        "en":["While serving as Cavalry Staff Officer under Huan Chong, General of Chariots and Cavalry, Wang Huizhi was asked by Huan Chong, \"Which section have you been assigned to?\" He replied, \"It seems to be the Horse Section.\" ", "Huan Chong then asked, \"How many horses do you manage?\" He answered, \"If I do not know the horses themselves, how could I know their number?\" Huan Chong pressed further, \"Then how many have died?\" He replied, \"If I do not yet know the living, how could I know the dead?\""," -- Book of Jin, Biography of Wang Huizhi"],
+        "zh":["徽之為車騎桓沖騎兵參軍，沖問：「卿署何曹？」對曰：「似是馬曹。」又問：「管幾馬？」曰：「不知馬，何由知數！」又問：「馬比死多少？」曰：「未知生，焉知死！」"," -- 《晉書·王徽之傳》"]
+      }
+    } ,
+    { "id":"left-historians",
+      "period_id": "T-S",
+      "type_id": "Wit",
+      "title": {
+        "en": "Left to the Historians",
+        "zh": "自當有史官書之"
+      },
+      "text": {
+        "en":["Emperor Taizu of Song was once shooting sparrows in the rear garden when an official requested an audience, claiming urgent business. Taizu hurried to receive him, but what he presented was merely routine affairs. Enraged, the emperor demanded an explanation. He replied, \"Your servant thought it more urgent than shooting sparrows.\"", "The emperor grew furious and struck him in the mouth with the handle of a ceremonial axe, knocking out two teeth. The official calmly bent down, picked up the teeth, and tucked them into his robe. The emperor cursed him: \"You keep those teeth, do you mean to sue me?\" He answered, \"Your servant cannot sue Your Majesty, but the court historians are bound to record this.\""," -- Notes from the Shu River, Vol 1"],
+        "zh":["宋太祖嘗彈雀於後園，有群臣稱有急事請見，太祖亟見之，其所奏乃常事耳。上怒，詰其故，對曰：「臣以為尚急於彈雀。」上愈怒，舉柱斧柄撞其口，墮兩齒，其人徐俯拾齒置懷中。上罵曰：「汝懷齒欲訟我邪？」對曰：「臣不能訟陛下，自當有史官書之。」"," -- 《涑水記聞 · 卷一》"]
+      }
+    } ,
+    { "id":"no-shame",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "title": {
+        "en": "No Shame Before Heaven",
+        "zh": "何恥為臣"
+      },
+      "text": {
+        "en":["When Yao Chang, king of Later Qin, ascended the throne at Chang'an, he held a banquet with his ministers. As the wine flowed, he remarked, \"All of you once faced north and served the Former Qin court together with me. Now, in an instant, you have become my officials. Ought you not be ashamed?\"", "Zhao Qian replied: \"If Heaven itself is not ashamed to call Your Majesty its Son, how could we be ashamed to serve you?\""," -- Zizi Tongjian (Comprehensive Mirror in Aid of Governance), Volume 106"],
+        "zh":["後秦王萇即皇帝位於長安，與群臣宴，酒酣，言曰：「諸卿皆與朕北面秦朝，今忽為君臣，得無恥乎！」趙遷曰：「天不恥以陛下為子，臣等何恥為臣！」"," -- 《資治通鑒·卷一百六》"]
+      }
+    } ,
+    { "id":"ranking",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "title": {
+        "en": "Who ranks first?",
+        "zh": "誰為第一"
+      },
+      "text": {
+        "en":["Emperor Taizu of Southern Qi was skilled at calligraphy, and even after ascending the throne, remained deeply fond of it. After finishing a calligraphy contest with Wang Sengqian, he asked Sengqian, \"Who ranks first?\"", "Sengqian replied, \"Among your servants, my calligraphy ranks first; among emperors, Your Majesty's calligraphy ranks first.\""," -- Taiping yulan, Crafts and Arts IV"],
+        "zh":["齊太祖善書，及登位，篤好不已。與王僧虔賭書畢，謂虔曰：「誰為第一？」僧虔對曰：「臣書臣中第一，陛下書帝中第一。」"," -- 《太平御覽·工藝部四》"]
+      }
+    } ,
+    { "id":"goose",
+      "period_id": "W-J",
+      "type_id": "Sor",
+      "title": {
+        "en": "A Goose Well Received",
+        "zh": "羲之求鵝"
+      },
+      "text": {
+        "en":["Wang Xizhi was fond of geese. In Kuaiji there lived an old woman, who kept a goose renowned for its fine call. Xizhi tried to buy it, but could not. He then set out with a few friends to see it for himself. When the old woman heard that Wang Xizhi was coming, she slaughtered and cooked the goose to receive him. Wang Xizhi could only lament the loss, and did so for days on end."," -- Book of Jin, Biography of Wang Xizhi"],
+        "zh":["性愛鵝，會稽有孤居姥養一鵝，善鳴，求市未得，遂攜親友命駕就觀。姥聞羲之將至，烹以待之，羲之歎惜彌日。"," -- 《晉書·王羲之傳》"]
+      }
+    } ,
+    { "id":"bird-south",
+      "period_id": "XQ",
+      "type_id": "Br",
+      "title": {
+        "en": "The Silent Bird of the South",
+        "zh": "不鳴則已，一鳴驚人"
+      },
+      "text": {
+        "en":["When King Zhuang of Chu first came to the throne, for three years he issued no commands and enacted no policies. Someone addressed the king in metaphor: \"There is a bird perched upon a mound in the southern lands. For three years it has not spread its wings; it neither flies nor sings, remaining silent without a sound. What kind of bird is this?\"","The king replied: \"For three years it has not spread its wings, so that it may grow its feathers. It neither flies nor sings, so that it may observe the ways of the people. Though it does not yet fly, when it flies it will surely soar to the heavens; though it does not yet sing, when it sings it will surely astonish men. Leave it be. I understand.\" After half a year, he personally took charge of the government. He abolished ten measures and instituted nine; he executed five high ministers and elevated six worthy recluses. The state was thereby brought to great order."," -- Han Feizi, Illustrating Laozi"],
+        "zh":["楚莊王蒞政三年，無令發，無政爲也。右司馬御座而與王隱曰：「有鳥止南方之阜，三年不翅，不飛不鳴，嘿然無聲，此爲何名？」 王曰：「三年不翅，將以長羽翼；不飛不鳴，將以觀民則。雖無飛，飛必沖天；雖無鳴，鳴必驚人。子釋之，不穀知之矣。」 處半年，乃自聽政。所廢者十，所起者九；誅大臣五，舉處士六，而邦大治。"," -- 《韓非子·喻老》"]
       }
     } 
   ]
