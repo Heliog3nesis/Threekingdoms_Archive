@@ -1,0 +1,488 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { url } from '../../../utils/url';
+
+const lang = 'zh-hant';
+const strings = t(lang);
+---
+
+<Base title={`檢索結果 · ${strings.siteTitle}`} lang={lang}>
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href={url('/zh-hant/maps')} class="bc-link">地圖</a>
+        <span class="bc-sep">›</span>
+        <a href={url('/zh-hant/maps/map-overall')} class="bc-link">三國地圖</a>
+        <span class="bc-sep">›</span>
+        <span class="bc-cur" id="bc-query">檢索結果</span>
+      </div>
+      <h1 class="page-title">檢索結果</h1>
+      <p class="page-sub" id="result-count">—</p>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <div class="filter-bar-left">
+        <select class="filter-select" id="filter-type">
+          <option value="all">所有類型</option>
+        </select>
+        <select class="filter-select" id="filter-kingdom">
+          <option value="all">所有勢力</option>
+          <option value="wei">魏</option>
+          <option value="shu">蜀</option>
+          <option value="wu">吳</option>
+        </select>
+        <label class="filter-exact">
+          <input type="checkbox" id="filter-exact" />
+          <span>精準匹配</span>
+        </label>
+      </div>
+      <div class="filter-bar-right">
+        <select class="filter-select" id="filter-sort">
+          <option value="relevance">按相關度排序</option>
+          <option value="az">地名 A → Z</option>
+          <option value="za">地名 Z → A</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- RESULTS TABLE -->
+    <div class="results-wrap">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>地名</th>
+            <th>類型</th>
+            <th>國</th>
+            <th class="th-province">州</th>
+            <th class="th-commandery">郡</th>
+            <th class="col-map">地圖</th>
+          </tr>
+        </thead>
+        <tbody id="results-body">
+        </tbody>
+      </table>
+      <div class="results-empty" id="results-empty" style="display:none;">無符合地點</div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination" id="pagination"></div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{strings.footer.quoteBySection?.maps ?? strings.footer.quote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<div id="search-payload" style="display:none;"></div>
+
+<script>
+// @ts-nocheck
+
+const lang = document.documentElement.lang || 'en';
+let allTowns = [];
+let uniqueTypes = [];
+import { url } from '../../../utils/url';
+
+async function loadData() {
+  const data = await fetch(url('/mapbase/All_Towns.json')).then(r => r.json());
+  allTowns = data.All_Towns_Details ?? data ?? [];
+  uniqueTypes = [...new Set(allTowns.map(t => t.Type).filter(Boolean))].sort();
+
+  // populate type filter now that data is ready
+  const typeSelect = document.getElementById('filter-type');
+  uniqueTypes.forEach(type => {
+    const opt = document.createElement('option');
+    opt.value = type; opt.textContent = displayType(type);
+    typeSelect.appendChild(opt);
+  });
+
+  // run initial render (reads q from URL)
+  render();
+}
+
+loadData();
+
+// ── PROVINCE → KINGDOM & PNG ────────────────────────────────────
+const provinceKingdom = {
+    'Bingzhou': 'wei', 'Jizhou': 'wei', 'Qingzhou': 'wei',
+    'Yanzhou': 'wei', 'Yuzhou': 'wei', 'Youzhou': 'wei',
+    'Liangzhou': 'wei', 'Sili': 'wei', 'Yongzhou': 'wei',
+    'Xuzhou': 'wei', 'Jingzhou (Wei)': 'wei', 'Yangzhou (Wei)': 'wei',
+    'Yizhou (South)': 'shu','Yizhou (North)': 'shu',
+    'Jiaozhou': 'wu', 'Jingzhou (Wu)': 'wu', 'Yangzhou (Wu)': 'wu',
+  };
+ const provToPng = {
+  'Bingzhou': url('/mapbase/Bingzhou.png'),
+  'Jiaozhou': url('/mapbase/Jiaozhou.png'),
+  'Jingzhou (Wei)': url('/mapbase/Jing_Wei.png'),
+  'Jingzhou (Wu)': url('/mapbase/Jing_Wu.png'),
+  'Jizhou': url('/mapbase/Jizhou.png'),
+  'Liangzhou': url('/mapbase/Liangzhou.png'),
+  'Qingzhou': url('/mapbase/Qing_Xu.png'),
+  'Xuzhou': url('/mapbase/Qing_Xu.png'),
+  'Sili': url('/mapbase/Sili.png'),
+  'Yanzhou': url('/mapbase/Yan_Yu_Yang.png'),
+  'Yuzhou': url('/mapbase/Yan_Yu_Yang.png'),
+  'Yangzhou (Wei)': url('/mapbase/Yan_Yu_Yang.png'),
+  'Yangzhou (Wu)': url('/mapbase/Yang_Wu.png'),
+  'Yizhou (North)': url('/mapbase/Yi_North.png'),
+  'Yizhou (South)': url('/mapbase/Yi_South.png'),
+  'Yongzhou': url('/mapbase/Yongzhou.png'),
+  'Youzhou': url('/mapbase/Youzhou.png'),
+};
+ 
+const kingdomLabel = { wei: '魏', shu: '蜀', wu: '吳' };
+const typeLabel = { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '縣治', 'Military Pass': '關隘', Landmark: '地標', Others: '其他' };
+function displayType(type) { return typeLabel[type] || type || ''; }
+function displayTownName(t) { return lang === 'zh-hans' ? (t.Town_CHS || t.Town_CH || t.Town_EN || '') : (t.Town_CH || t.Town_CHS || t.Town_EN || ''); }
+function displayTownSub(t) { return t.Town_EN || ''; }
+function displayProvince(t) { return lang === 'zh-hans' ? (t.Prov_CHS || t.Prov_CH || t.Prov_EN || '') : (t.Prov_CH || t.Prov_CHS || t.Prov_EN || ''); }
+function displayCommandery(t) { return lang === 'zh-hans' ? (t.Comm_CHS || t.Comm_CH || t.Comm_EN || '') : (t.Comm_CH || t.Comm_CHS || t.Comm_EN || ''); }
+const kingdomClass = { wei: 'b-wei', shu: 'b-shu', wu: 'b-wu' };
+
+function getKingdom(provEn) {
+  return provinceKingdom[provEn] ?? null;
+}
+
+// ── STATE ───────────────────────────────────────────────────────
+const PER_PAGE = 15;
+let currentPage = 1;
+let currentResults = [];
+
+// ── READ URL PARAMS ─────────────────────────────────────────────
+function getParams() {
+  const p = new URLSearchParams(window.location.search);
+  return {
+    q:       p.get('q')       || '',
+    kingdom: p.get('kingdom') || 'all',
+    type:    p.get('type')    || 'all',
+    exact:   p.get('exact')   === 'true',
+    sort:    p.get('sort')    || 'relevance',
+    page:    parseInt(p.get('page') || '1'),
+  };
+}
+
+function pushParams(overrides) {
+  const params = { ...getParams(), ...overrides };
+  const p = new URLSearchParams();
+  if (params.q)       p.set('q', params.q);
+  if (params.kingdom !== 'all') p.set('kingdom', params.kingdom);
+  if (params.type    !== 'all') p.set('type', params.type);
+  if (params.exact)   p.set('exact', 'true');
+  if (params.sort !== 'relevance') p.set('sort', params.sort);
+  if (params.page > 1) p.set('page', String(params.page));
+  const newUrl = `${window.location.pathname}?${p.toString()}`;
+  window.history.pushState({}, '', newUrl);
+  render();
+}
+
+// ── FILTER & SORT ───────────────────────────────────────────────
+function getResults(q, exact, kingdom, type, sort) {
+  const ql = q.toLowerCase().trim();
+  if (!ql) return [];
+
+  let results;
+
+  if (exact) {
+    results = allTowns.filter(t =>
+      t.Town_EN?.toLowerCase() === ql ||
+      t.Town_CH === q ||
+      t.Town_CHS === q
+    );
+  } else {
+    // p1: exact town name
+    const p1 = allTowns.filter(t =>
+      t.Town_EN?.toLowerCase() === ql ||
+      t.Town_CH === q || t.Town_CHS === q
+    );
+    const p1set = new Set(p1);
+    // p2: partial town name
+    const p2 = allTowns.filter(t =>
+      !p1set.has(t) && (
+        t.Town_EN?.toLowerCase().includes(ql) ||
+        t.Town_CH?.includes(q) || t.Town_CHS?.includes(q)
+      )
+    );
+    const p2set = new Set(p2);
+    // p3: commandery / province
+    const p3 = allTowns.filter(t =>
+      !p1set.has(t) && !p2set.has(t) && (
+        t.Comm_EN?.toLowerCase().includes(ql) ||
+        t.Prov_EN?.toLowerCase().includes(ql) ||
+        t.Comm_CHS?.includes(q) || t.Prov_CHS?.includes(q)
+      )
+    );
+    results = [...p1, ...p2, ...p3];
+  }
+
+  if (kingdom !== 'all') results = results.filter(t => getKingdom(t.Prov_EN) === kingdom);
+  if (type    !== 'all') results = results.filter(t => t.Type === type);
+
+  if (sort === 'az') results.sort((a, b) => displayTownName(a).localeCompare(displayTownName(b), 'zh-hant-u-co-pinyin'));
+  if (sort === 'za') results.sort((a, b) => displayTownName(b).localeCompare(displayTownName(a), 'zh-hant-u-co-pinyin'));
+
+  return results;
+}
+
+// ── RENDER ──────────────────────────────────────────────────────
+function render() {
+  const { q, kingdom, type, exact, sort, page } = getParams();
+
+  // sync controls
+  document.getElementById('filter-kingdom').value = kingdom;
+  document.getElementById('filter-type').value    = type;
+  document.getElementById('filter-exact').checked = exact;
+  document.getElementById('filter-sort').value    = sort;
+
+  // breadcrumb + title
+  document.getElementById('bc-query').textContent = q ? `"${q}"` : '檢索結果';
+
+  currentResults = getResults(q, exact, kingdom, type, sort);
+  currentPage    = Math.max(1, Math.min(page, Math.ceil(currentResults.length / PER_PAGE)));
+
+  const total   = currentResults.length;
+  const start   = (currentPage - 1) * PER_PAGE;
+  const pageRows = currentResults.slice(start, start + PER_PAGE);
+
+  document.getElementById('result-count').textContent =
+    total === 0 ? '無符合地點' : `共${total}條`;
+  const tbody = document.getElementById('results-body');
+  const empty = document.getElementById('results-empty');
+
+  if (total === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+  } else {
+    empty.style.display = 'none';
+    tbody.innerHTML = pageRows.map(t => {
+      const k      = getKingdom(t.Prov_EN);
+      const badge  = k
+        ? `<span class="badge ${kingdomClass[k]}">${kingdomLabel[k]}</span>`
+        : '—';
+      const pngUrl  = provToPng[t.Prov_EN];
+      const pngBtn  = pngUrl
+        ? `<button class="result-action" data-png="${pngUrl}" title="查看該州圖版地圖"><i class="ti ti-map-2"></i></button>`
+        : '';
+      const mapBtn  = `<button class="result-action result-action-map" data-lat="${t.Latitude}" data-lng="${t.Longitude}" title="在互動地圖中查看"><i class="ti ti-map-pin"></i></button>`;
+      return `<tr>
+        <td class="td-name">
+          <span class="td-name-primary">${displayTownName(t) || '—'}</span>
+          <span class="td-name-sub">${displayTownSub(t)}</span>
+        </td>
+        <td>${displayType(t.Type) || '—'}</td>
+        <td>${badge}</td>
+        <td class="td-region">${displayProvince(t) || '—'}</td>
+        <td class="td-region">${displayCommandery(t) || '—'}</td>
+        <td class="td-map"><div style="display:flex;flex-direction:row;align-items:center;gap:6px;">${pngBtn}${mapBtn}</div></td>
+      </tr>`;
+    }).join('');
+
+    // wire action buttons
+    tbody.querySelectorAll('.result-action[data-png]').forEach(btn => {
+      btn.addEventListener('click', () => window.open(btn.dataset.png, '_blank'));
+    });
+    tbody.querySelectorAll('.result-action-map').forEach(btn => {
+      btn.addEventListener('click', () => {
+      const params = new URLSearchParams({
+          lat: btn.dataset.lat,
+          lng: btn.dataset.lng,
+        });
+        const row = btn.closest('tr');
+        const name = row?.querySelector('.td-name-primary')?.textContent?.trim();
+        if (name) params.set('name', name);
+        window.location.href = url(
+        `/zh-hant/maps/map-overall?${params.toString()}`
+      );
+      });
+    });
+  }
+
+  renderPagination(total, currentPage);
+}
+
+// ── PAGINATION ──────────────────────────────────────────────────
+function renderPagination(total, page) {
+  const totalPages = Math.ceil(total / PER_PAGE);
+  const el = document.getElementById('pagination');
+  if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+  function pageBtn(n, label, disabled, active) {
+    return `<button class="page-btn${active ? ' active' : ''}${disabled ? ' disabled' : ''}"
+      data-page="${n}" ${disabled ? 'disabled' : ''}>${label}</button>`;
+  }
+
+  // build page number list with ellipsis
+  const pages = [];
+  if (totalPages <= 7) {
+    for (let i = 1; i <= totalPages; i++) pages.push(i);
+  } else {
+    pages.push(1);
+    if (page > 3) pages.push('…');
+    for (let i = Math.max(2, page - 1); i <= Math.min(totalPages - 1, page + 1); i++) pages.push(i);
+    if (page < totalPages - 2) pages.push('…');
+    pages.push(totalPages);
+  }
+
+  el.innerHTML = [
+    pageBtn(page - 1, '上一頁', page === 1, false),
+    ...pages.map(p => p === '…'
+      ? `<span class="page-ellipsis">…</span>`
+      : pageBtn(p, p, false, p === page)
+    ),
+    pageBtn(page + 1, '下一頁', page === totalPages, false),
+  ].join('');
+
+  el.querySelectorAll('.page-btn:not(.disabled)').forEach(btn => {
+    btn.addEventListener('click', () => pushParams({ page: parseInt(btn.dataset.page) }));
+  });
+}
+
+// ── FILTER CONTROLS ─────────────────────────────────────────────
+document.getElementById('filter-kingdom').addEventListener('change', e => pushParams({ kingdom: e.target.value, page: 1 }));
+document.getElementById('filter-type').addEventListener('change',    e => pushParams({ type: e.target.value,    page: 1 }));
+document.getElementById('filter-exact').addEventListener('change',   e => pushParams({ exact: e.target.checked, page: 1 }));
+document.getElementById('filter-sort').addEventListener('change',    e => pushParams({ sort: e.target.value,    page: 1 }));
+window.addEventListener('popstate', render);
+</script>
+
+<style is:global>
+.site { max-width: 100%; background: var(--color-bg); min-height: 100vh; display: flex; flex-direction: column; }
+
+.page-header { padding: 1.5rem 2rem 1.25rem; border-bottom: 0.5px solid var(--color-border); }
+.breadcrumb { display: flex; align-items: center; gap: 6px; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.bc-link { font-size: 14px; color: var(--color-text-tertiary); text-decoration: none; }
+.bc-link:hover { color: var(--color-text-secondary); }
+.bc-sep { font-size: 12px; color: var(--color-text-tertiary); }
+.bc-cur { font-size: 16px; color: var(--color-text-secondary); }
+.page-title { font-size: 38px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+.page-sub { font-size: 20px; color: var(--color-text-secondary); }
+
+/* ── FILTER BAR ── */
+.filter-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+  padding: 0.875rem 2rem;
+  border-bottom: 0.5px solid var(--color-border);
+  background: var(--color-bg-secondary);
+}
+.filter-bar-left  { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+.filter-bar-right { display: flex; align-items: center; gap: 0.75rem; }
+
+.filter-select {
+  font-size: 17px; padding: 6px 10px;
+  background: var(--color-bg); color: var(--color-text-secondary);
+  border: 0.5px solid var(--color-border); border-radius: var(--radius-md);
+  font-family: var(--font-sans); cursor: pointer; outline: none;
+  transition: border-color 0.15s;
+}
+.filter-select:hover { border-color: var(--color-text-tertiary); }
+
+.filter-exact {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 16px; color: var(--color-text-secondary);
+  cursor: pointer; user-select: none;
+}
+.filter-exact input { accent-color: var(--archive-gold-soft, #d0aa6b); }
+
+/* ── RESULTS TABLE ── */
+.results-wrap { flex: 1; padding: 0 2rem 1rem; overflow-x: auto; }
+
+.results-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 19px; margin-top: 1rem;
+}
+.results-table th {
+  font-size: 22px; text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--color-text-tertiary); font-weight: 500;
+  padding: 8px 12px; text-align: left;
+  border-bottom: 0.5px solid var(--color-border);
+}
+.results-table td {
+  padding: 10px 12px; color: var(--color-text-secondary);
+  vertical-align: middle;
+}
+.results-table tr:hover td { background: var(--color-bg-secondary); }
+.results-table tr:last-child td { border-bottom: none; }
+.results-table tr {
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.td-name { display: flex; flex-direction: column; gap: 2px; }
+.td-name-primary { color: var(--color-text-primary); font-weight: 500; font-size: 20px; }
+.td-name-sub { color: var(--color-text-tertiary); font-size: 16px; }
+.td-region  { color: var(--color-text-tertiary); font-size: 19px; }
+.col-map, .td-map { text-align: center; width: 80px; }
+
+/* kingdom badges */
+.badge { font-size: 18px; padding: 1px 7px; border-radius: 3px; white-space: nowrap; }
+.b-wei { background: #1E2B40; color: #6EC1FF; }
+.b-shu { background: #1E3A2B; color: #6ED4A0; }
+.b-wu  { background: #2A1212; color: #D4807A; }
+
+/* map action icons */
+.td-map { text-align: center; vertical-align: middle;  }
+.result-action {
+  width: 45px; height: 45px;
+  display: flex; flex-direction: row; 
+  align-items: center; justify-content: center; gap: 4px;
+  background: none; border: 0.5px solid var(--color-border);
+  border-radius: 4px; color: var(--color-text-tertiary);
+  cursor: pointer; font-size: 18px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.result-action:hover { color: var(--archive-gold-soft, #d0aa6b); border-color: var(--archive-gold-soft, #d0aa6b); background: rgba(208,170,107,0.08); }
+
+/* empty state */
+.results-empty { padding: 3rem 2rem; text-align: center; color: var(--color-text-tertiary); font-style: italic; }
+
+/* ── PAGINATION ── */
+.pagination {
+  display: flex; align-items: center; justify-content: center;
+  gap: 4px; padding: 1.5rem 2rem;
+  border-top: 0.5px solid var(--color-border);
+}
+.page-btn {
+  min-width: 30px; height: 30px; padding: 0 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-family: var(--font-sans);
+  background: none; border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md); color: var(--color-text-secondary);
+  cursor: pointer; transition: all 0.15s;
+}
+.page-btn:hover:not(.disabled):not(.active) { background: var(--color-bg-secondary); color: var(--color-text-primary); }
+.page-btn.active { background: var(--archive-gold-soft, #d0aa6b); color: #1a1000; border-color: transparent; font-weight: 600; }
+.page-btn.disabled { opacity: 0.35; cursor: not-allowed; }
+.page-ellipsis { padding: 0 4px; color: var(--color-text-tertiary); font-size: 14px; }
+
+/* FOOTER */
+.site-footer { border-top: 0.5px solid var(--color-border); padding: 0.875rem 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--color-bg-secondary); margin-top: auto; }
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote { font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; white-space: pre-line; }
+
+@media (max-width: 800px) {
+  .page-header { padding: 1.25rem 1rem; }
+  .filter-bar { padding: 0.75rem 1rem; }
+  .results-wrap { padding: 0 0.5rem 1rem; }
+  .results-table th, .results-table td { padding: 8px 8px; }
+  .td-region { display: none; }
+  .th-province, .th-commandery { display: none; }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+}
+</style>

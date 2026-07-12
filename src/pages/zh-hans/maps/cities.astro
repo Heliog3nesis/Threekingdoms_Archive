@@ -1,0 +1,632 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { citiesData } from '../../../data/cities-data.js';
+import { url } from '../../../utils/url';
+
+const lang = 'zh-hans';
+const strings = t(lang);
+const footerQuote = strings.footer.quoteBySection?.maps ?? strings.footer.quote;
+const cityStrings = strings.cityMaps;
+
+type CityMap = {
+  id: string;
+  image: string;
+  label: string;
+  caption: string;
+};
+
+type City = {
+  id: string;
+  name: string;
+  cn: string;
+  modernName: string;
+  desc: string;
+  mainMapUrl: string;
+  dynasties: string[];
+  maps: CityMap[];
+};
+const cities: City[] = citiesData.map((city) => {
+  const copy = cityStrings.cities[city.id];
+  const params = new URLSearchParams({
+    lat: String(city.mainMap.lat),
+    lng: String(city.mainMap.lng),
+    name: city.mainMap.name
+  });
+
+  return {
+    ...city,
+    ...copy,
+    mainMapUrl: url(
+      `/zh-hans/maps/map-overall?${params.toString()}`
+    ),
+    dynasties: city.dynasties.map((id) => cityStrings.dynasties[id] ?? id),
+    maps: city.maps.map((map): CityMap => ({
+      ...map,
+      label: cityStrings.dynasties[map.id] ?? map.id,
+      caption: cityStrings.mapCaptions?.[city.id]?.[map.id] ?? `${copy.name} - ${cityStrings.dynasties[map.id] ?? map.id}`
+    }))
+  };
+});
+---
+
+<Base title={`${cityStrings.title} · ${strings.siteTitle}`} lang={lang}>
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <main class="cities-page">
+      <header class="cities-header">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href={url('/zh-hans/maps')}>{strings.nav.maps}</a>
+          <span>·</span>
+          <span>{cityStrings.title}</span>
+        </nav>
+        <h1>{cityStrings.title}</h1>
+        <p>{cityStrings.subtitle}</p>
+      </header>
+
+      <div class="city-tabs" role="tablist" aria-label="Cities">
+        {cities.map((city, index) => (
+          <button class={`city-tab${index === 0 ? ' active' : ''}`} type="button" data-city={city.id}>
+            <span>{city.name}</span>
+          </button>
+        ))}
+      </div>
+
+      <section class="city-layout">
+        {cities.map((city, index) => (
+          <aside class={`city-panel${index === 0 ? ' active' : ''}`} data-city-panel={city.id}>
+            <h2>{city.name}</h2>
+            <p class="city-cn">{city.cn}</p>
+
+            <dl class="city-meta">
+              <div>
+                <dt>{cityStrings.labels.modernName}</dt>
+                <dd>{city.modernName}</dd>
+              </div>
+              <div>
+                <dt>{cityStrings.labels.dynasties}</dt>
+                <dd>{city.dynasties.join(' · ')}</dd>
+              </div>
+            </dl>
+
+            <p class="city-desc">{city.desc}</p>
+
+            <div class="city-links">
+              <a href={city.mainMapUrl}><i class="ti ti-map-pin" aria-hidden="true"></i>{cityStrings.labels.viewMainMap}</a>
+            </div>
+          </aside>
+        ))}
+
+        <div class="map-workspace">
+          <div class="map-mode-tabs" role="tablist" aria-label="Map mode">
+            <button class="map-mode active" type="button" data-mode="static">
+              <i class="ti ti-photo" aria-hidden="true"></i>{cityStrings.labels.staticMaps}
+            </button>
+            <button class="map-mode" type="button" data-mode="interactive" disabled>
+              <i class="ti ti-map" aria-hidden="true"></i>{cityStrings.labels.interactiveMap}
+            </button>
+          </div>
+
+          {cities.map((city, cityIndex) => (
+            <div class={`map-set${cityIndex === 0 ? ' active' : ''}`} data-map-set={city.id}>
+              <div class="dynasty-tabs" role="tablist" aria-label={`${city.name} dynasties`}>
+                {city.maps.map((map, mapIndex) => (
+                  <button class={`dynasty-tab${mapIndex === 0 ? ' active' : ''}`} type="button" data-map={map.id}>
+                    {map.label}
+                  </button>
+                ))}
+              </div>
+
+              <div class="map-box">
+                {city.maps.map((map, mapIndex) => (
+                  <figure class={`city-map${mapIndex === 0 ? ' active' : ''}`} data-map-panel={map.id}>
+                    <div class="map-image-frame">
+                      <img src={url(map.image)} alt={map.caption} />
+                      <div class="map-controls">
+                        <button type="button" data-zoom="in" aria-label="Zoom in"><i class="ti ti-zoom-in"></i></button>
+                        <button type="button" data-zoom="reset" aria-label="Reset view"><i class="ti ti-arrows-maximize"></i></button>
+                      </div>
+                    </div>
+                    <figcaption>{map.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{footerQuote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} &copy; {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<script>
+  // @ts-nocheck
+  document.querySelectorAll('.city-tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const city = tab.getAttribute('data-city');
+      document.querySelectorAll('.city-tab').forEach((item) => item.classList.toggle('active', item === tab));
+      document.querySelectorAll('[data-city-panel]').forEach((panel) => panel.classList.toggle('active', panel.getAttribute('data-city-panel') === city));
+      document.querySelectorAll('[data-map-set]').forEach((panel) => panel.classList.toggle('active', panel.getAttribute('data-map-set') === city));
+    });
+  });
+
+  document.querySelectorAll('.map-set').forEach((set) => {
+    set.querySelectorAll('.dynasty-tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const map = tab.getAttribute('data-map');
+        set.querySelectorAll('.dynasty-tab').forEach((item) => item.classList.toggle('active', item === tab));
+        set.querySelectorAll('[data-map-panel]').forEach((panel) => panel.classList.toggle('active', panel.getAttribute('data-map-panel') === map));
+      });
+    });
+  });
+
+  document.querySelectorAll('.city-map').forEach((figure) => {
+    const img = figure.querySelector('img') as HTMLImageElement | null;
+    const frame = figure.querySelector('.map-image-frame') as HTMLElement | null;
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    let isDragging = false;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    let startTranslateX = 0;
+    let startTranslateY = 0;
+    let initialPinchDistance = 0;
+    let initialPinchScale = 1;
+
+    if (img) img.draggable = false;
+    if (frame) frame.style.touchAction = 'none';
+
+    function apply() {
+      if (img) img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    }
+
+    function resetView() {
+      scale = 1;
+      translateX = 0;
+      translateY = 0;
+      apply();
+    }
+
+    function zoomBy(delta) {
+      scale = Math.min(4, Math.max(1, scale + delta));
+      if (scale === 1) {
+        translateX = 0;
+        translateY = 0;
+      }
+      apply();
+    }
+
+    function distanceBetweenTouches(touches: TouchList) {
+      const [a, b] = [touches[0], touches[1]];
+      return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+    }
+
+    figure.querySelector('[data-zoom="in"]')?.addEventListener('click', () => {
+      zoomBy(0.35);
+    });
+
+    figure.querySelector('[data-zoom="reset"]')?.addEventListener('click', () => {
+      resetView();
+    });
+
+    frame?.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      zoomBy(event.deltaY < 0 ? 0.25 : -0.25);
+    }, { passive: false });
+
+    frame?.addEventListener('pointerdown', (event) => {
+      if ((event.target as HTMLElement).closest('.map-controls')) return;
+      event.preventDefault();
+      isDragging = true;
+      dragStartX = event.clientX;
+      dragStartY = event.clientY;
+      startTranslateX = translateX;
+      startTranslateY = translateY;
+      if (img) img.style.transition = 'none';
+      frame.setPointerCapture(event.pointerId);
+    });
+
+    frame?.addEventListener('pointermove', (event) => {
+      if (!isDragging) return;
+      translateX = startTranslateX + event.clientX - dragStartX;
+      translateY = startTranslateY + event.clientY - dragStartY;
+      apply();
+    });
+
+    frame?.addEventListener('pointerup', (event) => {
+      isDragging = false;
+      if (img) img.style.transition = '';
+      frame.releasePointerCapture(event.pointerId);
+    });
+
+    frame?.addEventListener('pointercancel', () => {
+      isDragging = false;
+      if (img) img.style.transition = '';
+    });
+
+    frame?.addEventListener('touchstart', (event) => {
+      if (event.touches.length === 2) {
+        initialPinchDistance = distanceBetweenTouches(event.touches);
+        initialPinchScale = scale;
+      }
+    }, { passive: true });
+
+    frame?.addEventListener('touchmove', (event) => {
+      if (event.touches.length !== 2 || !initialPinchDistance) return;
+      event.preventDefault();
+      scale = Math.min(4, Math.max(1, initialPinchScale * (distanceBetweenTouches(event.touches) / initialPinchDistance)));
+      if (scale === 1) {
+        translateX = 0;
+        translateY = 0;
+      }
+      apply();
+    }, { passive: false });
+  });
+</script>
+
+<style is:global>
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #070706;
+  color: var(--color-text-secondary);
+}
+
+.cities-page {
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.cities-header {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid rgba(208, 170, 107, 0.18);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.65rem;
+  font-size: 14px;
+  color: var(--color-text-secondary)
+}
+
+.breadcrumb a {
+  color: var(--color-text-tertiary);
+  text-decoration: none;
+}
+
+.cities-header h1 {
+  margin: 0;
+  color: #f1e7d6;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.cities-header p {
+  max-width: 760px;
+  margin: 0.55rem 0 0;
+  color: rgba(232, 221, 202, 0.72);
+  font-size: 18px;
+}
+
+.city-tabs {
+  display: flex;
+  gap: 0.65rem;
+  overflow-x: auto;
+  border-bottom: 1px solid rgba(208, 170, 107, 0.18);
+}
+
+.city-tab {
+  min-width: 92px;
+  padding: 0.85rem 1rem 0.75rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #8d7a60;
+  cursor: pointer;
+}
+
+.city-tab span,
+.city-tab small {
+  display: block;
+}
+
+.city-tab span {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.city-tab small {
+  margin-top: 0.18rem;
+  font-size: 13px;
+}
+
+.city-tab.active {
+  border-color: #d0aa6b;
+  color: #f1e7d6;
+}
+
+.city-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.city-panel {
+  display: none;
+  align-self: start;
+  padding: 1.2rem;
+  border: 1px solid rgba(208, 170, 107, 0.18);
+  border-radius: 8px;
+  background: rgba(15, 14, 12, 0.94);
+}
+
+.city-panel.active {
+  display: block;
+}
+
+.city-panel h2 {
+  margin: 0;
+  color: #f1e7d6;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.city-cn {
+  margin: 0.15rem 0 1rem;
+  color: #8d7a60;
+  font-size: 22px;
+}
+
+.city-meta {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(208, 170, 107, 0.14);
+  border-bottom: 1px solid rgba(208, 170, 107, 0.14);
+}
+
+.city-meta div {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 0.6rem;
+}
+
+.city-meta dt {
+  color: #8d7a60;
+}
+
+.city-meta dd {
+  margin: 0;
+  color: #f1e7d6;
+  font-weight: 400;
+  font-size: 16.5px;
+}
+
+.city-desc {
+  margin: 1rem 0;
+  color: rgba(232, 221, 202, 0.68);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.city-links {
+  display: grid;
+  gap: 0.45rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(208, 170, 107, 0.14);
+}
+
+.city-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #d0aa6b;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.map-workspace {
+  min-width: 0;
+}
+
+.map-mode-tabs {
+  display: flex;
+  gap: 1.4rem;
+  border-bottom: 1px solid rgba(208, 170, 107, 0.18);
+}
+
+.map-mode {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #8d7a60;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.map-mode.active {
+  border-color: #d0aa6b;
+  color: #f1e7d6;
+  font-weight: 700;
+}
+
+.map-mode:disabled {
+  cursor: default;
+  opacity: 0.72;
+}
+
+.map-set {
+  display: none;
+}
+
+.map-set.active {
+  display: block;
+}
+
+.dynasty-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 18px;
+}
+
+.dynasty-tab {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(208, 170, 107, 0.24);
+  border-radius: 999px;
+  background: transparent;
+  color: #8d7a60;
+  cursor: pointer;
+}
+
+.dynasty-tab.active {
+  border-color: #d0aa6b;
+  color: #f1e7d6;
+  background: rgba(208, 170, 107, 0.08);
+}
+
+.map-box {
+  border: 1px solid rgba(208, 170, 107, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(15, 14, 12, 0.94);
+}
+
+.city-map {
+  display: none;
+  margin: 0;
+}
+
+.city-map.active {
+  display: block;
+}
+
+.map-image-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 560px;
+  overflow: hidden;
+  background: #11100d;
+}
+
+.map-image-frame img {
+  max-width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+  transition: transform 0.18s ease;
+  transform-origin: center;
+}
+
+.map-controls {
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  display: flex;
+  gap: 0.45rem;
+}
+
+.map-controls button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(208, 170, 107, 0.32);
+  border-radius: 6px;
+  background: rgba(7, 7, 6, 0.74);
+  color: #d0aa6b;
+  cursor: pointer;
+}
+
+.city-map figcaption {
+  padding: 0.9rem 1rem;
+  border-top: 1px solid rgba(208, 170, 107, 0.14);
+  color: #d0aa6b;
+  font-size: 16.5px;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: auto;
+  padding: 1.1rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(180deg, rgba(20,16,12,0.72), rgba(8,8,7,0.94));
+}
+
+.footer-quote {
+  color: rgba(232, 221, 202, 0.62);
+  font-size: 0.8rem;
+  font-style: italic;
+  white-space: pre-line;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-copy {
+  color: rgba(232, 221, 202, 0.45);
+  font-size: 0.82rem;
+}
+
+.footer-github {
+  color: rgba(232, 221, 202, 0.45);
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+@media (max-width: 840px) {
+  .city-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .map-image-frame {
+    min-height: 420px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    padding: 1.3rem 1rem;
+    text-align: center;
+  }
+}
+</style>

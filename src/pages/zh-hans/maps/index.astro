@@ -1,0 +1,174 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { url } from '../../../utils/url';
+
+const lang = 'zh-hans';
+const strings = t(lang);
+const m = strings.maps;
+const footerQuote = strings.footer.quoteBySection?.maps ?? strings.footer.quote;
+
+type MapItem = { name: string; meta?: string; url: string; img?: string };
+const groupEntries = Object.entries(m.groups) as [string, { label: string; items: MapItem[] }][];
+const allCards = groupEntries.flatMap(([groupKey, group]) =>
+  group.items.map(item => ({
+    ...item,
+    img: item.img
+      ? item.img.startsWith('http')
+        ? item.img
+        : url(item.img)
+      : undefined,
+    groupKey,
+    groupLabel: group.label,
+  }))
+);
+const tabs = ['全部', ...groupEntries.map(([, g]) => g.label)];
+---
+
+<Base title={`${m.title} · ${strings.siteTitle}`} lang={lang}>
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <div class="page-banner" style={m.banner ? `background-image: url('${url(m.banner)}'); background-size: cover; background-position: center top;` : ''}>
+      <div class="page-banner-overlay"></div>
+      <div class="page-header">
+        <div class="page-icon">
+          <img src={url('/icon-maps.svg')} alt="" style="width: 42px; height: 42px; object-fit: contain;" />
+        </div>
+        <h1 class="page-title">{m.title}</h1>
+        <p class="page-sub">{m.subtitle}</p>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="tabs" id="tabs">
+        {tabs.map((tab: string, i: number) => (
+          <button class={`tab${i === 0 ? ' active' : ''}`} data-tab={tab}>{tab}</button>
+        ))}
+      </div>
+      <div class="toolbar-right">
+        <div class="search-box">
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <input type="text" id="search-input" placeholder="检索地图…" />
+        </div>
+      </div>
+    </div>
+
+    <div class="maps-grid" id="maps-grid"></div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{footerQuote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<script define:vars={{ cards: allCards, base: import.meta.env.BASE_URL.replace(/\/$/, '') }}>
+  const gridEl = document.getElementById('maps-grid');
+  const tabsEl = document.getElementById('tabs');
+  const searchInput = document.getElementById('search-input');
+
+  let activeTab = '全部';
+  let query = '';
+
+  function getFiltered() {
+    let result = cards.filter(card => activeTab === '全部' || card.groupLabel === activeTab);
+    if (query.trim()) {
+      const q = query.trim().toLowerCase();
+      result = result.filter(card =>
+        card.name.toLowerCase().includes(q) ||
+        (card.meta || '').toLowerCase().includes(q)
+      );
+    }
+    return result;
+  }
+
+  function render() {
+    const filtered = getFiltered();
+    gridEl.innerHTML = filtered.map(card => `
+      <a href="${card.url.startsWith('http') ? card.url : base + card.url}" class="maps-card" ${card.url.startsWith('http') ? 'target="_blank"' : ''}>
+        <div class="maps-card-thumb" style="background-image: url('${card.img || ''}')">
+          ${!card.img ? '<span class="maps-card-thumb-placeholder">🗺️</span>' : ''}
+        </div>
+        <div class="maps-card-body">
+          <h3 class="maps-card-title">${card.name}</h3>
+          <span class="maps-card-badge">${card.groupLabel}</span>
+          ${card.meta ? `<p class="maps-card-meta">${card.meta}</p>` : ''}
+          <span class="maps-card-link">查看 ›</span>
+        </div>
+      </a>
+    `).join('') || '<p class="maps-empty">无符合的地图。</p>';
+  }
+
+  tabsEl.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabsEl.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeTab = btn.dataset.tab;
+      render();
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    query = e.target.value;
+    render();
+  });
+
+  render();
+</script>
+
+<style is:global>
+.site { max-width: 100%; background: var(--color-bg); min-height: 100vh; display: flex; flex-direction: column; }
+.page-banner { position: relative; background: var(--color-bg-secondary); }
+.page-banner-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 0; }
+.page-header { position: relative; z-index: 1; padding: 3rem 2rem 2rem; }
+.page-icon { width: 52px; height: 52px; border-radius: var(--radius-md); background: #183b62; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+.page-title { font-family: 'Noto Serif SC', serif; font-size: 42px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 6px; text-shadow: 0 1px 8px rgba(0,0,0,0.8); }
+.page-sub { font-size: 20px; color: rgba(255,255,255,0.75); text-shadow: 0 1px 6px rgba(0,0,0,0.7); font-family: 'LXGW WenKai', serif; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 2rem; border-bottom: 0.5px solid var(--color-border); flex-wrap: wrap; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.tab { font-size: 16px; color: var(--color-text-secondary); background: none; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 6px 12px; cursor: pointer; transition: background 0.15s, color 0.15s; }
+.tab:hover { background: var(--color-bg-secondary); }
+.tab.active { background: #183b62; color: var(--map-teal-text, #6EC1FF); border-color: var(--map-teal-border, #2A3F5C); }
+.toolbar-right { display: flex; gap: 1rem; align-items: center; }
+.search-box { display: flex; align-items: center; gap: 6px; background: var(--color-bg-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 6px 10px; }
+.search-box i { font-size: 16px; color: var(--color-text-tertiary); }
+.search-box input { background: none; border: none; outline: none; font-size: 16px; color: var(--color-text-primary); width: 160px; }
+.maps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; padding: 1.5rem 2rem 3rem; }
+.maps-card { display: flex; gap: 1.25rem; background: var(--color-bg-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-lg); padding: 1rem; text-decoration: none; transition: border-color 0.15s, transform 0.15s; }
+.maps-card:hover { border-color: var(--map-teal-text, #6EC1FF); transform: translateY(-2px); }
+.maps-card-thumb { flex-shrink: 0; width: 200px; height: 150px; border-radius: var(--radius-md); background-color: #1a1a1a; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; }
+.maps-card-thumb-placeholder { font-size: 36px; opacity: 0.35; }
+.maps-card-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.maps-card-title { font-family: 'Noto Serif SC', serif; font-size: 24px; font-weight: 500; color: var(--color-text-primary); line-height: 1.3; }
+.maps-card-badge { display: inline-flex; align-self: flex-start; font-size: 14px; padding: 2px 9px; border-radius: 4px; margin: 2px 0; background: rgba(24, 59, 98, 0.28); color: #8fb4d9; }
+.maps-card-meta { font-size: 15px; color: var(--color-text-tertiary); font-family: 'LXGW WenKai', serif; }
+.maps-card-link { font-size: 16px; color: var(--trans-purple-text, #c8a84b); margin-top: 14px; }
+.maps-empty { padding: 3rem 2rem; text-align: center; color: var(--color-text-tertiary); font-size: 14px; }
+.site-footer { border-top: 0.5px solid var(--color-border); padding: 0.875rem 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--color-bg-secondary); margin-top: auto; }
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote { font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; white-space: pre-line; font-family: 'LXGW WenKai', serif; }
+@media (max-width: 800px) {
+  .page-header { padding: 1.5rem 1rem 1.25rem; }
+  .toolbar { padding: 1rem; flex-direction: column; align-items: stretch; }
+  .toolbar-right { flex-direction: column; align-items: stretch; }
+  .search-box input { width: 100%; }
+  .maps-grid { grid-template-columns: 1fr; padding: 1rem; }
+  .maps-card { flex-direction: column; }
+  .maps-card-thumb { width: 100%; height: 180px; }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+  .footer-quote { font-size: 0.75rem; }
+}
+</style>

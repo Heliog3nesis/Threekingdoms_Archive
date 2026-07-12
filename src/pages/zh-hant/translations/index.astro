@@ -1,0 +1,424 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { url } from '../../../utils/url';
+
+const lang = 'zh-hant';
+const strings = t(lang);
+const s = strings.translations;
+const PAGE_SIZE = 4;
+const footerQuote = strings.footer.quoteBySection?.translations ?? strings.footer.quote;
+---
+
+<Base title={`翻譯 · ${strings.siteTitle}`} lang="zh-hant">
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+     <div class="page-banner" style={s.banner ? `background-image: url('${url(s.banner)}'); background-size: cover; background-position: center top;` : ''}>
+      <div class="page-banner-overlay"></div>
+      <div class="page-header">
+        <div class="page-icon">
+          <img src={url('/icon-translations.svg')} alt="" style="width: 42px; height: 42px; object-fit: contain;" />
+        </div>
+        <h1 class="page-title">{s.title}</h1>
+        <p class="page-sub">{s.subtitle}</p>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="tabs" id="tabs">
+        {s.tabs.map((tab: string, i: number) => (
+          <button class={`tab${i === 0 ? ' active' : ''}`} data-tab={tab}>{tab}</button>
+        ))}
+      </div>
+      <div class="toolbar-right">
+        <div class="search-box">
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <input type="text" id="search-input" placeholder={s.searchPlaceholder ?? '搜尋翻譯...'} />
+        </div>
+        <select id="sort-select" class="sort-select">
+          <option value="newest">{s.sort?.newest ?? '最新'}</option>
+          <option value="oldest">{s.sort?.oldest ?? '最早'}</option>
+          <option value="title">{s.sort?.title ?? '標題 A–Z'}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="trans-list" id="trans-list"></div>
+    <div class="pagination" id="pagination"></div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{footerQuote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<script define:vars={{ items: s.items, pageSize: PAGE_SIZE, base: import.meta.env.BASE_URL.replace(/\/$/, '') }}>
+  const listEl = document.getElementById('trans-list');
+  const paginationEl = document.getElementById('pagination');
+  const tabsEl = document.getElementById('tabs');
+  const searchInput = document.getElementById('search-input');
+  const sortSelect = document.getElementById('sort-select');
+
+  let activeTab = 'All';
+  let query = '';
+  let sortMode = 'newest';
+  let page = 1;
+
+  function centuryNumber(century) {
+    const match = (century || '').match(/(\d+)/);
+    return match ? parseInt(match[1], 10) : 0;
+  }
+
+  function getFiltered() {
+    let result = items.filter(item => activeTab === 'All' || item.type === activeTab);
+    if (query.trim()) {
+      const q = query.trim().toLowerCase();
+      result = result.filter(item =>
+        item.title.toLowerCase().includes(q) ||
+        (item.author || '').toLowerCase().includes(q) ||
+        (item.desc || '').toLowerCase().includes(q)
+      );
+    }
+    result = [...result];
+    if (sortMode === 'newest') result.sort((a, b) => centuryNumber(b.century) - centuryNumber(a.century));
+    if (sortMode === 'oldest') result.sort((a, b) => centuryNumber(a.century) - centuryNumber(b.century));
+    if (sortMode === 'title') result.sort((a, b) => a.title.localeCompare(b.title));
+    return result;
+  }
+
+  function render() {
+    const filtered = getFiltered();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    page = Math.min(page, totalPages);
+    const start = (page - 1) * pageSize;
+    const pageItems = filtered.slice(start, start + pageSize);
+
+    listEl.innerHTML = pageItems.map(item => `
+      <a href="${base}${item.url}" class="trans-row">
+        <div class="trans-thumb" style="background-image: url('${item.img ? base + item.img : ''}')"></div>
+        <div class="trans-body">
+          <h2 class="trans-title">${item.title}</h2>
+          ${item.author ? `<p class="trans-author">${item.author}</p>` : ''}
+          <p class="trans-desc">${item.desc || ''}</p>
+        </div>
+        <div class="trans-meta">
+          ${item.type ? `<span><i class="ti ti-bookmark" aria-hidden="true"></i> ${item.type}</span>` : ''}
+          ${item.century ? `<span><i class="ti ti-calendar" aria-hidden="true"></i> ${item.century}</span>` : ''}
+        </div>
+        <i class="ti ti-arrow-right trans-arr" aria-hidden="true"></i>
+      </a>
+    `).join('') || `<p class="trans-empty">${emptyText}</p>`;
+
+    paginationEl.innerHTML = '';
+    if (totalPages > 1) {
+      const prev = document.createElement('button');
+      prev.className = 'page-btn';
+      prev.innerHTML = '<i class="ti ti-chevron-left" aria-hidden="true"></i>';
+      prev.disabled = page === 1;
+      prev.addEventListener('click', () => { page--; render(); });
+      paginationEl.appendChild(prev);
+
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'page-btn' + (i === page ? ' active' : '');
+        btn.textContent = i;
+        btn.addEventListener('click', () => { page = i; render(); });
+        paginationEl.appendChild(btn);
+      }
+
+      const next = document.createElement('button');
+      next.className = 'page-btn';
+      next.innerHTML = '<i class="ti ti-chevron-right" aria-hidden="true"></i>';
+      next.disabled = page === totalPages;
+      next.addEventListener('click', () => { page++; render(); });
+      paginationEl.appendChild(next);
+    }
+  }
+
+  tabsEl.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabsEl.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeTab = btn.dataset.tab;
+      page = 1;
+      render();
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    query = e.target.value;
+    page = 1;
+    render();
+  });
+
+  sortSelect.addEventListener('change', (e) => {
+    sortMode = e.target.value;
+    page = 1;
+    render();
+  });
+
+  render();
+</script>
+
+<style is:global>
+
+.site {
+  max-width: 100%;
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-banner {
+  position: relative;
+  background: var(--color-bg-secondary);
+}
+
+.page-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+.page-header {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem 2rem;
+}
+
+.page-icon {
+  width: 52px; height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--trans-purple-bg);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 42px; font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+}
+
+.page-sub {
+  font-family: 'LXGW WenKai', serif;
+  font-size: 20px; color: rgba(255,255,255,0.75);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  border-bottom: 0.5px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  font-family: 'LXGW WenKai', serif;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  background: none;
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.tab:hover { background: var(--color-bg-secondary); }
+.tab.active {
+  background: var(--trans-purple-bg, #6b4308);
+  color: #fff;
+  border-color: transparent;
+}
+
+.toolbar-right {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+}
+.search-box i { font-size: 16px; color: var(--color-text-tertiary); }
+.search-box input {
+  font-family: 'LXGW WenKai', serif;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  width: 160px;
+}
+
+.sort-select {
+  font-family: 'LXGW WenKai', serif;
+  font-size: 16px;
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  padding: 6px 10px;
+}
+
+.trans-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.trans-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 160px 18px;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 0.5px solid var(--color-border);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.trans-row:hover { background: var(--color-bg-secondary); }
+
+.trans-thumb {
+  width: 100px; height: 70px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-secondary);
+  background-size: cover;
+  background-position: center;
+}
+
+.trans-body { min-width: 0; }
+
+.trans-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 24px; font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+}
+
+.trans-author {
+  font-family: 'LXGW WenKai', serif;
+  font-size: 14px;
+  color: var(--color-text-tertiary);
+  margin-bottom: 4px;
+}
+
+.trans-desc {
+  font-family: 'LXGW WenKai', serif;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.trans-meta {
+  font-family: 'LXGW WenKai', serif;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+  text-align: left;
+}
+.trans-meta i { font-size: 15px; vertical-align: -1px; margin-right: 3px; }
+
+.trans-arr {
+  font-size: 18px;
+  color: var(--color-text-tertiary);
+}
+
+.trans-empty {
+  font-family: 'LXGW WenKai', serif;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--color-text-tertiary);
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 1.5rem;
+}
+
+.page-btn {
+  min-width: 30px; height: 30px;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.page-btn.active {
+  background: var(--trans-purple-bg, #6b4308);
+  color: #fff;
+  border-color: transparent;
+}
+.page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.site-footer {
+  border-top: 0.5px solid var(--color-border);
+  padding: 0.875rem 2rem;
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--color-bg-secondary);
+  margin-top: auto;
+}
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote {
+  font-size: 0.8rem; color: var(--color-text-tertiary);
+  font-style: italic; white-space: pre-line;
+  font-family: 'LXGW WenKai', serif;
+}
+
+@media (max-width: 800px) {
+  .page-header { padding: 1.5rem 1rem 1.25rem; }
+  .toolbar { padding: 1rem; flex-direction: column; align-items: stretch; }
+  .toolbar-right { flex-direction: column; align-items: stretch; }
+  .search-box input { width: 100%; }
+  .trans-row {
+    grid-template-columns: 70px 1fr;
+    grid-template-areas: "thumb body" "meta meta";
+    padding: 1rem;
+  }
+  .trans-thumb { width: 70px; height: 56px; }
+  .trans-arr { display: none; }
+  .trans-meta { flex-direction: row; grid-area: meta; margin-top: 6px; flex-wrap: wrap; }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+  .footer-quote {font-size: 0.75rem;}
+}
+</style>

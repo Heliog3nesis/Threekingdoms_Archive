@@ -1,0 +1,1939 @@
+{
+    "pageNotes": [
+    {
+      "zht": "古代常以居處代指其人。太子多居宮城東側，是為東宮；太后居所之宮名，亦為太后代稱。",
+      "zhs": "古代常以居处代指其人。太子多居宫城东侧，是为东宫；太后居所之宫名，亦为太后代称。",
+      "en": "In ancient China, a person's residence often served as a metonym for the person. The Crown Prince typically resided in the eastern part of the palace complex, and was thus known as the Eastern Palace; similarly, the Empress Dowager was often referred to by the name of her residence."
+    },
+    {
+      "zht": "後宮為后妃居所之統稱，即所謂「前朝後寢」。",
+      "zhs": "后宫为后妃居所之统称，即所谓“前朝后寝”。",
+      "en": "The Rear Palace collectively refers to the residences of the empress and consorts, reflecting the principle of 'court in front, living quarters behind.'"
+    }
+  ],
+  "categories": [
+    {
+      "id": "empress-dowager",
+      "label": {
+        "zht": "太后",
+        "zhs": "太后",
+        "en": "Empress Dowager"
+      },
+      "categoryNotes": [
+        {
+          "zht": "太后三卿：衛尉﹑太僕﹑少府，皆隨太后宮為官號，蜀吳同。",
+          "zhs": "太后三卿：卫尉﹑太仆﹑少府，皆随太后宫为官号，蜀吴同。",
+          "en": "The Three Ministers of the Empress Dowager: Commandant of the Guards, Minister Coachman and Minister of the Lesser Treasury, all followed the Empress Dowager's palace name as their official name, this was the same in Shu and Wu."
+        },
+        {
+          "zht": "本在九卿上，魏改漢制，在九卿下",
+          "zhs": "本在九卿上，魏改汉制，在九卿下",
+          "en": "Originally ranked above the Nine Ministers, but Wei changed the Han's standards, and placed them below the Nine Ministers"
+        }
+      ],
+      "positions": [
+        {
+          "id": "empress-dowager-001",
+          "displayName": {
+            "zht": "永壽衛尉",
+            "zhs": "永寿卫尉",
+            "en": "Commandant of the Guards for"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "永壽衛尉",
+                "zhs": "永寿卫尉",
+                "en": "Commandant of the Guards for"
+              },
+              {
+                "zht": "永安衛尉",
+                "zhs": "永安卫尉",
+                "en": "Yongshou Palace<br>Yong'an Palace<br>Yongning Palace"
+              },
+              {
+                "zht": "永寧衛尉",
+                "zhs": "永宁卫尉",
+                "en": ""
+              }
+            ],
+            "shu": [
+              {
+                "zht": "長樂衛尉",
+                "zhs": "长乐卫尉",
+                "en": "Commandant of the Guards for Changle Palace"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "升平衛尉",
+                "zhs": "升平卫尉",
+                "en": "Commandant of the Guards for Shengping Palace"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌宮門衛士宮中徼循事"
+            ],
+            "zhs": [
+              "掌宫门卫士宫中徼循事"
+            ],
+            "en": [
+              "In charge of the guards at palace gates and patrol matters in the palace"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，中二千石，一人"
+            ],
+            "zhs": [
+              "三品，中二千石，一人"
+            ],
+            "en": [
+              "Third grade, Fully 2000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏文帝母武宣卞后稱永壽宮，明帝母文德郭后稱永安宮，少帝母明元郭后稱永寧宮",
+              "zhs": "魏文帝母武宣卞后称永寿宫，明帝母文德郭后称永安宫，少帝母明元郭后称永宁宫",
+              "en": "Emperor Wen of Wei's mother Wuxuan Empress Bian resided in Yongshou Palace, Emperor Ming's mother Wende Empress Guo resided in Yong'an Palace, and the Lesser Emperor's mother Mingyuan Empress Guo resided in Yongning Palace"
+            },
+            {
+              "zht": "後主母穆皇后稱長樂宮",
+              "zhs": "后主母穆皇后称长乐宫",
+              "en": "The [Shu] Latter Lord's mother Empress Mu resided in Changle Palace"
+            },
+            {
+              "zht": "孫晧母何皇后稱升平宮",
+              "zhs": "孙晧母何皇后称升平宫",
+              "en": "Sun Hao's mother Empress He resided in Shengping Palace"
+            }
+          ]
+        },
+        {
+          "id": "empress-dowager-002",
+          "displayName": {
+            "zht": "永壽太僕",
+            "zhs": "永寿太仆",
+            "en": "Minister Coachman for"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "永壽太僕",
+                "zhs": "永寿太仆",
+                "en": "Minister Coachman for"
+              },
+              {
+                "zht": "永安太僕",
+                "zhs": "永安太仆",
+                "en": "Yongshou Palace<br>Yong'an Palace<br>Yongning Palace"
+              },
+              {
+                "zht": "永寧太僕",
+                "zhs": "永宁太仆",
+                "en": ""
+              }
+            ],
+            "shu": [
+              {
+                "zht": "長樂太僕",
+                "zhs": "长乐太仆",
+                "en": "Minister Coachman for Changle Palace"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "升平太僕",
+                "zhs": "升平太仆",
+                "en": "Minister Coachman for Shengping Palace"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌車馬，太后每出，奏駕上鹵簿用，大駕則執御"
+            ],
+            "zhs": [
+              "掌车马，太后每出，奏驾上卤簿用，大驾则执御"
+            ],
+            "en": [
+              "In charge of chariots and horses, whenever the empress dowager travels, prepare chariots, retinues and ceremonial escorts, and personally control the grand carriage"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，中二千石，一人"
+            ],
+            "zhs": [
+              "三品，中二千石，一人"
+            ],
+            "en": [
+              "Third grade, Fully 2000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏文帝母武宣卞后稱永壽宮，明帝母文德郭后稱永安宮，少帝母明元郭后稱永寧宮",
+              "zhs": "魏文帝母武宣卞后称永寿宫，明帝母文德郭后称永安宫，少帝母明元郭后称永宁宫",
+              "en": "Emperor Wen of Wei's mother Wuxuan Empress Bian resided in Yongshou Palace, Emperor Ming's mother Wende Empress Guo resided in Yong'an Palace, and the Lesser Emperor's mother Mingyuan Empress Guo resided in Yongning Palace"
+            },
+            {
+              "zht": "後主母穆皇后稱長樂宮",
+              "zhs": "后主母穆皇后称长乐宫",
+              "en": "The [Shu] Latter Lord's mother Empress Mu resided in Changle Palace"
+            },
+            {
+              "zht": "孫晧母何皇后稱升平宮",
+              "zhs": "孙晧母何皇后称升平宫",
+              "en": "Sun Hao's mother Empress He resided in Shengping Palace"
+            }
+          ]
+        },
+        {
+          "id": "empress-dowager-003",
+          "displayName": {
+            "zht": "永壽少府",
+            "zhs": "永寿少府",
+            "en": "Minister of the Lesser Treasury for"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "永壽少府",
+                "zhs": "永寿少府",
+                "en": "Minister of the Lesser Treasury for"
+              },
+              {
+                "zht": "永安少府",
+                "zhs": "永安少府",
+                "en": "Yongshou Palace<br>Yong'an Palace<br>Yongning Palace"
+              },
+              {
+                "zht": "永寧少府",
+                "zhs": "永宁少府",
+                "en": ""
+              }
+            ],
+            "shu": [
+              {
+                "zht": "長樂少府",
+                "zhs": "长乐少府",
+                "en": "Minister of the Lesser Treasury for Changle Palace"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "升平少府",
+                "zhs": "升平少府",
+                "en": "Minister of the Lesser Treasury for Shengping Palace"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌中服御諸物，衣服寶貨，珍膳之屬"
+            ],
+            "zhs": [
+              "掌中服御诸物，衣服宝货，珍膳之属"
+            ],
+            "en": [
+              "Manage various garments and accessories in the palace, including clothing, treasures, delicacies and the likes"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，中二千石，一人"
+            ],
+            "zhs": [
+              "三品，中二千石，一人"
+            ],
+            "en": [
+              "Third grade, Fully 2000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏文帝母武宣卞后稱永壽宮，明帝母文德郭后稱永安宮，少帝母明元郭后稱永寧宮",
+              "zhs": "魏文帝母武宣卞后称永寿宫，明帝母文德郭后称永安宫，少帝母明元郭后称永宁宫",
+              "en": "Emperor Wen of Wei's mother Wuxuan Empress Bian resided in Yongshou Palace, Emperor Ming's mother Wende Empress Guo resided in Yong'an Palace, and the Lesser Emperor's mother Mingyuan Empress Guo resided in Yongning Palace"
+            },
+            {
+              "zht": "後主母穆皇后稱長樂宮",
+              "zhs": "后主母穆皇后称长乐宫",
+              "en": "The [Shu] Latter Lord's mother Empress Mu resided in Changle Palace"
+            },
+            {
+              "zht": "孫晧母何皇后稱升平宮",
+              "zhs": "孙晧母何皇后称升平宫",
+              "en": "Sun Hao's mother Empress He resided in Shengping Palace"
+            }
+          ]
+        },
+        {
+          "id": "empress-dowager-004",
+          "displayName": {
+            "zht": "丞",
+            "zhs": "丞",
+            "en": "Assistant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "丞",
+                "zhs": "丞",
+                "en": "Assistant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品，比千石，各一人"
+            ],
+            "zhs": [
+              "第七品，比千石，各一人"
+            ],
+            "en": [
+              "Seventh grade, Equivalent to 1000 shi, 1 person for each minster"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "empress-dowager-005",
+          "displayName": {
+            "zht": "永寧署令",
+            "zhs": "永宁署令",
+            "en": "Director of Yongning Office"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "永寧署令",
+                "zhs": "永宁署令",
+                "en": "Director of Yongning Office"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "主永寧宮"
+            ],
+            "zhs": [
+              "主永宁宫"
+            ],
+            "en": [
+              "In charge of the Yongning Palace"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，六百石，一人"
+            ],
+            "zhs": [
+              "第七品，六百石，一人"
+            ],
+            "en": [
+              "Seventh grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "洪飴孫：此官不知何屬，疑屬永寧衞尉，今列于此",
+              "zhs": "洪饴孙：此官不知何属，疑属永宁衞尉，今列于此",
+              "en": "Hong Yisun: It is not known where this position belonged, but it is suspected to be under the Commandant of the Guards for Yongning Palace, hence listed here"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empress",
+      "label": {
+        "zht": "皇后",
+        "zhs": "皇后",
+        "en": "Empress"
+      },
+      "categoryNotes": [
+        {
+          "zht": "皇后也稱中宮。",
+          "zhs": "皇后也称中宫。",
+          "en": "The Empress is also known as the Central Palace."
+        }
+      ],
+      "positions": [
+        {
+          "id": "empress-006",
+          "displayName": {
+            "zht": "大長秋",
+            "zhs": "大长秋",
+            "en": "Grand Chamberlain to the Empress"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "大長秋",
+                "zhs": "大长秋",
+                "en": "Grand Chamberlain to the Empress"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "大長秋",
+                "zhs": "大长秋",
+                "en": "Grand Chamberlain to the Empress"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "大長秋",
+                "zhs": "大长秋",
+                "en": "Grand Chamberlain to the Empress"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職掌奉宣中宮命，凡給賜宗親及宗親當謁見者，關通之，中宮出則從。"
+            ],
+            "zhs": [
+              "职掌奉宣中宫命，凡给赐宗亲及宗亲当谒见者，关通之，中宫出则从。"
+            ],
+            "en": [
+              "Convey and execute the orders of the empress, coordinate visits by imperial relatives and distribute rewards and gifts to them. Also accompany the empress when she went out"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第三品，二千石，一人"
+            ],
+            "zhs": [
+              "第三品，二千石，一人"
+            ],
+            "en": [
+              "Third grade, 2000 shi, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "empress-007",
+          "displayName": {
+            "zht": "大長秋丞",
+            "zhs": "大长秋丞",
+            "en": "Assistant to the Grand Chamberlain to the Empress"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "大長秋丞",
+                "zhs": "大长秋丞",
+                "en": "Assistant to the Grand Chamberlain to the Empress"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品，六百石，一人"
+            ],
+            "zhs": [
+              "第七品，六百石，一人"
+            ],
+            "en": [
+              "Seventh grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "eastern-palace",
+      "label": {
+        "zht": "東宮",
+        "zhs": "东宫",
+        "en": "Eastern Palace"
+      },
+      "categoryNotes": [
+        {
+          "zht": "魏明帝已後，東宮制度廢闕，官司不具，惟置衛率令典兵，二傅並攝衆事，他皆闕焉。",
+          "zhs": "魏明帝已后，东宫制度废阙，官司不具，惟置卫率令典兵，二傅并摄众事，他皆阙焉。",
+          "en": "After Emperor Ming of Wei, the Eastern Palace system was defunct, and offices were vacant, only the Captain of the Crown Prince Guards was established to command soldiers, and the two tutors to together oversee various matters, the others were all not filled."
+        }
+      ],
+      "positions": [
+        {
+          "id": "eastern-palace-008",
+          "displayName": {
+            "zht": "太子太傅",
+            "zhs": "太子太傅",
+            "en": "Grand Tutor of the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子太傅",
+                "zhs": "太子太傅",
+                "en": "Grand Tutor of the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "太子太傅",
+                "zhs": "太子太傅",
+                "en": "Grand Tutor of the Crown Prince"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "太子太傅",
+                "zhs": "太子太傅",
+                "en": "Grand Tutor of the Crown Prince"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職掌輔導太子"
+            ],
+            "zhs": [
+              "职掌辅导太子"
+            ],
+            "en": [
+              "In charge of assisting and guiding the Crown Prince"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，中二千石，一人"
+            ],
+            "zhs": [
+              "三品，中二千石，一人"
+            ],
+            "en": [
+              "Third grade, Fully 2000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "太子于二傅執弟子禮，皆為書不曰令，少傅稱臣，而太傅不臣。二傅與尚書東曹並選太子諸侯官屬",
+              "zhs": "太子于二傅执弟子礼，皆为书不曰令，少傅称臣，而太傅不臣。二傅与尚书东曹并选太子诸侯官属",
+              "en": "The Crown Prince observed the etiquette of a student toward the two Tutors, and when the tutors issued instructions, they were expressed as written requests rather than orders. The Junior Tutor would refer to himself as 'subject,' but the Grand Tutor would not. The two tutors and the Imperial Secretariat Eastern Section officials together selected various subordinate officials of the Crown Prince and Marquises"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-009",
+          "displayName": {
+            "zht": "太子太傅丞",
+            "zhs": "太子太傅丞",
+            "en": "Assistant to the Grand Tutor of the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子太傅丞",
+                "zhs": "太子太傅丞",
+                "en": "Assistant to the Grand Tutor of the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品，一人"
+            ],
+            "zhs": [
+              "第七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "太子于二傅執弟子禮，皆為書不曰令，少傅稱臣，而太傅不臣。二傅與尚書東曹並選太子諸侯官屬",
+              "zhs": "太子于二傅执弟子礼，皆为书不曰令，少傅称臣，而太傅不臣。二傅与尚书东曹并选太子诸侯官属",
+              "en": "The Crown Prince observed the etiquette of a student toward the two Tutors, and when the tutors issued instructions, they were expressed as written requests rather than orders. The Junior Tutor would refer to himself as 'subject,' but the Grand Tutor would not. The two tutors and the Imperial Secretariat Eastern Section officials together selected various subordinate officials of the Crown Prince and Marquises"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-010",
+          "displayName": {
+            "zht": "太子少傅",
+            "zhs": "太子少傅",
+            "en": "Junior Tutor of the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子少傅",
+                "zhs": "太子少傅",
+                "en": "Junior Tutor of the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "太子少傅",
+                "zhs": "太子少傅",
+                "en": "Junior Tutor of the Crown Prince"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職掌輔導太子"
+            ],
+            "zhs": [
+              "职掌辅导太子"
+            ],
+            "en": [
+              "In charge of assisting and guiding the Crown Prince"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，二千石，一人"
+            ],
+            "zhs": [
+              "三品，二千石，一人"
+            ],
+            "en": [
+              "Third grade, 2000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "太子于二傅執弟子禮，皆為書不曰令，少傅稱臣，而太傅不臣。二傅與尚書東曹並選太子諸侯官屬",
+              "zhs": "太子于二傅执弟子礼，皆为书不曰令，少傅称臣，而太傅不臣。二傅与尚书东曹并选太子诸侯官属",
+              "en": "The Crown Prince observed the etiquette of a student toward the two Tutors, and when the tutors issued instructions, they were expressed as written requests rather than orders. The Junior Tutor would refer to himself as 'subject,' but the Grand Tutor would not. The two tutors and the Imperial Secretariat Eastern Section officials together selected various subordinate officials of the Crown Prince and Marquises"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-011",
+          "displayName": {
+            "zht": "太子詹事",
+            "zhs": "太子詹事",
+            "en": "Chamberlain to the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子詹事",
+                "zhs": "太子詹事",
+                "en": "Chamberlain to the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌東宮內外衆務"
+            ],
+            "zhs": [
+              "掌东宫内外众务"
+            ],
+            "en": [
+              "In charge of various inner and outer matters in the Eastern Palace"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，二千石，一人"
+            ],
+            "zhs": [
+              "三品，二千石，一人"
+            ],
+            "en": [
+              "Third grade, 2000 shi, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-012",
+          "displayName": {
+            "zht": "太子詹事丞",
+            "zhs": "太子詹事丞",
+            "en": "Assistant to the Chamberlain to the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子詹事丞",
+                "zhs": "太子詹事丞",
+                "en": "Assistant to the Chamberlain to the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品，一人"
+            ],
+            "zhs": [
+              "第七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-013",
+          "displayName": {
+            "zht": "太子家令",
+            "zhs": "太子家令",
+            "en": "Crown Prince Household Director"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子家令",
+                "zhs": "太子家令",
+                "en": "Crown Prince Household Director"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主庫穀飲食，職似司農少府"
+            ],
+            "zhs": [
+              "主库谷饮食，职似司农少府"
+            ],
+            "en": [
+              "Responsible for provisions storage and meals, duties similar to that of the Minister of Agriculture and Minister of the Lesser Treasury"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，千石，一人"
+            ],
+            "zhs": [
+              "第五品，千石，一人"
+            ],
+            "en": [
+              "Fifth grade, 1000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "太子家令、太子率更令、太子僕共爲太子三卿",
+              "zhs": "太子家令、太子率更令、太子仆共为太子三卿",
+              "en": "Crown Prince Household Director, Crown Prince Watch Director and Crown Prince Coachman are together known as the Three Ministers of the Crown Prince"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-014",
+          "displayName": {
+            "zht": "太子僕",
+            "zhs": "太子仆",
+            "en": "Crown Prince Coachman"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子僕",
+                "zhs": "太子仆",
+                "en": "Crown Prince Coachman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主車馬，職如太僕"
+            ],
+            "zhs": [
+              "主车马，职如太仆"
+            ],
+            "en": [
+              "Responsible for chariots and horses, duties similar to that of the Minister Coachman"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，千石，一人"
+            ],
+            "zhs": [
+              "第五品，千石，一人"
+            ],
+            "en": [
+              "Fifth grade, 1000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "太子家令、太子率更令、太子僕共爲太子三卿",
+              "zhs": "太子家令、太子率更令、太子仆共为太子三卿",
+              "en": "Crown Prince Household Director, Crown Prince Watch Director and Crown Prince Coachman are together known as the Three Ministers of the Crown Prince"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-015",
+          "displayName": {
+            "zht": "太子率更令",
+            "zhs": "太子率更令",
+            "en": "Crown Prince Watch Director"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子率更令",
+                "zhs": "太子率更令",
+                "en": "Crown Prince Watch Director"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "太子率更令",
+                "zhs": "太子率更令",
+                "en": "Crown Prince Watch Director"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主庶子舍人更直，職似光祿"
+            ],
+            "zhs": [
+              "主庶子舍人更直，职似光禄"
+            ],
+            "en": [
+              "Responsible for arranging duty shifts for the Members of the Suite and Cadets, duties similar to that of the Minister of the Household"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，千石，一人"
+            ],
+            "zhs": [
+              "第五品，千石，一人"
+            ],
+            "en": [
+              "Fifth grade, 1000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "太子家令、太子率更令、太子僕共爲太子三卿",
+              "zhs": "太子家令、太子率更令、太子仆共为太子三卿",
+              "en": "Crown Prince Household Director, Crown Prince Watch Director and Crown Prince Coachman are together known as the Three Ministers of the Crown Prince"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-016",
+          "displayName": {
+            "zht": "太子率更丞",
+            "zhs": "太子率更丞",
+            "en": "Assistant to the Crown Prince Watch Director"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子率更丞",
+                "zhs": "太子率更丞",
+                "en": "Assistant to the Crown Prince Watch Director"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "四百石，二人"
+            ],
+            "zhs": [
+              "四百石，二人"
+            ],
+            "en": [
+              "400 shi, 2 people"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-017",
+          "displayName": {
+            "zht": "太子中庶子",
+            "zhs": "太子中庶子",
+            "en": "Crown Prince Palace Cadet"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子中庶子",
+                "zhs": "太子中庶子",
+                "en": "Crown Prince Palace Cadet"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "太子中庶子",
+                "zhs": "太子中庶子",
+                "en": "Crown Prince Palace Cadet"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職如侍中"
+            ],
+            "zhs": [
+              "职如侍中"
+            ],
+            "en": [
+              "Duties similar to that of Attendants"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，六百石，五人"
+            ],
+            "zhs": [
+              "第五品，六百石，五人"
+            ],
+            "en": [
+              "Fifth grade, 600 shi, 5 people"
+            ]
+          },
+          "notes":  [
+            {
+              "zht": "或爲諸庶子之長",
+              "zhs": "或为诸庶子之长",
+              "en": "Might have been the more senior or high ranking individuals within the Cadets"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-018",
+          "displayName": {
+            "zht": "太子庶子",
+            "zhs": "太子庶子",
+            "en": "Crown Prince Cadet"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子庶子",
+                "zhs": "太子庶子",
+                "en": "Crown Prince Cadet"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "太子庶子",
+                "zhs": "太子庶子",
+                "en": "Crown Prince Cadet"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職如三署郎"
+            ],
+            "zhs": [
+              "职如三署郎"
+            ],
+            "en": [
+              "Duties similar to that of the Three Department Gentlemen"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，四百石，無員"
+            ],
+            "zhs": [
+              "第五品，四百石，无员"
+            ],
+            "en": [
+              "Fifth grade, 400 shi, not fixed"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-019",
+          "displayName": {
+            "zht": "太子衛率",
+            "zhs": "太子卫率",
+            "en": "Captain of the Crown Prince Guards"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子衛率",
+                "zhs": "太子卫率",
+                "en": "Captain of the Crown Prince Guards"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主門衞士"
+            ],
+            "zhs": [
+              "主门衞士"
+            ],
+            "en": [
+              "In charge of guards at the gate"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，四百石，一人"
+            ],
+            "zhs": [
+              "第五品，四百石，一人"
+            ],
+            "en": [
+              "Fifth grade, 400 shi, 1  person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-020",
+          "displayName": {
+            "zht": "太子侍講",
+            "zhs": "太子侍讲",
+            "en": "Expositor to the Crown Prince"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子侍講",
+                "zhs": "太子侍讲",
+                "en": "Expositor to the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "都講祭酒",
+                "zhs": "都讲祭酒",
+                "en": "Expositor Libationer to the Crown Prince"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "教學"
+            ],
+            "zhs": [
+              "教学"
+            ],
+            "en": [
+              "Teach"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "(魏) 六品，一人"
+            ],
+            "zhs": [
+              "(魏) 六品，一人"
+            ],
+            "en": [
+              "(Wei) Sixth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-021",
+          "displayName": {
+            "zht": "太子門大夫",
+            "zhs": "太子门大夫",
+            "en": "Gate Master of the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子門大夫",
+                "zhs": "太子门大夫",
+                "en": "Gate Master of the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職比郎將"
+            ],
+            "zhs": [
+              "职比郎将"
+            ],
+            "en": [
+              "Duties similar to that of Gentleman Generals"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第六品，六百石，二人"
+            ],
+            "zhs": [
+              "第六品，六百石，二人"
+            ],
+            "en": [
+              "Sixth grade, 600 shi, 2 people"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-022",
+          "displayName": {
+            "zht": "太子食官令",
+            "zhs": "太子食官令",
+            "en": "Director of the Crown Prince's Food Office"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子食官令",
+                "zhs": "太子食官令",
+                "en": "Director of the Crown Prince's Food Office"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主飲食"
+            ],
+            "zhs": [
+              "主饮食"
+            ],
+            "en": [
+              "In charge of meals"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，六百石，一人"
+            ],
+            "zhs": [
+              "第七品，六百石，一人"
+            ],
+            "en": [
+              "Seventh grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-023",
+          "displayName": {
+            "zht": "太子洗馬",
+            "zhs": "太子洗马",
+            "en": "Frontrider of the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子洗馬",
+                "zhs": "太子洗马",
+                "en": "Frontrider of the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職如謁者，太子出，則當直者在前導威儀"
+            ],
+            "zhs": [
+              "职如谒者，太子出，则当直者在前导威仪"
+            ],
+            "en": [
+              "Duties similar to that of the Internuncio. When the Crown Prince went out, those on duty will be at the front leading the procession with proper decorum"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，比六百石，十六人"
+            ],
+            "zhs": [
+              "第七品，比六百石，十六人"
+            ],
+            "en": [
+              "Seventh grade, Equivalent to 600 shi, 16 people"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-024",
+          "displayName": {
+            "zht": "太子廏長",
+            "zhs": "太子廏长",
+            "en": "Chief of the Crown Prince's Stables"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子廏長",
+                "zhs": "太子廏长",
+                "en": "Chief of the Crown Prince's Stables"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主車馬"
+            ],
+            "zhs": [
+              "主车马"
+            ],
+            "en": [
+              "In charge of chariots and horses"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，四百石，一人"
+            ],
+            "zhs": [
+              "第七品，四百石，一人"
+            ],
+            "en": [
+              "Seventh grade, 400 shi, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-025",
+          "displayName": {
+            "zht": "太子常從",
+            "zhs": "太子常从",
+            "en": "Regular Attendant of the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子常從",
+                "zhs": "太子常从",
+                "en": "Regular Attendant of the Crown Prince"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第六品，員數無考"
+            ],
+            "zhs": [
+              "第六品，员数无考"
+            ],
+            "en": [
+              "Sixth grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-026",
+          "displayName": {
+            "zht": "太子虎賁督",
+            "zhs": "太子虎贲督",
+            "en": "Commander of the Crown Prince's Rapid Tigers"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子虎賁督",
+                "zhs": "太子虎贲督",
+                "en": "Commander of the Crown Prince's Rapid Tigers"
+              },
+              {
+                "zht": "太子司馬督",
+                "zhs": "太子司马督",
+                "en": "Commander of the Crown Prince's Cavalry"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第六品，員數無考"
+            ],
+            "zhs": [
+              "第六品，员数无考"
+            ],
+            "en": [
+              "Sixth grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-027",
+          "displayName": {
+            "zht": "太子舍人",
+            "zhs": "太子舍人",
+            "en": "Members of the Suite of the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子舍人",
+                "zhs": "太子舍人",
+                "en": "Members of the Suite of the Crown Prince"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "更直宿衞如三署郎中"
+            ],
+            "zhs": [
+              "更直宿衞如三署郎中"
+            ],
+            "en": [
+              "On rotating palace guard duties similar to that of the Three Department Court Gentlemen"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，二百石，無員"
+            ],
+            "zhs": [
+              "第七品，二百石，无员"
+            ],
+            "en": [
+              "Seventh grade, 200 shi, not fixed"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-028",
+          "displayName": {
+            "zht": "東宮摘句郎",
+            "zhs": "东宫摘句郎",
+            "en": "Eastern Palace Literary Selection Gentleman"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "東宮摘句郎",
+                "zhs": "东宫摘句郎",
+                "en": "Eastern Palace Literary Selection Gentleman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第八品，員數無考"
+            ],
+            "zhs": [
+              "第八品，员数无考"
+            ],
+            "en": [
+              "Eighth grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-029",
+          "displayName": {
+            "zht": "太子掌固",
+            "zhs": "太子掌固",
+            "en": "Clerk of the Crown Prince"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 9,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子掌固",
+                "zhs": "太子掌固",
+                "en": "Clerk of the Crown Prince"
+              },
+              {
+                "zht": "主事候郎",
+                "zhs": "主事候郎",
+                "en": "Administrative Gentleman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第九品，員數無考"
+            ],
+            "zhs": [
+              "第九品，员数无考"
+            ],
+            "en": [
+              "Ninth grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-030",
+          "displayName": {
+            "zht": "太子文學",
+            "zhs": "太子文学",
+            "en": "Crown Prince's Scholar"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太子文學",
+                "zhs": "太子文学",
+                "en": "Crown Prince's Scholar"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "員數品秩無考"
+            ],
+            "zhs": [
+              "员数品秩无考"
+            ],
+            "en": [
+              "Number of people and the grade unknown"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-031",
+          "displayName": {
+            "zht": "太子賓客",
+            "zhs": "太子宾客",
+            "en": "Advisor to the Crown Prince"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": null,
+            "wu": [
+              {
+                "zht": "太子賓客",
+                "zhs": "太子宾客",
+                "en": "Advisor to the Crown Prince"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "eastern-palace-032",
+          "displayName": {
+            "zht": "左輔都尉",
+            "zhs": "左辅都尉",
+            "en": "Commandant Bulwark on the Left"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": null,
+            "wu": [
+              {
+                "zht": "左輔都尉",
+                "zhs": "左辅都尉",
+                "en": "Commandant Bulwark on the Left"
+              },
+              {
+                "zht": "右弼都尉",
+                "zhs": "右弼都尉",
+                "en": "Commandant Supporter on the Right"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "各一人"
+            ],
+            "zhs": [
+              "各一人"
+            ],
+            "en": [
+              "1 person each"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "為太子四友",
+              "zhs": "为太子四友",
+              "en": "Together known as the Crown Prince's Four Companions"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-033",
+          "displayName": {
+            "zht": "翼正都尉",
+            "zhs": "翼正都尉",
+            "en": "Commandant for Protecting Rectitude"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": null,
+            "wu": [
+              {
+                "zht": "翼正都尉",
+                "zhs": "翼正都尉",
+                "en": "Commandant for Protecting Rectitude"
+              },
+              {
+                "zht": "輔正都尉",
+                "zhs": "辅正都尉",
+                "en": "Commandant for Assisting Rectitude"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "各一人"
+            ],
+            "zhs": [
+              "各一人"
+            ],
+            "en": [
+              "1 person each"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "為太子四友",
+              "zhs": "为太子四友",
+              "en": "Together known as the Crown Prince's Four Companions"
+            }
+          ]
+        },
+        {
+          "id": "eastern-palace-034",
+          "displayName": {
+            "zht": "太子左、右部督",
+            "zhs": "太子左、右部督",
+            "en": "Commander of the Crown Prince's Left/Right Guard"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": null,
+            "wu": [
+              {
+                "zht": "太子左、右部督",
+                "zhs": "太子左、右部督",
+                "en": "Commander of the Crown Prince's Left/Right Guard"
+              },
+              {
+              "zht": "輔義都尉",
+              "zhs": "辅义都尉",
+              "en": "Commandant for Assisting Righteousness"
+            }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "各一人"
+            ],
+            "zhs": [
+              "各一人"
+            ],
+            "en": [
+              "1 person each"
+            ]
+          },
+          "notes": null
+        }
+      ]
+    }
+  ]
+}

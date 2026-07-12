@@ -1,0 +1,1333 @@
+﻿---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import artefacts from '../../../data/artefacts-database.json';
+import { t } from '../../../i18n/index.js';
+import { url } from '../../../utils/url';
+
+const lang = 'zh-hans';
+const strings = t(lang);
+const footerQuote = strings.footer.quoteBySection?.artefacts ?? strings.footer.quote;
+const periodOrder = ['Pre-Qin', 'Qin-Han', 'Wei-Jin', 'N/S Dynasties', 'Sui-Tang'];
+const availablePeriods = new Set(artefacts.map((item) => item.period));
+const periods = periodOrder.filter((period) => availablePeriods.has(period));
+const locations = [...new Set(artefacts.map((item) => item.location))].sort();
+const periodLabels: Record<string, string> = {
+  'Pre-Qin': '先秦',
+  'Qin-Han': '秦汉',
+  'Wei-Jin': '魏晋',
+  'N/S Dynasties': '南北朝',
+  'Sui-Tang': '隋唐'
+};
+const specialTopics = [
+  {
+    title: '事死如事生',
+    description: '汉代画像砖与身后事',
+    image: '/featured/featured_brick.jpg',
+    count: 14,
+    href: url('/zh-hans/artefacts/as-in-life-as-in-death/')
+  }
+];
+---
+
+<Base title={`文物 · ${strings.siteTitle}`} lang={lang}>
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+     <section class="page-banner" style={`background-image: url('${url('/art_banner.png')}')`}>
+      <div class="page-banner-overlay"></div>
+      <div class="page-header">
+
+        <div class="page-icon">
+          <img src={url('/icon-artefacts.svg')} alt="" />
+        </div>
+        <h1 class="page-title">文物</h1>
+        <p class="page-sub">
+          三国及其他时期的历史文物，各地博物馆自摄</p>
+      </div>
+    </section>
+
+    <section class="special-topics" aria-labelledby="special-topics-title">
+      <div class="section-heading">
+        <h2 id="special-topics-title">专题</h2>
+        <span></span>
+      </div>
+
+      <div class="topic-grid">
+        {specialTopics.map((topic) => (
+          <article class="topic-card" style={topic.image ? `background-image: url('${url(topic.image)}')` : undefined}>
+            <div class="topic-meta">
+              <span><i class="ti ti-notebook" aria-hidden="true"></i> 汉代</span>
+              <span>{topic.count} 件文物</span>
+            </div>
+            <h3>{topic.title}</h3>
+            <p>{topic.description}</p>
+            <a class="topic-link" href={(topic.href)}>
+              <i class="ti ti-arrow-right" aria-hidden="true"></i>
+              阅读
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <div class="full-collection-heading">
+      <button id="show-full-collection" type="button">全部</button>
+      <span></span>
+    </div>
+
+    <section class="toolbar" aria-label="Filter artefacts">
+      <dl class="collection-stats" aria-label="Collection summary">
+        <div>
+          <dt>{artefacts.length}</dt>
+          <dd>文物</dd>
+        </div>
+        <div>
+          <dt>{locations.length}</dt>
+          <dd>地点</dd>
+        </div>
+        <div>
+          <dt>{periods.length}</dt>
+          <dd>时期</dd>
+        </div>
+      </dl>
+
+      <div class="filter-controls">
+        <div class="filter-group">
+          <span class="filter-label">时期</span>
+          <div class="filter-dropdown" id="period-filter">
+            <button class="filter-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" data-value="">
+              <span>所有时期</span>
+              <i class="ti ti-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="filter-menu" role="listbox" hidden>
+              <button type="button" role="option" data-value="" aria-selected="true">所有时期</button>
+              {periods.map((period) => (
+                <button type="button" role="option" data-value={period}>{periodLabels[period]}</button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">地点</span>
+          <div class="filter-dropdown" id="location-filter">
+            <button class="filter-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" data-value="">
+              <span>所有地点</span>
+              <i class="ti ti-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="filter-menu" role="listbox" hidden>
+              <button type="button" role="option" data-value="" aria-selected="true">所有地点</button>
+              {locations.map((location) => (
+                <button type="button" role="option" data-value={location}>
+                  {artefacts.find((item) => item.location === location)?.location_zh_hans}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <label class="sr-only" for="artefact-search">检索文物</label>
+        <input
+          id="artefact-search"
+          type="search"
+          placeholder="检索文物..."
+          autocomplete="off"
+        />
+      </div>
+    </section>
+
+    <main>
+      <div class="artefact-grid" id="artefact-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>
+        无符合文物     </p>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{footerQuote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+
+  <div class="modal-backdrop" id="artefact-modal" hidden>
+    <section
+      class="artefact-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <button class="modal-close" id="modal-close" type="button" aria-label="关闭">
+        <i class="ti ti-x" aria-hidden="true"></i>
+      </button>
+
+      <div class="modal-image-panel">
+        <img id="modal-image" src="" alt="" />
+        <div class="image-zoom-controls">
+          <button id="image-zoom-in" type="button" aria-label="Zoom in"><i class="ti ti-plus"></i></button>
+          <button id="image-zoom-out" type="button" aria-label="Zoom out"><i class="ti ti-minus"></i></button>
+          <button id="image-zoom-reset" type="button" aria-label="Reset image"><i class="ti ti-arrows-maximize"></i></button>
+        </div>
+      </div>
+
+      <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <p class="modal-title-zh" id="modal-title-zh" hidden></p>
+        <dl class="modal-metadata" id="modal-metadata"></dl>
+        <p class="modal-description" id="modal-description"></p>
+
+        <div class="modal-navigation">
+          <button id="modal-previous" type="button">
+            <i class="ti ti-arrow-left" aria-hidden="true"></i>
+            上一件          </button>
+          <button id="modal-next" type="button">
+            下一件           <i class="ti ti-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<script>
+  import "../../../scripts/artefact-image-zoom.js";
+</script>
+
+<script define:vars={{ artefactData: artefacts, base: import.meta.env.BASE_URL.replace(/\/$/, '') }}>
+  const grid = document.getElementById('artefact-grid');
+  const emptyState = document.getElementById('empty-state');
+  const periodFilter = document.getElementById('period-filter');
+  const locationFilter = document.getElementById('location-filter');
+  const searchInput = document.getElementById('artefact-search');
+  const modal = document.getElementById('artefact-modal');
+  const modalClose = document.getElementById('modal-close');
+  const modalImage = document.getElementById('modal-image');
+  const modalTitle = document.getElementById('modal-title');
+  const modalTitleZh = document.getElementById('modal-title-zh');
+  const modalMetadata = document.getElementById('modal-metadata');
+  const modalDescription = document.getElementById('modal-description');
+  const previousButton = document.getElementById('modal-previous');
+  const nextButton = document.getElementById('modal-next');
+  const topicButtons = document.querySelectorAll('.topic-link[data-topic-ids]');
+  const showFullCollection = document.getElementById('show-full-collection');
+
+  let visibleArtefacts = [...artefactData];
+  let activeIndex = -1;
+  let activeTopicIds = null;
+  let lastFocusedElement = null;
+
+  function escapeHtml(value = '') {
+    return String(value)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;');
+  }
+
+  function detailLocationLabel(item) {
+    return [
+      item.location_detail_zh_hans,
+      item.museum_zh_hans
+    ].filter(Boolean).join('，');
+  }
+
+  function renderCards() {
+    grid.innerHTML = visibleArtefacts.map((item, index) => `
+      <button class="artefact-card" type="button" data-index="${index}">
+        <span class="artefact-image">
+         <img src="${base}${escapeHtml(item.image)}" alt="" loading="lazy" />
+        </span>
+        <span class="artefact-card-body">
+          <span class="artefact-period">${escapeHtml(item.period_zh_hans)}</span>
+          <span class="artefact-title">${escapeHtml(item.title_zh_hans)}</span>
+          <span class="artefact-title-zh">${escapeHtml(item.title)}</span>
+          <span class="artefact-location">
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            ${escapeHtml(item.location_zh_hans)}
+          </span>
+        </span>
+      </button>
+    `).join('');
+
+    emptyState.hidden = visibleArtefacts.length !== 0;
+  }
+
+  function applyFilters() {
+    const period = periodFilter.querySelector('.filter-trigger').dataset.value;
+    const location = locationFilter.querySelector('.filter-trigger').dataset.value;
+    const query = searchInput.value.trim().toLowerCase();
+
+    visibleArtefacts = artefactData.filter((item) => {
+      const matchesTopic = !activeTopicIds || activeTopicIds.includes(item.id);
+      const matchesPeriod = !period || item.period === period;
+      const matchesLocation = !location || item.location === location;
+      const searchable = [
+        item.title,
+        item.title_zh_hans,
+        item.title_zh_hans,
+        item.description,
+        item.description_zh_hans,
+        item.description_zh_hans,
+        item.period,
+        item.dynasty,
+        item.location,
+        item.location_detail,
+        item.museum,
+        item.material
+      ].filter(Boolean).join(' ').toLowerCase();
+
+      return matchesTopic && matchesPeriod && matchesLocation && (!query || searchable.includes(query));
+    });
+
+    renderCards();
+  }
+
+  function metadataRow(label, value) {
+    if (!value) return '';
+    return `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`;
+  }
+
+  function populateModal(index) {
+    const item = visibleArtefacts[index];
+    if (!item) return;
+
+    activeIndex = index;
+    modalImage.src = base + item.image;
+    modalImage.alt = item.title_zh_hans;
+    modalTitle.textContent = item.title_zh_hans;
+    modalTitleZh.textContent = item.title || '';
+    modalTitleZh.hidden = !item.title;
+    modalMetadata.innerHTML = [
+      metadataRow('朝代', item.dynasty_zh_hans),
+      metadataRow('时间', item.time_zh_hans),
+      metadataRow('材质', item.material_zh_hans),
+      metadataRow('尺寸', item.dimensions_zh_hans),
+      metadataRow('地点', detailLocationLabel(item))
+    ].join('');
+    modalDescription.innerHTML = escapeHtml(item.description_zh_hans)
+      .replaceAll('\n\n', '<br><br>');
+    previousButton.disabled = index === 0;
+    nextButton.disabled = index === visibleArtefacts.length - 1;
+  }
+
+  function openModal(index, trigger) {
+    lastFocusedElement = trigger;
+    populateModal(index);
+    modal.hidden = false;
+    document.body.classList.add('modal-open');
+    modalClose.focus();
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.classList.remove('modal-open');
+    modalImage.src = '';
+    lastFocusedElement?.focus();
+  }
+
+  grid.addEventListener('click', (event) => {
+    const card = event.target.closest('.artefact-card');
+    if (!card) return;
+    openModal(Number(card.dataset.index), card);
+  });
+
+  function closeDropdowns(except = null) {
+    document.querySelectorAll('.filter-dropdown').forEach((dropdown) => {
+      if (dropdown === except) return;
+      dropdown.querySelector('.filter-menu').hidden = true;
+      dropdown.querySelector('.filter-trigger').setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  document.querySelectorAll('.filter-dropdown').forEach((dropdown) => {
+    const trigger = dropdown.querySelector('.filter-trigger');
+    const menu = dropdown.querySelector('.filter-menu');
+
+    trigger.addEventListener('click', () => {
+      const willOpen = menu.hidden;
+      closeDropdowns(dropdown);
+      menu.hidden = !willOpen;
+      trigger.setAttribute('aria-expanded', String(willOpen));
+    });
+
+    menu.addEventListener('click', (event) => {
+      const option = event.target.closest('[role="option"]');
+      if (!option) return;
+
+      trigger.dataset.value = option.dataset.value;
+      trigger.querySelector('span').textContent = option.textContent;
+      menu.querySelectorAll('[role="option"]').forEach((item) => {
+        item.setAttribute('aria-selected', String(item === option));
+      });
+      menu.hidden = true;
+      trigger.setAttribute('aria-expanded', 'false');
+      applyFilters();
+      trigger.focus();
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.filter-dropdown')) closeDropdowns();
+  });
+
+  topicButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      activeTopicIds = button.dataset.topicIds.split(',');
+      applyFilters();
+      document.querySelector('.full-collection-heading').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  showFullCollection.addEventListener('click', () => {
+    activeTopicIds = null;
+    applyFilters();
+  });
+
+  searchInput.addEventListener('input', applyFilters);
+  modalClose.addEventListener('click', closeModal);
+  previousButton.addEventListener('click', () => populateModal(activeIndex - 1));
+  nextButton.addEventListener('click', () => populateModal(activeIndex + 1));
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (modal.hidden) return;
+    if (event.key === 'Escape') closeModal();
+    if (event.key === 'ArrowLeft' && !previousButton.disabled) populateModal(activeIndex - 1);
+    if (event.key === 'ArrowRight' && !nextButton.disabled) populateModal(activeIndex + 1);
+  });
+
+  renderCards();
+</script>
+
+<style is:global>
+  .site {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg);
+  }
+
+  .page-banner {
+    position: relative;
+    background: var(--color-bg-secondary);
+  }
+
+  .page-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.72);
+    z-index: 0;
+  }
+
+  .page-header {
+    position: relative;
+    z-index: 1;
+    padding: 3rem 2rem 2rem;
+  }
+
+  .page-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: var(--radius-md);
+    background: linear-gradient(145deg, #364b37, #18251b);
+  }
+
+  .page-icon img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+
+  .page-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 42px; font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: 6px;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+  }
+
+  .page-sub {
+    font-family: 'LXGW WenKai', serif;
+    font-size: 20px; color: rgba(255,255,255,0.75);
+    text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+  }
+
+  .collection-stats {
+    display: flex;
+    gap: 0;
+    flex: 0 0 auto;
+    width: fit-content;
+    margin: 0;
+  }
+
+  .collection-stats div {
+    min-width: 82px;
+    padding: 0 0.9rem;
+    border-left: 1px solid rgba(214, 174, 105, 0.3);
+  }
+
+  .collection-stats div:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .collection-stats dt {
+    color: #ddb36e;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .collection-stats dd {
+    margin: 0.2rem 0 0;
+    color: var(--color-text-tertiary);
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .special-topics {
+    padding: 1.35rem 2rem 0;
+  }
+
+  .section-heading,
+  .full-collection-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .section-heading h2,
+  .full-collection-heading button {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #9b876b;
+    font: inherit;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .section-heading span,
+  .full-collection-heading span {
+    width: 100%;
+    height: 1px;
+    background: rgba(183, 138, 73, 0.18);
+  }
+
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+
+  .topic-card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    min-height: 225px;
+    padding: 1.55rem 1.65rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #0d0c0a;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.4);
+  }
+
+  .topic-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(90deg, rgba(12, 9, 6, 0.78), rgba(30, 24, 16, 0.4) 55%, rgba(12, 9, 6, 0.2)),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.36));
+  }
+
+  .topic-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    color: #b78a49;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .topic-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .topic-meta span:last-child {
+    padding: 0.15rem 0.4rem;
+    border: 1px solid rgba(183, 138, 73, 0.28);
+    border-radius: 3px;
+    color: #9b876b;
+    background: rgba(8, 7, 6, 0.58);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.28);
+  }
+
+  .topic-card h3 {
+    margin: 0.45rem 0 0;
+    color: var(--color-text-primary);
+    font-family: 'LXGW WenKai', serif;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .topic-card p {
+    margin: 0.25rem 0 0.6rem;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 300;
+  }
+
+  .topic-link {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #ddb36e;
+    font: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .topic-link:hover {
+    color: #f0cf93;
+  }
+
+  .full-collection-heading {
+    padding: 1.6rem 2rem 0;
+  }
+
+  .full-collection-heading button {
+    cursor: pointer;
+  }
+
+  .full-collection-heading button:hover {
+    color: #ddb36e;
+  }
+
+  .toolbar {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    border-bottom: 0.5px solid var(--color-border);
+  }
+
+  .filter-controls {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 0.75rem;
+  }
+
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .filter-label {
+    color: #b78a49;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .filter-dropdown {
+    position: relative;
+    min-width: 165px;
+  }
+
+  .filter-trigger {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    min-height: 42px;
+    box-sizing: border-box;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid rgba(183, 138, 73, 0.45);
+    border-radius: 5px;
+    outline: none;
+    background: #151411;
+    color: #cfc8bb;
+    font: inherit;
+    font-size: 17px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .filter-trigger:hover,
+  .filter-trigger:focus-visible,
+  .filter-trigger[aria-expanded="true"] {
+    border-color: #ddb36e;
+  }
+
+  .filter-trigger i {
+    color: #b78a49;
+    font-size: 14px;
+    transition: transform 160ms ease;
+  }
+
+  .filter-trigger[aria-expanded="true"] i {
+    transform: rotate(180deg);
+  }
+
+  .filter-menu {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    max-height: 260px;
+    overflow-y: auto;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgba(183, 138, 73, 0.45);
+    border-radius: 5px;
+    background: #151411;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.48);
+    scrollbar-color: #666 #1a1916;
+    scrollbar-width: thin;
+}
+
+.filter-menu::-webkit-scrollbar {
+  width: 7px;
+}
+
+.filter-menu::-webkit-scrollbar-track {
+  background: #1a1916;
+}
+
+.filter-menu::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.filter-menu::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}
+  .filter-menu[hidden] {
+    display: none;
+  }
+
+  .filter-menu button {
+    appearance: none;
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border: 0;
+    border-radius: 3px;
+    background: #151411;
+    color: #cfc8bb;
+    font: inherit;
+    font-size: 17px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .filter-menu button:hover,
+  .filter-menu button:focus-visible {
+    outline: none;
+    background: rgba(183, 138, 73, 0.12);
+    color: var(--color-text-primary);
+  }
+
+  .filter-menu button[aria-selected="true"] {
+    background: rgba(183, 138, 73, 0.2);
+    color: #ddb36e;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 1 420px;
+    min-width: 280px;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid rgba(183, 138, 73, 0.45);
+    border-radius: 5px;
+    background: var(--color-bg-secondary);
+  }
+
+  .search-box i {
+    color: #b78a49;
+    font-size: 17px;
+  }
+
+  .search-box input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--color-text-primary);
+    font: inherit;
+    font-size: 16px;
+  }
+
+  .artefact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.9rem;
+    padding: 1.5rem 2rem 3rem;
+  }
+
+  .artefact-card {
+    display: grid;
+    grid-template-rows: 330px 1fr;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid rgba(183, 138, 73, 0.2);
+    border-radius: 6px;
+    background: var(--color-bg-secondary);
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 160ms ease, transform 160ms ease;
+  }
+
+  .artefact-card:hover,
+  .artefact-card:focus-visible {
+    border-color: rgba(221, 179, 110, 0.72);
+    outline: none;
+    transform: translateY(-2px);
+  }
+
+  .artefact-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #0b0a08;
+  }
+
+  .artefact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 220ms ease;
+  }
+
+  .artefact-card:hover .artefact-image img {
+    transform: scale(1.025);
+  }
+
+  .artefact-card-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 138px;
+    padding: 0.8rem 0.85rem 0.9rem;
+  }
+
+  .artefact-period {
+    color: #9E9084;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .artefact-period::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+    background: #b78a49;
+    vertical-align: 1px;
+  }
+
+  .artefact-title {
+    margin-top: 0.35rem;
+    color: #e7c680;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .artefact-title-zh {
+    margin-top: 0.15rem;
+    color: var(--color-text-secondary);
+    font-family: 'Inter', serif;
+    font-size: 14px;
+  }
+
+  .artefact-location {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: auto;
+    padding-top: 0.7rem;
+    color: var(--color-text-tertiary);
+    font-size: 15px;
+  }
+
+  .artefact-location i {
+    color: #9b7440;
+    font-size: 16px;
+  }
+
+  .empty-state {
+    margin: 0;
+    padding: 4rem 2rem;
+    color: var(--color-text-tertiary);
+    text-align: center;
+  }
+
+  .modal-backdrop {
+    position: fixed;
+    z-index: 10000;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.82);
+  }
+
+  .modal-backdrop[hidden] {
+    display: none;
+  }
+
+  .artefact-modal {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+    width: min(1040px, 100%);
+    max-height: min(760px, calc(100vh - 3rem));
+    overflow: hidden;
+    border: 1px solid rgba(183, 138, 73, 0.45);
+    border-radius: 8px;
+    background: #11110f;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+  }
+
+  .modal-close {
+    position: absolute;
+    z-index: 2;
+    top: 0.85rem;
+    right: 0.85rem;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid rgba(183, 138, 73, 0.45);
+    border-radius: 50%;
+    background: rgba(8, 8, 7, 0.88);
+    color: #ddb36e;
+    cursor: pointer;
+  }
+
+  .modal-close i {
+    font-size: 19px;
+  }
+
+  .modal-image-panel {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 560px;
+    padding: 2rem;
+    overflow: hidden;
+    background: #090908;
+    cursor: default;
+    touch-action: none;
+  }
+
+  .modal-image-panel img {
+    width: 100%;
+    height: 100%;
+    max-height: 630px;
+    object-fit: contain;
+    transform-origin: center;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+  }
+
+  .modal-image-panel.is-zoomed { cursor: grab; }
+  .modal-image-panel.is-dragging { cursor: grabbing; }
+
+  .image-zoom-controls {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(183, 138, 73, 0.45);
+    border-radius: 5px;
+    background: rgba(15, 14, 12, 0.94);
+    transform: translateY(-50%);
+  }
+
+  .image-zoom-controls button {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid rgba(183, 138, 73, 0.24);
+    background: transparent;
+    color: #ddb36e;
+    cursor: pointer;
+  }
+
+  .image-zoom-controls button:first-child { border-top: 0; }
+  .image-zoom-controls button:hover { background: rgba(183, 138, 73, 0.14); }
+  .image-zoom-controls button:disabled { opacity: 0.35; cursor: default; }
+  .image-zoom-controls i { font-size: 17px; }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding: 2.2rem 2rem 1.5rem;
+    overflow-y: auto;
+  }
+
+  .modal-content h2 {
+    margin: 0.65rem 0 0;
+    color: var(--color-text-primary);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  .modal-title-zh {
+    margin: 0.2rem 0 0;
+    color: var(--color-text-secondary);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+
+  .modal-metadata {
+    margin: 1.1rem 0 0;
+    padding: 0.85rem 0;
+    border-top: 1px solid rgba(183, 138, 73, 0.2);
+    border-bottom: 1px solid rgba(183, 138, 73, 0.2);
+  }
+
+  .modal-metadata div {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0.65rem;
+    margin-top: 0.35rem;
+    font-size: 15.5px;
+    line-height: 1.4;
+  }
+
+  .modal-metadata div:first-child {
+    margin-top: 0;
+  }
+
+  .modal-metadata dt {
+    color: #806b4b;
+  }
+
+  .modal-metadata dd {
+    margin: 0;
+    color: #e7c680;
+  }
+
+  .modal-description {
+    margin: 1rem 0 1.5rem;
+    color: var(--color-text-secondary);
+    font-size: 16.5px;
+    line-height: 1.62;
+  }
+
+  .modal-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+    margin-top: auto;
+  }
+
+  .modal-navigation button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 36px;
+    border: 1px solid rgba(183, 138, 73, 0.35);
+    border-radius: 5px;
+    background: transparent;
+    color: #b78a49;
+    font: inherit;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .modal-navigation button:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  body.modal-open {
+    overflow: hidden;
+  }
+
+  .site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 0.875rem 2rem;
+    border-top: 0.5px solid var(--color-border);
+    background: var(--color-bg-secondary);
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-copy,
+  .footer-quote {
+    color: var(--color-text-tertiary);
+    font-size: 0.8rem;
+  }
+
+  .footer-quote {
+    font-style: italic;
+    white-space: pre-line;
+  }
+
+  .footer-github {
+    color: var(--color-text-tertiary);
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 980px) {
+    .toolbar {
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .collection-stats {
+      flex-basis: 100%;
+    }
+
+    .search-box {
+      flex: 1 1 280px;
+    }
+
+    .artefact-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .artefact-card {
+      grid-template-rows: 260px 1fr;
+    }
+  }
+
+  @media (max-width: 760px) {
+  .special-topics {
+    padding: 1rem 1rem 0;
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-card {
+    min-height: 0;
+  }
+
+  .full-collection-heading {
+    padding: 1.35rem 1rem 0;
+  }
+
+  .page-header { padding: 1.5rem 1rem 1.25rem; }
+
+  .page-banner {
+  background-position: center center !important;
+  background-size: cover !important;
+}
+    .page-title {
+      font-size: 36px;
+    }
+
+    .page-sub {
+      font-size: 16px;
+    }
+
+    .collection-stats {
+      width: 100%;
+    }
+
+    .collection-stats div {
+      min-width: 0;
+      flex: 1;
+      padding: 0 0.8rem;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .collection-stats {
+      order: -1;
+      width: 100%;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid rgba(183, 138, 73, 0.2);
+    }
+
+    .filter-controls {
+      display: grid;
+      width: 100%;
+      gap: 0.75rem;
+    }
+
+    .filter-group {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+    }
+
+    .filter-dropdown {
+      width: 100%;
+    }
+
+    .search-box {
+      flex: 0 0 auto;
+      width: 100%;
+      min-width: 0;
+      min-height: 42px;
+      box-sizing: border-box;
+    }
+
+    .artefact-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+      padding: 1rem 1rem 2rem;
+    }
+
+    .artefact-card-body {
+      min-height: 128px;
+      padding: 0.7rem;
+    }
+
+    .artefact-card {
+      grid-template-rows: auto 1fr;
+    }
+
+    .artefact-image {
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
+
+    .artefact-title {
+      font-size: 18px;
+    }
+
+    .modal-backdrop {
+      padding: 0;
+    }
+
+    .artefact-modal {
+      grid-template-columns: 1fr;
+      width: 100%;
+      height: 100%;
+      max-height: none;
+      border: 0;
+      border-radius: 0;
+      overflow-y: auto;
+    }
+
+    .modal-image-panel {
+      min-height: 42vh;
+      max-height: 48vh;
+      padding: 1.25rem;
+    }
+
+    .modal-content {
+      overflow: visible;
+      padding: 1.5rem 1rem 1rem;
+    }
+
+    .modal-navigation {
+      position: sticky;
+      bottom: 0;
+      padding-top: 0.5rem;
+      background: #11110f;
+    }
+
+    .site-footer {
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .artefact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .artefact-image {
+      height: auto;
+      aspect-ratio: 16 / 10;
+    }
+  }
+</style>
+
+
+

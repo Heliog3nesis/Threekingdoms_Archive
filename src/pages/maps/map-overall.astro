@@ -1,0 +1,1286 @@
+---
+import Base from '../../layouts/Base.astro';
+import Nav from '../../components/Nav.astro';
+import ContactModal from '../../components/Contactmodal.astro';
+import { t } from '../../i18n/index.js';
+import { provinceData } from '../../data/provinces-data';
+import provinceMapSvg from '../../../public/province-map.svg?raw';
+import { url } from '../../utils/url';
+
+const lang = 'en';
+const strings = t(lang);
+const s = strings.mapoverall;
+const footerQuote = strings.footer.quoteBySection?.maps ?? strings.footer.quote;
+
+function utf8ToBase64(str: string): string {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return btoa(binary);
+}
+const mapsPayload = utf8ToBase64(JSON.stringify({ provinceData, lang }));
+
+const furtherReading = [
+  { icon: 'ti-info-circle', label: 'About this project',      href: url('/maps/about-maps-overall')      },
+  { icon: 'ti-link',        label: "Western Regions (Xiyu)",  href: url('/mapbase/Xiyu.png') },
+  { icon: 'ti-link',        label: 'Huge combined map',             href: url('/mapbase/Overall_detailed.png') },
+];
+
+const relatedMaps = [
+  { title: 'Kongming\'s Archives', href: 'https://zgongjin.tumblr.com/jkmap' },
+  { title: 'ROTK.net',             href: 'https://rotk.net/' },
+];
+---
+
+<Base title={`Map of the Three Kingdoms · ${strings.siteTitle}`} lang="en">
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href={url('/maps')} class="bc-link">Maps</a>
+        <span class="bc-sep">›</span>
+        <span class="bc-cur">{s.title}</span>
+      </div>
+      <h1 class="page-title">{s.title}</h1>
+      <p class="page-sub">{s.subtitle}</p>
+    </div>
+
+    <!-- INTRO + SEARCH -->
+    <div class="map-intro">
+      <div class="intro-left">
+        <h2 class="intro-heading">Mapping the World of the Three Kingdoms</h2>
+        <p class="intro-desc"> {s.intro[0]}
+          <br />
+          <br />
+          {s.intro[1]}</p>
+        <p class="intro-contact">
+          Found an error or have a request?
+          <a href="#" onclick="window.openContactModal(); return false;"> Get in touch <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a>
+        </p>
+      </div>
+
+      <div class="intro-right">
+        <div class="intro-links">
+          <p class="intro-links-title">Resources</p>
+          <div class="intro-links-list">
+            {furtherReading.map(link => (
+              <a href={link.href} class="intro-link" target="_blank">
+                <i class={`ti ${link.icon}`} aria-hidden="true"></i>
+                <span>{link.label}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div class="intro-search">
+          <div class="search-box" id="search-box">
+            <input
+              class="search-input"
+              id="search-input"
+              type="text"
+              placeholder="Luoyang, 成都..."
+              autocomplete="off"
+            />
+            <button class="search-clear" id="search-clear" style="display:none;">✕</button>
+            <button class="search-btn" id="search-btn">Search</button>
+          </div>
+          <p class="search-hint">Search in English or Chinese</p>
+          <div class="search-dropdown" id="search-dropdown" style="display:none;">
+            <div class="dropdown-warning" id="search-dropdown-warning" style="display:none;"></div>
+            <div class="dropdown-list" id="search-dropdown-list"></div>
+            <button class="dropdown-more" id="search-dropdown-more" style="display:none;"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABS — desktop -->
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-tab="interactive">{s.tabs.interactive}</button>
+      <button class="tab" data-tab="regions">{s.tabs.regions}</button>
+    </div>
+
+    <!-- TABS — mobile dropdown -->
+    <div class="tab-dropdown">
+      <select class="tab-select" id="tab-select">
+        <option value="interactive" selected>{s.tabs.interactive}</option>
+        <option value="regions">{s.tabs.regions}</option>
+      </select>
+    </div>
+
+    <div class="panels-wrapper">
+
+      <!-- REGIONS TAB -->
+      <div class="panel" id="panel-regions" style="display:none;">
+        <div class="map-layout">
+
+          <!-- SIDEBAR CARD -->
+          <div class="map-sidebar">
+            <div class="sidebar-section" style="margin-top:0;">
+              <p class="sidebar-section-label">Also on:</p>
+              {relatedMaps.map(m => (
+                <a href={m.href} class="sidebar-map-link" target={m.href.startsWith('http') ? '_blank' : undefined}>
+                  <span class="era-title">{m.title}</span>
+                </a>
+              ))}
+            </div>
+
+            <div class="sidebar-section">
+              <p class="sidebar-section-label">Kingdoms</p>
+              <div class="legend-item">
+                <span class="legend-dot" style="background:#4b6f9f;"></span>
+                <span>Wei</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot" style="background:#5aaa78;"></span>
+                <span>Shu</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot" style="background:#c86060;"></span>
+                <span>Wu</span>
+              </div>
+            </div>
+
+            <i class="ti ti-map-2 sidebar-watermark" aria-hidden="true"></i>
+          </div>
+
+          <!-- MAP COLUMN -->
+          <div class="map-content">
+            <div class="province-map-wrap">
+              <div class="province-map-inner" id="province-map-inner" set:html={provinceMapSvg} />
+              <div class="province-labels" id="province-labels" aria-hidden="true"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- INTERACTIVE TAB -->
+      <div class="panel" id="panel-interactive">
+        <div class="imap-layout">
+
+          <!-- SIDEBAR -->
+          <div class="map-sidebar imap-sidebar">
+
+            <div class="sidebar-section" style="margin-top:0;">
+              <p class="sidebar-section-label">Kingdoms</p>
+              <div class="legend-item"><span class="legend-dot" style="background:#4b6f9f;"></span><span>Wei</span></div>
+              <div class="legend-item"><span class="legend-dot" style="background:#5aaa78;"></span><span>Shu</span></div>
+              <div class="legend-item"><span class="legend-dot" style="background:#c86060;"></span><span>Wu</span></div>
+            </div>
+
+            <div class="sidebar-section">
+              <p class="sidebar-section-label">Settlement Types</p>
+              <div class="legend-item"><span class="imap-sym imap-sym-prov">■</span><span>Provincial Seat</span></div>
+              <div class="legend-item"><span class="imap-sym imap-sym-comm">●</span><span>Commandery Seat</span></div>
+              <div class="legend-item"><span class="imap-sym imap-sym-county">○</span><span>County Seat</span></div>
+              <div class="legend-item"><span class="imap-sym imap-sym-pass">×</span><span>Military Pass</span></div>
+              <div class="legend-item"><span class="imap-sym imap-sym-land">★</span><span>Landmark</span></div>
+              <div class="legend-item"><span class="imap-sym imap-sym-other">◆</span><span>Others</span></div>
+              <div class="imap-zoom-hint">
+                <i class="ti ti-info-circle"></i>
+                <span>Zoom in to reveal more settlements</span>
+              </div>
+            </div>
+
+            <i class="ti ti-map-2 sidebar-watermark" aria-hidden="true"></i>
+          </div>
+
+          <!-- MAP CONTAINER -->
+          <div class="imap-content">
+            <div id="imap-container"></div>
+            <div class="imap-map-controls" id="imap-map-controls">
+              <div class="imap-style-btns" id="imap-style-btns" aria-label="Base map">
+                <button class="imap-style-btn active" data-style="outdoor" type="button">
+                  <span class="imap-style-frame imap-style-frame-topo"></span>
+                  <span>Topography</span>
+                </button>
+                <button class="imap-style-btn" data-style="satellite" type="button">
+                  <span class="imap-style-frame imap-style-frame-sat"></span>
+                  <span>Satellite</span>
+                </button>
+              </div>
+              <label class="imap-toggle-row imap-map-toggle">
+                <input type="checkbox" id="toggle-provinces" checked />
+                <span class="imap-toggle-track"></span>
+                <span>Historical Provinces</span>
+              </label>
+              <label class="imap-toggle-row imap-map-toggle">
+                <input type="checkbox" id="toggle-yellow-river" checked />
+                <span class="imap-toggle-track"></span>
+                <span>Old Yellow River Course</span>
+              </label>
+              <label class="imap-toggle-row imap-map-toggle">
+                <input type="checkbox" id="toggle-labels" checked />
+                <span class="imap-toggle-track"></span>
+                <span>Modern places</span>
+              </label>
+            </div>
+            <div class="imap-loading" id="imap-loading">
+              <div class="imap-loading-inner">
+                <i class="ti ti-map-2"></i>
+                <span>Loading map…</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{footerQuote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<div id="maps-data" data-payload={mapsPayload} style="display:none;"></div>
+
+<script>
+  // @ts-nocheck
+  import { url } from '../../utils/url';
+
+  
+  const mapsDataEl = document.getElementById('maps-data');
+  const payload = mapsDataEl.dataset.payload || '';
+  const binaryStr = atob(payload);
+  const bytes = Uint8Array.from(binaryStr, c => c.charCodeAt(0));
+  const jsonStr = new TextDecoder('utf-8').decode(bytes);
+  const { provinceData, lang } = JSON.parse(jsonStr || '{}');
+  
+
+  const isZh = lang === 'zh-hant' || lang === 'zh-hans';
+
+  let allTowns = [];
+  let townsPromise = null;
+
+  function normaliseTownsPayload(data) {
+    return data?.All_Towns_Details ?? data ?? [];
+  }
+
+  function loadTowns() {
+    if (allTowns.length) return Promise.resolve(allTowns);
+    if (!townsPromise) {
+      townsPromise = fetch(url('/mapbase/All_Towns.json'))
+        .then(r => r.json())
+        .then(data => {
+          allTowns = normaliseTownsPayload(data);
+          return allTowns;
+        })
+        .catch(e => {
+          townsPromise = null;
+          console.warn('Could not load towns data:', e);
+          return [];
+        });
+    }
+    return townsPromise;
+  }
+
+  window.__threeKArchiveLoadTowns = loadTowns;
+
+  // ── TAB SWITCHING ─────────────────────────────────────────────
+  const tabSelect = document.getElementById('tab-select');
+  const panels = {
+    regions:     document.getElementById('panel-regions'),
+    interactive: document.getElementById('panel-interactive'),
+  };
+
+  function showTab(tab) {
+    Object.values(panels).forEach(p => p.style.display = 'none');
+    panels[tab].style.display = 'block';
+    document.querySelectorAll('.tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.tab === tab);
+    });
+    tabSelect.value = tab;
+    if (tab === 'regions') positionLabels();
+    if (tab === 'interactive') {
+      initInteractiveMap();
+    }
+  }
+
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => showTab(tab.dataset.tab));
+  });
+  tabSelect.addEventListener('change', () => showTab(tabSelect.value));
+  showTab(tabSelect.value || 'interactive');
+
+  // ── PROVINCE MAP (SVG) ─────────────────────────────────────────
+  const mapRoot = document.querySelector('#province-map-inner svg');
+  const labelsContainer = document.getElementById('province-labels');
+  const mapInner = document.getElementById('province-map-inner');
+
+  if (mapRoot) {
+    mapRoot.classList.add('province-map-svg');
+    Object.keys(provinceData).forEach(provinceId => {
+      const g = document.getElementById(provinceId);
+      if (!g) return;
+      const info = provinceData[provinceId];
+      g.querySelectorAll('title').forEach(t => t.remove());
+      g.addEventListener('mouseenter', () => g.classList.add('province-hover'));
+      g.addEventListener('mouseleave', () => g.classList.remove('province-hover'));
+      g.addEventListener('click', () => { if (info.pngUrl) window.open(url(info.pngUrl), '_blank'); });
+    });
+  }
+
+  function createLabel(id, info) {
+    const div = document.createElement('div');
+    div.className = 'province-label';
+    div.id = `plabel-${id}`;
+    const nameEn = info.name?.en || id;
+    const nameCn = lang === 'zh-hans'
+      ? (info.name?.zhs || info.name?.zht || '')
+      : (info.name?.zht || info.name?.zhs || '');
+    if (isZh) {
+      div.innerHTML = `<span class="plabel-primary">${nameCn || nameEn}</span>${nameEn ? `<span class="plabel-sub">${nameEn}</span>` : ''}`;
+    } else {
+      div.innerHTML = `<span class="plabel-primary">${nameEn}</span>${nameCn ? `<span class="plabel-sub">${nameCn}</span>` : ''}`;
+    }
+    labelsContainer.appendChild(div);
+    return div;
+  }
+
+  const skipLabels = new Set(['Jiaozhou2']);
+
+  function positionLabels() {
+    if (!mapRoot || !labelsContainer) return;
+    const containerRect = mapInner.getBoundingClientRect();
+    if (containerRect.width === 0) return;
+    Object.keys(provinceData).forEach(id => {
+      if (skipLabels.has(id)) return;
+      const g = document.getElementById(id);
+      if (!g) return;
+      const label = document.getElementById(`plabel-${id}`) || createLabel(id, provinceData[id]);
+      const gRect = g.getBoundingClientRect();
+      if (gRect.width < 30 || gRect.height < 20) { label.style.display = 'none'; return; }
+      label.style.display = '';
+      label.style.left = `${gRect.left - containerRect.left + gRect.width  / 2}px`;
+      label.style.top  = `${gRect.top  - containerRect.top  + gRect.height / 2}px`;
+    });
+  }
+
+  requestAnimationFrame(() => { requestAnimationFrame(positionLabels); });
+  let resizeTimer;
+  window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(positionLabels, 100); });
+
+  // ── LOCATION SEARCH ──────────────────────────────────────────
+  const provinceKingdom = {
+    'Bingzhou': 'wei', 'Jizhou': 'wei', 'Qingzhou': 'wei',
+    'Yanzhou': 'wei', 'Yuzhou': 'wei', 'Youzhou': 'wei',
+    'Liangzhou': 'wei', 'Sili': 'wei', 'Yongzhou': 'wei',
+    'Xuzhou': 'wei', 'Jingzhou (Wei)': 'wei', 'Yangzhou (Wei)': 'wei',
+    'Yizhou (South)': 'shu', 'Yizhou (North)': "shu",
+    'Jiaozhou': 'wu', 'Jingzhou (Wu)': 'wu', 'Yangzhou (Wu)': 'wu',
+  };
+  const provToPng = {
+  'Bingzhou': url('/mapbase/Bingzhou.png'),
+  'Jiaozhou': url('/mapbase/Jiaozhou.png'),
+  'Jingzhou (Wei)': url('/mapbase/Jing_Wei.png'),
+  'Jingzhou (Wu)': url('/mapbase/Jing_Wu.png'),
+  'Jizhou': url('/mapbase/Jizhou.png'),
+  'Liangzhou': url('/mapbase/Liangzhou.png'),
+  'Qingzhou': url('/mapbase/Qing_Xu.png'),
+  'Xuzhou': url('/mapbase/Qing_Xu.png'),
+  'Sili': url('/mapbase/Sili.png'),
+  'Yanzhou': url('/mapbase/Yan_Yu_Yang.png'),
+  'Yuzhou': url('/mapbase/Yan_Yu_Yang.png'),
+  'Yangzhou (Wei)': url('/mapbase/Yan_Yu_Yang.png'),
+  'Yangzhou (Wu)': url('/mapbase/Yang_Wu.png'),
+  'Yizhou (North)': url('/mapbase/Yi_North.png'),
+  'Yizhou (South)': url('/mapbase/Yi_South.png'),
+  'Yongzhou': url('/mapbase/Yongzhou.png'),
+  'Youzhou': url('/mapbase/Youzhou.png'),
+};
+  const kingdomLabel = { wei: 'Wei', shu: 'Shu', wu: 'Wu' };
+  const typeLabel = { "Provincial Seat": "Provincial Seat", "Commandery Seat": "Commandery Seat", "County Seat": "County Seat", "Military Pass": "Military Pass", "Landmark": "Landmark", "Others": "Others" };
+  function displaySearchTownName(t) {
+    if (lang === 'zh-hans') return t.Town_CHS || t.Town_CH || t.Town_EN || '';
+    if (lang === 'zh-hant') return t.Town_CH || t.Town_CHS || t.Town_EN || '';
+    return t.Town_EN || '';
+  }
+  function displaySearchTownSub(t) {
+    if (lang === 'zh-hans' || lang === 'zh-hant') return t.Town_EN || '';
+    return t.Town_CH || t.Town_CHS || '';
+  }
+  function displaySearchType(type) {
+    return typeLabel[type] || type || '';
+  }
+  function getKingdom(provEn) { return provinceKingdom[provEn] ?? null; }
+
+  async function focusLocationFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const lat = Number(params.get('lat'));
+    const lng = Number(params.get('lng'));
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+
+    const name = params.get('name') || '';
+    const towns = await loadTowns();
+    const town = towns.find(t => {
+      if (Number(t?.Latitude) !== lat || Number(t?.Longitude) !== lng) return false;
+      if (!name) return true;
+      return [t.Town_EN, t.Town_CH, t.Town_CHS].some(value => String(value ?? '').toLowerCase() === name.toLowerCase());
+    }) ?? null;
+
+    showTab('interactive');
+    flyToLocation(lat, lng, town);
+  }
+
+  const searchInput  = document.getElementById('search-input');
+  const searchBtn    = document.getElementById('search-btn');
+  const searchClear  = document.getElementById('search-clear');
+  const dropdown     = document.getElementById('search-dropdown');
+  const dropWarning  = document.getElementById('search-dropdown-warning');
+  const dropList     = document.getElementById('search-dropdown-list');
+  const dropMore     = document.getElementById('search-dropdown-more');
+
+  const MAX_VISIBLE = 6;
+  const WARN_LEN    = 3;
+
+  async function runSearch(query) {
+    const q = query.trim();
+    if (!q) { dropdown.style.display = 'none'; searchClear.style.display = 'none'; return; }
+    searchClear.style.display = 'block';
+    if (!allTowns.length) {
+      dropdown.style.display = 'block';
+      dropWarning.style.display = 'none';
+      dropMore.style.display = 'none';
+      dropList.innerHTML = '<div class="search-empty">Loading locations...</div>';
+      await loadTowns();
+      if (searchInput?.value?.trim() !== q) return;
+    }
+    const ql = q.toLowerCase();
+    const exact   = allTowns.filter(t => t.Town_EN?.toLowerCase() === ql || t.Town_CH === q || t.Town_CHS === q);
+    const partial = allTowns.filter(t =>
+      (t.Town_EN?.toLowerCase().includes(ql) || t.Town_CH?.includes(q) || t.Town_CHS?.includes(q)) &&
+      t.Town_EN?.toLowerCase() !== ql && t.Town_CH !== q && t.Town_CHS !== q
+    );
+    const filtered = [...exact, ...partial];
+    if (q.length < WARN_LEN) {
+      dropWarning.style.display = 'block';
+      dropWarning.textContent = '⚠ Short or vague searches may return many results. Try a more specific term.';
+    } else { dropWarning.style.display = 'none'; }
+    const visible = filtered.slice(0, MAX_VISIBLE);
+    if (visible.length === 0) {
+      dropList.innerHTML = '<div class="search-empty">No locations found.</div>';
+      dropMore.style.display = 'none';
+    } else {
+      dropList.innerHTML = visible.map((t, index) => {
+        const k     = getKingdom(t.Prov_EN);
+        const badge = k ? `<span class="badge b-${k}">${kingdomLabel[k]}</span>` : '';
+        const subName = displaySearchTownSub(t) ? `<span class="result-name-zh">${displaySearchTownSub(t)}</span>` : '';
+        const pngUrl = provToPng[t.Prov_EN];
+        const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="View province map"><i class="ti ti-map-2"></i></button>` : '';
+        const mapBtn = `<button class="result-action result-action-map" data-index="${index}" data-lat="${t.Latitude}" data-lng="${t.Longitude}" title="Locate on interactive map"><i class="ti ti-map-pin"></i></button>`;
+        return `<div class="search-result-row" data-index="${index}" data-en="${t.Town_EN}">
+          <div class="search-result-left">${badge}<span class="result-name-en">${displaySearchTownName(t)}</span>${subName}</div>
+          <div class="result-right"><span class="result-type">${displaySearchType(t.Type)}</span><div style="display:flex;flex-direction:row;align-items:center;gap:4px;">${pngBtn}${mapBtn}</div></div>
+        </div>`;
+      }).join('');
+      function locateSearchTown(t) {
+        const lat = Number(t?.Latitude);
+        const lng = Number(t?.Longitude);
+        if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+        showTab('interactive');
+        flyToLocation(lat, lng, t);
+        dropdown.style.display = 'none';
+      }
+      dropList.querySelectorAll('.search-result-row').forEach(row => {
+        row.addEventListener('click', () => {
+          locateSearchTown(visible[Number(row.dataset.index)]);
+        });
+      });
+      dropList.querySelectorAll('.result-action[data-png]').forEach(btn => {
+        btn.addEventListener('click', e => { e.stopPropagation(); window.open(btn.dataset.png, '_blank'); });
+      });
+      dropList.querySelectorAll('.result-action-map').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          locateSearchTown(visible[Number(btn.dataset.index)]);
+        });
+      });
+      if (filtered.length > MAX_VISIBLE) {
+        dropMore.style.display = 'block';
+        dropMore.textContent = `See all ${filtered.length} results →`;
+        dropMore.onclick = () => {
+        window.location.href = url(`/maps/search?q=${encodeURIComponent(q)}`);
+      };
+      } else { dropMore.style.display = 'none'; }
+    }
+    dropdown.style.display = 'block';
+  }
+
+  searchInput?.addEventListener('focus',  () => { loadTowns(); });
+  searchInput?.addEventListener('input',  e => { runSearch(e.target.value); });
+  searchBtn?.addEventListener('click',    ()  => { runSearch(searchInput?.value ?? ''); });
+  searchClear?.addEventListener('click',  () => { searchInput.value = ''; searchClear.style.display = 'none'; dropdown.style.display = 'none'; });
+  document.addEventListener('click', e => { if (!e.target.closest('.intro-search')) dropdown.style.display = 'none'; });
+  focusLocationFromUrl();
+
+  // ── INTERACTIVE MAP ───────────────────────────────────────────
+  // Fully handled by interactive-map.js
+  import { initInteractiveMap, flyToLocation } from '../../scripts/maps/interactive-map.js';
+</script>
+
+<style is:global>
+.site { max-width: 100%; background: var(--color-bg); min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ── PAGE HEADER ── */
+.page-header { padding: 1.5rem 2rem 1.25rem; border-bottom: 0.5px solid var(--color-border); }
+.breadcrumb { display: flex; align-items: center; gap: 6px; margin-bottom: 0.75rem; }
+.bc-link { font-size: 14px; color: var(--color-text-tertiary); text-decoration: none; }
+.bc-link:hover { color: var(--color-text-secondary); }
+.bc-sep { font-size: 12px; color: var(--color-text-tertiary); }
+.bc-cur { font-size: 14px; color: var(--color-text-secondary); }
+.page-title { font-size: 42px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+.page-sub { font-size: 18px; color: var(--color-text-secondary); }
+
+/* ── 2-COLUMN INTRO ── */
+.map-intro {
+  display: grid;
+  grid-template-columns: minmax(380px, 1.18fr) minmax(520px, 1fr);
+  gap: 1.8rem;
+  padding: 1.45rem 1rem 1.35rem;
+  border-top: 0.5px solid rgba(255,255,255,0.08);
+  border-bottom: 0.5px solid rgba(255,255,255,0.14);
+  background:
+    linear-gradient(180deg, #111111 0%, #0c0c0c 100%);
+}
+.intro-left {
+  padding: 0.15rem 1.75rem 0.15rem 0.25rem;
+  border-right: 0.5px solid rgba(196,154,94,0.25);
+}
+.intro-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px; line-height: 1.12; font-weight: 600;
+  color: #d1a55f; margin: 0 0 0.55rem; letter-spacing: 0.01em;
+}
+.intro-desc {
+  max-width: 800px;
+  font-family: 'Inter', serif;
+  font-size: 18px; line-height: 1.45;
+  color: var(--color-text-secondary);
+}
+.intro-contact {
+  margin-top: 1.25rem;
+  font-family: 'Inter', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-text-secondary)
+}
+.intro-contact a {
+  color: #d6a866;
+  font-weight: 700;
+  text-decoration: none;
+}
+.intro-contact a:hover { color: #efc98c; }
+.intro-contact i { font-size: 13px; margin-left: 2px; }
+.intro-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  gap: 0.75rem;
+  padding: 0.15rem 0.25rem 0 0.35rem;
+}
+.intro-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  flex-wrap: nowrap;
+}
+.intro-links-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; color: #d1a55f; margin: 0;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  flex-shrink: 0;
+}
+.intro-links-list {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 1.35rem;
+  flex-wrap: nowrap;
+}
+.intro-link {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;
+  color: rgba(238,232,218,0.7); text-decoration: none; transition: color 0.15s;
+  white-space: nowrap;
+}
+.intro-link:hover { color: #f0d29a; }
+.intro-link i { color: rgba(165, 220, 170, 0.72); font-size: 13px; flex-shrink: 0; }
+.intro-link-arrow { display: none; }
+.intro-search {
+  position: relative;
+  width: min(70%, 800px);
+  min-width: 340px;
+  margin: 0.15rem auto 0;
+}
+.intro-search::after,
+.search-box::before {
+  display: none;
+}
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  height: 40px;
+  padding: 0;
+  border-radius: 4px;
+  border: 0.5px solid rgba(202,163,106,0.32);
+  background: rgba(35,32,27,0.88);
+  box-shadow: none;
+  overflow: hidden;
+}
+.search-input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 0.85rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #eee8da;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  z-index: 1;
+}
+.search-input::placeholder { color: rgba(238,232,218,0.46); }
+.search-clear {
+  border: none;
+  background: transparent;
+  color: rgba(238,232,218,0.45);
+  cursor: pointer;
+  z-index: 2;
+  font-size: 15px;
+  padding: 0 0.5rem;
+}
+.search-btn {
+  align-self: stretch;
+  min-width: 70px;
+  border: none;
+  border-radius: 0;
+  background: #d0a66a;
+  color: #17110a;
+  display: grid;
+  place-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 2;
+  flex-shrink: 0;
+  box-shadow: none;
+}
+.search-btn:hover { filter: brightness(1.07); }
+.search-hint {
+  margin: 0.4rem 0 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgba(238,232,218,0.34);
+}
+.search-dropdown {
+  position: absolute;
+  top: calc(36px + 19px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.dropdown-warning { font-size: 13px; color: darkkhaki; padding: 10px 14px; border-bottom: 0.5px solid var(--color-border); background: var(--color-bg-secondary); }
+.dropdown-list { display: flex; flex-direction: column; max-height: 300px; overflow-y: auto; }
+.dropdown-more { width: 100%; text-align: center; padding: 9px 14px; font-size: 15px; color: var(--map-teal-text); background: var(--color-bg-secondary); border: none; border-top: 0.5px solid var(--color-border); cursor: pointer; font-family: 'Inter' }
+.badge { font-size: 13px; padding: 1px 7px; border-radius: 3px; white-space: nowrap; flex-shrink: 0; }
+.b-wei { background: #18283f; color: #9dbbe4; }
+.b-shu { background: #1E3A2B; color: #6ED4A0; }
+.b-wu  { background: #2A1212; color: #D4807A; }
+.search-result-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 14px; border-bottom: 0.5px solid var(--color-border); cursor: pointer; transition: background 0.15s; }
+.search-result-row:last-child { border-bottom: none; }
+.search-result-row:hover { background: var(--color-bg-secondary); }
+.search-result-left { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
+.result-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.result-name-en { font-size: 16px; color: var(--color-text-primary); white-space: nowrap; flex-shrink: 0; }
+.result-name-zh { font-size: 15px; color: var(--color-text-tertiary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex-shrink: 1; }
+.result-type    { font-size: 13px; color: var(--color-text-tertiary); white-space: nowrap; }
+.result-action {
+  width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
+  background: none; border: 0.5px solid var(--color-border); border-radius: 4px;
+  color: var(--color-text-tertiary); cursor: pointer; font-size: 16px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.result-action:hover { color: var(--archive-gold-soft, #d0aa6b); border-color: var(--archive-gold-soft, #d0aa6b); background: rgba(208,170,107,0.08); }
+.search-empty { padding: 14px; font-size: 13px; color: var(--color-text-tertiary); text-align: center; }
+
+/* ── TABS ── */
+.tabs { display: flex; padding-left: 2rem; border-bottom: 0.5px solid rgba(255,255,255,0.12); background: #0b0b0b; }
+.tab { padding: 0.9rem 1rem 0.7rem; border: none; border-bottom: 2px solid transparent; background: transparent; color: rgba(238,232,218,0.58); font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; cursor: pointer; transition: color 0.15s; }
+.tab:hover { color: #eee8da; }
+.tab.active { color: #eee8da; border-bottom-color: #caa36a; }
+.tab-dropdown { display: none; }
+
+.panels-wrapper { flex: 1; display: flex; flex-direction: column; }
+.panel { flex: 1; padding: 0; }
+
+/* ── REGIONS MAP LAYOUT ── */
+.map-layout {
+  display: flex;
+  min-height: calc(100vh - 330px);
+  background: radial-gradient(circle at 50% 35%, rgba(255,255,255,0.025), transparent 34%), #080808;
+}
+
+/* ── SHARED SIDEBAR CARD ── */
+.map-sidebar {
+  position: relative; width: 310px; flex-shrink: 0;
+  margin: 1.35rem 1rem 1.5rem 2rem; padding: 2rem 1.7rem;
+  align-self: flex-start;
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01)), #0d0d0c;
+  border: 1px solid rgba(202,163,106,0.2);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.025), 0 14px 34px rgba(0,0,0,0.28);
+  overflow: hidden;
+}
+.map-sidebar::before, .map-sidebar::after {
+  content: ""; position: absolute; width: 18px; height: 18px;
+  border-color: rgba(202,163,106,0.32); pointer-events: none;
+}
+.map-sidebar::before { top: 8px; left: 8px; border-top: 1px solid; border-left: 1px solid; }
+.map-sidebar::after  { right: 8px; bottom: 8px; border-right: 1px solid; border-bottom: 1px solid; }
+.sidebar-watermark { position: absolute; left: 1.2rem; bottom: 1.2rem; font-size: 8rem; color: rgba(202,163,106,0.045); pointer-events: none; line-height: 1; }
+.sidebar-map-link { display: flex; flex-direction: column; gap: 2px; padding: 0.5rem 0 0.5rem 1rem; text-decoration: none; position: relative; transition: opacity 0.15s; }
+.sidebar-map-link::before { content: "·"; position: absolute; left: 0; top: 0.55rem; color: rgba(202,163,106,0.55); font-size: 1.2rem; line-height: 1; }
+.sidebar-map-link:hover { opacity: 0.75; }
+.sidebar-section + .sidebar-section { border-top: 0.5px solid rgba(202,163,106,0.18); padding-top: 1.2rem; }
+.era-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: #eee8da; }
+.era-date { margin-top: 0.1rem; color: #5db6ff; font-weight: 600; font-size: 16px; }
+.sidebar-section { margin-top: 2.2rem; display: flex; flex-direction: column; gap: 0; }
+.sidebar-section-label { margin-bottom: 0.9rem; font-size: 16px; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(238,232,218,0.42); }
+.legend-item { display: flex; align-items: center; gap: 0.6rem; margin: 0.3rem 0; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: rgba(238,232,218,0.72); }
+.legend-dot { width: 22px; height: 22px; border-radius: 3px; flex-shrink: 0; }
+.legend-river { display: inline-block; width: 25px; height: 2px; background: #48aef7; flex-shrink: 0; }
+.legend-lake  { display: inline-block; width: 18px; height: 11px; border: 1px solid #48aef7; border-radius: 3px; background: rgba(72,174,247,0.13); flex-shrink: 0; }
+
+/* ── MAP COLUMN (SVG) ── */
+.map-content { flex: 1; min-width: 0; padding-top: 1rem; position: relative; }
+.province-map-wrap { position: relative; width: 100%; }
+.province-map-inner { width: 100%; position: relative; }
+.province-map-svg { display: block; width: 100% !important; height: auto !important; }
+.province-labels { position: absolute; inset: 0; pointer-events: none; }
+.province-label { position: absolute; transform: translate(-50%,-50%); display: flex; flex-direction: column; align-items: center; text-align: center; pointer-events: none; line-height: 1.2; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.7)); }
+.plabel-primary { font-size: 16px; font-weight: 600; color: #fff; letter-spacing: 0.02em; white-space: nowrap; }
+.plabel-sub { font-size: 12px; color: rgba(255,255,255,0.65); white-space: nowrap; }
+
+/* ── TERRITORY COLORS (SVG) ── */
+.province-map-svg #All_Provinces_only path { fill: #ffffff; fill-opacity: 0; stroke: black; stroke-width: 1.5; cursor: pointer; transition: fill-opacity 0.15s; pointer-events: all; }
+.province-map-svg #Bingzhou path,.province-map-svg #Jizhou path,.province-map-svg #Liangzhou path,
+.province-map-svg #Qingzhou path,.province-map-svg #Yanzhou path,.province-map-svg #Yuzhou path,
+.province-map-svg #Youzhou path,.province-map-svg #Sili path,.province-map-svg #Yongzhou path,
+.province-map-svg #Xuzhou path,.province-map-svg #Jingzhou_Wei path,.province-map-svg #Yangzhou_Wei path
+{ fill: #4b6f9f !important; fill-opacity: 0.28 !important; }
+.province-map-svg #Yizhou_south path,.province-map-svg #Yizhou_north path
+{ fill: #5aaa78 !important; fill-opacity: 0.28 !important; }
+.province-map-svg #Jiaozhou1 path,.province-map-svg #Jiaozhou2 path,
+.province-map-svg #Jingzhou_Wu path,.province-map-svg #Yangzhou_Wu path
+{ fill: #c86060 !important; fill-opacity: 0.28 !important; }
+.province-map-svg #All_Provinces_only g.province-hover path { fill-opacity: 0.48 !important; stroke: black; stroke-width: 3.5; }
+.province-map-svg #YellowRiver,.province-map-svg #Jing_Wulakes,.province-map-svg #Yan_Yu_YangRivers,
+.province-map-svg #Binglake,.province-map-svg #Sizhoulake,.province-map-svg #Liangrivers,
+.province-map-svg #Lianglakes,.province-map-svg #Jilakes,.province-map-svg #Dayeze,
+.province-map-svg #Yam_Yu_Yanglakes,.province-map-svg #Jing_Wurivers,.province-map-svg #Yongriver,
+.province-map-svg #Yanglakes,.province-map-svg #Yi_Southlakes,.province-map-svg #Sizhourivers,
+.province-map-svg #Yi_Nrivers,.province-map-svg #Yangyze_Yang,.province-map-svg #Yangtze,
+.province-map-svg #Xu_QLakes,.province-map-svg #Xu_QRivers,.province-map-svg #DEM_main_hillshade
+{ pointer-events: none; }
+
+/* ── INTERACTIVE MAP TAB ── */
+.imap-layout {
+  display: flex;
+  height: 90vh;
+  min-height: 560px;
+  background: #080808;
+  overflow: hidden;
+}
+
+.imap-sidebar {
+  align-self: stretch;
+  margin: 1.35rem 1rem 1.35rem 2rem;
+  max-height: calc(90vh - 2.7rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.imap-style-btns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.imap-style-btn {
+  min-width: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  color: rgba(238,232,218,0.68);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.1;
+  padding: 3px;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.imap-style-btn:hover {
+  border-color: rgba(202,163,106,0.58);
+  color: #eee8da;
+}
+
+.imap-style-btn.active {
+  border-color: #caa36a;
+  background: rgba(202,163,106,0.16);
+  color: #f0d29a;
+}
+
+.imap-style-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.35 / 1;
+  margin-bottom: 5px;
+  border: 1px solid rgba(255,255,255,0.72);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+  background-color: #1f241d;
+  background-size: cover;
+  background-position: center;
+}
+
+.imap-style-frame-topo {
+  background-image: url('/mapbase/thumb-topography.webp');
+}
+
+.imap-style-frame-sat {
+  background-image: url('/mapbase/thumb-satellite.webp');
+}
+
+/* overlay toggle rows */
+.imap-toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  color: rgba(238,232,218,0.72);
+  user-select: none;
+}
+
+.imap-toggle-row input {
+  accent-color: #caa36a;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.imap-toggle-track {
+  display: none;
+}
+
+.imap-zoom-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 1rem;
+  font-size: 14px;
+  color: rgba(238,232,218,0.35);
+  line-height: 1.4;
+}
+
+.imap-zoom-hint i {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.imap-legend,
+.imap-legend-list,
+.imap-legend-items {
+  max-height: none;
+  overflow: visible;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.imap-legend {
+  padding-bottom: 0.75rem;
+}
+
+/* map container */
+.imap-content {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+#imap-container {
+  width: 100%;
+  height: 100%;
+}
+
+#imap-container .maplibregl-ctrl-top-right {
+  top: 240px !important;
+  right: 12px !important;
+}
+
+#imap-container .maplibregl-ctrl-group {
+  border-radius: 3px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.24);
+}
+
+#imap-container .maplibregl-ctrl-group button {
+  width: 38px !important;
+  height: 38px !important;
+}
+
+#imap-container .maplibregl-ctrl-icon {
+  background-size: 24px 24px !important;
+}
+
+#imap-container .maplibregl-ctrl-compass .maplibregl-ctrl-compass-arrow {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+#imap-container .imap-fit-control {
+  margin-top: 8px;
+}
+
+#imap-container .imap-fit-all-btn i {
+  display: block;
+  font-size: 24px !important;
+  line-height: 38px !important;
+  color: #2b2b2b !important;
+}
+
+.imap-map-controls {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  z-index: 6;
+  width: 190px;
+  padding: 8px;
+  background: rgba(18,18,17,0.9);
+  border: 1px solid rgba(202,163,106,0.28);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.32), inset 0 0 0 1px rgba(255,255,255,0.035);
+  backdrop-filter: blur(8px);
+}
+
+.imap-map-toggle {
+  min-height: 28px;
+  margin-top: 7px;
+  padding: 6px 5px 0;
+  border-top: 0.5px solid rgba(202,163,106,0.18);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: rgba(238,232,218,0.75);
+}
+
+/* loading overlay */
+.imap-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imap-loading-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: rgba(238,232,218,0.45);
+  font-size: 16px;
+}
+
+.imap-loading-inner i {
+  font-size: 32px;
+}
+
+/* Mapbox popup */
+/* symbol legend indicators */
+.imap-sym { display: inline-block; width: 24px; text-align: center; font-size: 17px; flex-shrink: 0; line-height: 1; }
+.imap-sym-prov  { color: #d2a85f; font-size: 22px; }
+.imap-sym-comm  { color: #ead59d; font-size: 22px; }
+.imap-sym-county { color: #d8cbb4; font-size: 22px; }
+.imap-sym-pass  { color: #ff3b30; font-size: 28px; }
+.imap-sym-land  { color: #8b5cf6; font-size: 18px; }
+.imap-sym-other { color: #171717; font-size: 20px; text-shadow: 0 0 2px rgba(255,255,255,0.85); }
+
+.imap-town-popup .maplibregl-popup-content {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.imap-town-popup .maplibregl-popup-close-button {
+  top: 5px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+  color: rgba(39,34,26,0.55);
+  font-size: 20px;
+}
+
+.imap-town-popup .maplibregl-popup-close-button:hover {
+  background: rgba(92,70,42,0.08);
+  color: #27221a;
+}
+
+.imap-town-card {
+  min-width: 240px;
+  max-width: 300px;
+  padding: 14px 15px 13px;
+  font-family: var(--font-sans);
+  color: #27221a;
+  background: rgba(246,240,225,0.96);
+  border: 1px solid rgba(92,70,42,0.28);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.26), inset 0 0 0 1px rgba(255,255,255,0.45);
+}
+
+.imap-town-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.imap-town-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 600;
+  color: #17130d;
+}
+
+.imap-town-subtitle {
+  margin-top: 3px;
+  font-size: 18px;
+  color: rgba(39,34,26,0.62);
+}
+
+.imap-town-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(92,70,42,0.18);
+  font-size: 16px;
+  color: rgba(39,34,26,0.72);
+}
+
+.imap-town-meta span:first-child {
+  font-weight: 650;
+  color: #5c462a;
+}
+
+.imap-town-region {
+  padding-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.imap-town-kingdom {
+  display: inline-flex !important;
+  align-items: center;
+  min-height: 19px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.28), 0 1px 2px rgba(0,0,0,0.12);
+}
+
+.imap-town-kingdom-wei {
+  color: #f7fbff !important;
+  background: #4b6f9f !important;
+  border: 1px solid #354f73 !important;
+}
+
+.imap-town-kingdom-shu {
+  color: #f5fff8 !important;
+  background: #5aaa78 !important;
+  border: 1px solid #3f8159 !important;
+}
+
+.imap-town-kingdom-wu {
+  color: #fff7f5 !important;
+  background: #c86060 !important;
+  border: 1px solid #994647 !important;
+}
+
+.imap-town-modern {
+  margin-top: 4px;
+  color: rgba(39,34,26,0.84);
+}
+
+.imap-town-modern strong {
+  font-weight: 700;
+  color: #17130d;
+}
+
+.imap-town-section {
+  margin-top: 0.8rem;
+}
+
+.imap-town-section-label {
+  margin-bottom: 0.25rem;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 600;
+  color: rgba(39,34,26,0.78);
+}
+
+.imap-town-note {
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(39,34,26,0.78);
+}
+
+.imap-town-sheet {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 8;
+}
+
+.imap-town-card-mobile {
+  max-width: none;
+  width: auto;
+}
+
+.imap-town-close {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(92,70,42,0.2);
+  background: rgba(255,255,255,0.28);
+  color: rgba(39,34,26,0.62);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* FOOTER */
+.site-footer { margin-top: auto; border-top: 0.5px solid var(--color-border); padding: 0.875rem 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--color-bg-secondary); }
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote { font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; white-space: pre-line; }
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+  .page-header { padding: 1rem 1rem 0.75rem; }
+  .map-intro { grid-template-columns: 1fr; padding: 1rem 1.2rem; gap: 0; }
+  .intro-heading { font-size: 20px; }
+  .intro-desc { margin-bottom: 0; font-size: 17px; }
+  .intro-left { padding-bottom: 0.75rem; border-left: none; border-right: none; border-bottom: 0.5px solid rgba(196,154,94,0.2); }
+  .intro-right { padding: 0.75rem 0 0; }
+  .intro-links-title { font-size: 20px; }
+  .intro-links { align-items: flex-start; border-right: none; border-bottom: none; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+  .intro-links-list { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+  .intro-link { padding: 0.2rem 0; }
+  .intro-search { width: 100%; min-width: 0; padding-top: 0.75rem; }
+  .search-input { font-size: 16px; }
+  .search-hint { font-size: 12px; }
+  .search-dropdown { top: calc(36px + 36px);}
+  .intro-search::after { display: none; }
+  .tabs { display: none; padding-left: 1rem; }
+  .tab-dropdown { display: block; padding: 0.75rem 1rem; border-bottom: 0.5px solid var(--color-border); }
+  .tab-select { width: 100%; background: var(--color-bg-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 8px 12px; color: var(--color-text-primary); font-size: 13px; font-family: var(--font-sans); }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+  /* regions map */
+  .map-layout { flex-direction: column; background: #080808; }
+  .map-sidebar { width: 90%; margin: 0.75rem auto; padding: 1rem 1.25rem; display: flex; flex-direction: row; flex-wrap: wrap; gap: 0 2rem; align-items: flex-start; }
+  .sidebar-map-link { padding: 0.35rem 0; }
+  .era-title { font-size: 15px; }
+  .era-date { font-size: 12px; }
+  .sidebar-section { margin-top: 0; flex: 1; min-width: 140px; }
+  .sidebar-section-label { font-size: 11px; margin-bottom: 0.5rem; }
+  .legend-item { font-size: 15px; margin: 0.15rem 0; }
+  .legend-dot { width: 14px; height: 14px; }
+  .sidebar-watermark { display: none; }
+  .map-content { width: 100vw; margin-left: calc(-50vw + 50%); position: relative; padding-top: 0; }
+  .province-map-wrap { position: relative; }
+  .province-labels { display: none; }
+  /* interactive map */
+  .imap-layout { flex-direction: column; height: auto; min-height: unset; }
+  .imap-sidebar { width: 90%; align-self: auto; }
+  .imap-sidebar .sidebar-section {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  .imap-sidebar .sidebar-section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.25rem 0.65rem;
+  }
+  .imap-sidebar .sidebar-section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 0.7rem;
+  }
+  .imap-sidebar .sidebar-section:first-of-type .sidebar-section-label,
+  .imap-sidebar .sidebar-section:nth-of-type(2) .sidebar-section-label,
+  .imap-sidebar .imap-zoom-hint {
+    grid-column: 1 / -1;
+  }
+  .imap-sidebar .legend-item {
+    min-width: 0;
+    gap: 0.45rem;
+    margin: 0;
+    line-height: 1.22;
+  }
+  .imap-sidebar .legend-item span:last-child {
+    min-width: 0;
+  }
+  .imap-sidebar .sidebar-section + .sidebar-section {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+  }
+  .imap-sidebar .imap-zoom-hint {
+    margin-top: 0.5rem;
+  }
+  .imap-content { width: 100vw; margin-left: calc(-50vw + 50%); }
+  #imap-container { height: 60vh; min-height: 400px; }
+  #imap-container .maplibregl-ctrl-top-right { right: 12px !important; top: 212px !important; }
+  .imap-map-controls { width: 170px; right: 12px; top: 8px; }
+  .imap-style-btn { font-size: 10px; }
+  .imap-map-toggle { font-size: 11px; }
+  .footer-quote { font-size: 0.75rem; }
+}
+</style>

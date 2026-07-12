@@ -1,0 +1,202 @@
+---
+const { strings: s } = Astro.props;
+---
+
+<div class="sites-section">
+  <p class="section-label">{s.sections.sites}</p>
+
+  <div class="sites-carousel-wrap">
+    <div class="sites-track" id="sites-track">
+      {s.sites.map((site: any) => (
+        <div class="site-card">
+          <div
+            class="site-img"
+            style={`background-image: url('${site.img}'); background-size: cover; background-position: center;`}
+          >
+            <div class="site-img-overlay"></div>
+            <div class="site-content">
+              <div class="site-name">{site.name}</div>
+              <div class="site-location"><i class="ti ti-map-pin" aria-hidden="true"></i> {site.location}</div>
+              <div class="site-desc">{site.desc}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <button class="sites-arrow sites-arrow-prev" id="sites-prev" aria-label="Previous">
+      <i class="ti ti-chevron-left" aria-hidden="true"></i>
+    </button>
+    <button class="sites-arrow sites-arrow-next" id="sites-next" aria-label="Next">
+      <i class="ti ti-chevron-right" aria-hidden="true"></i>
+    </button>
+  </div>
+
+</div>
+
+<script define:vars={{ sitesCount: s.sites.length }}>
+  const track = document.getElementById('sites-track');
+  const prevBtn = document.getElementById('sites-prev');
+  const nextBtn = document.getElementById('sites-next');
+  const cards = Array.from(track.children);
+
+  let cols = getColumns();
+  let page = 0;
+  let totalPages = Math.ceil(sitesCount / cols);
+
+  function getColumns() {
+    const w = window.innerWidth;
+    if (w >= 1000) return 3;
+    if (w >= 600) return 2;
+    return 1;
+  }
+
+
+  function updateArrows() {
+    prevBtn.style.opacity = page === 0 ? '0.3' : '1';
+    prevBtn.style.pointerEvents = page === 0 ? 'none' : 'auto';
+    nextBtn.style.opacity = page === totalPages - 1 ? '0.3' : '1';
+    nextBtn.style.pointerEvents = page === totalPages - 1 ? 'none' : 'auto';
+  }
+
+  function goTo(index) {
+    page = Math.max(0, Math.min(totalPages - 1, index));
+    track.style.transform = `translateX(-${page * 100}%)`;
+    updateArrows();
+  }
+
+  prevBtn.addEventListener('click', () => goTo(page - 1));
+  nextBtn.addEventListener('click', () => goTo(page + 1));
+
+  function applyColumns() {
+    cards.forEach(card => { card.style.flex = `0 0 ${100 / cols}%`; });
+    totalPages = Math.ceil(sitesCount / cols);
+    page = Math.min(page, totalPages - 1);
+    goTo(page);
+  }
+
+  applyColumns();
+
+  let lastCols = cols;
+  window.addEventListener('resize', () => {
+    cols = getColumns();
+    if (cols !== lastCols) {
+      lastCols = cols;
+      applyColumns();
+    }
+  });
+</script>
+
+<style>
+.sites-section {
+  padding: 1.5rem 2rem;
+  border-top: 0.5px solid var(--color-border);
+  position: relative;
+  z-index: 3;
+}
+
+.section-label {
+  font-size: 14px; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--color-text-tertiary); margin-bottom: 1rem;
+}
+
+.sites-carousel-wrap {
+  position: relative;
+}
+
+.sites-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.site-card {
+  flex: 0 0 33.333%;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.site-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-bg-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.site-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.4) 42%, transparent 75%);
+}
+
+.site-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem 0.9rem;
+}
+
+.site-name {
+  font-size: 24px; font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  color: #fff;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+}
+:lang(zh-hans) .site-name { font-family: 'Noto Serif SC', serif; }
+:lang(zh-hant) .site-name { font-family: 'Noto Serif TC', serif; }
+
+.site-location {
+  font-size: 14px; color: rgba(255,255,255,0.82);
+  font-family: 'Inter', system-ui, sans-serif;
+  margin-bottom: 0.5rem;
+}
+:lang(zh-hans) .site-location,
+:lang(zh-hant) .site-location { font-family: 'LXGW WenKai', serif; font-size: 15px}
+.site-location i { font-size: 14px; vertical-align: -1px; margin-right: 3px; }
+
+.site-desc {
+  font-size: 16px; color: rgba(255,255,255,0.9);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  max-width: 90%;
+}
+:lang(zh-hans) .site-desc,
+:lang(zh-hant) .site-desc { font-family: 'LXGW WenKai', serif; font-size: 17px }
+
+.sites-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 0.5px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.15s;
+  z-index: 2;
+}
+.sites-arrow:hover { background: var(--color-bg); }
+.sites-arrow-prev { left: -14px; }
+.sites-arrow-next { right: -14px; }
+
+
+@media (max-width: 999px) {
+  .site-card { flex: 0 0 50%; }
+}
+@media (max-width: 599px) {
+  .site-card { flex: 0 0 100%; }
+  .sites-section { padding: 1.5rem 1rem; }
+  .sites-arrow-prev { left: 4px; }
+  .sites-arrow-next { right: 4px; }
+  .site-location {font-size: 13px;}
+  .site-desc{font-size: 14px;}
+  .site-name{font-size: 20px;}
+}
+</style>

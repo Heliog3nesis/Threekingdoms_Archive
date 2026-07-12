@@ -1,0 +1,663 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Nav from '../../../../components/Nav.astro';
+import ContactModal from '../../../../components/Contactmodal.astro';
+import { t } from '../../../../i18n/index.js';
+import storiesData from '../../../../data/short-stories-database.json';
+import { url } from '../../../../utils/url';
+
+export function getStaticPaths() {
+  const paths = [{ params: { id: undefined } }];
+  storiesData.stories.forEach((story: any) => {
+    paths.push({ params: { id: story.id } });
+  });
+  return paths;
+}
+
+const lang: string = 'zh-hans';
+const strings = t(lang);
+const s = strings.shortStories;
+
+const periods = storiesData.periods;
+const types = storiesData.types;
+const stories = storiesData.stories;
+
+const cnField = lang === 'zh-hans' ? 'zhs' : 'zht';
+---
+
+<Base title={`短故事合集 · ${strings.siteTitle}`} lang="zh-hans">
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href={url('/zh-hans/translations')} class="bc-link">{strings.nav.translations}</a>
+        <span class="bc-sep">›</span>
+        <span class="bc-cur">{s.title}</span>
+      </div>
+      <h1 class="page-title">{s.title}</h1>
+      <p class="page-sub">{s.subtitle}</p>
+    </div>
+
+    <div class="sotd-section">
+      <p class="sotd-label">{s.storyOfDay} <span class="sotd-line"></span></p>
+      <div class="sotd-card" id="sotd-card" role="button" tabindex="0">
+        <button class="sotd-refresh" id="sotd-refresh" aria-label="换一个">
+          <i class="ti ti-refresh" aria-hidden="true"></i>
+        </button>
+        <div class="sotd-left">
+          <div class="sotd-watermark" id="sotd-watermark"></div>
+          <p class="sotd-zh" id="sotd-zh"></p>
+          <p class="sotd-title" id="sotd-title"></p>
+          <a href="#" class="sotd-continue" id="sotd-continue">{s.clickToRead ?? '继续阅读'} <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-row">
+        <div class="filter-group">
+          <span class="filter-group-label">{s.filters.period}</span>
+          <div class="filter-pills" id="period-pills">
+            <button class="pill active" data-val="all" data-group="period">全部</button>
+            {periods.map((p: any) => (
+              <button class="pill" data-val={p.id} data-group="period">{p.label.zhs}</button>
+            ))}
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-group-label">{s.filters.type}</span>
+          <div class="filter-pills" id="type-pills">
+            <button class="pill active" data-val="all" data-group="type">全部</button>
+            {types.map((tp: any) => (
+              <button class="pill" data-val={tp.id} data-group="type">{tp.label.zhs}</button>
+            ))}
+          </div>
+        </div>
+        <div class="filter-logic">
+          <span class="filter-group-label">{s.filters.logic}</span>
+          <div class="logic-toggle">
+            <button class="logic-btn active" id="logic-and">AND</button>
+            <button class="logic-btn" id="logic-or">OR</button>
+          </div>
+        </div>
+        <div class="search-box">
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <input type="text" id="search-input" placeholder={s.searchPlaceholder ?? '检索故事标题...'} />
+        </div>
+      </div>
+    </div>
+
+    <div class="stories-grid" id="stories-grid"></div>
+    <div class="no-results" id="no-results" style="display:none;">{s.noResults}</div>
+
+    <div class="results-bar">
+      <span class="results-text" id="results-text"></span>
+      <div class="pagination" id="pagination"></div>
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay">
+      <div class="popup" id="popup" role="dialog" aria-modal="true">
+        <div class="popup-header">
+          <div class="popup-meta">
+            <span class="tag tag-period" id="popup-period"></span>
+            <span class="tag tag-type" id="popup-type"></span>
+          </div>
+          <div class="popup-controls">
+            <div class="lang-toggle">
+              <button class="lang-btn active" id="popup-lang-en">EN</button>
+              <button class="lang-btn" id="popup-lang-zh">简中</button>
+            </div>
+            <button class="popup-close" id="popup-close" aria-label="Close">
+              <i class="ti ti-x"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body">
+          <h2 class="popup-title" id="popup-title"></h2>
+          <div class="popup-text" id="popup-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{strings.footer.quoteBySection?.translations ?? strings.footer.quote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<script define:vars={{ stories, periods, types, defaultLang: lang, cnField, base: import.meta.env.BASE_URL.replace(/\/$/, '') }}>
+  let pageSize = window.innerWidth < 800 ? 6 : 12;
+  const PERIOD_STYLE = 'font-size:11px;padding:2px 8px;border-radius:4px;background:#1E2B40;color:#6EC1FF;display:inline-block;';
+  const TYPE_STYLE = 'font-size:11px;padding:2px 8px;border-radius:4px;background:#4B1528;color:#F4C0D1;display:inline-block;';
+  const BASE_PATH = '${base}/zh-hans/translations/short-stories';
+
+  function getPeriodLabel(id) {
+    const p = periods.find(x => x.id === id);
+    return p ? p.label.zhs : id;
+  }
+  function getTypeLabel(id) {
+    const t = types.find(x => x.id === id);
+    return t ? t.label.zhs : id;
+  }
+  function cnTitle(story) {
+    return story.title[cnField] || story.title.zht || story.title.zhs || '';
+  }
+  function quoteEn(story) {
+    return story.quote?.en || story.title.en;
+  }
+  function quoteCn(story) {
+    if (story.quote) {
+      return story.quote[cnField] || story.quote.zht || story.quote.zhs || '';
+    }
+    return cnTitle(story);
+  }
+
+  // ---- Story of the day ----
+  function pickRandomStory(excludeId) {
+    let idx;
+    do {
+      idx = Math.floor(Math.random() * stories.length);
+    } while (stories.length > 1 && stories[idx].id === excludeId);
+    return stories[idx];
+  }
+
+  function getDailyStory() {
+    const saved = sessionStorage.getItem('sotd');
+    if (saved) return JSON.parse(saved);
+    const story = pickRandomStory(null);
+    sessionStorage.setItem('sotd', JSON.stringify(story));
+    return story;
+  }
+
+  let sotd = getDailyStory();
+
+  function renderSotd() {
+    document.getElementById('sotd-zh').textContent = quoteCn(sotd);
+    document.getElementById('sotd-title').textContent = quoteEn(sotd);
+    document.getElementById('sotd-watermark').textContent = sotd.watermarkChar || quoteCn(sotd).charAt(0);
+    document.getElementById('sotd-continue').href = `${BASE_PATH}/${sotd.id}`;
+  }
+  renderSotd();
+
+  document.getElementById('sotd-refresh').addEventListener('click', (e) => {
+    e.stopPropagation();
+    sotd = pickRandomStory(sotd.id);
+    sessionStorage.setItem('sotd', JSON.stringify(sotd));
+    renderSotd();
+  });
+
+  document.getElementById('sotd-card').addEventListener('click', (e) => {
+    if (e.target.closest('#sotd-refresh')) return;
+    e.preventDefault();
+    openPopup(sotd);
+  });
+
+  // ---- Filters + search + pagination ----
+  let activePeriod = 'all';
+  let activeType = 'all';
+  let logic = 'and';
+  let query = '';
+  let page = 1;
+
+  const gridEl = document.getElementById('stories-grid');
+  const noResultsEl = document.getElementById('no-results');
+  const resultsTextEl = document.getElementById('results-text');
+  const paginationEl = document.getElementById('pagination');
+
+  function getFiltered() {
+    let result = stories.filter(story => {
+      const periodMatch = activePeriod === 'all' || story.period_id === activePeriod;
+      const typeMatch = activeType === 'all' || story.type_id === activeType;
+      if (logic === 'and') return periodMatch && typeMatch;
+      if (activePeriod === 'all' && activeType === 'all') return true;
+      return periodMatch || typeMatch;
+    });
+
+    if (query.trim()) {
+      const q = query.trim().toLowerCase();
+      result = result.filter(story =>
+        (story.title.en || '').toLowerCase().includes(q) ||
+        (story.title.zht || '').toLowerCase().includes(q) ||
+        (story.title.zhs || '').toLowerCase().includes(q)
+      );
+    }
+    return result;
+  }
+
+  function renderGrid() {
+    const filtered = getFiltered();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    page = Math.min(page, totalPages);
+    const start = (page - 1) * pageSize;
+    const pageItems = filtered.slice(start, start + pageSize);
+
+    gridEl.innerHTML = pageItems.map(story => `
+      <a href="${BASE_PATH}/${story.id}" class="story-card" data-id="${story.id}">
+        <div class="story-card-tags">
+          <span class="tag tag-period" style="${PERIOD_STYLE}">${getPeriodLabel(story.period_id)}</span>
+          <span class="tag tag-type" style="${TYPE_STYLE}">${getTypeLabel(story.type_id)}</span>
+        </div>
+        <div class="story-card-title">${cnTitle(story)}</div>
+        <div class="story-card-zh">${story.title.en}</div>
+        <i class="ti ti-arrow-right story-card-arr" aria-hidden="true"></i>
+      </a>
+    `).join('');
+
+    noResultsEl.style.display = filtered.length === 0 ? 'block' : 'none';
+
+    const shownStart = filtered.length === 0 ? 0 : start + 1;
+    const shownEnd = Math.min(start + pageSize, filtered.length);
+    resultsTextEl.textContent = `显示第 ${shownStart}–${shownEnd} 个，共 ${filtered.length} 个故事`;
+
+    paginationEl.innerHTML = '';
+    if (totalPages > 1) {
+      const prev = document.createElement('button');
+      prev.className = 'page-btn';
+      prev.innerHTML = '<i class="ti ti-chevron-left" aria-hidden="true"></i>';
+      prev.disabled = page === 1;
+      prev.addEventListener('click', () => { page--; renderGrid(); });
+      paginationEl.appendChild(prev);
+
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'page-btn' + (i === page ? ' active' : '');
+        btn.textContent = i;
+        btn.addEventListener('click', () => { page = i; renderGrid(); });
+        paginationEl.appendChild(btn);
+      }
+
+      const next = document.createElement('button');
+      next.className = 'page-btn';
+      next.innerHTML = '<i class="ti ti-chevron-right" aria-hidden="true"></i>';
+      next.disabled = page === totalPages;
+      next.addEventListener('click', () => { page++; renderGrid(); });
+      paginationEl.appendChild(next);
+    }
+
+    gridEl.querySelectorAll('.story-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        const story = stories.find(st => st.id === card.dataset.id);
+        if (story) openPopup(story);
+      });
+    });
+  }
+
+  document.querySelectorAll('.pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const group = pill.dataset.group;
+      const val = pill.dataset.val;
+      document.querySelectorAll(`.pill[data-group="${group}"]`).forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      if (group === 'period') activePeriod = val;
+      if (group === 'type') activeType = val;
+      page = 1;
+      renderGrid();
+    });
+  });
+
+  document.getElementById('logic-and').addEventListener('click', () => {
+    logic = 'and';
+    document.getElementById('logic-and').classList.add('active');
+    document.getElementById('logic-or').classList.remove('active');
+    page = 1;
+    renderGrid();
+  });
+  document.getElementById('logic-or').addEventListener('click', () => {
+    logic = 'or';
+    document.getElementById('logic-or').classList.add('active');
+    document.getElementById('logic-and').classList.remove('active');
+    page = 1;
+    renderGrid();
+  });
+
+  document.getElementById('search-input').addEventListener('input', (e) => {
+    query = e.target.value;
+    page = 1;
+    renderGrid();
+  });
+
+  renderGrid();
+
+  // ---- Popup ----
+  const overlay = document.getElementById('popup-overlay');
+  let currentStory = null;
+  let popupLang = defaultLang === 'en' ? 'en' : 'zh';
+
+  function openPopup(story, pushUrl = true) {
+    currentStory = story;
+    popupLang = defaultLang === 'en' ? 'en' : 'zh';
+    renderPopup();
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (pushUrl) {
+      history.pushState({}, '', `${BASE_PATH}/${story.id}`);
+    }
+  }
+
+  function renderPopup() {
+    if (!currentStory) return;
+    const isEn = popupLang === 'en';
+    document.getElementById('popup-title').textContent = isEn
+      ? currentStory.title.en
+      : cnTitle(currentStory);
+
+    const periodEl = document.getElementById('popup-period');
+    periodEl.textContent = getPeriodLabel(currentStory.period_id);
+    periodEl.style.cssText = PERIOD_STYLE;
+
+    const typeEl = document.getElementById('popup-type');
+    typeEl.textContent = getTypeLabel(currentStory.type_id);
+    typeEl.style.cssText = TYPE_STYLE;
+
+    const textArr = isEn ? currentStory.text.en : (currentStory.text[cnField] || currentStory.text.zht);
+    const textEl = document.getElementById('popup-text');
+    textEl.classList.toggle('popup-text-en', isEn);
+    textEl.classList.toggle('popup-text-zh', !isEn);
+    textEl.innerHTML = textArr.map((p) => {
+      const isSource = p.trim().startsWith('--');
+      return `<p class="popup-para${isSource ? ' popup-source' : ''}">${p.trim()}</p>`;
+    }).join('');
+
+    document.getElementById('popup-lang-en').classList.toggle('active', isEn);
+    document.getElementById('popup-lang-zh').classList.toggle('active', !isEn);
+  }
+
+  function closePopup() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    currentStory = null;
+    if (getIdFromPath()) {
+      history.pushState({}, '', BASE_PATH);
+    }
+  }
+
+  document.getElementById('popup-lang-en').addEventListener('click', () => { popupLang = 'en'; renderPopup(); });
+  document.getElementById('popup-lang-zh').addEventListener('click', () => { popupLang = 'zh'; renderPopup(); });
+  document.getElementById('popup-close').addEventListener('click', closePopup);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closePopup(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+
+  // ---- Deep-linking ----
+  function getIdFromPath() {
+    const match = window.location.pathname.match(/\/short-stories\/([^\/]+)\/?$/);
+    return match ? match[1] : null;
+  }
+
+  function openPopupFromUrl() {
+    const id = getIdFromPath();
+    if (id) {
+      const story = stories.find(st => st.id === id);
+      if (story) openPopup(story, false);
+    }
+  }
+
+  window.addEventListener('popstate', () => {
+    const id = getIdFromPath();
+    if (id) {
+      const story = stories.find(st => st.id === id);
+      if (story) {
+        currentStory = story;
+        popupLang = defaultLang === 'en' ? 'en' : 'zh';
+        renderPopup();
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    } else {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      currentStory = null;
+    }
+  });
+
+  openPopupFromUrl();
+</script>
+
+<style is:global>
+.site { max-width: 100%; background: var(--color-bg); }
+
+.page-header { padding: 2rem 2rem 1.75rem; border-bottom: 0.5px solid var(--color-border); }
+.breadcrumb { display: flex; align-items: center; gap: 6px; margin-bottom: 0.75rem; }
+.bc-link { font-size: 15px; color: var(--color-text-tertiary); text-decoration: none; }
+.bc-link:hover { color: var(--color-text-secondary); }
+.bc-sep { font-size: 14px; color: var(--color-text-tertiary); }
+.bc-cur { font-size: 16px; color: var(--color-text-secondary); }
+.page-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px; font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+:lang(zh-hans) .page-title { font-family: 'Noto Serif SC', serif; }
+:lang(zh-hant) .page-title { font-family: 'Noto Serif TC', serif; }
+.page-sub { font-size: 20px; color: var(--color-text-secondary); }
+:lang(zh-hans) .page-sub,
+:lang(zh-hant) .page-sub { font-family: 'LXGW WenKai', serif; }
+
+.sotd-section { padding: 1.75rem 2rem 0; }
+.sotd-label {
+  font-size: 18px; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--archive-gold-soft, #d0aa6b); margin-bottom: 0.875rem;
+  display: flex; align-items: center; gap: 12px;
+}
+.sotd-line { flex: 1; height: 1px; background: rgba(208, 170, 107, 0.2); }
+
+.sotd-card {
+  position: relative;
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  min-height: 220px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.sotd-card:hover { background: #161616; }
+
+.sotd-refresh {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  z-index: 2;
+  width: 32px; height: 32px;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text-secondary);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.sotd-refresh:hover { background: var(--color-bg-secondary); color: var(--color-text-primary); }
+
+.sotd-left { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 8px; }
+
+.sotd-watermark {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-size: 180px;
+  line-height: 1;
+  color: rgba(232, 221, 202, 0.05);
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.sotd-zh {
+  position: relative; z-index: 1;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 38px;
+  color: var(--archive-gold-soft, #d0aa6b);
+  line-height: 1.2;
+}
+:lang(zh-hans) .sotd-zh { font-family: 'Noto Serif SC', serif; }
+
+.sotd-title {
+  position: relative; z-index: 1;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+.sotd-continue {
+  position: relative; z-index: 1;
+  margin-top: 8px;
+  font-size: 18px;
+  color: var(--archive-gold-soft, #d0aa6b);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.sotd-continue:hover { text-decoration: underline; }
+
+.filter-section { padding: 1.25rem 2rem; border-bottom: 0.5px solid var(--color-border); margin-top: 1.5rem; }
+.filter-row { display: flex; gap: 2rem; align-items: flex-end; flex-wrap: wrap; }
+.filter-group { display: flex; flex-direction: column; gap: 6px; }
+.filter-group-label { font-size: 16px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--color-text-tertiary); }
+.filter-pills { display: flex; gap: 5px; flex-wrap: wrap; }
+.pill { font-size: 17px; padding: 6px 14px; border-radius: 20px; border: 0.5px solid var(--color-border); background: none; color: var(--color-text-secondary); cursor: pointer; transition: all 0.15s; }
+:lang(zh-hans) .pill,
+:lang(zh-hant) .pill { font-family: 'LXGW WenKai', serif; }
+.pill:hover { background: var(--color-bg-secondary); }
+.pill.active { background: var(--trans-purple-bg); color: var(--trans-purple-text); border-color: var(--trans-purple-border); }
+.filter-logic { display: flex; flex-direction: column; gap: 6px; }
+.logic-toggle { display: flex; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+.logic-btn { padding: 5px 14px; font-size: 15px; background: none; border: none; color: var(--color-text-secondary); cursor: pointer; font-family: 'Inter', sans-serif; border-right: 0.5px solid var(--color-border); }
+.logic-btn:last-child { border-right: none; }
+.logic-btn.active { background: var(--color-bg-secondary); color: var(--color-text-primary); font-weight: 500; }
+
+.search-box {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 7px 12px;
+  margin-left: auto;
+}
+.search-box i { font-size: 16px; color: var(--color-text-tertiary); }
+.search-box input {
+  background: none; border: none; outline: none;
+  font-size: 17px; color: var(--color-text-primary); width: 180px;
+  font-family: 'LXGW WenKai', serif;
+}
+:lang(zh-hans) .search-box input,
+:lang(zh-hant) .search-box input { font-family: 'LXGW WenKai', serif; }
+
+.stories-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; padding: 1.25rem 2rem 1rem; }
+.story-card {
+  position: relative;
+  background: var(--color-bg-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-lg);
+  padding: 0.875rem 1rem; cursor: pointer; display: flex; flex-direction: column; gap: 5px;
+  transition: background 0.15s, transform 0.15s;
+  text-decoration: none;
+}
+.story-card:hover { background: #1a1a1a; transform: translateY(-1px); }
+.story-card-tags { display: flex; gap: 5px; }
+.story-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px; font-weight: 500; color: var(--color-text-primary); line-height: 1.35;
+}
+:lang(zh-hans) .story-card-title { font-family: 'Noto Serif SC', serif; }
+:lang(zh-hant) .story-card-title { font-family: 'Noto Serif TC', serif; }
+.story-card-zh {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; color: var(--color-text-tertiary);
+}
+.story-card-arr { position: absolute; right: 1rem; bottom: 1rem; font-size: 14px; color: var(--color-text-tertiary); }
+.no-results { padding: 2rem; text-align: center; color: var(--color-text-tertiary); font-size: 13px; }
+
+.results-bar { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.75rem; padding: 1rem 2rem 2rem; }
+.results-text { font-size: 15px; color: var(--color-text-tertiary); }
+
+.pagination { display: flex; justify-content: center; gap: 6px; }
+.page-btn {
+  min-width: 30px; height: 30px; border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-border); background: var(--color-bg-secondary);
+  color: var(--color-text-secondary); font-size: 18px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.page-btn.active { background: var(--trans-purple-bg, #6b4308); color: #fff; border-color: transparent; }
+.page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.popup-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 1000; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.15s; }
+.popup-overlay.active { opacity: 1; pointer-events: all; }
+.popup { background: var(--color-bg); border: 0.5px solid var(--color-border); border-radius: var(--radius-lg); width: 100%; max-width: 640px; max-height: 80vh; overflow-y: auto; transform: translateY(6px); transition: transform 0.15s; }
+.popup-overlay.active .popup { transform: translateY(0); }
+.popup-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; border-bottom: 0.5px solid var(--color-border); position: sticky; top: 0; background: var(--color-bg); z-index: 1; }
+.popup-meta { display: flex; gap: 6px; }
+.popup-controls { display: flex; align-items: center; gap: 10px; }
+.lang-toggle { display: flex; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+.lang-btn { padding: 4px 10px; font-size: 14px; background: none; border: none; color: var(--color-text-secondary); cursor: pointer; font-family: 'Inter', sans-serif; border-right: 0.5px solid var(--color-border); }
+.lang-btn:last-child { border-right: none; }
+.lang-btn.active { background: var(--color-bg-secondary); color: var(--color-text-primary); font-weight: 500; }
+.popup-close { width: 28px; height: 28px; border-radius: var(--radius-md); border: 0.5px solid var(--color-border); background: none; color: var(--color-text-secondary); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; }
+.popup-close:hover { background: var(--color-bg-secondary); color: var(--color-text-primary); }
+.popup-body { padding: 1.5rem 1.5rem 2rem; min-height: 450px; }
+.popup-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px; font-weight: 500; color: var(--color-text-primary); line-height: 1.35; margin-bottom: 1.25rem;
+}
+:lang(zh-hans) .popup-title { font-family: 'Noto Serif SC', serif; }
+:lang(zh-hant) .popup-title { font-family: 'Noto Serif TC', serif; }
+
+.popup-para {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.popup-text-zh .popup-para {
+  font-family: 'LXGW WenKai', serif;
+  font-size: 17px;
+  line-height: 1.9;
+}
+.popup-source {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 0.5px solid var(--color-border);
+  color: rgba(232, 221, 202, 0.55);
+  margin-bottom: 0;
+}
+
+.site-footer { border-top: 0.5px solid var(--color-border); padding: 0.875rem 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--color-bg-secondary); }
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote { font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; white-space: pre-line; }
+:lang(zh-hans) .footer-quote,
+:lang(zh-hant) .footer-quote { font-family: 'LXGW WenKai', serif; }
+
+@media (max-width: 800px) {
+  .stories-grid { grid-template-columns: repeat(2, 1fr); padding: 1rem; }
+  .filter-section { padding: 1rem; }
+  .filter-row { gap: 1rem; }
+  .search-box { margin-left: 0; width: 100%; }
+  .search-box input { width: 100%; }
+  .sotd-section { padding: 1rem 1rem 0; }
+  .sotd-card { padding: 1.5rem; }
+  .sotd-watermark { font-size: 140px; }
+  .sotd-zh { font-size: 28px; }
+  .page-header { padding: 1.5rem 1rem 1.25rem; }
+  .popup { max-width: 100%; max-height: 100vh; border-radius: 0; align-self: flex-end; }
+  .popup-overlay { align-items: flex-end; }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+}
+@media (max-width: 500px) {
+  .stories-grid { grid-template-columns: 1fr; }
+}
+</style>

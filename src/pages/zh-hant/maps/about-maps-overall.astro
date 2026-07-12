@@ -1,0 +1,405 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { url } from '../../../utils/url';
+
+const lang = 'zh-hant';
+const strings = t(lang);
+
+const introParagraphs = [
+  "《中國歷史地圖集》\u003csup id=\"fnref1\">\u003ca href=\"#fn1\">1\u003c/a>\u003c/sup> 是由譚其驤先生在上世紀八十年代主持編纂的歷代地理著作。 目前已有\u003cu>\u003ca href=\"https://history-map.osgeo.cn/#/\" target=\"_blank\">網站\u003c/a>\u003c/u>對該圖集內容進行了掃描處理，並將其與現代底圖疊加， 但似乎尚未出現融合地形要素及英文翻譯的數字化圖集與數據庫。本項目旨在填補這一空白。",
+  "以下是關於本人地圖的一些簡答說明。"
+];
+
+const qna = [
+  {
+    "icon": "ti-book-2",
+    "question": "為何選用譚其驤的《中國歷史地圖集》？譚圖是否值得信賴？",
+    "answer": [
+      "譚其驤主編的《中國歷史地圖集》（簡稱「譚圖」），是中國歷史地理學界最具權威性的地圖集，至今仍是該領域的標準參考。\u003csup id=\"fnref2\">\u003ca href=\"#fn2\">2\u003c/a>\u003c/sup>",
+      "當然，所有歷史地圖的編纂都無可避免地帶有某種程度的推測，此圖集亦不例外。譚圖成於1980年代， 受當時資料完整度與測繪技術所限，些許誤差和不確定性也實屬難免。儘管如此，這套地圖依然是現存關於古代地名位置與地理環境最可靠的學術成果之一。"
+    ]
+  },
+  {
+    "icon": "ti-map-question",
+    "question": "為何《三國演義》、遊戲或某些史料中提及的地點未在地圖中呈現？",
+    "answer": [
+      "譚圖主要反映公元260年代的三國行政地理格局，而相關遊戲與《三國演義》的敘事多集中於三國前期。至三國中後期，許多縣治鄉鎮或已被合併、廢止、更名， 部分具有特殊意義的軍事要塞也可能因失去戰略價值而荒廢。",
+      "此外，文學作品與遊戲中涉及的某些地點或存在虛構成分，或與後世地名混淆嫁接，所以未納入測繪範疇。"
+    ]
+  },
+  {
+    "icon": "ti-affiliate",
+    "question": "此圖集與譚圖有何不同？",
+    "answer": [
+      "此圖集通過將譚圖中出現的大型現代城鎮作為地理配準的基準點，將其與現代地標進行對應參照，同時整合HydroSHEDS地形數據，\u003csup id=\"fnref3\">\u003ca href=\"#fn3\">3\u003c/a>\u003c/sup> 以呈現海拔環境。",
+      "在某些情況下，譚圖所繪河流與現代地形中的河谷走向並不一致。本人已盡可能將其調整至最接近的河谷軌跡；如無明確對應關係， 則保留原繪河道。當然，這些調整並非絕對準確——尤其在平原地區，河道自古以來可能經歷大幅變遷。儘管如此，結合現代高程數據仍可提供更接近實際地理狀況的復原。"
+    ]
+  },
+  {
+    "icon": "ti-language",
+    "question": "地名發音是如何確定的？",
+    "answer": [
+      "在大多數情況下，本人採用標準現代漢語拼音方案。對於較生僻或可能存在歧義的地名，則追溯字符的本義，並匹配最合適的現代拼音發音。",
+      "一個具體的例子是「楗為／犍為」（Jiànwéi/Qiánwéi）, 如今該地普遍被稱為「犍為」，且「犍」字在現代通常僅讀作「Qián」。 然據歷史文獻與文物，情況並一直如此：在漢代，該郡僅被寫作帶「木」旁的「楗」，而非「牛」旁的「犍」。\u003csup id=\"fnref4\">\u003ca href=\"#fn4\">4\u003c/a>\u003c/sup> \u003csup id=\"fnref5\">\u003ca href=\"#fn5\">5\u003c/a>\u003c/sup> \u003csup id=\"fnref6\">\u003ca href=\"#fn6\">6\u003c/a>\u003c/sup> 四至六世紀後，該字的寫法與發音逐漸發生變化。考慮到這一轉變是否於三國時期已然發生尚不明確， 為兼顧可及性，本圖集中同時收錄兩種發音。",
+      "不可避免地，部分名稱的考證或有疏漏或存在不同解讀。如發現任何謬誤，或希望就特定名稱進行討論，歡迎隨時聯繫。"
+    ]
+  },
+  {
+    "icon": "ti-ripple",
+    "question": "如何區分漕運水道？",
+    "answer": [
+      "一般來說，名稱中帶有「渠」字的水道可認定為運河，因為這類渠道屬於人工開鑿或工程修建的河道。但在地勢平坦、農業密集的地區（如黃河下游一帶），區分標準就變得模糊。 當地為灌溉與運輸之需，常會開挖、改造、導引或加固已有地形或河道；這類水道即便非全為人工建造，實際上也發揮著類似運河的功能。",
+      "本圖集僅標注主要運河、水渠。雖其附屬與連接水道多屬同一漕運體系，但本人未將所有相關水道明確標註為運河。"
+    ]
+  }
+];
+
+const references = [
+  {
+    "id": "fn1",
+    "refId": "fnref1",
+    "html": "譚其驤. \u003cem>中國歷史地圖集\u003c/em>. 北京: 中國地圖出版社, 1982-1988."
+  },
+  {
+    "id": "fn2",
+    "refId": "fnref2",
+    "html": "Wilkinson, Endymion. \u003cem>Chinese History: A New Manual\u003c/em>. Cambridge, MA: Harvard University Asia Center, 2013, p. 245."
+  },
+  {
+    "id": "fn3",
+    "refId": "fnref3",
+    "html": "Lehner, Bernhard, K. Verdin, and A. Jarvis. “New Global Hydrography Derived from Spaceborne Elevation Data.” Eos, Transactions, American Geophysical Union 89, no. 10 (2008): 93-94. \u003ca href=\"https://doi.org/10.1029/2008EO100001\">https://doi.org/10.1029/2008EO100001\u003c/a>."
+  },
+  {
+    "id": "fn4",
+    "refId": "fnref4",
+    "html": "石門頌〈司隸校尉楗為楊君頌〉拓本. Wikimedia Commons, \u003ca href=\"https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%97%A8%E9%A2%82\">https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%97%A8%E9%A2%82\u003c/a>."
+  },
+  {
+    "id": "fn5",
+    "refId": "fnref5",
+    "html": "唐俊峰. “西漢河西田官的組織與行政： 以居延、肩水地區的田官為中心.” 《中國文化研究所學報》, no. 59 (2014): 87-120. \u003ca href=\"https://doi.org/10.29708/JCS.CUHK.201407_(59).0004\">https://doi.org/10.29708/JCS.CUHK.201407_(59).0004\u003c/a>."
+  },
+  {
+    "id": "fn6",
+    "refId": "fnref6",
+    "html": "倪濤. 《六藝之一錄·卷五十三》. 中國哲學書電子化計劃. \u003ca href=\"https://ctext.org/wiki.pl?if=gb&chapter=79374\">https://ctext.org/wiki.pl?if=gb&chapter=79374\u003c/a>."
+  }
+];
+---
+
+<Base title={`關於: 三國地圖 ${strings.siteTitle}`} lang={lang}>
+  <div class="site about-site">
+    <Nav lang={lang} strings={strings} />
+
+    <main class="about-maps-page">
+      <header class="about-header">
+        <div class="breadcrumb">
+          <a href={url('/zh-hant/maps')} class="bc-link">地圖</a>
+          <span class="bc-sep">&rsaquo;</span>
+          <a href={url('/zh-hant/maps/map-overall')} class="bc-link">三國地圖</a>
+          <span class="bc-sep">&rsaquo;</span>
+          <span class="bc-cur">關於: 三國地圖</span>
+        </div>
+        <h1 class="page-title">關於: 三國地圖</h1>
+      </header>
+      <section class="intro-section">
+        {introParagraphs.map(paragraph => <p set:html={paragraph} />)}
+      </section>
+
+      <section class="qna-section" aria-label="Map questions and answers">
+        {qna.map((item) => (
+          <details class="qna-item">
+            <summary>
+              <span class="qna-icon"><i class={`ti ${item.icon}`} aria-hidden="true"></i></span>
+              <span class="qna-question">{item.question}</span>
+              <i class="ti ti-chevron-down qna-chevron" aria-hidden="true"></i>
+            </summary>
+            <div class="qna-answer">
+              {item.answer.map(paragraph => <p set:html={paragraph} />)}
+            </div>
+          </details>
+        ))}
+      </section>
+
+      <section class="references-section" aria-labelledby="references-title">
+        <div class="section-heading-row references-heading">
+          <h2 id="references-title">參考資料</h2>
+        </div>
+        <ol class="references-list">
+          {references.map((reference) => (
+            <li id={reference.id}>
+              <span set:html={reference.html} />
+              <a class="ref-back" href={`#${reference.refId}`} aria-label="Back to note">&#8617;</a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    </main>
+
+    <ContactModal lang={lang} strings={strings} />
+  </div>
+</Base>
+
+<style>
+  .about-site {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at 84% 0%, rgba(196,154,94,0.12), transparent 30rem),
+      linear-gradient(180deg, #10100f 0%, #080808 54%, #0d0d0d 100%);
+  }
+
+  .about-maps-page {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1.2rem clamp(1rem, 3vw, 2rem) 3.5rem;
+  }
+
+  .about-header {
+    padding: 1.25rem 0 1.1rem;
+    border-bottom: 0.5px solid rgba(196,154,94,0.22);
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.7rem;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--color-text-tertiary);
+  }
+
+  .bc-link {
+    color: #d5ad6b;
+    text-decoration: none;
+  }
+
+  .bc-link:hover {
+    color: #f0d39a;
+  }
+
+  .bc-sep {
+    color: rgba(232,221,202,0.35);
+  }
+
+  .bc-cur {
+    color: rgba(232,221,202,0.66);
+    font-size: 17px;
+  }
+
+  .page-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #f2eadc;
+    letter-spacing: 0;
+  }
+
+  .intro-section {
+    max-width: 1500px;
+    padding: 1.55rem 0 1.15rem;
+  }
+
+  .intro-section p {
+    font-size: 19px;
+  }
+
+
+  .qna-answer p,
+  .references-list li {
+    color: #d6d1c4;
+    font-size: 19px;
+    line-height: 1.78;
+  }
+
+  .intro-section sup,
+  .qna-answer sup {
+    font-size: 0.6em;
+    line-height: 0;
+  }
+
+  .intro-section :global(sup a),
+  .qna-answer :global(sup a) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .intro-section :global(a),
+  .qna-answer :global(a),
+  .references-list :global(a),
+  .references-list .ref-back {
+    color: inherit;
+    text-decoration-color: rgba(214, 209, 196, 0.35);
+    text-underline-offset: 0.16em;
+  }
+
+  .intro-section :global(a:hover),
+  .qna-answer :global(a:hover),
+  .references-list :global(a:hover),
+  .references-list .ref-back:hover {
+    color: #f0d39a;
+    text-decoration-color: rgba(240, 211, 154, 0.55);
+  }
+
+  .intro-section p + p,
+  .qna-answer p + p {
+    margin-top: 0.85rem;
+  }
+
+  .about-maps-page .qna-section {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 0.55rem;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .about-maps-page .qna-item {
+    border: 0.5px solid rgba(196,154,94,0.2);
+    border-radius: 8px;
+    background: rgba(12, 12, 11, 0.72);
+    box-shadow: 0 18px 48px rgba(0,0,0,0.22);
+    overflow: hidden;
+  }
+
+  .about-maps-page .qna-item summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.9rem;
+    min-height: 62px;
+    padding: 0.9rem 1.05rem;
+    cursor: pointer;
+    color: #ede6d7;
+  }
+
+  .about-maps-page .qna-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .about-maps-page .qna-icon {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    color: #d6ad6b;
+  }
+
+  .about-maps-page .qna-icon i {
+    font-size: 1.32rem;
+  }
+
+  .about-maps-page .qna-question {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .about-maps-page .qna-chevron {
+    color: rgba(232,221,202,0.54);
+    transition: transform 180ms ease;
+  }
+
+  .about-maps-page .qna-item[open] .qna-chevron {
+    transform: rotate(180deg);
+  }
+
+  .about-maps-page .qna-answer {
+    padding: 0 1.1rem 1.2rem 4rem;
+    margin-top: 0.5rem;
+    max-width: 1280px;
+  }
+
+  .about-maps-page .references-section {
+    margin-top: 2rem;
+    padding: 1.35rem 0 0;
+    border: 0;
+    border-top: 0.5px solid rgba(196,154,94,0.25);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .references-heading {
+    margin-bottom: 0.55rem;
+  }
+
+  .references-heading h2 {
+    font-family: var(--font-heading-en);
+    color: #d6ad6b;
+    font-size: clamp(1.45rem, 2.3vw, 2rem);
+    font-weight: 600;
+  }
+
+  .references-list {
+    display: grid;
+    gap: 0.65rem;
+    padding-left: 1.2rem;
+  }
+
+  .references-list li {
+    padding-left: 0.25rem;
+    color: #bfb6a5;
+    font-size: 0.83rem;
+  }
+
+  .references-list li::marker {
+    color: #d6ad6b;
+    font-size: 0.78rem;
+  }
+
+  .ref-back {
+    margin-left: 0.35rem;
+    font-size: 0.78rem;
+  }
+
+  @media (max-width: 840px) {
+    .about-maps-page {
+      padding: 1rem 1rem 2.5rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .about-header {
+      padding-top: 1rem;
+    }
+
+    .page-title {
+      font-size: 2.7rem;
+    }
+
+    .intro-section {
+      padding: 1.25rem 0 1rem;
+    }
+
+    .about-maps-page .qna-item summary {
+      gap: 0.6rem;
+      padding: 0.8rem 0.85rem;
+      min-height: 58px;
+    }
+
+    .about-maps-page .qna-icon {
+      width: 1.55rem;
+      height: 1.55rem;
+    }
+
+    .about-maps-page .qna-icon i {
+      font-size: 1.08rem;
+    }
+
+    .about-maps-page .qna-question {
+      font-size: 0.9rem;
+    }
+
+    .about-maps-page .qna-answer {
+      padding: 0 0.9rem 1rem 0.9rem;
+    }
+  }
+</style>
+

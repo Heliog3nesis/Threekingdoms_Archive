@@ -1,0 +1,107 @@
+---;
+const { title, lang = 'en' } = Astro.props;
+import { url } from '../utils/url'; 
+---
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href={url('/favicon-32.png')} />
+    <link rel="icon" type="image/png" sizes="16x16" href={url('/favicon-16.png')} />
+    <link rel="apple-touch-icon" sizes="128x128" href={url('/favicon-128.png')} />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:lang(zh-hant) {
+  font-family: 'Noto Sans TC', var(--font-sans);
+}
+:lang(zh-hans) {
+  font-family: 'Noto Sans SC', var(--font-sans);
+}
+  :root {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading-en: 'Cormorant Garamond', serif;
+  --font-heading-cn: 'Noto Serif SC', serif;
+  --font-heading-cn-tc: 'Noto Serif TC', serif;
+  --font-body-en: 'Inter', system-ui, sans-serif;
+  --font-body-cn: 'LXGW WenKai', serif;
+  --color-bg: #0d0d0d;
+  --color-bg-secondary: #161616;
+  --color-bg-tertiary: #1a1a1a;
+  --color-text-primary: #f1efe8;
+  --color-text-secondary: #b4b2a9;
+  --color-text-tertiary: #888780;
+  --color-border: rgba(255,255,255,0.1);
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --trans-purple-bg: #412402;
+  --trans-purple-text: #C8A84B;
+  --trans-purple-border: #6B3A0A;
+
+  --map-teal-bg: #1E2B40;
+  --map-teal-text: #6EC1FF;
+  --map-teal-border: #2A3F5C;
+
+  --art-amber-bg: #3B463A;
+  --art-amber-text: #F0EBE0;
+  --art-amber-border: #4F5E4D;
+}
+
+
+  body {
+    font-family: var(--font-body-en);
+    background: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  :lang(zh-hans) {
+    font-family: var(--font-body-cn);
+  }
+  :lang(zh-hant) {
+    font-family: var(--font-body-cn);
+  }
+
+  h1, h2, h3, .heading {
+    font-family: var(--font-heading-en);
+  }
+
+  :lang(zh-hans) h1, :lang(zh-hans) h2, :lang(zh-hans) h3, :lang(zh-hans) .heading {
+    font-family: var(--font-heading-cn);
+  }
+  :lang(zh-hant) h1, :lang(zh-hant) h2, :lang(zh-hant) h3, :lang(zh-hant) .heading {
+    font-family: var(--font-heading-cn-tc);
+  }
+
+  .site {
+    max-width: 100%;
+    margin: 0 auto;
+    background: var(--color-bg);
+    border: 0.5px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: clip;
+  }
+
+
+  @media (max-width: 700px) {
+    .site { margin: 0; border-radius: 0; border-left: none; border-right: none; }
+  }
+</style>

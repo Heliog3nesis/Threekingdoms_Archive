@@ -1,0 +1,753 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from './Nav.astro';
+import ContactModal from './Contactmodal.astro';
+import { t } from '../i18n/index.js';
+import topicData from '../data/as-in-life-as-in-death.json';
+import { url } from '../utils/url';
+
+type TopicImage = {
+  id: string;
+  image: string;
+  description: string;
+  description_zh_hant?: string | null;
+  description_zh_hans?: string | null;
+  found?: string | null;
+  found_zh_hant?: string | null;
+  found_zh_hans?: string | null;
+  displayed?: string | null;
+  displayed_zh_hant?: string | null;
+  displayed_zh_hans?: string | null;
+  time?: string | null;
+  time_zh_hant?: string | null;
+  time_zh_hans?: string | null;
+};
+
+type LocalizedString = string | null | undefined;
+type LocalizedRecord = Record<string, LocalizedString>;
+
+type TopicParagraph = {
+  text: string;
+  text_zh_hant?: string;
+  text_zh_hans?: string;
+  lead?: boolean;
+};
+
+type TopicSection = {
+  id: string;
+  title: string;
+  title_zh_hant?: string;
+  title_zh_hans?: string;
+  paragraphs: TopicParagraph[];
+  injections?: Array<{
+    afterParagraph: number;
+    imageIds: string[];
+  }>;
+};
+
+type SeeAlsoItem = {
+  title: string;
+  title_zh_hant?: string;
+  title_zh_hans?: string;
+  href: string;
+  href_zh_hant?: string;
+  href_zh_hans?: string;
+  image: string;
+  description: string;
+  description_zh_hant?: string;
+  description_zh_hans?: string;
+};
+
+type TopicData = {
+  meta: LocalizedRecord;
+  sections: TopicSection[];
+  images: TopicImage[];
+  seeAlso: SeeAlsoItem[];
+  references: string[];
+  references_zh_hant?: string[];
+  references_zh_hans?: string[];
+  sitesVisited: string[];
+  sitesVisited_zh_hant?: string[];
+  sitesVisited_zh_hans?: string[];
+};
+
+const { lang = 'en' } = Astro.props;
+const strings = t(lang);
+const footerQuote = strings.footer.quoteBySection?.artefacts ?? strings.footer.quote
+const data = topicData as TopicData;
+const suffix = lang === 'zh-hant' ? '_zh_hant' : lang === 'zh-hans' ? '_zh_hans' : '';
+const pick = (item: unknown, key: string) => {
+  const record = item as LocalizedRecord;
+  return (suffix ? record[`${key}${suffix}`] : undefined) ?? record[key] ?? '';
+};
+const meta = {
+  title: pick(data.meta, 'title'),
+  eyebrow: pick(data.meta, 'eyebrow'),
+  subtitle: pick(data.meta, 'subtitle'),
+  readTime: pick(data.meta, 'readTime'),
+  artefacts: pick(data.meta, 'artefacts'),
+  updated: pick(data.meta, 'updated')
+};
+const sections = data.sections.map((section) => ({
+  ...section,
+  title: pick(section, 'title'),
+  paragraphs: section.paragraphs.map((paragraph) => ({
+    ...paragraph,
+    text: pick(paragraph, 'text')
+  }))
+}));
+const images = data.images.map((image) => ({
+  ...image,
+  description: pick(image, 'description'),
+  found: pick(image, 'found') || null,
+  displayed: pick(image, 'displayed') || null,
+  time: pick(image, 'time') || null
+}));
+const seeAlso = data.seeAlso.map((item) => ({
+  ...item,
+  title: pick(item, 'title'),
+  href: pick(item, 'href'),
+  description: pick(item, 'description')
+}));
+const references =
+  lang === 'zh-hant'
+    ? data.references_zh_hant ?? data.references
+    : lang === 'zh-hans'
+      ? data.references_zh_hans ?? data.references
+      : data.references;
+const sitesVisited =
+  lang === 'zh-hant'
+    ? data.sitesVisited_zh_hant ?? data.sitesVisited
+    : lang === 'zh-hans'
+      ? data.sitesVisited_zh_hans ?? data.sitesVisited
+      : data.sitesVisited;
+const labels = {
+  home: lang === 'zh-hans' ? '首页' : lang === 'zh-hant' ? '首頁' : 'Home',
+  artefacts: lang === 'zh-hans' || lang === 'zh-hant' ? '文物' : 'Artefacts',
+  seeAlso: lang === 'zh-hans' ? '延伸阅读' : lang === 'zh-hant' ? '延伸閱讀' : 'See Also',
+  references: lang === 'zh-hans' ? '参考资料' : lang === 'zh-hant' ? '參考資料' : 'References',
+  sections: lang === 'zh-hans' ? '章节' : lang === 'zh-hant' ? '章節' : 'Sections',
+  sitesVisited: lang === 'zh-hans' ? '实地地点' : lang === 'zh-hant' ? '實地地點' : 'Sites Visited',
+  zoomIn: lang === 'zh-hans' || lang === 'zh-hant' ? '放大' : 'Zoom in',
+  zoomOut: lang === 'zh-hans' ? '缩小' : lang === 'zh-hant' ? '縮小' : 'Zoom out',
+  resetImage: lang === 'zh-hans' ? '重置图片' : lang === 'zh-hant' ? '重置圖片' : 'Reset image'
+};
+const basePath = lang === 'zh-hans' ? '/zh-hans' : lang === 'zh-hant' ? '/zh-hant' : '';
+const imageById = new Map(images.map((image) => [image.id, image]));
+const getInjectedImages = (imageIds: string[] = []) =>
+  imageIds.reduce<TopicImage[]>((result, id) => {
+    const image = imageById.get(id);
+    if (image) result.push(image);
+    return result;
+  }, []);
+---
+
+<Base title={`${meta.title} - ${strings.siteTitle}`} lang={lang}>
+  <div class={`site ${lang !== 'en' ? 'site--zh' : ''}`}>
+    <Nav lang={lang} strings={strings} />
+
+    <main class="topic-page">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href={url(`${basePath}/`)}>{labels.home}</a>
+        <span>&rsaquo;</span>
+        <a href={url(`${basePath}/artefacts/`)}>{labels.artefacts}</a>
+        <span>&rsaquo;</span>
+        <span>{meta.title}</span>
+      </nav>
+
+      <header class="topic-hero">
+        <p class="eyebrow"><i class="ti ti-notebook" aria-hidden="true"></i>{meta.eyebrow}</p>
+        <h1>{meta.title}</h1>
+        <p class="subtitle">{meta.subtitle}</p>
+        <div class="meta-row">
+          <span><i class="ti ti-clock" aria-hidden="true"></i>{meta.readTime}</span>
+          <span><i class="ti ti-photo" aria-hidden="true"></i>{meta.artefacts}</span>
+          <span><i class="ti ti-calendar" aria-hidden="true"></i>{meta.updated}</span>
+        </div>
+      </header>
+
+      <div class="topic-layout">
+        <article class="topic-article">
+          {sections.map((section, sectionIndex) => (
+            <section id={section.id}>
+              {sectionIndex > 0 && <h2>{section.title}</h2>}
+              {section.paragraphs.map((paragraph, paragraphIndex) => (
+                <>
+                  <p class={paragraph.lead ? 'lead' : undefined}>{paragraph.text}</p>
+                  {section.injections
+                    ?.filter((injection) => injection.afterParagraph === paragraphIndex)
+                    .map((injection) => (
+                      <div class="image-grid">
+                        {getInjectedImages(injection.imageIds).map((item) => (
+                          <figure class="image-card">
+                            <div class="topic-image-panel">
+                              <img src={url(item.image)} alt={item.description} loading="lazy"/>
+                              <div class="image-zoom-controls" aria-label="Image controls">
+                                <button type="button" data-zoom="in" aria-label={labels.zoomIn}><i class="ti ti-plus"></i></button>
+                                <button type="button" data-zoom="out" aria-label={labels.zoomOut}><i class="ti ti-minus"></i></button>
+                                <button type="button" data-zoom="reset" aria-label={labels.resetImage}><i class="ti ti-arrows-maximize"></i></button>
+                              </div>
+                            </div>
+                            <figcaption>
+                              <strong>{item.description}</strong>
+                              {item.found && <span>{item.found}</span>}
+                              {item.displayed && <span>{item.displayed}</span>}
+                              {item.time && <span>{item.time}</span>}
+                            </figcaption>
+                          </figure>
+                        ))}
+                      </div>
+                    ))}
+                </>
+              ))}
+            </section>
+          ))}
+
+          <section class="see-also" aria-labelledby="see-also-title">
+            <h2 id="see-also-title">{labels.seeAlso}</h2>
+            <div class="see-grid">
+              {seeAlso.map((item) => (
+                <a class="see-card" href={item.href} target="_blank" rel="noopener noreferrer">
+                  <img src={item.image} alt="" loading="lazy" />
+                  <span>{item.title}</span>
+                  <p>{item.description}</p>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          <section class="references" aria-labelledby="references-title">
+            <h2 id="references-title">{labels.references}</h2>
+            <ol>
+              {references.map((item) => <li>{item}</li>)}
+            </ol>
+          </section>
+        </article>
+
+        <aside class="topic-aside">
+          <section>
+            <h2>{labels.sections}</h2>
+            <ul>
+              {sections.map((section) => (
+                <li><a href={`#${section.id}`}>{section.title}</a></li>
+              ))}
+            </ul>
+          </section>
+          <section>
+            <h2>{labels.sitesVisited}</h2>
+            <ul>
+              {sitesVisited.map((site) => (
+                <li><i class="ti ti-map-pin" aria-hidden="true"></i> {site}</li>
+              ))}
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{footerQuote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} &copy; {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+
+  <script is:inline>
+    document.querySelectorAll('.topic-image-panel').forEach((panel) => {
+      const img = panel.querySelector('img');
+      let scale = 1;
+      let x = 0;
+      let y = 0;
+      let dragging = false;
+      let startX = 0;
+      let startY = 0;
+
+      function apply() {
+        img.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+        panel.classList.toggle('is-zoomed', scale > 1);
+      }
+
+      function reset() {
+        scale = 1;
+        x = 0;
+        y = 0;
+        apply();
+      }
+
+      panel.querySelector('[data-zoom="in"]').addEventListener('click', () => {
+        scale = Math.min(4, scale + 0.35);
+        apply();
+      });
+
+      panel.querySelector('[data-zoom="out"]').addEventListener('click', () => {
+        scale = Math.max(1, scale - 0.35);
+        if (scale === 1) { x = 0; y = 0; }
+        apply();
+      });
+
+      panel.querySelector('[data-zoom="reset"]').addEventListener('click', reset);
+
+      panel.querySelector('.image-zoom-controls').addEventListener('pointerdown', (event) => {
+        event.stopPropagation();
+      });
+
+      panel.querySelector('.image-zoom-controls').addEventListener('click', (event) => {
+        event.stopPropagation();
+      });
+
+      panel.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        scale = Math.max(1, Math.min(4, scale + (event.deltaY < 0 ? 0.2 : -0.2)));
+        if (scale === 1) { x = 0; y = 0; }
+        apply();
+      }, { passive: false });
+
+      panel.addEventListener('pointerdown', (event) => {
+        if (scale <= 1) return;
+        dragging = true;
+        panel.setPointerCapture(event.pointerId);
+        startX = event.clientX - x;
+        startY = event.clientY - y;
+        panel.classList.add('is-dragging');
+      });
+
+      panel.addEventListener('pointermove', (event) => {
+        if (!dragging) return;
+        x = event.clientX - startX;
+        y = event.clientY - startY;
+        apply();
+      });
+
+      panel.addEventListener('pointerup', () => {
+        dragging = false;
+        panel.classList.remove('is-dragging');
+      });
+
+      img.addEventListener('load', reset);
+    });
+  </script>
+</Base>
+
+<style>
+  .site {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #070706;
+    color: var(--color-text-secondary);
+  }
+
+  .site--zh {
+    --topic-zh-title-size: 52px;
+    --topic-zh-body-size: 16.5px;
+    --topic-zh-section-size: 22px;
+    --topic-zh-caption-size: 15px;
+    --topic-zh-breadcrumb-size: 15.5px;
+    --topic-zh-eyebrow-size: 13.5px;
+    --topic-zh-aside-list-size: 16px;
+    --topic-zh-reference-size: 16px;
+  }
+
+  .site--zh h1 {
+    font-size: var(--topic-zh-title-size);
+  }
+
+  .site--zh .lead,
+  .site--zh .topic-article p {
+    font-size: var(--topic-zh-body-size);
+  }
+
+  .site--zh .topic-article h2 {
+    font-size: var(--topic-zh-section-size);
+  }
+
+  .site--zh figcaption {
+    font-size: var(--topic-zh-caption-size);
+  }
+
+  .site--zh .breadcrumb {
+    font-size: var(--topic-zh-breadcrumb-size);
+  }
+
+  .site--zh .eyebrow {
+    font-size: var(--topic-zh-eyebrow-size);
+  }
+
+  .site--zh .topic-aside li,
+  .site--zh .topic-aside a {
+    font-size: var(--topic-zh-aside-list-size);
+  }
+
+  .site--zh .references li {
+    font-size: var(--topic-zh-reference-size);
+  }
+
+  .topic-page {
+    width: min(1380px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2.2rem 0 3rem;
+  }
+
+  .breadcrumb {
+    display: flex;
+    gap: 0.45rem;
+    align-items: center;
+    color: #8d7a60;
+    font-size: 14px;
+    margin-bottom: 1.7rem;
+  }
+
+  .breadcrumb a {
+    color: #ddb36e;
+    text-decoration: none;
+  }
+
+  .topic-hero {
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid rgba(183, 138, 73, 0.22);
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.75rem;
+    color: #ddb36e;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    color: var(--color-text-primary);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 0.96;
+  }
+
+  .subtitle {
+    max-width: 760px;
+    margin: 0.85rem 0 0;
+    color: rgba(245, 234, 215, 0.78);
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    color: #8d7a60;
+    font-size: 14px;
+  }
+
+  .meta-row span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .topic-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 2rem;
+    margin-top: 1.8rem;
+  }
+
+  .topic-article {
+    min-width: 0;
+  }
+
+  .topic-article section {
+    margin-top: 2rem;
+  }
+
+  .topic-article section:first-child {
+    margin-top: 0;
+  }
+
+  .lead,
+  .topic-article p {
+    color: rgba(245, 234, 215, 0.86);
+    font-size: 16.5px;
+    line-height: 1.75;
+  }
+
+  .topic-article p + p {
+  margin-top: 1rem;
+  }
+
+  .topic-article h2{  
+  font-size: 22px;
+  color: #ddb36e;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  }
+
+  .topic-aside h2 {
+  color: #ddb36e;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 18px;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+    margin: 1.3rem 0;
+  }
+
+  .image-card {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(183, 138, 73, 0.24);
+    border-radius: 6px;
+    background: #11100e;
+  }
+
+  .topic-image-panel {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #090908;
+    touch-action: none;
+    cursor: default;
+  }
+
+  .topic-image-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+  }
+
+  .topic-image-panel.is-zoomed { cursor: grab; }
+  .topic-image-panel.is-dragging { cursor: grabbing; }
+
+  .image-zoom-controls {
+    position: absolute;
+    z-index: 10;
+    pointer-events: auto;
+    right: 0.55rem;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(183, 138, 73, 0.45);
+    border-radius: 5px;
+    background: rgba(15, 14, 12, 0.94);
+    transform: translateY(-50%);
+  }
+
+  .image-zoom-controls button {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid rgba(183, 138, 73, 0.24);
+    background: transparent;
+    color: #ddb36e;
+    cursor: pointer;
+  }
+
+  .image-zoom-controls button:first-child { border-top: 0; }
+  .image-zoom-controls i { font-size: 16px; }
+
+  figcaption {
+    display: grid;
+    gap: 0.3rem;
+    padding: 0.85rem;
+    color: #94856f;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  figcaption strong {
+    color: rgba(245, 234, 215, 0.86);
+    font-weight: 500;
+  }
+
+  .topic-aside {
+    position: sticky;
+    top: 5rem;
+    align-self: start;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .topic-aside section {
+    padding: 1rem;
+    border: 1px solid rgba(183, 138, 73, 0.24);
+    border-radius: 6px;
+    background: #0d0c0a;
+  }
+
+  .topic-aside h2 {
+    margin: 0 0 0.7rem;
+    font-size: 15.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .topic-aside ul {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .topic-aside li,
+  .topic-aside a {
+    color: #bca47c;
+    font-size: 14.5px;
+    text-decoration: none;
+  }
+
+  .see-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+
+  .see-also {
+    width: min(1380px, calc(100vw - 2rem));
+    max-width: none;
+  }
+
+  .see-card {
+    display: grid;
+    grid-template-columns: minmax(150px, 220px) 1fr;
+    gap: 0.9rem;
+    padding: 0.8rem;
+    border: 1px solid rgba(183, 138, 73, 0.24);
+    border-radius: 6px;
+    color: inherit;
+    text-decoration: none;
+    background: #0d0c0a;
+  }
+
+  .see-card img {
+    width: 100%;
+    height: 82px;
+    object-fit: cover;
+    border-radius: 4px;
+    grid-row: span 2;
+  }
+
+  .see-card span {
+    color: var(--color-text-primary);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+  }
+
+  .see-card p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .references {
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(183, 138, 73, 0.22);
+  }
+
+  .references ol {
+    padding-left: 1.4rem;
+  }
+
+  .references li {
+    margin-top: 0.65rem;
+    color: #bca47c;
+    line-height: 1.55;
+  }
+
+  .site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 0.875rem 2rem;
+    border-top: 0.5px solid var(--color-border);
+    background: var(--color-bg-secondary);
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .footer-quote,
+  .footer-copy {
+    color: var(--color-text-tertiary);
+    font-size: 0.8rem;
+  }
+
+  .footer-quote {
+    white-space: pre-line;
+  }
+
+  .footer-github {
+    color: var(--color-text-tertiary);
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  @media (max-width: 920px) {
+    .topic-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .topic-aside {
+      position: static;
+      order: -1;
+    }
+
+    .see-also {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .topic-page {
+      width: calc(100% - 0.8 rem);
+      padding-top: 1.4rem;
+    }
+
+    .image-grid,
+    .see-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .references ol {
+      padding-left: 1.65rem;
+    }
+  }
+</style>

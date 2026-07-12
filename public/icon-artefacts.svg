@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- symmetric cup silhouette -->
+  <!-- path: top rim, straight sides tapering slightly, base flare, foot -->
+  <path d="
+    M 32 8
+    Q 32 6 50 6
+    Q 68 6 68 8
+    L 66 72
+    Q 66 76 62 78
+    L 62 82
+    Q 66 83 68 86
+    Q 70 90 50 90
+    Q 30 90 32 86
+    Q 34 83 38 82
+    L 38 78
+    Q 34 76 34 72
+    Z
+  " fill="#F0EBE0" />
+</svg>

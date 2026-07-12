@@ -1,0 +1,312 @@
+---
+const { lang, strings } = Astro.props;
+const path = Astro.url.pathname;
+const basePath = path
+  .replace(import.meta.env.BASE_URL.replace(/\/$/, ''), '')
+  .replace(/^\/(zh-hant|zh-hans)/, '')
+  || '/';
+const homeHref = url(lang === 'zh-hant' ? '/zh-hant' : lang === 'zh-hans' ? '/zh-hans' : '/');
+const hrefFor = (section: string) => url(lang === 'en' ? `/${section}` : `/${lang}/${section}`);
+const activeLang = lang === 'zh-hant' ? '\u7e41' : lang === 'zh-hans' ? '\u7b80' : 'EN';
+const langLinks = [
+  { label: 'EN', href: url(basePath), active: lang === 'en' },
+  { label: '繁', href: url(`/zh-hant${basePath === '/' ? '' : basePath}`), active: lang === 'zh-hant' },
+  { label: '简', href: url(`/zh-hans${basePath === '/' ? '' : basePath}`), active: lang === 'zh-hans' },
+];
+import { url } from '../utils/url';
+---
+
+<nav class="nav" data-nav>
+  <a class="logo" href={homeHref}>
+    <span class="logo-mark">
+      <img src={url('/logo-ding.svg')} alt="" />
+    </span>
+    <span class="logo-text">{strings.logoText}</span>
+  </a>
+
+  <div class="nav-links" id="nav-links" data-nav-links>
+    <a href={homeHref}
+      class={`nav-link ${path === '/' || path === '/zh-hant' || path === '/zh-hans' ? 'active' : ''}`}>
+      {strings.nav.home}
+    </a>
+    <a href={hrefFor('translations')}
+      class={`nav-link ${path.includes('/translations') ? 'active' : ''}`}>
+      {strings.nav.translations}
+    </a>
+    <a href={hrefFor('maps')}
+      class={`nav-link ${path.includes('/maps') ? 'active' : ''}`}>
+      {strings.nav.maps}
+    </a>
+    <a href={hrefFor('artefacts')}
+      class={`nav-link ${path.includes('/artefacts') ? 'active' : ''}`}>
+      {strings.nav.artefacts}
+    </a>
+    <a href="#" class="nav-link" id="contact-open" onclick="window.openContactModal && window.openContactModal(); return false;">
+      {strings.nav.contact}
+    </a>
+  </div>
+
+  <div class="nav-actions">
+    <div class="lang-toggle">
+      {langLinks.map((item) => (
+        <a href={item.href} class={`lang-btn ${item.active ? 'active' : ''}`}>{item.label}</a>
+      ))}
+    </div>
+
+    <details class="lang-menu">
+      <summary>{activeLang}</summary>
+      <div class="lang-options">
+        {langLinks.map((item) => (
+          <a href={item.href} class={item.active ? 'active' : ''}>{item.label}</a>
+        ))}
+      </div>
+    </details>
+
+    <button type="button" class="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false" data-nav-toggle>
+      <i class="ti ti-menu-2" aria-hidden="true"></i>
+    </button>
+  </div>
+</nav>
+
+<script>
+  const nav = document.querySelector('[data-nav]');
+  const toggle = document.querySelector('[data-nav-toggle]');
+
+  if (nav && toggle) {
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>
+
+<style>
+.nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 64px;
+  padding: 0 2rem;
+  border-bottom: 0.5px solid var(--color-border);
+  background: var(--color-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  justify-self: start;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-mark img {
+  width: 26px;
+  height: 26px;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.75rem;
+  justify-self: center;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: end;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: "Inter";
+}
+
+.nav-link.active {
+  color: #d0aa6b;
+}
+
+.lang-toggle {
+  display: flex;
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.lang-btn {
+  padding: 4px 10px;
+  font-size: 13px;
+  background: none;
+  border-right: 0.5px solid var(--color-border);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lang-btn:last-child {
+  border-right: none;
+}
+
+.lang-btn.active {
+  background: transparent;
+  color: #d0aa6b;
+  font-weight: 500;
+}
+
+.lang-menu {
+  display: none;
+  position: relative;
+}
+
+.lang-menu summary {
+  display: grid;
+  place-items: center;
+  min-width: 42px;
+  height: 34px;
+  padding: 0 0.65rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: 13px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.lang-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang-options {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  display: grid;
+  min-width: 64px;
+  overflow: hidden;
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+
+.lang-options a {
+  padding: 0.55rem 0.75rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  text-decoration: none;
+}
+
+.lang-options a.active {
+  color: #d0aa6b;
+  background: transparent;
+}
+
+.nav-toggle {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+:lang(zh-hans) .nav-link,
+:lang(zh-hant) .nav-link {
+  font-size: 17px;
+}
+
+@media (max-width: 860px) {
+  .nav {
+    grid-template-columns: 1fr auto;
+    gap: 0.65rem;
+    height: 58px;
+    padding: 0 0.75rem;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .nav-toggle {
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0.75rem;
+    width: min(210px, calc(100vw - 1.5rem));
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0.45rem;
+    border: 0.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-bg);
+    box-shadow: 0 18px 50px rgba(0,0,0,0.5);
+  }
+
+  .nav.is-open .nav-links {
+    display: grid;
+  }
+
+  .nav-link {
+    padding: 0.75rem 0.85rem;
+    font-size: 16px;
+    border-radius: calc(var(--radius-md) - 2px);
+    font-family: "Inter";
+  }
+
+  .nav-link.active {
+    border-bottom: 0;
+    background: transparent;
+    color: #d0aa6b;
+  }
+
+  :lang(zh-hans) .nav-link,
+  :lang(zh-hant) .nav-link {
+    font-size: 16px;
+  }
+
+  .lang-toggle {
+    display: none;
+  }
+
+  .lang-menu {
+    display: block;
+  }
+}
+</style>

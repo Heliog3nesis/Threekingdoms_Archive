@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import HomePage from '../components/HomePage.astro';
+import ContactModal from '../components/Contactmodal.astro';
+import { t } from '../i18n/index.js';
+
+const lang = 'en';
+const strings = t(lang);
+---
+<Base title={strings.siteTitle} lang="en">
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+    <HomePage strings={strings} lang={lang}/>
+    <ContactModal strings={strings} />
+  </div>
+</Base>

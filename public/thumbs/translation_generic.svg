@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 210" width="300" height="210">
+<rect width="300" height="210" fill="#17120c"/>
+<g transform="translate(60,30)">
+<rect x="0" y="0" width="14" height="150" rx="7" fill="#6b4308"/>
+<rect x="166" y="0" width="14" height="150" rx="7" fill="#6b4308"/>
+<rect x="10" y="6" width="160" height="138" fill="#e8ddca"/>
+<g stroke="#2a2018" stroke-width="1.6" opacity="0.85">
+<line x1="30" y1="22" x2="30" y2="118"/>
+<line x1="50" y1="22" x2="50" y2="100"/>
+<line x1="70" y1="22" x2="70" y2="128"/>
+<line x1="90" y1="22" x2="90" y2="108"/>
+<line x1="110" y1="22" x2="110" y2="122"/>
+<line x1="130" y1="22" x2="130" y2="96"/>
+<line x1="150" y1="22" x2="150" y2="114"/>
+</g>
+<g stroke="#5f5e5a" stroke-width="0.6" opacity="0.4">
+<line x1="22" y1="22" x2="22" y2="128"/>
+<line x1="42" y1="22" x2="42" y2="128"/>
+<line x1="62" y1="22" x2="62" y2="128"/>
+<line x1="82" y1="22" x2="82" y2="128"/>
+<line x1="102" y1="22" x2="102" y2="128"/>
+<line x1="122" y1="22" x2="122" y2="128"/>
+<line x1="142" y1="22" x2="142" y2="128"/>
+<line x1="158" y1="22" x2="158" y2="128"/>
+</g>
+</g>
+<rect x="140" y="2" width="20" height="20" rx="2" fill="#993c1d"/>
+</svg>

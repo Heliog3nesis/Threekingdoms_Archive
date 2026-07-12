@@ -1,0 +1,696 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { buildAllPositions } from '../../../scripts/translations/build-officials-index.js';
+import { url } from '../../../utils/url';
+
+const lang = 'zh-hans';
+const strings = t(lang);
+const s = strings.officials;
+
+const allPositions = buildAllPositions().map((position) => ({
+  ...position,
+  url: position.url.startsWith('/')
+    ? `/zh-hans${position.url}`
+    : position.url,
+}));
+
+const categories = [
+  {
+    id: 'ministers',
+    pageId: 'ministers',
+    label: { en: 'Excellencies & Ministers', zht: '公卿', zhs: '公卿' },
+    excerpt: { en: 'Three Excellencies, Nine Ministers...', zht: '上公，三公，九卿等...', zhs: '上公，三公，九卿等...' },
+    seal: '/thumbs/excellencies_seal.svg',
+  },
+  {
+    id: 'departments',
+    pageId: 'departments',
+    label: { en: 'Departments', zht: '臺省', zhs: '台省' },
+    excerpt: { en: 'Attendants, Imperial Secretariat...', zht: '尚書臺，門下省，御史台等...', zhs: '尚书台，门下省，御史台等...' },
+    seal: '/thumbs/department_seal.svg',
+  },
+  {
+    id: 'military',
+    pageId: 'military',
+    label: { en: 'Military', zht: '武官', zhs: '武官' },
+    excerpt: { en: 'Generals, Commandants...', zht: '城門，將軍，校尉，都尉等...', zhs: '城门，将军，校尉，都尉等...' },
+    seal: '/thumbs/military_seal.svg',
+  },
+  {
+    id: 'regional',
+    pageId: 'regional',
+    label: { en: 'Regional Administration', zht: '地方', zhs: '地方' },
+    excerpt: { en: 'Inspectors, Grand Administrators...', zht: '刺史，太守，縣令，鄉亭等...', zhs: '刺史，太守，县令，乡亭等...'},
+    seal: '/thumbs/regional_seal.svg',
+  },
+  {
+    id: 'household',
+    pageId: 'household',
+    label: { en: 'Imperial Household', zht: '東/后宮', zhs: '東/后宮' },
+    excerpt: { en: 'Crown Prince, Empress...', zht: '太子，太后，皇后', zhs: '太子，太后，皇后'  },
+    seal: '/thumbs/household_seal.svg',
+  },
+  {
+    id: 'nobility',
+    pageId: 'nobility',
+    label: {  en: 'Nobility (WIP)', zht: '爵位（待整理）', zhs: '爵位（待整理)' },
+    excerpt: { en: 'Marquis and others', zht: '列侯，五等爵', zhs: '列侯，五等爵'},
+    seal: '/thumbs/nobility_seal.svg',
+  },
+];
+
+function toRoman(num: number): string {
+  const romanMap: [number, string][] = [
+    [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I'],
+  ];
+  let result = '';
+  let n = num;
+  for (const [value, symbol] of romanMap) {
+    while (n >= value) {
+      result += symbol;
+      n -= value;
+    }
+  }
+  return result;
+}
+
+function utf8ToBase64(str: string): string {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return btoa(binary);
+}
+const officialsPayload = utf8ToBase64(JSON.stringify({ allPositions, categories, lang }));
+---
+
+<Base title={`三国职官表 · ${strings.siteTitle}`} lang="zh-hans">
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href={url('/zh-hans/translations')} class="bc-link">{strings.nav.translations}</a>
+        <span class="bc-sep">›</span>
+        <span class="bc-cur">{s.title}</span>
+      </div>
+      <h1 class="page-title">{s.title}</h1>
+      <p class="page-sub">{s.subtitle}</p>
+    </div>
+
+    <!-- SEARCH BAR — always visible -->
+    <div class="search-bar">
+      <div class="search-box">
+        <input
+          class="search-input"
+          id="search-input"
+          type="text"
+          placeholder={s.searchPlaceholder}
+          autocomplete="off"
+        />
+        <button class="search-clear" id="search-clear" style="display:none;">✕</button>
+        <button class="search-btn" id="search-btn">{s.searchBtn}</button>
+      </div>
+      <div class="search-dropdown" id="search-dropdown" style="display:none;">
+        <div class="dropdown-warning" id="search-dropdown-warning" style="display:none;"></div>
+        <div class="dropdown-list" id="search-dropdown-list"></div>
+        <button class="dropdown-more" id="search-dropdown-more" style="display:none;"></button>
+      </div>
+    </div>
+
+    <!-- TABS — desktop -->
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-tab="browse">{s.tabs.browse}</button>
+      <button class="tab" data-tab="background">{s.tabs.background}</button>
+      <button class="tab" data-tab="salary">{s.tabs.salary}</button>
+      <button class="tab" data-tab="glossary">{s.tabs.glossary}</button>
+    </div>
+
+    <!-- TABS — mobile dropdown -->
+    <div class="tab-dropdown">
+      <select class="tab-select" id="tab-select">
+        <option value="browse">{s.tabs.browse}</option>
+        <option value="background">{s.tabs.background}</option>
+        <option value="salary">{s.tabs.salary}</option>
+        <option value="glossary">{s.tabs.glossary}</option>
+      </select>
+    </div>
+
+    <!-- BROWSE TAB -->
+     <div class="panels-wrapper">
+    <div class="panel" id="panel-browse">
+      <div class="cat-grid">
+        {categories.map((cat, i) => (
+          <a href={url(`/zh-hans/translations/officials/${cat.id}`)} class="cat-card">
+            <div class="cat-card-top">
+              <span class="cat-numeral">{toRoman(i + 1)}</span>
+              <img src={url(cat.seal ?? '/thumbs/seal_icon.svg')} alt="" class="cat-seal" />
+            </div>
+            <div class="cat-divider"></div>
+            <div class="cat-name">{cat.label.zhs}</div>
+            <div class="cat-excerpt">{cat.excerpt.zhs}</div>
+            <span class="cat-browse">{s.tabs.browse} <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- BACKGROUND TAB -->
+    <div class="panel" id="panel-background" style="display:none;">
+      <div class="background-layout">
+        <div class="background-prose">
+          <p>本官职汇编主要整合自清代学者洪饴孙的《三国职官表》，并参酌相关权威著作。</p>
+          <p>英译名之选取拟定仅为个人考量，亦参照了诸多中译英著作。</p>
+        </div>
+        <div class="background-rail">
+          <div class="background-rail-group">
+            <div class="background-rail-label">中文参考著作</div>
+            <div class="background-rail-item">吕宗力，《中国历代官制大辞典》</div>
+            <div class="background-rail-item">洪武雄，《蜀汉职官表蜀汉部分考释》</div>
+            <div class="background-rail-item">杨晨，《三国会要》</div>
+          </div>
+          <div class="background-rail-group">
+            <div class="background-rail-label">英文翻译著作</div>
+            <div class="background-rail-item">《汉代官名英译》（华盛顿大学）</div>
+            <div class="background-rail-item">张磊夫（Rafe de Crespigny），《汉代官制辞典》</div>
+            <div class="background-rail-item">鲁惟一（Michael Loewe），《秦、前汉与新莽时期官制辞典》</div>
+            <div class="background-rail-item">贺凯（Charles Hucker），《中国古代官名辞典》</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALARY TAB -->
+    <div class="panel" id="panel-salary" style="display:none;"></div>
+
+    <!-- GLOSSARY TAB -->
+    <div class="panel" id="panel-glossary" style="display:none;"></div>
+  </div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{strings.footer.quoteBySection?.translations ?? strings.footer.quote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<div id="officials-data" data-payload={officialsPayload} style="display:none;"></div>
+
+<script>
+  // @ts-nocheck
+  import { initSearch } from '../../../scripts/translations/search-module.js';
+  import { renderSalaryTab, renderGlossaryTab } from '../../../scripts/translations/tab-content-renderers.js';
+
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  const officialsDataEl = document.getElementById('officials-data');
+  const payload = officialsDataEl.dataset.payload || '';
+  const binaryStr = atob(payload);
+  const bytes = Uint8Array.from(binaryStr, c => c.charCodeAt(0));
+  const jsonStr = new TextDecoder('utf-8').decode(bytes);
+  const { allPositions, categories, lang } = JSON.parse(jsonStr || '{}');
+  const langKey = lang === 'zh-hant' ? 'zht' : lang === 'zh-hans' ? 'zhs' : 'en';
+
+  const tabSelect   = document.getElementById('tab-select');
+
+  const panels = {
+    browse:     document.getElementById('panel-browse'),
+    background: document.getElementById('panel-background'),
+    salary:     document.getElementById('panel-salary'),
+    glossary:   document.getElementById('panel-glossary'),
+  };
+
+  let activeTab = 'browse';
+  let salaryRendered = false;
+  let glossaryRendered = false;
+
+  function showTab(tab) {
+    activeTab = tab;
+    Object.values(panels).forEach(p => p.style.display = 'none');
+    panels[tab].style.display = 'block';
+    document.querySelectorAll('.tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.tab === tab);
+    });
+    tabSelect.value = tab;
+
+    if (tab === 'salary' && !salaryRendered) {
+      panels.salary.innerHTML = renderSalaryTab(langKey);
+      salaryRendered = true;
+    }
+    if (tab === 'glossary' && !glossaryRendered) {
+      panels.glossary.innerHTML = renderGlossaryTab(langKey);
+      glossaryRendered = true;
+    }
+  }
+
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => showTab(tab.dataset.tab));
+  });
+
+  tabSelect.addEventListener('change', () => showTab(tabSelect.value));
+
+  function goToResults(query) {
+    if (!query.trim()) return;
+    window.open(`${base}/zh-hans/translations/search?q=${encodeURIComponent(query.trim())}`, '_blank');
+  }
+
+  const { searchPositions } = initSearch({
+    allPositions,
+    categories,
+    lang,
+    onShowResults: goToResults,
+    onClearResults: () => {},
+  });
+
+  document.getElementById('search-btn').addEventListener('click', () => {
+    const query = document.getElementById('search-input').value;
+    goToResults(query);
+  });
+</script>
+
+<style is:global>
+.site { max-width: 100%; background: var(--color-bg); min-height: 100vh; display: flex; flex-direction: column;}
+
+.page-header { padding: 2rem 2rem 1.75rem; border-bottom: 0.5px solid var(--color-border);}
+.breadcrumb { display: flex; align-items: center; gap: 6px; margin-bottom: 0.75rem; }
+.bc-link { font-size: 15px; color: var(--color-text-tertiary); text-decoration: none; }
+.bc-link:hover { color: var(--color-text-secondary); }
+.bc-sep { font-size: 14px; color: var(--color-text-tertiary); }
+.bc-cur { font-size: 16px; color: var(--color-text-secondary); }
+.page-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 42px; font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+.page-sub { font-family: 'LXGW WenKai', serif; font-size: 20px; color: var(--color-text-secondary); }
+
+/* SEARCH */
+.search-bar {
+padding: 1.25rem 2rem;
+border-bottom: 0.5px solid var(--color-border);
+background:
+  linear-gradient(to bottom,  rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+.search-box {display: flex; gap: 10px; align-items: center;
+}
+.search-input {
+  flex: 1; background: rgba(255,255,255,0.015);
+  border: 0.5px solid rgba(196,154,86,0.20);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  color: var(--color-text-primary);
+  font-size: 15px;
+  outline: none;
+  font-family: 'LXGW WenKai', serif;
+  transition:
+   border-color .2s,
+   box-shadow .2s,
+   background .2s;
+}
+.search-input:focus{
+  border-color: rgba(196,154,86,.55);
+  box-shadow: 0 0 0 1px rgba(196,154,86,.15);
+  background: rgba(255,255,255,.02);
+}
+.search-btn {
+  background: linear-gradient( to bottom, #8f6b34, #725426);
+  color: #f2eadc;
+  border: 1px solid rgba(209,173,98,.25);
+  border-radius: var(--radius-md);
+  padding: 11px 22px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  cursor: pointer;
+  transition: .2s;
+}
+.search-btn:hover { background:linear-gradient(to bottom, #a47b3f, #82602d );
+
+    transform: translateY(-1px); }
+.search-clear { background: var(--color-bg); color: var(--color-text-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 10px 14px; font-size: 15px; cursor: pointer; }
+
+/* SEARCH DROPDOWN */
+.search-dropdown { position: relative; margin-top: 6px; background: var(--color-bg); border: 0.5px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; }
+.dropdown-warning { font-size: 15px; color: darkkhaki; padding: 8px 14px; border-bottom: 0.5px solid var(--color-border); background: var(--color-bg-secondary); }
+.dropdown-list { display: flex; flex-direction: column; max-height: 360px; overflow-y: auto; }
+.dropdown-item { display: flex; align-items: center; gap: 10px; padding: 9px 14px; text-decoration: none; border-bottom: 0.5px solid var(--color-border); transition: background 0.15s; }
+.dropdown-item:last-child { border-bottom: none; }
+.dropdown-item:hover { background: var(--color-bg-secondary); }
+.dropdown-item-grade { width: 25px; height: 25px; border-radius: 50%; background: var(--color-bg-secondary); color: var(--color-text-secondary); font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.dropdown-item-grade-empty { color: var(--color-text-tertiary); }
+.dropdown-item-main { display: flex; align-items: baseline; gap: 8px; min-width: 0; flex: 1; }
+.dropdown-item-name { font-size: 17px; font-weight: 500; color: var(--color-text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dropdown-item-zh { font-size: 15px; color: var(--color-text-tertiary); white-space: nowrap; flex-shrink: 0; }
+.dropdown-item-cat { font-size: 15px; padding: 2px 8px; border-radius: 20px; background: var(--color-bg-secondary); color: var(--color-text-tertiary); flex-shrink: 0; }
+.dropdown-empty { padding: 16px; font-size: 13px; color: var(--color-text-tertiary); text-align: center; }
+.dropdown-more { width: 100%; text-align: center; padding: 9px 14px; font-size: 16px; color: var(--map-teal-text); background: var(--color-bg-secondary); border: none; border-top: 0.5px solid var(--color-border); cursor: pointer; }
+.dropdown-more:hover { opacity: 0.85; }
+
+/* TABS */
+.tabs { display: flex; border-bottom: 0.5px solid var(--color-border); }
+.tab { font-size: 19px; padding: 10px 16px; color: var(--color-text-secondary); cursor: pointer; border-bottom: 2px solid transparent; background: none; border-top: none; border-left: none; border-right: none; font-family: 'LXGW WenKai', serif; transition: color 0.15s; }
+.tab:hover { color: var(--color-text-primary); }
+.tab.active { color: var(--color-text-primary); border-bottom-color: var(--color-text-primary); }
+.tab.faded { color: var(--color-text-tertiary); opacity: 0.4; pointer-events: none; }
+.tab-dropdown { display: none; }
+
+/* PANELS */
+.panel { padding: 1.5rem 2rem}
+.panels-wrapper { flex: 1}
+
+/* CATEGORY GRID */
+.cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+
+.cat-card {
+  background: var(--color-bg-secondary);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 200px;
+  transition: background 0.15s, transform 0.15s;
+}
+.cat-card:hover { background: #1a1a1a; transform: translateY(-1px); }
+
+.cat-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cat-numeral {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 29px;
+  font-weight: 600;
+  color: var(--archive-gold-soft, #d0aa6b);
+}
+
+.cat-seal {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.cat-divider {
+  width: 28px;
+  height: 1px;
+  background: var(--color-border);
+  margin: 4px 0 1rem;
+}
+
+.cat-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 35px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+}
+
+.cat-excerpt {
+  font-family: 'LXGW WenKai', serif;
+  font-size: 18px;
+  color: var(--color-text-tertiary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.cat-browse {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--archive-gold-soft, #d0aa6b);
+  margin-top: 1rem;
+}
+.cat-browse i { font-size: 18px; }
+
+/* BACKGROUND TAB — prose + citation rail */
+.background-layout { display: flex; flex-direction: column; gap: 1.5rem; max-width: 1200px; }
+.background-prose p { font-family: 'LXGW WenKai', serif; font-size: 17px; line-height: 1.75; color: var(--color-text-secondary); margin: 0 0 1rem; }
+.background-prose p:last-child { margin-bottom: 0; }
+.background-rail { border-top: 0.5px solid var(--color-border); padding-top: 1rem; }
+.background-rail-group { margin-bottom: 1rem; }
+.background-rail-group:last-child { margin-bottom: 0; }
+.background-rail-label { font-size: 18px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-tertiary); margin-bottom: 8px; }
+.background-rail-item { font-family: 'LXGW WenKai', serif; font-size: 16px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 6px; }
+.background-rail-item:last-child { margin-bottom: 0; }
+
+@media (min-width: 900px) {
+  .background-layout { flex-direction: row; align-items: flex-start; max-width: none; }
+  .background-prose { flex: 1; max-width: 920px; }
+  .background-rail { border-top: none; border-left: 0.5px solid var(--color-border); padding-top: 0; padding-left: 1.5rem; max-width: 600px; flex-shrink: 0; }
+}
+
+/* SALARY TAB */
+.salary-tab { max-width: 100%; }
+.salary-title { font-size: 28px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.5rem; }
+.salary-intro { font-size: 17px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1rem; }
+.salary-legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.salary-footnoted-sample { background: var(--color-text-secondary); text-decoration: none; }
+.salary-estimated-sample { background: var(--map-teal-text); }
+.salary-alternate-sample { background: var(--trans-purple-text); }
+
+.salary-legend-mobile { display: none; }
+.salary-legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 15px; color: var(--color-text-secondary); padding: 8px 12px; background: var(--color-bg-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); }
+.salary-legend-item { display: inline-flex; align-items: center; gap: 5px; }
+.salary-footnoted-sample { text-decoration: underline; }
+.salary-estimated-sample { color: var(--map-teal-text); }
+.salary-alternate-sample { color: var(--trans-purple-text); }
+
+.salary-table-wrap { display: block; overflow-x: auto; }
+.salary-table { width: 100%; border-collapse: collapse; font-size: 17px; }
+.salary-table th, .salary-table td { padding: 8px 10px; border-bottom: 0.5px solid var(--color-border); text-align: left; white-space: nowrap; }
+.salary-table th { background: var(--color-bg-secondary); font-weight: 500; position: sticky; top: 0; z-index: 2; white-space: normal; vertical-align: top; }
+.salary-th-label { display: block; }
+.salary-th-sub { display: block; font-weight: 400; font-size: 16px; color: var(--color-text-tertiary); margin-top: 2px; white-space: nowrap; }
+.salary-table th sup { font-weight: 400; letter-spacing: 0.5px; }
+.salary-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+
+.salary-cards { display: none; }
+.salary-card { border: 0.5px solid var(--color-border); border-radius: var(--radius-lg); padding: 12px 14px; margin-bottom: 8px; }
+.salary-card-rank { font-weight: 500; font-size: 16px; margin-bottom: 8px; }
+.salary-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 14px; }
+.salary-card-label { color: var(--color-text-tertiary); margin-bottom: 2px; }
+
+.salary-footnotes { margin-top: 1.25rem; font-size: 15px; color: var(--color-text-tertiary); line-height: 1.7; }
+.salary-footnote-line { margin-bottom: 4px; }
+
+@media (max-width: 800px) {
+  .salary-legend-mobile { display: block; margin-bottom: 1rem; position: sticky; top: 70px; z-index: 5; }
+  .salary-table-wrap { display: none; }
+  .salary-cards { display: block; }
+}
+
+/* GLOSSARY TAB */
+.glossary-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.glossary-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.glossary-aside {
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.glossary-info {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  padding: 0.875rem 1rem;
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-secondary);
+}
+.glossary-info i { font-size: 16px; color: var(--archive-gold-soft, #d0aa6b); flex-shrink: 0; margin-top: 2px; }
+.glossary-info p { margin: 0; font-family: 'LXGW WenKai', serif; }
+
+.glossary-toc-label {
+  font-size: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.75rem;
+}
+.glossary-toc-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.toc-group { margin-bottom: 4px; }
+.toc-letter {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--archive-gold-soft, #d0aa6b);
+  margin-top: 8px;
+}
+.toc-link {
+  display: block;
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 2px 0;
+}
+.toc-link:hover { color: var(--color-text-primary); }
+.glossary-toc-top {
+  font-size: 16px;
+  color: var(--archive-gold-soft, #d0aa6b);
+  text-decoration: none;
+  border-top: 0.5px solid var(--color-border);
+  padding-top: 0.75rem;
+  margin-top: 0.25rem;
+}
+.glossary-toc-top:hover { text-decoration: underline; }
+.glossary-toc-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 50vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.glossary-toc-nav::-webkit-scrollbar {
+  width: 6px;
+}
+.glossary-toc-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+.glossary-toc-nav::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}
+.glossary-toc-nav::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+.glossary-section { break-inside: avoid; }
+.glossary-letter { font-size: 20px; font-weight: 500; color: var(--archive-gold-soft, #d0aa6b); border-bottom: 0.5px solid var(--color-border); padding-bottom: 4px; margin-bottom: 10px; }
+.glossary-entry { margin-bottom: 40px; }
+
+.glossary-term { font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 500; color: var(--color-text-primary); }
+.glossary-term-secondary { font-size: 18px; color: var(--color-text-secondary); margin-left: 0; }
+.glossary-pinyin { font-size: 15px; color: var(--color-text-tertiary); margin-left: 0; }
+.glossary-def { font-family: 'LXGW WenKai', serif; font-size: 17px; color: var(--color-text-secondary); line-height: 1.6; margin-top: 2px; }
+
+.glossary-entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.glossary-entry-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.glossary-seealso {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 6px 10px;
+}
+
+.glossary-seealso-label {
+  font-size: 13.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-tertiary);
+  flex-shrink: 0;
+}
+
+.glossary-seealso-link {
+  font-size: 14px;
+  color: var(--archive-gold-soft, #d0aa6b);
+  text-decoration: none;
+}
+.glossary-seealso-link:hover { text-decoration: underline; }
+.glossary-seealso-link:not(:last-child)::after {
+  content: '·';
+  margin-left: 8px;
+  color: var(--color-text-tertiary);
+}
+
+@media (max-width: 900px) {
+  .glossary-layout {
+    grid-template-columns: 1fr;
+  }
+  .glossary-aside {
+    order: -1;
+    position: static;
+  }
+  .glossary-main {
+    grid-template-columns: 1fr;
+  }
+  .glossary-toc-nav { max-height: 240px; }
+}
+
+/* FOOTER */
+.site-footer { border-top: 0.5px solid var(--color-border); padding: 0.875rem 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--color-bg-secondary); }
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote { font-family: 'LXGW WenKai', serif; font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; white-space: pre-line; }
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .page-header { padding: 1.5rem 1rem; }
+  .search-bar { padding: 0.875rem 1rem; }
+  .panel { padding: 1rem; }
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .cat-card { min-height: 220px; padding: 1.25rem 1.5rem; }
+  .cat-name { font-size: 24px; }
+  .tabs { display: none; }
+  .tab-dropdown { display: block; padding: 0.75rem 1rem; border-bottom: 0.5px solid var(--color-border); }
+  .tab-select { width: 100%; background: var(--color-bg-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 8px 12px; color: var(--color-text-primary); font-size: 16px; font-family: 'LXGW WenKai', serif; }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+}
+@media (max-width: 500px) {
+  .cat-grid { grid-template-columns: 1fr; }
+  .cat-card { min-height: auto; }
+}
+</style>

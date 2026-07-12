@@ -1,0 +1,3699 @@
+{
+  "pageNotes":
+  [
+    {
+      "zhs":"自东汉中叶，三公职渐轻而尚书权渐重，尚书既由宫中近侍转为总揽机要，参预外朝政事，则不复理内勤职务。皇帝为制衡枢机、亲裁要务，乃擢宫中近臣，使之评省尚书奏事、协理文书批答，即后世之'门下省'。亦有另设机密之署，以分尚书部分要权，是为后世之'中书省'。",
+      "zht":"自東漢中葉，三公職漸輕而尚書權漸重，尚書既由宮中近侍轉為總攬機要，參預外朝政事，則不復理內勤職務。皇帝為制衡樞機、親裁要務，乃擢宮中近臣，使之評省尚書奏事、協理文書批答，即後世之「門下省」。亦有另設機密之署，以分尚書部分要權，是為後世之「中書省」。",
+      "en":"From the mid-Eastern (Later) Han onward, the authority of the Three Excellencies gradually waned, while that of the Imperial Secretariats steadily increased. Since the Imperial Secretariats shifted from private attendants of the emperor to officials who managed the core affairs of government and participated in outside court politics, they were no longer involved in internal palace duties. To counterbalance this shift of power and to retain direct control over critical decisions, the emperor selected close palace attendants to review memorials submitted by the Imperial Secretariats and to assist in drafting and issuing responses, an arrangement that later evolved into the Chancellery Department. In some cases, separate confidential offices were also established to take over certain key duties from the Imperial Secretariats, laying the foundations for what would later be known as the Palace Secretariat Department."}
+  ],
+
+  "categories": [
+    {
+      "id": "chancellery",
+      "label": {
+        "zht": "門下",
+        "zhs": "门下",
+        "en": "Chancellery"
+      },
+      "categoryNotes": [
+        {
+          "zht":"漢時，「門下」本為泛稱，凡宮中執掌內廷勤務之官吏，皆可冠以此名。及至魏晉，其義轉狹，專指禁中殿中近侍之職。",
+          "zhs":"汉时，'门下'本为泛称，凡宫中执掌内廷勤务之官吏，皆可冠以此名。及至魏晋，其义转狭，专指禁中殿中近侍之职。",
+          "en":"During the Han, 門下 menxia (“At/Within the Gates”) was originally a broad, generic term, applied to officials responsible for any court duties within the palace. By the Wei-Jin period, however, its meaning had narrowed, referring specifically to close attendants serving in the inner halls of the imperial palace."
+        },
+        {
+          "zht": "亦稱門下省。門下即黃門之下，其署設於宮禁中，其官得出入宮禁。高官加門下者，能出入殿省，入宮議政。",
+          "zhs": "亦称门下省。门下即黄门之下，其署设于宫禁中，其官得出入宫禁。高官加门下者，能出入殿省，入宫议政。",
+          "en": "Also known as the Chancellery Department, the 門下 (Menxia, literally “At/Within the Gates”) refers to officials historically connected with the 黃門 (Huangmen, “Yellow Gate”). These officials operated within the imperial palace complex and were granted the privilege of entering and exiting the palace freely. High-ranking officals who were conferred additional Chancellery titles were likewise permitted to pass through palace gates and attend imperial halls to participate directly in discussions of state affairs."
+        },
+        {
+          "zht": "魏、西晉門下設侍中省、散騎省。",
+          "zhs": "魏、西晋门下设侍中省、散骑省。",
+          "en": "The Wei and Western Jin Chancellery had Palace Attendant Department and Cavalier Department."
+        }
+      ],
+      "sections": [
+        {
+          "label": {
+            "zht": "侍中省",
+            "zhs": "侍中省",
+            "en": "Palace Attendant Department"
+          },
+          "sectionNotes": null,
+          "positions": [
+            {
+              "id": "chancellery-001",
+              "displayName": {
+                "zht": "侍中",
+                "zhs": "侍中",
+                "en": "Palace Attendant"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 3,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "侍中",
+                    "zhs": "侍中",
+                    "en": "Palace Attendant"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "侍中",
+                    "zhs": "侍中",
+                    "en": "Palace Attendant"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "侍中",
+                    "zhs": "侍中",
+                    "en": "Palace Attendant"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "掌儐贊, 備切問近對拾遺補闕, 出征則以行臺從"
+                ],
+                "zhs": [
+                  "掌傧赞, 备切问近对拾遗补阙, 出征则以行台从"
+                ],
+                "en": [
+                  "Assist with ceremonial protocol and provide close counsel, respond to imperial queries and correct or supplement official documents",
+                  "When going on a military campaign, accompany as the Acting Terrace"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第三品，比二千石，四人，別加官者非數"
+                ],
+                "zhs": [
+                  "第三品，比二千石，四人，别加官者非数"
+                ],
+                "en": [
+                  "Third grade, Equivalent to 2000 shi, 4 people, additionally given titles were not limited"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "大駕出，則次直侍中護駕，正直者侍中負璽陪乘",
+                  "zhs": "大驾出，则次直侍中护驾，正直者侍中负玺陪乘",
+                  "en": "When the emperor's grand entourage went out, the deputy duty attendants protected the imperial carriage, while the principal duty attendants carried the imperial seal and accompanied the emperor in the same carriage"
+                },
+                {
+                  "zht": "不帶劍，皆騎從御登殿，與散騎侍郎對挾帝，侍中居左，常侍居右",
+                  "zhs": "不带剑，皆骑从御登殿，与散骑侍郎对挟帝，侍中居左，常侍居右",
+                  "en": "They did not carry swords but rode alongside the emperor and accompanied him to the palace hall. Together with the Cavalier Regular Attendants, they stood flanking the emperor, with the Palace Attendants positioned on the left and the Regular Attendants on the right"
+                },
+                {
+                  "zht": "功高者為祭酒，舊遷列曹尚書，美遷中領護﹑吏部尚書",
+                  "zhs": "功高者为祭酒，旧迁列曹尚书，美迁中领护﹑吏部尚书",
+                  "en": "Palace Attendants with high accomplishments were Libationers. Conventional promotions are the various sections in the Imperial Secretariat, whereas exceptional promotions would be Commander of the Central Army, Protector of the Central Army or the Imperial Secretariat of the Personnel Division"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-002",
+              "displayName": {
+                "zht": "侍中祭酒",
+                "zhs": "侍中祭酒",
+                "en": "Palace Attendant Libationer"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": null,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "侍中祭酒",
+                    "zhs": "侍中祭酒",
+                    "en": "Palace Attendant Libationer"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": null,
+              "rank": null,
+                            "notes": [
+                {
+                  "zht": "大駕出，則次直侍中護駕，正直者侍中負璽陪乘",
+                  "zhs": "大驾出，则次直侍中护驾，正直者侍中负玺陪乘",
+                  "en": "When the emperor's grand entourage went out, the deputy duty attendants protected the imperial carriage, while the principal duty attendants carried the imperial seal and accompanied the emperor in the same carriage"
+                },
+                {
+                  "zht": "不帶劍，皆騎從御登殿，與散騎侍郎對挾帝，侍中居左，常侍居右",
+                  "zhs": "不带剑，皆骑从御登殿，与散骑侍郎对挟帝，侍中居左，常侍居右",
+                  "en": "They did not carry swords but rode alongside the emperor and accompanied him to the palace hall. Together with the Cavalier Regular Attendants, they stood flanking the emperor, with the Palace Attendants positioned on the left and the Regular Attendants on the right"
+                },
+                {
+                  "zht": "功高者為祭酒，舊遷列曹尚書，美遷中領護﹑吏部尚書",
+                  "zhs": "功高者为祭酒，旧迁列曹尚书，美迁中领护﹑吏部尚书",
+                  "en": "Palace Attendants with high accomplishments were Libationers. Conventional promotions are the various sections in the Imperial Secretariat, whereas exceptional promotions would be Commander of the Central Army, Protector of the Central Army or the Imperial Secretariat of the Personnel Division"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": {
+            "zht": "黃門",
+            "zhs": "黄门",
+            "en": "Yellow Gates"
+          },
+          "sectionNotes": [{
+            "zht":"案諸葛亮出師表、董允傳，當時宦官黃門屬侍中。魏晉以來，侍中之職，轉復優重，二國疑皆與蜀相同。",
+            "zhs":"案诸葛亮出师表、董允传，当时宦官黄门属侍中。魏晋以来，侍中之职，转复优重，二国疑皆与蜀相同。",
+            "en":"According to Zhuge Liang's Chushibiao and the Biography of Dong Yun, at that time the eunuchs of the Yellow Gates were subordinate to the Palace Attendants. From the Wei and Jin onward, th Palace Attendants gained significance, and it is suspected that in this respect Shu was the same as both Wei and Wu."
+          }],
+          "positions": [
+            {
+              "id": "chancellery-003",
+              "displayName": {
+                "zht": "給事黃門侍郎",
+                "zhs": "给事黄门侍郎",
+                "en": "Attendant Gentleman within the Yellow Gates"
+              },
+              "hasMultipleNames": true,
+              "gradeNum": 5,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "給事黃門侍郎",
+                    "zhs": "给事黄门侍郎",
+                    "en": "Attendant Gentleman within the Yellow Gates"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "給事黃門侍郎",
+                    "zhs": "给事黄门侍郎",
+                    "en": "Attendant Gentleman within the Yellow Gates"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "黃門郎",
+                    "zhs": "黄门郎",
+                    "en": "Gentleman within the Yellow Gates"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "掌侍從左右，關通中外；近侍帷幄，省尚書事"
+                ],
+                "zhs": [
+                  "掌侍从左右，关通中外；近侍帷幄，省尚书事"
+                ],
+                "en": [
+                  "Attend the emperor closely, serving as a conduit between the inner palace and the outside world. Also oversee palace affairs and handle reports submitted by the State Affairs Department"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第五品，六百石，四人"
+                ],
+                "zhs": [
+                  "第五品，六百石，四人"
+                ],
+                "en": [
+                  "Fifth grade, 600 shi, 4 people"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "與侍中俱出入禁中,管門下衆事",
+                  "zhs": "与侍中俱出入禁中,管门下众事",
+                  "en": "Together with the Palace Attendants, they enter and exit the restricted palace grounds, managing all matters within the gates"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-004",
+              "displayName": {
+                "zht": "黃門宂從僕射",
+                "zhs": "黄门宂从仆射",
+                "en": "Supervisor of the Auxiliary Yellow Gates Retinue"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 6,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "黃門宂從僕射",
+                    "zhs": "黄门宂从仆射",
+                    "en": "Supervisor of the Auxiliary Yellow Gates Retinue"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "主中黃門宂從"
+                ],
+                "zhs": [
+                  "主中黄门宂从"
+                ],
+                "en": [
+                  "In charge of the Yellow Gates Retinue"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第六品，六百石，一人"
+                ],
+                "zhs": [
+                  "第六品，六百石，一人"
+                ],
+                "en": [
+                  "Sixth grade, 600 shi, 1 person"
+                ]
+              },
+              "notes": null
+            },
+            {
+              "id": "chancellery-005",
+              "displayName": {
+                "zht": "中黃門宂從",
+                "zhs": "中黄门宂从",
+                "en": "Auxiliary Yellow Gates Retinue"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": null,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "中黃門宂從",
+                    "zhs": "中黄门宂从",
+                    "en": "Auxiliary Yellow Gates Retinue"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "居則宿衞直，守門戶，出則騎從夾乘輿車"
+                ],
+                "zhs": [
+                  "居则宿衞直，守门户，出则骑从夹乘舆车"
+                ],
+                "en": [
+                  "In the palace stand guard at night and watch over the gates;  outside, ride alongside and flank the imperial carriage"
+                ]
+              },
+              "rank": null,
+              "notes": null
+            },
+            {
+              "id": "chancellery-006",
+              "displayName": {
+                "zht": "小黃門",
+                "zhs": "小黄门",
+                "en": "Junior Yellow Gates Attendant"
+              },
+              "hasMultipleNames": true,
+              "gradeNum": 7,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "小黃門",
+                    "zhs": "小黄门",
+                    "en": "Junior Yellow Gates Attendant"
+                  },
+                  {
+                    "zht": "黃門",
+                    "zhs": "黄门",
+                    "en": ""
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "中使",
+                    "zhs": "中使",
+                    "en": "Palace Commissioner"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "掌侍左右，受尚書事，關通中外"
+                ],
+                "zhs": [
+                  "掌侍左右，受尚书事，关通中外"
+                ],
+                "en": [
+                  "Attend the emperor closely, receive matters from the State Affairs Department, and facilitate communication between the inner palace and the outside world"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第七品，六百石，無員"
+                ],
+                "zhs": [
+                  "第七品，六百石，无员"
+                ],
+                "en": [
+                  "Seventh grade, 600 shi, not fixed"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "受中宮已下衆事；諸公主及王太妃等有疾苦，則使問之",
+                  "zhs": "受中宫已下众事；诸公主及王太妃等有疾苦，则使问之",
+                  "en": "Also attend to various affairs within the inner palace; If princesses or royal consorts fall ill or are in distress, they are sent to pay visits and inquire after their well-being"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-007",
+              "displayName": {
+                "zht": "黃門署長",
+                "zhs": "黄门署长",
+                "en": "Chief of the Yellow Gates Bureau"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 7,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "黃門署長",
+                    "zhs": "黄门署长",
+                    "en": "Chief of the Yellow Gates Bureau"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "各主中宮別處"
+                ],
+                "zhs": [
+                  "各主中宫别处"
+                ],
+                "en": [
+                  "Responsible for the affairs of designated places in the central palace"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第七品，四百石，各一人"
+                ],
+                "zhs": [
+                  "第七品，四百石，各一人"
+                ],
+                "en": [
+                  "Seventh grade, 400 shi, 1 person each"
+                ]
+              },
+              "notes": null
+            },
+            {
+              "id": "chancellery-008",
+              "displayName": {
+                "zht": "黃門署丞",
+                "zhs": "黄门署丞",
+                "en": "Assistant of the Yellow Gates Bureau"
+              },
+              "hasMultipleNames": true,
+              "gradeNum": 7,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "黃門署丞",
+                    "zhs": "黄门署丞",
+                    "en": "Assistant of the Yellow Gates Bureau"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "黃門丞",
+                    "zhs": "黄门丞",
+                    "en": "Assistant of the Yellow Gates"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "主出入從"
+                ],
+                "zhs": [
+                  "主出入从"
+                ],
+                "en": [
+                  "Responsible for accompanying the emperor in and out"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第七品，一人"
+                ],
+                "zhs": [
+                  "第七品，一人"
+                ],
+                "en": [
+                  "Seventh grade, 1 person"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "此官與黃門令俱七品，則非黃門令之丞可知",
+                  "zhs": "此官与黄门令俱七品，则非黄门令之丞可知",
+                  "en": "This position and the Chief of the Yellow Gates were both seventh grade, then it is known that this position was not assistant to the Chief"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-009",
+              "displayName": {
+                "zht": "中黃門",
+                "zhs": "中黄门",
+                "en": "Inner Yellow Gates Attendant"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 7,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "中黃門",
+                    "zhs": "中黄门",
+                    "en": "Inner Yellow Gates Attendant"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "中黃門",
+                    "zhs": "中黄门",
+                    "en": "Inner Yellow Gates Attendant"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "主給事禁中"
+                ],
+                "zhs": [
+                  "主给事禁中"
+                ],
+                "en": [
+                  "Responsible of providing services within the palace"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第七品，比三百石，無員"
+                ],
+                "zhs": [
+                  "第七品，比三百石，无员"
+                ],
+                "en": [
+                  "Seventh grade, Equivalent to 300 shi, not fixed"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "吴諸王亦有黃門",
+                  "zhs": "吴诸王亦有黄门",
+                  "en": "The various princes of Wu also had their own Yellow Gate Attendants"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-010",
+              "displayName": {
+                "zht": "黃門從官",
+                "zhs": "黄门从官",
+                "en": "Yellow Gates Retinue"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 8,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "黃門從官",
+                    "zhs": "黄门从官",
+                    "en": "Yellow Gates Retinue"
+                  }
+                ],
+                "shu": null,
+                "wu": null
+              },
+              "jobscope": null,
+              "rank": {
+                "zht": [
+                  "第八品，員數無考"
+                ],
+                "zhs": [
+                  "第八品，员数无考"
+                ],
+                "en": [
+                  "Eighth grade, numbers  unknown"
+                ]
+              },
+              "notes": null
+            },
+            {
+              "id": "chancellery-011",
+              "displayName": {
+                "zht": "黃門都監",
+                "zhs": "黄门都监",
+                "en": "Chief Superintendent of the Yellow Gates"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": null,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "黃門都監",
+                    "zhs": "黄门都监",
+                    "en": "Chief Superintendent of the Yellow Gates"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": null,
+              "rank": {
+                "zht": [
+                  "無考"
+                ],
+                "zhs": [
+                  "无考"
+                ],
+                "en": [
+                  "Unknown"
+                ]
+              },
+              "notes": null
+            },
+            {
+              "id": "chancellery-012",
+              "displayName": {
+                "zht": "黃門監",
+                "zhs": "黄门监",
+                "en": "Superintendent of the Yellow Gates"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": null,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "黃門監",
+                    "zhs": "黄门监",
+                    "en": "Superintendent of the Yellow Gates"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": null,
+              "rank": {
+                "zht": [
+                  "無考"
+                ],
+                "zhs": [
+                  "无考"
+                ],
+                "en": [
+                  "Unknown"
+                ]
+              },
+              "notes": null
+            }
+          ]
+        },
+        {
+          "label": {
+            "zht": "散騎省",
+            "zhs": "散骑省",
+            "en": "Cavalier Department"
+          },
+          "sectionNotes": null,
+          "positions": [
+            {
+              "id": "chancellery-013",
+              "displayName": {
+                "zht": "散騎常侍",
+                "zhs": "散骑常侍",
+                "en": "Cavalier Regular Attendant"
+              },
+              "hasMultipleNames": true,
+              "gradeNum": 3,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "散騎常侍",
+                    "zhs": "散骑常侍",
+                    "en": "Cavalier Regular Attendant"
+                  }
+                ],
+                "shu": null,
+                "wu": [
+                  {
+                    "zht": "散騎常侍",
+                    "zhs": "散骑常侍",
+                    "en": "Cavalier Regular Attendant"
+                  },
+                  {
+                    "zht": "散騎中常侍",
+                    "zhs": "散骑中常侍",
+                    "en": "Cavalier Regular Palace Attendant"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "平尚書奏事；典章表詔命手筆之事"
+                ],
+                "zhs": [
+                  "平尚书奏事；典章表诏命手笔之事"
+                ],
+                "en": [
+                  "Review and adjudicate submissions from the State Affairs Department; draft official documents such as regulations, submissions, edicts, and decrees"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "(魏)第三品，比二千石，四人 (吳) 無考"
+                ],
+                "zhs": [
+                  "(魏)第三品，比二千石，四人 (吴) 无考"
+                ],
+                "en": [
+                  "(Wei) Third grade, Equivalent to 2000 shi, 4 people (Wu) Unknown"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "秦置散騎，骑而散從，故名；文帝合散騎中常侍為一官",
+                  "zhs": "秦置散骑，骑而散从，故名；文帝合散骑中常侍为一官",
+                  "en": "Qin established the Cavaliers. They followed the emperor as he travelled, scattered and riding on horsebacks while following, hence the name. Emperor Wen merged Cavaliers and Regular Palace Attendants as one position"
+                },
+                {
+                  "zht": "貂璫插右，出入侍從，與侍中﹑黃門侍郎共平尚書奏事",
+                  "zhs": "貂珰插右，出入侍从，与侍中﹑黄门侍郎共平尚书奏事",
+                  "en": "They wore marten ornaments on their right side and attended the emperor in and out of the palace, together with the Palace Attendants and Attendant Gentleman within the Yellow Gates, they reviewed and adjudicated submissions from the State Affairs Department"
+                },
+                {
+                  "zht": "與上談議，不典事，後遂以為加官；久次者為祭酒",
+                  "zhs": "与上谈议，不典事，后遂以为加官；久次者为祭酒",
+                  "en": "They engaged in discussions with the emperor without managing administrative affairs, thus later this role became an honorary title Those who served for a long time in this position becames Libationers"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-014",
+              "displayName": {
+                "zht": "祭酒散騎常侍",
+                "zhs": "祭酒散骑常侍",
+                "en": "Cavalier Regular Attendant Libationer"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": null,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "祭酒散騎常侍",
+                    "zhs": "祭酒散骑常侍",
+                    "en": "Cavalier Regular Attendant Libationer"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": null,
+              "rank": null,
+              "notes": [
+                {
+                  "zht": "秦置散騎，骑而散從，故名；文帝合散騎中常侍為一官",
+                  "zhs": "秦置散骑，骑而散从，故名；文帝合散骑中常侍为一官",
+                  "en": "Qin established the Cavaliers. They followed the emperor as he travelled, scattered and riding on horsebacks while following, hence the name. Emperor Wen merged Cavaliers and Regular Palace Attendants as one position"
+                },
+                {
+                  "zht": "貂璫插右，出入侍從，與侍中﹑黃門侍郎共平尚書奏事",
+                  "zhs": "貂珰插右，出入侍从，与侍中﹑黄门侍郎共平尚书奏事",
+                  "en": "They wore marten ornaments on their right side and attended the emperor in and out of the palace, together with the Palace Attendants and Attendant Gentleman within the Yellow Gates, they reviewed and adjudicated submissions from the State Affairs Department"
+                },
+                {
+                  "zht": "與上談議，不典事，後遂以為加官；久次者為祭酒",
+                  "zhs": "与上谈议，不典事，后遂以为加官；久次者为祭酒",
+                  "en": "They engaged in discussions with the emperor without managing administrative affairs, thus later this role became an honorary title Those who served for a long time in this position becames Libationers"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-015",
+              "displayName": {
+                "zht": "員外散騎常侍",
+                "zhs": "员外散骑常侍",
+                "en": "Supernumerary Cavalier Regular Attendant"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": null,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "員外散騎常侍",
+                    "zhs": "员外散骑常侍",
+                    "en": "Supernumerary Cavalier Regular Attendant"
+                  }
+                ],
+                "shu": null,
+                "wu": null
+              },
+              "jobscope": null,
+              "rank": {
+                "zht": [
+                  "無員"
+                ],
+                "zhs": [
+                  "无员"
+                ],
+                "en": [
+                  "Not fixed"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "魏末，是官又有在員外者，因名",
+                  "zhs": "魏末，是官又有在员外者，因名",
+                  "en": "At the end of Wei, there were Cavalier Regular Attendants outside of the formal allocations, hence the name"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-016",
+              "displayName": {
+                "zht": "散騎侍郎",
+                "zhs": "散骑侍郎",
+                "en": "Cavalier Attendant Gentleman"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 5,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "散騎侍郎",
+                    "zhs": "散骑侍郎",
+                    "en": "Cavalier Attendant Gentleman"
+                  }
+                ],
+                "shu": null,
+                "wu": [
+                  {
+                    "zht": "散騎侍郎",
+                    "zhs": "散骑侍郎",
+                    "en": "Cavalier Attendant Gentleman"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "平尚書奏事"
+                ],
+                "zhs": [
+                  "平尚书奏事"
+                ],
+                "en": [
+                  "Review and adjudicate submissions from the State Affairs Department"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第五品，六百石，四人"
+                ],
+                "zhs": [
+                  "第五品，六百石，四人"
+                ],
+                "en": [
+                  "Fifth grade, 600 shi, 4 people"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "與侍中﹑黃門侍郎共平尚書奏事",
+                  "zhs": "与侍中﹑黄门侍郎共平尚书奏事",
+                  "en": "Together with the Palace Attendants and Attendant Gentleman within the Yellow Gates, they reviewed and adjudicated submissions from the State Affairs Department"
+                }
+              ]
+            },
+            {
+              "id": "chancellery-017",
+              "displayName": {
+                "zht": "中常侍",
+                "zhs": "中常侍",
+                "en": "Regular Palace Attendant"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 3,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "中常侍",
+                    "zhs": "中常侍",
+                    "en": "Regular Palace Attendant"
+                  }
+                ],
+                "shu": [
+                  {
+                    "zht": "中常侍",
+                    "zhs": "中常侍",
+                    "en": "Regular Palace Attendant"
+                  }
+                ],
+                "wu": [
+                  {
+                    "zht": "?",
+                    "zhs": "?",
+                    "en": "?"
+                  }
+                ]
+              },
+              "jobscope": {
+                "zht": [
+                  "掌侍左右，從入內宮，贊導內衆事，顧問應對給事"
+                ],
+                "zhs": [
+                  "掌侍左右，从入内宫，赞导内众事，顾问应对给事"
+                ],
+                "en": [
+                  "Attend the emperor closely, accompanying him into the inner palace. Assist in managing internal affairs, respond to inquiries, and provide service as needed"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第三品，比二千石，無員"
+                ],
+                "zhs": [
+                  "第三品，比二千石，无员"
+                ],
+                "en": [
+                  "Third grade, Equivalent to 2000 shi, not fixed"
+                ]
+              },
+              "notes": null
+            },
+            {
+              "id": "chancellery-018",
+              "displayName": {
+                "zht": "給事中",
+                "zhs": "给事中",
+                "en": "Palace Aide"
+              },
+              "hasMultipleNames": false,
+              "gradeNum": 5,
+              "tier": "secondary",
+              "name": {
+                "wei": [
+                  {
+                    "zht": "給事中",
+                    "zhs": "给事中",
+                    "en": "Palace Aide"
+                  }
+                ],
+                "shu": null,
+                "wu": null
+              },
+              "jobscope": {
+                "zht": [
+                  "掌顧問應對，位次中常侍"
+                ],
+                "zhs": [
+                  "掌顾问应对，位次中常侍"
+                ],
+                "en": [
+                  "Respond to inquiries and provide services, ranked second to the Regular Palace Attendant"
+                ]
+              },
+              "rank": {
+                "zht": [
+                  "第五品，無員"
+                ],
+                "zhs": [
+                  "第五品，无员"
+                ],
+                "en": [
+                  "Fifth grade, not fixed"
+                ]
+              },
+              "notes": [
+                {
+                  "zht": "或為加官，或為正，給事黃門侍郎位次之",
+                  "zhs": "或为加官，或为正，给事黄门侍郎位次之",
+                  "en": "Could be either an additional conferment or a regular appointment, and ranked above the Attendant Gentleman of the Yellow Gates"
+                },
+                {
+                  "zht": "魏晉所加或三公、將軍等",
+                  "zhs": "魏晋所加或三公、将军等",
+                  "en": "In the Wei and Jin, those conferred with this additional title were the Three Excellencies, Generals, and other high-ranking officials"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "palace-secretariat",
+      "label": {
+        "zht": "中書",
+        "zhs": "中书",
+        "en": "Palace Secretariat"
+      },
+      "categoryNotes": [
+        {
+          "zht": "亦稱中書省",
+          "zhs": "亦称中书省",
+          "en": "Also called the Palace Secretariat Department"
+        }
+      ],
+      "positions": [
+        {
+          "id": "palace-secretariat-019",
+          "displayName": {
+            "zht": "中書監",
+            "zhs": "中书监",
+            "en": "Supervisor of the Palace Secretariat"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "中書監",
+                "zhs": "中书监",
+                "en": "Supervisor of the Palace Secretariat"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "掌贊詔命，記會時事典，作文書，典尚書奏事"
+            ],
+            "zhs": [
+              "掌赞诏命，记会时事典，作文书，典尚书奏事"
+            ],
+            "en": [
+              "Assist in drafting imperial edicts, recording significant current affairs, and composing documents, also manage submissions from the State Affairs Department"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第三品，千石，一人"
+            ],
+            "zhs": [
+              "第三品，千石，一人"
+            ],
+            "en": [
+              "Third grade, 1000 shi, 1 peson"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "妙選文學通識之士為之",
+              "zhs": "妙选文学通识之士为之",
+              "en": "Scholars with literary talent and broad knowledge were carefully selected for this role"
+            },
+            {
+              "zht": "若密詔下州郡及邊將，則不由尚書",
+              "zhs": "若密诏下州郡及边将，则不由尚书",
+              "en": "If confidential edicts were sent to provinces, commanderies, or border generals, they would bypass the State Affairs Department"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-020",
+          "displayName": {
+            "zht": "中書令",
+            "zhs": "中书令",
+            "en": "Director of the Palace Secretariat"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "中書令",
+                "zhs": "中书令",
+                "en": "Director of the Palace Secretariat"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "中書令",
+                "zhs": "中书令",
+                "en": "Director of the Palace Secretariat"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "中書令",
+                "zhs": "中书令",
+                "en": "Director of the Palace Secretariat"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "平尚書奏事"
+            ],
+            "zhs": [
+              "平尚书奏事"
+            ],
+            "en": [
+              "Review and adjudicate submissions from the State Affairs Department"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第三品，千石，一人"
+            ],
+            "zhs": [
+              "第三品，千石，一人"
+            ],
+            "en": [
+              "Third grade, 1000 shi, 1 peson"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏制，太祖為魏王時置祕書令，典尚書奏事，黃初中改祕書令為中書令，又置監﹑令各一人，監右于令",
+              "zhs": "魏制，太祖为魏王时置秘书令，典尚书奏事，黄初中改秘书令为中书令，又置监﹑令各一人，监右于令",
+              "en": "In Wei, the Grand Progenitor, as King of Wei,  established the Director of the Imperial Archives, in charged of submissions from the State Affairs Department. During the Huangchu era, changed Director of the Imperial Archives to Director of the Palace Secretariat, also established the positions Supervisor and Director for one person each, with the Supervisor of higher rank than the Director"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-021",
+          "displayName": {
+            "zht": "中書僕射",
+            "zhs": "中书仆射",
+            "en": "Deputy Director of the Palace Secretariat"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": null,
+            "wu": [
+              {
+                "zht": "中書僕射",
+                "zhs": "中书仆射",
+                "en": "Deputy Director of the Palace Secretariat"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "元興元年後，其職省為侍中",
+              "zhs": "元兴元年后，其职省为侍中",
+              "en": "After the 1st year of Yuanxing, this position was merged with that of the Palace Attendant"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-022",
+          "displayName": {
+            "zht": "中書丞",
+            "zhs": "中书丞",
+            "en": "Palace Secretariat Assistant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "minor",
+          "name": {
+            "wei": null,
+            "shu": null,
+            "wu": [
+              {
+                "zht": "中書丞",
+                "zhs": "中书丞",
+                "en": "Palace Secretariat Assistant"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "palace-secretariat-023",
+          "displayName": {
+            "zht": "通事郎",
+            "zhs": "通事郎",
+            "en": "Liaison Gentleman"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 5,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "通事郎",
+                "zhs": "通事郎",
+                "en": "Liaison Gentleman"
+              },
+              {
+                "zht": "中書侍郎",
+                "zhs": "中书侍郎",
+                "en": "Palace Secretariat Attendant Gentleman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "中書郎",
+                "zhs": "中书郎",
+                "en": "Palace Secretariat Gentleman"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "中書郎",
+                "zhs": "中书郎",
+                "en": "Palace Secretariat Gentleman"
+              },
+              {
+                "zht": "中書侍郎",
+                "zhs": "中书侍郎",
+                "en": "Palace Secretariat Attendant Gentleman"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌詔草"
+            ],
+            "zhs": [
+              "掌诏草"
+            ],
+            "en": [
+              "In charge of drafting edicts and orders"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，四人"
+            ],
+            "zhs": [
+              "第五品，四人"
+            ],
+            "en": [
+              "Fifth grade, 4 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "黃初初，又置通事郎，掌詔草，次黃門郎。黃門郎已署過，通事乃署名，已署，奏以入，為帝省讀，書可。",
+              "zhs": "黄初初，又置通事郎，掌诏草，次黄门郎。黄门郎已署过，通事乃署名，已署，奏以入，为帝省读，书可。",
+              "en": "At the beginning of Huangchu, also established Liaison Gentleman, in charged of drafting edicts, ranking below the Attendant Gentleman within the Yellow Gates. After the Attendant Gentleman within the Yellow Gates signed on the edict, then would the Liaison Gentleman sign, and afterwards submit to the emperor. After the emperor read and reviewed the edict, he would then sign his approval"
+            },
+            {
+              "zht": "後改為中書侍郎",
+              "zhs": "后改为中书侍郎",
+              "en": "Later changed to Palace Secretariat Attendant Gentleman"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-024",
+          "displayName": {
+            "zht": "中書通事",
+            "zhs": "中书通事",
+            "en": "Palace Secretariat Liaison"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "中書通事",
+                "zhs": "中书通事",
+                "en": "Palace Secretariat Liaison"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "掌呈奏"
+            ],
+            "zhs": [
+              "掌呈奏"
+            ],
+            "en": [
+              "In charge of presenting memorials"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，一人"
+            ],
+            "zhs": [
+              "第七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "高貴鄕公改為通事都尉，尋又改為通事侍郎",
+              "zhs": "高贵鄕公改为通事都尉，寻又改为通事侍郎",
+              "en": "The Duke of Gaogui Village changed the name to Commandant for Liaison, soon again changed to Attendant Gentleman for Liaison"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-025",
+          "displayName": {
+            "zht": "中書主書令史",
+            "zhs": "中书主书令史",
+            "en": "Palace Secretariat Scribe"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "中書主書令史",
+                "zhs": "中书主书令史",
+                "en": "Palace Secretariat Scribe"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第八品，員數無考"
+            ],
+            "zhs": [
+              "第八品，员数无考"
+            ],
+            "en": [
+              "Eighth grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "palace-secretariat-026",
+          "displayName": {
+            "zht": "著作郎",
+            "zhs": "著作郎",
+            "en": "Editorial Gentleman"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "著作郎",
+                "zhs": "著作郎",
+                "en": "Editorial Gentleman"
+              }
+            ],
+            "shu": null,
+            "wu": [
+              {
+                "zht": "左右國史",
+                "zhs": "左右国史",
+                "en": "State Historiographer on the Left/Right"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌修國史"
+            ],
+            "zhs": [
+              "掌修国史"
+            ],
+            "en": [
+              "In charge of writing the state's history"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "(魏)第六品，一人 (吳) 二人"
+            ],
+            "zhs": [
+              "(魏)第六品，一人 (吴) 二人"
+            ],
+            "en": [
+              "(Wei) Sixth grade, 1 person (Wu) 2 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏制，或為兼官，稱典著作",
+              "zhs": "魏制，或为兼官，称典著作",
+              "en": "In Wei, sometimes as an additional concurrent position, known as In charged of Editorial Matters"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-027",
+          "displayName": {
+            "zht": "著作佐郎",
+            "zhs": "著作佐郎",
+            "en": "Assistant Editorial Gentleman"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 7,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "著作佐郎",
+                "zhs": "著作佐郎",
+                "en": "Assistant Editorial Gentleman"
+              },
+              {
+                "zht": "佐著作郎",
+                "zhs": "佐著作郎",
+                "en": ""
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌貳著作郎修國史"
+            ],
+            "zhs": [
+              "掌贰著作郎修国史"
+            ],
+            "en": [
+              "Assist the Editorial Gentleman in writing the state's history."
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，三人"
+            ],
+            "zhs": [
+              "第七品，三人"
+            ],
+            "en": [
+              "Seventh grade, 3 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "太和中置",
+              "zhs": "太和中置",
+              "en": "Established in the Taihe era"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-028",
+          "displayName": {
+            "zht": "著作主書令史",
+            "zhs": "著作主书令史",
+            "en": "Editorial Scribe"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "著作主書令史",
+                "zhs": "著作主书令史",
+                "en": "Editorial Scribe"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "東觀令",
+                "zhs": "东观令",
+                "en": "Director of the Eastern Library"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "(魏)第八品，員數無考 (吳)一人"
+            ],
+            "zhs": [
+              "(魏)第八品，员数无考 (吴)一人"
+            ],
+            "en": [
+              "(Wei) Eighth grade,  nuumbers unknown (Wu) 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "按國山碑，吴東觀乃屬中書，與魏著作同",
+              "zhs": "按国山碑，吴东观乃属中书，与魏著作同",
+              "en": "According to the Guoshan Stele, the Wu's Eastern Library was subordinate to the Palace Secretariat, similar to the Wei's Editorial Gentleman."
+            },
+            {
+              "zht": "又按後漢書，東觀多經籍，疑吴仿漢制置此官",
+              "zhs": "又按后汉书，东观多经籍，疑吴仿汉制置此官",
+              "en": "And according to the Book of the Later Han, the Eastern Library was rich with classical texts, It is suspected that Wu modeled this position after the Han system"
+            }
+          ]
+        },
+        {
+          "id": "palace-secretariat-029",
+          "displayName": {
+            "zht": "東觀左右丞",
+            "zhs": "东观左右丞",
+            "en": "Left/Right Assistants of the Eastern Library"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": null,
+            "wu": [
+              {
+                "zht": "東觀左右丞",
+                "zhs": "东观左右丞",
+                "en": "Left/Right Assistants of the Eastern Library"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "按國山碑，吴東觀乃屬中書，與魏著作同",
+              "zhs": "按国山碑，吴东观乃属中书，与魏著作同",
+              "en": "According to the Guoshan Stele, the Wu's Eastern Library was subordinate to the Palace Secretariat, similar to the Wei's Editorial Gentleman."
+            },
+            {
+              "zht": "又按後漢書，東觀多經籍，疑吴仿漢制置此官",
+              "zhs": "又按后汉书，东观多经籍，疑吴仿汉制置此官",
+              "en": "And according to the Book of the Later Han, the Eastern Library was rich with classical texts, It is suspected that Wu modeled this position after the Han system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "state-affairs",
+      "label": {
+        "zht": "尚書",
+        "zhs": "尚书",
+        "en": "State Affairs"
+      },
+      "categoryNotes": [
+        {
+          "zht": "亦稱尚書省、尚書臺、內臺；出則爲行臺。",
+          "zhs": "亦称尚书省、尚书台、内台；出则为行台。",
+          "en": "Also called the State Affairs Department, State Affairs Terrace or the Central Terrace; when out of the capital, known as the Acting Terrace."
+        },
+        {
+          "zht": "魏有殿中﹑吏部﹑駕部﹑金部﹑虞曹﹑比部﹑南北主客﹑祠部﹑度支﹑庫部﹑農部﹑水部﹑儀曹﹑三公﹑倉部﹑民曹﹑二千石﹑中兵﹑外兵﹑都兵﹑別兵﹑考功﹑定課、都官﹑騎兵，合凡二十五部。吏部職右于諸曹，主選事，左民主繕修功作﹑塩池園苑，客曹主外國夷狄，五兵主中兵﹑外兵﹑騎兵﹑別兵﹑都兵，度支專掌軍國支計；又以五曹尚書﹑二僕射﹑一令為八座。",
+          "zhs": "魏有殿中﹑吏部﹑驾部﹑金部﹑虞曹﹑比部﹑南北主客﹑祠部﹑度支﹑库部﹑农部﹑水部﹑仪曹﹑三公﹑仓部﹑民曹﹑二千石﹑中兵﹑外兵﹑都兵﹑别兵﹑考功﹑定课、都官﹑骑兵，合凡二十五部。吏部职右于诸曹，主选事，左民主缮修功作﹑塩池园苑，客曹主外国夷狄，五兵主中兵﹑外兵﹑骑兵﹑别兵﹑都兵，度支专掌军国支计；又以五曹尚书﹑二仆射﹑一令为八座。",
+          "en": "Wei had a total of 25 divisions: Palace Affairs, Personnel, Carriage, Finance, Forestry, Judicial Affairs, Southern and Northern Guest, Rituals, Expenditure, Storage, Agriculture, Waterways, Rites, Three Excellencies, Granaries, Civil, Two-thousand shi, Central Troops, External Troops, Capital Troops, Specialized Troops, Merit Assessment, Ordinance, Capital Officials and Cavalry Divisions. The Personnel Section is more prestigious the other Sections, in charge of official selection matters; the Civil Section oversees repairs, construction works, salt fields, and gardens; the Guest Section manages affairs related to foreign states and tribes; the Troop Section was in charge of central troops, external troops, cavalry, specialized troops, and capital troops; the Expenditure Section exclusively manage financial planning for military and state expenditures; additionally, the five Section Imperial Secretaries, two Deputy Directors, and one Director collectively made up the Eight Seats."
+        },
+        {
+          "zht": "蜀惟有吏部﹑左選﹑右選﹑度支，吳惟知有選曹，其餘無考",
+          "zhs": "蜀惟有吏部﹑左选﹑右选﹑度支，吴惟知有选曹，其余无考",
+          "en": "Shu only known to have Personnel, Left Selection, Right Selection and Expenditure Divisions, Wu only known to have Selection Division, others unknown"
+        }
+      ],
+      "positions": [
+        {
+          "id": "state-affairs-030",
+          "displayName": {
+            "zht": "錄尚書事",
+            "zhs": "录尚书事",
+            "en": "Authority over State Affairs"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "錄尚書事",
+                "zhs": "录尚书事",
+                "en": "Authority over State Affairs"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "錄尚書事",
+                "zhs": "录尚书事",
+                "en": "Authority over State Affairs"
+              },
+              {
+                "zht": "平尚書事",
+                "zhs": "平尚书事",
+                "en": "Involvement in State Affairs"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "錄尚書事",
+                "zhs": "录尚书事",
+                "en": "Authority over State Affairs"
+              },
+              {
+                "zht": "領尚書事",
+                "zhs": "领尚书事",
+                "en": "Direction of State Affairs"
+              },
+              {
+                "zht": "平尚書事",
+                "zhs": "平尚书事",
+                "en": "Involvement in State Affairs"
+              },
+              {
+                "zht": "分平尚書事",
+                "zhs": "分平尚书事",
+                "en": "Joint Involvement in State Affairs"
+              },
+              {
+                "zht": "省尚書事",
+                "zhs": "省尚书事",
+                "en": "Review of State Affairs"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職無不總"
+            ],
+            "zhs": [
+              "职无不总"
+            ],
+            "en": [
+              "Encompass all duties"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "無常員"
+            ],
+            "zhs": [
+              "无常员"
+            ],
+            "en": [
+              "No fixed number"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "僅為加官，公卿權重者為之，凡重號將軍刺史，皆得命曹授用，惟不得施除及加節",
+              "zhs": "仅为加官，公卿权重者为之，凡重号将军刺史，皆得命曹授用，惟不得施除及加节",
+              "en": "Only an additional title, conferred upon Excellencies and Ministers of great influence. High-ranking generals and Inspectors could be ordered and designated under its authority, though the power did not extend to making actual appointments or conferring the Imperial Tally"
+            },
+            {
+              "zht": "惟知樞要者得領錄尚書，其次謂平，又次為省",
+              "zhs": "惟知枢要者得领录尚书，其次谓平，又次为省",
+              "en": "Only those entrusted with critical affairs could have Direction or Authority Over State Affairs, next would be Involvement, followed by Review"
+            }
+          ]
+        },
+        {
+          "id": "state-affairs-031",
+          "displayName": {
+            "zht": "尚書令",
+            "zhs": "尚书令",
+            "en": "Director of the Imperial Secretariat"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "尚書令",
+                "zhs": "尚书令",
+                "en": "Director of the Imperial Secretariat"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "尚書令",
+                "zhs": "尚书令",
+                "en": "Director of the Imperial Secretariat"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "尚書令",
+                "zhs": "尚书令",
+                "en": "Director of the Imperial Secretariat"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌凡選署及奏下尚書文書衆事，總典綱紀，無所不統"
+            ],
+            "zhs": [
+              "掌凡选署及奏下尚书文书众事，总典纲纪，无所不统"
+            ],
+            "en": [
+              "In charge of all appointments, assignments, and matters mentioned in documents submitted to the various Imperial Secretariats, oversee the overall regulations and guidelines, with no areas outside their authority"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第三品，千石，一人"
+            ],
+            "zhs": [
+              "第三品，千石，一人"
+            ],
+            "en": [
+              "Third grade, 1000 shi, 1 peson"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "漢猶隸少府，魏時政歸臺閣",
+              "zhs": "汉犹隶少府，魏时政归台阁",
+              "en": "During the Han still subordinate to the Minister of the Lesser Treasury, but by the Wei became under the State Affairs Terrace"
+            }
+          ]
+        },
+        {
+          "id": "state-affairs-032",
+          "displayName": {
+            "zht": "尚書僕射",
+            "zhs": "尚书仆射",
+            "en": "Deputy Director of the Imperial Secretariat"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "尚書僕射",
+                "zhs": "尚书仆射",
+                "en": "Deputy Director of the Imperial Secretariat"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "尚書僕射",
+                "zhs": "尚书仆射",
+                "en": "Deputy Director of the Imperial Secretariat"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "尚書僕射",
+                "zhs": "尚书仆射",
+                "en": "Deputy Director of the Imperial Secretariat"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主開封，掌授廩假錢穀；署尚書事，令不在，則奏下衆事"
+            ],
+            "zhs": [
+              "主开封，掌授廪假钱谷；署尚书事，令不在，则奏下众事"
+            ],
+            "en": [
+              "In charge of managing the records, and oversee the distribution of salaries, loans, and grains; handle submissions to Imperial Secretariats, and reported on various matters when the Director is absent"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第三品，六百石，一人"
+            ],
+            "zhs": [
+              "第三品，六百石，一人"
+            ],
+            "en": [
+              "Third grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏制，置二則左右僕射；令闕，則左為省主，若左右並闕，則置尚書僕射",
+              "zhs": "魏制，置二则左右仆射；令阙，则左为省主，若左右并阙，则置尚书仆射",
+              "en": "In Wei, sometimes two deputies would be appointed, and they would be Left and Right Deputy Directors; when there is no Director, then the Left Deputy will be the head of the department, if there is neither Left or Right Deputy Director, then a Deputy Director would be appointed"
+            }
+          ]
+        },
+        {
+          "id": "state-affairs-033",
+          "displayName": {
+            "zht": "尚書",
+            "zhs": "尚书",
+            "en": "Imperial Secretariat"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "尚書",
+                "zhs": "尚书",
+                "en": "Imperial Secretariat"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "尚書",
+                "zhs": "尚书",
+                "en": "Imperial Secretariat"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "尚書",
+                "zhs": "尚书",
+                "en": "Imperial Secretariat"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "典諸曹事"
+            ],
+            "zhs": [
+              "典诸曹事"
+            ],
+            "en": [
+              "In charge of matters in their respective sections"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第三品，六百石，(魏)五人"
+            ],
+            "zhs": [
+              "第三品，六百石，(魏)五人"
+            ],
+            "en": [
+              "Third grade, 600 shi, (Wei) 5 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏有五曹：有吏部﹑左民﹑客曹﹑五兵﹑度支；吏部亦曰選曹/選部",
+              "zhs": "魏有五曹：有吏部﹑左民﹑客曹﹑五兵﹑度支；吏部亦曰选曹/选部",
+              "en": "Wei had 5 sections: Personnel, Civil, Guest, Troops, and Expenditure; the Personnel Section is also known as the Selection Section"
+            },
+            {
+              "zht": "蜀無考，疑承漢制，亦置選部﹑民曹﹑三公曹﹑二千石曹﹑客曹",
+              "zhs": "蜀无考，疑承汉制，亦置选部﹑民曹﹑三公曹﹑二千石曹﹑客曹",
+              "en": "The system in Shu is not known, it is suspected that Shu followed the Han's standards, with the Selection, Civil, Three Excellencies, Two-thousand shi and Guest Sections"
+            },
+            {
+              "zht": "吳有選曹﹑戶曹﹑左曹﹑賊曹，國山碑云亦云四尚書，或數止四人",
+              "zhs": "吴有选曹﹑户曹﹑左曹﹑贼曹，国山碑云亦云四尚书，或数止四人",
+              "en": "In Wu it is known that there were Selection, Civil Affairs, Left and Banditry Sections; The Guoshan Stele also states 4 names only, perhaps Wu only had four Imperial Secretariats"
+            }
+          ]
+        },
+        {
+          "id": "state-affairs-034",
+          "displayName": {
+            "zht": "尚書左右丞",
+            "zhs": "尚书左右丞",
+            "en": "Imperial Secretariat Left/Right Assistants"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "尚書左右丞",
+                "zhs": "尚书左右丞",
+                "en": "Imperial Secretariat Left/Right Assistants"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "左丞主臺內禁令﹑宗廟祠祀﹑朝儀禮制﹑選用置吏，紀諸不法。",
+              "右丞掌庫藏廬舍，凡諸器用之物﹑刑獄兵器"
+            ],
+            "zhs": [
+              "左丞主台内禁令﹑宗庙祠祀﹑朝仪礼制﹑选用置吏，纪诸不法。",
+              "右丞掌库藏庐舍，凡诸器用之物﹑刑狱兵器"
+            ],
+            "en": [
+              "The Left Assistant is responsible for imperial edicts within the Terrace, oversees ancestral temple rituals and sacrifices, manages court ceremonies and protocols, handles the selection and appointment of officials, and records all unlawful activities.",
+              "The Right Assistant is in charge of the treasury and storage facilities, including all items for general use, and handles judicial and prison affairs and military equipment"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第六品，四百石，二人"
+            ],
+            "zhs": [
+              "第六品，四百石，二人"
+            ],
+            "en": [
+              "Sixth grade, 400 shi, 2 people"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "state-affairs-035",
+          "displayName": {
+            "zht": "尚書諸曹典事",
+            "zhs": "尚书诸曹典事",
+            "en": "Various Imperial Secretariat Sections Managers"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "尚書諸曹典事",
+                "zhs": "尚书诸曹典事",
+                "en": "Various Imperial Secretariat Sections Managers"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品"
+            ],
+            "zhs": [
+              "第七品"
+            ],
+            "en": [
+              "Seventh grade"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "state-affairs-036",
+          "displayName": {
+            "zht": "尚書主書令史",
+            "zhs": "尚书主书令史",
+            "en": "Imperial Secretariat Scribe"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "尚書主書令史",
+                "zhs": "尚书主书令史",
+                "en": "Imperial Secretariat Scribe"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "尚書主書令史",
+                "zhs": "尚书主书令史",
+                "en": "Imperial Secretariat Scribe"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "書省讀"
+            ],
+            "zhs": [
+              "书省读"
+            ],
+            "en": [
+              "Copy and proofread documents"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第八品"
+            ],
+            "zhs": [
+              "第八品"
+            ],
+            "en": [
+              "Eighth grade"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "尚書郎以草呈示令僕訖，乃付令史書之，書訖，共省讀之，內本來，臺郎統之，令史不行知也。書之不好，令史坐之",
+              "zhs": "尚书郎以草呈示令仆讫，乃付令史书之，书讫，共省读之，内本来，台郎统之，令史不行知也。书之不好，令史坐之",
+              "en": "The Imperial Secretariat Gentlemen would draft documents and present it to the Director and Deputy Director for review. Once approved, they would be given to the Scribe to copy. After the copying was completed, the Gentlemen and Scribes would together proofread it. The contents of the documents were decided by the Gentleman, and the scribes would not be involved. If the copied document was poorly written, the scribe would be held accountable"
+            }
+          ]
+        },
+        {
+          "id": "state-affairs-037",
+          "displayName": {
+            "zht": "尚書侍郎",
+            "zhs": "尚书侍郎",
+            "en": "Imperial Secretariat Attendant Gentleman"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "尚書侍郎",
+                "zhs": "尚书侍郎",
+                "en": "Imperial Secretariat Attendant Gentleman"
+              },
+              {
+                "zht": "尚書郎中",
+                "zhs": "尚书郎中",
+                "en": "Imperial Secretariat Court Gentleman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "尚書侍郎",
+                "zhs": "尚书侍郎",
+                "en": "Imperial Secretariat Attendant Gentleman"
+              },
+              {
+                "zht": "尚書郎中",
+                "zhs": "尚书郎中",
+                "en": "Imperial Secretariat Court Gentleman"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "尚書侍郎",
+                "zhs": "尚书侍郎",
+                "en": "Imperial Secretariat Attendant Gentleman"
+              },
+              {
+                "zht": "尚書郎中",
+                "zhs": "尚书郎中",
+                "en": "Imperial Secretariat Court Gentleman"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主作文書起草"
+            ],
+            "zhs": [
+              "主作文书起草"
+            ],
+            "en": [
+              "In charge of drafting documents"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第六品，四百石"
+            ],
+            "zhs": [
+              "第六品，四百石"
+            ],
+            "en": [
+              "Sixth grade, 400 shi"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "統稱尚書郎，資深勤能者可為侍郎",
+              "zhs": "统称尚书郎，资深勤能者可为侍郎",
+              "en": "Collectively referred to as the Imperial Secretariat Gentleman, those who are talented and hardworking, with seniority, can become Attendant Gentleman"
+            },
+            {
+              "zht": "取年未五十有材能者，使文筆眞草；每一郎闕，白試諸孝廉能結文案者五人，謹封奏其姓名以補之",
+              "zhs": "取年未五十有材能者，使文笔真草；每一郎阙，白试诸孝廉能结文案者五人，谨封奏其姓名以补之",
+              "en": "Appoint those below fifty years of age and of talent, had them drafting documents with clear meanings in both regular and cursive script; whenever a Gentleman position became vacant, five filial and incorrupt candidates proficient in drafting documents would be assessed, their names would be carefully sealed and submitted for approval to fill the position"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imperial-archives",
+      "label": {
+        "zht": "秘書",
+        "zhs": "秘书",
+        "en": "Imperial Archives"
+      },
+      "categoryNotes": [
+        {
+          "zht": "魏之祕書，即漢之東觀。郡國稱敢言之士上東觀。初屬少府，及王肅為監，乃不復屬。",
+          "zhs": "魏之秘书，即汉之东观。郡国称敢言之士上东观。初属少府，及王肃为监，乃不复属。",
+          "en": "The Wei's Imperial Archives is equivalent to the Eastern Library of the Han. Scholars of integrity from commanderies and states would be recommended to work in the Eastern Library. Initially under the Minister of the Lesser Treasury, but during Wang Su's tenure as the Supervisor, it became independent."
+        },
+        {
+          "zht": "又，蘭臺亦藏書籍，而御史掌之。時言蘭臺為外臺，祕書為內閣。",
+          "zhs": "又，兰台亦藏书籍，而御史掌之。时言兰台为外台，秘书为内阁。",
+          "en": "The Orchid Terrace also housed books and texts, managed by the Censorate. The Orchid Terrace is considered an outer terrace, while the Imperial Archives is regarded as an inner cabinet."
+        }
+      ],
+      "positions": [
+        {
+          "id": "imperial-archives-038",
+          "displayName": {
+            "zht": "祕書監",
+            "zhs": "秘书监",
+            "en": "Supervisor of the Imperial Archives"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "祕書監",
+                "zhs": "秘书监",
+                "en": "Supervisor of the Imperial Archives"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "祕書令",
+                "zhs": "秘书令",
+                "en": "Director of the Imperial Archives"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "掌藝文圖籍之事，或以他官領之"
+            ],
+            "zhs": [
+              "掌艺文图籍之事，或以他官领之"
+            ],
+            "en": [
+              "Responsible for matters regarding book collections and archival registers, sometimes concurrently held by another official"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第三品，六百石，一人"
+            ],
+            "zhs": [
+              "第三品，六百石，一人"
+            ],
+            "en": [
+              "Third grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏武帝初置祕書令，亦典尚書奏事，黃初中分為中書令、祕書監",
+              "zhs": "魏武帝初置秘书令，亦典尚书奏事，黄初中分为中书令、秘书监",
+              "en": "Emperor Wu first established Director of the Imperial Archives, in charged of submissions to the Imperial Secretariats and book collections and archives. At the beginning of the Huangchu era, split into Director of the Palace Secretariat and Supervisor of the Imperial Archives"
+            }
+          ]
+        },
+        {
+          "id": "imperial-archives-039",
+          "displayName": {
+            "zht": "祕書左右丞",
+            "zhs": "秘书左右丞",
+            "en": "Left and Right Assistants of the Imperial Archives"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "祕書左右丞",
+                "zhs": "秘书左右丞",
+                "en": "Left and Right Assistants of the Imperial Archives"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "掌文籍"
+            ],
+            "zhs": [
+              "掌文籍"
+            ],
+            "en": [
+              "Manage texts and records"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第六品，四百石，二人"
+            ],
+            "zhs": [
+              "第六品，四百石，二人"
+            ],
+            "en": [
+              "Sixth grade, 400 shi, 2 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "多以祕書郎遷之",
+              "zhs": "多以秘书郎迁之",
+              "en": "Often filled by promoting Imperial Archives Gentleman to this position"
+            }
+          ]
+        },
+        {
+          "id": "imperial-archives-040",
+          "displayName": {
+            "zht": "祕書郎",
+            "zhs": "秘书郎",
+            "en": "Imperial Archives Gentleman"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "祕書郎",
+                "zhs": "秘书郎",
+                "en": "Imperial Archives Gentleman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "祕書郎",
+                "zhs": "秘书郎",
+                "en": "Imperial Archives Gentleman"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "祕府郎",
+                "zhs": "秘府郎",
+                "en": "Imperial Repository Gentleman"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌中外三閣經書，覆校殘缺，正定脫誤"
+            ],
+            "zhs": [
+              "掌中外三阁经书，复校残缺，正定脱误"
+            ],
+            "en": [
+              "Oversee the classics and books in the archives, review and patch incomplete records, and correct errors and omissions"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "(魏、蜀)第六品，四百石，四人"
+            ],
+            "zhs": [
+              "(魏、蜀)第六品，四百石，四人"
+            ],
+            "en": [
+              "(Wei & Shu)Sixth grade, 400 shi, 4 people"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "imperial-archives-041",
+          "displayName": {
+            "zht": "校書郎",
+            "zhs": "校书郎",
+            "en": "Gentleman for Document Reviews"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "校書郎",
+                "zhs": "校书郎",
+                "en": "Gentleman for Document Reviews"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "典校祕書"
+            ],
+            "zhs": [
+              "典校秘书"
+            ],
+            "en": [
+              "Collect and review the archives"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第八品，員數無考"
+            ],
+            "zhs": [
+              "第八品，员数无考"
+            ],
+            "en": [
+              "Eight grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "imperial-archives-042",
+          "displayName": {
+            "zht": "祕書主書令史",
+            "zhs": "秘书主书令史",
+            "en": "Imperial Archives Scribe"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "祕書主書令史",
+                "zhs": "秘书主书令史",
+                "en": "Imperial Archives Scribe"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "祕書主書令史",
+                "zhs": "秘书主书令史",
+                "en": "Imperial Archives Scribe"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第八品，員數無考"
+            ],
+            "zhs": [
+              "第八品，员数无考"
+            ],
+            "en": [
+              "Eight grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "imperial-archives-043",
+          "displayName": {
+            "zht": "祕書主圖令史",
+            "zhs": "秘书主图令史",
+            "en": "Imperial Archives Clerk of Maps"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "祕書主圖令史",
+                "zhs": "秘书主图令史",
+                "en": "Imperial Archives Clerk of Maps"
+              },
+              {
+                "zht": "祕書主譜令史",
+                "zhs": "秘书主谱令史",
+                "en": "Imperial Archives Clerk of Registers"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第八品，員數無考"
+            ],
+            "zhs": [
+              "第八品，员数无考"
+            ],
+            "en": [
+              "Eight grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "censorate",
+      "label": {
+        "zht": "御史臺",
+        "zhs": "御史台",
+        "en": "Censorate"
+      },
+      "categoryNotes": [
+        {
+          "zht":"先秦之御史原為史官，兼掌圖籍。秦漢以降沿襲此職，復加監察百官之任。西漢時，御史大夫位亞丞相，與之相輔相制；至東漢，其名改為三公之司空，職權漸虛，轉由御史中丞掌領御史台。",
+          "zhs":"先秦之御史原为史官，兼掌图籍。秦汉以降沿袭此职，复加监察百官之任。西汉时，御史大夫位亚丞相，与之相辅相制；至东汉，其名改为三公之司空，职权渐虚，转由御史中丞掌领御史台。",
+          "en":"In the pre-Qin period, the Censor was originally a court historian responsible for records and archives. From the Qin and Han onward, this office was maintained and further entrusted with the supervision of officials. During the Western (Former) Han, the Imperial Censor ranked just below the Chancellor and functioned as both his collaborator and institutional counterweight. By the Eastern (Later) Han, however, the Imperial Censor title was changed to Excellency of Works among the Three Excellencies, its authority gradually hollowed out, and effective control of the Censorate passed instead to the Deputy Imperial Censor."}
+      ],
+      "positions": [
+        {
+          "id": "censorate-044",
+          "displayName": {
+            "zht": "御史中丞",
+            "zhs": "御史中丞",
+            "en": "Deputy Imperial Censor"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 4,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "御史中丞",
+                "zhs": "御史中丞",
+                "en": "Deputy Imperial Censor"
+              },
+              {
+                "zht": "宮正",
+                "zhs": "宫正",
+                "en": "Palace Rectifier"
+              },
+              {
+                "zht": "臺主",
+                "zhs": "台主",
+                "en": "Master of the Censorate"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "御史中丞",
+                "zhs": "御史中丞",
+                "en": "Deputy Imperial Censor"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "御史中丞",
+                "zhs": "御史中丞",
+                "en": "Deputy Imperial Censor"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "督部刺史，領侍御史，受公卿奏事，舉劾彈章"
+            ],
+            "zhs": [
+              "督部刺史，领侍御史，受公卿奏事，举劾弹章"
+            ],
+            "en": [
+              "Supervise the Inspectors, and oversee the Attendant Censors; handle memorials from Excellencies and Ministers, and initiate investigations and draft impeachments"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第四品，一人"
+            ],
+            "zhs": [
+              "第四品，一人"
+            ],
+            "en": [
+              "Fourth grade, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "亦在殿中蘭臺掌圖籍秘書；及御史大夫轉為司空，出為御史臺率",
+              "zhs": "亦在殿中兰台掌图籍秘书；及御史大夫转为司空，出为御史台率",
+              "en": "Also manage documents and archives in the Orchid Terrace within the palace. When the Imperial Censor was changed to Excellency of Works, this position became the head of the Censorate"
+            },
+            {
+              "zht": "魏黃初初改為宮正，復為臺主，尋又改曰中丞",
+              "zhs": "魏黄初初改为宫正，复为台主，寻又改曰中丞",
+              "en": "At the beginning of Huangchu era, Wei renamed it to Palace Rectifier, later renamed to Master of the Censorate, soon again changed back to Deputy"
+            }
+          ]
+        },
+        {
+          "id": "censorate-045",
+          "displayName": {
+            "zht": "督軍御史中丞",
+            "zhs": "督军御史中丞",
+            "en": "Deputy Imperial Censor supervising the Army"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "督軍御史中丞",
+                "zhs": "督军御史中丞",
+                "en": "Deputy Imperial Censor supervising the Army"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "黃初二年官省",
+              "zhs": "黄初二年官省",
+              "en": "Abolished in the 2nd year of Huangchu"
+            }
+          ]
+        },
+        {
+          "id": "censorate-046",
+          "displayName": {
+            "zht": "治書執法",
+            "zhs": "治书执法",
+            "en": "Secretarial Upholder of the Law"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "治書執法",
+                "zhs": "治书执法",
+                "en": "Secretarial Upholder of the Law"
+              },
+              {
+                "zht": "持書執法",
+                "zhs": "持书执法",
+                "en": ""
+              }
+            ],
+            "shu": null,
+            "wu": [
+              {
+                "zht": "中﹑左﹑右執法",
+                "zhs": "中﹑左﹑右执法",
+                "en": "Central / Left / Right Upholder of the Law"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "(魏)掌奏劾; (吳)平諸官事"
+            ],
+            "zhs": [
+              "(魏)掌奏劾; (吴)平诸官事"
+            ],
+            "en": [
+              "(Wei) Manage impeachment memorials; (Wu) Adjudicate various official matters"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "(魏)第六品，一人; (吳)各一人"
+            ],
+            "zhs": [
+              "(魏)第六品，一人; (吴)各一人"
+            ],
+            "en": [
+              "(Wei) Sixth grade, 1 person; (Wu) 1 person each"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "治亦作持",
+              "zhs": "治亦作持",
+              "en": "治 (zhi) sometimes written as 持 (chi)"
+            }
+          ]
+        },
+        {
+          "id": "censorate-047",
+          "displayName": {
+            "zht": "督軍糧執法",
+            "zhs": "督军粮执法",
+            "en": "Upholder of the Law supervising Provisions"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "督軍糧執法",
+                "zhs": "督军粮执法",
+                "en": "Upholder of the Law supervising Provisions"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第六品，一人"
+            ],
+            "zhs": [
+              "第六品，一人"
+            ],
+            "en": [
+              "Sixth grade, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "出征則置",
+              "zhs": "出征则置",
+              "en": "Appointed when launching expeditions"
+            }
+          ]
+        },
+        {
+          "id": "censorate-048",
+          "displayName": {
+            "zht": "治書侍御史",
+            "zhs": "治书侍御史",
+            "en": "Secretarial Attendant Censor"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "治書侍御史",
+                "zhs": "治书侍御史",
+                "en": "Secretarial Attendant Censor"
+              },
+              {
+                "zht": "持書侍御史",
+                "zhs": "持书侍御史",
+                "en": ""
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌律令，分掌侍御史所掌諸曹"
+            ],
+            "zhs": [
+              "掌律令，分掌侍御史所掌诸曹"
+            ],
+            "en": [
+              "In charge of law and ordinances and the various sections under the Attendant Censors"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第六品，六百石，二人"
+            ],
+            "zhs": [
+              "第六品，六百石，二人"
+            ],
+            "en": [
+              "Sixth grade, 600 shi, 2 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "治亦作持",
+              "zhs": "治亦作持",
+              "en": "治 (zhi) sometimes written as 持 (chi)"
+            },
+            {
+              "zht": "為御史中丞佐貳",
+              "zhs": "为御史中丞佐贰",
+              "en": "As second-in-command under the Deputy Imperial Censor"
+            }
+          ]
+        },
+        {
+          "id": "censorate-049",
+          "displayName": {
+            "zht": "侍御史",
+            "zhs": "侍御史",
+            "en": "Attendant Censor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "侍御史",
+                "zhs": "侍御史",
+                "en": "Attendant Censor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "侍御史",
+                "zhs": "侍御史",
+                "en": "Attendant Censor"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌察舉非法，受公卿羣吏奏事，有遺失者，舉劾之"
+            ],
+            "zhs": [
+              "掌察举非法，受公卿群吏奏事，有遗失者，举劾之"
+            ],
+            "en": [
+              "Responsible for discerning unlawful actions, receiving reports from Excellencies, Ministers, and other officials. If there were any mistakes or misconduct, they would investigate and file impeachments"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，六百石，(魏)八人 (吳)無考"
+            ],
+            "zhs": [
+              "第七品，六百石，(魏)八人 (吴)无考"
+            ],
+            "en": [
+              "Seventh grade, 600 shi, (Wei) 8 people (Wu) unknown"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏凡八部，是以亦稱部曹御史，有治書曹，掌度支運，課第曹，掌考課，不知其餘曹",
+              "zhs": "魏凡八部，是以亦称部曹御史，有治书曹，掌度支运，课第曹，掌考课，不知其余曹",
+              "en": "In Wei totalled eight divisions, thus also known as Section Attendant Censor.  Sections include Secretarial Section that manage the allocation and transportation of resources, and the Merit Section that manage evaluations and appraisals, the other sections are unknown"
+            }
+          ]
+        },
+        {
+          "id": "censorate-050",
+          "displayName": {
+            "zht": "殿中侍御史",
+            "zhs": "殿中侍御史",
+            "en": "Palace Attendant Censor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "殿中侍御史",
+                "zhs": "殿中侍御史",
+                "en": "Palace Attendant Censor"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "居殿中，察非法"
+            ],
+            "zhs": [
+              "居殿中，察非法"
+            ],
+            "en": [
+              "Station within the palace and discern unlawful conduct"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，六百石，二人"
+            ],
+            "zhs": [
+              "第七品，六百石，二人"
+            ],
+            "en": [
+              "Seventh grade, 600 shi, 2 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏初置，由蘭臺遣二御史",
+              "zhs": "魏初置，由兰台遣二御史",
+              "en": "Established at the beginning of Wei, dispatched from the Orchid Terrace"
+            }
+          ]
+        },
+        {
+          "id": "censorate-051",
+          "displayName": {
+            "zht": "三臺﹑五都侍御史",
+            "zhs": "三台﹑五都侍御史",
+            "en": "Attendant Censor of the Three Terraces/Five Capitals"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "三臺﹑五都侍御史",
+                "zhs": "三台﹑五都侍御史",
+                "en": "Attendant Censor of the Three Terraces/Five Capitals"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品，每臺、都各一人"
+            ],
+            "zhs": [
+              "第七品，每台、都各一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person each at each terrace/capital"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏以長安﹑譙﹑許都﹑鄴﹑洛陽為五都",
+              "zhs": "魏以长安﹑谯﹑许都﹑邺﹑洛阳为五都",
+              "en": "The Wei designated Chang'an, Qiao, Xuchang, Ye, and Luoyang as the Five Capitals."
+            },
+            {
+              "zht": "洪飴孫唯言三臺有尚書﹑符節，餘一臺未明",
+              "zhs": "洪饴孙唯言三台有尚书﹑符节，余一台未明",
+              "en": "Hong Yisun only mentioned the Three Terraces included the State Affairs Terrace and  the Insignia Terrace, the last terrace is unclear"
+            }
+          ]
+        },
+        {
+          "id": "censorate-052",
+          "displayName": {
+            "zht": "督軍糧御史",
+            "zhs": "督军粮御史",
+            "en": "Censor supervising Provisions"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "督軍糧御史",
+                "zhs": "督军粮御史",
+                "en": "Censor supervising Provisions"
+              }
+            ],
+            "shu": null,
+            "wu": [
+              {
+                "zht": "監農御史",
+                "zhs": "监农御史",
+                "en": "Censor supervising Agriculture"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "(魏) 第七品，(魏、吳) 一人"
+            ],
+            "zhs": [
+              "(魏) 第七品，(魏、吴) 一人"
+            ],
+            "en": [
+              "(Wei) Seventh grade, (Wei & Wu) 1  person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏出征則置",
+              "zhs": "魏出征则置",
+              "en": "The Wei position was appointed when launching expeditions"
+            }
+          ]
+        },
+        {
+          "id": "censorate-053",
+          "displayName": {
+            "zht": "禁防御史",
+            "zhs": "禁防御史",
+            "en": "Monitoring Censor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "禁防御史",
+                "zhs": "禁防御史",
+                "en": "Monitoring Censor"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品，員數無考"
+            ],
+            "zhs": [
+              "第七品，员数无考"
+            ],
+            "en": [
+              "Seventh grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "censorate-054",
+          "displayName": {
+            "zht": "蘭臺令史",
+            "zhs": "兰台令史",
+            "en": "Orchid Terrace Scribe"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "蘭臺令史",
+                "zhs": "兰台令史",
+                "en": "Orchid Terrace Scribe"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "掌奏及印工文書"
+            ],
+            "zhs": [
+              "掌奏及印工文书"
+            ],
+            "en": [
+              "In charge of drafting memorials and preparing document templates for seal-making"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第九品，員數無考"
+            ],
+            "zhs": [
+              "第九品，员数无考"
+            ],
+            "en": [
+              "Ninth grade, no fixed number of posts"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "按後漢書，秩百石",
+              "zhs": "按后汉书，秩百石",
+              "en": "Per the Book of the Later Han, salary 100 shi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waterways-terrace",
+      "label": {
+        "zht": "都水臺",
+        "zhs": "都水台",
+        "en": "Waterways Terrace"
+      },
+      "positions": [
+        {
+          "id": "waterways-terrace-055",
+          "displayName": {
+            "zht": "都水使者",
+            "zhs": "都水使者",
+            "en": "Commissioner of Waterways"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 4,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "都水使者",
+                "zhs": "都水使者",
+                "en": "Commissioner of Waterways"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主陂池灌漑﹑保守河渠"
+            ],
+            "zhs": [
+              "主陂池灌漑﹑保守河渠"
+            ],
+            "en": [
+              "Responsible for managing reservoirs and irrigation, and maintaining rivers and canals"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第四品，一人"
+            ],
+            "zhs": [
+              "第四品，一人"
+            ],
+            "en": [
+              "Fourth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "waterways-terrace-056",
+          "displayName": {
+            "zht": "前、後、左、右、中水衡都尉",
+            "zhs": "前、后、左、右、中水衡都尉",
+            "en": "Front / Rear / Left / Right / Central Commandant of Waterways"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "前、後、左、右、中水衡都尉",
+                "zhs": "前、后、左、右、中水衡都尉",
+                "en": "Front / Rear / Left / Right / Central Commandant of Waterways"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主天下水軍舟船器械"
+            ],
+            "zhs": [
+              "主天下水军舟船器械"
+            ],
+            "en": [
+              "Responsible for the naval ships and equipment across the realm"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第六品，五人"
+            ],
+            "zhs": [
+              "第六品，五人"
+            ],
+            "en": [
+              "Sixth grade, 5 people"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "waterways-terrace-057",
+          "displayName": {
+            "zht": "河隄謁者",
+            "zhs": "河隄谒者",
+            "en": "River Dikes Emissary"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "河隄謁者",
+                "zhs": "河隄谒者",
+                "en": "River Dikes Emissary"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主陂池灌漑﹑保守河渠"
+            ],
+            "zhs": [
+              "主陂池灌漑﹑保守河渠"
+            ],
+            "en": [
+              "Responsible for managing reservoirs and irrigation, and maintaining rivers and canals"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，五人"
+            ],
+            "zhs": [
+              "第七品，五人"
+            ],
+            "en": [
+              "Seventh grade, 5 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "凡五部，是以五人",
+              "zhs": "凡五部，是以五人",
+              "en": "Totalling five divisions, hence 5 people"
+            }
+          ]
+        },
+        {
+          "id": "waterways-terrace-058",
+          "displayName": {
+            "zht": "都水參軍",
+            "zhs": "都水参军",
+            "en": "Waterways Army Adjutant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "都水參軍",
+                "zhs": "都水参军",
+                "en": "Waterways Army Adjutant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第七品，二人"
+            ],
+            "zhs": [
+              "第七品，二人"
+            ],
+            "en": [
+              "Seventh grade, 2 people"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "waterways-terrace-059",
+          "displayName": {
+            "zht": "令史",
+            "zhs": "令史",
+            "en": "Foreman Clerk"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "令史",
+                "zhs": "令史",
+                "en": "Foreman Clerk"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第八品，員數無考"
+            ],
+            "zhs": [
+              "第八品，员数无考"
+            ],
+            "en": [
+              "Eight grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "insignia-terrace",
+      "label": {
+        "zht": "符節臺",
+        "zhs": "符节台",
+        "en": "Insignia Terrace"
+      },
+      "positions": [
+        {
+          "id": "insignia-terrace-060",
+          "displayName": {
+            "zht": "符節令",
+            "zhs": "符节令",
+            "en": "Director of Imperial Insignia"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "符節令",
+                "zhs": "符节令",
+                "en": "Director of Imperial Insignia"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "符節令",
+                "zhs": "符节令",
+                "en": "Director of Imperial Insignia"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "符節令",
+                "zhs": "符节令",
+                "en": "Director of Imperial Insignia"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌授節﹑銅虎符"
+            ],
+            "zhs": [
+              "掌授节﹑铜虎符"
+            ],
+            "en": [
+              "In charge of issuing Staffs and bronze Tiger Tallies"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第五品，六百石，一人"
+            ],
+            "zhs": [
+              "第五品，六百石，一人"
+            ],
+            "en": [
+              "Fifth grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏制，位次御史中丞",
+              "zhs": "魏制，位次御史中丞",
+              "en": "In Wei,  ranked second to the Deputy Imperial Censor"
+            }
+          ]
+        },
+        {
+          "id": "insignia-terrace-061",
+          "displayName": {
+            "zht": "符璽郎",
+            "zhs": "符玺郎",
+            "en": "Gentleman of the Seals and Tallies"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "符璽郎",
+                "zhs": "符玺郎",
+                "en": "Gentleman of the Seals and Tallies"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "符節郎",
+                "zhs": "符节郎",
+                "en": "Gentleman of Imperial Insignia"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "在中主璽及虎符﹑竹符之半者"
+            ],
+            "zhs": [
+              "在中主玺及虎符﹑竹符之半者"
+            ],
+            "en": [
+              "In the palace manage the imperial seal, as well as one half of the tiger tallies and bamboo tallies"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，四人"
+            ],
+            "zhs": [
+              "第七品，四人"
+            ],
+            "en": [
+              "Seventh grade, 4 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "故事，遣將出征，符璽郎授斧鉞于西堂",
+              "zhs": "故事，遣将出征，符玺郎授斧钺于西堂",
+              "en": "Per tradition, when dispatching generals on expeditions, the Gentleman of Seals and Tallies would present the Yue in the western hall"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "label": {
+        "zht": "其餘",
+        "zhs": "其余",
+        "en": "Others"
+      },
+      "positions": [
+        {
+          "id": "others-062",
+          "displayName": {
+            "zht": "崇文觀祭酒",
+            "zhs": "崇文观祭酒",
+            "en": "Libationer of the Hall of Lofty Literature"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "崇文觀祭酒",
+                "zhs": "崇文观祭酒",
+                "en": "Libationer of the Hall of Lofty Literature"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "崇文觀靑龍四年置，徵善屬文者充之",
+              "zhs": "崇文观靑龙四年置，征善属文者充之",
+              "en": "The Hall of Lofty Literature was established in the 4th year of Qinglong, recruiting individuals skilled in composing literary works to fill its positions"
+            }
+          ]
+        },
+        {
+          "id": "others-063",
+          "displayName": {
+            "zht": "殿中監",
+            "zhs": "殿中监",
+            "en": "Palace Superintendent"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "殿中監",
+                "zhs": "殿中监",
+                "en": "Palace Superintendent"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "掌帳設監護之事"
+            ],
+            "zhs": [
+              "掌帐设监护之事"
+            ],
+            "en": [
+              "In charge of curtains and hangings, as well as the guarding and supervision of the palace"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "第七品，一人"
+            ],
+            "zhs": [
+              "第七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "others-064",
+          "displayName": {
+            "zht": "典事",
+            "zhs": "典事",
+            "en": "Manager"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "典事",
+                "zhs": "典事",
+                "en": "Manager"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "第九品，員數無考"
+            ],
+            "zhs": [
+              "第九品，员数无考"
+            ],
+            "en": [
+              "Ninth grade, no fixed number of posts"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "屬殿中監",
+              "zhs": "属殿中监",
+              "en": "Subordinate to the Palace Superintendent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

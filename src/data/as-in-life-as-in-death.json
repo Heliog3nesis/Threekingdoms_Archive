@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "title": "As in Life, As in Death",
+    "title_zh_hant": "事死如事生",
+    "title_zh_hans": "事死如事生",
+    "eyebrow": "Special Topic",
+    "eyebrow_zh_hant": "專題",
+    "eyebrow_zh_hans": "专题",
+    "subtitle": "Pictorial bricks, and the imagined afterlife of the Han world.",
+    "subtitle_zh_hant": "漢代畫像磚與身後事",
+    "subtitle_zh_hans": "汉代画像砖与身后事",
+    "readTime": "~10 min read",
+    "readTime_zh_hant": "約 10 分鐘",
+    "readTime_zh_hans": "约 10 分钟",
+    "artefacts": "14 artefacts",
+    "artefacts_zh_hant": "14 件文物",
+    "artefacts_zh_hans": "14 件文物",
+    "updated": "Updated July 2026",
+    "updated_zh_hant": "2026 年 7 月",
+    "updated_zh_hans": "2026 年 7 月"
+  },
+  "sections": [
+    {
+      "id": "burial-worlds",
+      "title": "The Afterworld",
+      "title_zh_hant": "死後世界",
+      "title_zh_hans": "死后世界",
+      "paragraphs": [
+        {
+          "lead": true,
+          "text": "During the Han dynasty, people believed that the world beyond death was no different from the world of the living. Thus, the comforts and possessions enjoyed in life were recreated underground for the deceased to enjoy in the next world. This belief is captured in the phrase, \"Serve the dead as one serves the living (事死如事生).\" Since the middle of the Western/Former Han, such lavish burials became an increasingly prominent feature of Han society.",
+          "text_zh_hant": "距今二千多年前的漢代，人們認為死後的世界與現在的世界並無不同。因此，人們常把身前地上的生活起居物器帶入地下享用，即所謂「事死如事生」。厚葬之風自西漢中期以後蔚為社會風氣，而畫像磚便是此背景下的衍生物。它與畫像石同為漢代墓葬藝術的重要組成，二者相輔相成。所不同者，畫像石為石刻，多用於牆面裝飾；畫像磚則為陶磚，用於墓室營建，或作墓門、墓壁，或鋪設墓頂與地面，兼具結構與裝飾之雙重功能。",
+          "text_zh_hans": "距今二千多年前的汉代，人们认为死后的世界与现在的世界并无不同。因此，人们常把身前地上的生活起居物器带入地下享用，此即为「事死如事生」。厚葬之风自西汉中期以后蔚为社会风气，而画像砖便是此背景下的衍生物。它与画像石同为汉代墓葬艺术的重要组成，二者相辅相成。所不同者，画像石为石刻，多用于墙面装饰；画像砖则为陶砖，用于墓室营建，或作墓门、墓壁，或铺设墓顶与地面，兼具结构与装饰之双重功能。"
+        },
+        {
+          "text": "Pictorial bricks emerged from this funerary tradition. Together with pictorial stones, they became one of the defining forms of Han funerary art. The two differed chiefly in material and use. Pictorial stones were carved from stone and used primarily to decorate tomb walls, whereas pictorial bricks were moulded from clay and used as the facing for tomb entrances, walls, ceilings, and floors.",
+          "text_zh_hant": "",
+          "text_zh_hans": ""
+        }
+      ],
+      "injections": [
+        {
+          "afterParagraph": 1,
+          "imageIds": [
+            "brick-intro1",
+            "stone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brick-pictures",
+      "title": "Pictures on Bricks",
+      "title_zh_hant": "畫像磚",
+      "title_zh_hans": "画像砖",
+      "paragraphs": [
+        {
+          "text": "Production of pictorial bricks usually involve one of three techniques. The first was incising, in which images were carved directly into damp clay with a sharp tool. The second was stamping, where designs were pressed into partially dried bricks using a mould. The third was moulding, in which clay was applied to a carved wooden mould, compacted, and removed, allowing the image to emerge as an integral part of the brick itself.",
+          "text_zh_hant": "畫像磚的製作方法主要有三：一為「刻畫法」，以尖利器物在未乾泥坯上直接刻劃；二為「壓印法」，以模型將圖像印壓於半乾磚坯；三為「模印法」，在木模上貼泥，拍打夯實後脫模，圖像於製坯過程一體生成。",
+          "text_zh_hans": "画像砖的制作方法主要有三：一为「刻画法」，以尖利器物在未干泥坯上直接刻划；二为「压印法」，以模型将图像印压于半干砖坯；三为「模印法」，在木模上贴泥，拍打夯实后脱模，图像于制坯过程一体生成。"
+        },
+        {
+          "text": "The subjects depicted are also remarkably diverse, encompassing historical tales, societal customs, architecture, myths and legends, banquets and entertainments, and scenes of everyday labour.",
+          "text_zh_hant": "畫像磚內容包羅萬象，如歷史故事、車騎出巡、建築人物、神話傳說、宴飲遊樂、民間勞動等。",
+          "text_zh_hans": "画像砖内容包罗万象，如历史故事、车骑出巡、建筑人物、神话传说、宴饮游乐、民间劳动等。"
+        }
+      ],
+      "injections": [
+        {
+          "afterParagraph": 1,
+          "imageIds": [
+            "gathering1",
+            "brick-intro2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shu-showcase",
+      "title": "Bricks of Shu",
+      "title_zh_hant": "蜀地畫像磚",
+      "title_zh_hans": "蜀地画像砖",
+      "paragraphs": [
+        {
+          "text": "Regional styles varied considerably. In Shu (modern Sichuan), numerous pictorial bricks have been discovered in the past few decades, many dating to the Eastern/Later Han dynasty. Here, the dominant carving style was low relief, with scenes extending across the entire brick surface and gently rounded figures projecting from it to create a striking sense of depth.",
+          "text_zh_hant": "各地畫像磚風格各異，其中蜀地發現尤多，且多屬東漢時期。技法以淺浮雕為主，畫面滿布磚面，圖像弧圓凸起，極富立體感。蜀地畫像磚多偏重於對社會生產與經濟活動的描繪，其內容大致可分為五類：生產勞作、市井生活、社會風貌、神話傳說、車馬闕樓。",
+          "text_zh_hans": "各地画像砖风格各异，其中蜀地发现尤多，且多属东汉时期。技法以浅浮雕为主，画面满布砖面，图像弧圆凸起，极富立体感。蜀地画像砖多偏重于对社会生产与经济活动的描绘，其内容大致可分为五类：生产劳作、市井生活、社会风貌、神话传说、车马阙楼。"
+        },
+        {
+          "text": "The pictorial bricks of Shu are especially renowned for their depictions of everyday life and economic activity. Their imagery may be broadly grouped into five themes: production and labour, daily life, social events and customs, mythology and legend, and chariots and architecture.",
+          "text_zh_hant": "",
+          "text_zh_hans": ""
+        }
+      ],
+      "injections": [
+        {
+          "afterParagraph": 1,
+          "imageIds": [
+            "agriculture1",
+            "agriculture2"
+          ]
+        },
+        {
+          "afterParagraph": 1,
+          "imageIds": [
+            "life1",
+            "life2"
+          ]
+        },
+        {
+          "afterParagraph": 1,
+          "imageIds": [
+            "social1",
+            "social2"
+          ]
+        },
+        {
+          "afterParagraph": 1,
+          "imageIds": [
+            "myth1",
+            "myth2"
+          ]
+        },
+        {
+          "afterParagraph": 1,
+          "imageIds": [
+            "chariot1",
+            "tower"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "",
+      "title_zh_hant": "",
+      "title_zh_hans": "",
+      "paragraphs": [
+        {
+          "text": "The significance of pictorial bricks extends far beyond their artistic value. For the deceased, they furnished the world beyond and embodied hopes for an ideal afterlife. For the living, they expressed remembrance, filial devotion, and social standing. The wishes of the dead and the sentiments of the living were brought together.",
+          "text_zh_hant": "畫像磚的意義不止於藝術層面。對死者而言，它是身後世界的準備與美好願景的寄託；對家屬而言，它是展示財富、德行與社會地位的方式，更是對逝者的祝福。死者得享地下榮華，生者得盡孝道之心，雙方需求皆由此獲得滿足。可以說，畫像磚既是一部地下的漢代社會史，也是一面映照人性情感與信仰追求的鏡子。",
+          "text_zh_hans": "画像砖的意义不止于艺术层面。对死者而言，它是身后世界的准备与美好愿景的寄托；对家属而言，它是展示财富、德行与社会地位的方式，更是对逝者的祝福。死者得享地下荣华，生者得尽孝道之心，双方需求皆由此获得满足。可以说，画像砖既是一部地下的汉代社会史，也是一面映照人性情感与信仰追求的镜子。"
+        },
+        {
+          "text": "Two thousand years after they were buried, they return to the world above. As we stand before them today, what do we see?",
+          "text_zh_hant": "千年後的我們，對著這些重見光明的畫磚，又看見了什麼呢？",
+          "text_zh_hans": "千年后的我们，对着这些重见光明的画砖，又看见了什么呢？"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "brick-intro1",
+      "image": "/featured/as-in-life/intro_1.jpg",
+      "description": "Pictorial Brick: Hunting and Harvesting",
+      "description_zh_hant": "畫像磚：弋射與收穫",
+      "description_zh_hans": "画像砖：弋射与收获",
+      "found": "",
+      "found_zh_hant": "",
+      "found_zh_hans": "",
+      "displayed": "Displayed: Sichuan University Museum",
+      "displayed_zh_hant": "現藏：四川大學博物館",
+      "displayed_zh_hans": "现藏：四川大学博物馆",
+      "time": "",
+      "time_zh_hant": "",
+      "time_zh_hans": ""
+    },
+    {
+      "id": "brick-intro2",
+      "image": "/featured/as-in-life/intro_2.jpg",
+      "description": "Immortal on a Deer",
+      "description_zh_hant": "仙人騎鹿",
+      "description_zh_hans": "仙人骑鹿",
+      "found": "Found: Pengzhou, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省彭州市",
+      "found_zh_hans": "出土地点：四川省彭州市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": "",
+      "time_zh_hant": "",
+      "time_zh_hans": ""
+    },
+    {
+      "id": "gathering1",
+      "image": "/featured/as-in-life/gathering.jpg",
+      "description": "A Gathering",
+      "description_zh_hant": "宴飲",
+      "description_zh_hans": "宴飲",
+      "found": "Found: Zhaojue Temple Tomb, Chengdu, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省成都市昭覺寺漢墓",
+      "found_zh_hans": "出土地点：四川省成都市昭觉寺汉墓",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "stone",
+      "image": "/featured/as-in-life/stone.jpg",
+      "description": "Pictorial Stone: Carriage",
+      "description_zh_hant": "畫像石：馬車",
+      "description_zh_hans": "画像石：马车",
+      "found": null,
+      "found_zh_hant": null,
+      "found_zh_hans": null,
+      "displayed": "Displayed: Sichuan University Museum",
+      "displayed_zh_hant": "現藏：四川大學博物館",
+      "displayed_zh_hans": "现藏：四川大学博物馆",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "agriculture1",
+      "image": "/featured/as-in-life/agriculture_1.jpg",
+      "description": "Working in the Fields",
+      "description_zh_hant": "農作",
+      "description_zh_hans": "农作",
+      "found": "Found: Deyang, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省德陽市",
+      "found_zh_hans": "出土地点：四川省德阳市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "agriculture2",
+      "image": "/featured/as-in-life/agriculture_2.jpg",
+      "description": "Salt Production",
+      "description_zh_hant": "製鹽",
+      "description_zh_hans": "制盐",
+      "found": "Found: Qionglai, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省邛崍市",
+      "found_zh_hans": "出土地点：四川省邛崃市",
+      "displayed": "Displayed: Chengdu Museum",
+      "displayed_zh_hant": "現藏：成都博物館",
+      "displayed_zh_hans": "现藏：成都博物馆",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "life1",
+      "image": "/featured/as-in-life/life_1.jpg",
+      "description": "Liquor Store",
+      "description_zh_hant": "酒肆",
+      "description_zh_hans": "酒肆",
+      "found": "Found: Pengzhou, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省彭州市",
+      "found_zh_hans": "出土地点：四川省彭州市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "life2",
+      "image": "/featured/as-in-life/life_2.jpg",
+      "description": "Kitchen",
+      "description_zh_hant": "庖廚",
+      "description_zh_hans": "庖厨",
+      "found": "Found: Pengzhou, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省彭州市",
+      "found_zh_hans": "出土地点：四川省彭州市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "social1",
+      "image": "/featured/as-in-life/social_1.jpg",
+      "description": "Acrobatics",
+      "description_zh_hant": "雜技",
+      "description_zh_hans": "杂技",
+      "found": "Found: Pengzhou, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省彭州市",
+      "found_zh_hans": "出土地点：四川省彭州市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "social2",
+      "image": "/featured/as-in-life/social_2.jpg",
+      "description": "Lecture",
+      "description_zh_hant": "講經",
+      "description_zh_hans": "讲经",
+      "found": "Found: Deyang, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省德陽市",
+      "found_zh_hans": "出土地点：四川省德阳市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "myth1",
+      "image": "/featured/as-in-life/myth_1.jpg",
+      "description": "Making Pills of Immortality",
+      "description_zh_hant": "鼎人",
+      "description_zh_hans": "鼎人",
+      "found": "Found: Pengzhou, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省彭州市",
+      "found_zh_hans": "出土地点：四川省彭州市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "myth2",
+      "image": "/featured/as-in-life/myth_2.jpg",
+      "description": "The Lunar Deity",
+      "description_zh_hant": "月神",
+      "description_zh_hans": "月神",
+      "found": "Found: Pengzhou, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省彭州市",
+      "found_zh_hans": "出土地点：四川省彭州市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "chariot1",
+      "image": "/featured/as-in-life/chariot_1.jpg",
+      "description": "Bridge Crossing",
+      "description_zh_hant": "車馬過橋",
+      "description_zh_hans": "车马过桥",
+      "found": "Found: Chengdu, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省成都市",
+      "found_zh_hans": "出土地点：四川省成都市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "tower",
+      "image": "/featured/as-in-life/tower.jpg",
+      "description": "The Gate Tower",
+      "description_zh_hant": "鳳闕",
+      "description_zh_hans": "凤阙",
+      "found": "Found: Dayi, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省大邑縣",
+      "found_zh_hans": "出土地点：四川省大邑縣",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    }
+  ],
+  "seeAlso": [
+    {
+      "title": "Taipei Palace Museum Collection: Pictorial Stone Rubbings",
+      "title_zh_hant": "臺北故宮典藏：畫像石拓片",
+      "title_zh_hans": "台北故宫典藏：画像石拓片",
+      "href": "https://digitalarchive.npm.gov.tw/Collection/Search?CategoryRegisterType=%27%E6%8B%93%E7%89%87%27%2C",
+      "href_zh_hant": "https://digitalarchive.npm.gov.tw/Collection/Search?CategoryRegisterType=%27%E6%8B%93%E7%89%87%27%2C",
+      "href_zh_hans": "https://digitalarchive.npm.gov.tw/Collection/Search?CategoryRegisterType=%27%E6%8B%93%E7%89%87%27%2C",
+      "image": "/trans_banner.png",
+      "description": "",
+      "description_zh_hant": "",
+      "description_zh_hans": ""
+    }
+  ],
+  "references": [
+    "Xing, Yitian. The Development of Han Dynasty Murals and Mural Tombs (《漢代壁畫的發展和壁畫墓》). 1986.",
+    "Lin, Ching-Yun. An In-Depth Look Into the Han Dynasty Seven-themed Portrait Brick Exhibits of the Sichuan Museum. 2011."
+  ],
+  "references_zh_hant": [
+    "刑義田, 《漢代壁畫的發展和壁畫墓》，1986.",
+    "林淨韻，《四川博物館漢代畫像磚七大主題展示品的綜理與介述 》，2011."
+  ],
+  "references_zh_hans": [
+    "邢义田，《汉代壁画的发展和壁画墓》，1986.",
+    "林净韵，《四川博物馆汉代画像砖七大主题展示品的综理与介述》，2011."
+  ],
+  "sitesVisited": [
+    "Sichuan Provincial Museum",
+    "Chengdu Museum",
+    "Sichuan University Museum"
+  ],
+  "sitesVisited_zh_hant": [
+    "四川博物院",
+    "成都博物館",
+    "四川大學博物館"
+  ],
+  "sitesVisited_zh_hans": [
+    "四川博物院",
+    "成都博物馆",
+    "四川大学博物馆"
+  ]
+}

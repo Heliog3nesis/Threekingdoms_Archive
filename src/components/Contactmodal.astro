@@ -1,0 +1,430 @@
+---
+const { strings: s } = Astro.props;
+const support = s.contact.support;
+---
+
+<!-- CONTACT MODAL OVERLAY -->
+<div class="modal-overlay" id="contact-overlay">
+  <div class="modal" id="contact-modal" role="dialog" aria-modal="true" aria-label="Contact">
+    <button class="modal-close" id="contact-close" aria-label="Close">
+      <i class="ti ti-x"></i>
+    </button>
+
+    <div class="modal-body">
+      <!-- LEFT: contact info -->
+      <div class="modal-left">
+        <p class="modal-heading">{s.contact.heading}</p>
+        <p class="modal-sub">{s.contact.sub}</p>
+
+        <div class="contact-links">
+          <a href={`mailto:${s.contact.email}`} class="contact-link">
+            <div class="contact-icon email-icon">
+              <i class="ti ti-mail"></i>
+            </div>
+            <div class="contact-link-body">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">{s.contact.email}</span>
+            </div>
+          </a>
+
+          <a href={s.contact.github} target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-icon github-icon">
+              <i class="ti ti-brand-github"></i>
+            </div>
+            <div class="contact-link-body">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">{s.contact.githubHandle}</span>
+            </div>
+          </a>
+
+          <a href={s.contact.discord} target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-icon discord-icon">
+              <i class="ti ti-brand-discord"></i>
+            </div>
+            <div class="contact-link-body">
+              <span class="contact-link-label">Discord</span>
+              <span class="contact-link-value">{s.contact.discordHandle}</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="support-block">
+          <p class="support-label">{support.label}</p>
+          <a href={support.url} target="_blank" rel="noopener" class="support-card">
+            <div class="support-icon">
+              <i class="ti ti-cup"></i>
+            </div>
+            <div class="contact-link-body">
+              <span class="contact-link-value">{support.title}</span>
+              <span class="support-sub">{support.sub}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: contact form -->
+      <div class="modal-right">
+        <p class="modal-heading">{s.contact.formHeading}</p>
+        <form
+          class="contact-form"
+          id="contact-form"
+          action={`https://formspree.io/f/${s.contact.formspreeId}`}
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="contact-name">{s.contact.form.name}</label>
+            <input type="text" id="contact-name" name="name" placeholder={s.contact.form.namePlaceholder}/>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">{s.contact.form.email}</label>
+            <input type="email" id="contact-email" name="email" placeholder={s.contact.form.emailPlaceholder} />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">{s.contact.form.message}</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder={s.contact.form.messagePlaceholder} required></textarea>
+          </div>
+          <button type="submit" class="form-submit">{s.contact.form.submit}</button>
+          <p class="form-success" id="form-success">{s.contact.form.success}</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const overlay = document.getElementById('contact-overlay') as HTMLElement;
+  const closeBtn = document.getElementById('contact-close');
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  const success = document.getElementById('form-success');
+
+  function openModal() {
+    if (overlay) {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if (overlay) {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  if (overlay) {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+      if (res.ok) {
+        form.reset();
+        if (success) {
+          success.classList.add('visible');
+          setTimeout(() => success.classList.remove('visible'), 4000);
+        }
+      }
+    });
+  }
+
+  (window as any).openContactModal = openModal;
+</script>
+
+<style>
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(184, 138, 74, 0.12), transparent 28%),
+    rgba(0,0,0,0.78);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  background: linear-gradient(145deg, rgba(13, 12, 10, 0.98), rgba(7, 7, 6, 0.98));
+  border: 1px solid rgba(208, 170, 107, 0.22);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 780px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(8px);
+}
+
+.modal-overlay.active .modal {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem; right: 1.5rem;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(208, 170, 107, 0.28);
+  background: rgba(7, 7, 6, 0.62);
+  color: #b88a4a;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 14px;
+  transition: background 0.15s;
+  z-index: 1;
+}
+.modal-close:hover { background: rgba(208, 170, 107, 0.12); color: #f1e7d6; }
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 380px;
+  align-items: stretch;
+}
+
+.modal-left {
+  padding: 2rem;
+  border-right: 1px solid rgba(208, 170, 107, 0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-right {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.modal-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px; font-weight: 500;
+  color: #f1e7d6;
+  margin-bottom: 0.5rem;
+}
+:lang(zh-hans) .modal-heading { font-family: 'Noto Serif SC', serif; }
+:lang(zh-hant) .modal-heading { font-family: 'Noto Serif TC', serif; }
+
+.modal-sub {
+  font-size: 15px; color: rgba(232, 221, 202, 0.7);
+  line-height: 1.6; margin-bottom: 1.5rem;
+}
+
+
+/* CONTACT LINKS */
+.contact-links { display: flex; flex-direction: column; gap: 10px; }
+
+.contact-link {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(208, 170, 107, 0.16);
+  text-decoration: none;
+  background: rgba(17, 16, 14, 0.88);
+  transition: background 0.15s, border-color 0.15s;
+}
+.contact-link:hover {
+  background: rgba(26, 22, 17, 0.96);
+  border-color: rgba(208, 170, 107, 0.34);
+}
+
+.contact-icon {
+  width: 42px; height: 42px; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 18px;
+}
+.email-icon   { background: rgba(107, 67, 8, 0.35); color: #d0aa6b; }
+.github-icon  { background: rgba(232, 221, 202, 0.08); color: #bca47c; }
+.discord-icon { background: rgba(30, 43, 64, 0.82); color: #6ec1ff; }
+
+.contact-link-body { display: flex; flex-direction: column; gap: 2px; }
+.contact-link-label { font-size: 12px; color: #8d7a60; text-transform: uppercase; letter-spacing: 0.05em; }
+.contact-link-value { font-size: 14px; color: #f1e7d6; }
+:lang(zh-hans) .contact-link-value { font-size: 16px }
+:lang(zh-hant) .contact-link-value { font-size: 16px }
+
+.support-block {
+  margin-top: 1.3rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid rgba(208, 170, 107, 0.16);
+}
+
+.support-label {
+  margin: 0 0 0.75rem;
+  color: #8d7a60;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+:lang(zh-hans) .support-label {
+  font-size: 16px;
+}
+
+:lang(zh-hant) .support-label {
+  font-size: 16px;
+}
+.support-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(208, 170, 107, 0.2);
+  border-radius: 6px;
+  background: rgba(17, 16, 14, 0.9);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.support-card:hover {
+  background: rgba(26, 22, 17, 0.98);
+  border-color: rgba(208, 170, 107, 0.42);
+}
+
+.support-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: rgba(107, 67, 8, 0.32);
+  color: #d0aa6b;
+  font-size: 18px;
+}
+
+.support-sub {
+  color: #8d7a60;
+  font-size: 13px;
+}
+:lang(zh-hans) .support-sub,
+:lang(zh-hant) .support-sub {
+  font-size: 14px;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.875rem;
+  min-height: 0;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+
+.form-group:has(textarea) {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.form-group textarea {
+  flex: 1;
+  min-height: 190px;
+}
+
+.form-group label {
+  font-size: 14px; color: #8d7a60;
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+
+lang(zh-hans) .form-group label { font-size:15.5px }
+:lang(zh-hant) .form-group label { font-size: 15.5px }
+
+.form-group input,
+.form-group textarea {
+  background: rgba(232, 221, 202, 0.12);
+  border: 1px solid rgba(208, 170, 107, 0.18);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  resize: none;
+  transition: border-color 0.15s;
+  outline: none;
+}
+:lang(zh-hans) .form-group input,
+:lang(zh-hans) .form-group textarea { font-family: 'Noto Sans SC', sans-serif; }
+:lang(zh-hant) .form-group input,
+:lang(zh-hant) .form-group textarea { font-family: 'Noto Sans TC', sans-serif; }
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: rgba(208, 170, 107, 0.5);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 9px 20px;
+  background: rgba(7, 7, 6, 0.72);
+  color: #f1e7d6;
+  border: 1px solid rgba(208, 170, 107, 0.35);
+  border-radius: 6px;
+  font-size: 13px; font-weight: 500;
+  cursor: pointer;
+  align-self: stretch;
+  transition: opacity 0.15s;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+:lang(zh-hans) .form-submit { font-family: 'Noto Sans SC', sans-serif; }
+:lang(zh-hant) .form-submit { font-family: 'Noto Sans TC', sans-serif; }
+.form-submit:hover {
+  opacity: 1;
+  background: rgba(208, 170, 107, 0.12);
+  border-color: rgba(208, 170, 107, 0.55);
+}
+
+.form-success {
+  font-size: 13px; color: var(--map-teal-text);
+  opacity: 0; transition: opacity 0.3s;
+  margin-top: 0.25rem;
+}
+.form-success.visible { opacity: 1; }
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .modal {
+    max-width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+    align-self: flex-end;
+  }
+  .modal-overlay { align-items: flex-end; }
+  .modal-body { grid-template-columns: 1fr; }
+  .modal-left { border-right: none; border-bottom: 1px solid rgba(208, 170, 107, 0.18); padding: 1.5rem; }
+  .modal-right { padding: 1.5rem; }
+}
+</style>

@@ -1,0 +1,1213 @@
+{
+  "periods": [
+    {
+      "id": "XQ",
+      "label": {
+        "en": "Pre-Qin",
+        "zht": "先秦",
+        "zhs": "先秦"
+      }
+    },
+    {
+      "id": "Han",
+      "label": {
+        "en": "Qin-Han",
+        "zht": "秦漢",
+        "zhs": "秦汉"
+      }
+    },
+    {
+      "id": "W-J",
+      "label": {
+        "en": "Wei-Jin",
+        "zht": "魏晉",
+        "zhs": "魏晋"
+      }
+    },
+    {
+      "id": "N/S",
+      "label": {
+        "en": "N/S Dynasties",
+        "zht": "南北朝",
+        "zhs": "南北朝"
+      }
+    },
+    {
+      "id": "T-S",
+      "label": {
+        "en": "Tang-Song",
+        "zht": "唐宋",
+        "zhs": "唐宋"
+      }
+    }
+  ],
+  "types": [
+    {
+      "id": "Br",
+      "label": {
+        "en": "Brilliance",
+        "zht": "慧心",
+        "zhs": "慧心"
+      }
+    },
+    {
+      "id": "Wit",
+      "label": {
+        "en": "Wit",
+        "zht": "諧謔",
+        "zhs": "谐谑"
+      }
+    },
+    {
+      "id": "Sor",
+      "label": {
+        "en": "Sorrow",
+        "zht": "悵慨",
+        "zhs": "怅慨"
+      }
+    },
+    {
+      "id": "C",
+      "label": {
+        "en": "Character",
+        "zht": "品性",
+        "zhs": "品性"
+      }
+    }
+  ],
+  "stories": [
+    {
+      "id": "lifted-gaze",
+      "period_id": "W-J",
+      "type_id": "Br",
+      "quote": {
+        "en": "The sun I can see, Chang'an I cannot.",
+        "zht": "舉目見日，不見長安",
+        "zhs": "举目见日，不见长安"
+      },
+      "watermarkChar": "日",
+      "title": {
+        "en": "The sun I can see, Chang'an I cannot",
+        "zht": "舉目見日，不見長安",
+        "zhs": "举目见日，不见长安"
+      },
+      "text": {
+        "en": [
+          "When Emperor Ming of Jin was a child, a visitor arrived from Chang'an. As Emperor Yuan of Jin asked about the lost capital, he was overcome with grief. When Emperor Ming asked why, Emperor Yuan explained the loss of Chang'an and their flight across the Yangtze.",
+          "He then asked his son: \"Which is farther, Chang'an or the Sun?\" Emperor Ming replied, \"The sun is farther. No one has ever come from the Sun.\" Emperor Yuan was amazed by the reply.",
+          "The next day, Emperor Yuan recounted the exchange before his ministers and asked the question again. This time, Emperor Ming replied: \"The Sun is nearer.\" Surprised, Emperor Yuan asked, \"Why have you changed your answer?\" Emperor Ming replied, \"The sun I can see, Chang'an I cannot.\"",
+          "-- Shishuo Xinyu (A New Account of the Tales of the World), Suhui (Precocious Brilliance)"
+        ],
+        "zht": [
+          "晉明帝數歲，坐元帝膝上。有人從長安來，元帝問洛下消息，潸然流涕。明帝問何以致泣？具以東渡意告之。因問明帝：「汝意謂長安何如日遠？」答曰：「日遠。不聞人從日邊來，居然可知。」元帝異之。明日集群臣宴會，告以此意，更重問之。乃答曰：「日近。」元帝失色，曰：「爾何故異昨日之言邪？」答曰：「舉目見日，不見長安。」",
+          " -- 《世說新語 · 夙惠》"
+        ],
+        "zhs": [
+          "晋明帝数岁，坐元帝膝上。有人从长安来，元帝问洛下消息，潸然流涕。明帝问何以致泣？具以东渡意告之。因问明帝：「汝意谓长安何如日远？」答曰：「日远。不闻人从日边来，居然可知。」元帝异之。明日集群臣宴会，告以此意，更重问之。乃答曰：「日近。」元帝失色，曰：「尔何故异昨日之言邪？」答曰：「举目见日，不见长安。」",
+          " -- 《世说新语 · 夙惠》"
+        ]
+      }
+    },
+    {
+      "id": "cranes",
+      "period_id": "W-J",
+      "type_id": "Sor",
+      "quote": {
+        "en": "Will I ever hear the cranes of Huating again?",
+        "zht": "欲聞華亭鶴唳，可復得乎！",
+        "zhs": "欲闻华亭鹤唳，可复得乎！"
+      },
+      "watermarkChar": "唳",
+      "title": {
+        "en": "Cranes back home",
+        "zht": "華亭鶴唳",
+        "zhs": "华亭鹤唳"
+      },
+      "text": {
+        "en": [
+          "Following his defeat at Heqiao, Lu Ji was falsely accused by Lu Zhi and sentenced to death. As he faced execution, he sighed: \"Will I ever hear the cranes of Huating again?\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Youhui (Mistakes and Remorse)"
+        ],
+        "zht": [
+          "陸平原河橋敗，為盧志所讒，被誅。臨刑歎曰：「欲聞華亭鶴唳，可復得乎！」",
+          " -- 《世說新語 · 尤悔》"
+        ],
+        "zhs": [
+          "陆平原河桥败，为卢志所谗，被诛。临刑叹曰：「欲闻华亭鹤唳，可复得乎！」",
+          " -- 《世说新语 · 尤悔》"
+        ]
+      }
+    },
+    {
+      "id": "plums",
+      "period_id": "W-J",
+      "type_id": "Br",
+      "quote": {
+        "en": "A roadside tree still heavy with fruit can only bear bitter plums.",
+        "zht": "道邊而多子，此必苦李",
+        "zhs": "道边而多子，此必苦李"
+      },
+      "watermarkChar": "李",
+      "title": {
+        "en": "Plums by the road",
+        "zht": "道旁苦李",
+        "zhs": "道旁苦李"
+      },
+      "text": {
+        "en": [
+          "When Wang Rong was seven, he was playing with a group of children when they came upon a plum tree by the roadside, its branches heavy with fruit. The other children rushed to pick the plums, but Wang Rong remained where he was.", 
+          "When asked why, he replied, \"A roadside tree still heavy with fruit can only bear bitter plums.\" They picked the fruit, and he was right.",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Yaliang (Graceful Magnanimity)"
+        ],
+        "zht": [
+          "王戎七歲，嘗與諸小兒遊。看道邊李樹多子折枝。諸兒競走取之，唯戎不動。人問之，答曰：「樹在道邊而多子，此必苦李。」取之，信然。",
+          " --  《世說新語 · 雅量》"
+        ],
+        "zhs": [
+          "王戎七岁，尝与诸小儿游。看道边李树多子折枝。诸儿竞走取之，唯戎不动。人问之，答曰：「树在道边而多子，此必苦李。」取之，信然。",
+          " --  《世说新语 · 雅量》"
+        ]
+      }
+    },
+    {
+      "id": "servants",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "The ignorant who ask questions like servants are worth but a few thousand.",
+        "zht": "無意為奴婢問者，止數千耳",
+        "zhs": "无意为奴婢问者，止数千耳"
+      },
+      "watermarkChar": "奴",
+      "title": {
+        "en": "Price of servants",
+        "zht": "問價奴婢",
+        "zhs": "问价奴婢"
+      },
+      "text": {
+        "en": [
+          "When Fu Lang went south into the Eastern Jin, Wang Suzhi was very curious about conditions in the Central Plains, and questioned him at length about its people and customs. The inquiries seemed endless, and Fu Lang grew increasingly irritated.", 
+          "When Suzhi then asked about the price of servants, Fu Lang replied, \"The modest, sincere, learned, and loyal are worth a hundred thousand. The ignorant who ask questions like servants are worth but a few thousand.\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Paidiao (Mockery and Teasing)"
+        ],
+        "zht": [
+          "符朗初過江，王咨議大好事，問中國人物及風土所生，終無極已。朗大患之。次復問奴婢貴賤，朗云：「謹厚有識中者，乃至十萬；無意為奴婢問者，止數千耳。」",
+          " -- 《世說新語 · 排調》"
+        ],
+        "zhs": [
+          "符朗初过江，王咨议大好事，问中国人物及风土所生，终无极已。朗大患之。次复问奴婢贵贱，朗云：「谨厚有识中者，乃至十万；无意为奴婢问者，止数千耳。」",
+          " -- 《世说新语 · 排调》"
+        ]
+      }
+    },
+    {
+      "id": "dynasty-last",
+      "period_id": "W-J",
+      "type_id": "Br",
+      "quote": {
+        "en": "If it is as you said, how can the dynasty endure?",
+        "zht": "若如公言，祚安得長！",
+        "zhs": "若如公言，祚安得长！"
+      },
+      "watermarkChar": "安",
+      "title": {
+        "en": "How can the dynasty endure?",
+        "zht": "祚安得長",
+        "zhs": "祚安得长"
+      },
+      "text": {
+        "en": [
+          "Once, Wang Dao and Wen Jiao were in attendance with Emperor Ming of Jin. The emperor asked Wen Jiao how his forefathers had come to acquire the realm, but Wen Jiao remained silent. After a while, Wang Dao said, \"Wen Jiao is still young and unfamiliar with these matters. Allow me to explain them to Your Majesty.\"", 
+          "Wang Dao then recounted in detail the rise of King Xuan (Sima Yi), how he eliminated powerful clans and rewarded those who sided with him. He also spoke of the incident involving the Duke of Gaogui Township during the final years of King Wen (Sima Zhao).", 
+          "Hearing this, Emperor Ming leaned back, covered his face, and sighed: \"If it is as you said, how can the dynasty endure?\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Youhui (Mistakes and Remorse)"
+        ],
+        "zht": [
+          "王導、溫嶠俱見明帝，帝問溫前世所以得天下之由。溫未荅。頃，王曰：「溫嶠年少未諳，臣為陛下陳之。」王迺具敘宣王創業之始，誅夷名族，寵樹同己。及文王之末， 高貴鄉公事。明帝聞之，覆面著床曰：「若如公言，祚安得長！」",
+          " -- 《世說新語 · 尤悔》"
+        ],
+        "zhs": [
+          "王导、温峤俱见明帝，帝问温前世所以得天下之由。温未荅。顷，王曰：「温峤年少未谙，臣为陛下陈之。」王迺具叙宣王创业之始，诛夷名族，宠树同己。及文王之末， 高贵乡公事。明帝闻之，覆面着床曰：「若如公言，祚安得长！」",
+          " -- 《世说新语 · 尤悔》"
+        ]
+      }
+    },
+    {
+      "id": "not-postman",
+      "period_id": "W-J",
+      "type_id": "C",
+      "quote": {
+        "en": "Those that sink, sink. Those that float, float.",
+        "zht": "沈者自沈，浮者自浮",
+        "zhs": "沈者自沈，浮者自浮"
+      },
+      "watermarkChar": "浮",
+      "title": {
+        "en": "Not a postman",
+        "zht": "沈者自沈，浮者自浮",
+        "zhs": "沈者自沈，浮者自浮"
+      },
+      "text": {
+        "en": [
+          "Yin Xian, courtesy name Hongqiao, was appointed the Grand Administrator of Yuzhang. Before departing, people in the capital gave him over a hundred letters to deliver along the way.", 
+          "Upon reaching Shitou, just beyond the capital, he threw them all into the river, saying: \"Those that sink, sink. Those that float, float. Yin Hongqiao is no postman.\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Youhui (Mistakes and Remorse)"
+        ],
+        "zht": [
+          "羨，字洪喬，為豫章太守，都下人士因其致書者百餘函，行次石頭，皆投之水中，曰：「沈者自沈，浮者自浮，殷洪喬不為致書郵。」",
+          " -- 《晉書 · 殷浩傳》"
+        ],
+        "zhs": [
+          "羡，字洪乔，为豫章太守，都下人士因其致书者百余函，行次石头，皆投之水中，曰：「沈者自沈，浮者自浮，殷洪乔不为致书邮。」",
+          " -- 《晋书 · 殷浩传》"
+        ]
+      }
+    },
+    {
+      "id": "contribution",
+      "period_id": "W-J",
+      "type_id": "Wit",
+       "quote": {
+        "en": "How could I have let you contribute?",
+        "zht": "此事豈可使卿有勳邪？",
+        "zhs": "此事岂可使卿有勋邪？"
+      },
+      "watermarkChar": "卿",
+      "title": {
+        "en": "Unnecessary contribution",
+        "zht": "豈可使卿有勳",
+        "zhs": "岂可使卿有勋"
+      },
+      "text": {
+        "en": [
+          "When a son was born to Emperor Yuan of Jin, he rewarded his ministers in celebration. Yin Xian thanked him, saying, \"The birth of an imperial prince is a joy for the entire realm. I, your servant, have done nothing to deserve such generous rewards.\"", 
+          "Emperor Yuan laughed and replied, \"How could I have let you contribute?\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Paidiao (Mockery and Teasing)"
+        ],
+        "zht": [
+          "元帝皇子生，普賜群臣。殷洪喬謝曰：「皇子誕育，普天同慶。臣無勳焉，而猥頒厚賚。」中宗笑曰：「此事豈可使卿有勳邪？」",
+          " -- 《世說新語 · 排調》"
+        ],
+        "zhs": [
+          "元帝皇子生，普赐群臣。殷洪乔谢曰：「皇子诞育，普天同庆。臣无勋焉，而猥颁厚赉。」中宗笑曰：「此事岂可使卿有勋邪？」",
+          " -- 《世说新语 · 排调》"
+        ]
+      }
+    },
+    {
+      "id": "husband-father",
+      "period_id": "XQ",
+      "type_id": "C",
+      "quote": {
+        "en": "Who is dearer, father or husband?",
+        "zht": "父與夫孰親？",
+        "zhs": "父与夫孰亲？"
+      },
+      "watermarkChar": "夫",
+      "title": {
+        "en": "Husband and Father",
+        "zht": "人盡可夫",
+        "zhs": "人尽可夫"
+      },
+      "text": {
+        "en": [
+          "Zhai Zhong held unrivalled power in the state of Zheng, much to the Duke of Zheng's displeasure. The duke ordered Zhong's son-in-law, Yong Jiu, to assassinate him during a banquet outside the capital.", 
+          "Yong Jiu's wife, Lady Yong, learned of the plot and asked her mother: \"Who is dearer, father or husband?\"", 
+          "Her mother replied, \"Anyone can be your husband, but only one can be your father. How can they be compared?\"",
+          " -- Zuo Zhuan (The Commentary of Zuo), Annual of the 15th year of Duke Huan of Lu"
+        ],
+        "zht": [
+          "祭仲專，鄭伯患之，使其婿雍糾殺之，將享諸郊。雍姬知之，謂其母曰：「父與夫孰親？」其母曰：「人盡夫也，父一而已，胡可比也？」",
+          " -- 《左傳 · 桓公十五年》"
+        ],
+        "zhs": [
+          "祭仲专，郑伯患之，使其婿雍纠杀之，将享诸郊。雍姬知之，谓其母曰：「父与夫孰亲？」其母曰：「人尽夫也，父一而已，胡可比也？」",
+          " -- 《左传 · 桓公十五年》"
+        ]
+      }
+    },
+    {
+      "id": "ordinary-people",
+      "period_id": "Han",
+      "type_id": "C",
+      "quote": {
+        "en": "How can ordinary men understand the ambitions of heroes?",
+        "zht": "小子安知壯士志",
+        "zhs": "小子安知壮士志"
+      },
+      "watermarkChar": "志",
+      "title": {
+        "en": "Ambitions of heroes",
+        "zht": "小子安知壮士志",
+        "zhs": "小子安知壮士志"
+      },
+      "text": {
+        "en": [
+          "In the fifth year of Yongping, Ban Chao followed his elder brother Ban Gu to Luoyang. The family was poor, and Ban Chao supported them by working as a hired scribe. After long hours of labor and hard work, Chao once stopped working, threw his brush and sighed:",
+          "\"A true man should at least be like Fu Jiezi or Zhang Qian, achieving great deeds in foreign lands and earning noble ranks. How can one be satisfied with a life dedicated to a brush?\"",
+          "Those around him laughed, and Chao said, \"How can ordinary men understand the ambitions of heroes?\"",
+          " -- Book of the Later Han, Biography of Ban Chao"
+        ],
+        "zht": [
+          "永平五年，兄固被召詣校書郎，超與母隨至洛陽。家貧，常為官傭書以供養。久勞苦，嘗輟業投筆歎曰：「大丈夫無它志略，猶當效傅介子、張騫立功異域，以取封侯，安能久事筆研閒乎？」左右皆笑之。 超曰：「小子安知壯士志哉！」",
+          " -- 《後漢書 · 班超傳》"
+        ],
+        "zhs": [
+          "永平五年，兄固被召诣校书郎，超与母随至洛阳。家贫，常为官佣书以供养。久劳苦，尝辍业投笔叹曰：「大丈夫无它志略，犹当效傅介子、张骞立功异域，以取封侯，安能久事笔研闲乎？」左右皆笑之。 超曰：「小子安知壮士志哉！」",
+          " -- 《后汉书 · 班超传》"
+        ]
+      }
+    },
+    {
+      "id": "right-guests",
+      "type_id": "C",
+      "period_id": "T-S",
+      "quote": {
+        "en": "Where did the meat come from?",
+        "zht": "何從得肉？",
+        "zhs": "何从得肉？"
+      },
+      "watermarkChar": "肉",
+      "title": {
+        "en": "Inviting the right guests",
+        "zht": "召客择人",
+        "zhs": "召客择人"
+      },
+      "text": {
+        "en": [
+          "The official Zhang De celebrated the birth of his son by privately slaughtering a sheep and hosting a feast for his colleagues. One of the guests, Du Su, secretly took a portion of the meat and submitted a memorial reporting the incident.", 
+          "The next day, during court, the Empress Dowager Wu spoke to Zhang De and said, \"I hear you have been blessed with a son. Congratulations.\" Zhang De expressed his gratitude. The Empress Dowager then asked, \"Where did the meat come from?\" Zhang De immediately knelt and confessed.",
+          "The Empress Dowager said, \"My ban was never meant to forbid slaughter for celebrations or mourning. But next time, be more careful whom you invite.\" She then produced Du Su's memorial. Du Su was greatly ashamed, and the entire court wished to spit in his face",
+          " -- Zizi Tongjian (Comprehensive Mirror in Aid of Governance), Volume 205"
+        ],
+        "zht": [
+          "右拾遺張德，生男三日，私殺羊會同僚，補闕杜肅懷一餤，上表告之。明日，太后對仗，謂德曰：「聞卿生男，甚喜。」德拜謝。太后曰：「何從得肉？」德叩頭服罪。太后曰：「朕禁屠宰，吉凶不預。 然卿自今召客，亦須擇人。」出肅表示之。肅大慚，舉朝欲唾其面。",
+          " -- 《資治通鑑· 卷二百五》"
+        ],
+        "zhs": [
+          "右拾遗张德，生男三日，私杀羊会同僚，补阙杜肃怀一餤，上表告之。明日，太后对仗，谓德曰：「闻卿生男，甚喜。」德拜谢。太后曰：「何从得肉？」德叩头服罪。太后曰：「朕禁屠宰，吉凶不预。 然卿自今召客，亦须择人。」出肃表示之。肃大惭，举朝欲唾其面。",
+          " -- 《资治通鉴· 卷二百五》"
+        ]
+      }
+    },
+    {
+      "id": "dog-emperor",
+      "period_id": "N/S",
+      "type_id": "C",
+      "quote": {
+        "en": "Emperor! Emperor! A dog-legged emperor!",
+        "zht": "朕！朕！狗腳朕！",
+        "zhs": "朕！朕！狗脚朕！"
+      },
+      "watermarkChar": "朕",
+      "title": {
+        "en": "The dog-legged emperor",
+        "zht": "狗脚皇帝",
+        "zhs": "狗脚皇帝"
+      },
+      "text": {
+        "en": [
+          "Gao Cheng was once attending the emperor at a drinking banquet. Raising his cup, he toasted, \"Your servant Cheng drinks to Your Majesty.\"",
+          "The emperor, displeased, replied, \"Since antiquity, no state has escaped destruction. What use is there in an emperor like me clinging to life?\"",
+          "Gao Cheng flew into a rage and shouted, \"Emperor! Emperor! A dog-legged emperor!\" He ordered Ji Shu to strike the emperor three times, flung aside his robes, and stormed out.",
+          " -- Book of Wei, Imperial Annals, Chapter Twelve"
+        ],
+        "zht": [
+          "文襄嘗侍飲，大舉觴曰：「臣澄勸陛下酒。」帝不悅，曰：「自古無不亡之國，朕亦何用此活！」文襄怒曰：「朕！朕！狗腳朕！」文襄使季舒毆帝三拳，奮衣而出。",
+          " -- 《魏書 · 帝紀第十二》"
+        ],
+        "zhs": [
+          "文襄尝侍饮，大举觞曰：「臣澄劝陛下酒。」帝不悦，曰：「自古无不亡之国，朕亦何用此活！」文襄怒曰：「朕！朕！狗脚朕！」文襄使季舒殴帝三拳，奋衣而出。",
+          " -- 《魏书 · 帝纪第十二》"
+        ]
+      }
+    },
+    {
+      "id": "present-past",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "Judging by what has happened today, I assume it must have.",
+        "zht": "以今度之，想當然耳",
+        "zhs": "以今度之，想当然耳"
+      },
+      "watermarkChar": "今",
+      "title": {
+        "en": "Judging from the present",
+        "zht": "以今度之，想當然耳",
+        "zhs": "以今度之，想当然耳"
+      },
+      "text": {
+        "en": [
+          "When Cao Cao captured Ye, many women of the Yuan clan were seized and assaulted. Among them was Lady Zhen, whom Cao Cao's son, Cao Pi, took for himself.", 
+          "Kong Rong then wrote a letter to Cao Cao, saying: \"When King Wu overthrew Shang, he bestowed Daji upon the Duke of Zhou.\" Cao Cao, puzzled, later asked which classic this came from.", 
+          "Kong Rong replied, \"Judging by what has happened today, I assume it must have.\"",
+          " -- Book of the Later Han, Biography of Kong Rong"
+        ],
+        "zht": [
+          "初，曹操攻屠鄴城，袁氏婦子多見侵略，而操子丕私納袁熙妻甄氏。融乃與操書，稱「武王伐紂，以妲己賜周公」。操不悟，後問出何經典。 對曰：「以今度之，想當然耳。」",
+          " -- 《後漢書 · 孔融傳》"
+        ],
+        "zhs": [
+          "初，曹操攻屠邺城，袁氏妇子多见侵略，而操子丕私纳袁熙妻甄氏。融乃与操书，称「武王伐纣，以妲己赐周公」。操不悟，后问出何经典。 对曰：「以今度之，想当然耳。」",
+          " -- 《后汉书 · 孔融传》"
+        ]
+      }
+    },
+    {
+      "id": "snow",
+      "period_id": "W-J",
+      "type_id": "Br",
+      "quote": {
+        "en": "More like catkins drifting in the wind.",
+        "zht": "未若柳絮因風起",
+        "zhs": "未若柳絮因风起"
+      },
+      "watermarkChar": "雪",
+      "title": {
+        "en": "What does the snow resemble?",
+        "zht": "雪若柳絮",
+        "zhs": "雪若柳絮"
+      },
+      "text": {
+        "en": [
+          "Once, during a family gathering, snow began to fall. Xie An asked, \"What does this flurry of snow resemble?\" His older brother's eldest son, Lang, replied, \"Like salt scattered through the air.\"", 
+          "Xie Daoyun said, \"More like catkins drifting in the wind.\" Xie An was delighted.",
+          " -- Book of Jin, Biographies of Exemplary Women"
+        ],
+        "zht": [
+          "嘗內集，俄而雪驟下，安曰：「何所似也？」安兄子朗曰：「散鹽空中差可擬。」道韞曰：「未若柳絮因風起。」 安大悅。",
+          " -- 《晉書 · 列女傳》"
+        ],
+        "zhs": [
+          "尝内集，俄而雪骤下，安曰：「何所似也？」安兄子朗曰：「散盐空中差可拟。」道韫曰：「未若柳絮因风起。」 安大悦。",
+          " -- 《晋书 · 列女传》"
+        ]
+      }
+    },
+    {
+      "id": "orchids",
+      "period_id": "W-J",
+      "type_id": "C",
+      "quote": {
+        "en": "Fragrant orchids that block the doorway must be cut.",
+        "zht": "芳蘭生門，不得不鉏",
+        "zhs": "芳兰生门，不得不锄"
+      },
+      "watermarkChar": "芳",
+      "title": {
+        "en": "Pruning orchids",
+        "zht": "芳蘭生門",
+        "zhs": "芳兰生门"
+      },
+      "text": {
+        "en": [
+          "Liu Bei had long resented Zhang Yu for his perceived disrespect and the rumors he was said to spread. When Zhang Yu's prediction that the Hanzhong campaign would fail proved false, Liu Bei seized the opportunity to arrest and execute him.","Zhuge Liang submitted a memorial pleading for Zhang Yu's life, but Liu Bei replied:\"Fragrant orchids that block the doorway must be cut.\" Zhang Yu was executed, and his body left in the marketplace.",
+          " -- Records of the Three Kingdoms, Biography of Zhou Qun"
+        ],
+        "zht": [
+          "先主常銜其不遜，加忿其漏言，乃顯裕諫爭漢中不驗，下獄，將誅之。諸葛亮表請其罪，先主荅曰：「芳蘭生門，不得不鉏。」裕遂弃市。",
+          " -- 《三國志 · 周羣傳》"
+        ],
+        "zhs": [
+          "先主常衔其不逊，加忿其漏言，乃显裕谏争汉中不验，下狱，将诛之。诸葛亮表请其罪，先主荅曰：「芳兰生门，不得不锄。」裕遂弃市。",
+          " -- 《三国志 · 周群传》"
+        ]
+      }
+    },
+    {
+      "id": "stone-elbow",
+      "period_id": "Han",
+      "type_id": "Sor",
+      "quote": {
+        "en": "I deserve to die! I have no regrets!",
+        "zht": "當死無所恨！",
+        "zhs": "当死无所恨！"
+      },
+      "watermarkChar": "石",
+      "title": {
+        "en": "Stone tied to my elbow",
+        "zht": "肘石有璽",
+        "zhs": "肘石有玺"
+      },
+      "text": {
+        "en": [
+          "Zhang Feng, who was fond of mystical arts, encountered a Daoist priest who foretold that he would become emperor. Wrapping a stone in five-colored silk, the priest tied it to Zhang Feng's elbow and claimed that an imperial jade seal lay hidden within. Feng believed him and soon raised a rebellion.", 
+          "Though captured and led to his execution, he still insisted: \"An imperial jade seal lies within the stone tied to my elbow!\" Zhai Zun, who carried out the sentence, ordered the stone smashed open before him.", 
+          "Only then did Zhang Feng realize he had been deceived. Looking up at the sky, he sighed: \"I deserve to die! I have no regrets!\"",
+          " -- Book of the Later Han, Biography of Zhai Zun",
+          "Note: There was an entry in the Records of the Three Kingdoms about Yuan Shao holding a seal by the elbow and showing to Cao Cao, to which Cao Cao laughed. This story might be the reference for the joke."
+        ],
+        "zht": [
+          "初，豐好方術，有道士言豐當為天子，以五綵囊裹石繫豐肘，云石中有玉璽。豐信之，遂反。既執當斬，猶曰：「肘石有玉璽。」遵為椎破之，豐乃知被詐，仰天歎曰：「當死無所恨！」",
+          " -- 《後漢書 · 祭遵傳》",
+          "按：三國志有載袁紹以玉印指肘示曹操，曹操笑而惡之，或許就是在引用此典故。"
+        ],
+        "zhs": [
+          "初，丰好方术，有道士言丰当为天子，以五彩囊裹石系丰肘，云石中有玉玺。丰信之，遂反。既执当斩，犹曰：「肘石有玉玺。」遵为椎破之，丰乃知被诈，仰天叹曰：「当死无所恨！」",
+          " -- 《后汉书 · 祭遵传》",
+          "按：三国志有载袁绍以玉印指肘示曹操，曹操笑而恶之，或许就是在引用此典故。"
+        ]
+      }
+    },
+    {
+      "id": "stains",
+      "period_id": "W-J",
+      "type_id": "C",
+      "quote": {
+        "en": "This is the blood of Attendant Ji. Leave it.",
+        "zht": "此嵇侍中血，勿去",
+        "zhs": "此嵇侍中血，勿去"
+      },
+      "watermarkChar": "血",
+      "title": {
+        "en": "The stain stays",
+        "zht": "此嵇侍中血，勿去",
+        "zhs": "此嵇侍中血，勿去"
+      },
+      "text": {
+        "en": [
+          "When the army was defeated at Dangyin, officials and guards scattered in panic. Only Ji Shao remained in full court attire, shielding Emperor Hui of Jin with his own body. As soldiers closed in and arrows fell like rain, Ji Shao was slain at the emperor's side, his blood staining the imperial robes.", 
+          "The emperor mourned him deeply. After order was restored, the attendants hurried to wash away the blood. The emperor stopped them, saying: \"This is the blood of Attendant Ji. Leave it.\"",
+          " -- Book of Jin, Biography of the Loyal and Righteous"
+        ],
+        "zht": [
+          "值王師敗績於蕩陰，百官及侍衛莫不散潰，唯紹儼然端冕，以身捍衛，兵交御輦，飛箭雨集，紹遂被害於帝側，血濺御服，天子深哀歎之。及事定，左右欲浣衣， 帝曰：「此嵇侍中血，勿去。」",
+          " -- 《晉書 · 忠義傳》"
+        ],
+        "zhs": [
+          "值王师败绩于荡阴，百官及侍卫莫不散溃，唯绍俨然端冕，以身捍卫，兵交御辇，飞箭雨集，绍遂被害于帝侧，血溅御服，天子深哀叹之。及事定，左右欲浣衣， 帝曰：「此嵇侍中血，勿去。」",
+          " -- 《晋书 · 忠义传》"
+        ]
+      }
+    },
+    {
+      "id": "enter-urn",
+      "period_id": "T-S",
+      "type_id": "Wit",
+      "quote": {
+        "en": "Elder brother, please step into the urn.",
+        "zht": "請兄入此甕",
+        "zhs": "请兄入此瓮"
+      },
+      "watermarkChar": "入",
+      "title": {
+        "en": "Please enter the urn",
+        "zht": "請君入甕",
+        "zhs": "请君入瓮"
+      },
+      "text": {
+        "en": [
+          "Someone accused Zhou Xing of plotting rebellion with Qiu Shenji, and Empress Dowager Wu ordered Lai Junchen to investigate. While dining together, Lai casually asked, \"When a criminal refuses to confess, what method should be used?\"",  
+          "Zhou Xing replied, \"Simple. Heat a large urn with charcoal and make him sit inside. He'll confess to anything.\"",
+          "Lai immediately had an urn prepared exactly as Zhou described. Turning to him, he said, \"There is a charge against you, elder brother. Please step into the urn.\"", 
+          "Zhou Xing fell to his knees and confessed.",
+          " -- Zizi Tongjian (Comprehensive Mirror in Aid of Governance), Volume 204"
+        ],
+        "zht": [
+          "或告周興與丘神勣通謀，太后命來俊臣鞫之，俊臣與興方推事對食，謂興曰：「囚多不承，當為何法？」興曰：「此甚易耳！取大甕，以炭四周炙之，令囚入中，何事不承！」俊臣乃索大甕，火圍如興法。 因起謂興曰：「有內狀推兄，請兄入此甕！」興惶恐叩頭伏罪。",
+          " -- 《資治通鑒 · 卷二百四》"
+        ],
+        "zhs": [
+          "或告周兴与丘神𪟝通谋，太后命来俊臣鞫之，俊臣与兴方推事对食，谓兴曰：「囚多不承，当为何法？」兴曰：「此甚易耳！取大瓮，以炭四周炙之，令囚入中，何事不承！」俊臣乃索大瓮，火围如兴法。 因起谓兴曰：「有内状推兄，请兄入此瓮！」兴惶恐叩头伏罪。",
+          " -- 《资治通鉴 · 卷二百四》"
+        ]
+      }
+    },
+    {
+      "id": "legacy",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "Can I not be infamous for ten thousand years?",
+        "zht": "不足復遺臭萬載邪！",
+        "zhs": "不足复遗臭万载邪！"
+      },
+      "watermarkChar": "足",
+      "title": {
+        "en": "Leaving a legacy",
+        "zht": "流芳後世，遺臭萬載",
+        "zhs": "流芳后世，遗臭万载"
+      },
+      "text": {
+        "en": [
+          "Huan Wen dominated the court with his military power, waiting for an opportunity to seize the throne. At times, while reclining with his closest attendants, he would say: \"If I remain as I am, I shall be mocked by Emperors Wen and Jing (Sima Yi & Sima Zhao).\"", 
+          "No one dared reply. Huan Wen would then press himself up from his pillow and declare: \"If I cannot be honored by posterity, can I not be infamous for ten thousand years?\"",
+          " -- Book of Jin, Biography of Huan Wen"
+        ],
+        "zht": [
+          "以雄武專朝，窺覦非望，或臥對親僚曰：「為爾寂寂，將為文景所笑。」眾莫敢對。既而撫枕起曰：「既不能流芳後世，不足復遺臭萬載邪！」",
+          " -- 《晉書 · 桓溫傳》"
+        ],
+        "zhs": [
+          "以雄武专朝，窥觎非望，或卧对亲僚曰：「为尔寂寂，将为文景所笑。」众莫敢对。既而抚枕起曰：「既不能流芳后世，不足复遗臭万载邪！」",
+          " -- 《晋书 · 桓温传》"
+        ]
+      }
+    },
+    {
+      "id": "child-clever",
+      "period_id": "Han",
+      "type_id": "Wit",
+      "quote": {
+        "en": "Then you, sir, must have been very clever as a child!",
+        "zht": "想君小時，必當了了！",
+        "zhs": "想君小时，必当了了！"
+      },
+      "watermarkChar": "了",
+      "title": {
+        "en": "Clever child",
+        "zht": "小時了了，大未必佳",
+        "zhs": "小时了了，大未必佳"
+      },
+      "text": {
+        "en": [
+          "At the age of ten, Kong Rong accompanied his father to Luoyang. At the time, Li Yuanli, Colonel of the Capital, had immense prestige. Only distinguished relatives or men of notable talent and eloquence were admitted to his residence. When Kong Rong arrived, he told the attendant, \"I am a kinsman of Lord Li.\" Brought inside, Li Yuanli asked, \"How are we related?\"",
+          "Kong Rong replied, \"My ancestor, Master Confucius, once studied under your ancestor, Boyang (Laozi). Our families have been connected ever since.\" Yuanli and the guests were all amazed.",
+          "Later, the Councillor Chen Wei arrived. After hearing the exchange, he commented, \"A clever child does not always become a remarkable man.\" Kong Rong immediately responded, \"Then you, sir, must have been very clever as a child!\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Yanyu (Speech and Conversation)"
+        ],
+        "zht": [
+          "孔文舉年十歲，隨父到洛。時李元禮有盛名，為司隸校尉，詣門者皆俊才清稱及中表親戚乃通。文舉至門，謂吏曰：「我是李府君親。」既通，前坐。元禮問曰：「君與僕有何親？」對曰： 「昔先君仲尼與君先人伯陽，有師資之尊，是僕與君奕世為通好也。」元禮及賓客莫不奇之。太中大夫陳韙後至，人以其語語之。韙曰：「小時了了，大未必佳！」文舉曰：「想君小時，必當了了！」",
+          " -- 《世說新語·言語》"
+        ],
+        "zhs": [
+          "孔文举年十岁，随父到洛。时李元礼有盛名，为司隶校尉，诣门者皆俊才清称及中表亲戚乃通。文举至门，谓吏曰：「我是李府君亲。」既通，前坐。元礼问曰：「君与仆有何亲？」对曰： 「昔先君仲尼与君先人伯阳，有师资之尊，是仆与君奕世为通好也。」元礼及宾客莫不奇之。太中大夫陈韪后至，人以其语语之。韪曰：「小时了了，大未必佳！」文举曰：「想君小时，必当了了！」",
+          " -- 《世说新语·言语》"
+        ]
+      }
+    },
+    {
+      "id": "from-bag",
+      "period_id": "T-S",
+      "type_id": "Wit",
+      "quote": {
+        "en": "As easy as reaching into a bag.",
+        "zht": "如探囊中物",
+        "zhs": "如探囊中物"
+      },
+      "watermarkChar": "囊",
+      "title": {
+        "en": "Taking from the Bag",
+        "zht": "囊中取物",
+        "zhs": "囊中取物"
+      },
+      "text": {
+        "en": [
+          "During the reign of Emperor Mingzong of Later Tang, Han Xizai fled south to the state of Wu. His friend Li Gu accompanied him as far as Zhengyang. On the eve of their parting, the two drank together. Raising his cup, Xizai declared, \"If I should one day become chancellor south of the Yangtze, I shall sweep north and reclaim the Central Plains.\"",
+          "Gu replied, \"If I become chancellor in the Central Plains, taking the lands south of the Yangtze will be as easy as reaching into a bag.\"",
+          "Years later, Li Gu was appointed commander to pacify Huainan, while Han Xizai never fulfilled the ambitions he had once proclaimed.",
+          " -- New Records of the Five Dynasties, Volume 62"
+        ],
+        "zht": [
+          "明宗時，熙載南奔吳，穀送至正陽，酒酣臨訣，熙載謂穀曰：「江左用吾為相，當長驅以定中原。」穀曰：「中國用吾為相，取江南如探囊中物爾。」 及周師之征淮也，命穀為將，以取淮南， 而熙載不能有所為也。」",
+          " -- 《新五代史· 卷六十二》"
+        ],
+        "zhs": [
+          "明宗时，熙载南奔吴，谷送至正阳，酒酣临诀，熙载谓谷曰：「江左用吾为相，当长驱以定中原。」谷曰：「中国用吾为相，取江南如探囊中物尔。」 及周师之征淮也，命谷为将，以取淮南， 而熙载不能有所为也。」",
+          " -- 《新五代史· 卷六十二》"
+        ]
+      }
+    },
+    {
+      "id": "where-duke",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "Then you, sir, must have been very clever as a child!",
+        "zht": "高貴鄉公何在？",
+        "zhs": "高贵乡公何在？"
+      },
+      "watermarkChar": "公",
+      "title": {
+        "en": "Where is the Duke of Gaogui Township?",
+        "zht": "高貴鄉公何在",
+        "zhs": "高贵乡公何在"
+      },
+      "text": {
+        "en": [
+          "Jia Chong once hosted a banquet for court officials. When Yu Chun arrived late, Jia Chong remarked, \"You are usually the first to arrive. Why are you the last today?\" Chun replied, \"Some trivial business in the market delayed me.\"", "At the time, it was said that Yu Chun's ancestors had once cleared the way for officials, while Jia Chong's had served as market leaders. Each man's words concealed a barb.",
+          "Jia Chong, considering his elevated status, felt offended and later refused Yu Chun's toast. Chun said, \"I offer this cup as your elder. How can you refuse?\" Chong retorted, \"Your father is old, yet you do not return to care for him. Who are you to lecture me?\"",
+          "Angered, Yu Chun said, \"Jia Chong! The turmoil of the realm is your doing alone!\" Jia Chong responded, \"I have served two emperors and pacified Ba and Shu. What crime have I committed?\" Chun asked, \"Where is the Duke of Gaogui Township?\"",
+          " -- Book of Jin, Biography of Yu Chun"
+        ],
+        "zht": [
+          "充嘗宴朝士，而純後至，充謂曰：「君行常居人前，今何以在後？」純曰：「旦有小市井事不了，是以來後。」世言純之先嘗有伍伯者， 充之先有市魁者，充、純以此相譏焉。充自以位隆望重，意殊不平。及純行酒，充不時飲。純曰：「長者為壽，何敢爾乎！」充曰：「父老不歸供養，將何言也！」純因發怒曰：「賈充！天下兇兇， 由爾一人。」充曰：「充輔佐二世，蕩平巴、蜀，有何罪而天下為之兇兇？」純曰：「高貴鄉公何在？」",
+          " -- 《晉書·庾純傳》"
+        ],
+        "zhs": [
+          "充尝宴朝士，而纯后至，充谓曰：「君行常居人前，今何以在后？」纯曰：「旦有小市井事不了，是以来后。」世言纯之先尝有伍伯者， 充之先有市魁者，充、纯以此相讥焉。充自以位隆望重，意殊不平。及纯行酒，充不时饮。纯曰：「长者为寿，何敢尔乎！」充曰：「父老不归供养，将何言也！」纯因发怒曰：「贾充！天下凶凶， 由尔一人。」充曰：「充辅佐二世，荡平巴、蜀，有何罪而天下为之凶凶？」纯曰：「高贵乡公何在？」",
+          " -- 《晋书·庾纯传》"
+        ]
+      }
+    },
+    {
+      "id": "time",
+      "period_id": "W-J",
+      "type_id": "Sor",
+      "quote": {
+        "en": "If even the trees are thus, how can a man endure?",
+        "zht": "木猶如此，人何以堪！",
+        "zhs": "木犹如此，人何以堪！"
+      },
+      "watermarkChar": "木",
+      "title": {
+        "en": "How can a man endure?",
+        "zht": "木猶如此，人何以堪",
+        "zhs": "木犹如此，人何以堪"
+      },
+      "text": {
+        "en": [
+          "On a northern expedition, Huan Wen passed through Jincheng. He saw that the willows he had planted years earlier, while stationed in Langya, had grown tall and broad.", "Deeply moved, he sighed: \"If even the trees are thus, how can a man endure?\" He stroked the branches and wept.",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Yanyu (Speech and Conversation)"
+        ],
+        "zht": [
+          "桓公北征經金城，見前為琅邪時種柳，皆已十圍，慨然曰：「木猶如此，人何以堪！」攀枝執條，泫然流淚。",
+          " -- 《世說新語·言語》"
+        ],
+        "zhs": [
+          "桓公北征经金城，见前为琅邪时种柳，皆已十围，慨然曰：「木犹如此，人何以堪！」攀枝执条，泫然流泪。",
+          " -- 《世说新语·言语》"
+        ]
+      }
+    },
+    {
+      "id": "a-whim",
+      "period_id": "W-J",
+      "type_id": "C",
+      "quote": {
+        "en": "Why insist on meeting Dai?",
+        "zht": "何必見戴？",
+        "zhs": "何必见戴？"
+      },
+      "watermarkChar": "何",
+      "title": {
+        "en": "A Passing Whim",
+        "zht": "乘興而行，興盡而返",
+        "zhs": "乘兴而行，兴尽而返"
+      },
+      "text": {
+        "en": [
+          "Wang Huizhi was living in Shanyin when, one night, heavy snow fell. WUpon waking, he opened the windows and had wine brought. As he gazed upon the snowy landscape, he suddenly thought of his friend Dai Andao, who was then in Shan County. Without hesitation, he boarded a small boat and set off to visit Andao.", 
+          "After travelling through the night, he reached Dai's residence but turned back without entering. When asked why, Wang replied:", "\"I set out on a whim, and when the whim passed, I returned. Why insist on meeting Dai?\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Rendan (The Free and Unrestrained))"
+        ],
+        "zht": [
+          "王子猷居山陰，夜大雪，眠覺，開室，命酌酒。……忽憶戴安道，時戴在剡，即便夜乘小船就之。經宿方至，造門不前而返。人問其故，王曰：「吾本乘興而行，興盡而返，何必見戴？」",
+          " -- 《世說新語·任誕》"
+        ],
+        "zhs": [
+          "王子猷居山阴，夜大雪，眠觉，开室，命酌酒。……忽忆戴安道，时戴在剡，即便夜乘小船就之。经宿方至，造门不前而返。人问其故，王曰：「吾本乘兴而行，兴尽而返，何必见戴？」",
+          " -- 《世说新语·任诞》"
+        ]
+      }
+    },
+    {
+      "id": "brother-father",
+      "period_id": "W-J",
+      "type_id": "Sor",
+      "quote": {
+        "en": "I am your elder brother.",
+        "zht": "我，汝兄耳",
+        "zhs": "我，汝兄耳"
+      },
+      "watermarkChar": "兄",
+      "title": {
+        "en": "I am your elder brother",
+        "zht": "我，汝兄耳",
+        "zhs": "我，汝兄耳"
+      },
+      "text": {
+        "en": [
+          "When Cao Liang was five years old, Cao Cao fell gravely ill. In his final instructions to the Crown Prince (Cao Pi), he said: \"This child lost his mother at three and his father at five. I now burden you with him.\" Thereafter, Cao Pi, later Emperor Wen, cherished Liang more than any of his other brothers.", 
+          "As Liang was still young, he would often call Emperor Wen 'father,' and the emperor would always correct him, saying: \"I am your elder brother.\" Emperor Wen, touched by Liang's words, would weep for him time and again. ",
+          " -- Records of the Three Kingdoms, annotations to Biography of Gan, Prince of Zhao"
+        ],
+        "zht": [
+          "良年五歲而太祖疾困，遺令語太子曰：「此兒三歲亡母，五歲失父，以累汝也。」 太子由是親待，隆於諸弟。良年小，常呼文帝為阿翁，帝謂良曰：「我，汝兄耳。」 文帝又愍其如是，每為流涕。",
+          " -- 《三國志·趙王幹傳》注"
+        ],
+        "zhs": [
+          "良年五岁而太祖疾困，遗令语太子曰：「此儿三岁亡母，五岁失父，以累汝也。」 太子由是亲待，隆于诸弟。良年小，常呼文帝为阿翁，帝谓良曰：「我，汝兄耳。」 文帝又愍其如是，每为流涕。",
+          " -- 《三国志·赵王干传》注"
+        ]
+      }
+    },
+    {
+      "id": "a-sip",
+      "period_id": "W-J",
+      "type_id": "Br",
+      "quote": {
+        "en": "Ahead lies a grove of plum trees.",
+        "zht": "前有梅林",
+        "zhs": "前有梅林"
+      },
+      "watermarkChar": "梅",
+      "title": {
+        "en": "A sip of imagination",
+        "zht": "望梅止渴",
+        "zhs": "望梅止渴"
+      },
+      "text": {
+        "en": [
+          "Once, while on campaign, Cao Cao's army lost its way and ran short of water. The troops were parched. Cao Cao ordered: \"Ahead lies a grove of plum trees, full of plums sour and sweet, enough to quench our thirst.\"", 
+          "At his words, the soldiers' mouths filled with saliva. Encouraged, they pressed on until they reached the water source. ",
+          " --  Shishuo Xinyu (A New Account of the Tales of the World), Jiajue (Guile and Chicanery)"
+        ],
+        "zht": [
+          "魏武行役，失汲道，軍皆渴，乃令曰：「前有大梅林，饒子，甘酸，可以解渴。」 士卒聞之，口皆出水，乘此得及前源。",
+          " 《世說新語·假譎》"
+        ],
+        "zhs": [
+          "魏武行役，失汲道，军皆渴，乃令曰：「前有大梅林，饶子，甘酸，可以解渴。」 士卒闻之，口皆出水，乘此得及前源。",
+          " 《世说新语·假谲》"
+        ]
+      }
+    },
+    {
+      "id": "sweat",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "Why is your face covered with sweat?",
+        "zht": "卿面何以汗？",
+        "zhs": "卿面何以汗？"
+      },
+      "watermarkChar": "汗",
+      "title": {
+        "en": "To sweat or not to sweat",
+        "zht": "汗出如浆，汗不敢出",
+        "zhs": "汗出如浆，汗不敢出"
+      },
+      "text": {
+        "en": [
+          "The brothers Zhong Yu and Zhong Hui were renowned for their intelligence from a young age. At thirteen, Emperor Wen of Wei summoned them for an audience.",
+          "Seeing Zhong Yu's face was covered with sweat, the emperor asked, \"Why is your face covered with sweat?\" Zhong Yu replied, \"Trembling with fear and reverence, my sweat flows like a stream.\"",
+          "The emperor then turned to Zhong Hui, \"Why is your face dry?\" Zhong Hui replied, \"Trembling with fear and reverence, the sweat dare not come out.\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Yanyu (Speech and Conversation)"
+        ],
+        "zht": [
+          "鍾毓、鍾會少有令譽。年十三，魏文帝聞之，語其父鍾繇曰：「可令二子來。」於是敕見。毓面有汗，帝曰：「卿面何以汗？」毓對曰：「戰戰惶惶，汗出如漿。」復問會：「卿何以不汗？」對曰：「戰戰慄慄，汗不敢出。」",
+          " -- 《世說新語·言語》"
+        ],
+        "zhs": [
+          "钟毓、钟会少有令誉。年十三，魏文帝闻之，语其父钟繇曰：「可令二子来。」于是敕见。毓面有汗，帝曰：「卿面何以汗？」毓对曰：「战战惶惶，汗出如浆。」复问会：「卿何以不汗？」对曰：「战战栗栗，汗不敢出。」",
+          " -- 《世说新语·言语》"
+        ]
+      }
+    },
+    {
+      "id": "top-secret",
+      "period_id": "W-J",
+      "type_id": "C",
+      "quote": {
+        "en": "The affairs of the inner palace cannot be disclosed.",
+        "zht": "禁密不得宣露",
+        "zhs": "禁密不得宣露。"
+      },
+      "watermarkChar": "密",
+      "title": {
+        "en": "Top secret",
+        "zht": "國家機密",
+        "zhs": "国家机密"
+      },
+      "text": {
+        "en": [
+          "After being appointed Minister of the Lesser Treasury, Yang Fu submitted a memorial proposing that the number of palace women be reduced, especially those long out of imperial favour. HHe then summoned a clerk from the Imperial Wardrobe and asked how many women remained in the harem.", 
+          "The clerk abided by the rules of the past, and responded: \"The affairs of the inner palace cannot be disclosed.\"", "Yang Fu flew into a rage, ordered him flogged with a hundred strokes, and rebuked him: \"Are the affairs of the state entrusted not to the Nine Ministers, but to a petty clerk like you?\"",
+          " -- Records of the Three Kingdoms, Biography of Yang Fu"
+        ],
+        "zht": [
+          "阜遷少府……上疏欲省宮人諸不見幸者，乃召御府吏問後宮人數。吏守舊令，對曰：「禁密，不得宣露。」 阜怒，杖吏一百，數之曰：「國家不與九卿為密，反與小吏為密乎？」",
+          " -- 《三國志·楊阜傳》"
+        ],
+        "zhs": [
+          "阜迁少府……上疏欲省宫人诸不见幸者，乃召御府吏问后宫人数。吏守旧令，对曰：「禁密，不得宣露。」 阜怒，杖吏一百，数之曰：「国家不与九卿为密，反与小吏为密乎？」",
+          " -- 《三国志·杨阜传》"
+        ]
+      }
+    },
+    {
+      "id": "sins",
+      "period_id": "W-J",
+      "type_id": "C",
+      "quote": {
+        "en": "Looking back on your life, what sins have you committed?",
+        "zht": "由來有何異同得失？",
+        "zhs": "由来有何异同得失？"
+      },
+      "watermarkChar": "失",
+      "title": {
+        "en": "Of all my sins",
+        "zht": "異同得失",
+        "zhs": "异同得失"
+      },
+      "text": {
+        "en": [
+          "When Wang Zijing was gravely ill, a Daoist priest, preparing a ritual petition for him to confess his wrongdoings, asked: \"Looking back on your life, what sins have you committed? \" ",
+          "Wang Zijing replied: \"None come to mind, except divorcing Lady Xi.\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Dexing (Virtuous Conduct)"
+        ],
+        "zht": [
+          "王子敬病篤，道家上章應首過，問子敬 「由來有何異同得失？」 子敬云：「不覺有餘事，惟憶與郗家離婚。」",
+          " -- 《世説新語·德行》"
+        ],
+        "zhs": [
+          "王子敬病笃，道家上章应首过，问子敬 「由来有何异同得失？」 子敬云：「不觉有余事，惟忆与郗家离婚。」",
+          " -- 《世说新语·德行》"
+        ]
+      }
+    },
+    {
+      "id": "courage",
+      "period_id": "XQ",
+      "type_id": "C",
+      "quote": {
+        "en": "You tremble like this, what is the point of going?",
+        "zht": "怯如是，去有益乎？",
+        "zhs": "怯如是，去有益乎？"
+      },
+      "watermarkChar": "去",
+      "title": {
+        "en": "The courage to tremble",
+        "zht": "仁者之勇",
+        "zhs": "仁者之勇"
+      },
+      "text": {
+        "en": [
+          "When Cui Zhu murdered Duke Zhuang of Qi, Chen Buzhan rushed to aid his lord. In his haste, he dropped his spoon while eating and fumbled the reins as he mounted his carriage. The driver asked, \"You tremble like this, what is the point of going?\"", 
+          "Chen replied, \"To die for one's lord is righteousness. To lack courage is my own failing. I will not let a private failing outweigh public duty.\"",
+          "He pressed on, but at the sound of battle, he was overcome with fear and died on the spot. Later commenters would say: \"Chen Buzhan embodied the courage of a benevolent man.\"",
+          " -- New Accounts: Righteous Courage"
+        ],
+        "zht": [
+          "齊崔杼弑莊公也，有陳不占者，聞君難，將赴之，比去，餐則失匕，上車失軾。禦者曰：「怯如是，去有益乎？」不占曰：「死君，義也；無勇，私也。不以私害公。」遂往，聞戰鬥之聲，恐駭而死。人曰：「不占可謂仁者之勇也。」",
+          " -- 《新序·義勇》"
+        ],
+        "zhs": [
+          "齐崔杼弑庄公也，有陈不占者，闻君难，将赴之，比去，餐则失匕，上车失轼。御者曰：「怯如是，去有益乎？」不占曰：「死君，义也；无勇，私也。不以私害公。」遂往，闻战斗之声，恐骇而死。人曰：「不占可谓仁者之勇也。」",
+          " -- 《新序·义勇》"
+        ]
+      }
+    },
+    {
+      "id": "unfriend",
+      "period_id": "W-J",
+      "type_id": "C",
+      "quote": {
+        "en": "You are not my friend.",
+        "zht": "子非吾友也",
+        "zhs": "子非吾友也"
+      },
+      "watermarkChar": "友",
+      "title": {
+        "en": "Not my friend",
+        "zht": "管寧割席",
+        "zhs": "管宁割席"
+      },
+      "text": {
+        "en": [
+          "Guan Ning and Hua Xin were once hoeing a garden when they uncovered a piece of gold. Guan Ning treated it no differently from a stone and struck it aside with his hoe. Hua Xin picked it up, only to throw it away moments later.", 
+          "OOn another occasion, the two were reading together when a grand carriage passed their gate. Guan Ning continued reading as though nothing had happened, while Hua Xin laid down his book and went out to watch.", 
+          "Guan Ning then cut their shared mat in two and said: \"You are not my friend.\"",
+          " -- Shishuo Xinyu (A New Account of the Tales of the World), Dexing (Virtuous Conduct)"
+        ],
+        "zht": [
+          "管寧、華歆共園中鋤菜，見地有片金，管揮鋤與瓦石不異，華捉而擲去之。又嘗同席讀書，有乘軒冕過門者，寧讀如故，歆廢書出看。寧割席分坐曰：「子非吾友也。」",
+          " -- 《世説新語·德行》"
+        ],
+        "zhs": [
+          "管宁、华歆共园中锄菜，见地有片金，管挥锄与瓦石不异，华捉而掷去之。又尝同席读书，有乘轩冕过门者，宁读如故，歆废书出看。宁割席分坐曰：「子非吾友也。」",
+          " -- 《世说新语·德行》"
+        ]
+      }
+    },
+    {
+      "id": "splash",
+      "period_id": "XQ",
+      "type_id": "C",
+      "quote": {
+        "en": "A Splash Too Far",
+        "zht": "君無戲言",
+        "zhs": "君无戏言"
+      },
+      "watermarkChar": "言",
+      "title": {
+        "en": "A Splash Too Far",
+        "zht": "君無戲言",
+        "zhs": "君无戏言"
+      },
+      "text": {
+        "en": [
+          "In the 29th year of his reign, Duke Huan of Qi was boating with his consort, Lady Cai. A skilled swimmer, she playfully rocked the boat, frightening the duke. Though he repeatedly told her to stop, she refused.", 
+          "Angered, Duke Huan sent her back to the state of Cai, though he did not formally divorce her. Offended, the Marquis of Cai married her to another man.",
+          "When Duke Huan learned of this, he flew into a rage. The following spring, he led a coalition of lords against Cai, and the state was swiftly defeated.",
+          " -- Records of the Grand Historian, The Hereditary House of Qi"
+        ],
+        "zht": [
+          "二十九年，桓公與夫人蔡姬戲船中。蔡姬習水，蕩公，公懼，止之，不止，出船，怒，歸蔡姬，弗絕。蔡亦怒，嫁其女。桓公聞而怒，興師往伐。三十年春，齊桓公率諸侯伐蔡，蔡潰。",
+          " -- 《史記·齊太公世家》"
+        ],
+        "zhs": [
+          "二十九年，桓公与夫人蔡姬戏船中。蔡姬习水，荡公，公惧，止之，不止，出船，怒，归蔡姬，弗绝。蔡亦怒，嫁其女。桓公闻而怒，兴师往伐。三十年春，齐桓公率诸侯伐蔡，蔡溃。",
+          " -- 《史记·齐太公世家》"
+        ]
+      }
+    },
+    {
+      "id": "know-dead",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "If I do not yet know the living, how could I know the dead?",
+        "zht": "未知生，焉知死！",
+        "zhs": "未知生，焉知死！"
+      },
+      "watermarkChar": "生",
+      "title": {
+        "en": "Knowing the dead",
+        "zht": "未知生，焉知死",
+        "zhs": "未知生，焉知死"
+      },
+      "text": {
+        "en": [
+          "While serving under Huan Chong, General of Chariots and Cavalry, Wang Huizhi was asked: \"Which section have you been assigned to?\" He replied, \"I believe it is the Horse Section.\" ",
+          "Huan Chong then asked, \"How many horses do you manage?\" He answered, \"If I do not know the horses themselves, how could I know their number?\" Huan Chong pressed further, \"Then how many have died?\" He replied, \"If I do not yet know the living, how could I know the dead?\"",
+          " -- Book of Jin, Biography of Wang Huizhi"
+        ],
+        "zht": [
+          "徽之為車騎桓沖騎兵參軍，沖問：「卿署何曹？」對曰：「似是馬曹。」又問：「管幾馬？」曰：「不知馬，何由知數！」又問：「馬比死多少？」曰：「未知生，焉知死！」",
+          " -- 《晉書·王徽之傳》"
+        ],
+        "zhs": [
+          "徽之为车骑桓冲骑兵参军，冲问：「卿署何曹？」对曰：「似是马曹。」又问：「管几马？」曰：「不知马，何由知数！」又问：「马比死多少？」曰：「未知生，焉知死！」",
+          " -- 《晋书·王徽之传》"
+        ]
+      }
+    },
+    {
+      "id": "left-historians",
+      "period_id": "T-S",
+      "type_id": "Wit",
+      "quote": {
+        "en": "The court historians are bound to record it.",
+        "zht": "自當有史官書之",
+        "zhs": "自当有史官书之"
+      },
+      "watermarkChar": "史",
+      "title": {
+        "en": "Left to the Historians",
+        "zht": "自當有史官書之",
+        "zhs": "自当有史官书之"
+      },
+      "text": {
+        "en": [
+          "Emperor Taizu of Song was once shooting sparrows in the palace garden when an official urgently requested an audience. The emperor hurried to receive him, only to find that it was merely routine matters. Enraged, the emperor demanded an explanation. He replied, \"Your servant thought it more urgent than shooting sparrows.\"",
+          "Furious, the emperor struck him across the mouth with the handle of a ceremonial axe, knocking out two teeth. The official calmly picked them up and tucked them into his robe. The emperor sneered: \"Keeping those teeth to sue me?\" He answered, \"Your servant cannot sue Your Majesty, but the court historians are bound to record it.\"",
+          " -- Notes from the Shu River, Vol 1"
+        ],
+        "zht": [
+          "宋太祖嘗彈雀於後園，有群臣稱有急事請見，太祖亟見之，其所奏乃常事耳。上怒，詰其故，對曰：「臣以為尚急於彈雀。」上愈怒，舉柱斧柄撞其口，墮兩齒，其人徐俯拾齒置懷中。上罵曰：「汝懷齒欲訟我邪？」對曰：「臣不能訟陛下，自當有史官書之。」",
+          " -- 《涑水記聞 · 卷一》"
+        ],
+        "zhs": [
+          "宋太祖尝弹雀于后园，有群臣称有急事请见，太祖亟见之，其所奏乃常事耳。上怒，诘其故，对曰：「臣以为尚急于弹雀。」上愈怒，举柱斧柄撞其口，堕两齿，其人徐俯拾齿置怀中。上骂曰：「汝怀齿欲讼我邪？」对曰：「臣不能讼陛下，自当有史官书之。」",
+          " -- 《涑水记闻 · 卷一》"
+        ]
+      }
+    },
+    {
+      "id": "no-shame",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "How could we be ashamed to serve you?",
+        "zht": "臣等何恥為臣！",
+        "zhs": "臣等何耻为臣！"
+      },
+      "watermarkChar": "臣",
+      "title": {
+        "en": "No Shame Before Heaven",
+        "zht": "何恥為臣",
+        "zhs": "何耻为臣"
+      },
+      "text": {
+        "en": [
+          "When Yao Chang ascended the throne at Chang'an, he held a banquet for his ministers. As the wine flowed, he remarked: \"Not long ago, all of us faced north and served Former Qin together. Now, in an instant, you have become my ministers. Ought you not be ashamed?\"",
+          "Zhao Qian replied: \"If Heaven itself is not ashamed to call Your Majesty its Son, how could we be ashamed to serve you?\"",
+          " -- Zizi Tongjian (Comprehensive Mirror in Aid of Governance), Volume 106"
+        ],
+        "zht": [
+          "後秦王萇即皇帝位於長安，與群臣宴，酒酣，言曰：「諸卿皆與朕北面秦朝，今忽為君臣，得無恥乎！」趙遷曰：「天不恥以陛下為子，臣等何恥為臣！」",
+          " -- 《資治通鑒·卷一百六》"
+        ],
+        "zhs": [
+          "后秦王苌即皇帝位于长安，与群臣宴，酒酣，言曰：「诸卿皆与朕北面秦朝，今忽为君臣，得无耻乎！」赵迁曰：「天不耻以陛下为子，臣等何耻为臣！」",
+          " -- 《资治通鉴·卷一百六》"
+        ]
+      }
+    },
+    {
+      "id": "ranking",
+      "period_id": "W-J",
+      "type_id": "Wit",
+      "quote": {
+        "en": "Among your servants, mine ranks first; among emperors, Your Majesty's ranks first.",
+        "zht": "臣書臣中第一，陛下書帝中第一",
+        "zhs": "臣书臣中第一，陛下书帝中第一"
+      },
+      "watermarkChar": "一",
+      "title": {
+        "en": "Who is first?",
+        "zht": "誰為第一",
+        "zhs": "谁为第一"
+      },
+      "text": {
+        "en": [
+          "Emperor Gao of Southern Qi was an accomplished calligrapher and remained devoted to the art even after ascending the throne. After finishing a calligraphy contest with Wang Sengqian, he asked, \"Whose calligraphy is superior?\"",
+          "Sengqian replied, \"Among your servants, mine ranks first; among emperors, Your Majesty's ranks first.\"",
+          " -- Taiping yulan, Crafts and Arts IV"
+        ],
+        "zht": [
+          "齊太祖善書，及登位，篤好不已。與王僧虔賭書畢，謂虔曰：「誰為第一？」僧虔對曰：「臣書臣中第一，陛下書帝中第一。」",
+          " -- 《太平御覽·工藝部四》"
+        ],
+        "zhs": [
+          "齐太祖善书，及登位，笃好不已。与王僧虔赌书毕，谓虔曰：「谁为第一？」僧虔对曰：「臣书臣中第一，陛下书帝中第一。」",
+          " -- 《太平御览·工艺部四》"
+        ]
+      }
+    },
+    {
+      "id": "goose",
+      "period_id": "W-J",
+      "type_id": "Sor",
+      "quote": {
+        "en": "Among your servants, mine ranks first; among emperors, Your Majesty's ranks first.",
+        "zht": "有孤居姥養一鵝，善鳴",
+        "zhs": "有孤居姥养一鹅，善鸣"
+      },
+      "watermarkChar": "羲",
+      "title": {
+        "en": "A Goose Well Received",
+        "zht": "羲之求鵝",
+        "zhs": "羲之求鹅"
+      },
+      "text": {
+        "en": [
+          "WWang Xizhi was fond of geese. In Kuaiji, an old woman kept a goose renowned for its beautiful call. Wang Xizhi tried to buy it, but she refused. He then set out with a few friends to see it in person.", 
+          "Hearing that Wang Xizhi was coming, the old woman slaughtered the goose and served it to him. Wang Xizhi could only lament its loss, and did so for days.",
+          " -- Book of Jin, Biography of Wang Xizhi"
+        ],
+        "zht": [
+          "性愛鵝，會稽有孤居姥養一鵝，善鳴，求市未得，遂攜親友命駕就觀。姥聞羲之將至，烹以待之，羲之歎惜彌日。",
+          " -- 《晉書·王羲之傳》"
+        ],
+        "zhs": [
+          "性爱鹅，会稽有孤居姥养一鹅，善鸣，求市未得，遂携亲友命驾就观。姥闻羲之将至，烹以待之，羲之叹惜弥日。",
+          " -- 《晋书·王羲之传》"
+        ]
+      }
+    }
+  ]
+}

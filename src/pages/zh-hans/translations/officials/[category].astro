@@ -1,0 +1,346 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Nav from '../../../../components/Nav.astro';
+import ContactModal from '../../../../components/Contactmodal.astro';
+import PositionListItem from '../../../../scripts/translations/PositionListItem.astro';
+import { t } from '../../../../i18n/index.js';
+import '../../../../scripts/translations/officials.css';
+import { url } from '../../../../utils/url';
+
+import centralCourtData from '../../../../data/central-court-database.json';
+import excellenciesData from '../../../../data/excellencies-database.json';
+import militaryData from '../../../../data/military-officials-database.json';
+import provinceData from '../../../../data/provincial-officials-database.json';
+import palaceData from '../../../../data/rear-eastern-palace-database.json';
+
+const fileMap: Record<string, any> = {
+  departments: centralCourtData,
+  ministers:   excellenciesData,
+  military:    militaryData,
+  regional:    provinceData,
+  household:   palaceData,
+};
+
+export function getStaticPaths() {
+  return [
+    { params: { category: 'departments' } },
+    { params: { category: 'ministers' } },
+    { params: { category: 'military' } },
+    { params: { category: 'regional' } },
+    { params: { category: 'household' } },
+  ];
+}
+
+const lang: string = 'zh-hans';
+const strings = t(lang);
+const s = strings.officials;
+const { category: categoryId } = Astro.params;
+const pageData = fileMap[categoryId];
+
+// ── LOCALIZATION HELPERS ──────────────────────────────────────────────────
+// langKey maps the page's lang to the data-field suffix used across the JSON ('en' | 'zht' | 'zhs')
+const langKey: 'en' | 'zht' | 'zhs' =
+  lang === 'zh-hant' ? 'zht' : lang === 'zh-hans' ? 'zhs' : 'en';
+
+// pl() picks the field matching the page's language out of an {en, zht, zhs} object
+function pl(obj: { en: string; zht: string; zhs: string }) {
+  return obj[langKey] ?? obj.en;
+}
+// altGloss() picks the "other" language to show as a secondary line —
+// English pages show the (traditional) Chinese gloss, Chinese pages show the English gloss
+function altGloss(obj: { en: string; zht: string; zhs: string }) {
+  return lang === 'en' ? obj.zht : obj.en;
+}
+
+// whether the page's PRIMARY language is Chinese (drives the larger -zh font-size variants)
+const isZh = lang !== 'en';
+
+// inline copy table for short UI strings that aren't in the shared i18n file
+const copy = {
+  search:      { en: 'Search within this list...', zht: '檢索此列表…',         zhs: '检索此列表…' }[langKey],
+  kingdom:     { en: 'Kingdom',                     zht: '國家',                   zhs: '国家' }[langKey],
+  grade:       { en: 'Grade',                       zht: '品',                     zhs: '品' }[langKey],
+  gradeUnavail:{ en: 'No positions of this grade in this list', zht: '此清單中沒有此品級的職位', zhs: '此清单中没有此品级的职位' }[langKey],
+  overview:    { en: 'Overview',                    zht: '概覽',                   zhs: '概览' }[langKey],
+  majorSec:    { en: 'Major Sections',              zht: '主要分類',               zhs: '主要分类' }[langKey],
+  posUnit:     { en: 'position',                    zht: '條',                 zhs: '条' }[langKey],
+};
+
+// Wu's hanzi differs between traditional (吳) and simplified (吴)
+const wuChar = lang === 'zh-hans' ? '吴' : '吳';
+const kingdomLabel = {
+  wei: lang === 'en' ? 'Wei 魏' : '魏',
+  shu: lang === 'en' ? 'Shu 蜀' : '蜀',
+  wu:  lang === 'en' ? `Wu ${wuChar}` : wuChar,
+};
+
+const pageLabel = {
+  departments: { en: 'Departments',             zht: '臺省',      zhs: '台省' },
+  ministers:   { en: 'Excellencies & Ministers', zht: '公卿',      zhs: '公卿' },
+  military:    { en: 'Military',         zht: '武官',      zhs: '武官' },
+  regional:    { en: 'Regional Administration',  zht: '地方',      zhs: '地方' },
+  household:   { en: 'Imperial Household',       zht: '家眷', zhs: '家眷' },
+  nobility:    { en: 'Nobility',                 zht: '爵位',      zhs: '爵位' },
+}[categoryId] ?? { en: categoryId, zht: categoryId, zhs: categoryId };
+
+// server-side only — for grade pills and position count
+const allPositions: any[] = [];
+for (const cat of pageData.categories) {
+  for (const section of cat.sections ?? []) {
+    for (const pos of section.positions ?? []) allPositions.push(pos);
+  }
+  for (const pos of cat.positions ?? []) allPositions.push(pos);
+}
+const totalPositions = allPositions.length;
+const presentGrades = new Set(allPositions.map(p => p.gradeNum).filter(Boolean));
+const allGrades = Array.from({ length: 9 }, (_, i) => i + 1); // 1–9, always shown
+
+// category-level summaries for the overview panel
+const allCategorySummaries = pageData.categories.map((cat: any) => {
+  const sectionCount = (cat.sections ?? []).reduce((sum: number, sec: any) => sum + (sec.positions ?? []).length, 0);
+  const directCount = (cat.positions ?? []).length;
+  return {
+    catId: cat.id,
+    label: cat.label,
+    count: sectionCount + directCount,
+  };
+});
+
+// pick top 7 by count, but keep them in original list order
+const top7Ids = new Set(
+  [...allCategorySummaries].sort((a: any, b: any) => b.count - a.count).slice(0, 7).map((c: any) => c.catId)
+);
+const categorySummaries = allCategorySummaries.filter((c: any) => top7Ids.has(c.catId));
+---
+
+<Base title={`${pl(pageLabel)} · ${strings.siteTitle}`} lang={lang}>
+  <div class="site" data-category={categoryId} data-lang={lang}>
+    <Nav lang={lang} strings={strings} />
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href={url('/zh-hans/translations')} class="bc-link">{strings.nav.translations}</a>
+        <span class="bc-sep">›</span>
+        <a href={url('/zh-hans/translations/officials')} class="bc-link">{s.title}</a>
+        <span class="bc-sep">›</span>
+        <span class="bc-cur">{pl(pageLabel)}</span>
+      </div>
+      <h1 class="page-title">{pl(pageLabel)}</h1>
+      <p class="page-sub">{altGloss(pageLabel)} · {totalPositions} {copy.posUnit}</p>
+    </div>
+
+     <!-- TOOLBAR -->
+    <div class="toolbar">
+      <div class="toolbar-inner">
+      <div class="toolbar-search">
+        <input type="text" id="pos-search" class="search-input" placeholder={copy.search} autocomplete="off" />
+      </div>
+      <div class="toolbar-divider"></div>
+
+      <div class="filter-group-block filter-kingdom">
+        <span class={`filter-group-label${isZh ? ' filter-group-label-zh' : ''}`}>{copy.kingdom}</span>
+        <div class="filter-pills">
+          <button class="pill pill-kingdom pill-kingdom-wei" data-val="wei">{kingdomLabel.wei}</button>
+          <button class="pill pill-kingdom pill-kingdom-shu" data-val="shu">{kingdomLabel.shu}</button>
+          <button class="pill pill-kingdom pill-kingdom-wu" data-val="wu">{kingdomLabel.wu}</button>
+        </div>
+      </div>
+
+      <div class="filter-vdivider"></div>
+
+      <div class="filter-group-block filter-grade">
+        <span class={`filter-group-label${isZh ? ' filter-group-label-zh' : ''}`}>{copy.grade}</span>
+        <div class="filter-pills">
+          {allGrades.map((g: number) => {
+            const available = presentGrades.has(g);
+            return (
+              <button
+                class={`pill pill-grade${available ? '' : ' unavailable'}`}
+                data-val={String(g)}
+                disabled={!available}
+                aria-disabled={!available}
+                title={available ? undefined : copy.gradeUnavail}
+              >{g}</button>
+            );
+          })}
+        </div>
+      </div>
+
+      <div class="toolbar-divider"></div>
+      <div class="how-to-read">
+        <div class="htr-panel">
+          <div class={`filter-group-label htr-heading${isZh ? ' filter-group-label-zh' : ''}`} style="margin-bottom: 4px;">
+            <span>{lang === 'en' ? 'How to read' : lang === 'zh-hans' ? '导览' : '導覽'}</span>
+            <i class="ti ti-info-circle htr-info-icon" aria-hidden="true"></i>
+          </div>
+          <ol class={`htr-list${lang !== 'en' ? ' htr-list-zh' : ''}`}>
+            {lang === 'en' ? (
+              <>
+                <li>Click the overview or section headers to view notes</li>
+                <li>Use filters & search to filter within this list</li>
+                <li>'?' indicates positions/details for which the original text provides no information</li>
+              </>
+            ) : lang === 'zh-hans' ? (
+              <>
+                <li>点击概述或分类标题可查看注释</li>
+                <li>使用筛选与搜索可查找本列表内容</li>
+                <li>'?' 表示原书未载，无从查考</li>
+              </>
+            ) : (
+              <>
+                <li>點擊概述或分類標題可查看註釋</li>
+                <li>使用篩選與搜尋可查找本列表內容</li>
+                <li>'?' 表示原書未載，無從查考</li>
+              </>
+            )}
+          </ol>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+   <!-- MAIN BODY -->
+<div class="panels-wrapper">
+  <div class="main-body">
+
+    <!-- LIST COLUMN -->
+    <div class="list-col">
+      <div class="sticky-overview active" id="overview-item" role="button" tabindex="0">
+        <div class={`ov-label${isZh ? ' ov-label-zh' : ''}`}>{copy.overview}</div>
+        <div class="ov-sub">{pl(pageLabel)}</div>
+      </div>
+
+      <div class="list-items" id="list-items">
+        {pageData.categories.map((cat: any) => (
+          <div class="cat-group" data-cat-id={cat.id}>
+            <div class="cat-divider" data-type="category" data-id={cat.id} role="button" tabindex="0">
+              <div class="divider-labels">
+                <span class={`divider-label-primary${isZh ? ' divider-label-primary-zh' : ''}`}>{pl(cat.label)}</span>
+                <span class="divider-label-sub">{altGloss(cat.label)}</span>
+              </div>
+              <i class="ti ti-chevron-down divider-chevron" aria-hidden="true"></i>
+            </div>
+            <div class="cat-inner">
+              {(cat.sections ?? []).map((section: any) => (
+                <div class="section-group">
+                  <div class="section-divider" data-type="section" data-cat={cat.id} data-id={section.label.en} role="button" tabindex="0">
+                    <div class="divider-labels">
+                      <span class={`divider-label-primary sec-primary${isZh ? ' sec-primary-zh' : ''}`}>{pl(section.label)}</span>
+                      <span class="divider-label-sub">{altGloss(section.label)}</span>
+                    </div>
+                    <i class="ti ti-chevron-down divider-chevron" aria-hidden="true"></i>
+                  </div>
+                  <div class="section-inner">
+                    {section.positions.map((pos: any) => (
+                      <PositionListItem pos={pos} lang={lang} catLabel={cat.label} sectionLabel={section.label} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {(cat.positions ?? []).map((pos: any) => (
+                <PositionListItem pos={pos} lang={lang} catLabel={cat.label} sectionLabel={null} />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+        <!-- DETAIL COLUMN -->
+        <div class="detail-col" id="detail-col">
+
+          <!-- PAGE OVERVIEW -->
+          <div id="detail-page-overview">
+            <div class="det-hdr">
+              <div>
+                <div class="det-title">{pl(pageLabel)}</div>
+                <div class="det-sub">{altGloss(pageLabel)}</div>
+              </div>
+              <button class="mobile-close" id="mobile-close-overview">✕</button>
+            </div>
+            <div class="det-body">
+              <div class="ov-layout">
+                <div class="ov-prose-col">
+                  <div class="ov-card">
+                    <div class={`ov-card-title${isZh ? ' ov-card-title-zh' : ''}`}>{copy.overview}</div>
+                    {pageData.pageNotes?.map((note: any) => (
+                      <p class={`ov-card-text${isZh ? ' ov-card-text-zh' : ''}`}>{note[langKey] ?? note.en}</p>
+                    ))}
+                  </div>
+                </div>
+
+                <div class="ov-sections-col">
+                  <div class={`ov-sections-title${isZh ? ' ov-sections-title-zh' : ''}`}>{copy.majorSec}</div>
+                  <div class="ov-sections-list">
+                    {categorySummaries.map((cat: any) => (
+                      <div class="ov-section-row" data-cat={cat.catId} role="button" tabindex="0">
+                        <div class="ov-section-names">
+                          <span class={`ov-section-en${isZh ? ' ov-section-en-zh' : ''}`}>{pl(cat.label)}</span>
+                          <span class="ov-section-zh">{altGloss(cat.label)}</span>
+                        </div>
+                        <span class="ov-section-count">
+                          {lang === 'en'
+                            ? `${cat.count} position${cat.count !== 1 ? 's' : ''}`
+                            : `${cat.count} ${copy.posUnit}`}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CATEGORY / SECTION NOTES -->
+          <div id="detail-notes" style="display:none;">
+            <div class="det-hdr">
+              <div>
+                <div class="det-title" id="notes-title"></div>
+                <div class="det-sub" id="notes-sub"></div>
+              </div>
+              <button class="mobile-close" id="mobile-close-notes">✕</button>
+            </div>
+            <div class="det-body" id="notes-body"></div>
+          </div>
+
+          <!-- POSITION DETAIL -->
+          <div id="detail-position" style="display:none;">
+            <div class="det-hdr">
+              <div>
+                <div class="det-title" id="det-title"></div>
+                <div class="det-sub" id="det-sub"></div>
+              </div>
+              <button class="mobile-close" id="mobile-close">✕</button>
+            </div>
+            <div class="det-body" id="det-body"></div>
+          </div>
+
+          <!-- MOBILE PLACEHOLDER -->
+          <div id="detail-placeholder" class="detail-placeholder" style="display:none;">
+            <p class="detail-placeholder-text">Select an item for more details</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{strings.footer.quoteBySection?.translations ?? strings.footer.quote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+
+<script>
+  import '../../../../scripts/translations/officials-module.js';
+</script>

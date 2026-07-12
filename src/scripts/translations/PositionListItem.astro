@@ -1,0 +1,76 @@
+---
+// PositionListItem.astro
+interface Props {
+  pos: any;
+  lang: string;
+  catLabel?: { en: string; zht?: string; zhs?: string };
+  sectionLabel?: { en: string; zht?: string; zhs?: string } | null;
+}
+const { pos, lang, catLabel, sectionLabel } = Astro.props;
+
+const isZh = lang === 'zh-hant' || lang === 'zh-hans';
+const primaryName = lang === 'zh-hant' ? pos.displayName.zht 
+                  : lang === 'zh-hans' ? pos.displayName.zhs 
+                  : pos.displayName.en;
+const subName     = lang === 'en' ? pos.displayName.zht : pos.displayName.en;
+
+function stripHtml(str: string | undefined | null): string {
+  return (str ?? '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '').trim();
+}
+
+const allNames = [
+  ...(pos.name.wei ?? []),
+  ...(pos.name.shu ?? []),
+  ...(pos.name.wu  ?? []),
+];
+
+const nameEn  = allNames.map((n: any) => stripHtml(n.en)).join(' ').toLowerCase();
+const nameZht = allNames.map((n: any) => stripHtml(n.zht ?? n.zhs)).join(' ');
+const nameZhs = allNames.map((n: any) => stripHtml(n.zhs ?? n.zht)).join(' ');
+
+const searchBody = [
+  ...(pos.jobscope?.en  ?? []),
+  ...(pos.jobscope?.zht ?? pos.jobscope?.zhs ?? []),
+  ...(pos.jobscope?.zhs ?? pos.jobscope?.zht ?? []),
+  ...(pos.notes?.map((n: any) => n.en)  ?? []),
+  ...(pos.notes?.map((n: any) => n.zht ?? n.zhs) ?? []),
+  ...(pos.notes?.map((n: any) => n.zhs ?? n.zht) ?? []),
+]
+  .map(stripHtml)
+  .join(' ')
+  .toLowerCase();
+
+const tier = pos.tier ?? 'secondary';
+const gradeClass = pos.gradeNum <= 2 ? 'g12' : pos.gradeNum <= 4 ? 'g34' : 'g5';
+
+// breadcrumb shown only during active search
+const breadcrumbEn  = [catLabel?.en,  sectionLabel?.en].filter(Boolean).join(' › ');
+const breadcrumbZht = [catLabel?.zht, sectionLabel?.zht].filter(Boolean).join(' › ');
+const breadcrumbZhs = [catLabel?.zhs, sectionLabel?.zhs].filter(Boolean).join(' › ');
+const breadcrumb = isZh ? (lang === 'zh-hans' ? breadcrumbZhs : breadcrumbZht) : breadcrumbEn;
+---
+
+<div class="list-item"
+  data-id={pos.id}
+  data-wei={pos.name.wei ? 'true' : 'false'}
+  data-shu={pos.name.shu ? 'true' : 'false'}
+  data-wu={pos.name.wu  ? 'true' : 'false'}
+  data-grade={pos.gradeNum ?? ''}
+  data-tier={tier}
+  data-name-en={nameEn}
+  data-name-zht={nameZht}
+  data-name-zhs={nameZhs}
+  data-search-body={searchBody}
+  role="button" tabindex="0">
+  <div class="li-row">
+    <span class={`li-en${isZh ? ' li-en-zh' : ''}`}>{primaryName}</span>
+    {pos.gradeNum && <span class={`gc ${gradeClass}`}>{pos.gradeNum}</span>}
+  </div>
+  <div class="li-zh">{subName}</div>
+  <div class="li-badges">
+    {pos.name.wei && <span class="badge b-wei">Wei</span>}
+    {pos.name.shu && <span class="badge b-shu">Shu</span>}
+    {pos.name.wu  && <span class="badge b-wu">Wu</span>}
+  </div>
+  {breadcrumb && <div class="li-breadcrumb" style="display:none;">{breadcrumb}</div>}
+</div>

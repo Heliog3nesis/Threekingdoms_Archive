@@ -1,0 +1,4896 @@
+{
+  "categories": [
+    {
+      "id": "sili",
+      "label": {
+        "zht": "司隸",
+        "zhs": "司隶",
+        "en": "Sili"
+      },
+      "positions": [
+        {
+          "id": "sili-001",
+          "displayName": {
+            "zht": "司隸校尉",
+            "zhs": "司隶校尉",
+            "en": "Colonel of the Capital"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "司隸校尉",
+                "zhs": "司隶校尉",
+                "en": "Colonel of the Capital"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "司隸校尉",
+                "zhs": "司隶校尉",
+                "en": "Colonel of the Capital"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "察舉百官及京師近郡犯法者",
+              "并領一州"
+            ],
+            "zhs": [
+              "察举百官及京师近郡犯法者",
+              "并领一州"
+            ],
+            "en": [
+              "Investigates and indicts officials, as well as those who committed offenses in the capital and nearby districts",
+              "Also manage the capital province"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，比二千石，一人"
+            ],
+            "zhs": [
+              "三品，比二千石，一人"
+            ],
+            "en": [
+              "Third grade, Equivalent to 2000 shi , 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "蜀如漢制督察而已，不與州事",
+              "zhs": "蜀如汉制督察而已，不与州事",
+              "en": "In Shu, the Colonel only conducted investigations as in the Han system, and was not involved in provincial administration"
+            }
+          ]
+        },
+        {
+          "id": "sili-002",
+          "displayName": {
+            "zht": "參軍",
+            "zhs": "参军",
+            "en": "Army Adjutant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "參軍",
+                "zhs": "参军",
+                "en": "Army Adjutant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "無考"
+            ],
+            "zhs": [
+              "无考"
+            ],
+            "en": [
+              "Number of posts unknown"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aides; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-003",
+          "displayName": {
+            "zht": "都官從事",
+            "zhs": "都官从事",
+            "en": "Official Supervision Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "都官從事",
+                "zhs": "都官从事",
+                "en": "Official Supervision Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "主察百官之犯法者"
+            ],
+            "zhs": [
+              "主察百官之犯法者"
+            ],
+            "en": [
+              "In charge of reporting officials who committed offenses"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-004",
+          "displayName": {
+            "zht": "功曹從事",
+            "zhs": "功曹从事",
+            "en": "Merit Section Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "功曹從事",
+                "zhs": "功曹从事",
+                "en": "Merit Section Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "主府内選用"
+            ],
+            "zhs": [
+              "主府内选用"
+            ],
+            "en": [
+              "In charge of promotion and appointment of personnel within the office"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-005",
+          "displayName": {
+            "zht": "諸曹從事",
+            "zhs": "诸曹从事",
+            "en": "Various Sections Aides"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "諸曹從事",
+                "zhs": "诸曹从事",
+                "en": "Various Sections Aides"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-006",
+          "displayName": {
+            "zht": "部郡從事",
+            "zhs": "部郡从事",
+            "en": "Regional Affairs Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "部郡從事",
+                "zhs": "部郡从事",
+                "en": "Regional Affairs Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "主督促文書，舉部郡非法"
+            ],
+            "zhs": [
+              "主督促文书，举部郡非法"
+            ],
+            "en": [
+              "In charge of expediting documents and reporting illegal conduct in the local commanderies"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-007",
+          "displayName": {
+            "zht": "武猛從事",
+            "zhs": "武猛从事",
+            "en": "Martial Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "武猛從事",
+                "zhs": "武猛从事",
+                "en": "Martial Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-008",
+          "displayName": {
+            "zht": "督軍從事",
+            "zhs": "督军从事",
+            "en": "Army Supervision Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "督軍從事",
+                "zhs": "督军从事",
+                "en": "Army Supervision Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-009",
+          "displayName": {
+            "zht": "主簿",
+            "zhs": "主簿",
+            "en": "Registrar"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "主簿",
+                "zhs": "主簿",
+                "en": "Registrar"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "錄門下眾事，省署文書"
+            ],
+            "zhs": [
+              "录门下众事，省署文书"
+            ],
+            "en": [
+              "Oversee all staff affairs, review and sign documentations"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-010",
+          "displayName": {
+            "zht": "錄事",
+            "zhs": "录事",
+            "en": "Records Clerk"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "錄事",
+                "zhs": "录事",
+                "en": "Records Clerk"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-011",
+          "displayName": {
+            "zht": "門下書佐",
+            "zhs": "门下书佐",
+            "en": "Staff Documents Clerk"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "門下書佐",
+                "zhs": "门下书佐",
+                "en": "Staff Documents Clerk"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-012",
+          "displayName": {
+            "zht": "省事",
+            "zhs": "省事",
+            "en": "Examiner"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "省事",
+                "zhs": "省事",
+                "en": "Examiner"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        },
+        {
+          "id": "sili-013",
+          "displayName": {
+            "zht": "記室書佐",
+            "zhs": "记室书佐",
+            "en": "Record Keeper Clerk"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "記室書佐",
+                "zhs": "记室书佐",
+                "en": "Record Keeper Clerk"
+              },
+              {
+                "zht": "諸曹書佐",
+                "zhs": "诸曹书佐",
+                "en": "Various Sections Clerk"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "從事、史、假佐一百人；又有卒三十二人",
+              "zhs": "从事、史、假佐一百人；又有卒三十二人",
+              "en": "A total of 100 Aide officials, Clerks and Clerical Aidesl; and 32 servants"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "provinces",
+      "label": {
+        "zht": "州",
+        "zhs": "州",
+        "en": "Provinces"
+      },
+      "categoryNotes": [
+        {
+          "zht": "刺史初為監察郡國之職，然其職權漸重，後多兼領行政，實與州牧相類。自西漢末，刺史可開府，自行徵辟掾吏。其所辟之屬，多不獨奉天子為君，亦以徵辟己之刺史為「君」，遂成錢穆所謂「二重君主观」。",
+          "zhs": "刺史初为监察郡国之职，然其职权渐重，后多兼领行政，实与州牧相类。自西汉末，刺史可开府，自行征辟掾吏。其所辟之属，多不独奉天子为君，亦以征辟己之刺史为'君'，遂成钱穆所谓'二重君主观'。",
+          "en": "Originally, the inspector served as a supervisory official charged with monitoring commanderies and states. Over time, however, the authority of the office steadily expanded, and inspectors frequently came to exercise administrative powers as well, effectively resembling provincial governors. From the late Western (Former) Han onward, inspectors were allowed to establish their own office and appoint subordinate officials on their own authority."
+        },
+        {
+          "zht": "",
+          "zhs": "",
+          "en": "Those appointed under such arrangements would not view the emperor as their sole sovereign; they would also treat the inspector who had recruited them as their 'lord.' This situation gave rise to what Qian Mu famously described as a system of 'dual allegiance.'"
+        }
+      ],
+      "positions": [
+        {
+          "id": "provinces-014",
+          "displayName": {
+            "zht": "剌史",
+            "zhs": "剌史",
+            "en": "Inspector"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": 5,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "剌史",
+                "zhs": "剌史",
+                "en": "Inspector"
+              },
+              {
+                "zht": "牧",
+                "zhs": "牧",
+                "en": "Governor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "剌史",
+                "zhs": "剌史",
+                "en": "Inspector"
+              },
+              {
+                "zht": "牧",
+                "zhs": "牧",
+                "en": "Governor"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "剌史",
+                "zhs": "剌史",
+                "en": "Inspector"
+              },
+              {
+                "zht": "牧",
+                "zhs": "牧",
+                "en": "Governor"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "巡行所部郡國，錄囚徒，考殿最，每歲遣計吏詣京都奏事"
+            ],
+            "zhs": [
+              "巡行所部郡国，录囚徒，考殿最，每岁遣计吏诣京都奏事"
+            ],
+            "en": [
+              "Patrol the commanderies and states; inspect criminals; evaluate officials' performance; and each year dispatches Accounts Clerks to the capital to report on affairs"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "五品，(刺史)六百石/ (牧)二千石，各一人"
+            ],
+            "zhs": [
+              "五品，(刺史)六百石/ (牧)二千石，各一人"
+            ],
+            "en": [
+              "Fifth grade, (Inspector) 600 shi/(Governor) 2000 shi, 1 person per province"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "無加官者謂州單車剌史",
+              "zhs": "无加官者谓州单车剌史",
+              "en": "Inspectors without additional titles are known as Single Chariot Inspectors"
+            },
+            {
+              "zht": "不入版圖者，亦置刺史遙領之",
+              "zhs": "不入版图者，亦置刺史遥领之",
+              "en": "Territories not under actual control can also have inspectors appointed to oversee in name"
+            },
+            {
+              "zht": "緣邊諸州剌史時與領兵都督並置",
+              "zhs": "缘边诸州剌史时与领兵都督并置",
+              "en": "Border provinces sometimes appoint both Inspectors and Commanders"
+            }
+          ]
+        },
+        {
+          "id": "provinces-015",
+          "displayName": {
+            "zht": "大中正",
+            "zhs": "大中正",
+            "en": "Chief Evaluator"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "大中正",
+                "zhs": "大中正",
+                "en": "Chief Evaluator"
+              }
+            ],
+            "shu": null,
+            "wu": [
+              {
+                "zht": "大公平",
+                "zhs": "大公平",
+                "en": "Chief Arbiter"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "選舉人材"
+            ],
+            "zhs": [
+              "选举人材"
+            ],
+            "en": [
+              "Identify and recommend talent"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-016",
+          "displayName": {
+            "zht": "治中從事",
+            "zhs": "治中从事",
+            "en": "Administrative Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "治中從事",
+                "zhs": "治中从事",
+                "en": "Administrative Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "治中從事",
+                "zhs": "治中从事",
+                "en": "Administrative Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主眾曹文書"
+            ],
+            "zhs": [
+              "主众曹文书"
+            ],
+            "en": [
+              "Direct documentations under various sections"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "綱紀者，綜理府事，乃州郡屬吏之重者，常以指治中、別駕",
+              "zhs": "纲纪者，综理府事，乃州郡属吏之重者，常以指治中、别驾",
+              "en": "The Principal Officers coordinate the affairs of the office and are the most important among the subordinate staff of the provinces and commanderies, typically referring to the Administrative Aide and Deputy Aide in the Provincial office"
+            },
+            {
+              "zht": "刺史闕則代守一州",
+              "zhs": "刺史阙则代守一州",
+              "en": "Acts as the Inspector when that Inspector's office is vacant"
+            }
+          ]
+        },
+        {
+          "id": "provinces-017",
+          "displayName": {
+            "zht": "別駕從事",
+            "zhs": "别驾从事",
+            "en": "Deputy Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "別駕從事",
+                "zhs": "别驾从事",
+                "en": "Deputy Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "別駕從事",
+                "zhs": "别驾从事",
+                "en": "Deputy Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "從刺史行部"
+            ],
+            "zhs": [
+              "从刺史行部"
+            ],
+            "en": [
+              "Accompany the Inspector on provincial inspection tours"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "綱紀者，綜理府事，乃州郡屬吏之重者，常以指治中、別駕。",
+              "zhs": "纲纪者，综理府事，乃州郡属吏之重者，常以指治中、别驾。",
+              "en": "The Principal Officers coordinate the affairs of the office and are the most important among the subordinate staff of the provinces and commanderies, typically referring to the Administrative Aide and Deputy Aide in the Provincial office."
+            }
+          ]
+        },
+        {
+          "id": "provinces-018",
+          "displayName": {
+            "zht": "功曹從事",
+            "zhs": "功曹从事",
+            "en": "Merit Section Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "功曹從事",
+                "zhs": "功曹从事",
+                "en": "Merit Section Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主府内選用"
+            ],
+            "zhs": [
+              "主府内选用"
+            ],
+            "en": [
+              "In charge of promotion and appointment of personnel within the office"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-019",
+          "displayName": {
+            "zht": "簿曹從事",
+            "zhs": "簿曹从事",
+            "en": "Fiscal Section Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "簿曹從事",
+                "zhs": "簿曹从事",
+                "en": "Fiscal Section Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主錢穀簿書"
+            ],
+            "zhs": [
+              "主钱谷簿书"
+            ],
+            "en": [
+              "In charge of funds and grains"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-020",
+          "displayName": {
+            "zht": "兵曹從事",
+            "zhs": "兵曹从事",
+            "en": "Military Section Aide"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "兵曹從事",
+                "zhs": "兵曹从事",
+                "en": "Military Section Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "前、後、左、右部司馬",
+                "zhs": "前、后、左、右部司马",
+                "en": "Major of the Front/ Middle/Left/Right Division"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主兵馬"
+            ],
+            "zhs": [
+              "主兵马"
+            ],
+            "en": [
+              "In chrage of troops"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-021",
+          "displayName": {
+            "zht": "部郡從事",
+            "zhs": "部郡从事",
+            "en": "Regional Affairs Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "部郡從事",
+                "zhs": "部郡从事",
+                "en": "Regional Affairs Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "部郡從事",
+                "zhs": "部郡从事",
+                "en": "Regional Affairs Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "部郡從事",
+                "zhs": "部郡从事",
+                "en": "Regional Affairs Aide"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主督促文書，舉郡國非法"
+            ],
+            "zhs": [
+              "主督促文书，举郡国非法"
+            ],
+            "en": [
+              "In charge of expediting documents and reporting illegal conduct in the local commanderies"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-022",
+          "displayName": {
+            "zht": "文學從事",
+            "zhs": "文学从事",
+            "en": "Literary Section Aide"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "文學從事",
+                "zhs": "文学从事",
+                "en": "Literary Section Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "勸學從事",
+                "zhs": "劝学从事",
+                "en": "Education Promotion Aide"
+              },
+              {
+                "zht": "典學從事",
+                "zhs": "典学从事",
+                "en": "Education Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主州郡教化"
+            ],
+            "zhs": [
+              "主州郡教化"
+            ],
+            "en": [
+              "In charge of education and moral instruction in the province"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-023",
+          "displayName": {
+            "zht": "武猛從事",
+            "zhs": "武猛从事",
+            "en": "Martial Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "武猛從事",
+                "zhs": "武猛从事",
+                "en": "Martial Aide"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-024",
+          "displayName": {
+            "zht": "主簿",
+            "zhs": "主簿",
+            "en": "Registrar"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "主簿",
+                "zhs": "主簿",
+                "en": "Registrar"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "主簿",
+                "zhs": "主簿",
+                "en": "Registrar"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "錄門下眾事，省署文書"
+            ],
+            "zhs": [
+              "录门下众事，省署文书"
+            ],
+            "en": [
+              "Oversee all staff affairs, review and sign documentations"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-025",
+          "displayName": {
+            "zht": "門亭長",
+            "zhs": "门亭长",
+            "en": "Gatehouse Chief"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "門亭長",
+                "zhs": "门亭长",
+                "en": "Gatehouse Chief"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-026",
+          "displayName": {
+            "zht": "諸曹書佐",
+            "zhs": "诸曹书佐",
+            "en": "Various Sections Clerks"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "諸曹書佐",
+                "zhs": "诸曹书佐",
+                "en": "Various Sections Clerks"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-027",
+          "displayName": {
+            "zht": "計吏",
+            "zhs": "计吏",
+            "en": "Accounts Clerk"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "計吏",
+                "zhs": "计吏",
+                "en": "Accounts Clerk"
+              },
+              {
+                "zht": "上記吏",
+                "zhs": "上记吏",
+                "en": ""
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "每歲入京朝天子，對答州事，呈計簿"
+            ],
+            "zhs": [
+              "每岁入京朝天子，对答州事，呈计簿"
+            ],
+            "en": [
+              "Every year travel to the capital to attend court, report on provincial matters, and submit the fiscal and census registers"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-028",
+          "displayName": {
+            "zht": "議曹從事",
+            "zhs": "议曹从事",
+            "en": "Consultant Section Aide"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "議曹從事",
+                "zhs": "议曹从事",
+                "en": "Consultant Section Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "師友從事",
+                "zhs": "师友从事",
+                "en": "Advising Aide"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-029",
+          "displayName": {
+            "zht": "督軍從事",
+            "zhs": "督军从事",
+            "en": "Army Supervision Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "督軍從事",
+                "zhs": "督军从事",
+                "en": "Army Supervision Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-030",
+          "displayName": {
+            "zht": "從事祭酒",
+            "zhs": "从事祭酒",
+            "en": "Aide Libationer"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "從事祭酒",
+                "zhs": "从事祭酒",
+                "en": "Aide Libationer"
+              },
+              {
+                "zht": "從事",
+                "zhs": "从事",
+                "en": "Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "provinces-031",
+          "displayName": {
+            "zht": "書佐",
+            "zhs": "书佐",
+            "en": "Clerk"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "書佐",
+                "zhs": "书佐",
+                "en": "Clerk"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "commanderies",
+      "label": {
+        "zht": "郡",
+        "zhs": "郡",
+        "en": "Commanderies"
+      },
+      "categoryNotes": [
+        {
+          "zht": "郡守與刺史相類，其屬吏除丞、尉由朝廷任命外，亦皆可開府自行徵辟署置。郡吏除去京畿及邊郡，例用本籍之人，所辟者亦多奉郡守為「君」，具「二重君主观」。郡守雖不能隨意更調朝廷所置之縣令，然可暫置守令以代理縣事。郡守可自設條教以化民俗、理民生；兼掌賞罰、司法，乃至生殺予奪。郡守任滿一歲則亦有選舉之權，可舉賢良方正、歲貢等。",
+          "zhs": "郡守与刺史相类，其属吏除丞、尉由朝廷任命外，皆可开府自行征辟署置。郡吏除京畿及边郡外，例用本籍之人，所辟者亦多奉郡守为'君'，具'二重君主'。郡守虽不能随意更调朝廷所置之县令，然可暂置守令以代理县事。郡守可自设条教以化民俗、理民生；兼掌赏罚、司法，乃至生杀予夺。郡守任满一岁则亦有选举之权，可举贤良方正、岁贡等。",
+          "en": "Commandery administrators were similar to inspectors in establishing offices. With the exception of the Commandery Assistant and Commandant, who were appointed by the central court, all subordinate officials could likewise be recruited and appointed at the Administrator's discretion. Other than the capital region and border commanderies, commandery officials were customarily drawn from the local populace. Those so appointed often regarded the Administrator as their 'lord' as well, thus also exhibiting 'dual allegiance.'"
+        },
+        {
+          "zht": "漢制，本郡稅賦歸於朝廷，郡國用度由朝廷撥付，邊郡資用不足則由內郡調濟支應。郡守亦須於秋冬課核屬吏，由屬縣先期集課，郡覆核之，并於正月彙總上計於朝廷。",
+          "zhs": "汉制，本郡税赋归于朝廷，郡国用度由朝廷拨付，边郡资用不足则由内郡调济支应。郡守亦须于秋冬课核属吏，由属县先期集课，郡复核之，并于正月汇总上计于朝廷。",
+          "en": "Although an administrator could not arbitrarily remove county magistrates appointed by the court, he was permitted to appoint acting magistrates to manage county affairs on a temporary basis. An administrator could promulgate local ordinances to guide local customs and regulate livelihoods, exercise authority over rewards and punishments, oversee judicial matters, and, in extreme cases, wield the power to execute. After serving one full year, the administrator also gains the right to make recommendations, including nominations for Filial and Incorrupt, and Worthy and Upright candidates, as well as annual recommendations."
+        },
+        {
+          "en": "Under the Han system, taxes collected within a commandery were remitted to the capital, and local expenditures allocated back by the central government. Border commanderies whose revenues proved insufficient were subsidized through transfers from interior commanderies. Commandery administrators were also required to evaluate their subordinate officials in autumn-winter. Preliminary assessments were conducted at the county level, reviewed at the commandery level, and then compiled into annual reports submitted to the court in the first month of the year."
+        }
+      ],
+      "positions": [
+        {
+          "id": "commanderies-032",
+          "displayName": {
+            "zht": "河南尹",
+            "zhs": "河南尹",
+            "en": "Intendant of Henan"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 3,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "河南尹",
+                "zhs": "河南尹",
+                "en": "Intendant of Henan"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "主京都"
+            ],
+            "zhs": [
+              "主京都"
+            ],
+            "en": [
+              "In charge of the capital"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "三品，二千石，一人"
+            ],
+            "zhs": [
+              "三品，二千石，一人"
+            ],
+            "en": [
+              "Third grade, 2000 shi , 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "commanderies-033",
+          "displayName": {
+            "zht": "河南丞",
+            "zhs": "河南丞",
+            "en": "Assistant to the Intendant of Henan"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "河南丞",
+                "zhs": "河南丞",
+                "en": "Assistant to the Intendant of Henan"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "七品，六百石，一人"
+            ],
+            "zhs": [
+              "七品，六百石，一人"
+            ],
+            "en": [
+              "Seventh grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "commanderies-034",
+          "displayName": {
+            "zht": "廩犧丞",
+            "zhs": "廪牺丞",
+            "en": "Granary and Sacrifice Assistant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "廩犧丞",
+                "zhs": "廪牺丞",
+                "en": "Granary and Sacrifice Assistant"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "主藏穀養牲供祭祀"
+            ],
+            "zhs": [
+              "主藏谷养牲供祭祀"
+            ],
+            "en": [
+              "In charge of the grains and animals used for sacrificial ceremonies"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "八品，四百石，一人"
+            ],
+            "zhs": [
+              "八品，四百石，一人"
+            ],
+            "en": [
+              "Eighth grade, 400 shi, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "commanderies-035",
+          "displayName": {
+            "zht": "洛陽巿長",
+            "zhs": "洛阳巿长",
+            "en": "Luoyang Market Directors"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "洛陽巿長",
+                "zhs": "洛阳巿长",
+                "en": "Luoyang Market Directors"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "三人"
+            ],
+            "zhs": [
+              "三人"
+            ],
+            "en": [
+              "3 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "洛陽三巿，大巿名金巿在大城西，南巿在大城南，馬巿在大城東",
+              "zhs": "洛阳三巿，大巿名金巿在大城西，南巿在大城南，马巿在大城东",
+              "en": "Luoyang had three markets: the Great Market, also called the Golden Market, located west of the main city; the South Market, located south of the main city; and the Horse Market, located east of the main city"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-036",
+          "displayName": {
+            "zht": "洛陽巿丞",
+            "zhs": "洛阳巿丞",
+            "en": "Luoyang Market Assistants"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "洛陽巿丞",
+                "zhs": "洛阳巿丞",
+                "en": "Luoyang Market Assistants"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "九品，二百石，三人"
+            ],
+            "zhs": [
+              "九品，二百石，三人"
+            ],
+            "en": [
+              "Ninth grade, 200 shi, 3 people"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "洛陽三巿，大巿名金巿在大城西，南巿在大城南，馬巿在大城東",
+              "zhs": "洛阳三巿，大巿名金巿在大城西，南巿在大城南，马巿在大城东",
+              "en": "Luoyang had three markets: the Great Market, also called the Golden Market, located west of the main city; the South Market, located south of the main city; and the Horse Market, located east of the main city"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-037",
+          "displayName": {
+            "zht": "五官掾",
+            "zhs": "五官掾",
+            "en": "Administrator for All Purposes"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "五官掾",
+                "zhs": "五官掾",
+                "en": "Administrator for All Purposes"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-038",
+          "displayName": {
+            "zht": "功曹",
+            "zhs": "功曹",
+            "en": "Merit Section Foreman Clerk"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "功曹",
+                "zhs": "功曹",
+                "en": "Merit Section Foreman Clerk"
+              },
+              {
+                "zht": "功曹史",
+                "zhs": "功曹史",
+                "en": ""
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-039",
+          "displayName": {
+            "zht": "太守",
+            "zhs": "太守",
+            "en": "Grand Administrator"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "太守",
+                "zhs": "太守",
+                "en": "Grand Administrator"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "太守",
+                "zhs": "太守",
+                "en": "Grand Administrator"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "太守",
+                "zhs": "太守",
+                "en": "Grand Administrator"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌治民，進賢，決訟，檢姦，并舉孝廉"
+            ],
+            "zhs": [
+              "掌治民，进贤，决讼，检奸，并举孝廉"
+            ],
+            "en": [
+              "In charge of administering the people, employing the virtuous, adjudicating local disputes, investigating crimes, and recommending men of filial piety and integrity"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "五品，二千石，各一人"
+            ],
+            "zhs": [
+              "五品，二千石，各一人"
+            ],
+            "en": [
+              "Fifth grade, 2000 shi, 1 person each commandery"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "魏制太守皆加將軍名號",
+              "zhs": "魏制太守皆加将军名号",
+              "en": "In Wei, Grand Administrators all had a general title"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-040",
+          "displayName": {
+            "zht": "郡丞",
+            "zhs": "郡丞",
+            "en": "Assistant to the Grand Administrator"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "郡丞",
+                "zhs": "郡丞",
+                "en": "Assistant to the Grand Administrator"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，六百石，一人"
+            ],
+            "zhs": [
+              "八品，六百石，一人"
+            ],
+            "en": [
+              "Eighth grade, 600 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "郡當邊戍者，丞為長史，掌兵馬",
+              "zhs": "郡当边戍者，丞为长史，掌兵马",
+              "en": "For commanderies near the border, the Chief Clerk replaces the Assistant, and manages troops and horses"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-041",
+          "displayName": {
+            "zht": "長史",
+            "zhs": "长史",
+            "en": "Chief Clerk"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "長史",
+                "zhs": "长史",
+                "en": "Chief Clerk"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "郡當邊戍者，丞為長史，掌兵馬",
+              "zhs": "郡当边戍者，丞为长史，掌兵马",
+              "en": "For commanderies near the border, the Chief Clerk replaces the Assistant, and manages troops and horses"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-042",
+          "displayName": {
+            "zht": "中正",
+            "zhs": "中正",
+            "en": "Evaluator"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "中正",
+                "zhs": "中正",
+                "en": "Evaluator"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": {
+            "zht": [
+              "選舉人材"
+            ],
+            "zhs": [
+              "选举人材"
+            ],
+            "en": [
+              "Identify and recommend talent"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "八品，一人"
+            ],
+            "zhs": [
+              "八品，一人"
+            ],
+            "en": [
+              "Eighth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "commanderies-043",
+          "displayName": {
+            "zht": "都尉",
+            "zhs": "都尉",
+            "en": "Commandant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "都尉",
+                "zhs": "都尉",
+                "en": "Commandant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "都尉",
+                "zhs": "都尉",
+                "en": "Commandant"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "都尉",
+                "zhs": "都尉",
+                "en": "Commandant"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "典兵禁備盜賊"
+            ],
+            "zhs": [
+              "典兵禁备盗贼"
+            ],
+            "en": [
+              "In charge of troops and safeguarding against thieves and bandits"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "五品，比二千石，一人"
+            ],
+            "zhs": [
+              "五品，比二千石，一人"
+            ],
+            "en": [
+              "Fifth grade, Equivalent to 2000 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "大郡或置二人，或爲東西部或爲南北部",
+              "zhs": "大郡或置二人，或为东西部或为南北部",
+              "en": "Bigger commanderies may have 2 commandants, split into east/west or north/south divisions"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-044",
+          "displayName": {
+            "zht": "司馬",
+            "zhs": "司马",
+            "en": "Major"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "司馬",
+                "zhs": "司马",
+                "en": "Major"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，一人"
+            ],
+            "zhs": [
+              "八品，一人"
+            ],
+            "en": [
+              "Eighth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "commanderies-045",
+          "displayName": {
+            "zht": "關尉",
+            "zhs": "关尉",
+            "en": "Pass Commandant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": [
+              {
+                "zht": "關尉",
+                "zhs": "关尉",
+                "en": "Pass Commandant"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "惟陰平",
+              "zhs": "惟阴平",
+              "en": "Only in Yinping Commandery"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-046",
+          "displayName": {
+            "zht": "江關都尉",
+            "zhs": "江关都尉",
+            "en": "River-Pass Commandant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": null,
+            "shu": [
+              {
+                "zht": "江關都尉",
+                "zhs": "江关都尉",
+                "en": "River-Pass Commandant"
+              }
+            ],
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "惟巴東",
+              "zhs": "惟巴东",
+              "en": "Only in Badong Commandery"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-047",
+          "displayName": {
+            "zht": "淮海津都尉",
+            "zhs": "淮海津都尉",
+            "en": "Commandant of the Huai Crossing"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "淮海津都尉",
+                "zhs": "淮海津都尉",
+                "en": "Commandant of the Huai Crossing"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，一人"
+            ],
+            "zhs": [
+              "八品，一人"
+            ],
+            "en": [
+              "Eighth grade, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "惟安豐",
+              "zhs": "惟安丰",
+              "en": "Only in Anfeng Commandery"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-048",
+          "displayName": {
+            "zht": "禾伊吾都尉",
+            "zhs": "禾伊吾都尉",
+            "en": "Commandant of Heyiwu"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "禾伊吾都尉",
+                "zhs": "禾伊吾都尉",
+                "en": "Commandant of Heyiwu"
+              }
+            ],
+            "shu": null,
+            "wu": null
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，一人"
+            ],
+            "zhs": [
+              "八品，一人"
+            ],
+            "en": [
+              "Eighth grade, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "惟敦煌",
+              "zhs": "惟敦煌",
+              "en": "Only in Dunhuang Commandery"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-049",
+          "displayName": {
+            "zht": "功曹掾",
+            "zhs": "功曹掾",
+            "en": "Merit Section Administrator"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "功曹掾",
+                "zhs": "功曹掾",
+                "en": "Merit Section Administrator"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "功曹掾",
+                "zhs": "功曹掾",
+                "en": "Merit Section Administrator/Foreman Clerk"
+              },
+              {
+                "zht": "功曹史",
+                "zhs": "功曹史",
+                "en": ""
+              }
+            ],
+            "wu": [
+              {
+                "zht": "功曹掾",
+                "zhs": "功曹掾",
+                "en": "Merit Section Administrator"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主府内選用"
+            ],
+            "zhs": [
+              "主府内选用"
+            ],
+            "en": [
+              "In charge of promotion and appointment of personnel within the office"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "綱紀者，綜理府事，乃州郡屬吏之重者，常以指郡功曹、五官掾、主簿",
+              "zhs": "纲纪者，综理府事，乃州郡属吏之重者，常以指郡功曹、五官掾、主簿",
+              "en": "The Principal Officers coordinate the affairs of the office and are the most important among the subordinate staff of the provinces and commanderies, typically referring to the Merit Section officials, the All Purposes officials, and the Registrar in the Commandery office"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-050",
+          "displayName": {
+            "zht": "五官掾",
+            "zhs": "五官掾",
+            "en": "Administrator for All Purposes"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "五官掾",
+                "zhs": "五官掾",
+                "en": "Administrator for All Purposes"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "五官掾",
+                "zhs": "五官掾",
+                "en": "Administrator for All Purposes"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "署諸曹事"
+            ],
+            "zhs": [
+              "署诸曹事"
+            ],
+            "en": [
+              "Arrange all Sections' affairs"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "綱紀者，綜理府事，乃州郡屬吏之重者，常以指郡功曹、五官掾、主簿",
+              "zhs": "纲纪者，综理府事，乃州郡属吏之重者，常以指郡功曹、五官掾、主簿",
+              "en": "The Principal Officers coordinate the affairs of the office and are the most important among the subordinate staff of the provinces and commanderies, typically referring to the Merit Section officials, the All Purposes officials, and the Registrar in the Commandery office"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-051",
+          "displayName": {
+            "zht": "主簿",
+            "zhs": "主簿",
+            "en": "Registrar"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "主簿",
+                "zhs": "主簿",
+                "en": "Registrar"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "主簿",
+                "zhs": "主簿",
+                "en": "Registrar"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "錄門下眾事，省署文書"
+            ],
+            "zhs": [
+              "录门下众事，省署文书"
+            ],
+            "en": [
+              "Oversee all staff affairs, review and sign documentations"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "綱紀者，綜理府事，乃州郡屬吏之重者，常以指郡功曹、五官掾、主簿",
+              "zhs": "纲纪者，综理府事，乃州郡属吏之重者，常以指郡功曹、五官掾、主簿",
+              "en": "The Principal Officers coordinate the affairs of the office and are the most important among the subordinate staff of the provinces and commanderies, typically referring to the Merit Section officials, the All Purposes officials, and the Registrar in the Commandery office"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-052",
+          "displayName": {
+            "zht": "上計掾",
+            "zhs": "上计掾",
+            "en": "Accounts Administrator"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "上計掾",
+                "zhs": "上计掾",
+                "en": "Accounts Administrator"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌理计簿，以備歲課"
+            ],
+            "zhs": [
+              "掌理计簿，以备岁课"
+            ],
+            "en": [
+              "Compile accounts and registers for annual evaluation"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-053",
+          "displayName": {
+            "zht": "門下掾",
+            "zhs": "门下掾",
+            "en": "Staff Administrator"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "門下掾",
+                "zhs": "门下掾",
+                "en": "Staff Administrator"
+              },
+              {
+                "zht": "門下書佐",
+                "zhs": "门下书佐",
+                "en": "Staff Clerical Assistant"
+              },
+              {
+                "zht": "門下小吏",
+                "zhs": "门下小吏",
+                "en": "Staff Clerk"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "門下書佐",
+                "zhs": "门下书佐",
+                "en": "Staff Clerical Assistant"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "門下書佐",
+                "zhs": "门下书佐",
+                "en": "Staff Clerical Assistant"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-054",
+          "displayName": {
+            "zht": "文學椽",
+            "zhs": "文学椽",
+            "en": "Literary Section Administrator/<br>Libationer"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "文學椽",
+                "zhs": "文学椽",
+                "en": "Literary Section Administrator/<br>Libationer"
+              },
+              {
+                "zht": "文學祭酒",
+                "zhs": "文学祭酒",
+                "en": ""
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-055",
+          "displayName": {
+            "zht": "督郵",
+            "zhs": "督邮",
+            "en": "Post Marshal"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "督郵",
+                "zhs": "督邮",
+                "en": "Post Marshal"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "督送郵書，監察屬縣"
+            ],
+            "zhs": [
+              "督送邮书，监察属县"
+            ],
+            "en": [
+              "Responsible for ensuring the delivery of documents; also patrol and supervise subordinate counties"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "或有東西南北中部之分",
+              "zhs": "或有东西南北中部之分",
+              "en": "Sometimes split into the north/south/east/west divisions"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-056",
+          "displayName": {
+            "zht": "主記",
+            "zhs": "主记",
+            "en": "Secretary Clerk"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "主記",
+                "zhs": "主记",
+                "en": "Secretary Clerk"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-057",
+          "displayName": {
+            "zht": "循行",
+            "zhs": "循行",
+            "en": "Footman"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "循行",
+                "zhs": "循行",
+                "en": "Footman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "門下循行",
+                "zhs": "门下循行",
+                "en": "Footman"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-058",
+          "displayName": {
+            "zht": "鈴下",
+            "zhs": "铃下",
+            "en": "Bell Guard"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "鈴下",
+                "zhs": "铃下",
+                "en": "Bell Guard"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-059",
+          "displayName": {
+            "zht": "塞曹掾",
+            "zhs": "塞曹掾",
+            "en": "Fortification Section Administrator"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "塞曹掾",
+                "zhs": "塞曹掾",
+                "en": "Fortification Section Administrator"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "郡當邊戍者置",
+              "zhs": "郡当边戍者置",
+              "en": "Established in border provinces with garrisons"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-060",
+          "displayName": {
+            "zht": "校尉",
+            "zhs": "校尉",
+            "en": "Colonel"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "校尉",
+                "zhs": "校尉",
+                "en": "Colonel"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "郡當邊戍者置",
+              "zhs": "郡当边戍者置",
+              "en": "Established in border provinces with garrisons"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-061",
+          "displayName": {
+            "zht": "參軍",
+            "zhs": "参军",
+            "en": "Army Adjutant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "參軍",
+                "zhs": "参军",
+                "en": "Army Adjutant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "郡當邊戍者置",
+              "zhs": "郡当边戍者置",
+              "en": "Established in border provinces with garrisons"
+            }
+          ]
+        },
+        {
+          "id": "commanderies-062",
+          "displayName": {
+            "zht": "師友祭酒",
+            "zhs": "师友祭酒",
+            "en": "Advising Libationer"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "師友祭酒",
+                "zhs": "师友祭酒",
+                "en": "Advising Libationer"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "commanderies-063",
+          "displayName": {
+            "zht": "督軍從事",
+            "zhs": "督军从事",
+            "en": "Army Supervision Aide"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "督軍從事",
+                "zhs": "督军从事",
+                "en": "Army Supervision Aide"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "label": {
+        "zht": "國",
+        "zhs": "国",
+        "en": "States"
+      },
+      "categoryNotes": null,
+      "positions": [
+        {
+          "id": "states-064",
+          "displayName": {
+            "zht": "王國相",
+            "zhs": "王国相",
+            "en": "Principality Chancellor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "王國相",
+                "zhs": "王国相",
+                "en": "Principality Chancellor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "五品，二千石，各一人"
+            ],
+            "zhs": [
+              "五品，二千石，各一人"
+            ],
+            "en": [
+              "Fifth grade, 2000 shi, 1 person each state"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "職如太守",
+              "zhs": "职如太守",
+              "en": "Duties similar to the Grand Administrator"
+            }
+          ]
+        },
+        {
+          "id": "states-065",
+          "displayName": {
+            "zht": "公國相",
+            "zhs": "公国相",
+            "en": "Duchy Chancellor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "公國相",
+                "zhs": "公国相",
+                "en": "Duchy Chancellor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "五品，二千石，各一人"
+            ],
+            "zhs": [
+              "五品，二千石，各一人"
+            ],
+            "en": [
+              "Fifth grade, 2000 shi, 1 person each state"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "職如太守",
+              "zhs": "职如太守",
+              "en": "Duties similar to the Grand Administrator"
+            }
+          ]
+        },
+        {
+          "id": "states-066",
+          "displayName": {
+            "zht": "國都尉",
+            "zhs": "国都尉",
+            "en": "Principality/Duchy Commandant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 5,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "國都尉",
+                "zhs": "国都尉",
+                "en": "Principality/Duchy Commandant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "典兵禁備盜賊"
+            ],
+            "zhs": [
+              "典兵禁备盗贼"
+            ],
+            "en": [
+              "In charge of troops and safeguarding against thieves and bandits"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "五品，比二千石，一人"
+            ],
+            "zhs": [
+              "五品，比二千石，一人"
+            ],
+            "en": [
+              "Fifth grade, Equivalent to 2000 shi, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-067",
+          "displayName": {
+            "zht": "國傅",
+            "zhs": "国傅",
+            "en": "Principality/Duchy Tutor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "國傅",
+                "zhs": "国傅",
+                "en": "Principality/Duchy Tutor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "六品，一人"
+            ],
+            "zhs": [
+              "六品，一人"
+            ],
+            "en": [
+              "Sixth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-068",
+          "displayName": {
+            "zht": "國保",
+            "zhs": "国保",
+            "en": "Principality/Duchy Guardian"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "國保",
+                "zhs": "国保",
+                "en": "Principality/Duchy Guardian"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "六品，一人"
+            ],
+            "zhs": [
+              "六品，一人"
+            ],
+            "en": [
+              "Sixth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-069",
+          "displayName": {
+            "zht": "國友",
+            "zhs": "国友",
+            "en": "Principality/Duchy Companion"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "國友",
+                "zhs": "国友",
+                "en": "Principality/Duchy Companion"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "六品，一人"
+            ],
+            "zhs": [
+              "六品，一人"
+            ],
+            "en": [
+              "Sixth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-070",
+          "displayName": {
+            "zht": "郎中令",
+            "zhs": "郎中令",
+            "en": "Gentleman Prefect"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "郎中令",
+                "zhs": "郎中令",
+                "en": "Gentleman Prefect"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "七品，一人"
+            ],
+            "zhs": [
+              "七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-071",
+          "displayName": {
+            "zht": "中尉",
+            "zhs": "中尉",
+            "en": "Capital Commandant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "中尉",
+                "zhs": "中尉",
+                "en": "Capital Commandant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "七品，一人"
+            ],
+            "zhs": [
+              "七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-072",
+          "displayName": {
+            "zht": "大農",
+            "zhs": "大农",
+            "en": "Grand Agriculturist"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "大農",
+                "zhs": "大农",
+                "en": "Grand Agriculturist"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "七品，一人"
+            ],
+            "zhs": [
+              "七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-073",
+          "displayName": {
+            "zht": "司馬",
+            "zhs": "司马",
+            "en": "Major"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 7,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "司馬",
+                "zhs": "司马",
+                "en": "Major"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "七品，一人"
+            ],
+            "zhs": [
+              "七品，一人"
+            ],
+            "en": [
+              "Seventh grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-074",
+          "displayName": {
+            "zht": "常侍",
+            "zhs": "常侍",
+            "en": "Regular Attendant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "常侍",
+                "zhs": "常侍",
+                "en": "Regular Attendant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，無員"
+            ],
+            "zhs": [
+              "八品，无员"
+            ],
+            "en": [
+              "Eighth grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-075",
+          "displayName": {
+            "zht": "侍郎",
+            "zhs": "侍郎",
+            "en": "Attendant Gentleman"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "侍郎",
+                "zhs": "侍郎",
+                "en": "Attendant Gentleman"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，無員"
+            ],
+            "zhs": [
+              "八品，无员"
+            ],
+            "en": [
+              "Eighth grade, no fixed number of posts"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-076",
+          "displayName": {
+            "zht": "家令",
+            "zhs": "家令",
+            "en": "Household Director"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "家令",
+                "zhs": "家令",
+                "en": "Household Director"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，一人"
+            ],
+            "zhs": [
+              "八品，一人"
+            ],
+            "en": [
+              "Eighth grade, 1 person"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-077",
+          "displayName": {
+            "zht": "諸雜署令",
+            "zhs": "诸杂署令",
+            "en": "Director of various Offices"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "諸雜署令",
+                "zhs": "诸杂署令",
+                "en": "Director of various Offices"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品"
+            ],
+            "zhs": [
+              "八品"
+            ],
+            "en": [
+              "Eighth grade"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-078",
+          "displayName": {
+            "zht": "諸署長",
+            "zhs": "诸署长",
+            "en": "Chief of various Offices"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "諸署長",
+                "zhs": "诸署长",
+                "en": "Chief of various Offices"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "九品"
+            ],
+            "zhs": [
+              "九品"
+            ],
+            "en": [
+              "Ninth grade"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-079",
+          "displayName": {
+            "zht": "謁者大夫",
+            "zhs": "谒者大夫",
+            "en": "Chamberlain Counsellor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "謁者大夫",
+                "zhs": "谒者大夫",
+                "en": "Chamberlain Counsellor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "九品"
+            ],
+            "zhs": [
+              "九品"
+            ],
+            "en": [
+              "Ninth grade"
+            ]
+          },
+          "notes": null
+        },
+        {
+          "id": "states-080",
+          "displayName": {
+            "zht": "督軍",
+            "zhs": "督军",
+            "en": "Army Supervisor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "督軍",
+                "zhs": "督军",
+                "en": "Army Supervisor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "一人"
+            ],
+            "zhs": [
+              "一人"
+            ],
+            "en": [
+              "1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "惟山陽公國",
+              "zhs": "惟山阳公国",
+              "en": "Only in the Duchy of Shanyang"
+            }
+          ]
+        },
+        {
+          "id": "states-081",
+          "displayName": {
+            "zht": "侯國相",
+            "zhs": "侯国相",
+            "en": "Marquisate Chancellor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "侯國相",
+                "zhs": "侯国相",
+                "en": "Marquisate Chancellor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，三百石，各一人"
+            ],
+            "zhs": [
+              "八品，三百石，各一人"
+            ],
+            "en": [
+              "Eighth grade, 300 shi, 1 person each state"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "職如縣令",
+              "zhs": "职如县令",
+              "en": "Duties similar to the County Magistrate"
+            }
+          ]
+        },
+        {
+          "id": "states-082",
+          "displayName": {
+            "zht": "家令",
+            "zhs": "家令",
+            "en": "Household Director"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "家令",
+                "zhs": "家令",
+                "en": "Household Director"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "states-083",
+          "displayName": {
+            "zht": "家丞",
+            "zhs": "家丞",
+            "en": "Household Assistant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "家丞",
+                "zhs": "家丞",
+                "en": "Household Assistant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "states-084",
+          "displayName": {
+            "zht": "國傅",
+            "zhs": "国傅",
+            "en": "Marquisate Tutor"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "國傅",
+                "zhs": "国傅",
+                "en": "Marquisate Tutor"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "states-085",
+          "displayName": {
+            "zht": "監國謁者",
+            "zhs": "监国谒者",
+            "en": "Supervising Chamberlain"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "監國謁者",
+                "zhs": "监国谒者",
+                "en": "Supervising Chamberlain"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "states-086",
+          "displayName": {
+            "zht": "庶子",
+            "zhs": "庶子",
+            "en": "Cadet"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "庶子",
+                "zhs": "庶子",
+                "en": "Cadet"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "states-087",
+          "displayName": {
+            "zht": "文學",
+            "zhs": "文学",
+            "en": "Scholar"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "文學",
+                "zhs": "文学",
+                "en": "Scholar"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "counties",
+      "label": {
+        "zht": "縣",
+        "zhs": "县",
+        "en": "Counties"
+      },
+      "categoryNotes": [
+        {
+          "zht": "漢魏皆沿秦制，縣下設鄉、里為戶籍單位。鄉內又以亭部作地域劃分，與里並行，以十里（長度單位，~4km）為一亭，設亭所，築門牆、樓室，掌文書傳遞、察姦捕盜等，兼供過路者住宿之便。十亭部為一鄉，治所所在之亭，則稱「都亭」。",
+          "zhs": "汉魏皆沿秦制，县下设乡、里为户籍单位。乡内又以亭部作地域划分，与里并行，以十里（长度单位，约4公里）为一亭，设亭所，筑门墙、楼室，掌文书传递、察奸捕盗等，兼供过路者住宿之便。十亭部为一乡，治所所在之亭，则称'都亭'。",
+          "en": "Both the Han and Wei dynasties followed Qin administrative practice in organizing households below the county level into townships and villages as units of household registration. Within each township, neighborhood stations were also established as territorial divisions, operating alongside villages. Neighborhood stations were laid out at intervals of ten li (~4 km). Each station was a walled compound with gates and buildings, responsible for functions like relaying official communications, suppressing crime, and providing lodging for travelers. Ten such neighborhood stations constituted a township; the station where the township seat was located would be known as the capital neighborhood station."
+        }
+      ],
+      "positions": [
+        {
+          "id": "counties-088",
+          "displayName": {
+            "zht": "縣令",
+            "zhs": "县令",
+            "en": "County Magistrate"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 6,
+          "tier": "dignitary",
+          "name": {
+            "wei": [
+              {
+                "zht": "縣令",
+                "zhs": "县令",
+                "en": "County Magistrate"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "六品，千石/六百石，各一人"
+            ],
+            "zhs": [
+              "六品，千石/六百石，各一人"
+            ],
+            "en": [
+              "Sixth grade, 1000 shi or 600 shi, one person each county"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "大者置令，小者置長",
+              "zhs": "大者置令，小者置长",
+              "en": "Bigger counties have Magistrates, and smaller counties have Chiefs"
+            }
+          ]
+        },
+        {
+          "id": "counties-089",
+          "displayName": {
+            "zht": "縣長",
+            "zhs": "县长",
+            "en": "County Chief"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "縣長",
+                "zhs": "县长",
+                "en": "County Chief"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，三百石，各一人"
+            ],
+            "zhs": [
+              "八品，三百石，各一人"
+            ],
+            "en": [
+              "Eighth grade, 300 shi, 1 person each county"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "大者置令，小者置長",
+              "zhs": "大者置令，小者置长",
+              "en": "Bigger counties have Magistrates, and smaller counties have Chiefs"
+            }
+          ]
+        },
+        {
+          "id": "counties-090",
+          "displayName": {
+            "zht": "縣丞",
+            "zhs": "县丞",
+            "en": "Assistant to the County Magistrate/Chief"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "縣丞",
+                "zhs": "县丞",
+                "en": "Assistant to the County Magistrate/Chief"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，四百石，一人"
+            ],
+            "zhs": [
+              "八品，四百石，一人"
+            ],
+            "en": [
+              "Eighth grade, 400 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "千石令丞",
+              "zhs": "千石令丞",
+              "en": "Assistant to 1000 shi Magistrates"
+            },
+            {
+              "zht": "洛陽令丞三人",
+              "zhs": "洛阳令丞三人",
+              "en": "The Magistrate of Luoyang has 3 assistants"
+            }
+          ]
+        },
+        {
+          "id": "counties-091",
+          "displayName": {
+            "zht": "縣丞",
+            "zhs": "县丞",
+            "en": "Assistant to the County Magistrate/Chief"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "縣丞",
+                "zhs": "县丞",
+                "en": "Assistant to the County Magistrate/Chief"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "九品，一人"
+            ],
+            "zhs": [
+              "九品，一人"
+            ],
+            "en": [
+              "Ninth grade, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "六百石以下丞",
+              "zhs": "六百石以下丞",
+              "en": "Assistant to Magistrates and Chiefs 600 shi and below"
+            }
+          ]
+        },
+        {
+          "id": "counties-092",
+          "displayName": {
+            "zht": "縣尉",
+            "zhs": "县尉",
+            "en": "County Commandant"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "縣尉",
+                "zhs": "县尉",
+                "en": "County Commandant"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主盜賊，案察姦宄"
+            ],
+            "zhs": [
+              "主盗贼，案察奸宄"
+            ],
+            "en": [
+              "In charge of theft, banditry and criminal investigations"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "九品，二百石，一人"
+            ],
+            "zhs": [
+              "九品，二百石，一人"
+            ],
+            "en": [
+              "Ninth grade, 200 shi, 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "大縣或有二人，或分東西南北中五部各一人",
+              "zhs": "大县或有二人，或分东西南北中五部各一人",
+              "en": "In bigger counties may have 2 commandants, or 1 commandant per north/south/east/west division"
+            }
+          ]
+        },
+        {
+          "id": "counties-093",
+          "displayName": {
+            "zht": "校官掾",
+            "zhs": "校官掾",
+            "en": "School Administrator"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "校官掾",
+                "zhs": "校官掾",
+                "en": "School Administrator"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌教學"
+            ],
+            "zhs": [
+              "掌教学"
+            ],
+            "en": [
+              "Manage education"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "counties-094",
+          "displayName": {
+            "zht": "師友祭酒",
+            "zhs": "师友祭酒",
+            "en": "Advising Libationer"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "師友祭酒",
+                "zhs": "师友祭酒",
+                "en": "Advising Libationer"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "counties-095",
+          "displayName": {
+            "zht": "決疑祭酒",
+            "zhs": "决疑祭酒",
+            "en": "Dispute Libationer"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "決疑祭酒",
+                "zhs": "决疑祭酒",
+                "en": "Dispute Libationer"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "counties-096",
+          "displayName": {
+            "zht": "鐵官",
+            "zhs": "铁官",
+            "en": "Iron Office"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "鐵官",
+                "zhs": "铁官",
+                "en": "Iron Office"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "counties-097",
+          "displayName": {
+            "zht": "堰官",
+            "zhs": "堰官",
+            "en": "Weir Office"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "堰官",
+                "zhs": "堰官",
+                "en": "Weir Office"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [
+            {
+              "zht": "蜀：惟都安縣",
+              "zhs": "蜀：惟都安县",
+              "en": "Shu: Only in Du'an County"
+            }
+          ]
+        },
+        {
+          "id": "counties-098",
+          "displayName": {
+            "zht": "有秩",
+            "zhs": "有秩",
+            "en": "Stipendiary Township Official"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "有秩",
+                "zhs": "有秩",
+                "en": "Stipendiary Township Official"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": {
+            "zht": [
+              "八品，百石，每鄉各一人"
+            ],
+            "zhs": [
+              "八品，百石，每乡各一人"
+            ],
+            "en": [
+              "Eighth grade, 100 shi, each township 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "十亭一鄉",
+              "zhs": "十亭一乡",
+              "en": "10 neighborhoods make up a township"
+            },
+            {
+              "zht": "其鄉大者署有秩，鄉小者置嗇夫",
+              "zhs": "其乡大者署有秩，乡小者置啬夫",
+              "en": "Bigger townships appoint Stipendiary Township Officials, smaller townships appoint Bailiffs"
+            }
+          ]
+        },
+        {
+          "id": "counties-099",
+          "displayName": {
+            "zht": "三老",
+            "zhs": "三老",
+            "en": "Three Elders"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 8,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "三老",
+                "zhs": "三老",
+                "en": "Three Elders"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌教化"
+            ],
+            "zhs": [
+              "掌教化"
+            ],
+            "en": [
+              "Lead education and moral instruction"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "八品，百石，每鄉各一人"
+            ],
+            "zhs": [
+              "八品，百石，每乡各一人"
+            ],
+            "en": [
+              "Eighth grade, 100 shi, each township 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "十亭一鄉",
+              "zhs": "十亭一乡",
+              "en": "10 neighborhoods make up a township"
+            },
+            {
+              "zht": "其鄉大者署有秩，鄉小者置嗇夫",
+              "zhs": "其乡大者署有秩，乡小者置啬夫",
+              "en": "Bigger townships appoint Stipendiary Township Officials, smaller townships appoint Bailiffs"
+            }
+          ]
+        },
+        {
+          "id": "counties-100",
+          "displayName": {
+            "zht": "嗇夫",
+            "zhs": "啬夫",
+            "en": "Bailiff"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": 9,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "嗇夫",
+                "zhs": "啬夫",
+                "en": "Bailiff"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "職聽訟，收賦稅"
+            ],
+            "zhs": [
+              "职听讼，收赋税"
+            ],
+            "en": [
+              "In charge of adjudicating legal cases and collecting taxes"
+            ]
+          },
+          "rank": {
+            "zht": [
+              "九品，百石，每鄉各一人"
+            ],
+            "zhs": [
+              "九品，百石，每乡各一人"
+            ],
+            "en": [
+              "Ninth grade, 100 shi, each township 1 person"
+            ]
+          },
+          "notes": [
+            {
+              "zht": "十亭一鄉",
+              "zhs": "十亭一乡",
+              "en": "10 neighborhoods make up a township"
+            },
+            {
+              "zht": "其鄉大者署有秩，鄉小者置嗇夫",
+              "zhs": "其乡大者署有秩，乡小者置啬夫",
+              "en": "Bigger townships appoint Stipendiary Township Officials, smaller townships appoint Bailiffs"
+            }
+          ]
+        },
+        {
+          "id": "counties-101",
+          "displayName": {
+            "zht": "游徼",
+            "zhs": "游徼",
+            "en": "Patroller"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "游徼",
+                "zhs": "游徼",
+                "en": "Patroller"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌徼行，禁司奸盜"
+            ],
+            "zhs": [
+              "掌徼行，禁司奸盗"
+            ],
+            "en": [
+              "In charge of patrols and the suppression of crimes"
+            ]
+          },
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "counties-102",
+          "displayName": {
+            "zht": "亭長",
+            "zhs": "亭长",
+            "en": "Neighborhood Chief"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "亭長",
+                "zhs": "亭长",
+                "en": "Neighborhood Chief"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "主禁盜賊"
+            ],
+            "zhs": [
+              "主禁盗贼"
+            ],
+            "en": [
+              "In charge of safeguarding against thieves and bandits"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "亭所亦作通傳接待之用，漢制十里一亭",
+              "zhs": "亭所亦作通传接待之用，汉制十里一亭",
+              "en": "The local neighborhood station is also used to provide communication and reception services. Under the Han system, there would be a neighborhood station every 10 li (~ 4km)<br>"
+            },
+            {
+              "zht": "漢制，通傳接待設郵、亭、傳、驛、置。名目各異，功用類似",
+              "zhs": "汉制，通传接待设邮、亭、传、驿、置。名目各异，功用类似",
+              "en": "Under the Han system, facilities for communication and reception included you (posthouses), ting (neighbourhood stations), chuan (rest stations), yi (courier stations), and zhi (roadside stations). Although the terminology varied, they served broadly similar functions"
+            }
+          ]
+        },
+        {
+          "id": "counties-103",
+          "displayName": {
+            "zht": "求盜",
+            "zhs": "求盗",
+            "en": "Thief Searcher"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "minor",
+          "name": {
+            "wei": [
+              {
+                "zht": "求盜",
+                "zhs": "求盗",
+                "en": "Thief Searcher"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        },
+        {
+          "id": "counties-104",
+          "displayName": {
+            "zht": "里魁",
+            "zhs": "里魁",
+            "en": "Village Head"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "里魁",
+                "zhs": "里魁",
+                "en": "Village Head"
+              },
+              {
+                "zht": "里正",
+                "zhs": "里正"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": {
+            "zht": [
+              "掌一里"
+            ],
+            "zhs": [
+              "掌一里"
+            ],
+            "en": [
+              "Manage a village"
+            ]
+          },
+          "rank": null,
+          "notes": [
+            {
+              "zht": "百家一里",
+              "zhs": "百家一里",
+              "en": "A Village consists of 100 households"
+            }
+          ]
+        },
+        {
+          "id": "counties-105",
+          "displayName": {
+            "zht": "什長",
+            "zhs": "什长",
+            "en": "Head of Ten Households"
+          },
+          "hasMultipleNames": true,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "什長",
+                "zhs": "什长",
+                "en": "Head of Ten Households"
+              },
+              {
+                "zht": "伍長",
+                "zhs": "伍长",
+                "en": "Head of Five Households"
+              }
+            ],
+            "shu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ],
+            "wu": [
+              {
+                "zht": "?",
+                "zhs": "?",
+                "en": "?"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}
