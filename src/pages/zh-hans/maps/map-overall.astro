@@ -476,17 +476,25 @@ const relatedMaps = [
 
   function displaySearchAdminSub(f) {
     const p = f.properties;
-    return p.Name_EN || '';
+    return p.level === 'province' ? formatProvinceLabel(p.Name_EN) : (p.Name_EN || '');
   }
 
   // "Yanzhou" -> "Yan Province"; used only for EN-form search matching, not
   // for zh-hans display (the raw Chinese name already conveys 州/郡/國).
-  function formatProvinceLabel(provEn) {
-    if (!provEn) return '';
-    return /zhou/i.test(provEn)
-      ? `${provEn.replace(/zhou/ig, '').trim()} Province`
-      : `${provEn} (Capital Region)`;
-  }
+function formatProvinceLabel(provEn) {
+  if (!provEn) return '';
+  // Extract a trailing bracket like "(Wei)"/"(Wu)" separately so it can be
+  // re-appended AFTER "Province" — doing the zhou->Province replacement on
+  // the whole string put the bracket in the middle (e.g. "Jing (Wei)
+  // Province"), which broke substring search for "Jing Province".
+  const bracketMatch = provEn.match(/^(.*?)\s*(\([^)]+\))?$/);
+  const base = (bracketMatch ? bracketMatch[1] : provEn).trim();
+  const suffix = bracketMatch && bracketMatch[2] ? bracketMatch[2] : '';
+  const formatted = /zhou/i.test(base)
+    ? `${base.replace(/zhou/ig, '').trim()} Province`
+    : `${base} (Capital Region)`;
+  return suffix ? `${formatted} ${suffix}` : formatted;
+}
 
   function formatCommanderyLabel(nameEn, nameCh) {
     if (!nameEn) return '';
@@ -518,7 +526,9 @@ const relatedMaps = [
   // 州/郡 tag shown in the search type column for admin boundaries — same
   // wording already used by interactive-map.js's popup for zh-hans.
   function displaySearchAdminType(f) {
-    return f.properties.level === 'commandery' ? '郡' : '州';
+    if (f.properties.level === 'commandery') return '郡';
+    if (f.properties.level === 'tributary') return '臣属部落';
+    return '州';
   }
 
   async function focusLocationFromUrl() {

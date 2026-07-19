@@ -156,11 +156,18 @@ function waterBodyMatches(f, q, ql) {
 // convention already used elsewhere on the site for towns.
 function formatProvinceLabel(provEn) {
   if (!provEn) return '';
-  return /zhou/i.test(provEn)
-    ? `${provEn.replace(/zhou/ig, '').trim()} Province`
-    : `${provEn} (Capital Region)`;
+  // Extract a trailing bracket like "(Wei)"/"(Wu)" separately so it can be
+  // re-appended AFTER "Province" — doing the zhou->Province replacement on
+  // the whole string put the bracket in the middle (e.g. "Jing (Wei)
+  // Province"), which broke substring search for "Jing Province".
+  const bracketMatch = provEn.match(/^(.*?)\s*(\([^)]+\))?$/);
+  const base = (bracketMatch ? bracketMatch[1] : provEn).trim();
+  const suffix = bracketMatch && bracketMatch[2] ? bracketMatch[2] : '';
+  const formatted = /zhou/i.test(base)
+    ? `${base.replace(/zhou/ig, '').trim()} Province`
+    : `${base} (Capital Region)`;
+  return suffix ? `${formatted} ${suffix}` : formatted;
 }
-
 // Appends " Commandery" unless it's actually a princely State (Name_CH has
 // 國, or Name_EN already ends in "State") — those render as-is.
 function formatCommanderyLabel(nameEn, nameCh) {
@@ -451,16 +458,26 @@ function render() {
         // Provinces render their own name as "X Province"; commanderies keep
         // their plain name as the primary label (only the Commandery column
         // and breadcrumbs get the " Commandery" suffix).
-        const primaryName = isCommandery ? (p.Name_EN || '—') : (formatProvinceLabel(p.Name_EN) || '—');
+        const isTributary = p.level === 'tributary';
+        // Provinces render their own name as "X Province"; commanderies and
+        // tributaries keep their plain name as the primary label (only the
+        // Commandery column and breadcrumbs get the " Commandery" suffix,
+        // and tributaries never get a suffix at all — they're not
+        // administered territory).
+        const primaryName = (isCommandery || isTributary) ? (p.Name_EN || '—') : (formatProvinceLabel(p.Name_EN) || '—');
+        const typeLabelText = isCommandery ? 'Commandery' : (isTributary ? 'Tributary' : 'Province');
+        const regionColumnText = isCommandery
+          ? formatCommanderyLabel(p.Name_EN, p.Name_CH)
+          : (isTributary ? (p.Name_EN || '—') : '—');
         return `<tr>
           <td class="td-name">
             <span class="td-name-primary">${primaryName}</span>
             <span class="td-name-sub">${p.Name_CH || ''}</span>
           </td>
-          <td>${isCommandery ? 'Commandery' : 'Province'}</td>
+          <td>${typeLabelText}</td>
           <td>${badge}</td>
           <td class="td-region">${formatProvinceLabel(p.Prov_EN) || '—'}</td>
-          <td class="td-region">${isCommandery ? formatCommanderyLabel(p.Name_EN, p.Name_CH) : '—'}</td>
+          <td class="td-region">${regionColumnText}</td>
           <td class="td-map"><div style="display:flex;flex-direction:row;align-items:center;gap:6px;">${pngBtn}${mapBtn}</div></td>
         </tr>`;
       }

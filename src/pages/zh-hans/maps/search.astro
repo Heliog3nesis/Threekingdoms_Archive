@@ -225,9 +225,17 @@ function displayWaterType(f) {
 // for zh-hans display (the raw Chinese name already conveys 州/郡/國).
 function formatProvinceLabel(provEn) {
   if (!provEn) return '';
-  return /zhou/i.test(provEn)
-    ? `${provEn.replace(/zhou/ig, '').trim()} Province`
-    : `${provEn} (Capital Region)`;
+  // Extract a trailing bracket like "(Wei)"/"(Wu)" separately so it can be
+  // re-appended AFTER "Province" — doing the zhou->Province replacement on
+  // the whole string put the bracket in the middle (e.g. "Jing (Wei)
+  // Province"), which broke substring search for "Jing Province".
+  const bracketMatch = provEn.match(/^(.*?)\s*(\([^)]+\))?$/);
+  const base = (bracketMatch ? bracketMatch[1] : provEn).trim();
+  const suffix = bracketMatch && bracketMatch[2] ? bracketMatch[2] : '';
+  const formatted = /zhou/i.test(base)
+    ? `${base.replace(/zhou/ig, '').trim()} Province`
+    : `${base} (Capital Region)`;
+  return suffix ? `${formatted} ${suffix}` : formatted;
 }
 function formatCommanderyLabel(nameEn, nameCh) {
   if (!nameEn) return '';
@@ -259,11 +267,14 @@ function displayAdminName(f) {
   return p.Name_CHS || p.Name_CH || p.Name_EN || '';
 }
 function displayAdminSub(f) {
-  return f.properties.Name_EN || '';
+  const p = f.properties;
+  return p.level === 'province' ? formatProvinceLabel(p.Name_EN) : (p.Name_EN || '');
 }
 // 州/郡 tag — same wording interactive-map.js's popup already uses for zh-hans.
 function displayAdminType(f) {
-  return f.properties.level === 'commandery' ? '郡' : '州';
+  if (f.properties.level === 'commandery') return '郡';
+  if (f.properties.level === 'tributary') return '臣属部落';
+  return '州';
 }
 
 // ── STATE ───────────────────────────────────────────────────────
@@ -459,6 +470,7 @@ function render() {
       if (result._kind === 'admin') {
         const p = result.data.properties;
         const isCommandery = p.level === 'commandery';
+        const isTributary = p.level === 'tributary';
         const badge = p.kingdom
           ? `<span class="badge ${kingdomClass[p.kingdom]}">${kingdomLabel[p.kingdom]}</span>`
           : '—';
@@ -473,7 +485,7 @@ function render() {
           <td>${displayAdminType(result.data)}</td>
           <td>${badge}</td>
           <td class="td-region">${p.Prov_CHS || p.Prov_CH || p.Prov_EN || '—'}</td>
-          <td class="td-region">${isCommandery ? (p.Name_CHS || p.Name_CH || p.Name_EN) : '—'}</td>
+          <td class="td-region">${(isCommandery || isTributary) ? (p.Name_CHS || p.Name_CH || p.Name_EN) : '—'}</td>
           <td class="td-map"><div style="display:flex;flex-direction:row;align-items:center;gap:6px;">${pngBtn}${mapBtn}</div></td>
         </tr>`;
       }

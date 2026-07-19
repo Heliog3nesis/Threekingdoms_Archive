@@ -49,17 +49,17 @@ const KINGDOM_LABEL = {
 
 const UI_TEXT = {
   en: {
-    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern:', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery',
+    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern:', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery', tributary: 'Tributary Tribes',
     kingdomLabels: { wei: 'Wei', shu: 'Shu', wu: 'Wu', unknown: '' },
     typeLabels: { 'Provincial Seat': 'Provincial Seat', 'Commandery Seat': 'Commandery Seat', 'County Seat': 'County Seat', 'Military Pass': 'Military Pass', Landmark: 'Landmark', Others: 'Others' }
   },
   'zh-hant': {
-    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置：', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡',
+    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置：', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣屬部落',
     kingdomLabels: { wei: '魏', shu: '蜀', wu: '吳', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '縣治', 'Military Pass': '關隘', Landmark: '地標', Others: '其他' }
   },
   'zh-hans': {
-    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置：', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡',
+    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置：', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣属部落',
     kingdomLabels: { wei: '魏', shu: '蜀', wu: '吴', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '县治', 'Military Pass': '关隘', Landmark: '地标', Others: '其他' }
   }
@@ -1109,16 +1109,24 @@ function buildAdminBoundaryDetailHtml(props) {
   const name = formatAdminBoundaryName(props);
   const subtitle = formatAdminBoundarySubtitle(props);
   const isCommandery = props?.level === 'commandery';
-  const typeLabel = isCommandery ? uiText.commandery : uiText.province;
+  const isTributary = props?.level === 'tributary';
 
-  // Commanderies show a "province · commandery" breadcrumb; provinces just
-  // show their own name once (no self-referential breadcrumb). The
-  // commandery part of the breadcrumb gets the " Commandery" suffix (English
-  // only, and skipped for princely States) — the popup title itself stays plain.
+  let typeLabel;
+  if (isCommandery) typeLabel = uiText.commandery;
+  else if (isTributary) typeLabel = uiText.tributary;
+  else typeLabel = uiText.province;
+
+  // Commanderies and tributaries both show a "province · name" breadcrumb;
+  // provinces just show their own name once (no self-referential breadcrumb).
+  // Commanderies get the " Commandery" suffix in that breadcrumb (English
+  // only, skipped for princely States); tributaries never get a suffix —
+  // they're not administered territory, just their plain name.
   let family = '';
   if (isCommandery) {
     const commLabel = currentLang === 'en' ? formatCommanderyLabel(props.Name_EN, props.Name_CH) : name;
     family = `${escapeHtml(formatAdminParentName(props))} · ${escapeHtml(commLabel)}`;
+  } else if (isTributary) {
+    family = `${escapeHtml(formatAdminParentName(props))} · ${escapeHtml(name)}`;
   }
 
   return `
