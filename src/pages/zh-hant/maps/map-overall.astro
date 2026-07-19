@@ -86,7 +86,7 @@ const relatedMaps = [
             <button class="search-clear" id="search-clear" style="display:none;">✕</button>
             <button class="search-btn" id="search-btn">檢索</button>
           </div>
-          <p class="search-hint">支持中英輸入</p>
+          <p class="search-hint">支持中英輸入，可檢索地名、政區、河流湖泊</p>
           <div class="search-dropdown" id="search-dropdown" style="display:none;">
             <div class="dropdown-warning" id="search-dropdown-warning" style="display:none;"></div>
             <div class="dropdown-list" id="search-dropdown-list"></div>
@@ -416,8 +416,128 @@ const relatedMaps = [
   }
   function getKingdom(provEn) { return provinceKingdom[provEn] ?? null; }
 
+  // ── WATER BODIES (rivers/lakes) — search-only, never shown by default ──
+  let allWaterBodies = [];
+  let waterBodiesLoaded = false;
+
+  async function loadWaterBodies() {
+    if (waterBodiesLoaded) return allWaterBodies;
+    allWaterBodies = await fetchWaterBodies();
+    waterBodiesLoaded = true;
+    return allWaterBodies;
+  }
+
+  function displaySearchWaterName(f) {
+    const p = f.properties;
+    return p.Name_CH || p.Name_CHS || p.Name_EN || '';
+  }
+
+  function displaySearchWaterSub(f) {
+    const p = f.properties;
+    return p.Name_EN || '';
+  }
+
+  function waterBodyMatches(f, q, ql) {
+    const p = f.properties;
+    const candidates = [
+      p.Name_EN,
+      p.Name_CH,
+      p.Name_CHS,
+      ...(p.Name_CH_variants || []),
+      ...(p.Name_CHS_variants || [])
+    ].filter(Boolean);
+
+    return candidates.some(v =>
+      String(v).toLowerCase() === ql || String(v).toLowerCase().includes(ql) ||
+      v === q || v.includes(q)
+    );
+  }
+
+  // tag shown in the search type column for water bodies.
+function displaySearchWaterType(f) {
+  return f.properties.Type_CH || f.properties.Type || '河流';
+}
+
+  // ── ADMIN BOUNDARIES (provinces/commanderies) — search-only, base layer stays as-is ──
+  let allAdminBoundaries = [];
+  let adminBoundariesLoaded = false;
+
+  async function loadAdminBoundaries() {
+    if (adminBoundariesLoaded) return allAdminBoundaries;
+    allAdminBoundaries = await fetchAdminBoundaries();
+    adminBoundariesLoaded = true;
+    return allAdminBoundaries;
+  }
+
+  function displaySearchAdminName(f) {
+    const p = f.properties;
+    return p.Name_CH || p.Name_CHS || p.Name_EN || '';
+  }
+
+  function displaySearchAdminSub(f) {
+    const p = f.properties;
+    return p.Name_EN || '';
+  }
+
+  // "Yanzhou" -> "Yan Province"; used only for EN-form search matching, not
+  // for zh-hant display (the raw Chinese name already conveys 州/郡/國).
+  function formatProvinceLabel(provEn) {
+    if (!provEn) return '';
+    return /zhou/i.test(provEn)
+      ? `${provEn.replace(/zhou/ig, '').trim()} Province`
+      : `${provEn} (Capital Region)`;
+  }
+
+  function formatCommanderyLabel(nameEn, nameCh) {
+    if (!nameEn) return '';
+    const isState = (nameCh && nameCh.includes('國')) || /state$/i.test(nameEn.trim());
+    return isState ? nameEn : `${nameEn} Commandery`;
+  }
+
+  function adminBoundaryMatches(f, q, ql) {
+    const p = f.properties;
+    const candidates = [p.Name_EN, p.Name_CH, p.Name_CHS].filter(Boolean);
+    if (p.level === 'province') candidates.push(formatProvinceLabel(p.Name_EN));
+    if (p.level === 'commandery') {
+      candidates.push(formatCommanderyLabel(p.Name_EN, p.Name_CH));
+      const isState = (p.Name_CH && p.Name_CH.includes('國')) || /state$/i.test((p.Name_EN || '').trim());
+      if (isState) {
+        const base = (p.Name_EN || '').replace(/\s*state$/i, '').trim();
+        candidates.push(`${base} Guo`, `${base}Guo`);
+      } else {
+        candidates.push(`${p.Name_EN} Jun`, `${p.Name_EN}Jun`);
+      }
+    }
+
+    return candidates.some(v => {
+      const vl = String(v).toLowerCase();
+      return v === q || vl.includes(ql);
+    });
+  }
+
+  // 州/郡 tag shown in the search type column for admin boundaries — same
+  // wording already used by interactive-map.js's popup for zh-hant.
+  function displaySearchAdminType(f) {
+    return f.properties.level === 'commandery' ? '郡' : '州';
+  }
+
   async function focusLocationFromUrl() {
     const params = new URLSearchParams(window.location.search);
+
+    const waterId = params.get('water');
+    if (waterId !== null && waterId !== '') {
+      showTab('interactive');
+      showWaterBodyById(waterId);
+      return;
+    }
+
+    const adminId = params.get('admin');
+    if (adminId !== null && adminId !== '') {
+      showTab('interactive');
+      showAdminBoundaryById(adminId);
+      return;
+    }
+
     const lat = Number(params.get('lat'));
     const lng = Number(params.get('lng'));
     if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
@@ -443,18 +563,26 @@ const relatedMaps = [
   const dropMore     = document.getElementById('search-dropdown-more');
 
   const MAX_VISIBLE = 6;
-  const WARN_LEN    = 3;
+  const WARN_LEN_EN = 3;
+  const WARN_LEN_CN = 2;
+  const CJK_RE = /[\u3400-\u9fff\uf900-\ufaff]/; // CJK Unified Ideographs (+ compat)
+  function getWarnLen(q) { return CJK_RE.test(q) ? WARN_LEN_CN : WARN_LEN_EN; }
 
   async function runSearch(query) {
     const q = query.trim();
-    if (!q) { dropdown.style.display = 'none'; searchClear.style.display = 'none'; return; }
+    if (!q) {
+      dropdown.style.display = 'none';
+      searchClear.style.display = 'none';
+      clearWaterBodyHighlight();
+      return;
+    }
     searchClear.style.display = 'block';
-    if (!allTowns.length) {
+    if (!allTowns.length || !waterBodiesLoaded || !adminBoundariesLoaded) {
       dropdown.style.display = 'block';
       dropWarning.style.display = 'none';
       dropMore.style.display = 'none';
       dropList.innerHTML = '<div class="search-empty">地點加載中...</div>';
-      await loadTowns();
+      await Promise.all([loadTowns(), loadWaterBodies(), loadAdminBoundaries()]);
       if (searchInput?.value?.trim() !== q) return;
     }
     const ql = q.toLowerCase();
@@ -463,48 +591,111 @@ const relatedMaps = [
       (t.Town_EN?.toLowerCase().includes(ql) || t.Town_CH?.includes(q) || t.Town_CHS?.includes(q)) &&
       t.Town_EN?.toLowerCase() !== ql && t.Town_CH !== q && t.Town_CHS !== q
     );
-    const filtered = [...exact, ...partial];
-    if (q.length < WARN_LEN) {
+    const townResults = [...exact, ...partial].map(t => ({ kind: 'town', item: t }));
+
+    const waterResults = allWaterBodies
+      .filter(f => waterBodyMatches(f, q, ql))
+      .map(f => ({ kind: 'water', item: f }));
+
+    const adminResults = allAdminBoundaries
+      .filter(f => adminBoundaryMatches(f, q, ql))
+      .map(f => ({ kind: 'admin', item: f }));
+
+    const filtered = [...townResults, ...waterResults, ...adminResults];
+
+    if (q.length < getWarnLen(q)) {
       dropWarning.style.display = 'block';
-      dropWarning.textContent = '⚠ 當前檢索較短，或無法精準匹配，建議使用更具體的關鍵詞。';
+      dropWarning.textContent = '⚠ 當前檢索較短，或無法精準匹配。';
     } else { dropWarning.style.display = 'none'; }
     const visible = filtered.slice(0, MAX_VISIBLE);
     if (visible.length === 0) {
       dropList.innerHTML = '<div class="search-empty">無符合地點</div>';
       dropMore.style.display = 'none';
     } else {
-      dropList.innerHTML = visible.map((t, index) => {
+      dropList.innerHTML = visible.map((result, index) => {
+        if (result.kind === 'water') {
+          const f = result.item;
+          const subName = displaySearchWaterSub(f) ? `<span class="result-name-zh">${displaySearchWaterSub(f)}</span>` : '';
+          const displayKingdoms = f.properties.display_kingdoms || [];
+          const badge = displayKingdoms.length
+            ? displayKingdoms.map(k => `<span class="badge b-${k}">${kingdomLabel[k]}</span>`).join('')
+            : '<span class="badge b-water"><i class="ti ti-droplet"></i></span>';
+          const pngUrl = provToPng[f.properties.primary_province];
+          const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="圖版地圖"><i class="ti ti-map-2"></i></button>` : '';
+          const mapBtn = `<button class="result-action result-action-water" data-index="${index}" title="互動地圖"><i class="ti ti-map-pin"></i></button>`;
+          return `<div class="search-result-row" data-index="${index}" data-kind="water">
+            <div class="search-result-left">${badge}<span class="result-name-en">${displaySearchWaterName(f)}</span>${subName}</div>
+            <div class="result-right"><span class="result-type">${displaySearchWaterType(f)}</span><div style="display:flex;flex-direction:row;align-items:center;gap:4px;">${pngBtn}${mapBtn}</div></div>
+          </div>`;
+        }
+
+        if (result.kind === 'admin') {
+          const f = result.item;
+          const subName = displaySearchAdminSub(f) ? `<span class="result-name-zh">${displaySearchAdminSub(f)}</span>` : '';
+          const k = f.properties.kingdom;
+          const badge = k ? `<span class="badge b-${k}">${kingdomLabel[k]}</span>` : '';
+          const pngUrl = provToPng[f.properties.Prov_EN];
+          const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="圖版地圖"><i class="ti ti-map-2"></i></button>` : '';
+          const mapBtn = `<button class="result-action result-action-admin" data-index="${index}" title="互動地圖"><i class="ti ti-map-pin"></i></button>`;
+          return `<div class="search-result-row" data-index="${index}" data-kind="admin">
+            <div class="search-result-left">${badge}<span class="result-name-en">${displaySearchAdminName(f)}</span>${subName}</div>
+            <div class="result-right"><span class="result-type">${displaySearchAdminType(f)}</span><div style="display:flex;flex-direction:row;align-items:center;gap:4px;">${pngBtn}${mapBtn}</div></div>
+          </div>`;
+        }
+
+        const t     = result.item;
         const k     = getKingdom(t.Prov_EN);
         const badge = k ? `<span class="badge b-${k}">${kingdomLabel[k]}</span>` : '';
         const subName = displaySearchTownSub(t) ? `<span class="result-name-zh">${displaySearchTownSub(t)}</span>` : '';
         const pngUrl = provToPng[t.Prov_EN];
         const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="圖版地圖"><i class="ti ti-map-2"></i></button>` : '';
         const mapBtn = `<button class="result-action result-action-map" data-index="${index}" data-lat="${t.Latitude}" data-lng="${t.Longitude}" title="互動地圖"><i class="ti ti-map-pin"></i></button>`;
-        return `<div class="search-result-row" data-index="${index}" data-en="${t.Town_EN}">
+        return `<div class="search-result-row" data-index="${index}" data-kind="town" data-en="${t.Town_EN}">
           <div class="search-result-left">${badge}<span class="result-name-en">${displaySearchTownName(t)}</span>${subName}</div>
           <div class="result-right"><span class="result-type">${displaySearchType(t.Type)}</span><div style="display:flex;flex-direction:row;align-items:center;gap:4px;">${pngBtn}${mapBtn}</div></div>
         </div>`;
       }).join('');
+
       function locateSearchTown(t) {
         const lat = Number(t?.Latitude);
         const lng = Number(t?.Longitude);
         if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+        clearWaterBodyHighlight();
         showTab('interactive');
         flyToLocation(lat, lng, t);
         dropdown.style.display = 'none';
       }
+
+      function locateSearchWater(f) {
+        showTab('interactive');
+        showWaterBodyById(f.properties?.id);
+        dropdown.style.display = 'none';
+      }
+
+      function locateSearchAdmin(f) {
+        showTab('interactive');
+        showAdminBoundaryById(f.properties?.id);
+        dropdown.style.display = 'none';
+      }
+
+      function handleResultActivate(index) {
+        const result = visible[index];
+        if (!result) return;
+        if (result.kind === 'water') locateSearchWater(result.item);
+        else if (result.kind === 'admin') locateSearchAdmin(result.item);
+        else locateSearchTown(result.item);
+      }
+
       dropList.querySelectorAll('.search-result-row').forEach(row => {
-        row.addEventListener('click', () => {
-          locateSearchTown(visible[Number(row.dataset.index)]);
-        });
+        row.addEventListener('click', () => handleResultActivate(Number(row.dataset.index)));
       });
       dropList.querySelectorAll('.result-action[data-png]').forEach(btn => {
         btn.addEventListener('click', e => { e.stopPropagation(); window.open(btn.dataset.png, '_blank'); });
       });
-      dropList.querySelectorAll('.result-action-map').forEach(btn => {
+      dropList.querySelectorAll('.result-action-map, .result-action-water, .result-action-admin').forEach(btn => {
         btn.addEventListener('click', e => {
           e.stopPropagation();
-          locateSearchTown(visible[Number(btn.dataset.index)]);
+          handleResultActivate(Number(btn.dataset.index));
         });
       });
       if (filtered.length > MAX_VISIBLE) {
@@ -516,16 +707,29 @@ const relatedMaps = [
     dropdown.style.display = 'block';
   }
 
-  searchInput?.addEventListener('focus',  () => { loadTowns(); });
+  searchInput?.addEventListener('focus',  () => { loadTowns(); loadWaterBodies(); loadAdminBoundaries(); });
   searchInput?.addEventListener('input',  e => { runSearch(e.target.value); });
   searchBtn?.addEventListener('click',    ()  => { runSearch(searchInput?.value ?? ''); });
-  searchClear?.addEventListener('click',  () => { searchInput.value = ''; searchClear.style.display = 'none'; dropdown.style.display = 'none'; });
+  searchClear?.addEventListener('click',  () => {
+    searchInput.value = '';
+    searchClear.style.display = 'none';
+    dropdown.style.display = 'none';
+    clearWaterBodyHighlight();
+  });
   document.addEventListener('click', e => { if (!e.target.closest('.intro-search')) dropdown.style.display = 'none'; });
   focusLocationFromUrl();
 
   // INTERACTIVE MAP 
   // Fully handled by interactive-map.js
-  import { initInteractiveMap, flyToLocation } from '../../../scripts/maps/interactive-map.js';
+  import {
+    initInteractiveMap,
+    flyToLocation,
+    fetchWaterBodies,
+    clearWaterBodyHighlight,
+    showWaterBodyById,
+    fetchAdminBoundaries,
+    showAdminBoundaryById
+  } from '../../../scripts/maps/interactive-map.js';
 </script>
 
 <style is:global>
@@ -709,6 +913,7 @@ const relatedMaps = [
 .b-wei { background: #18283f; color: #9dbbe4; }
 .b-shu { background: #1E3A2B; color: #6ED4A0; }
 .b-wu  { background: #2A1212; color: #D4807A; }
+.b-water { background: #0c2a38; color: #7dd3fc; display: inline-flex; align-items: center; justify-content: center; }
 .search-result-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 14px; border-bottom: 0.5px solid var(--color-border); cursor: pointer; transition: background 0.15s; }
 .search-result-row:last-child { border-bottom: none; }
 .search-result-row:hover { background: var(--color-bg-secondary); }
@@ -1061,6 +1266,38 @@ const relatedMaps = [
   box-shadow: 0 12px 28px rgba(0,0,0,0.26), inset 0 0 0 1px rgba(255,255,255,0.45);
 }
 
+.imap-water-popup .maplibregl-popup-content {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.imap-water-popup .maplibregl-popup-close-button {
+  top: 5px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+  color: rgba(39,34,26,0.55);
+  font-size: 20px;
+}
+
+.imap-water-popup .maplibregl-popup-close-button:hover {
+  background: rgba(14,165,233,0.1);
+  color: #27221a;
+}
+
+.imap-water-card {
+  min-width: 200px;
+  max-width: 280px;
+  padding: 12px 14px 11px;
+  font-family: var(--font-sans);
+  color: #27221a;
+  background: rgba(246,240,225,0.96);
+  border: 1px solid rgba(14,165,233,0.45);
+  border-left: 3px solid #0ea5e9;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.26), inset 0 0 0 1px rgba(255,255,255,0.45);
+}
+
 .imap-town-card-header {
   display: flex;
   align-items: flex-start;
@@ -1089,13 +1326,19 @@ const relatedMaps = [
   margin-top: 0.75rem;
   padding-top: 0.65rem;
   border-top: 1px solid rgba(92,70,42,0.18);
-  font-size: 18px;
+  font-size: 20px;
   color: rgba(39,34,26,0.72);
 }
 
 .imap-town-meta span:first-child {
   font-weight: 650;
   color: #5c462a;
+}
+
+.imap-admin-family {
+  font-size: 18px;
+  color: rgba(39,34,26,0.62);
+  font-weight: 600;
 }
 
 .imap-town-region {
@@ -1214,7 +1457,7 @@ const relatedMaps = [
   .intro-link { padding: 0.2rem 0; }
   .intro-search { width: 100%; min-width: 0; padding-top: 0.75rem; }
   .search-input { font-size: 16px; }
-  .search-hint { font-size: 12px; }
+  .search-hint { font-size: 14px; }
   .intro-search::after { display: none; }
   .search-dropdown { top: calc(36px + 36px);}
   .tabs { display: none; padding-left: 1rem; }

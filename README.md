@@ -4,6 +4,8 @@
  
 *An Archive of the Three Kingdoms and Beyond*
 
+[Changelog](./CHANGELOG.md) · [Support the archive](https://ko-fi.com/yourname)
+
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)
 ![MapLibre](https://img.shields.io/badge/MapLibre-396CB2?style=flat&logo=maplibre&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?style=flat&logo=github&logoColor=white)

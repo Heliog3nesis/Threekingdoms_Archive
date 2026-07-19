@@ -94,19 +94,40 @@ const strings = t(lang);
 
 const lang = document.documentElement.lang || 'en';
 let allTowns = [];
-let uniqueTypes = [];
+let allWaterBodies = [];
+let allAdminBoundaries = [];
 import { url } from '../../../utils/url';
 
-async function loadData() {
-   const data = await fetch(url(`/mapbase/All_Towns.json`)).then(r => r.json());
-  allTowns = data.All_Towns_Details ?? data ?? [];
-  uniqueTypes = [...new Set(allTowns.map(t => t.Type).filter(Boolean))].sort();
+// Fixed display order for the Type filter — Admin. Boundary and Water Bodies
+// are new top-level categories (select all admin/water results respectively,
+// not a sub-Type match), everything else is the existing town Type values.
+const TYPE_FILTER_ORDER = [
+  'Admin. Boundary',
+  'Provincial Seat',
+  'Commandery Seat',
+  'County Seat',
+  'Landmark',
+  'Military Pass',
+  'Others',
+  'Water Bodies',
+];
 
-  // populate type filter now that data is ready
+async function loadData() {
+  const [townsData, waterData, adminData] = await Promise.all([
+    fetch(url(`/mapbase/All_Towns.json`)).then(r => r.json()),
+    fetch(url(`/mapbase/all_water_bodies.json`)).then(r => r.json()).catch(() => ({ features: [] })),
+    fetch(url(`/mapbase/All_Provinces.json`)).then(r => r.json()).catch(() => ({ features: [] })),
+  ]);
+
+  allTowns = townsData.All_Towns_Details ?? townsData ?? [];
+  allWaterBodies = waterData.features ?? [];
+  allAdminBoundaries = adminData.features ?? [];
+
+  // populate type filter in fixed order now that data is ready
   const typeSelect = document.getElementById('filter-type');
-  uniqueTypes.forEach(type => {
+  TYPE_FILTER_ORDER.forEach(value => {
     const opt = document.createElement('option');
-    opt.value = type; opt.textContent = displayType(type);
+    opt.value = value; opt.textContent = displayType(value);
     typeSelect.appendChild(opt);
   });
 
@@ -147,7 +168,7 @@ const provToPng = {
  
  
 const kingdomLabel = { wei: '魏', shu: '蜀', wu: '吴' };
-const typeLabel = { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '县治', 'Military Pass': '关隘', Landmark: '地标', Others: '其他' };
+const typeLabel = { 'Admin. Boundary': '政区', 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '县治', 'Military Pass': '关隘', Landmark: '地标', Others: '其他', 'Water Bodies': '水系' };
 function displayType(type) { return typeLabel[type] || type || ''; }
 function displayTownName(t) { return lang === 'zh-hans' ? (t.Town_CHS || t.Town_CH || t.Town_EN || '') : (t.Town_CH || t.Town_CHS || t.Town_EN || ''); }
 function displayTownSub(t) { return t.Town_EN || ''; }
@@ -157,6 +178,92 @@ const kingdomClass = { wei: 'b-wei', shu: 'b-shu', wu: 'b-wu' };
 
 function getKingdom(provEn) {
   return provinceKingdom[provEn] ?? null;
+}
+
+// ── WATER BODY MATCHING (rivers/lakes; EN + both CH scripts + variants) ──
+function waterBodyMatches(f, q, ql) {
+  const p = f.properties;
+  const candidates = [
+    p.Name_EN,
+    p.Name_CH,
+    p.Name_CHS,
+    ...(p.Name_CH_variants || []),
+    ...(p.Name_CHS_variants || [])
+  ].filter(Boolean);
+
+  return candidates.some(v =>
+    String(v).toLowerCase().includes(ql) || v.includes(q)
+  );
+}
+
+// A stored name like "長江/江水" should count as an exact match for either
+// "長江" or "江水" individually, not just the full combined string.
+function exactNameMatches(stored, q, ql) {
+  if (!stored) return false;
+  if (String(stored).toLowerCase() === ql || stored === q) return true;
+
+  return String(stored).split('/').some(part => {
+    const trimmed = part.trim();
+    return trimmed.toLowerCase() === ql || trimmed === q;
+  });
+}
+
+function displayWaterName(f) {
+  const p = f.properties;
+  return p.Name_CHS || p.Name_CH || p.Name_EN || '';
+}
+function displayWaterSub(f) {
+  return f.properties.Name_EN || '';
+}
+// tag shown in the Type column for water bodies.
+function displayWaterType(f) {
+  return f.properties.Type_CHS || f.properties.Type || '河流';
+}
+
+// ── ADMIN BOUNDARY MATCHING (provinces/commanderies; EN + both CH scripts) ──
+// "Yanzhou" -> "Yan Province"; used only for EN-form search matching, not
+// for zh-hans display (the raw Chinese name already conveys 州/郡/國).
+function formatProvinceLabel(provEn) {
+  if (!provEn) return '';
+  return /zhou/i.test(provEn)
+    ? `${provEn.replace(/zhou/ig, '').trim()} Province`
+    : `${provEn} (Capital Region)`;
+}
+function formatCommanderyLabel(nameEn, nameCh) {
+  if (!nameEn) return '';
+  const isState = (nameCh && nameCh.includes('國')) || /state$/i.test(nameEn.trim());
+  return isState ? nameEn : `${nameEn} Commandery`;
+}
+function adminBoundaryMatches(f, q, ql) {
+  const p = f.properties;
+  const candidates = [p.Name_EN, p.Name_CH, p.Name_CHS].filter(Boolean);
+  if (p.level === 'province') candidates.push(formatProvinceLabel(p.Name_EN));
+  if (p.level === 'commandery') {
+    candidates.push(formatCommanderyLabel(p.Name_EN, p.Name_CH));
+    const isState = (p.Name_CH && p.Name_CH.includes('國')) || /state$/i.test((p.Name_EN || '').trim());
+    if (isState) {
+      const base = (p.Name_EN || '').replace(/\s*state$/i, '').trim();
+      candidates.push(`${base} Guo`, `${base}Guo`);
+    } else {
+      candidates.push(`${p.Name_EN} Jun`, `${p.Name_EN}Jun`);
+    }
+  }
+
+  return candidates.some(v => {
+    const vl = String(v).toLowerCase();
+    return v === q || vl.includes(ql);
+  });
+}
+function displayAdminName(f) {
+  const p = f.properties;
+  return p.Name_CHS || p.Name_CH || p.Name_EN || '';
+}
+function displayAdminSub(f) {
+  return f.properties.Name_EN || '';
+}
+// 州/郡 tag — same wording interactive-map.js's popup already uses for zh-hans.
+function displayAdminType(f) {
+  return f.properties.level === 'commandery' ? '郡' : '州';
 }
 
 // ── STATE ───────────────────────────────────────────────────────
@@ -230,13 +337,66 @@ function getResults(q, exact, kingdom, type, sort) {
     results = [...p1, ...p2, ...p3];
   }
 
+  const isAdminCategory = type === 'Admin. Boundary';
+  const isWaterCategory = type === 'Water Bodies';
+
   if (kingdom !== 'all') results = results.filter(t => getKingdom(t.Prov_EN) === kingdom);
-  if (type    !== 'all') results = results.filter(t => t.Type === type);
+  if (isAdminCategory || isWaterCategory) {
+    results = [];
+  } else if (type !== 'all') {
+    results = results.filter(t => t.Type === type);
+  }
 
-  if (sort === 'az') results.sort((a, b) => displayTownName(a).localeCompare(displayTownName(b), 'zh-hans-u-co-pinyin'));
-  if (sort === 'za') results.sort((a, b) => displayTownName(b).localeCompare(displayTownName(a), 'zh-hans-u-co-pinyin'));
+  // Water bodies (rivers/lakes) can span multiple kingdoms — match if the
+  // selected kingdom is any of the kingdoms it touches.
+  let waterResults = [];
+  if (!isAdminCategory) {
+    waterResults = exact
+      ? allWaterBodies.filter(f => {
+          const p = f.properties;
+          return exactNameMatches(p.Name_EN, q, ql) ||
+                 exactNameMatches(p.Name_CH, q, ql) ||
+                 exactNameMatches(p.Name_CHS, q, ql);
+        })
+      : allWaterBodies.filter(f => waterBodyMatches(f, q, ql));
 
-  return results;
+    if (kingdom !== 'all') {
+      waterResults = waterResults.filter(f => (f.properties.kingdoms || []).includes(kingdom));
+    }
+
+    if (!isWaterCategory && type !== 'all') {
+      waterResults = waterResults.filter(f => f.properties.Type === type);
+    }
+  }
+
+  // Admin boundaries (provinces/commanderies) — Type filter doesn't apply
+  // to sub-Type matching, only to the Admin. Boundary category itself.
+  let adminResults = exact
+    ? allAdminBoundaries.filter(f => {
+        const p = f.properties;
+        return exactNameMatches(p.Name_EN, q, ql) ||
+               exactNameMatches(p.Name_CH, q, ql) ||
+               exactNameMatches(p.Name_CHS, q, ql);
+      })
+    : allAdminBoundaries.filter(f => adminBoundaryMatches(f, q, ql));
+
+  if (kingdom !== 'all') adminResults = adminResults.filter(f => f.properties.kingdom === kingdom);
+  if (isWaterCategory) {
+    adminResults = [];
+  } else if (!isAdminCategory && type !== 'all') {
+    adminResults = [];
+  }
+
+  const combined = [
+    ...results.map(t => ({ _kind: 'town', _sortName: displayTownName(t), data: t })),
+    ...waterResults.map(f => ({ _kind: 'water', _sortName: displayWaterName(f), data: f })),
+    ...adminResults.map(f => ({ _kind: 'admin', _sortName: displayAdminName(f), data: f }))
+  ];
+
+  if (sort === 'az') combined.sort((a, b) => a._sortName.localeCompare(b._sortName, 'zh-hans-u-co-pinyin'));
+  if (sort === 'za') combined.sort((a, b) => b._sortName.localeCompare(a._sortName, 'zh-hans-u-co-pinyin'));
+
+  return combined;
 }
 
 // ── RENDER ──────────────────────────────────────────────────────
@@ -269,7 +429,56 @@ function render() {
     empty.style.display = 'block';
   } else {
     empty.style.display = 'none';
-    tbody.innerHTML = pageRows.map(t => {
+    tbody.innerHTML = pageRows.map(result => {
+      if (result._kind === 'water') {
+        const p = result.data.properties;
+        const displayKingdoms = p.display_kingdoms || [];
+        const badge = displayKingdoms.length
+          ? displayKingdoms.map(k => `<span class="badge ${kingdomClass[k]}">${kingdomLabel[k]}</span>`).join(' ')
+          : '<span class="badge b-water"><i class="ti ti-droplet"></i></span>';
+        const pngUrl = provToPng[p.primary_province];
+        const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="查看该州图版地图"><i class="ti ti-map-2"></i></button>` : '';
+        const mapBtn = `<button class="result-action result-action-water" data-id="${p.id}" title="在互动地图中查看"><i class="ti ti-map-pin"></i></button>`;
+        // Lakes: single dominant province, up to 2 commanderies (genuinely split ones).
+        // Rivers: every province touched with meaningful overlap, commanderies left blank.
+        const provinceText = (p.display_provinces_chs?.length ? p.display_provinces_chs : p.display_provinces || []).join(', ') || '—';
+        const commanderyText = (p.display_commanderies_chs?.length ? p.display_commanderies_chs : p.display_commanderies || []).join(', ') || '—';
+        return `<tr>
+          <td class="td-name">
+            <span class="td-name-primary">${displayWaterName(result.data) || '—'}</span>
+            <span class="td-name-sub">${displayWaterSub(result.data)}</span>
+          </td>
+          <td>${displayWaterType(result.data)}</td>
+          <td>${badge}</td>
+          <td class="td-region">${provinceText}</td>
+          <td class="td-region">${commanderyText}</td>
+          <td class="td-map"><div style="display:flex;flex-direction:row;align-items:center;gap:6px;">${pngBtn}${mapBtn}</div></td>
+        </tr>`;
+      }
+
+      if (result._kind === 'admin') {
+        const p = result.data.properties;
+        const isCommandery = p.level === 'commandery';
+        const badge = p.kingdom
+          ? `<span class="badge ${kingdomClass[p.kingdom]}">${kingdomLabel[p.kingdom]}</span>`
+          : '—';
+        const pngUrl = provToPng[p.Prov_EN];
+        const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="查看该州图版地图"><i class="ti ti-map-2"></i></button>` : '';
+        const mapBtn = `<button class="result-action result-action-admin" data-id="${p.id}" title="在互动地图中查看"><i class="ti ti-map-pin"></i></button>`;
+        return `<tr>
+          <td class="td-name">
+            <span class="td-name-primary">${displayAdminName(result.data) || '—'}</span>
+            <span class="td-name-sub">${displayAdminSub(result.data)}</span>
+          </td>
+          <td>${displayAdminType(result.data)}</td>
+          <td>${badge}</td>
+          <td class="td-region">${p.Prov_CHS || p.Prov_CH || p.Prov_EN || '—'}</td>
+          <td class="td-region">${isCommandery ? (p.Name_CHS || p.Name_CH || p.Name_EN) : '—'}</td>
+          <td class="td-map"><div style="display:flex;flex-direction:row;align-items:center;gap:6px;">${pngBtn}${mapBtn}</div></td>
+        </tr>`;
+      }
+
+      const t = result.data;
       const k      = getKingdom(t.Prov_EN);
       const badge  = k
         ? `<span class="badge ${kingdomClass[k]}">${kingdomLabel[k]}</span>`
@@ -307,6 +516,18 @@ function render() {
         if (name) params.set('name', name);
         window.location.href = url(
         `/zh-hans/maps/map-overall?${params.toString()}`);
+      });
+    });
+    tbody.querySelectorAll('.result-action-water').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const params = new URLSearchParams({ water: btn.dataset.id });
+        window.location.href = url(`/zh-hans/maps/map-overall?${params.toString()}`);
+      });
+    });
+    tbody.querySelectorAll('.result-action-admin').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const params = new URLSearchParams({ admin: btn.dataset.id });
+        window.location.href = url(`/zh-hans/maps/map-overall?${params.toString()}`);
       });
     });
   }
@@ -432,6 +653,7 @@ window.addEventListener('popstate', render);
 .b-wei { background: #1E2B40; color: #6EC1FF; }
 .b-shu { background: #1E3A2B; color: #6ED4A0; }
 .b-wu  { background: #2A1212; color: #D4807A; }
+.b-water { background: #0c2a38; color: #7dd3fc; display: inline-flex; align-items: center; justify-content: center; }
 
 /* map action icons */
 .td-map { text-align: center; vertical-align: middle;  }
