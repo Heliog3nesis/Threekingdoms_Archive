@@ -55,10 +55,10 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 
 ## Recent Updates
  
-- Added interactive maps with settlement, province, commandery, and watere bodies search
-- Added three stories: To Make a Cao Shuang, A Test of Character, and Virtue Before Victory
+- Added interactive maps with settlement, province, commandery, and water bodies search
+- Added map and official redirects for Records of the Three Kingdoms translations
 
-See [<img src="./.github/badges/changelog.svg" height="24">](./CHANGELOG.md) for the full version history.
+See [<img src="./.github/badges/changelog.svg" width="110">](./CHANGELOG.md) for the full version history.
 
 ## License & Sources
 
@@ -88,6 +88,6 @@ Currently a solo project. If you spot an error, have a correction, or want to ge
 
 If you enjoyed the archive and would like to support the project:
 
-[<img src="./.github/badges/support.svg" height="35">](https://ko-fi.com/gongjinzhou) 
+[<img src="./.github/badges/support.svg" width="222">](https://ko-fi.com/gongjinzhou) 
 
 ---

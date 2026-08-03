@@ -139,6 +139,10 @@ export const zh_hans = {
     "title": "翻译",
     "subtitle": "历史文献自译汇编",
     "banner": "/trans_banner.png",
+    "annotationBy": "Annotation",
+    "previous": "上一章",
+    "next": "下一章",
+    "pending": "翻译中……",
     "tabs": [
       "全部",
       "史书",
@@ -148,22 +152,13 @@ export const zh_hans = {
     ],
     "items": [
       {
-        "title": "《三国志》卷九",
+        "title": "三国志",
         "author": "陈寿",
         "century": "晋（3世纪）",
         "type": "史书",
-        "desc": "与ZL181合作，夏侯惇、夏侯渊、曹仁、曹真、曹休等传之协同翻译。",
+        "desc": "三国志及裴松之注",
         "img": "/thumbs/translation_generic.svg",
-        "url": "https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-09"
-      },
-      {
-        "title": "《三国志》卷十八",
-        "author": "陈寿",
-        "century": "晋（3世纪）",
-        "type": "史书",
-        "desc": "与ZL181合作李典、李通传之协同翻译。",
-        "img": "/thumbs/translation_generic.svg",
-        "url": "https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-18"
+        "url": "/zh-hans/translations/sanguozhi"
       },
       {
         "title": "东晋都建康图",
@@ -181,7 +176,7 @@ export const zh_hans = {
         "type": "制度",
         "desc": "洪饴孙《三国职官表》之完整翻译。",
         "img": "/thumbs/officials.png",
-        "url": "/zh-hant/translations/officials"
+        "url": "/zh-hans/translations/officials"
       },
       {
         "title": "短故事合集",
@@ -190,7 +185,7 @@ export const zh_hans = {
         "type": "文学",
         "desc": "三国时期短篇故事集。",
         "img": "/thumbs/short_stories.jpg",
-        "url": "/zh-hant/translations/short-stories"
+        "url": "/zh-hans/translations/short-stories"
       }
     ]
   },
@@ -299,7 +294,7 @@ export const zh_hans = {
     "searchBtn": "检索",
     "tabs": {
       "regions": "图版地图",
-      "interactive": "互动地图"
+      "interactive": "交互地图"
     }
   }
 };

@@ -117,9 +117,12 @@ const officialsPayload = utf8ToBase64(JSON.stringify({ allPositions, categories,
     return d[langKey] ?? d.en ?? '';
   }
   function nameFor(p) {
+    if (p._matchedPair) return p._matchedPair[langKey] || p._matchedPair.en || '';
     return langKey === 'zht' ? (p.nameZht || p.nameEn) : langKey === 'zhs' ? (p.nameZhs || p.nameEn) : p.nameEn;
   }
   function altNameFor(p) {
+    const altLangKey = langKey === 'en' ? 'zht' : 'en';
+    if (p._matchedPair) return p._matchedPair[altLangKey] || '';
     return langKey === 'en' ? p.nameZht : p.nameEn;
   }
   function superiorNameFor(sup) {
@@ -316,7 +319,7 @@ function shiPhraseFor(p) {
   const kingdomLabels = { wei: '魏', shu: '蜀', wu: '吳' };
 
   function kingdomBadgesHtml(p) {
-    const kingdoms = p.kingdoms || [];
+    const kingdoms = p._matchedPair?.kingdoms ?? p.kingdoms ?? [];
     if (!kingdoms.length) return '';
     return `<span class="result-card-kingdoms">${
       kingdoms.map(k => `<span class="kingdom-badge kingdom-${k}">${kingdomLabels[k]}</span>`).join('')
@@ -492,8 +495,8 @@ function shiPhraseFor(p) {
   font-weight: 600;
 }
 .kingdom-wei { background: rgba(94, 132, 184, 0.18); color: #7fa8d9; }
-.kingdom-shu { background: rgba(196, 92, 92, 0.18); color: #d98a8a; }
-.kingdom-wu { background: rgba(94, 164, 120, 0.18); color: #8fcf9f; }
+.kingdom-shu { background: rgba(94, 164, 120, 0.18); color: #8fcf9f; }
+.kingdom-wu { background: rgba(196, 92, 92, 0.18); color: #d98a8a; }
 
 .result-card-desc { font-family: 'LXGW WenKai', serif; font-size: 16px; color: var(--color-text-secondary); line-height: 1.5; padding-left: 52px; margin-top: 4px; max-width: 1000px; }
 

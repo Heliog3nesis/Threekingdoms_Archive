@@ -139,6 +139,10 @@ export const zh = {
     "title": "翻譯",
     "subtitle": "歷史文獻自譯彙編",
     "banner": "/trans_banner.png",
+    "annotationBy": "Annotation",
+    "previous": "上一章",
+    "next": "下一章",
+    "pending": "翻譯中……",
     "tabs": [
       "全部",
       "史書",
@@ -148,22 +152,13 @@ export const zh = {
     ],
     "items": [
       {
-        "title": "《三國志》卷九",
+        "title": "三國志",
         "author": "陳壽",
         "century": "晉（3世紀）",
         "type": "史書",
-        "desc": "與ZL181合作，夏侯惇、夏侯淵、曹仁、曹真、曹休等傳之協同翻譯。",
+        "desc": "三國志及裴松之注",
         "img": "/thumbs/translation_generic.svg",
-        "url": "https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-09"
-      },
-      {
-        "title": "《三國志》卷十八",
-        "author": "陳壽",
-        "century": "晉（3世紀）",
-        "type": "史書",
-        "desc": "與ZL181合作李典、李通傳之協同翻譯。",
-        "img": "/thumbs/translation_generic.svg",
-        "url": "https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-18"
+        "url": "/zh-hant/translations/sanguozhi"
       },
       {
         "title": "東晉都建康圖",

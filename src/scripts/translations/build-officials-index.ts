@@ -4,11 +4,11 @@
 // (for the dropdown) and the dedicated search results page, so the two
 // never drift out of sync with each other.
 
-import centralCourtData from '../../data/central-court-database.json';
-import excellenciesData from '../../data/excellencies-database.json';
-import militaryData from '../../data/military-officials-database.json';
-import provinceData from '../../data/provincial-officials-database.json';
-import palaceData from '../../data/rear-eastern-palace-database.json';
+import centralCourtData from '../../data/officials/central-court-database.json';
+import excellenciesData from '../../data/officials/excellencies-database.json';
+import militaryData from '../../data/officials/military-officials-database.json';
+import provinceData from '../../data/officials/provincial-officials-database.json';
+import palaceData from '../../data/officials/rear-eastern-palace-database.json';
 
 // Map each loaded JSON file to the category page it belongs to.
 // 'nobility' has no backing file yet (WIP) — omitted, so it's silently
@@ -40,6 +40,59 @@ function firstName(pos: any, key: 'en' | 'zht' | 'zhs'): string {
     if (val && val !== '?' && val !== '-') return val;
   }
   return stripHtml(pos.displayName?.[key] ?? pos.displayName?.en ?? '');
+}
+
+// Like firstName(), but collects EVERY name variant across Wei/Shu/Wu as a
+// full { en, zht, zhs } PAIR, instead of stopping at the first one found
+// and instead of flattening each language into its own separate list.
+// Keeping the pair intact matters for search: if a query matches this
+// variant's zht text, the correct corresponding en/zhs text (from the
+// SAME variant) needs to be shown alongside it — not some other variant's
+// default name, which could be a completely different historical name.
+function namePairs(pos: any): { en: string; zht: string; zhs: string; kingdoms: string[] }[] {
+  const sources: [string, any[]][] = [
+    ['wei', pos.name?.wei ?? []],
+    ['shu', pos.name?.shu ?? []],
+    ['wu', pos.name?.wu ?? []],
+  ];
+  const pairs: { en: string; zht: string; zhs: string; kingdoms: string[] }[] = [];
+  const indexByKey = new Map<string, number>();
+
+  for (const [kingdom, arr] of sources) {
+    for (const n of arr) {
+      const en = stripHtml(n?.en);
+      const zht = stripHtml(n?.zht ?? n?.en);
+      const zhs = stripHtml(n?.zhs ?? n?.en);
+      if (!en || en === '?' || en === '-') continue;
+      const key = `${en}|${zht}|${zhs}`;
+      if (indexByKey.has(key)) {
+        // Same exact name text also appears under another kingdom (common
+        // for titles that didn't change between kingdoms) — same pair,
+        // just add this kingdom to it rather than duplicating the row.
+        const existing = pairs[indexByKey.get(key)!];
+        if (!existing.kingdoms.includes(kingdom)) existing.kingdoms.push(kingdom);
+      } else {
+        indexByKey.set(key, pairs.length);
+        pairs.push({ en, zht, zhs, kingdoms: [kingdom] });
+      }
+    }
+  }
+
+  if (pairs.length === 0) {
+    const en = stripHtml(pos.displayName?.en ?? '');
+    if (en) {
+      pairs.push({
+        en,
+        zht: stripHtml(pos.displayName?.zht ?? en),
+        zhs: stripHtml(pos.displayName?.zhs ?? en),
+        // No per-kingdom name data to attribute this to specifically —
+        // fall back to the position's full existence list.
+        kingdoms: kingdomsFor(pos),
+      });
+    }
+  }
+
+  return pairs;
 }
 
 function displayNameOnly(pos: any, key: 'en' | 'zht' | 'zhs'): string {
@@ -120,6 +173,13 @@ export function buildAllPositions(): any[] {
           nameEn:  firstName(pos, 'en'),
           nameZht: firstName(pos, 'zht'),
           nameZhs: firstName(pos, 'zhs'),
+          // Every name VARIANT (as an en/zht/zhs pair, kept together) —
+          // nameEn/nameZht/nameZhs above stay as the single default
+          // display name; this is what search actually matches against,
+          // so a match returns the correct corresponding pair, not a
+          // mismatched combination of one variant's language and
+          // another's.
+          namePairs: namePairs(pos),
           gradeNum: pos.gradeNum ?? null,
           tier: pos.tier ?? null,
           superiors: superiors.map((s: any) => ({

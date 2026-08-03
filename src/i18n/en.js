@@ -139,6 +139,10 @@ export const en = {
     "title": "Translations",
     "subtitle": "A collection of documents & texts from the Three Kingdoms period and beyond.",
     "banner": "/trans_banner.png",
+    "annotationBy": "Annotation",
+    "previous": "Previous",
+    "next": "Next",
+    "pending": "Translation in progress.",
     "tabs": [
       "All",
       "Histories",
@@ -148,22 +152,13 @@ export const en = {
     ],
     "items": [
       {
-        "title": "Records of the Three Kingdoms, Vol 9",
-        "author": "Chen Shou ",
-        "century": "Jin, (3rd century)",
-        "type": "Histories",
-        "desc": "Collaborative translation with ZL181 covering the Xiahou Dun, Xiahou Yuan, Cao Ren, Cao Zhen and others.",
-        "img": "/thumbs/translation_generic.svg",
-        "url": "https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-09"
-      },
-      {
-        "title": "Records of the Three Kingdoms, Vol 18",
+        "title": "Records of the Three Kingdoms (Sanguozhi)",
         "author": "Chen Shou",
         "century": "Jin, (3rd century)",
         "type": "Histories",
-        "desc": "Collaborative translation with ZL181 covering Li Dian and Li Tong.",
+        "desc": "Annotated chapter-by-chapter translation of Chen Shou's Sanguozhi, with commentary by Pei Songzhi.",
         "img": "/thumbs/translation_generic.svg",
-        "url": "https://sites.google.com/view/zl181stranslations/sanguozhi/sgz-18"
+        "url": "/translations/sanguozhi"
       },
       {
         "title": "Capital of Eastern Jin: Jiankang",
@@ -172,7 +167,7 @@ export const en = {
         "type": "Geography",
         "desc": "Annotated map of Jiankang, the capital of the Eastern Jin dynasty.",
         "img": "/thumbs/nanjing.jpg",
-        "url": "https://zgongjin.tumblr.com/jkmap"
+        "url": "/translations/jiankang-map"
       },
       {
         "title": "Officials and Titles of the Three Kingdoms",

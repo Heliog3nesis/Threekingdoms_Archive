@@ -6292,7 +6292,7 @@
           "displayName": {
             "zht": "征虜將軍",
             "zhs": "征虏将军",
-            "en": "General Who Conquers Enemies"
+            "en": "General Who Conquers the Enemies"
           },
           "hasMultipleNames": false,
           "gradeNum": 3,
@@ -6302,21 +6302,21 @@
               {
                 "zht": "征虜將軍",
                 "zhs": "征虏将军",
-                "en": "General Who Conquers Enemies"
+                "en": "General Who Conquers the Enemies"
               }
             ],
             "shu": [
               {
                 "zht": "征虜將軍",
                 "zhs": "征虏将军",
-                "en": "General Who Conquers Enemies"
+                "en": "General Who Conquers the Enemies"
               }
             ],
             "wu": [
               {
                 "zht": "征虜將軍",
                 "zhs": "征虏将军",
-                "en": "General Who Conquers Enemies"
+                "en": "General Who Conquers the Enemies"
               }
             ]
           },
@@ -8449,7 +8449,7 @@
             "en": "Auxiliary General"
           },
           "hasMultipleNames": true,
-          "gradeNum": null,
+          "gradeNum": 5,
           "tier": "secondary",
           "name": {
             "wei": null,
@@ -8473,7 +8473,17 @@
             "wu": null
           },
           "jobscope": null,
-          "rank": null,
+          "rank": {
+            "zht": [
+              "五品，各一人"
+            ],
+            "zhs": [
+              "五品，各一人"
+            ],
+            "en": [
+              "Fifth grade, 1 person each"
+            ]
+          },
           "notes": null
         },
         {
@@ -8573,38 +8583,48 @@
         {
           "id": "four-direction--misc-165",
           "displayName": {
-            "zht": "禆將軍",
-            "zhs": "禆将军",
+            "zht": "裨將軍",
+            "zhs": "裨将军",
             "en": "Assistant General"
           },
           "hasMultipleNames": false,
-          "gradeNum": null,
+          "gradeNum": 5,
           "tier": "dignitary",
           "name": {
             "wei": [
               {
-                "zht": "禆將軍",
-                "zhs": "禆将军",
+                "zht": "裨將軍",
+                "zhs": "裨将军",
                 "en": "Assistant General"
               }
             ],
             "shu": [
               {
-                "zht": "禆將軍",
-                "zhs": "禆将军",
+                "zht": "裨將軍",
+                "zhs": "裨将军",
                 "en": "Assistant General"
               }
             ],
             "wu": [
               {
-                "zht": "禆將軍",
-                "zhs": "禆将军",
+                "zht": "裨將軍",
+                "zhs": "裨将军",
                 "en": "Assistant General"
               }
             ]
           },
           "jobscope": null,
-          "rank": null,
+          "rank": {
+            "zht": [
+              "五品，無員"
+            ],
+            "zhs": [
+              "五品，无员"
+            ],
+            "en": [
+              "Fifth grade, no fixed number of posts"
+            ]
+          },
           "notes": null
         }
       ]
@@ -9117,16 +9137,21 @@
         },
         {
           "id": "gentleman-generals-176",
-          "displayName": {
-            "zht": "揚武中郎將",
-            "zhs": "扬武中郎将",
-            "en": "Gentleman-General Who Promotes Valor"
-          },
+          "displayName":{
+              "zht": "振威中郎將",
+              "zhs": "振威中郎将",
+              "en": "Gentleman-General Who Rallies Might"
+            },
           "hasMultipleNames": true,
           "gradeNum": 4,
           "tier": "secondary",
           "name": {
-            "wei": null,
+            "wei": [
+            {
+              "zht": "振威中郎將",
+              "zhs": "振威中郎将",
+              "en": "Gentleman-General Who Rallies Might"
+            }],
             "shu": null,
             "wu": [
               {
@@ -9631,7 +9656,7 @@
             "en": "Gentleman-General Who Crosses the Fields"
           },
           "hasMultipleNames": false,
-          "gradeNum": null,
+          "gradeNum": 4,
           "tier": "secondary",
           "name": {
             "wei": null,
@@ -10165,7 +10190,7 @@
           },
           "hasMultipleNames": false,
           "gradeNum": null,
-          "tier": "secondary",
+          "tier": "minor",
           "name": {
             "wei": null,
             "shu": [
@@ -10631,7 +10656,17 @@
             ]
           },
           "jobscope": null,
-          "rank": null,
+          "rank": {
+            "zht": [
+              "各一人"
+            ],
+            "zhs": [
+              "各一人"
+            ],
+            "en": [
+              "1 person each"
+            ]
+          },
           "notes": null
         },
         {
@@ -11194,13 +11229,13 @@
           "jobscope": null,
           "rank": {
             "zht": [
-              "各一人"
+              "一人"
             ],
             "zhs": [
-              "各一人"
+              "一人"
             ],
             "en": [
-              "1 person each"
+              "1 person"
             ]
           },
           "notes": null
@@ -11269,13 +11304,13 @@
           "jobscope": null,
           "rank": {
             "zht": [
-              "各一人"
+              "一人"
             ],
             "zhs": [
-              "各一人"
+              "一人"
             ],
             "en": [
-              "1 person each"
+              "1 person"
             ]
           },
           "notes": null
@@ -11354,13 +11389,13 @@
           },
           "rank": {
             "zht": [
-              "各一人"
+              "一人"
             ],
             "zhs": [
-              "各一人"
+              "一人"
             ],
             "en": [
-              "1 person each"
+              "1 person"
             ]
           },
           "notes": null
@@ -11389,13 +11424,13 @@
           "jobscope": null,
           "rank": {
             "zht": [
-              "各一人"
+              "一人"
             ],
             "zhs": [
-              "各一人"
+              "一人"
             ],
             "en": [
-              "1 person each"
+              "1 person"
             ]
           },
           "notes": null
@@ -11432,7 +11467,17 @@
               "Oversee grain and liquor matters"
             ]
           },
-          "rank": null,
+          "rank": {
+            "zht": [
+              "一人"
+            ],
+            "zhs": [
+              "一人"
+            ],
+            "en": [
+              "1 person"
+            ]
+          },
           "notes": null
         }
       ]

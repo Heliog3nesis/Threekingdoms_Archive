@@ -592,8 +592,8 @@
         {
           "id": "provinces-014",
           "displayName": {
-            "zht": "剌史",
-            "zhs": "剌史",
+            "zht": "刺史",
+            "zhs": "刺史",
             "en": "Inspector"
           },
           "hasMultipleNames": true,
@@ -602,8 +602,8 @@
           "name": {
             "wei": [
               {
-                "zht": "剌史",
-                "zhs": "剌史",
+                "zht": "刺史",
+                "zhs": "刺史",
                 "en": "Inspector"
               },
               {
@@ -614,8 +614,8 @@
             ],
             "shu": [
               {
-                "zht": "剌史",
-                "zhs": "剌史",
+                "zht": "刺史",
+                "zhs": "刺史",
                 "en": "Inspector"
               },
               {
@@ -626,8 +626,8 @@
             ],
             "wu": [
               {
-                "zht": "剌史",
-                "zhs": "剌史",
+                "zht": "刺史",
+                "zhs": "刺史",
                 "en": "Inspector"
               },
               {
@@ -661,8 +661,8 @@
           },
           "notes": [
             {
-              "zht": "無加官者謂州單車剌史",
-              "zhs": "无加官者谓州单车剌史",
+              "zht": "無加官者謂州單車刺史",
+              "zhs": "无加官者谓州单车刺史",
               "en": "Inspectors without additional titles are known as Single Chariot Inspectors"
             },
             {
@@ -671,8 +671,8 @@
               "en": "Territories not under actual control can also have inspectors appointed to oversee in name"
             },
             {
-              "zht": "緣邊諸州剌史時與領兵都督並置",
-              "zhs": "缘边诸州剌史时与领兵都督并置",
+              "zht": "緣邊諸州刺史時與領兵都督並置",
+              "zhs": "缘边诸州刺史时与领兵都督并置",
               "en": "Border provinces sometimes appoint both Inspectors and Commanders"
             }
           ]

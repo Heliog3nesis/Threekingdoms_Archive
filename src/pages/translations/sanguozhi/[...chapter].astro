@@ -1,0 +1,741 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { url } from '../../../utils/url';
+
+const TEXT_TITLE = { zht: '三國志', zhs: '三国志', en: 'Records of the Three Kingdoms' };
+const AUTHOR = 'Chen Shou';
+const ANNOTATOR = 'Pei Songzhi';
+
+const chapterModules = import.meta.glob('../../../data/sgz/*.json', { eager: true });
+
+const chapters = Object.values(chapterModules)
+  .map((mod: any) => mod.default ?? mod)
+  .sort((a: any, b: any) => a.order - b.order);
+
+// Sidebar sections, grouped by book, in the order chapters first appear
+const bookSections: any[] = [];
+const bookMap = new Map<string, any>();
+for (const ch of chapters) {
+  if (!bookMap.has(ch.book)) {
+    const section = { id: ch.book, label: ch.bookLabel, chapters: [] as any[] };
+    bookMap.set(ch.book, section);
+    bookSections.push(section);
+  }
+  bookMap.get(ch.book).chapters.push(ch);
+}
+
+export function getStaticPaths() {
+  const mods = import.meta.glob('../../../data/sgz/*.json', { eager: true });
+  const chs = Object.values(mods)
+    .map((mod: any) => mod.default ?? mod)
+    .sort((a: any, b: any) => a.order - b.order);
+  const paths: any[] = [{ params: { chapter: undefined } }]; // cover
+  for (const ch of chs) {
+    paths.push({ params: { chapter: ch.id } });
+  }
+  return paths;
+}
+
+const chapterId = Astro.params.chapter as string | undefined;
+const isCover = !chapterId;
+const currentIndex = isCover ? -1 : chapters.findIndex((c: any) => c.id === chapterId);
+const currentChapter = currentIndex >= 0 ? chapters[currentIndex] : null;
+const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
+const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
+
+const lang: string = 'en';
+const strings = t(lang);
+const cnField = lang === 'zh-hans' ? 'zhs' : 'zht';
+const cnLangAttr = cnField === 'zhs' ? 'zh-hans' : 'zh-hant';
+
+function cn(field: any) {
+  return field?.[cnField] ?? field?.zht ?? field?.zhs ?? '';
+}
+
+function linkify(text: string): string {
+  const escaped = String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return escaped.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_match, label, rawUrl) => {
+    const isLocation = rawUrl.includes('/maps');
+    const isOfficial = rawUrl.includes('/officials');
+    const typeClass = isLocation ? ' term-link-loc' : isOfficial ? ' term-link-off' : '';
+    const icon = isLocation
+      ? '<i class="ti ti-map-pin term-link-icon" aria-hidden="true"></i>'
+      : isOfficial
+      ? '<i class="ti ti-file-text term-link-icon" aria-hidden="true"></i>'
+      : '';
+    return `<a href="${url(rawUrl)}" class="term-link${typeClass}" target="_blank" rel="noopener">${label}${icon}</a>`;
+  });
+}
+
+const baseUrl = url('/translations/sanguozhi');
+const chapterUrl = (id: string) => `${baseUrl}/${id}`;
+
+// Only chapters with real translated content — used for the cover's Contents list
+const translatedChapters = chapters.filter((c: any) => c.passages && c.passages.length > 0);
+const coverChapters = translatedChapters.length > 0 ? translatedChapters : chapters;
+
+// Embedded once, used by client JS to swap content with no reload/fetch
+const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChapterId: chapterId ?? null }).replace(/</g, '\\u003c');
+---
+
+<Base title={`${TEXT_TITLE.en} · Three Kingdoms Archive`} lang="en">
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <div class="reader-layout">
+      <!-- ══ Desktop sidebar ══ -->
+      <aside class="sidebar" id="sidebar-desktop">
+        <a href={baseUrl} class="sb-header sb-header-link" data-sgz-link data-chapter="">
+          <div class="sb-text-title" lang={cnLangAttr}>{cn(TEXT_TITLE)}</div>
+          <div class="sb-text-sub">{TEXT_TITLE.en}</div>
+        </a>
+        <nav class="sb-scroll" id="sb-scroll-desktop">
+          {bookSections.map((book: any) => (
+            <div class="sb-section">
+              <div class="sb-section-label">
+                <span lang={cnLangAttr}>{cn(book.label)}</span> {book.label.en}
+              </div>
+              <div class="sb-chapter-list">
+                {book.chapters.map((ch: any) => (
+                  <a
+                    href={chapterUrl(ch.id)}
+                    class:list={['sb-ch', { on: ch.id === chapterId }]}
+                    data-sgz-link
+                    data-chapter={ch.id}
+                  >
+                    <span class="sb-ch-num">{ch.num}</span>
+                    <div>
+                      <div class="sb-ch-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
+                      <div class="sb-ch-en">{ch.label.en}</div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </nav>
+      </aside>
+
+      <!-- ══ Mobile drawer + overlay ══ -->
+      <div class="mob-overlay" id="mob-overlay"></div>
+      <aside class="sidebar mob-drawer" id="mob-drawer">
+        <div class="sb-header" style="display:flex;align-items:center;justify-content:space-between">
+          <a href={baseUrl} class="sb-header-link" data-sgz-link data-chapter="">
+            <div class="sb-text-title" lang={cnLangAttr}>{cn(TEXT_TITLE)}</div>
+            <div class="sb-text-sub">{TEXT_TITLE.en}</div>
+          </a>
+          <button class="mob-drawer-close" id="mob-drawer-close" aria-label="Close chapter list">
+            <i class="ti ti-x" aria-hidden="true"></i>
+          </button>
+        </div>
+        <nav class="sb-scroll" id="sb-scroll-mobile">
+          {bookSections.map((book: any) => (
+            <div class="sb-section">
+              <div class="sb-section-label">
+                <span lang={cnLangAttr}>{cn(book.label)}</span> {book.label.en}
+              </div>
+              <div class="sb-chapter-list">
+                {book.chapters.map((ch: any) => (
+                  <a
+                    href={chapterUrl(ch.id)}
+                    class:list={['sb-ch', { on: ch.id === chapterId }]}
+                    data-sgz-link
+                    data-chapter={ch.id}
+                  >
+                    <span class="sb-ch-num">{ch.num}</span>
+                    <div>
+                      <div class="sb-ch-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
+                      <div class="sb-ch-en">{ch.label.en}</div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </nav>
+      </aside>
+
+      <!-- ══ Main content (re-rendered client-side on navigation) ══ -->
+      <div class="main">
+        <div class="mob-toolbar">
+          <button class="mob-menu-btn" id="mob-menu-btn" aria-label="Open chapter list">
+            <i class="ti ti-menu-2" aria-hidden="true"></i>
+          </button>
+        <div class="mob-toolbar-title" id="mob-toolbar-title">
+          <span class="mob-ch-title">Chapters</span>
+          {!isCover && <span class="mob-ch-pos">{currentIndex + 1}/{chapters.length}</span>}
+        </div>
+        </div>
+
+        <div id="sgz-main-content">
+          <!-- initial server-rendered markup; client JS swaps this innerHTML on nav -->
+          <div class="page-header">
+            <div class="breadcrumb">
+              <a href={url('/translations')} class="bc-link">{strings.nav.translations}</a>
+              <span class="bc-sep">›</span>
+              {isCover ? (
+                <span class="bc-cur">{TEXT_TITLE.en}</span>
+              ) : (
+                <>
+                  <a href={baseUrl} class="bc-link" data-sgz-link data-chapter="">{TEXT_TITLE.en}</a>
+                  <span class="bc-sep">›</span>
+                  <span class="bc-cur">{currentChapter.label.en}</span>
+                </>
+              )}
+            </div>
+          </div>
+
+          {isCover ? (
+            <div class="cover">
+              <div class="cover-left">
+                <h1 class="cover-title-zh" lang={cnLangAttr}>{cn(TEXT_TITLE)}</h1>
+                <p class="cover-title-en">{TEXT_TITLE.en}</p>
+                <p class="cover-meta">{AUTHOR} · annotated by {ANNOTATOR}</p>
+                <p class="cover-desc">
+                  A chronicle of the Three Kingdoms period, covering the states of Wei, Shu, and Wu,
+                  with annotations by Pei Songzhi. 
+                  <br> <br>
+                  A Collaborative translation with ZL181.
+                </p>
+              </div>
+              <div class="cover-right">
+                <div class="cover-contents-label">Contents</div>
+                <div class="cover-book-grid">
+                  {coverChapters.map((ch: any) => (
+                    <a
+                      href={chapterUrl(ch.id)}
+                      class="cover-book-card"
+                      data-sgz-link
+                      data-chapter={ch.id}
+                    >
+                      <div class="cbc-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
+                      <div class="cbc-en">{ch.label.en}</div>
+                      <div class="cbc-count">{ch.bookLabel.en}</div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div class="chapter-header">
+                <div class="ch-title-group">
+                  <h1 class="ch-title-zh" lang={cnLangAttr}>{cn(currentChapter.title)}</h1>
+                  <p class="ch-title-en">{currentChapter.title.en}</p>
+                </div>
+                <div class="view-toggle" role="group" aria-label="View mode">
+                  <button class="view-toggle-btn active" data-view="both" type="button">Parallel</button>
+                  <button class="view-toggle-btn" data-view="orig" type="button">Original</button>
+                  <button class="view-toggle-btn" data-view="en" type="button">English Only</button>
+                </div>
+              </div>
+
+              <div class="term-legend">
+                <span class="term-legend-item"><i class="ti ti-map-pin term-legend-icon term-legend-icon-loc" aria-hidden="true"></i>Location: opens map on new page</span>
+                <span class="term-legend-item"><i class="ti ti-file-text term-legend-icon term-legend-icon-off" aria-hidden="true"></i>Official position: opens official table on new page</span>
+                <div class="term-legend-actions">
+                  <label class="term-toggle">
+                    <input type="checkbox" id="term-toggle-checkbox" checked />
+                    <span class="term-toggle-track"><span class="term-toggle-thumb"></span></span>
+                    <span class="term-toggle-label">Show links</span>
+                  </label>
+                  <a href={url(`/maps/map-overall?journey=${currentChapter.id}`)} class="term-journey-link" target="_blank" rel="noopener">
+                    <i class="ti ti-route" aria-hidden="true"></i> Show life journey
+                  </a>
+                </div>
+              </div>
+
+              <div class="passages">
+                {currentChapter.passages.length === 0 && (
+                  <p class="ps-pending">{strings.translations?.pending ?? 'Translation in progress.'}</p>
+                )}
+                {currentChapter.passages.map((p: any) => (
+                  <div class="passage" id={p.id}>
+                    <p class="ps-orig" lang={cnLangAttr} set:html={linkify(cn(p.orig))} />
+                    <p class="ps-en" set:html={linkify(p.en)} />
+                    {p.annotations && p.annotations.length > 0 && (
+                      <div class="annotations">
+                        {p.annotations.map((a: any, ai: number) => (
+                          <div class="annotation">
+                            <button class="ann-toggle" data-passage={p.id} data-idx={ai}>
+                              <i class="ti ti-chevron-right ann-chevron" aria-hidden="true"></i>
+                              <span class="ann-label">
+                                <span class="ann-label-zh" lang={cnLangAttr}>
+                                  {cn(a.annotator)}注引{a.source && <>《{cn(a.source)}》</>}
+                                </span>
+                                <span class="ann-label-en">
+                                  {strings.translations?.annotationBy ?? 'Annotation'} by {a.annotator.en}, quoting
+                                  {a.source && <span class="ann-source"> {a.source.en}</span>}
+                                </span>
+                              </span>
+                            </button>
+                            <div class="ann-body" data-passage={p.id} data-idx={ai}>
+                              <p class="ann-zh" lang={cnLangAttr} set:html={linkify(cn(a))} />
+                              <p class="ann-en" set:html={linkify(a.en)} />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div class="ch-nav-row">
+                {prevChapter ? (
+                  <a href={chapterUrl(prevChapter.id)} class="ch-nav-btn" data-sgz-link data-chapter={prevChapter.id}>
+                    <i class="ti ti-arrow-left" aria-hidden="true"></i> <span>{prevChapter.label.en}</span>
+                  </a>
+                ) : (
+                  <span class="ch-nav-btn disabled"><i class="ti ti-arrow-left" aria-hidden="true"></i> <span>{strings.translations?.previous ?? 'Previous'}</span></span>
+                )}
+                {nextChapter ? (
+                  <a href={chapterUrl(nextChapter.id)} class="ch-nav-btn" data-sgz-link data-chapter={nextChapter.id}>
+                    <span>{nextChapter.label.en}</span> <i class="ti ti-arrow-right" aria-hidden="true"></i>
+                  </a>
+                ) : (
+                  <span class="ch-nav-btn disabled"><span>{strings.translations?.next ?? 'Next'}</span> <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+                )}
+              </div>
+            </>
+          )}
+
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{strings.footer.quoteBySection?.translations ?? strings.footer.quote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+          <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+             <i class="ti ti-brand-github"></i>
+              </a>
+       </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<script type="application/json" id="sgz-data" set:html={clientData}></script>
+
+<script>
+  import { url } from '../../../utils/url';
+
+  const dataEl = document.getElementById('sgz-data');
+  const DATA = JSON.parse(dataEl ? dataEl.textContent ?? '{}' : '{}');
+  const { chapters, bookSections, baseUrl, initialChapterId } = DATA;
+  const STR = {
+    annotationBy: 'Annotation', previous: 'Previous', next: 'Next',
+    pending: 'Translation in progress.', translations: 'Translations',
+  };
+
+  const mainEl = document.getElementById('sgz-main-content');
+
+  const ESCAPE_MAP: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+  function esc(s: unknown): string {
+    return String(s ?? '').replace(/[&<>"']/g, (c: string) => ESCAPE_MAP[c] ?? c);
+  }
+
+  function linkify(text: unknown): string {
+    const escaped = String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return escaped.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_match: string, label: string, rawUrl: string) => {
+      const isLocation = rawUrl.includes('/maps');
+      const isOfficial = rawUrl.includes('/officials');
+      const typeClass = isLocation ? ' term-link-loc' : isOfficial ? ' term-link-off' : '';
+      const icon = isLocation
+        ? '<i class="ti ti-map-pin term-link-icon" aria-hidden="true"></i>'
+        : isOfficial
+        ? '<i class="ti ti-file-text term-link-icon" aria-hidden="true"></i>'
+        : '';
+      return `<a href="${url(rawUrl)}" class="term-link${typeClass}" target="_blank" rel="noopener">${label}${icon}</a>`;
+    });
+  }
+
+  function renderPassage(p: any): string {
+    const anns = (p.annotations || []).map((a: any, ai: number) => `
+      <div class="annotation">
+        <button class="ann-toggle" data-passage="${p.id}" data-idx="${ai}">
+          <i class="ti ti-chevron-right ann-chevron" aria-hidden="true"></i>
+          <span class="ann-label">
+            <span class="ann-label-zh" lang="zh-hant">${esc(a.annotator.zht || a.annotator.zhs)}注引${a.source ? `《${esc(a.source.zht || a.source.zhs)}》` : ''}</span>
+            <span class="ann-label-en">${esc(STR.annotationBy)} by ${esc(a.annotator.en)}${a.source.en ? `<span class="ann-source"> (${esc(a.source.en)})</span>` : ''}</span>
+          </span>
+        </button>
+        <div class="ann-body" data-passage="${p.id}" data-idx="${ai}">
+          <p class="ann-zh" lang="zh-hant">${linkify(a.zht || a.zhs)}</p>
+          <p class="ann-en">${linkify(a.en)}</p>
+        </div>
+      </div>`).join('');
+    return `
+      <div class="passage" id="${p.id}">
+        <p class="ps-orig" lang="zh-hant">${linkify(p.orig.zht || p.orig.zhs)}</p>
+        <p class="ps-en">${linkify(p.en)}</p>
+        ${anns ? `<div class="annotations">${anns}</div>` : ''}
+      </div>`;
+  }
+
+  function renderCover(): string {
+    const translated = chapters.filter((c: any) => c.passages && c.passages.length > 0);
+    const coverChapters = translated.length > 0 ? translated : chapters;
+    const bookCards = coverChapters.map((ch: any) => `
+      <a href="${baseUrl}/${ch.id}" class="cover-book-card" data-sgz-link data-chapter="${ch.id}">
+        <div class="cbc-zh" lang="zh-hant">${esc(ch.label.zht || ch.label.zhs)}</div>
+        <div class="cbc-en">${esc(ch.label.en)}</div>
+        <div class="cbc-count">${esc(ch.bookLabel.en)}</div>
+      </a>`).join('');
+    return `
+      <div class="page-header">
+        <div class="breadcrumb">
+          <a href="${url('/translations')}" class="bc-link">${esc(STR.translations)}</a>
+          <span class="bc-sep">›</span>
+          <span class="bc-cur">Records of the Three Kingdoms</span>
+        </div>
+      </div>
+      <div class="cover">
+        <div class="cover-left">
+          <h1 class="cover-title-zh" lang="zh-hant">三國志</h1>
+          <p class="cover-title-en">Records of the Three Kingdoms</p>
+          <p class="cover-meta">Chen Shou · annotated by Pei Songzhi</p>
+          <p class="cover-desc">A chronicle of the Three Kingdoms period, covering the states of Wei, Shu, and Wu,
+                  with annotations by Pei Songzhi. 
+                  <br> <br>
+                  A Collaborative translation with ZL181.</p>
+        </div>
+        <div class="cover-right">
+          <div class="cover-contents-label">Contents</div>
+          <div class="cover-book-grid">${bookCards}</div>
+        </div>
+      </div>`;
+  }
+
+  function renderChapter(ch: any, idx: number): string {
+    const prev = idx > 0 ? chapters[idx - 1] : null;
+    const next = idx < chapters.length - 1 ? chapters[idx + 1] : null;
+    const passages = ch.passages.length
+      ? ch.passages.map(renderPassage).join('')
+      : `<p class="ps-pending">${esc(STR.pending)}</p>`;
+    return `
+      <div class="page-header">
+        <div class="breadcrumb">
+          <a href="${url('/translations')}" class="bc-link">${esc(STR.translations)}</a>
+          <span class="bc-sep">›</span>
+          <a href="${baseUrl}" class="bc-link" data-sgz-link data-chapter="">Records of the Three Kingdoms</a>
+          <span class="bc-sep">›</span>
+          <span class="bc-cur">${esc(ch.label.en)}</span>
+        </div>
+      </div>
+      <div class="chapter-header">
+        <div class="ch-title-group">
+          <h1 class="ch-title-zh" lang="zh-hant">${esc(ch.title.zht || ch.title.zhs)}</h1>
+          <p class="ch-title-en">${esc(ch.title.en)}</p>
+        </div>
+        <div class="view-toggle" role="group" aria-label="View mode">
+          <button class="view-toggle-btn active" data-view="both" type="button">Parallel</button>
+          <button class="view-toggle-btn" data-view="orig" type="button">Original</button>
+          <button class="view-toggle-btn" data-view="en" type="button">English Only</button>
+        </div>
+      </div>
+      <div class="term-legend">
+        <span class="term-legend-item"><i class="ti ti-map-pin term-legend-icon term-legend-icon-loc" aria-hidden="true"></i>Location: opens map on new page</span>
+        <span class="term-legend-item"><i class="ti ti-file-text term-legend-icon term-legend-icon-off" aria-hidden="true"></i>Official position: opens official table on new page</span>
+        <div class="term-legend-actions">
+          <label class="term-toggle">
+            <input type="checkbox" id="term-toggle-checkbox" checked />
+            <span class="term-toggle-track"><span class="term-toggle-thumb"></span></span>
+            <span class="term-toggle-label">Show links</span>
+          </label>
+          <a href="${url(`/maps/map-overall?journey=${ch.id}`)}" class="term-journey-link" target="_blank" rel="noopener">
+            <i class="ti ti-route" aria-hidden="true"></i> Show life journey
+          </a>
+        </div>
+      </div>
+      <div class="passages">${passages}</div>
+      <div class="ch-nav-row">
+        ${prev
+          ? `<a href="${baseUrl}/${prev.id}" class="ch-nav-btn" data-sgz-link data-chapter="${prev.id}"><i class="ti ti-arrow-left" aria-hidden="true"></i> <span>${esc(prev.label.en)}</span></a>`
+          : `<span class="ch-nav-btn disabled"><i class="ti ti-arrow-left" aria-hidden="true"></i> <span>${esc(STR.previous)}</span></span>`}
+        ${next
+          ? `<a href="${baseUrl}/${next.id}" class="ch-nav-btn" data-sgz-link data-chapter="${next.id}"><span>${esc(next.label.en)}</span> <i class="ti ti-arrow-right" aria-hidden="true"></i></a>`
+          : `<span class="ch-nav-btn disabled"><span>${esc(STR.next)}</span> <i class="ti ti-arrow-right" aria-hidden="true"></i></span>`}
+      </div>`;
+  }
+
+  function updateSidebarActive(chapterId: string | null): void {
+    document.querySelectorAll('[data-sgz-link]').forEach((el) => {
+      const isMatch = (el.getAttribute('data-chapter') || '') === (chapterId || '');
+      el.classList.toggle('on', isMatch && el.classList.contains('sb-ch'));
+    });
+  }
+
+  function updateMobileToolbar(chapterId: string | null, idx: number): void {
+    const titleEl = document.querySelector('#mob-toolbar-title .mob-ch-title');
+    let posEl = document.querySelector('#mob-toolbar-title .mob-ch-pos');
+    const toolbarTitle = document.getElementById('mob-toolbar-title');
+    if (!chapterId) {
+      if (titleEl) titleEl.textContent = 'Chapters';
+      if (posEl) posEl.remove();
+    } else {
+      const ch = chapters.find((c: any) => c.id === chapterId);
+      if (titleEl && ch) titleEl.textContent = 'Chapters';
+      if (!posEl && toolbarTitle) {
+        posEl = document.createElement('span');
+        posEl.className = 'mob-ch-pos';
+        toolbarTitle.appendChild(posEl);
+      }
+      if (posEl) posEl.textContent = `${idx + 1}/${chapters.length}`;
+    }
+  }
+
+  function renderRoute(chapterId: string | null, opts: { push: boolean } = { push: true }): void {
+    const idx = chapterId ? chapters.findIndex((c: any) => c.id === chapterId) : -1;
+    const html = chapterId ? renderChapter(chapters[idx], idx) : renderCover();
+    if (mainEl) mainEl.innerHTML = html;
+    updateSidebarActive(chapterId);
+    updateMobileToolbar(chapterId, idx);
+    if (opts.push) {
+      const path = chapterId ? `${baseUrl}/${chapterId}` : baseUrl;
+      history.pushState({ chapterId }, '', path);
+    }
+    attachAnnotationHandlers();
+    attachViewToggleHandlers();
+    attachTermLinkToggleHandler();
+    closeDrawer();
+    window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+  }
+
+  function attachAnnotationHandlers(): void {
+    document.querySelectorAll('.ann-toggle').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const passageId = btn.getAttribute('data-passage');
+        const idx = btn.getAttribute('data-idx');
+        const body = document.querySelector(`.ann-body[data-passage="${passageId}"][data-idx="${idx}"]`);
+        if (!body) return;
+        const isOpen = body.classList.toggle('open');
+        btn.classList.toggle('open', isOpen);
+        if (isOpen) setTimeout(() => body.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 120);
+      });
+    });
+  }
+
+  function attachViewToggleHandlers(): void {
+    const passagesEl = document.querySelector('.passages');
+    document.querySelectorAll('.view-toggle-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const view = btn.getAttribute('data-view');
+        document.querySelectorAll('.view-toggle-btn').forEach((b) => b.classList.toggle('active', b === btn));
+        if (passagesEl) {
+          passagesEl.classList.remove('view-orig', 'view-en');
+          if (view === 'orig') passagesEl.classList.add('view-orig');
+          if (view === 'en') passagesEl.classList.add('view-en');
+        }
+      });
+    });
+  }
+
+  function attachTermLinkToggleHandler(): void {
+    const checkbox = document.getElementById('term-toggle-checkbox') as HTMLInputElement | null;
+    const passagesEl = document.querySelector('.passages');
+    checkbox?.addEventListener('change', () => {
+      if (passagesEl) passagesEl.classList.toggle('links-hidden', !checkbox.checked);
+    });
+  }
+
+  // Intercept all internal Sanguozhi links for instant client-side swap
+  document.addEventListener('click', (e: MouseEvent) => {
+    const target = e.target as HTMLElement | null;
+    const link = target ? target.closest('[data-sgz-link]') : null;
+    if (!link) return;
+    e.preventDefault();
+    renderRoute(link.getAttribute('data-chapter') || null);
+  });
+
+  window.addEventListener('popstate', (e: PopStateEvent) => {
+    renderRoute(e.state ? e.state.chapterId : null, { push: false });
+  });
+
+  // ---- Mobile drawer ----
+  const overlay = document.getElementById('mob-overlay');
+  const drawer = document.getElementById('mob-drawer');
+  function toggleDrawer(): void {
+    drawer?.classList.toggle('open');
+    overlay?.classList.toggle('open');
+  }
+  function closeDrawer(): void {
+    drawer?.classList.remove('open');
+    overlay?.classList.remove('open');
+  }
+  document.getElementById('mob-menu-btn')?.addEventListener('click', toggleDrawer);
+  document.getElementById('mob-drawer-close')?.addEventListener('click', toggleDrawer);
+  overlay?.addEventListener('click', toggleDrawer);
+
+  attachAnnotationHandlers();
+  attachViewToggleHandlers();
+  attachTermLinkToggleHandler();
+  history.replaceState({ chapterId: initialChapterId }, '', location.pathname);
+</script>
+
+<style is:global>
+.site { max-width: 100%; background: var(--color-bg); display: flex; flex-direction: column; min-height: 100vh; }
+.reader-layout { display: grid; grid-template-columns: 260px 1fr; flex: 1; min-height: 0; }
+
+.sidebar { background: var(--color-bg-secondary); display: flex; flex-direction: column; border-right: 0.5px solid var(--color-border); }
+.sb-header { padding: 1.25rem 1.25rem 1rem; border-bottom: 0.5px solid var(--color-border); }
+.sb-header-link { text-decoration: none; display: block; }
+.sb-text-title { font-family: 'Cormorant Garamond', serif; font-size: 25px; color: var(--archive-gold-soft, #d0aa6b); margin-bottom: 2px; }
+.sb-text-sub { font-size: 16px; color: var(--color-text-secondary); }
+.sb-scroll { overflow-y: auto; flex: 1; }
+.sb-section { padding: 0.5rem 0 0.25rem; }
+.sb-section-label { padding: 0.4rem 1.25rem; font-size: 18px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-secondary); display: flex; align-items: center; gap: 6px; }
+.sb-section-label span { font-family: 'LXGW WenKai', serif; font-size: 18px; }
+.sb-chapter-list { display: flex; flex-direction: column; }
+.sb-ch { padding: 0.5rem 1.25rem 0.5rem 1.5rem; font-size: 13px; color: var(--color-text-secondary); text-decoration: none; display: flex; align-items: baseline; gap: 10px; line-height: 1.4; border-left: 2px solid transparent; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+.sb-ch:hover { background: rgba(208, 170, 107, 0.05); color: var(--color-text-primary); }
+.sb-ch.on { background: rgba(208, 170, 107, 0.08); color: var(--archive-gold-soft, #d0aa6b); border-left-color: var(--archive-gold-soft, #d0aa6b); padding-left: calc(1.5rem - 2px); }
+.sb-ch-num { font-size: 22px; color: var(--color-text-tertiary); flex-shrink: 0; min-width: 16px; }
+.sb-ch.on .sb-ch-num { color: var(--archive-gold-soft, #d0aa6b); }
+.sb-ch-zh { font-family: 'LXGW WenKai', serif; font-size: 17px; }
+.sb-ch-en { font-size: 15px; color: var(--color-text-tertiary); margin-top: 1px; }
+.sb-ch.on .sb-ch-en { color: var(--archive-gold-soft, #d0aa6b); opacity: 0.8; }
+
+
+
+#sidebar-desktop { position: sticky; top: 0; height: calc(100vh - 64px); }
+.mob-drawer, .mob-overlay, .mob-toolbar, .mob-menu-btn, .mob-drawer-close { display: none; }
+
+.main { min-width: 0; display: flex; flex-direction: column; }
+#sgz-main-content { display: flex; flex-direction: column; flex: 1; }
+
+.page-header { padding: 1.5rem 2rem 0; }
+.breadcrumb { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.bc-link { font-size: 15px; color: #d5ad6b; text-decoration: none; }
+.bc-link:hover { color: #f0d39a; }
+.bc-sep { font-size: 14px; color: rgba(232,221,202,0.35); }
+.bc-cur { font-size: 16px; color: rgba(232,221,202,0.66); }
+
+.cover { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 1100px; margin: 0 auto; padding: 3rem 2.5rem; align-items: center; width: 100%; }
+.cover-left { padding-right: 2.5rem; }
+.cover-title-zh { font-family: 'Noto Serif TC', serif; font-size: 44px; color: var(--archive-gold-soft, #d0aa6b); margin-bottom: 2px; }
+.cover-title-en { font-size: 25px; color: var(--archive-gold-soft, #d0aa6b); margin-bottom: 14px; }
+.cover-meta { font-size: 15px; color: var(--color-text-tertiary); margin-bottom: 18px; }
+.cover-desc { font-size: 18px; line-height: 1.75; color: var(--color-text-secondary); }
+
+.cover-right { padding-left: 2.5rem; border-left: 0.5px solid var(--color-border); display: flex; flex-direction: column; justify-content: center; }
+.cover-contents-label { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 12px; }
+.cover-book-grid { display: flex; flex-direction: column; gap: 10px; }
+.cover-book-card {
+  display: flex; align-items: baseline; gap: 10px;
+  padding: 0.85rem 1.1rem;
+  border: 0.5px solid var(--color-border); border-radius: var(--radius-lg, var(--radius-md));
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+.cover-book-card:hover { border-color: var(--archive-gold-soft, #d0aa6b); background: rgba(208, 170, 107, 0.05); }
+.cbc-zh { font-family: 'LXGW WenKai', serif; font-size: 18px; color: var(--color-text-primary); flex-shrink: 0; }
+.cbc-en { font-size: 15px; color: var(--color-text-secondary); flex: 1; }
+.cbc-count { font-size: 13px; color: var(--color-text-tertiary); flex-shrink: 0; }
+
+.chapter-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem 2rem 1.5rem; border-bottom: 0.5px solid var(--color-border); }
+.ch-title-group { min-width: 0; }
+.ch-title-zh { font-family: 'Noto Serif TC', serif; font-size: 35px; color: var(--color-text-primary); margin-bottom: 2px; }
+.ch-title-en { font-size: 22px; color: var(--color-text-secondary); }
+
+.view-toggle { display: inline-flex; flex-shrink: 0; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+.view-toggle-btn { padding: 0.4rem 0.9rem; font-size: 13px; color: var(--color-text-secondary); background: none; border: none; border-right: 0.5px solid var(--color-border); cursor: pointer; transition: background 0.15s, color 0.15s; }
+.view-toggle-btn:last-child { border-right: none; }
+.view-toggle-btn:hover { color: var(--color-text-primary); }
+.view-toggle-btn.active { background: rgba(208, 170, 107, 0.12); color: var(--archive-gold-soft, #d0aa6b); }
+
+.passages.view-orig .ps-en, .passages.view-orig .ann-en, .passages.view-orig .ann-label-en { display: none; }
+.passages.view-en .ps-orig, .passages.view-en .ann-zh, .passages.view-en .ann-label-zh { display: none; }
+
+.term-legend { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; padding: 0.75rem 2rem; border-bottom: 0.5px solid var(--color-border); font-size: 15px; color: var(--color-text-tertiary); }
+.term-legend-item { display: flex; align-items: center; gap: 5px; }
+.term-legend-icon { font-size: 18px; }
+.term-legend-icon-loc { color: #7fa8d9; }
+.term-legend-icon-off { color: #d98a8a; }
+
+.term-legend-actions { display: flex; align-items: center; gap: 16px; margin-left: auto; }
+
+.term-toggle { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; font-size: 14px; color: var(--color-text-tertiary); }
+.term-toggle input { position: absolute; opacity: 0; width: 0; height: 0; }
+.term-toggle-track { width: 32px; height: 18px; border-radius: 10px; background: var(--color-border); position: relative; flex-shrink: 0; transition: background 0.15s; }
+.term-toggle-thumb { position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--color-text-tertiary); transition: transform 0.15s, background 0.15s; }
+.term-toggle input:checked + .term-toggle-track { background: rgba(208, 170, 107, 0.3); }
+.term-toggle input:checked + .term-toggle-track .term-toggle-thumb { transform: translateX(14px); background: var(--archive-gold-soft, #d0aa6b); }
+
+.term-journey-link { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--color-text-secondary); text-decoration: none; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 0.3rem 0.7rem; transition: border-color 0.15s, color 0.15s; }
+.term-journey-link:hover { border-color: var(--archive-gold-soft, #d0aa6b); color: var(--archive-gold-soft, #d0aa6b); }
+
+.term-link { text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 1px; opacity: 0.9; color: inherit; }
+.term-link:hover { opacity: 1; }
+.term-link-icon { font-size: 0.75em; margin-left: 2px; }
+.term-link-loc .term-link-icon { color: #7fa8d9; }
+.term-link-off .term-link-icon { color: #d98a8a; }
+
+.passages.links-hidden .term-link { border-bottom: none; pointer-events: none; cursor: text; opacity: 1; }
+.passages.links-hidden .term-link-icon { display: none; }
+
+.passages { padding: 1.5rem 2rem; display: flex; flex-direction: column; gap: 1.75rem; }
+.ps-pending { font-size: 14px; color: var(--color-text-tertiary); font-style: italic; }
+.passage { display: flex; flex-direction: column; gap: 6px; }
+.ps-orig { font-family: 'LXGW WenKai', serif; font-size: 19px; line-height: 1.9; color: var(--color-text-secondary); }
+.ps-en { font-size: 17px; line-height: 1.75; color: var(--color-text-primary); font-weight: 400; }
+
+.annotations { margin-top: 4px; display: flex; flex-direction: column; gap: 4px; }
+.annotation { border-left: 2px solid var(--archive-jade, #7fa896); padding-left: 12px; }
+.ann-toggle { display: flex; align-items: flex-start; column-gap: 6px; row-gap: 0; line-height: 1.3; background: none; border: none; cursor: pointer; font-size: 17px; color: var(--archive-jade, #7fa896); padding: 4px 0; font-family: 'Inter', sans-serif; text-align: left; }
+.ann-label { display: flex; flex-direction: column; gap: 3px;}
+.ann-label-zh { font-family: 'LXGW WenKai', serif; }
+.ann-chevron { font-size: 13px; width: 16px; display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; margin-top: 2px; transition: transform 0.15s; }
+.ann-toggle.open .ann-chevron { transform: rotate(90deg); }
+.ann-body { display: none; padding: 6px 0 10px 2px; border-top: 0.5px dashed var(--color-border); margin-top: 2px; }
+.ann-body.open { display: block; }
+.ann-zh { font-family: 'LXGW WenKai', serif; font-size: 18.5px; color: var(--archive-jade, #7fa896); margin-bottom: 4px; line-height: 1.7; opacity: 0.8; }
+.ann-en { font-size: 16.5px; color: var(--archive-jade, #7fa896); line-height: 1.6; }
+
+.ch-nav-row { display: flex; justify-content: space-between; padding: 1rem 2rem 1.5rem; gap: 1rem; }
+.ch-nav-btn { display: flex; align-items: center; gap: 6px; font-size: 14.5px; color: var(--color-text-secondary); text-decoration: none; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 0.5rem 0.9rem; transition: background 0.15s; }
+.ch-nav-btn:hover { background: var(--color-bg-secondary); }
+.ch-nav-btn.disabled { opacity: 0.35; pointer-events: none; }
+
+.site-footer { border-top: 0.5px solid var(--color-border); padding: 0.875rem 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--color-bg-secondary); margin-top: auto; }
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote { font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; white-space: pre-line; }
+
+@media (max-width: 800px) {
+  .reader-layout { display: block; }
+  #sidebar-desktop { display: none; }
+  .mob-toolbar { display: flex; align-items: center; gap: 10px; padding: 0.75rem 1rem; border-bottom: 0.5px solid var(--color-border); background: var(--color-bg-secondary); position: sticky; top: 0; z-index: 20; }
+  .mob-menu-btn { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex-shrink: 0; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); background: none; color: var(--color-text-secondary); cursor: pointer; font-size: 16px; }
+  .mob-toolbar-title { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+  .mob-ch-title { font-family: 'LXGW WenKai', serif; font-size: 15px; color: var(--color-text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mob-ch-pos { font-size: 12px; color: var(--archive-gold-soft, #d0aa6b); flex-shrink: 0; }
+  .mob-overlay { display: block; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 29; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+  .mob-overlay.open { opacity: 1; pointer-events: all; }
+  .mob-drawer { display: flex; position: fixed; top: 64px; left: 0; bottom: 0; width: 260px; max-width: 80vw; transform: translateX(-100%); transition: transform 0.2s; z-index: 30; }
+  .mob-drawer.open { transform: translateX(0); }
+  .mob-drawer-close { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; flex-shrink: 0; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); background: none; color: var(--color-text-secondary); cursor: pointer; }
+  .page-header { padding: 1rem 1rem 0; }
+  .cover { grid-template-columns: 1fr; padding: 1.5rem 1rem 2rem; gap: 1.5rem; }
+  .cover-left { padding-right: 0; }
+  .cover-right { padding-left: 0; border-left: none; border-top: 0.5px solid var(--color-border); padding-top: 1.5rem; }
+  .cover-title-zh { font-size: 34px; }
+  .chapter-header { flex-direction: column; align-items: flex-start; padding: 0.875rem 1rem 1.25rem; }
+  .ch-title-zh { font-size: 24px; }
+  .term-legend { flex-direction: column; align-items: flex-start; padding: 0.75rem 1rem; gap: 10px; }
+  .term-legend-actions { margin-left: 0; }
+  .passages { padding: 1.25rem 1rem; gap: 1.5rem; }
+  .ps-orig { font-size: 18px; }
+  .ch-nav-row { padding: 0.875rem 1rem 1.25rem; }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+}
+</style>

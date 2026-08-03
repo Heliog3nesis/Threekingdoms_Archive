@@ -126,7 +126,7 @@ let map = null;
 let mapLoaded = false;
 let mapReady = false;
 let showProvinces = true;
-let showLabels = true;
+let showLabels = false;
 let showYellowRiverOldCourse = true;
 let currentStyle = 'outdoor';
 let provincesGeoJSONCache = null;
@@ -135,6 +135,8 @@ let yellowRiverOldCourseCache = null;
 let baseMapModernLayers = [];
 let allTowns = [];
 let pendingFlyTo = null;
+let pendingJourney = null; // { items } — deferred until map is ready, same pattern as pendingFlyTo
+let journeyMarkers = [];
 let togglesWired = false;
 let styleButtonsWired = false;
 let townInteractionsWired = false;
@@ -530,7 +532,14 @@ function formatAnnotation(annotation) {
   const raw = String(annotation ?? '').trim();
   if (!raw) return null;
 
-  if (/new town/i.test(raw)) {
+  // This is only a bare English category tag (no Chinese counterpart at
+  // all) when there's no Han-script text anywhere in the string — a
+  // plain substring match on "new town" alone would incorrectly hijack a
+  // genuine bilingual entry whose translation happens to contain those
+  // two English words, e.g. "合肥新城 Hefei New Town" (新城 literally
+  // translates to "New Town").
+  const hasHan = /\p{Script=Han}/u.test(raw);
+  if (!hasHan && /new town/i.test(raw)) {
     return {
       english: raw,
       chinese: ''
@@ -544,9 +553,26 @@ function formatAnnotation(annotation) {
     .replace(/\s+/g, ' ')
     .trim();
 
+  // The "Seat of X" / "X治所" wrapper is a specific convention that only
+  // applies when the source itself already marks this as a seat note
+  // (raw Chinese text contains 治所) — not a generic phrase to bolt onto
+  // every annotation. English then gets the matching "Seat of" phrasing;
+  // Chinese is used as-is since it already contains 治所, not appended
+  // again. Anything else is just the plain split text, no wrapper at all
+  // — and each side only renders if that language's text was actually
+  // present in the source, never falling back to the other language.
+  const isSeatNote = chinese.includes('治所');
+
+  if (isSeatNote) {
+    return {
+      english: english ? `Seat of ${english}` : '',
+      chinese: chinese || ''
+    };
+  }
+
   return {
-    english: `Seat of ${english || chinese}`,
-    chinese: chinese ? `${chinese}治所` : ''
+    english: english || '',
+    chinese: chinese || ''
   };
 }
 
@@ -648,7 +674,7 @@ function buildTownDetailHtml(town, { mobile = false } = {}) {
   const modern = formatModernPlace(town);
   const annotation = formatAnnotation(town.Annotation);
   const annotationText = annotation
-    ? (isChineseMap() ? (annotation.chinese || annotation.english) : annotation.english)
+    ? (isChineseMap() ? annotation.chinese : annotation.english)
     : '';
 
   return `
@@ -699,17 +725,22 @@ function showMobileTownDetail(town) {
   sheet.querySelector('.imap-town-close')?.addEventListener('click', hideMobileTownDetail);
 }
 
-function openTownDetail(town, fallbackLngLat) {
+function openTownDetail(town, fallbackLngLat, { keepJourney = false } = {}) {
   if (!town) return;
 
-  clearWaterBodyHighlight();
+  if (keepJourney) {
+    // Journey view already called clearWaterBodyHighlight() itself before
+    // placing the pins — here we only need to close any stray previous
+    // popup, without wiping the journey pin layer we just drew.
+    if (activePopup) {
+      activePopup.remove();
+      activePopup = null;
+    }
+  } else {
+    clearWaterBodyHighlight();
+  }
 
   const lngLat = getTownLngLat(town, fallbackLngLat);
-
-  if (activePopup) {
-    activePopup.remove();
-    activePopup = null;
-  }
 
   if (window.matchMedia('(max-width: 950px)').matches) {
     showMobileTownDetail(town);
@@ -729,14 +760,14 @@ function openTownDetail(town, fallbackLngLat) {
     .addTo(map);
 }
 
-function openTownDetailAfterFly(town, lngLat) {
+function openTownDetailAfterFly(town, lngLat, options = {}) {
   if (!town) return;
 
   let opened = false;
   const openOnce = () => {
     if (opened) return;
     opened = true;
-    openTownDetail(town, lngLat);
+    openTownDetail(town, lngLat, options);
   };
 
   map.once('moveend', openOnce);
@@ -763,17 +794,188 @@ function fitAllTowns() {
   if (!bounds) return;
 
   clearWaterBodyHighlight();
-  hideMobileTownDetail();
-  if (activePopup) {
-    activePopup.remove();
-    activePopup = null;
-  }
 
   map.fitBounds(bounds, {
     padding: FULL_EXTENT_PADDING,
     duration: 900,
     maxZoom: 5.2
   });
+}
+
+// ── JOURNEY VIEW ───────────────────────────────────────────────
+// Renders every place referenced by one chapter (e.g. a person's
+// biography) as an always-visible pin — independent of the normal
+// zoom-based settlement symbol visibility, so the reader sees the whole
+// geographic spread immediately, at any zoom level. The specific place
+// being linked to (the "entry" point) gets a highlight ring so it's
+// distinguishable from the rest of the unordered set, and its detail
+// popup opens automatically once the camera settles.
+//
+// Journey data is a simple array of point entries:
+//   [{ lat, lng, name }, ...]
+// fetched from /mapbase/journeys/<journeyId>.json (generated ahead of
+// time from each chapter's own [[place|url]] tags — a separate build
+// step, not part of this file). Only point-type entries (towns) are
+// plotted as pins currently; admin boundary / water body entries in a
+// journey are not yet supported here since they don't have a single
+// point coordinate to plot.
+
+function clearJourneyMarkers() {
+  journeyMarkers.forEach(m => m.remove());
+  journeyMarkers = [];
+}
+
+function clearJourneyBoundaries() {
+  if (!map) return;
+  if (map.getLayer(JOURNEY_BOUNDARY_LAYER)) map.removeLayer(JOURNEY_BOUNDARY_LAYER);
+  if (map.getSource(JOURNEY_BOUNDARY_SOURCE)) map.removeSource(JOURNEY_BOUNDARY_SOURCE);
+}
+
+// Bold, persistent border for every admin boundary / water body referenced
+// in the current journey — deliberately BLACK (not the gold used by the
+// single-select search highlight) so the two systems read as visually
+// distinct: gold means "this is the one thing you searched for", black
+// means "this is part of the journey overview".
+function renderJourneyBoundaryLayer(featureCollection) {
+  clearJourneyBoundaries();
+  if (!featureCollection.features.length) return;
+
+  map.addSource(JOURNEY_BOUNDARY_SOURCE, { type: 'geojson', data: featureCollection });
+
+  map.addLayer({
+    id: JOURNEY_BOUNDARY_LAYER,
+    type: 'line',
+    source: JOURNEY_BOUNDARY_SOURCE,
+    layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: {
+      'line-color': '#111111',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 6, 8, 9, 12, 13],
+      'line-opacity': 1
+    }
+  });
+}
+
+async function fetchJourney(journeyId) {
+  if (!journeyId) return null;
+  try {
+    const res = await fetch(url(`/mapbase/journeys/${journeyId}.json`));
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
+async function renderJourneyView(items) {
+  if (!map || !mapReady) return;
+
+  // Same "only one thing shown at a time" rule as everywhere else —
+  // clears any previous popup, highlight, journey pins, AND journey
+  // boundaries before drawing the new set.
+  clearWaterBodyHighlight();
+
+  if (!Array.isArray(items) || !items.length) return;
+
+  const bounds = new maplibregl.LngLatBounds();
+  let hasBounds = false;
+
+  // ── Town pins — a pure overview, every place is equal; click any of
+  // them to open its own detail popup. ──
+  items.forEach(item => {
+    if (item?.kind !== 'town') return;
+    const itemLat = Number(item?.lat);
+    const itemLng = Number(item?.lng);
+    if (!Number.isFinite(itemLat) || !Number.isFinite(itemLng)) return;
+
+    const el = document.createElement('div');
+    el.className = 'imap-journey-pin';
+    // Classic teardrop map-pin silhouette — an SVG rather than a CSS
+    // shape hack, so the point is pixel-precise for anchoring. Sized
+    // 26x34 so the visual tip sits exactly at (13, 34), matching the
+    // anchor:'bottom' below.
+    el.innerHTML = `
+      <svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 0C5.8 0 0 5.8 0 13c0 9.5 13 21 13 21s13-11.5 13-21C26 5.8 20.2 0 13 0z" fill="#d0aa6b" stroke="#1a1208" stroke-width="2"/>
+        <circle cx="13" cy="13" r="5" fill="#1a1208"/>
+      </svg>
+    `;
+
+    // Resolve the full town record so clicking any pin opens its own
+    // detail popup, without clearing the rest of the journey pins.
+    const pinTown = allTowns.find(t => {
+      if (Number(t?.Latitude) !== itemLat || Number(t?.Longitude) !== itemLng) return false;
+      if (!item?.name) return true;
+      return [t.Town_EN, t.Town_CH, t.Town_CHS].some(
+        value => String(value ?? '').toLowerCase() === String(item.name).toLowerCase()
+      );
+    }) ?? null;
+
+    if (pinTown) {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openTownDetail(pinTown, [itemLng, itemLat], { keepJourney: true });
+      });
+    }
+
+    const marker = new maplibregl.Marker({ element: el, anchor: 'bottom' })
+      .setLngLat([itemLng, itemLat])
+      .addTo(map);
+
+    journeyMarkers.push(marker);
+    bounds.extend([itemLng, itemLat]);
+    hasBounds = true;
+  });
+
+  // ── Admin boundaries / water bodies — bold border, no pin (they're
+  // areas/lines, not points) ──
+  const adminIds = items.filter(i => i?.kind === 'admin').map(i => Number(i.id));
+  const waterIds = items.filter(i => i?.kind === 'water').map(i => Number(i.id));
+
+  if (adminIds.length || waterIds.length) {
+    const [adminFeatures, waterFeatures] = await Promise.all([
+      adminIds.length ? fetchAdminBoundaries() : Promise.resolve([]),
+      waterIds.length ? fetchWaterBodies() : Promise.resolve([])
+    ]);
+
+    const matched = [
+      ...adminFeatures.filter(f => adminIds.includes(Number(f.properties?.id))),
+      ...waterFeatures.filter(f => waterIds.includes(Number(f.properties?.id)))
+    ];
+
+    const boundaryFeatures = matched.map(f => {
+      const convertedGeometry = convertGeometryToLngLat(f.geometry, WATER_BODIES_ARE_WEB_MERCATOR);
+      const geomBounds = computeGeometryBounds(convertedGeometry);
+      if (!geomBounds.isEmpty()) {
+        bounds.extend(geomBounds.getSouthWest());
+        bounds.extend(geomBounds.getNorthEast());
+        hasBounds = true;
+      }
+      return { type: 'Feature', properties: f.properties || {}, geometry: convertedGeometry };
+    });
+
+    renderJourneyBoundaryLayer({ type: 'FeatureCollection', features: boundaryFeatures });
+  }
+
+  if (hasBounds) {
+    map.fitBounds(bounds, {
+      padding: FULL_EXTENT_PADDING,
+      duration: 900,
+      maxZoom: 9
+    });
+  }
+}
+
+export async function showJourney(journeyId) {
+  if (!journeyId) return;
+  const items = await fetchJourney(journeyId);
+  if (!items || !items.length) return;
+
+  if (map && mapReady) {
+    renderJourneyView(items);
+  } else {
+    // store for the load handler — same deferred pattern as pendingFlyTo
+    pendingJourney = { items };
+  }
 }
 
 class FitAllTownsControl {
@@ -815,6 +1017,16 @@ const WATER_HIGHLIGHT_LAYERS = [
   'water-body-highlight-line'
 ];
 
+// Separate persistent layer for journey-view admin boundary / water body
+// borders — deliberately independent of WATER_HIGHLIGHT_SOURCE above,
+// since that one is built around "only one highlighted feature at a
+// time" (cleared whenever a new search/click happens), whereas a journey
+// can reference several admin boundaries/water bodies simultaneously and
+// they should all stay bold-bordered together for the whole time the
+// journey view is showing.
+const JOURNEY_BOUNDARY_SOURCE = 'journey-boundary-highlight';
+const JOURNEY_BOUNDARY_LAYER = 'journey-boundary-casing';
+
 let waterHighlightPopup = null;
 let currentWaterHighlightId = null;
 let pendingHighlight = null; // { kind: 'water' | 'admin', feature }
@@ -845,6 +1057,20 @@ export function clearWaterBodyHighlight() {
   }
 
   removeWaterBodyHighlightLayers();
+
+  // Also close any open town popup and clear any journey pin layer — every
+  // internal caller already paired this call with clearing activePopup
+  // separately, so folding both in here makes this the single "clear
+  // whatever's currently shown" entry point. This also fixes the
+  // search-clear button in map-overall.astro, which previously only
+  // cleared water/admin highlights and left an open town popup untouched.
+  if (activePopup) {
+    activePopup.remove();
+    activePopup = null;
+  }
+  hideMobileTownDetail();
+  clearJourneyMarkers();
+  clearJourneyBoundaries();
 }
 
 function extendBoundsWithCoords(bounds, coords) {
@@ -935,12 +1161,6 @@ function renderSearchHighlight(geometry, properties, popupHtml, highlightId, opt
   if (!map || !mapReady || !geometry) return;
 
   clearWaterBodyHighlight();
-
-  if (activePopup) {
-    activePopup.remove();
-    activePopup = null;
-  }
-  hideMobileTownDetail();
 
   const convertedGeometry = convertGeometryToLngLat(geometry, WATER_BODIES_ARE_WEB_MERCATOR);
 
@@ -1799,7 +2019,11 @@ export async function initInteractiveMap(options = {}) {
     removeKingdomLegend();
     syncToggleStatesFromDOM();
 
-    if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
+    if (pendingJourney) {
+      const { items } = pendingJourney;
+      pendingJourney = null;
+      renderJourneyView(items);
+    } else if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
       const { lat, lng, town } = pendingFlyTo;
       pendingFlyTo = null;
       flyToLocation(lat, lng, town);
@@ -1868,9 +2092,15 @@ export async function initInteractiveMap(options = {}) {
 
       if (loadingEl) loadingEl.style.display = 'none';
 
+      // scenario 4: redirected from a chapter — journey overview (all pins/borders equal)
       // scenario 2: redirected with coordinates — zoom to location
       // scenario 1: clean boot — fit all towns
-        if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
+        if (pendingJourney) {
+          // scenario 4: arrived via a chapter's "view life journey" link
+          const { items } = pendingJourney;
+          pendingJourney = null;
+          renderJourneyView(items);
+        } else if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
           // scenario 2: has coordinates — fly there
           const { lat, lng, town } = pendingFlyTo;
           pendingFlyTo = null;

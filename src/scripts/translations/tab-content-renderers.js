@@ -3,11 +3,11 @@
 // Shared across all three language pages — pass `langKey` ('en' | 'zht' | 'zhs').
 // Tab-switching infrastructure (showTab, panels) lives in officials.astro itself
 // and is untouched by this file; these functions only fill the panel innerHTML.
-// Salary/glossary source data lives in src/data/ (salary-data.ts, glossary-data.ts),
+// Salary/glossary source data lives in src/data/officials/ (salary-data.ts, glossary-data.ts),
 // not alongside this file, since that data is real site content, not a script helper.
 
-import { salaryIntro, salaryColumns, salaryFootnotes, salaryRows } from '../../data/salary-data.ts';
-import { glossaryTerms } from '../../data/glossary-data.ts';
+import { salaryIntro, salaryColumns, salaryFootnotes, salaryRows } from '../../data/officials/salary-data.ts';
+import { glossaryTerms } from '../../data/officials/glossary-data.ts';
 
 // ─── BACKGROUND ──────────────────────────────────────────────────────────────
 // Background uses static markup directly in officials.astro (prose + citation

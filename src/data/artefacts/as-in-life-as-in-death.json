@@ -12,9 +12,9 @@
     "readTime": "~10 min read",
     "readTime_zh_hant": "約 10 分鐘",
     "readTime_zh_hans": "约 10 分钟",
-    "artefacts": "14 artefacts",
-    "artefacts_zh_hant": "14 件文物",
-    "artefacts_zh_hans": "14 件文物",
+    "artefacts": "18 artefacts",
+    "artefacts_zh_hant": "18 件文物",
+    "artefacts_zh_hans": "18 件文物",
     "updated": "Updated July 2026",
     "updated_zh_hant": "2026 年 7 月",
     "updated_zh_hans": "2026 年 7 月"
@@ -43,7 +43,9 @@
           "afterParagraph": 1,
           "imageIds": [
             "brick-intro1",
-            "stone"
+            "stone",
+            "elder",
+            "farm-life"
           ]
         }
       ]
@@ -70,7 +72,9 @@
           "afterParagraph": 1,
           "imageIds": [
             "gathering1",
-            "brick-intro2"
+            "brick-intro2",
+            "tax-meeting",
+            "market"
           ]
         }
       ]
@@ -213,6 +217,38 @@
       "time": null,
       "time_zh_hant": null,
       "time_zh_hans": null
+    },
+    {
+      "id": "elder",
+      "image": "/featured/as-in-life/elder.jpg",
+      "description": "Pictorial Brick: Supporting the Aged",
+      "description_zh_hant": "畫像磚：養老",
+      "description_zh_hans": "画像砖：养老",
+      "found": "Found: Pengzhou, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省彭州市",
+      "found_zh_hans": "出土地点：四川省彭州市",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": "",
+      "time_zh_hant": "",
+      "time_zh_hans": ""
+    },
+    {
+      "id": "farm-life",
+      "image": "/featured/as-in-life/stone_2.jpg",
+      "description": "Pictorial Stone: Estate Life",
+      "description_zh_hant": "畫像石：莊園生產",
+      "description_zh_hans": "画像石：庄园生产",
+      "found": "Found: Zengjiabao Tomb, Chengdu, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省成都市曾家包漢墓",
+      "found_zh_hans": "出土地点：四川省成都市曾家包汉墓",
+      "displayed": "Displayed: Chengdu Museum",
+      "displayed_zh_hant": "現藏：成都博物館",
+      "displayed_zh_hans": "现藏：成都博物馆",
+      "time": "",
+      "time_zh_hant": "",
+      "time_zh_hans": ""
     },
     {
       "id": "agriculture1",
@@ -366,7 +402,39 @@
       "description_zh_hans": "凤阙",
       "found": "Found: Dayi, Sichuan Province",
       "found_zh_hant": "出土地點：四川省大邑縣",
-      "found_zh_hans": "出土地点：四川省大邑縣",
+      "found_zh_hans": "出土地点：四川省大邑县",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "tax-meeting",
+      "image": "/featured/as-in-life/tax_meeting.jpg",
+      "description": "Paying Tax",
+      "description_zh_hant": "納糧",
+      "description_zh_hans": "纳粮",
+      "found": "Found: Dayi, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省大邑縣",
+      "found_zh_hans": "出土地点：四川省大邑县",
+      "displayed": "Displayed: Sichuan Provincial Museum",
+      "displayed_zh_hant": "現藏：四川博物院",
+      "displayed_zh_hans": "现藏：四川博物院",
+      "time": null,
+      "time_zh_hant": null,
+      "time_zh_hans": null
+    },
+    {
+      "id": "market",
+      "image": "/featured/as-in-life/market.jpg",
+      "description": "Market",
+      "description_zh_hant": "市井",
+      "description_zh_hans": "市井",
+      "found": "Found: Chengdu, Sichuan Province",
+      "found_zh_hant": "出土地點：四川省德陽市",
+      "found_zh_hans": "出土地点：四川省德阳市",
       "displayed": "Displayed: Sichuan Provincial Museum",
       "displayed_zh_hant": "現藏：四川博物院",
       "displayed_zh_hans": "现藏：四川博物院",

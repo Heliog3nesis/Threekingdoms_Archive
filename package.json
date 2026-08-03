@@ -7,11 +7,16 @@
   },
   "scripts": {
     "dev": "astro dev",
-     "build": "NODE_ENV=production astro build",
+    "build": "cross-env NODE_ENV=production astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^7.0.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "cross-env": "^10.1.0",
+    "typescript": "^6.0.3"
   }
 }

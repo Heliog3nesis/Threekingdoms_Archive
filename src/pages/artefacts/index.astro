@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Nav from '../../components/Nav.astro';
 import ContactModal from '../../components/Contactmodal.astro';
-import artefacts from '../../data/artefacts-database.json';
+import artefacts from '../../data/artefacts/artefacts-database.json';
 import { t } from '../../i18n/index.js';
 import { url } from '../../utils/url';
 
@@ -303,7 +303,7 @@ const specialTopics = [
     modalTitleZh.textContent = item.title_zh_hant || '';
     modalTitleZh.hidden = !item.title_zh_hant;
     modalMetadata.innerHTML = [
-      metadataRow('Dynasty', item.dynasty),
+      metadataRow('Reign', item.dynasty),
       metadataRow('Time', item.time),
       metadataRow('Material', item.material),
       metadataRow('Dimensions', item.dimensions),

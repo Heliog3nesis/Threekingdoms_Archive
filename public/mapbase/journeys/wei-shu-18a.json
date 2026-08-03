@@ -1,0 +1,96 @@
+[
+  {
+    "kind": "town",
+    "lat": 35.40781933,
+    "lng": 116.14257473,
+    "name": "巨野"
+  },
+  {
+    "kind": "town",
+    "lat": 35.26547064,
+    "lng": 115.87380975,
+    "name": "乘氏"
+  },
+  {
+    "kind": "town",
+    "lat": 35.82685338,
+    "lng": 116.28297435,
+    "name": "壽張"
+  },
+  {
+    "kind": "admin",
+    "id": "8"
+  },
+  {
+    "kind": "admin",
+    "id": "11"
+  },
+  {
+    "kind": "admin",
+    "id": "6"
+  },
+  {
+    "kind": "town",
+    "lat": 34.01634921,
+    "lng": 113.85205527,
+    "name": "Yingyin"
+  },
+  {
+    "kind": "town",
+    "lat": 35.44867773,
+    "lng": 115.15376029,
+    "name": "Lihu"
+  },
+  {
+    "kind": "town",
+    "lat": 34.81631685,
+    "lng": 114.04675874,
+    "name": "Guandu"
+  },
+  {
+    "kind": "town",
+    "lat": 35.85124274,
+    "lng": 116.15260328,
+    "name": "Anmin"
+  },
+  {
+    "kind": "town",
+    "lat": 35.68541005,
+    "lng": 114.60606513,
+    "name": "Liyang"
+  },
+  {
+    "kind": "admin",
+    "id": "162"
+  },
+  {
+    "kind": "town",
+    "lat": 33.47646438,
+    "lng": 113.2914691,
+    "name": "Ye"
+  },
+  {
+    "kind": "town",
+    "lat": 36.29186303,
+    "lng": 114.39806539,
+    "name": "Ye"
+  },
+  {
+    "kind": "town",
+    "lat": 36.34516886,
+    "lng": 113.10383412,
+    "name": "Huguan"
+  },
+  {
+    "kind": "town",
+    "lat": 36.954665,
+    "lng": 120.9131519,
+    "name": "Changguang"
+  },
+  {
+    "kind": "town",
+    "lat": 31.94881135,
+    "lng": 117.12136064,
+    "name": "Hefei"
+  }
+]

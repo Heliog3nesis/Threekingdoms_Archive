@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Nav from './Nav.astro';
 import ContactModal from './Contactmodal.astro';
 import { t } from '../i18n/index.js';
-import topicData from '../data/as-in-life-as-in-death.json';
+import topicData from '../data/artefacts/as-in-life-as-in-death.json';
 import { url } from '../utils/url';
 
 type TopicImage = {
@@ -148,8 +148,6 @@ const getInjectedImages = (imageIds: string[] = []) =>
 
     <main class="topic-page">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href={url(`${basePath}/`)}>{labels.home}</a>
-        <span>&rsaquo;</span>
         <a href={url(`${basePath}/artefacts/`)}>{labels.artefacts}</a>
         <span>&rsaquo;</span>
         <span>{meta.title}</span>

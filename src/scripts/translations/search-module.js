@@ -49,15 +49,26 @@ function getQueryWarning(query, langKey = 'en') {
   return null;
 }
 
-// priority: 1 = name match (en/zht/zhs), 2 = body match (desc/category), 0 = no match
-function getMatchPriority(pos, query) {
-  const q = query.toLowerCase();
-  const nameEn  = (pos.nameEn  || '').toLowerCase();
-  const nameZht = pos.nameZht || '';
-  const nameZhs = pos.nameZhs || '';
-  if (nameEn.includes(q) || nameZht.includes(query) || nameZhs.includes(query)) return 1;
+function pairMatches(pair, query, q) {
+  const enMatch = (pair.en || '').toLowerCase().includes(q);
+  const zhtMatch = (pair.zht || '').includes(query);
+  const zhsMatch = (pair.zhs || '').includes(query);
+  return enMatch || zhtMatch || zhsMatch;
+}
 
-const descObj = pos.desc || {};
+// Returns every name pair on this position whose en/zht/zhs text contains
+// the query — a position can have several distinct historical/kingdom
+// names, and each one that matches should surface as its own result
+// (with its correct en+zh shown together), not get collapsed into one row
+// showing only the default display name.
+function getMatchingPairs(pos, query) {
+  const q = query.toLowerCase();
+  const pairs = pos.namePairs?.length ? pos.namePairs : [{ en: pos.nameEn, zht: pos.nameZht, zhs: pos.nameZhs }];
+  return pairs.filter(p => pairMatches(p, query, q));
+}
+
+function matchesBody(pos, query, q) {
+  const descObj = pos.desc || {};
   const descMatch = [descObj.en, descObj.zht, descObj.zhs]
     .filter(Boolean)
     .some(d => d.toLowerCase().includes(q) || d.includes(query));
@@ -69,20 +80,36 @@ const descObj = pos.desc || {};
   const rankMatch = [rankObj.en, rankObj.zht, rankObj.zhs]
     .filter(Boolean)
     .some(r => r.toLowerCase().includes(q) || r.includes(query));
-  if (descMatch || catMatch || rankMatch) return 2;
-
-  return 0;
+  return descMatch || catMatch || rankMatch;
 }
 
+// Returns one entry per MATCHED NAME PAIR (not one per position) — a
+// position matching via two different historical names produces two
+// separate results, each carrying that specific pair's en+zh text so
+// they always display correctly together. Positions matching only via
+// description/category/rank (no name match) still produce a single
+// result using the default display name, since there's no specific
+// name variant to attribute the match to.
 export function searchPositions(allPositions, query) {
   const trimmed = query.trim();
   if (!trimmed) return [];
+  const q = trimmed.toLowerCase();
 
-  return allPositions
-    .map(pos => ({ pos, priority: getMatchPriority(pos, trimmed) }))
-    .filter(r => r.priority > 0)
+  const results = [];
+  for (const pos of allPositions) {
+    const matchingPairs = getMatchingPairs(pos, trimmed);
+    if (matchingPairs.length > 0) {
+      for (const pair of matchingPairs) {
+        results.push({ priority: 1, pos, pair });
+      }
+    } else if (matchesBody(pos, trimmed, q)) {
+      results.push({ priority: 2, pos, pair: null });
+    }
+  }
+
+  return results
     .sort((a, b) => a.priority - b.priority)
-    .map(r => r.pos);
+    .map(r => (r.pair ? { ...r.pos, _matchedPair: r.pair } : r.pos));
 }
 
 function getLangKey(lang) {
@@ -96,13 +123,20 @@ function catLabelFor(pos, langKey) {
   return cat[langKey] ?? cat.en ?? '';
 }
 
+// If this result carries a specific matched name pair, always read BOTH
+// the primary and secondary text from that SAME pair — guarantees the
+// en/zh shown together are the correct corresponding pair, never a
+// mismatched combination of one variant's language and another's default.
 function nameFor(pos, langKey) {
+  if (pos._matchedPair) return pos._matchedPair[langKey] || pos._matchedPair.en || '';
   if (langKey === 'zht') return pos.nameZht || pos.nameEn || '';
   if (langKey === 'zhs') return pos.nameZhs || pos.nameEn || '';
   return pos.nameEn || '';
 }
 
 function altNameFor(pos, langKey) {
+  const altLangKey = langKey === 'en' ? 'zht' : 'en';
+  if (pos._matchedPair) return pos._matchedPair[altLangKey] || '';
   if (langKey === 'en') return pos.nameZht || '';
   return pos.nameEn || '';
 }

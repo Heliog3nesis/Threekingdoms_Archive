@@ -97,17 +97,36 @@ const support = s.contact.support;
   const form = document.getElementById('contact-form') as HTMLFormElement | null;
   const success = document.getElementById('form-success');
 
+  let savedScrollY = 0;
+
   function openModal() {
     if (overlay) {
-      overlay.classList.add('active');
+      // Plain `overflow: hidden` on <body> doesn't reliably stop
+      // background scrolling on iOS Safari — the page can still
+      // elastic-bounce/rubber-band underneath a fixed overlay, which is
+      // what looks like "scrolling up reveals the top, then it snaps
+      // back down". Locking body position (not just overflow) is the
+      // standard fix, with scroll position preserved and restored on
+      // close so the page doesn't jump when the modal closes.
+      savedScrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${savedScrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
       document.body.style.overflow = 'hidden';
+      overlay.classList.add('active');
     }
   }
 
   function closeModal() {
     if (overlay) {
       overlay.classList.remove('active');
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
       document.body.style.overflow = '';
+      window.scrollTo(0, savedScrollY);
     }
   }
 
@@ -418,6 +437,7 @@ lang(zh-hans) .form-group label { font-size:15.5px }
   .modal {
     max-width: 100%;
     max-height: 100vh;
+    max-height: 100dvh;
     border-radius: 0;
     margin: 0;
     align-self: flex-end;

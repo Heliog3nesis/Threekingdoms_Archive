@@ -367,7 +367,7 @@
           "displayName": {
             "zht": "左、右長史",
             "zhs": "左、右长史",
-            "en": "Chief clerk on the Left/Right"
+            "en": "Chief Clerk on the Left/Right"
           },
           "hasMultipleNames": true,
           "gradeNum": 6,
@@ -377,21 +377,21 @@
               {
                 "zht": "左、右長史",
                 "zhs": "左、右长史",
-                "en": "Chief clerk on the Left/Right"
+                "en": "Chief Clerk on the Left/Right"
               }
             ],
             "shu": [
               {
                 "zht": "左、右長史",
                 "zhs": "左、右长史",
-                "en": "Chief clerk on the Left/Right"
+                "en": "Chief Clerk on the Left/Right"
               }
             ],
             "wu": [
               {
                 "zht": "左右長史",
                 "zhs": "左右长史",
-                "en": "Chief clerk on the Left/Right"
+                "en": "Chief Clerk on the Left/Right"
               }
             ]
           },
@@ -2302,7 +2302,7 @@
           "displayName": {
             "zht": "左、右長史",
             "zhs": "左、右长史",
-            "en": "Chief clerk on the Left/Right"
+            "en": "Chief Clerk on the Left/Right"
           },
           "hasMultipleNames": false,
           "gradeNum": 6,
@@ -2312,7 +2312,7 @@
               {
                 "zht": "左、右長史",
                 "zhs": "左、右长史",
-                "en": "Chief clerk on the Left/Right"
+                "en": "Chief Clerk on the Left/Right"
               }
             ],
             "shu": null,
@@ -2604,7 +2604,7 @@
           "displayName": {
             "zht": "長史",
             "zhs": "长史",
-            "en": "Chief clerk"
+            "en": "Chief Clerk"
           },
           "hasMultipleNames": false,
           "gradeNum": 6,
@@ -2614,7 +2614,7 @@
               {
                 "zht": "長史",
                 "zhs": "长史",
-                "en": "Chief clerk"
+                "en": "Chief Clerk"
               }
             ],
             "shu": null,
@@ -2872,7 +2872,7 @@
           "displayName": {
             "zht": "長史",
             "zhs": "长史",
-            "en": "Chief clerk"
+            "en": "Chief Clerk"
           },
           "hasMultipleNames": false,
           "gradeNum": 6,
@@ -2882,14 +2882,14 @@
               {
                 "zht": "長史",
                 "zhs": "长史",
-                "en": "Chief clerk"
+                "en": "Chief Clerk"
               }
             ],
             "shu": [
               {
                 "zht": "長史",
                 "zhs": "长史",
-                "en": "Chief clerk"
+                "en": "Chief Clerk"
               }
             ],
             "wu": [
@@ -3880,7 +3880,7 @@
           "displayName": {
             "zht": "左、右長史",
             "zhs": "左、右长史",
-            "en": "Chief clerk on the Left/Right"
+            "en": "Chief Clerk on the Left/Right"
           },
           "hasMultipleNames": true,
           "gradeNum": 6,
@@ -3890,7 +3890,7 @@
               {
                 "zht": "左、右長史",
                 "zhs": "左、右长史",
-                "en": "Chief clerk on the Left/Right"
+                "en": "Chief Clerk on the Left/Right"
               }
             ],
             "shu": [
@@ -4521,7 +4521,7 @@
           "displayName": {
             "zht": "左、右長史",
             "zhs": "左、右长史",
-            "en": "Chief clerk on the Left/Right"
+            "en": "Chief Clerk on the Left/Right"
           },
           "hasMultipleNames": false,
           "gradeNum": 6,
@@ -4531,7 +4531,7 @@
               {
                 "zht": "左、右長史",
                 "zhs": "左、右长史",
-                "en": "Chief clerk on the Left/Right"
+                "en": "Chief Clerk on the Left/Right"
               }
             ],
             "shu": [
@@ -5113,7 +5113,7 @@
           "displayName": {
             "zht": "長史",
             "zhs": "长史",
-            "en": "Chief clerk"
+            "en": "Chief Clerk"
           },
           "hasMultipleNames": false,
           "gradeNum": 6,
@@ -5123,7 +5123,7 @@
               {
                 "zht": "長史",
                 "zhs": "长史",
-                "en": "Chief clerk"
+                "en": "Chief Clerk"
               }
             ],
             "shu": [
@@ -5672,7 +5672,7 @@
           "displayName": {
             "zht": "長史",
             "zhs": "长史",
-            "en": "Chief clerk"
+            "en": "Chief Clerk"
           },
           "hasMultipleNames": false,
           "gradeNum": 6,
@@ -5682,7 +5682,7 @@
               {
                 "zht": "長史",
                 "zhs": "长史",
-                "en": "Chief clerk"
+                "en": "Chief Clerk"
               }
             ],
             "shu": null,
@@ -12831,7 +12831,7 @@
           "displayName": {
             "zht": "行夜督郎",
             "zhs": "行夜督郎",
-            "en": "Night Patrol Inspecting Gentleman"
+            "en": "Supervising Gentleman for Night Watch"
           },
           "hasMultipleNames": false,
           "gradeNum": 9,
@@ -12841,7 +12841,7 @@
               {
                 "zht": "行夜督郎",
                 "zhs": "行夜督郎",
-                "en": "Night Patrol Inspecting Gentleman"
+                "en": "Supervising Gentleman for Night Watch"
               }
             ],
             "shu": [

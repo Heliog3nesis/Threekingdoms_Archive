@@ -1,0 +1,1506 @@
+{
+  "markers": [
+  {
+    "id": "1",
+    "num": 1,
+    "x": 5.17,
+    "y": 8.03,
+    "w": 2.72,
+    "h": 7.73,
+    "label": {
+      "zht": "廬龍山",
+      "zhs": "卢龙山",
+      "en": "Lulong mountain"
+    },
+    "note": {
+      "zht": "晉元帝初度江，見此山綿延，因以擬北地盧龍，故名。也稱獅子山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "晋元帝初度江，见此山绵延，因以拟北地卢龙，故名。也称狮子山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "When Emperor Yuan of Jin first crossed the Yangtze, he found this mountain's form reminiscent of the Lulong mountains in the north and named it accordingly. It is also known as Shizi Mountain / Lion Mountain.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "2",
+    "num": 2,
+    "x": 13.77,
+    "y": 9.23,
+    "w": 2.63,
+    "h": 7.86,
+    "label": {
+      "zht": "江乘縣",
+      "zhs": "江乘县",
+      "en": "Jiangcheng County"
+    },
+    "note": {
+      "zht": "漢亦曰江乘縣，屬丹陽郡。孫氏省縣，為典農都尉治。晉太康初復置。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "汉亦曰江乘县，属丹阳郡。孙氏省县，为典农都尉治。晋太康初复置。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Under the Han, it was also called Jiangcheng County and belonged to Danyang Commandery. The Sun (Wu) regime abolished the county, and established it as the seat of a Commandant Directing Agriculture. The county was restored in the early Taikang era of the Jin.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "3",
+    "num": 3,
+    "x": 18.13,
+    "y": 5.11,
+    "w": 6.06,
+    "h": 3.87,
+    "label": {
+      "zht": "幕府山",
+      "zhs": "幕府山",
+      "en": "Mufu Mountain"
+    },
+    "note": {
+      "zht": "幕府即高級官員麾下協助處理軍政要務的機構。此山北滨大江，晋元帝过江，王导开幕府于此，因名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "幕府即高级官员麾下协助处理军政要务的机构。此山北滨大江，晋元帝过江，王导开幕府于此，因名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Mufu refers to the staff or office of a high-ranking official, responsible for assisting with various key affairs. This mountain borders the Yangtze to the north. After Emperor Yuan of Jin crossed the river, Wang Dao established his mufu here, hence the name.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "4",
+    "num": 4,
+    "x": 19.8,
+    "y": 17.34,
+    "w": 3,
+    "h": 9.32,
+    "label": {
+      "zht": "懷德縣",
+      "zhs": "怀德县",
+      "en": "Huaide County"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "5",
+    "num": 5,
+    "x": 5.9,
+    "y": 31.98,
+    "w": 5.22,
+    "h": 6.93,
+    "label": {
+      "zht": "石頭",
+      "zhs": "石头",
+      "en": "Shitoucheng / Stone City"
+    },
+    "note": {
+      "zht": "石頭山北緣大江，南抵秦淮口，去臺城九里 (3-5公里)。漢建安時，孫權徙治秣陵，城石頭。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "石头山北缘大江，南抵秦淮口，去台城九里 (3-5公里)。汉建安时，孙权徙治秣陵，城石头。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Shitou Mountain borders the Yangtze to the north and the mouth of the Qinhuai River to the south. It lies about nine li (3-5km) from the Palace City. During the Han's Jian'an era, Sun Quan moved his seat of government to Moling (Jiankang) and built the Shitoucheng here. <sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "6",
+    "num": 6,
+    "x": 17.48,
+    "y": 31.31,
+    "w": 4.67,
+    "h": 6.4,
+    "label": {
+      "zht": "治城",
+      "zhs": "治城",
+      "en": "Ye City"
+    },
+    "note": {
+      "zht": "本吳冶鑄處。六朝時，有東西二冶，以有罪者配焉。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "本吳冶鑄處。六朝時，有東西二冶，以有罪者配焉。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Originally a foundry of (Sun) Wu. During the Six Dynasties, there were Eastern and Western Ye cities, where convicted criminals were sent for labour.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "7",
+    "num": 7,
+    "x": 9.51,
+    "y": 45.93,
+    "w": 3.56,
+    "h": 8.53,
+    "label": {
+      "zht": "西園",
+      "zhs": "西园",
+      "en": "West Garden"
+    },
+    "note": {
+      "zht": "王導移冶於石頭東髑髏山（見上冶城條），以故地多園亭，謂之西園。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "王导移冶于石头东髑髅山（见上冶城条），以故地多园亭，谓之西园。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Wang Dao relocated the foundry to Kulou Mountain, east of Shitoucheng (See entry for Ye City). The former site was subsequently developed into numerous gardens and pavilions, becoming known as the West Garden.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "8",
+    "num": 8,
+    "x": 14.52,
+    "y": 44.21,
+    "w": 4.85,
+    "h": 9.06,
+    "label": {
+      "zht": "西州城",
+      "zhs": "西州城",
+      "en": "Xizhou City"
+    },
+    "note": {
+      "zht": "晉揚州刺史治所，在臺城西，故名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "晋扬州刺史治所，在台城西，故名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "The seat of the Inspector of Yangzhou (Yang Province) during the Jin Dynasty, located west of the Palace City, hence the name. <sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "9",
+    "num": 9,
+    "x": 13.22,
+    "y": 54.58,
+    "w": 6.7,
+    "h": 4.8,
+    "label": {
+      "zht": "烏榜村",
+      "zhs": "乌榜村",
+      "en": "Wubang Village"
+    },
+    "note": {
+      "zht": "初立西州城，未有籬門，樹烏榜而已，村因以名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "初立西州城，未有篱门，树乌榜而已，村因以名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "When Xizhou city was first established, it had neither walls nor gates, only black signboards (Wubang). The village later took its name from these boards.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "10",
+    "num": 10,
+    "x": 1.48,
+    "y": 56.58,
+    "w": 4.48,
+    "h": 8.93,
+    "label": {
+      "zht": "大江",
+      "zhs": "大江",
+      "en": "Yangtze River"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "11",
+    "num": 11,
+    "x": 6.47,
+    "y": 65.75,
+    "w": 5.41,
+    "h": 11.98,
+    "label": {
+      "zht": "白鷺洲",
+      "zhs": "白鹭洲",
+      "en": "Egret Shoal"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "12",
+    "num": 12,
+    "x": 20.07,
+    "y": 56.45,
+    "w": 3.19,
+    "h": 8.53,
+    "label": {
+      "zht": "運瀆",
+      "zhs": "运渎",
+      "en": "Yundu Canal / Transport Canal"
+    },
+    "note": {
+      "zht": "古都城去秦淮既遠，其漕運必資舟楫。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>赤烏三年十二月，郗儉監鑿城西南，自秦淮北抵倉城，名運瀆。<sup class=\"note-ref\"><a href=\"#ref-2\">2</a></sup>",
+      "zhs": "古都城去秦淮既远，其漕运必资舟楫。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>赤乌三年十二月，郗俭监凿城西南，自秦淮北抵仓城，名运渎。<sup class=\"note-ref\"><a href=\"#ref-2\">2</a></sup>",
+      "en": "As the capital was some distance from the Qinhuai River, the transport of grain and supplies depended on waterways.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup> In the twelfth month of the third year of Chiwu (240), Xi Jian supervised the excavation of a canal running from the Qinhuai River north to Cangcheng, which was named the Yundu Canal.<sup class=\"note-ref\"><a href=\"#ref-2\">2</a></sup>"
+    }
+  },
+  {
+    "id": "13",
+    "num": 13,
+    "x": 23.31,
+    "y": 62.96,
+    "w": 3,
+    "h": 9.19,
+    "label": {
+      "zht": "竹格港 / 竹格渚",
+      "zhs": "竹格港 / 竹格渚",
+      "en": "Zhuge Port"
+    },
+    "note": {
+      "zht": "晉大寧二年 (324)，王敦將沈充、錢鳳由此渡淮，犯建康。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "晋大宁二年 (324)，王敦将沈充、钱凤由此渡淮，犯建康。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "In the second year of the Daning era (324), Wang Dun's generals Shen Chong and Qian Feng crossed the Qinhuai River here and advanced on Jiankang.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "14",
+    "num": 14,
+    "x": 16.65,
+    "y": 76.92,
+    "w": 3.37,
+    "h": 7.99,
+    "label": {
+      "zht": "新亭",
+      "zhs": "新亭",
+      "en": "Xinting / Xin Pavilion"
+    },
+    "note": {
+      "zht": "近江渚。東晉初，為諸名士游宴之所。凡進軍入朝，皆以此亭為重。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "近江渚。东晋初，为诸名士游宴之所。凡进军入朝，皆以此亭为重。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Situated beside the Yangtze, it was a popular gathering place for the aristocrats and literati during the early Eastern Jin. Armies advancing toward the capital would frequently regard this pavilion as a key strategic point.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "15",
+    "num": 15,
+    "x": 14.52,
+    "y": 79.45,
+    "w": 2.26,
+    "h": 7.99,
+    "label": {
+      "zht": "石子岡",
+      "zhs": "石子冈",
+      "en": "Shizigang / Pebble Mound"
+    },
+    "note": {
+      "zht": "其地有梓桐山，山北為石子岡，葬者依焉。孫峻殺諸葛恪，投尸於此。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "其地有梓桐山，山北为石子冈，葬者依焉。孙峻杀诸葛恪，投尸于此。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "The area was known as Zitong Mountain, with the Shizigang lying to its north. This was where many chose to bury their dead, and where Sun Jun cast Zhuge Ke's body after killing him.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "16",
+    "num": 16,
+    "x": 12.48,
+    "y": 85.03,
+    "w": 2.07,
+    "h": 7.86,
+    "label": {
+      "zht": "勞勞亭",
+      "zhs": "劳劳亭",
+      "en": "Laolaoting / Laolao Pavilion"
+    },
+    "note": {
+      "zht": "勞山在新亭南，亦謂之南岡。吳置臨滄觀于勞山上，為送別之所，後謂之勞勞亭。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "劳山在新亭南，亦谓之南冈。吴置临沧观于劳山上，为送别之所，后谓之劳劳亭。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Lao Mountains lay south of Xinting and was also known as Nangang (South Mound). (Sun) Wu built the Lincang Pavilion on the mountain as a place to bid farewell to departing travellers. Later, it became known as Laolao Pavilion.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "17",
+    "num": 17,
+    "x": 8.96,
+    "y": 86.63,
+    "w": 3.46,
+    "h": 5.6,
+    "label": {
+      "zht": "殷山",
+      "zhs": "殷山",
+      "en": "Yin Mountain"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "18",
+    "num": 18,
+    "x": 1.48,
+    "y": 87.29,
+    "w": 4.02,
+    "h": 6.4,
+    "label": {
+      "zht": "三山",
+      "zhs": "三山",
+      "en": "Three Mountains"
+    },
+    "note": {
+      "zht": "三山在府城西南五十七里（~25-30公里）。三峰排列，下臨大江。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "三山在府城西南五十七里（~25-30公里）。三峰排列，下临大江。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "The Three Mountains are located fifty-seven li (~25-30km) southwest of the capital. Its three peaks stand in a row, overlooking the Yangtze River.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "19",
+    "num": 19,
+    "x": 2.76,
+    "y": 95.06,
+    "w": 7.26,
+    "h": 4.01,
+    "label": {
+      "zht": "江寧縣",
+      "zhs": "江宁县",
+      "en": "Jiangning County"
+    },
+    "note": {
+      "zht": "本秦秣陵縣地。晉太康二年 (281)，分置臨江縣。三年，更名江寧。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "本秦秣陵县地。晋太康二年 (281)，分置临江县。三年，更名江宁。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Originally part of Moling County under the Qin dynasty, it was separated to form Linjiang County in the second year of Taikang (281). The following year, it was renamed Jiangning.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "20",
+    "num": 20,
+    "x": 20.08,
+    "y": 93.14,
+    "w": 8,
+    "h": 6,
+    "label": {
+      "zht": "丹陽縣",
+      "zhs": "丹阳县",
+      "en": "Danyang County"
+    },
+    "note": {
+      "zht": "本秦縣，漢仍為丹陽縣，晉因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "本秦县，汉仍为丹阳县，晋因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Originally a Qin county, it remained Danyang County under the Han dynasty, and continued as such under the Jin.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "21",
+    "num": 21,
+    "x": 25.72,
+    "y": 82.37,
+    "w": 4.3,
+    "h": 9.32,
+    "label": {
+      "zht": "秣陵縣",
+      "zhs": "秣陵县",
+      "en": "Moling County"
+    },
+    "note": {
+      "zht": "建安十七年 (212)，權自京口徙秣陵，改為建業。晉平吳，仍曰秣陵。太康三年 (282)，分秣陵水北為建業。建興初 (~313)，又改曰建康。後因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "建安十七年 (212)，权自京口徙秣陵，改为建业。晋平吴，仍曰秣陵。太康三年 (282)，分秣陵水北为建业。建兴初 (~313)，又改曰建康。后因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "In the seventeenth year of Jian'an (212), Sun Quan moved his seat from Jingkou to Moling and renamed it Jianye. After the Jin conquered Wu, the name Moling was restored. In the third year of Taikang (282), the northern part of Moling across the Qinhuai River was separated to form Jianye County. At the beginning of Jianxing era (~313), Jianye was renamed Jiankang, and this name was retained in Eastern Jin.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "22",
+    "num": 22,
+    "x": 29.98,
+    "y": 76.52,
+    "w": 3.83,
+    "h": 9.59,
+    "label": {
+      "zht": "建初寺",
+      "zhs": "建初寺",
+      "en": "Jianchu Temple"
+    },
+    "note": {
+      "zht": "孫權所建。<sup class=\"note-ref\"><a href=\"#ref-3\">3</a></sup>即後世大報恩寺，今南京有遺址。",
+      "zhs": "孙权所建。<sup class=\"note-ref\"><a href=\"#ref-3\">3</a></sup>即后世大报恩寺，今南京有遗址。",
+      "en": "Built by Sun Quan.<sup class=\"note-ref\"><a href=\"#ref-3\">3</a></sup> Also known as Dabaoen Temple, ruins still exist in present-day Nanjing."
+    }
+  },
+  {
+    "id": "23",
+    "num": 23,
+    "x": 30.63,
+    "y": 87.48,
+    "w": 3,
+    "h": 8.13,
+    "label": {
+      "zht": "聚寶山",
+      "zhs": "聚宝山",
+      "en": "Jubao Mountain"
+    },
+    "note": {
+      "zht": "聚寶山在府南，最高處曰雨花臺，以梁時僧雲光講經雨花而名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>今南京有雨花臺區。",
+      "zhs": "聚宝山在府南，最高处曰雨花台，以梁时僧云光讲经雨花而名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>今南京有雨花台区。",
+      "en": "Jubao Mountain is located south of the capital. Its highest point is Yuhuatai (Yuhua Terrace), named after the Liang dynasty monk Yunguang, who is said to have preached there until flowers rained from the sky.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup> Present-day Nanjing has a district named after the Yuhua Terrace."
+    }
+  },
+  {
+    "id": "24",
+    "num": 24,
+    "x": 35.81,
+    "y": 68.54,
+    "w": 3.46,
+    "h": 8.26,
+    "label": {
+      "zht": "御街",
+      "zhs": "御街",
+      "en": "Imperial Avenue"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "25",
+    "num": 25,
+    "x": 35.17,
+    "y": 78.12,
+    "w": 4.94,
+    "h": 6.66,
+    "label": {
+      "zht": "朱雀門",
+      "zhs": "朱雀门",
+      "en": "Zhuque Gate"
+    },
+    "note": {
+      "zht": "孫吳時曰大航門，晉咸康二年 (336)，始曰朱雀門。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "孙吴时曰大航门，晋咸康二年 (336)，始曰朱雀门。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "During the (Sun) Wu, it was known as the Dahang Gate. In the second year of Xiankang of Jin (336), it was renamed the Zhuque Gate.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "26",
+    "num": 26,
+    "x": 34.71,
+    "y": 84.77,
+    "w": 5.78,
+    "h": 4.4,
+    "label": {
+      "zht": "朱雀航",
+      "zhs": "朱雀航",
+      "en": "Zhuque Bridge"
+    },
+    "note": {
+      "zht": "孫吳之南津橋，晉之朱雀航也。橋跨秦淮水南北岸，以渡行人。 <sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "孙吴时期的南津桥，晋代称为朱雀航。桥横跨秦淮水的南北两岸，用于渡人。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Known as the Nanjin Bridge during (Sun) Wu, it became the Zhuque Bridge during the Jin. The bridge spans the north and south banks of the Qinhuai River, serving as a crossing for pedestrians.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "27",
+    "num": 27,
+    "x": 40.08,
+    "y": 73.99,
+    "w": 4.94,
+    "h": 6.4,
+    "label": {
+      "zht": "桃葉渡",
+      "zhs": "桃叶渡",
+      "en": "Taoye Ferry"
+    },
+    "note": {
+      "zht": "一名南浦渡，在秦淮青溪口。桃葉者，晉王獻之愛妾名也。<sup class=\"note-ref\"><a href=\"#ref-4\">4</a></sup>",
+      "zhs": "一名南浦渡，在秦淮青溪口。桃叶者，晋王献之爱妾名也。<sup class=\"note-ref\"><a href=\"#ref-4\">4</a></sup>",
+      "en": "Also known as Nanpu Ferry, situated at the confluence of the Qinhuai and Qingxi Rivers. Taoye (\"Peach Leaf\") refers to the beloved concubine of Jin calligrapher Wang Xianzhi.<sup class=\"note-ref\"><a href=\"#ref-4\">4</a></sup>"
+    }
+  },
+  {
+    "id": "28",
+    "num": 28,
+    "x": 44.98,
+    "y": 70.14,
+    "w": 3.93,
+    "h": 7.99,
+    "label": {
+      "zht": "郊壇",
+      "zhs": "郊坛",
+      "en": "Jiaotan / Suburban Altar"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "29",
+    "num": 29,
+    "x": 44.61,
+    "y": 78.25,
+    "w": 6.43,
+    "h": 3.47,
+    "label": {
+      "zht": "周處臺",
+      "zhs": "周处台",
+      "en": "Zhouchu Terrace"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "30",
+    "num": 30,
+    "x": 41.56,
+    "y": 82.1,
+    "w": 6.7,
+    "h": 3.74,
+    "label": {
+      "zht": "烏衣巷",
+      "zhs": "乌衣巷",
+      "en": "Wuyi Lane"
+    },
+    "note": {
+      "zht": "名門世族居住地。見劉禹錫名篇《烏衣巷》：<br>朱雀橋邊野草花，<br>烏衣巷口夕陽斜。<br>舊時王謝堂前燕，<br>飛入尋常百姓家。",
+      "zhs": "名门世族居住地。见刘禹锡名篇《乌衣巷》：<br>朱雀桥边野草花，<br>乌衣巷口夕阳斜。<br>旧时王谢堂前燕，<br>飞入寻常百姓家。",
+      "en": "Once home to the great aristocratic clans. See Liu Yuxi's famous poem \"Wuyi Lane\": <br>Wildflowers by Zhuque Bridge sway, <br>The evening sun leans over Wuyi Lane.<br>The swallows of the Wangs' and Xies' halls of old,<br>Nest in ordinary homes today."
+    }
+  },
+  {
+    "id": "31",
+    "num": 31,
+    "x": 41.65,
+    "y": 85.7,
+    "w": 7.17,
+    "h": 4.27,
+    "label": {
+      "zht": "王謝宅",
+      "zhs": "王谢宅",
+      "en": "Wang & Xie Residences"
+    },
+    "note": {
+      "zht": "名門世族居住地。見劉禹錫名篇《烏衣巷》：<br>朱雀橋邊野草花，<br>烏衣巷口夕陽斜。<br>舊時王謝堂前燕，<br>飛入尋常百姓家。",
+      "zhs": "名门世族居住地。见刘禹锡名篇《乌衣巷》：<br>朱雀桥边野草花，<br>乌衣巷口夕阳斜。<br>旧时王谢堂前燕，<br>飞入寻常百姓家。",
+      "en": "Once home to the great aristocratic clans. See Liu Yuxi's famous poem \"Wuyi Lane\": <br>Wildflowers by Zhuque Bridge sway, <br>The evening sun leans over Wuyi Lane.<br>The swallows of the Wangs' and Xies' halls of old,<br>Nest in ordinary homes today."
+    }
+  },
+  {
+    "id": "32",
+    "num": 32,
+    "x": 51.47,
+    "y": 74,
+    "w": 4.39,
+    "h": 6.53,
+    "label": {
+      "zht": "北門",
+      "zhs": "北门",
+      "en": "North Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "33",
+    "num": 33,
+    "x": 51.19,
+    "y": 81.57,
+    "w": 4.76,
+    "h": 7.73,
+    "label": {
+      "zht": "丹陽郡",
+      "zhs": "丹阳郡",
+      "en": "Danyang Commandery Seat"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "34",
+    "num": 34,
+    "x": 51.56,
+    "y": 89.56,
+    "w": 4.94,
+    "h": 6.13,
+    "label": {
+      "zht": "南門",
+      "zhs": "南门",
+      "en": "South Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "35",
+    "num": 35,
+    "x": 56.37,
+    "y": 81.71,
+    "w": 5.59,
+    "h": 5.6,
+    "label": {
+      "zht": "東門",
+      "zhs": "东门",
+      "en": "East Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "36",
+    "num": 36,
+    "x": 61.92,
+    "y": 84.1,
+    "w": 4.11,
+    "h": 8.93,
+    "label": {
+      "zht": "王含五城",
+      "zhs": "王含五城",
+      "en": "Wang Han's Five Forts"
+    },
+    "note": {
+      "zht": "晉太寧初 (~323)，王敦黨王含、錢鳳戰敗，率餘黨置五城造營處。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "晋太宁初 (~323)，王敦党王含、钱凤战败，率余党置五城造营处。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "At the beginning of the Taining era (~323), Wang Dun's allies Wang Han and Qian Feng were defeated. They led their remaining troops here and established a military camp comprising five forts.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "37",
+    "num": 37,
+    "x": 53.41,
+    "y": 67.61,
+    "w": 8,
+    "h": 6,
+    "label": {
+      "zht": "東城航",
+      "zhs": "东城航",
+      "en": "Dongcheng Bridge"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "38",
+    "num": 38,
+    "x": 59.71,
+    "y": 74.39,
+    "w": 8,
+    "h": 6,
+    "label": {
+      "zht": "五城渡",
+      "zhs": "五城渡",
+      "en": "Wucheng Ferry / Five Forts Ferry"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "39",
+    "num": 39,
+    "x": 69.7,
+    "y": 90.89,
+    "w": 6.33,
+    "h": 7.99,
+    "label": {
+      "zht": "天印山",
+      "zhs": "天印山",
+      "en": "Tianyin Mountain"
+    },
+    "note": {
+      "zht": "方山府東南四十五里 (~20-25公里)，形如方印，一名天印山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "方山府东南四十五里 (~20-25公里)，形如方印，一名天印山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Fang Mountain lies forty-five li (~20-25km) southeast of the capital. Its flat summit resembles a square seal, hence its other name, Tianyin (\"Heavenly Seal\") Mountain.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "40",
+    "num": 40,
+    "x": 76.37,
+    "y": 71.74,
+    "w": 8.83,
+    "h": 7.2,
+    "label": {
+      "zht": "秦淮",
+      "zhs": "秦淮",
+      "en": "Qinhuai River"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "41",
+    "num": 41,
+    "x": 93.87,
+    "y": 87.56,
+    "w": 3.46,
+    "h": 10.65,
+    "label": {
+      "zht": "湖熟縣",
+      "zhs": "湖熟县",
+      "en": "Hushu County"
+    },
+    "note": {
+      "zht": "漢縣，屬丹陽郡。孫吳省縣。晉復置縣。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "汉县，属丹阳郡。孙吴省县。晋复置县。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Established as a county under the Han dynasty and administered under Danyang Commandery. The county was abolished under Sun Wu, but re-established under the Jin dynasty.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "42",
+    "num": 42,
+    "x": 94.69,
+    "y": 73.19,
+    "w": 3.46,
+    "h": 11.19,
+    "label": {
+      "zht": "永世縣",
+      "zhs": "永世县",
+      "en": "Yongshi County"
+    },
+    "note": {
+      "zht": "三國吳分溧陽縣置永平縣。晉太康中，更名永世。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "三国吴分溧阳县置永平县。晋太康中，更名永世。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "During the Three Kingdoms period, Sun Wu established Yongping County from part of Liyang County. During the Taikang era of the Jin dynasty, it was renamed Yongshi.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "43",
+    "num": 43,
+    "x": 90.54,
+    "y": 64.02,
+    "w": 4.2,
+    "h": 11.59,
+    "label": {
+      "zht": "溧陽縣",
+      "zhs": "溧阳县",
+      "en": "Liyang County"
+    },
+    "note": {
+      "zht": "秦縣，以在溧水之陽而名。漢屬丹陽郡。吳晉以後因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "秦县，以在溧水之阳而名。汉属丹阳郡。吴晋以后因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Established as a county under the Qin dynasty, it took its name from its location north of the Li River. Under the Han dynasty, it belonged to Danyang Commandery, and the county remained since the times of Sun Wu and Jin.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "44",
+    "num": 44,
+    "x": 92,
+    "y": 46.6,
+    "w": 5.04,
+    "h": 11.05,
+    "label": {
+      "zht": "句容縣",
+      "zhs": "句容县",
+      "en": "Gourong County / Jurong County"
+    },
+    "note": {
+      "zht": "漢初置縣，以縣有句曲山而名。後漢至六朝皆因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "汉初置县，以县有句曲山而名。后汉至六朝皆因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Established during the early Han dynasty, it was named after the Gouqu Mountain within its borders. This county continued through the Later Han and the Six Dynasties.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "45",
+    "num": 45,
+    "x": 80.91,
+    "y": 53.25,
+    "w": 4.3,
+    "h": 10.92,
+    "label": {
+      "zht": "青龍山",
+      "zhs": "青龙山",
+      "en": "Qinglong Mountain"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "46",
+    "num": 46,
+    "x": 73.78,
+    "y": 53.52,
+    "w": 4.3,
+    "h": 11.45,
+    "label": {
+      "zht": "檀城",
+      "zhs": "檀城",
+      "en": "Tancheng / Tan City"
+    },
+    "note": {
+      "zht": "檀道濟所築，俗呼檀公城。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "檀道济所筑，俗呼檀公城。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Built by Tan Daoji, commonly referred to as Tangongcheng / Duke Tan's City.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "47",
+    "num": 47,
+    "x": 66,
+    "y": 57.64,
+    "w": 5.13,
+    "h": 9.59,
+    "label": {
+      "zht": "東治亭",
+      "zhs": "东治亭",
+      "en": "Dongyeting / Dongye Pavilion"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "48",
+    "num": 48,
+    "x": 57.49,
+    "y": 57.91,
+    "w": 4.57,
+    "h": 8.93,
+    "label": {
+      "zht": "東府城",
+      "zhs": "东府城",
+      "en": "Dongfucheng / Dongfu City"
+    },
+    "note": {
+      "zht": "晉會稽王道子宅也。道子領揚州刺史，宅在州東，故曰東府。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "晋会稽王道子宅也。道子領扬州刺史，宅在州東，故曰东府。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Once the residence of Sima Daozi, Prince of Kuaiji, during the Jin dynasty. As Governor of Yang Province, his residence was located east of the provincial office, hence the name Dongfu (Eastern Residence).<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "49",
+    "num": 49,
+    "x": 63.78,
+    "y": 44.48,
+    "w": 4.3,
+    "h": 9.19,
+    "label": {
+      "zht": "雀湖",
+      "zhs": "雀湖",
+      "en": "Sparrow Lake"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "50",
+    "num": 50,
+    "x": 56.83,
+    "y": 47.8,
+    "w": 4.85,
+    "h": 8.53,
+    "label": {
+      "zht": "永安宮",
+      "zhs": "永安宫",
+      "en": "Yong'an Palace"
+    },
+    "note": {
+      "zht": "吳東宮在臺城南，晉初移於西南，後復移於宮城東南。晉太元二十一年，以東海王第作東宮，安帝立何皇后居於此，謂之永安宮。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "吴东宫在台城南，晋初移于西南，后复移于宫城东南。晋太元二十一年，以东海王第作东宫，安帝立何皇后居于此，谓之永安宫。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "The Eastern Palace of Sun Wu originally stood south of the Palace City. In the early Jin dynasty, it was relocated to the southwest, before moving back to the southeast of the Imperial Palace. In the twenty-first year of Taiyuan (396), the residence of the Prince of Donghai was converted into the Eastern Palace. When Emperor An enthroned Empress He, she resided there, and it became known as Yong'an Palace.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "51",
+    "num": 51,
+    "x": 50.91,
+    "y": 52.85,
+    "w": 5.96,
+    "h": 4.54,
+    "label": {
+      "zht": "湘宮巷",
+      "zhs": "湘宫巷",
+      "en": "Xianggong Lane"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "52",
+    "num": 52,
+    "x": 49.61,
+    "y": 58.44,
+    "w": 6.89,
+    "h": 5.07,
+    "label": {
+      "zht": "青溪橋",
+      "zhs": "青溪桥",
+      "en": "Qingxi Bridge"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "53",
+    "num": 53,
+    "x": 54.89,
+    "y": 29.58,
+    "w": 4.67,
+    "h": 9.72,
+    "label": {
+      "zht": "青溪",
+      "zhs": "青溪",
+      "en": "Qingxi River"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "54",
+    "num": 54,
+    "x": 66.28,
+    "y": 11.09,
+    "w": 5.5,
+    "h": 8.93,
+    "label": {
+      "zht": "蔣山",
+      "zhs": "蒋山",
+      "en": "Jiang Mountain"
+    },
+    "note": {
+      "zht": "鐘山，在城東北。一名蔣山，吳大帝以漢末秣陵尉蔣子文逐賊有功，死，葬於此，因名。亦曰金陵山、北山、紫金山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>今称紫金山，有明孝陵、孙权墓等。",
+      "zhs": "钟山，在城东北。一名蒋山，吴大帝以汉末秣陵尉蒋子文逐贼有功，死，葬于此，因名。亦曰金陵山、北山、紫金山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>今称紫金山，有明孝陵、孙权墓等。",
+      "en": "Zhong Mountain lies northeast of the city. It was also called Jiang Mountain in honour of Jiang Ziwen, the Commandant of Moling during the end of Han dynasty, who died while pursuing bandits and was buried here. It is also known as Jinling Mountain, North Mountain, and Zijin Mountain (Purple Mountain).<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup> Today, it is known as Purple Mountain, home to the Ming Xiaoling Mausoleum and the tomb of Sun Quan."
+    }
+  },
+  {
+    "id": "55",
+    "num": 55,
+    "x": 80.08,
+    "y": 2.98,
+    "w": 3.93,
+    "h": 8.39,
+    "label": {
+      "zht": "攝山",
+      "zhs": "摄山",
+      "en": "She Mountain"
+    },
+    "note": {
+      "zht": "攝山形方，四面重嶺似傘，亦名傘山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>即今南京棲霞山。",
+      "zhs": "摄山形方，四面重岭似伞，亦名伞山。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>即今南京栖霞山。",
+      "en": "She Mountain is square in shape, with overlapping ridges on all four sides resembling an umbrella. It is therefore also known as Shan (Umbrella) Mountain.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup> Today, this is the Qixia Mountain of Nanjing."
+    }
+  },
+  {
+    "id": "56",
+    "num": 56,
+    "x": 83.13,
+    "y": 13.76,
+    "w": 4.02,
+    "h": 11.59,
+    "label": {
+      "zht": "陽曲縣",
+      "zhs": "阳曲县",
+      "en": "Yangqu County"
+    },
+    "note": {
+      "zht": "僑置縣。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>僑置縣，即東晉南朝時，借北人舊籍地名，於南方暫設之縣，以安南渡流民。",
+      "zhs": "侨置县。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>侨置县，即东晋南朝时，借北人旧籍地名，于南方暂设之县，以安南渡流民。",
+      "en": "Émigré/migrated county.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>A migrated county was commonly established during Eastern Jin and Southern Dynasties, so as to settle refugees who had migrated south by reusing the names of their hometowns in the north as administrative units."
+    }
+  },
+  {
+    "id": "57",
+    "num": 57,
+    "x": 85.91,
+    "y": 4.71,
+    "w": 4.39,
+    "h": 8.79,
+    "label": {
+      "zht": "臨沂縣",
+      "zhs": "临沂县",
+      "en": "Linyi County"
+    },
+    "note": {
+      "zht": "僑置縣。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>僑置縣，即東晉南朝時，借北人舊籍地名，於南方暫設之縣，以安南渡流民。",
+      "zhs": "侨置县。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>侨置县，即东晋南朝时，借北人旧籍地名，于南方暂设之县，以安南渡流民。",
+      "en": "Émigré/migrated county.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>A migrated county was commonly established during Eastern Jin and Southern Dynasties, so as to settle refugees who had migrated south by reusing the names of their hometowns in the north as administrative units."
+    }
+  },
+  {
+    "id": "58",
+    "num": 58,
+    "x": 88.96,
+    "y": 14.02,
+    "w": 4.67,
+    "h": 10.52,
+    "label": {
+      "zht": "即丘縣",
+      "zhs": "即丘县",
+      "en": "Jiqiu County"
+    },
+    "note": {
+      "zht": "僑置縣。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>僑置縣，即東晉南朝時，借北人舊籍地名，於南方暫設之縣，以安南渡流民。",
+      "zhs": "侨置县。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>侨置县，即东晋南朝时，借北人旧籍地名，于南方暂设之县，以安南渡流民。",
+      "en": "Émigré/migrated county.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>A migrated county was commonly established during Eastern Jin and Southern Dynasties, so as to settle refugees who had migrated south by reusing the names of their hometowns in the north as administrative units."
+    }
+  },
+  {
+    "id": "59",
+    "num": 59,
+    "x": 90.17,
+    "y": 1.25,
+    "w": 4.57,
+    "h": 10.65,
+    "label": {
+      "zht": "瑯琊縣",
+      "zhs": "琅琊县",
+      "en": "Langya County"
+    },
+   "note": {
+      "zht": "僑置縣。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>僑置縣，即東晉南朝時，借北人舊籍地名，於南方暫設之縣，以安南渡流民。",
+      "zhs": "侨置县。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>侨置县，即东晋南朝时，借北人旧籍地名，于南方暂设之县，以安南渡流民。",
+      "en": "Émigré/migrated county.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup><br>A migrated county was commonly established during Eastern Jin and Southern Dynasties, so as to settle refugees who had migrated south by reusing the names of their hometowns in the north as administrative units."
+    }
+  },
+  {
+    "id": "60",
+    "num": 60,
+    "x": 42.66,
+    "y": 18.01,
+    "w": 8,
+    "h": 4.01,
+    "label": {
+      "zht": "覆舟山",
+      "zhs": "覆舟山",
+      "en": "Fuzhou Mountain"
+    },
+    "note": {
+      "zht": "形如覆舟，因名。山脈東連鐘（蔣）山，北臨玄武湖。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "形如覆舟，因名。山脉东连钟（蒋）山，北临玄武湖。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Shaped like an overturned boat, hence the name Fuzhou (overturned boat). The mountain range connects to Zhong / Jiang Mountain to the east and overlooks Xuanwu Lake to the north.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "61",
+    "num": 61,
+    "x": 37.3,
+    "y": 11.62,
+    "w": 5.04,
+    "h": 8.79,
+    "label": {
+      "zht": "元武湖",
+      "zhs": "元武湖",
+      "en": "Yuanwu Lake"
+    },
+    "note": {
+      "zht": "也稱玄武湖。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>今猶存。",
+      "zhs": "也称玄武湖。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>今犹存。",
+      "en": "Also known as Xuanwu Lake.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup> Still exists today."
+    }
+  },
+  {
+    "id": "62",
+    "num": 62,
+    "x": 27.76,
+    "y": 17.34,
+    "w": 8,
+    "h": 6,
+    "label": {
+      "zht": "雞籠山",
+      "zhs": "鸡笼山",
+      "en": "Jilong Mountain"
+    },
+    "note": {
+      "zht": "以形似名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "以形似名。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "Named for its resemblance to a chicken cage (Jilong).<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "63",
+    "num": 63,
+    "x": 30.35,
+    "y": 23.86,
+    "w": 7.91,
+    "h": 5.2,
+    "label": {
+      "zht": "興善寺",
+      "zhs": "兴善寺",
+      "en": "Xingshan Temple"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "64",
+    "num": 64,
+    "x": 38.31,
+    "y": 21.21,
+    "w": 3.19,
+    "h": 7.86,
+    "label": {
+      "zht": "藥圃",
+      "zhs": "药圃",
+      "en": "Medicine Garden"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "65",
+    "num": 65,
+    "x": 32.58,
+    "y": 29.18,
+    "w": 2.54,
+    "h": 7.2,
+    "label": {
+      "zht": "大夏門",
+      "zhs": "大夏门",
+      "en": "Daxia Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "66",
+    "num": 66,
+    "x": 35.35,
+    "y": 29.05,
+    "w": 3.09,
+    "h": 7.86,
+    "label": {
+      "zht": "元武門",
+      "zhs": "元武门",
+      "en": "Yuanwu Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "67",
+    "num": 67,
+    "x": 39.24,
+    "y": 29.19,
+    "w": 3,
+    "h": 7.46,
+    "label": {
+      "zht": "廣莫門",
+      "zhs": "广莫门",
+      "en": "Guangmo Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "68",
+    "num": 68,
+    "x": 42.48,
+    "y": 28.79,
+    "w": 2.72,
+    "h": 7.73,
+    "label": {
+      "zht": "延熹門",
+      "zhs": "延熹门",
+      "en": "Yanxi Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "69",
+    "num": 69,
+    "x": 35.54,
+    "y": 36.76,
+    "w": 6.24,
+    "h": 3.21,
+    "label": {
+      "zht": "平昌門",
+      "zhs": "平昌门",
+      "en": "Pingchang Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "70",
+    "num": 70,
+    "x": 32.39,
+    "y": 38.23,
+    "w": 3.09,
+    "h": 7.73,
+    "label": {
+      "zht": "西掖門",
+      "zhs": "西掖门",
+      "en": "Xiye Gate / Western Side Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "71",
+    "num": 71,
+    "x": 42.11,
+    "y": 37.69,
+    "w": 2.81,
+    "h": 8.13,
+    "label": {
+      "zht": "東掖門",
+      "zhs": "东掖门",
+      "en": "Dongye Gate / Eastern SIde Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "72",
+    "num": 72,
+    "x": 36.1,
+    "y": 40.21,
+    "w": 5.13,
+    "h": 7.73,
+    "label": {
+      "zht": "建康宮",
+      "zhs": "建康宫",
+      "en": "Jiankang Palace"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "73",
+    "num": 73,
+    "x": 27.48,
+    "y": 48.6,
+    "w": 6.43,
+    "h": 3.87,
+    "label": {
+      "zht": "西明門",
+      "zhs": "西明门",
+      "en": "Ximing Gate / West Ming Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "74",
+    "num": 74,
+    "x": 34.8,
+    "y": 47.93,
+    "w": 7.26,
+    "h": 3.87,
+    "label": {
+      "zht": "大司馬門",
+      "zhs": "大司马门",
+      "en": "Dasima Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "75",
+    "num": 75,
+    "x": 42.94,
+    "y": 48.33,
+    "w": 6.7,
+    "h": 4.01,
+    "label": {
+      "zht": "建春門",
+      "zhs": "建春门",
+      "en": "Jianchun Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "76",
+    "num": 76,
+    "x": 27.67,
+    "y": 52.58,
+    "w": 5.59,
+    "h": 2.68,
+    "label": {
+      "zht": "昌合門",
+      "zhs": "昌合门",
+      "en": "Changhe Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "77",
+    "num": 77,
+    "x": 33.22,
+    "y": 51.92,
+    "w": 5.5,
+    "h": 3.74,
+    "label": {
+      "zht": "建康縣",
+      "zhs": "建康县",
+      "en": "Jiankang County"
+    },
+    "note": {
+      "zht": "建安十七年 (212)，權自京口徙秣陵，改為建業。晉平吳，仍曰秣陵。太康三年 (282)，分秣陵水北為建業。建興初 (~313)，又改曰建康。後因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "zhs": "建安十七年 (212)，权自京口徙秣陵，改为建业。晋平吴，仍曰秣陵。太康三年 (282)，分秣陵水北为建业。建兴初 (~313)，又改曰建康。后因之。<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>",
+      "en": "In the seventeenth year of Jian'an (212), Sun Quan moved his seat from Jingkou to Moling and renamed it Jianye. After the Jin conquered Wu, the name Moling was restored. In the third year of Taikang (282), the northern part of Moling across the Qinhuai River was separated to form Jianye County. At the beginning of Jianxing era (~313), Jianye was renamed Jiankang, and this name was retained in Eastern Jin.<sup class=\"note-ref\"><a href=\"#ref-1\">1</a></sup>"
+    }
+  },
+  {
+    "id": "78",
+    "num": 78,
+    "x": 42.85,
+    "y": 52.72,
+    "w": 6.89,
+    "h": 2.68,
+    "label": {
+      "zht": "東陽門",
+      "zhs": "东阳门",
+      "en": "Dongyang Gate / East Yang Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "79",
+    "num": 79,
+    "x": 31.83,
+    "y": 56.18,
+    "w": 3,
+    "h": 8.26,
+    "label": {
+      "zht": "陵陽門",
+      "zhs": "陵阳门",
+      "en": "Lingyang Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "80",
+    "num": 80,
+    "x": 35.08,
+    "y": 56.04,
+    "w": 3.46,
+    "h": 7.99,
+    "label": {
+      "zht": "宣陽門",
+      "zhs": "宣阳门",
+      "en": "Xuanyang Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "81",
+    "num": 81,
+    "x": 39.89,
+    "y": 56.17,
+    "w": 3.28,
+    "h": 7.6,
+    "label": {
+      "zht": "開陽門",
+      "zhs": "开阳门",
+      "en": "Kaiyang Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  },
+  {
+    "id": "82",
+    "num": 82,
+    "x": 43.31,
+    "y": 56.44,
+    "w": 2.72,
+    "h": 7.33,
+    "label": {
+      "zht": "清明門",
+      "zhs": "清明门",
+      "en": "Qingming Gate"
+    },
+    "note": {
+      "zht": "",
+      "zhs": "",
+      "en": ""
+    }
+  }
+  ],
+  "references": [
+    {
+      "id": "1",
+      "zht": "顧祖禹，《讀史方輿紀要 · 卷二十 - 二十一》",
+      "zhs": "顾祖禹，《读史方舆纪要 · 卷二十 - 二十一》",
+      "en": "Gu Zuyu, Essence of Historical Geography, Vol. 20-21"
+    },
+    {
+      "id": "2",
+      "zht": "許嵩，《建康實錄 · 卷二》",
+      "zhs": "许嵩，《建康实录 · 卷二》",
+      "en": "Xu Song, Records of Jiankang, Vol. 2"
+    },
+    {
+      "id": "3",
+      "zht": "慧皎，《高僧傳 · 卷一》",
+      "zhs": "慧皎，《高僧传 · 卷一》",
+      "en": "Huijiao, Biographies of Eminent Monks, Vol. 1"
+    },
+    {
+      "id": "4",
+      "zht": "曾極，《金陵百詠》",
+      "zhs": "曾极，《金陵百咏》",
+      "en": "Zeng Ji, Hundred Poems of Jinling"
+    }
+  ]
+}

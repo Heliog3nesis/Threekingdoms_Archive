@@ -1,0 +1,96 @@
+{
+  "id": "wei-shu-18a",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 1,
+  "num": "18",
+  "label": {
+    "zht": "李典傳",
+    "zhs": "李典传",
+    "en": "Biography of Li Dian"
+  },
+  "title": {
+    "zht": "魏書十八 · 李典傳",
+    "zhs": "魏书十八 · 李典传",
+    "en": "Book of Wei, Chapter 18 · Biography of Li Dian"
+  },
+  "passages": [
+    {
+      "id": "ws18a-p1",
+      "orig": {
+        "zht": "李典字曼成，[[山陽鉅野|/zh-hant/maps/map-overall?lat=35.40781933&lng=116.14257473&name=巨野]]人也。典從父乾，有雄氣，合賔客數千家在[[乘氏|/zh-hant/maps/map-overall?lat=35.26547064&lng=115.87380975&name=乘氏]]。初平中，以衆隨太祖，破黃巾於[[壽張|/zh-hant/maps/map-overall?lat=35.82685338&lng=116.28297435&name=壽張]]，又從擊袁術，征[[徐州|/zh-hant/maps/map-overall?admin=8]]。呂布之亂，太祖遣乾還[[乘氏|/zh-hant/maps/map-overall?lat=35.26547064&lng=115.87380975&name=乘氏]]，慰勞諸縣。布[[別駕|/zh-hant/translations/officials/regional#provinces-017]]薛蘭、[[治中|/zh-hant/translations/officials/regional#provinces-016]]李封招乾，欲俱叛，乾不聽，遂殺乾。",
+        "zhs": "李典字曼成，[[山阳钜野|/zh-hans/maps/map-overall?lat=35.40781933&lng=116.14257473&name=巨野]]人也。典从父乾，有雄气，合賔客数千家在[[乘氏|/zh-hans/maps/map-overall?lat=35.26547064&lng=115.87380975&name=乘氏]]。初平中，以衆随太祖，破黄巾于[[寿张|/zh-hans/maps/map-overall?lat=35.82685338&lng=116.28297435&name=壽張]]，又从击袁术，征[[徐州|/zh-hans/maps/map-overall?admin=8]]。吕布之乱，太祖遣乾还[[乘氏|/zh-hans/maps/map-overall?lat=35.26547064&lng=115.87380975&name=乘氏]]，慰劳诸县。布[[别驾|/zh-hans/translations/officials/regional#provinces-017]]薛兰、[[治中|/zh-hans/translations/officials/regional#provinces-016]]李封招乾，欲俱叛，乾不听，遂杀乾。"
+      },
+      "en": "Li Dian, styled Mancheng, was from [[Juye, Shanyang|/maps/map-overall?lat=35.40781933&lng=116.14257473&name=Juye]]. Li Dian's uncle Li Qian, who had a valiant spirit, gathered several thousand retainers at [[Chengshi|/maps/map-overall?lat=35.26547064&lng=115.87380975&name=Chengshi]]. Qian used the amassed to follow Cao Cao (posthumously honoured as the Grand Progenitor) in defeating the Yellow Turbans at [[Shouzhang|/maps/map-overall?lat=35.82685338&lng=116.28297435&name=Shouzhang]], and later accompanied him on the campaign against Yuan Shu and the expedition against [[Xu Province|/maps/map-overall?admin=8]]. During Lü Bu's rebellion, Cao Cao had Qian return to [[Chengshi|/maps/map-overall?lat=35.26547064&lng=115.87380975&name=Chengshi]] as to conciliate the counties. [Lü] Bu's [[Deputy Aide|/translations/officials/regional#provinces-017]], Xue Lan, and [[Administrative Aide|/translations/officials/regional#provinces-016]], Li Feng, summoned Qian, and wanted him to defect. Qian did not obey, so they thereupon killed him."
+    },
+    {
+      "id": "ws18a-p2",
+      "orig": {
+        "zht": "太祖使乾子整將乾兵，與諸將擊蘭、封。蘭、封破，從平[[兖州|/zh-hant/maps/map-overall?admin=11]]諸縣有功，稍遷[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。整卒，典徙[[潁陰|/zh-hant/maps/map-overall?lat=34.01634921&lng=113.85205527&name=Yingyin]][[令|/zh-hant/translations/officials/regional/#counties-088]]，為中郎將，將整軍，〔一〕遷[[離狐|/zh-hant/maps/map-overall?lat=35.44867773&lng=115.15376029&name=Lihu]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+        "zhs": "太祖使乾子整将乾兵，与诸将击兰、封。兰、封破，从平[[兖州|/zh-hans/maps/map-overall?admin=11]]诸县有功，稍迁[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。整卒，典徙[[颍阴|/zh-hans/maps/map-overall?lat=34.01634921&lng=113.85205527&name=Yingyin]][[令|/zh-hans/translations/officials/regional/#counties-088]]，为中郎将，将整军，〔一〕迁[[离狐|/zh-hans/maps/map-overall?lat=35.44867773&lng=115.15376029&name=Lihu]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+      },
+      "en": "Cao Cao sent Li Qian's son, Li Zheng, to lead Li Qian's army, and with various generals attacked [Xue] Lan and Li Feng. Xue Lan and Li Feng were defeated, and for his merits in pacifying [[Yan Province|/maps/map-overall?admin=11]] and its counties, Zheng was promoted to [[Inspector|/translations/officials/regional#provinces-014]] of [[Qing Province|/maps/map-overall?admin=6]]. When Li Zheng died, Li Dian was shifted to [[Magistrate|/translations/officials/regional/#counties-088]] of [[Yingyin|/maps/map-overall?lat=34.01634921&lng=113.85205527&name=Yingyin]], Gentleman-General, and led Li Zheng's army, [1] later relocated to became [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Lihu|/maps/map-overall?lat=35.44867773&lng=115.15376029&name=Lihu]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：典少好學，不樂兵事，乃就師讀春秋左氏傳，博觀羣書。太祖善之，故試以治民之政。",
+          "zhs": "《魏书》曰：典少好学，不乐兵事，乃就师读春秋左氏传，博观羣书。太祖善之，故试以治民之政。",
+          "en": "The Book of Wei states: When Li Dian was young, he was fond of learning and had little interest in military affairs. He therefore studied the Zuo Commentary to the Spring and Autumn Annals under a teacher and read widely among the classics. Cao Cao liked such, and consequently entrusted him with civil administration."
+        }
+      ]
+    },
+    {
+      "id": "ws18a-p4",
+      "orig": {
+        "zht": "時太祖與袁紹相拒[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]，典率宗族及部曲輸穀帛供軍。紹破，以典為[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]，屯[[安民|/zh-hant/maps/map-overall?lat=35.85124274&lng=116.15260328&name=Anmin]]。太祖擊譚、尚於[[黎陽|/zh-hant/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，使典與程昱等以船運軍糧。會尚遣[[魏郡|/zh-hant/maps/map-overall?admin=162]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]高蕃將兵屯河上，絕水道，太祖勑典、昱：「若船不得過，下從陸道。」典與諸將議曰：「蕃軍少甲而恃水，有懈怠之心，擊之必克。軍不內禦；苟利國家，專之可也，宜亟擊之。」昱亦以為然。遂北渡河，攻蕃，破之，水道得通。",
+        "zhs": "时太祖与袁绍相拒[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]，典率宗族及部曲输谷帛供军。绍破，以典为[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]，屯[[安民|/zh-hans/maps/map-overall?lat=35.85124274&lng=116.15260328&name=Anmin]]。太祖击谭、尚于[[黎阳|/zh-hans/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，使典与程昱等以船运军粮。会尚遣[[魏郡|/zh-hans/maps/map-overall?admin=162]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]高蕃将兵屯河上，绝水道，太祖勑典、昱：「若船不得过，下从陆道。」典与诸将议曰：「蕃军少甲而恃水，有懈怠之心，击之必克。军不内御；苟利国家，专之可也，宜亟击之。」昱亦以为然。遂北渡河，攻蕃，破之，水道得通。"
+      },
+      "en": "When Cao Cao and Yuan Shao opposed each other at [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]], Li Dian led his clansmen and retainers to provide grain and clothing to Cao Cao's army. When Yuan Shao was defeated, Cao Cao had Li Dian become [[Assistant General|/translations/officials/military#four-direction--misc-165]], stationed at [[Anmin|/maps/map-overall?lat=35.85124274&lng=116.15260328&name=Anmin]]. When Cao Cao attacked Yuan Tan and Yuan Shang at [[Liyang|/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]], he sent Li  Dian and Cheng Yu to transport military supplies by ship. It happened that Yuan Shang sent the [[Grand Adminstrator|/translations/officials/regional#commanderies-039]] of [[Wei Commandery|/maps/map-overall?admin=162]] Gao Fan to lead troops and garrison north of the river, blocking the water route. Cao Cao ordered Li Dian and Cheng Yu, \"If your ships cannot cross, disembark and march by land.\" Li Dian discussed with the other generals, \"Gao Fan's army is poorly equipped and reliant on the waterways, and has grown complacent. If we attack, we will prevail. An army in the field need not always heed the court's instructions. If it is for the good of the state, then it is acceptable to act first. We should attack them now!\" Cheng Yu also agreed with such. Therefore, they crossed the river, attacked Gao Fan, and defeated him. The water routes were reestablished."
+    },
+    {
+      "id": "ws18a-p5",
+      "orig": {
+        "zht": "劉表使劉備北侵，至[[葉|/zh-hant/maps/map-overall?lat=33.47646438&lng=113.2914691&name=Ye]]，太祖遣典從夏侯惇拒之。備一旦燒屯去，惇率諸軍追擊之，典曰：「賊無故退，疑必有伏。南道窄狹，草木深，不可追也。」惇不聽，與于禁追之，典留守。惇等果入賊伏裏，戰不利，典往救，備望見救至，軍散退。從圍[[鄴|/zh-hant/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]，鄴定，與樂進圍高幹於[[壺關|/zh-hant/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，擊管承於[[長廣|/zh-hant/maps/map-overall?lat=36.954665&lng=120.9131519&name=Changguang]]，皆破之。遷[[捕虜將軍|/zh-hant/translations/officials/military#four-direction--misc-154]]，封都亭侯。",
+        "zhs": "刘表使刘备北侵，至[[叶|/zh-hans/maps/map-overall?lat=33.47646438&lng=113.2914691&name=Ye]]，太祖遣典从夏侯敦拒之。备一旦烧屯去，敦率诸军追击之，典曰：「贼无故退，疑必有伏。南道窄狭，草木深，不可追也。」敦不听，与于禁追之，典留守。敦等果入贼伏里，战不利，典往救，备望见救至，军散退。从围[[邺|/zh-hans/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]，邺定，与乐进围高干于[[壶关|/zh-hans/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，击管承于[[长广|/zh-hans/maps/map-overall?lat=36.954665&lng=120.9131519&name=Changguang]]，皆破之。迁[[捕虏将军|/zh-hans/translations/officials/military#four-direction--misc-154]]，封都亭侯。"
+      },
+      "en": "Liu Biao sent Liu Bei north to invade, and when he reached [[Ye|/maps/map-overall?lat=33.47646438&lng=113.2914691&name=Ye]] County, Cao Cao sent Li Dian to assist Xiahou Dun in repelling him. One morning, [Liu] Bei burned his camp and left, so Xiahou Dun led his men to chase after him. Li Dian said, \"Our enemy has retreated for no reason. I suspect there is an ambush. The southern road is very narrow and the vegetation is thick. We should not pursue.\" Xiahou ignored his advice and, together with Yu Jin, gave chase. Li Dian remained to guard. [Xiahou] Dun and the others indeed fell into the enemy's ambush. The battle was not favorable, and Li Dian went to rescue them. Seeing the reinforcements arrive, Liu Bei retreated. Li Dian then accompanied Cao Cao in the siege of [[Ye|/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]] and Ye was pacified. Later, together with Yue Jin, he besieged Gao Gan at [[Huguan|/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]] and attacked Guan Cheng at [[Changguang|/maps/map-overall?lat=36.954665&lng=120.9131519&name=Changguang]], defeating them both. He was promoted to [[General who captures the Enemies|/translations/officials/military#four-direction--misc-154]] and enfeoffed as a Marquis of a Capital District."
+    },
+    {
+      "id": "ws18a-p6",
+      "orig": {
+        "zht": "典宗族部曲三千餘家，居[[乘氏|/zh-hant/maps/map-overall?lat=35.26547064&lng=115.87380975&name=Chengshi]]，自請願徙詣[[魏郡|/zh-hant/maps/map-overall?admin=162]]。太祖笑曰：「卿欲慕耿純邪？」典謝曰：「典駑怯功微，而爵寵過厚，誠宜舉宗陳力；加以征伐未息，宜實郊遂之內，以制四方，非慕純也。」遂徙部曲宗族萬三千餘口居[[鄴|/zh-hant/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]。",
+        "zhs": "典宗族部曲三千馀家，居[[乘氏|/zh-hans/maps/map-overall?lat=35.26547064&lng=115.87380975&name=Chengshi]]，自请愿徙诣[[魏郡|/zh-hans/maps/map-overall?admin=162]]。太祖笑曰：「卿欲慕耿纯邪？」典谢曰：「典驽怯功微，而爵宠过厚，诚宜举宗陈力；加以征伐未息，宜实郊遂之内，以制四方，非慕纯也。」遂徙部曲宗族万三千馀口居[[邺|/zh-hans/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]。"
+      },
+      "en": "Li Dian's clansmen and retainers were over 3000 families and resided at [[Chengshi|/maps/map-overall?lat=35.26547064&lng=115.87380975&name=Chengshi]], but he petitioned to relocate to [[Wei Commandery|/maps/map-overall?admin=162]]. Cao Cao laughed, \"Do you wish to emulate Geng Chun?\" Li Dian replied, \"I am untalented and timid, with but little merit, yet the honours and favour I have received have been excessive. It is only fitting that I lead my entire clan in rendering service. Moreover, the campaigns have not yet ceased. We should consolidate the interior so as to command the four quarters. My request is not born of any desire to emulate Geng Chun.\" He thus relocated his retainers and clansmen, numbering more than 13000, to [[Ye|/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]."
+    },
+    {
+      "id": "ws18a-p7",
+      "orig": {
+        "zht": "太祖嘉之，遷[[破虜將軍|/zh-hant/translations/officials/military#four-direction--misc-154]]。與張遼、樂進屯[[合肥|/zh-hant/maps/map-overall?lat=31.94881135&lng=117.12136064&name=Hefei]]，孫權率衆圍之，遼欲奉教出戰。進、典、遼皆素不睦，遼恐其不從，典慨然曰：「此國家大事，顧君計何如耳，吾不可以私憾而忘公義乎！」乃率衆與遼破走權。增邑百戶，并前三百戶。",
+        "zhs": "太祖嘉之，迁[[破虏将军|/zh-hans/translations/officials/military#four-direction--misc-154]]。与张辽、乐进屯[[合肥|/zh-hans/maps/map-overall?lat=31.94881135&lng=117.12136064&name=Hefei]]，孙权率衆围之，辽欲奉教出战。进、典、辽皆素不睦，辽恐其不从，典慨然曰：“此国家大事，顾君计何如耳，吾不可以私憾而忘公义乎！”乃率衆与辽破走权。增邑百户，并前三百户。"
+      },
+      "en": "Cao Cao praised him and made him [[General Who Defeats the Enemies|/translations/officials/military#four-direction--misc-154]]. Later, Li Dian, together with Zhang Liao and Yue Jin garrisoned at [[Hefei|/maps/map-overall?lat=31.94881135&lng=117.12136064&name=Hefei]]. When Sun Quan led an army to besiege the city, Zhang Liao had received orders to go out and engage the enemy. Yue Jin, Li Dian, and Zhang Liao were not on good terms, and Zhang Liao feared they would refuse to cooperate. Li Dian sternly said, \"This is of great importance to the state. All that matters is whether your plan is sound. How could I allow personal grievances to override the greater good?\" He then led his troops alongside Zhang Liao and routed Sun Quan. Thereafer, Li Dian an additional fief of one hundred households, bringing his total to three hundred."
+    },
+    {
+      "id": "ws18a-p8",
+      "orig": {
+        "zht": "典好學問，貴儒雅，不與諸將爭功。敬賢士大夫，恂恂若不及，軍中稱其長者。年三十六薨，子禎嗣。文帝踐阼，追念[[合肥|/zh-hant/maps/map-overall?lat=31.94881135&lng=117.12136064&name=Hefei]]之功，增禎邑百戶，賜典一子爵關內侯，邑百戶；謚典曰愍侯。",
+        "zhs": "典好学问，贵儒雅，不与诸将争功。敬贤士大夫，恂恂若不及，军中称其长者。年三十六薨，子祯嗣。文帝践阼，追念[[合肥|/zh-hans/maps/map-overall?lat=31.94881135&lng=117.12136064&name=Hefei]]之功，增祯邑百户，赐典一子爵关内侯，邑百户；谥典曰愍侯。"
+      },
+      "en": "Li Dian was fond of learning and valued scholarly refinement. He did not compete with the other generals for merit. He respected virtuous scholars and officials, and was always humble and unassuming, as though he were always falling short. Within the army, he was regarded as a gentleman of great virtue. He died at the age of thirty-six, and his son, Li Zhen, succeeded him. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) ascended the throne, he recalled Li Dian's merits at [[Hefei|/maps/map-overall?lat=31.94881135&lng=117.12136064&name=Hefei]] and increased Li Zhen's fief by one hundred households. He also enfeoffed another of Li Dian's sons as a Marquis within the Passes with a fief of one hundred households. Li Dian was posthumously honoured as Marquis Min, the Lamentable Marquis."
+    }
+  ]
+}

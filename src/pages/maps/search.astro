@@ -194,6 +194,11 @@ function adminBoundaryMatches(f, q, ql) {
       candidates.push(`${base} Guo`, `${base}Guo`);
     } else {
       candidates.push(`${p.Name_EN} Jun`, `${p.Name_EN}Jun`);
+      // Regular commanderies are stored without 郡 in the raw Chinese name
+      // (e.g. "南陽", not "南陽郡") — accept "XX郡" in both scripts. States
+      // already carry 國 in their historical name and don't need this.
+      if (p.Name_CH) candidates.push(`${p.Name_CH}郡`);
+      if (p.Name_CHS) candidates.push(`${p.Name_CHS}郡`);
     }
   }
 
@@ -201,6 +206,21 @@ function adminBoundaryMatches(f, q, ql) {
     const vl = String(v).toLowerCase();
     return v === q || vl.includes(ql);
   });
+}
+
+// Same "XX郡" acceptance as adminBoundaryMatches above, but for "Exact
+// match" mode — exactNameMatches alone wouldn't know about the suffix.
+function adminExactMatches(f, q, ql) {
+  const p = f.properties;
+  if (exactNameMatches(p.Name_EN, q, ql) || exactNameMatches(p.Name_CH, q, ql) || exactNameMatches(p.Name_CHS, q, ql)) {
+    return true;
+  }
+  const isState = p.Name_CH && p.Name_CH.includes('國');
+  if (p.level === 'commandery' && !isState) {
+    if (p.Name_CH && `${p.Name_CH}郡` === q) return true;
+    if (p.Name_CHS && `${p.Name_CHS}郡` === q) return true;
+  }
+  return false;
 }
 
 // A stored name like "長江/江水" should count as an exact match for either
@@ -251,6 +271,23 @@ function getKingdom(provEn) {
   return provinceKingdom[provEn] ?? null;
 }
 
+// "XX縣"/"XX县" should also match a County/Commandery/Provincial Seat
+// stored without the suffix — Commandery and Provincial Seats are
+// themselves counties (just also serving as the seat of a higher admin
+// level), and most county names don't carry 縣/县 in the data anyway
+// (unlike princely states, which keep 國 baked into their historical name).
+const COUNTY_LIKE_TYPES = new Set(['County Seat', 'Commandery Seat', 'Provincial Seat']);
+function countyStrippedQuery(q) {
+  const m = q.match(/^(.+)[县縣]$/);
+  return m ? m[1] : null;
+}
+function isCountySuffixMatch(t, qCounty, exact) {
+  if (qCounty === null || !COUNTY_LIKE_TYPES.has(t.Type)) return false;
+  return exact
+    ? (t.Town_CH === qCounty || t.Town_CHS === qCounty)
+    : (t.Town_CH?.includes(qCounty) || t.Town_CHS?.includes(qCounty));
+}
+
 // ── STATE ───────────────────────────────────────────────────────
 const PER_PAGE = 15;
 let currentPage = 1;
@@ -288,26 +325,30 @@ function getResults(q, exact, kingdom, type, sort) {
   const ql = q.toLowerCase().trim();
   if (!ql) return [];
 
+  const qCounty = countyStrippedQuery(q);
   let results;
 
   if (exact) {
     results = allTowns.filter(t =>
       t.Town_EN?.toLowerCase() === ql ||
       t.Town_CH === q ||
-      t.Town_CHS === q
+      t.Town_CHS === q ||
+      isCountySuffixMatch(t, qCounty, true)
     );
   } else {
     // p1: exact town name
     const p1 = allTowns.filter(t =>
       t.Town_EN?.toLowerCase() === ql ||
-      t.Town_CH === q || t.Town_CHS === q
+      t.Town_CH === q || t.Town_CHS === q ||
+      isCountySuffixMatch(t, qCounty, true)
     );
     const p1set = new Set(p1);
     // p2: partial town name
     const p2 = allTowns.filter(t =>
       !p1set.has(t) && (
         t.Town_EN?.toLowerCase().includes(ql) ||
-        t.Town_CH?.includes(q) || t.Town_CHS?.includes(q)
+        t.Town_CH?.includes(q) || t.Town_CHS?.includes(q) ||
+        isCountySuffixMatch(t, qCounty, false)
       )
     );
     const p2set = new Set(p2);
@@ -360,12 +401,7 @@ function getResults(q, exact, kingdom, type, sort) {
   // Admin boundaries (provinces/commanderies) — Type filter doesn't apply
   // to sub-Type matching, only to the Admin. Boundary category itself.
   let adminResults = exact
-    ? allAdminBoundaries.filter(f => {
-        const p = f.properties;
-        return exactNameMatches(p.Name_EN, q, ql) ||
-               exactNameMatches(p.Name_CH, q, ql) ||
-               exactNameMatches(p.Name_CHS, q, ql);
-      })
+    ? allAdminBoundaries.filter(f => adminExactMatches(f, q, ql))
     : allAdminBoundaries.filter(f => adminBoundaryMatches(f, q, ql));
 
   if (kingdom !== 'all') adminResults = adminResults.filter(f => f.properties.kingdom === kingdom);

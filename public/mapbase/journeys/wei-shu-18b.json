@@ -1,0 +1,60 @@
+[
+  {
+    "kind": "town",
+    "lat": 32.30177708,
+    "lng": 113.93167649,
+    "name": "Pingchun"
+  },
+  {
+    "kind": "town",
+    "lat": 32.68444873,
+    "lng": 114.01251197,
+    "name": "Langling"
+  },
+  {
+    "kind": "town",
+    "lat": 34.02798583,
+    "lng": 114.05663756,
+    "name": "Xuchang"
+  },
+  {
+    "kind": "admin",
+    "id": "29"
+  },
+  {
+    "kind": "town",
+    "lat": 25.88687425,
+    "lng": 113.42631667,
+    "name": "Yang'an"
+  },
+  {
+    "kind": "town",
+    "lat": 34.81631685,
+    "lng": 114.04675874,
+    "name": "Guandu"
+  },
+  {
+    "kind": "town",
+    "lat": 30.34078806,
+    "lng": 112.18710173,
+    "name": "Jiangling"
+  },
+  {
+    "kind": "town",
+    "lat": 33.25320482,
+    "lng": 114.24918561,
+    "name": "Shangcai"
+  },
+  {
+    "kind": "town",
+    "lat": 32.04746989,
+    "lng": 112.06874333,
+    "name": "Fancheng"
+  },
+  {
+    "kind": "town",
+    "lat": 29.57948299,
+    "lng": 106.55315594,
+    "name": "Jiangzhou"
+  }
+]

@@ -10,11 +10,11 @@ const categoryId = siteEl.dataset.category;
 const pageLang   = siteEl.dataset.lang ?? 'en'; // 'en' | 'zh-hant' | 'zh-hans'
 
 const dataFiles = {
-  departments: () => import('../../data/central-court-database.json'),
-  ministers:   () => import('../../data/excellencies-database.json'),
-  military:    () => import('../../data/military-officials-database.json'),
-  regional:    () => import('../../data/provincial-officials-database.json'),
-  household:   () => import('../../data/rear-eastern-palace-database.json'),
+  departments: () => import('../../data/officials/central-court-database.json'),
+  ministers:   () => import('../../data/officials/excellencies-database.json'),
+  military:    () => import('../../data/officials/military-officials-database.json'),
+  regional:    () => import('../../data/officials/provincial-officials-database.json'),
+  household:   () => import('../../data/officials/rear-eastern-palace-database.json'),
 };
 
 const { default: pageData } = await dataFiles[categoryId]();

@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import Nav from '../../../components/Nav.astro';
 import ContactModal from '../../../components/Contactmodal.astro';
 import { t } from '../../../i18n/index.js';
-import { provinceData } from '../../../data/provinces-data';
+import { provinceData } from '../../../data/officials/provinces-data';
 import provinceMapSvg from '../../../../public/province-map.svg?raw';
 import { url } from '../../../utils/url';
 
@@ -213,7 +213,7 @@ const relatedMaps = [
                 <span>黄河故道</span>
               </label>
               <label class="imap-toggle-row imap-map-toggle">
-                <input type="checkbox" id="toggle-labels" checked />
+                <input type="checkbox" id="toggle-labels" />
                 <span class="imap-toggle-track"></span>
                 <span>现代地名</span>
               </label>
@@ -416,6 +416,23 @@ const relatedMaps = [
   }
   function getKingdom(provEn) { return provinceKingdom[provEn] ?? null; }
 
+  // "XX縣"/"XX县" should also match a County/Commandery/Provincial Seat
+  // stored without the suffix — Commandery and Provincial Seats are
+  // themselves counties (just also serving as the seat of a higher admin
+  // level), and most county names don't carry 縣/县 in the data anyway
+  // (unlike princely states, which keep 國 baked into their historical name).
+  const COUNTY_LIKE_TYPES = new Set(['County Seat', 'Commandery Seat', 'Provincial Seat']);
+  function countyStrippedQuery(q) {
+    const m = q.match(/^(.+)[县縣]$/);
+    return m ? m[1] : null;
+  }
+  function isCountySuffixMatch(t, qCounty, exact) {
+    if (qCounty === null || !COUNTY_LIKE_TYPES.has(t.Type)) return false;
+    return exact
+      ? (t.Town_CH === qCounty || t.Town_CHS === qCounty)
+      : (t.Town_CH?.includes(qCounty) || t.Town_CHS?.includes(qCounty));
+  }
+
   // ── WATER BODIES (rivers/lakes) — search-only, never shown by default ──
   let allWaterBodies = [];
   let waterBodiesLoaded = false;
@@ -514,6 +531,11 @@ function formatProvinceLabel(provEn) {
         candidates.push(`${base} Guo`, `${base}Guo`);
       } else {
         candidates.push(`${p.Name_EN} Jun`, `${p.Name_EN}Jun`);
+        // Regular commanderies are stored without 郡 in the raw Chinese name
+        // (e.g. "南陽", not "南陽郡") — accept "XX郡" in both scripts. States
+        // already carry 國 in their historical name and don't need this.
+        if (p.Name_CH) candidates.push(`${p.Name_CH}郡`);
+        if (p.Name_CHS) candidates.push(`${p.Name_CHS}郡`);
       }
     }
 
@@ -533,6 +555,17 @@ function formatProvinceLabel(provEn) {
 
   async function focusLocationFromUrl() {
     const params = new URLSearchParams(window.location.search);
+
+    // "View life journey" links carry only ?journey=<chapterId>, no
+    // lat/lng/water/admin at all — checked first and independently of
+    // everything else below, since it's a pure overview (all of a
+    // chapter's places at once), not tied to any single point.
+    const journeyId = params.get('journey');
+    if (journeyId) {
+      showTab('interactive');
+      showJourney(journeyId);
+      return;
+    }
 
     const waterId = params.get('water');
     if (waterId !== null && waterId !== '') {
@@ -596,10 +629,15 @@ function formatProvinceLabel(provEn) {
       if (searchInput?.value?.trim() !== q) return;
     }
     const ql = q.toLowerCase();
-    const exact   = allTowns.filter(t => t.Town_EN?.toLowerCase() === ql || t.Town_CH === q || t.Town_CHS === q);
+    const qCounty = countyStrippedQuery(q);
+    const exact   = allTowns.filter(t =>
+      t.Town_EN?.toLowerCase() === ql || t.Town_CH === q || t.Town_CHS === q ||
+      isCountySuffixMatch(t, qCounty, true)
+    );
     const partial = allTowns.filter(t =>
-      (t.Town_EN?.toLowerCase().includes(ql) || t.Town_CH?.includes(q) || t.Town_CHS?.includes(q)) &&
-      t.Town_EN?.toLowerCase() !== ql && t.Town_CH !== q && t.Town_CHS !== q
+      (t.Town_EN?.toLowerCase().includes(ql) || t.Town_CH?.includes(q) || t.Town_CHS?.includes(q) || isCountySuffixMatch(t, qCounty, false)) &&
+      t.Town_EN?.toLowerCase() !== ql && t.Town_CH !== q && t.Town_CHS !== q &&
+      !isCountySuffixMatch(t, qCounty, true)
     );
     const townResults = [...exact, ...partial].map(t => ({ kind: 'town', item: t }));
 
@@ -632,7 +670,7 @@ function formatProvinceLabel(provEn) {
             : '<span class="badge b-water"><i class="ti ti-droplet"></i></span>';
           const pngUrl = provToPng[f.properties.primary_province];
           const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="图版地图"><i class="ti ti-map-2"></i></button>` : '';
-          const mapBtn = `<button class="result-action result-action-water" data-index="${index}" title="互动地图"><i class="ti ti-map-pin"></i></button>`;
+          const mapBtn = `<button class="result-action result-action-water" data-index="${index}" title="交互地图"><i class="ti ti-map-pin"></i></button>`;
           return `<div class="search-result-row" data-index="${index}" data-kind="water">
             <div class="search-result-left">${badge}<span class="result-name-en">${displaySearchWaterName(f)}</span>${subName}</div>
             <div class="result-right"><span class="result-type">${displaySearchWaterType(f)}</span><div style="display:flex;flex-direction:row;align-items:center;gap:4px;">${pngBtn}${mapBtn}</div></div>
@@ -646,7 +684,7 @@ function formatProvinceLabel(provEn) {
           const badge = k ? `<span class="badge b-${k}">${kingdomLabel[k]}</span>` : '';
           const pngUrl = provToPng[f.properties.Prov_EN];
           const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="图版地图"><i class="ti ti-map-2"></i></button>` : '';
-          const mapBtn = `<button class="result-action result-action-admin" data-index="${index}" title="互动地图"><i class="ti ti-map-pin"></i></button>`;
+          const mapBtn = `<button class="result-action result-action-admin" data-index="${index}" title="交互地图"><i class="ti ti-map-pin"></i></button>`;
           return `<div class="search-result-row" data-index="${index}" data-kind="admin">
             <div class="search-result-left">${badge}<span class="result-name-en">${displaySearchAdminName(f)}</span>${subName}</div>
             <div class="result-right"><span class="result-type">${displaySearchAdminType(f)}</span><div style="display:flex;flex-direction:row;align-items:center;gap:4px;">${pngBtn}${mapBtn}</div></div>
@@ -659,7 +697,7 @@ function formatProvinceLabel(provEn) {
         const subName = displaySearchTownSub(t) ? `<span class="result-name-zh">${displaySearchTownSub(t)}</span>` : '';
         const pngUrl = provToPng[t.Prov_EN];
         const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="图版地图"><i class="ti ti-map-2"></i></button>` : '';
-        const mapBtn = `<button class="result-action result-action-map" data-index="${index}" data-lat="${t.Latitude}" data-lng="${t.Longitude}" title="互动地图"><i class="ti ti-map-pin"></i></button>`;
+        const mapBtn = `<button class="result-action result-action-map" data-index="${index}" data-lat="${t.Latitude}" data-lng="${t.Longitude}" title="交互地图"><i class="ti ti-map-pin"></i></button>`;
         return `<div class="search-result-row" data-index="${index}" data-kind="town" data-en="${t.Town_EN}">
           <div class="search-result-left">${badge}<span class="result-name-en">${displaySearchTownName(t)}</span>${subName}</div>
           <div class="result-right"><span class="result-type">${displaySearchType(t.Type)}</span><div style="display:flex;flex-direction:row;align-items:center;gap:4px;">${pngBtn}${mapBtn}</div></div>
@@ -738,7 +776,8 @@ function formatProvinceLabel(provEn) {
     clearWaterBodyHighlight,
     showWaterBodyById,
     fetchAdminBoundaries,
-    showAdminBoundaryById
+    showAdminBoundaryById,
+    showJourney
   } from '../../../scripts/maps/interactive-map.js';
 </script>
 
@@ -748,10 +787,10 @@ function formatProvinceLabel(provEn) {
 /* PAGE HEADER */
 .page-header { padding: 1.5rem 2rem 1.25rem; border-bottom: 0.5px solid var(--color-border); }
 .breadcrumb { display: flex; align-items: center; gap: 6px; margin-bottom: 0.75rem; }
-.bc-link { font-size: 14px; color: var(--color-text-tertiary); text-decoration: none; }
-.bc-link:hover { color: var(--color-text-secondary); }
-.bc-sep { font-size: 12px; color: var(--color-text-tertiary); }
-.bc-cur { font-size: 14px; color: var(--color-text-secondary); }
+.bc-link { font-size: 15px; color: #d5ad6b; text-decoration: none; }
+.bc-link:hover { color: #f0d39a; }
+.bc-sep { font-size: 14px; color: rgba(232,221,202,0.35); }
+.bc-cur { font-size: 16px; color: rgba(232,221,202,0.66); }
 .page-title { font-size: 42px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
 .page-sub { font-size: 18px; color: var(--color-text-secondary); }
 
@@ -1443,6 +1482,12 @@ function formatProvinceLabel(provEn) {
   cursor: pointer;
   font-size: 18px;
   line-height: 1;
+}
+
+/* JOURNEY VIEW — teardrop pins for every place referenced in one chapter */
+.imap-journey-pin {
+  cursor: pointer;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.45));
 }
 
 /* FOOTER */

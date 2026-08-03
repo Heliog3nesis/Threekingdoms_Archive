@@ -8,7 +8,7 @@
  *   node scripts/convertjson-zhs.js <jsonFile> <sourceKey> <targetKey>
  *
  * Example:
- *   node scripts/convertjson-zhs.js src/data/short-stories-database.json zht zhs
+ *   node scripts/convertjson-zhs.js src/data/translations/short-stories-database.json zht zhs
  *
  * This will find every object with a `zht` key and add a `zhs` key next to it
  * with the converted Simplified Chinese text.
@@ -20,7 +20,7 @@ import { readFileSync, writeFileSync } from 'fs';
 const args = process.argv.slice(2);
 if (args.length < 3) {
   console.error('Usage: node convert-json-zht-to-zhs.js <jsonFile> <sourceKey> <targetKey>');
-  console.error('Example: node convert-json-zht-to-zhs.js src/data/short-stories-database.json zht zhs');
+  console.error('Example: node convert-json-zht-to-zhs.js src/data/translations/short-stories-database.json zht zhs');
   process.exit(1);
 }
 

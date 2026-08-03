@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import Nav from '../../../components/Nav.astro';
 import ContactModal from '../../../components/Contactmodal.astro';
 import { t } from '../../../i18n/index.js';
-import storiesData from '../../../data/short-stories-database.json';
+import storiesData from '../../../data/translations/short-stories-database.json';
 import { url } from '../../../utils/url';
 
 export function getStaticPaths() {
@@ -431,10 +431,10 @@ const cnField = lang === 'zh-hans' ? 'zhs' : 'zht';
   border-bottom: 0.5px solid var(--color-border);
 }
 .breadcrumb { display: flex; align-items: center; gap: 6px; margin-bottom: 0.75rem; }
-.bc-link { font-size: 13px; color: var(--color-text-tertiary); text-decoration: none; }
-.bc-link:hover { color: var(--color-text-secondary); }
-.bc-sep { font-size: 12px; color: var(--color-text-tertiary); }
-.bc-cur { font-size: 14px; color: var(--color-text-secondary); }
+.bc-link { font-size: 15px; color: #d5ad6b; text-decoration: none; }
+.bc-link:hover { color: #f0d39a; }
+.bc-sep { font-size: 14px; color: rgba(232,221,202,0.35); }
+.bc-cur { font-size: 16px; color: rgba(232,221,202,0.66); }
 .page-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 42px; font-weight: 500;
