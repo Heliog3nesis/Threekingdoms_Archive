@@ -9,6 +9,13 @@ hotfix for bugs.
 [<img src="./.github/badges/readme.svg" height="22">](./README.md)
 
 ---
+### v2.26.08b · 2026-08-26
+**<img src="./.github/badges/maps.svg" width="62">**
+  - Improved location and journey popup, highlight rules
+
+**<img src="./.github/badges/translations.svg" width="123">**
+  - Completed Records of the Three Kingdoms translations: Book of Wei Chapter 18
+---
 ### v2.26.08a · 2026-08-03
 
 **<img src = "./.github/badges/artefacts.svg" width="94">**
@@ -20,7 +27,7 @@ hotfix for bugs.
   - Improved handling for searches 
 
 **<img src="./.github/badges/translations.svg" width="123">**
-  - Added Records of the Three Kingdooms translations: Chapter 18, Biographies of Li Dian and Li Tong
+  - Added Records of the Three Kingdoms translations: Chapter 18, Biographies of Li Dian and Li Tong
   - Added map and official redirects for Records of the Three Kingdoms translations
   - Fixed officials search dropdown and result page not rendering specific entries correctly
   - Added translation of Map of Jiankang (Nanjing) during the Eastern Jin

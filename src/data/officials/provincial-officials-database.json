@@ -3211,7 +3211,7 @@
           "displayName": {
             "zht": "中尉",
             "zhs": "中尉",
-            "en": "Capital Commandant"
+            "en": "Commandant of the Capital"
           },
           "hasMultipleNames": false,
           "gradeNum": 7,
@@ -3221,7 +3221,7 @@
               {
                 "zht": "中尉",
                 "zhs": "中尉",
-                "en": "Capital Commandant"
+                "en": "Commandant of the Capital"
               }
             ],
             "shu": [
@@ -4036,7 +4036,7 @@
           },
           "hasMultipleNames": false,
           "gradeNum": 8,
-          "tier": "secondary",
+          "tier": "dignitary",
           "name": {
             "wei": [
               {

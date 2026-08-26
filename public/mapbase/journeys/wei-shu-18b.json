@@ -1,60 +1,468 @@
-[
-  {
-    "kind": "town",
-    "lat": 32.30177708,
-    "lng": 113.93167649,
-    "name": "Pingchun"
-  },
-  {
-    "kind": "town",
-    "lat": 32.68444873,
-    "lng": 114.01251197,
-    "name": "Langling"
-  },
-  {
-    "kind": "town",
-    "lat": 34.02798583,
-    "lng": 114.05663756,
-    "name": "Xuchang"
-  },
-  {
-    "kind": "admin",
-    "id": "29"
-  },
-  {
-    "kind": "town",
-    "lat": 25.88687425,
-    "lng": 113.42631667,
-    "name": "Yang'an"
-  },
-  {
-    "kind": "town",
-    "lat": 34.81631685,
-    "lng": 114.04675874,
-    "name": "Guandu"
-  },
-  {
-    "kind": "town",
-    "lat": 30.34078806,
-    "lng": 112.18710173,
-    "name": "Jiangling"
-  },
-  {
-    "kind": "town",
-    "lat": 33.25320482,
-    "lng": 114.24918561,
-    "name": "Shangcai"
-  },
-  {
-    "kind": "town",
-    "lat": 32.04746989,
-    "lng": 112.06874333,
-    "name": "Fancheng"
-  },
-  {
-    "kind": "town",
-    "lat": 29.57948299,
-    "lng": 106.55315594,
-    "name": "Jiangzhou"
-  }
-]
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 32.30177708,
+      "lng": 113.93167649,
+      "name": "Pingchun",
+      "persons": [
+        "李通（文達）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.68444873,
+      "lng": 114.01251197,
+      "name": "Langling",
+      "persons": [
+        "李通（文達）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.02798583,
+      "lng": 114.05663756,
+      "name": "Xuchang",
+      "persons": [
+        "李通（文達）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "29",
+      "persons": [
+        "李通（文達）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 25.88687425,
+      "lng": 113.42631667,
+      "name": "Yang'an",
+      "persons": [
+        "李通（文達）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.34078806,
+      "lng": 112.18710173,
+      "name": "Jiangling",
+      "persons": [
+        "李通（文達）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "李通（文達）",
+      "name": {
+        "en": "Li Tong",
+        "zht": "李通",
+        "zhs": "李通"
+      },
+      "courtesyName": {
+        "en": "Wenda",
+        "zht": "文達",
+        "zhs": "文达"
+      },
+      "born": {
+        "era": {
+          "en": "1st year of Jianning",
+          "zht": "建宁元年",
+          "zhs": "建宁元年"
+        },
+        "year": 168
+      },
+      "died": {
+        "era": {
+          "en": "14th year of Jian'an",
+          "zht": "建安十四年",
+          "zhs": "建安十四年"
+        },
+        "year": 209
+      },
+      "age": 42,
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Pingchun, Jiangxia",
+            "zht": "江夏平春",
+            "zhs": "江夏平春"
+          },
+          "position": null,
+          "passageId": "ws18b-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.30177708,
+              "lng": 113.93167649,
+              "name": "Pingchun"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Langling",
+            "zht": "朗陵",
+            "zhs": "朗陵"
+          },
+          "position": null,
+          "passageId": "ws18b-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.68444873,
+              "lng": 114.01251197,
+              "name": "Langling"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "beginning of Jian'an era",
+            "zht": "建安初",
+            "zhs": "建安初"
+          },
+          "year": null,
+          "location": [
+            {
+              "en": "Xu",
+              "zht": "許",
+              "zhs": "许"
+            },
+            {
+              "en": "Runan",
+              "zht": "汝南",
+              "zhs": "汝南"
+            }
+          ],
+          "position": {
+            "en": "Gentleman-General Who Rallies Might",
+            "zht": "振威中郎將",
+            "zhs": "振威中郎将"
+          },
+          "passageId": "ws18b-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.02798583,
+              "lng": 114.05663756,
+              "name": "Xuchang"
+            },
+            {
+              "kind": "admin",
+              "id": "29"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Gentleman-General Who Rallies Might",
+              "zht": "振威中郎將",
+              "zhs": "振威中郎将",
+              "url": "/translations/officials/military#gentleman-generals-176"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd - 3rd year of Jian'an",
+            "zht": "建安二年 - 三年",
+            "zhs": "建安二年 - 三年"
+          },
+          "year": "197-198",
+          "location": {
+            "en": "Yang'an",
+            "zht": "陽安",
+            "zhs": "阳安"
+          },
+          "position": [
+            {
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军"
+            },
+            {
+              "en": "Commandant of Yang'an",
+              "zht": "陽安都尉",
+              "zhs": "阳安都尉"
+            }
+          ],
+          "passageId": "ws18b-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 25.88687425,
+              "lng": 113.42631667,
+              "name": "Yang'an"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Assistant General",
+                "zht": "裨將軍",
+                "zhs": "裨将军"
+              },
+              "1": {
+                "en": "Commandant of Yang'an",
+                "zht": "陽安都尉",
+                "zhs": "阳安都尉"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "After 5th year of Jian'an",
+            "zht": "建安五年後",
+            "zhs": "建安五年后"
+          },
+          "year": "After 200",
+          "location": {
+            "en": "Runan",
+            "zht": "汝南",
+            "zhs": "汝南"
+          },
+          "position": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            },
+            {
+              "en": "Grand Administrator of Runan",
+              "zht": "汝南太守",
+              "zhs": "汝南太守"
+            }
+          ],
+          "passageId": "ws18b-p5",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "29"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Capital Neighbourhood Marquis",
+                "zht": "都亭侯",
+                "zhs": "都亭侯"
+              },
+              "1": {
+                "en": "Grand Administrator of Runan",
+                "zht": "汝南太守",
+                "zhs": "汝南太守"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "14th year of Jian'an",
+            "zht": "建安十四年",
+            "zhs": "建安十四年"
+          },
+          "year": 209,
+          "location": {
+            "en": "Jiangling",
+            "zht": "江陵",
+            "zhs": "江陵"
+          },
+          "position": null,
+          "passageId": "ws18b-p6",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 30.34078806,
+              "lng": 112.18710173,
+              "name": "Jiangling"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "李通（文達）",
+      "to": "陳恭",
+      "type": "comrades",
+      "passageId": "ws18b-p1"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "周直",
+      "type": "enemies",
+      "passageId": "ws18b-p3"
+    },
+    {
+      "from": "陳恭",
+      "to": "周直",
+      "type": "enemies",
+      "passageId": "ws18b-p3"
+    },
+    {
+      "from": "陳恭",
+      "to": "陳郃",
+      "type": "brothers-in-law",
+      "passageId": "ws18b-p3"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "陳郃",
+      "type": "enemies",
+      "passageId": "ws18b-p3"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "吳霸",
+      "type": "enemies",
+      "passageId": "ws18b-p3"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "曹操",
+      "type": "lord-subordinate",
+      "passageId": "ws18b-p4"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "張繡",
+      "type": "enemies",
+      "passageId": "ws18b-p4"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "劉表",
+      "type": "enemies",
+      "passageId": "ws18b-p4"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "趙儼",
+      "type": "close-friends",
+      "passageId": "ws18b-p5"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "袁紹",
+      "type": "political-opponents",
+      "passageId": "ws18b-p5"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "瞿恭",
+      "type": "enemies",
+      "passageId": "ws18b-p5"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "江宮",
+      "type": "enemies",
+      "passageId": "ws18b-p5"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "沈成",
+      "type": "enemies",
+      "passageId": "ws18b-p5"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "張赤",
+      "type": "enemies",
+      "passageId": "ws18b-p6"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "關羽",
+      "type": "battlefield-opponents",
+      "passageId": "ws18b-p6"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "曹仁",
+      "type": "allies",
+      "passageId": "ws18b-p6"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "李基",
+      "type": "father-son",
+      "passageId": "ws18b-p6"
+    },
+    {
+      "from": "李通（文達）",
+      "to": "李緒",
+      "type": "father-son",
+      "passageId": "ws18b-p6"
+    },
+    {
+      "from": "李緒",
+      "to": "李基",
+      "type": "elder-brother-younger-brother",
+      "passageId": "ws18b-p6"
+    },
+    {
+      "from": "李緒",
+      "to": "李秉（玄冑）",
+      "type": "father-son",
+      "passageId": "ws18b-p7"
+    },
+    {
+      "from": "李秉（玄冑）",
+      "to": "司馬昭",
+      "type": "ruler-subordinate",
+      "passageId": "ws18b-p7"
+    },
+    {
+      "from": "李秉（玄冑）",
+      "to": "李重（茂曾）",
+      "type": "father-son",
+      "passageId": "ws18b-p7"
+    },
+    {
+      "from": "李重（茂曾）",
+      "to": "司馬倫",
+      "type": "political-opponents",
+      "passageId": "ws18b-p8"
+    },
+    {
+      "from": "李重（茂曾）",
+      "to": "李尚（茂仲）",
+      "type": "elder-brother-younger-brother",
+      "passageId": "ws18b-p8"
+    },
+    {
+      "from": "李重（茂曾）",
+      "to": "李矩（茂約）",
+      "type": "elder-brother-younger-brother",
+      "passageId": "ws18b-p8"
+    },
+    {
+      "from": "李重（茂曾）",
+      "to": "李式（景則）",
+      "type": "father-son",
+      "passageId": "ws18b-p8"
+    }
+  ]
+}

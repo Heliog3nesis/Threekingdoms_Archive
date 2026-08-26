@@ -185,4 +185,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     },
     seeAlso: ['li', 'shi']
   },
+  {
+    id: 'flourishing-talent',
+    term: { en: 'Flourishing Talent', zht: '茂才', zhs: '茂才' },
+    pinyin: 'màocái',
+    definition: {
+      en: "During the Later Han, the Flourishing Talent (Maocai) were generally recommended annually, with the recommendations made by provincial Inspectors. Per Emperor Guangwu of Later Han, the Radiant Martial Emperor, candidates were assessed according to four categories: first, possessing lofty virtue and pure principles; second, being well versed in the Classics and of cultivated conduct; third, having a clear understanding of the law and being capable of resolving difficult cases; and fourth, being resolute and resourceful, and composed and decisive when difficulties arise." ,
+      zht: '東漢茂才多為歲舉，舉主為刺史。按光武帝茂才四行：一曰德行高妙，志節清白；二曰明經行修，能任博士；三曰明曉法律，足以決疑；四曰剛毅多略，遇事不惑。',
+      zhs: '东汉茂才多为岁举，举主为刺史。按光武帝茂才四行：一曰德行高妙，志节清白；二曰明经行修，能任博士；三曰明晓法律，足以决疑；四曰刚毅多略，遇事不惑。',
+    },
+  }
 ];

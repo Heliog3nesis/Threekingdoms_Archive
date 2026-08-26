@@ -1,0 +1,306 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.31506886,
+      "lng": 115.22997722,
+      "name": "Jiwu",
+      "persons": [
+        "典韋"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.42929745,
+      "lng": 115.11364611,
+      "name": "Xiangyi",
+      "persons": [
+        "典韋"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.3647526,
+      "lng": 115.65117607,
+      "name": "Suiyang",
+      "persons": [
+        "典韋"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.59233429,
+      "lng": 114.99129787,
+      "name": "Puyang",
+      "persons": [
+        "典韋"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.98790226,
+      "lng": 112.53739567,
+      "name": "Wan",
+      "persons": [
+        "典韋"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "典韋",
+      "born": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
+      "died": {
+        "era": {
+          "en": "2nd year of Jian'an",
+          "zht": "建安二年",
+          "zhs": "建安二年"
+        },
+        "year": 197,
+        "age": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Jiwu, Chenliu",
+            "zht": "陳留己吾",
+            "zhs": "陈留己吾"
+          },
+          "position": null,
+          "passageId": "ws18g-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.31506886,
+              "lng": 115.22997722,
+              "name": "Jiwu"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Xiangyi",
+            "zht": "襄邑",
+            "zhs": "襄邑"
+          },
+          "position": null,
+          "passageId": "ws18g-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.42929745,
+              "lng": 115.11364611,
+              "name": "Xiangyi"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Suiyang",
+            "zht": "睢陽",
+            "zhs": "睢阳"
+          },
+          "position": null,
+          "passageId": "ws18g-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.3647526,
+              "lng": 115.65117607,
+              "name": "Suiyang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "1st year of Xingping",
+            "zht": "興平元年",
+            "zhs": "兴平元年"
+          },
+          "year": 194,
+          "age": null,
+          "location": {
+            "en": "Puyang",
+            "zht": "濮陽",
+            "zhs": "濮阳"
+          },
+          "position": {
+            "en": "Major",
+            "zht": "司馬",
+            "zhs": "司马"
+          },
+          "passageId": "ws18g-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.59233429,
+              "lng": 114.99129787,
+              "name": "Puyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Major",
+              "zht": "司馬",
+              "zhs": "司马",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Commandant",
+              "zht": "都尉",
+              "zhs": "都尉"
+            },
+            {
+              "en": "Colonel",
+              "zht": "校尉",
+              "zhs": "校尉"
+            }
+          ],
+          "passageId": "ws18g-p5",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Commandant",
+                "zht": "都尉",
+                "zhs": "都尉"
+              },
+              "1": {
+                "en": "Colonel",
+                "zht": "校尉",
+                "zhs": "校尉"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd year of Jian'an",
+            "zht": "建安二年",
+            "zhs": "建安二年"
+          },
+          "year": 197,
+          "age": null,
+          "location": {
+            "en": "Wan",
+            "zht": "宛",
+            "zhs": "宛"
+          },
+          "position": "colonel",
+          "passageId": "ws18g-p7",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.98790226,
+              "lng": 112.53739567,
+              "name": "Wan"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": "c",
+              "1": "o",
+              "2": "l",
+              "3": "o",
+              "4": "n",
+              "5": "e",
+              "6": "l",
+              "url": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "典韋",
+      "to": "李永",
+      "type": "killer-victim",
+      "passageId": "ws18g-p2"
+    },
+    {
+      "from": "典韋",
+      "to": "李永妻",
+      "type": "killer-victim",
+      "passageId": "ws18g-p2"
+    },
+    {
+      "from": "典韋",
+      "to": "趙寵",
+      "type": "subordinate-superior",
+      "passageId": "ws18g-p3"
+    },
+    {
+      "from": "典韋",
+      "to": "夏侯惇",
+      "type": "subordinate-superior",
+      "passageId": "ws18g-p3"
+    },
+    {
+      "from": "典韋",
+      "to": "曹操",
+      "type": "subordinate-superior",
+      "passageId": "ws18g-p6"
+    },
+    {
+      "from": "典韋",
+      "to": "曹操",
+      "type": "bodyguard-protected",
+      "passageId": "ws18g-p7"
+    },
+    {
+      "from": "典韋",
+      "to": "張繡",
+      "type": "killer-victim",
+      "passageId": "ws18g-p8"
+    },
+    {
+      "from": "典韋",
+      "to": "典滿",
+      "type": "father-son",
+      "passageId": "ws18g-p8"
+    }
+  ]
+}

@@ -1,96 +1,797 @@
-[
-  {
-    "kind": "town",
-    "lat": 35.40781933,
-    "lng": 116.14257473,
-    "name": "巨野"
-  },
-  {
-    "kind": "town",
-    "lat": 35.26547064,
-    "lng": 115.87380975,
-    "name": "乘氏"
-  },
-  {
-    "kind": "town",
-    "lat": 35.82685338,
-    "lng": 116.28297435,
-    "name": "壽張"
-  },
-  {
-    "kind": "admin",
-    "id": "8"
-  },
-  {
-    "kind": "admin",
-    "id": "11"
-  },
-  {
-    "kind": "admin",
-    "id": "6"
-  },
-  {
-    "kind": "town",
-    "lat": 34.01634921,
-    "lng": 113.85205527,
-    "name": "Yingyin"
-  },
-  {
-    "kind": "town",
-    "lat": 35.44867773,
-    "lng": 115.15376029,
-    "name": "Lihu"
-  },
-  {
-    "kind": "town",
-    "lat": 34.81631685,
-    "lng": 114.04675874,
-    "name": "Guandu"
-  },
-  {
-    "kind": "town",
-    "lat": 35.85124274,
-    "lng": 116.15260328,
-    "name": "Anmin"
-  },
-  {
-    "kind": "town",
-    "lat": 35.68541005,
-    "lng": 114.60606513,
-    "name": "Liyang"
-  },
-  {
-    "kind": "admin",
-    "id": "162"
-  },
-  {
-    "kind": "town",
-    "lat": 33.47646438,
-    "lng": 113.2914691,
-    "name": "Ye"
-  },
-  {
-    "kind": "town",
-    "lat": 36.29186303,
-    "lng": 114.39806539,
-    "name": "Ye"
-  },
-  {
-    "kind": "town",
-    "lat": 36.34516886,
-    "lng": 113.10383412,
-    "name": "Huguan"
-  },
-  {
-    "kind": "town",
-    "lat": 36.954665,
-    "lng": 120.9131519,
-    "name": "Changguang"
-  },
-  {
-    "kind": "town",
-    "lat": 31.94881135,
-    "lng": 117.12136064,
-    "name": "Hefei"
-  }
-]
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 35.26547064,
+      "lng": 115.87380975,
+      "name": "乘氏",
+      "persons": [
+        "李典（曼成）",
+        "李乾",
+        "李整"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.01634921,
+      "lng": 113.85205527,
+      "name": "Yingyin",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.44867773,
+      "lng": 115.15376029,
+      "name": "Lihu",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.85124274,
+      "lng": 116.15260328,
+      "name": "Anmin",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.47646438,
+      "lng": 113.2914691,
+      "name": "Ye",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.15217013,
+      "lng": 112.71539343,
+      "name": "Bowang",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.29186303,
+      "lng": 114.39806539,
+      "name": "Ye",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.34516886,
+      "lng": 113.10383412,
+      "name": "Huguan",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.954665,
+      "lng": 120.9131519,
+      "name": "Changguang",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.94881135,
+      "lng": 117.12136064,
+      "name": "Hefei",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.82685338,
+      "lng": 116.28297435,
+      "name": "壽張",
+      "persons": [
+        "李乾"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "8",
+      "persons": [
+        "李乾"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.40781933,
+      "lng": 116.14257473,
+      "name": "巨野",
+      "persons": [
+        "李整"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "11",
+      "persons": [
+        "李整"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "6",
+      "persons": [
+        "李整"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "李典（曼成）",
+      "name": {
+        "en": "Li Dian",
+        "zht": "李典",
+        "zhs": "李典"
+      },
+      "courtesyName": {
+        "en": "Mancheng",
+        "zht": "曼成",
+        "zhs": "曼成"
+      },
+      "born": {
+        "era": {
+          "en": "3rd year of Guanghe?",
+          "zht": "光和三年?",
+          "zhs": "光和三年?"
+        },
+        "year": "180?"
+      },
+      "died": {
+        "era": {
+          "en": "22nd year of Jian'an?",
+          "zht": "建安二十二年?",
+          "zhs": "建安二十二年?"
+        },
+        "year": "217?"
+      },
+      "age": 36,
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Chengshi",
+            "zht": "乘氏",
+            "zhs": "乘氏"
+          },
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.26547064,
+              "lng": 115.87380975,
+              "name": "乘氏"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Yingyin",
+            "zht": "潁陰",
+            "zhs": "颍阴"
+          },
+          "position": {
+            "en": "Magistrate of Yingyin; Gentleman-General",
+            "zht": "潁陰令、中郎將",
+            "zhs": "颍阴令、中郎将"
+          },
+          "passageId": "ws18a-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.01634921,
+              "lng": 113.85205527,
+              "name": "Yingyin"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Magistrate of Yingyin",
+              "zht": "潁陰令",
+              "zhs": "颍阴令",
+              "url": "/translations/officials/regional/#counties-088"
+            },
+            {
+              "en": "Gentleman-General",
+              "zht": "中郎將",
+              "zhs": "中郎将",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Lihu",
+            "zht": "離狐",
+            "zhs": "离狐"
+          },
+          "position": {
+            "en": "Grand Administrator of Lihu",
+            "zht": "離狐太守",
+            "zhs": "离狐太守"
+          },
+          "passageId": "ws18a-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.44867773,
+              "lng": 115.15376029,
+              "name": "Lihu"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator of Lihu",
+              "zht": "離狐太守",
+              "zhs": "离狐太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "5th year of Jian'an",
+            "zht": "建安五年",
+            "zhs": "建安五年"
+          },
+          "year": 200,
+          "location": {
+            "en": "Anmin",
+            "zht": "安民",
+            "zhs": "安民"
+          },
+          "position": {
+            "en": "Assistant General",
+            "zht": "裨將軍",
+            "zhs": "裨将军"
+          },
+          "passageId": "ws18a-p3",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.85124274,
+              "lng": 116.15260328,
+              "name": "Anmin"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军",
+              "url": "/translations/officials/military#four-direction--misc-165"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "7th year of Jian'an",
+            "zht": "建安七年",
+            "zhs": "建安七年"
+          },
+          "year": 202,
+          "location": [
+            {
+              "en": "Ye",
+              "zht": "葉",
+              "zhs": "叶"
+            },
+            {
+              "en": "Bowang",
+              "zht": "博望",
+              "zhs": "博望"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18a-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.47646438,
+              "lng": 113.2914691,
+              "name": "Ye"
+            },
+            {
+              "kind": "town",
+              "lat": 33.15217013,
+              "lng": 112.71539343,
+              "name": "Bowang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "9th year of Jian'an",
+            "zht": "建安九年",
+            "zhs": "建安九年"
+          },
+          "year": 204,
+          "location": {
+            "en": "Ye",
+            "zht": "鄴",
+            "zhs": "邺"
+          },
+          "position": null,
+          "passageId": "ws18a-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.29186303,
+              "lng": 114.39806539,
+              "name": "Ye"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "location": {
+            "en": "Huguan",
+            "zht": "壺關",
+            "zhs": "壶关"
+          },
+          "position": null,
+          "passageId": "ws18a-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.34516886,
+              "lng": 113.10383412,
+              "name": "Huguan"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "11th year of Jian'an",
+            "zht": "建安十一年",
+            "zhs": "建安十一年"
+          },
+          "year": 206,
+          "location": {
+            "en": "Changguang",
+            "zht": "長廣",
+            "zhs": "长广"
+          },
+          "position": {
+            "en": "General who Captures the Enemies; Capital District Marquis ",
+            "zht": "捕虜將軍、都亭侯",
+            "zhs": "捕虏将军、都亭侯"
+          },
+          "passageId": "ws18a-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.954665,
+              "lng": 120.9131519,
+              "name": "Changguang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General who Captures the Enemies",
+              "zht": "捕虜將軍",
+              "zhs": "捕虏将军",
+              "url": "/translations/officials/military#four-direction--misc-154"
+            },
+            {
+              "en": "Capital District Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": null,
+          "position": {
+            "en": "General Who Defeats the Enemies",
+            "zht": "破虜將軍",
+            "zhs": "破虏将军"
+          },
+          "passageId": "ws18a-p6",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "General Who Defeats the Enemies",
+              "zht": "破虜將軍",
+              "zhs": "破虏将军",
+              "url": "/translations/officials/military#four-direction--misc-154"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": 215,
+          "location": {
+            "en": "Hefei",
+            "zht": "合肥",
+            "zhs": "合肥"
+          },
+          "position": null,
+          "passageId": "ws18a-p6",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.94881135,
+              "lng": 117.12136064,
+              "name": "Hefei"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    },
+    {
+      "person": "李乾",
+      "name": {
+        "en": "Li Qian",
+        "zht": "李乾",
+        "zhs": "李乾"
+      },
+      "courtesyName": null,
+      "born": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
+      "died": {
+        "en": "1st - 2nd year of Xingping",
+        "zht": "興平元年 - 二年",
+        "zhs": "兴平元年 - 二年"
+      },
+      "year": "194-195",
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Chengshi",
+            "zht": "乘氏",
+            "zhs": "乘氏"
+          },
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.26547064,
+              "lng": 115.87380975,
+              "name": "乘氏"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "During the Chuping era",
+            "zht": "初平中",
+            "zhs": "初平中"
+          },
+          "year": "190-193",
+          "location": [
+            {
+              "en": "Shouzhang",
+              "zht": "壽張",
+              "zhs": "寿张"
+            },
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.82685338,
+              "lng": 116.28297435,
+              "name": "壽張"
+            },
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "1st - 2nd year of Xingping",
+            "zht": "興平元年-二年",
+            "zhs": "兴平元年-二年"
+          },
+          "year": "194-195",
+          "location": {
+            "en": "Chengshi",
+            "zht": "乘氏",
+            "zhs": "乘氏"
+          },
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.26547064,
+              "lng": 115.87380975,
+              "name": "乘氏"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    },
+    {
+      "person": "李整",
+      "name": {
+        "en": "Li Zheng",
+        "zht": "李整",
+        "zhs": "李整"
+      },
+      "courtesyName": null,
+      "born": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Chengshi",
+            "zht": "乘氏",
+            "zhs": "乘氏"
+          },
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.26547064,
+              "lng": 115.87380975,
+              "name": "乘氏"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "2nd year of Xingping",
+            "zht": "興平二年",
+            "zhs": "兴平二年"
+          },
+          "year": 195,
+          "location": {
+            "en": "Juye",
+            "zht": "巨野",
+            "zhs": "巨野"
+          },
+          "position": null,
+          "passageId": "ws18a-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.40781933,
+              "lng": 116.14257473,
+              "name": "巨野"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": [
+            {
+              "en": "Yan Province",
+              "zht": "兗州",
+              "zhs": "兗州"
+            },
+            {
+              "en": "Qing Province",
+              "zht": "青州",
+              "zhs": "青州"
+            }
+          ],
+          "position": {
+            "en": "Inspector of Qing Province",
+            "zht": "青州刺史",
+            "zhs": "青州刺史"
+          },
+          "passageId": "ws18a-p2",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "11"
+            },
+            {
+              "kind": "admin",
+              "id": "6"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Inspector of Qing Province",
+              "zht": "青州刺史",
+              "zhs": "青州刺史",
+              "url": "/translations/officials/regional#provinces-014"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "李乾",
+      "to": "李典（曼成）",
+      "type": "uncle-nephew",
+      "passageId": "ws18a-p1"
+    },
+    {
+      "from": "李乾",
+      "to": "李整",
+      "type": "father-son",
+      "passageId": "ws18a-p2"
+    },
+    {
+      "from": "李典（曼成）",
+      "to": "李禎",
+      "type": "father-son",
+      "passageId": "ws18a-p7"
+    },
+    {
+      "from": "曹操",
+      "to": "李乾",
+      "type": "lord-subordinate",
+      "passageId": "ws18a-p1"
+    },
+    {
+      "from": "曹操",
+      "to": "李整",
+      "type": "lord-subordinate",
+      "passageId": "ws18a-p2"
+    },
+    {
+      "from": "曹操",
+      "to": "李典（曼成）",
+      "type": "lord-subordinate",
+      "passageId": "ws18a-p3"
+    },
+    {
+      "from": "呂布",
+      "to": "薛蘭",
+      "type": "lord-subordinate",
+      "passageId": "ws18a-p1"
+    },
+    {
+      "from": "呂布",
+      "to": "李封",
+      "type": "lord-subordinate",
+      "passageId": "ws18a-p1"
+    },
+    {
+      "from": "薛蘭",
+      "to": "李乾",
+      "type": "killer-victim",
+      "passageId": "ws18a-p1"
+    },
+    {
+      "from": "李封",
+      "to": "李乾",
+      "type": "killer-victim",
+      "passageId": "ws18a-p1"
+    },
+    {
+      "from": "李典（曼成）",
+      "to": "程昱",
+      "type": "comrades",
+      "passageId": "ws18a-p3"
+    },
+    {
+      "from": "李典（曼成）",
+      "to": "夏侯惇",
+      "type": "comrades",
+      "passageId": "ws18a-p4"
+    },
+    {
+      "from": "李典（曼成）",
+      "to": "于禁",
+      "type": "comrades",
+      "passageId": "ws18a-p4"
+    },
+    {
+      "from": "李典（曼成）",
+      "to": "樂進",
+      "type": "strained comrades",
+      "passageId": "ws18a-p6"
+    },
+    {
+      "from": "李典（曼成）",
+      "to": "張遼",
+      "type": "strained comrades",
+      "passageId": "ws18a-p6"
+    },
+    {
+      "from": "樂進",
+      "to": "張遼",
+      "type": "strained comrades",
+      "passageId": "ws18a-p6"
+    }
+  ]
+}

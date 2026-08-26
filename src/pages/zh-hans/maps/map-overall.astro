@@ -20,10 +20,11 @@ function utf8ToBase64(str: string): string {
 }
 const mapsPayload = utf8ToBase64(JSON.stringify({ provinceData, lang }));
 
-const furtherReading = [
-  { icon: 'ti-info-circle', label: '关于',      href: url('/zh-hans/maps/about-maps-overall')      },
-  { icon: 'ti-link',        label: '西域图',  href: url('/mapbase/Xiyu.png') },
-  { icon: 'ti-link',        label: '全域图',             href: url('/mapbase/Overall_detailed.png') },
+const aboutLink = { icon: 'ti-info-circle', label: '关于', href: url('/zh-hans/maps/about-maps-overall') };
+
+const mapResources = [
+  { icon: 'ti-link', label: '西域图', href: url('/mapbase/Xiyu.png') },
+  { icon: 'ti-link', label: '全域图', href: url('/mapbase/Overall_detailed.png') },
 ];
 
 const relatedMaps = [
@@ -47,62 +48,40 @@ const relatedMaps = [
       <p class="page-sub">{s.subtitle}</p>
     </div>
 
-    <!-- INTRO + SEARCH -->
-    <div class="map-intro">
-      <div class="intro-left">
-        <h2 class="intro-heading">三国历史地图</h2>
-        <p class="intro-desc"> {s.intro[0]}
-          <br />
-          <br />
-          {s.intro[1]}</p>
-        <p class="intro-contact">
-          发现错误或有所建议？
-          <a href="#" onclick="window.openContactModal(); return false;"> 欢迎联系 <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a>
-        </p>
-      </div>
-
-      <div class="intro-right">
-        <div class="intro-links">
-          <p class="intro-links-title">工具</p>
-          <div class="intro-links-list">
-            {furtherReading.map(link => (
-              <a href={link.href} class="intro-link" target="_blank">
-                <i class={`ti ${link.icon}`} aria-hidden="true"></i>
-                <span>{link.label}</span>
-              </a>
-            ))}
-          </div>
+    <!-- MAP TOOLBAR — slim search + tabs + About link, replacing the old intro block -->
+    <div class="map-toolbar">
+      <div class="toolbar-search-wrap" id="toolbar-search-wrap">
+        <div class="search-box" id="search-box">
+          <input
+            class="search-input"
+            id="search-input"
+            type="text"
+            placeholder="Luoyang, 成都..."
+            autocomplete="off"
+          />
+          <button class="search-clear" id="search-clear" style="display:none;">✕</button>
+          <button class="search-btn" id="search-btn"><i class="ti ti-search" aria-hidden="true"></i></button>
         </div>
-
-        <div class="intro-search">
-          <div class="search-box" id="search-box">
-            <input
-              class="search-input"
-              id="search-input"
-              type="text"
-              placeholder="Luoyang, 成都..."
-              autocomplete="off"
-            />
-            <button class="search-clear" id="search-clear" style="display:none;">✕</button>
-            <button class="search-btn" id="search-btn">检索</button>
-          </div>
-          <p class="search-hint">支持中英输入，可检索地名、政区、河流湖泊</p>
-          <div class="search-dropdown" id="search-dropdown" style="display:none;">
-            <div class="dropdown-warning" id="search-dropdown-warning" style="display:none;"></div>
-            <div class="dropdown-list" id="search-dropdown-list"></div>
-            <button class="dropdown-more" id="search-dropdown-more" style="display:none;"></button>
-          </div>
+        <div class="search-dropdown" id="search-dropdown" style="display:none;">
+          <div class="dropdown-warning" id="search-dropdown-warning" style="display:none;"></div>
+          <div class="dropdown-list" id="search-dropdown-list"></div>
+          <button class="dropdown-more" id="search-dropdown-more" style="display:none;"></button>
         </div>
       </div>
+
+      <!-- TABS — desktop, now sits in the toolbar row -->
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-tab="interactive">{s.tabs.interactive}</button>
+        <button class="tab" data-tab="regions">{s.tabs.regions}</button>
+      </div>
+
+      <a href={aboutLink.href} class="toolbar-about-link">
+        <i class={`ti ${aboutLink.icon}`} aria-hidden="true"></i>
+        <span>{aboutLink.label}</span>
+      </a>
     </div>
 
-    <!-- TABS desktop -->
-    <div class="tabs" id="tabs">
-      <button class="tab active" data-tab="interactive">{s.tabs.interactive}</button>
-      <button class="tab" data-tab="regions">{s.tabs.regions}</button>
-    </div>
-
-    <!-- TABS mobile dropdown -->
+    <!-- TABS — mobile dropdown, unchanged, stays as its own row -->
     <div class="tab-dropdown">
       <select class="tab-select" id="tab-select">
         <option value="interactive" selected>{s.tabs.interactive}</option>
@@ -123,6 +102,15 @@ const relatedMaps = [
               {relatedMaps.map(m => (
                 <a href={m.href} class="sidebar-map-link" target={m.href.startsWith('http') ? '_blank' : undefined}>
                   <span class="era-title">{m.title}</span>
+                </a>
+              ))}
+            </div>
+
+            <div class="sidebar-section">
+              <p class="sidebar-section-label">工具</p>
+              {mapResources.map(link => (
+                <a href={link.href} class="sidebar-map-link" target="_blank">
+                  <span class="era-title">{link.label}</span>
                 </a>
               ))}
             </div>
@@ -161,63 +149,78 @@ const relatedMaps = [
       <div class="panel" id="panel-interactive">
         <div class="imap-layout">
 
-          <!-- SIDEBAR -->
-          <div class="map-sidebar imap-sidebar">
+          <!-- MAP CONTAINER (now full width) -->
+          <div class="imap-content">
 
-            <div class="sidebar-section" style="margin-top:0;">
-              <p class="sidebar-section-label">国</p>
-              <div class="legend-item"><span class="legend-dot" style="background:#4b6f9f;"></span><span>魏</span></div>
-              <div class="legend-item"><span class="legend-dot" style="background:#5aaa78;"></span><span>蜀</span></div>
-              <div class="legend-item"><span class="legend-dot" style="background:#c86060;"></span><span>吴</span></div>
-            </div>
+            <button class="imap-legend-toggle" id="imap-legend-toggle" type="button" aria-label="Show legend" aria-expanded="false">
+              <i class="ti ti-list" aria-hidden="true"></i>
+            </button>
 
-            <div class="sidebar-section">
-              <p class="sidebar-section-label">地点</p>
-              <div class="legend-item"><span class="imap-sym imap-sym-prov">■</span><span>州治</span></div>
-              <div class="legend-item"><span class="imap-sym imap-sym-comm">●</span><span>郡治</span></div>
-              <div class="legend-item"><span class="imap-sym imap-sym-county">○</span><span>县治</span></div>
-              <div class="legend-item"><span class="imap-sym imap-sym-pass">×</span><span>关隘</span></div>
-              <div class="legend-item"><span class="imap-sym imap-sym-land">★</span><span>地标</span></div>
-              <div class="legend-item"><span class="imap-sym imap-sym-other">◆</span><span>其他</span></div>
+            <div class="imap-legend-dropdown" id="imap-legend-dropdown" style="display:none;">
+
+              <div class="imap-legend-controls-box">
+                <div class="imap-style-btns" id="imap-style-btns" aria-label="Base map">
+                  <button class="imap-style-btn active" data-style="outdoor" type="button">
+                    <span class="imap-style-frame imap-style-frame-topo"></span>
+                    <span>地形</span>
+                  </button>
+                  <button class="imap-style-btn" data-style="satellite" type="button">
+                    <span class="imap-style-frame imap-style-frame-sat"></span>
+                    <span>卫星</span>
+                  </button>
+                </div>
+                <div class="imap-legend-checkboxes">
+                  <label class="imap-toggle-row imap-map-toggle">
+                    <input type="checkbox" id="toggle-provinces" checked />
+                    <span class="imap-toggle-track"></span>
+                    <span>三国诸州</span>
+                  </label>
+                  <label class="imap-toggle-row imap-map-toggle">
+                    <input type="checkbox" id="toggle-yellow-river" checked />
+                    <span class="imap-toggle-track"></span>
+                    <span>黄河故道</span>
+                  </label>
+                  <label class="imap-toggle-row imap-map-toggle">
+                    <input type="checkbox" id="toggle-labels" />
+                    <span class="imap-toggle-track"></span>
+                    <span>现代地名</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="imap-legend-symbols-grid">
+                <div class="legend-item"><span class="imap-sym imap-sym-prov">■</span><span>州治</span></div>
+                <div class="legend-item"><span class="imap-sym imap-sym-comm">●</span><span>郡治</span></div>
+                <div class="legend-item"><span class="imap-sym imap-sym-county">○</span><span>县治</span></div>
+                <div class="legend-item"><span class="imap-sym imap-sym-pass">×</span><span>关隘</span></div>
+                <div class="legend-item"><span class="imap-sym imap-sym-land">★</span><span>地标</span></div>
+                <div class="legend-item"><span class="imap-sym imap-sym-other">◆</span><span>其他</span></div>
+              </div>
               <div class="imap-zoom-hint">
                 <i class="ti ti-info-circle"></i>
-                <span>放大地图可見更多地名</span>
+                <span>放大地图可见更多地名</span>
               </div>
+
+              <div class="imap-legend-kingdoms-row">
+                <div class="legend-item"><span class="legend-dot" style="background:#4b6f9f;"></span><span>魏</span></div>
+                <div class="legend-item"><span class="legend-dot" style="background:#5aaa78;"></span><span>蜀</span></div>
+                <div class="legend-item"><span class="legend-dot" style="background:#c86060;"></span><span>吴</span></div>
+              </div>
+
             </div>
 
-            <i class="ti ti-map-2 sidebar-watermark" aria-hidden="true"></i>
-          </div>
-
-          <!-- MAP CONTAINER -->
-          <div class="imap-content">
             <div id="imap-container"></div>
-            <div class="imap-map-controls" id="imap-map-controls">
-              <div class="imap-style-btns" id="imap-style-btns" aria-label="Base map">
-                <button class="imap-style-btn active" data-style="outdoor" type="button">
-                  <span class="imap-style-frame imap-style-frame-topo"></span>
-                  <span>地形</span>
-                </button>
-                <button class="imap-style-btn" data-style="satellite" type="button">
-                  <span class="imap-style-frame imap-style-frame-sat"></span>
-                  <span>卫星</span>
-                </button>
-              </div>
-              <label class="imap-toggle-row imap-map-toggle">
-                <input type="checkbox" id="toggle-provinces" checked />
-                <span class="imap-toggle-track"></span>
-                <span>三国诸州</span>
-              </label>
-              <label class="imap-toggle-row imap-map-toggle">
-                <input type="checkbox" id="toggle-yellow-river" checked />
-                <span class="imap-toggle-track"></span>
-                <span>黄河故道</span>
-              </label>
-              <label class="imap-toggle-row imap-map-toggle">
-                <input type="checkbox" id="toggle-labels" />
-                <span class="imap-toggle-track"></span>
-                <span>现代地名</span>
-              </label>
+
+            <!-- Docked right-side column: region (province/commandery/river
+                 search results) on top, specific place on bottom. Together
+                 they fill the full height; if only one has content, it
+                 simply takes the whole space since the other is display:none
+                 and flex:1 has nothing left to share with. -->
+            <div class="imap-right-dock" id="imap-right-dock" style="display:none;">
+              <div class="imap-region-panel" id="imap-region-panel"></div>
+              <div class="imap-town-panel" id="imap-town-panel"></div>
             </div>
+
             <div class="imap-loading" id="imap-loading">
               <div class="imap-loading-inner">
                 <i class="ti ti-map-2"></i>
@@ -227,6 +230,25 @@ const relatedMaps = [
           </div>
 
         </div>
+
+        <!-- Journey overview toggle + panel — a sibling of .imap-layout
+             rather than nested inside .imap-content, specifically so it
+             can sit in normal document flow below the map on mobile
+             (pulling it out of the map's own floating chrome avoids
+             competing with the location detail bottom sheet for the
+             same space), while still being absolutely positioned to
+             overlay the map on desktop, below the legend icon, via
+             #panel-interactive's position:relative. -->
+        <button class="imap-journey-toggle" id="imap-journey-toggle" type="button" aria-label="Show journey overview" aria-expanded="false" style="display:none;">
+          <i class="ti ti-route" aria-hidden="true"></i>
+        </button>
+        <div class="imap-journey-dropdown" id="imap-journey-dropdown" style="display:none;">
+          <div id="imap-journey-panel"></div>
+          <button class="imap-journey-exit" id="imap-journey-exit" type="button">
+            <i class="ti ti-logout" aria-hidden="true"></i> 退出足迹
+          </button>
+        </div>
+
       </div>
 
     </div>
@@ -764,10 +786,80 @@ function formatProvinceLabel(provEn) {
     dropdown.style.display = 'none';
     clearWaterBodyHighlight();
   });
-  document.addEventListener('click', e => { if (!e.target.closest('.intro-search')) dropdown.style.display = 'none'; });
+  document.addEventListener('click', e => { if (!e.target.closest('.toolbar-search-wrap')) dropdown.style.display = 'none'; });
   focusLocationFromUrl();
 
-  // INTERACTIVE MAP 
+  // ── LEGEND TOGGLE (interactive tab) ───────────────────────────
+  const legendToggle = document.getElementById('imap-legend-toggle');
+  const legendDropdown = document.getElementById('imap-legend-dropdown');
+
+  if (legendToggle && legendDropdown) {
+    legendToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = legendDropdown.style.display !== 'none';
+      legendDropdown.style.display = isOpen ? 'none' : 'block';
+      legendToggle.setAttribute('aria-expanded', String(!isOpen));
+      repositionJourneyToggle();
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#imap-legend-dropdown') && !e.target.closest('#imap-legend-toggle')) {
+        legendDropdown.style.display = 'none';
+        legendToggle.setAttribute('aria-expanded', 'false');
+        repositionJourneyToggle();
+      }
+    });
+  }
+
+  // ── JOURNEY OVERVIEW TOGGLE ────────────────────────────────────
+  // Desktop only — on mobile this whole toggle+dropdown pair stays
+  // hidden via CSS and the panel instead renders in normal document
+  // flow below the map (see the mobile media query).
+  const journeyToggle = document.getElementById('imap-journey-toggle');
+  const journeyDropdown = document.getElementById('imap-journey-dropdown');
+  const journeyExitBtn = document.getElementById('imap-journey-exit');
+
+  // The journey toggle sits directly below the legend icon by default
+  // (top:54px) — the same spot the legend dropdown itself occupies when
+  // open — so it needs to shift further down whenever that dropdown is
+  // open, exactly like the old zoom-controls repositioning used to work.
+  function repositionJourneyToggle() {
+    if (!journeyToggle || !legendDropdown) return;
+    const legendOpen = legendDropdown.style.display !== 'none';
+    if (!legendOpen) {
+      journeyToggle.style.top = '54px';
+    } else {
+      const dropdownRect = legendDropdown.getBoundingClientRect();
+      const parent = legendDropdown.offsetParent;
+      const parentRect = parent ? parent.getBoundingClientRect() : { top: 0 };
+      journeyToggle.style.top = `${dropdownRect.bottom - parentRect.top + 8}px`;
+    }
+    if (journeyDropdown) {
+      journeyDropdown.style.top = `${parseFloat(journeyToggle.style.top) + 44}px`;
+    }
+  }
+
+  if (journeyToggle && journeyDropdown) {
+    journeyToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = journeyDropdown.style.display !== 'none';
+      journeyDropdown.style.display = isOpen ? 'none' : 'block';
+      journeyToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#imap-journey-dropdown') && !e.target.closest('#imap-journey-toggle')) {
+        journeyDropdown.style.display = 'none';
+        journeyToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  journeyExitBtn?.addEventListener('click', () => {
+    exitJourneyMode();
+    if (journeyDropdown) journeyDropdown.style.display = 'none';
+    if (journeyToggle) journeyToggle.setAttribute('aria-expanded', 'false');
+  });
+
+  // INTERACTIVE MAP
   // Fully handled by interactive-map.js
   import {
     initInteractiveMap,
@@ -777,7 +869,8 @@ function formatProvinceLabel(provEn) {
     showWaterBodyById,
     fetchAdminBoundaries,
     showAdminBoundaryById,
-    showJourney
+    showJourney,
+    exitJourneyMode
   } from '../../../scripts/maps/interactive-map.js';
 </script>
 
@@ -794,101 +887,36 @@ function formatProvinceLabel(provEn) {
 .page-title { font-size: 42px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
 .page-sub { font-size: 18px; color: var(--color-text-secondary); }
 
-/* 2-COLUMN INTRO  */
-.map-intro {
-  display: grid;
-  grid-template-columns: minmax(380px, 1.18fr) minmax(520px, 1fr);
-  gap: 1.8rem;
-  padding: 1.45rem 1rem 1.35rem;
-  border-top: 0.5px solid rgba(255,255,255,0.08);
-  border-bottom: 0.5px solid rgba(255,255,255,0.14);
-  background:
-    linear-gradient(180deg, #111111 0%, #0c0c0c 100%);
-}
-.intro-left {
-  padding: 0.15rem 1.75rem 0.15rem 0.25rem;
-  border-right: 0.5px solid rgba(196,154,94,0.25);
-}
-.intro-heading {
-   font-family: 'Noto Serif SC', serif;
-  font-size: 28px; line-height: 1.12; font-weight: 600;
-  color: #d1a55f; margin: 0 0 0.55rem; letter-spacing: 0.01em;
-}
-.intro-desc {
-  max-width: 800px;
-  font-family: 'LXGW WenKai', serif;
-  font-size: 18px; line-height: 1.45;
-  color: var(--color-text-secondary);
-}
-.intro-contact {
-  margin-top: 1.25rem;
-  font-family: 'LXGW WenKai', serif;
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--color-text-secondary)
-}
-.intro-contact a {
-  color: #d6a866;
-  font-weight: 700;
-  text-decoration: none;
-}
-.intro-contact a:hover { color: #efc98c; }
-.intro-contact i { font-size: 13px; margin-left: 2px; }
-.intro-right {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: start;
-  gap: 0.75rem;
-  padding: 0.15rem 0.25rem 0 0.35rem;
-}
-.intro-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.55rem;
-  flex-wrap: nowrap;
-}
-.intro-links-title {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 28px; color: #d1a55f; margin: 0;
-  font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: 0.01em;
-  flex-shrink: 0;
-}
-.intro-links-list {
+/* ── MAP TOOLBAR (slim search + About link) ── */
+.map-toolbar {
   display: flex;
   align-items: center;
-  align-self: center;
-  gap: 1.35rem;
-  flex-wrap: nowrap;
+  gap: 1.25rem;
+  padding: 0.75rem 2rem;
+  border-top: 0.5px solid rgba(255,255,255,0.08);
+  border-bottom: 0.5px solid rgba(255,255,255,0.14);
+  background: #0d0d0c;
 }
-.intro-link {
+.toolbar-search-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+}
+.toolbar-about-link {
+  margin-left: auto;
   display: inline-flex; align-items: center; gap: 0.45rem;
-  padding: 0;
   font-family: 'LXGW WenKai', serif; font-size: 1.05rem;
   color: rgba(238,232,218,0.7); text-decoration: none; transition: color 0.15s;
   white-space: nowrap;
+  flex-shrink: 0;
 }
-.intro-link:hover { color: #f0d29a; }
-.intro-link i { color: rgba(165, 220, 170, 0.72); font-size: 13px; flex-shrink: 0; }
-.intro-link-arrow { display: none; }
-.intro-search {
-  position: relative;
-  width: min(70%, 800px);
-  min-width: 340px;
-  margin: 0.15rem auto 0;
-}
-.intro-search::after,
-.search-box::before {
-  display: none;
-}
+.toolbar-about-link:hover { color: #f0d29a; }
+.toolbar-about-link i { color: rgba(165, 220, 170, 0.72); font-size: 13px; flex-shrink: 0; }
 .search-box {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 18px;
-  height: 40px;
+  height: 38px;
   padding: 0;
   border-radius: 4px;
   border: 0.5px solid rgba(202,163,106,0.32);
@@ -906,7 +934,7 @@ function formatProvinceLabel(provEn) {
   background: transparent;
   color: #eee8da;
   font-family: 'LXGW WenKai', serif;
-  font-size: 18px;
+  font-size: 16px;
   z-index: 1;
 }
 .search-input::placeholder { color: rgba(238,232,218,0.46); }
@@ -916,36 +944,28 @@ function formatProvinceLabel(provEn) {
   color: rgba(238,232,218,0.45);
   cursor: pointer;
   z-index: 2;
-  font-size: 22px;
+  font-size: 15px;
   padding: 0 0.5rem;
 }
 .search-btn {
   align-self: stretch;
-  min-width: 70px;
+  width: 44px;
   border: none;
   border-radius: 0;
   background: #d0a66a;
   color: #17110a;
   display: grid;
   place-items: center;
-  font-family: 'LXGW WenKai';
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
   cursor: pointer;
   z-index: 2;
   flex-shrink: 0;
   box-shadow: none;
 }
 .search-btn:hover { filter: brightness(1.07); }
-.search-hint {
-  margin: 0.4rem 0 0;
-  font-family: 'LXGW WenKai';
-  font-size: 16px;
-  color: rgba(238,232,218,0.34);
-}
 .search-dropdown {
   position: absolute;
-  top: calc(36px + 19px);
+  top: calc(100% + 6px);
   left: 0;
   right: 0;
   z-index: 20;
@@ -981,14 +1001,14 @@ function formatProvinceLabel(provEn) {
 .search-empty { padding: 14px; font-size: 15px; color: var(--color-text-tertiary); text-align: center; }
 
 /*  TABS  */
-.tabs { display: flex; padding-left: 2rem; border-bottom: 0.5px solid rgba(255,255,255,0.12); background: #0b0b0b; }
-.tab { padding: 0.9rem 1rem 0.7rem; border: none; border-bottom: 2px solid transparent; background: transparent; color: rgba(238,232,218,0.58); font-family: 'Noto Serif SC', serif; font-size: 1.15rem; cursor: pointer; transition: color 0.15s; }
+.tabs { display: flex; gap: 4px; }
+.tab { padding: 0.5rem 0.9rem; border: none; border-bottom: 2px solid transparent; background: transparent; color: rgba(238,232,218,0.58); font-family: 'Noto Serif SC', serif; font-size: 1.1rem; cursor: pointer; transition: color 0.15s; }
 .tab:hover { color: #eee8da; }
 .tab.active { color: #eee8da; border-bottom-color: #caa36a; }
 .tab-dropdown { display: none; }
 
 .panels-wrapper { flex: 1; display: flex; flex-direction: column; }
-.panel { flex: 1; padding: 0; }
+.panel { flex: 1; padding: 0; position: relative; }
 
 /*  REGIONS MAP LAYOUT  */
 .map-layout {
@@ -1068,15 +1088,327 @@ function formatProvinceLabel(provEn) {
   overflow: hidden;
 }
 
-.imap-sidebar {
-  align-self: stretch;
-  margin: 1.35rem 1rem 1.35rem 2rem;
-  max-height: calc(90vh - 2.7rem);
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 8px;
-  box-sizing: border-box;
+.imap-legend-toggle {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  z-index: 6;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18,18,17,0.9);
+  border: 1px solid rgba(202,163,106,0.28);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.32);
+  color: #d0a66a;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.15s;
 }
+.imap-legend-toggle:hover { background: rgba(40,32,18,0.95); border-color: #d0a66a; }
+
+.imap-legend-dropdown {
+  position: absolute;
+  top: 54px;
+  left: 12px;
+  z-index: 6;
+  width: 460px;
+  max-height: calc(90vh - 90px);
+  overflow-y: auto;
+  padding: 0.9rem 1rem;
+  background: rgba(18,18,17,0.95);
+  border: 1px solid rgba(202,163,106,0.28);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.32), inset 0 0 0 1px rgba(255,255,255,0.035);
+  backdrop-filter: blur(8px);
+}
+
+/* Journey overview toggle — sits directly below the legend icon by
+   default (same spot zoom controls used to occupy before they moved
+   into the legend's own row), shifting further down whenever the
+   legend dropdown is open, so the two never overlap. Hidden until a
+   journey is actually loaded (interactive-map.js reveals it). */
+.imap-journey-toggle {
+  position: absolute;
+  top: 54px;
+  left: 12px;
+  z-index: 6;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18,18,17,0.9);
+  border: 1px solid rgba(202,163,106,0.28);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.32);
+  color: #d0a66a;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s, top 0.15s;
+}
+.imap-journey-toggle:hover { background: rgba(40,32,18,0.95); border-color: #d0a66a; }
+
+.imap-journey-dropdown {
+  position: absolute;
+  top: 98px;
+  left: 12px;
+  z-index: 6;
+  width: 360px;
+  max-height: calc(90vh - 130px);
+  overflow-y: auto;
+  padding: 0.9rem 1rem;
+  background: rgba(18,18,17,0.95);
+  border: 1px solid rgba(202,163,106,0.28);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.32), inset 0 0 0 1px rgba(255,255,255,0.035);
+  backdrop-filter: blur(8px);
+  transition: top 0.15s;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(238,232,218,0.25) transparent;
+}
+.imap-journey-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.imap-journey-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+.imap-journey-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(238,232,218,0.25);
+  border-radius: 3px;
+}
+.imap-journey-dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(238,232,218,0.4);
+}
+
+.imap-journey-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.imap-journey-arrow {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(202,163,106,0.28);
+  border-radius: 4px;
+  color: #d0a66a;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+.imap-journey-arrow:hover { background: rgba(40,32,18,0.95); }
+.imap-journey-header-info { flex: 1; min-width: 0; }
+
+.imap-journey-name-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.imap-journey-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  color: #eee8da;
+  text-align: center;
+}
+.imap-journey-name-zh {
+  font-size: 17px;
+  color: var(--color-text-secondary);
+  margin-left: 6px;
+}
+.imap-journey-bio-link {
+  font-size: 14.5px;
+  color: #d0a66a;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.imap-journey-bio-link:hover { color: #f0d29a; }
+.imap-journey-bio-link i { font-size: 13px; }
+
+.imap-journey-courtesy {
+  font-size: 16px;
+  font-style: italic;
+  color: #eee8da;
+  margin-top: 2px;
+  text-align: left;
+}
+.imap-journey-courtesy-zh {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-left: 5px;
+}
+
+.imap-journey-dates {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(202,163,106,0.25);
+  text-align: center;
+}
+.imap-journey-dates-num { font-size: 15px; color: rgba(238,232,218,0.78); }
+.imap-journey-dates-era { font-size: 13px; color: rgba(238,232,218,0.4); margin-top: 1px; }
+
+.imap-journey-timeline {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.imap-journey-stop {
+  display: flex;
+  gap: 12px;
+}
+.imap-journey-stop-when {
+  flex-shrink: 0;
+  width: 80px;
+  text-align: right;
+}
+.imap-journey-stop-year {
+  font-size: 18px;
+  color: #d0a66a;
+  font-weight: 600;
+}
+.imap-journey-stop-era {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+}
+.imap-journey-stop-where { flex: 1; min-width: 0; }
+.imap-journey-stop-location {
+  font-size: 16px;
+  color: #eee8da;
+}
+.imap-journey-stop-location > div + div {
+  margin-top: 4px;
+}
+.imap-journey-loc-link {
+  cursor: pointer;
+}
+.imap-journey-loc-link:hover {
+  color: #d0a66a;
+  text-decoration-color: #d0a66a;
+}
+.imap-journey-stop-position {
+  font-size: 14px;
+  color: var(--color-text-tertiary);
+}
+.imap-journey-stop-position a {
+  color: rgba(238,232,218,0.55);
+  text-decoration: underline;
+  text-decoration-color: rgba(238,232,218,0.25);
+  text-underline-offset: 2px;
+}
+.imap-journey-stop-position a i { font-size: 13px; }
+.imap-journey-stop-position a:hover {
+  color: #d0a66a;
+  text-decoration-color: #d0a66a;
+}
+
+.imap-journey-exit {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(202,163,106,0.25);
+  width: 100%;
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  color: var(--color-text-primary);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.imap-journey-exit:hover { color: #eee8da; }
+
+.imap-legend-controls-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1.75rem;
+  align-items: flex-start;
+  padding-bottom: 0.9rem;
+  border-bottom: 0.5px solid rgba(202,163,106,0.18);
+}
+.imap-legend-controls-box .imap-style-btns { margin-top: 0; flex-shrink: 0; width: 190px; }
+.imap-legend-checkboxes {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.imap-legend-checkboxes .imap-map-toggle:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.imap-legend-symbols-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.3rem 1.5rem;
+  margin-top: 0.9rem;
+}
+
+.imap-legend-kingdoms-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+  padding-top: 0.9rem;
+  border-top: 0.5px solid rgba(202,163,106,0.18);
+}
+
+/* Native MapLibre zoom/reset controls, moved from the default top-right
+   corner to sit in the same horizontal row as the legend icon — all 4
+   icons (legend, zoom in, zoom out, reset) in one row at top-left.
+   Since they no longer sit below the legend icon, they're never in the
+   legend dropdown's downward expansion path, so no repositioning logic
+   is needed when the dropdown opens. */
+#imap-container .maplibregl-ctrl-top-left {
+  top: 10px !important;
+  left: 56px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 6px;
+}
+#imap-container .maplibregl-ctrl-top-left .maplibregl-ctrl-group {
+  display: flex !important;
+  flex-direction: row !important;
+  margin: 0 !important;
+}
+#imap-container .maplibregl-ctrl-top-left .maplibregl-ctrl-group button {
+  border-radius: 4px !important;
+}
+
+#imap-region-panel {
+  position: relative;
+}
+.imap-searchresult-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgba(92,70,42,0.2);
+  background: rgba(255,255,255,0.5);
+  border-radius: 3px;
+  color: rgba(39,34,26,0.62);
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  z-index: 2;
+}
+.imap-searchresult-close:hover { background: rgba(255,255,255,0.75); color: #27221a; }
 
 .imap-style-btns {
   display: grid;
@@ -1143,8 +1475,8 @@ function formatProvinceLabel(provEn) {
 
 .imap-toggle-row input {
   accent-color: #caa36a;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
 }
 
@@ -1192,11 +1524,6 @@ function formatProvinceLabel(provEn) {
   height: 100%;
 }
 
-#imap-container .maplibregl-ctrl-top-right {
-  top: 240px !important;
-  right: 12px !important;
-}
-
 #imap-container .maplibregl-ctrl-group {
   border-radius: 3px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.24);
@@ -1227,17 +1554,21 @@ function formatProvinceLabel(provEn) {
   color: #2b2b2b !important;
 }
 
-.imap-map-controls {
+.imap-right-dock {
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 12px;
   z-index: 6;
-  width: 190px;
-  padding: 8px;
-  background: rgba(18,18,17,0.9);
-  border: 1px solid rgba(202,163,106,0.28);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.32), inset 0 0 0 1px rgba(255,255,255,0.035);
-  backdrop-filter: blur(8px);
+  max-width: 320px;
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+@media (max-width: 950px) {
+  .imap-right-dock { display: none !important; }
 }
 
 .imap-map-toggle {
@@ -1277,12 +1608,12 @@ function formatProvinceLabel(provEn) {
 /* Mapbox popup */
 /* symbol legend indicators */
 .imap-sym { display: inline-block; width: 24px; text-align: center; font-size: 17px; flex-shrink: 0; line-height: 1; }
-.imap-sym-prov  { color: #d2a85f; font-size: 22px; }
-.imap-sym-comm  { color: #ead59d; font-size: 22px; }
-.imap-sym-county { color: #d8cbb4; font-size: 22px; }
-.imap-sym-pass  { color: #ff3b30; font-size: 28px; }
-.imap-sym-land  { color: #8b5cf6; font-size: 18px; }
-.imap-sym-other { color: #171717; font-size: 20px; text-shadow: 0 0 2px rgba(255,255,255,0.85); }
+.imap-sym-prov  { color: #d2a85f; font-size: 26px; }
+.imap-sym-comm  { color: #ead59d; font-size: 26px; }
+.imap-sym-county { color: #d8cbb4; font-size: 26px; }
+.imap-sym-pass  { color: #ff3b30; font-size: 32px; }
+.imap-sym-land  { color: #8b5cf6; font-size: 22px; }
+.imap-sym-other { color: #171717; font-size: 24px; text-shadow: 0 0 2px rgba(255,255,255,0.85); }
 
 .imap-town-popup .maplibregl-popup-content {
   padding: 0;
@@ -1305,6 +1636,7 @@ function formatProvinceLabel(provEn) {
 }
 
 .imap-town-card {
+  position: relative;
   min-width: 240px;
   max-width: 300px;
   padding: 14px 15px 13px;
@@ -1312,6 +1644,7 @@ function formatProvinceLabel(provEn) {
   color: #27221a;
   background: rgba(246,240,225,0.96);
   border: 1px solid rgba(92,70,42,0.28);
+  border-radius: 12px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.26), inset 0 0 0 1px rgba(255,255,255,0.45);
 }
 
@@ -1344,7 +1677,12 @@ function formatProvinceLabel(provEn) {
   background: rgba(246,240,225,0.96);
   border: 1px solid rgba(14,165,233,0.45);
   border-left: 3px solid #0ea5e9;
+  border-radius: 12px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.26), inset 0 0 0 1px rgba(255,255,255,0.45);
+}
+
+.imap-water-card.imap-admin-card {
+  border: 1px solid rgba(92,70,42,0.28);
 }
 
 .imap-town-card-header {
@@ -1352,6 +1690,7 @@ function formatProvinceLabel(provEn) {
   align-items: flex-start;
   justify-content: space-between;
   gap: 0.75rem;
+  padding-right: 34px;
 }
 
 .imap-town-name {
@@ -1371,7 +1710,7 @@ function formatProvinceLabel(provEn) {
 .imap-town-meta {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
   margin-top: 0.75rem;
   padding-top: 0.65rem;
   border-top: 1px solid rgba(92,70,42,0.18);
@@ -1379,23 +1718,27 @@ function formatProvinceLabel(provEn) {
   color: rgba(39,34,26,0.72);
 }
 
-.imap-town-meta span:first-child {
+.imap-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.imap-meta-label {
+  flex-shrink: 0;
   font-weight: 650;
   color: #5c462a;
 }
 
-.imap-admin-family {
-  font-size: 18px;
-  color: rgba(39,34,26,0.62);
-  font-weight: 600;
-}
-
-.imap-town-region {
-  padding-top: 0.25rem;
+.imap-meta-value {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 6px;
   flex-wrap: wrap;
+  text-align: right;
+  color: rgba(39,34,26,0.84);
 }
 
 .imap-town-kingdom {
@@ -1428,16 +1771,6 @@ function formatProvinceLabel(provEn) {
   color: #fff7f5 !important;
   background: #c86060 !important;
   border: 1px solid #994647 !important;
-}
-
-.imap-town-modern {
-  margin-top: 4px;
-  color: rgba(39,34,26,0.84);
-}
-
-.imap-town-modern strong {
-  font-weight: 700;
-  color: #17130d;
 }
 
 .imap-town-section {
@@ -1474,15 +1807,21 @@ function formatProvinceLabel(provEn) {
 }
 
 .imap-town-close {
-  width: 28px;
-  height: 28px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
   border: 1px solid rgba(92,70,42,0.2);
-  background: rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.5);
+  border-radius: 3px;
   color: rgba(39,34,26,0.62);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
+  z-index: 2;
 }
+.imap-town-close:hover { background: rgba(255,255,255,0.75); color: #27221a; }
 
 /* JOURNEY VIEW — teardrop pins for every place referenced in one chapter */
 .imap-journey-pin {
@@ -1501,20 +1840,10 @@ function formatProvinceLabel(provEn) {
 /* RESPONSIVE */
 @media (max-width: 950px) {
   .page-header { padding: 1rem 1rem 0.75rem; }
-  .map-intro { grid-template-columns: 1fr; padding: 1rem 1.2rem; gap: 0; }
-  .intro-heading { font-size: 20px; }
-  .intro-desc { margin-bottom: 0; font-size: 17px; }
-  .intro-left { padding-bottom: 0.75rem; border-left: none; border-right: none; border-bottom: 0.5px solid rgba(196,154,94,0.2); }
-  .intro-right { padding: 0.75rem 0 0; }
-  .intro-links-title { font-size: 20px; }
-  .intro-links { align-items: flex-start; border-right: none; border-bottom: none; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
-  .intro-links-list { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
-  .intro-link { padding: 0.2rem 0; }
-  .intro-search { width: 100%; min-width: 0; padding-top: 0.75rem; }
+  .map-toolbar { flex-direction: column; align-items: stretch; gap: 0.6rem; padding: 0.75rem 1rem; }
+  .toolbar-about-link { margin: 0 auto; }
   .search-input { font-size: 16px; }
-  .search-hint { font-size: 14px; }
-  .intro-search::after { display: none; }
-  .search-dropdown { top: calc(36px + 36px);}
+  .search-dropdown { top: calc(100% + 6px); }
   .tabs { display: none; padding-left: 1rem; }
   .tab-dropdown { display: block; padding: 0.75rem 1rem; border-bottom: 0.5px solid var(--color-border); }
   .tab-select { width: 100%; background: var(--color-bg-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 8px 12px; color: var(--color-text-primary); font-size: 13px; font-family: var(--font-sans); }
@@ -1527,56 +1856,51 @@ function formatProvinceLabel(provEn) {
   .era-date { font-size: 12px; }
   .sidebar-section { margin-top: 0; flex: 1; min-width: 140px; }
   .sidebar-section-label { font-size: 11px; margin-bottom: 0.5rem; }
-  .legend-item { font-size: 15px; margin: 0.15rem 0; }
+  .legend-item { font-size: 17px; margin: 0.15rem 0; }
   .legend-dot { width: 14px; height: 14px; }
   .sidebar-watermark { display: none; }
   .map-content { width: 100vw; margin-left: calc(-50vw + 50%); position: relative; padding-top: 0; }
   .province-map-wrap { position: relative; }
   .province-labels { display: none; }
   /* interactive map */
-  .imap-layout { flex-direction: column; height: auto; min-height: unset; }
-  .imap-sidebar { width: 90%; align-self: auto; }
-  .imap-sidebar .sidebar-section {
-    flex: 0 0 100%;
-    min-width: 0;
+  .imap-legend-dropdown {
+    left: 12px; right: 12px; width: auto;
+    max-height: 55vh;
+    padding: 0.7rem 0.85rem;
   }
-  .imap-sidebar .sidebar-section:first-of-type {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.25rem 0.65rem;
+  .imap-legend-controls-box {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.9rem;
   }
-  .imap-sidebar .sidebar-section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.25rem 0.7rem;
-  }
-  .imap-sidebar .sidebar-section:first-of-type .sidebar-section-label,
-  .imap-sidebar .sidebar-section:nth-of-type(2) .sidebar-section-label,
-  .imap-sidebar .imap-zoom-hint {
-    grid-column: 1 / -1;
-  }
-  .imap-sidebar .legend-item {
-    min-width: 0;
-    gap: 0.45rem;
-    margin: 0;
-    line-height: 1.22;
-  }
-  .imap-sidebar .legend-item span:last-child {
-    min-width: 0;
-  }
-  .imap-sidebar .sidebar-section + .sidebar-section {
-    margin-top: 0.8rem;
-    padding-top: 0.8rem;
-  }
-  .imap-sidebar .imap-zoom-hint {
-    margin-top: 0.5rem;
+  .imap-legend-controls-box .imap-style-btns { width: 90px; grid-template-columns: 1fr; align-self: flex-start; }
+  .imap-legend-kingdoms-row {
+    justify-content: flex-start;
+    gap: 1rem;
   }
   .imap-content { width: 100vw; margin-left: calc(-50vw + 50%); }
-  #imap-container { height: 60vh; min-height: 400px; }
-  #imap-container .maplibregl-ctrl-top-right { right: 12px !important; top: 212px !important; }
-  .imap-map-controls { width: 170px; right: 12px; top: 8px; }
-  .imap-style-btn { font-size: 10px; }
-  .imap-map-toggle { font-size: 11px; }
+  #imap-container .maplibregl-ctrl-top-left { left: 12px !important; top: 54px !important; flex-direction: column !important; gap: 0; }
+  #imap-container .maplibregl-ctrl-top-left .maplibregl-ctrl-group { flex-direction: column !important; }
+  .imap-style-btn { font-size: 13px; }
+  .imap-map-toggle { font-size: 13px; }
+  .imap-toggle-row input { width: 19px; height: 19px; }
+  /* journey — the floating desktop toggle+dropdown is replaced entirely
+     by a normal-flow section below the map, since the toggle's fixed
+     top:54px position would otherwise collide with the legend icon on
+     a narrow screen, and the map's own floating chrome is already
+     crowded enough without a second overlay competing for space. */
+  .imap-journey-toggle { display: none !important; }
+  .imap-journey-dropdown {
+    display: none !important;
+  }
+  .imap-journey-dropdown.imap-journey-has-data {
+    position: static;
+    display: block !important;
+    width: auto;
+    max-height: none;
+    margin: 0 1rem 1rem;
+    box-shadow: none;
+  }
   .footer-quote { font-size: 0.75rem; }
 }
 </style>

@@ -1,0 +1,372 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.37726192,
+      "lng": 105.35624934,
+      "name": "Xi",
+      "persons": [
+        "閻溫（伯儉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.54760743,
+      "lng": 105.67867903,
+      "name": "Shanggui",
+      "persons": [
+        "閻溫（伯儉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.72831194,
+      "lng": 105.378171,
+      "name": "Ji",
+      "persons": [
+        "閻溫（伯儉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.93602725,
+      "lng": 105.55972439,
+      "name": "Xianqin",
+      "persons": [
+        "閻溫（伯儉）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "135",
+      "persons": [
+        "張恭"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "閻溫（伯儉）",
+      "born": "unknown",
+      "died": {
+        "era": {
+          "en": "17th - 18th year of Jian'an",
+          "zht": "建安十七 - 十八年",
+          "zhs": "建安十七 - 十八年"
+        },
+        "year": "212-213"
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": "unknown",
+          "age": null,
+          "location": {
+            "en": "Xi",
+            "zht": "西城",
+            "zhs": "西城"
+          },
+          "position": null,
+          "passageId": "ws18j-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.37726192,
+              "lng": 105.35624934,
+              "name": "Xi"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": "unknown",
+          "age": null,
+          "location": {
+            "en": "上邽",
+            "zht": "上邽",
+            "zhs": "上邽"
+          },
+          "position": [
+            {
+              "en": "Deputy Aide",
+              "zht": "別駕",
+              "zhs": "别驾"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": "ws18j-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.54760743,
+              "lng": 105.67867903,
+              "name": "Shanggui"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Deputy Aide",
+                "zht": "別駕",
+                "zhs": "别驾"
+              },
+              "1": {
+                "en": "County Magistrate",
+                "zht": "令",
+                "zhs": "令"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "17th - 18th year of Jian'an",
+            "zht": "建安十七 - 十八年",
+            "zhs": "建安十七 - 十八年"
+          },
+          "year": "212-213",
+          "age": null,
+          "location": [
+            {
+              "en": "Ji",
+              "zht": "冀",
+              "zhs": "冀"
+            },
+            {
+              "en": "Xianqin",
+              "zht": "顯親",
+              "zhs": "显亲"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18j-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.72831194,
+              "lng": 105.378171,
+              "name": "Ji"
+            },
+            {
+              "kind": "town",
+              "lat": 34.93602725,
+              "lng": 105.55972439,
+              "name": "Xianqin"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    },
+    {
+      "person": "張恭",
+      "born": "unknown",
+      "died": {
+        "era": {
+          "en": "Taihe era",
+          "zht": "太和中",
+          "zhs": "太和中"
+        },
+        "year": "227-233"
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": "unknown",
+          "age": null,
+          "location": {
+            "en": "Dunhuang",
+            "zht": "敦煌",
+            "zhs": "敦煌"
+          },
+          "position": {
+            "en": "Merit Section Foreman Clerk",
+            "zht": "功曹",
+            "zhs": "功曹"
+          },
+          "passageId": "ws18j-p3",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "135"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Merit Section Foreman Clerk",
+              "zht": "功曹",
+              "zhs": "功曹",
+              "url": "/translations/officials/regional#commanderies-038"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd year of Huangchu",
+            "zht": "黃初二年",
+            "zhs": "黃初二年"
+          },
+          "year": 221,
+          "age": null,
+          "location": [
+            {
+              "en": "Dunhuang",
+              "zht": "敦煌",
+              "zhs": "敦煌"
+            },
+            {
+              "en": "Gaochang",
+              "zht": "高昌",
+              "zhs": "高昌"
+            }
+          ],
+          "position": [
+            {
+              "en": "Colonel of the Central Garrison",
+              "zht": "戊己校尉",
+              "zhs": " 戊己校尉"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關内侯",
+              "zhs": "关内侯"
+            }
+          ],
+          "passageId": "ws18j-p4",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "135"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Colonel of the Central Garrison",
+                "zht": "戊己校尉",
+                "zhs": " 戊己校尉"
+              },
+              "1": {
+                "en": "Marquis Within the Pass",
+                "zht": "關内侯",
+                "zhs": "关内侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "Taihe era",
+            "zht": "太和中",
+            "zhs": "太和中"
+          },
+          "year": "227-233",
+          "age": null,
+          "location": null,
+          "position": {
+            "en": "posthumously Bearer of the Golden Mace",
+            "zht": "贈執金吾",
+            "zhs": "赠执金吾"
+          },
+          "passageId": "ws18j-p4",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "posthumously Bearer of the Golden Mace",
+              "zht": "贈執金吾",
+              "zhs": "赠执金吾",
+              "url": "/translations/officials/ministers#others-282"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "閻溫（伯儉）",
+      "to": "馬超",
+      "type": "captor-captive",
+      "passageId": "ws18j-p1"
+    },
+    {
+      "from": "閻溫（伯儉）",
+      "to": "馬超",
+      "type": "enemy/defied",
+      "passageId": "ws18j-p2"
+    },
+    {
+      "from": "張恭",
+      "to": "張就",
+      "type": "father-son",
+      "passageId": "ws18j-p3"
+    },
+    {
+      "from": "張恭",
+      "to": "張華",
+      "type": "cousins",
+      "passageId": "ws18j-p4"
+    },
+    {
+      "from": "張恭",
+      "to": "馬艾",
+      "type": "superior-subordinate (former)",
+      "passageId": "ws18j-p3"
+    },
+    {
+      "from": "黃華",
+      "to": "張就",
+      "type": "captor-captive",
+      "passageId": "ws18j-p3"
+    },
+    {
+      "from": "張進",
+      "to": "黃華",
+      "type": "allies",
+      "passageId": "ws18j-p4"
+    },
+    {
+      "from": "張恭",
+      "to": "黃華",
+      "type": "enemy (military opponent)",
+      "passageId": "ws18j-p4"
+    },
+    {
+      "from": "黃華",
+      "to": "蘇則",
+      "type": "surrendered to",
+      "passageId": "ws18j-p4"
+    },
+    {
+      "from": "張恭",
+      "to": "尹奉",
+      "type": "escorted/protected",
+      "passageId": "ws18j-p4"
+    },
+    {
+      "from": "張就",
+      "to": "張恭",
+      "type": "son-father",
+      "passageId": "ws18j-p3"
+    }
+  ]
+}

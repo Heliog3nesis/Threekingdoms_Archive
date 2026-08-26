@@ -1,0 +1,507 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 33.87991582,
+      "lng": 115.79759282,
+      "name": "Qiao",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.98790226,
+      "lng": 112.53739567,
+      "name": "宛縣",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.97656214,
+      "lng": 113.25163985,
+      "name": "舞陰",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.728607,
+      "lng": 112.23096914,
+      "name": "安眾",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.67362257,
+      "lng": 112.08451528,
+      "name": "穰縣",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.81631685,
+      "lng": 114.04675874,
+      "name": "Guandu",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.29186303,
+      "lng": 114.39806539,
+      "name": "Ye",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.60853928,
+      "lng": 110.31804689,
+      "name": "Tongguan",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.16854232,
+      "lng": 106.61155724,
+      "name": "陽平關",
+      "persons": [
+        "許褚（仲康）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "許褚（仲康）",
+      "name": {
+        "en": "Xu Chu",
+        "zht": "許褚",
+        "zhs": "许褚"
+      },
+      "courtesyName": {
+        "en": "Zhongkang",
+        "zht": "仲康",
+        "zhs": "仲康"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "age": null,
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Qiao, Qiao State",
+            "zht": "譙國譙",
+            "zhs": "谯国谯"
+          },
+          "position": null,
+          "passageId": "ws18f-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.87991582,
+              "lng": 115.79759282,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "1st - 2nd year of Jian'an",
+            "zht": "建安元年 - 二年",
+            "zhs": "建安元年 - 二年"
+          },
+          "year": "196 - 197",
+          "location": null,
+          "position": {
+            "en": "Commandant",
+            "zht": "都尉",
+            "zhs": "都尉"
+          },
+          "passageId": "ws18f-p3",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Commandant",
+              "zht": "都尉",
+              "zhs": "都尉",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd- 3rd year of Jian'an",
+            "zht": "建安二年 - 三年",
+            "zhs": "建安二年 - 三年"
+          },
+          "year": "197 - 198",
+          "location": [
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Wuyin",
+              "zht": "舞陰",
+              "zhs": "舞阴"
+            },
+            {
+              "en": "Anzhong",
+              "zht": "安衆",
+              "zhs": "安众"
+            },
+            {
+              "en": "Rang",
+              "zht": "穰",
+              "zhs": "穰"
+            }
+          ],
+          "position": {
+            "en": "Colonel",
+            "zht": "校尉",
+            "zhs": "校尉"
+          },
+          "passageId": "ws18f-p3",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.98790226,
+              "lng": 112.53739567,
+              "name": "宛縣"
+            },
+            {
+              "kind": "town",
+              "lat": 32.97656214,
+              "lng": 113.25163985,
+              "name": "舞陰"
+            },
+            {
+              "kind": "town",
+              "lat": 32.728607,
+              "lng": 112.23096914,
+              "name": "安眾"
+            },
+            {
+              "kind": "town",
+              "lat": 32.67362257,
+              "lng": 112.08451528,
+              "name": "穰縣"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Colonel",
+              "zht": "校尉",
+              "zhs": "校尉",
+              "url": "/translations/officials/regional#commanderies-060"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "4th - 5th year of Jian'an",
+            "zht": "建安四年 - 五年",
+            "zhs": "建安四年 - 五年"
+          },
+          "year": "199 - 200",
+          "location": {
+            "en": "Guandu",
+            "zht": "官渡",
+            "zhs": "官渡"
+          },
+          "position": null,
+          "passageId": "ws18f-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.81631685,
+              "lng": 114.04675874,
+              "name": "Guandu"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "9th year of Jian'an",
+            "zht": "建安九年",
+            "zhs": "建安九年"
+          },
+          "year": 204,
+          "location": {
+            "en": "Ye",
+            "zht": "鄴",
+            "zhs": "邺"
+          },
+          "position": {
+            "en": "Marquis Within the Pass",
+            "zht": "關內侯",
+            "zhs": "关内侯"
+          },
+          "passageId": "ws18f-p5",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.29186303,
+              "lng": 114.39806539,
+              "name": "Ye"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "16th year of Jian'an",
+            "zht": "建安十六年",
+            "zhs": "建安十六年"
+          },
+          "year": "211",
+          "location": {
+            "en": "Tongguan",
+            "zht": "潼關",
+            "zhs": "潼关"
+          },
+          "position": {
+            "en": "Gentleman-General of the Martial Guards",
+            "zht": "武衞中郎將",
+            "zhs": "武卫中郎将"
+          },
+          "passageId": "ws18f-p5",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.60853928,
+              "lng": 110.31804689,
+              "name": "Tongguan"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Gentleman-General of the Martial Guards",
+              "zht": "武衞中郎將",
+              "zhs": "武卫中郎将",
+              "url": "/translations/officials/military#central-army-005"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": "215",
+          "location": {
+            "en": "Yangpingguan",
+            "zht": "陽平關",
+            "zhs": "阳平关"
+          },
+          "position": null,
+          "passageId": "ws18f-p6",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.16854232,
+              "lng": 106.61155724,
+              "name": "陽平關"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": null,
+          "position": {
+            "en": "General of the Central Vanguard",
+            "zht": "中堅將軍",
+            "zhs": "中坚将军"
+          },
+          "passageId": "ws18f-p7",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "General of the Central Vanguard",
+              "zht": "中堅將軍",
+              "zhs": "中坚将军",
+              "url": "/translations/officials/military#four-direction--misc-132"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "location": null,
+          "position": {
+            "en": "General of the Martial Guards",
+            "zht": "武衞將軍",
+            "zhs": "武卫将军"
+          },
+          "passageId": "ws18f-p8",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "General of the Martial Guards",
+              "zht": "武衞將軍",
+              "zhs": "武卫将军",
+              "url": "/translations/officials/military#central-army-005"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Taihe",
+            "zht": "太和元年",
+            "zhs": "太和元年"
+          },
+          "year": "227",
+          "location": null,
+          "position": {
+            "en": "Township Marquis",
+            "zht": "鄉侯",
+            "zhs": "乡侯"
+          },
+          "passageId": "ws18f-p9",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "許褚（仲康）",
+      "to": "曹操",
+      "type": "lord-subordinate",
+      "passageId": "ws18f-p3"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "張繡",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p3"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "袁紹",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p4"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "徐他",
+      "type": "killer-victim",
+      "passageId": "ws18f-p4"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "韓遂",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p5"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "馬超",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p5"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "馬超",
+      "type": "rivals",
+      "passageId": "ws18f-p6"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "曹仁",
+      "type": "strained-colleagues",
+      "passageId": "ws18f-p7"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "曹丕",
+      "type": "lord-subordinate",
+      "passageId": "ws18f-p8"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "許儀",
+      "type": "father-son",
+      "passageId": "ws18f-p9"
+    },
+    {
+      "from": "許定",
+      "to": "許褚（仲康）",
+      "type": "elder-brother-younger-brother",
+      "passageId": "ws18f-p9"
+    },
+    {
+      "from": "許儀",
+      "to": "鍾會",
+      "type": "victim-killer",
+      "passageId": "ws18f-p9"
+    },
+    {
+      "from": "許儀",
+      "to": "許綜",
+      "type": "father-son",
+      "passageId": "ws18f-p9"
+    }
+  ]
+}

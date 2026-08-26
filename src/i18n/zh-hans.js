@@ -27,9 +27,9 @@ export const zh_hans = {
       "url": "/zh-hans/maps/map-overall"
     },
     {
-      "name": "短故事合集",
+      "name": "三国志",
       "type": "trans",
-      "url": "/zh-hans/translations/short-stories"
+      "url": "/zh-hans/translations/sanguozhi"
     },
     {
       "name": "三国职官表",
@@ -37,9 +37,9 @@ export const zh_hans = {
       "url": "/zh-hans/translations/officials"
     },
     {
-      "name": "城市地图",
-      "type": "map",
-      "url": "/zh-hans/maps/cities"
+      "name": "短故事合集",
+      "type": "trans",
+      "url": "/zh-hans/translations/short-stories"
     }
   ],
   "sites": [

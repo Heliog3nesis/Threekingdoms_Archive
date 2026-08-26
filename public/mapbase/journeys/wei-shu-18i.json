@@ -1,0 +1,364 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 39.37794425,
+      "lng": 99.62081125,
+      "name": "Biaoshi",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.45574371,
+      "lng": 102.65588672,
+      "name": "Poqiang",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "138",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "141",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "137",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "135",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "136",
+      "persons": [
+        "龐淯（子異）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "龐淯（子異）",
+      "born": "unknown",
+      "died": "unknown",
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Biaoshi",
+            "zht": "表氏",
+            "zhs": "表氏"
+          },
+          "position": null,
+          "passageId": "ws18i-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 39.37794425,
+              "lng": 99.62081125,
+              "name": "Biaoshi"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Poqiang",
+            "zht": "破羌",
+            "zhs": "破羌"
+          },
+          "position": [
+            {
+              "en": "Aide",
+              "zht": "從事",
+              "zhs": "从事"
+            },
+            {
+              "en": "Chief",
+              "zht": "縣長",
+              "zhs": "县长"
+            }
+          ],
+          "passageId": "ws18i-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.45574371,
+              "lng": 102.65588672,
+              "name": "Poqiang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Aide",
+                "zht": "從事",
+                "zhs": "从事"
+              },
+              "1": {
+                "en": "Chief",
+                "zht": "縣長",
+                "zhs": "县长"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "11th year of Jian'an",
+            "zht": "建安十一年",
+            "zhs": "建安十一年"
+          },
+          "year": 206,
+          "age": null,
+          "location": {
+            "en": "Wuwei",
+            "zht": "武威",
+            "zhs": "武威"
+          },
+          "position": null,
+          "passageId": "ws18i-p1",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "138"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jiuquan",
+              "zht": "酒泉",
+              "zhs": "酒泉"
+            },
+            {
+              "en": "Zhangye",
+              "zht": "张掖",
+              "zhs": "张掖"
+            },
+            {
+              "en": "Dunhuang",
+              "zht": "燉煌",
+              "zhs": "燉煌"
+            }
+          ],
+          "position": {
+            "en": "Registrar",
+            "zht": "主簿",
+            "zhs": "主簿"
+          },
+          "passageId": "ws18i-p2",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "141"
+            },
+            {
+              "kind": "admin",
+              "id": "137"
+            },
+            {
+              "kind": "admin",
+              "id": "135"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Registrar",
+              "zht": "主簿",
+              "zhs": "主簿",
+              "url": "/translations/officials/regional#commanderies-051"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "From 1st year of Huangchu",
+            "zht": "黃初元年后",
+            "zhs": "黄初元年后"
+          },
+          "year": ">=220",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            },
+            {
+              "en": "Xihai",
+              "zht": "西海",
+              "zhs": "西海"
+            }
+          ],
+          "position": [
+            {
+              "en": "Commandant of Escorting Cavalry",
+              "zht": "駙馬都尉",
+              "zhs": "驸马都尉"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關内侯",
+              "zhs": "关内侯"
+            },
+            {
+              "en": "Palace Attendant Counsellor",
+              "zht": "中散大夫",
+              "zhs": "中散大夫"
+            }
+          ],
+          "passageId": "ws18i-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            },
+            {
+              "kind": "admin",
+              "id": "136"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Commandant of Escorting Cavalry",
+                "zht": "駙馬都尉",
+                "zhs": "驸马都尉"
+              },
+              "1": {
+                "en": "Grand Administrator",
+                "zht": "太守",
+                "zhs": "太守"
+              },
+              "2": {
+                "en": "Marquis Within the Pass",
+                "zht": "關内侯",
+                "zhs": "关内侯"
+              },
+              "3": {
+                "en": "Palace Attendant Counsellor",
+                "zht": "中散大夫",
+                "zhs": "中散大夫"
+              },
+              "url": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "龐淯（子異）",
+      "to": "邯鄲商",
+      "type": "served-under",
+      "passageId": "ws18i-p1"
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "張猛",
+      "type": "enemy",
+      "passageId": "ws18i-p1"
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "徐揖",
+      "type": "served-under",
+      "passageId": "ws18i-p2"
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "黃昂",
+      "type": "enemy",
+      "passageId": "ws18i-p2"
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "龐曾",
+      "type": "father-son",
+      "passageId": "ws18i-p2"
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "趙安",
+      "type": "grandfather-grandson",
+      "passageId": "ws18i-p3"
+    },
+    {
+      "from": "趙娥",
+      "to": "趙安",
+      "type": "father-daughter",
+      "passageId": "ws18i-p3"
+    },
+    {
+      "from": "趙娥",
+      "to": "李壽",
+      "type": "enemy",
+      "passageId": "ws18i-p3"
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "趙娥",
+      "type": "mother-son",
+      "passageId": "ws18i-p3"
+    }
+  ]
+}

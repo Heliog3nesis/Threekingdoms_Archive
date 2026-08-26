@@ -21,14 +21,14 @@ const PROVINCE_KINGDOM = {
 
 const KINGDOM_FILL = {
   wei: 'rgba(75,111,159,0.14)',
-  shu: 'rgba(90,170,120,0.14)',
+  shu: 'rgba(35,95,80,0.24)',
   wu: 'rgba(200,96,96,0.14)',
   unknown: 'rgba(120,120,120,0.05)'
 };
 
 const KINGDOM_LINE = {
   wei: '#4b6f9f',
-  shu: '#4FA878',
+  shu: '#2f8a76',
   wu: '#C86464',
   unknown: '#777777'
 };
@@ -49,17 +49,17 @@ const KINGDOM_LABEL = {
 
 const UI_TEXT = {
   en: {
-    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern:', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery', tributary: 'Tributary Tribes',
+    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery', tributary: 'Tributary Tribes', counties: 'Counties', commanderies: 'Commanderies', type: 'Type', region: 'Region', biography: 'Biography', previousPerson: 'Previous person', nextPerson: 'Next person', exitJourney: 'Exit journey',
     kingdomLabels: { wei: 'Wei', shu: 'Shu', wu: 'Wu', unknown: '' },
     typeLabels: { 'Provincial Seat': 'Provincial Seat', 'Commandery Seat': 'Commandery Seat', 'County Seat': 'County Seat', 'Military Pass': 'Military Pass', Landmark: 'Landmark', Others: 'Others' }
   },
   'zh-hant': {
-    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置：', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣屬部落',
+    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣屬部落', counties: '轄縣數', commanderies: '轄郡數', type: '類型', region: '政區', biography: '傳記', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生軌跡',
     kingdomLabels: { wei: '魏', shu: '蜀', wu: '吳', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '縣治', 'Military Pass': '關隘', Landmark: '地標', Others: '其他' }
   },
   'zh-hans': {
-    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置：', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣属部落',
+    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣属部落', counties: '辖县数', commanderies: '辖郡数', type: '类型', region: '政区', biography: '传记', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生轨迹',
     kingdomLabels: { wei: '魏', shu: '蜀', wu: '吴', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '县治', 'Military Pass': '关隘', Landmark: '地标', Others: '其他' }
   }
@@ -135,13 +135,15 @@ let yellowRiverOldCourseCache = null;
 let baseMapModernLayers = [];
 let allTowns = [];
 let pendingFlyTo = null;
-let pendingJourney = null; // { items } — deferred until map is ready, same pattern as pendingFlyTo
+let pendingJourney = null; // { data } — deferred until map is ready, same pattern as pendingFlyTo
+let currentJourneyId = null;
+let currentJourneyOverviews = [];
+let currentJourneyPersonIndex = 0;
 let journeyMarkers = [];
 let togglesWired = false;
 let styleButtonsWired = false;
 let townInteractionsWired = false;
 let pendingStyleRestore = false;
-let activePopup = null;
 let maplibregl = null;
 
 // LOAD MAPTILER SDK FROM CDN 
@@ -518,14 +520,8 @@ function escapeHtml(value) {
 }
 
 function formatChineseName(town) {
-  const traditional = town.Town_CH ?? '';
-  const simplified = town.Town_CHS ?? '';
-
-  if (traditional && simplified && traditional !== simplified) {
-    return `${traditional} | ${simplified}`;
-  }
-
-  return traditional || simplified;
+  if (currentLang === 'zh-hans') return town.Town_CHS || town.Town_CH || '';
+  return town.Town_CH || town.Town_CHS || '';
 }
 
 function formatAnnotation(annotation) {
@@ -553,37 +549,23 @@ function formatAnnotation(annotation) {
     .replace(/\s+/g, ' ')
     .trim();
 
-  // The "Seat of X" / "X治所" wrapper is a specific convention that only
-  // applies when the source itself already marks this as a seat note
-  // (raw Chinese text contains 治所) — not a generic phrase to bolt onto
-  // every annotation. English then gets the matching "Seat of" phrasing;
-  // Chinese is used as-is since it already contains 治所, not appended
-  // again. Anything else is just the plain split text, no wrapper at all
-  // — and each side only renders if that language's text was actually
-  // present in the source, never falling back to the other language.
-  const isSeatNote = chinese.includes('治所');
-
-  if (isSeatNote) {
+  // Every annotation is treated as a governance-seat note by default —
+  // Chinese gets 治所 appended, English gets "Seat of" prefixed — except
+  // when the raw text contains 新城 (a "New City/Town" designation,
+  // which isn't a seat-of-government record and shouldn't be phrased as
+  // one). Guards against double-wrapping in case the source text already
+  // has the phrasing baked in from the previous convention.
+  if (raw.includes('新城')) {
     return {
-      english: english ? `Seat of ${english}` : '',
+      english: english || '',
       chinese: chinese || ''
     };
   }
 
   return {
-    english: english || '',
-    chinese: chinese || ''
+    english: english ? (/^seat of /i.test(english) ? english : `Seat of ${english}`) : '',
+    chinese: chinese ? (chinese.includes('治所') ? chinese : `${chinese}治所`) : ''
   };
-}
-
-function getTownLngLat(town, fallbackLngLat) {
-  const lng = Number(town.Longitude);
-  const lat = Number(town.Latitude);
-
-  if (Number.isFinite(lng) && Number.isFinite(lat)) return [lng, lat];
-  if (Array.isArray(fallbackLngLat)) return fallbackLngLat;
-
-  return null;
 }
 
 function formatTownType(type) {
@@ -618,39 +600,20 @@ function formatModernPlace(town) {
 
 function formatHistoricalRegion(town) {
   if (currentLang === 'zh-hans') {
-    const province = town.Prov_CHS || town.Prov_CH || town.Prov_EN || '';
     const commandery = town.Comm_CHS || town.Comm_CH || town.Comm_EN || '';
     const commanderySuffix = commandery && !/[国國]/.test(commandery) ? '郡' : '';
-
-    return [
-      province,
-      commandery ? `${commandery}${commanderySuffix}` : ''
-    ].filter(Boolean).join(' · ');
+    return commandery ? `${commandery}${commanderySuffix}` : '';
   }
 
   if (currentLang === 'zh-hant') {
-    const province = town.Prov_CH || town.Prov_CHS || town.Prov_EN || '';
     const commandery = town.Comm_CH || town.Comm_CHS || town.Comm_EN || '';
     const commanderySuffix = commandery && !/[国國]/.test(commandery) ? '郡' : '';
-
-    return [
-      province,
-      commandery ? `${commandery}${commanderySuffix}` : ''
-    ].filter(Boolean).join(' · ');
+    return commandery ? `${commandery}${commanderySuffix}` : '';
   }
 
-  const provinceLabel = town.Prov_EN
-    ? /zhou/i.test(town.Prov_EN)
-      ? `${town.Prov_EN.replace(/zhou/ig, '').trim()} Province`
-      : `${town.Prov_EN} (Capital Region)`
-    : '';
-
-  return [
-    town.Comm_EN && !/(State|Agriculture)$/.test(town.Comm_EN)
-      ? `${town.Comm_EN} Commandery`
-      : town.Comm_EN,
-    provinceLabel
-  ].filter(Boolean).join(', ');
+  return town.Comm_EN && !/(State|Agriculture)$/.test(town.Comm_EN)
+    ? `${town.Comm_EN} Commandery`
+    : (town.Comm_EN || '');
 }
 
 function formatTownName(town) {
@@ -664,7 +627,15 @@ function formatTownSubtitle(town) {
   return formatChineseName(town);
 }
 
-function buildTownDetailHtml(town, { mobile = false } = {}) {
+// Every card field (Type, Region/Province, Modern, Counties/Commanderies)
+// renders as one consistent row: label on the left, value right-flushed.
+// valueHtml is inserted raw (already escaped/built by the caller), since
+// the Type row needs to embed the kingdom badge, not just plain text.
+function metaRow(label, valueHtml) {
+  return `<div class="imap-meta-row"><span class="imap-meta-label">${escapeHtml(label)}:</span><span class="imap-meta-value">${valueHtml}</span></div>`;
+}
+
+function buildTownDetailHtml(town, { mobile = false, showClose = mobile } = {}) {
   const name = formatTownName(town);
   const subtitle = formatTownSubtitle(town);
   const type = formatTownType(town.Type);
@@ -684,17 +655,12 @@ function buildTownDetailHtml(town, { mobile = false } = {}) {
           <div class="imap-town-name">${escapeHtml(name)}</div>
           ${subtitle ? `<div class="imap-town-subtitle">${escapeHtml(subtitle)}</div>` : ''}
         </div>
-        ${mobile ? `<button class="imap-town-close" type="button" aria-label="${escapeHtml(uiText.close)}">✕</button>` : ''}
+        ${showClose ? `<button class="imap-town-close" type="button" aria-label="${escapeHtml(uiText.close)}">✕</button>` : ''}
       </div>
       <div class="imap-town-meta">
-        <span>${escapeHtml(type)}</span>
-        ${region ? `
-          <span class="imap-town-region">
-            ${kingdomLabel ? `<span class="imap-town-kingdom imap-town-kingdom-${escapeHtml(kingdom)}">${escapeHtml(kingdomLabel)}</span>` : ''}
-            <span>${escapeHtml(region)}</span>
-          </span>
-        ` : ''}
-        ${modern ? `<span class="imap-town-modern"><strong>${escapeHtml(uiText.modern)}</strong> ${escapeHtml(modern)}</span>` : ''}
+        ${metaRow(uiText.type, `${kingdomLabel ? `<span class="imap-town-kingdom imap-town-kingdom-${escapeHtml(kingdom)}">${escapeHtml(kingdomLabel)}</span>` : ''}<span>${escapeHtml(type)}</span>`)}
+        ${region ? metaRow(uiText.region, escapeHtml(region)) : ''}
+        ${modern ? metaRow(uiText.modern, escapeHtml(modern)) : ''}
       </div>
       ${annotationText ? `
         <div class="imap-town-section">
@@ -706,8 +672,147 @@ function buildTownDetailHtml(town, { mobile = false } = {}) {
   `;
 }
 
+// Shows the docked right-side column (#imap-right-dock) if EITHER the
+// region panel or the town panel currently has content, hides the whole
+// dock if both are empty — so the map gets full width back when nothing
+// is selected. Each inner panel always occupies its fixed 50% height
+// slot once the dock is visible (never individually hidden/expanded),
+// so checking actual content rather than style.display is what
+// determines whether the dock itself should show at all.
+function syncRightDockVisibility() {
+  const dock = document.getElementById('imap-right-dock');
+  const region = document.getElementById('imap-region-panel');
+  const town = document.getElementById('imap-town-panel');
+  if (!dock) return;
+  const anyVisible = (region && region.innerHTML.trim() !== '') || (town && town.innerHTML.trim() !== '');
+  dock.style.display = anyVisible ? 'flex' : 'none';
+}
+
+function hideTownPanel() {
+  const panel = document.getElementById('imap-town-panel');
+  if (panel) panel.innerHTML = '';
+  syncRightDockVisibility();
+  clearTownHighlightMarker();
+}
+
+function showTownPanel(town) {
+  const panel = document.getElementById('imap-town-panel');
+  if (!panel) return;
+  panel.innerHTML = buildTownDetailHtml(town, { showClose: true });
+  panel.querySelector('.imap-town-close')?.addEventListener('click', hideTownPanel);
+  syncRightDockVisibility();
+}
+
 function hideMobileTownDetail() {
   document.getElementById('imap-town-sheet')?.remove();
+}
+
+// LOCATION HIGHLIGHT ────────────────────────────────────────────
+// Every town record carries Comm_EN (its containing commandery's English
+// name) regardless of the town's own settlement type — no spatial lookup
+// needed, just a property comparison. All settlement layers share one
+// 'towns' source, so dimming is done by swapping in a data-driven
+// opacity expression per layer rather than iterating individual features.
+
+const TOWN_DIM_OPACITY = 0.5;
+const TOWN_DIM_LAYERS = [
+  { id: 'towns-provincial', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-provincial-label', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-commandery', prop: 'circle-opacity', normal: 0.95 },
+  { id: 'towns-commandery-label', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-county', prop: 'circle-opacity', normal: 1 },
+  { id: 'towns-county-label', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-military', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-military-label', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-landmark', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-landmark-label', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-others', prop: 'text-opacity', normal: 1 },
+  { id: 'towns-others-label', prop: 'text-opacity', normal: 1 }
+];
+
+function dimTownsOutsideRegion(propName, value) {
+  if (!map || !value) return;
+  TOWN_DIM_LAYERS.forEach(({ id, prop, normal }) => {
+    if (!map.getLayer(id)) return;
+    map.setPaintProperty(id, prop, ['case', ['==', ['get', propName], value], normal, TOWN_DIM_OPACITY]);
+  });
+  if (map.getLayer('towns-county')) {
+    map.setPaintProperty('towns-county', 'circle-stroke-opacity', ['case', ['==', ['get', propName], value], 0.95, TOWN_DIM_OPACITY]);
+  }
+}
+
+function clearTownDimming() {
+  if (!map) return;
+  TOWN_DIM_LAYERS.forEach(({ id, prop, normal }) => {
+    if (map.getLayer(id)) map.setPaintProperty(id, prop, normal);
+  });
+  if (map.getLayer('towns-county')) map.setPaintProperty('towns-county', 'circle-stroke-opacity', 0.95);
+}
+
+let townHighlightMarker = null;
+
+function showTownHighlightMarker(lng, lat) {
+  clearTownHighlightMarker();
+  const el = document.createElement('div');
+  el.style.width = '18px';
+  el.style.height = '18px';
+  el.style.borderRadius = '50%';
+  el.style.background = '#ff6ec7';
+  el.style.boxShadow = '0 0 0 6px rgba(224,82,154,0.4), 0 0 16px 5px rgba(255,110,199,0.55)';
+  el.style.pointerEvents = 'none';
+  townHighlightMarker = new maplibregl.Marker({ element: el }).setLngLat([lng, lat]).addTo(map);
+}
+
+function clearTownHighlightMarker() {
+  if (townHighlightMarker) {
+    townHighlightMarker.remove();
+    townHighlightMarker = null;
+  }
+}
+
+// Ties the three pieces together for a clicked/searched town: fit the
+// map to the containing commandery's bounds, dim every settlement icon
+// outside it, and drop the magenta glow marker on the exact town. Async
+// because it needs the (cached-after-first-call) admin boundary data to
+// find the commandery polygon.
+async function highlightTownContext(town) {
+  if (!map || !mapReady || !town) return;
+
+  const lng = Number(town.Longitude);
+  const lat = Number(town.Latitude);
+  if (Number.isFinite(lng) && Number.isFinite(lat)) {
+    showTownHighlightMarker(lng, lat);
+  }
+
+  if (!town.Comm_EN) return;
+
+  const adminFeatures = await fetchAdminBoundaries();
+  const commandery = adminFeatures.find(f => f.properties?.level === 'commandery' && f.properties?.Name_EN === town.Comm_EN);
+
+  dimTownsOutsideRegion('Comm_EN', town.Comm_EN);
+
+  if (commandery?.geometry) {
+    const convertedGeometry = convertGeometryToLngLat(commandery.geometry, WATER_BODIES_ARE_WEB_MERCATOR);
+    const bounds = computeGeometryBounds(convertedGeometry);
+    if (!bounds.isEmpty()) {
+      map.fitBounds(bounds, { padding: 48, duration: 900, maxZoom: 10 });
+    }
+
+    // Same bold black boundary used for journey view — reused here rather
+    // than duplicating the rendering logic, and already deliberately
+    // distinct from the magenta glow used for the location marker itself,
+    // so "this is the commandery context" and "this is the exact place
+    // you selected" read as two different kinds of highlight.
+    renderJourneyBoundaryLayer({
+      type: 'FeatureCollection',
+      features: [{ type: 'Feature', properties: commandery.properties || {}, geometry: convertedGeometry }]
+    }, {
+      lineWidth: ['interpolate', ['linear'], ['zoom'], 3, 1.5, 8, 2.5, 12, 3.5],
+      lineOpacity: 0.8
+    });
+
+    showSearchResultPanel(buildAdminBoundaryDetailHtml(commandery.properties), `admin-${commandery.properties?.id ?? ''}`);
+  }
 }
 
 function showMobileTownDetail(town) {
@@ -731,16 +836,18 @@ function openTownDetail(town, fallbackLngLat, { keepJourney = false } = {}) {
   if (keepJourney) {
     // Journey view already called clearWaterBodyHighlight() itself before
     // placing the pins — here we only need to close any stray previous
-    // popup, without wiping the journey pin layer we just drew.
-    if (activePopup) {
-      activePopup.remove();
-      activePopup = null;
-    }
+    // panel, without wiping the journey pin layer we just drew.
+    hideTownPanel();
   } else {
     clearWaterBodyHighlight();
   }
 
-  const lngLat = getTownLngLat(town, fallbackLngLat);
+  // Same commandery-context treatment as a normal click, even in journey
+  // mode — this does replace the journey's own admin/water boundary
+  // layer with just this one commandery's boundary (renderJourneyBoundaryLayer
+  // clears and redraws), but the journey pins and the journey overview
+  // panel itself are untouched, since neither is cleared here.
+  highlightTownContext(town);
 
   if (window.matchMedia('(max-width: 950px)').matches) {
     showMobileTownDetail(town);
@@ -748,16 +855,11 @@ function openTownDetail(town, fallbackLngLat, { keepJourney = false } = {}) {
   }
 
   hideMobileTownDetail();
-  if (!lngLat) return;
-
-  activePopup = new maplibregl.Popup({
-    closeButton: true,
-    className: 'imap-town-popup',
-    maxWidth: '300px'
-  })
-    .setLngLat(lngLat)
-    .setHTML(buildTownDetailHtml(town))
-    .addTo(map);
+  // Desktop: a persistent right-side panel, not a map-anchored popup — so
+  // unlike the old popup, this no longer depends on the town having valid
+  // coordinates (fallbackLngLat/getTownLngLat) at all, since the panel's
+  // position is fixed UI chrome rather than tied to a point on the map.
+  showTownPanel(town);
 }
 
 function openTownDetailAfterFly(town, lngLat, options = {}) {
@@ -836,22 +938,25 @@ function clearJourneyBoundaries() {
 // single-select search highlight) so the two systems read as visually
 // distinct: gold means "this is the one thing you searched for", black
 // means "this is part of the journey overview".
-function renderJourneyBoundaryLayer(featureCollection) {
+function renderJourneyBoundaryLayer(featureCollection, { lineWidth, lineOpacity = 1, lineDasharray } = {}) {
   clearJourneyBoundaries();
   if (!featureCollection.features.length) return;
 
   map.addSource(JOURNEY_BOUNDARY_SOURCE, { type: 'geojson', data: featureCollection });
+
+  const paint = {
+    'line-color': '#111111',
+    'line-width': lineWidth || ['interpolate', ['linear'], ['zoom'], 3, 6, 8, 9, 12, 13],
+    'line-opacity': lineOpacity
+  };
+  if (lineDasharray) paint['line-dasharray'] = lineDasharray;
 
   map.addLayer({
     id: JOURNEY_BOUNDARY_LAYER,
     type: 'line',
     source: JOURNEY_BOUNDARY_SOURCE,
     layout: { 'line-cap': 'round', 'line-join': 'round' },
-    paint: {
-      'line-color': '#111111',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 6, 8, 9, 12, 13],
-      'line-opacity': 1
-    }
+    paint
   });
 }
 
@@ -859,20 +964,279 @@ async function fetchJourney(journeyId) {
   if (!journeyId) return null;
   try {
     const res = await fetch(url(`/mapbase/journeys/${journeyId}.json`));
-    if (!res.ok) return null;
+    if (!res.ok) {
+      console.warn(`[journey] fetch failed for "${journeyId}": ${res.status} ${res.statusText}`);
+      return null;
+    }
     return await res.json();
-  } catch {
+  } catch (err) {
+    console.warn(`[journey] fetch threw for "${journeyId}":`, err);
     return null;
   }
 }
 
-async function renderJourneyView(items) {
-  if (!map || !mapReady) return;
+// JOURNEY OVERVIEW PANEL ──────────────────────────────────────
+// Renders the currently-selected person (currentJourneyOverviews[
+// currentJourneyPersonIndex]) into #imap-journey-panel — name, dates,
+// and a chronological stop timeline. map-overall.astro owns the actual
+// toggle/show-hide chrome around this panel; this only fills its content.
 
-  // Same "only one thing shown at a time" rule as everywhere else —
-  // clears any previous popup, highlight, journey pins, AND journey
-  // boundaries before drawing the new set.
-  clearWaterBodyHighlight();
+function pickZh(field) {
+  if (!field) return '';
+  if (currentLang === 'zh-hans') return field.zhs || field.zht || '';
+  return field.zht || field.zhs || '';
+}
+
+// journeyOverviews[].person is a single string, not a {en,zht,zhs}
+// object — there's currently no English name field anywhere in this
+// data. Chinese convention wraps a courtesy name in full-width
+// parentheses after the given name (e.g. "李典（曼成）"), so that's
+// parsed apart here; a bare name with no parentheses just has no
+// courtesy name to show.
+function parsePersonString(raw) {
+  const str = String(raw ?? '').trim();
+  const match = str.match(/^(.+?)(?:（([^）]+)）)?$/);
+  return {
+    name: match?.[1]?.trim() || str,
+    courtesyName: match?.[2]?.trim() || ''
+  };
+}
+
+// born/died are {era: {en,zht,zhs}, year} — year may be a number, a
+// string like "180?", or absent/null when genuinely unknown.
+const UNKNOWN_ERA_VALUES = new Set(['unknown', '不詳', '不详']);
+
+function formatJourneyEraYear(entry) {
+  if (!entry) return null;
+  const year = entry.year != null ? String(entry.year) : '';
+  let era = isChineseMap() ? pickZh(entry.era) : (entry.era?.en || '');
+  if (UNKNOWN_ERA_VALUES.has(era.trim().toLowerCase())) era = '';
+  if (!year && !era) return null;
+  return { year, era };
+}
+
+// A stop's location can be a single {en,zht,zhs} object or an array of
+// them — each one becomes its own clickable span (data-journey-loc holds
+// a JSON-encoded resolved entry so the click handler, wired up after
+// this HTML is inserted, knows what to open), joined by " / " when there
+// are multiple.
+function formatJourneyLocation(location, resolvedLocations) {
+  const locs = Array.isArray(location) ? location : [location];
+  const resolved = resolvedLocations ?? [];
+  return locs
+    .filter(Boolean)
+    .map((l, i) => {
+      const label = [l.en, pickZh(l)].filter(Boolean).join(' ');
+      const entry = resolved[i];
+      if (!label) return '';
+      if (!entry) return `<div>${escapeHtml(label)}</div>`;
+      return `<div class="imap-journey-loc-link" data-journey-loc='${escapeHtml(JSON.stringify(entry))}'>${escapeHtml(label)}</div>`;
+    })
+    .filter(Boolean)
+    .join('');
+}
+
+function formatJourneyPosition(positionLinks) {
+  if (!positionLinks?.length) return '';
+  return positionLinks
+    .filter(seg => seg.en)
+    .map(seg => {
+      if (!seg.url) return escapeHtml(seg.en);
+      return `<a href="${url(seg.url)}" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> ${escapeHtml(seg.en)}</a>`;
+    })
+    .join(', ');
+}
+
+// Resolves a journey stop's town entry back to the full town record, so
+// clicking it can open the same detail cards a map pin click would.
+function findTownForResolvedEntry(entry) {
+  if (!entry || entry.kind !== 'town') return null;
+  return allTowns.find(t => Number(t?.Latitude) === entry.lat && Number(t?.Longitude) === entry.lng) ?? null;
+}
+
+function renderJourneyStopRow(stop) {
+  const yearEra = formatJourneyEraYear(stop);
+  const location = formatJourneyLocation(stop.location, stop.resolvedLocations);
+  const position = formatJourneyPosition(stop.positionLinks);
+  if (!location && !position) return '';
+
+  return `
+    <div class="imap-journey-stop">
+      <div class="imap-journey-stop-when">
+        <div class="imap-journey-stop-year">${escapeHtml(yearEra?.year || '?')}</div>
+        ${yearEra?.era ? `<div class="imap-journey-stop-era">${escapeHtml(yearEra.era)}</div>` : ''}
+      </div>
+      <div class="imap-journey-stop-where">
+        ${location ? `<div class="imap-journey-stop-location">${location}</div>` : ''}
+        ${position ? `<div class="imap-journey-stop-position">${position}</div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+// Prefers the explicit name/courtesyName fields (added directly to the
+// chapter JSON) when present — giving a proper EN name alongside the
+// Chinese, which the bare person ID string alone can't provide. Falls
+// back to parsing person (Chinese-only, no EN available that way) for
+// any chapter that hasn't had these fields added yet.
+function resolvePersonDisplay(person) {
+  if (person.name) {
+    return {
+      nameEn: person.name.en || '',
+      nameZh: pickZh(person.name),
+      courtesyEn: person.courtesyName?.en || '',
+      courtesyZh: pickZh(person.courtesyName)
+    };
+  }
+  const parsed = parsePersonString(person.person);
+  return {
+    nameEn: '',
+    nameZh: parsed.name,
+    courtesyEn: '',
+    courtesyZh: parsed.courtesyName
+  };
+}
+
+function showJourneyPanel() {
+  const panel = document.getElementById('imap-journey-panel');
+  if (!panel || !currentJourneyOverviews.length) return;
+
+  const person = currentJourneyOverviews[currentJourneyPersonIndex];
+
+  // Only this person's own locations, not everyone's combined — a
+  // location shared with another person in the same journey (e.g. a
+  // family estate) still shows, since it's tagged with every person
+  // whose stops include it.
+  const personPins = currentJourneyPins.filter(pin => pin.persons?.includes(person.person));
+  drawJourneyItems(personPins);
+
+  const { nameEn, nameZh, courtesyEn, courtesyZh } = resolvePersonDisplay(person);
+  const born = formatJourneyEraYear(person.born);
+  const died = formatJourneyEraYear(person.died);
+  const hasMultiplePeople = currentJourneyOverviews.length > 1;
+
+  const bioUrl = currentJourneyId ? url(`/translations/sanguozhi/${currentJourneyId}`) : null;
+
+  panel.innerHTML = `
+    <div class="imap-journey-header">
+      ${hasMultiplePeople ? `<button class="imap-journey-arrow" id="imap-journey-prev" type="button" aria-label="${escapeHtml(uiText.previousPerson)}"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>` : ''}
+      <div class="imap-journey-header-info">
+        <div class="imap-journey-name-row">
+          <span class="imap-journey-name">
+            ${escapeHtml(nameEn || nameZh)}
+            ${nameEn && nameZh ? `<span class="imap-journey-name-zh">${escapeHtml(nameZh)}</span>` : ''}
+          </span>
+          ${bioUrl ? `<a class="imap-journey-bio-link" href="${bioUrl}" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> ${escapeHtml(uiText.biography)}</a>` : ''}
+        </div>
+        ${(courtesyEn || courtesyZh) ? `
+          <div class="imap-journey-courtesy">
+            ${escapeHtml(courtesyEn || courtesyZh)}
+            ${courtesyEn && courtesyZh ? `<span class="imap-journey-courtesy-zh">${escapeHtml(courtesyZh)}</span>` : ''}
+          </div>
+        ` : ''}
+        ${(born || died) ? `
+          <div class="imap-journey-dates">
+            <div class="imap-journey-dates-num">${escapeHtml(born?.year || '?')} &ndash; ${escapeHtml(died?.year || '?')}</div>
+            ${(born?.era || died?.era) ? `<div class="imap-journey-dates-era">${escapeHtml(born?.era || '?')} &ndash; ${escapeHtml(died?.era || '?')}</div>` : ''}
+          </div>
+        ` : ''}
+      </div>
+      ${hasMultiplePeople ? `<button class="imap-journey-arrow" id="imap-journey-next" type="button" aria-label="${escapeHtml(uiText.nextPerson)}"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>` : ''}
+    </div>
+    <div class="imap-journey-timeline">
+      ${(person.stops ?? []).map(renderJourneyStopRow).join('')}
+    </div>
+  `;
+
+  panel.querySelector('#imap-journey-prev')?.addEventListener('click', (e) => { e.stopPropagation(); switchJourneyPerson(-1); });
+  panel.querySelector('#imap-journey-next')?.addEventListener('click', (e) => { e.stopPropagation(); switchJourneyPerson(1); });
+
+  panel.querySelectorAll('.imap-journey-loc-link').forEach(el => {
+    el.addEventListener('click', () => {
+      let entry;
+      try {
+        entry = JSON.parse(el.dataset.journeyLoc);
+      } catch {
+        return;
+      }
+      if (entry.kind === 'town') {
+        const town = findTownForResolvedEntry(entry);
+        if (town) openTownDetail(town, [entry.lng, entry.lat], { keepJourney: true });
+      } else if (entry.kind === 'admin') {
+        showAdminBoundaryById(entry.id);
+      } else if (entry.kind === 'water') {
+        showWaterBodyById(entry.id);
+      }
+    });
+  });
+
+  const trigger = document.getElementById('imap-journey-toggle');
+  if (trigger) {
+    trigger.style.display = '';
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+
+  const journeyDropdown = document.getElementById('imap-journey-dropdown');
+  if (journeyDropdown) {
+    journeyDropdown.classList.add('imap-journey-has-data');
+    journeyDropdown.style.display = 'block';
+  }
+
+  const exitBtn = document.getElementById('imap-journey-exit');
+  if (exitBtn) exitBtn.innerHTML = `<i class="ti ti-logout" aria-hidden="true"></i> ${escapeHtml(uiText.exitJourney)}`;
+}
+
+function switchJourneyPerson(delta) {
+  if (!currentJourneyOverviews.length) return;
+  currentJourneyPersonIndex = (currentJourneyPersonIndex + delta + currentJourneyOverviews.length) % currentJourneyOverviews.length;
+  showJourneyPanel();
+}
+
+function hideJourneyPanel() {
+  const panel = document.getElementById('imap-journey-panel');
+  if (panel) panel.innerHTML = '';
+  const trigger = document.getElementById('imap-journey-toggle');
+  if (trigger) {
+    trigger.style.display = 'none';
+    trigger.setAttribute('aria-expanded', 'false');
+  }
+  const journeyDropdown = document.getElementById('imap-journey-dropdown');
+  if (journeyDropdown) {
+    journeyDropdown.classList.remove('imap-journey-has-data');
+    journeyDropdown.style.display = 'none';
+  }
+  currentJourneyOverviews = [];
+  currentJourneyPersonIndex = 0;
+  currentJourneyPins = [];
+}
+
+// Leaves journey mode entirely — clears the ?journey= URL param (via
+// history.replaceState, no reload), the pins/boundaries, and the panel.
+// Camera position is left untouched deliberately, so exiting doesn't
+// disrupt wherever the reader currently is on the map.
+export function exitJourneyMode() {
+  currentJourneyId = null;
+  const params = new URLSearchParams(window.location.search);
+  params.delete('journey');
+  const newSearch = params.toString();
+  const newUrl = window.location.pathname + (newSearch ? `?${newSearch}` : '') + window.location.hash;
+  window.history.replaceState({}, '', newUrl);
+
+  clearJourneyMarkers();
+  clearJourneyBoundaries();
+  hideJourneyPanel();
+}
+
+
+let currentJourneyPins = [];
+
+// Draws pins + admin/water boundaries for the given items and fits the
+// map to their extent — extracted from renderJourneyView so it can also
+// be called with a filtered subset (just the currently-active person's
+// own locations) whenever the panel switches person.
+async function drawJourneyItems(items) {
+  clearJourneyMarkers();
+  clearJourneyBoundaries();
 
   if (!Array.isArray(items) || !items.length) return;
 
@@ -895,8 +1259,8 @@ async function renderJourneyView(items) {
     // anchor:'bottom' below.
     el.innerHTML = `
       <svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13 0C5.8 0 0 5.8 0 13c0 9.5 13 21 13 21s13-11.5 13-21C26 5.8 20.2 0 13 0z" fill="#d0aa6b" stroke="#1a1208" stroke-width="2"/>
-        <circle cx="13" cy="13" r="5" fill="#1a1208"/>
+        <path d="M13 0C5.8 0 0 5.8 0 13c0 9.5 13 21 13 21s13-11.5 13-21C26 5.8 20.2 0 13 0z" fill="#111111" stroke="#ffffff" stroke-width="1.5"/>
+        <circle cx="13" cy="13" r="5" fill="#ffffff"/>
       </svg>
     `;
 
@@ -953,7 +1317,10 @@ async function renderJourneyView(items) {
       return { type: 'Feature', properties: f.properties || {}, geometry: convertedGeometry };
     });
 
-    renderJourneyBoundaryLayer({ type: 'FeatureCollection', features: boundaryFeatures });
+    renderJourneyBoundaryLayer({ type: 'FeatureCollection', features: boundaryFeatures }, {
+      lineWidth: ['interpolate', ['linear'], ['zoom'], 3, 2.5, 8, 4, 12, 5.5],
+      lineDasharray: [0.3, 1.5]
+    });
   }
 
   if (hasBounds) {
@@ -965,16 +1332,47 @@ async function renderJourneyView(items) {
   }
 }
 
+async function renderJourneyView(journeyData) {
+  if (!map || !mapReady) return;
+
+  // Clears any previous popup/highlight (but not journey state, which is
+  // now independent — see clearWaterBodyHighlight's own comment).
+  clearWaterBodyHighlight();
+  // Explicitly clear any PREVIOUS journey's own pins before drawing this
+  // one's — e.g. navigating from one chapter's "view life journey" link
+  // straight to another's, without an exit in between.
+  clearJourneyMarkers();
+
+  const items = journeyData?.pins;
+  if (!Array.isArray(items) || !items.length) return;
+
+  currentJourneyPins = items;
+  currentJourneyOverviews = journeyData?.journeyOverviews ?? [];
+  currentJourneyPersonIndex = 0;
+  showJourneyPanel();
+}
+
 export async function showJourney(journeyId) {
   if (!journeyId) return;
-  const items = await fetchJourney(journeyId);
-  if (!items || !items.length) return;
+  currentJourneyId = journeyId;
+  const data = await fetchJourney(journeyId);
+  if (!data || !data.pins?.length) {
+    if (data && Array.isArray(data)) {
+      console.warn(
+        `[journey] "${journeyId}.json" is a bare array — this looks like it was built by an older version of build-journeys.mjs. ` +
+        `Re-run the script and redeploy the file; it should now be shaped { pins, journeyOverviews, relationships }.`
+      );
+    } else if (data) {
+      console.warn(`[journey] "${journeyId}.json" has no pins:`, data);
+    }
+    return;
+  }
 
   if (map && mapReady) {
-    renderJourneyView(items);
+    renderJourneyView(data);
   } else {
     // store for the load handler — same deferred pattern as pendingFlyTo
-    pendingJourney = { items };
+    pendingJourney = { data };
   }
 }
 
@@ -1013,7 +1411,8 @@ const WATER_HIGHLIGHT_SOURCE = 'water-body-highlight';
 const WATER_HIGHLIGHT_FILL_SOURCE = 'water-body-highlight-fill-source';
 const WATER_HIGHLIGHT_LAYERS = [
   'water-body-highlight-fill',
-  'water-body-highlight-casing',
+  'water-body-highlight-glow-outer',
+  'water-body-highlight-glow-inner',
   'water-body-highlight-line'
 ];
 
@@ -1027,7 +1426,6 @@ const WATER_HIGHLIGHT_LAYERS = [
 const JOURNEY_BOUNDARY_SOURCE = 'journey-boundary-highlight';
 const JOURNEY_BOUNDARY_LAYER = 'journey-boundary-casing';
 
-let waterHighlightPopup = null;
 let currentWaterHighlightId = null;
 let pendingHighlight = null; // { kind: 'water' | 'admin', feature }
 
@@ -1050,27 +1448,19 @@ export function clearWaterBodyHighlight() {
   currentWaterHighlightId = null;
   pendingHighlight = null;
 
-  if (waterHighlightPopup) {
-    const popup = waterHighlightPopup;
-    waterHighlightPopup = null;
-    popup.remove();
-  }
+  clearSearchResultPanel();
 
   removeWaterBodyHighlightLayers();
 
-  // Also close any open town popup and clear any journey pin layer — every
-  // internal caller already paired this call with clearing activePopup
-  // separately, so folding both in here makes this the single "clear
-  // whatever's currently shown" entry point. This also fixes the
-  // search-clear button in map-overall.astro, which previously only
-  // cleared water/admin highlights and left an open town popup untouched.
-  if (activePopup) {
-    activePopup.remove();
-    activePopup = null;
-  }
+  // Also close any open town detail panel — folding this in here makes
+  // this the single "clear whatever's currently shown" entry point for
+  // everything EXCEPT journey state, which persists independently until
+  // explicit exit (exitJourneyMode) or the toggle icon, never as a side
+  // effect of clicking a different town or closing an unrelated popup.
+  hideTownPanel();
   hideMobileTownDetail();
-  clearJourneyMarkers();
-  clearJourneyBoundaries();
+  clearTownDimming();
+  clearTownHighlightMarker();
 }
 
 function extendBoundsWithCoords(bounds, coords) {
@@ -1155,6 +1545,51 @@ function extractPolygonOnly(geometry) {
 // options.showFill / options.showLine let admin boundaries opt out of the
 // blue fill+line (those are reserved for water bodies) and show only the
 // gold casing border.
+// REGION PANEL — docked on the right, above the town panel ────
+// Province/commandery/river search results render in #imap-region-panel,
+// the top slot of the docked right-side column (#imap-right-dock in
+// map-overall.astro), stacked above #imap-town-panel. Together they fill
+// the dock's full height — syncRightDockVisibility() shows/hides the
+// dock itself depending on whether either panel actually has content.
+
+function clearSearchResultPanel() {
+  const panel = document.getElementById('imap-region-panel');
+  if (!panel || panel.innerHTML.trim() === '') return;
+  panel.innerHTML = '';
+  syncRightDockVisibility();
+}
+
+// Closes just the region/commandery side of the highlight — used by that
+// panel's own close button, independently of the town panel/marker below
+// it. Covers both origins that populate this panel: a direct province /
+// commandery / water body search (removeWaterBodyHighlightLayers, the
+// magenta glow) and a location click's containing-commandery display
+// (clearJourneyBoundaries, the black border + dimming) — clearing both
+// unconditionally is harmless since whichever one wasn't active is
+// already a no-op.
+function clearRegionHighlight() {
+  currentWaterHighlightId = null;
+  clearSearchResultPanel();
+  removeWaterBodyHighlightLayers();
+  clearJourneyBoundaries();
+  clearTownDimming();
+}
+
+function showSearchResultPanel(html, highlightId) {
+  const panel = document.getElementById('imap-region-panel');
+  if (!panel) return;
+
+  panel.innerHTML = `
+    <button class="imap-searchresult-close" type="button" aria-label="${escapeHtml(uiText.close)}">✕</button>
+    ${html}
+  `;
+  syncRightDockVisibility();
+
+  panel.querySelector('.imap-searchresult-close')?.addEventListener('click', () => {
+    clearRegionHighlight();
+  });
+}
+
 function renderSearchHighlight(geometry, properties, popupHtml, highlightId, options = {}) {
   const { showFill = true, showLine = true } = options;
 
@@ -1202,25 +1637,46 @@ function renderSearchHighlight(geometry, properties, popupHtml, highlightId, opt
     });
   }
 
-  // Amber "highlighter" casing, drawn first so it sits underneath the line.
-  // Crisp (no blur), a substantially wider, deeper-gold stroke so it reads
-  // clearly against the basemap's own muted blue-gray water tones. Always
-  // shown — this is the border used for BOTH water bodies and admin
-  // boundaries.
+  // Magenta glow — a wide, blurred outer line underneath a thin, crisp
+  // inner line, both on the same geometry. This replaces the old solid
+  // gold "casing" border, which read as a heavy, hard-edged block rather
+  // than a highlight, and which also overlapped with gold's existing
+  // meaning as the site's own branding accent. Magenta was chosen because
+  // it's the one color that doesn't collide with anything already
+  // meaningful on this map: blue (Wei / rivers), green (Shu / satellite
+  // terrain), red (Wu), or gold (site branding, search-adjacent chrome).
+  // Used for BOTH water bodies and admin boundaries.
   map.addLayer({
-    id: 'water-body-highlight-casing',
+    id: 'water-body-highlight-glow-outer',
     type: 'line',
     source: WATER_HIGHLIGHT_SOURCE,
     layout: { 'line-cap': 'round', 'line-join': 'round' },
     paint: {
-      'line-color': '#b8863f',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 7, 8, 11, 12, 15],
+      'line-color': '#e0529a',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 10, 8, 16, 12, 22],
+      'line-blur': 6,
+      'line-opacity': 0.45
+    }
+  });
+
+  map.addLayer({
+    id: 'water-body-highlight-glow-inner',
+    type: 'line',
+    source: WATER_HIGHLIGHT_SOURCE,
+    layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: {
+      'line-color': '#ff6ec7',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 2, 8, 3, 12, 4],
       'line-opacity': 1
     }
   });
 
-  // Plain crisp blue line, no halo/blur/shading — water bodies only. Admin
-  // boundaries (provinces/commanderies) show the gold casing alone.
+  // Plain crisp blue line, no halo/blur/shading — water bodies only. Sits
+  // on top of the magenta glow, so a highlighted river still visually
+  // reads as "this is a river" (blue) with "and it's the selected one"
+  // (magenta glow) layered underneath, rather than losing its own color
+  // identity. Admin boundaries (provinces/commanderies) show the glow
+  // alone, since they don't have an equivalent identity color to preserve.
   if (showLine) {
     map.addLayer({
       id: 'water-body-highlight-line',
@@ -1240,20 +1696,7 @@ function renderSearchHighlight(geometry, properties, popupHtml, highlightId, opt
   if (!bounds.isEmpty()) {
     map.fitBounds(bounds, { padding: 64, duration: 900, maxZoom: 9 });
 
-    waterHighlightPopup = new maplibregl.Popup({
-      closeButton: true,
-      className: 'imap-water-popup',
-      maxWidth: '260px'
-    })
-      .setLngLat(bounds.getCenter())
-      .setHTML(popupHtml)
-      .addTo(map);
-
-    waterHighlightPopup.on('close', () => {
-      if (currentWaterHighlightId === highlightId) {
-        clearWaterBodyHighlight();
-      }
-    });
+    showSearchResultPanel(popupHtml, highlightId);
   }
 
   currentWaterHighlightId = highlightId;
@@ -1295,15 +1738,6 @@ function formatProvinceLabel(provEn) {
     : `${provEn} (Capital Region)`;
 }
 
-// Appends " Commandery" unless the commandery is actually a princely State
-// (Name_CH contains 國, or Name_EN already ends in "State") — those render
-// as-is, e.g. "Pei State" not "Pei State Commandery".
-function formatCommanderyLabel(nameEn, nameCh) {
-  if (!nameEn) return '';
-  const isState = (nameCh && nameCh.includes('國')) || /state$/i.test(nameEn.trim());
-  return isState ? nameEn : `${nameEn} Commandery`;
-}
-
 function formatAdminBoundaryName(props) {
   if (!props) return uiText.unnamedLocation;
   if (currentLang === 'zh-hans') return props.Name_CHS || props.Name_CH || props.Name_EN || uiText.unnamedLocation;
@@ -1325,37 +1759,74 @@ function formatAdminParentName(props) {
   return formatProvinceLabel(props.Prov_EN) || props.Prov_EN || '';
 }
 
+// Mirrors how towns derive kingdom from their own province (town.kingdom
+// || PROVINCE_KINGDOM[town.Prov_EN]) — a province looks itself up
+// directly, a commandery looks up its parent province. Tributaries
+// aren't administered territory and generally won't resolve to a kingdom.
+function getAdminKingdom(props) {
+  if (!props) return 'unknown';
+  if (props.level === 'commandery' || props.level === 'tributary') {
+    return PROVINCE_KINGDOM[props.Prov_EN] || 'unknown';
+  }
+  return PROVINCE_KINGDOM[props.Name_EN] || 'unknown';
+}
+
+// Counts county-level settlements sharing this commandery's name. A
+// Commandery Seat or Provincial Seat is itself administratively a
+// county (it's simply the county that also hosts a higher office), so
+// all three types count — not just settlements explicitly typed
+// "county".
+function countCountiesInCommandery(commEN) {
+  if (!commEN) return 0;
+  const countyLevelTypes = new Set([TOWN_TYPES.county, TOWN_TYPES.commandery, TOWN_TYPES.provincial]);
+  return allTowns.filter(t => t.Comm_EN === commEN && countyLevelTypes.has(normaliseTownType(t.Type))).length;
+}
+
+// Counts commandery-level admin boundaries whose Prov_EN matches this
+// province. allAdminBoundariesCache is already populated by the time an
+// admin boundary card renders, since finding the feature to highlight in
+// the first place requires that same data to already be loaded.
+function countCommanderiesInProvince(provEN) {
+  if (!provEN || !allAdminBoundariesCache) return 0;
+  return allAdminBoundariesCache.filter(f => f.properties?.level === 'commandery' && f.properties?.Prov_EN === provEN).length;
+}
+
 function buildAdminBoundaryDetailHtml(props) {
   const name = formatAdminBoundaryName(props);
   const subtitle = formatAdminBoundarySubtitle(props);
   const isCommandery = props?.level === 'commandery';
   const isTributary = props?.level === 'tributary';
+  const isProvince = !isCommandery && !isTributary;
 
   let typeLabel;
   if (isCommandery) typeLabel = uiText.commandery;
   else if (isTributary) typeLabel = uiText.tributary;
   else typeLabel = uiText.province;
 
-  // Commanderies and tributaries both show a "province · name" breadcrumb;
-  // provinces just show their own name once (no self-referential breadcrumb).
-  // Commanderies get the " Commandery" suffix in that breadcrumb (English
-  // only, skipped for princely States); tributaries never get a suffix —
-  // they're not administered territory, just their plain name.
-  let family = '';
-  if (isCommandery) {
-    const commLabel = currentLang === 'en' ? formatCommanderyLabel(props.Name_EN, props.Name_CH) : name;
-    family = `${escapeHtml(formatAdminParentName(props))} · ${escapeHtml(commLabel)}`;
-  } else if (isTributary) {
-    family = `${escapeHtml(formatAdminParentName(props))} · ${escapeHtml(name)}`;
-  }
+  const kingdom = getAdminKingdom(props);
+  const kingdomLabel = KINGDOM_LABEL[kingdom] || '';
+
+  // Tributaries aren't administered territory, so they keep the original
+  // "Province · Name" breadcrumb rather than the province/count fields
+  // that make sense for real administrative units.
+  const tributaryFamily = isTributary
+    ? `${escapeHtml(formatAdminParentName(props))} · ${escapeHtml(name)}`
+    : '';
+
+  const provinceName = isCommandery ? formatAdminParentName(props) : '';
+  const countyCount = isCommandery ? countCountiesInCommandery(props.Name_EN) : null;
+  const commanderyCount = isProvince ? countCommanderiesInProvince(props.Name_EN) : null;
 
   return `
-    <div class="imap-water-card">
+    <div class="imap-water-card imap-admin-card">
       <div class="imap-town-name">${escapeHtml(name)}</div>
       ${subtitle ? `<div class="imap-town-subtitle">${escapeHtml(subtitle)}</div>` : ''}
       <div class="imap-town-meta">
-        <span>${escapeHtml(typeLabel)}</span>
-        ${family ? `<span class="imap-admin-family">${family}</span>` : ''}
+        ${metaRow(uiText.type, `${kingdomLabel ? `<span class="imap-town-kingdom imap-town-kingdom-${escapeHtml(kingdom)}">${escapeHtml(kingdomLabel)}</span>` : ''}<span>${escapeHtml(typeLabel)}</span>`)}
+        ${tributaryFamily ? metaRow(uiText.region, tributaryFamily) : ''}
+        ${provinceName ? metaRow(uiText.province, escapeHtml(provinceName)) : ''}
+        ${countyCount !== null ? metaRow(uiText.counties, String(countyCount)) : ''}
+        ${commanderyCount !== null ? metaRow(uiText.commanderies, String(commanderyCount)) : ''}
       </div>
     </div>
   `;
@@ -1370,6 +1841,9 @@ export function highlightAdminBoundaryFeature(feature) {
     `admin-${feature.properties?.id ?? ''}`,
     { showFill: false, showLine: false }
   );
+
+  const propName = feature.properties?.level === 'province' ? 'Prov_EN' : 'Comm_EN';
+  dimTownsOutsideRegion(propName, feature.properties?.Name_EN);
 }
 
 // Public helper: look up a province/commandery by its stable `id` (from
@@ -1390,37 +1864,22 @@ export async function showAdminBoundaryById(id) {
   }
 }
 
-// LEGEND CLEANUP 
-function removeKingdomLegend() {
-  const possibleSelectors = [
-    '.imap-legend-kingdoms',
-    '.imap-legend-kingdom',
-    '.imap-legend-section-kingdoms',
-    '#imap-legend-kingdoms'
-  ];
-
-  possibleSelectors.forEach(selector => {
-    document.querySelectorAll(selector).forEach(el => el.remove());
-  });
-
-  document.querySelectorAll('.imap-legend-section, .imap-legend-group, .imap-legend-block').forEach(section => {
-    const heading = section.querySelector('h1, h2, h3, h4, h5, h6, .imap-legend-title, .imap-section-title');
-    const headingText = heading?.textContent?.trim().toLowerCase() ?? '';
-
-    if (headingText.includes('kingdom')) {
-      section.remove();
-    }
-  });
-}
-
 // LAYER BUILDING 
-function hideOutdoorTrails() {
-  if (!map || currentStyle !== 'outdoor') return;
+function hideModernInfrastructure() {
+  if (!map || (currentStyle !== 'outdoor' && currentStyle !== 'satellite')) return;
 
   const styleLayers = map.getStyle()?.layers ?? [];
 
+  // 'trail' is a supplementary hiking-trail layer MapTiler's outdoor style
+  // adds on top of the base road network. The actual road/track network
+  // itself lives in the standard OpenMapTiles 'transportation' /
+  // 'transportation_name' source-layers — hiding both groups removes
+  // modern roads, tracks, and paths entirely, leaving just the physical
+  // terrain base.
+  const layersToHide = ['trail', 'transportation', 'transportation_name'];
+
   styleLayers.forEach(layer => {
-    if (layer['source-layer'] === 'trail') {
+    if (layersToHide.includes(layer['source-layer'])) {
       map.setLayoutProperty(layer.id, 'visibility', 'none');
     }
   });
@@ -1429,7 +1888,7 @@ function hideOutdoorTrails() {
 function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOldCourseCache, commanderiesGeoJSON = commanderiesGeoJSONCache) {
   if (hasThreeKArchiveLayers()) return;
 
-  hideOutdoorTrails();
+  hideModernInfrastructure();
 
   applyBaseMapLanguage();
   rememberBaseMapModernLayers();
@@ -1958,7 +2417,6 @@ function restoreArchiveLayersAfterStyleChange() {
   pendingStyleRestore = false;
   removeArchiveLayersAndSources();
   addLayers(provincesGeoJSONCache, yellowRiverOldCourseCache, commanderiesGeoJSONCache);
-  removeKingdomLegend();
   syncToggleStatesFromDOM();
   map.resize();
 }
@@ -2016,13 +2474,12 @@ export async function initInteractiveMap(options = {}) {
 
   if (mapReady) {
     map.resize();
-    removeKingdomLegend();
     syncToggleStatesFromDOM();
 
     if (pendingJourney) {
-      const { items } = pendingJourney;
+      const { data } = pendingJourney;
       pendingJourney = null;
-      renderJourneyView(items);
+      renderJourneyView(data);
     } else if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
       const { lat, lng, town } = pendingFlyTo;
       pendingFlyTo = null;
@@ -2074,20 +2531,18 @@ export async function initInteractiveMap(options = {}) {
     map.touchZoomRotate.enableRotation();
     map.setPitch(0);
 
-    map.addControl(new FitAllTownsControl(), 'top-right');
-    map.addControl(new maplibregl.NavigationControl({ showCompass: true, showZoom: true }), 'top-right');
+    map.addControl(new FitAllTownsControl(), 'top-left');
+    map.addControl(new maplibregl.NavigationControl({ showCompass: true, showZoom: true }), 'top-left');
     map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
 
     wireToggles();
     wireStyleButtons();
-    removeKingdomLegend();
 
     map.on('load', () => {
       addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON, commanderiesGeoJSON);
 
       mapReady = true;
 
-      removeKingdomLegend();
       syncToggleStatesFromDOM();
 
       if (loadingEl) loadingEl.style.display = 'none';
@@ -2097,9 +2552,9 @@ export async function initInteractiveMap(options = {}) {
       // scenario 1: clean boot — fit all towns
         if (pendingJourney) {
           // scenario 4: arrived via a chapter's "view life journey" link
-          const { items } = pendingJourney;
+          const { data } = pendingJourney;
           pendingJourney = null;
-          renderJourneyView(items);
+          renderJourneyView(data);
         } else if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
           // scenario 2: has coordinates — fly there
           const { lat, lng, town } = pendingFlyTo;

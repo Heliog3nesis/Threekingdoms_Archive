@@ -27,9 +27,9 @@ export const en = {
       "url": "/maps/map-overall"
     },
     {
-      "name": "Short Stories Collection",
+      "name": "Records of the Three Kingdoms",
       "type": "trans",
-      "url": "/translations/short-stories"
+      "url": "/translations/sanguozhi"
     },
     {
       "name": "Titles and Positions",
@@ -37,9 +37,9 @@ export const en = {
       "url": "/translations/officials"
     },
     {
-      "name": "Map of Cities",
-      "type": "map",
-      "url": "/maps/cities"
+      "name": "Short Stories Collection",
+      "type": "trans",
+      "url": "/translations/short-stories"
     }
   ],
   "sites": [

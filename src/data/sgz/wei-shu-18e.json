@@ -1,0 +1,166 @@
+{
+  "id": "wei-shu-18e",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 18,
+  "num": "18",
+  "label": {
+    "zht": "呂虔傳 · 附王祥",
+    "zhs": "吕虔传 · 附王祥",
+    "en": "Biography of Lü Qian · with Wang Xiang"
+  },
+  "title": {
+    "zht": "魏書十八 · 呂虔傳 · 附王祥",
+    "zhs": "魏书十八 · 呂虔传 · 附王祥",
+    "en": "Book of Wei, Chapter 18 · Biography of Lü Qian · with Wang Xiang"
+  },
+  "relationships": [
+    { "from": "呂虔（子恪）", "to": "曹操", "type": "lord-subordinate", "passageId": "ws18e-p1" },
+    { "from": "呂虔（子恪）", "to": "杜松", "type": "successor-predecessor", "passageId": "ws18e-p2" },
+    { "from": "呂虔（子恪）", "to": "炅毋", "type": "enemies", "passageId": "ws18e-p2" },
+    { "from": "呂虔（子恪）", "to": "昌豨", "type": "enemies", "passageId": "ws18e-p2" },
+    { "from": "呂虔（子恪）", "to": "郭祖", "type": "enemies", "passageId": "ws18e-p3" },
+    { "from": "呂虔（子恪）", "to": "公孫犢", "type": "enemies", "passageId": "ws18e-p3" },
+    { "from": "呂虔（子恪）", "to": "夏侯淵", "type": "comrades", "passageId": "ws18e-p4" },
+    { "from": "呂虔（子恪）", "to": "徐和", "type": "enemies", "passageId": "ws18e-p4" },
+    { "from": "呂虔（子恪）", "to": "李條", "type": "enemies", "passageId": "ws18e-p5" },
+    { "from": "呂虔（子恪）", "to": "曹丕", "type": "lord-subordinate", "passageId": "ws18e-p6" },
+    { "from": "呂虔（子恪）", "to": "王祥（休徵）", "type": "superior-subordinate", "passageId": "ws18e-p6" },
+    { "from": "王祥（休徵）", "to": "王祥後母", "type": "stepson-stepmother", "passageId": "ws18e-p7" },
+    { "from": "王祥（休徵）", "to": "司馬昭", "type": "ruler-subordinate", "passageId": "ws18e-p8" },
+    { "from": "王祥（休徵）", "to": "荀顗", "type": "colleagues", "passageId": "ws18e-p8" },
+    { "from": "王祥（休徵）", "to": "司馬炎", "type": "ruler-subordinate", "passageId": "ws18e-p8" },
+    { "from": "王祥（休徵）", "to": "王覽（玄通）", "type": "elder-brother-younger-brother", "passageId": "ws18e-p9" },
+    { "from": "呂虔（子恪）", "to": "呂翻", "type": "father-son", "passageId": "ws18e-p11" },
+    { "from": "呂翻", "to": "呂桂", "type": "father-son", "passageId": "ws18e-p11" }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "呂虔（子恪）",
+      "name": { "en": "Lü Qian", "zht": "呂虔", "zhs": "吕虔" },
+      "courtesyName": { "en": "Zike", "zht": "子恪", "zhs": "子恪" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "reign of Emperor Ming", "zht": "明帝年間", "zhs": "明帝年间" }, "year": null },
+      "age": null,
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "location": { "en": "Rencheng", "zht": "任城", "zhs": "任城" }, "position": null, "passageId": "ws18e-p1" },
+        { "era": { "en": "3rd year of Chuping", "zht": "初平三年", "zhs": "初平三年" }, "year": 192, "location": { "en": "Hulu", "zht": "湖陸", "zhs": "湖陆" }, "position": { "en": "Aide", "zht": "從事", "zhs": "从事" }, "passageId": "ws18e-p1" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "location": { "en": "Xiangben", "zht": "襄賁", "zhs": "襄贲" }, "position": { "en": "Colonel of Xiangben", "zht": "襄賁校尉", "zhs": "襄贲校尉" }, "passageId": "ws18e-p2" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "location": { "en": "Taishan", "zht": "泰山", "zhs": "泰山" }, "position": { "en": "Grand Administrator of Taishan", "zht": "泰山太守", "zhs": "泰山太守" }, "passageId": "ws18e-p3" },
+        { "era": { "en": "11 - 12th year of Jian'an", "zht": "建安十一 - 十二年", "zhs": "建安十一 - 十二年" }, "year": "206 - 207", "location": { "en": "Jinan", "zht": "濟南", "zhs": "济南" }, "position": { "en": "Commandant of Cavalry", "zht": "騎都尉", "zhs": "骑都尉" }, "passageId": "ws18e-p4" },
+        { "era": { "en": "for over a decade", "zht": "十數年", "zhs": "十数年" }, "year": null, "location": { "en": "Taishan", "zht": "泰山", "zhs": "泰山" }, "position": { "en": "Grand Administrator of Taishan", "zht": "泰山太守", "zhs": "泰山太守" }, "passageId": "ws18e-p6" },
+        { "era": { "en": "1st year of Yankang", "zht": "延康元年", "zhs": "延康元年" }, "year": "220", "location": null, "position": [{ "en": "Assistant General", "zht": "裨將軍", "zhs": "裨将军" },{ "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }], "passageId": "ws18e-p6" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "location": [{ "en": "Xu Province", "zht": "徐州", "zhs": "徐州" },{ "en": "Licheng", "zht": "利城", "zhs": "利城" }], "position": [{ "en": "Inspector of Xu Province", "zht": "徐州刺史", "zhs": "徐州刺史" },{ "en": "Inspector of Xu Province", "zht": "徐州刺史", "zhs": "徐州刺史" }], "passageId": "ws18e-p6" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws18e-p1",
+      "orig": {
+        "zht": "呂虔字子恪，[[任城|/zh-hant/maps/map-overall?admin=35]]人也。太祖在[[兖州|/zh-hant/maps/map-overall?admin=11]]，聞虔有膽策，以為從事，將家兵守[[湖陸|/zh-hant/maps/map-overall?lat=34.93892728&lng=116.8405614&name=Hulu]]。",
+        "zhs": "吕虔字子恪，[[任城|/zh-hans/maps/map-overall?admin=35]]人也。太祖在[[兖州|/zh-hans/maps/map-overall?admin=11]]，闻虔有胆策，以为从事，将家兵守[[湖陆|/zh-hans/maps/map-overall?lat=34.93892728&lng=116.8405614&name=Hulu]]。"
+      },
+      "en": "Lü Qian, courtesy name Zike, was from [[Rencheng Commandery|/maps/map-overall?admin=35]]. While in [[Yan Province|/maps/map-overall?admin=11]], Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) learned of Lü Qian's courage and resourcefulness and appointed him as an Aide. Lü Qian was then instructed to lead his personal household troops to guard [[Hulu|/maps/map-overall?lat=34.93892728&lng=116.8405614&name=Hulu]]."
+    },
+    {
+      "id": "ws18e-p2",
+      "orig": {
+        "zht": "[[襄賁|/zh-hant/maps/map-overall?lat=34.6956665&lng=118.02336498&name=Xiangben]][[校尉|/zh-hant/translations/officials/regional#commanderies-060]]杜松部民炅毋等作亂，與昌豨通。太祖以虔代松。虔到，招誘炅母渠率及同惡數十人，賜酒食。簡壯士伏其側，虔察炅母等皆醉，使伏兵盡格殺之。撫其餘衆，羣賊乃平。",
+        "zhs": "[[襄贲|/zh-hans/maps/map-overall?lat=34.6956665&lng=118.02336498&name=Xiangben]][[校尉|/zh-hans/translations/officials/regional#commanderies-060]]杜松部民炅毋等作乱，与昌豨通。太祖以虔代松。虔到，招诱炅母渠率及同恶数十人，赐酒食。简壮士伏其侧，虔察炅母等皆醉，使伏兵尽格杀之。抚其余众，羣贼乃平。"
+      },
+      "en": "Du Song, [[Colonel|/translations/officials/regional#commanderies-060]] of [[Xiangben|/maps/map-overall?lat=34.6956665&lng=118.02336498&name=Xiangben]], had a subordinate commoner named Gui Wu who, together with others, rebelled and conspired with Chang Xi. Cao Cao had Lü Qian replace Du Song. Upon arriving, Lü Qian lured Jiong Mu's chieftains and several dozen of their fellow conspirators to meet with him. He provided them with wine and food, while secretly selecting stalwart soldiers and positioning them nearby in ambush. Once Gui Wu and the others were drunk, Lü Qian ordered the hidden troops to strike, killing them all. He then pacified the remaining populace, bringing the rebels under control."
+    },
+    {
+      "id": "ws18e-p3",
+      "orig": {
+        "zht": "太祖以虔領[[泰山|/zh-hant/maps/map-overall?admin=33]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。郡接山海，世亂，聞民人多藏竄。袁紹所置中郎將郭祖、公孫犢等數十輩，保山為寇，百姓苦之。虔將家兵到郡，開恩信，祖等黨屬皆降服，諸山中亡匿者盡出安土業。簡其彊者補戰士，[[泰山|/zh-hant/maps/map-overall?admin=33]]由是遂有精兵，冠名州郡。",
+        "zhs": "太祖以虔领[[泰山|/zh-hans/maps/map-overall?admin=33]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。郡接山海，世乱，闻民人多藏窜。袁绍所置中郎将郭祖、公孙犊等数十辈，保山为寇，百姓苦之。虔将家兵到郡，开恩信，祖等党属皆降服，诸山中亡匿者尽出安土业。简其强者补战士，[[泰山|/zh-hans/maps/map-overall?admin=33]]由是遂有精兵，冠名州郡。"
+      },
+      "en": "Cao Cao had Lü Qian appointed as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Taishan Commandery|/maps/map-overall?admin=33]]. The commandery bordered on mountains and sea, and with the realm in turmoil, many people were said to have gone into hiding. Moreover, Guo Zu, Gongsun Du, and several dozen others whom Yuan Shao had appointed as Gentleman-Generals occupied the mountains and turned to banditry, causing great suffering among the common people. Lü Qian led his personal household troops into the commandery and showed benevolence and good faith. The followers of Guo Zu and the others all surrendered, while those who had fled into hiding in the mountains emerged and returned to their lands and livelihoods. He then selected the strongest among them to replenish his ranks, and [[Taishan|/maps/map-overall?admin=33]] came to possess an elite force renowned throughout the provinces and commanderies."
+    },
+    {
+      "id": "ws18e-p4",
+      "orig": {
+        "zht": "[[濟南|/zh-hant/maps/map-overall?admin=42]]黃巾徐和等，所在劫長吏，攻城邑。虔引兵與夏侯淵會擊之，前後數十戰，斬首獲生數千人。",
+        "zhs": "[[济南|/zh-hans/maps/map-overall?admin=42]]黄巾徐和等，所在劫长吏，攻城邑。虔引兵与夏侯渊会击之，前后数十战，斩首获生数千人。"
+      },
+      "en": "The Yellow Turban Xu He and others of [[Jinan|/maps/map-overall?admin=42]], wherever they went, seized officials and attacked walled towns. Lü Qian led troops to join Xiahou Yuan in striking them. Over the course of several dozen battles, they killed and captured several thousand people."
+    },
+    {
+      "id": "ws18e-p5",
+      "orig": {
+        "zht": "太祖使督[[青州|/zh-hant/maps/map-overall?admin=6]]諸郡兵以討[[東萊|/zh-hant/maps/map-overall?admin=46]]羣賊李條等，有功。太祖令曰：「夫有其志，必成其事，蓋烈士之所徇也。卿在郡以來，禽姦討暴，百姓獲安，躬蹈矢石，所征輒克。昔寇恂立名於[[汝|/zh-hant/maps/map-overall?water=83]]、[[潁|/zh-hant/maps/map-overall?water=86]]，耿弇建策於[[青|/zh-hant/maps/map-overall?admin=6]]、[[兖|/zh-hant/maps/map-overall?admin=11]]，古今一也。」舉茂才，加[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]，典郡如故。",
+        "zhs": "太祖使督[[青州|/zh-hans/maps/map-overall?admin=6]]诸郡兵以讨[[东莱|/zh-hans/maps/map-overall?admin=46]]羣贼李条等，有功。太祖令曰：「夫有其志，必成其事，盖烈士之所徇也。卿在郡以来，禽奸讨暴，百姓获安，躬蹈矢石，所征辄克。昔寇恂立名于[[汝|/zh-hans/maps/map-overall?water=83]]、[[潁|/zh-hans/maps/map-overall?water=86]]，耿弇建策于[[青|/zh-hans/maps/map-overall?admin=6]]、[[兖|/zh-hans/maps/map-overall?admin=11]]，古今一也。」举茂才，加[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]，典郡如故。"
+      },
+      "en": "Later, Cao Cao had Lü Qian command the troops of the various commanderies of [[Qing Province|/maps/map-overall?admin=6]] to campaign against [[Donglai|/maps/map-overall?admin=46]]'s rebels under Li Tiao and others. For his merits, Cao Cao issued an order stating, \"Those who possess the resolve will surely accomplish what they set out to do. This is what men of great spirit devote themselves to. Since taking office in the commandery, you have apprehended the wicked and punished the violent, bringing peace to the common people. You have personally braved arrows and stones, and wherever you have campaigned, you have prevailed. In former times, Kou Xun made his name between the [[Ru|/maps/map-overall?water=83]] and [[Ying|/maps/map-overall?water=86]] Rivers, and Geng Yan achieved success in [[Qing|/maps/map-overall?admin=6]] and [[Yan|/maps/map-overall?admin=11]] provinces. Your achievements today are no different from theirs.\" He was recommended as a Flourishing Talent, given the additional title [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]], and continued to administer his commandery as before."
+    },
+    {
+      "id": "ws18e-p6",
+      "orig": {
+        "zht": "虔在[[泰山|/zh-hant/maps/map-overall?admin=33]]十數年，甚有威惠。文帝即王位，加[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]，封益壽[[亭侯|/zh-hant/translations/officials#glossary-neighbourhood-marquis]]，遷[[徐州|/zh-hant/maps/map-overall?admin=8]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，加[[威虜將軍|/zh-hant/translations/officials/military#four-direction--misc-154]]。請[[琅邪|/zh-hant/maps/map-overall?admin=51]]王祥為[[別駕|/zh-hant/translations/officials/regional#provinces-017]]，民事一以委之，世多其能任賢。",
+        "zhs": "虔在[[泰山|/zh-hans/maps/map-overall?admin=33]]十数年，甚有威惠。文帝即王位，加[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]，封益寿[[亭侯|/zh-hans/translations/officials#glossary-neighbourhood-marquis]]，迁[[徐州|/zh-hans/maps/map-overall?admin=8]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，加[[威虏将军|/zh-hans/translations/officials/military#four-direction--misc-154]]。请[[琅邪|/zh-hans/maps/map-overall?admin=51]]王祥为[[别驾|/zh-hans/translations/officials/regional#provinces-017]]，民事一以委之，世多其能任贤。"
+      },
+      "en": "Lü Qian remained in [[Taishan|/maps/map-overall?admin=33]] for over a decade. He was well respected, and governed with beneficence. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) assumed the kingship, Lü Qian was appointed [[Assistant General|/translations/officials/military#four-direction--misc-165]], and enfeoffed as Yishou [[Neighbourhood Marquis|/translations/officials#glossary-neighbourhood-marquis]]. Later he was promoted to [[Inspector|/translations/officials/regional#provinces-014]] of [[Xu Province|/maps/map-overall?admin=8]], and [[General Who Awes the Enemies|/translations/officials/military#four-direction--misc-154]]. He requested Wang Xiang of [[Langya Commandery|/maps/map-overall?admin=51]] to serve as [[Deputy Aide|/translations/officials/regional#provinces-017]], and entrusted all civil affairs to him. His contemporaries widely praised him for his ability to employ worthy men.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "異同雜語 (孫盛)",
+            "zhs": "异同杂语 (孙盛)",
+            "en": "Yitong Zayu / Miscellaneous Words on Similarities and Differences (Sun Sheng)"
+          },
+          "zht": "《雜語》曰：祥字休徵。性至孝，後母苛虐，每欲危害祥，祥色養無怠。盛寒之月，後母曰：「吾思食生魚。」祥脫衣，將剖冰求之，有少，堅冰解，下有魚躍出，因奉以供，時人以為孝感之所致也。供養三十餘年，母終乃仕，以淳誠貞粹見重於時。",
+          "zhs": "《杂语》曰：祥字休徵。性至孝，后母苛虐，每欲危害祥，祥色养无怠。盛寒之月，后母曰：「吾思食生鱼。」祥脱衣，将剖冰求之，有少，坚冰解，下有鱼跃出，因奉以供，时人以为孝感之所致也。供养三十余年，母终乃仕，以淳诚贞粹见重于时。",
+          "en": "The Zayu / Miscellaneous Words states: Wang Xiang was courtesy name Xiuzheng. He was extremely filial. Though his stepmother was harsh and abusive, and constantly wished to harm him, Wang Xiang constantly tended to her needs without the slightest neglect. During a bitterly cold winter, his stepmother said, \"I long for fresh fish.\" Wang Xiang stripped off his clothes and started to break the ice to catch one. Before long, the solid ice split open of its own and a fish leapt out from beneath it. Wang Xiang took the fish and presented it to her. People of the time believed this was because his filial devotion had moved Heaven. He cared for his stepmother for over thirty years and did not enter government service until after her death. His sincerity and integrity earned him great esteem among his contemporaries."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "晉書 (王隱)",
+            "zhs": "晋书 (王隐)",
+            "en": "Book of Jin (Wang Yin)"
+          },
+          "zht": "《晉書》曰：祥始出仕，年過五十矣，稍遷至[[司隷校尉|/zh-hant/translations/officials/regional#sili-001]]。高貴鄉公入學，以祥為三老，遷[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]][[太尉|/zh-hant/translations/officials/ministers#three-excellencies-084]]。司馬文王初為晉王，[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]]荀顗要祥盡敬，祥不從。語在三少帝紀。晉武踐阼，拜祥為[[太保|/zh-hant/translations/officials/ministers#superior-excellency-051]]，封雎陵公。泰始四年，年八十九薨。\n\n祥弟覽，字玄通，[[光祿大夫|/zh-hant/translations/officials/ministers#civil-honorary-officials-119]]。",
+          "zhs": "《晋书》曰：祥始出仕，年过五十矣，稍迁至[[司隶校尉|/zh-hans/translations/officials/regional#sili-001]]。高贵乡公入学，以祥为三老，迁[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]][[太尉|/zh-hans/translations/officials/ministers#three-excellencies-084]]。司马文王初为晋王，[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]]荀顗要祥尽敬，祥不从。语在三少帝纪。晋武践阼，拜祥为[[太保|/zh-hans/translations/officials/ministers#superior-excellency-051]]，封雎陵公。泰始四年，年八十九薨。\n\n祥弟览，字玄通，[[光禄大夫|/zh-hans/translations/officials/ministers#civil-honorary-officials-119]]。",
+          "en": "The Book of Jin states: When Wang Xiang first entered government service, he was already past fifty, and gradually rose to become [[Colonel of the Capital|/translations/officials/regional#sili-001]]. When the Duke of Gaogui Township entered the Imperial Academy, Wang Xiang served as one of the Three Elders, and was promoted to [[Excellency of Works|/translations/officials/ministers#three-excellencies-105]] and then [[Grand Commandant|/translations/officials/ministers#three-excellencies-084]]. When Sima Zhao first became King of Jin, Xun Yi, the [[Excellency of Works|/translations/officials/ministers#three-excellencies-105]] Xun Yi wanted Wang Xiang to pay Sima Zhao full ceremonial respect, but Wang Xiang refused. The exchange is recorded in the Annals of the Three Junior Emperors. When Sima Yan (posthumously honoured as Emperor Wu of Jin, the Martial Emperor) ascended the throne, he appointed Wang Xiang [[Grand Guardian|/translations/officials/ministers#superior-excellency-051]], and enfeoffed him as Duke of Suiling. In the 4th year of Taishi, he died at the age of eighty-nine. \n\nWang Xiang's younger brother Wang Lan, courtesy name Xuantong, was [[Household Counsellor|/translations/officials/ministers#civil-honorary-officials-119]]."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "晉諸公贊 (傅暢)",
+            "zhs": "晋诸公赞 (傅畅)",
+            "en": "Jin Zhugong Zan / Appraisal of Officials of Jin (Fu Chang)"
+          },
+          "zht": "《晉諸公贊》稱覽率素有至行。覽子孫繁衍，頗有賢才相係，弈世之盛，古今少比焉。",
+          "zhs": "《晋诸公赞》称览率素有至行。览子孙繁衍，颇有贤才相係，弈世之盛，古今少比焉。",
+          "en": "The Jin Zhugong Zan / Appraisal of Officials of Jin praises Wang Lan for having always displayed exemplary conduct. Wang Lan's descendants flourished, with many worthy and talented men appearing one after another. Such prosperity across successive generations has rarely been matched, past or present."
+        }
+      ]
+    },
+    {
+      "id": "ws18e-p7",
+      "orig": {
+        "zht": "討[[利城|/zh-hant/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]]叛賊，斬獲有功。明帝即位，徙封萬年[[亭侯|/zh-hant/translations/officials#glossary-neighbourhood-marquis]]，增邑二百，并前六百戶。虔薨，子翻嗣。翻薨，子桂嗣。",
+        "zhs": "讨[[利城|/zh-hans/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]]叛贼，斩获有功。明帝即位，徙封万年[[亭侯|/zh-hans/translations/officials#glossary-neighbourhood-marquis]]，增邑二百，并前六百户。虔薨，子翻嗣。翻薨，子桂嗣。"
+      },
+      "en": "Lü Qian later campaigned against the rebels of [[Licheng|/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]], killing and capturing many of them. When Cao Rui (posthumously honoured as Emperor Ming, the Illustrious Emperor) ascended the throne, Lü Qian Was transferred in enfeoffment to Wannian [[Neighbourhood Marquis|/translations/officials#glossary-neighbourhood-marquis]], and his fief was increased by two hundred households, making six hundred in total. When Lü Qian died, his son Lü Fan succeeded him. When Lü Fan died, his son Lü Gui succeeded him."
+    }
+  ]
+}

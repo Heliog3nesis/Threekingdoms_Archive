@@ -25,6 +25,26 @@ for (const ch of chapters) {
   bookMap.get(ch.book).chapters.push(ch);
 }
 
+// Within each book, further group by juan/scroll number (ch.num) — the
+// original text often bundles several biographies under one juan (e.g.
+// 18 covers Li Dian, Li Tong, Zang Ba, and others together), so showing
+// every entry flat repeats the same number over and over. Each group
+// becomes a single collapsible header instead. Order preserved from
+// first appearance, same as the book grouping above.
+for (const section of bookSections) {
+  const numGroups: any[] = [];
+  const numMap = new Map<string, any>();
+  for (const ch of section.chapters) {
+    if (!numMap.has(ch.num)) {
+      const group = { num: ch.num, chapters: [] as any[] };
+      numMap.set(ch.num, group);
+      numGroups.push(group);
+    }
+    numMap.get(ch.num).chapters.push(ch);
+  }
+  section.numGroups = numGroups;
+}
+
 export function getStaticPaths() {
   const mods = import.meta.glob('../../../../data/sgz/*.json', { eager: true });
   const chs = Object.values(mods)
@@ -53,9 +73,36 @@ function cn(field: any) {
   return field?.[cnField] ?? field?.zht ?? field?.zhs ?? '';
 }
 
+// Most annotation sources are titled works (e.g. 魏書), correctly wrapped
+// in 《》 — the brackets Chinese uses for book/work titles. But some
+// annotations cite a person directly (e.g. 孫盛 commenting without
+// referencing a specific titled work), and wrapping a bare person's name
+// in 《》 would be a category error. Add more names here as they come up.
+const SOURCE_NAMES_WITHOUT_BRACKETS = new Set(['孫盛', '孙盛']);
+
+// Some annotations (e.g. glosses like "狟音桓。") aren't quoting any
+// source — annotator/source objects exist but every field is empty.
+function hasSource(source: any): boolean {
+  return !!(source && (source.zht || source.zhs || source.en));
+}
+
+function formatSourceZh(source: any): string {
+  if (!source) return '';
+  const raw = cn(source);
+  // A trailing parenthetical (e.g. "晉書（王隱）") is an author attribution
+  // tacked onto the title, not part of the title itself — 《》 should wrap
+  // just the title, with the parenthetical appearing after the closing
+  // bracket: 《晉書》（王隱） rather than 《晉書（王隱）》.
+  const match = raw.match(/^(.*?)([(（][^)）]*[)）])\s*$/);
+  const mainName = match ? match[1].trim() : raw;
+  const trailing = match ? match[2] : '';
+  if (SOURCE_NAMES_WITHOUT_BRACKETS.has(mainName)) return mainName + trailing;
+  return `《${mainName}》${trailing}`;
+}
+
 function linkify(text: string): string {
   const escaped = String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  return escaped.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_match, label, rawUrl) => {
+  const withTerms = escaped.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_match, label, rawUrl) => {
     const isLocation = rawUrl.includes('/maps');
     const isOfficial = rawUrl.includes('/officials');
     const typeClass = isLocation ? ' term-link-loc' : isOfficial ? ' term-link-off' : '';
@@ -66,6 +113,72 @@ function linkify(text: string): string {
       : '';
     return `<a href="${url(rawUrl)}" class="term-link${typeClass}" target="_blank" rel="noopener">${label}${icon}</a>`;
   });
+  // [^N] footnote marker — same convention as Markdown/Pandoc footnotes.
+  // Just a visual indicator, not interactive/clickable — the actual note
+  // renders as always-visible text after the passage/annotation (see
+  // renderFootnotes), so there's no second toggle competing with the
+  // annotation's own expand/collapse.
+  return withTerms.replace(/\[\^(\d+)\]/g, (_match, n) => `<sup class="footnote-ref">${n}</sup>`);
+}
+
+// Renders a footnotes array ({n, zht, zhs, en}) as always-visible text
+// appended after whatever it belongs to (a passage or an annotation) —
+// deliberately not collapsible, so it never introduces a second toggle
+// nested inside an already-toggleable annotation. Text inherits its
+// parent's own color/font-size (no override here) — same view-mode
+// (Parallel/Original/English Only) toggle as everything else applies,
+// via the shared .view-orig/.view-en classes.
+function renderFootnotes(footnotes: any[] | undefined, cnLangAttr: string, context: 'passage' | 'annotation'): string {
+  if (!footnotes || footnotes.length === 0) return '';
+  return `
+    <div class="footnotes footnotes-${context}">
+      ${footnotes.map((f: any) => `
+        <div class="footnote-item">
+          <span class="footnote-num">${f.n}.</span>
+          <span class="footnote-body">
+            <span class="footnote-zh" lang="${cnLangAttr}">${linkify(f.zht || f.zhs)}</span>
+            <span class="footnote-en">${linkify(f.en)}</span>
+          </span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+// Paragraph-aware version of linkify(), for long annotation text — a
+// blank line (\n\n) in the source JSON marks a paragraph break. Each
+// resulting chunk is escaped/linkified independently, then wrapped in
+// its own <p>. The container this fills must be a <div>, not a <p> —
+// <p> elements can't validly contain nested <p> tags.
+function linkifyParagraphs(text: string): string {
+  const raw = String(text ?? '');
+  const paragraphs = raw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+  if (paragraphs.length === 0) return '';
+  return paragraphs.map(p => `<p>${linkify(p)}</p>`).join('');
+}
+
+// For Parallel view specifically: interleaves original/English paragraphs
+// (zh-para-1, en-para-1, zh-para-2, en-para-2, ...) instead of showing
+// two separate stacked blocks — only when both languages split into the
+// SAME number of paragraphs. If the counts don't match (a translator
+// added a break in one language but not the other), interleaving would
+// silently misalign content, so it falls back to the plain two-block
+// layout instead — safer than guessing a pairing.
+function linkifyParagraphPairs(zhText: string, enText: string, langAttr: string): string {
+  const zhParas = String(zhText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+  const enParas = String(enText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+  if (zhParas.length > 1 && zhParas.length === enParas.length) {
+    return zhParas.map((zhP, i) => `
+      <p class="ann-para ann-para-zh" lang="${langAttr}">${linkify(zhP)}</p>
+      <p class="ann-para ann-para-en">${linkify(enParas[i])}</p>
+    `).join('');
+  }
+
+  return `
+    <div class="ann-zh" lang="${langAttr}">${zhParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
+    <div class="ann-en">${enParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
+  `;
 }
 
 const baseUrl = url('/zh-hant/translations/sanguozhi');
@@ -75,8 +188,25 @@ const chapterUrl = (id: string) => `${baseUrl}/${id}`;
 const translatedChapters = chapters.filter((c: any) => c.passages && c.passages.length > 0);
 const coverChapters = translatedChapters.length > 0 ? translatedChapters : chapters;
 
+// Person index for the cover's search panel — one entry per translated
+// chapter, its main subject (already have a clean zht/zhs/en via
+// ch.label). Previously this also indexed every other person named in
+// a chapter's journeyOverviews/relationships data as a searchable
+// "mention", but that needs more work (dedup, disambiguation) before
+// it's ready — for now the search only covers biography titles.
+// Chinese-only display (this is the zh-hant page), always the
+// traditional form. `zhs` and `en` aren't shown but are kept so a query
+// typed in simplified Chinese or English/pinyin still matches.
+type PersonEntry = { zh: string; zhs: string; en: string; chapterId: string; bookZh: string };
+const personIndex: PersonEntry[] = chapters
+  .filter((ch: any) => ch.passages && ch.passages.length > 0)
+  .map((ch: any) => ({
+    zh: cn(ch.label), zhs: ch.label.zhs, en: ch.label.en || ch.title?.en || '',
+    chapterId: ch.id, bookZh: cn(ch.bookLabel),
+  }));
+
 // Embedded once, used by client JS to swap content with no reload/fetch
-const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChapterId: chapterId ?? null }).replace(/</g, '\\u003c');
+const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex, initialChapterId: chapterId ?? null }).replace(/</g, '\\u003c');
 ---
 
 <Base title={`${cn(TEXT_TITLE)} · ${strings.siteTitle}`} lang="zh-hant">
@@ -97,20 +227,53 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
                 <span lang={cnLangAttr}>{cn(book.label)}</span> {book.label.en}
               </div>
               <div class="sb-chapter-list">
-                {book.chapters.map((ch: any) => (
-                  <a
-                    href={chapterUrl(ch.id)}
-                    class:list={['sb-ch', { on: ch.id === chapterId }]}
-                    data-sgz-link
-                    data-chapter={ch.id}
-                  >
-                    <span class="sb-ch-num">{ch.num}</span>
-                    <div>
-                      <div class="sb-ch-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
-                      <div class="sb-ch-en">{ch.label.en}</div>
+                {book.numGroups.map((group: any) => {
+                  const groupHasActive = group.chapters.some((ch: any) => ch.id === chapterId);
+                  return group.chapters.length === 1 ? (
+                    // A juan with just one biography doesn't need a
+                    // collapsible wrapper — render it as a plain link,
+                    // same as before.
+                    <a
+                      href={chapterUrl(group.chapters[0].id)}
+                      class:list={['sb-ch', { on: group.chapters[0].id === chapterId }]}
+                      data-sgz-link
+                      data-chapter={group.chapters[0].id}
+                    >
+                      <span class="sb-ch-num">{group.chapters[0].num}</span>
+                      <div>
+                        <div class="sb-ch-zh" lang={cnLangAttr}>{cn(group.chapters[0].label)}</div>
+                        <div class="sb-ch-en">{group.chapters[0].label.en}</div>
+                      </div>
+                    </a>
+                  ) : (
+                    <div class="sb-juan-group">
+                      <button
+                        class:list={['sb-juan-toggle', { open: groupHasActive }]}
+                        data-juan-toggle
+                        type="button"
+                      >
+                        <i class="ti ti-chevron-right sb-juan-chevron" aria-hidden="true"></i>
+                        <span class="sb-ch-num">{group.num}</span>
+                        <span class="sb-juan-count">{group.chapters.length} 篇</span>
+                      </button>
+                      <div class:list={['sb-juan-body', { open: groupHasActive }]}>
+                        {group.chapters.map((ch: any) => (
+                          <a
+                            href={chapterUrl(ch.id)}
+                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId }]}
+                            data-sgz-link
+                            data-chapter={ch.id}
+                          >
+                            <div>
+                              <div class="sb-ch-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
+                              <div class="sb-ch-en">{ch.label.en}</div>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
                     </div>
-                  </a>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}
@@ -136,20 +299,53 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
                 <span lang={cnLangAttr}>{cn(book.label)}</span> {book.label.en}
               </div>
               <div class="sb-chapter-list">
-                {book.chapters.map((ch: any) => (
-                  <a
-                    href={chapterUrl(ch.id)}
-                    class:list={['sb-ch', { on: ch.id === chapterId }]}
-                    data-sgz-link
-                    data-chapter={ch.id}
-                  >
-                    <span class="sb-ch-num">{ch.num}</span>
-                    <div>
-                      <div class="sb-ch-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
-                      <div class="sb-ch-en">{ch.label.en}</div>
+                {book.numGroups.map((group: any) => {
+                  const groupHasActive = group.chapters.some((ch: any) => ch.id === chapterId);
+                  return group.chapters.length === 1 ? (
+                    // A juan with just one biography doesn't need a
+                    // collapsible wrapper — render it as a plain link,
+                    // same as before.
+                    <a
+                      href={chapterUrl(group.chapters[0].id)}
+                      class:list={['sb-ch', { on: group.chapters[0].id === chapterId }]}
+                      data-sgz-link
+                      data-chapter={group.chapters[0].id}
+                    >
+                      <span class="sb-ch-num">{group.chapters[0].num}</span>
+                      <div>
+                        <div class="sb-ch-zh" lang={cnLangAttr}>{cn(group.chapters[0].label)}</div>
+                        <div class="sb-ch-en">{group.chapters[0].label.en}</div>
+                      </div>
+                    </a>
+                  ) : (
+                    <div class="sb-juan-group">
+                      <button
+                        class:list={['sb-juan-toggle', { open: groupHasActive }]}
+                        data-juan-toggle
+                        type="button"
+                      >
+                        <i class="ti ti-chevron-right sb-juan-chevron" aria-hidden="true"></i>
+                        <span class="sb-ch-num">{group.num}</span>
+                        <span class="sb-juan-count">{group.chapters.length} 篇</span>
+                      </button>
+                      <div class:list={['sb-juan-body', { open: groupHasActive }]}>
+                        {group.chapters.map((ch: any) => (
+                          <a
+                            href={chapterUrl(ch.id)}
+                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId }]}
+                            data-sgz-link
+                            data-chapter={ch.id}
+                          >
+                            <div>
+                              <div class="sb-ch-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
+                              <div class="sb-ch-en">{ch.label.en}</div>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
                     </div>
-                  </a>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}
@@ -164,7 +360,6 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
           </button>
         <div class="mob-toolbar-title" id="mob-toolbar-title">
           <span class="mob-ch-title">目錄</span>
-          {!isCover && <span class="mob-ch-pos">{currentIndex + 1}/{chapters.length}</span>}
         </div>
         </div>
 
@@ -199,18 +394,27 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
                 </p>
               </div>
               <div class="cover-right">
-                <div class="cover-contents-label">目錄</div>
-                <div class="cover-book-grid">
+                <div class="cover-contents-label">查找人物</div>
+                <div class="person-search-wrap">
+                  <i class="ti ti-search person-search-icon" aria-hidden="true"></i>
+                  <input
+                    type="text"
+                    id="person-search-input"
+                    class="person-search-input"
+                    placeholder="輸入中文或英文姓名搜尋…"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="person-search-results" id="person-search-results">
                   {coverChapters.map((ch: any) => (
                     <a
                       href={chapterUrl(ch.id)}
-                      class="cover-book-card"
+                      class="person-result"
                       data-sgz-link
                       data-chapter={ch.id}
                     >
-                      <div class="cbc-zh" lang={cnLangAttr}>{cn(ch.label)}</div>
-                      <div class="cbc-en">{ch.label.en}</div>
-                      <div class="cbc-count" lang={cnLangAttr}>{cn(ch.bookLabel)}</div>
+                      <span class="pr-zh" lang={cnLangAttr}>{cn(ch.label)}</span>
+                      <span class="pr-context" lang={cnLangAttr}>{cn(ch.bookLabel)}</span>
                     </a>
                   ))}
                 </div>
@@ -221,7 +425,6 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
               <div class="chapter-header">
                 <div class="ch-title-group">
                   <h1 class="ch-title-zh" lang={cnLangAttr}>{cn(currentChapter.title)}</h1>
-                  <p class="ch-title-en">{currentChapter.title.en}</p>
                 </div>
                 <div class="view-toggle" role="group" aria-label="View mode">
                   <button class="view-toggle-btn active" data-view="both" type="button">對照</button>
@@ -253,6 +456,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
                   <div class="passage" id={p.id}>
                     <p class="ps-orig" lang={cnLangAttr} set:html={linkify(cn(p.orig))} />
                     <p class="ps-en" set:html={linkify(p.en)} />
+                    <div set:html={renderFootnotes(p.footnotes, cnLangAttr, 'passage')} />
                     {p.annotations && p.annotations.length > 0 && (
                       <div class="annotations">
                         {p.annotations.map((a: any, ai: number) => (
@@ -261,17 +465,17 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
                               <i class="ti ti-chevron-right ann-chevron" aria-hidden="true"></i>
                               <span class="ann-label">
                                 <span class="ann-label-zh" lang={cnLangAttr}>
-                                  {cn(a.annotator)}注引{a.source && <>《{cn(a.source)}》</>}
+                                  {cn(a.annotator)}注{hasSource(a.source) && <>引{formatSourceZh(a.source)}</>}
                                 </span>
                                 <span class="ann-label-en">
-                                  {strings.translations?.annotationBy ?? 'Annotation'} by {a.annotator.en}, quoting
-                                  {a.source && <span class="ann-source"> {a.source.en}</span>}
+                                  {strings.translations?.annotationBy ?? 'Annotation'} by {a.annotator.en}
+                                  {hasSource(a.source) && <>, quoting<span class="ann-source"> {a.source.en}</span></>}
                                 </span>
                               </span>
                             </button>
                             <div class="ann-body" data-passage={p.id} data-idx={ai}>
-                              <p class="ann-zh" lang={cnLangAttr} set:html={linkify(cn(a))} />
-                              <p class="ann-en" set:html={linkify(a.en)} />
+                              <div class="ann-body-parallel" set:html={linkifyParagraphPairs(cn(a), a.en, cnLangAttr)} />
+                              <div set:html={renderFootnotes(a.footnotes, cnLangAttr, 'annotation')} />
                             </div>
                           </div>
                         ))}
@@ -326,7 +530,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 
   const dataEl = document.getElementById('sgz-data');
   const DATA = JSON.parse(dataEl ? dataEl.textContent ?? '{}' : '{}');
-  const { chapters, bookSections, baseUrl, initialChapterId } = DATA;
+  const { chapters, bookSections, baseUrl, personIndex, initialChapterId } = DATA;
   const STR = {
     annotationBy: 'Annotation', previous: '上一章', next: '下一章',
     pending: '翻譯中……', translations: '翻譯',
@@ -337,6 +541,22 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
   const ESCAPE_MAP: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
   function esc(s: unknown): string {
     return String(s ?? '').replace(/[&<>"']/g, (c: string) => ESCAPE_MAP[c] ?? c);
+  }
+
+  const SOURCE_NAMES_WITHOUT_BRACKETS = new Set(['孫盛', '孙盛']);
+
+  function hasSource(source: any): boolean {
+    return !!(source && (source.zht || source.zhs || source.en));
+  }
+
+  function formatSourceZh(source: any): string {
+    if (!source) return '';
+    const raw = esc(source.zht || source.zhs);
+    const match = raw.match(/^(.*?)([(（][^)）]*[)）])\s*$/);
+    const mainName = match ? match[1].trim() : raw;
+    const trailing = match ? match[2] : '';
+    if (SOURCE_NAMES_WITHOUT_BRACKETS.has(mainName)) return mainName + trailing;
+    return `《${mainName}》${trailing}`;
   }
 
   function linkify(text: unknown): string {
@@ -354,25 +574,67 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
     });
   }
 
+  function linkifyParagraphs(text: unknown): string {
+    const raw = String(text ?? '');
+    const paragraphs = raw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    if (paragraphs.length === 0) return '';
+    return paragraphs.map(p => `<p>${linkify(p)}</p>`).join('');
+  }
+
+  function linkifyParagraphPairs(zhText: unknown, enText: unknown, langAttr: string): string {
+    const zhParas = String(zhText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    const enParas = String(enText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+
+    if (zhParas.length > 1 && zhParas.length === enParas.length) {
+      return zhParas.map((zhP, i) => `
+        <p class="ann-para ann-para-zh" lang="${langAttr}">${linkify(zhP)}</p>
+        <p class="ann-para ann-para-en">${linkify(enParas[i])}</p>
+      `).join('');
+    }
+
+    return `
+      <div class="ann-zh" lang="${langAttr}">${zhParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
+      <div class="ann-en">${enParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
+    `;
+  }
+
+  function renderFootnotes(footnotes: any[] | undefined, langAttr: string, context: 'passage' | 'annotation'): string {
+    if (!footnotes || footnotes.length === 0) return '';
+    return `
+      <div class="footnotes footnotes-${context}">
+        ${footnotes.map((f: any) => `
+          <div class="footnote-item">
+            <span class="footnote-num">${f.n}.</span>
+            <span class="footnote-body">
+              <span class="footnote-zh" lang="${langAttr}">${linkify(f.zht || f.zhs)}</span>
+              <span class="footnote-en">${linkify(f.en)}</span>
+            </span>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
   function renderPassage(p: any): string {
     const anns = (p.annotations || []).map((a: any, ai: number) => `
       <div class="annotation">
         <button class="ann-toggle" data-passage="${p.id}" data-idx="${ai}">
           <i class="ti ti-chevron-right ann-chevron" aria-hidden="true"></i>
           <span class="ann-label">
-            <span class="ann-label-zh" lang="zh-hant">${esc(a.annotator.zht || a.annotator.zhs)}注引${a.source ? `《${esc(a.source.zht || a.source.zhs)}》` : ''}</span>
-            <span class="ann-label-en">${esc(STR.annotationBy)} by ${esc(a.annotator.en)}${a.source.en ? `<span class="ann-source"> (${esc(a.source.en)})</span>` : ''}</span>
+            <span class="ann-label-zh" lang="zh-hant">${esc(a.annotator.zht || a.annotator.zhs)}注${hasSource(a.source) ? `引${formatSourceZh(a.source)}` : ''}</span>
+            <span class="ann-label-en">${esc(STR.annotationBy)} by ${esc(a.annotator.en)}${hasSource(a.source) ? `, quoting<span class="ann-source"> ${esc(a.source.en)}</span>` : ''}</span>
           </span>
         </button>
         <div class="ann-body" data-passage="${p.id}" data-idx="${ai}">
-          <p class="ann-zh" lang="zh-hant">${linkify(a.zht || a.zhs)}</p>
-          <p class="ann-en">${linkify(a.en)}</p>
+          <div class="ann-body-parallel">${linkifyParagraphPairs(a.zht || a.zhs, a.en, 'zh-hant')}</div>
+          ${renderFootnotes(a.footnotes, 'zh-hant', 'annotation')}
         </div>
       </div>`).join('');
     return `
       <div class="passage" id="${p.id}">
         <p class="ps-orig" lang="zh-hant">${linkify(p.orig.zht || p.orig.zhs)}</p>
         <p class="ps-en">${linkify(p.en)}</p>
+        ${renderFootnotes(p.footnotes, 'zh-hant', 'passage')}
         ${anns ? `<div class="annotations">${anns}</div>` : ''}
       </div>`;
   }
@@ -380,11 +642,10 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
   function renderCover(): string {
     const translated = chapters.filter((c: any) => c.passages && c.passages.length > 0);
     const coverChapters = translated.length > 0 ? translated : chapters;
-    const bookCards = coverChapters.map((ch: any) => `
-      <a href="${baseUrl}/${ch.id}" class="cover-book-card" data-sgz-link data-chapter="${ch.id}">
-        <div class="cbc-zh" lang="zh-hant">${esc(ch.label.zht || ch.label.zhs)}</div>
-        <div class="cbc-en">${esc(ch.label.en)}</div>
-        <div class="cbc-count" lang="zh-hant">${esc(ch.bookLabel.zht || ch.bookLabel.zhs)}</div>
+    const defaultResults = coverChapters.map((ch: any) => `
+      <a href="${baseUrl}/${ch.id}" class="person-result" data-sgz-link data-chapter="${ch.id}">
+        <span class="pr-zh" lang="zh-hant">${esc(ch.label.zht || ch.label.zhs)}</span>
+        <span class="pr-context" lang="zh-hant">${esc(ch.bookLabel.zht || ch.bookLabel.zhs)}</span>
       </a>`).join('');
     return `
       <div class="page-header">
@@ -404,8 +665,12 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
                   與ZL181合作翻譯。</p>
         </div>
         <div class="cover-right">
-          <div class="cover-contents-label">目錄</div>
-          <div class="cover-book-grid">${bookCards}</div>
+          <div class="cover-contents-label">查找人物</div>
+          <div class="person-search-wrap">
+            <i class="ti ti-search person-search-icon" aria-hidden="true"></i>
+            <input type="text" id="person-search-input" class="person-search-input" placeholder="輸入中文或英文姓名搜尋…" autocomplete="off" />
+          </div>
+          <div class="person-search-results" id="person-search-results">${defaultResults}</div>
         </div>
       </div>`;
   }
@@ -429,7 +694,6 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
       <div class="chapter-header">
         <div class="ch-title-group">
           <h1 class="ch-title-zh" lang="zh-hant">${esc(ch.title.zht || ch.title.zhs)}</h1>
-          <p class="ch-title-en">${esc(ch.title.en)}</p>
         </div>
         <div class="view-toggle" role="group" aria-label="View mode">
           <button class="view-toggle-btn active" data-view="both" type="button">對照</button>
@@ -471,21 +735,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 
   function updateMobileToolbar(chapterId: string | null, idx: number): void {
     const titleEl = document.querySelector('#mob-toolbar-title .mob-ch-title');
-    let posEl = document.querySelector('#mob-toolbar-title .mob-ch-pos');
-    const toolbarTitle = document.getElementById('mob-toolbar-title');
-    if (!chapterId) {
-      if (titleEl) titleEl.textContent = '目錄';
-      if (posEl) posEl.remove();
-    } else {
-      const ch = chapters.find((c: any) => c.id === chapterId);
-      if (titleEl && ch) titleEl.textContent = '目錄';
-      if (!posEl && toolbarTitle) {
-        posEl = document.createElement('span');
-        posEl.className = 'mob-ch-pos';
-        toolbarTitle.appendChild(posEl);
-      }
-      if (posEl) posEl.textContent = `${idx + 1}/${chapters.length}`;
-    }
+    if (titleEl) titleEl.textContent = '目錄';
   }
 
   function renderRoute(chapterId: string | null, opts: { push: boolean } = { push: true }): void {
@@ -501,6 +751,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
     attachAnnotationHandlers();
     attachViewToggleHandlers();
     attachTermLinkToggleHandler();
+    attachPersonSearchHandler();
     closeDrawer();
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }
@@ -542,6 +793,45 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
     });
   }
 
+  // Renders one search result — a chapter's biography title. (This used
+  // to also index secondary figures mentioned within a chapter, but that
+  // needs more work — dedup, disambiguation — before it's ready, so for
+  // now the index only covers biography titles, one per chapter.)
+  function renderPersonResult(p: any): string {
+    return `
+      <a href="${baseUrl}/${p.chapterId}" class="person-result" data-sgz-link data-chapter="${p.chapterId}">
+        <span class="pr-zh" lang="zh-hant">${esc(p.zh)}</span>
+        <span class="pr-context" lang="zh-hant">${esc(p.bookZh)}</span>
+      </a>`;
+  }
+
+  // Wired fresh every time the cover renders (renderRoute calls this
+  // unconditionally, same as the annotation/view-toggle handlers) —
+  // the search input itself gets recreated whenever you navigate back
+  // to the cover, so there's nothing stale to avoid re-wiring.
+  function attachPersonSearchHandler(): void {
+    const input = document.getElementById('person-search-input') as HTMLInputElement | null;
+    const results = document.getElementById('person-search-results');
+    if (!input || !results) return; // not on the cover page right now
+
+    input.addEventListener('input', () => {
+      const raw = input.value.trim();
+      const q = raw.toLowerCase();
+      if (!q) {
+        results.innerHTML = (personIndex || []).map(renderPersonResult).join('');
+        return;
+      }
+      const matches = (personIndex || []).filter((p: any) =>
+        (p.zh && p.zh.includes(raw)) ||
+        (p.zhs && p.zhs.includes(raw)) ||
+        (p.en && p.en.toLowerCase().includes(q))
+      ).slice(0, 40);
+      results.innerHTML = matches.length
+        ? matches.map(renderPersonResult).join('')
+        : '<div class="person-search-empty">查無結果。</div>';
+    });
+  }
+
   // Intercept all internal Sanguozhi links for instant client-side swap
   document.addEventListener('click', (e: MouseEvent) => {
     const target = e.target as HTMLElement | null;
@@ -570,9 +860,26 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
   document.getElementById('mob-drawer-close')?.addEventListener('click', toggleDrawer);
   overlay?.addEventListener('click', toggleDrawer);
 
+  // Event delegation, not a per-button listener: the sidebar (unlike
+  // #sgz-main-content) is never swapped/re-rendered by client-side
+  // chapter navigation, so this only needs wiring up once — but using
+  // delegation here anyway costs nothing and matches how the rest of
+  // this file already treats content that could in principle change.
+  document.querySelectorAll('.sb-scroll').forEach((scrollEl) => {
+    scrollEl.addEventListener('click', (e: Event) => {
+      const btn = (e.target as HTMLElement).closest('[data-juan-toggle]');
+      if (!btn) return;
+      const body = btn.nextElementSibling;
+      if (!body || !body.classList.contains('sb-juan-body')) return;
+      const isOpen = body.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+    });
+  });
+
   attachAnnotationHandlers();
   attachViewToggleHandlers();
   attachTermLinkToggleHandler();
+  attachPersonSearchHandler();
   history.replaceState({ chapterId: initialChapterId }, '', location.pathname);
 </script>
 
@@ -585,7 +892,11 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 .sb-header-link { text-decoration: none; display: block; }
 .sb-text-title { font-family: 'Cormorant Garamond', serif; font-size: 25px; color: var(--archive-gold-soft, #d0aa6b); margin-bottom: 2px; }
 .sb-text-sub { font-size: 16px; color: var(--color-text-secondary); }
-.sb-scroll { overflow-y: auto; flex: 1; }
+.sb-scroll { overflow-y: auto; flex: 1; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.15) transparent; }
+.sb-scroll::-webkit-scrollbar { width: 6px; }
+.sb-scroll::-webkit-scrollbar-track { background: transparent; }
+.sb-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+.sb-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
 .sb-section { padding: 0.5rem 0 0.25rem; }
 .sb-section-label { padding: 0.4rem 1.25rem; font-size: 18px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-secondary); display: flex; align-items: center; gap: 6px; }
 .sb-section-label span { font-family: 'LXGW WenKai', serif; font-size: 18px; }
@@ -598,6 +909,24 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 .sb-ch-zh { font-family: 'LXGW WenKai', serif; font-size: 17px; }
 .sb-ch-en { font-size: 15px; color: var(--color-text-tertiary); margin-top: 1px; }
 .sb-ch.on .sb-ch-en { color: var(--archive-gold-soft, #d0aa6b); opacity: 0.8; }
+
+.sb-juan-group { display: flex; flex-direction: column; }
+.sb-juan-toggle {
+  display: flex; align-items: center; gap: 10px; padding: 0.5rem 1.25rem 0.5rem 1.5rem;
+  background: none; border: none; border-left: 2px solid transparent; cursor: pointer;
+  font-family: inherit; text-align: left; width: 100%; color: var(--color-text-secondary);
+  transition: background 0.15s, color 0.15s;
+}
+.sb-juan-toggle:hover { background: rgba(208, 170, 107, 0.05); color: var(--color-text-primary); }
+.sb-juan-toggle.open { color: var(--archive-gold-soft, #d0aa6b); }
+.sb-juan-toggle.open .sb-ch-num { color: var(--archive-gold-soft, #d0aa6b); }
+.sb-juan-chevron { font-size: 12px; flex-shrink: 0; transition: transform 0.15s; }
+.sb-juan-toggle.open .sb-juan-chevron { transform: rotate(90deg); }
+.sb-juan-count { font-size: 12.5px; color: var(--color-text-tertiary); }
+.sb-juan-body { display: none; flex-direction: column; }
+.sb-juan-body.open { display: flex; }
+.sb-ch-nested { padding-left: 2.75rem; }
+.sb-ch-nested.on { padding-left: calc(2.75rem - 2px); }
 
 
 
@@ -621,25 +950,37 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 .cover-meta { font-size: 15px; color: var(--color-text-tertiary); margin-bottom: 18px; }
 .cover-desc { font-size: 18px; line-height: 1.75; color: var(--color-text-secondary); }
 
-.cover-right { padding-left: 2.5rem; border-left: 0.5px solid var(--color-border); display: flex; flex-direction: column; justify-content: center; }
+.cover-right { padding-left: 2.5rem; border-left: 0.5px solid var(--color-border); display: flex; flex-direction: column; }
 .cover-contents-label { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 12px; }
-.cover-book-grid { display: flex; flex-direction: column; gap: 10px; }
-.cover-book-card {
-  display: flex; align-items: baseline; gap: 10px;
-  padding: 0.85rem 1.1rem;
-  border: 0.5px solid var(--color-border); border-radius: var(--radius-lg, var(--radius-md));
-  text-decoration: none;
-  transition: border-color 0.15s, background 0.15s;
+.person-search-wrap { position: relative; margin-bottom: 14px; }
+.person-search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 16px; color: var(--color-text-tertiary); pointer-events: none; }
+.person-search-input {
+  width: 100%; box-sizing: border-box; padding: 0.65rem 0.9rem 0.65rem 2.4rem;
+  border: 0.5px solid var(--color-border); border-radius: var(--radius-md); background: none;
+  color: var(--color-text-primary); font-size: 14.5px; font-family: inherit;
 }
-.cover-book-card:hover { border-color: var(--archive-gold-soft, #d0aa6b); background: rgba(208, 170, 107, 0.05); }
-.cbc-zh { font-family: 'LXGW WenKai', serif; font-size: 18px; color: var(--color-text-primary); flex-shrink: 0; }
-.cbc-en { font-size: 15px; color: var(--color-text-secondary); flex: 1; }
-.cbc-count { font-size: 13px; color: var(--color-text-tertiary); flex-shrink: 0; }
+.person-search-input:focus { outline: none; border-color: var(--archive-gold-soft, #d0aa6b); }
+.person-search-results {
+  display: flex; flex-direction: column; gap: 8px; max-height: 420px; overflow-y: auto;
+  scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.15) transparent;
+}
+.person-search-results::-webkit-scrollbar { width: 6px; }
+.person-search-results::-webkit-scrollbar-track { background: transparent; }
+.person-search-results::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+.person-search-results::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
+.person-result {
+  display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+  padding: 0.7rem 1rem; border: 0.5px solid var(--color-border); border-radius: var(--radius-lg, var(--radius-md));
+  text-decoration: none; transition: border-color 0.15s, background 0.15s;
+}
+.person-result:hover { border-color: var(--archive-gold-soft, #d0aa6b); background: rgba(208, 170, 107, 0.05); }
+.pr-zh { font-family: 'LXGW WenKai', serif; font-size: 18px; color: var(--color-text-primary); }
+.pr-context { font-size: 13.5px; color: var(--color-text-tertiary); flex-shrink: 0; margin-left: auto; }
+.person-search-empty { font-size: 13.5px; color: var(--color-text-tertiary); font-style: italic; padding: 0.5rem 0; }
 
 .chapter-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem 2rem 1.5rem; border-bottom: 0.5px solid var(--color-border); }
 .ch-title-group { min-width: 0; }
 .ch-title-zh { font-family: 'Noto Serif TC', serif; font-size: 35px; color: var(--color-text-primary); margin-bottom: 2px; }
-.ch-title-en { font-size: 22px; color: var(--color-text-secondary); }
 
 .view-toggle { display: inline-flex; flex-shrink: 0; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
 .view-toggle-btn { padding: 0.4rem 0.9rem; font-size: 13px; color: var(--color-text-secondary); background: none; border: none; border-right: 0.5px solid var(--color-border); cursor: pointer; transition: background 0.15s, color 0.15s; }
@@ -647,8 +988,8 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 .view-toggle-btn:hover { color: var(--color-text-primary); }
 .view-toggle-btn.active { background: rgba(208, 170, 107, 0.12); color: var(--archive-gold-soft, #d0aa6b); }
 
-.passages.view-orig .ps-en, .passages.view-orig .ann-en, .passages.view-orig .ann-label-en { display: none; }
-.passages.view-en .ps-orig, .passages.view-en .ann-zh, .passages.view-en .ann-label-zh { display: none; }
+.passages.view-orig .ps-en, .passages.view-orig .ann-en, .passages.view-orig .ann-label-en, .passages.view-orig .ann-para-en, .passages.view-orig .footnote-en { display: none; }
+.passages.view-en .ps-orig, .passages.view-en .ann-zh, .passages.view-en .ann-label-zh, .passages.view-en .ann-para-zh, .passages.view-en .footnote-zh { display: none; }
 
 .term-legend { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; padding: 0.75rem 2rem; border-bottom: 0.5px solid var(--color-border); font-size: 15px; color: var(--color-text-tertiary); }
 .term-legend-item { display: flex; align-items: center; gap: 5px; }
@@ -684,18 +1025,60 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 .ps-en { font-size: 17px; line-height: 1.75; color: var(--color-text-secondary); font-weight: 400; }
 .passages .ps-en { font-family: var(--font-body-en); }
 
-.annotations { margin-top: 4px; display: flex; flex-direction: column; gap: 4px; }
+.annotations { margin-top: 4px; display: flex; flex-direction: column; gap: 36px; }
 .annotation { border-left: 2px solid var(--archive-jade, #7fa896); padding-left: 12px; }
-.ann-toggle { display: flex; align-items: flex-start; column-gap: 6px; row-gap: 0; line-height: 1.3; background: none; border: none; cursor: pointer; font-size: 17px; color: var(--archive-jade, #7fa896); padding: 4px 0; font-family: 'Inter', sans-serif; text-align: left; }
+.ann-toggle { display: flex; align-items: flex-start; column-gap: 6px; row-gap: 0; line-height: 1.3; background: none; border: none; cursor: pointer; font-size: 17px; color: var(--archive-jade, #7fa896);padding: 4px 0; font-family: 'Inter', sans-serif; text-align: left; }
 .ann-label { display: flex; flex-direction: column; gap: 3px;}
-.ann-label-zh { font-family: 'LXGW WenKai', serif; }
+.ann-label-en { font-family: var(--font-body-en); }
+.ann-label-zh { font-family: 'LXGW WenKai', serif;}
+.ps-en, .ann-en, .ann-label-en, .ann-para-en, .footnote-en,
+.ps-en .term-link, .ann-en .term-link, .ann-label-en .term-link, .ann-para-en .term-link, .footnote-en .term-link,
+.ann-label-en .ann-source { font-family: var(--font-body-en); }
 .ann-chevron { font-size: 13px; width: 16px; display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; margin-top: 2px; transition: transform 0.15s; }
 .ann-toggle.open .ann-chevron { transform: rotate(90deg); }
-.ann-body { display: none; padding: 6px 0 10px 2px; border-top: 0.5px dashed var(--color-border); margin-top: 2px; }
+.ann-body { display: none; padding: 6px 0 10px 2px; border-top: 1.5px solid rgba(127,168,150,0.5); margin-top: 2px; }
 .ann-body.open { display: block; }
 .ann-zh { font-family: 'LXGW WenKai', serif; font-size: 18.5px; color: var(--archive-jade, #7fa896); margin-bottom: 4px; line-height: 1.7; }
-.ann-en { font-size: 16.5px; color: var(--archive-jade, #7fa896); line-height: 1.6; opacity: 0.8; }
+.ann-en { font-size: 16.5px; color: var(--archive-jade, #7fa896); line-height: 1.6; opacity: 0.8;  }
 .ann-body .ann-en { font-family: var(--font-body-en); }
+.ann-zh p, .ann-en p { margin: 0 0 0.7em;  }
+.ann-en p { font-family: var(--font-body-en); }
+.ann-zh p:last-child, .ann-en p:last-child { margin-bottom: 0; }
+.ann-para-zh { font-family: 'LXGW WenKai', serif; font-size: 18.5px; color: var(--archive-jade, #7fa896); line-height: 1.7; margin: 0 0 3px; }
+.ann-para-en { font-size: 16.5px; color: var(--archive-jade, #7fa896); line-height: 1.6; opacity: 0.8; margin: 0 0 0.9em; font-family: var(--font-body-en)}
+.ann-body .ann-para-en { font-family: var(--font-body-en); }
+
+.footnote-ref {
+  color: var(--archive-gold-soft, #d0aa6b);
+  font-size: 0.72em;
+  font-weight: 600;
+  margin: 0 1px;
+}
+.footnotes {
+  margin-top: 0.6em;
+  padding-top: 0.5em;
+  border-top: 1px dashed rgba(202,163,106,0.25);
+}
+.footnote-item {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.4em;
+}
+.footnote-item:first-child { margin-top: 0; }
+.footnote-num {
+  flex-shrink: 0;
+  color: var(--archive-gold-soft, #d0aa6b);
+  opacity: 0.85;
+}
+.footnote-body { display: flex; flex-direction: column; gap: 2px; }
+/* Footnotes are siblings of .ps-orig/.ann-zh, not descendants of them, so
+   plain inheritance wouldn't pull in the right color/size on its own —
+   these explicitly match whichever container (passage or annotation)
+   the footnote belongs to, fulfilling "follow the parent" as intended. */
+.footnotes-passage .footnote-zh { font-family: 'LXGW WenKai', serif; font-size: 19px; color: var(--color-text-primary); }
+.footnotes-passage .footnote-en { font-size: 17px; color: var(--color-text-secondary); font-family: var(--font-body-en); }
+.footnotes-annotation .footnote-zh { font-family: 'LXGW WenKai', serif; font-size: 18.5px; color: var(--archive-jade, #7fa896); }
+.footnotes-annotation .footnote-en { font-size: 16.5px; color: var(--archive-jade, #7fa896); opacity: 0.8; font-family: var(--font-body-en); }
 
 .ch-nav-row { display: flex; justify-content: space-between; padding: 1rem 2rem 1.5rem; gap: 1rem; }
 .ch-nav-btn { display: flex; align-items: center; gap: 6px; font-size: 14.5px; color: var(--color-text-secondary); text-decoration: none; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 0.5rem 0.9rem; transition: background 0.15s; }
@@ -712,11 +1095,10 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, initialChap
 @media (max-width: 800px) {
   .reader-layout { display: block; }
   #sidebar-desktop { display: none; }
-  .mob-toolbar { display: flex; align-items: center; gap: 10px; padding: 0.75rem 1rem; border-bottom: 0.5px solid var(--color-border); background: var(--color-bg-secondary); position: sticky; top: 0; z-index: 20; }
+  .mob-toolbar { display: flex; align-items: center; gap: 10px; padding: 0.75rem 1rem; border-bottom: 0.5px solid var(--color-border); background: var(--color-bg-secondary); position: sticky; top: 58px; z-index: 20; }
   .mob-menu-btn { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex-shrink: 0; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); background: none; color: var(--color-text-secondary); cursor: pointer; font-size: 16px; }
   .mob-toolbar-title { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
   .mob-ch-title { font-family: 'LXGW WenKai', serif; font-size: 15px; color: var(--color-text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .mob-ch-pos { font-size: 12px; color: var(--archive-gold-soft, #d0aa6b); flex-shrink: 0; }
   .mob-overlay { display: block; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 29; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
   .mob-overlay.open { opacity: 1; pointer-events: all; }
   .mob-drawer { display: flex; position: fixed; top: 64px; left: 0; bottom: 0; width: 260px; max-width: 80vw; transform: translateX(-100%); transition: transform 0.2s; z-index: 30; }

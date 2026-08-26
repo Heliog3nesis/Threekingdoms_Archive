@@ -36,6 +36,13 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 </details>
 
 <details>
+<summary><b>Records of the Three Kingdoms (WIP)</b></summary>
+<br>
+<img src="./.github/assets/sgz.jpg" width="800">
+<img src="./.github/assets/journey.jpg" width="800">
+</details>
+
+<details>
 <summary><b>Short Stories Collection</b></summary>
 <br>
 <img src="./.github/assets/stories.jpg" width="800">
@@ -56,7 +63,7 @@ This site primarily compiles personal maps, translations, and commentary, as wel
 ## Recent Updates
  
 - Added interactive maps with settlement, province, commandery, and water bodies search
-- Added map and official redirects for Records of the Three Kingdoms translations
+- Added historical journey for main characters in Records of the Three Kingdoms
 
 See [<img src="./.github/badges/changelog.svg" width="110">](./CHANGELOG.md) for the full version history.
 

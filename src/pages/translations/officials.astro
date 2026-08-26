@@ -252,6 +252,20 @@ const officialsPayload = utf8ToBase64(JSON.stringify({ allPositions, categories,
 
   tabSelect.addEventListener('change', () => showTab(tabSelect.value));
 
+  // Deep-linking into the glossary — e.g. a chapter page linking
+  // directly to a term via #glossary-mandate-of-heaven. The browser's
+  // own automatic on-load anchor-scroll runs before this script has had
+  // a chance to lazily render the glossary tab's content, so by the
+  // time it fires, the target element doesn't exist yet and that
+  // initial scroll attempt silently does nothing. This detects that
+  // case, force-renders the glossary tab right away (skipping the lazy
+  // render), then manually re-triggers the scroll once the target
+  // actually exists in the DOM.
+  if (window.location.hash.startsWith('#glossary-')) {
+    showTab('glossary');
+    document.getElementById(window.location.hash.slice(1))?.scrollIntoView();
+  }
+
   function goToResults(query) {
     if (!query.trim()) return;
     window.open(`${base}/translations/search?q=${encodeURIComponent(query.trim())}`, '_blank');

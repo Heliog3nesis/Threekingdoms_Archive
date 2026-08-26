@@ -1,0 +1,137 @@
+{
+  "id": "wei-shu-18d",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 18,
+  "num": "18",
+  "label": {
+    "zht": "文聘傳",
+    "zhs": "文聘传",
+    "en": "Biography of Wen Pin"
+  },
+  "title": {
+    "zht": "魏書十八 · 文聘傳",
+    "zhs": "魏书十八 · 文聘传",
+    "en": "Book of Wei, Chapter 18 · Biography of Wen Pin"
+  },
+  "relationships": [
+    { "from": "文聘（仲業）", "to": "劉表", "type": "lord-subordinate", "passageId": "ws18d-p1" },
+    { "from": "劉表", "to": "劉琮", "type": "father-son", "passageId": "ws18d-p1" },
+    { "from": "文聘（仲業）", "to": "劉琮", "type": "lord-subordinate", "passageId": "ws18d-p1" },
+    { "from": "文聘（仲業）", "to": "曹操", "type": "lord-subordinate", "passageId": "ws18d-p2" },
+    { "from": "文聘（仲業）", "to": "曹純", "type": "comrades", "passageId": "ws18d-p3" },
+    { "from": "文聘（仲業）", "to": "劉備", "type": "battlefield-opponents", "passageId": "ws18d-p3" },
+    { "from": "文聘（仲業）", "to": "樂進", "type": "comrades", "passageId": "ws18d-p5" },
+    { "from": "文聘（仲業）", "to": "關羽", "type": "battlefield-opponents", "passageId": "ws18d-p5" },
+    { "from": "文聘（仲業）", "to": "曹丕", "type": "lord-subordinate", "passageId": "ws18d-p5" },
+    { "from": "文聘（仲業）", "to": "夏侯尚", "type": "comrades", "passageId": "ws18d-p5" },
+    { "from": "文聘（仲業）", "to": "孫權", "type": "battlefield-opponents", "passageId": "ws18d-p6" },
+    { "from": "文聘（仲業）", "to": "岱", "type": "father-son", "passageId": "ws18d-p9" },
+    { "from": "文聘（仲業）", "to": "厚", "type": "uncle-nephew", "passageId": "ws18d-p9" },
+    { "from": "文聘（仲業）", "to": "休", "type": "adoptive-father-son", "passageId": "ws18d-p9" },
+    { "from": "休", "to": "武", "type": "father-son", "passageId": "ws18d-p9" }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "文聘（仲業）",
+      "name": { "en": "Wen Pin", "zht": "文聘", "zhs": "文聘" },
+      "courtesyName": { "en": "Zhongye", "zht": "仲業", "zhs": "仲业" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "age": null,
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "location": { "en": "Wan, Nanyang", "zht": "南陽宛", "zhs": "南阳宛" }, "position": null, "passageId": "ws18d-p1" },
+        { "era": { "en": "Before 13th year of Jian'an", "zht": "建安十三年前", "zhs": "建安十三年前" }, "year": null, "location": { "en": "Jing Province", "zht": "荊州", "zhs": "荆州" }, "position": null, "passageId": "ws18d-p1" },
+        { "era": { "en": "13th year of Jian'an", "zht": "建安十三年", "zhs": "建安十三年" }, "year": "208", "location": { "en": "Changban", "zht": "長阪", "zhs": "长坂" }, "position": null, "passageId": "ws18d-p3" },
+        { "era": { "en": "After 13th year of Jian'an", "zht": "建安十三年後", "zhs": "建安十三年后" }, "year": null, "location": [{ "en": "Jiangxia", "zht": "江夏", "zhs": "江夏" },{ "en": "Xunkou", "zht": "尋口", "zhs": "寻口" },{ "en": "Hanjin", "zht": "漢津", "zhs": "汉津" },{ "en": "Jingcheng", "zht": "荊城", "zhs": "荆城" }], "position": [{ "en": "Grand Administrator of Jiangxia", "zht": "江夏太守", "zhs": "江夏太守" },{ "en": "Marquis Within the Pass", "zht": "關內侯", "zhs": "关内侯" },{ "en": "General Who Suppresses the Rebels", "zht": "討逆將軍", "zhs": "讨逆将军" },{ "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }], "passageId": "ws18d-p5" },
+        { "era": { "en": "1st year of Huangchu", "zht": "黄初元年", "zhs": "黄初元年" }, "year": 220, "location": null, "position": [{ "en": "Township Marquis", "zht": "鄉侯", "zhs": "乡侯" },{"en": "Provisional Bearer of the Imperial Tally", "zht": "假節", "zhs": "假节"}], "passageId": "ws18d-p5" },
+        { "era": { "en": "3rd year of Huangchu", "zht": "黄初三年", "zhs": "黄初三年" }, "year": 222, "location": [{ "en": "Jiangling", "zht": "江陵", "zhs": "江陵" },{ "en": "Miankou", "zht": "沔口", "zhs": "沔口" },{ "en": "Shifan", "zht": "石梵", "zhs": "石梵" }], "position": [{ "en": "General of the Rear", "zht": "後將軍", "zhs": "后将军" },{ "en": "County Marquis", "zht": "縣侯", "zhs": "县侯" }], "passageId": "ws18d-p5" },
+        { "era": { "en": "7th year of Huangchu", "zht": "黄初七年", "zhs": "黄初七年" }, "year": 226, "location": { "en": "Shiyang", "zht": "石陽", "zhs": "石阳" }, "position": null, "passageId": "ws18d-p6" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws18d-p1",
+      "orig": {
+        "zht": "文聘字仲業，[[南陽宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]人也，為劉表大將，使禦北方。表死，其子琮立。太祖征[[荊州|/zh-hant/maps/map-overall?admin=2]]，琮舉州降，呼聘欲與俱，聘曰：「聘不能全州，當待罪而已。」",
+        "zhs": "文聘字仲业，[[南阳宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]人也，为刘表大将，使御北方。表死，其子琮立。太祖征[[荆州|/zh-hans/maps/map-overall?admin=2]]，琮举州降，呼聘欲与俱，聘曰：「聘不能全州，当待罪而已。」"
+      },
+      "en": "Wen Pin, courtesy name Zhongye, was from [[Wan, Nanyang|/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]], and served as a general under Liu Biao, guarding his northern front. When Liu Biao died, his son Liu Cong succeeded him. When Cao Cao  (posthumously honoured as Taizu, the Grand Progenitor) campaigned against [[Jing Province|/maps/map-overall?admin=2]], Liu Cong surrendered the province in its entirety, and summoned Wen Pin to come with him. Wen Pin declined, \"I was unable to preserve the province intact. I can only await punishment for my failure.\""
+    },
+    {
+      "id": "ws18d-p2",
+      "orig": {
+        "zht": "太祖濟漢，聘乃詣太祖，太祖問曰：「來何遲邪？」聘曰：「先日不能輔弼劉荊州以奉國家，[[荊州|/zh-hant/maps/map-overall?admin=2]]雖沒，常願據守漢川，保全土境，生不負於孤弱，死無愧於地下，而計不得已，以至於此。實懷悲慙，無顏早見耳。」遂欷歔流涕。太祖為之愴然曰：「仲業，卿真忠臣也。」厚禮待之。",
+        "zhs": "太祖济汉，聘乃诣太祖，太祖问曰：「来何迟邪？」聘曰：「先日不能辅弼刘荆州以奉国家，[[荆州|/zh-hans/maps/map-overall?admin=2]]虽没，常愿据守汉川，保全土境，生不负于孤弱，死无愧于地下，而计不得已，以至于此。实怀悲惭，无颜早见耳。」遂欷歔流涕。太祖为之怆然曰：「仲业，卿真忠臣也。」厚礼待之。"
+      },
+      "en": "When Cao Cao crossed the Han River, Wen Pin then came to see him. Cao Cao asked, \"Why have you come so late?\" Wen Pin replied, \"Previously, I was unable to assist Governor Liu in serving the state. Although [[Jing Province|/maps/map-overall?admin=2]] has now fallen, I had still hoped to hold the Han River region and preserve its territory. In life, I would not betray the young and the weak entrusted to my care; in death, I would bring no shame before those below. Yet circumstances left me no choice, and it has come to this. I am filled with grief and shame, and could not bear to come before you sooner.\" He then sighed and wept. Cao Cao was deeply moved and said, \"Zhongye, you are truly a loyal servant of the state.\" Cao Cao thereafter treated Wen Pin with the utmost courtesy."
+    },
+    {
+      "id": "ws18d-p3",
+      "orig": {
+        "zht": "授聘兵，使與曹純追討劉備於[[長阪|/zh-hant/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]。太祖先定[[荊州|/zh-hant/maps/map-overall?admin=2]]，[[江夏|/zh-hant/maps/map-overall?admin=83]]與吳接，民心不安，乃以聘為[[江夏|/zh-hant/maps/map-overall?admin=83]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，使典北兵，委以邊事，賜爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
+        "zhs": "授聘兵，使与曹纯追讨刘备于[[长阪|/zh-hans/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]。太祖先定[[荆州|/zh-hans/maps/map-overall?admin=2]]，[[江夏|/zh-hans/maps/map-overall?admin=83]]与吴接，民心不安，乃以聘为[[江夏|/zh-hans/maps/map-overall?admin=83]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，使典北兵，委以边事，赐爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
+      },
+      "en": "Cao Cao gave Wen Pin troops, and had him join Cao Chun in pursuing and attacking Liu Bei at [[Changban|/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]. As Cao Cao had only recently taken [[Jing Province|/maps/map-overall?admin=2]], and [[Jiangxia Commandery|/maps/map-overall?admin=83]] bordered Wu, the people remained unsettled. Cao Cao therefore made Wen Pin [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jiangxia Commandery|/maps/map-overall?admin=83]], placed him in command of the northern forces, entrusted him with frontier matters, and enfeoffed him as [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]].",
+      "annotations": [
+        {
+          "annotator": { "zht": "裴松之", "zhs": "裴松之", "en": "Pei Songzhi" },
+          "source": { "zht": "孫盛", "zhs": "孙盛", "en": "Sun Sheng" },
+          "zht": "資父事君，忠孝道一。臧霸少有孝烈之稱，文聘著垂泣之誠，是以魏武一面，委之以二方之任，豈直壯武見知於倉卒之間哉！",
+          "zhs": "资父事君，忠孝道一。臧霸少有孝烈之称，文聘著垂泣之诚，是以魏武一面，委之以二方之任，岂直壮武见知于仓卒之间哉！",
+          "en": "In serving one's father and serving one's lord, loyalty and filial piety are one and the same. Zang Ba was renowned in his youth for his filial devotion, while Wen Pin displayed the sincerity of his grief in tears. It was for this reason that, after but a single meeting, Cao Cao entrusted them with the defence of two regions. Surely this was not merely because he had come to appreciate their valor and martial prowess during those brief encounters!"
+        }
+      ]
+    },
+    {
+      "id": "ws18d-p4",
+      "orig": {
+        "zht": "與樂進討關羽於尋口，有功，進封延壽[[亭侯|/zh-hant/translations/officials#glossary-neighbourhood-marquis]]，加[[討逆將軍|/zh-hant/translations/officials/military#four-direction--misc-153]]。又攻羽輜重於漢津，燒其船於[[荊城|/zh-hant/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]。文帝踐阼，進爵長安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。與夏侯尚圍[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，使聘別屯沔口，止石梵，自當一隊，禦賊有功，遷[[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]，封[[新野|/zh-hant/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]。",
+        "zhs": "与乐进讨关羽于寻口，有功，进封延寿[[亭侯|/zh-hans/translations/officials#glossary-neighbourhood-marquis]]，加[[讨逆将军|/zh-hans/translations/officials/military#four-direction--misc-153]]。又攻羽辎重于汉津，烧其船于[[荆城|/zh-hans/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]。文帝践阼，进爵长安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。与夏侯尚围[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，使聘别屯沔口，止石梵，自当一队，御贼有功，迁[[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]，封[[新野|/zh-hans/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]。"
+      },
+      "en": "Together with Yue Jin, Wen Pin campaigned against Guan Yu at Xunkou, and for his achievements was advanced to Yanshou [[Neighbourhood Marquis|/translations/officials#glossary-neighbourhood-marquis]], and [[General Who Suppresses the Rebels|/translations/officials/military#four-direction--misc-153]]. Wen Pin later attacked Guan Yu's supply train at Hanjin, and burned his ships at [[Jingcheng|/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) ascended the throne, Wen Pin was advanced in rank to Chang'an [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]], and made [[Provisional Bearer of the Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. Together with Xiahou Shang, Wen Ping besieged [[Jiangling|/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]. He was then detached to garrison Miankou, where he held Shifan and commanded an independent force to resist the enemy. For his merits, he was promoted to [[General of the Rear|/translations/officials/military#four-direction--misc-115]], and enfeoffed as [[Marquis|/translations/officials#glossary-county-marquis]] of [[Xinye|/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]]."
+    },
+    {
+      "id": "ws18d-p5",
+      "orig": {
+        "zht": "孫權以五萬衆自圍聘於[[石陽|/zh-hant/maps/map-overall?lat=30.83666732&lng=113.72669801&name=Shiyang]]，甚急，聘堅守不動，權住二十餘日乃解去。聘追擊破之。增邑五百戶，并前千九百戶。",
+        "zhs": "孙权以五万众自围聘于[[石阳|/zh-hans/maps/map-overall?lat=30.83666732&lng=113.72669801&name=Shiyang]]，甚急，聘坚守不动，权住二十余日乃解去。聘追击破之。增邑五百户，并前千九百户。"
+      },
+      "en": "Later, Sun Quan personally led fifty thousand troops to besiege Wen Pin at [[Shiyang|/maps/map-overall?lat=30.83666732&lng=113.72669801&name=Shiyang]]. The situation was extremely dire, yet Wen Pin held firm and did not retreat. After more than twenty days, Sun Quan withdrew. Wen Pin pursued and defeated the Wu troops. His fief was increased by five hundred households, bringing his total to one thousand nine hundred.",
+      "annotations": [
+        {
+          "annotator": { "zht": "裴松之", "zhs": "裴松之", "en": "Pei Songzhi" },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "魏略曰：孫權嘗自將數萬衆卒至。時大雨，城柵崩壞，人民散在田野，未及補治。聘聞權到，不知所施，乃思惟莫若潛默可以疑之。乃勑城中人使不得見，又自卧舍中不起。權果疑之，語其部黨曰：「北方以此人忠臣也，故委之以此郡，今我至而不動，此不有密圖，必當有外救。」遂不敢攻而去。\n\n魏略此語，與本傳反。",
+          "zhs": "魏略曰：孙权尝自将数万众卒至。时大雨，城栅崩坏，人民散在田野，未及补治。聘闻权到，不知所施，乃思惟莫若潜默可以疑之。乃敕城中人使不得见，又自卧舍中不起。权果疑之，语其部党曰：「北方以此人忠臣也，故委之以此郡，今我至而不动，此不有密图，必当有外救。」遂不敢攻而去。\n\n魏略此语，与本传反。",
+          "en": "The Weilüe / Brief History of Wei states: Sun Quan once personally led several tens of thousands of troops in a sudden attack. At the time, there were heavy rains, and the city's stockade walls collapsed. The residents were dispersed across the countryside, and there is no time to repair the damaged walls. When Wen Pin learned of Sun Quan's arrival, he was uncertain how best to respond. He concluded that nothing would serve better than to remain perfectly still and let the enemy fall into doubt. He therefore ordered that no one within the city was to show themselves, then withdrew to his quarters and remained there without emerging. Sun Quan indeed grew suspicious and said to his officers, \"The northern court regards this man as a loyal servant of the state, and for that reason entrusted him with this commandery. Now that I have arrived and he remains inactive, he must either have made secret preparations, or reinforcements are surely on their way.\" Sun Quan therefore dared not attack and withdrew. \n\nThis account in the Weilüe contradicts the main biography."
+        }
+      ]
+    },
+    {
+      "id": "ws18d-p6",
+      "orig": {
+        "zht": "聘在[[江夏|/zh-hant/maps/map-overall?admin=83]]數十年，有威恩，名震敵國，賊不敢侵。分聘戶邑封聘子岱為[[列侯|/zh-hant/translations/officials#glossary-marquis]]，又賜聘從子厚爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。聘薨，謚曰壯侯。岱又先亡，聘養子休嗣。卒，子武嗣。",
+        "zhs": "聘在[[江夏|/zh-hans/maps/map-overall?admin=83]]数十年，有威恩，名震敌国，贼不敢侵。分聘户邑封聘子岱为[[列侯|/zh-hans/translations/officials#glossary-marquis]]，又赐聘从子厚爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。聘薨，谥曰壮侯。岱又先亡，聘养子休嗣。卒，子武嗣。"
+      },
+      "en": "Wen Pin remained in [[Jiangxia Commandery|/maps/map-overall?admin=83]] for several decades. He was held in both awe and affection, and his reputation resounded throughout the enemy state, such that no one dared invade. Part of Wen Pin's fief was divided off to enfeoff his son, Wen Dai, as a [[Marquis|/translations/officials#glossary-marquis]], and his nephew Wen Hou was also granted the rank of [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]. When Wen Pin died, he was posthumously honoured as Marquis Zhuang, the Valiant Marquis. Wen Dai had already died before him, so Wen Pin's adopted son Wen Xiu succeeded him. When Wen Xiu died, his son Wen Wu succeeded him."
+    },
+    {
+      "id": "ws18d-p7",
+      "orig": {
+        "zht": "嘉平中，[[譙|/zh-hant/maps/map-overall?admin=28]]郡桓禺為[[江夏|/zh-hant/maps/map-overall?admin=83]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，清儉有威惠，名亞於聘。",
+        "zhs": "嘉平中，[[谯|/zh-hans/maps/map-overall?admin=28]]郡桓禺为[[江夏|/zh-hans/maps/map-overall?admin=83]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，清俭有威惠，名亚于聘。"
+      },
+      "en": "During the Jiaping Era, Huan Yu of [[Qiao|/maps/map-overall?admin=28]] Commandery served as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jiangxia|/maps/map-overall?admin=83]]. He was upright and frugal, well respected, and governed with beneficence. His reputation was second only to Wen Pin."
+    }
+  ]
+}

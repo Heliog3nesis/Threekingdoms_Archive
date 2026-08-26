@@ -1,0 +1,461 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.91503046,
+      "lng": 104.75355249,
+      "name": "Huandao",
+      "persons": [
+        "龐德（令明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.07503418,
+      "lng": 111.44794913,
+      "name": "Pingyang",
+      "persons": [
+        "龐德（令明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.6814,
+      "lng": 110.9132,
+      "name": "Hongnong",
+      "persons": [
+        "龐德（令明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 26.81209209,
+      "lng": 104.61455673,
+      "name": "Hanyang",
+      "persons": [
+        "龐德（令明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.72831194,
+      "lng": 105.378171,
+      "name": "Ji",
+      "persons": [
+        "龐德（令明）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "110",
+      "persons": [
+        "龐德（令明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.98790226,
+      "lng": 112.53739567,
+      "name": "Wan",
+      "persons": [
+        "龐德（令明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.04746989,
+      "lng": 112.06874333,
+      "name": "Fancheng",
+      "persons": [
+        "龐德（令明）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "龐德（令明）",
+      "born": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
+      "died": {
+        "era": {
+          "en": "24th year of Jian'an",
+          "zht": "建安二十四年",
+          "zhs": "建安二十四年"
+        },
+        "year": 219,
+        "age": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Huandao",
+            "zht": "狟道",
+            "zhs": "狟道"
+          },
+          "position": null,
+          "passageId": "ws18h-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.91503046,
+              "lng": 104.75355249,
+              "name": "Huandao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": {
+            "en": "commandery clerk and provincial Aide",
+            "zht": "郡吏州從事",
+            "zhs": "郡吏州从事"
+          },
+          "passageId": "ws18h-p1",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "commandery clerk and provincial Aide",
+              "zht": "郡吏州從事",
+              "zhs": "郡吏州从事",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "during the Chuping Era",
+            "zht": "初平中",
+            "zhs": "初平中"
+          },
+          "year": "190-193",
+          "age": null,
+          "location": null,
+          "position": {
+            "en": "Colonel",
+            "zht": "校尉",
+            "zhs": "校尉"
+          },
+          "passageId": "ws18h-p1",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Colonel",
+              "zht": "校尉",
+              "zhs": "校尉",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "7th year of Jian'an",
+            "zht": "建安七年",
+            "zhs": "建安七年"
+          },
+          "year": 202,
+          "age": null,
+          "location": {
+            "en": "Pingyang",
+            "zht": "平陽",
+            "zhs": "平阳"
+          },
+          "position": [
+            {
+              "en": "Gentleman General",
+              "zht": "中郎將",
+              "zhs": "中郎将"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": "ws18h-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.07503418,
+              "lng": 111.44794913,
+              "name": "Pingyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Gentleman General",
+                "zht": "中郎將",
+                "zhs": "中郎将"
+              },
+              "1": {
+                "en": "Capital Neighbourhood Marquis",
+                "zht": "都亭侯",
+                "zhs": "都亭侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "age": null,
+          "location": {
+            "en": "Hongnong",
+            "zht": "弘農",
+            "zhs": "弘农"
+          },
+          "position": null,
+          "passageId": "ws18h-p3",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.6814,
+              "lng": 110.9132,
+              "name": "Hongnong"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "16th year of Jian'an",
+            "zht": "建安十六年",
+            "zhs": "建安十六年"
+          },
+          "year": 211,
+          "age": null,
+          "location": [
+            {
+              "en": "Hanyang",
+              "zht": "漢陽",
+              "zhs": "汉阳"
+            },
+            {
+              "en": "Ji City",
+              "zht": "兾城",
+              "zhs": "兾城"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18h-p3",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 26.81209209,
+              "lng": 104.61455673,
+              "name": "Hanyang"
+            },
+            {
+              "kind": "town",
+              "lat": 34.72831194,
+              "lng": 105.378171,
+              "name": "Ji"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "19th - 20th year of Jian'an",
+            "zht": "建安十九 - 二十年",
+            "zhs": "建安十九 - 二十年"
+          },
+          "year": "214-215",
+          "age": null,
+          "location": {
+            "en": "Hanzhong",
+            "zht": "漢中",
+            "zhs": "汉中"
+          },
+          "position": [
+            {
+              "en": "General Who Champions Righteousness",
+              "zht": "立義將軍",
+              "zhs": "立义将军"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": "ws18h-p3",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "110"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "General Who Champions Righteousness",
+                "zht": "立義將軍",
+                "zhs": "立义将军"
+              },
+              "1": {
+                "en": "Neighbourhood Marquis",
+                "zht": "亭侯",
+                "zhs": "亭侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "23rd - 24th year of Jian'an",
+            "zht": "建安二十三 - 二十四年",
+            "zhs": "建安二十三 - 二十四年"
+          },
+          "year": "218-219",
+          "age": null,
+          "location": [
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Fancheng",
+              "zht": "樊城",
+              "zhs": "樊城"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18h-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.98790226,
+              "lng": 112.53739567,
+              "name": "Wan"
+            },
+            {
+              "kind": "town",
+              "lat": 32.04746989,
+              "lng": 112.06874333,
+              "name": "Fancheng"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "馬騰",
+      "to": "龐悳（令明）",
+      "type": "commander-officer",
+      "passageId": "ws18h-p1"
+    },
+    {
+      "from": "馬騰",
+      "to": "馬超",
+      "type": "father-son",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "馬超",
+      "to": "龐悳（令明）",
+      "type": "commander-officer",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "鍾繇",
+      "to": "郭援",
+      "type": "uncle-nephew",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "郭援",
+      "type": "killer-victim",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "張魯",
+      "to": "龐悳（令明）",
+      "type": "lord-subordinate",
+      "passageId": "ws18h-p3"
+    },
+    {
+      "from": "曹操",
+      "to": "龐悳（令明）",
+      "type": "lord-subordinate",
+      "passageId": "ws18h-p3"
+    },
+    {
+      "from": "曹仁",
+      "to": "龐悳（令明）",
+      "type": "commander-officer",
+      "passageId": "ws18h-p5"
+    },
+    {
+      "from": "龐柔",
+      "to": "龐悳（令明）",
+      "type": "elder cousin-younger cousin",
+      "passageId": "ws18h-p4"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "關羽",
+      "type": "rivals",
+      "passageId": "ws18h-p4"
+    },
+    {
+      "from": "關羽",
+      "to": "龐悳（令明）",
+      "type": "killer-victim",
+      "passageId": "ws18h-p7"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "董衡",
+      "type": "killer-victim",
+      "passageId": "ws18h-p5"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "董超",
+      "type": "killer-victim",
+      "passageId": "ws18h-p5"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "成何",
+      "type": "commander-officer",
+      "passageId": "ws18h-p6"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "龐會",
+      "type": "father-son",
+      "passageId": "ws18h-p8"
+    }
+  ]
+}

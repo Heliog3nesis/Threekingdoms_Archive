@@ -1,0 +1,1195 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 35.29682805,
+      "lng": 118.21058195,
+      "name": "Hua",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.35221866,
+      "lng": 117.93768412,
+      "name": "Fei",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "50",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "8",
+      "persons": [
+        "臧霸（宣高）",
+        "孫觀（仲臺）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.1238282,
+      "lng": 118.35003654,
+      "name": "Kaiyang",
+      "persons": [
+        "臧霸（宣高）",
+        "孫觀（仲臺）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.58381856,
+      "lng": 118.81351928,
+      "name": "莒縣",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "51",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "6",
+      "persons": [
+        "臧霸（宣高）",
+        "孫觀（仲臺）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 38.0926547,
+      "lng": 116.68045911,
+      "name": "Nanpi",
+      "persons": [
+        "臧霸（宣高）",
+        "孫觀（仲臺）"
+      ]
+    },
+    {
+      "kind": "water",
+      "id": "276",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.61031379,
+      "lng": 117.92120644,
+      "name": "Juchao",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.62607288,
+      "lng": 116.60310353,
+      "name": "Wan",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.24804329,
+      "lng": 116.99614735,
+      "name": "Jiashi",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.15710957,
+      "lng": 117.26205139,
+      "name": "Shu",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.2019282,
+      "lng": 117.97307792,
+      "name": "Ruxukou",
+      "persons": [
+        "臧霸（宣高）",
+        "孫觀（仲臺）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "臧霸（宣高）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "33",
+      "persons": [
+        "孫觀（仲臺）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "44",
+      "persons": [
+        "孫觀（仲臺）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "臧霸（宣高）",
+      "name": {
+        "en": "Zang Ba",
+        "zht": "臧霸",
+        "zhs": "臧霸"
+      },
+      "courtesyName": {
+        "en": "Xuangao",
+        "zht": "宣高",
+        "zhs": "宣高"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "Taihe - Zhengshi eras",
+          "zht": "泰和 - 正始年間",
+          "zhs": "泰和 - 正始年间"
+        },
+        "year": "~230s"
+      },
+      "age": null,
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Hua, Taishan",
+            "zht": "泰山華",
+            "zhs": "泰山华"
+          },
+          "position": null,
+          "passageId": "ws18c-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.29682805,
+              "lng": 118.21058195,
+              "name": "Hua"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Fei",
+            "zht": "費",
+            "zhs": "费"
+          },
+          "position": null,
+          "passageId": "ws18c-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.35221866,
+              "lng": 117.93768412,
+              "name": "Fei"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Donghai",
+            "zht": "東海",
+            "zhs": "东海"
+          },
+          "position": null,
+          "passageId": "ws18c-p1",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "50"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "5th year of Zhongping",
+            "zht": "中平五年",
+            "zhs": "中平五年"
+          },
+          "year": 188,
+          "location": {
+            "en": "Xu Province",
+            "zht": "徐州",
+            "zhs": "徐州"
+          },
+          "position": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          },
+          "passageId": "ws18c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Commandant of Cavalry",
+              "zht": "騎都尉",
+              "zhs": "骑都尉",
+              "url": "/translations/officials/ministers#-nine-ministers-i-178"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Kaiyang",
+            "zht": "開陽",
+            "zhs": "开阳"
+          },
+          "position": null,
+          "passageId": "ws18c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.1238282,
+              "lng": 118.35003654,
+              "name": "Kaiyang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "2nd year of Jian'an",
+            "zht": "建安二年",
+            "zhs": "建安二年"
+          },
+          "year": 197,
+          "location": {
+            "en": "Ju",
+            "zht": "莒",
+            "zhs": "莒"
+          },
+          "position": null,
+          "passageId": "ws18c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.58381856,
+              "lng": 118.81351928,
+              "name": "莒縣"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "3rd year of Jian'an",
+            "zht": "建安三年",
+            "zhs": "建安三年"
+          },
+          "year": 198,
+          "location": {
+            "en": "Langya",
+            "zht": "琅邪",
+            "zhs": "琅邪"
+          },
+          "position": {
+            "en": "Chancellor of Langya",
+            "zht": "琅邪相",
+            "zhs": "琅邪相"
+          },
+          "passageId": "ws18c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "51"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Chancellor of Langya",
+              "zht": "琅邪相",
+              "zhs": "琅邪相",
+              "url": "/translations/officials/regional#states-064"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "4th - 5th year of Jian'an",
+            "zht": "建安四年 - 五年",
+            "zhs": "建安四年 - 五年"
+          },
+          "year": "199 - 200",
+          "location": [
+            {
+              "en": "Qing Province",
+              "zht": "青州",
+              "zhs": "青州"
+            },
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18c-p4",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "6"
+            },
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "location": {
+            "en": "Nanpi",
+            "zht": "南皮",
+            "zhs": "南皮"
+          },
+          "position": [
+            {
+              "en": "General Who Awes the Enemies",
+              "zht": "威虜將軍",
+              "zhs": "威虏将军"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": "ws18c-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 38.0926547,
+              "lng": 116.68045911,
+              "name": "Nanpi"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "General Who Awes the Enemies",
+                "zht": "威虜將軍",
+                "zhs": "威虏将军"
+              },
+              "1": {
+                "en": "Capital Neighbourhood Marquis",
+                "zht": "都亭侯",
+                "zhs": "都亭侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "11 - 12th year of Jian'an",
+            "zht": "建安十一 - 十二年",
+            "zhs": "建安十一 - 十二年"
+          },
+          "year": "206 - 207",
+          "location": {
+            "en": "Xu Province",
+            "zht": "徐州",
+            "zhs": "徐州"
+          },
+          "position": {
+            "en": "Inspector of Xu Province",
+            "zht": "徐州刺史",
+            "zhs": "徐州刺史"
+          },
+          "passageId": "ws18c-p5",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Inspector of Xu Province",
+              "zht": "徐州刺史",
+              "zhs": "徐州刺史",
+              "url": "/translations/officials/regional#provinces-014"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "14th year of Jian'an",
+            "zht": "建安十四年",
+            "zhs": "建安十四年"
+          },
+          "year": 209,
+          "location": [
+            {
+              "en": "Chao Lake",
+              "zht": "巢湖",
+              "zhs": "巢湖"
+            },
+            {
+              "en": "Juchao",
+              "zht": "居巢",
+              "zhs": "居巢"
+            },
+            {
+              "en": "Wan",
+              "zht": "皖",
+              "zhs": "皖"
+            },
+            {
+              "en": "Jiashi",
+              "zht": "夾石",
+              "zhs": "夹石"
+            },
+            {
+              "en": "Shu",
+              "zht": "舒",
+              "zhs": "舒"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18c-p5",
+          "resolvedLocations": [
+            {
+              "kind": "water",
+              "id": "276"
+            },
+            {
+              "kind": "town",
+              "lat": 31.61031379,
+              "lng": 117.92120644,
+              "name": "Juchao"
+            },
+            {
+              "kind": "town",
+              "lat": 30.62607288,
+              "lng": 116.60310353,
+              "name": "Wan"
+            },
+            {
+              "kind": "town",
+              "lat": 31.24804329,
+              "lng": 116.99614735,
+              "name": "Jiashi"
+            },
+            {
+              "kind": "town",
+              "lat": 31.15710957,
+              "lng": 117.26205139,
+              "name": "Shu"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "21st - 22ndyear of Jian'an",
+            "zht": "建安二十一年 - 二十二年",
+            "zhs": "建安二十一年 - 二十二年"
+          },
+          "year": "216 - 217",
+          "location": [
+            {
+              "en": "Ruxukou",
+              "zht": "濡須口",
+              "zhs": "濡须口"
+            },
+            {
+              "en": "Juchao",
+              "zht": "居巢",
+              "zhs": "居巢"
+            }
+          ],
+          "position": [
+            {
+              "en": "General Who Promotes Might",
+              "zht": "揚威將軍",
+              "zhs": "扬威将军"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            }
+          ],
+          "passageId": "ws18c-p7",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.2019282,
+              "lng": 117.97307792,
+              "name": "Ruxukou"
+            },
+            {
+              "kind": "town",
+              "lat": 31.61031379,
+              "lng": 117.92120644,
+              "name": "Juchao"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "General Who Promotes Might",
+                "zht": "揚威將軍",
+                "zhs": "扬威将军"
+              },
+              "1": {
+                "en": "Provisional Bearer of the Imperial Tally",
+                "zht": "假節",
+                "zhs": "假节"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": "220",
+          "location": {
+            "en": "Qing Province",
+            "zht": "青州",
+            "zhs": "青州"
+          },
+          "position": {
+            "en": "General Who Garrisons the East; County Marquis",
+            "zht": "鎮東將軍、鄉侯",
+            "zhs": "镇东将军、乡侯"
+          },
+          "passageId": "ws18c-p8",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "6"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General Who Garrisons the East",
+              "zht": "鎮東將軍",
+              "zhs": "镇东将军",
+              "url": "/translations/officials/military#conquering--garrisoning-068"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "3rd year of Huangchu",
+            "zht": "黄初三年",
+            "zhs": "黄初三年"
+          },
+          "year": 222,
+          "location": {
+            "en": "Dongpu",
+            "zht": "洞浦",
+            "zhs": "洞浦"
+          },
+          "position": null,
+          "passageId": "ws18c-p8",
+          "resolvedLocations": [],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Luoyang",
+            "zht": "洛陽",
+            "zhs": "洛阳"
+          },
+          "position": {
+            "en": "Bearer of the Golden Mace; Specially Advanced",
+            "zht": "執金吾、特進",
+            "zhs": "执金吾、特进"
+          },
+          "passageId": "ws18c-p8",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Bearer of the Golden Mace",
+              "zht": "執金吾",
+              "zhs": "执金吾",
+              "url": "/translations/officials/ministers#others-282"
+            },
+            {
+              "en": "Specially Advanced",
+              "zht": "特進",
+              "zhs": "特进",
+              "url": "/translations/officials/ministers#civil-honorary-officials-118"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "孫觀（仲臺）",
+      "name": {
+        "en": "Sun Guan",
+        "zht": "孫觀",
+        "zhs": "孙观"
+      },
+      "courtesyName": {
+        "en": "Zhongtai",
+        "zht": "仲臺",
+        "zhs": "仲台"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "during Cao Cao's campaign against Sun Quan",
+          "zht": "太祖征孫權時",
+          "zhs": "太祖征孙权时"
+        },
+        "year": null
+      },
+      "age": null,
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Taishan",
+            "zht": "泰山",
+            "zhs": "泰山"
+          },
+          "position": null,
+          "passageId": "ws18c-p12",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "33"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "5th year of Zhongping",
+            "zht": "中平五年",
+            "zhs": "中平五年"
+          },
+          "year": 188,
+          "location": {
+            "en": "Xu Province",
+            "zht": "徐州",
+            "zhs": "徐州"
+          },
+          "position": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          },
+          "passageId": "ws18c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Commandant of Cavalry",
+              "zht": "騎都尉",
+              "zhs": "骑都尉",
+              "url": "/translations/officials/ministers#-nine-ministers-i-178"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Kaiyang",
+            "zht": "開陽",
+            "zhs": "开阳"
+          },
+          "position": null,
+          "passageId": "ws18c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.1238282,
+              "lng": 118.35003654,
+              "name": "Kaiyang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "3rd year of Jian'an",
+            "zht": "建安三年",
+            "zhs": "建安三年"
+          },
+          "year": 198,
+          "location": {
+            "en": "Beihai",
+            "zht": "北海",
+            "zhs": "北海"
+          },
+          "position": {
+            "en": "Chancellor of Beihai",
+            "zht": "北海相",
+            "zhs": "北海相"
+          },
+          "passageId": "ws18c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "44"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Chancellor of Beihai",
+              "zht": "北海相",
+              "zhs": "北海相",
+              "url": "/translations/officials/regional#states-064"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "4th - 5th year of Jian'an",
+            "zht": "建安四年 - 五年",
+            "zhs": "建安四年 - 五年"
+          },
+          "year": "199 - 200",
+          "location": [
+            {
+              "en": "Qing Province",
+              "zht": "青州",
+              "zhs": "青州"
+            },
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18c-p12",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "6"
+            },
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "location": {
+            "en": "Nanpi",
+            "zht": "南皮",
+            "zhs": "南皮"
+          },
+          "position": [
+            {
+              "en": "Adjunct General",
+              "zht": "偏將軍",
+              "zhs": "偏将军"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": "ws18c-p12",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 38.0926547,
+              "lng": 116.68045911,
+              "name": "Nanpi"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Adjunct General",
+                "zht": "偏將軍",
+                "zhs": "偏将军"
+              },
+              "1": {
+                "en": "Capital Neighbourhood Marquis",
+                "zht": "都亭侯",
+                "zhs": "都亭侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Qing Province",
+            "zht": "青州",
+            "zhs": "青州"
+          },
+          "position": [
+            {
+              "en": "Inspector of Qing Province",
+              "zht": "青州刺史",
+              "zhs": "青州刺史"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            }
+          ],
+          "passageId": "ws18c-p12",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "6"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Inspector of Qing Province",
+                "zht": "青州刺史",
+                "zhs": "青州刺史"
+              },
+              "1": {
+                "en": "Provisional Bearer of the Imperial Tally",
+                "zht": "假節",
+                "zhs": "假节"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "21st - 22ndyear of Jian'an",
+            "zht": "建安二十一年 - 二十二年",
+            "zhs": "建安二十一年 - 二十二年"
+          },
+          "year": "216 - 217",
+          "location": {
+            "en": "Ruxukou",
+            "zht": "濡須口",
+            "zhs": "濡须口"
+          },
+          "position": {
+            "en": "General Who Rallies Might",
+            "zht": "振威將軍",
+            "zhs": "振威将军"
+          },
+          "passageId": "ws18c-p12",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.2019282,
+              "lng": 117.97307792,
+              "name": "Ruxukou"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General Who Rallies Might",
+              "zht": "振威將軍",
+              "zhs": "振威将军",
+              "url": "/translations/officials/military#four-direction--misc-137"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "臧戒",
+      "to": "臧霸（宣高）",
+      "type": "father-son",
+      "passageId": "ws18c-p1"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "陶謙",
+      "type": "lord-subordinate",
+      "passageId": "ws18c-p2"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "孫觀（仲臺）",
+      "type": "comrades",
+      "passageId": "ws18c-p2"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "吳敦",
+      "type": "comrades",
+      "passageId": "ws18c-p2"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "尹禮",
+      "type": "comrades",
+      "passageId": "ws18c-p2"
+    },
+    {
+      "from": "孫觀（仲臺）",
+      "to": "孫康",
+      "type": "brothers",
+      "passageId": "ws18c-p2"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "呂布",
+      "type": "allies",
+      "passageId": "ws18c-p2"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "曹操",
+      "type": "lord-subordinate",
+      "passageId": "ws18c-p2"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "徐翕",
+      "type": "protector-dependent",
+      "passageId": "ws18c-p3"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "毛暉",
+      "type": "protector-dependent",
+      "passageId": "ws18c-p3"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "劉備",
+      "type": "comrades",
+      "passageId": "ws18c-p3"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "于禁",
+      "type": "comrades",
+      "passageId": "ws18c-p5"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "夏侯淵",
+      "type": "comrades",
+      "passageId": "ws18c-p5"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "武周",
+      "type": "friends",
+      "passageId": "ws18c-p5"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "孫權",
+      "type": "enemies",
+      "passageId": "ws18c-p5"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "張遼",
+      "type": "comrades",
+      "passageId": "ws18c-p6"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "韓當",
+      "type": "battlefield-opponents",
+      "passageId": "ws18c-p6"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "張遼",
+      "type": "comrades",
+      "passageId": "ws18c-p7"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "夏侯惇",
+      "type": "comrades",
+      "passageId": "ws18c-p7"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "曹丕",
+      "type": "lord-subordinate",
+      "passageId": "ws18c-p8"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "曹休",
+      "type": "comrades",
+      "passageId": "ws18c-p8"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "臧艾",
+      "type": "father-son",
+      "passageId": "ws18c-p9"
+    },
+    {
+      "from": "臧艾",
+      "to": "臧權",
+      "type": "father-son",
+      "passageId": "ws18c-p9"
+    },
+    {
+      "from": "臧霸（宣高）",
+      "to": "臧舜（太伯）",
+      "type": "father-son",
+      "passageId": "ws18c-p10"
+    },
+    {
+      "from": "孫觀（仲臺）",
+      "to": "孫毓",
+      "type": "father-son",
+      "passageId": "ws18c-p11"
+    },
+    {
+      "from": "孫觀（仲臺）",
+      "to": "孫康",
+      "type": "brothers",
+      "passageId": "ws18c-p12"
+    },
+    {
+      "from": "孫觀（仲臺）",
+      "to": "臧霸（宣高）",
+      "type": "comrades",
+      "passageId": "ws18c-p12"
+    },
+    {
+      "from": "孫觀（仲臺）",
+      "to": "曹操",
+      "type": "lord-subordinate",
+      "passageId": "ws18c-p12"
+    }
+  ]
+}
