@@ -4,19 +4,29 @@
 
 // CONFIG 
 import { url } from '../../utils/url';
+// No import from journey.js here, deliberately - journey.js imports many
+// things back from this file, and interactive-map.js importing anything
+// from journey.js in return would make the two circularly dependent.
+// clearJourneyBoundaries is small enough to just define locally (both
+// files need it); renderJourneyView is registered via a callback instead
+// - see registerRenderJourneyView below and its call at the bottom of
+// journey.js.
+let renderJourneyViewCallback = null;
+export function registerRenderJourneyView(fn) { renderJourneyViewCallback = fn; }
 const MAPTILER_KEY = 'cFkDNINBrduwymf4YJRx';
 const MAP_STYLES = {
   outdoor: `https://api.maptiler.com/maps/outdoor-v2/style.json?key=${MAPTILER_KEY}`,
   satellite: `https://api.maptiler.com/maps/hybrid/style.json?key=${MAPTILER_KEY}`
 };
 
-const PROVINCE_KINGDOM = {
+export const PROVINCE_KINGDOM = {
   'Bingzhou': 'wei', 'Jizhou': 'wei', 'Qingzhou': 'wei',
   'Yanzhou': 'wei', 'Yuzhou': 'wei', 'Youzhou': 'wei',
   'Liangzhou': 'wei', 'Sili': 'wei', 'Yongzhou': 'wei',
   'Xuzhou': 'wei', 'Jingzhou (Wei)': 'wei', 'Yangzhou (Wei)': 'wei',
   'Yizhou (North)': 'shu', 'Yizhou (South)': 'shu',
   'Jiaozhou': 'wu', 'Jingzhou (Wu)': 'wu', 'Yangzhou (Wu)': 'wu',
+  'Xiyu': 'wei', // Western Regions — under Wei's protectorate
 };
 
 const KINGDOM_FILL = {
@@ -26,7 +36,7 @@ const KINGDOM_FILL = {
   unknown: 'rgba(120,120,120,0.05)'
 };
 
-const KINGDOM_LINE = {
+export const KINGDOM_LINE = {
   wei: '#4b6f9f',
   shu: '#2f8a76',
   wu: '#C86464',
@@ -49,24 +59,24 @@ const KINGDOM_LABEL = {
 
 const UI_TEXT = {
   en: {
-    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery', tributary: 'Tributary Tribes', counties: 'Counties', commanderies: 'Commanderies', type: 'Type', region: 'Region', biography: 'Biography', previousPerson: 'Previous person', nextPerson: 'Next person', exitJourney: 'Exit journey',
+    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery', tributary: 'Tributary State', island: 'Island', counties: 'Counties', commanderies: 'Commanderies', type: 'Type', region: 'Region', biography: 'Biography', previousPerson: 'Previous person', nextPerson: 'Next person', exitJourney: 'Exit journey', hometown: 'Hometown', dateUnknown: 'Unknown', uncertainYearNote: 'Year is uncertain or approximate', connectionsWeb: 'Connections', titlesLabel: 'Titles',
     kingdomLabels: { wei: 'Wei', shu: 'Shu', wu: 'Wu', unknown: '' },
     typeLabels: { 'Provincial Seat': 'Provincial Seat', 'Commandery Seat': 'Commandery Seat', 'County Seat': 'County Seat', 'Military Pass': 'Military Pass', Landmark: 'Landmark', Others: 'Others' }
   },
   'zh-hant': {
-    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣屬部落', counties: '轄縣數', commanderies: '轄郡數', type: '類型', region: '政區', biography: '傳記', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生軌跡',
+    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡', tributary: '藩屬國', island: '島嶼', counties: '轄縣數', commanderies: '轄郡數', type: '類型', region: '政區', biography: '傳記', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生軌跡', hometown: '籍貫', dateUnknown: '不詳', uncertainYearNote: '年份不確定或為推算', connectionsWeb: '人物關係', titlesLabel: '官爵',
     kingdomLabels: { wei: '魏', shu: '蜀', wu: '吳', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '縣治', 'Military Pass': '關隘', Landmark: '地標', Others: '其他' }
   },
   'zh-hans': {
-    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡', tributary: '臣属部落', counties: '辖县数', commanderies: '辖郡数', type: '类型', region: '政区', biography: '传记', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生轨迹',
+    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡', tributary: '藩属国', island: '岛屿', counties: '辖县数', commanderies: '辖郡数', type: '类型', region: '政区', biography: '传记', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生轨迹', hometown: '籍贯', dateUnknown: '不详', uncertainYearNote: '年份不确定或为推算', connectionsWeb: '人物关系', titlesLabel: '官爵',
     kingdomLabels: { wei: '魏', shu: '蜀', wu: '吴', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '县治', 'Military Pass': '关隘', Landmark: '地标', Others: '其他' }
   }
 };
 
-let currentLang = 'en';
-let uiText = UI_TEXT.en;
+export let currentLang = 'en';
+export let uiText = UI_TEXT.en;
 
 function configureLocale(options = {}) {
   currentLang = options.lang || document.documentElement.lang || 'en';
@@ -76,7 +86,7 @@ function configureLocale(options = {}) {
   Object.assign(KINGDOM_LABEL, uiText.kingdomLabels);
 }
 
-function isChineseMap() {
+export function isChineseMap() {
   return currentLang === 'zh-hant' || currentLang === 'zh-hans';
 }
 
@@ -92,6 +102,10 @@ const DETAIL_SETTLEMENT_ZOOM = 7.5;
 
 const PROVINCE_LAYERS = ['province-fill', 'province-line', 'commandery-line'];
 const YELLOW_RIVER_LAYERS = ['yellow-river-old-course-halo', 'yellow-river-old-course'];
+// Western Regions (西域) tributary states — a standalone overlay from
+// Xiyu.json. Always displayed (no toggle); rendered in Wei's colours since
+// the region was under Wei's Western Regions protectorate.
+const XIYU_LAYERS = ['xiyu-fill', 'xiyu-line', 'xiyu-label'];
 const ARCHIVE_LAYERS = [
   'towns-others-label',
   'towns-others',
@@ -106,11 +120,12 @@ const ARCHIVE_LAYERS = [
   'towns-provincial-label',
   'towns-provincial',
   ...YELLOW_RIVER_LAYERS,
+  ...XIYU_LAYERS,
   ...PROVINCE_LAYERS
 ];
-const ARCHIVE_SOURCES = ['towns', 'provinces', 'commanderies', 'yellow-river-old-course'];
+const ARCHIVE_SOURCES = ['towns', 'provinces', 'commanderies', 'yellow-river-old-course', 'xiyu'];
 const WEB_MERCATOR_RADIUS = 6378137;
-const FULL_EXTENT_PADDING = { top: 56, right: 56, bottom: 56, left: 56 };
+export const FULL_EXTENT_PADDING = { top: 56, right: 56, bottom: 56, left: 56 };
 
 const TOWN_TYPES = {
   provincial: 'provincial',
@@ -122,9 +137,9 @@ const TOWN_TYPES = {
 };
 
 // STATE 
-let map = null;
+export let map = null;
 let mapLoaded = false;
-let mapReady = false;
+export let mapReady = false;
 let showProvinces = true;
 let showLabels = false;
 let showYellowRiverOldCourse = true;
@@ -132,14 +147,19 @@ let currentStyle = 'outdoor';
 let provincesGeoJSONCache = null;
 let commanderiesGeoJSONCache = null;
 let yellowRiverOldCourseCache = null;
+let xiyuCache = null;
+let xiyuRawFeatures = []; // 3857 originals, kept for on-click highlight
+let xiyuInteractionsWired = false;
+let commanderyInteractionsWired = false;
 let baseMapModernLayers = [];
-let allTowns = [];
+export let allTowns = [];
 let pendingFlyTo = null;
 let pendingJourney = null; // { data } — deferred until map is ready, same pattern as pendingFlyTo
-let currentJourneyId = null;
-let currentJourneyOverviews = [];
-let currentJourneyPersonIndex = 0;
-let journeyMarkers = [];
+// journey.js sets this through the setter (rather than importing and
+// reassigning the variable directly, which ES modules don't allow) since
+// showJourney lives there but the map-ready consumption logic that reads
+// it stays here in initInteractiveMap.
+export function setPendingJourney(value) { pendingJourney = value; }
 let togglesWired = false;
 let styleButtonsWired = false;
 let townInteractionsWired = false;
@@ -229,7 +249,7 @@ function firstCoordinate(coords) {
   return firstCoordinate(coords[0]);
 }
 
-function convertGeometryToLngLat(geometry, shouldConvert) {
+export function convertGeometryToLngLat(geometry, shouldConvert) {
   if (!shouldConvert || !geometry) return geometry;
 
   if (geometry.type === 'GeometryCollection') {
@@ -269,7 +289,7 @@ async function fetchTowns() {
 // Water bodies (rivers/lakes) are stored in EPSG:3857, same as provinces.
 // They are NEVER added as a permanent map layer — only fetched for search
 // matching, and rendered on-demand as a temporary highlight.
-const WATER_BODIES_ARE_WEB_MERCATOR = true;
+export const WATER_BODIES_ARE_WEB_MERCATOR = true;
 let allWaterBodiesCache = null;
 let waterBodiesPromise = null;
 
@@ -320,6 +340,95 @@ async function fetchYellowRiverOldCourse() {
     type: 'FeatureCollection',
     features
   };
+}
+
+// Standard area-weighted polygon centroid (shoelace-formula centroid) of
+// just the outer ring - holes are small relative to these shapes and
+// aren't worth the extra complexity for label placement purposes. Falls
+// back to a simple vertex average for degenerate (near-zero-area) rings,
+// since the area-weighted formula divides by area and would blow up.
+function computeRingCentroid(ring) {
+  let area = 0, cx = 0, cy = 0;
+  for (let i = 0; i < ring.length - 1; i++) {
+    const [x0, y0] = ring[i];
+    const [x1, y1] = ring[i + 1];
+    const cross = x0 * y1 - x1 * y0;
+    area += cross;
+    cx += (x0 + x1) * cross;
+    cy += (y0 + y1) * cross;
+  }
+  area *= 0.5;
+  if (Math.abs(area) < 1e-9) {
+    const n = ring.length;
+    const avg = ring.reduce((acc, [x, y]) => [acc[0] + x / n, acc[1] + y / n], [0, 0]);
+    return avg;
+  }
+  return [cx / (6 * area), cy / (6 * area)];
+}
+
+// Outer ring is whichever ring in the Polygon/MultiPolygon has the
+// largest bounding-box span - a reasonable proxy for "largest part" that
+// avoids needing true polygon-area comparison across multiple parts.
+function computeFeatureLabelPoint(geometry) {
+  const polygons = geometry.type === 'MultiPolygon' ? geometry.coordinates : [geometry.coordinates];
+  let best = null, bestSpan = -Infinity;
+  for (const poly of polygons) {
+    const outer = poly[0];
+    if (!outer || outer.length < 3) continue;
+    const xs = outer.map(p => p[0]), ys = outer.map(p => p[1]);
+    const span = (Math.max(...xs) - Math.min(...xs)) + (Math.max(...ys) - Math.min(...ys));
+    if (span > bestSpan) { bestSpan = span; best = outer; }
+  }
+  return best ? computeRingCentroid(best) : null;
+}
+
+// Western Regions tributary polygons (Xiyu.json). Stored in EPSG:3857 like
+// the province data, so the same web-mercator detection/conversion applies.
+// Every feature is level 'tributary' with a baked-in `kingdom` field.
+async function fetchXiyu() {
+  try {
+    const raw = await fetch(url('/mapbase/Xiyu.json')).then(r => r.json());
+    xiyuRawFeatures = raw.features ?? [];
+    const shouldConvert = provinceDataUsesWebMercator(raw);
+
+    const features = xiyuRawFeatures.map(f => ({
+      ...f,
+      geometry: convertGeometryToLngLat(f.geometry, shouldConvert),
+      properties: {
+        ...f.properties,
+        kingdom: f.properties?.kingdom ?? PROVINCE_KINGDOM[f.properties?.Prov_EN] ?? 'wei'
+      }
+    }));
+
+    // A separate point source for labels, one feature per state, computed
+    // once here rather than per-render - this is what actually fixes the
+    // duplicate-label bug: a polygon symbol source gets a label position
+    // computed independently per map tile, so once a state's shape spans
+    // multiple tiles (which starts happening as you zoom in), MapLibre
+    // renders one label per tile for the same state. A point source has
+    // no such ambiguity - each state is exactly one point, in exactly one
+    // tile, so exactly one label.
+    const labelFeatures = features
+      .map(f => {
+        const point = computeFeatureLabelPoint(f.geometry);
+        return point ? { type: 'Feature', properties: f.properties, geometry: { type: 'Point', coordinates: point } } : null;
+      })
+      .filter(Boolean);
+
+    return {
+      polygons: { type: 'FeatureCollection', features },
+      labels: { type: 'FeatureCollection', features: labelFeatures }
+    };
+  } catch (e) {
+    console.warn('Could not load Western Regions (Xiyu) data:', e);
+    return { polygons: { type: 'FeatureCollection', features: [] }, labels: { type: 'FeatureCollection', features: [] } };
+  }
+}
+
+function xiyuLabelField() {
+  if (currentLang === 'zh-hans') return ['coalesce', ['get', 'Name_CHS'], ['get', 'Name_CH'], ['get', 'Name_EN']];
+  if (currentLang === 'zh-hant') return ['coalesce', ['get', 'Name_CH'], ['get', 'Name_CHS'], ['get', 'Name_EN']];
+  return ['coalesce', ['get', 'Name_EN'], ['get', 'Name_CH']];
 }
 
 function normaliseTownType(type) {
@@ -510,7 +619,7 @@ function orderSettlementLayersByHierarchy() {
   });
 }
 
-function escapeHtml(value) {
+export function escapeHtml(value) {
   return String(value ?? '')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -553,9 +662,13 @@ function formatAnnotation(annotation) {
   // Chinese gets 治所 appended, English gets "Seat of" prefixed — except
   // when the raw text contains 新城 (a "New City/Town" designation,
   // which isn't a seat-of-government record and shouldn't be phrased as
-  // one). Guards against double-wrapping in case the source text already
-  // has the phrasing baked in from the previous convention.
-  if (raw.includes('新城')) {
+  // one), or when it names a Xiyu tributary state directly (ending in
+  // "State"/國 — these are the state's own name, not a governance seat
+  // within it, so "Seat of X State"/"X國治所" would misrepresent them).
+  // Guards against double-wrapping in case the source text already has
+  // the phrasing baked in from the previous convention.
+  const isTributaryStateName = /state$/i.test(english) || /[國国]$/.test(chinese);
+  if (raw.includes('新城') || isTributaryStateName) {
     return {
       english: english || '',
       chinese: chinese || ''
@@ -599,15 +712,20 @@ function formatModernPlace(town) {
 }
 
 function formatHistoricalRegion(town) {
+  // Xiyu's tributary states aren't actual commanderies (direct Wei
+  // administration) — never append 郡 to them, regardless of whether
+  // their name happens to contain 国/國.
+  const isXiyu = town.Prov_EN === 'Xiyu';
+
   if (currentLang === 'zh-hans') {
     const commandery = town.Comm_CHS || town.Comm_CH || town.Comm_EN || '';
-    const commanderySuffix = commandery && !/[国國]/.test(commandery) ? '郡' : '';
+    const commanderySuffix = commandery && !isXiyu && !/[国國]/.test(commandery) ? '郡' : '';
     return commandery ? `${commandery}${commanderySuffix}` : '';
   }
 
   if (currentLang === 'zh-hant') {
     const commandery = town.Comm_CH || town.Comm_CHS || town.Comm_EN || '';
-    const commanderySuffix = commandery && !/[国國]/.test(commandery) ? '郡' : '';
+    const commanderySuffix = commandery && !isXiyu && !/[国國]/.test(commandery) ? '郡' : '';
     return commandery ? `${commandery}${commanderySuffix}` : '';
   }
 
@@ -730,14 +848,24 @@ const TOWN_DIM_LAYERS = [
   { id: 'towns-others-label', prop: 'text-opacity', normal: 1 }
 ];
 
-function dimTownsOutsideRegion(propName, value) {
+function dimTownsOutsideRegion(propName, value, secondaryPropName, secondaryValue) {
   if (!map || !value) return;
+  // Some commandery names are reused across kingdoms (Jiangxia under both
+  // Jingzhou (Wei) and Jingzhou (Wu); Lujiang under both Yangzhou (Wei) and
+  // Yangzhou (Wu)) - matching on Comm_EN alone would light up both
+  // kingdoms' towns together. When a secondary property/value pair is
+  // given (used for the Comm_EN case, since Prov_EN values already
+  // disambiguate themselves via the "(Wei)"/"(Wu)" suffix and don't need
+  // this), require both to match.
+  const matchExpr = secondaryPropName
+    ? ['all', ['==', ['get', propName], value], ['==', ['get', secondaryPropName], secondaryValue]]
+    : ['==', ['get', propName], value];
   TOWN_DIM_LAYERS.forEach(({ id, prop, normal }) => {
     if (!map.getLayer(id)) return;
-    map.setPaintProperty(id, prop, ['case', ['==', ['get', propName], value], normal, TOWN_DIM_OPACITY]);
+    map.setPaintProperty(id, prop, ['case', matchExpr, normal, TOWN_DIM_OPACITY]);
   });
   if (map.getLayer('towns-county')) {
-    map.setPaintProperty('towns-county', 'circle-stroke-opacity', ['case', ['==', ['get', propName], value], 0.95, TOWN_DIM_OPACITY]);
+    map.setPaintProperty('towns-county', 'circle-stroke-opacity', ['case', matchExpr, 0.95, TOWN_DIM_OPACITY]);
   }
 }
 
@@ -787,9 +915,19 @@ async function highlightTownContext(town) {
   if (!town.Comm_EN) return;
 
   const adminFeatures = await fetchAdminBoundaries();
-  const commandery = adminFeatures.find(f => f.properties?.level === 'commandery' && f.properties?.Name_EN === town.Comm_EN);
+  // Some commandery names are reused across kingdoms (e.g. Jiangxia exists
+  // under both Jingzhou (Wei) and Jingzhou (Wu); Lujiang under both
+  // Yangzhou (Wei) and Yangzhou (Wu)) - matching on Name_EN alone would
+  // silently grab whichever one happens to come first in adminFeatures,
+  // regardless of which the clicked town actually belongs to. Every town
+  // already carries its own disambiguated Prov_EN (e.g. "Jingzhou (Wei)"),
+  // and every commandery feature carries its parent province's Prov_EN, so
+  // match on both. Fall back to name-only if that stricter match somehow
+  // finds nothing, rather than showing no commandery at all.
+  const commandery = adminFeatures.find(f => f.properties?.level === 'commandery' && f.properties?.Name_EN === town.Comm_EN && f.properties?.Prov_EN === town.Prov_EN)
+    ?? adminFeatures.find(f => f.properties?.level === 'commandery' && f.properties?.Name_EN === town.Comm_EN);
 
-  dimTownsOutsideRegion('Comm_EN', town.Comm_EN);
+  dimTownsOutsideRegion('Comm_EN', town.Comm_EN, 'Prov_EN', town.Prov_EN);
 
   if (commandery?.geometry) {
     const convertedGeometry = convertGeometryToLngLat(commandery.geometry, WATER_BODIES_ARE_WEB_MERCATOR);
@@ -830,7 +968,7 @@ function showMobileTownDetail(town) {
   sheet.querySelector('.imap-town-close')?.addEventListener('click', hideMobileTownDetail);
 }
 
-function openTownDetail(town, fallbackLngLat, { keepJourney = false } = {}) {
+export function openTownDetail(town, fallbackLngLat, { keepJourney = false } = {}) {
   if (!town) return;
 
   if (keepJourney) {
@@ -922,459 +1060,6 @@ function fitAllTowns() {
 // journey are not yet supported here since they don't have a single
 // point coordinate to plot.
 
-function clearJourneyMarkers() {
-  journeyMarkers.forEach(m => m.remove());
-  journeyMarkers = [];
-}
-
-function clearJourneyBoundaries() {
-  if (!map) return;
-  if (map.getLayer(JOURNEY_BOUNDARY_LAYER)) map.removeLayer(JOURNEY_BOUNDARY_LAYER);
-  if (map.getSource(JOURNEY_BOUNDARY_SOURCE)) map.removeSource(JOURNEY_BOUNDARY_SOURCE);
-}
-
-// Bold, persistent border for every admin boundary / water body referenced
-// in the current journey — deliberately BLACK (not the gold used by the
-// single-select search highlight) so the two systems read as visually
-// distinct: gold means "this is the one thing you searched for", black
-// means "this is part of the journey overview".
-function renderJourneyBoundaryLayer(featureCollection, { lineWidth, lineOpacity = 1, lineDasharray } = {}) {
-  clearJourneyBoundaries();
-  if (!featureCollection.features.length) return;
-
-  map.addSource(JOURNEY_BOUNDARY_SOURCE, { type: 'geojson', data: featureCollection });
-
-  const paint = {
-    'line-color': '#111111',
-    'line-width': lineWidth || ['interpolate', ['linear'], ['zoom'], 3, 6, 8, 9, 12, 13],
-    'line-opacity': lineOpacity
-  };
-  if (lineDasharray) paint['line-dasharray'] = lineDasharray;
-
-  map.addLayer({
-    id: JOURNEY_BOUNDARY_LAYER,
-    type: 'line',
-    source: JOURNEY_BOUNDARY_SOURCE,
-    layout: { 'line-cap': 'round', 'line-join': 'round' },
-    paint
-  });
-}
-
-async function fetchJourney(journeyId) {
-  if (!journeyId) return null;
-  try {
-    const res = await fetch(url(`/mapbase/journeys/${journeyId}.json`));
-    if (!res.ok) {
-      console.warn(`[journey] fetch failed for "${journeyId}": ${res.status} ${res.statusText}`);
-      return null;
-    }
-    return await res.json();
-  } catch (err) {
-    console.warn(`[journey] fetch threw for "${journeyId}":`, err);
-    return null;
-  }
-}
-
-// JOURNEY OVERVIEW PANEL ──────────────────────────────────────
-// Renders the currently-selected person (currentJourneyOverviews[
-// currentJourneyPersonIndex]) into #imap-journey-panel — name, dates,
-// and a chronological stop timeline. map-overall.astro owns the actual
-// toggle/show-hide chrome around this panel; this only fills its content.
-
-function pickZh(field) {
-  if (!field) return '';
-  if (currentLang === 'zh-hans') return field.zhs || field.zht || '';
-  return field.zht || field.zhs || '';
-}
-
-// journeyOverviews[].person is a single string, not a {en,zht,zhs}
-// object — there's currently no English name field anywhere in this
-// data. Chinese convention wraps a courtesy name in full-width
-// parentheses after the given name (e.g. "李典（曼成）"), so that's
-// parsed apart here; a bare name with no parentheses just has no
-// courtesy name to show.
-function parsePersonString(raw) {
-  const str = String(raw ?? '').trim();
-  const match = str.match(/^(.+?)(?:（([^）]+)）)?$/);
-  return {
-    name: match?.[1]?.trim() || str,
-    courtesyName: match?.[2]?.trim() || ''
-  };
-}
-
-// born/died are {era: {en,zht,zhs}, year} — year may be a number, a
-// string like "180?", or absent/null when genuinely unknown.
-const UNKNOWN_ERA_VALUES = new Set(['unknown', '不詳', '不详']);
-
-function formatJourneyEraYear(entry) {
-  if (!entry) return null;
-  const year = entry.year != null ? String(entry.year) : '';
-  let era = isChineseMap() ? pickZh(entry.era) : (entry.era?.en || '');
-  if (UNKNOWN_ERA_VALUES.has(era.trim().toLowerCase())) era = '';
-  if (!year && !era) return null;
-  return { year, era };
-}
-
-// A stop's location can be a single {en,zht,zhs} object or an array of
-// them — each one becomes its own clickable span (data-journey-loc holds
-// a JSON-encoded resolved entry so the click handler, wired up after
-// this HTML is inserted, knows what to open), joined by " / " when there
-// are multiple.
-function formatJourneyLocation(location, resolvedLocations) {
-  const locs = Array.isArray(location) ? location : [location];
-  const resolved = resolvedLocations ?? [];
-  return locs
-    .filter(Boolean)
-    .map((l, i) => {
-      const label = [l.en, pickZh(l)].filter(Boolean).join(' ');
-      const entry = resolved[i];
-      if (!label) return '';
-      if (!entry) return `<div>${escapeHtml(label)}</div>`;
-      return `<div class="imap-journey-loc-link" data-journey-loc='${escapeHtml(JSON.stringify(entry))}'>${escapeHtml(label)}</div>`;
-    })
-    .filter(Boolean)
-    .join('');
-}
-
-function formatJourneyPosition(positionLinks) {
-  if (!positionLinks?.length) return '';
-  return positionLinks
-    .filter(seg => seg.en)
-    .map(seg => {
-      if (!seg.url) return escapeHtml(seg.en);
-      return `<a href="${url(seg.url)}" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> ${escapeHtml(seg.en)}</a>`;
-    })
-    .join(', ');
-}
-
-// Resolves a journey stop's town entry back to the full town record, so
-// clicking it can open the same detail cards a map pin click would.
-function findTownForResolvedEntry(entry) {
-  if (!entry || entry.kind !== 'town') return null;
-  return allTowns.find(t => Number(t?.Latitude) === entry.lat && Number(t?.Longitude) === entry.lng) ?? null;
-}
-
-function renderJourneyStopRow(stop) {
-  const yearEra = formatJourneyEraYear(stop);
-  const location = formatJourneyLocation(stop.location, stop.resolvedLocations);
-  const position = formatJourneyPosition(stop.positionLinks);
-  if (!location && !position) return '';
-
-  return `
-    <div class="imap-journey-stop">
-      <div class="imap-journey-stop-when">
-        <div class="imap-journey-stop-year">${escapeHtml(yearEra?.year || '?')}</div>
-        ${yearEra?.era ? `<div class="imap-journey-stop-era">${escapeHtml(yearEra.era)}</div>` : ''}
-      </div>
-      <div class="imap-journey-stop-where">
-        ${location ? `<div class="imap-journey-stop-location">${location}</div>` : ''}
-        ${position ? `<div class="imap-journey-stop-position">${position}</div>` : ''}
-      </div>
-    </div>
-  `;
-}
-
-// Prefers the explicit name/courtesyName fields (added directly to the
-// chapter JSON) when present — giving a proper EN name alongside the
-// Chinese, which the bare person ID string alone can't provide. Falls
-// back to parsing person (Chinese-only, no EN available that way) for
-// any chapter that hasn't had these fields added yet.
-function resolvePersonDisplay(person) {
-  if (person.name) {
-    return {
-      nameEn: person.name.en || '',
-      nameZh: pickZh(person.name),
-      courtesyEn: person.courtesyName?.en || '',
-      courtesyZh: pickZh(person.courtesyName)
-    };
-  }
-  const parsed = parsePersonString(person.person);
-  return {
-    nameEn: '',
-    nameZh: parsed.name,
-    courtesyEn: '',
-    courtesyZh: parsed.courtesyName
-  };
-}
-
-function showJourneyPanel() {
-  const panel = document.getElementById('imap-journey-panel');
-  if (!panel || !currentJourneyOverviews.length) return;
-
-  const person = currentJourneyOverviews[currentJourneyPersonIndex];
-
-  // Only this person's own locations, not everyone's combined — a
-  // location shared with another person in the same journey (e.g. a
-  // family estate) still shows, since it's tagged with every person
-  // whose stops include it.
-  const personPins = currentJourneyPins.filter(pin => pin.persons?.includes(person.person));
-  drawJourneyItems(personPins);
-
-  const { nameEn, nameZh, courtesyEn, courtesyZh } = resolvePersonDisplay(person);
-  const born = formatJourneyEraYear(person.born);
-  const died = formatJourneyEraYear(person.died);
-  const hasMultiplePeople = currentJourneyOverviews.length > 1;
-
-  const bioUrl = currentJourneyId ? url(`/translations/sanguozhi/${currentJourneyId}`) : null;
-
-  panel.innerHTML = `
-    <div class="imap-journey-header">
-      ${hasMultiplePeople ? `<button class="imap-journey-arrow" id="imap-journey-prev" type="button" aria-label="${escapeHtml(uiText.previousPerson)}"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>` : ''}
-      <div class="imap-journey-header-info">
-        <div class="imap-journey-name-row">
-          <span class="imap-journey-name">
-            ${escapeHtml(nameEn || nameZh)}
-            ${nameEn && nameZh ? `<span class="imap-journey-name-zh">${escapeHtml(nameZh)}</span>` : ''}
-          </span>
-          ${bioUrl ? `<a class="imap-journey-bio-link" href="${bioUrl}" target="_blank" rel="noopener"><i class="ti ti-external-link" aria-hidden="true"></i> ${escapeHtml(uiText.biography)}</a>` : ''}
-        </div>
-        ${(courtesyEn || courtesyZh) ? `
-          <div class="imap-journey-courtesy">
-            ${escapeHtml(courtesyEn || courtesyZh)}
-            ${courtesyEn && courtesyZh ? `<span class="imap-journey-courtesy-zh">${escapeHtml(courtesyZh)}</span>` : ''}
-          </div>
-        ` : ''}
-        ${(born || died) ? `
-          <div class="imap-journey-dates">
-            <div class="imap-journey-dates-num">${escapeHtml(born?.year || '?')} &ndash; ${escapeHtml(died?.year || '?')}</div>
-            ${(born?.era || died?.era) ? `<div class="imap-journey-dates-era">${escapeHtml(born?.era || '?')} &ndash; ${escapeHtml(died?.era || '?')}</div>` : ''}
-          </div>
-        ` : ''}
-      </div>
-      ${hasMultiplePeople ? `<button class="imap-journey-arrow" id="imap-journey-next" type="button" aria-label="${escapeHtml(uiText.nextPerson)}"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>` : ''}
-    </div>
-    <div class="imap-journey-timeline">
-      ${(person.stops ?? []).map(renderJourneyStopRow).join('')}
-    </div>
-  `;
-
-  panel.querySelector('#imap-journey-prev')?.addEventListener('click', (e) => { e.stopPropagation(); switchJourneyPerson(-1); });
-  panel.querySelector('#imap-journey-next')?.addEventListener('click', (e) => { e.stopPropagation(); switchJourneyPerson(1); });
-
-  panel.querySelectorAll('.imap-journey-loc-link').forEach(el => {
-    el.addEventListener('click', () => {
-      let entry;
-      try {
-        entry = JSON.parse(el.dataset.journeyLoc);
-      } catch {
-        return;
-      }
-      if (entry.kind === 'town') {
-        const town = findTownForResolvedEntry(entry);
-        if (town) openTownDetail(town, [entry.lng, entry.lat], { keepJourney: true });
-      } else if (entry.kind === 'admin') {
-        showAdminBoundaryById(entry.id);
-      } else if (entry.kind === 'water') {
-        showWaterBodyById(entry.id);
-      }
-    });
-  });
-
-  const trigger = document.getElementById('imap-journey-toggle');
-  if (trigger) {
-    trigger.style.display = '';
-    trigger.setAttribute('aria-expanded', 'true');
-  }
-
-  const journeyDropdown = document.getElementById('imap-journey-dropdown');
-  if (journeyDropdown) {
-    journeyDropdown.classList.add('imap-journey-has-data');
-    journeyDropdown.style.display = 'block';
-  }
-
-  const exitBtn = document.getElementById('imap-journey-exit');
-  if (exitBtn) exitBtn.innerHTML = `<i class="ti ti-logout" aria-hidden="true"></i> ${escapeHtml(uiText.exitJourney)}`;
-}
-
-function switchJourneyPerson(delta) {
-  if (!currentJourneyOverviews.length) return;
-  currentJourneyPersonIndex = (currentJourneyPersonIndex + delta + currentJourneyOverviews.length) % currentJourneyOverviews.length;
-  showJourneyPanel();
-}
-
-function hideJourneyPanel() {
-  const panel = document.getElementById('imap-journey-panel');
-  if (panel) panel.innerHTML = '';
-  const trigger = document.getElementById('imap-journey-toggle');
-  if (trigger) {
-    trigger.style.display = 'none';
-    trigger.setAttribute('aria-expanded', 'false');
-  }
-  const journeyDropdown = document.getElementById('imap-journey-dropdown');
-  if (journeyDropdown) {
-    journeyDropdown.classList.remove('imap-journey-has-data');
-    journeyDropdown.style.display = 'none';
-  }
-  currentJourneyOverviews = [];
-  currentJourneyPersonIndex = 0;
-  currentJourneyPins = [];
-}
-
-// Leaves journey mode entirely — clears the ?journey= URL param (via
-// history.replaceState, no reload), the pins/boundaries, and the panel.
-// Camera position is left untouched deliberately, so exiting doesn't
-// disrupt wherever the reader currently is on the map.
-export function exitJourneyMode() {
-  currentJourneyId = null;
-  const params = new URLSearchParams(window.location.search);
-  params.delete('journey');
-  const newSearch = params.toString();
-  const newUrl = window.location.pathname + (newSearch ? `?${newSearch}` : '') + window.location.hash;
-  window.history.replaceState({}, '', newUrl);
-
-  clearJourneyMarkers();
-  clearJourneyBoundaries();
-  hideJourneyPanel();
-}
-
-
-let currentJourneyPins = [];
-
-// Draws pins + admin/water boundaries for the given items and fits the
-// map to their extent — extracted from renderJourneyView so it can also
-// be called with a filtered subset (just the currently-active person's
-// own locations) whenever the panel switches person.
-async function drawJourneyItems(items) {
-  clearJourneyMarkers();
-  clearJourneyBoundaries();
-
-  if (!Array.isArray(items) || !items.length) return;
-
-  const bounds = new maplibregl.LngLatBounds();
-  let hasBounds = false;
-
-  // ── Town pins — a pure overview, every place is equal; click any of
-  // them to open its own detail popup. ──
-  items.forEach(item => {
-    if (item?.kind !== 'town') return;
-    const itemLat = Number(item?.lat);
-    const itemLng = Number(item?.lng);
-    if (!Number.isFinite(itemLat) || !Number.isFinite(itemLng)) return;
-
-    const el = document.createElement('div');
-    el.className = 'imap-journey-pin';
-    // Classic teardrop map-pin silhouette — an SVG rather than a CSS
-    // shape hack, so the point is pixel-precise for anchoring. Sized
-    // 26x34 so the visual tip sits exactly at (13, 34), matching the
-    // anchor:'bottom' below.
-    el.innerHTML = `
-      <svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13 0C5.8 0 0 5.8 0 13c0 9.5 13 21 13 21s13-11.5 13-21C26 5.8 20.2 0 13 0z" fill="#111111" stroke="#ffffff" stroke-width="1.5"/>
-        <circle cx="13" cy="13" r="5" fill="#ffffff"/>
-      </svg>
-    `;
-
-    // Resolve the full town record so clicking any pin opens its own
-    // detail popup, without clearing the rest of the journey pins.
-    const pinTown = allTowns.find(t => {
-      if (Number(t?.Latitude) !== itemLat || Number(t?.Longitude) !== itemLng) return false;
-      if (!item?.name) return true;
-      return [t.Town_EN, t.Town_CH, t.Town_CHS].some(
-        value => String(value ?? '').toLowerCase() === String(item.name).toLowerCase()
-      );
-    }) ?? null;
-
-    if (pinTown) {
-      el.addEventListener('click', (e) => {
-        e.stopPropagation();
-        openTownDetail(pinTown, [itemLng, itemLat], { keepJourney: true });
-      });
-    }
-
-    const marker = new maplibregl.Marker({ element: el, anchor: 'bottom' })
-      .setLngLat([itemLng, itemLat])
-      .addTo(map);
-
-    journeyMarkers.push(marker);
-    bounds.extend([itemLng, itemLat]);
-    hasBounds = true;
-  });
-
-  // ── Admin boundaries / water bodies — bold border, no pin (they're
-  // areas/lines, not points) ──
-  const adminIds = items.filter(i => i?.kind === 'admin').map(i => Number(i.id));
-  const waterIds = items.filter(i => i?.kind === 'water').map(i => Number(i.id));
-
-  if (adminIds.length || waterIds.length) {
-    const [adminFeatures, waterFeatures] = await Promise.all([
-      adminIds.length ? fetchAdminBoundaries() : Promise.resolve([]),
-      waterIds.length ? fetchWaterBodies() : Promise.resolve([])
-    ]);
-
-    const matched = [
-      ...adminFeatures.filter(f => adminIds.includes(Number(f.properties?.id))),
-      ...waterFeatures.filter(f => waterIds.includes(Number(f.properties?.id)))
-    ];
-
-    const boundaryFeatures = matched.map(f => {
-      const convertedGeometry = convertGeometryToLngLat(f.geometry, WATER_BODIES_ARE_WEB_MERCATOR);
-      const geomBounds = computeGeometryBounds(convertedGeometry);
-      if (!geomBounds.isEmpty()) {
-        bounds.extend(geomBounds.getSouthWest());
-        bounds.extend(geomBounds.getNorthEast());
-        hasBounds = true;
-      }
-      return { type: 'Feature', properties: f.properties || {}, geometry: convertedGeometry };
-    });
-
-    renderJourneyBoundaryLayer({ type: 'FeatureCollection', features: boundaryFeatures }, {
-      lineWidth: ['interpolate', ['linear'], ['zoom'], 3, 2.5, 8, 4, 12, 5.5],
-      lineDasharray: [0.3, 1.5]
-    });
-  }
-
-  if (hasBounds) {
-    map.fitBounds(bounds, {
-      padding: FULL_EXTENT_PADDING,
-      duration: 900,
-      maxZoom: 9
-    });
-  }
-}
-
-async function renderJourneyView(journeyData) {
-  if (!map || !mapReady) return;
-
-  // Clears any previous popup/highlight (but not journey state, which is
-  // now independent — see clearWaterBodyHighlight's own comment).
-  clearWaterBodyHighlight();
-  // Explicitly clear any PREVIOUS journey's own pins before drawing this
-  // one's — e.g. navigating from one chapter's "view life journey" link
-  // straight to another's, without an exit in between.
-  clearJourneyMarkers();
-
-  const items = journeyData?.pins;
-  if (!Array.isArray(items) || !items.length) return;
-
-  currentJourneyPins = items;
-  currentJourneyOverviews = journeyData?.journeyOverviews ?? [];
-  currentJourneyPersonIndex = 0;
-  showJourneyPanel();
-}
-
-export async function showJourney(journeyId) {
-  if (!journeyId) return;
-  currentJourneyId = journeyId;
-  const data = await fetchJourney(journeyId);
-  if (!data || !data.pins?.length) {
-    if (data && Array.isArray(data)) {
-      console.warn(
-        `[journey] "${journeyId}.json" is a bare array — this looks like it was built by an older version of build-journeys.mjs. ` +
-        `Re-run the script and redeploy the file; it should now be shaped { pins, journeyOverviews, relationships }.`
-      );
-    } else if (data) {
-      console.warn(`[journey] "${journeyId}.json" has no pins:`, data);
-    }
-    return;
-  }
-
-  if (map && mapReady) {
-    renderJourneyView(data);
-  } else {
-    // store for the load handler — same deferred pattern as pendingFlyTo
-    pendingJourney = { data };
-  }
-}
 
 class FitAllTownsControl {
   onAdd(mapInstance) {
@@ -1423,8 +1108,6 @@ const WATER_HIGHLIGHT_LAYERS = [
 // can reference several admin boundaries/water bodies simultaneously and
 // they should all stay bold-bordered together for the whole time the
 // journey view is showing.
-const JOURNEY_BOUNDARY_SOURCE = 'journey-boundary-highlight';
-const JOURNEY_BOUNDARY_LAYER = 'journey-boundary-casing';
 
 let currentWaterHighlightId = null;
 let pendingHighlight = null; // { kind: 'water' | 'admin', feature }
@@ -1471,7 +1154,7 @@ function extendBoundsWithCoords(bounds, coords) {
   if (Array.isArray(coords)) coords.forEach(c => extendBoundsWithCoords(bounds, c));
 }
 
-function computeGeometryBounds(geometry) {
+export function computeGeometryBounds(geometry) {
   const bounds = new maplibregl.LngLatBounds();
 
   if (geometry.type === 'GeometryCollection') {
@@ -1557,6 +1240,50 @@ function clearSearchResultPanel() {
   if (!panel || panel.innerHTML.trim() === '') return;
   panel.innerHTML = '';
   syncRightDockVisibility();
+}
+
+// Separate persistent layer for journey-view admin boundary / water body
+// borders. Defined here (not in journey.js) since interactive-map.js's
+// own clearRegionHighlight needs it too - keeping it here means
+// interactive-map.js never has to import anything back from journey.js
+// (see registerRenderJourneyView above for how the one other piece
+// journey.js needs to hand back, renderJourneyView, is wired up instead).
+export const JOURNEY_BOUNDARY_SOURCE = 'journey-boundary-highlight';
+export const JOURNEY_BOUNDARY_LAYER = 'journey-boundary-casing';
+
+export function clearJourneyBoundaries() {
+  if (!map) return;
+  if (map.getLayer(JOURNEY_BOUNDARY_LAYER)) map.removeLayer(JOURNEY_BOUNDARY_LAYER);
+  if (map.getSource(JOURNEY_BOUNDARY_SOURCE)) map.removeSource(JOURNEY_BOUNDARY_SOURCE);
+}
+
+// Bold, persistent border for every admin boundary / water body referenced
+// in the current journey — deliberately BLACK (not the gold used by the
+// single-select search highlight) so the two systems read as visually
+// distinct: gold means "this is the one thing you searched for", black
+// means "this is part of the journey overview". Also reused by this
+// file's own highlightTownContext for the single-commandery highlight on
+// a town click, and exported since journey.js needs it there too.
+export function renderJourneyBoundaryLayer(featureCollection, { lineWidth, lineOpacity = 1, lineDasharray } = {}) {
+  clearJourneyBoundaries();
+  if (!featureCollection.features.length) return;
+
+  map.addSource(JOURNEY_BOUNDARY_SOURCE, { type: 'geojson', data: featureCollection });
+
+  const paint = {
+    'line-color': '#111111',
+    'line-width': lineWidth || ['interpolate', ['linear'], ['zoom'], 3, 6, 8, 9, 12, 13],
+    'line-opacity': lineOpacity
+  };
+  if (lineDasharray) paint['line-dasharray'] = lineDasharray;
+
+  map.addLayer({
+    id: JOURNEY_BOUNDARY_LAYER,
+    type: 'line',
+    source: JOURNEY_BOUNDARY_SOURCE,
+    layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint
+  });
 }
 
 // Closes just the region/commandery side of the highlight — used by that
@@ -1733,6 +1460,7 @@ export async function showWaterBodyById(id) {
 // metropolitan area) follow the same convention already used for towns.
 function formatProvinceLabel(provEn) {
   if (!provEn) return '';
+  if (/^xiyu$/i.test(provEn)) return 'Western Regions';
   return /zhou/i.test(provEn)
     ? `${provEn.replace(/zhou/ig, '').trim()} Province`
     : `${provEn} (Capital Region)`;
@@ -1763,9 +1491,9 @@ function formatAdminParentName(props) {
 // || PROVINCE_KINGDOM[town.Prov_EN]) — a province looks itself up
 // directly, a commandery looks up its parent province. Tributaries
 // aren't administered territory and generally won't resolve to a kingdom.
-function getAdminKingdom(props) {
+export function getAdminKingdom(props) {
   if (!props) return 'unknown';
-  if (props.level === 'commandery' || props.level === 'tributary') {
+  if (props.level === 'commandery' || props.level === 'tributary' || props.level === 'island') {
     return PROVINCE_KINGDOM[props.Prov_EN] || 'unknown';
   }
   return PROVINCE_KINGDOM[props.Name_EN] || 'unknown';
@@ -1775,11 +1503,16 @@ function getAdminKingdom(props) {
 // Commandery Seat or Provincial Seat is itself administratively a
 // county (it's simply the county that also hosts a higher office), so
 // all three types count — not just settlements explicitly typed
-// "county".
-function countCountiesInCommandery(commEN) {
+// "county". Some commandery names are reused across kingdoms (Jiangxia
+// under both Jingzhou (Wei) and Jingzhou (Wu); Lujiang under both
+// Yangzhou (Wei) and Yangzhou (Wu)) — matching on commEN alone would
+// combine both kingdoms' towns into one count, so provEN is required
+// too, same disambiguation used when finding the commandery polygon
+// itself in highlightTownContext.
+function countCountiesInCommandery(commEN, provEN) {
   if (!commEN) return 0;
   const countyLevelTypes = new Set([TOWN_TYPES.county, TOWN_TYPES.commandery, TOWN_TYPES.provincial]);
-  return allTowns.filter(t => t.Comm_EN === commEN && countyLevelTypes.has(normaliseTownType(t.Type))).length;
+  return allTowns.filter(t => t.Comm_EN === commEN && t.Prov_EN === provEN && countyLevelTypes.has(normaliseTownType(t.Type))).length;
 }
 
 // Counts commandery-level admin boundaries whose Prov_EN matches this
@@ -1796,25 +1529,32 @@ function buildAdminBoundaryDetailHtml(props) {
   const subtitle = formatAdminBoundarySubtitle(props);
   const isCommandery = props?.level === 'commandery';
   const isTributary = props?.level === 'tributary';
-  const isProvince = !isCommandery && !isTributary;
+  // Not formally administered territory with its own sub-counties, same
+  // as a tributary - explicit check rather than falling through to
+  // isProvince by default, which is what silently misclassified this as
+  // a province before Zhuya Zhou (or any future non-commandery,
+  // non-tributary level) existed to expose the gap.
+  const isIsland = props?.level === 'island';
+  const isProvince = !isCommandery && !isTributary && !isIsland;
 
   let typeLabel;
   if (isCommandery) typeLabel = uiText.commandery;
   else if (isTributary) typeLabel = uiText.tributary;
+  else if (isIsland) typeLabel = uiText.island;
   else typeLabel = uiText.province;
 
   const kingdom = getAdminKingdom(props);
   const kingdomLabel = KINGDOM_LABEL[kingdom] || '';
 
-  // Tributaries aren't administered territory, so they keep the original
-  // "Province · Name" breadcrumb rather than the province/count fields
-  // that make sense for real administrative units.
-  const tributaryFamily = isTributary
+  // Tributaries and islands aren't administered territory, so they keep
+  // the original "Province · Name" breadcrumb rather than the
+  // province/count fields that make sense for real administrative units.
+  const tributaryFamily = (isTributary || isIsland)
     ? `${escapeHtml(formatAdminParentName(props))} · ${escapeHtml(name)}`
     : '';
 
   const provinceName = isCommandery ? formatAdminParentName(props) : '';
-  const countyCount = isCommandery ? countCountiesInCommandery(props.Name_EN) : null;
+  const countyCount = isCommandery ? countCountiesInCommandery(props.Name_EN, props.Prov_EN) : null;
   const commanderyCount = isProvince ? countCommanderiesInProvince(props.Name_EN) : null;
 
   return `
@@ -1842,8 +1582,16 @@ export function highlightAdminBoundaryFeature(feature) {
     { showFill: false, showLine: false }
   );
 
+  // Islands aren't administered territory with their own towns (Zhuya
+  // Zhou has none), so there's nothing meaningful to dim by name the way
+  // a real commandery's towns can be - skip it entirely rather than
+  // dimming every town on the map because none matched a name that was
+  // never a real Comm_EN in the first place.
+  if (feature.properties?.level === 'island') return;
+
   const propName = feature.properties?.level === 'province' ? 'Prov_EN' : 'Comm_EN';
-  dimTownsOutsideRegion(propName, feature.properties?.Name_EN);
+  const isCommandery = feature.properties?.level === 'commandery';
+  dimTownsOutsideRegion(propName, feature.properties?.Name_EN, isCommandery ? 'Prov_EN' : undefined, isCommandery ? feature.properties?.Prov_EN : undefined);
 }
 
 // Public helper: look up a province/commandery by its stable `id` (from
@@ -1885,7 +1633,7 @@ function hideModernInfrastructure() {
   });
 }
 
-function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOldCourseCache, commanderiesGeoJSON = commanderiesGeoJSONCache) {
+function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOldCourseCache, commanderiesGeoJSON = commanderiesGeoJSONCache, xiyuGeoJSON = xiyuCache) {
   if (hasThreeKArchiveLayers()) return;
 
   hideModernInfrastructure();
@@ -1937,6 +1685,22 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     // province line, but dashed to distinguish the hierarchy. Shown/hidden
     // together with province-fill/province-line via the same "Historical
     // Provinces" toggle (see PROVINCE_LAYERS).
+    // Invisible fill purely to capture clicks - commandery-line only
+    // draws the outline itself, and MapLibre only fires click events for
+    // a line layer when the cursor is exactly on the drawn line, not
+    // anywhere inside the shape. A transparent fill layer gives the same
+    // "click anywhere inside this commandery" behaviour Xiyu's tributary
+    // states already have via xiyu-fill.
+    map.addLayer({
+      id: 'commandery-fill',
+      type: 'fill',
+      source: 'commanderies',
+      paint: {
+        'fill-color': '#000',
+        'fill-opacity': 0
+      }
+    });
+
     map.addLayer({
       id: 'commandery-line',
       type: 'line',
@@ -1955,6 +1719,50 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
         'line-dasharray': [2, 1.5]
       }
     });
+
+    if (!commanderyInteractionsWired) {
+      commanderyInteractionsWired = true;
+
+      map.on('click', 'commandery-fill', async e => {
+        // Commanderies cover the entire map (unlike Xiyu's sparse 7
+        // states), so every town sits inside some commandery. Without
+        // this check, clicking any town anywhere would also fire the
+        // commandery popup underneath it at the same time - check for a
+        // town feature at this exact point first and yield to it, since
+        // a specific town is more precise/useful than the commandery it
+        // happens to sit in.
+        const townHit = map.queryRenderedFeatures(e.point, {
+          layers: ['towns-provincial', 'towns-commandery', 'towns-county', 'towns-military', 'towns-landmark', 'towns-others']
+        });
+        if (townHit.length) return;
+
+        const id = e.features[0]?.properties?.id;
+        // Re-highlight from the untouched 3857 original. fetchAdminBoundaries()
+        // holds every province and commandery raw feature together
+        // (already cached by the time this layer exists), so match by id.
+        const adminFeatures = await fetchAdminBoundaries();
+        const raw = adminFeatures.find(f => f.properties?.id === id);
+        if (!raw) return;
+
+        // Same black-boundary treatment as clicking a town (highlightTownContext),
+        // rather than the gold/magenta search-highlight style - a direct
+        // commandery click and a town's containing-commandery should look
+        // the same regardless of which path got you there.
+        clearWaterBodyHighlight();
+        const convertedGeometry = convertGeometryToLngLat(raw.geometry, WATER_BODIES_ARE_WEB_MERCATOR);
+        renderJourneyBoundaryLayer({
+          type: 'FeatureCollection',
+          features: [{ type: 'Feature', properties: raw.properties || {}, geometry: convertedGeometry }]
+        }, {
+          lineWidth: ['interpolate', ['linear'], ['zoom'], 3, 1.5, 8, 2.5, 12, 3.5],
+          lineOpacity: 0.8
+        });
+        showSearchResultPanel(buildAdminBoundaryDetailHtml(raw.properties), `commandery-${id ?? ''}`);
+      });
+
+      map.on('mouseenter', 'commandery-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'commandery-fill', () => { map.getCanvas().style.cursor = ''; });
+    }
   }
 
   if (yellowRiverOldCourseGeoJSON?.features?.length) {
@@ -1993,6 +1801,94 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
         'line-opacity': 0.96
       }
     });
+  }
+
+  if (xiyuGeoJSON?.polygons?.features?.length) {
+    map.addSource('xiyu', {
+      type: 'geojson',
+      data: xiyuGeoJSON.polygons
+    });
+
+    // Tributary states of the Western Regions — rendered in the same
+    // kingdom-hue fill/line as the provinces (Wei), since the region fell
+    // under Wei's Western Regions protectorate. Dashed line keeps the
+    // tributary status legible against the solid province borders.
+    map.addLayer({
+      id: 'xiyu-fill',
+      type: 'fill',
+      source: 'xiyu',
+      paint: {
+        'fill-color': kExpr('kingdom', KINGDOM_FILL),
+        'fill-opacity': 1
+      }
+    });
+
+    map.addLayer({
+      id: 'xiyu-line',
+      type: 'line',
+      source: 'xiyu',
+      paint: {
+        'line-color': kExpr('kingdom', KINGDOM_LINE),
+        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0.8, 7, 1.4, 10, 2],
+        'line-opacity': 0.85,
+        'line-dasharray': [3, 2]
+      }
+    });
+
+    // One point per state, precomputed in fetchXiyu - see the comment
+    // there for why a polygon source can't be used directly for labels
+    // (splits across tiles at higher zoom, causing duplicate labels).
+    map.addSource('xiyu-labels', {
+      type: 'geojson',
+      data: xiyuGeoJSON.labels
+    });
+
+    map.addLayer({
+      id: 'xiyu-label',
+      type: 'symbol',
+      source: 'xiyu-labels',
+      layout: {
+        'text-field': xiyuLabelField(),
+        'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular'],
+        'text-size': ['interpolate', ['linear'], ['zoom'], 3, 10, 7, 13, 10, 15],
+        'text-max-width': 8,
+        // Only 7 tributary states, spread wide — force every label to render
+        // (all-or-nothing) rather than letting collision detection silently
+        // drop some at low zoom. Safe now that this is a point source (one
+        // feature per state) rather than the polygon source - no risk of
+        // the same state's label rendering more than once per tile split.
+        'text-allow-overlap': true,
+        'text-ignore-placement': true
+      },
+      paint: {
+        'text-color': kExpr('kingdom', KINGDOM_LINE),
+        'text-halo-color': 'rgba(255,255,255,0.9)',
+        'text-halo-width': 1.4
+      }
+    });
+
+    if (!xiyuInteractionsWired) {
+      xiyuInteractionsWired = true;
+
+      map.on('click', 'xiyu-fill', e => {
+        const id = e.features[0]?.properties?.id;
+        // Re-highlight from the untouched 3857 original — renderSearchHighlight
+        // expects web-mercator input and would double-convert the already
+        // projected geometry carried on the rendered feature.
+        const raw = xiyuRawFeatures.find(f => f.properties?.id === id);
+        if (!raw) return;
+        renderSearchHighlight(
+          raw.geometry,
+          raw.properties,
+          buildAdminBoundaryDetailHtml(raw.properties),
+          `xiyu-${id ?? ''}`,
+          { showFill: false, showLine: false }
+        );
+      });
+
+      map.on('mouseenter', 'xiyu-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', 'xiyu-fill', () => { map.getCanvas().style.cursor = ''; });
+    }
   }
 
   map.addSource('towns', {
@@ -2416,7 +2312,7 @@ function restoreArchiveLayersAfterStyleChange() {
 
   pendingStyleRestore = false;
   removeArchiveLayersAndSources();
-  addLayers(provincesGeoJSONCache, yellowRiverOldCourseCache, commanderiesGeoJSONCache);
+  addLayers(provincesGeoJSONCache, yellowRiverOldCourseCache, commanderiesGeoJSONCache, xiyuCache);
   syncToggleStatesFromDOM();
   map.resize();
 }
@@ -2479,7 +2375,7 @@ export async function initInteractiveMap(options = {}) {
     if (pendingJourney) {
       const { data } = pendingJourney;
       pendingJourney = null;
-      renderJourneyView(data);
+      renderJourneyViewCallback?.(data);
     } else if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
       const { lat, lng, town } = pendingFlyTo;
       pendingFlyTo = null;
@@ -2499,10 +2395,11 @@ export async function initInteractiveMap(options = {}) {
   try {
     await loadMapTilerSDK();
 
-    const [provincesAndCommanderies, townsData, yellowRiverOldCourseGeoJSON] = await Promise.all([
+    const [provincesAndCommanderies, townsData, yellowRiverOldCourseGeoJSON, xiyuGeoJSON] = await Promise.all([
       fetchProvincesAndCommanderies(),
       fetchTowns(),
       fetchYellowRiverOldCourse(),
+      fetchXiyu(),
     ]);
 
     const provincesGeoJSON = provincesAndCommanderies.provinces;
@@ -2511,6 +2408,7 @@ export async function initInteractiveMap(options = {}) {
     provincesGeoJSONCache = provincesGeoJSON;
     commanderiesGeoJSONCache = commanderiesGeoJSON;
     yellowRiverOldCourseCache = yellowRiverOldCourseGeoJSON;
+    xiyuCache = xiyuGeoJSON;
     allTowns = townsData?.All_Towns_Details ?? townsData ?? [];
 
     map = new maplibregl.Map({
@@ -2539,7 +2437,7 @@ export async function initInteractiveMap(options = {}) {
     wireStyleButtons();
 
     map.on('load', () => {
-      addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON, commanderiesGeoJSON);
+      addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON, commanderiesGeoJSON, xiyuGeoJSON);
 
       mapReady = true;
 
@@ -2554,7 +2452,7 @@ export async function initInteractiveMap(options = {}) {
           // scenario 4: arrived via a chapter's "view life journey" link
           const { data } = pendingJourney;
           pendingJourney = null;
-          renderJourneyView(data);
+          renderJourneyViewCallback?.(data);
         } else if (pendingFlyTo && Number.isFinite(pendingFlyTo.lat) && Number.isFinite(pendingFlyTo.lng)) {
           // scenario 2: has coordinates — fly there
           const { lat, lng, town } = pendingFlyTo;

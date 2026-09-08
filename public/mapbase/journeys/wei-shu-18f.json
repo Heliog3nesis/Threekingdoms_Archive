@@ -2,8 +2,8 @@
   "pins": [
     {
       "kind": "town",
-      "lat": 33.87991582,
-      "lng": 115.79759282,
+      "lat": 33.86080856,
+      "lng": 115.77227911,
       "name": "Qiao",
       "persons": [
         "許褚（仲康）"
@@ -13,7 +13,7 @@
       "kind": "town",
       "lat": 32.98790226,
       "lng": 112.53739567,
-      "name": "宛縣",
+      "name": "Wan",
       "persons": [
         "許褚（仲康）"
       ]
@@ -22,7 +22,7 @@
       "kind": "town",
       "lat": 32.97656214,
       "lng": 113.25163985,
-      "name": "舞陰",
+      "name": "Wuyin",
       "persons": [
         "許褚（仲康）"
       ]
@@ -31,7 +31,7 @@
       "kind": "town",
       "lat": 32.728607,
       "lng": 112.23096914,
-      "name": "安眾",
+      "name": "Anzhong",
       "persons": [
         "許褚（仲康）"
       ]
@@ -40,7 +40,7 @@
       "kind": "town",
       "lat": 32.67362257,
       "lng": 112.08451528,
-      "name": "穰縣",
+      "name": "Rang",
       "persons": [
         "許褚（仲康）"
       ]
@@ -56,8 +56,8 @@
     },
     {
       "kind": "town",
-      "lat": 36.29186303,
-      "lng": 114.39806539,
+      "lat": 36.29000818,
+      "lng": 114.3635467,
       "name": "Ye",
       "persons": [
         "許褚（仲康）"
@@ -65,8 +65,8 @@
     },
     {
       "kind": "town",
-      "lat": 34.60853928,
-      "lng": 110.31804689,
+      "lat": 34.59426174,
+      "lng": 110.32268475,
       "name": "Tongguan",
       "persons": [
         "許褚（仲康）"
@@ -76,7 +76,7 @@
       "kind": "town",
       "lat": 33.16854232,
       "lng": 106.61155724,
-      "name": "陽平關",
+      "name": "Yangpingguan",
       "persons": [
         "許褚（仲康）"
       ]
@@ -121,17 +121,17 @@
           },
           "year": null,
           "location": {
-            "en": "Qiao, Qiao State",
-            "zht": "譙國譙",
-            "zhs": "谯国谯"
+            "en": "Qiao",
+            "zht": "譙",
+            "zhs": "谯"
           },
           "position": null,
           "passageId": "ws18f-p1",
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 33.87991582,
-              "lng": 115.79759282,
+              "lat": 33.86080856,
+              "lng": 115.77227911,
               "name": "Qiao"
             }
           ],
@@ -201,25 +201,25 @@
               "kind": "town",
               "lat": 32.98790226,
               "lng": 112.53739567,
-              "name": "宛縣"
+              "name": "Wan"
             },
             {
               "kind": "town",
               "lat": 32.97656214,
               "lng": 113.25163985,
-              "name": "舞陰"
+              "name": "Wuyin"
             },
             {
               "kind": "town",
               "lat": 32.728607,
               "lng": 112.23096914,
-              "name": "安眾"
+              "name": "Anzhong"
             },
             {
               "kind": "town",
               "lat": 32.67362257,
               "lng": 112.08451528,
-              "name": "穰縣"
+              "name": "Rang"
             }
           ],
           "positionLinks": [
@@ -276,8 +276,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 36.29186303,
-              "lng": 114.39806539,
+              "lat": 36.29000818,
+              "lng": 114.3635467,
               "name": "Ye"
             }
           ],
@@ -286,7 +286,7 @@
               "en": "Marquis Within the Pass",
               "zht": "關內侯",
               "zhs": "关内侯",
-              "url": null
+              "url": "/translations/officials#glossary-marquis-within-the-pass"
             }
           ]
         },
@@ -311,8 +311,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 34.60853928,
-              "lng": 110.31804689,
+              "lat": 34.59426174,
+              "lng": 110.32268475,
               "name": "Tongguan"
             }
           ],
@@ -344,7 +344,7 @@
               "kind": "town",
               "lat": 33.16854232,
               "lng": 106.61155724,
-              "name": "陽平關"
+              "name": "Yangpingguan"
             }
           ],
           "positionLinks": []
@@ -417,7 +417,7 @@
               "en": "Township Marquis",
               "zht": "鄉侯",
               "zhs": "乡侯",
-              "url": null
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
             }
           ]
         }

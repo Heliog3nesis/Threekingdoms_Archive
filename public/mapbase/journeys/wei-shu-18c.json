@@ -2,8 +2,8 @@
   "pins": [
     {
       "kind": "town",
-      "lat": 35.29682805,
-      "lng": 118.21058195,
+      "lat": 35.32124106,
+      "lng": 118.18296699,
       "name": "Hua",
       "persons": [
         "臧霸（宣高）"
@@ -47,7 +47,7 @@
       "kind": "town",
       "lat": 35.58381856,
       "lng": 118.81351928,
-      "name": "莒縣",
+      "name": "Ju",
       "persons": [
         "臧霸（宣高）"
       ]
@@ -86,8 +86,8 @@
     },
     {
       "kind": "town",
-      "lat": 31.61031379,
-      "lng": 117.92120644,
+      "lat": 31.62795047,
+      "lng": 117.88668775,
       "name": "Juchao",
       "persons": [
         "臧霸（宣高）"
@@ -128,6 +128,15 @@
       "persons": [
         "臧霸（宣高）",
         "孫觀（仲臺）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.64351707,
+      "lng": 118.35843748,
+      "name": "Dongpu",
+      "persons": [
+        "臧霸（宣高）"
       ]
     },
     {
@@ -177,11 +186,11 @@
       },
       "died": {
         "era": {
-          "en": "Taihe - Zhengshi eras",
-          "zht": "泰和 - 正始年間",
-          "zhs": "泰和 - 正始年间"
+          "en": "reign of Emperor Ming",
+          "zht": "明帝年間",
+          "zhs": "明帝年间"
         },
-        "year": "~230s"
+        "year": null
       },
       "age": null,
       "stops": [
@@ -193,17 +202,17 @@
           },
           "year": null,
           "location": {
-            "en": "Hua, Taishan",
-            "zht": "泰山華",
-            "zhs": "泰山华"
+            "en": "Hua",
+            "zht": "華",
+            "zhs": "华"
           },
           "position": null,
           "passageId": "ws18c-p1",
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 35.29682805,
-              "lng": 118.21058195,
+              "lat": 35.32124106,
+              "lng": 118.18296699,
               "name": "Hua"
             }
           ],
@@ -331,7 +340,7 @@
               "kind": "town",
               "lat": 35.58381856,
               "lng": 118.81351928,
-              "name": "莒縣"
+              "name": "Ju"
             }
           ],
           "positionLinks": []
@@ -527,8 +536,8 @@
             },
             {
               "kind": "town",
-              "lat": 31.61031379,
-              "lng": 117.92120644,
+              "lat": 31.62795047,
+              "lng": 117.88668775,
               "name": "Juchao"
             },
             {
@@ -593,8 +602,8 @@
             },
             {
               "kind": "town",
-              "lat": 31.61031379,
-              "lng": 117.92120644,
+              "lat": 31.62795047,
+              "lng": 117.88668775,
               "name": "Juchao"
             }
           ],
@@ -649,7 +658,7 @@
               "en": "County Marquis",
               "zht": "鄉侯",
               "zhs": "乡侯",
-              "url": null
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
             }
           ]
         },
@@ -667,14 +676,21 @@
           },
           "position": null,
           "passageId": "ws18c-p8",
-          "resolvedLocations": [],
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.64351707,
+              "lng": 118.35843748,
+              "name": "Dongpu"
+            }
+          ],
           "positionLinks": []
         },
         {
           "era": {
-            "en": "unknown",
-            "zht": "不詳",
-            "zhs": "不详"
+            "en": "reign of Emperor Wen",
+            "zht": "文帝年間",
+            "zhs": "文帝年间"
           },
           "year": null,
           "location": {
@@ -735,11 +751,11 @@
       },
       "died": {
         "era": {
-          "en": "during Cao Cao's campaign against Sun Quan",
-          "zht": "太祖征孫權時",
-          "zhs": "太祖征孙权时"
+          "en": "22nd year of Jian'an",
+          "zht": "建安二十二年",
+          "zhs": "建安二十二年"
         },
-        "year": null
+        "year": 217
       },
       "age": null,
       "stops": [

@@ -2,6 +2,17 @@
   "pins": [
     {
       "kind": "town",
+      "lat": 35.40781933,
+      "lng": 116.14257473,
+      "name": "巨野",
+      "persons": [
+        "李典（曼成）",
+        "李乾",
+        "李整"
+      ]
+    },
+    {
+      "kind": "town",
       "lat": 35.26547064,
       "lng": 115.87380975,
       "name": "乘氏",
@@ -13,8 +24,8 @@
     },
     {
       "kind": "town",
-      "lat": 34.01634921,
-      "lng": 113.85205527,
+      "lat": 34.02016403,
+      "lng": 113.81293408,
       "name": "Yingyin",
       "persons": [
         "李典（曼成）"
@@ -40,7 +51,7 @@
     },
     {
       "kind": "town",
-      "lat": 33.47646438,
+      "lat": 33.50525207,
       "lng": 113.2914691,
       "name": "Ye",
       "persons": [
@@ -58,8 +69,8 @@
     },
     {
       "kind": "town",
-      "lat": 36.29186303,
-      "lng": 114.39806539,
+      "lat": 36.29000818,
+      "lng": 114.3635467,
       "name": "Ye",
       "persons": [
         "李典（曼成）"
@@ -84,9 +95,16 @@
       ]
     },
     {
+      "kind": "admin",
+      "id": "2",
+      "persons": [
+        "李典（曼成）"
+      ]
+    },
+    {
       "kind": "town",
-      "lat": 31.94881135,
-      "lng": 117.12136064,
+      "lat": 31.92537649,
+      "lng": 117.12596313,
       "name": "Hefei",
       "persons": [
         "李典（曼成）"
@@ -106,15 +124,6 @@
       "id": "8",
       "persons": [
         "李乾"
-      ]
-    },
-    {
-      "kind": "town",
-      "lat": 35.40781933,
-      "lng": 116.14257473,
-      "name": "巨野",
-      "persons": [
-        "李整"
       ]
     },
     {
@@ -171,6 +180,30 @@
           },
           "year": null,
           "location": {
+            "en": "Juye",
+            "zht": "鉅野",
+            "zhs": "钜野"
+          },
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.40781933,
+              "lng": 116.14257473,
+              "name": "巨野"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
             "en": "Chengshi",
             "zht": "乘氏",
             "zhs": "乘氏"
@@ -208,8 +241,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 34.01634921,
-              "lng": 113.85205527,
+              "lat": 34.02016403,
+              "lng": 113.81293408,
               "name": "Yingyin"
             }
           ],
@@ -218,7 +251,7 @@
               "en": "Magistrate of Yingyin",
               "zht": "潁陰令",
               "zhs": "颍阴令",
-              "url": "/translations/officials/regional/#counties-088"
+              "url": "/translations/officials/regional/?lat=34.02016403&lng=113.81293408"
             },
             {
               "en": "Gentleman-General",
@@ -322,7 +355,7 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 33.47646438,
+              "lat": 33.50525207,
               "lng": 113.2914691,
               "name": "Ye"
             },
@@ -352,8 +385,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 36.29186303,
-              "lng": 114.39806539,
+              "lat": 36.29000818,
+              "lng": 114.3635467,
               "name": "Ye"
             }
           ],
@@ -420,7 +453,7 @@
               "en": "Capital District Marquis",
               "zht": "都亭侯",
               "zhs": "都亭侯",
-              "url": null
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },
@@ -450,6 +483,52 @@
         },
         {
           "era": {
+            "en": "13rd year of Jian'an",
+            "zht": "建安十三年",
+            "zhs": "建安十三年"
+          },
+          "year": 208,
+          "location": {
+            "en": "Jing Province",
+            "zht": "荊州",
+            "zhs": "荆州"
+          },
+          "position": null,
+          "passageId": "ws18a-p6",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "2"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "14th year of Jian'an",
+            "zht": "建安十四年",
+            "zhs": "建安十四年"
+          },
+          "year": 209,
+          "location": {
+            "en": "Hefei",
+            "zht": "合肥",
+            "zhs": "合肥"
+          },
+          "position": null,
+          "passageId": "ws18a-p6",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.92537649,
+              "lng": 117.12596313,
+              "name": "Hefei"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
             "en": "20th year of Jian'an",
             "zht": "建安二十年",
             "zhs": "建安二十年"
@@ -465,8 +544,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 31.94881135,
-              "lng": 117.12136064,
+              "lat": 31.92537649,
+              "lng": 117.12596313,
               "name": "Hefei"
             }
           ],
@@ -492,8 +571,32 @@
         "zht": "興平元年 - 二年",
         "zhs": "兴平元年 - 二年"
       },
-      "year": "194-195",
+      "year": "194 - 195",
       "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Juye",
+            "zht": "鉅野",
+            "zhs": "钜野"
+          },
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.40781933,
+              "lng": 116.14257473,
+              "name": "巨野"
+            }
+          ],
+          "positionLinks": []
+        },
         {
           "era": {
             "en": "unknown",
@@ -524,7 +627,7 @@
             "zht": "初平中",
             "zhs": "初平中"
           },
-          "year": "190-193",
+          "year": "190 - 193",
           "location": [
             {
               "en": "Shouzhang",
@@ -559,7 +662,7 @@
             "zht": "興平元年-二年",
             "zhs": "兴平元年-二年"
           },
-          "year": "194-195",
+          "year": "194 - 195",
           "location": {
             "en": "Chengshi",
             "zht": "乘氏",
@@ -609,6 +712,30 @@
           },
           "year": null,
           "location": {
+            "en": "Juye",
+            "zht": "鉅野",
+            "zhs": "钜野"
+          },
+          "position": null,
+          "passageId": "ws18a-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.40781933,
+              "lng": 116.14257473,
+              "name": "巨野"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
             "en": "Chengshi",
             "zht": "乘氏",
             "zhs": "乘氏"
@@ -644,7 +771,7 @@
               "kind": "town",
               "lat": 35.40781933,
               "lng": 116.14257473,
-              "name": "巨野"
+              "name": "Juye"
             }
           ],
           "positionLinks": []

@@ -143,6 +143,7 @@ const provinceKingdom = {
     'Yanzhou': 'wei', 'Yuzhou': 'wei', 'Youzhou': 'wei',
     'Liangzhou': 'wei', 'Sili': 'wei', 'Yongzhou': 'wei',
     'Xuzhou': 'wei', 'Jingzhou (Wei)': 'wei', 'Yangzhou (Wei)': 'wei',
+    'Xiyu': 'wei',
     'Yizhou (South)': 'shu','Yizhou (North)': 'shu',
     'Jiaozhou': 'wu', 'Jingzhou (Wu)': 'wu', 'Yangzhou (Wu)': 'wu',
   };
@@ -164,6 +165,7 @@ const provinceKingdom = {
   'Yizhou (South)': url('/mapbase/Yi_South.png'),
   'Yongzhou': url('/mapbase/Yongzhou.png'),
   'Youzhou': url('/mapbase/Youzhou.png'),
+  'Xiyu': url('/mapbase/Xiyu.png'),
 };
  
 const kingdomLabel = { wei: '魏', shu: '蜀', wu: '吳' };
@@ -174,6 +176,18 @@ function displayTownSub(t) { return t.Town_EN || ''; }
 function displayProvince(t) { return lang === 'zh-hans' ? (t.Prov_CHS || t.Prov_CH || t.Prov_EN || '') : (t.Prov_CH || t.Prov_CHS || t.Prov_EN || ''); }
 function displayCommandery(t) { return lang === 'zh-hans' ? (t.Comm_CHS || t.Comm_CH || t.Comm_EN || '') : (t.Comm_CH || t.Comm_CHS || t.Comm_EN || ''); }
 const kingdomClass = { wei: 'b-wei', shu: 'b-shu', wu: 'b-wu' };
+
+// Xiyu towns are tagged kingdom 'wei' for filtering purposes (matching how
+// the map itself treats the Western Regions), but should read as "西域"
+// rather than "魏" in the badge itself — same color, different label,
+// since showing "魏" here would misleadingly imply direct administration
+// rather than the historical tributary relationship.
+function getTownBadgeInfo(provEn) {
+  const k = getKingdom(provEn);
+  if (!k) return null;
+  if (provEn === 'Xiyu') return { cls: kingdomClass[k], label: '西域' };
+  return { cls: kingdomClass[k], label: kingdomLabel[k] };
+}
 
 function getKingdom(provEn) {
   return provinceKingdom[provEn] ?? null;
@@ -305,10 +319,10 @@ function displayAdminSub(f) {
   const p = f.properties;
   return p.level === 'province' ? formatProvinceLabel(p.Name_EN) : (p.Name_EN || '');
 }
-// 州/郡/臣屬部落 tag — same wording interactive-map.js's popup already uses for zh-hant.
+// 州/郡/藩屬國 tag — same wording interactive-map.js's popup already uses for zh-hant.
 function displayAdminType(f) {
   if (f.properties.level === 'commandery') return '郡';
-  if (f.properties.level === 'tributary') return '臣屬部落';
+  if (f.properties.level === 'tributary') return '藩屬國';
   return '州';
 }
 
@@ -525,9 +539,9 @@ function render() {
       }
 
       const t = result.data;
-      const k      = getKingdom(t.Prov_EN);
-      const badge  = k
-        ? `<span class="badge ${kingdomClass[k]}">${kingdomLabel[k]}</span>`
+      const badgeInfo = getTownBadgeInfo(t.Prov_EN);
+      const badge  = badgeInfo
+        ? `<span class="badge ${badgeInfo.cls}">${badgeInfo.label}</span>`
         : '—';
       const pngUrl  = provToPng[t.Prov_EN];
       const pngBtn  = pngUrl

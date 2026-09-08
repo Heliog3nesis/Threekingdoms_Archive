@@ -1,0 +1,832 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 35.94789905,
+      "lng": 117.10782451,
+      "name": "Juping",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.8015997,
+      "lng": 117.13518273,
+      "name": "Qi",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "8",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.59233429,
+      "lng": 114.99129787,
+      "name": "Puyang",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.9308624,
+      "lng": 116.2488773,
+      "name": "Xuchang",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.82685338,
+      "lng": 116.28297435,
+      "name": "Shouzhang",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.09005462,
+      "lng": 115.57295343,
+      "name": "Dingtao",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.44867773,
+      "lng": 115.15376029,
+      "name": "Lihu",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.54667428,
+      "lng": 114.81078408,
+      "name": "Yongqiu",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.98790226,
+      "lng": 112.53739567,
+      "name": "Wan",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.97656214,
+      "lng": 113.25163985,
+      "name": "Wuyin",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.87325494,
+      "lng": 115.51278217,
+      "name": "Ku",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.67362257,
+      "lng": 112.08451528,
+      "name": "Rang",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.12209323,
+      "lng": 117.9033062,
+      "name": "Xiapi",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.16733518,
+      "lng": 113.32487537,
+      "name": "Shequan",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.05018779,
+      "lng": 113.93460488,
+      "name": "Yuanwu",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.81631685,
+      "lng": 114.04675874,
+      "name": "Guandu",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.15217013,
+      "lng": 112.71539343,
+      "name": "Bowang",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "50",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "2",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "23",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.04746989,
+      "lng": 112.06874333,
+      "name": "Fancheng",
+      "persons": [
+        "于禁（文則）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.29186303,
+      "lng": 114.39806539,
+      "name": "Ye",
+      "persons": [
+        "于禁（文則）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "于禁（文則）",
+      "name": {
+        "en": "Yu Jin",
+        "zht": "于禁",
+        "zhs": "于禁"
+      },
+      "courtesyName": {
+        "en": "Wenze",
+        "zht": "文則",
+        "zhs": "文则"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "2nd year of Huangchu",
+          "zht": "黄初二年",
+          "zhs": "黄初二年"
+        },
+        "year": 221
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "Unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Juping",
+            "zht": "鉅平",
+            "zhs": "巨平"
+          },
+          "position": null,
+          "passageId": "ws17c-p1",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.94789905,
+              "lng": 117.10782451,
+              "name": "Juping"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "3rd year of Chuping",
+            "zht": "初平四年",
+            "zhs": "初平四年"
+          },
+          "year": 193,
+          "age": null,
+          "location": [
+            {
+              "en": "Guangqi/Qi",
+              "zht": "廣戚/戚",
+              "zhs": "广戚/戚"
+            },
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "position": null,
+          "passageId": "ws17c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.8015997,
+              "lng": 117.13518273,
+              "name": "Qi"
+            },
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "1st - 2nd year of Xingping",
+            "zht": "兴平元年 - 兴平二年",
+            "zhs": "兴平元年 - 兴平二年"
+          },
+          "year": "194 - 195",
+          "age": null,
+          "location": [
+            {
+              "en": "Puyang",
+              "zht": "濮陽",
+              "zhs": "濮阳"
+            },
+            {
+              "en": "Xuchang",
+              "zht": "須昌",
+              "zhs": "须昌"
+            },
+            {
+              "en": "Shouzhang",
+              "zht": "壽張",
+              "zhs": "寿张"
+            },
+            {
+              "en": "Dingtao",
+              "zht": "定陶",
+              "zhs": "定陶"
+            },
+            {
+              "en": "Lihu",
+              "zht": "離狐",
+              "zhs": "离狐"
+            },
+            {
+              "en": "Yongqiu",
+              "zht": "雍丘",
+              "zhs": "雍丘"
+            }
+          ],
+          "position": [
+            {
+              "en": "Army Major",
+              "zht": "軍司馬",
+              "zhs": "军司马"
+            },
+            {
+              "en": "Commandant Who Breaks Formations",
+              "zht": "陷陣都尉",
+              "zhs": "陷阵都尉"
+            }
+          ],
+          "passageId": "ws17c-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.59233429,
+              "lng": 114.99129787,
+              "name": "Puyang"
+            },
+            {
+              "kind": "town",
+              "lat": 35.9308624,
+              "lng": 116.2488773,
+              "name": "Xuchang"
+            },
+            {
+              "kind": "town",
+              "lat": 35.82685338,
+              "lng": 116.28297435,
+              "name": "Shouzhang"
+            },
+            {
+              "kind": "town",
+              "lat": 35.09005462,
+              "lng": 115.57295343,
+              "name": "Dingtao"
+            },
+            {
+              "kind": "town",
+              "lat": 35.44867773,
+              "lng": 115.15376029,
+              "name": "Lihu"
+            },
+            {
+              "kind": "town",
+              "lat": 34.54667428,
+              "lng": 114.81078408,
+              "name": "Yongqiu"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Army Major",
+                "zht": "軍司馬",
+                "zhs": "军司马"
+              },
+              "1": {
+                "en": "Commandant Who Breaks Formations",
+                "zht": "陷陣都尉",
+                "zhs": "陷阵都尉"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st - 2nd year of Jian'an",
+            "zht": "建安元年 - 建安二年",
+            "zhs": "建安元年 - 建安二年"
+          },
+          "year": "196 - 197",
+          "age": null,
+          "location": [
+            {
+              "en": "Banliang",
+              "zht": "版梁",
+              "zhs": "版梁"
+            },
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Wuyin",
+              "zht": "舞陰",
+              "zhs": "舞阴"
+            },
+            {
+              "en": "Ku",
+              "zht": "苦",
+              "zhs": "苦"
+            }
+          ],
+          "position": [
+            {
+              "en": "Colonel Who Subdues the Enemies",
+              "zht": "平虜校尉",
+              "zhs": "平虏校尉"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": "ws17c-p4",
+          "resolvedLocations": [
+            null,
+            {
+              "kind": "town",
+              "lat": 32.98790226,
+              "lng": 112.53739567,
+              "name": "Wan"
+            },
+            {
+              "kind": "town",
+              "lat": 32.97656214,
+              "lng": 113.25163985,
+              "name": "Wuyin"
+            },
+            {
+              "kind": "town",
+              "lat": 33.87325494,
+              "lng": 115.51278217,
+              "name": "Ku"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Colonel Who Subdues the Enemies",
+                "zht": "平虜校尉",
+                "zhs": "平虏校尉"
+              },
+              "1": {
+                "en": "Neighbourhood Marquis",
+                "zht": "亭侯",
+                "zhs": "亭侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "3rd - 4th year of Jian'an",
+            "zht": "建安三年 - 建安四年",
+            "zhs": "建安三年 - 建安四年"
+          },
+          "year": "198 - 199",
+          "age": null,
+          "location": [
+            {
+              "en": "Rang",
+              "zht": "穰",
+              "zhs": "穰"
+            },
+            {
+              "en": "Xiapi",
+              "zht": "下邳",
+              "zhs": "下邳"
+            },
+            {
+              "en": "Shequan",
+              "zht": "射犬",
+              "zhs": "射犬"
+            }
+          ],
+          "position": null,
+          "passageId": "ws17c-p5",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.67362257,
+              "lng": 112.08451528,
+              "name": "Rang"
+            },
+            {
+              "kind": "town",
+              "lat": 34.12209323,
+              "lng": 117.9033062,
+              "name": "Xiapi"
+            },
+            {
+              "kind": "town",
+              "lat": 35.16733518,
+              "lng": 113.32487537,
+              "name": "Shequan"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "Around 5th year of Jian'an",
+            "zht": "~建安五年",
+            "zhs": "~建安五年"
+          },
+          "year": "200",
+          "age": null,
+          "location": [
+            {
+              "en": "Yuanwu",
+              "zht": "原武",
+              "zhs": "原武"
+            },
+            {
+              "en": "Guandu",
+              "zht": "官渡",
+              "zhs": "官渡"
+            }
+          ],
+          "position": [
+            {
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军"
+            },
+            {
+              "en": "Adjunct General",
+              "zht": "偏將軍",
+              "zhs": "偏将军"
+            }
+          ],
+          "passageId": "ws17c-p6",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.05018779,
+              "lng": 113.93460488,
+              "name": "Yuanwu"
+            },
+            {
+              "kind": "town",
+              "lat": 34.81631685,
+              "lng": 114.04675874,
+              "name": "Guandu"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Assistant General",
+                "zht": "裨將軍",
+                "zhs": "裨将军"
+              },
+              "1": {
+                "en": "Adjunct General",
+                "zht": "偏將軍",
+                "zhs": "偏将军"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "7th year of Jian'an",
+            "zht": "建安七年",
+            "zhs": "建安七年"
+          },
+          "year": 202,
+          "age": null,
+          "location": {
+            "en": "Bowang",
+            "zht": "博望",
+            "zhs": "博望"
+          },
+          "position": {
+            "en": "裨將軍",
+            "zht": "",
+            "zhs": ""
+          },
+          "passageId": "ws17c-p6",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.15217013,
+              "lng": 112.71539343,
+              "name": "Bowang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "裨將軍",
+              "zht": "",
+              "zhs": "",
+              "url": "/translations/officials/military#four-direction--misc-165"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "11th year of Jian'an",
+            "zht": "建安十一年",
+            "zhs": "建安十一年"
+          },
+          "year": 206,
+          "age": null,
+          "location": {
+            "en": "Donghai",
+            "zht": "東海",
+            "zhs": "東海"
+          },
+          "position": {
+            "en": "Mighty Tiger General",
+            "zht": "虎威將軍",
+            "zhs": "虎威将军"
+          },
+          "passageId": "ws17c-p8",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "50"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Mighty Tiger General",
+              "zht": "虎威將軍",
+              "zhs": "虎威将军",
+              "url": "/translations/officials/military#four-direction--misc-145"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "13 - 14th year of Jian'an",
+            "zht": "建安十三年 - 建安十四年",
+            "zhs": "建安十三年 - 建安十四年"
+          },
+          "year": "208 - 209",
+          "age": null,
+          "location": [
+            {
+              "en": "Jing Province",
+              "zht": "荆州",
+              "zhs": "荆州"
+            },
+            {
+              "en": "Lujiang",
+              "zht": "廬江",
+              "zhs": "庐江"
+            }
+          ],
+          "position": null,
+          "passageId": "ws17c-p8",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "2"
+            },
+            {
+              "kind": "admin",
+              "id": "23"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "Unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "General of the Left",
+              "zht": "左將軍",
+              "zhs": "左将军"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            }
+          ],
+          "passageId": "ws17c-p9",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "General of the Left",
+                "zht": "左將軍",
+                "zhs": "左将军"
+              },
+              "1": {
+                "en": "Provisional Bearer of the Imperial Tally",
+                "zht": "假節",
+                "zhs": "假节"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "24th year of Jian'an",
+            "zht": "建安二十四年",
+            "zhs": "建安二十四年"
+          },
+          "year": 219,
+          "age": null,
+          "location": {
+            "en": "Fancheng",
+            "zht": "樊城",
+            "zhs": "樊城"
+          },
+          "position": null,
+          "passageId": "ws17c-p10",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.04746989,
+              "lng": 112.06874333,
+              "name": "Fancheng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "2nd year of Huangchu",
+            "zht": "黄初二年",
+            "zhs": "黄初二年"
+          },
+          "year": 221,
+          "age": null,
+          "location": {
+            "en": "Ye",
+            "zht": "鄴",
+            "zhs": "邺"
+          },
+          "passageId": "ws17c-p11",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.29186303,
+              "lng": 114.39806539,
+              "name": "Ye"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "于禁",
+      "to": "鮑信",
+      "type": "follower",
+      "passageId": "ws17c-p1"
+    },
+    {
+      "from": "于禁",
+      "to": "王朗",
+      "type": "subordinate-superior",
+      "passageId": "ws17c-p1"
+    },
+    {
+      "from": "于禁",
+      "to": "曹操",
+      "type": "subordinate-superior",
+      "passageId": "ws17c-p2"
+    },
+    {
+      "from": "于禁",
+      "to": "昌豨",
+      "type": "old friends",
+      "passageId": "ws17c-p7"
+    },
+    {
+      "from": "于禁",
+      "to": "龐悳",
+      "type": "comrades-in-arms",
+      "passageId": "ws17c-p10"
+    },
+    {
+      "from": "于禁",
+      "to": "曹丕",
+      "type": "subordinate-superior",
+      "passageId": "ws17c-p11"
+    },
+    {
+      "from": "于禁",
+      "to": "于圭",
+      "type": "father-son",
+      "passageId": "ws17c-p11"
+    }
+  ]
+}

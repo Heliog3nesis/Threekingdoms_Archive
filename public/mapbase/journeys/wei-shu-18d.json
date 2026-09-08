@@ -52,8 +52,17 @@
     },
     {
       "kind": "town",
-      "lat": 30.83666732,
-      "lng": 113.72669801,
+      "lat": 30.53922127,
+      "lng": 114.30304043,
+      "name": "Xiakou",
+      "persons": [
+        "文聘（仲業）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.75166501,
+      "lng": 113.71979427,
       "name": "Shiyang",
       "persons": [
         "文聘（仲業）"
@@ -99,9 +108,9 @@
           },
           "year": null,
           "location": {
-            "en": "Wan, Nanyang",
-            "zht": "南陽宛",
-            "zhs": "南阳宛"
+            "en": "Wan",
+            "zht": "宛",
+            "zhs": "宛"
           },
           "position": null,
           "passageId": "ws18d-p1",
@@ -218,6 +227,8 @@
               "kind": "admin",
               "id": "83"
             },
+            null,
+            null,
             {
               "kind": "town",
               "lat": 30.8600171,
@@ -332,7 +343,14 @@
               "lat": 30.34078806,
               "lng": 112.18710173,
               "name": "Jiangling"
-            }
+            },
+            {
+              "kind": "town",
+              "lat": 30.53922127,
+              "lng": 114.30304043,
+              "name": "Xiakou"
+            },
+            null
           ],
           "positionLinks": [
             {
@@ -367,8 +385,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 30.83666732,
-              "lng": 113.72669801,
+              "lat": 30.75166501,
+              "lng": 113.71979427,
               "name": "Shiyang"
             }
           ],

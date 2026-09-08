@@ -1,0 +1,214 @@
+{
+"id": "wei-shu-17d",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 17,
+  "num": "17",
+  "label": {
+    "zht": "張郃傳",
+    "zhs": "张郃传",
+    "en": "Biography of Zhang He"
+  },
+  "title": {
+    "zht": "魏書十七 · 張郃傳",
+    "zhs": "魏书十七 · 张郃传",
+    "en": "Book of Wei, Chapter 17 · Biography of Zhang He"
+  },
+  "relationships": [
+    { "from": "張郃", "to": "韓馥", "type": "下屬", "passageId": "ws17d-p1" },
+    { "from": "張郃", "to": "袁紹", "type": "效忠", "passageId": "ws17d-p1" },
+    { "from": "袁紹", "to": "公孫瓚", "type": "交戰", "passageId": "ws17d-p1" },
+    { "from": "太祖", "to": "袁紹", "type": "交戰", "passageId": "ws17d-p2" },
+    { "from": "郭圖", "to": "張郃", "type": "中傷", "passageId": "ws17d-p2" },
+    { "from": "張郃", "to": "太祖", "type": "投降", "passageId": "ws17d-p3" },
+    { "from": "太祖", "to": "袁譚", "type": "交戰", "passageId": "ws17d-p3" },
+    { "from": "張郃", "to": "張遼", "type": "同袍", "passageId": "ws17d-p3" },
+    { "from": "張郃", "to": "夏侯淵", "type": "同袍", "passageId": "ws17d-p4" },
+    { "from": "劉備", "to": "夏侯淵", "type": "交戰", "passageId": "ws17d-p4" },
+    { "from": "郭淮", "to": "張郃", "type": "推舉", "passageId": "ws17d-p5" },
+    { "from": "文帝", "to": "張郃", "type": "君臣", "passageId": "ws17d-p6" },
+    { "from": "明帝", "to": "張郃", "type": "君臣", "passageId": "ws17d-p6" },
+    { "from": "張郃", "to": "司馬宣王", "type": "同袍", "passageId": "ws17d-p6" },
+    { "from": "張郃", "to": "馬謖", "type": "交戰", "passageId": "ws17d-p7" },
+    { "from": "張郃", "to": "諸葛亮", "type": "交戰", "passageId": "ws17d-p7" },
+    { "from": "張郃", "to": "卑湛", "type": "推薦", "passageId": "ws17d-p9" },
+    { "from": "張郃", "to": "張雄", "type": "父子", "passageId": "ws17d-p9" },
+    { "from": "張郃", "to": "諸葛亮", "type": "交戰", "passageId": "ws17d-p9" }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "張郃（儁乂）",
+      "name": { "en": "Zhang He", "zht": "張郃", "zhs": "张郃" },
+      "courtesyName": { "en": "Junyi", "zht": "儁乂", "zhs": "俊乂" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "5th year of Taihe", "zht": "太和五年", "zhs": "太和五年" }, "year": 231 },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Mo, Hejian", "zht": "河間鄚", "zhs": "河间鄚" }], "position": null, "passageId": "1" },
+        { "era": { "en": "1st year of Zhongping", "zht": "中平元年", "zhs": "中平元年" }, "year": 184, "age": null, "location": null, "position": [{ "en": "Major", "zht": "司馬", "zhs": "司马" }], "passageId": "1" },
+        { "era": { "en": "After the 2nd year of Chuping", "zht": "初平二年后", "zhs": "初平二年后" }, "year": ">190", "age": null, "location": null, "position": [{ "en": "Colonel", "zht": "校尉", "zhs": "校尉" }, { "en": "Gentleman General Who Pacifies the State", "zht": "寧國中郎將", "zhs": "宁国中郎将" }], "passageId": "1" },
+        { "era": { "en": "5th year of Jian'an", "zht": "建安五年", "zhs": "建安五年" }, "year": 200, "age": null, "location": [{ "en": "Guandu", "zht": "官渡", "zhs": "官渡" }], "position": [{ "en": "Adjunct General", "zht": "偏將軍", "zhs": "偏将军" }, { "en": "Capital Township Marquis", "zht": "都鄉侯", "zhs": "都乡侯" }], "passageId": "3" },
+        { "era": { "en": "9th - 12th year of Jian'an", "zht": "建安九年 - 十二年", "zhs": "建安九年 - 十二年" }, "year": "204 - 207", "age": null, "location": [{ "en": "Ye", "zht": "鄴", "zhs": "邺" }, { "en": "Bohai", "zht": "渤海", "zhs": "渤海" }, { "en": "Yongnu", "zht": "雍奴", "zhs": "雍奴" }, { "en": "Donglai", "zht": "東萊", "zhs": "东莱" }, { "en": "Liucheng", "zht": "柳城", "zhs": "柳城" }], "position": [{ "en": "General Who Subdues the Di", "zht": "平狄將軍", "zhs": "平狄将军" }], "passageId": "" },
+        { "era": { "en": "14th year of Jian'an", "zht": "建安十四年", "zhs": "建安十四年" }, "year": 209, "age": null, "location": [{ "en": "Mount Tianzhu", "zht": "天柱山", "zhs": "天柱山" }], "position": null, "passageId": "" },
+        { "era": { "en": "16th - 19th year of Jian'an", "zht": "建安十六年 - 十九年", "zhs": "建安十六年 - 十九年" }, "year": "211 - 214", "age": null, "location": [{ "en": "Wei River", "zht": "渭", "zhs": "渭" }, { "en": "Anding", "zht": "安定", "zhs": "安定" }, { "en": "Heguan", "zht": "河關", "zhs": "河关" }], "position": null, "passageId": "" },
+        { "era": { "en": "20th year of Jian'an", "zht": "建安二十年", "zhs": "建安二十年" }, "year": 215, "age": null, "location": [{ "en": "Sanguan", "zht": "散關", "zhs": "散关" }, { "en": "Yangpingguan", "zht": "陽平", "zhs": "阳平" }, { "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" }, { "en": "Dangqu", "zht": "宕渠", "zhs": "宕渠" }, { "en": "Nanzheng", "zht": "南鄭", "zhs": "南郑" }], "position": [{ "en": "General Who Sweeps the Bandits", "zht": "盪寇將軍", "zhs": "荡寇将军" }], "passageId": "" },
+        { "era": { "en": "23rd - 24th year of Jian'an", "zht": "建安二十三年 - 二十四年", "zhs": "建安二十三年 - 二十四年" }, "year": "218 - 219", "age": null, "location": [{ "en": "Guangshi", "zht": "廣石", "zhs": "广石" }, { "en": "Chencang", "zht": "陳倉", "zhs": "陈仓" }], "position": [{ "en": "Provisional Bearer of the Imperial Tally", "zht": "假郃節", "zhs": "假郃节" }], "passageId": "" },
+        { "era": { "en": "1st year of Yankang / 1st year of Huangchu", "zht": "延康元年/黄初元年", "zhs": "延康元年/黄初元年" }, "year": 220, "age": null, "location": [{ "en": "Anding", "zht": "安定", "zhs": "安定" }], "position": [{ "en": "General of the Left", "zht": "左將軍", "zhs": "左将军" }, { "en": "Capital Township Marquis", "zht": "都鄉侯", "zhs": "都乡侯" }, { "en": "County Marquis", "zht": "縣侯", "zhs": "县侯" }], "passageId": "" },
+        { "era": { "en": "3rd - 4th year of Huangchu", "zht": "黄初三年 - 四年", "zhs": "黄初三年 - 四年" }, "year": "222 - 223", "age": null, "location": [{ "en": "Xuchang", "zht": "許昌", "zhs": "许昌" }, { "en": "Jiangling", "zht": "江陵", "zhs": "江陵" }], "position": null, "passageId": "" },
+        { "era": { "en": "1st - 2nd year of Taihe", "zht": "太和元年 - 二年", "zhs": "太和元年 - 二年" }, "year": "227 - 228", "age": null, "location": [{ "en": "Jing Province", "zht": "荊州", "zhs": "荆州" }, { "en": "Qikou", "zht": "祁口", "zhs": "祁口" }, { "en": "Jieting", "zht": "街亭", "zhs": "街亭" }, { "en": "Nan'an", "zht": "南安", "zhs": "南安" }, { "en": "Tianshui", "zht": "天水", "zhs": "天水" }, { "en": "Anding", "zht": "安定", "zhs": "安定" }, { "en": "Henan", "zht": "河南", "zhs": "河南" }, { "en": "Nanzheng", "zht": "南鄭", "zhs": "南郑" }, { "en": "Luoyang", "zht": "京都", "zhs": "京都" }], "position": [{ "en": "Specially Advanced", "zht": "特進", "zhs": "特进" }, { "en": "General of Chariots and Cavalry", "zht": "車騎將軍", "zhs": "车骑将军" }], "passageId": "" },
+        { "era": { "en": "4th - 5th year of Taihe", "zht": "太和四年 - 五年", "zhs": "太和四年 - 五年" }, "year": "230 - 231", "age": null, "location": [{ "en": "Ziwu Valley", "zht": "子午谷", "zhs": "子午谷" }, { "en": "Lüeyang", "zht": "略陽", "zhs": "略阳" }, { "en": "Mumen", "zht": "木門", "zhs": "木门" }], "position": null, "passageId": "" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws17d-p1",
+      "orig": {
+        "zht": "張郃字儁乂，[[河間鄚|/zh-hant/maps/map-overall?lat=38.88181936&lng=116.11731326&name=Mo]]人也。漢末應募討黃巾，為軍司馬，屬韓馥。馥敗，以兵歸袁紹。紹以郃為[[校尉|/zh-hant/translations/officials/regional#commanderies-060]]，使拒公孫瓚。瓚破，郃功多，遷寧國中郎將。",
+        "zhs": "张郃字俊乂，[[河间鄚|/zh-hans/maps/map-overall?lat=38.88181936&lng=116.11731326&name=Mo]]人也。汉末应募讨黄巾，为军司马，属韩馥。馥败，以兵归袁绍。绍以郃为[[校尉|/zh-hans/translations/officials/regional#commanderies-060]]，使拒公孙瓒。瓒破，郃功多，迁宁国中郎将。"
+      },
+      "en": "Zhang He, courtesy name Junyi, was from [[Mo, Hejian|/maps/map-overall?lat=38.88181936&lng=116.11731326&name=Mo]]. At the end of the Han, he answered the call for recruits to campaign against the Yellow Turbans and became an army Major under Han Fu. When Han Fu was defeated, Zhang He led his troops to join Yuan Shao. Yuan Shao appointed him [[Colonel|/translations/officials/regional#commanderies-060]] and sent him against Gongsun Zan. After Gongsun Zan was defeated, Zhang He, with his great merits, was promoted to Gentleman General Who Pacifies the State."
+    },
+    {
+      "id": "ws17d-p2",
+      "orig": {
+        "zht": "太祖與袁紹相拒於[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]，紹遣將淳于瓊等督運屯烏巢，太祖自將急擊之。郃說紹曰：「曹公兵精，往必破瓊等；瓊等破，則將軍事去矣，宜急引兵救之。」郭圖曰：「郃計非也。不如攻其本營，勢必還，此為不救而自解也。」郃曰：「曹公營固，攻之必不拔，若瓊等見禽，吾屬盡為虜矣。」紹但遣輕騎救瓊，而以重兵攻太祖營，不能下。太祖果破瓊等，紹軍潰。圖慙，又更譖郃曰：「郃快軍敗，出言不遜。」郃懼，乃歸太祖。",
+        "zhs": "太祖与袁绍相拒于[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]，绍遣将淳于琼等督运屯乌巢，太祖自将急击之。郃说绍曰：「曹公兵精，往必破琼等；琼等破，则将军事去矣，宜急引兵救之。」郭图曰：「郃计非也。不如攻其本营，势必还，此为不救而自解也。」郃曰：「曹公营固，攻之必不拔，若琼等见禽，吾属尽为虏矣。」绍但遣轻骑救琼，而以重兵攻太祖营，不能下。太祖果破琼等，绍军溃。图慙，又更谮郃曰：「郃快军败，出言不逊。」郃惧，乃归太祖。"
+      },
+      "en": "At [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]], Cao Cao faced Yuan Shao in a stalemate. Yuan Shao sent the general Chunyu Qiong and others to escort the supply lines and encamp at Wuchao. Cao Cao personally led a swift attack against them. Zhang He urged Yuan Shao: “Lord Cao’s troops are elite. If he attacks, he will certainly defeat Chunyu Qiong and the others. Once they are defeated, your cause will be lost, General. We must send troops to their aid at once.\" Guo Tu said, \"Zhang He's advice is mistaken. We should attack Cao Cao’s main camp instead. He will be forced to return, and Chunyu Qiong will be relieved without us having to rescue him.\" Zhang He replied, \"Cao Cao’s camp is strongly fortified. We will certainly fail to take it. If Chunyu Qiong and the others are captured, we shall all become prisoners.\" Yuan Shao sent only light cavalry to aid Qiong, while committing his main force to attack Cao Cao’s camp, but failed to take it. Cao Cao duly defeated Qiong and the others, and Yuan Shao’s army collapsed. Guo Tu, ashamed, then slandered Zhang He again, saying,  \"Zhang He rejoiced at our army’s defeat and spoke with insolence.\" Fearing for his life, Zhang He surrendered to Cao Cao.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "漢晉春秋",
+            "zhs": "汉晋春秋",
+            "en": "Chronicles of Han and Jin"
+          },
+          "zht": "漢晉春秋曰：郃說紹曰：「公雖連勝，然勿與曹公戰也，密遣輕騎鈔絕其南，則兵自敗矣。」紹不從之。",
+          "zhs": "汉晋春秋曰：郃说绍曰：「公虽连胜，然勿与曹公战也，密遣轻骑钞绝其南，则兵自败矣。」绍不从之。",
+          "en": "The Han Jin Chunqiu states: Zhang He told Yuan Shao, \"Though you, my lord, have won victory after victory, it would be best not to engage Cao Cao directly. Instead, secretly dispatch light cavalry to raid and sever his routes to the south. His army will then collapse on its own.\" Yuan Shao did not heed him."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "臣松之案武紀及袁紹傳並云袁紹使張郃、高覽攻太祖營，郃等聞淳于瓊破，遂來降，紹衆於是大潰。是則緣郃等降而後紹軍壞也。至如此傳，為紹軍先潰，懼郭圖之譖，然後歸太祖，為參錯不同矣。",
+          "zhs": "臣松之案武纪及袁绍传并云袁绍使张郃、高览攻太祖营，郃等闻淳于琼破，遂来降，绍众于是大溃。是则缘郃等降而后绍军坏也。至如此传，为绍军先溃，惧郭图之谮，然后归太祖，为参错不同矣。",
+          "en": "Your servant Songzhi notes: Both the Annals of Emperor Wu, the Martial Emperor, and the Biography of Yuan Shao state that Yuan Shao sent Zhang He and Gao Lan to attack Cao Cao's camp. When they heard that Chunyu Qiong had been defeated, they surrendered, whereupon Yuan Shao’s forces collapsed completely. Thus it was their surrender that precipitated the collapse of his army. This biography, however, has Yuan Shao’s forces collapse first, after which Zhang He and the others, fearing Guo Tu’s slander, submitted to Cao Cao. The accounts are therefore inconsistent."
+        }
+      ]
+    },
+    {
+      "id": "ws17d-p3",
+      "orig": {
+        "zht": "太祖得郃甚喜，謂曰：「昔子胥不早寤，自使身危，豈若微子去殷、韓信歸漢邪？」拜郃[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]，封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。授以衆，從攻[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，拔之。又從擊袁譚於[[渤海|/zh-hant/maps/map-overall?admin=155]]，別將軍圍[[雍奴|/zh-hant/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]，大破之。從討[[柳城|/zh-hant/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，與張遼俱為軍鋒，以功遷[[平狄將軍|/zh-hant/translations/officials/military#four-direction--misc-131]]。別征[[東萊|/zh-hant/maps/map-overall?admin=46]]，討管承，又與張遼討陳蘭、梅成等，破之。從破馬超、韓遂於[[渭|/zh-hant/maps/map-overall?water=14]]南。圍[[安定|/zh-hant/maps/map-overall?admin=152]]，降楊秋。與夏侯淵討[[鄜|/zh-hant/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]賊梁興及[[武都|/zh-hant/maps/map-overall?lat=33.84839033&lng=105.17653663&name=Wudu]]氐。又破馬超，平宋建。",
+        "zhs": "太祖得郃甚喜，谓曰：「昔子胥不早寤，自使身危，岂若微子去殷、韩信归汉邪？」拜郃[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]，封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。授以众，从攻[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，拔之。又从击袁谭于[[渤海|/zh-hans/maps/map-overall?admin=155]]，别将军围[[雍奴|/zh-hans/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]，大破之。从讨[[柳城|/zh-hans/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，与张辽俱为军锋，以功迁[[平狄将军|/zh-hans/translations/officials/military#four-direction--misc-131]]。别征[[东莱|/zh-hans/maps/map-overall?admin=46]]，讨管承，又与张辽讨陈兰、梅成等，破之。从破马超、韩遂于[[渭|/zh-hans/maps/map-overall?water=14]]南。围[[安定|/zh-hans/maps/map-overall?admin=152]]，降杨秋。与夏侯渊讨[[鄜|/zh-hans/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]贼梁兴及[[武都|/zh-hans/maps/map-overall?lat=33.84839033&lng=105.17653663&name=Wudu]]氐。又破马超，平宋建。"
+      },
+      "en": "Cao Cao was greatly delighted to have Zhang He and said to him, \"In former times, Wu Zixu failed to see the truth soon enough and brought danger upon himself.How can that compare with Weizi leaving Yin or Han Xin joining Han?\" He appointed Zhang He [[Adjunct General|/translations/officials/military#four-direction--misc-164]] and enfeoffed him as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. Given troops to command, Zhang He took part in the attack on [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]] and captured it. He then joined the campaign against Yuan Tan in [[Bohai|/maps/map-overall?admin=155]], and separately led troops to besiege [[Yongnu|/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]], where he won a great victory. During the expedition to [[Liucheng|/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]], Zhang He and Zhang Liao served as the army’s vanguard. For his merit, he was promoted to [[General Who Subdues the Di|/translations/officials/military#four-direction--misc-131]]. Zhang He later separately campaigned in [[Donglai|/maps/map-overall?admin=46]] against Guan Cheng, then joined Zhang Liao in defeating Chen Lan, Mei Cheng, and others. He took part in the defeat of Ma Chao and Han Sui south of the [[Wei River|/maps/map-overall?water=14]], then besieged [[Anding|/maps/map-overall?admin=152]] and induced Yang Qiu to surrender. Together with Xiahou Yuan, Zhang He also campaigned against Liang Xing, a rebel from [[Fucheng|/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]], and the Di of [[Wudu|/maps/map-overall?lat=33.84839033&lng=105.17653663&name=Wudu]]. He later again defeated Ma Chao and subdued Song Jian."
+    },
+    {
+      "id": "ws17d-p4",
+      "orig": {
+        "zht": "祖征張魯，先遣郃督諸軍討興和氐王竇茂。太祖從[[散關|/zh-hant/maps/map-overall?lat=34.30099179&lng=106.94900224&name=Sanguan]]入[[漢中|/zh-hant/maps/map-overall?admin=110]]，又先遣郃督步卒五千於前通路。至[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，魯降，太祖還，留郃與夏侯淵等守[[漢中|/zh-hant/maps/map-overall?admin=110]]，拒劉備。郃別督諸軍，降[[巴東|/zh-hant/maps/map-overall?admin=98]]、[[巴西|/zh-hant/maps/map-overall?admin=102]]二郡，徙其民於[[漢中|/zh-hant/maps/map-overall?admin=110]]。進軍[[宕渠|/zh-hant/maps/map-overall?lat=31.00817404&lng=107.1663695&name=Dangqu]]，為備將張飛所拒，引還[[南鄭|/zh-hant/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]。拜[[盪寇將軍|/zh-hant/translations/officials/military#four-direction--misc-153]]。劉備屯[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，郃屯廣石。備以精卒萬餘，分為十部，夜急攻郃。郃率親兵搏戰，備不能克。其後備於走馬谷燒都圍，淵救火，從他道與備相遇，交戰，短兵接刃。淵遂沒，郃還[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。",
+        "zhs": "祖征张鲁，先遣郃督诸军讨兴和氐王窦茂。太祖从[[散关|/zh-hans/maps/map-overall?lat=34.30099179&lng=106.94900224&name=Sanguan]]入[[汉中|/zh-hans/maps/map-overall?admin=110]]，又先遣郃督步卒五千于前通路。至[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，鲁降，太祖还，留郃与夏侯渊等守[[汉中|/zh-hans/maps/map-overall?admin=110]]，拒刘备。郃别督诸军，降[[巴东|/zh-hans/maps/map-overall?admin=98]]、[[巴西|/zh-hans/maps/map-overall?admin=102]]二郡，徙其民于[[汉中|/zh-hans/maps/map-overall?admin=110]]。进军[[宕渠|/zh-hans/maps/map-overall?lat=31.00817404&lng=107.1663695&name=Dangqu]]，为备将张飞所拒，引还[[南郑|/zh-hans/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]。拜[[荡寇将军|/zh-hans/translations/officials/military#four-direction--misc-153]]。刘备屯[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，郃屯广石。备以精卒万余，分为十部，夜急攻郃。郃率亲兵搏战，备不能克。其后备于走马谷烧都围，渊救火，从他道与备相遇，交战，短兵接刃。渊遂没，郃还[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。"
+      },
+      "en": "When Cao Cao campaigned against Zhang Lu, he first sent Zhang He to command the armies against Dou Mao, the Di king of Xinghe. Cao Cao entered [[Hanzhong|/maps/map-overall?admin=110]] through [[Sanguan|/maps/map-overall?lat=34.30099179&lng=106.94900224&name=Sanguan]], first sending Zhang He ahead with 5,000 infantry to clear the road. On reaching [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]], Zhang Lu surrendered. Cao Cao then returned, leaving Zhang He, Xiahou Yuan, and others to defend [[Hanzhong|/maps/map-overall?admin=110]] against Liu Bei. Zhang He was separately placed in command of several armies, and subdued the two commanderies of [[Badong|/maps/map-overall?admin=98]] and [[Baxi|/maps/map-overall?admin=102]], resettling their inhabitants in [[Hanzhong|/maps/map-overall?admin=110]]. He then advanced to [[Dangqu|/maps/map-overall?lat=31.00817404&lng=107.1663695&name=Dangqu]], but was repulsed by Liu Bei's general Zhang Fei and withdrew to [[Nanzheng|/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]. Zhang He was later appointed [[General Who Sweeps the Bandits|/translations/officials/military#four-direction--misc-153]]. Thereafter, Liu Bei encamped at [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]], while Zhang He held Guangshi. Liu Bei divided more than 10,000 elite troops into ten units and launched a fierce night attack. Zhang He led his personal guard in close combat, and Liu Bei could not overcome him. Later, Liu Bei set fire to the main defences at Zouma Valley. Xiahou Yuan went to fight the blaze, but encountered Liu Bei along another route. The two sides fought blade to blade, Xiahou Yuan was killed, and Zhang He withdrew to [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：淵雖為都督，劉備憚郃而易淵。及殺淵，備曰：「當得其魁，用此何為邪！」",
+          "zhs": "《魏略》曰：渊虽为都督，刘备惮郃而易渊。及杀渊，备曰：「当得其魁，用此何为邪！」",
+          "en": "The Weilüe / Brief History of Wei states: Although Xiahou Yuan was the overall commander, Liu Bei feared Zhang He and made light of Yuan. When Yuan was killed, Liu Bei said, \"We should have taken their foremost man. What use was there in killing this one?\""
+        }
+      ]
+    },
+    {
+      "id": "ws17d-p5",
+      "orig": {
+        "zht": "當是時，新失元帥，恐為備所乘，三軍皆失色。淵[[司馬|/zh-hant/translations/officials/military#conquering--garrisoning-074]]郭淮乃令衆曰：「張將軍，國家名將，劉備所憚；今日事急，非張將軍不能安也。」遂推郃為軍主。郃出，勒兵安陣，諸將皆受郃節度，衆心乃定。太祖在[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，遣使[[假郃節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。太祖遂自至[[漢中|/zh-hant/maps/map-overall?admin=110]]，劉備保高山不敢戰。太祖乃引出[[漢中|/zh-hant/maps/map-overall?admin=110]]諸軍，郃還屯[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]。",
+        "zhs": "当是时，新失元帅，恐为备所乘，三军皆失色。渊[[司马|/zh-hans/translations/officials/military#conquering--garrisoning-074]]郭淮乃令众曰：「张将军，国家名将，刘备所惮；今日事急，非张将军不能安也。」遂推郃为军主。郃出，勒兵安阵，诸将皆受郃节度，众心乃定。太祖在[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，遣使[[假郃节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。太祖遂自至[[汉中|/zh-hans/maps/map-overall?admin=110]]，刘备保高山不敢战。太祖乃引出[[汉中|/zh-hans/maps/map-overall?admin=110]]诸军，郃还屯[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]。"
+      },
+      "en": "At that time, the army had just lost its commander and feared that Liu Bei would seize the advantage. All the troops were stricken with alarm. Xiahou Yuan’s [[Major|/translations/officials/military#conquering--garrisoning-074]], Guo Huai, addressed them: \"General Zhang is a renowned general of the state, whom Liu Bei fears. In this crisis, no one but General Zhang can restore order.\" They therefore nominated Zhang He commander of the army. Zhang He came forward, marshalled the troops, and set the battle lines in order. The other generals all submitted to his command, and the army’s morale steadied. Cao Cao was then at [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]. He sent an envoy to appoint Zhang He as [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. Cao Cao later came personally to [[Hanzhong|/maps/map-overall?admin=110]], but Liu Bei held the high ground and dared not engage. Cao Cao therefore withdrew the armies from [[Hanzhong|/maps/map-overall?admin=110]], and Zhang He returned to garrison at [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]."
+    },
+    {
+      "id": "ws17d-p6",
+      "orig": {
+        "zht": "文帝即王位，以郃為[[左將軍|/zh-hant/translations/officials/military#four-direction--misc-116]]，進爵[[都鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。及踐阼，進封[[鄚|/zh-hant/maps/map-overall?lat=38.88181936&lng=116.11731326&name=Mo]]侯。詔郃與曹真討[[安定|/zh-hant/maps/map-overall?admin=152]]盧水胡及東羌，召郃與真並朝[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]宮，遣南與夏侯尚擊[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]。郃別督諸軍渡江，取洲上屯塢。明帝即位，遣南屯[[荊州|/zh-hant/maps/map-overall?admin=2]]，與司馬宣王擊孫權別將劉阿等，追至[[祁口|/zh-hant/maps/map-overall?lat=31.69731456&lng=112.10704664&name=Qikou]]，交戰，破之。",
+        "zhs": "文帝即王位，以郃为[[左将军|/zh-hans/translations/officials/military#four-direction--misc-116]]，进爵[[都乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。及践阼，进封[[鄚|/zh-hans/maps/map-overall?lat=38.88181936&lng=116.11731326&name=Mo]]侯。诏郃与曹真讨[[安定|/zh-hans/maps/map-overall?admin=152]]卢水胡及东羌，召郃与真并朝[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]宫，遣南与夏侯尚击[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]。郃别督诸军渡江，取洲上屯坞。明帝即位，遣南屯[[荆州|/zh-hans/maps/map-overall?admin=2]]，与司马宣王击孙权别将刘阿等，追至[[祁口|/zh-hans/maps/map-overall?lat=31.69731456&lng=112.10704664&name=Qikou]]，交战，破之。"
+      },
+      "en": "When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) succeeded as King of Wei, he appointed Zhang He [[General of the Left|/translations/officials/military#four-direction--misc-116]] and advanced his peerage to [[Capital Township Marquis|/translations/officials#glossary-capital-township-township-marquis]]. On ascending the imperial throne, Cao Pi further enfeoffed him as Marquis of [[Mo|/maps/map-overall?lat=38.88181936&lng=116.11731326&name=Mo]]. The emperor ordered Zhang He and Cao Zhen to campaign against the Lushui Hu tribes of [[Anding|/maps/map-overall?admin=152]] and the Eastern Qiang, then summoned them both to court at the palace in [[Xu|/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]. Zhang He was afterwards sent south to join Xiahou Shang in attacking [[Jiangling|/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]. Zhang He led a separate force to cross the river and seized the fortified encampments on the islets. When Emperor Ming came to the throne, he sent Zhang He south to garrison [[Jing Province|/maps/map-overall?admin=2]]. Together with Sima Yi (posthumously honoured as King Xuan, the Renowned King), Zhang He attacked Liu A and other generals under Sun Quan, pursued them to [[Qikou|/maps/map-overall?lat=31.69731456&lng=112.10704664&name=Qikou]], and defeated them in battle."
+    },
+    {
+      "id": "ws17d-p7",
+      "orig": {
+        "zht": "諸葛亮出祁山。加郃位[[特進|/zh-hant/translations/officials/ministers#civil-honorary-officials-118]]，遣督諸軍，拒亮將馬謖於[[街亭|/zh-hant/maps/map-overall?lat=35.15385412&lng=106.19109543&name=Jieting]]。謖依阻南山，不下據城。郃絕其汲道，擊，大破之。[[南安|/zh-hant/maps/map-overall?admin=149]]、[[天水|/zh-hant/maps/map-overall?admin=148]]、[[安定|/zh-hant/maps/map-overall?admin=152]]郡反應亮，郃皆破平之。詔曰：「賊亮以巴蜀之衆，當虓虎之師。將軍被堅執銳，所向克定，朕甚嘉之。益邑千戶，并前四千三百戶。」司馬宣王治水軍於[[荊州|/zh-hant/maps/map-overall?admin=2]]，欲順沔入江伐吳，詔郃督關中諸軍往受節度。至[[荊州|/zh-hant/maps/map-overall?admin=2]]，會冬水淺，大船不得行，乃還屯方城。",
+        "zhs": "诸葛亮出祁山。加郃位[[特进|/zh-hans/translations/officials/ministers#civil-honorary-officials-118]]，遣督诸军，拒亮将马谡于[[街亭|/zh-hans/maps/map-overall?lat=35.15385412&lng=106.19109543&name=Jieting]]。谡依阻南山，不下据城。郃绝其汲道，击，大破之。[[南安|/zh-hans/maps/map-overall?admin=149]]、[[天水|/zh-hans/maps/map-overall?admin=148]]、[[安定|/zh-hans/maps/map-overall?admin=152]]郡反应亮，郃皆破平之。诏曰：「贼亮以巴蜀之众，当虓虎之师。将军被坚执锐，所向克定，朕甚嘉之。益邑千户，并前四千三百户。」司马宣王治水军于[[荆州|/zh-hans/maps/map-overall?admin=2]]，欲顺沔入江伐吴，诏郃督关中诸军往受节度。至[[荆州|/zh-hans/maps/map-overall?admin=2]]，会冬水浅，大船不得行，乃还屯方城。"
+      },
+      "en": "Thereafter, Zhuge Liang advanced through Mount Qi. Zhang He was promoted to [[Specially Advanced|/translations/officials/ministers#civil-honorary-officials-118]] and sent to command the armies against Zhuge Liang’s general Ma Su at [[Jieting|/maps/map-overall?lat=35.15385412&lng=106.19109543&name=Jieting]]. Ma Su occupied a defensible position on the southern mountain rather than descending to hold the city. Zhang He cut off his access to water, attacked, and routed him. The commanderies of [[Nan'an|/maps/map-overall?admin=149]], [[Tianshui|/maps/map-overall?admin=148]], and [[Anding|/maps/map-overall?admin=152]] had rebelled in support of Zhuge Liang , but Zhang He defeated and pacified them all. An imperial edict proclaimed: \"The rebel Zhuge Liang led the masses of Ba and Shu against our army of roaring tigers. Clad in stout armour and bearing keen weapons, you, General, brought victory and order wherever you went. I commend you highly. Your fief is hereby increased by one thousand households, bringing the total to four thousand three hundred.\" Later, Sima Yi trained a naval force in [[Jing Province|/maps/map-overall?admin=2]], intending to follow the Mian River into the Yangtze and attack Wu. An edict ordered Zhang He to lead the armies of Guanzhong there and place himself under Sima Yi’s command. When he reached [[Jing Province|/maps/map-overall?admin=2]], however, the winter waters were too shallow for the great ships to sail, so Zhang He returned and garrisoned Fangcheng."
+    },
+    {
+      "id": "ws17d-p8",
+      "orig": {
+        "zht": "諸葛亮復出，急攻[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，帝驛馬召郃到[[京都|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]。帝自幸[[河南|/zh-hant/maps/map-overall?lat=34.66589261&lng=112.41910274&name=Henan]]城，置酒送郃，遣南北軍士三萬及分遣武衞、虎賁使衞郃，因問郃曰：「遲將軍到，亮得無已得[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]乎！」郃知亮縣軍無穀，不能乆攻，對曰：「比臣未到，亮已走矣；屈指計亮糧不至十日。」郃晨夜進至[[南鄭|/zh-hant/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]，亮退。詔郃還[[京都|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，拜征西[[車騎將軍|/zh-hant/translations/officials/military#various-grand-generals-037]]。",
+        "zhs": "诸葛亮复出，急攻[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，帝驿马召郃到[[京都|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]。帝自幸[[河南|/zh-hans/maps/map-overall?lat=34.66589261&lng=112.41910274&name=Henan]]城，置酒送郃，遣南北军士三万及分遣武衞、虎贲使衞郃，因问郃曰：「迟将军到，亮得无已得[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]乎！」郃知亮县军无谷，不能乆攻，对曰：「比臣未到，亮已走矣；屈指计亮粮不至十日。」郃晨夜进至[[南郑|/zh-hans/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]，亮退。诏郃还[[京都|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，拜征西[[车骑将军|/zh-hans/translations/officials/military#various-grand-generals-037]]。"
+      },
+      "en": "Some time later, Zhuge Liang marched out again and fiercely attacked [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]. The emperor summoned Zhang He to [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]] by relay horse, and personally visited the city of [[Henan|/maps/map-overall?lat=34.66589261&lng=112.41910274&name=Henan]]. There, he held a banquet to send Zhang He off and assigned him 30000 troops from the Northern and Southern Armies, together with detachments of the Martial Guards and Rapid Tigers for his protection. The emperor then asked, \"By the time you arrive, will Liang not already have taken [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]?\" hang He knew that Zhuge Liang’s army was operating far from its base and lacked provisions, and so could not sustain a long attack. He replied, \"Before I arrive, Zhuge Liang will surely have withdrawn. Counting the days, I judge that his supplies will last fewer than ten days.\" Zhang He pressed on day and night. By the time he reached [[Nanzheng|/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]], Zhuge Liang had withdrawn. An edict recalled Zhang He to [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]], where he was appointed [[General of Chariots and Cavalry|/translations/officials/military#various-grand-generals-037]] Who Conquers the West."
+    },
+    {
+      "id": "ws17d-p9",
+      "orig": {
+        "zht": "郃識變數，善處營陣，料戰勢地形，無不如計，自諸葛亮皆憚之。郃雖武將而愛樂儒士，嘗薦同鄉卑湛經明行脩，詔曰：「昔祭遵為將，奏置五經大夫，居軍中，與諸生雅歌投壺。今將軍外勒戎旅，內存國朝。朕嘉將軍之意，今擢湛為博士。」",
+        "zhs": "郃识变数，善处营阵，料战势地形，无不如计，自诸葛亮皆惮之。郃虽武将而爱乐儒士，尝荐同乡卑湛经明行修，诏曰：「昔祭遵为将，奏置五经大夫，居军中，与诸生雅歌投壶。今将军外勒戎旅，内存国朝。朕嘉将军之意，今擢湛为博士。」"
+      },
+      "en": "Zhang He had a keen grasp of changing circumstances and was skilled in setting up camps and drawing up formations. His assessments of battle conditions and terrain invariably proved correct, and even Zhuge Liang was wary of him. Though a military commander, Zhang He delighted in the company of Confucian scholars. He once recommended his fellow countryman Bei Zhan as a man well versed in the classics and cultivated in conduct. An edict proclaimed: \"Long ago, when Ji Zun was a general, he petitioned for Doctors of the Five Classics to be appointed. In camp, he sang classical odes and played pitch-pot with the students. Now, General, though you command the troops in the field, you remain mindful of the imperial court. I commend your intention and hereby appoint Bei Zhan an Erudite.\""
+    },
+    {
+      "id": "ws17d-p10",
+      "orig": {
+        "zht": "諸葛亮復出祁山，詔郃督諸將西至[[略陽|/zh-hant/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]，亮還保祁山，郃追至[[木門|/zh-hant/maps/map-overall?lat=34.32326192&lng=105.55193491&name=Mumen]]，與亮軍交戰，飛矢中郃右膝，薨，謚曰壯侯。子雄嗣。郃前後征伐有功，明帝分郃戶，封郃四子[[列侯|/zh-hant/translations/officials#glossary-marquis]]。賜小子爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
+        "zhs": "诸葛亮复出祁山，诏郃督诸将西至[[略阳|/zh-hans/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]，亮还保祁山，郃追至[[木门|/zh-hans/maps/map-overall?lat=34.32326192&lng=105.55193491&name=Mumen]]，与亮军交战，飞矢中郃右膝，薨，谥曰壮侯。子雄嗣。郃前后征伐有功，明帝分郃户，封郃四子[[列侯|/zh-hans/translations/officials#glossary-marquis]]。赐小子爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
+      },
+      "en": "Afterwards, Zhuge Liang again marched out through Mount Qi. By imperial edict, Zhang He took command of the generals and advanced west to [[Lüeyang|/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]. Zhuge Liang withdrew to hold Mount Qi, and Zhang He pursued him to [[Mumen|/maps/map-overall?lat=34.32326192&lng=105.55193491&name=Mumen]] and engaged his army in battle. An arrow struck Zhang He in the right knee, and he died. Zhang He was posthumously titled [[Marquis|/translations/officials#glossary-marquis]] Zhuang, the Valiant Marquis. His son Zhang Xiong succeeded him. In recognition of Zhang He’s repeated merit on campaigns, Emperor Ming divided the households of his fief and enfeoffed four of his sons, each as a Marquis. His youngest son was granted the title [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：亮軍退，司馬宣王使郃追之，郃曰：「軍法，圍城必開出路，歸軍勿追。」宣王不聽。郃不得已，遂進。蜀軍乘高布伏，弓弩亂發，矢中郃髀。",
+          "zhs": "《魏略》曰：亮军退，司马宣王使郃追之，郃曰：「军法，围城必开出路，归军勿追。」宣王不听。郃不得已，遂进。蜀军乘高布伏，弓弩乱发，矢中郃髀。",
+          "en": "The Weilüe / Brief History of Wei states: When Zhuge Liang’s army withdrew, Sima Yi ordered Zhang He to pursue. Zhang He said, \"By the laws of war, a besieged city must be left a route of escape, and a retreating army must not be pursued.\" Sima Yi did not listen. With no choice, Zhang He advanced. The Shu army occupied the high ground and laid an ambush, then loosed a hail of arrows and crossbow bolts. An arrow struck Zhang He in the thigh."
+        }
+      ]
+    }
+  ]
+}

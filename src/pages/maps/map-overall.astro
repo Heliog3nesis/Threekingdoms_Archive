@@ -401,6 +401,7 @@ const relatedMaps = [
     'Yanzhou': 'wei', 'Yuzhou': 'wei', 'Youzhou': 'wei',
     'Liangzhou': 'wei', 'Sili': 'wei', 'Yongzhou': 'wei',
     'Xuzhou': 'wei', 'Jingzhou (Wei)': 'wei', 'Yangzhou (Wei)': 'wei',
+    'Xiyu': 'wei',
     'Yizhou (South)': 'shu', 'Yizhou (North)': "shu",
     'Jiaozhou': 'wu', 'Jingzhou (Wu)': 'wu', 'Yangzhou (Wu)': 'wu',
   };
@@ -422,8 +423,21 @@ const relatedMaps = [
   'Yizhou (South)': url('/mapbase/Yi_South.png'),
   'Yongzhou': url('/mapbase/Yongzhou.png'),
   'Youzhou': url('/mapbase/Youzhou.png'),
+  'Xiyu': url('/mapbase/Xiyu.png'),
 };
   const kingdomLabel = { wei: 'Wei', shu: 'Shu', wu: 'Wu' };
+  // Xiyu towns are tagged kingdom 'wei' for filtering purposes (matching how
+  // the rest of the map treats the Western Regions), but should read as
+  // "Xiyu" rather than "Wei" in the badge itself — same color, different
+  // label, since "Wei" would misleadingly imply direct administration
+  // rather than the historical tributary relationship. Same convention as
+  // search.astro's getTownBadgeInfo.
+  function getTownBadgeInfo(provEn) {
+    const k = getKingdom(provEn);
+    if (!k) return null;
+    if (provEn === 'Xiyu') return { cls: `b-${k}`, label: 'Xiyu' };
+    return { cls: `b-${k}`, label: kingdomLabel[k] };
+  }
   const typeLabel = { "Provincial Seat": "Provincial Seat", "Commandery Seat": "Commandery Seat", "County Seat": "County Seat", "Military Pass": "Military Pass", "Landmark": "Landmark", "Others": "Others" };
   function displaySearchTownName(t) {
     if (lang === 'zh-hans') return t.Town_CHS || t.Town_CH || t.Town_EN || '';
@@ -711,7 +725,7 @@ function formatProvinceLabel(provEn) {
           const isCommandery = f.properties.level === 'commandery';
           const isTributary = f.properties.level === 'tributary';
           const subName = displaySearchAdminSub(f) ? `<span class="result-name-zh">${displaySearchAdminSub(f)}</span>` : '';
-          const typeLabelText = isCommandery ? 'Commandery' : (isTributary ? 'Tributary' : 'Province');
+          const typeLabelText = isCommandery ? 'Commandery' : (isTributary ? 'Tributary State' : 'Province');
           const k = f.properties.kingdom;
           const badge = k ? `<span class="badge b-${k}">${kingdomLabel[k]}</span>` : '';
           const pngUrl = provToPng[f.properties.Prov_EN];
@@ -724,8 +738,8 @@ function formatProvinceLabel(provEn) {
         }
 
         const t     = result.item;
-        const k     = getKingdom(t.Prov_EN);
-        const badge = k ? `<span class="badge b-${k}">${kingdomLabel[k]}</span>` : '';
+        const badgeInfo = getTownBadgeInfo(t.Prov_EN);
+        const badge = badgeInfo ? `<span class="badge ${badgeInfo.cls}">${badgeInfo.label}</span>` : '';
         const subName = displaySearchTownSub(t) ? `<span class="result-name-zh">${displaySearchTownSub(t)}</span>` : '';
         const pngUrl = provToPng[t.Prov_EN];
         const pngBtn = pngUrl ? `<button class="result-action" data-png="${pngUrl}" title="View province map"><i class="ti ti-map-2"></i></button>` : '';
@@ -873,7 +887,8 @@ function formatProvinceLabel(provEn) {
   });
 
   // ── INTERACTIVE MAP ───────────────────────────────────────────
-  // Fully handled by interactive-map.js
+  // Fully handled by interactive-map.js (with the journey-panel feature
+  // split out into its own journey.js module alongside it)
   import {
     initInteractiveMap,
     flyToLocation,
@@ -881,10 +896,12 @@ function formatProvinceLabel(provEn) {
     clearWaterBodyHighlight,
     showWaterBodyById,
     fetchAdminBoundaries,
-    showAdminBoundaryById,
+    showAdminBoundaryById
+  } from '../../scripts/maps/interactive-map.js';
+  import {
     showJourney,
     exitJourneyMode
-  } from '../../scripts/maps/interactive-map.js';
+  } from '../../scripts/maps/journey.js';
 </script>
 
 <style is:global>
@@ -1197,14 +1214,29 @@ function formatProvinceLabel(provEn) {
 }
 
 .imap-journey-header {
+  position: relative;
+  padding: 0 28px; /* leaves room for the absolute-positioned corner icons */
+}
+.imap-journey-bio-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #d0a66a;
+  font-size: 17px;
+  text-decoration: none;
+}
+.imap-journey-bio-link:hover { color: #f0d29a; }
+
+.imap-journey-header-nav {
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
 }
 .imap-journey-arrow {
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1212,94 +1244,121 @@ function formatProvinceLabel(provEn) {
   border: 1px solid rgba(202,163,106,0.28);
   border-radius: 4px;
   color: #d0a66a;
-  font-size: 15px;
+  font-size: 18px;
   cursor: pointer;
-  margin-top: 2px;
 }
 .imap-journey-arrow:hover { background: rgba(40,32,18,0.95); }
-.imap-journey-header-info { flex: 1; min-width: 0; }
+.imap-journey-header-info { text-align: center; min-width: 0; }
 
-.imap-journey-name-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 8px;
-  flex-wrap: wrap;
-}
 .imap-journey-name {
   font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
   color: #eee8da;
-  text-align: center;
 }
-.imap-journey-name-zh {
+.imap-journey-name-secondary {
+  font-family: initial;
   font-size: 17px;
   color: var(--color-text-secondary);
   margin-left: 6px;
 }
-.imap-journey-bio-link {
-  font-size: 14.5px;
-  color: #d0a66a;
-  text-decoration: none;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.imap-journey-bio-link:hover { color: #f0d29a; }
-.imap-journey-bio-link i { font-size: 13px; }
-
 .imap-journey-courtesy {
   font-size: 16px;
   font-style: italic;
   color: #eee8da;
   margin-top: 2px;
-  text-align: left;
 }
-.imap-journey-courtesy-zh {
+.imap-journey-courtesy-secondary {
   font-size: 14px;
+  font-style: normal;
   color: var(--color-text-secondary);
   margin-left: 5px;
 }
+.imap-journey-person-count {
+  text-align: center;
+  font-size: 11px;
+  color: rgba(238,232,218,0.4);
+  margin-top: 4px;
+}
 
 .imap-journey-dates {
-  margin-top: 8px;
+  margin-top: 10px;
   padding-top: 8px;
-  border-top: 1px dashed rgba(202,163,106,0.25);
+  border-top: 1px solid rgba(202,163,106,0.28);
   text-align: center;
 }
-.imap-journey-dates-num { font-size: 15px; color: rgba(238,232,218,0.78); }
-.imap-journey-dates-era { font-size: 13px; color: rgba(238,232,218,0.4); margin-top: 1px; }
+.imap-journey-dates-num { font-size: 16px; color: rgba(238,232,218,0.78); }
+.imap-journey-dates-era { font-size: 14px; color: rgba(238,232,218,0.4); margin-top: 1px; }
+
+.imap-journey-footnote {
+  margin-top: 14px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(202,163,106,0.15);
+  font-size: 11px;
+  color: rgba(238,232,218,0.4);
+}
 
 .imap-journey-timeline {
-  margin-top: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  margin-top: 16px;
+  position: relative;
+  padding-left: 20px;
 }
-.imap-journey-stop {
-  display: flex;
-  gap: 12px;
+/* The connecting spine - what actually makes this read as a timeline
+   rather than a plain list. Runs the full height of the stop list,
+   inset just enough that the dots sit centered on it. */
+.imap-journey-timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: rgba(202,163,106,0.3);
 }
-.imap-journey-stop-when {
-  flex-shrink: 0;
-  width: 80px;
-  text-align: right;
+.imap-journey-timeline > * + * { margin-top: 18px; }
+
+.imap-journey-stop { position: relative; }
+.imap-journey-stop::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  border-radius: 50%;
 }
-.imap-journey-stop-year {
-  font-size: 18px;
+/* Dated stops get a bigger, brighter dot than undated ones (hometown /
+   early-life entries) - the dot weight itself signals whether this is a
+   confirmed point in the chronology or a rough placement. */
+.imap-journey-stop-dated::before {
+  left: -21px;
+  width: 9px;
+  height: 9px;
+  background: #d0a66a;
+}
+.imap-journey-stop-undated::before {
+  left: -20px;
+  width: 7px;
+  height: 7px;
+  background: rgba(202,163,106,0.4);
+}
+.imap-journey-stop-when-label {
+  font-size: 12px;
+  color: rgba(208,166,106,0.6);
+}
+.imap-journey-stop-when-dated {
+  font-size: 14px;
+  font-weight: 500;
   color: #d0a66a;
-  font-weight: 600;
 }
-.imap-journey-stop-era {
-  font-size: 13px;
-  color: var(--color-text-tertiary);
-}
-.imap-journey-stop-where { flex: 1; min-width: 0; }
+.imap-journey-stop-entry { margin-top: 4px; }
+.imap-journey-stop-entry + .imap-journey-stop-entry { margin-top: 8px; }
 .imap-journey-stop-location {
   font-size: 16px;
   color: #eee8da;
 }
 .imap-journey-stop-location > div + div {
   margin-top: 4px;
+}
+.imap-journey-loc-secondary {
+  font-size: 13px;
+  color: var(--color-text-secondary);
 }
 .imap-journey-loc-link {
   cursor: pointer;
@@ -1308,17 +1367,26 @@ function formatProvinceLabel(provEn) {
   color: #d0a66a;
   text-decoration-color: #d0a66a;
 }
+.imap-journey-stop-position-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(238,232,218,0.4);
+  margin-top: 6px;
+}
 .imap-journey-stop-position {
   font-size: 14px;
-  color: var(--color-text-tertiary);
+  color: rgba(238,232,218,0.85);
+  margin-top: 1px;
+}
+.imap-journey-stop-position > div + div {
+  margin-top: 4px;
 }
 .imap-journey-stop-position a {
-  color: rgba(238,232,218,0.55);
-  text-decoration: underline;
-  text-decoration-color: rgba(238,232,218,0.25);
-  text-underline-offset: 2px;
+  color: rgba(238,232,218,0.85);
+  text-decoration: underline dotted rgba(238,232,218,0.35);
+  text-underline-offset: 3px;
 }
-.imap-journey-stop-position a i { font-size: 13px; }
 .imap-journey-stop-position a:hover {
   color: #d0a66a;
   text-decoration-color: #d0a66a;
@@ -1691,7 +1759,6 @@ function formatProvinceLabel(provEn) {
   border: 1px solid rgba(14,165,233,0.45);
   border-left: 3px solid #0ea5e9;
   border-radius: 12px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.26), inset 0 0 0 1px rgba(255,255,255,0.45);
 }
 
 .imap-water-card.imap-admin-card {

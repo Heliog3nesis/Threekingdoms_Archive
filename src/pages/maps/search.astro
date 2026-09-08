@@ -241,6 +241,7 @@ const provinceKingdom = {
     'Yanzhou': 'wei', 'Yuzhou': 'wei', 'Youzhou': 'wei',
     'Liangzhou': 'wei', 'Sili': 'wei', 'Yongzhou': 'wei',
     'Xuzhou': 'wei', 'Jingzhou (Wei)': 'wei', 'Yangzhou (Wei)': 'wei',
+    'Xiyu': 'wei',
     'Yizhou (South)': 'shu','Yizhou (North)': 'shu',
     'Jiaozhou': 'wu', 'Jingzhou (Wu)': 'wu', 'Yangzhou (Wu)': 'wu',
   };
@@ -262,10 +263,23 @@ const provinceKingdom = {
   'Yizhou (South)': url('/mapbase/Yi_South.png'),
   'Yongzhou': url('/mapbase/Yongzhou.png'),
   'Youzhou': url('/mapbase/Youzhou.png'),
+  'Xiyu': url('/mapbase/Xiyu.png'),
 };
  
 const kingdomLabel = { wei: 'Wei 魏', shu: 'Shu 蜀', wu: 'Wu 吳' };
 const kingdomClass = { wei: 'b-wei', shu: 'b-shu', wu: 'b-wu' };
+
+// Xiyu towns are tagged kingdom 'wei' for filtering purposes (matching how
+// the map itself treats the Western Regions), but should read as "Xiyu"
+// rather than "Wei" in the badge itself — same color, different label,
+// since showing "Wei" here would misleadingly imply direct administration
+// rather than the historical tributary relationship.
+function getTownBadgeInfo(provEn) {
+  const k = getKingdom(provEn);
+  if (!k) return null;
+  if (provEn === 'Xiyu') return { cls: kingdomClass[k], label: 'Xiyu 西域' };
+  return { cls: kingdomClass[k], label: kingdomLabel[k] };
+}
 
 function getKingdom(provEn) {
   return provinceKingdom[provEn] ?? null;
@@ -501,7 +515,7 @@ function render() {
         // and tributaries never get a suffix at all — they're not
         // administered territory).
         const primaryName = (isCommandery || isTributary) ? (p.Name_EN || '—') : (formatProvinceLabel(p.Name_EN) || '—');
-        const typeLabelText = isCommandery ? 'Commandery' : (isTributary ? 'Tributary' : 'Province');
+        const typeLabelText = isCommandery ? 'Commandery' : (isTributary ? 'Tributary State' : 'Province');
         const regionColumnText = isCommandery
           ? formatCommanderyLabel(p.Name_EN, p.Name_CH)
           : (isTributary ? (p.Name_EN || '—') : '—');
@@ -519,9 +533,9 @@ function render() {
       }
 
       const t = result.data;
-      const k      = getKingdom(t.Prov_EN);
-      const badge  = k
-        ? `<span class="badge ${kingdomClass[k]}">${kingdomLabel[k]}</span>`
+      const badgeInfo = getTownBadgeInfo(t.Prov_EN);
+      const badge  = badgeInfo
+        ? `<span class="badge ${badgeInfo.cls}">${badgeInfo.label}</span>`
         : '—';
       const pngUrl  = provToPng[t.Prov_EN];
       const pngBtn  = pngUrl

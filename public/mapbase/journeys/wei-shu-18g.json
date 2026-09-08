@@ -2,8 +2,8 @@
   "pins": [
     {
       "kind": "town",
-      "lat": 34.31506886,
-      "lng": 115.22997722,
+      "lat": 34.30412003,
+      "lng": 115.20493966,
       "name": "Jiwu",
       "persons": [
         "典韋"
@@ -11,8 +11,8 @@
     },
     {
       "kind": "town",
-      "lat": 34.42929745,
-      "lng": 115.11364611,
+      "lat": 34.42565297,
+      "lng": 115.07977176,
       "name": "Xiangyi",
       "persons": [
         "典韋"
@@ -20,8 +20,8 @@
     },
     {
       "kind": "town",
-      "lat": 34.3647526,
-      "lng": 115.65117607,
+      "lat": 34.34955451,
+      "lng": 115.62816361,
       "name": "Suiyang",
       "persons": [
         "典韋"
@@ -29,8 +29,8 @@
     },
     {
       "kind": "town",
-      "lat": 35.59233429,
-      "lng": 114.99129787,
+      "lat": 35.61104535,
+      "lng": 114.9728879,
       "name": "Puyang",
       "persons": [
         "典韋"
@@ -73,17 +73,17 @@
           "year": null,
           "age": null,
           "location": {
-            "en": "Jiwu, Chenliu",
-            "zht": "陳留己吾",
-            "zhs": "陈留己吾"
+            "en": "Jiwu",
+            "zht": "己吾",
+            "zhs": "己吾"
           },
           "position": null,
           "passageId": "ws18g-p1",
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 34.31506886,
-              "lng": 115.22997722,
+              "lat": 34.30412003,
+              "lng": 115.20493966,
               "name": "Jiwu"
             }
           ],
@@ -107,8 +107,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 34.42929745,
-              "lng": 115.11364611,
+              "lat": 34.42565297,
+              "lng": 115.07977176,
               "name": "Xiangyi"
             }
           ],
@@ -132,8 +132,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 34.3647526,
-              "lng": 115.65117607,
+              "lat": 34.34955451,
+              "lng": 115.62816361,
               "name": "Suiyang"
             }
           ],
@@ -161,8 +161,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 35.59233429,
-              "lng": 114.99129787,
+              "lat": 35.61104535,
+              "lng": 114.9728879,
               "name": "Puyang"
             }
           ],

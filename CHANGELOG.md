@@ -9,12 +9,23 @@ hotfix for bugs.
 [<img src="./.github/badges/readme.svg" height="22">](./README.md)
 
 ---
+### v2.26.09a · 2026-09-08
+**<img src="./.github/badges/maps.svg" width="62">**
+  - Added Xiyu (Western Regions) to interactive map
+  - Bugfix: Added missing locations; Corrected bad coordinates
+  - Reuploaded maps
+
+**<img src="./.github/badges/translations.svg" width="123">**
+  - Completed Records of the Three Kingdoms translations: Book of Wei Chapter 17
+
+---
 ### v2.26.08b · 2026-08-26
 **<img src="./.github/badges/maps.svg" width="62">**
   - Improved location and journey popup, highlight rules
 
 **<img src="./.github/badges/translations.svg" width="123">**
   - Completed Records of the Three Kingdoms translations: Book of Wei Chapter 18
+
 ---
 ### v2.26.08a · 2026-08-03
 

@@ -1,0 +1,1449 @@
+{
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 36.19189797,
+      "lng": 111.75657765,
+      "name": "Yang",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.31264639,
+      "lng": 108.87167209,
+      "name": "Chang'an",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.16855789,
+      "lng": 111.14855723,
+      "name": "Anyi",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.16060618,
+      "lng": 112.77664557,
+      "name": "Liang",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.03134233,
+      "lng": 113.72992008,
+      "name": "Juan",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.04215228,
+      "lng": 113.97018459,
+      "name": "Yuanwu",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "55",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.56235226,
+      "lng": 114.65338913,
+      "name": "Baima",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.3722844,
+      "lng": 114.28754783,
+      "name": "Yanjin",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.79738574,
+      "lng": 113.47134429,
+      "name": "Gushi",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.29000818,
+      "lng": 114.3635467,
+      "name": "Ye",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.59621665,
+      "lng": 114.46620323,
+      "name": "Handan",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.71417381,
+      "lng": 114.62937544,
+      "name": "Yiyang",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 38.0926547,
+      "lng": 116.68045911,
+      "name": "Nanpi",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 37.05824816,
+      "lng": 116.3832756,
+      "name": "Pingyuan",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 41.4602169,
+      "lng": 120.39183453,
+      "name": "Liucheng",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "2",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.04746989,
+      "lng": 112.06874333,
+      "name": "Fancheng",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.18934355,
+      "lng": 111.53402839,
+      "name": "Linju",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.66663671,
+      "lng": 112.29180382,
+      "name": "Yicheng",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.34078806,
+      "lng": 112.18710173,
+      "name": "Jiangling",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "21",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 37.49238085,
+      "lng": 112.09933191,
+      "name": "Daling",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.36816293,
+      "lng": 110.51564591,
+      "name": "Fenyin",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.59426174,
+      "lng": 110.32268475,
+      "name": "Tongguan",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.87374888,
+      "lng": 110.28348954,
+      "name": "Pubanjin",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.63936227,
+      "lng": 107.17845258,
+      "name": "Yumi",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.83685651,
+      "lng": 106.85666136,
+      "name": "Qian",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "152",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.39983275,
+      "lng": 110.38547776,
+      "name": "Xiayang",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.60832708,
+      "lng": 109.61482388,
+      "name": "Fucheng",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.56081766,
+      "lng": 105.77447206,
+      "name": "Mamingge",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "110",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.16854232,
+      "lng": 106.61155724,
+      "name": "Yangpingguan",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.98790226,
+      "lng": 112.53739567,
+      "name": "Wan",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "89",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.92967724,
+      "lng": 113.38240652,
+      "name": "Mo Lake",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.19396731,
+      "lng": 110.13295836,
+      "name": "Shangyong",
+      "persons": [
+        "徐晃（公明）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "徐晃（公明）",
+      "name": {
+        "en": "Xu Huang",
+        "zht": "徐晃",
+        "zhs": "徐晃"
+      },
+      "courtesyName": {
+        "en": "Gongming",
+        "zht": "公明",
+        "zhs": "公明"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "1st year of Taihe",
+          "zht": "太和元年",
+          "zhs": "太和元年"
+        },
+        "year": 227
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Yang",
+              "zht": "楊",
+              "zhs": "杨"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.19189797,
+              "lng": 111.75657765,
+              "name": "Yang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Commandery Clerk",
+              "zht": "郡吏",
+              "zhs": "郡吏"
+            },
+            {
+              "en": "Commandant of Cavalry",
+              "zht": "騎都尉",
+              "zhs": "骑都尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Commandery Clerk",
+                "zht": "郡吏",
+                "zhs": "郡吏"
+              },
+              "1": {
+                "en": "Commandant of Cavalry",
+                "zht": "騎都尉",
+                "zhs": "骑都尉"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "3rd year of Chuping - 1st year of Jian'an",
+            "zht": "初平三年 -建安元年",
+            "zhs": "初平三年 -建安元年"
+          },
+          "year": "192 - 196",
+          "age": null,
+          "location": [
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            },
+            {
+              "en": "Anyi",
+              "zht": "安邑",
+              "zhs": "安邑"
+            },
+            {
+              "en": "Liang",
+              "zht": "梁",
+              "zhs": "梁"
+            },
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.31264639,
+              "lng": 108.87167209,
+              "name": "Chang'an"
+            },
+            {
+              "kind": "town",
+              "lat": 35.16855789,
+              "lng": 111.14855723,
+              "name": "Anyi"
+            },
+            {
+              "kind": "town",
+              "lat": 34.16060618,
+              "lng": 112.77664557,
+              "name": "Liang"
+            },
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Capital Neighbourhood Marquis",
+                "zht": "都亭侯",
+                "zhs": "都亭侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st - 5th year of Jian'an",
+            "zht": "建安元年 - 五年",
+            "zhs": "建安元年 - 五年"
+          },
+          "year": "196 - 200",
+          "age": null,
+          "location": [
+            {
+              "en": "Juan",
+              "zht": "卷",
+              "zhs": "卷"
+            },
+            {
+              "en": "Yuanwu",
+              "zht": "原武",
+              "zhs": "原武"
+            },
+            {
+              "en": "Henei",
+              "zht": "河內",
+              "zhs": "河内"
+            },
+            {
+              "en": "Baima",
+              "zht": "白馬",
+              "zhs": "白马"
+            },
+            {
+              "en": "Yanjin",
+              "zht": "延津",
+              "zhs": "延津"
+            },
+            {
+              "en": "Gushi",
+              "zht": "故市",
+              "zhs": "故市"
+            }
+          ],
+          "position": [
+            {
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.03134233,
+              "lng": 113.72992008,
+              "name": "Juan"
+            },
+            {
+              "kind": "town",
+              "lat": 35.04215228,
+              "lng": 113.97018459,
+              "name": "Yuanwu"
+            },
+            {
+              "kind": "admin",
+              "id": "55"
+            },
+            {
+              "kind": "town",
+              "lat": 35.56235226,
+              "lng": 114.65338913,
+              "name": "Baima"
+            },
+            {
+              "kind": "town",
+              "lat": 35.3722844,
+              "lng": 114.28754783,
+              "name": "Yanjin"
+            },
+            {
+              "kind": "town",
+              "lat": 34.79738574,
+              "lng": 113.47134429,
+              "name": "Gushi"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "Assistant General",
+                "zht": "裨將軍",
+                "zhs": "裨将军"
+              },
+              "1": {
+                "en": "Capital Neighbourhood Marquis",
+                "zht": "都亭侯",
+                "zhs": "都亭侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "9th year of Jian'an",
+            "zht": "建安九年",
+            "zhs": "建安九年"
+          },
+          "year": 204,
+          "age": null,
+          "location": [
+            {
+              "en": "Ye",
+              "zht": "鄴",
+              "zhs": "邺"
+            },
+            {
+              "en": "Handan",
+              "zht": "邯鄲",
+              "zhs": "邯郸"
+            },
+            {
+              "en": "Yiyang",
+              "zht": "易陽",
+              "zhs": "易阳"
+            },
+            {
+              "en": "Nanpi",
+              "zht": "南皮",
+              "zhs": "南皮"
+            },
+            {
+              "en": "Pingyuan",
+              "zht": "平原",
+              "zhs": "平原"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.29000818,
+              "lng": 114.3635467,
+              "name": "Ye"
+            },
+            {
+              "kind": "town",
+              "lat": 36.59621665,
+              "lng": 114.46620323,
+              "name": "Handan"
+            },
+            {
+              "kind": "town",
+              "lat": 36.71417381,
+              "lng": 114.62937544,
+              "name": "Yiyang"
+            },
+            {
+              "kind": "town",
+              "lat": 38.0926547,
+              "lng": 116.68045911,
+              "name": "Nanpi"
+            },
+            {
+              "kind": "town",
+              "lat": 37.05824816,
+              "lng": 116.3832756,
+              "name": "Pingyuan"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "12th year of Jian'an",
+            "zht": "建安十二年",
+            "zhs": "建安十二年"
+          },
+          "year": 207,
+          "age": null,
+          "location": [
+            {
+              "en": "Liucheng",
+              "zht": "柳城",
+              "zhs": "柳城"
+            }
+          ],
+          "position": [
+            {
+              "en": "General Who Sweeps the Wilds",
+              "zht": "橫野將軍",
+              "zhs": "横野将军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 41.4602169,
+              "lng": 120.39183453,
+              "name": "Liucheng"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "General Who Sweeps the Wilds",
+                "zht": "橫野將軍",
+                "zhs": "横野将军"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "13th year of Jian'an",
+            "zht": "建安十三年",
+            "zhs": "建安十三年"
+          },
+          "year": 208,
+          "age": null,
+          "location": [
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            },
+            {
+              "en": "Fancheng",
+              "zht": "樊",
+              "zhs": "樊"
+            },
+            {
+              "en": "Linju",
+              "zht": "臨沮",
+              "zhs": "临沮"
+            },
+            {
+              "en": "Yicheng",
+              "zht": "宜城",
+              "zhs": "宜城"
+            },
+            {
+              "en": "Jiangling",
+              "zht": "江陵",
+              "zhs": "江陵"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "2"
+            },
+            {
+              "kind": "town",
+              "lat": 32.04746989,
+              "lng": 112.06874333,
+              "name": "Fancheng"
+            },
+            {
+              "kind": "town",
+              "lat": 31.18934355,
+              "lng": 111.53402839,
+              "name": "Linju"
+            },
+            {
+              "kind": "town",
+              "lat": 31.66663671,
+              "lng": 112.29180382,
+              "name": "Yicheng"
+            },
+            {
+              "kind": "town",
+              "lat": 30.34078806,
+              "lng": 112.18710173,
+              "name": "Jiangling"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "16th - 17th year of Jian'an",
+            "zht": "建安十六年 - 十七年",
+            "zhs": "建安十六年 - 十七年"
+          },
+          "year": "211 - 212",
+          "age": null,
+          "location": [
+            {
+              "en": "Taiyuan",
+              "zht": "太原",
+              "zhs": "太原"
+            },
+            {
+              "en": "Daling",
+              "zht": "大陵",
+              "zhs": "大陵"
+            },
+            {
+              "en": "Fenyin",
+              "zht": "汾陰",
+              "zhs": "汾阴"
+            },
+            {
+              "en": "Tongguan",
+              "zht": "潼關",
+              "zhs": "潼关"
+            },
+            {
+              "en": "Pubanjin",
+              "zht": "蒲阪津",
+              "zhs": "蒲阪津"
+            },
+            {
+              "en": "Yumi",
+              "zht": "隃麋",
+              "zhs": "隃麋"
+            },
+            {
+              "en": "Qian",
+              "zht": "汧",
+              "zhs": "汧"
+            },
+            {
+              "en": "Anding",
+              "zht": "安定",
+              "zhs": "安定"
+            },
+            {
+              "en": "Xiayang",
+              "zht": "夏陽",
+              "zhs": "夏阳"
+            },
+            {
+              "en": "Fucheng",
+              "zht": "鄜城",
+              "zhs": "鄜城"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "21"
+            },
+            {
+              "kind": "town",
+              "lat": 37.49238085,
+              "lng": 112.09933191,
+              "name": "Daling"
+            },
+            {
+              "kind": "town",
+              "lat": 35.36816293,
+              "lng": 110.51564591,
+              "name": "Fenyin"
+            },
+            {
+              "kind": "town",
+              "lat": 34.59426174,
+              "lng": 110.32268475,
+              "name": "Tongguan"
+            },
+            {
+              "kind": "town",
+              "lat": 34.87374888,
+              "lng": 110.28348954,
+              "name": "Pubanjin"
+            },
+            {
+              "kind": "town",
+              "lat": 34.63936227,
+              "lng": 107.17845258,
+              "name": "Yumi"
+            },
+            {
+              "kind": "town",
+              "lat": 34.83685651,
+              "lng": 106.85666136,
+              "name": "Qian"
+            },
+            {
+              "kind": "admin",
+              "id": "152"
+            },
+            {
+              "kind": "town",
+              "lat": 35.39983275,
+              "lng": 110.38547776,
+              "name": "Xiayang"
+            },
+            {
+              "kind": "town",
+              "lat": 35.60832708,
+              "lng": 109.61482388,
+              "name": "Fucheng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "20th - 23rd year of Jian'an",
+            "zht": "建安二十年 - 二十三年",
+            "zhs": "建安二十年 - 二十三年"
+          },
+          "year": "215 - 218",
+          "age": null,
+          "location": [
+            {
+              "en": "Mamingge",
+              "zht": "馬鳴閣",
+              "zhs": "马鸣阁"
+            },
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            },
+            {
+              "en": "Yangpingguan",
+              "zht": "陽平",
+              "zhs": "阳平"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.56081766,
+              "lng": 105.77447206,
+              "name": "Mamingge"
+            },
+            {
+              "kind": "admin",
+              "id": "110"
+            },
+            {
+              "kind": "town",
+              "lat": 33.16854232,
+              "lng": 106.61155724,
+              "name": "Yangpingguan"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "24th year of Jian'an - 1st year of Huangchu",
+            "zht": "建安二十四年 - 黃初元年",
+            "zhs": "建安二十四年 - 黄初元年"
+          },
+          "year": "219 - 220",
+          "age": null,
+          "location": [
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Xiangyang",
+              "zht": "襄陽",
+              "zhs": "襄阳"
+            },
+            {
+              "en": "Mo Lake",
+              "zht": "摩陂",
+              "zhs": "摩陂"
+            },
+            {
+              "en": "Shangyong",
+              "zht": "上庸",
+              "zhs": "上庸"
+            }
+          ],
+          "position": [
+            {
+              "en": "General of the Right",
+              "zht": "右將軍",
+              "zhs": "右将军"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.98790226,
+              "lng": 112.53739567,
+              "name": "Wan"
+            },
+            {
+              "kind": "admin",
+              "id": "89"
+            },
+            {
+              "kind": "town",
+              "lat": 33.92967724,
+              "lng": 113.38240652,
+              "name": "Mo Lake"
+            },
+            {
+              "kind": "town",
+              "lat": 32.19396731,
+              "lng": 110.13295836,
+              "name": "Shangyong"
+            }
+          ],
+          "positionLinks": [
+            {
+              "0": {
+                "en": "General of the Right",
+                "zht": "右將軍",
+                "zhs": "右将军"
+              },
+              "1": {
+                "en": "Township Marquis",
+                "zht": "鄉侯",
+                "zhs": "乡侯"
+              },
+              "2": {
+                "en": "County Marquis",
+                "zht": "縣侯",
+                "zhs": "县侯"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "3rd year of Huangchu",
+            "zht": "黄初三年",
+            "zhs": "黄初三年"
+          },
+          "year": 222,
+          "age": null,
+          "location": null,
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "7th year of Huangchu - 1st year of Taihe",
+            "zht": "黄初七年 - 太和元年",
+            "zhs": "黄初七年 - 太和元年"
+          },
+          "year": "226 - 227",
+          "age": null,
+          "location": [
+            {
+              "en": "Xiangyang",
+              "zht": "襄陽",
+              "zhs": "襄阳"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "89"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "徐晃",
+      "to": "楊奉",
+      "type": "subordinate then persuaded to follow Cao Cao",
+      "passageId": "ws17e-p1"
+    },
+    {
+      "from": "徐晃",
+      "to": "太祖（曹操）",
+      "type": "subordinate",
+      "passageId": "ws17e-p1"
+    },
+    {
+      "from": "李傕",
+      "to": "郭汜",
+      "type": "co-rebel",
+      "passageId": "ws17e-p1"
+    },
+    {
+      "from": "韓暹",
+      "to": "董承",
+      "type": "conflict",
+      "passageId": "ws17e-p1"
+    },
+    {
+      "from": "徐晃",
+      "to": "呂布",
+      "type": "military enemy",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "趙庶",
+      "type": "secured surrender of",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "李鄒",
+      "type": "secured surrender of",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "史渙",
+      "type": "joint military operation",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "眭固",
+      "type": "military enemy",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "劉備",
+      "type": "military enemy",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "顏良",
+      "type": "military enemy",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "文醜",
+      "type": "military enemy",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "曹洪",
+      "type": "joint military operation",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "祝臂",
+      "type": "military enemy",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "袁紹",
+      "type": "military enemy",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "韓範",
+      "type": "feigned surrender then accepted",
+      "passageId": "ws17e-p2"
+    },
+    {
+      "from": "徐晃",
+      "to": "袁譚",
+      "type": "military enemy",
+      "passageId": "ws17e-p3"
+    },
+    {
+      "from": "徐晃",
+      "to": "蹋頓",
+      "type": "military enemy",
+      "passageId": "ws17e-p3"
+    },
+    {
+      "from": "徐晃",
+      "to": "滿寵",
+      "type": "joint military operation",
+      "passageId": "ws17e-p3"
+    },
+    {
+      "from": "徐晃",
+      "to": "關羽",
+      "type": "military enemy",
+      "passageId": "ws17e-p3"
+    },
+    {
+      "from": "徐晃",
+      "to": "曹仁",
+      "type": "joint military operation",
+      "passageId": "ws17e-p3"
+    },
+    {
+      "from": "徐晃",
+      "to": "周瑜",
+      "type": "military enemy",
+      "passageId": "ws17e-p3"
+    },
+    {
+      "from": "徐晃",
+      "to": "商曜",
+      "type": "military enemy",
+      "passageId": "ws17e-p4"
+    },
+    {
+      "from": "韓遂",
+      "to": "馬超",
+      "type": "co-rebel",
+      "passageId": "ws17e-p4"
+    },
+    {
+      "from": "徐晃",
+      "to": "韓遂",
+      "type": "military enemy",
+      "passageId": "ws17e-p4"
+    },
+    {
+      "from": "徐晃",
+      "to": "馬超",
+      "type": "military enemy",
+      "passageId": "ws17e-p4"
+    },
+    {
+      "from": "徐晃",
+      "to": "梁興",
+      "type": "military enemy",
+      "passageId": "ws17e-p5"
+    },
+    {
+      "from": "徐晃",
+      "to": "夏侯淵",
+      "type": "joint military operation",
+      "passageId": "ws17e-p5"
+    },
+    {
+      "from": "徐晃",
+      "to": "張魯",
+      "type": "military enemy",
+      "passageId": "ws17e-p5"
+    },
+    {
+      "from": "徐晃",
+      "to": "張順",
+      "type": "relieved from siege",
+      "passageId": "ws17e-p5"
+    },
+    {
+      "from": "徐晃",
+      "to": "陳福",
+      "type": "military enemy",
+      "passageId": "ws17e-p5"
+    },
+    {
+      "from": "徐晃",
+      "to": "夏侯淵",
+      "type": "joint military operation",
+      "passageId": "ws17e-p6"
+    },
+    {
+      "from": "徐晃",
+      "to": "劉備",
+      "type": "military enemy",
+      "passageId": "ws17e-p6"
+    },
+    {
+      "from": "徐晃",
+      "to": "陳式",
+      "type": "military enemy",
+      "passageId": "ws17e-p6"
+    },
+    {
+      "from": "徐晃",
+      "to": "曹仁",
+      "type": "military support",
+      "passageId": "ws17e-p6"
+    },
+    {
+      "from": "徐晃",
+      "to": "關羽",
+      "type": "military enemy",
+      "passageId": "ws17e-p6"
+    },
+    {
+      "from": "徐晃",
+      "to": "于禁",
+      "type": "colleague",
+      "passageId": "ws17e-p6"
+    },
+    {
+      "from": "徐晃",
+      "to": "呂常",
+      "type": "contemporary",
+      "passageId": "ws17e-p6"
+    },
+    {
+      "from": "太祖（曹操）",
+      "to": "徐商",
+      "type": "sent to support Xu Huang",
+      "passageId": "ws17e-p7"
+    },
+    {
+      "from": "太祖（曹操）",
+      "to": "呂建",
+      "type": "sent to support Xu Huang",
+      "passageId": "ws17e-p7"
+    },
+    {
+      "from": "太祖（曹操）",
+      "to": "殷署",
+      "type": "sent to support Xu Huang",
+      "passageId": "ws17e-p7"
+    },
+    {
+      "from": "太祖（曹操）",
+      "to": "朱蓋",
+      "type": "sent to support Xu Huang",
+      "passageId": "ws17e-p7"
+    },
+    {
+      "from": "徐晃",
+      "to": "關羽",
+      "type": "military enemy",
+      "passageId": "ws17e-p7"
+    },
+    {
+      "from": "徐晃",
+      "to": "周亞夫",
+      "type": "comparison by Cao Cao",
+      "passageId": "ws17e-p8"
+    },
+    {
+      "from": "徐晃",
+      "to": "夏侯尚",
+      "type": "joint military operation",
+      "passageId": "ws17e-p9"
+    },
+    {
+      "from": "徐晃",
+      "to": "劉備",
+      "type": "military enemy",
+      "passageId": "ws17e-p9"
+    },
+    {
+      "from": "徐晃",
+      "to": "諸葛瑾",
+      "type": "military enemy",
+      "passageId": "ws17e-p9"
+    },
+    {
+      "from": "徐晃",
+      "to": "徐蓋",
+      "type": "father-son",
+      "passageId": "ws17e-p10"
+    },
+    {
+      "from": "徐蓋",
+      "to": "徐霸",
+      "type": "father-son",
+      "passageId": "ws17e-p10"
+    },
+    {
+      "from": "朱靈",
+      "to": "袁紹",
+      "type": "subordinate then left",
+      "passageId": "ws17e-p11"
+    },
+    {
+      "from": "朱靈",
+      "to": "太祖（曹操）",
+      "type": "subordinate",
+      "passageId": "ws17e-p11"
+    },
+    {
+      "from": "朱靈",
+      "to": "陶謙",
+      "type": "military enemy",
+      "passageId": "ws17e-p11"
+    },
+    {
+      "from": "朱靈",
+      "to": "季雍",
+      "type": "military enemy",
+      "passageId": "ws17e-p11"
+    },
+    {
+      "from": "季雍",
+      "to": "公孫瓚",
+      "type": "rebel and ally",
+      "passageId": "ws17e-p11"
+    },
+    {
+      "from": "朱靈",
+      "to": "程昂",
+      "type": "rebel subordinate",
+      "passageId": "ws17e-p11"
+    },
+    {
+      "from": "朱靈",
+      "to": "鄧禹",
+      "type": "historical comparison",
+      "passageId": "ws17e-p11"
+    },
+    {
+      "from": "朱靈",
+      "to": "朱術",
+      "type": "father-son",
+      "passageId": "ws17e-p11"
+    }
+  ]
+}

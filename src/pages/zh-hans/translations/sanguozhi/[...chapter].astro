@@ -4,6 +4,15 @@ import Nav from '../../../../components/Nav.astro';
 import ContactModal from '../../../../components/Contactmodal.astro';
 import { t } from '../../../../i18n/index.js';
 import { url } from '../../../../utils/url';
+import {
+  cn as cnShared,
+  hasSource as hasSourceShared,
+  formatSourceZh as formatSourceZhShared,
+  linkify,
+  linkifyParagraphs,
+  linkifyParagraphPairs,
+  renderFootnotes,
+} from '../../../../scripts/translations/chapterFormat';
 
 const TEXT_TITLE = { zht: '三國志', zhs: '三国志', en: 'Records of the Three Kingdoms' };
 
@@ -69,116 +78,19 @@ const strings = t(lang);
 const cnField = lang === 'zh-hans' ? 'zhs' : 'zht';
 const cnLangAttr = cnField === 'zhs' ? 'zh-hans' : 'zh-hant';
 
+// Thin, page-local wrappers around the shared chapterFormat functions,
+// closing over this page's own cnField so every existing call site below
+// (cn(field), hasSource(source), formatSourceZh(source)) keeps working
+// with the same single-argument signature it always had - only this one
+// spot needs to know this page's language, not every call site.
 function cn(field: any) {
-  return field?.[cnField] ?? field?.zht ?? field?.zhs ?? '';
+  return cnShared(field, cnField as 'zht' | 'zhs');
 }
-
-// Most annotation sources are titled works (e.g. 魏書), correctly wrapped
-// in 《》 — the brackets Chinese uses for book/work titles. But some
-// annotations cite a person directly (e.g. 孫盛 commenting without
-// referencing a specific titled work), and wrapping a bare person's name
-// in 《》 would be a category error. Add more names here as they come up.
-const SOURCE_NAMES_WITHOUT_BRACKETS = new Set(['孫盛', '孙盛']);
-
-// Some annotations (e.g. glosses like "狟音桓。") aren't quoting any
-// source — annotator/source objects exist but every field is empty.
-function hasSource(source: any): boolean {
-  return !!(source && (source.zht || source.zhs || source.en));
+function hasSource(source: any) {
+  return hasSourceShared(source, cnField as 'zht' | 'zhs');
 }
-
-function formatSourceZh(source: any): string {
-  if (!source) return '';
-  const raw = cn(source);
-  // A trailing parenthetical (e.g. "晉書（王隱）") is an author attribution
-  // tacked onto the title, not part of the title itself — 《》 should wrap
-  // just the title, with the parenthetical appearing after the closing
-  // bracket: 《晉書》（王隱） rather than 《晉書（王隱）》.
-  const match = raw.match(/^(.*?)([(（][^)）]*[)）])\s*$/);
-  const mainName = match ? match[1].trim() : raw;
-  const trailing = match ? match[2] : '';
-  if (SOURCE_NAMES_WITHOUT_BRACKETS.has(mainName)) return mainName + trailing;
-  return `《${mainName}》${trailing}`;
-}
-
-function linkify(text: string): string {
-  const escaped = String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  const withTerms = escaped.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_match, label, rawUrl) => {
-    const isLocation = rawUrl.includes('/maps');
-    const isOfficial = rawUrl.includes('/officials');
-    const typeClass = isLocation ? ' term-link-loc' : isOfficial ? ' term-link-off' : '';
-    const icon = isLocation
-      ? '<i class="ti ti-map-pin term-link-icon" aria-hidden="true"></i>'
-      : isOfficial
-      ? '<i class="ti ti-file-text term-link-icon" aria-hidden="true"></i>'
-      : '';
-    return `<a href="${url(rawUrl)}" class="term-link${typeClass}" target="_blank" rel="noopener">${label}${icon}</a>`;
-  });
-  // [^N] footnote marker — same convention as Markdown/Pandoc footnotes.
-  // Just a visual indicator, not interactive/clickable — the actual note
-  // renders as always-visible text after the passage/annotation (see
-  // renderFootnotes), so there's no second toggle competing with the
-  // annotation's own expand/collapse.
-  return withTerms.replace(/\[\^(\d+)\]/g, (_match, n) => `<sup class="footnote-ref">${n}</sup>`);
-}
-
-// Renders a footnotes array ({n, zht, zhs, en}) as always-visible text
-// appended after whatever it belongs to (a passage or an annotation) —
-// deliberately not collapsible, so it never introduces a second toggle
-// nested inside an already-toggleable annotation. Text inherits its
-// parent's own color/font-size (no override here) — same view-mode
-// (Parallel/Original/English Only) toggle as everything else applies,
-// via the shared .view-orig/.view-en classes.
-function renderFootnotes(footnotes: any[] | undefined, cnLangAttr: string, context: 'passage' | 'annotation'): string {
-  if (!footnotes || footnotes.length === 0) return '';
-  return `
-    <div class="footnotes footnotes-${context}">
-      ${footnotes.map((f: any) => `
-        <div class="footnote-item">
-          <span class="footnote-num">${f.n}.</span>
-          <span class="footnote-body">
-            <span class="footnote-zh" lang="${cnLangAttr}">${linkify(f.zhs || f.zht)}</span>
-            <span class="footnote-en">${linkify(f.en)}</span>
-          </span>
-        </div>
-      `).join('')}
-    </div>
-  `;
-}
-
-// Paragraph-aware version of linkify(), for long annotation text — a
-// blank line (\n\n) in the source JSON marks a paragraph break. Each
-// resulting chunk is escaped/linkified independently, then wrapped in
-// its own <p>. The container this fills must be a <div>, not a <p> —
-// <p> elements can't validly contain nested <p> tags.
-function linkifyParagraphs(text: string): string {
-  const raw = String(text ?? '');
-  const paragraphs = raw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-  if (paragraphs.length === 0) return '';
-  return paragraphs.map(p => `<p>${linkify(p)}</p>`).join('');
-}
-
-// For Parallel view specifically: interleaves original/English paragraphs
-// (zh-para-1, en-para-1, zh-para-2, en-para-2, ...) instead of showing
-// two separate stacked blocks — only when both languages split into the
-// SAME number of paragraphs. If the counts don't match (a translator
-// added a break in one language but not the other), interleaving would
-// silently misalign content, so it falls back to the plain two-block
-// layout instead — safer than guessing a pairing.
-function linkifyParagraphPairs(zhText: string, enText: string, langAttr: string): string {
-  const zhParas = String(zhText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-  const enParas = String(enText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-
-  if (zhParas.length > 1 && zhParas.length === enParas.length) {
-    return zhParas.map((zhP, i) => `
-      <p class="ann-para ann-para-zh" lang="${langAttr}">${linkify(zhP)}</p>
-      <p class="ann-para ann-para-en">${linkify(enParas[i])}</p>
-    `).join('');
-  }
-
-  return `
-    <div class="ann-zh" lang="${langAttr}">${zhParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
-    <div class="ann-en">${enParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
-  `;
+function formatSourceZh(source: any) {
+  return formatSourceZhShared(source, cnField as 'zht' | 'zhs');
 }
 
 const baseUrl = url('/zh-hans/translations/sanguozhi');
@@ -456,7 +368,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                   <div class="passage" id={p.id}>
                     <p class="ps-orig" lang={cnLangAttr} set:html={linkify(cn(p.orig))} />
                     <p class="ps-en" set:html={linkify(p.en)} />
-                    <div set:html={renderFootnotes(p.footnotes, cnLangAttr, 'passage')} />
+                    <div set:html={renderFootnotes(p.footnotes, cnField as 'zht' | 'zhs', cnLangAttr, 'passage')} />
                     {p.annotations && p.annotations.length > 0 && (
                       <div class="annotations">
                         {p.annotations.map((a: any, ai: number) => (
@@ -475,7 +387,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                             </button>
                             <div class="ann-body" data-passage={p.id} data-idx={ai}>
                               <div class="ann-body-parallel" set:html={linkifyParagraphPairs(cn(a), a.en, cnLangAttr)} />
-                              <div set:html={renderFootnotes(a.footnotes, cnLangAttr, 'annotation')} />
+                              <div set:html={renderFootnotes(a.footnotes, cnField as 'zht' | 'zhs', cnLangAttr, 'annotation')} />
                             </div>
                           </div>
                         ))}
@@ -526,7 +438,16 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
 <script type="application/json" id="sgz-data" set:html={clientData}></script>
 
 <script>
-  import { url } from '../../../../utils/url';
+  import { url, base } from '../../../../utils/url';
+  import {
+    cn as cnShared,
+    hasSource as hasSourceShared,
+    formatSourceZh as formatSourceZhShared,
+    linkify,
+    linkifyParagraphs,
+    linkifyParagraphPairs,
+    renderFootnotes,
+  } from '../../../../scripts/translations/chapterFormat';
 
   const dataEl = document.getElementById('sgz-data');
   const DATA = JSON.parse(dataEl ? dataEl.textContent ?? '{}' : '{}');
@@ -543,76 +464,26 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
     return String(s ?? '').replace(/[&<>"']/g, (c: string) => ESCAPE_MAP[c] ?? c);
   }
 
-  const SOURCE_NAMES_WITHOUT_BRACKETS = new Set(['孫盛', '孙盛']);
+  // This page's Chinese script variant — was previously scattered as a
+  // hardcoded 'zh-hans' string wherever it was needed below, rather than
+  // derived from one explicit value the way the frontmatter's own
+  // cnField is. Made explicit here so this one line is what needs
+  // changing for the zh-hant version of this page, instead of hunting
+  // down every hardcoded occurrence separately.
+  const CN_FIELD = 'zhs' as ('zht' | 'zhs');
+  const CN_LANG_ATTR = CN_FIELD === 'zhs' ? 'zh-hans' : 'zh-hant';
 
-  function hasSource(source: any): boolean {
-    return !!(source && (source.zht || source.zhs || source.en));
+  // Thin wrappers closing over CN_FIELD, so every existing call site
+  // below (hasSource(source), formatSourceZh(source)) keeps its original
+  // single-argument signature.
+  function cn(field: any) {
+    return cnShared(field, CN_FIELD);
   }
-
-  function formatSourceZh(source: any): string {
-    if (!source) return '';
-    const raw = esc(source.zhs || source.zht);
-    const match = raw.match(/^(.*?)([(（][^)）]*[)）])\s*$/);
-    const mainName = match ? match[1].trim() : raw;
-    const trailing = match ? match[2] : '';
-    if (SOURCE_NAMES_WITHOUT_BRACKETS.has(mainName)) return mainName + trailing;
-    return `《${mainName}》${trailing}`;
+  function hasSource(source: any) {
+    return hasSourceShared(source, CN_FIELD);
   }
-
-  function linkify(text: unknown): string {
-    const escaped = String(text ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    return escaped.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (_match: string, label: string, rawUrl: string) => {
-      const isLocation = rawUrl.includes('/maps');
-      const isOfficial = rawUrl.includes('/officials');
-      const typeClass = isLocation ? ' term-link-loc' : isOfficial ? ' term-link-off' : '';
-      const icon = isLocation
-        ? '<i class="ti ti-map-pin term-link-icon" aria-hidden="true"></i>'
-        : isOfficial
-        ? '<i class="ti ti-file-text term-link-icon" aria-hidden="true"></i>'
-        : '';
-      return `<a href="${url(rawUrl)}" class="term-link${typeClass}" target="_blank" rel="noopener">${label}${icon}</a>`;
-    });
-  }
-
-  function linkifyParagraphs(text: unknown): string {
-    const raw = String(text ?? '');
-    const paragraphs = raw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-    if (paragraphs.length === 0) return '';
-    return paragraphs.map(p => `<p>${linkify(p)}</p>`).join('');
-  }
-
-  function linkifyParagraphPairs(zhText: unknown, enText: unknown, langAttr: string): string {
-    const zhParas = String(zhText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-    const enParas = String(enText ?? '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
-
-    if (zhParas.length > 1 && zhParas.length === enParas.length) {
-      return zhParas.map((zhP, i) => `
-        <p class="ann-para ann-para-zh" lang="${langAttr}">${linkify(zhP)}</p>
-        <p class="ann-para ann-para-en">${linkify(enParas[i])}</p>
-      `).join('');
-    }
-
-    return `
-      <div class="ann-zh" lang="${langAttr}">${zhParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
-      <div class="ann-en">${enParas.map(p => `<p>${linkify(p)}</p>`).join('')}</div>
-    `;
-  }
-
-  function renderFootnotes(footnotes: any[] | undefined, langAttr: string, context: 'passage' | 'annotation'): string {
-    if (!footnotes || footnotes.length === 0) return '';
-    return `
-      <div class="footnotes footnotes-${context}">
-        ${footnotes.map((f: any) => `
-          <div class="footnote-item">
-            <span class="footnote-num">${f.n}.</span>
-            <span class="footnote-body">
-              <span class="footnote-zh" lang="${langAttr}">${linkify(f.zhs || f.zht)}</span>
-              <span class="footnote-en">${linkify(f.en)}</span>
-            </span>
-          </div>
-        `).join('')}
-      </div>
-    `;
+  function formatSourceZh(source: any) {
+    return formatSourceZhShared(source, CN_FIELD);
   }
 
   function renderPassage(p: any): string {
@@ -621,20 +492,20 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
         <button class="ann-toggle" data-passage="${p.id}" data-idx="${ai}">
           <i class="ti ti-chevron-right ann-chevron" aria-hidden="true"></i>
           <span class="ann-label">
-            <span class="ann-label-zh" lang="zh-hans">${esc(a.annotator.zhs || a.annotator.zht)}注${hasSource(a.source) ? `引${formatSourceZh(a.source)}` : ''}</span>
+            <span class="ann-label-zh" lang="${CN_LANG_ATTR}">${esc(cn(a.annotator))}注${hasSource(a.source) ? `引${esc(formatSourceZh(a.source))}` : ''}</span>
             <span class="ann-label-en">${esc(STR.annotationBy)} by ${esc(a.annotator.en)}${hasSource(a.source) ? `, quoting<span class="ann-source"> ${esc(a.source.en)}</span>` : ''}</span>
           </span>
         </button>
         <div class="ann-body" data-passage="${p.id}" data-idx="${ai}">
-          <div class="ann-body-parallel">${linkifyParagraphPairs(a.zhs || a.zht, a.en, 'zh-hans')}</div>
-          ${renderFootnotes(a.footnotes, 'zh-hans', 'annotation')}
+          <div class="ann-body-parallel">${linkifyParagraphPairs(cn(a), a.en, CN_LANG_ATTR)}</div>
+          ${renderFootnotes(a.footnotes, CN_FIELD, CN_LANG_ATTR, 'annotation')}
         </div>
       </div>`).join('');
     return `
       <div class="passage" id="${p.id}">
-        <p class="ps-orig" lang="zh-hans">${linkify(p.orig.zhs || p.orig.zht)}</p>
+        <p class="ps-orig" lang="${CN_LANG_ATTR}">${linkify(cn(p.orig))}</p>
         <p class="ps-en">${linkify(p.en)}</p>
-        ${renderFootnotes(p.footnotes, 'zh-hans', 'passage')}
+        ${renderFootnotes(p.footnotes, CN_FIELD, CN_LANG_ATTR, 'passage')}
         ${anns ? `<div class="annotations">${anns}</div>` : ''}
       </div>`;
   }
@@ -738,12 +609,33 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
     if (titleEl) titleEl.textContent = '目录';
   }
 
+  // Nav's language-switcher links are only computed once, at this page's
+  // initial server render, from whatever URL the browser first loaded —
+  // they don't know about the SPA's own pushState navigation below. Left
+  // alone, switching language while deep in a chapter would bounce back
+  // to wherever the page was first loaded (often the cover), rather than
+  // the chapter currently on screen. baseUrl already carries this page's
+  // own language prefix (if any) plus BASE_URL, so stripping both back
+  // off gives the "bare" /translations/sanguozhi path shared by all 3
+  // language variants — re-prefixed per link with whatever language
+  // prefix that link's own (still-correct) href already encodes.
+  function updateLangSwitcherLinks(chapterId: string | null): void {
+    const bareBase = baseUrl.replace(base, '').replace(/^\/(zh-hant|zh-hans)/, '');
+    const target = `${bareBase}${chapterId ? `/${chapterId}` : ''}`;
+    document.querySelectorAll('.lang-toggle a, .lang-options a').forEach((a) => {
+      const href = a.getAttribute('href') || '';
+      const m = href.replace(base, '').match(/^\/(zh-hant|zh-hans)/);
+      a.setAttribute('href', `${base}${m ? `/${m[1]}` : ''}${target}`);
+    });
+  }
+
   function renderRoute(chapterId: string | null, opts: { push: boolean } = { push: true }): void {
     const idx = chapterId ? chapters.findIndex((c: any) => c.id === chapterId) : -1;
     const html = chapterId ? renderChapter(chapters[idx], idx) : renderCover();
     if (mainEl) mainEl.innerHTML = html;
     updateSidebarActive(chapterId);
     updateMobileToolbar(chapterId, idx);
+    updateLangSwitcherLinks(chapterId);
     if (opts.push) {
       const path = chapterId ? `${baseUrl}/${chapterId}` : baseUrl;
       history.pushState({ chapterId }, '', path);

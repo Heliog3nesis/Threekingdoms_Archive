@@ -1,0 +1,431 @@
+{
+  "id": "wei-shu-17b",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 17,
+  "num": "17",
+  "label": {
+    "zht": "樂進傳",
+    "zhs": "乐进传",
+    "en": "Biography of Yue Jin"
+  },
+  "title": {
+    "zht": "魏書十七 · 樂進傳",
+    "zhs": "魏书十七 · 乐进传",
+    "en": "Book of Wei, Chapter 17 · Biography of Yue Jin"
+  },
+  "relationships": [
+    {
+      "from": "樂進（文謙）",
+      "to": "太祖",
+      "type": "lord-vassal",
+      "passageId": "ws17b-p1"
+    },
+    {
+      "from": "樂進（文謙）",
+      "to": "樂綝",
+      "type": "father-son",
+      "passageId": "ws17b-p6"
+    },
+    {
+      "from": "樂綝",
+      "to": "樂肇",
+      "type": "father-son",
+      "passageId": "ws17b-p6"
+    },
+    {
+      "from": "曹操",
+      "to": "樂進",
+      "type": "commander-subordinate",
+      "passageId": "ws17b-p3"
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "樂進（文謙）",
+      "name": {
+        "en": "Yue Jin",
+        "zht": "樂進",
+        "zhs": "乐进"
+      },
+      "courtesyName": {
+        "en": "Wenqian",
+        "zht": "文謙",
+        "zhs": "文谦"
+      },
+      "born": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
+      "died": {
+        "era":{
+        "en": "23rd year of Jian'an",
+        "zht": "建安二十三年",
+        "zhs": "建安二十三年"}
+      ,
+      "year": 218
+    },
+      "stops": [
+        {
+          "era": {
+            "en": "Unknown",
+            "zht": "Unknown",
+            "zhs": "Unknown"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Weiguo",
+            "zht": "衛國",
+            "zhs": "卫国"
+          },
+          "position": null,
+          "passageId": "ws17b-p1"
+        },
+        {
+          "era": {
+            "en": "Unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Yangping",
+            "zht": "陽平",
+            "zhs": "阳平"
+          },
+          "position": [
+            {
+              "en": "Clerk Under the Tent",
+              "zht": "帳下吏",
+              "zhs": "帐下吏"
+            },
+            {
+              "en": "Acting Major",
+              "zht": "假司馬",
+              "zhs": "假司马"
+            },
+            {
+              "en": "Commandant Who Breaks Formations",
+              "zht": "陷陣都尉",
+              "zhs": "陷阵都尉"
+            }
+          ],
+          "passageId": "ws17b-p1"
+        },
+        {
+          "era": {
+            "en": "1st year of Xingping",
+            "zht": "兴平元年",
+            "zhs": "兴平元年"
+          },
+          "year": 194,
+          "age": null,
+          "location": [
+            {
+              "en": "Puyang",
+              "zht": "濮陽",
+              "zhs": "濮阳"
+            },
+            {
+              "en": "Yongqiu",
+              "zht": "雍丘",
+              "zhs": "雍丘"
+            }
+          ],
+          "position": null,
+          "passageId": "ws17b-p2"
+        },
+        {
+          "era": {
+            "en": "2nd - 4th year of Jian'an",
+            "zht": "建安二年 - 四年",
+            "zhs": "建安二年 - 四年"
+          },
+          "year": "197 - 199 ",
+          "age": null,
+          "location": [
+            {
+              "en": "Ku",
+              "zht": "苦",
+              "zhs": "苦"
+            },
+            {
+              "en": "Anzhong",
+              "zht": "安衆",
+              "zhs": "安众"
+            },
+            {
+              "en": "Xiapi",
+              "zht": "下邳",
+              "zhs": "下邳"
+            },
+            {
+              "en": "Shequan",
+              "zht": "射犬",
+              "zhs": "射犬"
+            },
+            {
+              "en": "Pei",
+              "zht": "沛",
+              "zhs": "沛"
+            }
+          ],
+          "position": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            },
+            {
+              "en": "Commandant Who Suppresses Bandits",
+              "zht": "討寇校尉",
+              "zhs": "讨寇校尉"
+            }
+          ],
+          "passageId": "ws17b-p2"
+        },
+        {
+          "era": {
+            "en": "5th year of Jian'an",
+            "zht": "建安五年",
+            "zhs": "建安五年"
+          },
+          "year": 200,
+          "age": null,
+          "location": [
+            {
+              "en": "Huojia",
+              "zht": "獲嘉",
+              "zhs": "获嘉"
+            },
+            {
+              "en": "Guandu",
+              "zht": "官渡",
+              "zhs": "官渡"
+            }
+          ],
+          "position": null,
+          "passageId": "ws17b-p2"
+        },
+        {
+          "era": {
+            "en": "8th - 9th year of Jian'an",
+            "zht": "建安八年 - 九年",
+            "zhs": "建安八年 - 九年"
+          },
+          "year": "203 - 204",
+          "age": null,
+          "location": [
+            {
+              "en": "Liyang",
+              "zht": "黎陽",
+              "zhs": "黎阳"
+            },
+            {
+              "en": "Le'an",
+              "zht": "樂安",
+              "zhs": "乐安"
+            },
+            {
+              "en": "Ye",
+              "zht": "鄴",
+              "zhs": "邺"
+            },
+            {
+              "en": "Nanpi",
+              "zht": "南皮",
+              "zhs": "南皮"
+            },
+            {
+              "en": "Yongnu",
+              "zht": "雍奴",
+              "zhs": "雍奴"
+            }
+          ],
+          "position": {
+            "en": "General of the Mobile Forces",
+            "zht": "游擊將軍",
+            "zhs": "游击将军"
+          },
+          "passageId": "ws17b-p2"
+        },
+        {
+          "era": {
+            "en": "10th - 11th year of Jian'an",
+            "zht": "建安十年 - 十一年",
+            "zhs": "建安十年 - 十一年"
+          },
+          "year": "205-206",
+          "age": null,
+          "location": [
+            {
+              "en": "Shangdang",
+              "zht": "上黨",
+              "zhs": "上党"
+            },
+            {
+              "en": "Huguan",
+              "zht": "壺關",
+              "zhs": "壶关"
+            },
+            {
+              "en": "Chunyu",
+              "zht": "淳于",
+              "zhs": "淳于"
+            }
+          ],
+          "position": {
+            "en": "General Who Breaks the Charge",
+            "zht": "折衝將軍",
+            "zhs": "折冲将军"
+          },
+          "passageId": "ws17b-p4"
+        },
+        {
+          "era": {
+            "en": "13th year of Jian'an",
+            "zht": "建安十三年",
+            "zhs": "建安十三年"
+          },
+          "year": 208,
+          "age": null,
+          "location": [
+            {
+              "en": "Yangdi",
+              "zht": "陽翟",
+              "zhs": "阳翟"
+            },
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            },
+            {
+              "en": "Xiangyang",
+              "zht": "襄陽",
+              "zhs": "襄阳"
+            }
+          ],
+          "position": null,
+          "passageId": "ws17b-p4"
+        },
+        {
+          "era": {
+            "en": "Unknown",
+            "zht": "Unknown",
+            "zhs": "Unknown"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Xunkou",
+            "zht": "寻口",
+            "zhs": "寻口"
+          },
+          "position": null,
+          "passageId": "ws17b-p4"
+        },
+        {
+          "era": {
+            "en": "14th year of Jian'an",
+            "zht": "建安十四年",
+            "zhs": "建安十四年"
+          },
+          "year": 209,
+          "age": null,
+          "location": {
+            "en": "Hefei",
+            "zht": "合肥",
+            "zhs": "合肥"
+          },
+          "position": null,
+          "passageId": "ws17b-p5"
+        },
+        {
+          "era": {
+            "en": "19th - 20th year of Jian'an",
+            "zht": "建安十九年 - 二十年",
+            "zhs": "建安十九年 - 二十年"
+          },
+          "year": "214 - 215",
+          "age": null,
+          "location": {
+            "en": "合肥",
+            "zht": "合肥",
+            "zhs": "合肥"
+          },
+          "position": [
+            {
+              "en": " Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            },
+            {
+              "en": "Right General",
+              "zht": "右将军",
+              "zhs": "右将军"
+            }
+          ],
+          "passageId": "ws17b-p5"
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws17b-p1",
+      "orig": {
+        "zht": "樂進字文謙，[[陽平衛國|/zh-hant/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]人也。容貌短小，以膽烈從太祖，為帳下吏。遣還本郡募兵，得千餘人，還為軍[[假|/zh-hant/translations/officials#glossary-acting]][[司馬|/zh-hant/translations/officials/regional#commanderies-044]]、陷陣都尉。",
+        "zhs": "乐进字文谦，[[阳平衛国|/zh-hans/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]人也。容貌短小，以胆烈从太祖，为帐下吏。遣还本郡募兵，得千余人，还为军[[假|/zh-hans/translations/officials#glossary-acting]][[司马|/zh-hans/translations/officials/regional#commanderies-044]]、陷阵都尉。"
+      },
+      "en": "Yue Jin, courtesy name Wenqian, was from [[Weiguo, Yangping|/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]. Though short in stature, he was bold and valiant, and entered the service of Cao Cao (posthumously honoured as the Grand Progenitor) as a clerk Under the Tent. Sent back to his home commandery to recruit troops, he raised more than a thousand men. On his return, he was appointed [[Acting|/translations/officials#glossary-acting]] [[Major|/translations/officials/regional#commanderies-044]] of the army and Commandant Who Breaks Formations."
+    },
+    {
+      "id": "ws17b-p2",
+      "orig": {
+        "zht": "從擊呂布於[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，張超於[[雍丘|/zh-hant/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]]，橋蕤於[[苦|/zh-hant/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]，皆先登有功，封廣昌[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。從征張繡於[[安衆|/zh-hant/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]]，圍呂布於[[下邳|/zh-hant/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]，破別將，擊眭固於[[射犬|/zh-hant/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]，攻劉備於[[沛|/zh-hant/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]]，皆破之，拜討寇校尉。渡河攻[[獲嘉|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Huojia]]，還，從擊袁紹於[[官渡|/zh-hant/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Guandu]]，力戰，斬紹將淳于瓊。從擊譚、尚於[[黎陽|/zh-hant/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，斬其大將嚴敬，[[行|/zh-hant/translations/officials?lat=35.68354088&lng=114.58305267]][[游擊將軍|/zh-hant/translations/officials/military#four-direction--misc-134]]。別擊黃巾，破之，定[[樂安郡|/zh-hant/maps/map-overall?admin=47]]。從圍[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]定，從擊袁譚於[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，先登，入譚東門。譚敗，別攻[[雍奴|/zh-hant/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]，破之。",
+        "zhs": "从击吕布于[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，张超于[[雍丘|/zh-hans/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]]，桥蕤于[[苦|/zh-hans/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]，皆先登有功，封广昌[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。从征张绣于[[安众|/zh-hans/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]]，围吕布于[[下邳|/zh-hans/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]，破别将，击眭固于[[射犬|/zh-hans/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]，攻刘备于[[沛|/zh-hans/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]]，皆破之，拜讨寇校尉。渡河攻[[获嘉|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Huojia]]，还，从击袁绍于[[官渡|/zh-hans/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Guandu]]，力战，斩绍将淳于琼。从击谭、尚于[[黎阳|/zh-hans/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，斩其大将严敬，[[行|/zh-hans/translations/officials?lat=35.68354088&lng=114.58305267]][[游击将军|/zh-hans/translations/officials/military#four-direction--misc-134]]。别击黄巾，破之，定[[乐安郡|/zh-hans/maps/map-overall?admin=47]]。从围[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]定，从击袁谭于[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，先登，入谭东门。谭败，别攻[[雍奴|/zh-hans/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]，破之。"
+      },
+      "en": "Yue Jin took part in the attacks on Lü Bu at [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]], Zhang Chao at [[Yongqiu|/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]], and Qiao Rui at [[Ku|/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]. In each campaign, he led the assault and earned merit, and was enfeoffed as Guangchang [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. He then took part in the campaign against Zhang Xiu at [[Anzhong|/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]] and the siege of Lü Bu at [[Xiapi|/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]], where he defeated one of Lü Bu's generals. He also attacked Sui Gu at [[Shequan|/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]] and Liu Bei at [[Pei|/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]], defeating them both, and was appointed Commandant Who Suppresses Bandits. Yue Jin later crossed the [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]llow River and attacked [[Huojia|/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Huojia]], then returned and took part in the attack on Yuan Shao at [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]. There he fought fiercely and slew Yuan Shao's general Chunyu Qiong. He then took part in the attack on Yuan Tan and Yuan Shang at [[Liyang|/maps/map-overall?lat=35.68354088&lng=114.58305267&name=Liyang]], slew their general Yan Jing, and was appointed [[Acting|/translations/officials#glossary-acting]] [[General of the Mobile Forces|/translations/officials/military#four-direction--misc-134]]. Separately, he also attacked and defeated the [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]llow Turbans, pacifying [[Le'an Commandery|/maps/map-overall?admin=47&lat=36.29000818&lng=114.3635467]] . He then took part in the siege of Ye. Once Ye had fallen, Yue Jin joined the attack on Yuan Tan at [[Nanpi|/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]], where he was the first over the walls and entered through Yuan Tan's eastern gate. After Yuan Tan's defeat, Yue Jin went on to independently attack and capture [[Yongnu|/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]."
+    },
+    {
+      "id": "ws17b-p3",
+      "orig": {
+        "zht": "建安十一年，太祖表漢帝，稱進及于禁、張遼曰：「武力旣弘，計略周備，質忠信一，守執節義，每臨戰攻，常為督率，奮彊突固，無堅不陷，自援枹鼓，手不知倦。又遣別征，統御師旅，撫衆則和，奉令無犯，當敵制決，靡有遺失。論功紀用，宜各顯寵。」於是禁為[[虎威|/zh-hant/translations/officials/military#four-direction--misc-145]]；進，[[折衝|/zh-hant/translations/officials/military#four-direction--misc-149]]；遼，[[盪寇將軍|/zh-hant/translations/officials/military#four-direction--misc-153]]。",
+        "zhs": "建安十一年，太祖表汉帝，称进及于禁、张辽曰：「武力既弘，计略周备，质忠信一，守执节义，每临战攻，常为督率，奋彊突固，无坚不陷，自援枹鼓，手不知倦。又遣别征，统御师旅，抚众则和，奉令无犯，当敌制决，靡有遗失。论功纪用，宜各显宠。」于是禁为[[虎威|/zh-hans/translations/officials/military#four-direction--misc-145]]；进，[[折冲|/zh-hans/translations/officials/military#four-direction--misc-149]]；辽，[[荡寇将军|/zh-hans/translations/officials/military#four-direction--misc-153]]。"
+      },
+      "en": "In the eleventh year of Jian'an, Cao Cao submitted a memorial to the Han emperor praising Yue Jin, Yu Jin, and Zhang Liao: \"Their martial prowess is great and their strategies comprehensive. Loyal and trustworthy by nature, they steadfastly uphold honour and righteousness. In every battle and assault, they lead the troops, breaking strong forces and storming fortified positions. No stronghold can withstand them. They take up the drumsticks themselves, and their hands never tire. When sent on separate campaigns, they command their armies ably. They keep the troops in harmony, obey every order without transgression, and make sound decisions against the enemy without error. Their merits should be recognised and each of them conspicuously honoured.\" Yu Jin was accordingly appointed [[Mighty Tiger General|/translations/officials/military#four-direction--misc-145]]; Yue Jin, [[General Who Breaks the Charge|/translations/officials/military#four-direction--misc-149]]; and Zhang Liao, [[General Who Sweeps the Bandits|/translations/officials/military#four-direction--misc-153]]."
+    },
+    {
+      "id": "ws17b-p4",
+      "orig": {
+        "zht": "進別征高幹，從北道入[[上黨|/zh-hant/maps/map-overall?admin=17]]，回出其後。幹等還守[[壺關|/zh-hant/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，連戰斬首。幹堅守未下，會太祖自征之，乃拔。太祖征管承，軍[[淳于|/zh-hant/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]，遣進與李典擊之。承破走，逃入海島，海濵平，[[荊州|/zh-hant/maps/map-overall?admin=2]]未服，遣屯[[陽翟|/zh-hant/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]。後從平[[荊州|/zh-hant/maps/map-overall?admin=2]]，留屯[[襄陽|/zh-hant/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]，擊關羽、蘇非等，皆走之，[[南郡|/zh-hant/maps/map-overall?admin=80]]諸縣山谷蠻夷詣進降。",
+        "zhs": "进别征高干，从北道入[[上党|/zh-hans/maps/map-overall?admin=17]]，回出其后。干等还守[[壶关|/zh-hans/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，连战斩首。干坚守未下，会太祖自征之，乃拔。太祖征管承，军[[淳于|/zh-hans/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]，遣进与李典击之。承破走，逃入海岛，海濵平，[[荆州|/zh-hans/maps/map-overall?admin=2]]未服，遣屯[[阳翟|/zh-hans/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]。后从平[[荆州|/zh-hans/maps/map-overall?admin=2]]，留屯[[襄阳|/zh-hans/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]，击关羽、苏非等，皆走之，[[南郡|/zh-hans/maps/map-overall?admin=80]]诸县山谷蛮夷诣进降。"
+      },
+      "en": "Yue Jin then campaigned separately against Gao Gan, entering [[Shangdang|/maps/map-overall?admin=17]] by the northern route and circling round to his rear. Gao Gan and his men turned back to defend [[Huguan|/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]. Yue Jin fought them in successive engagements, and took many enemy heads. Gao Gan held out and Huguan could not be taken, but when Cao Cao came to campaign against him in person, it fell. When Cao Cao campaigned against Guan Cheng, he encamped at [[Chunyu|/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]] and sent Yue Jin and Li Dian to attack Guan Cheng. Guan Cheng was defeated and fled to offshore islands, and the coast was pacified. As [[Jing Province|/maps/map-overall?admin=2]] had not yet submitted, Yue Jin was sent to garrison [[Yangdi|/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]. He later took part in the pacification of [[Jing Province|/maps/map-overall?admin=2]] and remained to garrison [[Xiangyang|/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]. Yue Jin then attacked Guan Yu, Su Fei, and the others, putting them all to flight. The Man and Yi peoples of the mountain valleys throughout [[Nan Commandery|/maps/map-overall?admin=80]] then came to Yue Jin and surrendered."
+    },
+    {
+      "id": "ws17b-p5",
+      "orig": {
+        "zht": "又討劉備[[臨沮|/zh-hant/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]][[長|/zh-hant/translations/officials/regional?lat=31.18934355&lng=111.53402839]]杜普、[[旌陽|/zh-hant/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]][[長|/zh-hant/translations/officials/regional#counties-089]]梁大，皆大破之。後從征孫權，[[假進節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。太祖還，留進與張遼、李典屯[[合肥|/zh-hant/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]，增邑五百，并前凡千二百戶。以進數有功，分五百戶，封一子[[列侯|/zh-hant/translations/officials#glossary-marquis]]；進遷[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]。",
+        "zhs": "又讨刘备[[临沮|/zh-hans/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]][[长|/zh-hans/translations/officials/regional?lat=31.18934355&lng=111.53402839]]杜普、[[旌阳|/zh-hans/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]][[长|/zh-hans/translations/officials/regional#counties-089]]梁大，皆大破之。后从征孙权，[[假进节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。太祖还，留进与张辽、李典屯[[合肥|/zh-hans/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]，增邑五百，并前凡千二百户。以进数有功，分五百户，封一子[[列侯|/zh-hans/translations/officials#glossary-marquis]]；进迁[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]。"
+      },
+      "en": "Yue Jin also attacked Du Pu, Liu Bei's [[County Chief|/translations/officials/regional?lat=31.18934355&lng=111.53402839]] of [[Linju|/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]], and Liang Da, Liu Bei's [[County Chief|/translations/officials/regional#counties-089]] of [[Jingyang|/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]], decisively defeating both. He later took part in the campaign against Sun Quan and was appointed [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. When Cao Cao returned, he left Yue Jin with Zhang Liao and Li Dian to garrison [[Hefei|/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]. Yue Jin's fief was increased by five hundred households, bringing the total to twelve hundred. Later, as Yue Jin had repeatedly earned merit, five hundred households were divided from his fief to enfeoff one of his sons as a [[Marquis|/translations/officials#glossary-marquis]], and he was also promoted to [[General of the Right|/translations/officials/military#four-direction--misc-117]]."
+    },
+    {
+      "id": "ws17b-p6",
+      "orig": {
+        "zht": "建安二十三年薨，謚曰威侯。子綝嗣。綝果毅有父風，官至[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。諸葛誕反，掩襲殺綝，詔悼惜之，追贈[[衞尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-196]]，謚曰愍侯。子肇嗣。",
+        "zhs": "建安二十三年薨，谥曰威侯。子𬘭嗣。𬘭果毅有父风，官至[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。诸葛诞反，掩袭杀𬘭，诏悼惜之，追赠[[衞尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-196]]，谥曰愍侯。子肇嗣。"
+      },
+      "en": "In the twenty-third year of Jian'an, Yue Jin died and received the posthumous title Marquis Wei, the Formidable Marquis. His son Yue Chen succeeded him. Resolute and courageous, Yue Chen had his father's bearing and rose to become [[Inspector|/translations/officials/regional#provinces-014]] of [[Yang Province|/maps/map-overall?admin=9]]. When Zhuge Dan rebelled, he took Yue Chen by surprise and killed him. An imperial edict lamented the loss of Yue Chen, posthumously appointing him [[Commandant of the Guards|/translations/officials/ministers#-nine-ministers-i-196]] and granting him the title Marquis Min, the Lamentable Marquis. His son Yue Zhao succeeded him."
+    }
+  ]
+}

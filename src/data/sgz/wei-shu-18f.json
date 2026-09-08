@@ -19,39 +19,295 @@
     "en": "Book of Wei, Chapter 18 · Biography of Xu Chu"
   },
   "relationships": [
-    { "from": "許褚（仲康）", "to": "曹操", "type": "lord-subordinate", "passageId": "ws18f-p3" },
-    { "from": "許褚（仲康）", "to": "張繡", "type": "battlefield-opponents", "passageId": "ws18f-p3" },
-    { "from": "許褚（仲康）", "to": "袁紹", "type": "battlefield-opponents", "passageId": "ws18f-p4" },
-    { "from": "許褚（仲康）", "to": "徐他", "type": "killer-victim", "passageId": "ws18f-p4" },
-    { "from": "許褚（仲康）", "to": "韓遂", "type": "battlefield-opponents", "passageId": "ws18f-p5" },
-    { "from": "許褚（仲康）", "to": "馬超", "type": "battlefield-opponents", "passageId": "ws18f-p5" },
-    { "from": "許褚（仲康）", "to": "馬超", "type": "rivals", "passageId": "ws18f-p6" },
-    { "from": "許褚（仲康）", "to": "曹仁", "type": "strained-colleagues", "passageId": "ws18f-p7" },
-    { "from": "許褚（仲康）", "to": "曹丕", "type": "lord-subordinate", "passageId": "ws18f-p8" },
-    { "from": "許褚（仲康）", "to": "許儀", "type": "father-son", "passageId": "ws18f-p9" },
-    { "from": "許定", "to": "許褚（仲康）", "type": "elder-brother-younger-brother", "passageId": "ws18f-p9" },
-    { "from": "許儀", "to": "鍾會", "type": "victim-killer", "passageId": "ws18f-p9" },
-    { "from": "許儀", "to": "許綜", "type": "father-son", "passageId": "ws18f-p9" }
+    {
+      "from": "許褚（仲康）",
+      "to": "曹操",
+      "type": "lord-subordinate",
+      "passageId": "ws18f-p3"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "張繡",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p3"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "袁紹",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p4"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "徐他",
+      "type": "killer-victim",
+      "passageId": "ws18f-p4"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "韓遂",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p5"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "馬超",
+      "type": "battlefield-opponents",
+      "passageId": "ws18f-p5"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "馬超",
+      "type": "rivals",
+      "passageId": "ws18f-p6"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "曹仁",
+      "type": "strained-colleagues",
+      "passageId": "ws18f-p7"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "曹丕",
+      "type": "lord-subordinate",
+      "passageId": "ws18f-p8"
+    },
+    {
+      "from": "許褚（仲康）",
+      "to": "許儀",
+      "type": "father-son",
+      "passageId": "ws18f-p9"
+    },
+    {
+      "from": "許定",
+      "to": "許褚（仲康）",
+      "type": "elder-brother-younger-brother",
+      "passageId": "ws18f-p9"
+    },
+    {
+      "from": "許儀",
+      "to": "鍾會",
+      "type": "victim-killer",
+      "passageId": "ws18f-p9"
+    },
+    {
+      "from": "許儀",
+      "to": "許綜",
+      "type": "father-son",
+      "passageId": "ws18f-p9"
+    }
   ],
   "journeyOverviews": [
     {
       "person": "許褚（仲康）",
-      "name": { "en": "Xu Chu", "zht": "許褚", "zhs": "许褚" },
-      "courtesyName": { "en": "Zhongkang", "zht": "仲康", "zhs": "仲康" },
-      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
-      "died": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "name": {
+        "en": "Xu Chu",
+        "zht": "許褚",
+        "zhs": "许褚"
+      },
+      "courtesyName": {
+        "en": "Zhongkang",
+        "zht": "仲康",
+        "zhs": "仲康"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
       "age": null,
       "stops": [
-        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "location": { "en": "Qiao, Qiao State", "zht": "譙國譙", "zhs": "谯国谯" }, "position": null, "passageId": "ws18f-p1" },
-        { "era": { "en": "1st - 2nd year of Jian'an", "zht": "建安元年 - 二年", "zhs": "建安元年 - 二年" }, "year": "196 - 197", "location": null, "position": { "en": "Commandant", "zht": "都尉", "zhs": "都尉" }, "passageId": "ws18f-p3" },
-        { "era": { "en": "2nd- 3rd year of Jian'an", "zht": "建安二年 - 三年", "zhs": "建安二年 - 三年" }, "year": "197 - 198", "location": [{ "en": "Wan", "zht": "宛", "zhs": "宛" },{ "en": "Wuyin", "zht": "舞陰", "zhs": "舞阴" },{ "en": "Anzhong", "zht": "安衆", "zhs": "安众" },{ "en": "Rang", "zht": "穰", "zhs": "穰" }], "position": { "en": "Colonel", "zht": "校尉", "zhs": "校尉" }, "passageId": "ws18f-p3" },
-        { "era": { "en": "4th - 5th year of Jian'an", "zht": "建安四年 - 五年", "zhs": "建安四年 - 五年" }, "year": "199 - 200", "location": { "en": "Guandu", "zht": "官渡", "zhs": "官渡" }, "position": null, "passageId": "ws18f-p4" },
-        { "era": { "en": "9th year of Jian'an", "zht": "建安九年", "zhs": "建安九年" }, "year": 204, "location": { "en": "Ye", "zht": "鄴", "zhs": "邺" }, "position": { "en": "Marquis Within the Pass", "zht": "關內侯", "zhs": "关内侯" }, "passageId": "ws18f-p5" },
-        { "era": { "en": "16th year of Jian'an", "zht": "建安十六年", "zhs": "建安十六年" }, "year": "211", "location": { "en": "Tongguan", "zht": "潼關", "zhs": "潼关" }, "position": { "en": "Gentleman-General of the Martial Guards", "zht": "武衞中郎將", "zhs": "武卫中郎将" }, "passageId": "ws18f-p5" },
-        { "era": { "en": "20th year of Jian'an", "zht": "建安二十年", "zhs": "建安二十年" }, "year": "215", "location": { "en": "Yangpingguan", "zht": "陽平關", "zhs": "阳平关" }, "position": null, "passageId": "ws18f-p6" },
-        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详"  }, "year": null, "location": null, "position": { "en": "General of the Central Vanguard", "zht": "中堅將軍", "zhs": "中坚将军" }, "passageId": "ws18f-p7" },
-        { "era": { "en": "1st year of Huangchu", "zht": "黄初元年", "zhs": "黄初元年" }, "year": 220, "location": null, "position": { "en": "General of the Martial Guards", "zht": "武衞將軍", "zhs": "武卫将军" }, "passageId": "ws18f-p8" },
-        { "era": { "en": "1st year of Taihe", "zht": "太和元年", "zhs": "太和元年" }, "year": "227", "location":null, "position": { "en": "Township Marquis", "zht": "鄉侯", "zhs": "乡侯" }, "passageId": "ws18f-p9" }
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": {
+            "en": "Qiao",
+            "zht": "譙",
+            "zhs": "谯"
+          },
+          "position": null,
+          "passageId": "ws18f-p1"
+        },
+        {
+          "era": {
+            "en": "1st - 2nd year of Jian'an",
+            "zht": "建安元年 - 二年",
+            "zhs": "建安元年 - 二年"
+          },
+          "year": "196 - 197",
+          "location": null,
+          "position": {
+            "en": "Commandant",
+            "zht": "都尉",
+            "zhs": "都尉"
+          },
+          "passageId": "ws18f-p3"
+        },
+        {
+          "era": {
+            "en": "2nd- 3rd year of Jian'an",
+            "zht": "建安二年 - 三年",
+            "zhs": "建安二年 - 三年"
+          },
+          "year": "197 - 198",
+          "location": [
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Wuyin",
+              "zht": "舞陰",
+              "zhs": "舞阴"
+            },
+            {
+              "en": "Anzhong",
+              "zht": "安衆",
+              "zhs": "安众"
+            },
+            {
+              "en": "Rang",
+              "zht": "穰",
+              "zhs": "穰"
+            }
+          ],
+          "position": {
+            "en": "Colonel",
+            "zht": "校尉",
+            "zhs": "校尉"
+          },
+          "passageId": "ws18f-p3"
+        },
+        {
+          "era": {
+            "en": "4th - 5th year of Jian'an",
+            "zht": "建安四年 - 五年",
+            "zhs": "建安四年 - 五年"
+          },
+          "year": "199 - 200",
+          "location": {
+            "en": "Guandu",
+            "zht": "官渡",
+            "zhs": "官渡"
+          },
+          "position": null,
+          "passageId": "ws18f-p4"
+        },
+        {
+          "era": {
+            "en": "9th year of Jian'an",
+            "zht": "建安九年",
+            "zhs": "建安九年"
+          },
+          "year": 204,
+          "location": {
+            "en": "Ye",
+            "zht": "鄴",
+            "zhs": "邺"
+          },
+          "position": {
+            "en": "Marquis Within the Pass",
+            "zht": "關內侯",
+            "zhs": "关内侯"
+          },
+          "passageId": "ws18f-p5"
+        },
+        {
+          "era": {
+            "en": "16th year of Jian'an",
+            "zht": "建安十六年",
+            "zhs": "建安十六年"
+          },
+          "year": "211",
+          "location": {
+            "en": "Tongguan",
+            "zht": "潼關",
+            "zhs": "潼关"
+          },
+          "position": {
+            "en": "Gentleman-General of the Martial Guards",
+            "zht": "武衞中郎將",
+            "zhs": "武卫中郎将"
+          },
+          "passageId": "ws18f-p5"
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": "215",
+          "location": {
+            "en": "Yangpingguan",
+            "zht": "陽平關",
+            "zhs": "阳平关"
+          },
+          "position": null,
+          "passageId": "ws18f-p6"
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "location": null,
+          "position": {
+            "en": "General of the Central Vanguard",
+            "zht": "中堅將軍",
+            "zhs": "中坚将军"
+          },
+          "passageId": "ws18f-p7"
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "location": null,
+          "position": {
+            "en": "General of the Martial Guards",
+            "zht": "武衞將軍",
+            "zhs": "武卫将军"
+          },
+          "passageId": "ws18f-p8"
+        },
+        {
+          "era": {
+            "en": "1st year of Taihe",
+            "zht": "太和元年",
+            "zhs": "太和元年"
+          },
+          "year": "227",
+          "location": null,
+          "position": {
+            "en": "Township Marquis",
+            "zht": "鄉侯",
+            "zhs": "乡侯"
+          },
+          "passageId": "ws18f-p9"
+        }
       ]
     }
   ],
@@ -59,10 +315,10 @@
     {
       "id": "ws18f-p1",
       "orig": {
-        "zht": "許褚字仲康，[[譙國譙|/zh-hant/maps/map-overall?lat=33.87991582&lng=115.79759282&name=Qiao]]人也。長八尺餘，腰大十圍，容貌雄毅，勇力絕人。漢末，聚少年及宗族數千家，共堅壁以禦寇。",
-        "zhs": "许褚字仲康，[[谯国谯|/zh-hans/maps/map-overall?lat=33.87991582&lng=115.79759282&name=Qiao]]人也。长八尺余，腰大十围，容貌雄毅，勇力绝人。汉末，聚少年及宗族数千家，共坚壁以御寇。"
+        "zht": "許褚字仲康，[[譙國譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]人也。長八尺餘，腰大十圍，容貌雄毅，勇力絕人。漢末，聚少年及宗族數千家，共堅壁以禦寇。",
+        "zhs": "许褚字仲康，[[谯国谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]人也。长八尺余，腰大十围，容貌雄毅，勇力绝人。汉末，聚少年及宗族数千家，共坚壁以御寇。"
       },
-      "en": "Xu Chu, courtesy name Zhongkang, was from [[Qiao|/maps/map-overall?lat=33.87991582&lng=115.79759282&name=Qiao]]. He stood over eight chi tall, with a waist ten spans around. His bearing was imposing and formidable, and his courage and strength surpassed those of all others. At the end of the Han, he gathered several thousand households of young men and clansmen, and together they built a fortified stronghold to defend against bandits."
+      "en": "Xu Chu, courtesy name Zhongkang, was from [[Qiao|/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]. He stood over eight chi tall, with a waist ten spans around. His bearing was imposing and formidable, and his courage and strength surpassed those of all others. At the end of the Han, he gathered several thousand households of young men and clansmen, and together they built a fortified stronghold to defend against bandits."
     },
     {
       "id": "ws18f-p2",
@@ -91,10 +347,10 @@
     {
       "id": "ws18f-p5",
       "orig": {
-        "zht": "從圍[[鄴|/zh-hant/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]，力戰有功，賜爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。從討韓遂、馬超於[[潼關|/zh-hant/maps/map-overall?lat=34.60853928&lng=110.31804689&name=Tongguan]]。太祖將北渡，臨濟河，先渡兵，獨與褚及虎士百餘人留南岸斷後。超將步騎萬餘人，來奔太祖軍，矢下如雨。褚白太祖，賊來多，今兵渡以盡，宜去，乃扶太祖上船。賊戰急，軍爭濟，船重欲沒。褚斬攀船者，左手舉馬鞍鞌太祖。船工為流矢所中死，褚右手並泝船，僅乃得渡。是日，微褚幾危。",
-        "zhs": "从围[[邺|/zh-hans/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]，力战有功，赐爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。从讨韩遂、马超于[[潼关|/zh-hans/maps/map-overall?lat=34.60853928&lng=110.31804689&name=Tongguan]]。太祖将北渡，临济河，先渡兵，独与褚及虎士百余人留南岸断后。超将步骑万余人，来奔太祖军，矢下如雨。褚白太祖，贼来多，今兵渡以尽，宜去，乃扶太祖上船。贼战急，军争济，船重欲没。褚斩攀船者，左手举马鞍鞌太祖。船工为流矢所中死，褚右手并泝船，仅乃得渡。是日，微褚几危。"
+        "zht": "從圍[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，力戰有功，賜爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。從討韓遂、馬超於[[潼關|/zh-hant/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]。太祖將北渡，臨濟河，先渡兵，獨與褚及虎士百餘人留南岸斷後。超將步騎萬餘人，來奔太祖軍，矢下如雨。褚白太祖，賊來多，今兵渡以盡，宜去，乃扶太祖上船。賊戰急，軍爭濟，船重欲沒。褚斬攀船者，左手舉馬鞍鞌太祖。船工為流矢所中死，褚右手並泝船，僅乃得渡。是日，微褚幾危。",
+        "zhs": "从围[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，力战有功，赐爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。从讨韩遂、马超于[[潼关|/zh-hans/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]。太祖将北渡，临济河，先渡兵，独与褚及虎士百余人留南岸断后。超将步骑万余人，来奔太祖军，矢下如雨。褚白太祖，贼来多，今兵渡以尽，宜去，乃扶太祖上船。贼战急，军争济，船重欲没。褚斩攀船者，左手举马鞍鞌太祖。船工为流矢所中死，褚右手并泝船，仅乃得渡。是日，微褚几危。"
       },
-      "en": "Afterwards, Xu Chu joined the siege of [[Ye|/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]], fought hard and for his merits, granted the rank of [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]. He also followed Cao Cao in the campaign against Han Sui and Ma Chao at [[Tongguan|/maps/map-overall?lat=34.60853928&lng=110.31804689&name=Tongguan]]. When Cao Cao was about to go northward and cross the river, he sent his troops across first. Cao Cao remained on the southern bank with only Xu Chu and over a hundred Tiger Warriors to guard the rear. Ma Chao led over ten thousand infantry and cavalry in a charge against Cao Cao's forces, with arrows falling like rain. Xu Chu told Cao Cao that the enemy had come in great numbers and that the troops had all finished crossing, so it was time to leave. He then helped Cao Cao aboard the boat. As the fighting grew intense, the troops scrambled to cross, overloading the boat until it was on the verge of sinking. Xu Chu cut down those clinging to its sides and held up a saddle with his left hand to shield Cao Cao. The boatman was struck by a stray arrow and killed. With his right hand, Xu Chu poled the boat against the current to reach the opposite bank. Had it not been for Xu Chu that day, Cao Cao would have come close to disaster."
+      "en": "Afterwards, Xu Chu joined the siege of [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]], fought hard and for his merits, granted the rank of [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]. He also followed Cao Cao in the campaign against Han Sui and Ma Chao at [[Tongguan|/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]. When Cao Cao was about to go northward and cross the river, he sent his troops across first. Cao Cao remained on the southern bank with only Xu Chu and over a hundred Tiger Warriors to guard the rear. Ma Chao led over ten thousand infantry and cavalry in a charge against Cao Cao's forces, with arrows falling like rain. Xu Chu told Cao Cao that the enemy had come in great numbers and that the troops had all finished crossing, so it was time to leave. He then helped Cao Cao aboard the boat. As the fighting grew intense, the troops scrambled to cross, overloading the boat until it was on the verge of sinking. Xu Chu cut down those clinging to its sides and held up a saddle with his left hand to shield Cao Cao. The boatman was struck by a stray arrow and killed. With his right hand, Xu Chu poled the boat against the current to reach the opposite bank. Had it not been for Xu Chu that day, Cao Cao would have come close to disaster."
     },
     {
       "id": "ws18f-p6",
@@ -130,4 +386,3 @@
     }
   ]
 }
-

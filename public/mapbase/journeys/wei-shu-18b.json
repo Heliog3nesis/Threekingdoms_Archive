@@ -2,8 +2,8 @@
   "pins": [
     {
       "kind": "town",
-      "lat": 32.30177708,
-      "lng": 113.93167649,
+      "lat": 32.27259562,
+      "lng": 113.86954284,
       "name": "Pingchun",
       "persons": [
         "李通（文達）"
@@ -11,8 +11,8 @@
     },
     {
       "kind": "town",
-      "lat": 32.68444873,
-      "lng": 114.01251197,
+      "lat": 32.66120337,
+      "lng": 113.98029452,
       "name": "Langling",
       "persons": [
         "李通（文達）"
@@ -20,8 +20,8 @@
     },
     {
       "kind": "town",
-      "lat": 34.02798583,
-      "lng": 114.05663756,
+      "lat": 34.029893,
+      "lng": 114.02211887,
       "name": "Xuchang",
       "persons": [
         "李通（文達）"
@@ -36,8 +36,8 @@
     },
     {
       "kind": "town",
-      "lat": 25.88687425,
-      "lng": 113.42631667,
+      "lat": 32.90764066,
+      "lng": 114.05769361,
       "name": "Yang'an",
       "persons": [
         "李通（文達）"
@@ -92,17 +92,17 @@
           },
           "year": null,
           "location": {
-            "en": "Pingchun, Jiangxia",
-            "zht": "江夏平春",
-            "zhs": "江夏平春"
+            "en": "Pingchun",
+            "zht": "平春",
+            "zhs": "平春"
           },
           "position": null,
           "passageId": "ws18b-p1",
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 32.30177708,
-              "lng": 113.93167649,
+              "lat": 32.27259562,
+              "lng": 113.86954284,
               "name": "Pingchun"
             }
           ],
@@ -125,8 +125,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 32.68444873,
-              "lng": 114.01251197,
+              "lat": 32.66120337,
+              "lng": 113.98029452,
               "name": "Langling"
             }
           ],
@@ -134,7 +134,7 @@
         },
         {
           "era": {
-            "en": "beginning of Jian'an era",
+            "en": "Beginning of Jian'an era",
             "zht": "建安初",
             "zhs": "建安初"
           },
@@ -160,8 +160,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 34.02798583,
-              "lng": 114.05663756,
+              "lat": 34.029893,
+              "lng": 114.02211887,
               "name": "Xuchang"
             },
             {
@@ -184,7 +184,7 @@
             "zht": "建安二年 - 三年",
             "zhs": "建安二年 - 三年"
           },
-          "year": "197-198",
+          "year": "197 - 198",
           "location": {
             "en": "Yang'an",
             "zht": "陽安",
@@ -206,8 +206,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 25.88687425,
-              "lng": 113.42631667,
+              "lat": 32.90764066,
+              "lng": 114.05769361,
               "name": "Yang'an"
             }
           ],

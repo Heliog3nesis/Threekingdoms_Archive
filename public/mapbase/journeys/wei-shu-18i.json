@@ -2,8 +2,8 @@
   "pins": [
     {
       "kind": "town",
-      "lat": 39.37794425,
-      "lng": 99.62081125,
+      "lat": 39.38201403,
+      "lng": 99.58658728,
       "name": "Biaoshi",
       "persons": [
         "龐淯（子異）"
@@ -11,8 +11,8 @@
     },
     {
       "kind": "town",
-      "lat": 36.45574371,
-      "lng": 102.65588672,
+      "lat": 36.43947997,
+      "lng": 102.6508321,
       "name": "Poqiang",
       "persons": [
         "龐淯（子異）"
@@ -87,8 +87,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 39.37794425,
-              "lng": 99.62081125,
+              "lat": 39.38201403,
+              "lng": 99.58658728,
               "name": "Biaoshi"
             }
           ],
@@ -123,8 +123,8 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 36.45574371,
-              "lng": 102.65588672,
+              "lat": 36.43947997,
+              "lng": 102.6508321,
               "name": "Poqiang"
             }
           ],

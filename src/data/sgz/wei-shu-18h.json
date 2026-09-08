@@ -19,36 +19,279 @@
     "en": "Book of Wei, Chapter 18 · Biography of Pang De"
   },
   "relationships": [
-    { "from": "馬騰", "to": "龐悳（令明）", "type": "commander-officer", "passageId": "ws18h-p1" },
-    { "from": "馬騰", "to": "馬超", "type": "father-son", "passageId": "ws18h-p2" },
-    { "from": "馬超", "to": "龐悳（令明）", "type": "commander-officer", "passageId": "ws18h-p2" },
-    { "from": "鍾繇", "to": "郭援", "type": "uncle-nephew", "passageId": "ws18h-p2" },
-    { "from": "龐悳（令明）", "to": "郭援", "type": "killer-victim", "passageId": "ws18h-p2" },
-    { "from": "張魯", "to": "龐悳（令明）", "type": "lord-subordinate", "passageId": "ws18h-p3" },
-    { "from": "曹操", "to": "龐悳（令明）", "type": "lord-subordinate", "passageId": "ws18h-p3" },
-    { "from": "曹仁", "to": "龐悳（令明）", "type": "commander-officer", "passageId": "ws18h-p5" },
-    { "from": "龐柔", "to": "龐悳（令明）", "type": "elder cousin-younger cousin", "passageId": "ws18h-p4" },
-    { "from": "龐悳（令明）", "to": "關羽", "type": "rivals", "passageId": "ws18h-p4" },
-    { "from": "關羽", "to": "龐悳（令明）", "type": "killer-victim", "passageId": "ws18h-p7" },
-    { "from": "龐悳（令明）", "to": "董衡", "type": "killer-victim", "passageId": "ws18h-p5" },
-    { "from": "龐悳（令明）", "to": "董超", "type": "killer-victim", "passageId": "ws18h-p5" },
-    { "from": "龐悳（令明）", "to": "成何", "type": "commander-officer", "passageId": "ws18h-p6" },
-    { "from": "龐悳（令明）", "to": "龐會", "type": "father-son", "passageId": "ws18h-p8" }
+    {
+      "from": "馬騰",
+      "to": "龐悳（令明）",
+      "type": "commander-officer",
+      "passageId": "ws18h-p1"
+    },
+    {
+      "from": "馬騰",
+      "to": "馬超",
+      "type": "father-son",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "馬超",
+      "to": "龐悳（令明）",
+      "type": "commander-officer",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "鍾繇",
+      "to": "郭援",
+      "type": "uncle-nephew",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "郭援",
+      "type": "killer-victim",
+      "passageId": "ws18h-p2"
+    },
+    {
+      "from": "張魯",
+      "to": "龐悳（令明）",
+      "type": "lord-subordinate",
+      "passageId": "ws18h-p3"
+    },
+    {
+      "from": "曹操",
+      "to": "龐悳（令明）",
+      "type": "lord-subordinate",
+      "passageId": "ws18h-p3"
+    },
+    {
+      "from": "曹仁",
+      "to": "龐悳（令明）",
+      "type": "commander-officer",
+      "passageId": "ws18h-p5"
+    },
+    {
+      "from": "龐柔",
+      "to": "龐悳（令明）",
+      "type": "elder cousin-younger cousin",
+      "passageId": "ws18h-p4"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "關羽",
+      "type": "rivals",
+      "passageId": "ws18h-p4"
+    },
+    {
+      "from": "關羽",
+      "to": "龐悳（令明）",
+      "type": "killer-victim",
+      "passageId": "ws18h-p7"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "董衡",
+      "type": "killer-victim",
+      "passageId": "ws18h-p5"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "董超",
+      "type": "killer-victim",
+      "passageId": "ws18h-p5"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "成何",
+      "type": "commander-officer",
+      "passageId": "ws18h-p6"
+    },
+    {
+      "from": "龐悳（令明）",
+      "to": "龐會",
+      "type": "father-son",
+      "passageId": "ws18h-p8"
+    }
   ],
   "journeyOverviews": [
     {
       "person": "龐德（令明）",
-      "born": { "en": "unknown", "zht": "不詳", "zhs": "不详" },
-      "died": { "era": { "en": "24th year of Jian'an", "zht": "建安二十四年", "zhs": "建安二十四年" }, "year": 219, "age": null },
+      "born": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
+      "died": {
+        "era": {
+          "en": "24th year of Jian'an",
+          "zht": "建安二十四年",
+          "zhs": "建安二十四年"
+        },
+        "year": 219,
+        "age": null
+      },
       "stops": [
-        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": { "en": "Huandao", "zht": "狟道", "zhs": "狟道" }, "position": null, "passageId": "ws18h-p1" },
-        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": null, "position": { "en": "commandery clerk and provincial Aide", "zht": "郡吏州從事", "zhs": "郡吏州从事" }, "passageId": "ws18h-p1" },
-        { "era": { "en": "during the Chuping Era", "zht": "初平中", "zhs": "初平中" }, "year": "190-193", "age": null, "location": null, "position": { "en": "Colonel", "zht": "校尉", "zhs": "校尉" }, "passageId": "ws18h-p1" },
-        { "era": { "en": "7th year of Jian'an", "zht": "建安七年", "zhs": "建安七年" }, "year": 202, "age": null, "location": { "en": "Pingyang", "zht": "平陽", "zhs": "平阳" }, "position": [{ "en": "Gentleman General", "zht": "中郎將", "zhs": "中郎将" },{ "en": "Capital Neighbourhood Marquis", "zht": "都亭侯", "zhs": "都亭侯" }], "passageId": "ws18h-p2" },
-        { "era": { "en": "10th year of Jian'an", "zht": "建安十年", "zhs": "建安十年" }, "year": 205, "age": null, "location": { "en": "Hongnong", "zht": "弘農", "zhs": "弘农" }, "position": null, "passageId": "ws18h-p3" },
-        { "era": { "en": "16th year of Jian'an", "zht": "建安十六年", "zhs": "建安十六年" }, "year": 211, "age": null, "location": [{ "en": "Hanyang", "zht": "漢陽", "zhs": "汉阳" }, { "en": "Ji City", "zht": "兾城", "zhs": "兾城" }], "position": null, "passageId": "ws18h-p3" },
-        { "era": { "en": "19th - 20th year of Jian'an", "zht": "建安十九 - 二十年", "zhs": "建安十九 - 二十年" }, "year": "214-215", "age": null, "location": { "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" },  "position": [{ "en": "General Who Champions Righteousness", "zht": "立義將軍", "zhs": "立义将军" },{ "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }], "passageId": "ws18h-p3" },
-        { "era": { "en": "23rd - 24th year of Jian'an", "zht": "建安二十三 - 二十四年", "zhs": "建安二十三 - 二十四年" }, "year": "218-219", "age": null, "location": [{ "en": "Wan", "zht": "宛", "zhs": "宛" },{ "en": "Fancheng", "zht": "樊城", "zhs": "樊城" }], "position": null, "passageId": "ws18h-p4" }
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Huandao",
+            "zht": "狟道",
+            "zhs": "狟道"
+          },
+          "position": null,
+          "passageId": "ws18h-p1"
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": {
+            "en": "commandery clerk and provincial Aide",
+            "zht": "郡吏州從事",
+            "zhs": "郡吏州从事"
+          },
+          "passageId": "ws18h-p1"
+        },
+        {
+          "era": {
+            "en": "during the Chuping Era",
+            "zht": "初平中",
+            "zhs": "初平中"
+          },
+          "year": "190-193",
+          "age": null,
+          "location": null,
+          "position": {
+            "en": "Colonel",
+            "zht": "校尉",
+            "zhs": "校尉"
+          },
+          "passageId": "ws18h-p1"
+        },
+        {
+          "era": {
+            "en": "7th year of Jian'an",
+            "zht": "建安七年",
+            "zhs": "建安七年"
+          },
+          "year": 202,
+          "age": null,
+          "location": {
+            "en": "Pingyang",
+            "zht": "平陽",
+            "zhs": "平阳"
+          },
+          "position": [
+            {
+              "en": "Gentleman General",
+              "zht": "中郎將",
+              "zhs": "中郎将"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": "ws18h-p2"
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "age": null,
+          "location": {
+            "en": "Hongnong",
+            "zht": "弘農",
+            "zhs": "弘农"
+          },
+          "position": null,
+          "passageId": "ws18h-p3"
+        },
+        {
+          "era": {
+            "en": "16th year of Jian'an",
+            "zht": "建安十六年",
+            "zhs": "建安十六年"
+          },
+          "year": 211,
+          "age": null,
+          "location": [
+            {
+              "en": "Hanyang",
+              "zht": "漢陽",
+              "zhs": "汉阳"
+            },
+            {
+              "en": "Ji City",
+              "zht": "兾城",
+              "zhs": "兾城"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18h-p3"
+        },
+        {
+          "era": {
+            "en": "19th - 20th year of Jian'an",
+            "zht": "建安十九 - 二十年",
+            "zhs": "建安十九 - 二十年"
+          },
+          "year": "214-215",
+          "age": null,
+          "location": {
+            "en": "Hanzhong",
+            "zht": "漢中",
+            "zhs": "汉中"
+          },
+          "position": [
+            {
+              "en": "General Who Champions Righteousness",
+              "zht": "立義將軍",
+              "zhs": "立义将军"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": "ws18h-p3"
+        },
+        {
+          "era": {
+            "en": "23rd - 24th year of Jian'an",
+            "zht": "建安二十三 - 二十四年",
+            "zhs": "建安二十三 - 二十四年"
+          },
+          "year": "218-219",
+          "age": null,
+          "location": [
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Fancheng",
+              "zht": "樊城",
+              "zhs": "樊城"
+            }
+          ],
+          "position": null,
+          "passageId": "ws18h-p4"
+        }
       ]
     }
   ],
@@ -56,10 +299,10 @@
     {
       "id": "ws18h-p1",
       "orig": {
-        "zht": "龐悳字令明，[[南安狟道|/zh-hant/maps/map-overall?lat=34.91503046&lng=104.75355249&name=Huandao]]人也。少為郡吏州從事。初平中，從馬騰擊反羌叛氐。數有功，稍遷至校尉。",
-        "zhs": "庞悳字令明，[[南安狟道|/zh-hans/maps/map-overall?lat=34.91503046&lng=104.75355249&name=Huandao]]人也。少为郡吏州从事。初平中，从马腾击反羌叛氐。数有功，稍迁至校尉。"
+        "zht": "龐悳字令明，[[南安狟道|/zh-hant/maps/map-overall?lat=34.93713305&lng=104.74344326&name=Huandao]]人也。少為郡吏州從事。初平中，從馬騰擊反羌叛氐。數有功，稍遷至校尉。",
+        "zhs": "庞悳字令明，[[南安狟道|/zh-hans/maps/map-overall?lat=34.93713305&lng=104.74344326&name=Huandao]]人也。少为郡吏州从事。初平中，从马腾击反羌叛氐。数有功，稍迁至校尉。"
       },
-      "en": "Pang De, courtesy name Lingming, was from [[Huandao, Nan'an|/maps/map-overall?lat=34.91503046&lng=104.75355249&name=Huandao]]. In his youth, he served as a commandery clerk and provincial Aide. During the Chuping era, he followed Ma Teng in campaigns against the rebellious Qiang and Di tribes. He repeatedly earned merit and gradually rose to the rank of Colonel.",
+      "en": "Pang De, courtesy name Lingming, was from [[Huandao, Nan'an|/maps/map-overall?lat=34.93713305&lng=104.74344326&name=Huandao]]. In his youth, he served as a commandery clerk and provincial Aide. During the Chuping era, he followed Ma Teng in campaigns against the rebellious Qiang and Di tribes. He repeatedly earned merit and gradually rose to the rank of Colonel.",
       "annotations": [
         {
           "annotator": {
@@ -81,10 +324,10 @@
     {
       "id": "ws18h-p2",
       "orig": {
-        "zht": "建安中，太祖討袁譚、尚於[[黎陽|/zh-hant/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，譚遣郭援、高幹等略取[[河東|/zh-hant/maps/map-overall?admin=57]]，太祖使鍾繇率關中諸將討之。悳隨騰子超拒援、幹於[[平陽|/zh-hant/maps/map-overall?lat=36.07503418&lng=111.44794913&name=Pingyang]]，悳為軍鋒，進攻援、幹，大破之，親斬援首。拜中郎將，封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。",
-        "zhs": "建安中，太祖讨袁谭、尚于[[黎阳|/zh-hans/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，谭遣郭援、高干等略取[[河东|/zh-hans/maps/map-overall?admin=57]]，太祖使钟繇率关中诸将讨之。悳随腾子超拒援、干于[[平阳|/zh-hans/maps/map-overall?lat=36.07503418&lng=111.44794913&name=Pingyang]]，悳为军锋，进攻援、干，大破之，亲斩援首。拜中郎将，封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。"
+        "zht": "建安中，太祖討袁譚、尚於[[黎陽|/zh-hant/maps/map-overall?lat=35.68354088&lng=114.58305267&name=Liyang]]，譚遣郭援、高幹等略取[[河東|/zh-hant/maps/map-overall?admin=57]]，太祖使鍾繇率關中諸將討之。悳隨騰子超拒援、幹於[[平陽|/zh-hant/maps/map-overall?lat=36.06263787&lng=111.39043883&name=Pingyang]]，悳為軍鋒，進攻援、幹，大破之，親斬援首。拜中郎將，封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。",
+        "zhs": "建安中，太祖讨袁谭、尚于[[黎阳|/zh-hans/maps/map-overall?lat=35.68354088&lng=114.58305267&name=Liyang]]，谭遣郭援、高干等略取[[河东|/zh-hans/maps/map-overall?admin=57]]，太祖使钟繇率关中诸将讨之。悳随腾子超拒援、干于[[平阳|/zh-hans/maps/map-overall?lat=36.06263787&lng=111.39043883&name=Pingyang]]，悳为军锋，进攻援、干，大破之，亲斩援首。拜中郎将，封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。"
       },
-      "en": "During the Jian'an era, Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) campaigned against Yuan Tan and Yuan Shang at [[Liyang|/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]. Yuan Tan sent Guo Yuan, Gao Gan, and others to seize [[Hedong|/maps/map-overall?admin=57]], whereupon Cao Cao ordered Zhong Yao to lead the generals of Guanzhong against them. Pang De followed Ma Teng's son Ma Chao in opposing Guo Yuan and Gao Gan at [[Pingyang|/maps/map-overall?lat=36.07503418&lng=111.44794913&name=Pingyang]]. Serving as the army's vanguard, Pang De advanced to attack Guo Yuan and Gao Gan, utterly routed their forces, and personally beheaded Guo Yuan. He was appointed Gentleman General and enfeoffed as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]].",
+      "en": "During the Jian'an era, Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) campaigned against Yuan Tan and Yuan Shang at [[Liyang|/maps/map-overall?lat=35.68354088&lng=114.58305267&name=Liyang]]. Yuan Tan sent Guo Yuan, Gao Gan, and others to seize [[Hedong|/maps/map-overall?admin=57]], whereupon Cao Cao ordered Zhong Yao to lead the generals of Guanzhong against them. Pang De followed Ma Teng's son Ma Chao in opposing Guo Yuan and Gao Gan at [[Pingyang|/maps/map-overall?lat=36.06263787&lng=111.39043883&name=Pingyang]]. Serving as the army's vanguard, Pang De advanced to attack Guo Yuan and Gao Gan, utterly routed their forces, and personally beheaded Guo Yuan. He was appointed Gentleman General and enfeoffed as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]].",
       "annotations": [
         {
           "annotator": {
@@ -106,10 +349,10 @@
     {
       "id": "ws18h-p3",
       "orig": {
-        "zht": "後張白騎叛於[[弘農|/zh-hant/maps/map-overall?lat=34.6814&lng=110.9132&name=Hongnong]]，悳復隨騰征之，破白騎於兩殽閒。每戰，常陷陣却敵，勇冠騰軍。後騰徵為衞尉，悳留屬超。太祖破超於[[渭|/zh-hant/maps/map-overall?water=14]]南，悳隨超亡入[[漢陽|/zh-hant/maps/map-overall?lat=26.81209209&lng=104.61455673&name=Hanyang]]，保[[兾城|/zh-hant/maps/map-overall?lat=34.72831194&lng=105.378171&name=Ji]]。後復隨超奔[[漢中|/zh-hant/maps/map-overall?admin=110]]，從張魯。太祖定[[漢中|/zh-hant/maps/map-overall?admin=110]]，悳隨衆降。太祖素聞其驍勇，拜[[立義將軍|/zh-hant/translations/officials/military#four-direction--misc-148]]，封關門[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百戶。",
-        "zhs": "后张白骑叛于[[弘农|/zh-hans/maps/map-overall?lat=34.6814&lng=110.9132&name=Hongnong]]，悳复随腾征之，破白骑于两殽闲。每战，常陷阵却敌，勇冠腾军。后腾征为衞尉，悳留属超。太祖破超于[[渭|/zh-hans/maps/map-overall?water=14]]南，悳随超亡入[[汉阳|/zh-hans/maps/map-overall?lat=26.81209209&lng=104.61455673&name=Hanyang]]，保[[兾城|/zh-hans/maps/map-overall?lat=34.72831194&lng=105.378171&name=Ji]]。后复随超奔[[汉中|/zh-hans/maps/map-overall?admin=110]]，从张鲁。太祖定[[汉中|/zh-hans/maps/map-overall?admin=110]]，悳随众降。太祖素闻其骁勇，拜[[立义将军|/zh-hans/translations/officials/military#four-direction--misc-148]]，封关门[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百户。"
+        "zht": "後張白騎叛於[[弘農|/zh-hant/maps/map-overall?lat=34.65035856&lng=110.90996505&name=Hongnong]]，悳復隨騰征之，破白騎於兩殽閒。每戰，常陷陣却敵，勇冠騰軍。後騰徵為衞尉，悳留屬超。太祖破超於[[渭|/zh-hant/maps/map-overall?water=14]]南，悳隨超亡入[[漢陽|/zh-hant/maps/map-overall?lat=26.81209209&lng=104.61455673&name=Hanyang]]，保[[兾城|/zh-hant/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]]。後復隨超奔[[漢中|/zh-hant/maps/map-overall?admin=110]]，從張魯。太祖定[[漢中|/zh-hant/maps/map-overall?admin=110]]，悳隨衆降。太祖素聞其驍勇，拜[[立義將軍|/zh-hant/translations/officials/military#four-direction--misc-148]]，封關門[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百戶。",
+        "zhs": "后张白骑叛于[[弘农|/zh-hans/maps/map-overall?lat=34.65035856&lng=110.90996505&name=Hongnong]]，悳复随腾征之，破白骑于两殽闲。每战，常陷阵却敌，勇冠腾军。后腾征为衞尉，悳留属超。太祖破超于[[渭|/zh-hans/maps/map-overall?water=14]]南，悳随超亡入[[汉阳|/zh-hans/maps/map-overall?lat=26.81209209&lng=104.61455673&name=Hanyang]]，保[[兾城|/zh-hans/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]]。后复随超奔[[汉中|/zh-hans/maps/map-overall?admin=110]]，从张鲁。太祖定[[汉中|/zh-hans/maps/map-overall?admin=110]]，悳随众降。太祖素闻其骁勇，拜[[立义将军|/zh-hans/translations/officials/military#four-direction--misc-148]]，封关门[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百户。"
       },
-      "en": "Later, when Zhang Baiqi rebelled in [[Hongnong|/maps/map-overall?lat=34.6814&lng=110.9132&name=Hongnong]], Pang De again accompanied Ma Teng on campaign and defeated Baiqi at Yao Mountain. In every battle, Pang De charged the enemy lines and drove them back, his valour unsurpassed in Ma Teng's army. When Ma Teng was later summoned to court as Commandant of the Palace Guards, Pang De remained under Ma Chao. After Cao Cao defeated Ma Chao south of the [[Wei River|/maps/map-overall?water=14]], Pang De fled with him into [[Hanyang|/maps/map-overall?lat=26.81209209&lng=104.61455673&name=Hanyang]] and held [[Ji|/maps/map-overall?lat=34.72831194&lng=105.378171&name=Ji]]. Pang De then followed Ma Chao to [[Hanzhong|/maps/map-overall?admin=110]] and served under Zhang Lu. When Cao Cao pacified [[Hanzhong|/maps/map-overall?admin=110]], Pang De surrendered with the others. Having long heard of his valour, Cao Cao appointed him [[General Who Champions Righteousness|/translations/officials/military#four-direction--misc-148]] and enfeoffed him as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Guanmen, with three hundred households."
+      "en": "Later, when Zhang Baiqi rebelled in [[Hongnong|/maps/map-overall?lat=34.65035856&lng=110.90996505&name=Hongnong]], Pang De again accompanied Ma Teng on campaign and defeated Baiqi at Yao Mountain. In every battle, Pang De charged the enemy lines and drove them back, his valour unsurpassed in Ma Teng's army. When Ma Teng was later summoned to court as Commandant of the Palace Guards, Pang De remained under Ma Chao. After Cao Cao defeated Ma Chao south of the [[Wei River|/maps/map-overall?water=14]], Pang De fled with him into [[Hanyang|/maps/map-overall?lat=26.81209209&lng=104.61455673&name=Hanyang]] and held [[Ji|/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]]. Pang De then followed Ma Chao to [[Hanzhong|/maps/map-overall?admin=110]] and served under Zhang Lu. When Cao Cao pacified [[Hanzhong|/maps/map-overall?admin=110]], Pang De surrendered with the others. Having long heard of his valour, Cao Cao appointed him [[General Who Champions Righteousness|/translations/officials/military#four-direction--misc-148]] and enfeoffed him as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Guanmen, with three hundred households."
     },
     {
       "id": "ws18h-p4",
@@ -179,9 +422,9 @@
             "zhs": "蜀记 (王隐)",
             "en": "Shuji / Record of Shu (Wang Yin)"
           },
-          "zht": "《蜀記》曰：鍾會平蜀，前後鼓吹，迎悳屍喪還葬[[鄴|/zh-hant/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]，冢中身首如生。臣松之案悳死於[[樊城|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，文帝即位，又遣使至悳墓所，則其屍喪不應在蜀。此王隱之虛說也。",
-          "zhs": "《蜀记》曰：钟会平蜀，前后鼓吹，迎悳尸丧还葬[[邺|/zh-hans/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]，冢中身首如生。臣松之案悳死于[[樊城|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，文帝即位，又遣使至悳墓所，则其尸丧不应在蜀。此王隐之虚说也。",
-          "en": "The Shuji / Record of Shu states: \"After Zhong Hui pacified Shu, he received Pang De's remains with musicians before and behind the cortege and returned them to [[Ye|/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]] for burial. In the tomb, Pang De's head and body appeared as lifelike as ever.\" Your subject Songzhi notes that Pang De died at [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]], and that when Emperor Wen ascended the throne, he sent an envoy to Pang De's grave. De's remains therefore cannot have been in Shu. Wang Yin's account is false."
+          "zht": "《蜀記》曰：鍾會平蜀，前後鼓吹，迎悳屍喪還葬[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，冢中身首如生。臣松之案悳死於[[樊城|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，文帝即位，又遣使至悳墓所，則其屍喪不應在蜀。此王隱之虛說也。",
+          "zhs": "《蜀记》曰：钟会平蜀，前后鼓吹，迎悳尸丧还葬[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，冢中身首如生。臣松之案悳死于[[樊城|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，文帝即位，又遣使至悳墓所，则其尸丧不应在蜀。此王隐之虚说也。",
+          "en": "The Shuji / Record of Shu states: \"After Zhong Hui pacified Shu, he received Pang De's remains with musicians before and behind the cortege and returned them to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]] for burial. In the tomb, Pang De's head and body appeared as lifelike as ever.\" Your subject Songzhi notes that Pang De died at [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]], and that when Emperor Wen ascended the throne, he sent an envoy to Pang De's grave. De's remains therefore cannot have been in Shu. Wang Yin's account is false."
         }
       ]
     }

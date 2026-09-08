@@ -1,0 +1,206 @@
+{
+"id": "wei-shu-17c",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 17,
+  "num": "17",
+  "label": {
+    "zht": "于禁傳",
+    "zhs": "于禁传",
+    "en": "Biography of Yu Jin"
+  },
+  "title": {
+    "zht": "魏書十七 · 于禁傳",
+    "zhs": "魏书十七 · 于禁传",
+    "en": "Book of Wei, Chapter 17 · Biography of Yu Jin"
+  },
+  "relationships": [
+    { "from": "于禁", "to": "鮑信", "type": "follower", "passageId": "ws17c-p1" },
+    { "from": "于禁", "to": "王朗", "type": "subordinate-superior", "passageId": "ws17c-p1" },
+    { "from": "于禁", "to": "曹操", "type": "subordinate-superior", "passageId": "ws17c-p2" },
+    { "from": "于禁", "to": "昌豨", "type": "old friends", "passageId": "ws17c-p7" },
+    { "from": "于禁", "to": "龐悳", "type": "comrades-in-arms", "passageId": "ws17c-p10" },
+    { "from": "于禁", "to": "曹丕", "type": "subordinate-superior", "passageId": "ws17c-p11" },
+    { "from": "于禁", "to": "于圭", "type": "father-son", "passageId": "ws17c-p11" }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "于禁（文則）",
+      "name": {
+        "en": "Yu Jin",
+        "zht": "于禁",
+        "zhs": "于禁"
+      },
+      "courtesyName": {
+        "en": "Wenze",
+        "zht": "文則",
+        "zhs": "文则"
+      },
+      "born": {
+        "era":{
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
+      "year": null
+      },
+      "died": {
+        "era":{
+        "en": "2nd year of Huangchu",
+        "zht": "黄初二年",
+        "zhs": "黄初二年"}
+      ,
+      "year": 221
+    },
+      "stops": [
+        { "era": { "en": "Unknown", "zht": "不詳","zhs": "不详"}, "year": null, "age": null, "location": { "en": "Juping", "zht": "鉅平", "zhs": "巨平" }, "position": null, "passageId": "ws17c-p1" },
+        { "era": { "en": "3rd year of Chuping", "zht": "初平四年", "zhs": "初平四年" }, "year": 193, "age": null, "location": [{ "en": "Guangqi/Qi", "zht": "廣戚/戚", "zhs": "广戚/戚" }, { "en": "Xu Province", "zht": "徐州", "zhs": "徐州" }], "position": null, "passageId": "ws17c-p2" },
+        { "era": { "en": "1st - 2nd year of Xingping", "zht": "兴平元年 - 兴平二年", "zhs": "兴平元年 - 兴平二年" }, "year": "194 - 195", "age": null, "location": [{ "en": "Puyang", "zht": "濮陽", "zhs": "濮阳" }, { "en": "Xuchang", "zht": "須昌", "zhs": "须昌" },{ "en": "Shouzhang", "zht": "壽張", "zhs": "寿张" },{ "en": "Dingtao", "zht": "定陶", "zhs": "定陶" },{ "en": "Lihu", "zht": "離狐", "zhs": "离狐" },{ "en": "Yongqiu", "zht": "雍丘", "zhs": "雍丘" }], "position": [{ "en": "Army Major", "zht": "軍司馬", "zhs": "军司马" },{ "en": "Commandant Who Breaks Formations", "zht": "陷陣都尉", "zhs": "陷阵都尉" }], "passageId": "ws17c-p2" },
+        { "era": { "en": "1st - 2nd year of Jian'an", "zht": "建安元年 - 建安二年", "zhs": "建安元年 - 建安二年" }, "year": "196 - 197", "age": null, "location": [{ "en": "Banliang", "zht": "版梁", "zhs": "版梁" }, { "en": "Wan", "zht": "宛", "zhs": "宛" },{ "en": "Wuyin", "zht": "舞陰", "zhs": "舞阴"},{ "en": "Ku", "zht": "苦", "zhs": "苦"} ],"position": [{ "en": "Colonel Who Subdues the Enemies", "zht": "平虜校尉", "zhs": "平虏校尉" },{ "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }], "passageId": "ws17c-p4" },
+        { "era": { "en": "3rd - 4th year of Jian'an", "zht": "建安三年 - 建安四年", "zhs": "建安三年 - 建安四年" }, "year": "198 - 199", "age": null, "location": [{ "en": "Rang", "zht": "穰", "zhs": "穰" },{ "en": "Xiapi", "zht": "下邳", "zhs": "下邳" },{ "en": "Shequan", "zht": "射犬", "zhs": "射犬" }], "position": null, "passageId": "ws17c-p5" },
+        { "era": { "en": "Around 5th year of Jian'an", "zht": "~建安五年", "zhs": "~建安五年" }, "year": "200", "age": null, "location": [{ "en": "Yuanwu", "zht": "原武", "zhs": "原武" },{ "en": "Guandu", "zht": "官渡", "zhs": "官渡" }], "position": [{ "en": "Assistant General", "zht": "裨將軍", "zhs": "裨将军"},{ "en": "Adjunct General", "zht": "偏將軍", "zhs": "偏将军" } ], "passageId": "ws17c-p6" },
+        { "era": { "en": "7th year of Jian'an", "zht": "建安七年", "zhs": "建安七年" }, "year": 202, "age": null, "location": { "en": "Bowang", "zht": "博望", "zhs": "博望" }, "position": { "en": "裨將軍", "zht": "", "zhs": "" }, "passageId": "ws17c-p6" },
+        { "era": { "en": "11th year of Jian'an", "zht": "建安十一年", "zhs": "建安十一年" }, "year": 206, "age": null, "location": { "en": "Donghai", "zht": "東海", "zhs": "東海" }, "position": { "en": "Mighty Tiger General", "zht": "虎威將軍", "zhs": "虎威将军" }, "passageId": "ws17c-p8" },
+        { "era": { "en": "13 - 14th year of Jian'an", "zht": "建安十三年 - 建安十四年", "zhs": "建安十三年 - 建安十四年" }, "year": "208 - 209", "age": null, "location": [{ "en": "Jing Province", "zht": "荆州", "zhs": "荆州" }, { "en": "Lujiang", "zht": "廬江", "zhs": "庐江" }], "position": null, "passageId": "ws17c-p8" },
+        { "era": { "en": "Unknown", "zht": "不詳","zhs": "不详"}, "year": null, "age": null, "location": null, "position": [{ "en": "General of the Left", "zht": "左將軍", "zhs": "左将军" }, { "en": "Provisional Bearer of the Imperial Tally", "zht": "假節", "zhs": "假节" }], "passageId": "ws17c-p9" },
+        { "era": { "en": "24th year of Jian'an", "zht": "建安二十四年", "zhs": "建安二十四年" }, "year": 219, "age": null, "location": { "en": "Fancheng", "zht": "樊城", "zhs": "樊城" }, "position": null, "passageId": "ws17c-p10" },
+        { "era": { "en": "2nd year of Huangchu", "zht": "黄初二年", "zhs": "黄初二年" }, "year": 221, "age": null, "location": { "en": "Ye", "zht": "鄴", "zhs": "邺" }, "passageId": "ws17c-p11" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws17c-p1",
+      "orig": {
+        "zht": "于禁字文則，[[泰山鉅平|/zh-hant/maps/map-overall?lat=35.94789905&lng=117.10782451&name=Juping]]人也。黃巾起，鮑信招合徒衆，禁附從焉。及太祖領[[兖州|/zh-hant/maps/map-overall?admin=11]]，禁與其黨俱詣為都伯，屬將軍王朗。朗異之，薦禁才任[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]。",
+        "zhs": "于禁字文则，[[泰山巨平|/zh-hans/maps/map-overall?lat=35.94789905&lng=117.10782451&name=Juping]]人也。黄巾起，鲍信招合徒众，禁附从焉。及太祖领[[兖州|/zh-hans/maps/map-overall?admin=11]]，禁与其党俱诣为都伯，属将军王朗。朗异之，荐禁才任[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]。"
+      },
+      "en": "Yu Jin, courtesy name Wenze, was from [[Taishan, Juping|/maps/map-overall?lat=35.94789905&lng=117.10782451&name=Juping]]. When the Yellow Turbans rose, Bao Xin gathered a band of followers, and Yu Jin joined him. After Cao Cao (posthumously honoured as the Grand Progenitor) took command of [[Yan Province|/maps/map-overall?admin=11]], Yu Jin and his men entered his service. Yu Jin was appointed Commander of a Hundred and placed under General Wang Lang. Impressed by his ability, Wang Lang recommended him as a talent capable of becoming a [[Grand General|/translations/officials/ministers#superior-excellency-064]]."
+    },
+    {
+      "id": "ws17c-p2",
+      "orig": {
+        "zht": "太祖召見與語，拜軍司馬，使將兵詣[[徐州|/zh-hant/maps/map-overall?admin=8]]，攻[[廣戚|/zh-hant/maps/map-overall?lat=34.80348931&lng=117.10756777&name=Qi]]，拔之，拜陷陣都尉。從討呂布於[[濮陽|/zh-hant/maps/map-overall?lat=35.59233429&lng=114.99129787&name=Puyang]]，別破布二營於城南，又別將破高雅於[[須昌|/zh-hant/maps/map-overall?lat=35.9308624&lng=116.2488773&name=Xuchang]]。從攻[[壽張|/zh-hant/maps/map-overall?lat=35.82685338&lng=116.28297435&name=Shouzhang]]、[[定陶|/zh-hant/maps/map-overall?lat=35.09005462&lng=115.57295343&name=Dingtao]]、[[離狐|/zh-hant/maps/map-overall?lat=35.44867773&lng=115.15376029&name=Lihu]]，圍張超於[[雍丘|/zh-hant/maps/map-overall?lat=34.54667428&lng=114.81078408&name=Yongqiu]]，皆拔之。從征黃巾劉辟、黃邵等，屯版梁，邵等夜襲太祖營，禁帥麾下擊破之，斬辟、邵等，盡降其衆[^1]。遷平虜校尉。從圍橋蕤於[[苦|/zh-hant/maps/map-overall?lat=33.87325494&lng=115.51278217&name=Ku]]，斬蕤等四將。",
+        "zhs": "太祖召见与语，拜军司马，使将兵诣[[徐州|/zh-hans/maps/map-overall?admin=8]]，攻[[广戚|/zh-hans/maps/map-overall?lat=34.80348931&lng=117.10756777&name=Qi]]，拔之，拜陷阵都尉。从讨吕布于[[濮阳|/zh-hans/maps/map-overall?lat=35.59233429&lng=114.99129787&name=Puyang]]，别破布二营于城南，又别将破高雅于[[须昌|/zh-hans/maps/map-overall?lat=35.9308624&lng=116.2488773&name=Xuchang]]。从攻[[寿张|/zh-hans/maps/map-overall?lat=35.82685338&lng=116.28297435&name=Shouzhang]]、[[定陶|/zh-hans/maps/map-overall?lat=35.09005462&lng=115.57295343&name=Dingtao]]、[[离狐|/zh-hans/maps/map-overall?lat=35.44867773&lng=115.15376029&name=Lihu]]，围张超于[[雍丘|/zh-hans/maps/map-overall?lat=34.54667428&lng=114.81078408&name=Yongqiu]]，皆拔之。从征黄巾刘辟、黄邵等，屯版梁，邵等夜袭太祖营，禁帅麾下击破之，斩辟、邵等，尽降其众[^1]。迁平虏校尉。从围桥蕤于[[苦|/zh-hans/maps/map-overall?lat=33.87325494&lng=115.51278217&name=Ku]]，斩蕤等四将。"
+      },
+      "en": "Cao Cao summoned him for an audience and spoke with him. He appointed him Major of the army and sent him with troops to [[Xu Province|/maps/map-overall?admin=8]], where he attacked and captured [[Qi|/maps/map-overall?lat=34.80348931&lng=117.10756777&name=Qi]]. Yu Jin was then appointed Commandant Who Breaks Formations. He then joined the campaign against Lü Bu at [[Puyang|/maps/map-overall?lat=35.59233429&lng=114.99129787&name=Puyang]], independently destroying two of Lü Bu's camps south of the city. Later, commanding a separate force, he defeated Gao Ya at [[Xuchang|/maps/map-overall?lat=35.9308624&lng=116.2488773&name=Xuchang]]. Yu Jin also joined the attacks on [[Shouzhang|/maps/map-overall?lat=35.82685338&lng=116.28297435&name=Shouzhang]], [[Dingtao|/maps/map-overall?lat=35.09005462&lng=115.57295343&name=Dingtao]] and [[Lihu|/maps/map-overall?lat=35.44867773&lng=115.15376029&name=Lihu]], and the siege of Zhang Chao at [[Yongqiu|/maps/map-overall?lat=34.54667428&lng=114.81078408&name=Yongqiu]]; all were taken. Yu Jin then campaigned against the Yellow Turbans Liu Pi, Huang Shao and others, encamping at Banliang. When Huang Shao and his men launched a night attack on Cao Cao's camp, Yu Jin led his troops against them and routed them. Liu Pi, Huang Shao and the others were slain, and all their followers surrendered[^1]. Yu Jin was promoted to Colonel Who Subdues the Enemies. He later joined the siege of Qiao Rui at [[Ku|/maps/map-overall?lat=33.87325494&lng=115.51278217&name=Ku]], where Qiao Rui and three other generals were slain.",
+      "footnotes": [
+        {
+          "n": 1,
+          "zht": "版梁當在[[汝南|/zh-hant/maps/map-overall?admin=29]]、[[潁川|/zh-hant/maps/map-overall?admin=31]]一帶。又，清趙一清曰：「曹公破辟、邵在建安元年，而五年又云『汝南降贼刘辟叛』，则此时邵死而辟降可知，不得云『斩辟、邵』也。」",
+          "zhs": "版梁当在[[汝南|/zh-hans/maps/map-overall?admin=29]]、[[颍川|/zh-hans/maps/map-overall?admin=31]]一带。又，清赵一清曰：「曹公破辟、邵在建安元年，而五年又云『汝南降贼刘辟叛』，则此时邵死而辟降可知，不得云『斩辟、邵』也。」",
+          "en": "Banliang should been somewhere around [[Runan|/maps/map-overall?admin=29]] and [[Yingchuan|/maps/map-overall?admin=31]]. Zhao Yiqing of the Qing dynasty also commented: \"Cao Cao defeated Liu Pi and Huang Shao in the first year of Jian'an, yet in the fifth year it is again recorded that 'Liu Pi, a surrendered rebel of Runan, revolted.' It is therefore clear that at this time Huang Shao was killed while Liu Pi surrendered, and the text cannot be correct in saying that 'Liu Pi and Huang Shao were beheaded.'\""
+        }]
+    },
+    {
+      "id": "ws17c-p3",
+      "orig": {
+        "zht": "從至[[宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]，降張繡。繡復叛，太祖與戰不利，軍敗，還[[舞陰|/zh-hant/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]。是時軍亂，各間行求太祖，禁獨勒所將數百人，且戰且引，雖有死傷不相離。虜追稍緩，禁徐整行隊，鳴鼓而還。未至太祖所，道見十餘人被創裸走，禁問其故，曰：「為[[青州|/zh-hant/maps/map-overall?admin=6]]兵所劫。」初，黃巾降，號[[青州|/zh-hant/maps/map-overall?admin=6]]兵，太祖寬之，故敢因緣為略。禁怒，令其衆曰：「[[青州|/zh-hant/maps/map-overall?admin=6]]兵同屬曹公，而還為賊乎！」乃討之，數之以罪。",
+        "zhs": "从至[[宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]，降张绣。绣复叛，太祖与战不利，军败，还[[舞阴|/zh-hans/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]。是时军乱，各间行求太祖，禁独勒所将数百人，且战且引，虽有死伤不相离。虏追稍缓，禁徐整行队，鸣鼓而还。未至太祖所，道见十余人被创裸走，禁问其故，曰：「为[[青州|/zh-hans/maps/map-overall?admin=6]]兵所劫。」初，黄巾降，号[[青州|/zh-hans/maps/map-overall?admin=6]]兵，太祖宽之，故敢因缘为略。禁怒，令其众曰：「[[青州|/zh-hans/maps/map-overall?admin=6]]兵同属曹公，而还为贼乎！」乃讨之，数之以罪。"
+      },
+      "en": "Thereafter, Yu Jin accompanied Cao Cao to [[Wan|/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]] and helped secure Zhang Xiu's surrender. Zhang Xiu later rebelled again. Cao Cao fought him but was defeated and withdrew to [[Wuyin|/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]. Amid the ensuing disorder, the troops scattered along separate routes in search of Cao Cao. Yu Jin alone kept the several hundred men under his command in good order, fighting as they withdrew. Though they suffered casualties, they did not break ranks. When the enemy's pursuit slackened, Yu Jin calmly re-formed his column and marched back to the beat of drums. Before reaching Cao Cao, Yu Jin encountered more than ten wounded men fleeing naked along the road. When he asked what had happened, they replied, \"The [[Qing Province|/maps/map-overall?admin=6]] troops robbed us.\" The [[Qing Province|/maps/map-overall?admin=6]] troops were originally surrendered Yellow Turbans. Cao Cao had treated them leniently, and they took advantage of the circumstances to plunder. Enraged, Yu Jin told his men, \"The [[Qing Province|/maps/map-overall?admin=6]] troops also serve Lord Cao. Have they now turned bandit?\" He then attacked them and called them out for their crimes."
+    },
+    {
+      "id": "ws17c-p4",
+      "orig": {
+        "zht": "[[青州|/zh-hant/maps/map-overall?admin=6]]兵遽走詣太祖自訴。禁旣至，先立營壘，不時謁太祖。或謂禁：「[[青州|/zh-hant/maps/map-overall?admin=6]]兵已訴君矣，宜促詣公辨之。」禁曰：「今賊在後，追至無時，不先為備，何以待敵？且公聦明，譖訴何緣！」徐鑿塹安營訖，乃入謁，具陳其狀。太祖恱，謂禁曰：「[[淯水|/zh-hant/maps/map-overall?water=154]]之難，吾其急也，將軍在亂能整，討暴堅壘，有不可動之節，雖古名將，何以加之！」於是錄禁前後功，封益壽[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。復從攻張繡於[[穰|/zh-hant/maps/map-overall?lat=32.67362257&lng=112.08451528&name=Rang]]，禽呂布於[[下邳|/zh-hant/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]，別與史渙、曹仁攻眭固於[[射犬|/zh-hant/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]，破斬之。",
+        "zhs": "[[青州|/zh-hans/maps/map-overall?admin=6]]兵遽走诣太祖自诉。禁既至，先立营垒，不时谒太祖。或谓禁：「[[青州|/zh-hans/maps/map-overall?admin=6]]兵已诉君矣，宜促诣公辨之。」禁曰：「今贼在后，追至无时，不先为备，何以待敌？且公聦明，谮诉何缘！」徐凿堑安营讫，乃入谒，具陈其状。太祖恱，谓禁曰：「[[淯水|/zh-hans/maps/map-overall?water=154]]之难，吾其急也，将军在乱能整，讨暴坚垒，有不可动之节，虽古名将，何以加之！」于是录禁前后功，封益寿[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。复从攻张绣于[[穰|/zh-hans/maps/map-overall?lat=32.67362257&lng=112.08451528&name=Rang]]，禽吕布于[[下邳|/zh-hans/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]，别与史涣、曹仁攻眭固于[[射犬|/zh-hans/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]，破斩之。"
+      },
+      "en": "The [[Qing Province|/maps/map-overall?admin=6]] Troops hastened to Cao Cao to plead their case. When Yu Jin arrived, he first established a fortified camp rather than meeting Cao Cao immediately. Someone said to him, \"The [[Qing Province|/maps/map-overall?admin=6]] troops have already accused you. You should hasten to the lord and defend yourself.\" Yu Jin replied, \"The enemy is behind us and may catch us at any moment. Unless we first prepare our defences, how are we to meet them? Besides, the lord is discerning. What can slanderous accusations accomplish?\"  He calmly finished digging the ditches and securing the camp, then went in to pay his respects and gave a full account of what had happened. Cao Cao was delighted. He said to Yu Jin, \"In the crisis at the [[Yu River|/maps/map-overall?water=154]], I was sorely pressed. Yet amid the chaos, you restored order, chastised the violent, and secured the defences, showing a steadfastness that nothing could shake. Even the renowned generals of old could not have surpassed you!\" Cao Cao then reviewed Yu Jin's accumulated merits and enfeoffed him as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Yishou. Yu Jin later accompanied Cao Cao in attacking Zhang Xiu at [[Rang|/maps/map-overall?lat=32.67362257&lng=112.08451528&name=Rang]] and capturing Lü Bu at [[Xiapi|/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]. In a separate operation, Yu Jin also joined Shi Huan and Cao Ren in attacking Sui Gu at [[Shequan|/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]], where they defeated and beheaded him."
+    },
+    {
+      "id": "ws17c-p5",
+      "orig": {
+        "zht": "太祖初征袁紹，紹兵盛，禁願為先登。太祖壯之，乃選步騎二千人，使禁將，守[[延津|/zh-hant/maps/map-overall?lat=35.3812476&lng=114.26163599&name=Yanjin]]以拒紹，太祖引軍還[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]。劉備以[[徐州|/zh-hant/maps/map-overall?admin=8]]叛，太祖東征之。紹攻禁，禁堅守，紹不能拔。復與樂進等將步騎五千，擊紹別營，從[[延津|/zh-hant/maps/map-overall?lat=35.3812476&lng=114.26163599&name=Yanjin]]西南緣河至[[汲|/zh-hant/maps/map-overall?lat=35.39340781&lng=113.94691017&name=Ji]]、[[獲嘉|/zh-hant/maps/map-overall?lat=35.29590304&lng=113.77639412&name=Huojia]]二縣，焚燒保聚三十餘屯，斬首獲生各數千，降紹將何茂、王摩等二十餘人。",
+        "zhs": "太祖初征袁绍，绍兵盛，禁愿为先登。太祖壮之，乃选步骑二千人，使禁将，守[[延津|/zh-hans/maps/map-overall?lat=35.3812476&lng=114.26163599&name=Yanjin]]以拒绍，太祖引军还[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]。刘备以[[徐州|/zh-hans/maps/map-overall?admin=8]]叛，太祖东征之。绍攻禁，禁坚守，绍不能拔。复与乐进等将步骑五千，击绍别营，从[[延津|/zh-hans/maps/map-overall?lat=35.3812476&lng=114.26163599&name=Yanjin]]西南缘河至[[汲|/zh-hans/maps/map-overall?lat=35.39340781&lng=113.94691017&name=Ji]]、[[获嘉|/zh-hans/maps/map-overall?lat=35.29590304&lng=113.77639412&name=Huojia]]二县，焚烧保聚三十余屯，斩首获生各数千，降绍将何茂、王摩等二十余人。"
+      },
+      "en": "When Cao Cao first campaigned against Yuan Shao, Yuan Shao's forces were formidable, and Yu Jin volunteered to lead the assault. Admiring his courage, Cao Cao selected two thousand infantry and cavalry, placed them under Yu Jin's command, and ordered him to defend [[Yanjin|/maps/map-overall?lat=35.3812476&lng=114.26163599&name=Yanjin]] against Yuan Shao while the main army return to [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]. When Liu Bei rebelled in [[Xu Province|/maps/map-overall?admin=8]], Cao Cao marched east against him. Yuan Shao attacked Yu Jin, but Yu Jin held firm and could not be defeated. Yu Jin then joined Yue Jin and others in leading five thousand infantry and cavalry against Yuan Shao's outlying camps. Advancing south-west from [[Yanjin|/maps/map-overall?lat=35.3812476&lng=114.26163599&name=Yanjin]] along the Yellow River as far as the counties of [[Ji|/maps/map-overall?lat=35.39340781&lng=113.94691017&name=Ji]] and [[Huojia|/maps/map-overall?lat=35.29590304&lng=113.77639412&name=Huojia]], they burnt more than thirty fortified encampments. They also killed several thousand men and captured several thousand more, and secured the surrender of more than twenty of Yuan Shao's commanders, including He Mao and Wang Mo."
+    },
+    {
+      "id": "ws17c-p6",
+      "orig": {
+        "zht": "太祖復使禁別將屯[[原武|/zh-hant/maps/map-overall?lat=35.05018779&lng=113.93460488&name=Yuanwu]]，擊紹別營於杜氏津，破之。遷[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]，後從還[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]。太祖與紹連營，起土山相對。紹射營中，士卒多死傷，軍中懼。禁督守土山，力戰，氣益奮。紹破，遷[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]。[[兾州|/zh-hant/maps/map-overall?admin=4]]平。",
+        "zhs": "太祖复使禁别将屯[[原武|/zh-hans/maps/map-overall?lat=35.05018779&lng=113.93460488&name=Yuanwu]]，击绍别营于杜氏津，破之。迁[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]，后从还[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]。太祖与绍连营，起土山相对。绍射营中，士卒多死伤，军中惧。禁督守土山，力战，气益奋。绍破，迁[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]。[[兾州|/zh-hans/maps/map-overall?admin=4]]平。"
+      },
+      "en": "Cao Cao again sent Yu Jin to lead a separate force to garrison [[Yuanwu|/maps/map-overall?lat=35.05018779&lng=113.93460488&name=Yuanwu]]. There he attacked and routed Yuan Shao's detached camp at Dushijin. Yu Jin was promoted to [[Assistant General|/translations/officials/military#four-direction--misc-165]], and later followed Cao Cao back to [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]. Cao Cao and Yuan Shao drew up their camps opposite each other, each raising earthen mounds. Yuan Shao's forces shot into Cao Cao's camp, killing and wounding many soldiers and spreading fear through the army. Yu Jin directed the defence of the mounds and fought with ever greater valour. After Yuan Shao's defeat, he was promoted to [[Adjunct General|/translations/officials/military#four-direction--misc-164]], and [[Ji Province|/maps/map-overall?admin=4]] was pacified."
+    },
+    {
+      "id": "ws17c-p7",
+      "orig": {
+        "zht": "昌豨復叛，遣禁征之。禁急進攻豨；豨與禁有舊，詣禁降。諸將皆以為豨已降，當送詣太祖，禁曰：「諸君不知公常令乎！圍而後降者不赦。夫奉法行令，事上之節也。豨雖舊友，禁可失節乎！」自臨與豨決，隕涕而斬之。是時太祖軍[[淳于|/zh-hant/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]，聞而歎曰：「豨降不詣吾而歸禁，豈非命耶！」益重禁。",
+        "zhs": "昌豨复叛，遣禁征之。禁急进攻豨；豨与禁有旧，诣禁降。诸将皆以为豨已降，当送诣太祖，禁曰：「诸君不知公常令乎！围而后降者不赦。夫奉法行令，事上之节也。豨虽旧友，禁可失节乎！」自临与豨决，陨涕而斩之。是时太祖军[[淳于|/zh-hans/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]，闻而叹曰：「豨降不诣吾而归禁，岂非命耶！」益重禁。"
+      },
+      "en": "Chang Xi rebelled again, and Cao Cao sent Yu Jin against him. Yu Jin advanced swiftly and attacked. Chang Xi, who had a prior acquaintance with Yu Jin, came to him and surrendered. The other generals all thought that, since Chang Xi had surrendered, he should be sent to Cao Cao. Yu Jin said, \"Do you not know our lord's standing order? Those who surrender only after being surrounded are not pardoned. To uphold the law and carry out orders is the proper duty of one who serves his lord. Chang Xi may be an old friend, but can I abandon that duty?\" Yu Jin personally went to bid Chang Xi farewell and, shedding tears, had him executed. Cao Cao was then encamped at [[Chunyu|/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]. On hearing of this, he sighed: \" Chang Xi surrendered, yet instead of coming to me, placed himself in Yu Jin's hands. Is this not fate?\" Thereafter, he held Yu Jin in even greater esteem.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "臣松之以為圍而後降，法雖不赦；囚而送之，未為違命。禁曾不為舊交希兾萬一，而肆其好殺之心，以戾衆人之議，所以卒為降虜，死加惡謚，宜哉。",
+          "zhs": "臣松之以为围而后降，法虽不赦；囚而送之，未为违命。禁曾不为旧交希兾万一，而肆其好杀之心，以戾众人之议，所以卒为降虏，死加恶谥，宜哉。",
+          "en": "Your servant Songzh believes that although the law did not pardon one who surrendered only after being besieged, binding him and sending him to Cao Cao would not have violated the order either. Yet Yu Jin would not, for an old friend's sake, seek even the slightest chance of sparing him. Instead, he indulged his bloodthirsty impulse and went against the counsel of all. That he ultimately became a captive through surrender and, after death, received an ignominious posthumous title was only fitting."
+        }
+      ]
+    },
+    {
+      "id": "ws17c-p8",
+      "orig": {
+        "zht": "[[東海|/zh-hant/maps/map-overall?admin=50]]平，拜禁[[虎威將軍|/zh-hant/translations/officials/military#four-direction--misc-145]]。後與臧霸等攻梅成，張遼、張郃等討陳蘭。禁到，成舉衆三千餘人降。旣降復叛，其衆奔蘭。遼等與蘭相持，軍食少，禁運糧前後相屬，遼遂斬蘭、成。增邑二百戶，并前千二百戶。是時，禁與張遼、樂進、張郃、徐晃俱為名將，太祖每征伐，咸遞行為軍鋒，還為後拒；而禁持軍嚴整，得賊財物，無所私入，由是賞賜特重。然以法御下，不甚得士衆心。",
+        "zhs": "[[东海|/zh-hans/maps/map-overall?admin=50]]平，拜禁[[虎威将军|/zh-hans/translations/officials/military#four-direction--misc-145]]。后与臧霸等攻梅成，张辽、张郃等讨陈兰。禁到，成举众三千余人降。既降复叛，其众奔兰。辽等与兰相持，军食少，禁运粮前后相属，辽遂斩兰、成。增邑二百户，并前千二百户。是时，禁与张辽、乐进、张郃、徐晃俱为名将，太祖每征伐，咸递行为军锋，还为后拒；而禁持军严整，得贼财物，无所私入，由是赏赐特重。然以法御下，不甚得士众心。"
+      },
+      "en": "Following the pacification of [[Donghai State|/maps/map-overall?admin=50]], Yu Jin was appointed [[Mighty Tiger General|/translations/officials/military#four-direction--misc-145]]. He later joined Zang Ba and others in attacking Mei Cheng, while Zhang Liao, Zhang He, and others campaigned against Chen Lan. When Yu Jin arrived, Mei Cheng surrendered with more than three thousand men. Soon Mei Cheng rebelled again, and his troops went over to Chen Lan. Zhang Liao and the others were locked in a standoff with Chen Lan and ran short of provisions. Yu Jin kept grain convoys moving without interruption, enabling Zhang Liao to behead Chen Lan and Mei Cheng. Yu Jin's fief was increased by two hundred households, bringing the total to twelve hundred. At the time, Yu Jin, Zhang Liao, Yue Jin, Zhang He, and Xu Huang were all renowned generals. Whenever Cao Cao went on campaign, they took turns leading the vanguard on the advance and guarding the rear on the return. Yu Jin maintained strict order in his army and never appropriated any captured goods. For this, he received especially generous rewards. Yet Yu Jin governed his men by strict discipline and did not particularly win their hearts."
+    },
+    {
+      "id": "ws17c-p9",
+      "orig": {
+        "zht": "太祖常恨朱靈，欲奪其營。以禁有威重，遣禁將數十騎，齎令書，徑詣靈營奪其軍，靈及其部衆莫敢動；乃以靈為禁部下督，衆皆震服，其見憚如此。遷[[左將軍|/zh-hant/translations/officials/military#four-direction--misc-116]]，[[假節鉞|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，分邑五百戶，封一子[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "太祖常恨朱灵，欲夺其营。以禁有威重，遣禁将数十骑，赍令书，径诣灵营夺其军，灵及其部众莫敢动；乃以灵为禁部下督，众皆震服，其见惮如此。迁[[左将军|/zh-hans/translations/officials/military#four-direction--misc-116]]，[[假节钺|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，分邑五百户，封一子[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "en": "Cao Cao had long been displeased with Zhu Ling and wished to deprive him of his command. As Yu Jin was a man of formidable authority, Cao Cao sent him with several dozen riders and a written order to go straight to Zhu Ling's camp and take over his troops. Neither Zhu Ling nor his men dared resist. Zhu Ling was then made a subordinate commander under Yu Jin, and all submitted in awe. Such was the fear Yu Jin inspired. Yu Jin was later promoted to [[General of the Left|/translations/officials/military#four-direction--misc-116]] and appointed [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. Five hundred households were divided from his fief and granted to one of his sons, who was enfeoffed as a [[Marquis|/translations/officials#glossary-marquis]]."
+    },
+    {
+      "id": "ws17c-p10",
+      "orig": {
+        "zht": "建安二十四年，太祖在[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，使曹仁討關羽於[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又遣禁助仁。秋，大霖雨，[[漢水|/zh-hant/maps/map-overall?water=52]]溢，平地水數丈，禁等七軍皆沒。禁與諸將登高望水，無所回避，羽乘大船就攻禁等，禁遂降，惟龐悳不屈節而死。太祖聞之，哀歎者乆之，曰：「吾知禁三十年，何意臨危處難，反不如龐悳邪！」會孫權禽羽，獲其衆，禁復在吳。",
+        "zhs": "建安二十四年，太祖在[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，使曹仁讨关羽于[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又遣禁助仁。秋，大霖雨，[[汉水|/zh-hans/maps/map-overall?water=52]]溢，平地水数丈，禁等七军皆没。禁与诸将登高望水，无所回避，羽乘大船就攻禁等，禁遂降，惟庞悳不屈节而死。太祖闻之，哀叹者乆之，曰：「吾知禁三十年，何意临危处难，反不如庞悳邪！」会孙权禽羽，获其众，禁复在吴。"
+      },
+      "en": "In the twenty-fourth year of Jian'an, the Grand Progenitor was at [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]. He sent Cao Ren to campaign against Guan Yu at [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]], and despatched Yu Jin to reinforce him. That autumn, torrential rain caused the [[Han River|/maps/map-overall?water=52]] to overflow, inundating the grounds to a depth of several zhang and overwhelming all seven armies under Yu Jin. Yu Jin and the other generals climbed to high ground and surveyed the flood, but had nowhere to retreat. Guan Yu attacked them in great ships, and Yu Jin surrendered. Pang De alone refused to compromise his integrity and died. When Cao Cao heard, he lamented for a long while, saying, \"I have known Yu Jin for thirty years. Who would have thought that, when faced with peril, he would prove inferior to Pang De?\" Soon afterwards, Sun Quan captured Guan Yu and seized his forces, and Yu Jin thus fell into Wu's hands."
+    },
+    {
+      "id": "ws17c-p11",
+      "orig": {
+        "zht": "文帝踐阼，權稱藩，遣禁還。帝引見禁，鬚髮皓白，形容憔顇，泣涕頓首。帝慰喻以荀林父、孟明視故事，拜為[[安遠將軍|/zh-hant/translations/officials/military#four-direction--misc-123]]。欲遣使吳，先令北詣[[鄴|/zh-hant/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]謁高陵。帝使豫於陵屋畫關羽戰克、龐悳憤怒、禁降服之狀。禁見，慙恚發病薨。子圭嗣，封益壽[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。謚禁曰厲侯。",
+        "zhs": "文帝践阼，权称藩，遣禁还。帝引见禁，须发皓白，形容憔顇，泣涕顿首。帝慰喻以荀林父、孟明视故事，拜为[[安远将军|/zh-hans/translations/officials/military#four-direction--misc-123]]。欲遣使吴，先令北诣[[邺|/zh-hans/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]]谒高陵。帝使豫于陵屋画关羽战克、庞悳愤怒、禁降服之状。禁见，慙恚发病薨。子圭嗣，封益寿[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。谥禁曰厉侯。"
+      },
+      "en": "When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) ascended the throne, Sun Quan declared himself a vassal and sent Yu Jin back. The emperor received Yu Jin in audience. His hair and beard were snowy white, and he looked gaunt and haggard. Yu Jin wept and bowed his head to the ground. The emperor consoled him by citing the precedents of Xun Linfu and Meng Mingshi, then appointed him [[General Who Pacifies the Distant|/translations/officials/military#four-direction--misc-123]]. Intending to send him as an envoy to Wu, the emperor first ordered him north to [[Ye|/maps/map-overall?lat=36.29186303&lng=114.39806539&name=Ye]] to pay homage at Gaoling, the Mausoleum of Cao Cao. The emperor had already commissioned a mural in the mausoleum hall depicting Guan Yu triumphant in battle, Pang De furious and defiant, and Yu Jin submitting in surrender. When Yu Jin saw it, shame and resentment caused him to fall ill, and he died. His son Yu Gui succeeded him and was enfeoffed as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Yishou. Yu Jin was posthumously titled Marquis Li, the Harsh Marquis.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》載制曰：「昔荀林父敗績於邲，孟明喪師於殽，秦、晉不替，使復其位。其後晉獲狄土，秦霸西戎，區區小國，猶尚若斯，而況萬乘乎？[[樊城|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]之敗，水災暴至，非戰之咎，其復禁等官。」",
+          "zhs": "《魏书》载制曰：「昔荀林父败绩于邲，孟明丧师于殽，秦、晋不替，使复其位。其后晋获狄土，秦霸西戎，区区小国，犹尚若斯，而况万乘乎？[[樊城|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]之败，水灾暴至，非战之咎，其复禁等官。」",
+          "en": "The Book of Wei records this edict: \"In former times, Xun Linfu suffered defeat at Bi, and Mengming lost his army at Yao. Yet Jin and Qin did not cast them aside, and restored them to their posts. Thereafter, Jin seized territory from the Di, and Qin established hegemony over the Western Rong. If even such petty states acted thus, how could our realm of ten thousand chariots do any less? At [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]], the flood struck suddenly; the defeat was not due to any fault in battle. Let Yu Jin and the others be restored to office.\""
+        }
+      ]
+    }
+  ]
+}
