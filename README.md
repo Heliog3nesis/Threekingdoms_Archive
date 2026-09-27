@@ -13,17 +13,14 @@
 ![Banner](./.github/assets/hero.jpg)
 
 </div>
- 
-> "Let us roam freely to our hearts’ desire, and may it ever be thus for a thousand years."  
-> Poem at a Banquet
-<br>
-> *Cao Zhi*
+"Let us roam freely to our hearts’ desire, and may it ever be thus for a thousand years."  
+Poem at a Banquet
+<br> - Cao Zhi
 
 <div align="right">
 
-> 飄颻放志意，千秋長若斯
-<br>
-> 曹植 · 《公讌詩》
+ 飄颻放志意，千秋長若斯
+<br>- 曹植 · 《公讌詩》
 
 
 </div>
