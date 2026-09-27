@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18e",
+    "order": 18,
+    "label": {
+      "zht": "呂虔傳 · 附王祥",
+      "zhs": "吕虔传 · 附王祥",
+      "en": "Biography of Lü Qian · with Wang Xiang"
+    },
+    "title": {
+      "zht": "魏書十八 · 呂虔傳 · 附王祥",
+      "zhs": "魏书十八 · 呂虔传 · 附王祥",
+      "en": "Book of Wei, Chapter 18 · Biography of Lü Qian · with Wang Xiang"
+    }
+  },
   "pins": [
     {
       "kind": "admin",
@@ -79,11 +93,11 @@
       },
       "died": {
         "era": {
-          "en": "reign of Emperor Ming",
+          "en": "Reign of Emperor Ming",
           "zht": "明帝年間",
           "zhs": "明帝年间"
         },
-        "year": null
+        "year": "230s?"
       },
       "age": null,
       "stops": [
@@ -247,39 +261,6 @@
         },
         {
           "era": {
-            "en": "for over a decade",
-            "zht": "十數年",
-            "zhs": "十数年"
-          },
-          "year": null,
-          "location": {
-            "en": "Taishan",
-            "zht": "泰山",
-            "zhs": "泰山"
-          },
-          "position": {
-            "en": "Grand Administrator of Taishan",
-            "zht": "泰山太守",
-            "zhs": "泰山太守"
-          },
-          "passageId": "ws18e-p6",
-          "resolvedLocations": [
-            {
-              "kind": "admin",
-              "id": "33"
-            }
-          ],
-          "positionLinks": [
-            {
-              "en": "Grand Administrator of Taishan",
-              "zht": "泰山太守",
-              "zhs": "泰山太守",
-              "url": "/translations/officials/regional#commanderies-039"
-            }
-          ]
-        },
-        {
-          "era": {
             "en": "1st year of Yankang",
             "zht": "延康元年",
             "zhs": "延康元年"
@@ -302,17 +283,16 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "Assistant General",
-                "zht": "裨將軍",
-                "zhs": "裨将军"
-              },
-              "1": {
-                "en": "Neighbourhood Marquis",
-                "zht": "亭侯",
-                "zhs": "亭侯"
-              },
-              "url": null
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军",
+              "url": "/translations/officials/military#four-direction--misc-165"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-neighbourhood-marquis"
             }
           ]
         },
@@ -342,9 +322,9 @@
               "zhs": "徐州刺史"
             },
             {
-              "en": "Inspector of Xu Province",
-              "zht": "徐州刺史",
-              "zhs": "徐州刺史"
+              "en": "General Who Awes the Enemies",
+              "zht": "威虜將軍",
+              "zhs": "威虏将军"
             }
           ],
           "passageId": "ws18e-p6",
@@ -362,17 +342,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Inspector of Xu Province",
-                "zht": "徐州刺史",
-                "zhs": "徐州刺史"
-              },
-              "1": {
-                "en": "Inspector of Xu Province",
-                "zht": "徐州刺史",
-                "zhs": "徐州刺史"
-              },
-              "url": null
+              "en": "Inspector of Xu Province",
+              "zht": "徐州刺史",
+              "zhs": "徐州刺史",
+              "url": "/translations/officials/regional#provinces-014"
+            },
+            {
+              "en": "General Who Awes the Enemies",
+              "zht": "威虜將軍",
+              "zhs": "威虏将军",
+              "url": "/translations/officials/military#four-direction--misc-154"
             }
           ]
         }

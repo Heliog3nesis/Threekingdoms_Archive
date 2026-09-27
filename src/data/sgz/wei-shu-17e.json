@@ -1,5 +1,5 @@
 {
-"id": "wei-shu-17e",
+  "id": "wei-shu-17e",
   "book": "Book of Wei",
   "bookLabel": {
     "zht": "魏書",
@@ -19,84 +19,1004 @@
     "en": "Book of Wei, Chapter 17 · Biography of Xu Huang · with Zhu Ling"
   },
   "relationships": [
-    { "from": "徐晃", "to": "楊奉", "type": "subordinate then persuaded to follow Cao Cao", "passageId": "ws17e-p1" },
-    { "from": "徐晃", "to": "太祖（曹操）", "type": "subordinate", "passageId": "ws17e-p1" },
-    { "from": "李傕", "to": "郭汜", "type": "co-rebel", "passageId": "ws17e-p1" },
-    { "from": "韓暹", "to": "董承", "type": "conflict", "passageId": "ws17e-p1" },
-    { "from": "徐晃", "to": "呂布", "type": "military enemy", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "趙庶", "type": "secured surrender of", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "李鄒", "type": "secured surrender of", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "史渙", "type": "joint military operation", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "眭固", "type": "military enemy", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "劉備", "type": "military enemy", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "顏良", "type": "military enemy", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "文醜", "type": "military enemy", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "曹洪", "type": "joint military operation", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "祝臂", "type": "military enemy", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "袁紹", "type": "military enemy", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "韓範", "type": "feigned surrender then accepted", "passageId": "ws17e-p2" },
-    { "from": "徐晃", "to": "袁譚", "type": "military enemy", "passageId": "ws17e-p3" },
-    { "from": "徐晃", "to": "蹋頓", "type": "military enemy", "passageId": "ws17e-p3" },
-    { "from": "徐晃", "to": "滿寵", "type": "joint military operation", "passageId": "ws17e-p3" },
-    { "from": "徐晃", "to": "關羽", "type": "military enemy", "passageId": "ws17e-p3" },
-    { "from": "徐晃", "to": "曹仁", "type": "joint military operation", "passageId": "ws17e-p3" },
-    { "from": "徐晃", "to": "周瑜", "type": "military enemy", "passageId": "ws17e-p3" },
-    { "from": "徐晃", "to": "商曜", "type": "military enemy", "passageId": "ws17e-p4" },
-    { "from": "韓遂", "to": "馬超", "type": "co-rebel", "passageId": "ws17e-p4" },
-    { "from": "徐晃", "to": "韓遂", "type": "military enemy", "passageId": "ws17e-p4" },
-    { "from": "徐晃", "to": "馬超", "type": "military enemy", "passageId": "ws17e-p4" },
-    { "from": "徐晃", "to": "梁興", "type": "military enemy", "passageId": "ws17e-p5" },
-    { "from": "徐晃", "to": "夏侯淵", "type": "joint military operation", "passageId": "ws17e-p5" },
-    { "from": "徐晃", "to": "張魯", "type": "military enemy", "passageId": "ws17e-p5" },
-    { "from": "徐晃", "to": "張順", "type": "relieved from siege", "passageId": "ws17e-p5" },
-    { "from": "徐晃", "to": "陳福", "type": "military enemy", "passageId": "ws17e-p5" },
-    { "from": "徐晃", "to": "夏侯淵", "type": "joint military operation", "passageId": "ws17e-p6" },
-    { "from": "徐晃", "to": "劉備", "type": "military enemy", "passageId": "ws17e-p6" },
-    { "from": "徐晃", "to": "陳式", "type": "military enemy", "passageId": "ws17e-p6" },
-    { "from": "徐晃", "to": "曹仁", "type": "military support", "passageId": "ws17e-p6" },
-    { "from": "徐晃", "to": "關羽", "type": "military enemy", "passageId": "ws17e-p6" },
-    { "from": "徐晃", "to": "于禁", "type": "colleague", "passageId": "ws17e-p6" },
-    { "from": "徐晃", "to": "呂常", "type": "contemporary", "passageId": "ws17e-p6" },
-    { "from": "太祖（曹操）", "to": "徐商", "type": "sent to support Xu Huang", "passageId": "ws17e-p7" },
-    { "from": "太祖（曹操）", "to": "呂建", "type": "sent to support Xu Huang", "passageId": "ws17e-p7" },
-    { "from": "太祖（曹操）", "to": "殷署", "type": "sent to support Xu Huang", "passageId": "ws17e-p7" },
-    { "from": "太祖（曹操）", "to": "朱蓋", "type": "sent to support Xu Huang", "passageId": "ws17e-p7" },
-    { "from": "徐晃", "to": "關羽", "type": "military enemy", "passageId": "ws17e-p7" },
-    { "from": "徐晃", "to": "周亞夫", "type": "comparison by Cao Cao", "passageId": "ws17e-p8" },
-    { "from": "徐晃", "to": "夏侯尚", "type": "joint military operation", "passageId": "ws17e-p9" },
-    { "from": "徐晃", "to": "劉備", "type": "military enemy", "passageId": "ws17e-p9" },
-    { "from": "徐晃", "to": "諸葛瑾", "type": "military enemy", "passageId": "ws17e-p9" },
-    { "from": "徐晃", "to": "徐蓋", "type": "father-son", "passageId": "ws17e-p10" },
-    { "from": "徐蓋", "to": "徐霸", "type": "father-son", "passageId": "ws17e-p10" },
-    { "from": "朱靈", "to": "袁紹", "type": "subordinate then left", "passageId": "ws17e-p11" },
-    { "from": "朱靈", "to": "太祖（曹操）", "type": "subordinate", "passageId": "ws17e-p11" },
-    { "from": "朱靈", "to": "陶謙", "type": "military enemy", "passageId": "ws17e-p11" },
-    { "from": "朱靈", "to": "季雍", "type": "military enemy", "passageId": "ws17e-p11" },
-    { "from": "季雍", "to": "公孫瓚", "type": "rebel and ally", "passageId": "ws17e-p11" },
-    { "from": "朱靈", "to": "程昂", "type": "rebel subordinate", "passageId": "ws17e-p11" },
-    { "from": "朱靈", "to": "鄧禹", "type": "historical comparison", "passageId": "ws17e-p11" },
-    { "from": "朱靈", "to": "朱術", "type": "father-son", "passageId": "ws17e-p11" }
+    {
+      "from": "徐晃（公明）", "to": "楊奉", "type": "service", "polarity": "positive", "directed": true,
+      "notes": [{ "passageId": "ws17e-p1", "text": {
+        "en": "Xu Huang earned merit and rank under Yang Feng, and persuaded him to escort the emperor back to Luoyang; when court infighting then led Xu Huang to urge Yang Feng to submit to Cao Cao, Yang Feng at first agreed but changed his mind, and Cao Cao's subsequent attack on him left Xu Huang going over to Cao Cao alone.",
+        "zht": "徐晃隨楊奉立功受爵，並勸楊奉護送天子還洛陽；後因朝中紛爭，徐晃又勸楊奉歸順曹操，楊奉本已答應卻又反悔，太祖遂討伐楊奉，徐晃轉而獨自投奔曹操。",
+        "zhs": "徐晃随杨奉立功受爵，并劝杨奉护送天子还洛阳；后因朝中纷争，徐晃又劝杨奉归顺曹操，杨奉本已答应却又反悔，太祖遂讨伐杨奉，徐晃转而独自投奔曹操。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "曹操（孟德）", "type": "service", "polarity": "positive", "directed": true,
+      "notes": [
+        { "passageId": "ws17e-p1", "text": {
+          "en": "When Yang Feng wavered over submitting to Cao Cao, Xu Huang went over to Cao Cao alone.",
+          "zht": "楊奉在歸順曹操一事上反覆，徐晃遂轉而獨自投奔曹操。",
+          "zhs": "杨奉在归顺曹操一事上反复，徐晃遂转而独自投奔曹操。" } },
+        { "passageId": "ws17e-p2", "text": {
+          "en": "Given his own command, Xu Huang won a long string of victories for Cao Cao — against Lü Bu's generals, at Baima and Yanjin, and against Yuan Shao's supply lines — earning the greatest merit and enfeoffment as Capital Neighbourhood Marquis.",
+          "zht": "徐晃獲授兵權後屢立戰功——降呂布部將、克白馬延津、截袁紹糧道——以功勞最大獲封都亭侯。",
+          "zhs": "徐晃获授兵权后屡立战功——降吕布部将、克白马延津、截袁绍粮道——以功劳最大获封都亭侯。" } },
+        { "passageId": "ws17e-p3", "text": {
+          "en": "At Yiyang, Xu Huang accepted a besieged garrison's surrender against Cao Cao's standing order and persuaded him that mercy here would encourage other cities to submit rather than fight to the death; Cao Cao agreed.",
+          "zht": "易陽之圍，徐晃違例接受守軍投降，並說服曹操寬待降者可使其他城池望風歸順而非死守；曹操從其言。",
+          "zhs": "易阳之围，徐晃违例接受守军投降，并说服曹操宽待降者可使其他城池望风归顺而非死守；曹操从其言。" } },
+        { "passageId": "ws17e-p4", "text": {
+          "en": "At Tongguan, Xu Huang correctly judged that Han Sui and Ma Chao had left the Puban ford undefended, and led four thousand men across to outflank them at Cao Cao's approval.",
+          "zht": "潼關之役，徐晃準確判斷韓遂、馬超未派兵扼守蒲阪渡口，率四千人渡河奇襲，獲曹操採納。",
+          "zhs": "潼关之役，徐晃准确判断韩遂、马超未派兵扼守蒲阪渡口，率四千人渡河奇袭，获曹操采纳。" } },
+        { "passageId": "ws17e-p6", "text": {
+          "en": "After Xu Huang alone routed Liu Bei's forces at the Mamingge plank road, Cao Cao was overjoyed, granted him the Imperial Tally, and declared it \"the finest of fine achievements.\"",
+          "zht": "徐晃於馬鳴閣棧道獨力擊破劉備軍後，曹操大喜，授以節杖，稱其為「善之善者也」。",
+          "zhs": "徐晃于马鸣阁栈道独力击破刘备军后，曹操大喜，授以节杖，称其为「善之善者也」。" } },
+        { "passageId": "ws17e-p8", "text": {
+          "en": "After Xu Huang drove into Guan Yu's siege lines and relieved Fancheng and Xiangyang, Cao Cao declared his feat unmatched in thirty years of campaigning, surpassing even Sun Wu and Rangju, went seven li out to welcome him with a banquet, and likened his unshaken discipline to that of the Han general Zhou Yafu.",
+          "zht": "徐晃攻破關羽包圍圈、解樊城與襄陽之圍後，曹操盛讚其功乃三十年用兵所未見，勝過孫武、穰苴，親出七里設宴相迎，並讚其軍紀嚴整有周亞夫之風。",
+          "zhs": "徐晃攻破关羽包围圈、解樊城与襄阳之围后，曹操盛赞其功乃三十年用兵所未见，胜过孙武、穰苴，亲出七里设宴相迎，并赞其军纪严整有周亚夫之风。" } }
+      ]
+    },
+    {
+      "from": "徐晃（公明）", "to": "呂布（奉先）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang took part in the campaign against Lü Bu.",
+        "zht": "徐晃隨太祖征討呂布。",
+        "zhs": "徐晃随太祖征讨吕布。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "趙庶", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang independently secured the surrender of Lü Bu's general Zhao Shu.",
+        "zht": "徐晃單獨領兵迫使呂布部將趙庶投降。",
+        "zhs": "徐晃单独领兵迫使吕布部将赵庶投降。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "李鄒", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang independently secured the surrender of Lü Bu's general Li Zou.",
+        "zht": "徐晃單獨領兵迫使呂布部將李鄒投降。",
+        "zhs": "徐晃单独领兵迫使吕布部将李邹投降。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "史渙", "type": "colleagues", "polarity": "positive", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang and Shi Huan jointly slew Sui Gu in Henei and later jointly raided Yuan Shao's supply wagons at Gushi.",
+        "zht": "徐晃與史渙合力於河內擊殺眭固，後又合力在故市截擊袁紹運糧車隊。",
+        "zhs": "徐晃与史涣合力于河内击杀眭固，后又合力在故市截击袁绍运粮车队。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "眭固", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang and Shi Huan slew Sui Gu in Henei.",
+        "zht": "徐晃與史渙在河內擊殺眭固。",
+        "zhs": "徐晃与史涣在河内击杀眭固。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "劉備（玄德）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [
+        { "passageId": "ws17e-p2", "text": {
+          "en": "Xu Huang took part in defeating Liu Bei.",
+          "zht": "徐晃隨太祖擊敗劉備。",
+          "zhs": "徐晃随太祖击败刘备。" } },
+        { "passageId": "ws17e-p6", "text": {
+          "en": "When Liu Bei sent Chen Shi to cut the Mamingge plank road into Hanzhong, Xu Huang routed them alone, prompting Cao Cao's highest praise.",
+          "zht": "劉備遣陳式斷絕通往漢中的馬鳴閣棧道，徐晃獨力擊破，獲曹操盛讚。",
+          "zhs": "刘备遣陈式断绝通往汉中的马鸣阁栈道，徐晃独力击破，获曹操盛赞。" } },
+        { "passageId": "ws17e-p9", "text": {
+          "en": "Xu Huang joined Xiahou Shang in defeating Liu Bei's forces at Shangyong.",
+          "zht": "徐晃與夏侯尚在上庸擊破劉備軍。",
+          "zhs": "徐晃与夏侯尚在上庸击破刘备军。" } }
+      ]
+    },
+    {
+      "from": "徐晃（公明）", "to": "顏良", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang took part in defeating Yan Liang and capturing Baima.",
+        "zht": "徐晃隨太祖擊敗顏良，攻克白馬。",
+        "zhs": "徐晃随太祖击败颜良，攻克白马。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "文醜", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang took part in defeating Wen Chou at Yanjin.",
+        "zht": "徐晃隨太祖在延津擊敗文醜。",
+        "zhs": "徐晃随太祖在延津击败文丑。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "曹洪（子廉）", "type": "colleagues", "polarity": "positive", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang joined Cao Hong in defeating the rebel Zhu Bi at Yinqiang.",
+        "zht": "徐晃與曹洪合力在㶏強擊破賊寇祝臂。",
+        "zhs": "徐晃与曹洪合力在㶏强击破贼寇祝臂。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "袁紹（本初）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p2", "text": {
+        "en": "Xu Huang and Shi Huan raided Yuan Shao's supply wagons at Gushi, earning the greatest merit in the campaign.",
+        "zht": "徐晃與史渙在故市截擊袁紹的運糧車隊，功勞最大。",
+        "zhs": "徐晃与史涣在故市截击袁绍的运粮车队，功劳最大。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "韓範", "type": "personal", "polarity": "positive", "directed": false,
+      "notes": [{ "passageId": "ws17e-p3", "text": {
+        "en": "Though Han Fan had feigned surrender and held out at Yiyang, Xu Huang accepted his eventual surrender against Cao Cao's standing order, arguing that mercy here would encourage other cities to submit peacefully — advice Cao Cao heeded.",
+        "zht": "韓範詐降據守易陽，徐晃仍違例接受其最終投降，並說服曹操此舉可使他城望風歸順，曹操從之。",
+        "zhs": "韩范诈降据守易阳，徐晃仍违例接受其最终投降，并说服曹操此举可使他城望风归顺，曹操从之。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "袁譚（顯思）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p3", "text": {
+        "en": "Xu Huang took part in defeating Yuan Tan at Nanpi.",
+        "zht": "徐晃隨太祖在南皮擊敗袁譚。",
+        "zhs": "徐晃随太祖在南皮击败袁谭。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "蹋頓", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p3", "text": {
+        "en": "Xu Huang took part in the campaign against the Wuhuan chieftain Tadun.",
+        "zht": "徐晃隨太祖征討烏丸首領蹋頓。",
+        "zhs": "徐晃随太祖征讨乌丸首领蹋顿。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "滿寵（伯寧）", "type": "colleagues", "polarity": "positive", "directed": false,
+      "notes": [{ "passageId": "ws17e-p3", "text": {
+        "en": "Xu Huang joined Man Chong in an early campaign against Guan Yu at Hanjin.",
+        "zht": "徐晃與滿寵在漢津合力征討關羽。",
+        "zhs": "徐晃与满宠在汉津合力征讨关羽。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "關羽（雲長）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [
+        { "passageId": "ws17e-p3", "text": {
+          "en": "Xu Huang and Man Chong campaigned against Guan Yu at Hanjin.",
+          "zht": "徐晃與滿寵在漢津征討關羽。",
+          "zhs": "徐晃与满宠在汉津征讨关羽。" } },
+        { "passageId": "ws17e-p7", "text": {
+          "en": "At the siege of Fancheng, Xu Huang feinted at one camp while secretly striking another; when Guan Yu personally led out troops to save it, Xu Huang routed him and pursued the broken army into the Han River, drowning many.",
+          "zht": "樊城之圍，徐晃虛攻一營而暗襲另一營；關羽親率兵馬來救，徐晃擊退並追擊潰軍入漢水，敵軍多溺死。",
+          "zhs": "樊城之围，徐晃虚攻一营而暗袭另一营；关羽亲率兵马来救，徐晃击退并追击溃军入汉水，敌军多溺死。" } }
+      ]
+    },
+    {
+      "from": "徐晃（公明）", "to": "曹仁（子孝）", "type": "colleagues", "polarity": "positive", "directed": false,
+      "notes": [
+        { "passageId": "ws17e-p3", "text": {
+          "en": "Xu Huang joined Cao Ren in attacking Zhou Yu at Jiangling.",
+          "zht": "徐晃與曹仁在江陵合力攻擊周瑜。",
+          "zhs": "徐晃与曹仁在江陵合力攻击周瑜。" } },
+        { "passageId": "ws17e-p6", "text": {
+          "en": "Xu Huang was sent to reinforce Cao Ren's defence against Guan Yu's siege of Fancheng.",
+          "zht": "徐晃奉遣協助曹仁抵禦關羽對樊城的圍攻。",
+          "zhs": "徐晃奉遣协助曹仁抵御关羽对樊城的围攻。" } }
+      ]
+    },
+    {
+      "from": "徐晃（公明）", "to": "周瑜（公瑾）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p3", "text": {
+        "en": "Xu Huang joined Cao Ren in attacking Zhou Yu at Jiangling.",
+        "zht": "徐晃與曹仁在江陵合力攻擊周瑜。",
+        "zhs": "徐晃与曹仁在江陵合力攻击周瑜。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "商曜", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17e-p4", "text": {
+        "en": "Xu Huang besieged and captured Daling, beheading the rebel leader Shang Yao.",
+        "zht": "徐晃圍攻大陵並攻克之，斬殺叛軍首領商曜。",
+        "zhs": "徐晃围攻大陵并攻克之，斩杀叛军首领商曜。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "韓遂（文約）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p4", "text": {
+        "en": "When Han Sui and Ma Chao rebelled west of the Pass, Xu Huang's crossing at Puban outflanked them and let Cao Cao's army cross to defeat them.",
+        "zht": "韓遂、馬超於關右反叛，徐晃自蒲阪渡河奇襲，使太祖大軍得以渡河將其擊破。",
+        "zhs": "韩遂、马超于关右反叛，徐晃自蒲阪渡河奇袭，使太祖大军得以渡河将其击破。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "馬超（孟起）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p4", "text": {
+        "en": "Xu Huang's flanking crossing at Puban enabled Cao Cao's army to cross the river and defeat Ma Chao's forces.",
+        "zht": "徐晃自蒲阪渡河奇襲，使太祖大軍得以渡河擊破馬超軍。",
+        "zhs": "徐晃自蒲阪渡河奇袭，使太祖大军得以渡河击破马超军。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "梁興", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17e-p5", "text": {
+        "en": "Liang Xing attacked Xu Huang's unfinished camp by night but was routed; Xu Huang later joined Xiahou Yuan in hunting him down and beheading him.",
+        "zht": "梁興夜襲徐晃未築成的營壘，反被擊退；徐晃後又與夏侯淵合力將其擒斬。",
+        "zhs": "梁兴夜袭徐晃未筑成的营垒，反被击退；徐晃后又与夏侯渊合力将其擒斩。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "夏侯淵（妙才）", "type": "colleagues", "polarity": "positive", "directed": false,
+      "notes": [
+        { "passageId": "ws17e-p5", "text": {
+          "en": "Xu Huang and Xiahou Yuan jointly pacified the Di tribes and hunted down Liang Xing together.",
+          "zht": "徐晃與夏侯淵合力平定氐族部落，並一同擒斬梁興。",
+          "zhs": "徐晃与夏侯渊合力平定氐族部落，并一同擒斩梁兴。" } },
+        { "passageId": "ws17e-p6", "text": {
+          "en": "Xu Huang and Xiahou Yuan were jointly left to resist Liu Bei at Yangpingguan.",
+          "zht": "徐晃與夏侯淵同守陽平關抵禦劉備。",
+          "zhs": "徐晃与夏侯渊同守阳平关抵御刘备。" } }
+      ]
+    },
+    {
+      "from": "徐晃（公明）", "to": "張魯（公祺）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p5", "text": {
+        "en": "Xu Huang took part in the campaign against Zhang Lu.",
+        "zht": "徐晃隨太祖征討張魯。",
+        "zhs": "徐晃随太祖征讨张鲁。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "張順", "type": "personal", "polarity": "positive", "directed": true,
+      "notes": [{ "passageId": "ws17e-p5", "text": {
+        "en": "Xu Huang relieved General Zhang Shun from a siege.",
+        "zht": "徐晃出兵解救被圍困的將軍張順。",
+        "zhs": "徐晃出兵解救被围困的将军张顺。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "陳福", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p5", "text": {
+        "en": "Xu Huang attacked and destroyed more than thirty camps held by the rebel Chen Fu and others.",
+        "zht": "徐晃攻破賊寇陳福等人三十餘座營寨。",
+        "zhs": "徐晃攻破贼寇陈福等人三十余座营寨。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "陳式", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p6", "text": {
+        "en": "When Chen Shi and more than ten encampments tried to cut the Mamingge plank road, Xu Huang alone routed them, and many enemy soldiers died fleeing into the ravines.",
+        "zht": "陳式率十餘營欲斷馬鳴閣棧道，徐晃獨力將其擊破，敵軍潰逃入山谷者多死。",
+        "zhs": "陈式率十余营欲断马鸣阁栈道，徐晃独力将其击破，敌军溃逃入山谷者多死。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "呂常", "type": "colleagues", "polarity": "neutral", "directed": false,
+      "notes": [{ "passageId": "ws17e-p6", "text": {
+        "en": "While Xu Huang moved to relieve Fancheng, Guan Yu was simultaneously besieging General Lü Chang at Xiangyang.",
+        "zht": "徐晃赴援樊城之際，關羽同時圍困將軍呂常於襄陽。",
+        "zhs": "徐晃赴援樊城之际，关羽同时围困将军吕常于襄阳。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "夏侯尚（伯仁）", "type": "colleagues", "polarity": "positive", "directed": false,
+      "notes": [{ "passageId": "ws17e-p9", "text": {
+        "en": "Xu Huang joined Xiahou Shang in defeating Liu Bei's forces at Shangyong.",
+        "zht": "徐晃與夏侯尚在上庸合力擊破劉備軍。",
+        "zhs": "徐晃与夏侯尚在上庸合力击破刘备军。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "諸葛瑾（子瑜）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p9", "text": {
+        "en": "When Emperor Ming came to the throne, Xu Huang repelled the Wu general Zhuge Jin at Xiangyang.",
+        "zht": "明帝即位後，徐晃在襄陽抵禦吳將諸葛瑾。",
+        "zhs": "明帝即位后，徐晃在襄阳抵御吴将诸葛瑾。" } }]
+    },
+    {
+      "from": "徐晃（公明）", "to": "徐蓋", "type": "kinship", "polarity": "neutral", "directed": true,
+      "notes": [{ "passageId": "ws17e-p10", "text": {
+        "en": "Xu Huang's son Xu Gai succeeded him as marquis.",
+        "zht": "徐晃之子徐蓋襲爵。",
+        "zhs": "徐晃之子徐盖袭爵。" } }]
+    },
+    {
+      "from": "徐蓋", "to": "徐霸", "type": "kinship", "polarity": "neutral", "directed": true,
+      "notes": [{ "passageId": "ws17e-p10", "text": {
+        "en": "After Xu Gai's death, his son Xu Ba succeeded him.",
+        "zht": "徐蓋去世後，其子徐霸襲爵。",
+        "zhs": "徐盖去世后，其子徐霸袭爵。" } }]
+    },
+    {
+      "from": "朱靈（文博）", "to": "袁紹（本初）", "type": "service", "polarity": "positive", "directed": true,
+      "notes": [{ "passageId": "ws17e-p11", "text": {
+        "en": "Zhu Ling served as a general under Yuan Shao and earned merit commanding three encampments sent to aid Cao Cao's campaign against Tao Qian.",
+        "zht": "朱靈初為袁紹部將，曾統三營助太祖征討陶謙而立功。",
+        "zhs": "朱灵初为袁绍部将，曾统三营助太祖征讨陶谦而立功。" } }]
+    },
+    {
+      "from": "朱靈（文博）", "to": "曹操（孟德）", "type": "service", "polarity": "positive", "directed": true,
+      "notes": [
+        { "passageId": "ws17e-p11", "text": {
+          "en": "When Yuan Shao's other generals returned home after the campaign, Zhu Ling declared none compared to Lord Cao and chose to remain in his service, taking his admiring troops with him.",
+          "zht": "袁紹所遣諸將戰後各自歸還，朱靈獨稱無人可比曹公，遂留而不去，所部士卒亦皆相隨。",
+          "zhs": "袁绍所遣诸将战后各自归还，朱灵独称无人可比曹公，遂留而不去，所部士卒亦皆相随。" } },
+        { "passageId": "ws17e-p11", "text": {
+          "en": "After Zhu Ling executed the mutinous Cheng Ang and wrote in guilt-ridden remorse, Cao Cao personally reassured him, citing the Han general Deng Yu's own setback as proof that one reversal need not diminish a commander's reputation.",
+          "zht": "朱靈斬殺叛變的程昂後，來信深自引咎，太祖親筆寬慰，舉東漢鄧禹曾遭挫敗為例，說明一時失利無損將領名譽。",
+          "zhs": "朱灵斩杀叛变的程昂后，来信深自引咎，太祖亲笔宽慰，举东汉邓禹曾遭挫败为例，说明一时失利无损将领名誉。" } }
+      ]
+    },
+    {
+      "from": "朱靈（文博）", "to": "曹丕（子桓）", "type": "service", "polarity": "positive", "directed": true,
+      "notes": [{ "passageId": "ws17e-p11", "text": {
+        "en": "On ascending the throne, Cao Pi issued a lavish edict praising Zhu Ling's decades of service as surpassing famous ministers of old, enfeoffed him Marquis of Shu, and — learning his one wish was to be enfeoffed in his native Gaotang instead — granted it.",
+        "zht": "曹丕即位後頒詔盛讚朱靈多年戎馬之功超越古之名臣，封其為鄃侯；得知朱靈素願改封故鄉高唐，即予以改封。",
+        "zhs": "曹丕即位后颁诏盛赞朱灵多年戎马之功超越古之名臣，封其为鄃侯；得知朱灵素愿改封故乡高唐，即予以改封。" } }]
+    },
+    {
+      "from": "朱靈（文博）", "to": "陶謙（恭祖）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17e-p11", "text": {
+        "en": "Yuan Shao sent Zhu Ling to command three encampments aiding Cao Cao's campaign against Tao Qian.",
+        "zht": "袁紹派朱靈統三營助太祖征討陶謙。",
+        "zhs": "袁绍派朱灵统三营助太祖征讨陶谦。" } }]
+    },
+    {
+      "from": "朱靈（文博）", "to": "季雍", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17e-p11", "text": {
+        "en": "Yuan Shao sent Zhu Ling to attack Ji Yong, who had rebelled and surrendered the city of Shu to Gongsun Zan; Zhu Ling fought his way in and captured Ji Yong alive.",
+        "zht": "季雍以鄃城叛袁紹降公孫瓚，袁紹遣朱靈攻之；朱靈力戰破城，生擒季雍。",
+        "zhs": "季雍以鄃城叛袁绍降公孙瓒，袁绍遣朱灵攻之；朱灵力战破城，生擒季雍。" } }]
+    },
+    {
+      "from": "公孫瓚（伯珪）", "to": "朱靈（文博）", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17e-p11", "text": {
+        "en": "To sway Zhu Ling from besieging Shu, Gongsun Zan placed his mother and younger brother atop the city wall and called out to him; Zhu Ling wept but fought on regardless, and his family died in the city's fall.",
+        "zht": "公孫瓚為動搖攻城的朱靈，將其母弟置於城牆之上呼喚誘勸；朱靈望城涕泣仍奮力攻城，其家人終於城破時盡死。",
+        "zhs": "公孙瓒为动摇攻城的朱灵，将其母弟置于城墙之上呼唤诱劝；朱灵望城涕泣仍奋力攻城，其家人终于城破时尽死。" } }]
+    },
+    {
+      "from": "朱靈（文博）", "to": "程昂", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17e-p11", "text": {
+        "en": "When the Gentleman-General Cheng Ang mutinied among the new Ji Province recruits under his command, Zhu Ling swiftly beheaded him.",
+        "zht": "中郎將程昂在朱靈所統冀州新兵中反叛，朱靈即斬之。",
+        "zhs": "中郎将程昂在朱灵所统冀州新兵中反叛，朱灵即斩之。" } }]
+    },
+    {
+      "from": "朱靈（文博）", "to": "朱術", "type": "kinship", "polarity": "neutral", "directed": true,
+      "notes": [{ "passageId": "ws17e-p11", "text": {
+        "en": "After Zhu Ling's death, his son Zhu Shu succeeded him as marquis.",
+        "zht": "朱靈去世後，其子朱術襲爵。",
+        "zhs": "朱灵去世后，其子朱术袭爵。" } }]
+    }
   ],
   "journeyOverviews": [
     {
       "person": "徐晃（公明）",
-      "name": { "en": "Xu Huang", "zht": "徐晃", "zhs": "徐晃" },
-      "courtesyName": { "en": "Gongming", "zht": "公明", "zhs": "公明" },
-      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
-      "died": { "era": { "en": "1st year of Taihe", "zht": "太和元年", "zhs": "太和元年" }, "year": 227 },
+      "name": {
+        "en": "Xu Huang",
+        "zht": "徐晃",
+        "zhs": "徐晃"
+      },
+      "courtesyName": {
+        "en": "Gongming",
+        "zht": "公明",
+        "zhs": "公明"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "1st year of Taihe",
+          "zht": "太和元年",
+          "zhs": "太和元年"
+        },
+        "year": 227
+      },
       "stops": [
-        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Yang", "zht": "楊", "zhs": "杨" }], "position": null, "passageId": "" },
-        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": null, "position": [{ "en": "Commandery Clerk", "zht": "郡吏", "zhs": "郡吏" }, { "en": "Commandant of Cavalry", "zht": "騎都尉", "zhs": "骑都尉" }], "passageId": "" },
-        { "era": { "en": "3rd year of Chuping - 1st year of Jian'an", "zht": "初平三年 -建安元年", "zhs": "初平三年 -建安元年" }, "year": "192 - 196", "age": null, "location": [{ "en": "Chang'an", "zht": "長安", "zhs": "长安" }, { "en": "Anyi", "zht": "安邑", "zhs": "安邑" }, { "en": "Liang", "zht": "梁", "zhs": "梁" }, { "en": "Luoyang", "zht": "洛陽/雒陽", "zhs": "洛阳/雒阳" }], "position": [{ "en": "Capital Neighbourhood Marquis", "zht": "都亭侯", "zhs": "都亭侯" }], "passageId": "" },
-        { "era": { "en": "1st - 5th year of Jian'an", "zht": "建安元年 - 五年", "zhs": "建安元年 - 五年" }, "year": "196 - 200", "age": null, "location": [{ "en": "Juan", "zht": "卷", "zhs": "卷" }, { "en": "Yuanwu", "zht": "原武", "zhs": "原武" }, { "en": "Henei", "zht": "河內", "zhs": "河内" }, { "en": "Baima", "zht": "白馬", "zhs": "白马" }, { "en": "Yanjin", "zht": "延津", "zhs": "延津" }, { "en": "Gushi", "zht": "故市", "zhs": "故市" }], "position": [{ "en": "Assistant General", "zht": "裨將軍", "zhs": "裨将军" }, { "en": "Capital Neighbourhood Marquis", "zht": "都亭侯", "zhs": "都亭侯" }], "passageId": "" },
-        { "era": { "en": "9th year of Jian'an", "zht": "建安九年", "zhs": "建安九年" }, "year": 204, "age": null, "location": [{ "en": "Ye", "zht": "鄴", "zhs": "邺" }, { "en": "Handan", "zht": "邯鄲", "zhs": "邯郸" }, { "en": "Yiyang", "zht": "易陽", "zhs": "易阳" }, { "en": "Nanpi", "zht": "南皮", "zhs": "南皮" }, { "en": "Pingyuan", "zht": "平原", "zhs": "平原" }], "position": null, "passageId": "" },
-        { "era": { "en": "12th year of Jian'an", "zht": "建安十二年", "zhs": "建安十二年" }, "year": 207, "age": null, "location": [{ "en": "Liucheng", "zht": "柳城", "zhs": "柳城" }], "position": [{ "en": "General Who Sweeps the Wilds", "zht": "橫野將軍", "zhs": "横野将军" }], "passageId": "" },
-        { "era": { "en": "13th year of Jian'an", "zht": "建安十三年", "zhs": "建安十三年" }, "year": 208, "age": null, "location": [{ "en": "Jing Province", "zht": "荊州", "zhs": "荆州" }, { "en": "Fancheng", "zht": "樊", "zhs": "樊" }, { "en": "Linju", "zht": "臨沮", "zhs": "临沮" }, { "en": "Yicheng", "zht": "宜城", "zhs": "宜城" }, { "en": "Jiangling", "zht": "江陵", "zhs": "江陵" }], "position": null, "passageId": "" },
-        { "era": { "en": "16th - 17th year of Jian'an", "zht": "建安十六年 - 十七年", "zhs": "建安十六年 - 十七年" }, "year": "211 - 212", "age": null, "location": [{ "en": "Taiyuan", "zht": "太原", "zhs": "太原" }, { "en": "Daling", "zht": "大陵", "zhs": "大陵" }, { "en": "Fenyin", "zht": "汾陰", "zhs": "汾阴" }, { "en": "Tongguan", "zht": "潼關", "zhs": "潼关" }, { "en": "Pubanjin", "zht": "蒲阪津", "zhs": "蒲阪津" }, { "en": "Yumi", "zht": "隃麋", "zhs": "隃麋" }, { "en": "Qian", "zht": "汧", "zhs": "汧" }, { "en": "Anding", "zht": "安定", "zhs": "安定" }, { "en": "Xiayang", "zht": "夏陽", "zhs": "夏阳" }, { "en": "Fucheng", "zht": "鄜城", "zhs": "鄜城" }], "position": null, "passageId": "" },
-        { "era": { "en": "20th - 23rd year of Jian'an", "zht": "建安二十年 - 二十三年", "zhs": "建安二十年 - 二十三年" }, "year": "215 - 218", "age": null, "location": [{ "en": "Mamingge", "zht": "馬鳴閣", "zhs": "马鸣阁" }, { "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" }, { "en": "Yangpingguan", "zht": "陽平", "zhs": "阳平" }], "position": null, "passageId": "" },
-        { "era": { "en": "24th year of Jian'an - 1st year of Huangchu", "zht": "建安二十四年 - 黃初元年", "zhs": "建安二十四年 - 黄初元年" }, "year": "219 - 220", "age": null, "location": [{ "en": "Wan", "zht": "宛", "zhs": "宛" }, { "en": "Xiangyang", "zht": "襄陽", "zhs": "襄阳" }, { "en": "Mo Lake", "zht": "摩陂", "zhs": "摩陂" }, { "en": "Shangyong", "zht": "上庸", "zhs": "上庸" }], "position": [{ "en": "General of the Right", "zht": "右將軍", "zhs": "右将军" }, { "en": "Township Marquis", "zht": "鄉侯", "zhs": "乡侯" }, { "en": "County Marquis", "zht": "縣侯", "zhs": "县侯" }], "passageId": "" },
-        { "era": { "en": "3rd year of Huangchu", "zht": "黄初三年", "zhs": "黄初三年" }, "year": 222, "age": null, "location": null, "position": null, "passageId": "" },
-        { "era": { "en": "7th year of Huangchu - 1st year of Taihe", "zht": "黄初七年 - 太和元年", "zhs": "黄初七年 - 太和元年" }, "year": "226 - 227", "age": null, "location": [{ "en": "Xiangyang", "zht": "襄陽", "zhs": "襄阳" }], "position": null, "passageId": "" }
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Yang",
+              "zht": "楊",
+              "zhs": "杨"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Commandery Clerk",
+              "zht": "郡吏",
+              "zhs": "郡吏"
+            },
+            {
+              "en": "Commandant of Cavalry",
+              "zht": "騎都尉",
+              "zhs": "骑都尉"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "3rd year of Chuping - 1st year of Jian'an",
+            "zht": "初平三年 -建安元年",
+            "zhs": "初平三年 -建安元年"
+          },
+          "year": "192 - 196",
+          "age": null,
+          "location": [
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            },
+            {
+              "en": "Anyi",
+              "zht": "安邑",
+              "zhs": "安邑"
+            },
+            {
+              "en": "Liang",
+              "zht": "梁",
+              "zhs": "梁"
+            },
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st - 5th year of Jian'an",
+            "zht": "建安元年 - 五年",
+            "zhs": "建安元年 - 五年"
+          },
+          "year": "196 - 200",
+          "age": null,
+          "location": [
+            {
+              "en": "Juan",
+              "zht": "卷",
+              "zhs": "卷"
+            },
+            {
+              "en": "Yuanwu",
+              "zht": "原武",
+              "zhs": "原武"
+            },
+            {
+              "en": "Henei",
+              "zht": "河內",
+              "zhs": "河内"
+            },
+            {
+              "en": "Baima",
+              "zht": "白馬",
+              "zhs": "白马"
+            },
+            {
+              "en": "Yanjin",
+              "zht": "延津",
+              "zhs": "延津"
+            },
+            {
+              "en": "Gushi",
+              "zht": "故市",
+              "zhs": "故市"
+            }
+          ],
+          "position": [
+            {
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "9th year of Jian'an",
+            "zht": "建安九年",
+            "zhs": "建安九年"
+          },
+          "year": 204,
+          "age": null,
+          "location": [
+            {
+              "en": "Ye",
+              "zht": "鄴",
+              "zhs": "邺"
+            },
+            {
+              "en": "Handan",
+              "zht": "邯鄲",
+              "zhs": "邯郸"
+            },
+            {
+              "en": "Yiyang",
+              "zht": "易陽",
+              "zhs": "易阳"
+            },
+            {
+              "en": "Nanpi",
+              "zht": "南皮",
+              "zhs": "南皮"
+            },
+            {
+              "en": "Pingyuan",
+              "zht": "平原",
+              "zhs": "平原"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "12th year of Jian'an",
+            "zht": "建安十二年",
+            "zhs": "建安十二年"
+          },
+          "year": 207,
+          "age": null,
+          "location": [
+            {
+              "en": "Liucheng",
+              "zht": "柳城",
+              "zhs": "柳城"
+            }
+          ],
+          "position": [
+            {
+              "en": "General Who Sweeps the Wilds",
+              "zht": "橫野將軍",
+              "zhs": "横野将军"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "13th year of Jian'an",
+            "zht": "建安十三年",
+            "zhs": "建安十三年"
+          },
+          "year": 208,
+          "age": null,
+          "location": [
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            },
+            {
+              "en": "Fancheng",
+              "zht": "樊",
+              "zhs": "樊"
+            },
+            {
+              "en": "Linju",
+              "zht": "臨沮",
+              "zhs": "临沮"
+            },
+            {
+              "en": "Yicheng",
+              "zht": "宜城",
+              "zhs": "宜城"
+            },
+            {
+              "en": "Jiangling",
+              "zht": "江陵",
+              "zhs": "江陵"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "16th - 17th year of Jian'an",
+            "zht": "建安十六年 - 十七年",
+            "zhs": "建安十六年 - 十七年"
+          },
+          "year": "211 - 212",
+          "age": null,
+          "location": [
+            {
+              "en": "Taiyuan",
+              "zht": "太原",
+              "zhs": "太原"
+            },
+            {
+              "en": "Daling",
+              "zht": "大陵",
+              "zhs": "大陵"
+            },
+            {
+              "en": "Fenyin",
+              "zht": "汾陰",
+              "zhs": "汾阴"
+            },
+            {
+              "en": "Tongguan",
+              "zht": "潼關",
+              "zhs": "潼关"
+            },
+            {
+              "en": "Pubanjin",
+              "zht": "蒲阪津",
+              "zhs": "蒲阪津"
+            },
+            {
+              "en": "Yumi",
+              "zht": "隃麋",
+              "zhs": "隃麋"
+            },
+            {
+              "en": "Qian",
+              "zht": "汧",
+              "zhs": "汧"
+            },
+            {
+              "en": "Anding",
+              "zht": "安定",
+              "zhs": "安定"
+            },
+            {
+              "en": "Xiayang",
+              "zht": "夏陽",
+              "zhs": "夏阳"
+            },
+            {
+              "en": "Fucheng",
+              "zht": "鄜城",
+              "zhs": "鄜城"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "20th - 23rd year of Jian'an",
+            "zht": "建安二十年 - 二十三年",
+            "zhs": "建安二十年 - 二十三年"
+          },
+          "year": "215 - 218",
+          "age": null,
+          "location": [
+            {
+              "en": "Mamingge",
+              "zht": "馬鳴閣",
+              "zhs": "马鸣阁"
+            },
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            },
+            {
+              "en": "Yangpingguan",
+              "zht": "陽平",
+              "zhs": "阳平"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "24th year of Jian'an - 1st year of Huangchu",
+            "zht": "建安二十四年 - 黃初元年",
+            "zhs": "建安二十四年 - 黄初元年"
+          },
+          "year": "219 - 220",
+          "age": null,
+          "location": [
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Xiangyang",
+              "zht": "襄陽",
+              "zhs": "襄阳"
+            },
+            {
+              "en": "Mo Lake",
+              "zht": "摩陂",
+              "zhs": "摩陂"
+            },
+            {
+              "en": "Shangyong",
+              "zht": "上庸",
+              "zhs": "上庸"
+            }
+          ],
+          "position": [
+            {
+              "en": "General of the Right",
+              "zht": "右將軍",
+              "zhs": "右将军"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "3rd year of Huangchu",
+            "zht": "黄初三年",
+            "zhs": "黄初三年"
+          },
+          "year": 222,
+          "age": null,
+          "location": null,
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "7th year of Huangchu - 1st year of Taihe",
+            "zht": "黄初七年 - 太和元年",
+            "zhs": "黄初七年 - 太和元年"
+          },
+          "year": "226 - 227",
+          "age": null,
+          "location": [
+            {
+              "en": "Xiangyang",
+              "zht": "襄陽",
+              "zhs": "襄阳"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        }
+      ]
+    },
+    {
+      "person": "朱靈（文博）",
+      "name": {
+        "en": "Zhu Ling",
+        "zht": "朱靈",
+        "zhs": "朱灵"
+      },
+      "courtesyName": {
+        "en": "Wenbo",
+        "zht": "文博",
+        "zhs": "文博"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Shu",
+              "zht": "鄃",
+              "zhs": "鄃"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "2nd - 4th year of Chuping",
+            "zht": "初平二年 - 四年",
+            "zhs": "初平二年 - 四年"
+          },
+          "year": "191 - 193",
+          "age": null,
+          "location": [
+            {
+              "en": "Shu",
+              "zht": "鄃",
+              "zhs": "鄃"
+            },
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "passageId": "",
+          "position": null
+        },
+        {
+          "era": {
+            "en": "4th year of Jian'an",
+            "zht": "建安四年",
+            "zhs": "建安四年"
+          },
+          "year": 199,
+          "age": null,
+          "location": [
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "passageId": "",
+          "position": null
+        },
+        {
+          "era": {
+            "en": "9th - 10th year of Jian'an",
+            "zht": "建安九年 - 十年",
+            "zhs": "建安九年 - 十年"
+          },
+          "year": "204 - 205",
+          "age": null,
+          "location": [
+            {
+              "en": "Ji Province",
+              "zht": "冀州",
+              "zhs": "冀州"
+            }
+          ],
+          "passageId": "",
+          "position": null
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Yangdi",
+              "zht": "陽翟",
+              "zhs": "阳翟"
+            },
+            {
+              "en": "South of Xuchang",
+              "zht": "許南",
+              "zhs": "许南"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "13th year of Jian'an",
+            "zht": "建安十三年",
+            "zhs": "建安十三年"
+          },
+          "year": 208,
+          "age": null,
+          "location": [
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            }
+          ],
+          "passageId": "",
+          "position": null
+        },
+        {
+          "era": {
+            "en": "16th - 17th year of Jian'an",
+            "zht": "建安十六年 - 十七年",
+            "zhs": "建安十六年 - 十七年"
+          },
+          "year": "211 - 212",
+          "age": null,
+          "location": [
+            {
+              "en": "Tongguan",
+              "zht": "潼關",
+              "zhs": "潼关"
+            },
+            {
+              "en": "Pubanjin",
+              "zht": "蒲阪津",
+              "zhs": "蒲阪津"
+            },
+            {
+              "en": "Yumi",
+              "zht": "隃麋",
+              "zhs": "隃麋"
+            },
+            {
+              "en": "Qian",
+              "zht": "汧",
+              "zhs": "汧"
+            },
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            }
+          ],
+          "passageId": "",
+          "position": null
+        },
+        {
+          "era": {
+            "en": "13th year of Jian'an",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节"
+            },
+            {
+              "en": "General of the Rear",
+              "zht": "後將軍",
+              "zhs": "后将军"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯"
+            }
+          ],
+          "passageId": ""
+        }
       ]
     }
   ],
@@ -104,18 +1024,26 @@
     {
       "id": "ws17e-p1",
       "orig": {
-        "zht": "徐晃字公明，[[河東|/zh-hant/maps/map-overall?admin=57]][[楊|/zh-hant/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]人也。為郡吏，從[[車騎將軍|/zh-hant/translations/officials/military#various-grand-generals-037]]楊奉討賊有功，拜[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。李傕、郭汜之亂[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]也，晃說奉，令與天子還洛陽，奉從其計。天子渡河至[[安邑|/zh-hant/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]]，封晃[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。及到[[洛陽|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，韓暹、董承日爭鬬，晃說奉令歸太祖；奉欲從之，後悔。太祖討奉於[[梁|/zh-hant/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]]，晃遂歸太祖。",
-        "zhs": "徐晃字公明，[[河东|/zh-hans/maps/map-overall?admin=57]][[杨|/zh-hans/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]人也。为郡吏，从[[车骑将军|/zh-hans/translations/officials/military#various-grand-generals-037]]杨奉讨贼有功，拜[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。李傕、郭汜之乱[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]也，晃说奉，令与天子还洛阳，奉从其计。天子渡河至[[安邑|/zh-hans/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]]，封晃[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。及到[[洛阳|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，韩暹、董承日争鬬，晃说奉令归太祖；奉欲从之，后悔。太祖讨奉于[[梁|/zh-hans/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]]，晃遂归太祖。"
+        "zht": "徐晃字公明，[[河東楊|/zh-hant/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]人也。為郡吏，從[[車騎將軍|/zh-hant/translations/officials/military#various-grand-generals-037]]楊奉討賊有功，拜[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。李傕、郭汜之亂[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]也，晃說奉，令與天子還[[洛陽|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，奉從其計。天子渡河至[[安邑|/zh-hant/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]]，封晃[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。及到[[洛陽|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，韓暹、董承日爭鬬，晃說奉令歸太祖；奉欲從之，後悔。太祖討奉於[[梁|/zh-hant/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]]，晃遂歸太祖。",
+        "zhs": "徐晃字公明，[[河东杨|/zh-hans/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]人也。为郡吏，从[[车骑将军|/zh-hans/translations/officials/military#various-grand-generals-037]]杨奉讨贼有功，拜[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。李傕、郭汜之乱[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]也，晃说奉，令与天子还[[洛阳|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，奉从其计。天子渡河至[[安邑|/zh-hans/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]]，封晃[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。及到[[洛阳|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，韩暹、董承日争鬬，晃说奉令归太祖；奉欲从之，后悔。太祖讨奉于[[梁|/zh-hans/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]]，晃遂归太祖。"
       },
-      "en": "Xu Huang, courtesy name Gongming, was from [[Yang|/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]], [[Hedong|/maps/map-overall?admin=57]]. He served as a commandery clerk and followed [[General of Chariots and Cavalry|/translations/officials/military#various-grand-generals-037]] Yang Feng in suppressing rebels. Having earned merit, he was appointed [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]]. During the turmoil caused by Li Jue and Guo Si in [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]], Xu Huang urged Yang Feng to escort the emperor back to [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]], and Yang Feng adopted his plan. After the emperor crossed the Yellow River and reached [[Anyi|/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]], Xu Huang was enfeoffed as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. Upon their arrival in Luoyang, Han Xian and Dong Cheng fought daily. Xu Huang urged Yang Feng to go over to Cao Cao (posthumously honoured as Taizu, the Grand Progenitor). Yang Feng intended to follow his advice, but later changed his mind. When Cao Cao attacked Yang Feng at [[Liang|/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]], Xu Huang went over to Cao Cao."
+      "vern": {
+        "zht": "徐晃，字公明，[[河東郡楊縣|/zh-hant/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]人。起初在郡政府中做辦事吏員。隨[[車騎將軍|/zh-hant/translations/officials/military#various-grand-generals-037]]楊奉討伐賊寇有功，被任命爲[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。李傕、郭汜在[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]製造動亂，徐晃勸說楊奉，讓他送漢獻帝回[[洛陽|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]；楊奉聽從了他的建議，獻帝渡過黃河到達[[安邑|/zh-hant/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]]，封徐晃爲[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。獻帝到[[洛陽|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]以後，韓暹、董承天天爭權奪利，徐晃勸說楊奉歸順太祖曹操。楊奉開始聽從了他，過後又反悔；太祖到[[梁|/zh-hant/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]]縣討伐楊奉，徐晃便投奔了太祖。",
+        "zhs": "徐晃，字公明，[[河东郡杨县|/zh-hans/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]人。起初在郡政府中做办事吏员。随[[车骑将军|/zh-hans/translations/officials/military#various-grand-generals-037]]杨奉讨伐贼寇有功，被任命为[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。李傕、郭汜在[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]制造动乱，徐晃劝说杨奉，让他送汉献帝回[[洛阳|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]；杨奉听从了他的建议，献帝渡过黄河到达[[安邑|/zh-hans/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]]，封徐晃为[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。献帝到[[洛阳|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]以后，韩暹、董承天天争权夺利，徐晃劝说杨奉归顺太祖曹操。杨奉开始听从了他，过后又反悔；太祖到[[梁|/zh-hans/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]]县讨伐杨奉，徐晃便投奔了太祖。"
+      },
+      "en": "Xu Huang, courtesy name Gongming, was from [[Yang, Hedong|/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]. He served as a commandery clerk and followed [[General of Chariots and Cavalry|/translations/officials/military#various-grand-generals-037]] Yang Feng in suppressing rebels. Having earned merit, he was appointed [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]]. During the turmoil caused by Li Jue and Guo Si in [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]], Xu Huang urged Yang Feng to escort the emperor back to [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]], and Yang Feng adopted his plan. After the emperor crossed the Yellow River and reached [[Anyi|/maps/map-overall?lat=35.16855789&lng=111.14855723&name=Anyi]], Xu Huang was enfeoffed as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. Upon their arrival in [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]], Han Xian and Dong Cheng fought daily. Xu Huang urged Yang Feng to go over to Cao Cao (posthumously honoured as Taizu, the Grand Progenitor). Yang Feng intended to follow his advice, but later changed his mind. When Cao Cao attacked Yang Feng at [[Liang|/maps/map-overall?lat=34.16060618&lng=112.77664557&name=Liang]], Xu Huang went over to Cao Cao."
     },
     {
       "id": "ws17e-p2",
       "orig": {
-        "zht": "太祖授晃兵，使擊[[卷|/zh-hant/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]、[[原武|/zh-hant/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]賊，破之，拜[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]。從征呂布，別降布將趙庶、李鄒等。與史渙斬眭固於[[河內|/zh-hant/maps/map-overall?admin=55]]。從破劉備，又從破顏良，拔[[白馬|/zh-hant/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]，進至[[延津|/zh-hant/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]]，破文醜，拜[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]。與曹洪擊㶏彊賊祝臂，破之，又與史渙擊袁紹運車於[[故市|/zh-hant/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]]，功最多，封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。太祖旣圍[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，破[[邯鄲|/zh-hant/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]]，[[易陽|/zh-hant/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]令韓範偽以城降而拒守，太祖遣晃攻之。",
-        "zhs": "太祖授晃兵，使击[[卷|/zh-hans/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]、[[原武|/zh-hans/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]贼，破之，拜[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]。从征吕布，别降布将赵庶、李邹等。与史涣斩眭固于[[河内|/zh-hans/maps/map-overall?admin=55]]。从破刘备，又从破颜良，拔[[白马|/zh-hans/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]，进至[[延津|/zh-hans/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]]，破文丑，拜[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]。与曹洪击㶏彊贼祝臂，破之，又与史涣击袁绍运车于[[故市|/zh-hans/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]]，功最多，封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。太祖既围[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，破[[邯郸|/zh-hans/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]]，[[易阳|/zh-hans/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]令韩范伪以城降而拒守，太祖遣晃攻之。"
+        "zht": "太祖授晃兵，使擊[[卷|/zh-hant/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]、[[原武|/zh-hant/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]賊，破之，拜[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]。從征呂布，別降布將趙庶、李鄒等。與史渙斬眭固於[[河內|/zh-hant/maps/map-overall?admin=55]]。從破劉備，又從破顏良，拔[[白馬|/zh-hant/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]，進至[[延津|/zh-hant/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]]，破文醜，拜[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]。與曹洪擊[[㶏強|/zh-hant/maps/map-overall?lat=33.78352783&lng=114.09432439&name=㶏強]]賊祝臂，破之，又與史渙擊袁紹運車於[[故市|/zh-hant/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]]，功最多，封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。太祖旣圍[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，破[[邯鄲|/zh-hant/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]]，[[易陽|/zh-hant/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]令韓範偽以城降而拒守，太祖遣晃攻之。",
+        "zhs": "太祖授晃兵，使击[[卷|/zh-hans/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]、[[原武|/zh-hans/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]贼，破之，拜[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]。从征吕布，别降布将赵庶、李邹等。与史涣斩眭固于[[河内|/zh-hans/maps/map-overall?admin=55]]。从破刘备，又从破颜良，拔[[白马|/zh-hans/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]，进至[[延津|/zh-hans/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]]，破文丑，拜[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]。与曹洪击[[㶏强|/zh-hans/maps/map-overall?lat=33.78352783&lng=114.09432439&name=㶏強]]贼祝臂，破之，又与史涣击袁绍运车于[[故市|/zh-hans/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]]，功最多，封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。太祖既围[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，破[[邯郸|/zh-hans/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]]，[[易阳|/zh-hans/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]令韩范伪以城降而拒守，太祖遣晃攻之。"
       },
-      "en": "Cao Cao gave Xu Huang troops and sent him against the bandits at [[Juan|/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]] and [[Yuanwu|/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]. After defeating them, Xu Huang was appointed [[Assistant General|/translations/officials/military#four-direction--misc-165]]. He took part in the campaign against Lü Bu, separately securing the surrender of Lü Bu's generals Zhao Shu, Li Zou, and others. Together with Shi Huan, he slew Sui Gu in [[Henei|/maps/map-overall?admin=55]]. Xu Huang then helped defeat Liu Bei and Yan Liang, captured [[Baima|/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]], advanced to [[Yanjin|/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]], and defeated Wen Chou. He was appointed [[Adjunct General|/translations/officials/military#four-direction--misc-164]]. Later, Xu Huang and Cao Hong defeated the rebel Zhu Bi at Yinjiang. He then joined Shi Huan in attacking Yuan Shao's supply wagons at [[Gushi|/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]], where he earned the greatest merit, and was enfeoffed as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. After Cao Cao had laid siege to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]] and taken [[Handan|/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]], Han Fan, Magistrate of [[Yiyang|/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]], feigned surrender but continued to hold the city. Cao Cao sent Xu Huang to attack him.",
+      "vern": {
+        "zht": "太祖配給徐晃軍隊，派他出擊[[卷|/zh-hant/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]縣、[[原武|/zh-hant/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]縣的賊寇；大勝，升任[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]。隨太祖征伐呂布，徐晃單獨領兵迫使呂布的將領趙庶、李鄒等人投降。同史渙在[[河內|/zh-hant/maps/map-overall?admin=55]]郡擊殺眭固。隨太祖大破劉備。又隨太祖打敗顏良，攻克[[白馬|/zh-hant/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]城；進軍到[[延津|/zh-hant/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]]，大敗文丑，升任[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]。同曹洪攻打[[㶏強|/zh-hant/maps/map-overall?lat=33.78352783&lng=114.09432439&name=㶏強]]縣的賊寇祝臂，大破敵軍。同史渙在[[故市|/zh-hant/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]]截擊袁紹的運糧車隊，因爲功勞最大，被封爲[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。太祖包圍[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]縣，攻破[[邯鄲|/zh-hant/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]]。[[易陽|/zh-hant/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]縣令韓範，佯裝獻城投降卻負隅頑抗，太祖命徐晃進攻。",
+        "zhs": "太祖配给徐晃军队，派他出击[[卷|/zh-hans/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]县、[[原武|/zh-hans/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]县的贼寇；大胜，升任[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]。随太祖征伐吕布，徐晃单独领兵迫使吕布的将领赵庶、李邹等人投降。同史涣在[[河内|/zh-hans/maps/map-overall?admin=55]]郡击杀眭固。随太祖大破刘备。又随太祖打败颜良，攻克[[白马|/zh-hans/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]城；进军到[[延津|/zh-hans/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]]，大败文丑，升任[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]。同曹洪攻打[[㶏强|/zh-hans/maps/map-overall?lat=33.78352783&lng=114.09432439&name=㶏強]]县的贼寇祝臂，大破敌军。同史涣在[[故市|/zh-hans/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]]截击袁绍的运粮车队，因为功劳最大，被封为[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。太祖包围[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]县，攻破[[邯郸|/zh-hans/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]]。[[易阳|/zh-hans/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]县令韩范，佯装献城投降却负隅顽抗，太祖命徐晃进攻。"
+      },
+      "en": "Cao Cao gave Xu Huang troops and sent him against the bandits at [[Juan|/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]] and [[Yuanwu|/maps/map-overall?lat=35.04215228&lng=113.97018459&name=Yuanwu]]. After defeating them, Xu Huang was appointed [[Assistant General|/translations/officials/military#four-direction--misc-165]]. He took part in the campaign against Lü Bu, separately securing the surrender of Lü Bu's generals Zhao Shu, Li Zou, and others. Together with Shi Huan, he slew Sui Gu in [[Henei|/maps/map-overall?admin=55]]. Xu Huang then helped defeat Liu Bei and Yan Liang, captured [[Baima|/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]], advanced to [[Yanjin|/maps/map-overall?lat=35.3722844&lng=114.28754783&name=Yanjin]], and defeated Wen Chou. He was appointed [[Adjunct General|/translations/officials/military#four-direction--misc-164]]. Later, Xu Huang and Cao Hong defeated the rebel Zhu Bi at [[Yinqiang|/maps/map-overall?lat=33.78352783&lng=114.09432439&name=㶏強]]. He then joined Shi Huan in attacking Yuan Shao's supply wagons at [[Gushi|/maps/map-overall?lat=34.79738574&lng=113.47134429&name=Gushi]], where he earned the greatest merit, and was enfeoffed as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. After Cao Cao had laid siege to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]] and taken [[Handan|/maps/map-overall?lat=36.59621665&lng=114.46620323&name=Handan]], Han Fan, Magistrate of [[Yiyang|/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]], feigned surrender but continued to hold the city. Cao Cao sent Xu Huang to attack him.",
       "annotations": [
         {
           "annotator": {
@@ -130,6 +1058,10 @@
           },
           "zht": "[[卷|/zh-hant/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]音墟權反。",
           "zhs": "[[卷|/zh-hans/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]]音墟权反。",
+          "vern": {
+            "zht": "",
+            "zhs": "卷读音为墟权的反切。"
+          },
           "en": "[[Juan|/maps/map-overall?lat=35.03134233&lng=113.72992008&name=Juan]] is pronounced according to the fanqie spelling xu-quan."
         }
       ]
@@ -140,15 +1072,23 @@
         "zht": "晃至，飛矢城中，為陳成敗。範悔，晃輙降之。旣而言於太祖曰：「二袁未破，諸城未下者傾耳而聽，今日滅[[易陽|/zh-hant/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]，明日皆以死守，恐河北無定時也。願公降[[易陽|/zh-hant/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]以示諸城，則莫不望風。」太祖善之。別討毛城，設伏兵掩擊，破三屯。從破袁譚於[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，討[[平原|/zh-hant/maps/map-overall?lat=37.05824816&lng=116.3832756&name=Pingyuan]]叛賊，克之。從征蹋頓，拜橫野將軍。從征[[荊州|/zh-hant/maps/map-overall?admin=2]]，別屯[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，討[[中廬|/zh-hant/maps/map-overall?lat=31.93854784&lng=112.06649019&name=Zhonglu]]、[[臨沮|/zh-hant/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]]、[[宜城|/zh-hant/maps/map-overall?lat=31.66663671&lng=112.29180382&name=Yicheng]]賊。又與滿寵討關羽於漢津，與曹仁擊周瑜於[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]。",
         "zhs": "晃至，飞矢城中，为陈成败。范悔，晃輙降之。既而言于太祖曰：「二袁未破，诸城未下者倾耳而听，今日灭[[易阳|/zh-hans/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]，明日皆以死守，恐河北无定时也。愿公降[[易阳|/zh-hans/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]以示诸城，则莫不望风。」太祖善之。别讨毛城，设伏兵掩击，破三屯。从破袁谭于[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，讨[[平原|/zh-hans/maps/map-overall?lat=37.05824816&lng=116.3832756&name=Pingyuan]]叛贼，克之。从征蹋顿，拜横野将军。从征[[荆州|/zh-hans/maps/map-overall?admin=2]]，别屯[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，讨[[中庐|/zh-hans/maps/map-overall?lat=31.93854784&lng=112.06649019&name=Zhonglu]]、[[临沮|/zh-hans/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]]、[[宜城|/zh-hans/maps/map-overall?lat=31.66663671&lng=112.29180382&name=Yicheng]]贼。又与满宠讨关羽于汉津，与曹仁击周瑜于[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]。"
       },
+      "vern": {
+        "zht": "徐晃到達以後，把一封信拴在箭尾射入城中，勸敵軍看清形勢投降；韓範表示悔過，徐晃就自作主張接受了他的投降。而當時太祖規定：凡是受到圍攻之後才被迫出城投降的敵人一律處死。徐晃隨即勸太祖說：“袁譚、袁尚還沒有被打敗，那些觀望形勢的城池都在看您的舉動；今天要是殺了[[易陽|/zh-hant/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]的投降者，明天各城就都要拼死據守：恐怕河北就沒有平定的時候了。希望您接受[[易陽|/zh-hant/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]投降，爲別的城池做個榜樣，那麼各城就都會望風歸順了。”太祖認爲很對，立即照辦。徐晃又單獨率兵討伐毛城的敵寇，設置伏兵襲擊，攻破了敵軍三處營地。隨太祖在[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]縣擊殺袁譚，討伐[[平原|/zh-hant/maps/map-overall?lat=37.05824816&lng=116.3832756&name=Pingyuan]]郡的叛軍，平定了各地。又隨太祖征討烏丸族的首領蹋頓，徐晃任橫野將軍。隨太祖進攻[[荊州|/zh-hant/maps/map-overall?admin=2]]，徐晃獨自率軍駐紮[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城，掃蕩[[中廬|/zh-hant/maps/map-overall?lat=31.93854784&lng=112.06649019&name=Zhonglu]]、[[臨沮|/zh-hant/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]]、[[宜城|/zh-hant/maps/map-overall?lat=31.66663671&lng=112.29180382&name=Yicheng]]三縣的敵人。與滿寵到漢津征討關羽，又與曹仁在[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]攻擊周瑜。",
+        "zhs": "徐晃到达以后，把一封信拴在箭尾射入城中，劝敌军看清形势投降；韩范表示悔过，徐晃就自作主张接受了他的投降。而当时太祖规定：凡是受到围攻之后才被迫出城投降的敌人一律处死。徐晃随即劝太祖说：“袁谭、袁尚还没有被打败，那些观望形势的城池都在看您的举动；今天要是杀了[[易阳|/zh-hans/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]的投降者，明天各城就都要拼死据守：恐怕河北就没有平定的时候了。希望您接受[[易阳|/zh-hans/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]投降，为别的城池做个榜样，那么各城就都会望风归顺了。”太祖认为很对，立即照办。徐晃又单独率兵讨伐毛城的敌寇，设置伏兵袭击，攻破了敌军三处营地。随太祖在[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]县击杀袁谭，讨伐[[平原|/zh-hans/maps/map-overall?lat=37.05824816&lng=116.3832756&name=Pingyuan]]郡的叛军，平定了各地。又随太祖征讨乌丸族的首领蹋顿，徐晃任横野将军。随太祖进攻[[荆州|/zh-hans/maps/map-overall?admin=2]]，徐晃独自率军驻扎[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城，扫荡[[中庐|/zh-hans/maps/map-overall?lat=31.93854784&lng=112.06649019&name=Zhonglu]]、[[临沮|/zh-hans/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]]、[[宜城|/zh-hans/maps/map-overall?lat=31.66663671&lng=112.29180382&name=Yicheng]]三县的敌人。与满宠到汉津征讨关羽，又与曹仁在[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]攻击周瑜。"
+      },
       "en": "When Xu Huang arrived, he shot a letter into the city on an arrow, setting out the consequences of success and failure. Han Fan regretted his resistance, and Xu Huang promptly accepted his surrender. He then said to Cao Cao, \"The two Yuans have yet to be defeated, and the cities that have not submitted are listening closely. If [[Yiyang|/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]] is destroyed today, tomorrow they will all resolve to defend themselves to the death, and I fear the lands north of the Yellow River will not be pacified. I urge you, my lord, to accept [[Yiyang|/maps/map-overall?lat=36.71417381&lng=114.62937544&name=Yiyang]]'s surrender and thereby encourage the other cities. When word spreads, they will surely submit.\" Cao Cao approved of his words. Xu Huang then separately attacked Maocheng. He laid an ambush, launched a surprise attack, and broke three encampments. He later accompanied Cao Cao in defeating Yuan Tan at [[Nanpi|/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]], and subdued the rebels in [[Pingyuan|/maps/map-overall?lat=37.05824816&lng=116.3832756&name=Pingyuan]]. Thereafter, Xu Huang took part in the campaign against Tadun and was appointed General Who Sweeps Across the Wilderness. He also joined the expedition against [[Jing Province|/maps/map-overall?admin=2]], where he separately garrisoned at [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]] and suppressed the rebels at [[Zhonglu|/maps/map-overall?lat=31.93854784&lng=112.06649019&name=Zhonglu]], [[Linju|/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]], and [[Yicheng|/maps/map-overall?lat=31.66663671&lng=112.29180382&name=Yicheng]]. He then joined Man Chong in attacking Guan Yu at Hanjin, and Cao Ren in attacking Zhou Yu at [[Jiangling|/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]."
     },
     {
       "id": "ws17e-p4",
       "orig": {
-        "zht": "十五年，討[[太原|/zh-hant/maps/map-overall?admin=21]]反者，圍[[大陵|/zh-hant/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]]，拔之，斬賊帥商曜。韓遂、馬超等反關右，遣晃屯[[汾陰|/zh-hant/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]]以撫[[河東|/zh-hant/maps/map-overall?admin=57]]，賜牛酒，令上先人墓。太祖至[[潼關|/zh-hant/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]，恐不得渡，召問晃。晃曰：「公盛兵於此，而賊不復別守[[蒲阪|/zh-hant/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]，知其無謀也。今假臣精兵[[蒲阪津|/zh-hant/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]]，為軍先置，以截其裏，賊可擒也。」太祖曰：「善。」使晃以步騎四千人渡津。",
-        "zhs": "十五年，讨[[太原|/zh-hans/maps/map-overall?admin=21]]反者，围[[大陵|/zh-hans/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]]，拔之，斩贼帅商曜。韩遂、马超等反关右，遣晃屯[[汾阴|/zh-hans/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]]以抚[[河东|/zh-hans/maps/map-overall?admin=57]]，赐牛酒，令上先人墓。太祖至[[潼关|/zh-hans/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]，恐不得渡，召问晃。晃曰：「公盛兵于此，而贼不复别守[[蒲阪|/zh-hans/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]，知其无谋也。今假臣精兵[[蒲阪津|/zh-hans/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]]，为军先置，以截其里，贼可擒也。」太祖曰：「善。」使晃以步骑四千人渡津。"
+        "zht": "十五年，討[[太原|/zh-hant/maps/map-overall?admin=21]]反者，圍[[大陵|/zh-hant/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]]，拔之，斬賊帥商曜。韓遂、馬超等反[[關右|/zh-hant/translations/officials#glossary-west-of-the-pass-guanxi]]，遣晃屯[[汾陰|/zh-hant/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]]以撫[[河東|/zh-hant/maps/map-overall?admin=57]]，賜牛酒，令上先人墓。太祖至[[潼關|/zh-hant/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]，恐不得渡，召問晃。晃曰：「公盛兵於此，而賊不復別守[[蒲阪|/zh-hant/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]，知其無謀也。今假臣精兵[[蒲阪津|/zh-hant/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]]，為軍先置，以截其裏，賊可擒也。」太祖曰：「善。」使晃以步騎四千人渡津。",
+        "zhs": "十五年，讨[[太原|/zh-hans/maps/map-overall?admin=21]]反者，围[[大陵|/zh-hans/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]]，拔之，斩贼帅商曜。韩遂、马超等反[[关右|/zh-hans/translations/officials#glossary-west-of-the-pass-guanxi]]，遣晃屯[[汾阴|/zh-hans/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]]以抚[[河东|/zh-hans/maps/map-overall?admin=57]]，赐牛酒，令上先人墓。太祖至[[潼关|/zh-hans/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]，恐不得渡，召问晃。晃曰：「公盛兵于此，而贼不复别守[[蒲阪|/zh-hans/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]，知其无谋也。今假臣精兵[[蒲阪津|/zh-hans/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]]，为军先置，以截其里，贼可擒也。」太祖曰：「善。」使晃以步骑四千人渡津。"
       },
-      "en": "In the fifteenth year of Jian'an, Xu Huang campaigned against the rebels in [[Taiyuan|/maps/map-overall?admin=21]]. He besieged and captured [[Daling|/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]], and beheaded the rebel leader Shang Yao. When Han Sui, Ma Chao, and others rebelled west of the passes, Xu Huang was sent to garrison [[Fenyin|/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]] and pacify [[Hedong|/maps/map-overall?admin=57]]. He was granted oxen and wine and ordered to pay respects at his ancestors' graves. When Cao Cao reached [[Tongguan|/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]], he feared that he would be unable to cross the river and summoned Xu Huang for his counsel. Xu Huang said, \"My lord, you have concentrated a great army here, yet the enemy has sent no force to guard [[Puban|/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]. This shows that they are without a plan. Entrust your servant with elite troops, and I shall cross at [[Pubanjin|/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]] and secure an advance position for the army, cutting off the enemy's rear. We can then capture them.\" \"Excellent,\" said Cao Cao, and he ordered Xu Huang to cross at the ford with four thousand infantry and cavalry.",
+      "vern": {
+        "zht": "建安十五年（公元 210），徐晃統兵討伐[[太原|/zh-hant/maps/map-overall?admin=21]]郡叛軍，包圍[[大陵|/zh-hant/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]]縣；攻下城池，殺死叛軍首領商曜。韓遂、馬超在關中謀反，太祖派徐晃進駐[[汾陰|/zh-hant/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]]縣安撫[[河東|/zh-hant/maps/map-overall?admin=57]]郡；賜給他肉牛、美酒，讓他回附近的家鄉楊縣爲祖先上墳。太祖到[[潼關|/zh-hant/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]，擔心不能西渡黃河，召徐晃詢問辦法。徐晃說：“明公您的大兵集結在此地，而敵人不另派兵扼守北面[[蒲坂|/zh-hant/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]的渡口，可見他們沒有謀略。現在請給我一支精兵，從北面的[[蒲坂津|/zh-hant/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]]渡河；去充當全軍的先頭部隊，從黃河西岸截入敵軍的內部，就可以制服敵人。”太祖說：“好！”即派徐晃率領騎兵、步兵四千人，從蒲坂渡河。",
+        "zhs": "建安十五年（公元 210），徐晃统兵讨伐[[太原|/zh-hans/maps/map-overall?admin=21]]郡叛军，包围[[大陵|/zh-hans/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]]县；攻下城池，杀死叛军首领商曜。韩遂、马超在关中谋反，太祖派徐晃进驻[[汾阴|/zh-hans/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]]县安抚[[河东|/zh-hans/maps/map-overall?admin=57]]郡；赐给他肉牛、美酒，让他回附近的家乡杨县为祖先上坟。太祖到[[潼关|/zh-hans/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]]，担心不能西渡黄河，召徐晃询问办法。徐晃说：“明公您的大兵集结在此地，而敌人不另派兵扼守北面[[蒲坂|/zh-hans/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]的渡口，可见他们没有谋略。现在请给我一支精兵，从北面的[[蒲坂津|/zh-hans/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]]渡河；去充当全军的先头部队，从黄河西岸截入敌军的内部，就可以制服敌人。”太祖说：“好！”即派徐晃率领骑兵、步兵四千人，从蒲坂渡河。"
+      },
+      "en": "In the fifteenth year of Jian'an, Xu Huang campaigned against the rebels in [[Taiyuan|/maps/map-overall?admin=21]]. He besieged and captured [[Daling|/maps/map-overall?lat=37.49238085&lng=112.09933191&name=Daling]], and beheaded the rebel leader Shang Yao. When Han Sui, Ma Chao, and others rebelled [[West of the Pass|/translations/officials#glossary-west-of-the-pass-guanxi]], Xu Huang was sent to garrison [[Fenyin|/maps/map-overall?lat=35.36816293&lng=110.51564591&name=Fenyin]] and pacify [[Hedong|/maps/map-overall?admin=57]]. He was granted oxen and wine and ordered to pay respects at his ancestors' graves. When Cao Cao reached [[Tongguan|/maps/map-overall?lat=34.59426174&lng=110.32268475&name=Tongguan]], he feared that he would be unable to cross the river and summoned Xu Huang for his counsel. Xu Huang said, \"My lord, you have concentrated a great army here, yet the enemy has sent no force to guard [[Puban|/maps/map-overall?lat=34.84242176&lng=110.29953942&name=Puban]]. This shows that they are without a plan. Entrust your servant with elite troops, and I shall cross at [[Pubanjin|/maps/map-overall?lat=34.87374888&lng=110.28348954&name=Pubanjin]] and secure an advance position for the army, cutting off the enemy's rear. We can then capture them.\" \"Excellent,\" said Cao Cao, and he ordered Xu Huang to cross at the ford with four thousand infantry and cavalry.",
       "annotations": [
         {
           "annotator": {
@@ -163,6 +1103,10 @@
           },
           "zht": "臣松之云：案晃于時未應稱臣，傳寫者誤也。",
           "zhs": "臣松之云：案晃于时未应称臣，传写者误也。",
+          "vern": {
+            "zht": "",
+            "zhs": "臣裴松之认为：按徐晃在当时不应称臣，是传抄的人弄错了。"
+          },
           "en": "Your servant Songzhi notes: On examination, Xu Huang should not yet have styled himself 'your subject' at that time. This is a copyist's error."
         }
       ]
@@ -173,29 +1117,53 @@
         "zht": "作塹柵未成，賊梁興夜將步騎五千餘人攻晃，晃擊走之，太祖軍得渡。遂破超等，使晃與夏侯淵平[[隃麋|/zh-hant/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]、[[汧|/zh-hant/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]諸氐，與太祖會[[安定|/zh-hant/maps/map-overall?admin=152]]。太祖還[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，使晃與夏侯淵平[[鄜|/zh-hant/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]、[[夏陽|/zh-hant/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]餘賊，斬梁興，降三千餘戶。從征張魯。別遣晃討攻櫝、仇夷諸山氐，皆降之。遷[[平寇將軍|/zh-hant/translations/officials/military#four-direction--misc-124]]。解將軍張順圍。擊賊陳福等三十餘屯，皆破之。",
         "zhs": "作堑栅未成，贼梁兴夜将步骑五千余人攻晃，晃击走之，太祖军得渡。遂破超等，使晃与夏侯渊平[[隃麋|/zh-hans/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]、[[汧|/zh-hans/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]诸氐，与太祖会[[安定|/zh-hans/maps/map-overall?admin=152]]。太祖还[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，使晃与夏侯渊平[[鄜|/zh-hans/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]、[[夏阳|/zh-hans/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]余贼，斩梁兴，降三千余户。从征张鲁。别遣晃讨攻椟、仇夷诸山氐，皆降之。迁[[平寇将军|/zh-hans/translations/officials/military#four-direction--misc-124]]。解将军张顺围。击贼陈福等三十余屯，皆破之。"
       },
+      "vern": {
+        "zht": "渡河之後，徐晃的部隊挖塹立柵還未完工，敵將梁興就率五千多騎兵、步兵來搶攻；徐晃將他們擊退，太祖大軍得以渡河，打敗了馬超的勢力。接着，太祖派徐晃與夏侯淵平定[[隃麋|/zh-hant/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]縣、[[汧|/zh-hant/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]縣的各氐族部落，同太祖在[[安定|/zh-hant/maps/map-overall?admin=152]]會師。太祖回[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]縣，派徐晃與夏侯淵平定[[鄜|/zh-hant/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]縣、[[夏陽|/zh-hant/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]縣的賊寇餘黨，斬了梁興，接受三千多戶敵方百姓投降。後來隨太祖討伐張魯，另派徐晃去掃蕩櫝、仇夷各處山區的氐族人，逼使他們都投降。徐晃升任[[平寇將軍|/zh-hant/translations/officials/military#four-direction--misc-124]]，出兵解救被包圍的將軍張順，攻破了賊寇陳福等人的三十多個屯兵據點。",
+        "zhs": "渡河之后，徐晃的部队挖堑立栅还未完工，敌将梁兴就率五千多骑兵、步兵来抢攻；徐晃将他们击退，太祖大军得以渡河，打败了马超的势力。接着，太祖派徐晃与夏侯渊平定[[隃麋|/zh-hans/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]县、[[汧|/zh-hans/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]县的各氐族部落，同太祖在[[安定|/zh-hans/maps/map-overall?admin=152]]会师。太祖回[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]县，派徐晃与夏侯渊平定[[鄜|/zh-hans/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]县、[[夏阳|/zh-hans/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]县的贼寇余党，斩了梁兴，接受三千多户敌方百姓投降。后来随太祖讨伐张鲁，另派徐晃去扫荡椟、仇夷各处山区的氐族人，逼使他们都投降。徐晃升任[[平寇将军|/zh-hans/translations/officials/military#four-direction--misc-124]]，出兵解救被包围的将军张顺，攻破了贼寇陈福等人的三十多个屯兵据点。"
+      },
       "en": "Before the trenches and palisades were complete, Liang Xing led more than five thousand infantry and cavalry in a night attack on Xu Huang. Xu Huang routed them, enabling Cao Cao's army to cross. Cao Cao then defeated Ma Chao and his allies, and ordered Xu Huang and Xiahou Yuan to pacify the Di at [[Yumi|/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]] and [[Qian|/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]] before joining him at [[Anding|/maps/map-overall?admin=152]]. When Cao Cao returned to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]], he sent Xu Huang and Xiahou Yuan to suppress the remaining bandits at [[Fucheng|/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]] and [[Xiayang|/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]. They killed Liang Xing and received the surrender of more than three thousand households. Thereafter, Xu Huang took part in the campaign against Zhang Lu. He was then sent separately to campaign against the mountain Di at Gongdu and Qiuyi, all of whom surrendered. He was promoted to [[General Who Subdues the Bandits|/translations/officials/military#four-direction--misc-124]]. Later, Xu Huang relieved General Zhang Shun from a siege, then attacked and destroyed more than thirty camps held by Chen Fu and other rebels."
     },
     {
       "id": "ws17e-p6",
       "orig": {
-        "zht": "太祖還[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，留晃與夏侯淵拒劉備於[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。備遣陳式等十餘營絕[[馬鳴閣|/zh-hant/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]]道，晃別征破之，賊自投山谷，多死者。太祖聞，甚喜，[[假晃節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，令曰：「此閣道，[[漢中|/zh-hant/maps/map-overall?admin=110]]之險要咽喉也。劉備欲斷絕外內，以取[[漢中|/zh-hant/maps/map-overall?admin=110]]。將軍一舉，克奪賊計，善之善者也。」太祖遂自至[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，引出[[漢中|/zh-hant/maps/map-overall?admin=110]]諸軍。復遣晃助曹仁討關羽，屯[[宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]。會[[漢水|/zh-hant/maps/map-overall?water=52]]暴隘，于禁等沒。羽圍仁於[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又圍將軍呂常於[[襄陽|/zh-hant/maps/map-overall?admin=89]]。晃所將多新卒，以羽難與爭鋒，遂前至陽陵陂屯。",
-        "zhs": "太祖还[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，留晃与夏侯渊拒刘备于[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。备遣陈式等十余营绝[[马鸣阁|/zh-hans/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]]道，晃别征破之，贼自投山谷，多死者。太祖闻，甚喜，[[假晃节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，令曰：「此阁道，[[汉中|/zh-hans/maps/map-overall?admin=110]]之险要咽喉也。刘备欲断绝外内，以取[[汉中|/zh-hans/maps/map-overall?admin=110]]。将军一举，克夺贼计，善之善者也。」太祖遂自至[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，引出[[汉中|/zh-hans/maps/map-overall?admin=110]]诸军。复遣晃助曹仁讨关羽，屯[[宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]。会[[汉水|/zh-hans/maps/map-overall?water=52]]暴隘，于禁等没。羽围仁于[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又围将军吕常于[[襄阳|/zh-hans/maps/map-overall?admin=89]]。晃所将多新卒，以羽难与争锋，遂前至阳陵陂屯。"
+        "zht": "太祖還[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，留晃與夏侯淵拒劉備於[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。備遣陳式等十餘營絕[[馬鳴閣|/zh-hant/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]]道，晃別征破之，賊自投山谷，多死者。太祖聞，甚喜，[[假晃節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，令曰：「此閣道，[[漢中|/zh-hant/maps/map-overall?admin=110]]之險要咽喉也。劉備欲斷絕外內，以取[[漢中|/zh-hant/maps/map-overall?admin=110]]。將軍一舉，克奪賊計，善之善者也。」太祖遂自至[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，引出[[漢中|/zh-hant/maps/map-overall?admin=110]]諸軍。復遣晃助曹仁討關羽，屯[[宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]。會[[漢水|/zh-hant/maps/map-overall?water=52]]暴隘，于禁等沒。羽圍仁於[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又圍將軍呂常於[[襄陽|/zh-hant/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]]。晃所將多新卒，以羽難與爭鋒，遂前至陽陵陂屯。[^1]",
+        "zhs": "太祖还[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，留晃与夏侯渊拒刘备于[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。备遣陈式等十余营绝[[马鸣阁|/zh-hans/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]]道，晃别征破之，贼自投山谷，多死者。太祖闻，甚喜，[[假晃节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，令曰：「此阁道，[[汉中|/zh-hans/maps/map-overall?admin=110]]之险要咽喉也。刘备欲断绝外内，以取[[汉中|/zh-hans/maps/map-overall?admin=110]]。将军一举，克夺贼计，善之善者也。」太祖遂自至[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，引出[[汉中|/zh-hans/maps/map-overall?admin=110]]诸军。复遣晃助曹仁讨关羽，屯[[宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]。会[[汉水|/zh-hans/maps/map-overall?water=52]]暴隘，于禁等没。羽围仁于[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又围将军吕常于[[襄阳|/zh-hans/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]]。晃所将多新卒，以羽难与争锋，遂前至阳陵陂屯。[^1]"
       },
-      "en": "When Cao Cao returned to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]], he left Xu Huang and Xiahou Yuan to resist Liu Bei at [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]. Liu Bei sent Chen Shi and others with more than ten encampments to cut the [[Mamingge|/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]] roads. Xu Huang attacked them separately and routed them. Many enemy soldiers threw themselves into the mountain ravines and died. When Cao Cao heard of this, he was greatly pleased. He appointed Xu Huang [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]] and issued an order: \"This plank road is the strategic throat of [[Hanzhong|/maps/map-overall?admin=110]]. Liu Bei sought to sever all communication between the interior and the outside, and thus seize [[Hanzhong|/maps/map-overall?admin=110]]. In a single stroke, the General has thwarted the enemy's design. No achievement could be finer.\" Cao Cao then went in person to [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]] and led the armies to withdraw from [[Hanzhong|/maps/map-overall?admin=110]]. Some time after, Cao Cao sent Xu Huang to aid Cao Ren in the campaign against Guan Yu, and Xu Huang garrisoned at [[Wan|/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]. Around this time, the [[Han River|/maps/map-overall?water=52]] flooded suddenly, engulfing Yu Jin and the others. Guan Yu besieged Cao Ren at [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]] and General Lü Chang at [[Xiangyang|/maps/map-overall?admin=89]]. Most of Xu Huang's men were fresh recruits, and could not yet withstand Guan Yu's strength. Xu Huang therefore relocated to Yanglingbei and encamped there instead."
+      "vern": {
+        "zht": "太祖回到[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]縣，留下徐晃與夏侯淵在[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]關防禦劉備。劉備派陳式等十多營的軍隊斷絕了[[馬鳴閣|/zh-hant/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]]的棧道；徐晃獨自領兵迎擊，大破敵軍。敵軍被打得紛紛跳下山谷逃命，死了許多人。太祖聽說後，非常高興，授給徐晃節杖。發佈嘉獎令說：“這一條棧道，是[[漢中|/zh-hant/maps/map-overall?admin=110]]的咽喉要地，劉備進攻這裏是想斷絕我們的內外聯繫，以便奪取[[漢中|/zh-hant/maps/map-overall?admin=110]]。將軍您一舉粉碎了劉備的計劃，真是好事當中的好事啊！”太祖後來親自到[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]關，撤出[[漢中|/zh-hant/maps/map-overall?admin=110]]的各路軍馬。太祖派徐晃協助曹仁討伐關羽，駐紮在[[宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]城。碰上[[漢水|/zh-hant/maps/map-overall?water=52]]氾濫，于禁等人的部隊被淹沒。關羽在[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城包圍了曹仁，又在[[襄陽|/zh-hant/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]]包圍了將軍呂常。徐晃的部下大多是新兵，很難與關羽對敵，便進軍到陽陵陂後，暫時停下來等待後援。",
+        "zhs": "太祖回到[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]县，留下徐晃与夏侯渊在[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]关防御刘备。刘备派陈式等十多营的军队断绝了[[马鸣阁|/zh-hans/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]]的栈道；徐晃独自领兵迎击，大破敌军。敌军被打得纷纷跳下山谷逃命，死了许多人。太祖听说后，非常高兴，授给徐晃节杖。发布嘉奖令说：“这一条栈道，是[[汉中|/zh-hans/maps/map-overall?admin=110]]的咽喉要地，刘备进攻这里是想断绝我们的内外联系，以便夺取[[汉中|/zh-hans/maps/map-overall?admin=110]]。将军您一举粉碎了刘备的计划，真是好事当中的好事啊！”太祖后来亲自到[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]关，撤出[[汉中|/zh-hans/maps/map-overall?admin=110]]的各路军马。太祖派徐晃协助曹仁讨伐关羽，驻扎在[[宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]城。碰上[[汉水|/zh-hans/maps/map-overall?water=52]]泛滥，于禁等人的部队被淹没。关羽在[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城包围了曹仁，又在[[襄阳|/zh-hans/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]]包围了将军吕常。徐晃的部下大多是新兵，很难与关羽对敌，便进军到阳陵陂后，暂时停下来等待后援。"
+      },
+      "en": "When Cao Cao returned to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]], he left Xu Huang and Xiahou Yuan to resist Liu Bei at [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]. Liu Bei sent Chen Shi and others with more than ten encampments to cut the [[Mamingge|/maps/map-overall?lat=32.56081766&lng=105.77447206&name=Mamingge]] roads. Xu Huang attacked them separately and routed them. Many enemy soldiers threw themselves into the mountain ravines and died. When Cao Cao heard of this, he was greatly pleased. He appointed Xu Huang [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]] and issued an order: \"This plank road is the strategic throat of [[Hanzhong|/maps/map-overall?admin=110]]. Liu Bei sought to sever all communication between the interior and the outside, and thus seize [[Hanzhong|/maps/map-overall?admin=110]]. In a single stroke, the General has thwarted the enemy's design. No achievement could be finer.\" Cao Cao then went in person to [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]] and led the armies to withdraw from [[Hanzhong|/maps/map-overall?admin=110]]. Some time after, Cao Cao sent Xu Huang to aid Cao Ren in the campaign against Guan Yu, and Xu Huang garrisoned at [[Wan|/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]. Around this time, the [[Han River|/maps/map-overall?water=52]] flooded suddenly, engulfing Yu Jin and the others. Guan Yu besieged Cao Ren at [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]] and General Lü Chang at [[Xiangyang|/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]]. Most of Xu Huang's men were fresh recruits, and could not yet withstand Guan Yu's strength. Xu Huang therefore relocated to Yanglingbei and encamped there instead.[^1]"
     },
     {
       "id": "ws17e-p7",
       "orig": {
-        "zht": "太祖復還，遣將軍徐商、呂建等詣晃，令曰：「須兵馬集至，乃俱前。」賊屯偃城。晃到，詭道作都塹，示欲截其後，賊燒屯走。晃得偃城，兩面連營，稍前，去賊圍三丈所。未攻，太祖前後遣殷署、朱蓋等凡十二營詣晃。賊圍頭有屯，又別屯四冢。晃揚聲當攻圍頭屯，而密攻四冢。羽見四冢欲壞，自將步騎五千出戰，晃擊之，退走，遂追陷與俱入圍，破之，或自投[[沔水|/zh-hant/maps/map-overall?water=51]]死。",
-        "zhs": "太祖复还，遣将军徐商、吕建等诣晃，令曰：「须兵马集至，乃俱前。」贼屯偃城。晃到，诡道作都堑，示欲截其后，贼烧屯走。晃得偃城，两面连营，稍前，去贼围三丈所。未攻，太祖前后遣殷署、朱盖等凡十二营诣晃。贼围头有屯，又别屯四冢。晃扬声当攻围头屯，而密攻四冢。羽见四冢欲坏，自将步骑五千出战，晃击之，退走，遂追陷与俱入围，破之，或自投[[沔水|/zh-hans/maps/map-overall?water=51]]死。"
+        "zht": "太祖復還，遣將軍徐商、呂建等詣晃，令曰：「須兵馬集至，乃俱前。」賊屯偃城[^1]。晃到，詭道作都塹，示欲截其後，賊燒屯走。晃得偃城，兩面連營，稍前，去賊圍三[[丈|/zh-hant/translations/officials#glossary-zhang]]所。未攻，太祖前後遣殷署、朱蓋等凡十二營詣晃。賊圍頭有屯，又別屯四冢[^1]。晃揚聲當攻圍頭屯，而密攻四冢。羽見四冢欲壞，自將步騎五千出戰，晃擊之，退走，遂追陷與俱入圍，破之，或自投[[沔水|/zh-hant/maps/map-overall?water=51]]死。",
+        "zhs": "太祖复还，遣将军徐商、吕建等诣晃，令曰：「须兵马集至，乃俱前。」贼屯偃城[^1]。晃到，诡道作都堑，示欲截其后，贼烧屯走。晃得偃城，两面连营，稍前，去贼围三[[丈|/zh-hans/translations/officials#glossary-zhang]]所。未攻，太祖前后遣殷署、朱盖等凡十二营诣晃。贼围头有屯，又别屯四冢[^1]。晃扬声当攻围头屯，而密攻四冢。羽见四冢欲坏，自将步骑五千出战，晃击之，退走，遂追陷与俱入围，破之，或自投[[沔水|/zh-hans/maps/map-overall?water=51]]死。"
       },
-      "en": "When Cao Cao returned, he sent the generals Xu Shang, Lü Jian, and others to Xu Huang with orders: \"Wait until all the troops and cavalry have assembled, then advance together.\" The enemy was encamped at Yancheng. On arriving, Xu Huang used a ruse, digging a long trench as if to cut off their rear. The enemy then burnt their camp and fled. Xu Huang took Yancheng, established a chain of camps on either side, and gradually advanced to within some three zhang of the enemy's siege lines. Before the attack, Cao Cao sent Yin Shu, Zhu Gai, and others to reinforce him with a total of twelve encampments. The enemy had a camp at the front of their siege lines and another at the Four Mounds nearby. Xu Huang publicly declared that he would attack the former, but secretly struck the Four Mounds. Seeing that the Four Mounds were about to fall, Guan Yu personally led out five thousand infantry and cavalry to give battle. Xu Huang defeated them and drove them back, then pursued them into the siege lines and broke them. Some enemy soldiers even threw themselves into the [[Mian River|/maps/map-overall?water=51]] and drowned."
+      "vern": {
+        "zht": "太祖又再派將軍徐商、呂建等人去支援徐晃，傳令說：“必須等兵馬全部集中，再一起向前出擊。”敵軍在偃城駐守。徐晃率全軍到達後，騙過敵人從小路深入敵後挖掘一條大塹壕，做出要截斷敵人後路的樣子；敵軍燒燬自己的營寨逃跑，徐晃便佔領偃城。他下令連接左右兩面的營寨逐步向前推進，直到距離敵人的包圍圈大約只有三[[丈|/zh-hant/translations/officials#glossary-zhang]]左右的地方。還沒有發起進攻，太祖又先後派殷署、朱蓋等，一共十二營的部隊增援徐晃。敵人包圍圈的前頭有營壘，另外在四冢還有營壘。徐晃揚言要攻打前頭的守敵，卻祕密地偷襲四冢。關羽看到四冢的陣地要被攻破，親率五千步、騎兵出戰。徐晃迎頭痛擊，關羽退走；徐晃乘勝追擊趁勢衝入敵軍的包圍圈，大破敵軍，很多敵人跳下[[沔水|/zh-hant/maps/map-overall?water=51]]而被淹死。",
+        "zhs": "太祖又再派将军徐商、吕建等人去支援徐晃，传令说：“必须等兵马全部集中，再一起向前出击。”敌军在偃城驻守。徐晃率全军到达后，骗过敌人从小路深入敌后挖掘一条大堑壕，做出要截断敌人后路的样子；敌军烧毁自己的营寨逃跑，徐晃便占领偃城。他下令连接左右两面的营寨逐步向前推进，直到距离敌人的包围圈大约只有三[[丈|/zh-hans/translations/officials#glossary-zhang]]左右的地方。还没有发起进攻，太祖又先后派殷署、朱盖等，一共十二营的部队增援徐晃。敌人包围圈的前头有营垒，另外在四冢还有营垒。徐晃扬言要攻打前头的守敌，却秘密地偷袭四冢。关羽看到四冢的阵地要被攻破，亲率五千步、骑兵出战。徐晃迎头痛击，关羽退走；徐晃乘胜追击趁势冲入敌军的包围圈，大破敌军，很多敌人跳下[[沔水|/zh-hans/maps/map-overall?water=51]]而被淹死。"
+      },
+      "en": "When Cao Cao returned, he sent the generals Xu Shang, Lü Jian, and others to Xu Huang with orders: \"Wait until all the troops and cavalry have assembled, then advance together.\" The enemy was encamped at Yancheng[^1]. On arriving, Xu Huang used a ruse, digging a long trench as if to cut off their rear. The enemy then burnt their camp and fled. Xu Huang took Yancheng, established a chain of camps on either side, and gradually advanced to within some three [[zhang|/translations/officials#glossary-zhang]] of the enemy's siege lines. Before the attack, Cao Cao sent Yin Shu, Zhu Gai, and others to reinforce him with a total of twelve encampments. The enemy had a camp at the front of their siege lines and another at the Four Mounds nearby[^1]. Xu Huang publicly declared that he would attack the former, but secretly struck the Four Mounds. Seeing that the Four Mounds were about to fall, Guan Yu personally led out five thousand infantry and cavalry to give battle. Xu Huang defeated them and drove them back, then pursued them into the siege lines and broke them. Some enemy soldiers even threw themselves into the [[Mian River|/maps/map-overall?water=51]] and drowned.",
+      "footnotes": [
+        {
+          "n": 1,
+          "zht": "陽陵陂、偃城、四冢皆在[[襄陽|/zh-hant/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]]城北，與[[樊城|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]相近。",
+          "zhs": "阳陵陂、偃城、四冢皆在[[襄阳|/zh-hans/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]]城北，与[[樊城|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]相近。",
+          "en": "Yanglingbei, Yancheng, and Four Mounds were all located north of [[Xiangyang|/maps/map-overall?lat=32.00162374&lng=112.14985623&name=襄陽]], near [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]."
+        }
+      ]
     },
     {
       "id": "ws17e-p8",
       "orig": {
         "zht": "太祖令曰：「賊圍塹鹿角十重，將軍致戰全勝，遂陷賊圍，多斬首虜。吾用兵三十餘年，及所聞古之善用兵者，未有長驅徑入敵圍者也。且[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]、[[襄陽|/zh-hant/maps/map-overall?admin=89]]之在圍，過於[[莒|/zh-hant/maps/map-overall?lat=35.58381856&lng=118.81351928&name=Ju]]、[[即墨|/zh-hant/maps/map-overall?lat=36.7066027&lng=120.21513573&name=Jimo]]，將軍之功，踰孫武、穰苴。」晃振旅還[[摩陂|/zh-hant/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]，太祖迎晃七[[里|/zh-hant/translations/officials#glossary-li]]，置酒大會。太祖舉巵酒勸晃，且勞之曰：「全[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]、[[襄陽|/zh-hant/maps/map-overall?admin=89]]，將軍之功也。」時諸軍皆集，太祖案行諸營，士卒咸離陣觀，而晃軍營整齊，將士駐陣不動。太祖歎曰：「徐將軍可謂有周亞夫之風矣。」",
         "zhs": "太祖令曰：「贼围堑鹿角十重，将军致战全胜，遂陷贼围，多斩首虏。吾用兵三十余年，及所闻古之善用兵者，未有长驱径入敌围者也。且[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]、[[襄阳|/zh-hans/maps/map-overall?admin=89]]之在围，过于[[莒|/zh-hans/maps/map-overall?lat=35.58381856&lng=118.81351928&name=Ju]]、[[即墨|/zh-hans/maps/map-overall?lat=36.7066027&lng=120.21513573&name=Jimo]]，将军之功，逾孙武、穰苴。」晃振旅还[[摩陂|/zh-hans/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]，太祖迎晃七[[里|/zh-hans/translations/officials#glossary-li]]，置酒大会。太祖举巵酒劝晃，且劳之曰：「全[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]、[[襄阳|/zh-hans/maps/map-overall?admin=89]]，将军之功也。」时诸军皆集，太祖案行诸营，士卒咸离阵观，而晃军营整齐，将士驻阵不动。太祖叹曰：「徐将军可谓有周亚夫之风矣。」"
+      },
+      "vern": {
+        "zht": "太祖下達嘉獎令說：“敵人使用塹壕鹿角層層包圍，將軍您作戰獲得全勝，又乘勢攻進敵人的包圍圈，殺死大量敵人。我用兵三十多年，也聽說過古代善於用兵的戰例，從來也沒有長驅直入衝進敵人重重包圍而獲勝的。而且[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城、[[襄陽|/zh-hant/maps/map-overall?admin=89]]被包圍的局勢，比起春秋時的[[莒|/zh-hant/maps/map-overall?lat=35.58381856&lng=118.81351928&name=Ju]]城、[[即墨|/zh-hant/maps/map-overall?lat=36.7066027&lng=120.21513573&name=Jimo]]來要嚴重得多；所以將軍您的功勳，要超過孫武和司馬穰苴了。”徐晃整頓軍隊凱旋迴到[[摩陂|/zh-hant/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]。太祖親自出城七[[裏|/zh-hant/translations/officials#glossary-li]]迎接徐晃，設宴慶賀。又舉杯向他勸酒，慰勞他說：“保全[[樊|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城、[[襄陽|/zh-hant/maps/map-overall?admin=89]]，都是將軍您的功勞啊。”當時各路軍隊都集中到了一起。太祖巡視各營，士兵紛紛離開隊列爭着來看太祖；只有徐晃的軍營陣形整齊，全體將士站在隊列中一動不動。太祖讚歎說：“徐將軍，可以說是有名將周亞夫的風範了！”",
+        "zhs": "太祖下达嘉奖令说：“敌人使用堑壕鹿角层层包围，将军您作战获得全胜，又乘势攻进敌人的包围圈，杀死大量敌人。我用兵三十多年，也听说过古代善于用兵的战例，从来也没有长驱直入冲进敌人重重包围而获胜的。而且[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城、[[襄阳|/zh-hans/maps/map-overall?admin=89]]被包围的局势，比起春秋时的[[莒|/zh-hans/maps/map-overall?lat=35.58381856&lng=118.81351928&name=Ju]]城、[[即墨|/zh-hans/maps/map-overall?lat=36.7066027&lng=120.21513573&name=Jimo]]来要严重得多；所以将军您的功勋，要超过孙武和司马穰苴了。”徐晃整顿军队凯旋回到[[摩陂|/zh-hans/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]。太祖亲自出城七[[里|/zh-hans/translations/officials#glossary-li]]迎接徐晃，设宴庆贺。又举杯向他劝酒，慰劳他说：“保全[[樊|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]城、[[襄阳|/zh-hans/maps/map-overall?admin=89]]，都是将军您的功劳啊。”当时各路军队都集中到了一起。太祖巡视各营，士兵纷纷离开队列争着来看太祖；只有徐晃的军营阵形整齐，全体将士站在队列中一动不动。太祖赞叹说：“徐将军，可以说是有名将周亚夫的风范了！”"
       },
       "en": "Cao Cao issued an order: \"The rebels were protected by ten lines of trenches and abatis. You, General, engaged them and won a complete victory, then broke through their encirclement, killing and capturing many. In more than thirty years of commanding armies, and from all I have heard of the great commanders of antiquity, never have I known anyone drive straight into an enemy encirclement. Moreover, [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]] and [[Xiangyang|/maps/map-overall?admin=89]] were in greater peril than [[Ju|/maps/map-overall?lat=35.58381856&lng=118.81351928&name=Ju]] and [[Jimo|/maps/map-overall?lat=36.7066027&lng=120.21513573&name=Jimo]] when under siege. Your achievement, General, surpasses those of Sun Wu and Rangju.\" Xu Huang returned in triumph to [[Mo Lake|/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]. Cao Cao went seven [[Li|/translations/officials#glossary-li]] out to meet him and held a great banquet. Raising a goblet, he urged Huang to drink and commended him: \"[[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]] and [[Xiangyang|/maps/map-overall?admin=89]] were saved because of your achievement, General!\" Later, when all the armies had assembled, Cao Cao inspected each camp, and the soldiers left their ranks to watch him pass. Xu Huang's camp alone remained orderly, its officers and men standing motionless in formation. Cao Cao exclaimed, \"General Xu may truly be said to possess the spirit of Zhou Yafu.\""
     },
@@ -205,13 +1173,21 @@
         "zht": "文帝即王位，以晃為[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]，進封逯[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。及踐阼，進封[[楊|/zh-hant/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]侯。與夏侯尚討劉備於[[上庸|/zh-hant/maps/map-overall?lat=32.19396731&lng=110.13295836&name=Shangyong]]，破之。以晃鎮[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，徙封陽平侯。明帝即位，拒吳將諸葛瑾於[[襄陽|/zh-hant/maps/map-overall?admin=89]]。增邑二百，并前三千一百戶。病篤，遺令歛以時服。",
         "zhs": "文帝即王位，以晃为[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]，进封逯[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。及践阼，进封[[杨|/zh-hans/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]侯。与夏侯尚讨刘备于[[上庸|/zh-hans/maps/map-overall?lat=32.19396731&lng=110.13295836&name=Shangyong]]，破之。以晃镇[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，徙封阳平侯。明帝即位，拒吴将诸葛瑾于[[襄阳|/zh-hans/maps/map-overall?admin=89]]。增邑二百，并前三千一百户。病笃，遗令歛以时服。"
       },
-      "en": "When Emperor Wen (posthumously honoured as Emperor Wen, the Civil Emperor) succeeded as King of Wei, he appointed Xu Huang [[General of the Right|/translations/officials/military#four-direction--misc-117]] and advanced him to [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]] of Lu. After ascending the imperial throne, the emperor made him Marquis of [[Yang|/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]. Xu Huang later joined Xiahou Shang in attacking Liu Bei at [[Shangyong|/maps/map-overall?lat=32.19396731&lng=110.13295836&name=Shangyong]] and defeated him. As Xu Huang had formerly been stationed at [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]], he was transferred to become Marquis of Yangping. When Cao Rui (posthumously honoured as Emperor Ming, the Illustrious Emperor) came to the throne, Xu Huang repelled the Wu general Zhuge Jin at [[Xiangyang|/maps/map-overall?admin=89]]. His fief was increased by two hundred households, bringing the total to 3100. When gravely ill, he left instructions that he be dressed for burial in ordinary clothes."
+      "vern": {
+        "zht": "文帝曹丕即魏王位，封徐晃爲[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]，晉爵逯[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。文帝受禪稱帝后，徐晃又晉封家鄉所在的[[楊|/zh-hant/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]縣侯。同夏侯尚到[[上庸|/zh-hant/maps/map-overall?lat=32.19396731&lng=110.13295836&name=Shangyong]]討伐劉備，大破敵人。文帝命徐晃鎮守[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]縣，轉封他爲[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]侯。魏明帝即位，徐晃在[[襄陽|/zh-hant/maps/map-overall?admin=89]]抵禦吳將諸葛瑾。因功增加封邑二百戶，連同以前的共三千一百戶。徐晃生病垂危，臨死前吩咐用與時令相適應的平常衣服收殮他。",
+        "zhs": "文帝曹丕即魏王位，封徐晃为[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]，晋爵逯[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。文帝受禅称帝后，徐晃又晋封家乡所在的[[杨|/zh-hans/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]县侯。同夏侯尚到[[上庸|/zh-hans/maps/map-overall?lat=32.19396731&lng=110.13295836&name=Shangyong]]讨伐刘备，大破敌人。文帝命徐晃镇守[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]县，转封他为[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]侯。魏明帝即位，徐晃在[[襄阳|/zh-hans/maps/map-overall?admin=89]]抵御吴将诸葛瑾。因功增加封邑二百户，连同以前的共三千一百户。徐晃生病垂危，临死前吩咐用与时令相适应的平常衣服收殓他。"
+      },
+      "en": "When Emperor Wen (posthumously honoured as Emperor Wen, the Civil Emperor) succeeded as King of Wei, he appointed Xu Huang [[General of the Right|/translations/officials/military#four-direction--misc-117]] and advanced him to [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]] of Lu. After ascending the imperial throne, the emperor made him Marquis of [[Yang|/maps/map-overall?lat=36.19189797&lng=111.75657765&name=Yang]]. Xu Huang later joined Xiahou Shang in attacking Liu Bei at [[Shangyong|/maps/map-overall?lat=32.19396731&lng=110.13295836&name=Shangyong]] and defeated him. As Xu Huang had formerly been stationed at [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]], he was transferred to become Marquis of Yangping. When Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) came to the throne, Xu Huang repelled the Wu general Zhuge Jin at [[Xiangyang|/maps/map-overall?admin=89]]. His fief was increased by two hundred households, bringing the total to 3100. When gravely ill, he left instructions that he be dressed for burial in ordinary clothes."
     },
     {
       "id": "ws17e-p10",
       "orig": {
         "zht": "性儉約畏慎，將軍常遠斥候，先為不可勝，然後戰，追奔爭利，士不暇食。常歎曰：「古人患不遭明君，今幸遇之，常以功自效，何用私譽為！」終不廣交援。太和元年薨，謚曰壯侯。子蓋嗣。蓋薨，子霸嗣。明帝分晃戶，封晃子孫二人[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
         "zhs": "性俭约畏慎，将军常远斥候，先为不可胜，然后战，追奔争利，士不暇食。常叹曰：「古人患不遭明君，今幸遇之，常以功自效，何用私誉为！」终不广交援。太和元年薨，谥曰壮侯。子盖嗣。盖薨，子霸嗣。明帝分晃户，封晃子孙二人[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "vern": {
+        "zht": "徐晃爲人作風儉樸，小心謹慎。統率軍隊時總是遠遠就派出偵察兵，先造成敵人無法戰勝的形勢；然後纔開始作戰，一旦獲勝就窮追不捨，將士常常顧不上喫飯。徐晃常嘆息說：“古人顧慮遇不上英明的君主，現在幸而讓我遇到了；應該一心建功效力，哪裏能用心在個人的聲譽上呢！”始終不多交朋友。太和元年（公元 227）他去世。諡爲壯侯。他的兒子徐蓋繼承了爵位。徐蓋死後，兒子徐霸又繼承爵位。明帝從徐晃的封邑中分出一部分，封他兩個兒、孫爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "徐晃为人作风俭朴，小心谨慎。统率军队时总是远远就派出侦察兵，先造成敌人无法战胜的形势；然后才开始作战，一旦获胜就穷追不舍，将士常常顾不上吃饭。徐晃常叹息说：“古人顾虑遇不上英明的君主，现在幸而让我遇到了；应该一心建功效力，哪里能用心在个人的声誉上呢！”始终不多交朋友。太和元年（公元 227）他去世。谥为壮侯。他的儿子徐盖继承了爵位。徐盖死后，儿子徐霸又继承爵位。明帝从徐晃的封邑中分出一部分，封他两个儿、孙为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
       },
       "en": "Xu Huang was frugal and cautious by nature, and when commanding an army always sent scouts far afield, first ensuring that he could not be defeated before giving battle. In pursuing a routed enemy or pressing for an advantage, his men had no time even to eat. He often sighed, \"The men of old lamented that they did not encounter an enlightened lord. Now that I have had the good fortune to meet one, I should prove myself through achievement. What need have I of personal renown?\" To the end, he never cultivated a wide circle of allies. Xu Huang died in the first year of Taihe and was posthumously titled [[Marquis|/translations/officials#glossary-marquis]] Zhuang, the Valiant Marquis. His son Xu Gai succeeded him. When Xu Gai died, his son Xu Ba succeeded him. Emperor Ming later divided the households of Xu Huang's fief and granted two of his descendants the title of Marquis."
     },
@@ -220,6 +1196,10 @@
       "orig": {
         "zht": "初，[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]朱靈為袁紹將。太祖之征陶謙，紹使靈督三營助太祖，戰有功。紹所遣諸將各罷歸，靈曰：「靈觀人多矣，無若曹公者，此乃真明主也。今以遇，復何之？」遂留不去。所將士卒慕之，皆隨靈留。靈後遂為好將，名亞晃等，至[[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]，封高唐[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。",
         "zhs": "初，[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]朱灵为袁绍将。太祖之征陶谦，绍使灵督三营助太祖，战有功。绍所遣诸将各罢归，灵曰：「灵观人多矣，无若曹公者，此乃真明主也。今以遇，复何之？」遂留不去。所将士卒慕之，皆随灵留。灵后遂为好将，名亚晃等，至[[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]，封高唐[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。"
+      },
+      "vern": {
+        "zht": "起初，[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]郡的朱靈，在袁紹手下擔任將軍，太祖征討陶謙的時候，袁紹派朱靈統率三個營援助太祖，作戰有功。作戰結束後，袁紹派來的將領各自回去了。朱靈說：“我見到的人很多，沒有像曹公這樣傑出的，這真是英明的主上啊！既已碰上了，還要投奔誰呢？”便留下來不再離開。他所帶的將士都仰慕太祖，全跟着朱靈留下來。朱靈以後也成爲良將，名聲稍次於徐晃；官做到[[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]，封高唐侯。",
+        "zhs": "起初，[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]郡的朱灵，在袁绍手下担任将军，太祖征讨陶谦的时候，袁绍派朱灵统率三个营援助太祖，作战有功。作战结束后，袁绍派来的将领各自回去了。朱灵说：“我见到的人很多，没有像曹公这样杰出的，这真是英明的主上啊！既已碰上了，还要投奔谁呢？”便留下来不再离开。他所带的将士都仰慕太祖，全跟着朱灵留下来。朱灵以后也成为良将，名声稍次于徐晃；官做到[[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]，封高唐侯。"
       },
       "en": "Initially, Zhu Ling of [[Qinghe|/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]] served as a general under Yuan Shao. When Cao Cao campaigned against Tao Qian, Yuan Shao sent Zhu Ling to command three encampments in his support, and Zhu Ling earned merit in battle. When Yuan Shao's other generals returned, Zhu Ling said, \"I have observed many men, but none compares with Lord Cao. He is truly an enlightened lord. Now that I have found him, where else should I go?\" He therefore remained. The soldiers under his command admired him, and all stayed with him. Zhu Ling later became an able general, his reputation second only to Xu Huang and his peers. He rose to [[General of the Rear|/translations/officials/military#four-direction--misc-115]] and was enfeoffed as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Gaotang.",
       "annotations": [
@@ -236,6 +1216,10 @@
           },
           "zht": "《九州春秋》曰：初，[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]季雍以[[鄃|/zh-hant/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]叛袁紹而降公孫瓚，瓚遣兵衞之。紹遣靈攻之。靈家在城中，瓚將靈母弟置城上，誘呼靈。靈望城涕泣曰：「丈夫一出身與人，豈復顧家耶！」遂力戰拔之，生擒雍而靈家皆死。",
           "zhs": "《九州春秋》曰：初，[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]季雍以[[鄃|/zh-hans/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]叛袁绍而降公孙瓒，瓒遣兵衞之。绍遣灵攻之。灵家在城中，瓒将灵母弟置城上，诱呼灵。灵望城涕泣曰：「丈夫一出身与人，岂复顾家耶！」遂力战拔之，生擒雍而灵家皆死。",
+          "vern": {
+            "zht": "",
+            "zhs": "《九州春秋》记载：当初，清河人季雍占据鄃城背叛袁绍而归降公孙瓒，公孙瓒派兵守卫鄃城，袁绍派遣朱灵攻打鄃城，朱灵的家人在城中，公孙瓒把朱灵的母亲和弟弟安置在城墙上，引诱呼唤朱灵，朱灵望着城哭泣着说：“大丈夫一旦投身效命他人，又怎么能再顾念家人呢？”于是奋力作战，攻克了鄃城，生擒了季雍，但他的家人都死了。"
+          },
           "en": "The Annals of the Nine Provinces states: At first, Ji Yong of [[Qinghe|/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]] rebelled against Yuan Shao at [[Shu|/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]] and surrendered to Gongsun Zan; Gongsun Zan sent troops to defend him. Yuan Shao sent Zhu Ling to attack the city. Gongsun Zan had Zhu Ling's mother and younger brother placed on the city wall to call out to him, hoping to sway him. Looking towards the city, Zhu Ling wept and said, \"Once a man has pledged himself to another, how can he still think of his family?\" He then fought with all his strength and took the city, capturing Yong alive, though his entire family perished."
         },
         {
@@ -249,9 +1233,13 @@
             "zhs": "魏書 (王沈)",
             "en": "Book of Wei (Wang Chen)"
           },
-          "zht": "《魏書》曰：靈字文博。太祖旣平[[兾州|/zh-hant/maps/map-overall?admin=4]]，遣靈將新兵五千人騎千匹守許南。太祖戒之曰：「[[兾州|/zh-hant/maps/map-overall?admin=4]]新兵，數承寬緩，暫見齊整，意尚怏怏。卿名先有威嚴，善以道寬之，不然即有變。」靈至[[陽翟|/zh-hant/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]，中郎將程昂等果反，即斬昂，以狀聞。太祖手書曰：「兵中所以為危險者，外對敵國，內有姦謀不測之變。昔鄧禹中分光武軍西行，而有宗歆、馮愔之難，後將二十四騎還洛陽，禹豈以是減損哉？來書懇惻，多引咎過，未必如所云也。」\n\n文帝即位，封靈[[鄃|/zh-hant/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]侯，增其戶邑。詔曰：「將軍佐命先帝，典兵歷年，威過方、邵，功踰絳、灌。圖籍所美，何以加焉？朕受天命，帝有海內，元功之將，社稷之臣，皆朕所與同福共慶，傳之無窮者也。今封隃侯。富貴不歸故鄉，如夜行衣繡。若平常所志，願勿難言。」靈謝曰：「[[高唐|/zh-hant/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]，宿所願。」於是更封[[高唐|/zh-hant/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]侯，薨，謚曰威侯。子術嗣。",
-          "zhs": "《魏书》曰：灵字文博。太祖既平[[兾州|/zh-hans/maps/map-overall?admin=4]]，遣灵将新兵五千人骑千匹守许南。太祖戒之曰：「[[兾州|/zh-hans/maps/map-overall?admin=4]]新兵，数承宽缓，暂见齐整，意尚怏怏。卿名先有威严，善以道宽之，不然即有变。」灵至[[阳翟|/zh-hans/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]，中郎将程昂等果反，即斩昂，以状闻。太祖手书曰：「兵中所以为危险者，外对敌国，内有奸谋不测之变。昔邓禹中分光武军西行，而有宗歆、冯愔之难，后将二十四骑还洛阳，禹岂以是减损哉？来书恳恻，多引咎过，未必如所云也。」\n\n文帝即位，封灵[[鄃|/zh-hans/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]侯，增其户邑。诏曰：「将军佐命先帝，典兵历年，威过方、邵，功逾绛、灌。图籍所美，何以加焉？朕受天命，帝有海内，元功之将，社稷之臣，皆朕所与同福共庆，传之无穷者也。今封隃侯。富贵不归故乡，如夜行衣绣。若平常所志，愿勿难言。」灵谢曰：「[[高唐|/zh-hans/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]，宿所愿。」于是更封[[高唐|/zh-hans/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]侯，薨，谥曰威侯。子术嗣。",
-          "en": "The Book of Wei states: Zhu Ling's courtesy name was Wenbo. After Cao Cao had pacified [[Ji Province|/maps/map-overall?admin=4]], he sent Zhu Ling with five thousand new troops and a thousand horsemen to garrison south of Xu. Cao Cao warned him, \"The new troops from [[Ji Province|/maps/map-overall?admin=4]] have repeatedly been treated with leniency. Though they appear disciplined for now, they remain defiant at heart. You already have a reputation for severity, so manage them wisely and temper your strictness with clemency. Otherwise, they will mutiny.\" When Zhu Ling reached [[Yangdi|/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]], Gentleman General Cheng Ang and others did indeed rebel. Zhu Ling promptly beheaded Cheng Ang and reported the circumstances. Cao Cao wrote to him personally: \"What makes an army's position perilous is to face an enemy state while having unforeseen treachery within. In former times, Deng Yu led half of Emperor Guangwu's army westward, only for Zong Xin and Feng Yin to rebel. He later returned to Luoyang with just twenty-four horsemen. Did this diminish Deng Yu? Your letter is earnest and remorseful, and you repeatedly take the blame upon yourself, but matters may not be as you say.\" \n\nWhen Cao Pi ascended the throne, he enfeoffed Zhu Ling as Marquis of [[Shu|/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]] and enlarged his fief. His edict declared: \"General, you aided the Former Emperor in securing the Mandate and commanded troops for many years. Your authority surpassed that of Fang Shu and Shao Hu, and your achievements exceeded those of the Marquis of Jiang and Guan Ying. How could the praises recorded in the histories add to this? I have received Heaven's Mandate and rule all within the seas. Commanders of foremost merit and ministers who uphold the state are those with whom I share good fortune and celebration, and whose honours shall be transmitted without end. I now enfeoff you as Marquis of Shu. Yet to enjoy wealth and honour without returning to one's native place is like wearing embroidered robes by night. If there is somewhere you have long wished for, do not hesitate to say so.\" Zhu Ling replied in thanks, \"[[Gaotang|/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]] has long been my wish.\" He was then accordingly re-enfeoffed as Marquis of [[Gaotang|/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]. After his death, he received the posthumous title Marquis Wei, the Formidable Marquis. His son Zhu Shu succeeded him."
+          "zht": "《魏書》曰：靈字文博。太祖旣平[[兾州|/zh-hant/maps/map-overall?admin=4]]，遣靈將新兵五千人騎千匹守[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]南。太祖戒之曰：「[[兾州|/zh-hant/maps/map-overall?admin=4]]新兵，數承寬緩，暫見齊整，意尚怏怏。卿名先有威嚴，善以道寬之，不然即有變。」靈至[[陽翟|/zh-hant/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]，中郎將程昂等果反，即斬昂，以狀聞。太祖手書曰：「兵中所以為危險者，外對敵國，內有姦謀不測之變。昔鄧禹中分光武軍西行，而有宗歆、馮愔之難，後將二十四騎還洛陽，禹豈以是減損哉？來書懇惻，多引咎過，未必如所云也。」\n\n文帝即位，封靈[[鄃|/zh-hant/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]侯，增其戶邑。詔曰：「將軍佐命先帝，典兵歷年，威過方、邵，功踰絳、灌。圖籍所美，何以加焉？朕受天命，帝有海內，元功之將，社稷之臣，皆朕所與同福共慶，傳之無窮者也。今封[[鄃|/zh-hant/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]侯。富貴不歸故鄉，如夜行衣繡。若平常所志，願勿難言。」靈謝曰：「[[高唐|/zh-hant/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]，宿所願。」於是更封[[高唐|/zh-hant/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]侯，薨，謚曰威侯。子術嗣。",
+          "zhs": "《魏书》曰：灵字文博。太祖既平[[兾州|/zh-hans/maps/map-overall?admin=4]]，遣灵将新兵五千人骑千匹守[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]南。太祖戒之曰：「[[兾州|/zh-hans/maps/map-overall?admin=4]]新兵，数承宽缓，暂见齐整，意尚怏怏。卿名先有威严，善以道宽之，不然即有变。」灵至[[阳翟|/zh-hans/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]，中郎将程昂等果反，即斩昂，以状闻。太祖手书曰：「兵中所以为危险者，外对敌国，内有奸谋不测之变。昔邓禹中分光武军西行，而有宗歆、冯愔之难，后将二十四骑还洛阳，禹岂以是减损哉？来书恳恻，多引咎过，未必如所云也。」\n\n文帝即位，封灵[[鄃|/zh-hans/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]侯，增其户邑。诏曰：「将军佐命先帝，典兵历年，威过方、邵，功逾绛、灌。图籍所美，何以加焉？朕受天命，帝有海内，元功之将，社稷之臣，皆朕所与同福共庆，传之无穷者也。今封[[鄃|/zh-hans/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]侯。富贵不归故乡，如夜行衣绣。若平常所志，愿勿难言。」灵谢曰：「[[高唐|/zh-hans/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]，宿所愿。」于是更封[[高唐|/zh-hans/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]侯，薨，谥曰威侯。子术嗣。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏书》记载：朱灵字文博。太祖平定冀州后，派遣朱灵率领五千名新兵、一千名骑兵驻守许都以南。太祖告诫他说：“冀州的新兵，多次受到宽松的对待，刚刚被整治得整齐，心里还不一定愿意配合。你向来有威严的名声，要善于用合适的方法去安抚他们，不然就会发生变故。”朱灵到达阳翟后，中郎将程昂等人果然反叛，朱灵当即斩杀程昂，将情况上报。太祖亲自写信说：“军队中之所以危险，是因为对外要面对敌国，对内又有难以预料的奸谋叛变。从前邓禹从中分领光武帝的军队向西进发，于是遭遇了宗歆、冯愔带来的祸难。后来只带着二十四名骑兵返回，但他的名誉有所减损吗？你的来信言辞诚恳痛切，多次引咎自责，事情未必像你所说的那样。”\n\n文帝即位后，封朱灵为鄃侯，增加了他的封邑户数。诏书说：“将军辅佐先帝，掌管军队多年，威名超过方叔、召虎，功劳胜过绛侯、灌婴，史书所赞美的人，还有谁能超过将军呢！朕承受天命，统治天下，那些立下首功的将领、国家的大臣，都是朕要与之同享福禄、共同庆贺，并且将这种福泽传承至永远的人。现在封你为鄃侯，富贵了却不回故乡，就如同在夜晚穿着锦绣衣裳走路。如果你有平常所期望的事，希望不要难以开口。”朱灵拜谢说：“封在高唐是我一直以来的心愿。”于是改封他为高唐侯。他去世后，谥号为威侯。儿子朱术继承了他的爵位。"
+          },
+          "en": "The Book of Wei states: Zhu Ling's courtesy name was Wenbo. After Cao Cao had pacified [[Ji Province|/maps/map-overall?admin=4]], he sent Zhu Ling with five thousand new troops and a thousand horsemen to garrison south of [[Xu|/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]. Cao Cao warned him, \"The new troops from [[Ji Province|/maps/map-overall?admin=4]] have repeatedly been treated with leniency. Though they appear disciplined for now, they remain defiant at heart. You already have a reputation for severity, so manage them wisely and temper your strictness with clemency. Otherwise, they will mutiny.\" When Zhu Ling reached [[Yangdi|/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]], Gentleman-General Cheng Ang and others did indeed rebel. Zhu Ling promptly beheaded Cheng Ang and reported the circumstances. Cao Cao wrote to him personally: \"What makes an army's position perilous is to face an enemy state while having unforeseen treachery within. In former times, Deng Yu led half of Emperor Guangwu's army westward, only for Zong Xin and Feng Yin to rebel. He later returned to Luoyang with just twenty-four horsemen. Did this diminish Deng Yu? Your letter is earnest and remorseful, and you repeatedly take the blame upon yourself, but matters may not be as you say.\" \n\nWhen Cao Pi ascended the throne, he enfeoffed Zhu Ling as Marquis of [[Shu|/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]] and enlarged his fief. His edict declared: \"General, you aided the Former Emperor in securing the Mandate and commanded troops for many years. Your authority surpassed that of Fang Shu and Shao Hu, and your achievements exceeded those of the Marquis of Jiang and Guan Ying. How could the praises recorded in the histories add to this? I have received Heaven's Mandate and rule all within the seas. Commanders of foremost merit and ministers who uphold the state are those with whom I share good fortune and celebration, and whose honours shall be transmitted without end. I now enfeoff you as Marquis of [[Shu|/maps/map-overall?lat=36.99635407&lng=116.31260117&name=Shu]]. Yet to enjoy wealth and honour without returning to one's native place is like wearing embroidered robes by night. If there is somewhere you have long wished for, do not hesitate to say so.\" Zhu Ling replied in thanks, \"[[Gaotang|/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]] has long been my wish.\" He was then accordingly re-enfeoffed as Marquis of [[Gaotang|/maps/map-overall?lat=36.88585045&lng=116.44565861&name=Gaotang]]. After his death, he received the posthumous title Marquis Wei, the Formidable Marquis. His son Zhu Shu succeeded him."
         }
       ]
     }

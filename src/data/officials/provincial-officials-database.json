@@ -1431,6 +1431,33 @@
           "jobscope": null,
           "rank": null,
           "notes": null
+        },
+        {
+          "id": "provinces-032",
+          "displayName": {
+            "zht": "西域長史",
+            "zhs": "西域长史",
+            "en": "Chief Clerk of the Western Regions"
+          },
+          "hasMultipleNames": false,
+          "gradeNum": null,
+          "tier": "secondary",
+          "name": {
+            "wei": [
+              {
+                "zht": "西域長史",
+                "zhs": "西域长史",
+                "en": "Chief Clerk of the Western Regions"
+              }
+            ]
+          },
+          "jobscope": null,
+          "rank": null,
+          "notes": [{
+            "zht": "不見《三國職官表》，僅見於樓蘭木簡。惟涼州置，蓋依漢制行都護事，治海頭。",
+            "zhs": "不见《三国职官表》，仅见于楼兰木简。惟凉州置，盖依汉制行都护事，治海头。",
+            "en": "Not mentioned in the Records of the Three Kingdoms, only known from the Loulan bamboo slips. Only established in Liang Province, and likely followed the Han precedent, exercising the functions of the head of the protectorate. Its seat was at Haitou."
+          }]
         }
       ]
     },
@@ -2440,7 +2467,7 @@
           "displayName": {
             "zht": "文學椽",
             "zhs": "文学椽",
-            "en": "Literary Section Administrator/<br>Libationer"
+            "en": "Literary Section Administrator/Libationer"
           },
           "hasMultipleNames": true,
           "gradeNum": null,
@@ -2450,7 +2477,7 @@
               {
                 "zht": "文學椽",
                 "zhs": "文学椽",
-                "en": "Literary Section Administrator/<br>Libationer"
+                "en": "Literary Section Administrator/Libationer"
               },
               {
                 "zht": "文學祭酒",

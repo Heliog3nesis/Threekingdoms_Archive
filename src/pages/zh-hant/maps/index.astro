@@ -35,7 +35,7 @@ const tabs = ['全部', ...groupEntries.map(([, g]) => g.label)];
       <div class="page-banner-overlay"></div>
       <div class="page-header">
         <div class="page-icon">
-          <img src={url('/icon-maps.svg')} alt="" style="width: 42px; height: 42px; object-fit: contain;" />
+          <img src={url('/icon-maps.svg')} alt="" style="width: 54px; height: 54px; object-fit: contain;" />
         </div>
         <h1 class="page-title">{m.title}</h1>
         <p class="page-sub">{m.subtitle}</p>
@@ -131,7 +131,7 @@ const tabs = ['全部', ...groupEntries.map(([, g]) => g.label)];
 .page-banner { position: relative; background: var(--color-bg-secondary); }
 .page-banner-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 0; }
 .page-header { position: relative; z-index: 1; padding: 3rem 2rem 2rem; }
-.page-icon { width: 52px; height: 52px; border-radius: var(--radius-md); background: #183b62; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+.page-icon { width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
 .page-title { font-family: 'Noto Serif TC', serif; font-size: 42px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 6px; text-shadow: 0 1px 8px rgba(0,0,0,0.8); }
 .page-sub { font-size: 20px; color: rgba(255,255,255,0.75); text-shadow: 0 1px 6px rgba(0,0,0,0.7); font-family: 'LXGW WenKai', serif; }
 .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 2rem; border-bottom: 0.5px solid var(--color-border); flex-wrap: wrap; }

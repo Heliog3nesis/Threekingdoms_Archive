@@ -1,0 +1,690 @@
+{
+  "id": "wei-shu-16a",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 16,
+  "num": "16",
+  "label": {
+    "zht": "任峻傳 · 附棗祗",
+    "zhs": "任峻传 · 附枣祗",
+    "en": "Biography of Ren Jun · with Zao Zhi"
+  },
+  "title": {
+    "zht": "魏書十六 · 任峻傳 · 附棗祗",
+    "zhs": "魏书十六 · 任峻传 · 附枣祗",
+    "en": "Book of Wei, Chapter 16 · Biography of Ren Jun · with Zao Zhi"
+  },
+  "relationships": [
+    {
+      "from": "任峻（伯達）",
+      "to": "楊原",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p1",
+          "text": {
+            "en": "Ren Jun urged the fearful Magistrate of Zhongmu, Yang Yuan, to rally the counties east of the passes against Dong Zhuo instead of fleeing; Yang Yuan took his advice and made him Registrar.",
+            "zht": "中牟令楊原懼亂欲棄官逃走，任峻勸他號召關東諸縣共討董卓，楊原採納其計，任命任峻為主簿。",
+            "zhs": "中牟令杨原惧乱欲弃官逃走，任峻劝他号召关东诸县共讨董卓，杨原采纳其计，任命任峻为主簿。"
+          },
+          "title": {
+            "en": "Registrar",
+            "zht": "主簿",
+            "zhs": "主簿"
+          }
+        }
+      ]
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p2",
+          "text": {
+            "en": "When the people of Zhongmu did not know whom to follow, Ren Jun brought his whole commandery and several hundred clansmen and retainers over to Cao Cao, who was delighted, made him Commandant of Cavalry, and trusted him to guard the base and provision the army on campaign.",
+            "zht": "中牟百姓不知所從，任峻率全郡及數百宗族部曲投奔曹操，曹操大喜，任命他為騎都尉，並委以留守後方、供應軍糧之任。",
+            "zhs": "中牟百姓不知所从，任峻率全郡及数百宗族部曲投奔曹操，曹操大喜，任命他为骑都尉，并委以留守后方、供应军粮之任。"
+          },
+          "title": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          }
+        },
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Cao Cao made Ren Jun Gentleman-General Directing Agriculture; grain soon filled every granary where he served, and at Guandu he was put in charge of military equipment and supply convoys, defeating repeated enemy raids with a defensive wagon formation.",
+            "zht": "曹操任命任峻為典農中郎將，數年之間所在積粟，倉廩皆滿；官渡之戰中又督運軍資糧草，以方陣結營擊退敵軍屢次劫掠。",
+            "zhs": "曹操任命任峻为典农中郎将，数年之间所在积粟，仓廪皆满；官渡之战中又督运军资粮草，以方阵结营击退敌军屡次劫掠。"
+          },
+          "title": {
+            "en": "Gentleman-General Directing Agriculture",
+            "zht": "典農中郎將",
+            "zhs": "典农中郎将"
+          }
+        },
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "For his great achievements Cao Cao memorialised to enfeoff Ren Jun as Capital Neighbourhood Marquis and promoted him to Colonel of the Changshui Regiment, usually approving his counsel; when Ren Jun died in the ninth year of Jian'an, Cao Cao wept for him for a long while.",
+            "zht": "曹操因任峻功勳卓著，上表封他為都亭侯，遷長水校尉，其建言多被採納；建安九年任峻去世，曹操為之流涕良久。",
+            "zhs": "曹操因任峻功勋卓著，上表封他为都亭侯，迁长水校尉，其建言多被采纳；建安九年任峻去世，曹操为之流涕良久。"
+          },
+          "title": {
+            "en": "Colonel of the Changshui Regiment",
+            "zht": "長水校尉",
+            "zhs": "长水校尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "張奮",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p2",
+          "text": {
+            "en": "When the people of Zhongmu did not know whom to follow, Ren Jun alone consulted his fellow commandery native Zhang Fen, and together they brought the whole commandery over to Cao Cao.",
+            "zht": "中牟百姓不知所從，唯任峻與同郡人張奮商議，二人遂率全郡歸附曹操。",
+            "zhs": "中牟百姓不知所从，唯任峻与同郡人张奋商议，二人遂率全郡归附曹操。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹操（孟德）",
+      "to": "任峻（伯達）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p2",
+          "text": {
+            "en": "Cao Cao gave Ren Jun a younger cousin in marriage, making them kin by marriage.",
+            "zht": "曹操將族妹嫁給任峻，二人結為姻親。",
+            "zhs": "曹操将族妹嫁给任峻，二人结为姻亲。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "When Cao Pi later honoured meritorious officials, he bestowed on the late Ren Jun the posthumous title Marquis Cheng, the Accomplished Marquis.",
+            "zht": "曹丕後來追錄功臣，追諡已故的任峻為成侯。",
+            "zhs": "曹丕后来追录功臣，追谥已故的任峻为成侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "任覽",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "Cao Pi enfeoffed Ren Jun's second son, Ren Lan, as Marquis Within the Pass.",
+            "zht": "曹丕封任峻次子任覽為關內侯。",
+            "zhs": "曹丕封任峻次子任览为关内侯。"
+          },
+          "title": {
+            "en": "Marquis Within the Pass",
+            "zht": "關內侯",
+            "zhs": "关内侯"
+          }
+        }
+      ]
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "任先",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "Ren Jun's son Ren Xian succeeded him but died without an heir, and the marquisate was abolished.",
+            "zht": "任峻之子任先襲爵，去世後無嗣，封國被廢除。",
+            "zhs": "任峻之子任先袭爵，去世后无嗣，封国被废除。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "任覽",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "Ren Jun's second son, Ren Lan, was later enfeoffed as Marquis Within the Pass.",
+            "zht": "任峻次子任覽後來被封為關內侯。",
+            "zhs": "任峻次子任览后来被封为关内侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "棗祗",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Zhi joined Cao Cao in raising righteous troops, stayed loyal when Yuan Shao tried to win him over, held Dong'a for Cao Cao during Lü Bu's revolt, and pressed his agricultural-colony scheme against doubt until Cao Cao adopted it and made him Commandant Directing Agriculture; that year brought a great harvest.",
+            "zht": "棗祗追隨曹操舉義兵，袁紹欲羅致而始終不改，呂布叛亂時固守東阿，又力排眾議推行屯田，曹操終採納其策，任為典農都尉，當年即獲大豐收。",
+            "zhs": "枣祗追随曹操举义兵，袁绍欲罗致而始终不改，吕布叛乱时固守东阿，又力排众议推行屯田，曹操终采纳其策，任为典农都尉，当年即获大丰收。"
+          },
+          "title": {
+            "en": "Commandant Directing Agriculture",
+            "zht": "典農都尉",
+            "zhs": "典农都尉"
+          }
+        },
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "After Zao Zhi died young, Cao Cao issued an order acknowledging that his posthumous honours had not matched his merit, and granting his son Chuzhong a rank and fief so that sacrifices to him could continue.",
+            "zht": "棗祗早逝後，曹操下令承認對他的追贈不足以酬其功，並封其子處中為侯，使祭祀得以延續。",
+            "zhs": "枣祗早逝后，曹操下令承认对他的追赠不足以酬其功，并封其子处中为侯，使祭祀得以延续。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "棗祗",
+      "to": "棗處中",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Cao Cao granted Zao Zhi's son Chuzhong a nobility rank and fief so that sacrifices to his father could continue in perpetuity.",
+            "zht": "曹操封棗祗之子處中爵位與封邑，使其父祭祀永不斷絕。",
+            "zhs": "曹操封枣祗之子处中爵位与封邑，使其父祭祀永不断绝。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "棗祗",
+      "to": "棗據（道彥）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "A note on the Zao family records that Zao Zhi's grandson Zao Ju, courtesy name Daoyan, served under Jin as Inspector of Ji Province.",
+            "zht": "有註記載棗祗之孫棗據，字道彥，仕晉為冀州刺史。",
+            "zhs": "有注记载枣祗之孙枣据，字道彦，仕晋为冀州刺史。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "棗據（道彥）",
+      "to": "棗嵩（臺產）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Ju's son Zao Song, courtesy name Taichan, was Cavalier Regular Attendant.",
+            "zht": "棗據之子棗嵩，字臺產，官至散騎常侍。",
+            "zhs": "枣据之子枣嵩，字台产，官至散骑常侍。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "棗據（道彥）",
+      "to": "棗腆（玄方）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Ju's son Zao Tian, courtesy name Xuanfang, was Grand Administrator of Xiangcheng.",
+            "zht": "棗據之子棗腆，字玄方，官至襄城太守。",
+            "zhs": "枣据之子枣腆，字玄方，官至襄城太守。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "棗嵩（臺產）",
+      "to": "棗腆（玄方）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Song and Zao Tian were brothers, both known for their talent and writings.",
+            "zht": "棗嵩與棗腆為兄弟，皆以才學文章聞名。",
+            "zhs": "枣嵩与枣腆为兄弟，皆以才学文章闻名。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "荀彧（文若）",
+      "to": "棗祗",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Unsure of Zao Zhi's levy proposal, Cao Cao sent him to discuss it with Xun Yu; doubts were raised, but Zao Zhi remained confident and returned to present his calculations.",
+            "zht": "曹操對棗祗的租牛徵谷之議猶豫，派他與荀彧商議；雖有疑慮，棗祗仍堅信己見，歸而陳述其計算與方案。",
+            "zhs": "曹操对枣祗的租牛征谷之议犹豫，派他与荀彧商议；虽有疑虑，枣祗仍坚信己见，归而陈述其计算与方案。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "侯聲",
+      "to": "荀彧（文若）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Military Libationer Hou Sheng argued that Zao Zhi's proposal benefited the government at the tenants' expense, and his arguments made Xun Yu doubt it.",
+            "zht": "軍祭酒侯聲認為棗祗之議利官而不利佃戶，其說使荀彧對此議產生疑慮。",
+            "zhs": "军祭酒侯声认为枣祗之议利官而不利佃户，其说使荀彧对此议产生疑虑。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "侯聲",
+      "to": "棗祗",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Hou Sheng opposed Zao Zhi's proposal to levy grain in proportion to the harvest, until Zao Zhi's calculations won Cao Cao over.",
+            "zht": "侯聲反對棗祗按收成徵糧之議，直至棗祗的計算說服曹操。",
+            "zhs": "侯声反对枣祗按收成征粮之议，直至枣祗的计算说服曹操。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "任峻（伯達）",
+      "name": {
+        "en": "Ren Jun",
+        "zht": "任峻",
+        "zhs": "任峻"
+      },
+      "courtesyName": {
+        "en": "Boda",
+        "zht": "伯達",
+        "zhs": "伯达"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "Jian'an ninth year",
+          "zht": "建安九年",
+          "zhs": "建安九年"
+        },
+        "year": 204
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhongmu, Henan",
+              "zht": "河南中牟",
+              "zhs": "河南中牟"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Chuping",
+            "zht": "初平元年",
+            "zhs": "初平元年"
+          },
+          "year": 190,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhongmu",
+              "zht": "中牟",
+              "zhs": "中牟"
+            }
+          ],
+          "position": [
+            {
+              "en": "Registrar",
+              "zht": "主簿",
+              "zhs": "主簿"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Jian'an",
+            "zht": "建安元年",
+            "zhs": "建安元年"
+          },
+          "year": 196,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Gentleman-General Directing Agriculture",
+              "zht": "典農中郎將",
+              "zhs": "典农中郎将"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            },
+            {
+              "en": "Colonel of the Changshui Regiment",
+              "zht": "長水校尉",
+              "zhs": "长水校尉"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    },
+    {
+      "person": "棗祗",
+      "name": {
+        "en": "Zao Zhi",
+        "zht": "棗祗",
+        "zhs": "枣祗"
+      },
+      "courtesyName": {
+        "en": "",
+        "zht": "",
+        "zhs": ""
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "After 1st year of Jian'an",
+          "zht": "建安元年後",
+          "zhs": "建安元年后"
+        },
+        "year": ">196"
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Changshe",
+              "zht": "長社",
+              "zhs": "长社"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "3rd year of Chuping - 2nd year of Xingping",
+            "zht": "初平三年 - 興平二年",
+            "zhs": "初平三年 - 兴平二年"
+          },
+          "year": "192 - 195",
+          "age": null,
+          "location": [
+            {
+              "en": "Dong'a",
+              "zht": "東阿",
+              "zhs": "东阿"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Jian'an",
+            "zht": "建安元年",
+            "zhs": "建安元年"
+          },
+          "year": 196,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Superintendent of the Feathered Forest",
+              "zht": "羽林監",
+              "zhs": "羽林监"
+            },
+            {
+              "en": "Commandant Directing Agriculture",
+              "zht": "屯田都尉",
+              "zhs": "屯田都尉"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Posthumously Grand Administrator",
+              "zht": "追贈太守",
+              "zhs": "追贈太守"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws16a-p1",
+      "orig": {
+        "zht": "任峻字伯達，[[河南中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]人也。漢末擾亂，[[關東|/zh-hant/translations/officials#glossary-east-of-the-pass-guandong]]皆震。[[中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]][[令|/zh-hant/translations/officials/regional#counties-088]]楊原愁恐，欲棄官走。峻說原曰：「董卓首亂，天下莫不側目，然而未有先發者，非無其心也，勢未敢耳。明府若能唱之，必有和者。」原曰：「為之柰何？」峻曰：「今關東有十餘縣，能勝兵者不減萬人，若權行[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]事，總而用之，無不濟矣。」原從其計，以峻為[[主簿|/zh-hant/translations/officials/regional#commanderies-051]]。",
+        "zhs": "任峻字伯达，[[河南中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]人也。汉末扰乱，关东皆震。[[中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]][[令|/zh-hans/translations/officials/regional#counties-088]]杨原愁恐，欲弃官走。峻说原曰：「董卓首乱，天下莫不侧目，然而未有先发者，非无其心也，势未敢耳。明府若能唱之，必有和者。」原曰：「为之柰何？」峻曰：「今关东有十余县，能胜兵者不减万人，若权行[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]事，总而用之，无不济矣。」原从其计，以峻为[[主簿|/zh-hans/translations/officials/regional#commanderies-051]]。"
+      },
+      "vern": {
+        "zht": "任峻，字伯達，[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]][[中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]縣人。漢朝末年天下大亂，關東地區社會動盪；[[中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]縣[[令|/zh-hant/translations/officials/regional#counties-088]]楊原憂愁恐懼，打算棄官逃走。任峻勸他說：“董卓帶頭作亂，天下人沒有不怨恨他的，然而至今還不見有人發出倡議討伐他；這倒不是沒有這種想法，而是不敢帶這個頭。您如果出來發出倡議，一定會有響應的。”楊原問：“具體怎麼辦呢？”任峻說：“現在關東有十多個縣，加起來能調動上萬壯丁打仗。如果您暫時行使[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]的權力，把他們集中起來調遣，沒有辦不成的事。”楊原聽從了任峻的計策，任命他爲[[主簿|/zh-hant/translations/officials/regional#commanderies-051]]。",
+        "zhs": "任峻，字伯达，[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]][[中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]县人。汉朝末年天下大乱，关东地区社会动荡；[[中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]县[[令|/zh-hans/translations/officials/regional#counties-088]]杨原忧愁恐惧，打算弃官逃走。任峻劝他说：“董卓带头作乱，天下人没有不怨恨他的，然而至今还不见有人发出倡议讨伐他；这倒不是没有这种想法，而是不敢带这个头。您如果出来发出倡议，一定会有响应的。”杨原问：“具体怎么办呢？”任峻说：“现在关东有十多个县，加起来能调动上万壮丁打仗。如果您暂时行使[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]的权力，把他们集中起来调遣，没有办不成的事。”杨原听从了任峻的计策，任命他为[[主簿|/zh-hans/translations/officials/regional#commanderies-051]]。"
+      },
+      "en": "Ren Jun, courtesy name Boda, was from [[Zhongmu, Henan|/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]. As the Han declined into turmoil, all [[East of the Pass|/translations/officials#glossary-east-of-the-pass-guandong]]was shaken. Yang Yuan, the [[County Magistrate|/translations/officials/regional#counties-088]] of [[Zhongmu|/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]], grew fearful and wished to abandon his office and flee. Ren Jun urged him: \"Dong Zhuo was the first to sow disorder. All under Heaven loathe him, yet no one has taken the lead against him. This is not for lack of resolve, but because circumstances have not permitted it. If Your Honour raises the call, others will surely answer.\" Yang Yuan asked, \"How should this be done?\" Ren Jun replied, \"There are now more than ten counties east of the passes, with no fewer than ten thousand men fit to bear arms. If you provisionally assume the duties of the [[Intendant of Henan|/translations/officials/regional#commanderies-032]] and muster them under your command, nothing will be beyond your power.\" Yang Yuan heeded the advice and appointed Ren Jun as his [[Registrar|/translations/officials/regional#commanderies-051]]."
+    },
+    {
+      "id": "ws16a-p2",
+      "orig": {
+        "zht": "峻乃為原表行[[尹|/zh-hant/translations/officials/regional#commanderies-032]]事，使諸縣堅守，遂發兵。會太祖起關東，入[[中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]界，衆不知所從，峻獨與同郡張奮議，舉郡以歸太祖。峻又別收宗族及賔客家兵數百人，願從太祖。太祖大恱，表峻為[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]，妻以從妹，甚見親信。太祖每征伐，峻常居守以給軍。",
+        "zhs": "峻乃为原表行[[尹|/zh-hans/translations/officials/regional#commanderies-032]]事，使诸县坚守，遂发兵。会太祖起关东，入[[中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]界，众不知所从，峻独与同郡张奋议，举郡以归太祖。峻又别收宗族及賔客家兵数百人，愿从太祖。太祖大恱，表峻为[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]，妻以从妹，甚见亲信。太祖每征伐，峻常居守以给军。"
+      },
+      "vern": {
+        "zht": "任峻便替楊原上表發佈關於自己代理河南[[尹|/zh-hant/translations/officials/regional#commanderies-032]]的文告，讓各縣堅守自己的轄地，並且發兵征討董卓。正趕上太祖曹操在關東起兵，進入[[中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]縣界；當地人不知道該跟隨誰。只有任峻與同郡的張奮商議，率領全河南郡的人服從太祖。任峻另外又召集自己宗族、門客以及家兵一共幾百人，表示願意跟隨太祖作戰。太祖非常高興，上表請求任命任峻爲[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]；並將自己的堂妹嫁給他，對他十分信任。太祖每次出征，常常讓任峻留在後方，供給部隊軍糧。",
+        "zhs": "任峻便替杨原上表发布关于自己代理河南[[尹|/zh-hans/translations/officials/regional#commanderies-032]]的文告，让各县坚守自己的辖地，并且发兵征讨董卓。正赶上太祖曹操在关东起兵，进入[[中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]县界；当地人不知道该跟随谁。只有任峻与同郡的张奋商议，率领全河南郡的人服从太祖。任峻另外又召集自己宗族、门客以及家兵一共几百人，表示愿意跟随太祖作战。太祖非常高兴，上表请求任命任峻为[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]；并将自己的堂妹嫁给他，对他十分信任。太祖每次出征，常常让任峻留在后方，供给部队军粮。"
+      },
+      "en": "Ren Jun then submitted a memorial on Yang Yuan's behalf, proposing that he act as [[Intendant of Henan|/translations/officials/regional#commanderies-032]]. Ren Jun then ordered the various counties to hold firm and raised troops. When Cao Cao (posthumously honoured as the Grand Progenitor) rose east of the passes and entered the territory of [[Zhongmu|/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]], the people did not know whom to follow. Ren Jun alone consulted Zhang Fen, a fellow native of the commandery, and brought the entire commandery over to Cao Cao. He also gathered several hundred clansmen, retainers, and household troops, and pledged allegiance to Cao Cao. Cao Cao was delighted. He memorialised Ren Jun as [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]], gave him a younger cousin in marriage, and placed great trust in him. Whenever Cao Cao went on campaign, Ren Jun remained behind to guard the base and provision the army."
+    },
+    {
+      "id": "ws16a-p3",
+      "orig": {
+        "zht": "是時歲饑旱，軍食不足，[[羽林監|/zh-hant/translations/officials/ministers#-nine-ministers-i-171]][[潁川|/zh-hant/maps/map-overall?admin=31]]棗祗建置屯田，太祖以峻為[[典農中郎將|/zh-hant/translations/officials/ministers#-nine-ministers-iii-240]]，數年中所在積粟，倉廩皆滿。[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]之戰，太祖使峻典軍器糧運。賊數寇鈔絕糧道，乃使千乘為一部，十道方行，為複陳以營衞之，賊不敢近。軍國之饒，起於棗祗而成於峻。",
+        "zhs": "是时岁饥旱，军食不足，[[羽林监|/zh-hans/translations/officials/ministers#-nine-ministers-i-171]][[颍川|/zh-hans/maps/map-overall?admin=31]]枣祗建置屯田，太祖以峻为[[典农中郎将|/zh-hans/translations/officials/ministers#-nine-ministers-iii-240]]，数年中所在积粟，仓廪皆满。[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]之战，太祖使峻典军器粮运。贼数寇钞绝粮道，乃使千乘为一部，十道方行，为复陈以营衞之，贼不敢近。军国之饶，起于枣祗而成于峻。"
+      },
+      "vern": {
+        "zht": "當時連年乾旱饑荒，軍糧缺乏；擔任[[羽林監|/zh-hant/translations/officials/ministers#-nine-ministers-i-171]]的[[潁川|/zh-hant/maps/map-overall?admin=31]]郡人棗祗建議推行屯田制度。太祖就任命任峻爲[[典農中郎將|/zh-hant/translations/officials/ministers#-nine-ministers-iii-240]]，招募百姓在許縣一帶屯田，收穫糧食上百萬斛；此後各郡都設置了屯田官員。幾年間，各屯田區都儲備了糧食，倉庫全部堆滿。[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]之戰，太祖命任峻掌管軍用器械和糧食的運輸。敵人幾次偷襲，截斷了糧道；任峻便以一千輛糧車爲一部，列成十路方隊；又佈置層次重複的陣形在外面護衛糧車，敵人不敢靠近。軍隊國庫之所以能糧食充足，這個大功勞起源於棗祗而完成於任峻。",
+        "zhs": "当时连年干旱饥荒，军粮缺乏；担任[[羽林监|/zh-hans/translations/officials/ministers#-nine-ministers-i-171]]的[[颍川|/zh-hans/maps/map-overall?admin=31]]郡人枣祗建议推行屯田制度。太祖就任命任峻为[[典农中郎将|/zh-hans/translations/officials/ministers#-nine-ministers-iii-240]]，招募百姓在许县一带屯田，收获粮食上百万斛；此后各郡都设置了屯田官员。几年间，各屯田区都储备了粮食，仓库全部堆满。[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]之战，太祖命任峻掌管军用器械和粮食的运输。敌人几次偷袭，截断了粮道；任峻便以一千辆粮车为一部，列成十路方队；又布置层次重复的阵形在外面护卫粮车，敌人不敢靠近。军队国库之所以能粮食充足，这个大功劳起源于枣祗而完成于任峻。"
+      },
+      "en": "At the time, famine and drought had left the army short of provisions. Zao Zhi of [[Yingchuan|/maps/map-overall?admin=31]], [[Superintendent of the Feathered Forest|/translations/officials/ministers#-nine-ministers-i-171]], proposed establishing agricultural colonies. Cao Cao appointed Ren Jun [[Gentleman-General Directing Agriculture|/translations/officials/ministers#-nine-ministers-iii-240]]. Within a few years, grain accumulated wherever he served, and every granary was full. During the battle of [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]], Cao Cao placed Ren Jun in charge of military equipment and the transport of provisions. The enemy repeatedly raided the convoys and cut the supply routes. Ren Jun therefore grouped the wagons into units of a thousand, advancing ten abreast, and enclosed them within a two-layered defensive formation. The enemy dared not approach. The abundance that sustained both the army and the state began with Zao Zhi and was brought to fruition by Ren Jun.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏武故事",
+            "zhs": "魏武故事",
+            "en": "Wei Wu Gushi (Stories of the Martial Emperor of Wei)"
+          },
+          "zht": "《魏武故事》載令曰：「故[[陳留|/zh-hant/maps/map-overall?admin=39]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]棗祗，天性忠能。始共舉義兵，周旋征討。後袁紹在[[兾州|/zh-hant/maps/map-overall?admin=4]]，亦貪祗，欲得之。祗深附託於孤，使領[[東阿|/zh-hant/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]][[令|/zh-hant/translations/officials/regional#counties-088]]。呂布之亂，[[兖州|/zh-hant/maps/map-overall?admin=11]]皆叛，惟[[范|/zh-hant/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]]、[[東阿|/zh-hant/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]完在，由祗以兵據城之力也。後大軍糧乏，得[[東阿|/zh-hant/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]以繼，祗之功也。及破黃巾定許，得賊資業。當興立屯田，時議者皆言當計牛輸穀，佃科以定。施行後，祗白以為僦牛輸穀，大收不增穀，有水旱災除，大不便。\n\n反覆來說，孤猶以為當如故，大收不可復改易。祗猶執之，孤不知所從，使與荀令君議之。時故[[軍祭酒|/zh-hant/translations/officials/ministers#superior-excellency-003]]侯聲云：『科取官牛，為官田計。如祗議，於官便，於客不便。』聲懷此云云，以疑令君。祗猶自信，據計畫還白，執分田之術。孤乃然之，使為[[屯田都尉|/zh-hant/translations/officials/ministers#-nine-ministers-iii-244]]，施設田業。其時歲則大收，後遂因此大田，豐足軍用，摧滅羣逆，克定天下，以隆王室。祗興其功，不幸早沒，追贈以郡，猶未副之。今重思之，祗宜受封，稽留至今，孤之過也。祗子處中，宜加封爵，以祀祗為不朽之事。」",
+          "zhs": "《魏武故事》载令曰：「故[[陈留|/zh-hans/maps/map-overall?admin=39]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]枣祗，天性忠能。始共举义兵，周旋征讨。后袁绍在[[兾州|/zh-hans/maps/map-overall?admin=4]]，亦贪祗，欲得之。祗深附托于孤，使领[[东阿|/zh-hans/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]][[令|/zh-hans/translations/officials/regional#counties-088]]。吕布之乱，[[兖州|/zh-hans/maps/map-overall?admin=11]]皆叛，惟[[范|/zh-hans/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]]、[[东阿|/zh-hans/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]完在，由祗以兵据城之力也。后大军粮乏，得[[东阿|/zh-hans/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]以继，祗之功也。及破黄巾定许，得贼资业。当兴立屯田，时议者皆言当计牛输谷，佃科以定。施行后，祗白以为僦牛输谷，大收不增谷，有水旱灾除，大不便。\n\n反复来说，孤犹以为当如故，大收不可复改易。祗犹执之，孤不知所从，使与荀令君议之。时故[[军祭酒|/zh-hans/translations/officials/ministers#superior-excellency-003]]侯声云：『科取官牛，为官田计。如祗议，于官便，于客不便。』声怀此云云，以疑令君。祗犹自信，据计划还白，执分田之术。孤乃然之，使为[[屯田都尉|/zh-hans/translations/officials/ministers#-nine-ministers-iii-244]]，施设田业。其时岁则大收，后遂因此大田，丰足军用，摧灭群逆，克定天下，以隆王室。祗兴其功，不幸早没，追赠以郡，犹未副之。今重思之，祗宜受封，稽留至今，孤之过也。祗子处中，宜加封爵，以祀祗为不朽之事。」",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏武故事》记载曹操的命令说：已故的陈留太守枣祗，天性忠诚且有才能，当初和我一同兴起义兵，辗转征战。后来袁绍在冀州，也贪图枣祗，想要得到他。枣祗深深地归附于我，我让他担任东阿县令。吕布叛乱时，兖州各郡县都背叛了我，只有范县和东阿两城得以保全，这是因为枣祗带兵据守城池的功劳。后来大军粮食匮乏，得到东阿县的粮食接济，这是枣祗的功劳。等到击败黄巾军，平定许昌，缴获了敌军的物资产业，应当兴办屯田。当时参与商议的人都说应当按照耕牛的数量缴纳谷物，把佃租的科条确定下来然后施行。后来枣祗进言，认为租用耕牛缴纳谷物的方式，丰收时不增加谷物缴纳量，遇到水旱灾时极为不便。反复来说，我还是认为应当像过去一样大规模征收粮食，不可再更改。枣祗仍然坚持自己的意见，我不知该听从谁的，便让他和荀令君商议这件事。当时原来的军祭酒侯声说按规定收取官牛，为官府的田地打算，按照枣祗的建议，对官府有利，对佃客不利。侯声怀着这样的看法说了这些话，使荀令君产生疑虑。枣祗依然自信地依据计划，回来报告，坚持采用分田的办法，我于是同意了他的建议，任命他为屯田都尉，施行屯田事务，当年就获得了大丰收，后来就因此扩大屯田，使军队的物资供应充足，消灭了各路逆贼，平定了天下，使王室兴盛。枣祗建立了这项功劳，不幸过早去世，追赠他为郡守，仍然不能与他的功劳相称。现在我重新思考这件事，枣祗应当接受封赐，这件事却拖延到了现在，这是我的过错。枣祗的儿子处中，应该加封爵位，来祭祀祗，成为不朽的事情。"
+          },
+          "en": "The Wei Wu Gushi (Stories of the Martial Emperor of Wei) records the following order: \"The late [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Chenliu State|/maps/map-overall?admin=39]], Zao Zhi, was loyal and capable by nature. At the outset, he joined me in raising righteous troops and took part in the ensuing campaigns. Later, when Yuan Shao occupied [[Ji Province|/maps/map-overall?admin=4]], he too coveted Zao Zhi's services and sought to obtain him. But Zao Zhi remained steadfastly attached to me, and I appointed him [[County Magistrate|/translations/officials/regional#counties-088]] of [[Dong'a|/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]. During Lü Bu's rebellion, all of [[Yan Province|/maps/map-overall?admin=11]] revolted. Only [[Fan|/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]] and [[Dong'a|/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]] remained secure, owing to Zao Zhi's strength in holding the city with his troops. When the main army later ran short of provisions, supplies from [[Dong'a|/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]] sustained it. This too was Zao Zhi's achievement. After we defeated the Yellow Turbans and secured Xu, we acquired many of the rebels' property and resources. When we sought to establish agricultural colonies with these gains, the prevailing view was that grain dues should be assessed by the number of oxen used, with fixed levies on the cultivators. Once this was put into practice, Zao Zhi reported that under a system of hiring oxen and paying grain, the government gained no additional grain in a bumper harvest, yet had to grant exemptions after floods or droughts. It was therefore highly disadvantageous. \n\nHe argued the matter repeatedly, but I still believed the existing system should be retained and that, after a great harvest, it ought not to be altered again. Zao Zhi nevertheless persisted. Unsure what course to take, I sent him to discuss the matter with Director Xun (Xun Yu). At the time, the late [[Military Libationer|/translations/officials/ministers#superior-excellency-003]] Hou Sheng said, 'Those who receive government oxen should be assessed as cultivating government fields. Zao Zhi's proposal benefits the government but disadvantages the tenants.' Hou Sheng's arguments made Director Xun doubt the proposal. Zao Zhi remained confident. He returned, presented his calculations and plans, and continued to advocate for levies assessed in proportion to the harvest. I then accepted his view and made him [[Commandant Directing Agriculture|/translations/officials/ministers#-nine-ministers-iii-244]], with responsibility for establishing the agricultural colonies. That very year brought a great harvest. Thereafter, cultivation was greatly expanded under this system. It provided ample supplies for the army, enabling us to crush the host of rebels, bring the realm under control, and strengthen the royal house. Zao Zhi laid the foundations for this achievement, but unfortunately died young. Though I posthumously honoured him as a commandery administrator, the reward still could not match his merit. On reconsidering the matter, Zao Zhi ought to have received an enfeoffment. That it has been delayed until now is my fault. His son Chuzhong should be granted a nobility rank and fief, so that sacrifices to Zao Zhi may continue in perpetuity.\""
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "文士傳",
+            "zhs": "文士传",
+            "en": "Biographies of Scholars"
+          },
+          "zht": "《文士傳》曰：祗本姓棘，先人避難，易為棗。孫據，字道彥，晉[[兾州|/zh-hant/maps/map-overall?admin=4]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。據子嵩，字臺產，[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]。並有才名，多所著述。嵩兄腆，字玄方，[[襄城|/zh-hant/maps/map-overall?lat=33.85307611&lng=113.48689015&name=Xiangcheng]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，亦有文采。",
+          "zhs": "《文士传》曰：祗本姓棘，先人避难，易为枣。孙据，字道彦，晋[[兾州|/zh-hans/maps/map-overall?admin=4]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。据子嵩，字台产，[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]。并有才名，多所著述。嵩兄腆，字玄方，[[襄城|/zh-hans/maps/map-overall?lat=33.85307611&lng=113.48689015&name=Xiangcheng]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，亦有文采。",
+          "vern": {
+            "zht": "",
+            "zhs": "《文士传》记载：枣祗原本姓棘，他的祖先为躲避灾祸，将姓氏改为枣。他的孙子枣据，字道彦，是晋朝冀州刺史。枣据的儿子枣嵩，字台产，担任散骑常侍，他们都因才能而有名声，写了很多著作。枣嵩的兄长枣腆，字玄方，担任襄阳太守，也很有文采。"
+          },
+          "en": "The Biographies of Scholars states: \"Zao Zhi was originally surnamed Ji. His ancestors changed the surname to Zao to escape calamity. His grandson Zao Ju, courtesy name Daoyan, served under the Jin as [[Inspector|/translations/officials/regional#provinces-014]] of [[Ji Province|/maps/map-overall?admin=4]]. Ju's son Zao Song, courtesy name Taichan, was [[Cavalier Regular Attendant|/translations/officials/departments#chancellery-013]]. Both were renowned for their talent and wrote extensively. Zao Song's elder brother Zao Tian, courtesy name Xuanfang, was [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Xiangcheng|/maps/map-overall?lat=33.85307611&lng=113.48689015&name=Xiangcheng]] and also possessed literary talent.\""
+        }
+      ]
+    },
+    {
+      "id": "ws16a-p4",
+      "orig": {
+        "zht": "太祖以峻功高，乃表封為[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百戶，遷[[長水校尉|/zh-hant/translations/officials/military#central-army-014]]。峻寬厚有度而見事理，每有所陳，太祖多善之。於饑荒之際，收卹朋友孤遺，中外貧宗，周急繼乏，信義見稱。建安九年薨，太祖流涕者乆之。子先嗣。先薨，無子，國除。文帝追錄功臣，謚峻曰成侯。復以峻中子覽為[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
+        "zhs": "太祖以峻功高，乃表封为[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百户，迁[[长水校尉|/zh-hans/translations/officials/military#central-army-014]]。峻宽厚有度而见事理，每有所陈，太祖多善之。于饥荒之际，收恤朋友孤遗，中外贫宗，周急继乏，信义见称。建安九年薨，太祖流涕者乆之。子先嗣。先薨，无子，国除。文帝追录功臣，谥峻曰成侯。复以峻中子览为[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
+      },
+      "vern": {
+        "zht": "因爲任峻功高，太祖上表請求封他爲[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，封邑三百戶，又升任[[長水校尉|/zh-hant/translations/officials/military#central-army-014]]。任峻待人寬厚有度量，通曉事理；每次提出建議，太祖總是很滿意。在饑荒的年代，他收養撫卹朋友死後留下的妻子兒女，周濟貧困的中表親戚，人們都稱讚他爲人有信用和義氣。建安九年（公元 204），任峻去世。太祖爲他的死長時間流淚哭泣。他的兒子任先繼承了他的爵位。任先沒有兒子，死後，封地撤銷。後來魏文帝追封功臣，追諡任峻爲成侯，又賜封任峻的次子任覽爲[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
+        "zhs": "因为任峻功高，太祖上表请求封他为[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，封邑三百户，又升任[[长水校尉|/zh-hans/translations/officials/military#central-army-014]]。任峻待人宽厚有度量，通晓事理；每次提出建议，太祖总是很满意。在饥荒的年代，他收养抚恤朋友死后留下的妻子儿女，周济贫困的中表亲戚，人们都称赞他为人有信用和义气。建安九年（公元 204），任峻去世。太祖为他的死长时间流泪哭泣。他的儿子任先继承了他的爵位。任先没有儿子，死后，封地撤销。后来魏文帝追封功臣，追谥任峻为成侯，又赐封任峻的次子任览为[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
+      },
+      "en": "In recognition of Ren Jun's great achievements, Cao Cao memorialised to enfeoff him as [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]], with three hundred taxable households, and promoted him to [[Colonel of the Changshui Regiment|/translations/officials/military#central-army-014]]. Ren Jun was generous and magnanimous, with sound judgement and a keen understanding of affairs. Whenever he offered counsel, Cao Cao usually approved it. During times of famine, he took in and supported the orphaned children and the impoverished among his friends and kinsmen, both close and distant, relieving those in urgent need and providing for the destitute. He was renowned for his trustworthiness and righteousness. Ren Jun died in the ninth year of Jian'an. Cao Cao wept for him for a long while. His son Ren Xian succeeded him, but died without an heir, and the marquisate was abolished. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) later honoured meritorious officials, he bestowed on Ren Jun the posthumous title Marquis Cheng, the Accomplished Marquis. Ren Jun's second son, Ren Lan, was also enfeoffed as [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]."
+    }
+  ]
+}

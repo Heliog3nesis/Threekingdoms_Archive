@@ -20,28 +20,79 @@
   },
   "relationships": [
     {
-      "from": "樂進（文謙）",
-      "to": "太祖",
-      "type": "lord-vassal",
-      "passageId": "ws17b-p1"
+      "from": "樂進（文謙）", "to": "曹操（孟德）", "type": "service", "polarity": "positive", "directed": true,
+      "notes": [
+        { "passageId": "ws17b-p1", "text": {
+          "en": "Bold and valiant despite his short stature, Yue Jin entered Cao Cao's service as a clerk Under the Tent; sent to recruit troops, he raised over a thousand men and was made Acting Major and Commandant Who Breaks Formations.",
+          "zht": "樂進雖然身材短小，卻憑着勇敢無畏投身太祖麾下，任帳下吏；奉命招募士兵得千餘人，升任軍中司馬之副、陷陣都尉。",
+          "zhs": "乐进虽然身材短小，却凭着勇敢无畏投身太祖麾下，任帐下吏；奉命招募士兵得千余人，升任军中司马之副、陷阵都尉。" } },
+        { "passageId": "ws17b-p3", "text": {
+          "en": "Cao Cao memorialised the emperor praising Yue Jin's martial prowess, loyalty, and leadership in battle, and appointed him General Who Breaks the Charge.",
+          "zht": "曹操上表漢帝，稱讚樂進武力弘毅、忠信守節、每戰身先士卒，任命他爲折衝將軍。",
+          "zhs": "曹操上表汉帝，称赞乐进武力弘毅、忠信守节、每战身先士卒，任命他为折冲将军。" },
+          "title": { "en": "General Who Breaks the Charge", "zht": "折衝將軍", "zhs": "折冲将军" } },
+        { "passageId": "ws17b-p5", "text": {
+          "en": "For his repeated merit, Cao Cao granted Yue Jin the Imperial Tally, increased his fief, enfeoffed one of his sons as a marquis, and promoted him to General of the Right.",
+          "zht": "因樂進屢立戰功，太祖授予他節杖，增加封邑，封他一子爲列侯，並升任他爲右將軍。",
+          "zhs": "因乐进屡立战功，太祖授予他节杖，增加封邑，封他一子为列侯，并升任他为右将军。" },
+          "title": { "en": "General of the Right", "zht": "右將軍", "zhs": "右将军" } }
+      ]
     },
     {
-      "from": "樂進（文謙）",
-      "to": "樂綝",
-      "type": "father-son",
-      "passageId": "ws17b-p6"
+      "from": "樂進（文謙）", "to": "樂綝", "type": "kinship", "polarity": "neutral", "directed": true,
+      "notes": [{ "passageId": "ws17b-p6", "text": {
+        "en": "Yue Jin's son Yue Chen, resolute like his father, succeeded him and rose to become Inspector of Yang Province.",
+        "zht": "樂進之子樂綝繼承爵位，果敢剛毅有父風，官至揚州刺史。",
+        "zhs": "乐进之子乐綝继承爵位，果敢刚毅有父风，官至扬州刺史。" } }]
     },
     {
-      "from": "樂綝",
-      "to": "樂肇",
-      "type": "father-son",
-      "passageId": "ws17b-p6"
+      "from": "樂綝", "to": "樂肇", "type": "kinship", "polarity": "neutral", "directed": true,
+      "notes": [{ "passageId": "ws17b-p6", "text": {
+        "en": "After Yue Chen was killed in Zhuge Dan's rebellion, his son Yue Zhao succeeded him.",
+        "zht": "樂綝在諸葛誕叛亂中被殺後，其子樂肇繼承爵位。",
+        "zhs": "乐綝在诸葛诞叛乱中被杀后，其子乐肇继承爵位。" } }]
     },
     {
-      "from": "曹操",
-      "to": "樂進",
-      "type": "commander-subordinate",
-      "passageId": "ws17b-p3"
+      "from": "樂進（文謙）", "to": "于禁（文則）", "type": "colleagues", "polarity": "positive", "directed": false,
+      "notes": [{ "passageId": "ws17b-p3", "text": {
+        "en": "Cao Cao's memorial to the emperor commended Yue Jin together with Yu Jin and Zhang Liao for their shared martial prowess, loyalty, and battlefield leadership, and all three were honoured with new titles.",
+        "zht": "曹操上表漢帝，將樂進與于禁、張遼一併稱讚爲武力弘毅、忠信守節之將，三人同時獲授新職。",
+        "zhs": "曹操上表汉帝，将乐进与于禁、张辽一并称赞为武力弘毅、忠信守节之将，三人同时获授新职。" } }]
+    },
+    {
+      "from": "樂進（文謙）", "to": "高幹（元才）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17b-p4", "text": {
+        "en": "Sent to campaign separately against Gao Gan, Yue Jin circled behind his lines and fought him in successive engagements at Huguan, though the stronghold fell only once Cao Cao came in person.",
+        "zht": "樂進奉命征討高幹，迂迴至其後方，在壺關與其連番交戰，然壺關直至太祖親征才被攻破。",
+        "zhs": "乐进奉命征讨高幹，迂回至其后方，在壶关与其连番交战，然壶关直至太祖亲征才被攻破。" } }]
+    },
+    {
+      "from": "樂進（文謙）", "to": "管承", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17b-p4", "text": {
+        "en": "Yue Jin and Li Dian defeated Guan Cheng, who fled to an offshore island, allowing the coast to be pacified.",
+        "zht": "樂進與李典擊敗管承，管承逃往海島，海濱一帶因而平定。",
+        "zhs": "乐进与李典击败管承，管承逃往海岛，海滨一带因而平定。" } }]
+    },
+    {
+      "from": "樂進（文謙）", "to": "淳于瓊（仲簡）", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17b-p2", "text": {
+        "en": "At the Battle of Guandu, Yue Jin fought fiercely and slew Yuan Shao's general Chunyu Qiong.",
+        "zht": "官渡之戰中，樂進奮力作戰，斬殺袁紹大將淳于瓊。",
+        "zhs": "官渡之战中，乐进奋力作战，斩杀袁绍大将淳于琼。" } }]
+    },
+    {
+      "from": "樂進（文謙）", "to": "嚴敬", "type": "personal", "polarity": "negative", "directed": true,
+      "notes": [{ "passageId": "ws17b-p2", "text": {
+        "en": "During the campaign against Yuan Tan and Yuan Shang at Liyang, Yue Jin slew their general Yan Jing.",
+        "zht": "在黎陽攻打袁譚、袁尚的戰役中，樂進斬殺其大將嚴敬。",
+        "zhs": "在黎阳攻打袁谭、袁尚的战役中，乐进斩杀其大将严敬。" } }]
+    },
+    {
+      "from": "樂進（文謙）", "to": "關羽（雲長）", "type": "personal", "polarity": "negative", "directed": false,
+      "notes": [{ "passageId": "ws17b-p4", "text": {
+        "en": "While garrisoning Xiangyang after the pacification of Jing Province, Yue Jin attacked and routed Guan Yu.",
+        "zht": "荊州平定後，樂進留守襄陽，出擊關羽，將其擊退。",
+        "zhs": "荆州平定后，乐进留守襄阳，出击关羽，将其击退。" } }]
     }
   ],
   "journeyOverviews": [
@@ -63,13 +114,13 @@
         "zhs": "不详"
       },
       "died": {
-        "era":{
-        "en": "23rd year of Jian'an",
-        "zht": "建安二十三年",
-        "zhs": "建安二十三年"}
-      ,
-      "year": 218
-    },
+        "era": {
+          "en": "23rd year of Jian'an",
+          "zht": "建安二十三年",
+          "zhs": "建安二十三年"
+        },
+        "year": 218
+      },
       "stops": [
         {
           "era": {
@@ -385,6 +436,10 @@
         "zht": "樂進字文謙，[[陽平衛國|/zh-hant/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]人也。容貌短小，以膽烈從太祖，為帳下吏。遣還本郡募兵，得千餘人，還為軍[[假|/zh-hant/translations/officials#glossary-acting]][[司馬|/zh-hant/translations/officials/regional#commanderies-044]]、陷陣都尉。",
         "zhs": "乐进字文谦，[[阳平衛国|/zh-hans/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]人也。容貌短小，以胆烈从太祖，为帐下吏。遣还本郡募兵，得千余人，还为军[[假|/zh-hans/translations/officials#glossary-acting]][[司马|/zh-hans/translations/officials/regional#commanderies-044]]、陷阵都尉。"
       },
+      "vern": {
+        "zht": "樂進，字文謙，[[陽平郡衛國縣|/zh-hant/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]人。他身材短小，憑着勇敢無畏跟隨太祖曹操，擔任帳下一名吏員。太祖派他回本郡招募士兵，得到一千多人；回來後擔任軍中[[司馬|/zh-hant/translations/officials/regional#commanderies-044]]的副手、陷陣都尉。",
+        "zhs": "乐进，字文谦，[[阳平郡卫国县|/zh-hans/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]人。他身材短小，凭着勇敢无畏跟随太祖曹操，担任帐下一名吏员。太祖派他回本郡招募士兵，得到一千多人；回来后担任军中[[司马|/zh-hans/translations/officials/regional#commanderies-044]]的副手、陷阵都尉。"
+      },
       "en": "Yue Jin, courtesy name Wenqian, was from [[Weiguo, Yangping|/maps/map-overall?lat=35.89049997&lng=115.1439955&name=Weiguo]]. Though short in stature, he was bold and valiant, and entered the service of Cao Cao (posthumously honoured as the Grand Progenitor) as a clerk Under the Tent. Sent back to his home commandery to recruit troops, he raised more than a thousand men. On his return, he was appointed [[Acting|/translations/officials#glossary-acting]] [[Major|/translations/officials/regional#commanderies-044]] of the army and Commandant Who Breaks Formations."
     },
     {
@@ -392,6 +447,10 @@
       "orig": {
         "zht": "從擊呂布於[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，張超於[[雍丘|/zh-hant/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]]，橋蕤於[[苦|/zh-hant/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]，皆先登有功，封廣昌[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。從征張繡於[[安衆|/zh-hant/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]]，圍呂布於[[下邳|/zh-hant/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]，破別將，擊眭固於[[射犬|/zh-hant/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]，攻劉備於[[沛|/zh-hant/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]]，皆破之，拜討寇校尉。渡河攻[[獲嘉|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Huojia]]，還，從擊袁紹於[[官渡|/zh-hant/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Guandu]]，力戰，斬紹將淳于瓊。從擊譚、尚於[[黎陽|/zh-hant/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，斬其大將嚴敬，[[行|/zh-hant/translations/officials?lat=35.68354088&lng=114.58305267]][[游擊將軍|/zh-hant/translations/officials/military#four-direction--misc-134]]。別擊黃巾，破之，定[[樂安郡|/zh-hant/maps/map-overall?admin=47]]。從圍[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]定，從擊袁譚於[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，先登，入譚東門。譚敗，別攻[[雍奴|/zh-hant/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]，破之。",
         "zhs": "从击吕布于[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，张超于[[雍丘|/zh-hans/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]]，桥蕤于[[苦|/zh-hans/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]，皆先登有功，封广昌[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。从征张绣于[[安众|/zh-hans/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]]，围吕布于[[下邳|/zh-hans/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]，破别将，击眭固于[[射犬|/zh-hans/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]，攻刘备于[[沛|/zh-hans/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]]，皆破之，拜讨寇校尉。渡河攻[[获嘉|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Huojia]]，还，从击袁绍于[[官渡|/zh-hans/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Guandu]]，力战，斩绍将淳于琼。从击谭、尚于[[黎阳|/zh-hans/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]，斩其大将严敬，[[行|/zh-hans/translations/officials?lat=35.68354088&lng=114.58305267]][[游击将军|/zh-hans/translations/officials/military#four-direction--misc-134]]。别击黄巾，破之，定[[乐安郡|/zh-hans/maps/map-overall?admin=47]]。从围[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]定，从击袁谭于[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，先登，入谭东门。谭败，别攻[[雍奴|/zh-hans/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]，破之。"
+      },
+      "vern": {
+        "zht": "隨太祖到[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]攻打呂布，到[[雍丘|/zh-hant/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]]縣攻打張超，到[[苦|/zh-hant/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]縣攻打橋蕤；都因率先衝殺立下戰功，被封爲廣昌[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。又跟隨太祖在[[安衆|/zh-hant/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]]縣討伐張繡；在[[下邳|/zh-hant/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]縣包圍呂布，打敗了呂布手下的另一支部隊。又在[[射犬|/zh-hant/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]攻打眭固，到[[沛|/zh-hant/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]]縣攻擊劉備；都獲得勝利，被任命爲討寇校尉。又渡過黃河攻打[[獲嘉|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Huojia]]縣。回軍後，隨太祖在[[官渡|/zh-hant/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Guandu]]迎擊袁紹；樂進奮力作戰，殺死袁紹的大將淳于瓊。此後他又隨同太祖在[[黎陽|/zh-hant/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]攻擊袁譚、袁尚兄弟，斬了袁軍大將嚴敬，代理[[游擊將軍|/zh-hant/translations/officials/military#four-direction--misc-134]]職務。領兵攻打黃巾軍，他又大獲全勝，平定了[[樂安郡|/zh-hant/maps/map-overall?admin=47]]。跟隨太祖包圍[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]縣。[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]縣平定後，又隨太祖赴[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]縣攻打袁譚；樂進率先衝擊，攻進東門。袁譚被打敗以後，樂進單獨率兵攻破[[雍奴|/zh-hant/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]城。",
+        "zhs": "随太祖到[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]攻打吕布，到[[雍丘|/zh-hans/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]]县攻打张超，到[[苦|/zh-hans/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]县攻打桥蕤；都因率先冲杀立下战功，被封为广昌[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。又跟随太祖在[[安众|/zh-hans/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]]县讨伐张绣；在[[下邳|/zh-hans/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]县包围吕布，打败了吕布手下的另一支部队。又在[[射犬|/zh-hans/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]]攻打眭固，到[[沛|/zh-hans/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]]县攻击刘备；都获得胜利，被任命为讨寇校尉。又渡过黄河攻打[[获嘉|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Huojia]]县。回军后，随太祖在[[官渡|/zh-hans/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Guandu]]迎击袁绍；乐进奋力作战，杀死袁绍的大将淳于琼。此后他又随同太祖在[[黎阳|/zh-hans/maps/map-overall?lat=35.68541005&lng=114.60606513&name=Liyang]]攻击袁谭、袁尚兄弟，斩了袁军大将严敬，代理[[游击将军|/zh-hans/translations/officials/military#four-direction--misc-134]]职务。领兵攻打黄巾军，他又大获全胜，平定了[[乐安郡|/zh-hans/maps/map-overall?admin=47]]。跟随太祖包围[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]县。[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]县平定后，又随太祖赴[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]县攻打袁谭；乐进率先冲击，攻进东门。袁谭被打败以后，乐进单独率兵攻破[[雍奴|/zh-hans/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]城。"
       },
       "en": "Yue Jin took part in the attacks on Lü Bu at [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]], Zhang Chao at [[Yongqiu|/maps/map-overall?lat=34.54667428&lng=114.77166289&name=Yongqiu]], and Qiao Rui at [[Ku|/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]. In each campaign, he led the assault and earned merit, and was enfeoffed as Guangchang [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. He then took part in the campaign against Zhang Xiu at [[Anzhong|/maps/map-overall?lat=32.728607&lng=112.23096914&name=Anzhong]] and the siege of Lü Bu at [[Xiapi|/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]], where he defeated one of Lü Bu's generals. He also attacked Sui Gu at [[Shequan|/maps/map-overall?lat=35.16733518&lng=113.32487537&name=Shequan]] and Liu Bei at [[Pei|/maps/map-overall?lat=34.71830803&lng=116.96290964&name=Pei]], defeating them both, and was appointed Commandant Who Suppresses Bandits. Yue Jin later crossed the [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]llow River and attacked [[Huojia|/maps/map-overall?lat=35.28689031&lng=113.79111676&name=Huojia]], then returned and took part in the attack on Yuan Shao at [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]. There he fought fiercely and slew Yuan Shao's general Chunyu Qiong. He then took part in the attack on Yuan Tan and Yuan Shang at [[Liyang|/maps/map-overall?lat=35.68354088&lng=114.58305267&name=Liyang]], slew their general Yan Jing, and was appointed [[Acting|/translations/officials#glossary-acting]] [[General of the Mobile Forces|/translations/officials/military#four-direction--misc-134]]. Separately, he also attacked and defeated the [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]llow Turbans, pacifying [[Le'an Commandery|/maps/map-overall?admin=47&lat=36.29000818&lng=114.3635467]] . He then took part in the siege of Ye. Once Ye had fallen, Yue Jin joined the attack on Yuan Tan at [[Nanpi|/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]], where he was the first over the walls and entered through Yuan Tan's eastern gate. After Yuan Tan's defeat, Yue Jin went on to independently attack and capture [[Yongnu|/maps/map-overall?lat=39.60865164&lng=117.05461025&name=Yongnu]]."
     },
@@ -401,13 +460,21 @@
         "zht": "建安十一年，太祖表漢帝，稱進及于禁、張遼曰：「武力旣弘，計略周備，質忠信一，守執節義，每臨戰攻，常為督率，奮彊突固，無堅不陷，自援枹鼓，手不知倦。又遣別征，統御師旅，撫衆則和，奉令無犯，當敵制決，靡有遺失。論功紀用，宜各顯寵。」於是禁為[[虎威|/zh-hant/translations/officials/military#four-direction--misc-145]]；進，[[折衝|/zh-hant/translations/officials/military#four-direction--misc-149]]；遼，[[盪寇將軍|/zh-hant/translations/officials/military#four-direction--misc-153]]。",
         "zhs": "建安十一年，太祖表汉帝，称进及于禁、张辽曰：「武力既弘，计略周备，质忠信一，守执节义，每临战攻，常为督率，奋彊突固，无坚不陷，自援枹鼓，手不知倦。又遣别征，统御师旅，抚众则和，奉令无犯，当敌制决，靡有遗失。论功纪用，宜各显宠。」于是禁为[[虎威|/zh-hans/translations/officials/military#four-direction--misc-145]]；进，[[折冲|/zh-hans/translations/officials/military#four-direction--misc-149]]；辽，[[荡寇将军|/zh-hans/translations/officials/military#four-direction--misc-153]]。"
       },
+      "vern": {
+        "zht": "建安十一年（公元 206），曹操上表給漢獻帝，稱讚樂進和于禁、張遼說：“武力強大，計謀周全；品性忠誠專一，堅守高尚節操；每次征戰，身先士卒；奮勇衝鋒，無堅不摧；親自擂鼓指揮，從來不會疲倦。凡是單獨領兵征討，統率部下；全軍團結，紀律嚴明；臨敵決策，從無失誤：評定功勞記載貢獻，他們都應該受到提升信任。”於是任命于禁爲[[虎威|/zh-hant/translations/officials/military#four-direction--misc-145]]將軍，樂進爲[[折衝|/zh-hant/translations/officials/military#four-direction--misc-149]]將軍，張遼爲[[蕩寇將軍|/zh-hant/translations/officials/military#four-direction--misc-153]]。",
+        "zhs": "建安十一年（公元 206），曹操上表给汉献帝，称赞乐进和于禁、张辽说：“武力强大，计谋周全；品性忠诚专一，坚守高尚节操；每次征战，身先士卒；奋勇冲锋，无坚不摧；亲自擂鼓指挥，从来不会疲倦。凡是单独领兵征讨，统率部下；全军团结，纪律严明；临敌决策，从无失误：评定功劳记载贡献，他们都应该受到提升信任。”于是任命于禁为[[虎威|/zh-hans/translations/officials/military#four-direction--misc-145]]将军，乐进为[[折冲|/zh-hans/translations/officials/military#four-direction--misc-149]]将军，张辽为[[荡寇将军|/zh-hans/translations/officials/military#four-direction--misc-153]]。"
+      },
       "en": "In the eleventh year of Jian'an, Cao Cao submitted a memorial to the Han emperor praising Yue Jin, Yu Jin, and Zhang Liao: \"Their martial prowess is great and their strategies comprehensive. Loyal and trustworthy by nature, they steadfastly uphold honour and righteousness. In every battle and assault, they lead the troops, breaking strong forces and storming fortified positions. No stronghold can withstand them. They take up the drumsticks themselves, and their hands never tire. When sent on separate campaigns, they command their armies ably. They keep the troops in harmony, obey every order without transgression, and make sound decisions against the enemy without error. Their merits should be recognised and each of them conspicuously honoured.\" Yu Jin was accordingly appointed [[Mighty Tiger General|/translations/officials/military#four-direction--misc-145]]; Yue Jin, [[General Who Breaks the Charge|/translations/officials/military#four-direction--misc-149]]; and Zhang Liao, [[General Who Sweeps the Bandits|/translations/officials/military#four-direction--misc-153]]."
     },
     {
       "id": "ws17b-p4",
       "orig": {
         "zht": "進別征高幹，從北道入[[上黨|/zh-hant/maps/map-overall?admin=17]]，回出其後。幹等還守[[壺關|/zh-hant/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，連戰斬首。幹堅守未下，會太祖自征之，乃拔。太祖征管承，軍[[淳于|/zh-hant/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]，遣進與李典擊之。承破走，逃入海島，海濵平，[[荊州|/zh-hant/maps/map-overall?admin=2]]未服，遣屯[[陽翟|/zh-hant/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]。後從平[[荊州|/zh-hant/maps/map-overall?admin=2]]，留屯[[襄陽|/zh-hant/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]，擊關羽、蘇非等，皆走之，[[南郡|/zh-hant/maps/map-overall?admin=80]]諸縣山谷蠻夷詣進降。",
-        "zhs": "进别征高干，从北道入[[上党|/zh-hans/maps/map-overall?admin=17]]，回出其后。干等还守[[壶关|/zh-hans/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，连战斩首。干坚守未下，会太祖自征之，乃拔。太祖征管承，军[[淳于|/zh-hans/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]，遣进与李典击之。承破走，逃入海岛，海濵平，[[荆州|/zh-hans/maps/map-overall?admin=2]]未服，遣屯[[阳翟|/zh-hans/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]。后从平[[荆州|/zh-hans/maps/map-overall?admin=2]]，留屯[[襄阳|/zh-hans/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]，击关羽、苏非等，皆走之，[[南郡|/zh-hans/maps/map-overall?admin=80]]诸县山谷蛮夷诣进降。"
+        "zhs": "进别征高幹，从北道入[[上党|/zh-hans/maps/map-overall?admin=17]]，回出其后。干等还守[[壶关|/zh-hans/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，连战斩首。干坚守未下，会太祖自征之，乃拔。太祖征管承，军[[淳于|/zh-hans/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]，遣进与李典击之。承破走，逃入海岛，海濵平，[[荆州|/zh-hans/maps/map-overall?admin=2]]未服，遣屯[[阳翟|/zh-hans/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]。后从平[[荆州|/zh-hans/maps/map-overall?admin=2]]，留屯[[襄阳|/zh-hans/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]，击关羽、苏非等，皆走之，[[南郡|/zh-hans/maps/map-overall?admin=80]]诸县山谷蛮夷诣进降。"
+      },
+      "vern": {
+        "zht": "樂進受命領兵征剿高幹，從北路進入[[上黨|/zh-hant/maps/map-overall?admin=17]]郡，迂迴到敵後。高幹退守[[壺關|/zh-hant/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，樂進連續作戰，大量殺傷敵人。高幹堅守[[壺關|/zh-hant/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，未能攻破；碰上太祖親自前來助戰，才攻破了[[壺關|/zh-hant/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]。太祖征討管承，在[[淳于|/zh-hant/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]駐軍。派樂進和李典進攻，管承被擊敗逃往海島，海濱一帶得以平定。[[荊州|/zh-hant/maps/map-overall?admin=2]]還沒有臣服，太祖派樂進在[[陽翟|/zh-hant/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]縣駐紮。此後，他又隨太祖平定[[荊州|/zh-hant/maps/map-overall?admin=2]]，留守[[襄陽|/zh-hant/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]；同關羽、蘇非等人作戰，把他們都擊敗，[[南郡|/zh-hant/maps/map-overall?admin=80]]各縣山中的少數族，都來投降。",
+        "zhs": "乐进受命领兵征剿高幹，从北路进入[[上党|/zh-hans/maps/map-overall?admin=17]]郡，迂回到敌后。高幹退守[[壶关|/zh-hans/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，乐进连续作战，大量杀伤敌人。高幹坚守[[壶关|/zh-hans/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]，未能攻破；碰上太祖亲自前来助战，才攻破了[[壶关|/zh-hans/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]。太祖征讨管承，在[[淳于|/zh-hans/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]]驻军。派乐进和李典进攻，管承被击败逃往海岛，海滨一带得以平定。[[荆州|/zh-hans/maps/map-overall?admin=2]]还没有臣服，太祖派乐进在[[阳翟|/zh-hans/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]县驻扎。此后，他又随太祖平定[[荆州|/zh-hans/maps/map-overall?admin=2]]，留守[[襄阳|/zh-hans/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]；同关羽、苏非等人作战，把他们都击败，[[南郡|/zh-hans/maps/map-overall?admin=80]]各县山中的少数族，都来投降。"
       },
       "en": "Yue Jin then campaigned separately against Gao Gan, entering [[Shangdang|/maps/map-overall?admin=17]] by the northern route and circling round to his rear. Gao Gan and his men turned back to defend [[Huguan|/maps/map-overall?lat=36.34516886&lng=113.10383412&name=Huguan]]. Yue Jin fought them in successive engagements, and took many enemy heads. Gao Gan held out and Huguan could not be taken, but when Cao Cao came to campaign against him in person, it fell. When Cao Cao campaigned against Guan Cheng, he encamped at [[Chunyu|/maps/map-overall?lat=36.53315404&lng=119.31988812&name=Chunyu]] and sent Yue Jin and Li Dian to attack Guan Cheng. Guan Cheng was defeated and fled to offshore islands, and the coast was pacified. As [[Jing Province|/maps/map-overall?admin=2]] had not yet submitted, Yue Jin was sent to garrison [[Yangdi|/maps/map-overall?lat=34.14679273&lng=113.48608338&name=Yangdi]]. He later took part in the pacification of [[Jing Province|/maps/map-overall?admin=2]] and remained to garrison [[Xiangyang|/maps/map-overall?lat=32.00162374&lng=112.14985623&name=Xiangyang]]. Yue Jin then attacked Guan Yu, Su Fei, and the others, putting them all to flight. The Man and Yi peoples of the mountain valleys throughout [[Nan Commandery|/maps/map-overall?admin=80]] then came to Yue Jin and surrendered."
     },
@@ -417,6 +484,10 @@
         "zht": "又討劉備[[臨沮|/zh-hant/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]][[長|/zh-hant/translations/officials/regional?lat=31.18934355&lng=111.53402839]]杜普、[[旌陽|/zh-hant/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]][[長|/zh-hant/translations/officials/regional#counties-089]]梁大，皆大破之。後從征孫權，[[假進節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。太祖還，留進與張遼、李典屯[[合肥|/zh-hant/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]，增邑五百，并前凡千二百戶。以進數有功，分五百戶，封一子[[列侯|/zh-hant/translations/officials#glossary-marquis]]；進遷[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]。",
         "zhs": "又讨刘备[[临沮|/zh-hans/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]][[长|/zh-hans/translations/officials/regional?lat=31.18934355&lng=111.53402839]]杜普、[[旌阳|/zh-hans/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]][[长|/zh-hans/translations/officials/regional#counties-089]]梁大，皆大破之。后从征孙权，[[假进节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。太祖还，留进与张辽、李典屯[[合肥|/zh-hans/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]，增邑五百，并前凡千二百户。以进数有功，分五百户，封一子[[列侯|/zh-hans/translations/officials#glossary-marquis]]；进迁[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]。"
       },
+      "vern": {
+        "zht": "又奉命討伐劉備委派的[[臨沮|/zh-hant/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]]縣[[長|/zh-hant/translations/officials/regional?lat=31.18934355&lng=111.53402839]]杜普、[[旌陽|/zh-hant/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]]縣[[長|/zh-hant/translations/officials/regional?lat=31.18934355&lng=111.53402839]]梁大，都大獲全勝。以後，他跟隨太祖征討孫權，樂進被朝廷授予節杖。太祖回去後，留下樂進和張遼、李典鎮守[[合肥|/zh-hant/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]。增加了他的食邑五百戶，連同以前的共一千二百戶。由於樂進多次立功，又從他的封邑中分出五百戶，封他的一個兒子爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]；樂進本人，則升任[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]。",
+        "zhs": "又奉命讨伐刘备委派的[[临沮|/zh-hans/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]]县[[长|/zh-hans/translations/officials/regional?lat=31.18934355&lng=111.53402839]]杜普、[[旌阳|/zh-hans/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]]县[[长|/zh-hans/translations/officials/regional?lat=31.18934355&lng=111.53402839]]梁大，都大获全胜。以后，他跟随太祖征讨孙权，乐进被朝廷授予节杖。太祖回去后，留下乐进和张辽、李典镇守[[合肥|/zh-hans/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]。增加了他的食邑五百户，连同以前的共一千二百户。由于乐进多次立功，又从他的封邑中分出五百户，封他的一个儿子为[[列侯|/zh-hans/translations/officials#glossary-marquis]]；乐进本人，则升任[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]。"
+      },
       "en": "Yue Jin also attacked Du Pu, Liu Bei's [[County Chief|/translations/officials/regional?lat=31.18934355&lng=111.53402839]] of [[Linju|/maps/map-overall?lat=31.18934355&lng=111.53402839&name=Linju]], and Liang Da, Liu Bei's [[County Chief|/translations/officials/regional#counties-089]] of [[Jingyang|/maps/map-overall?lat=30.62661269&lng=111.94001809&name=Jingyang]], decisively defeating both. He later took part in the campaign against Sun Quan and was appointed [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. When Cao Cao returned, he left Yue Jin with Zhang Liao and Li Dian to garrison [[Hefei|/maps/map-overall?lat=31.92537649&lng=117.12596313&name=Hefei]]. Yue Jin's fief was increased by five hundred households, bringing the total to twelve hundred. Later, as Yue Jin had repeatedly earned merit, five hundred households were divided from his fief to enfeoff one of his sons as a [[Marquis|/translations/officials#glossary-marquis]], and he was also promoted to [[General of the Right|/translations/officials/military#four-direction--misc-117]]."
     },
     {
@@ -424,6 +495,10 @@
       "orig": {
         "zht": "建安二十三年薨，謚曰威侯。子綝嗣。綝果毅有父風，官至[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。諸葛誕反，掩襲殺綝，詔悼惜之，追贈[[衞尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-196]]，謚曰愍侯。子肇嗣。",
         "zhs": "建安二十三年薨，谥曰威侯。子𬘭嗣。𬘭果毅有父风，官至[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。诸葛诞反，掩袭杀𬘭，诏悼惜之，追赠[[衞尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-196]]，谥曰愍侯。子肇嗣。"
+      },
+      "vern": {
+        "zht": "樂進在建安二十三年（公元 218）去世，諡爲威侯。他的兒子樂綝繼承爵位。樂綝果敢剛毅，有他父親的風範，官做到[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。諸葛誕謀反的時候，突然襲擊樂綝，殺死了他。朝廷下詔表示痛惜，追贈他衛尉的官銜，諡爲愍侯。他的兒子樂肇繼承爵位。",
+        "zhs": "乐进在建安二十三年（公元 218）去世，谥为威侯。他的儿子乐綝继承爵位。乐綝果敢刚毅，有他父亲的风范，官做到[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。诸葛诞谋反的时候，突然袭击乐綝，杀死了他。朝廷下诏表示痛惜，追赠他卫尉的官衔，谥为愍侯。他的儿子乐肇继承爵位。"
       },
       "en": "In the twenty-third year of Jian'an, Yue Jin died and received the posthumous title Marquis Wei, the Formidable Marquis. His son Yue Chen succeeded him. Resolute and courageous, Yue Chen had his father's bearing and rose to become [[Inspector|/translations/officials/regional#provinces-014]] of [[Yang Province|/maps/map-overall?admin=9]]. When Zhuge Dan rebelled, he took Yue Chen by surprise and killed him. An imperial edict lamented the loss of Yue Chen, posthumously appointing him [[Commandant of the Guards|/translations/officials/ministers#-nine-ministers-i-196]] and granting him the title Marquis Min, the Lamentable Marquis. His son Yue Zhao succeeded him."
     }

@@ -1,0 +1,1207 @@
+---
+// Relationships page: a per-chapter "mind map" of the people in a chapter and how they relate,
+// with a narrow search column on the right. Shared by the en / zh-hans / zh-hant pages
+// (src/pages/**/translations/sanguozhi/relationships.astro), which only pass `lang`.
+//
+// Data (read at build time, nothing is fetched):
+//   - src/data/sgz/*.json  -> only chapters whose relationships use the new shape
+//                             { from, to, type, polarity, directed, ancestral?, notes:[{passageId,text}] }
+//   - src/data/persons.json -> the people registry (names in zht / zhs / en, courtesy names, aliases)
+// See scripts/validate-relationships.mjs for the format and the direction convention.
+import Base from '../layouts/Base.astro';
+import Nav from './Nav.astro';
+import ContactModal from './Contactmodal.astro';
+import persons from '../data/persons.json';
+import { t } from '../i18n/index.js';
+import { url } from '../utils/url';
+
+const { lang = 'en' } = Astro.props as { lang?: 'en' | 'zh-hans' | 'zh-hant' };
+const strings = t(lang);
+const prefix = lang === 'en' ? '' : `/${lang}`;
+const chapterBase = url(`${prefix}/translations/sanguozhi`);
+const mapBase = url(`${prefix}/maps/map-overall`);
+
+const TEXT_TITLE = { en: 'Records of the Three Kingdoms', 'zh-hans': '三国志', 'zh-hant': '三國志' }[lang];
+
+// UI text for this page (kept here rather than in src/i18n so the page is self-contained)
+const UI = {
+  en: {
+    title: 'Relationships', translations: strings.nav.translations, readChapter: 'Read the chapter', readChapters: 'Read the chapters', chapter: 'Chapter',
+    search: 'Search a person…', people: 'People', relations: 'relationships', noMatch: 'No one matches.',
+    hint: 'Click a person or a line for details. Drag to move, scroll to zoom.',
+    legendTypes: 'Type', legendTone: 'Polarity', showAncestors: 'Show ancestors', notes: 'Notes', seePassage: 'See biography', appointmentsUnder: 'Appointments under {lord} include:',
+    arrowNote: 'Arrows point to the receiver — the child, the lord served, the person killed, praised or taught, or the successor.',
+    courtesy: 'Courtesy name', ancestral: 'Ancestor (not a contemporary)', close: 'Close', fit: 'Fit', zoomIn: 'Zoom in', zoomOut: 'Zoom out', journey: 'Show life journey',
+    types: { kinship: 'Kinship', personal: 'Friends & Foes', colleagues: 'Colleagues', service: 'Allegiance & Defiance' },
+    tones: { positive: 'Positive', neutral: 'Neutral', negative: 'Negative', mixed: 'Mixed' },
+    directed: 'directed', undirected: 'mutual', explore: 'Explore relationships', showRel: 'Show relationships',
+  },
+  'zh-hans': {
+    title: '人物关系', translations: strings.nav.translations, readChapter: '阅读原文', readChapters: '阅读各篇章', chapter: '篇章',
+    search: '搜索人物…', people: '人物', relations: '条关系', noMatch: '没有匹配的人物。',
+    hint: '点击人物或连线查看详情；拖动可移动，滚轮可缩放。',
+    legendTypes: '类型', legendTone: '倾向', showAncestors: '显示先祖', notes: '说明', seePassage: '查看人物传记', appointmentsUnder: '在{lord}麾下曾任：',
+    arrowNote: '箭头指向子女、所效忠的主公、被杀、被称誉或被教导的人，或继任者。',
+    courtesy: '字', ancestral: '先祖（非同时代人）', close: '关闭', fit: '适应窗口', zoomIn: '放大', zoomOut: '缩小', journey: '查看足迹',
+    types: { kinship: '亲族', personal: '私交', colleagues: '同僚', service: '统属' },
+    tones: { positive: '正面', neutral: '中性', negative: '负面', mixed: '毁誉参半' },
+    directed: '有方向', undirected: '双向', explore: '人物关系', showRel: '查看人物关系',
+  },
+  'zh-hant': {
+    title: '人物關係', translations: strings.nav.translations, readChapter: '閱讀原文', readChapters: '閱讀各篇章', chapter: '篇章',
+    search: '搜尋人物…', people: '人物', relations: '條關係', noMatch: '沒有符合的人物。',
+    hint: '點擊人物或連線查看詳情；拖動可移動，滾輪可縮放。',
+    legendTypes: '類型', legendTone: '傾向', showAncestors: '顯示先祖', notes: '說明', seePassage: '查看人物傳記', appointmentsUnder: '在{lord}麾下曾任：',
+    arrowNote: '箭頭指向子女、所效忠的主公、被殺、被稱譽或被教導的人，或繼任者。',
+    courtesy: '字', ancestral: '先祖（非同時代人）', close: '關閉', fit: '適應視窗', zoomIn: '放大', zoomOut: '縮小', journey: '查看足跡',
+    types: { kinship: '親族', personal: '私交', colleagues: '同僚', service: '統屬' },
+    tones: { positive: '正面', neutral: '中性', negative: '負面', mixed: '毀譽參半' },
+    directed: '有方向', undirected: '雙向', explore: '人物關係', showRel: '查看人物關係',
+  },
+}[lang];
+
+// Chapters that already use the new relationship format
+const mods = import.meta.glob('../data/sgz/*.json', { eager: true });
+const allChapters = Object.values(mods)
+  .map((m: any) => m.default ?? m)
+  .sort((a: any, b: any) => a.order - b.order);
+const converted = allChapters.filter(
+  (ch: any) => Array.isArray(ch.relationships) && ch.relationships.length > 0 && ch.relationships.every((r: any) => Array.isArray(r.notes))
+);
+
+// Slim per-chapter record (just id + subjects) — used only to resolve which chapter a
+// person's own biography lives in, for the popup's biography/journey icons.
+const chaptersData = converted.map((ch: any) => {
+  const ids = new Set<string>();
+  ch.relationships.forEach((r: any) => { ids.add(r.from); ids.add(r.to); });
+  const subjects = (ch.journeyOverviews ?? []).map((o: any) => o.person).filter((id: string) => ids.has(id));
+  return { id: ch.id, label: ch.label, subjects };
+});
+
+// Every converted chapter's people and relationships merged into one graph — people who
+// appear in several chapters (e.g. Cao Cao) become a single shared node linking those
+// chapters' clusters together. Each note keeps which chapter it came from, so its "See
+// biography" link still points at the right page.
+const nodesMap = new Map<string, any>();
+const edgesList: any[] = [];
+for (const ch of converted) {
+  const ids = new Set<string>();
+  ch.relationships.forEach((r: any) => { ids.add(r.from); ids.add(r.to); });
+  for (const id of ids) {
+    if (!nodesMap.has(id)) {
+      const p = (persons as any)[id];
+      nodesMap.set(id, { id, n: p.name, c: p.courtesyName, al: p.aliases ?? [], u: !!p.unnamed });
+    }
+  }
+  for (const r of ch.relationships) {
+    edgesList.push({
+      a: r.from, b: r.to, t: r.type, p: r.polarity, d: r.directed, anc: !!r.ancestral,
+      notes: r.notes.map((n: any) => ({ pid: n.passageId, x: n.text, ttl: n.title, ch: ch.id })),
+    });
+  }
+}
+const graph = { nodes: [...nodesMap.values()], edges: edgesList };
+
+const clientData = JSON.stringify({ lang, chapterBase, mapBase, pageBase: `${chapterBase}/relationships`, ui: UI, chapters: chaptersData, graph }).replace(/</g, '\\u003c');
+const footerQuote = strings.footer.quoteBySection?.translations ?? strings.footer.quote;
+---
+
+<Base title={`${UI.title} · ${TEXT_TITLE} · Three Kingdoms Archive`} lang={lang}>
+  <div class="site">
+    <Nav lang={lang} strings={strings} />
+
+    <div class="rel-main">
+      <div class="page-header">
+        <div class="breadcrumb">
+          <a href={url(`${prefix}/translations`)} class="bc-link">{UI.translations}</a>
+          <span class="bc-sep">›</span>
+          <a href={chapterBase} class="bc-link">{TEXT_TITLE}</a>
+          <span class="bc-sep">›</span>
+          <span class="bc-cur">{UI.title}</span>
+        </div>
+      </div>
+
+      <div class="rel-header">
+        <div class="rel-title-group">
+          <h1 class="rel-title" id="rel-title">{UI.title}</h1>
+        </div>
+        <div class="rel-header-actions">
+          <a id="rel-read-link" class="rel-btn" href={chapterBase} target="_blank" rel="noopener">
+            <i class="ti ti-book-2" aria-hidden="true"></i> {UI.readChapters}
+          </a>
+        </div>
+      </div>
+
+      <div class="rel-body">
+        <div class="rel-canvas-wrap" id="rel-canvas-wrap">
+          <div class="rel-stage" id="rel-stage">
+          <svg id="rel-svg" class="rel-svg" role="img" aria-label={UI.title}>
+            <defs id="rel-defs"></defs>
+            <g id="rel-viewport">
+              <g id="rel-edges"></g>
+              <g id="rel-nodes"></g>
+            </g>
+          </svg>
+
+          <div class="rel-panel" id="rel-panel">
+            <div class="rel-panel-search">
+              <i class="ti ti-search person-search-icon" aria-hidden="true"></i>
+              <input type="text" id="rel-search" class="person-search-input" placeholder={UI.search} autocomplete="off" />
+              <div class="rel-search-results" id="rel-search-results" hidden></div>
+            </div>
+            <div class="rel-legend" id="rel-legend"></div>
+          </div>
+
+          <div class="rel-controls">
+            <button type="button" id="rel-zoom-in" class="rel-ctl" aria-label={UI.zoomIn}><i class="ti ti-plus" aria-hidden="true"></i></button>
+            <button type="button" id="rel-zoom-out" class="rel-ctl" aria-label={UI.zoomOut}><i class="ti ti-minus" aria-hidden="true"></i></button>
+            <button type="button" id="rel-fit" class="rel-ctl" aria-label={UI.fit}><i class="ti ti-focus-2" aria-hidden="true"></i></button>
+          </div>
+
+          <div class="rel-detail" id="rel-detail" hidden></div>
+          <div class="rel-hint" id="rel-hint">{UI.hint}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{footerQuote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<script type="application/json" id="rel-data" set:html={clientData}></script>
+
+<script>
+// @ts-nocheck
+const DATA = JSON.parse(document.getElementById('rel-data').textContent || '{}');
+const LANG = DATA.lang;
+const UI = DATA.ui;
+const NAME = LANG === 'en' ? 'en' : LANG === 'zh-hans' ? 'zhs' : 'zht';
+const isZh = LANG !== 'en';
+
+// personId -> id of the (loaded) chapter that person is a biography subject of, so the
+// popup can link straight to their own passage rather than just the currently-viewed one.
+const bioChapterOf = new Map();
+for (const ch of DATA.chapters) for (const pid of ch.subjects) if (!bioChapterOf.has(pid)) bioChapterOf.set(pid, ch.id);
+
+// ------------------------------------------------------------------ look
+// colour = polarity, full stop — whether the edge is directed or not (shown separately by
+// the arrowhead). Colleagues and personal relationships are mostly undirected but still have
+// a real polarity (praise vs. a strained rivalry), so direction must not override that.
+const TONE = { positive: '#4f7fb0', neutral: '#857f72', negative: '#b5533f' };   // ink blue / grey / vermilion
+const GOLD = '#d0aa6b';
+const BG = '#0d0d0d';
+const TYPES = ['service', 'colleagues', 'personal', 'kinship'];
+const TONES = ['positive', 'neutral', 'negative'];   // real, solid colours — drives marker creation
+// "mixed" isn't a colour of its own — a relationship that's genuinely both (Yu Jin's decades of
+// trust under Cao Cao ending in a rebuke, or Zhang He's advice ignored by Sima Yi to fatal
+// effect) renders as a half-and-half split of the two tones rather than picking one dominant
+// side and losing the other. Never index TONE[] with 'mixed' directly.
+const toneSwatchCSS = (tone) => (tone === 'mixed' ? `linear-gradient(90deg, ${TONE.positive} 50%, ${TONE.negative} 50%)` : TONE[tone]);
+// line style per type: double solid line (kinship — never arrowed, since "who begat whom"
+// doesn't need a direction cue, and blood ties are the most permanent/certain bond here so
+// they get the boldest treatment), solid (personal/friends & foes), dashed (service/
+// allegiance — the type most likely to converge in bulk on a lord's hub node, so it stays
+// light rather than compounding into a wall of double lines), dotted (colleagues).
+function lineStyle(type) {
+  switch (type) {
+    case 'kinship': return { w: 1.1, dash: '', cap: 'butt', rails: 2.6 };
+    case 'service': return { w: 1.4, dash: '8 6', cap: 'butt' };
+    case 'colleagues': return { w: 1.7, dash: '0.1 6', cap: 'round' };
+    default: return { w: 1.4, dash: '', cap: 'butt' };
+  }
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+const $ = (id) => document.getElementById(id);
+const svg = $('rel-svg'), gViewport = $('rel-viewport'), gEdges = $('rel-edges'), gNodes = $('rel-nodes'), defs = $('rel-defs');
+const wrap = $('rel-stage');
+const panel = $('rel-panel');
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const el = (name, attrs = {}, parent) => { const e = document.createElementNS(SVGNS, name); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+const label = (obj) => (obj ? (obj[NAME] || obj.en || obj.zht || '') : '');
+// the "other" language for a name — Chinese when the page is English, English otherwise
+const otherLabel = (obj) => (obj ? (NAME === 'en' ? obj.zht : obj.en) || '' : '');
+// The in-circle character's own font-size scales with the node's radius (so a small,
+// peripheral person's character is smaller too, not the same fixed size as a subject's).
+// Its opacity then ramps smoothly with on-screen size, from invisible up to fully legible
+// at ZH_FADE_FULL_PX — a gradual reveal rather than a hard pop-in — and bigger circles
+// reach full visibility at a lower zoom than small ones, instead of everyone together.
+const ZH_FADE_START_PX = 6;
+const ZH_FADE_FULL_PX = 11;
+function zhFontSize(n) { return Math.max(7, radius(n) * 0.62); }
+
+// ------------------------------------------------------------------ state
+let nodesById = new Map();
+let edges = [];
+let view = { x: 0, y: 0, k: 1 };
+let hiddenTypes = new Set(), hiddenTones = new Set(), showAncestors = false;
+let selected = null;         // { kind: 'node'|'edge', ref }
+let alpha = 0, raf = 0;
+
+// arrowheads: a full triangle per tone (single-line edges), plus a mirrored half-arrow pair
+// per tone for any double-line (rails) edge type that turns out to be directed — one barb on
+// each rail, so together they read as one arrowhead instead of two separate lines just
+// stopping dead. (Kinship is the only rails type today and it's never arrowed, but the pair
+// is kept generic rather than hardcoded to one type.)
+// All sized in world units (markerUnits=userSpaceOnUse) like everything else in the graph, so
+// render() rescales markerWidth/Height by 1/view.k each frame — otherwise, combined with the
+// edges' non-scaling stroke, the arrowhead would grow larger relative to the now-constant-
+// width line at every zoom step instead of staying visually proportionate to it.
+const ARROW_SIZE = 9;
+const ARROW_SIZE_OVERVIEW = 4.5;
+const arrowMarkers = {};
+function makeMarker(id, innerHtml) {
+  const m = el('marker', { id, viewBox: '0 0 10 10', refX: '9', refY: '5', markerWidth: String(ARROW_SIZE), markerHeight: String(ARROW_SIZE), markerUnits: 'userSpaceOnUse', orient: 'auto' }, defs);
+  m.innerHTML = innerHtml;
+  arrowMarkers[id] = m;
+}
+for (const tone of TONES) {
+  makeMarker('arr-' + tone, `<path d="M0,1.5 L10,5 L0,8.5 z" fill="${TONE[tone]}" fill-opacity="0.8"/>`);
+  makeMarker('arr-half-a-' + tone, `<path d="M1,1.4 L9,5" fill="none" stroke="${TONE[tone]}" stroke-opacity="0.8" stroke-width="1.6" stroke-linecap="round"/>`);
+  makeMarker('arr-half-b-' + tone, `<path d="M1,8.6 L9,5" fill="none" stroke="${TONE[tone]}" stroke-opacity="0.8" stroke-width="1.6" stroke-linecap="round"/>`);
+}
+
+// ------------------------------------------------------------------ graph loading (once — every converted chapter merged together, no per-chapter switching)
+const allSubjects = new Set(DATA.chapters.flatMap((c) => c.subjects));
+function loadGraph() {
+  const raw = DATA.graph;
+  nodesById = new Map(raw.nodes.map((n) => [n.id, { ...n, x: 0, y: 0, vx: 0, vy: 0, deg: 0, subject: allSubjects.has(n.id), pinned: false }]));
+  edges = raw.edges.map((e, i) => ({ ...e, i, u: nodesById.get(e.a), v: nodesById.get(e.b) }));
+  for (const e of edges) { e.u.deg++; e.v.deg++; }
+  // group edges of the same pair, so parallel lines can be fanned out
+  const groups = new Map();
+  for (const e of edges) { const k = [e.a, e.b].sort().join('||'); (groups.get(k) || groups.set(k, []).get(k)).push(e); }
+  for (const g of groups.values()) g.forEach((e, idx) => { e.slot = idx - (g.length - 1) / 2; e.canon = e.a < e.b; });
+  selected = null;
+  hiddenTypes = new Set(); hiddenTones = new Set(); showAncestors = false;
+  initPositions();
+  setGravity();
+  simulate(560);
+  reduceCrossings();
+  buildScene();
+  buildLegend();
+  $('rel-search').value = '';
+  $('rel-search-results').hidden = true;
+  hideDetail();
+  fitView();
+}
+
+// ------------------------------------------------------------------ layout: mind-map start + force relaxation
+const SECTOR = { service: -Math.PI / 2, kinship: Math.PI, colleagues: 0, personal: Math.PI / 2 };   // where each type fans out from the centre
+function initPositions() {
+  const nodes = [...nodesById.values()];
+  // With many biography subjects merged into one graph, the most-connected person (usually
+  // the shared overlord) makes a far better hub than picking an arbitrary one of them.
+  const centre = nodes.slice().sort((a, b) => b.deg - a.deg)[0];
+  const adj = new Map(nodes.map((n) => [n.id, []]));
+  for (const e of edges) { adj.get(e.a).push({ to: e.b, e }); adj.get(e.b).push({ to: e.a, e }); }
+  const prio = { service: 0, kinship: 1, colleagues: 2, personal: 3 };
+  const level = new Map([[centre.id, 0]]), kind = new Map(), children = new Map();
+  const queue = [centre.id];
+  while (queue.length) {
+    const id = queue.shift();
+    const kids = [];
+    for (const { to, e } of adj.get(id).slice().sort((x, y) => prio[x.e.t] - prio[y.e.t])) {
+      if (level.has(to)) continue;
+      level.set(to, level.get(id) + 1); kind.set(to, id === centre.id ? e.t : kind.get(id)); queue.push(to);
+      kids.push(to);
+    }
+    children.set(id, kids);
+  }
+  // nodes the BFS never reached (their only edges are to already-visited nodes, or they're
+  // isolated) still need a slot — hang them straight off the centre in the personal sector.
+  const orphans = nodes.filter((n) => !level.has(n.id)).map((n) => n.id);
+  for (const id of orphans) { level.set(id, 1); kind.set(id, 'personal'); children.set(id, []); }
+  if (orphans.length) children.set(centre.id, [...(children.get(centre.id) || []), ...orphans]);
+
+  // A proper radial tree: each node gets an angular slice *within its parent's own slice*,
+  // sized by how many descendants it has — not a flat index position in a type-wide list.
+  // That's what keeps e.g. a grandchild next to its actual parent instead of wherever its
+  // sort rank in the whole "service" bucket happens to fall.
+  const subtreeSize = new Map();
+  function sizeOf(id) {
+    if (subtreeSize.has(id)) return subtreeSize.get(id);
+    const kids = children.get(id) || [];
+    const size = kids.length ? kids.reduce((s, k) => s + sizeOf(k), 0) : 1;
+    subtreeSize.set(id, size);
+    return size;
+  }
+  sizeOf(centre.id);
+
+  centre.x = 0; centre.y = 0;
+  const RADIUS_STEP = 230;
+  function place(kidsIds, angleStart, angleEnd, depth) {
+    const total = kidsIds.reduce((s, id) => s + sizeOf(id), 0) || 1;
+    let a = angleStart;
+    kidsIds.forEach((id, i) => {
+      const width = (angleEnd - angleStart) * (sizeOf(id) / total);
+      const mid = a + width / 2;
+      const n = nodesById.get(id);
+      const r = 340 + RADIUS_STEP * depth + (sizeOf(id) === 1 ? (i % 2) * 40 : 0);
+      n.x = Math.cos(mid) * r; n.y = Math.sin(mid) * r;
+      place(children.get(id) || [], a, a + width, depth + 1);
+      a += width;
+    });
+  }
+  const topKids = children.get(centre.id) || [];
+  const bySector = new Map();
+  for (const id of topKids) { const k = kind.get(id) || 'personal'; (bySector.get(k) || bySector.set(k, []).get(k)).push(id); }
+  for (const [k, ids] of bySector) {
+    const weight = ids.reduce((s, id) => s + sizeOf(id), 0);
+    const band = Math.min(Math.PI * 0.94, 0.55 + 0.28 * Math.sqrt(weight));
+    place(ids, SECTOR[k] - band / 2, SECTOR[k] + band / 2, 1);
+  }
+}
+function visibleEdge(e) {
+  // a mixed edge is both blue and red, so it only disappears once both are switched off
+  const toneHidden = e.p === 'mixed' ? hiddenTones.has('positive') && hiddenTones.has('negative') : hiddenTones.has(e.p);
+  return !hiddenTypes.has(e.t) && !toneHidden && (showAncestors || !e.anc);
+}
+// A mixed-polarity edge's stroke is a per-edge gradient (its coordinates are kept in sync with
+// the edge's own endpoints every render(), same as the path `d`), not a plain hex colour.
+function edgeColor(e) { return e.p === 'mixed' ? `url(#edge-grad-${e.i})` : TONE[e.p]; }
+// How "substantial" a person is: well-connected, has a courtesy name, has their own
+// biography/journey — drives both node size and how much room their edges get, so minor
+// figures (one connection, no courtesy name, no biography) shrink and pull in close instead
+// of claiming the same visual weight as a well-documented hub.
+function importance(n) {
+  const degScore = Math.min(1, Math.sqrt(n.deg || 0) / 5);
+  return Math.min(1, degScore + (n.subject ? 0.5 : 0) + (n.c ? 0.15 : 0));
+}
+function radius(n) { return n.subject ? 21 : 7 + importance(n) * 11; }
+function tick(a) {
+  const nodes = [...nodesById.values()];
+  for (let i = 0; i < nodes.length; i++) {
+    const p = nodes[i];
+    for (let j = i + 1; j < nodes.length; j++) {
+      const q = nodes[j];
+      let dx = q.x - p.x, dy = q.y - p.y, d2 = dx * dx + dy * dy;
+      if (d2 < 1) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; d2 = 1; }
+      // busy people get a wide berth (their many lines need room to fan out); a pair of
+      // barely-connected ones can sit close and still read as two separate dots
+      const dp = Math.sqrt(p.deg || 1), dq = Math.sqrt(q.deg || 1);
+      const d = Math.sqrt(d2), min = radius(p) + radius(q) + 70 + 24 * (dp + dq);
+      let f = (42000 * a * Math.min(3.6, 0.5 + 0.28 * dp * dq)) / d2;
+      if (d < min) f += (min - d) * 0.35 * a;
+      const fx = (dx / d) * f, fy = (dy / d) * f;
+      p.vx -= fx; p.vy -= fy; q.vx += fx; q.vy += fy;
+    }
+  }
+  for (const e of edges) {
+    const p = e.u, q = e.v; const dx = q.x - p.x, dy = q.y - p.y; const d = Math.sqrt(dx * dx + dy * dy) || 1;
+    // minor figures (low importance on either end) don't need as much personal space — only
+    // edges between two well-documented people get the full-length spring.
+    const rest = restLength(e), f = (d - rest) * 0.028 * a;
+    const fx = (dx / d) * f, fy = (dy / d) * f;
+    p.vx += fx; p.vy += fy; q.vx -= fx; q.vy -= fy;
+  }
+  for (const n of nodes) {
+    n.vx -= n.x * gravX * a; n.vy -= n.y * gravY * a;
+    if (n.pinned) { n.vx = 0; n.vy = 0; continue; }
+    n.vx *= 0.82; n.vy *= 0.82; n.x += n.vx; n.y += n.vy;
+  }
+}
+function restLength(e) { return 110 + Math.min(importance(e.u), importance(e.v)) * 100 + 12 * Math.sqrt(Math.max(e.u.deg, e.v.deg)) + (e.anc ? 60 : 0); }
+// Gravity is weaker sideways than up-and-down, so the web settles into the wide shape of the
+// canvas instead of a tall blob — isolated people drift out to the free left/right space.
+let gravX = 0.008, gravY = 0.008;
+function setGravity() {
+  const s = canvasSize(), r = Math.min(2.4, Math.max(1, s.w / Math.max(1, s.h)));
+  gravX = 0.011 / r; gravY = 0.011 * r;
+}
+function simulate(steps) { for (let i = 0; i < steps; i++) tick(Math.max(0.03, 1 - i / steps)); }
+
+// Force layouts leave a lot of needless line crossings. This is a cheap local search on top of
+// the settled layout: try nudging each node to a few nearby spots and keep whichever position
+// crosses the fewest lines (with a small penalty for stretching its own lines and a hard floor
+// on how close it may sit to another node), so the web reads more like a constellation.
+function reduceCrossings(passes = 6) {
+  const nodes = [...nodesById.values()];
+  const inc = new Map(nodes.map((n) => [n, []]));
+  for (const e of edges) { inc.get(e.u).push(e); inc.get(e.v).push(e); }
+  const cross = (a, b, c, d) => {
+    const o = (p, q, r) => (q.x - p.x) * (r.y - p.y) - (q.y - p.y) * (r.x - p.x);
+    return o(c, d, a) * o(c, d, b) < 0 && o(a, b, c) * o(a, b, d) < 0;
+  };
+  const cost = (n) => {
+    let c = 0;
+    for (const e of inc.get(n)) {
+      const d = Math.hypot(e.u.x - e.v.x, e.u.y - e.v.y);
+      c += Math.abs(d - restLength(e)) * 0.12;
+      for (const f of edges) {
+        if (f === e || f.u === e.u || f.u === e.v || f.v === e.u || f.v === e.v) continue;
+        if (cross(e.u, e.v, f.u, f.v)) c += 60;
+      }
+    }
+    return c;
+  };
+  const clear = (n) => nodes.every((m) => m === n || Math.hypot(m.x - n.x, m.y - n.y) >= radius(m) + radius(n) + 120);
+  for (let pass = 0; pass < passes; pass++) {
+    const reach = 150 - pass * 18;
+    for (const n of nodes.slice().sort(() => Math.random() - 0.5)) {
+      let best = cost(n), bx = n.x, by = n.y; const ox = n.x, oy = n.y;
+      for (let k = 0; k < 10; k++) {
+        const a = Math.random() * Math.PI * 2, r = (0.3 + Math.random() * 0.7) * reach;
+        n.x = ox + Math.cos(a) * r; n.y = oy + Math.sin(a) * r;
+        if (!clear(n)) continue;
+        const c = cost(n);
+        if (c < best) { best = c; bx = n.x; by = n.y; }
+      }
+      n.x = bx; n.y = by;
+    }
+  }
+}
+function reheat(a = 0.5) { alpha = Math.max(alpha, a); if (!raf) raf = requestAnimationFrame(loop); }
+function loop() {
+  tick(alpha); alpha *= 0.94; render();
+  raf = alpha > 0.03 ? requestAnimationFrame(loop) : 0;
+}
+
+// ------------------------------------------------------------------ scene (SVG)
+let edgeEls = [], nodeEls = new Map();
+function buildScene() {
+  gEdges.textContent = ''; gNodes.textContent = ''; edgeEls = []; nodeEls = new Map(); labelOrder = [];
+  for (const e of edges) {
+    const st = lineStyle(e.t), color = edgeColor(e);
+    // A mixed edge's stroke is a gradient (url(#...)), which CSS `color` can't hold — the
+    // selection glow falls back to the negative tone for those, same as the arrowhead below.
+    const glowColor = e.p === 'mixed' ? TONE.negative : color;
+    const g = el('g', { class: 'rel-edge', 'data-i': e.i, style: `color:${glowColor}` }, gEdges);
+    const hit = el('path', { class: 'rel-edge-hit', fill: 'none', stroke: 'transparent', 'stroke-width': 16 }, g);
+    // Half the line reads as the positive tone, half as the negative — rather than an arrowhead
+    // that can only be one colour, "which half is at the tip" decides it: negative, since the
+    // arrow (when there is one) already sits at the `to` / negative-coloured end.
+    let grad = null;
+    if (e.p === 'mixed') {
+      grad = el('linearGradient', { id: `edge-grad-${e.i}`, gradientUnits: 'userSpaceOnUse' }, defs);
+      el('stop', { offset: '0%', 'stop-color': TONE.positive }, grad);
+      el('stop', { offset: '50%', 'stop-color': TONE.positive }, grad);
+      el('stop', { offset: '50%', 'stop-color': TONE.negative }, grad);
+      el('stop', { offset: '100%', 'stop-color': TONE.negative }, grad);
+    }
+    let line = null, railA = null, railB = null;
+    if (st.rails) {
+      // a true double line: two parallel rails, each with its own half-arrow marker, so a
+      // directed edge reads as one arrowhead assembled from both rails rather than a single
+      // marker awkwardly straddling the gap between them. (Kinship only — always neutral, so
+      // never mixed.)
+      railA = el('path', { class: 'rel-edge-line', fill: 'none', stroke: color, 'stroke-width': st.w, 'stroke-linecap': st.cap, 'vector-effect': 'non-scaling-stroke' }, g);
+      railB = el('path', { class: 'rel-edge-line', fill: 'none', stroke: color, 'stroke-width': st.w, 'stroke-linecap': st.cap, 'vector-effect': 'non-scaling-stroke' }, g);
+      if (e.d && !st.noArrow) { railA.setAttribute('marker-end', `url(#arr-half-b-${e.p})`); railB.setAttribute('marker-end', `url(#arr-half-a-${e.p})`); }
+    } else {
+      line = el('path', { class: 'rel-edge-line', fill: 'none', stroke: color, 'stroke-width': st.w, 'stroke-linecap': st.cap, 'vector-effect': 'non-scaling-stroke' }, g);
+      if (st.dash) line.setAttribute('stroke-dasharray', st.dash);
+      if (e.d && !st.noArrow) line.setAttribute('marker-end', `url(#arr-${e.p === 'mixed' ? 'negative' : e.p})`);
+    }
+    const title = el('title', {}, g);
+    title.textContent = `${label(nodesById.get(e.a).n)} ${e.d ? '→' : '—'} ${label(nodesById.get(e.b).n)} · ${UI.types[e.t]} · ${UI.tones[e.p]}`;
+    g.addEventListener('click', (ev) => { ev.stopPropagation(); select({ kind: 'edge', ref: e }); });
+    edgeEls.push({ e, g, hit, line, railA, railB, grad });
+  }
+  for (const n of nodesById.values()) {
+    const g = el('g', { class: 'rel-node' + (n.subject ? ' subject' : ''), tabindex: 0, role: 'button', 'aria-label': label(n.n) }, gNodes);
+    el('circle', { r: radius(n), class: 'rel-node-c' }, g);
+    const t = el('text', { class: 'rel-node-t', y: radius(n) + 17, 'text-anchor': 'middle' }, g);
+    t.textContent = label(n.n);
+    if (isZh) t.setAttribute('lang', LANG);
+    const other = otherLabel(n.n);
+    // the given-name character alone (Han-era naming is [surname][single given-name
+    // character], so the last character is always just the given name) — compact enough
+    // to read at a much smaller zoom than the full name would need.
+    const monogram = isZh ? [...label(n.n)].pop() : other.slice(-1);
+    let zhEl = null;
+    if (monogram) {
+      zhEl = el('text', { class: 'rel-node-zh', 'text-anchor': 'middle', dy: '0.32em', style: `font-size:${zhFontSize(n)}px` }, g);
+      zhEl.textContent = monogram;
+      zhEl.setAttribute('lang', isZh ? LANG : 'zh-hant');
+    }
+    attachNodeDrag(g, n);
+    g.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select({ kind: 'node', ref: n }); } });
+    nodeEls.set(n.id, { n, g, zh: zhEl, t });
+  }
+  render();
+}
+// Returns the endpoint/control geometry for an edge (not yet a path string) so the double-
+// line (rails) rendering can offset every point perpendicular to the edge and still reuse the
+// exact same curve-routing logic as a plain single line.
+function edgeGeom(e) {
+  const p = e.u, q = e.v;
+  const dx = q.x - p.x, dy = q.y - p.y, len = Math.sqrt(dx * dx + dy * dy) || 1;
+  const rp = radius(p) + 2, rq = radius(q) + (e.d && !lineStyle(e.t).noArrow ? 5 : 2);
+  if (e.slot === 0) {
+    // a single line between the pair: usually straight, but a straight line can happen to run
+    // right past (or through) some unrelated third node if it's sitting near that path — find the
+    // worst such obstruction and bow the line away from it instead.
+    let worst = null, worstDeficit = 0;
+    for (const n of nodesById.values()) {
+      if (n === p || n === q) continue;
+      const t = ((n.x - p.x) * dx + (n.y - p.y) * dy) / (len * len);
+      if (t <= 0.08 || t >= 0.92) continue; // ignore points off the segment or right at the endpoints
+      const projX = p.x + t * dx, projY = p.y + t * dy;
+      const dist = Math.hypot(n.x - projX, n.y - projY);
+      const deficit = radius(n) + 16 - dist;
+      if (deficit > worstDeficit) { worstDeficit = deficit; worst = n; }
+    }
+    if (worst) {
+      const cross = dx * (worst.y - p.y) - dy * (worst.x - p.x);
+      const side = cross >= 0 ? -1 : 1; // bow away from whichever side the obstruction is on
+      const bend = worstDeficit + 18;
+      const cx = (p.x + q.x) / 2 + (-dy / len) * side * bend, cy = (p.y + q.y) / 2 + (dx / len) * side * bend;
+      const toward = (from, r) => { const vx = cx - from.x, vy = cy - from.y, l = Math.hypot(vx, vy) || 1; return [from.x + (vx / l) * r, from.y + (vy / l) * r]; };
+      const [x1, y1] = toward(p, rp), [x2, y2] = toward(q, rq);
+      return { x1, y1, cx, cy, x2, y2, curved: true };
+    }
+    const ux = dx / len, uy = dy / len;
+    if (e.bu || e.bv) {
+      // bundled: leave / arrive along the shared direction of the lines around each end, so
+      // lines heading the same way travel together and only fan out near their own node
+      const du = e.bu || { x: ux, y: uy }, dv = e.bv || { x: -ux, y: -uy };
+      const x1 = p.x + du.x * rp, y1 = p.y + du.y * rp, x2 = q.x + dv.x * rq, y2 = q.y + dv.y * rq;
+      const L = len * 0.34;
+      return { x1, y1, c1x: x1 + du.x * L, c1y: y1 + du.y * L, c2x: x2 + dv.x * L, c2y: y2 + dv.y * L, x2, y2, cubic: true };
+    }
+    return { x1: p.x + ux * rp, y1: p.y + uy * rp, x2: q.x - ux * rq, y2: q.y - uy * rq, curved: false };
+  }
+  // several lines between the same two people: fan them out as curves. The side is taken from the
+  // canonical (sorted) order so it is stable whichever way the relationship points.
+  const side = e.canon ? 1 : -1;
+  const cx = (p.x + q.x) / 2 + (-dy / len) * side * e.slot * 58;
+  const cy = (p.y + q.y) / 2 + (dx / len) * side * e.slot * 58;
+  const toward = (from, r) => { const vx = cx - from.x, vy = cy - from.y, l = Math.sqrt(vx * vx + vy * vy) || 1; return [from.x + (vx / l) * r, from.y + (vy / l) * r]; };
+  const [x1, y1] = toward(p, rp), [x2, y2] = toward(q, rq);
+  return { x1, y1, cx, cy, x2, y2, curved: true };
+}
+function pathStr(g) {
+  if (g.cubic) return `M${g.x1},${g.y1} C${g.c1x},${g.c1y} ${g.c2x},${g.c2y} ${g.x2},${g.y2}`;
+  return g.curved ? `M${g.x1},${g.y1} Q${g.cx},${g.cy} ${g.x2},${g.y2}` : `M${g.x1},${g.y1} L${g.x2},${g.y2}`;
+}
+function offsetGeom(g, ox, oy) {
+  const o = { ...g, x1: g.x1 + ox, y1: g.y1 + oy, x2: g.x2 + ox, y2: g.y2 + oy };
+  if (g.curved) { o.cx = g.cx + ox; o.cy = g.cy + oy; }
+  if (g.cubic) { o.c1x = g.c1x + ox; o.c1y = g.c1y + oy; o.c2x = g.c2x + ox; o.c2y = g.c2y + oy; }
+  return o;
+}
+// Around every node, group the lines that leave in roughly the same direction (within ~30°)
+// and give each one the group's shared heading, blended with its own — so several lines running
+// off toward the same neighbourhood ride together instead of each cutting its own diagonal.
+function computeBundles() {
+  const per = new Map();
+  for (const e of edges) {
+    e.bu = e.bv = null;
+    // one person on their own: their lines already fan straight out from them, nothing to bundle
+    if (focusNode || e.slot !== 0 || !visibleEdge(e)) continue;
+    for (const [n, o, key] of [[e.u, e.v, 'bu'], [e.v, e.u, 'bv']]) {
+      const dx = o.x - n.x, dy = o.y - n.y, l = Math.hypot(dx, dy) || 1;
+      (per.get(n) || per.set(n, []).get(n)).push({ e, key, ux: dx / l, uy: dy / l, a: Math.atan2(dy, dx) });
+    }
+  }
+  const GAP = 0.52;
+  for (const items of per.values()) {
+    if (items.length < 2) continue;
+    items.sort((p, q) => p.a - q.a);
+    // start the cycle after the widest gap so a cluster never straddles the ±π seam
+    let start = 0, widest = -1;
+    for (let i = 0; i < items.length; i++) {
+      const next = items[(i + 1) % items.length].a + (i + 1 === items.length ? Math.PI * 2 : 0);
+      if (next - items[i].a > widest) { widest = next - items[i].a; start = (i + 1) % items.length; }
+    }
+    const ordered = items.slice(start).concat(items.slice(0, start));
+    let cluster = [ordered[0]];
+    const flush = () => {
+      if (cluster.length > 1) {
+        let sx = 0, sy = 0; for (const c of cluster) { sx += c.ux; sy += c.uy; }
+        const sl = Math.hypot(sx, sy) || 1; sx /= sl; sy /= sl;
+        for (const c of cluster) { const bx = c.ux * 0.3 + sx * 0.7, by = c.uy * 0.3 + sy * 0.7, bl = Math.hypot(bx, by) || 1; c.e[c.key] = { x: bx / bl, y: by / bl }; }
+      }
+    };
+    // A cluster may not chain on and on around the node (each line close to the next but the
+    // ends far apart) — that would average lines pointing opposite ways into a heading nobody
+    // follows. Cap its total spread as well as the gap between neighbours.
+    for (let i = 1; i < ordered.length; i++) {
+      let d = ordered[i].a - ordered[i - 1].a; if (d < 0) d += Math.PI * 2;
+      let span = ordered[i].a - cluster[0].a; if (span < 0) span += Math.PI * 2;
+      if (d <= GAP && span <= 0.7) cluster.push(ordered[i]); else { flush(); cluster = [ordered[i]]; }
+    }
+    flush();
+  }
+}
+function edgePath(e) { return pathStr(edgeGeom(e)); }
+function render() {
+  // Arrowheads are sized in world units (markerUnits=userSpaceOnUse) like the rest of the
+  // graph, but the edge strokes are now non-scaling — rescale the markers by 1/view.k so an
+  // arrowhead stays a constant, proportionate size on screen at every zoom level instead of
+  // growing on its own once the line beside it stops growing.
+  const arrowSize = (focusNode ? ARROW_SIZE : ARROW_SIZE_OVERVIEW) / view.k;
+  for (const id in arrowMarkers) { arrowMarkers[id].setAttribute('markerWidth', arrowSize); arrowMarkers[id].setAttribute('markerHeight', arrowSize); }
+  computeBundles();
+  for (const { e, g, hit, line, railA, railB, grad } of edgeEls) {
+    const geom = edgeGeom(e);
+    hit.setAttribute('d', pathStr(geom));
+    if (line) line.setAttribute('d', pathStr(geom));
+    // gradientUnits="userSpaceOnUse" needs its own coordinates kept in step with the path —
+    // it doesn't follow the curve, but a straight positive-to-negative axis across the chord
+    // reads fine even when the line itself bows around an obstruction.
+    if (grad) { grad.setAttribute('x1', geom.x1); grad.setAttribute('y1', geom.y1); grad.setAttribute('x2', geom.x2); grad.setAttribute('y2', geom.y2); }
+    if (railA) {
+      const half = lineStyle(e.t).rails / 2;
+      const dx = e.v.x - e.u.x, dy = e.v.y - e.u.y, len = Math.hypot(dx, dy) || 1;
+      const ox = (-dy / len) * half, oy = (dx / len) * half;
+      railA.setAttribute('d', pathStr(offsetGeom(geom, ox, oy)));
+      railB.setAttribute('d', pathStr(offsetGeom(geom, -ox, -oy)));
+    }
+  }
+  // Names fade in with zoom to keep the overview quiet: people with their own biography (the
+  // gold circles) appear first, everyone else only once zoomed in further. A single person
+  // in focus always shows every name, since only their own circle of relations is on screen.
+  const fade = (k, from, to) => Math.min(1, Math.max(0, (k - from) / (to - from)));
+  for (const { n, g, zh, t } of nodeEls.values()) {
+    g.setAttribute('transform', `translate(${n.x},${n.y})`);
+    t.style.opacity = String(focusNode ? 1 : n.subject ? fade(view.k, 0.1, 0.16) : fade(view.k, 0.8, 1.1));
+    // in the overview a biography name keeps a steady on-screen size instead of shrinking away with the zoom
+    if (n.subject && !focusNode) { const fs = Math.max(11, 9 / view.k); t.style.fontSize = fs + 'px'; t.setAttribute('y', radius(n) + 3 + fs); }
+    else { t.style.fontSize = ''; t.setAttribute('y', radius(n) + 17); }
+    if (zh) {
+      const onScreen = view.k * zhFontSize(n);
+      const t = Math.min(1, Math.max(0, (onScreen - ZH_FADE_START_PX) / (ZH_FADE_FULL_PX - ZH_FADE_START_PX)));
+      // the ramp's own first step off zero starts at 0.18, not a barely-visible sliver
+      zh.style.opacity = String(t <= 0 ? 0 : 0.3 + t * 0.7);
+    }
+  }
+  // Label collision: most-connected people (biography names first) claim their spot, and any
+  // label that would land on top of one already placed simply stays hidden until zoomed apart.
+  if (!focusNode) {
+    if (!labelOrder.length) labelOrder = [...nodeEls.values()].sort((a, b) => (b.n.subject - a.n.subject) || (b.n.deg - a.n.deg));
+    const placed = [];
+    for (const { n, g, t } of labelOrder) {
+      if (g.style.display === 'none' || parseFloat(t.style.opacity) < 0.05) continue;
+      const px = n.subject ? Math.max(11 * view.k, 9) : (isZh ? 16 : 14) * view.k;
+      const w = t.textContent.length * px * (isZh ? 1 : 0.56) + 6, h = px * 1.25;
+      const cx = n.x * view.k + view.x, top = (n.y + (n.subject ? radius(n) + 3 : radius(n) + 17)) * view.k + view.y - px * 0.9 * (n.subject ? 0.4 : 1);
+      const hit = placed.some((r) => cx - w / 2 < r.x + r.w && cx + w / 2 > r.x && top < r.y + r.h && top + h > r.y);
+      if (hit) t.style.opacity = '0'; else placed.push({ x: cx - w / 2, y: top, w, h });
+    }
+  }
+  gViewport.setAttribute('transform', `translate(${view.x},${view.y}) scale(${view.k})`);
+}
+let labelOrder = [];
+function applyVisibility() {
+  const live = new Set();
+  for (const { e, g } of edgeEls) { const vis = visibleEdge(e); g.style.display = vis ? '' : 'none'; if (vis) { live.add(e.a); live.add(e.b); } }
+  for (const { n, g } of nodeEls.values()) g.style.display = live.has(n.id) || n.subject ? '' : 'none';
+  applyHighlight();
+}
+// The whole kinship-connected family, however many hops away — so a grandchild or cousin
+// linked only through a shared relative still highlights together with the rest, not just
+// whoever has a direct edge.
+function kinshipCluster(startId) {
+  const seen = new Set([startId]), queue = [startId];
+  while (queue.length) {
+    const id = queue.shift();
+    for (const e of edges) {
+      if (e.t !== 'kinship' || !visibleEdge(e)) continue;
+      if (e.a === id && !seen.has(e.b)) { seen.add(e.b); queue.push(e.b); }
+      if (e.b === id && !seen.has(e.a)) { seen.add(e.a); queue.push(e.a); }
+    }
+  }
+  return seen;
+}
+// Everyone directly connected to a node (plus its whole kinship cluster) and the edges among
+// them — shared by the dim/highlight pass and by focusOn() below, so "what lights up when you
+// select this person" and "what the camera frames for them" never drift apart.
+function neighborhoodOf(n) {
+  const near = new Set([n.id]), nearEdges = new Set();
+  for (const e of edges) if (visibleEdge(e) && (e.a === n.id || e.b === n.id)) { nearEdges.add(e.i); near.add(e.a); near.add(e.b); }
+  const kin = kinshipCluster(n.id);
+  for (const id of kin) near.add(id);
+  for (const e of edges) if (e.t === 'kinship' && visibleEdge(e) && kin.has(e.a) && kin.has(e.b)) nearEdges.add(e.i);
+  return { near, nearEdges };
+}
+function applyHighlight() {
+  let near = new Set(), nearEdges = new Set();
+  if (focusNode) ({ near, nearEdges } = neighborhoodOf(focusNode));
+  else if (selected) { const e = selected.ref; nearEdges.add(e.i); near.add(e.a); near.add(e.b); }
+  // Once something is selected, an edge that isn't part of its neighbourhood also stops being
+  // clickable (see .rel-edge.dim in the stylesheet) — otherwise a faint, dimmed line from a
+  // totally different person can sit right under the ones that matter and steal the click.
+  // Selecting a person hides everything that isn't theirs outright, so their own relationships
+  // read cleanly; selecting a single line only dims the rest, since there the surrounding
+  // context is usually what you're comparing it against.
+  const hideOthers = !!focusNode;
+  svg.classList.toggle('focused', hideOthers);
+  for (const { e, g } of edgeEls) {
+    const other = !!selected && !nearEdges.has(e.i);
+    g.classList.toggle('hide', hideOthers && other); g.classList.toggle('dim', !hideOthers && other);
+    g.classList.toggle('sel', selected?.kind === 'edge' && selected.ref === e);
+  }
+  for (const { n, g } of nodeEls.values()) {
+    const other = !!selected && !near.has(n.id);
+    g.classList.toggle('hide', hideOthers && other); g.classList.toggle('dim', !hideOthers && other);
+    g.classList.toggle('sel', selected?.kind === 'node' && selected.ref === n);
+  }
+}
+
+// ------------------------------------------------------------------ view: zoom / pan / fit
+function canvasSize() { const r = wrap.getBoundingClientRect(); return { w: r.width, h: r.height, left: r.left, top: r.top }; }
+function toGraph(cx, cy) { const s = canvasSize(); return { x: (cx - s.left - view.x) / view.k, y: (cy - s.top - view.y) / view.k }; }
+function zoomAt(factor, cx, cy) {
+  const s = canvasSize(); const px = cx ?? s.left + s.w / 2, py = cy ?? s.top + s.h / 2;
+  const before = toGraph(px, py); const k = Math.min(3, Math.max(0.12, view.k * factor));
+  view.k = k; view.x = px - s.left - before.x * k; view.y = py - s.top - before.y * k; userView = true; render();
+}
+// Frames a set of nodes in the canvas at whatever zoom (within [minK, maxK]) fits them all,
+// reserving a strip for the floating panel exactly as fitView() always has. Shared by fitView()
+// itself and by focusOn() below so "fit everything" and "fit this person's neighbourhood" stay
+// the same manoeuvre at two different scopes.
+function fitToNodes(list, minK, maxK) {
+  const s = canvasSize();
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const n of list) { const r = radius(n) + 30; x0 = Math.min(x0, n.x - r); y0 = Math.min(y0, n.y - r); x1 = Math.max(x1, n.x + r); y1 = Math.max(y1, n.y + r + 16); }
+  const w = Math.max(1, x1 - x0), h = Math.max(1, y1 - y0);
+  // keep the graph clear of the floating search/legend panel: reserve a strip on whichever
+  // side it actually occupies (left on desktop, top when it spans the width on narrow screens)
+  const panelR = panel.getBoundingClientRect();
+  let reserveLeft = 0, reserveTop = 0;
+  if (panelR.width < s.w * 0.6) reserveLeft = Math.max(0, panelR.right - s.left) + 16;
+  else reserveTop = Math.max(0, panelR.bottom - s.top) + 16;
+  const availW = Math.max(160, s.w - reserveLeft - 20), availH = Math.max(160, s.h - reserveTop - 20);
+  const k = Math.min(maxK, Math.max(minK, Math.min(availW / w, availH / h)));
+  view.k = k;
+  view.x = reserveLeft + availW / 2 - ((x0 + x1) / 2) * k;
+  view.y = reserveTop + availH / 2 - ((y0 + y1) / 2) * k;
+}
+function fitView() {
+  const vis = [...nodesById.values()].filter((n) => nodeEls.get(n.id) && nodeEls.get(n.id).g.style.display !== 'none');
+  fitToNodes(vis.length ? vis : [...nodesById.values()], 0.12, 1.4);
+  render();
+}
+// Selecting a person frames them together with their direct relations (and kinship cluster) —
+// close enough to read names and lines clearly, but capped so a person with only one or two
+// connections doesn't zoom in on empty space at some absurd scale. Below fitView's own ceiling,
+// so there's still headroom to zoom in further by hand afterwards.
+// Tween node positions (and the camera) to a target over `ms`, re-rendering each frame.
+let animId = 0;
+function tween(targets, viewTarget, ms = 420) {
+  const id = ++animId, t0 = performance.now(), v0 = { ...view };
+  const from = new Map([...targets.keys()].map((n) => [n, { x: n.x, y: n.y }]));
+  const step = (now) => {
+    if (id !== animId) return;
+    const t = Math.min(1, (now - t0) / ms), k = 1 - Math.pow(1 - t, 3);
+    for (const [n, to] of targets) { const f = from.get(n); n.x = f.x + (to.x - f.x) * k; n.y = f.y + (to.y - f.y) * k; }
+    if (viewTarget) { view.x = v0.x + (viewTarget.x - v0.x) * k; view.y = v0.y + (viewTarget.y - v0.y) * k; view.k = v0.k + (viewTarget.k - v0.k) * k; }
+    render();
+    if (t < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+// The overview packs everyone in; once a single person is the whole subject there's room to
+// spread their relations out on rings around them (ordered as they already sit, so nothing
+// crosses over), with longer lines, and kinship-only relatives fanned just past their kin.
+function layoutFocus(n, near) {
+  const cx = n.x, cy = n.y, targets = new Map([[n, { x: cx, y: cy }]]);
+  const directIds = new Set();
+  for (const e of edges) if (visibleEdge(e) && (e.a === n.id || e.b === n.id)) directIds.add(e.a === n.id ? e.b : e.a);
+  const direct = [...directIds].map((id) => nodesById.get(id));
+  const N = direct.length;
+  if (N) {
+    const ang = direct.map((m) => ({ m, a: Math.atan2(m.y - cy, m.x - cx) })).sort((p, q) => p.a - q.a);
+    let sx = 0, sy = 0;
+    ang.forEach((o, i) => { const d = o.a - (-Math.PI + (i + 0.5) * 2 * Math.PI / N); sx += Math.cos(d); sy += Math.sin(d); });
+    const rot = Math.atan2(sy, sx), rings = N > 8 ? 2 : 1, per = Math.ceil(N / rings);
+    const r1 = Math.max(260, per * 150 / (2 * Math.PI)), r2 = r1 + 170;
+    ang.forEach((o, i) => {
+      const a = -Math.PI + rot + (i + 0.5) * 2 * Math.PI / N, r = rings === 2 && i % 2 ? r2 : r1;
+      targets.set(o.m, { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r });
+    });
+  }
+  const pending = [...near].map((id) => nodesById.get(id)).filter((m) => !targets.has(m)), used = new Map();
+  let progress = true;
+  while (pending.length && progress) {
+    progress = false;
+    for (let i = pending.length - 1; i >= 0; i--) {
+      const m = pending[i]; let anchor = null;
+      for (const e of edges) {
+        if (e.t !== 'kinship' || !visibleEdge(e)) continue;
+        const o = e.a === m.id ? e.b : e.b === m.id ? e.a : null;
+        if (o && targets.has(nodesById.get(o))) { anchor = nodesById.get(o); break; }
+      }
+      if (!anchor) continue;
+      const ap = targets.get(anchor), k = used.get(anchor) || 0; used.set(anchor, k + 1);
+      const base = Math.atan2(ap.y - cy, ap.x - cx), a = base + (k % 2 ? 1 : -1) * Math.ceil(k / 2) * 0.4;
+      targets.set(m, { x: ap.x + Math.cos(a) * 150, y: ap.y + Math.sin(a) * 150 });
+      pending.splice(i, 1); progress = true;
+    }
+  }
+  for (const m of pending) targets.set(m, { x: m.x, y: m.y });
+  return targets;
+}
+let focusNode = null, preFocusView = null;
+const savedPos = new Map();
+function enterFocus(n) {
+  if (!focusNode) preFocusView = { ...view };
+  // back to the overview arrangement first, remembering where things are on screen right now
+  const shown = new Map();
+  for (const [id, o] of savedPos) { const m = nodesById.get(id); shown.set(m, { x: m.x, y: m.y }); m.x = o.x; m.y = o.y; }
+  savedPos.clear();
+  focusNode = n; alpha = 0; userView = true;
+  const { near } = neighborhoodOf(n);
+  const list = [...near].map((id) => nodesById.get(id)).filter(Boolean);
+  for (const m of list) savedPos.set(m.id, { x: m.x, y: m.y });
+  const targets = layoutFocus(n, near);
+  const start = new Map(list.map((m) => [m, shown.get(m) || { x: m.x, y: m.y }]));
+  const v0 = { ...view };
+  for (const [m, t] of targets) { m.x = t.x; m.y = t.y; }
+  fitToNodes(list, 0.6, 2.2);
+  const vt = { ...view };
+  for (const [m, s] of start) { m.x = s.x; m.y = s.y; }
+  Object.assign(view, v0);
+  tween(targets, vt);
+}
+function exitFocus() {
+  if (!focusNode) return;
+  focusNode = null;
+  const targets = new Map([...savedPos].map(([id, o]) => [nodesById.get(id), { x: o.x, y: o.y }]));
+  savedPos.clear();
+  const vt = preFocusView; preFocusView = null;
+  tween(targets, vt, 380);
+}
+// Dismissing a line's popup while a person is in focus goes back to that person, not all the
+// way out to the overview; only dismissing the person themselves does that.
+function dismiss() {
+  if (focusNode && selected?.kind === 'edge') { selected = { kind: 'node', ref: focusNode }; applyHighlight(); showDetail(); syncUrl(); }
+  else clearSelection();
+}
+function clearSelection() { selected = null; exitFocus(); hideDetail(); applyHighlight(); syncUrl(); }
+// keep the whole map in view when the canvas is resized, until the reader has moved or zoomed it themselves
+let userView = false;
+if (typeof ResizeObserver !== 'undefined') new ResizeObserver(() => { if (!userView && nodesById.size) fitView(); else render(); }).observe(wrap);
+wrap.addEventListener('wheel', (ev) => { ev.preventDefault(); zoomAt(ev.deltaY < 0 ? 1.12 : 1 / 1.12, ev.clientX, ev.clientY); }, { passive: false });
+$('rel-zoom-in').addEventListener('click', () => zoomAt(1.25));
+$('rel-zoom-out').addEventListener('click', () => zoomAt(1 / 1.25));
+$('rel-fit').addEventListener('click', () => { if (focusNode) { clearSelection(); return; } userView = false; fitView(); });
+window.addEventListener('resize', () => render());
+
+// background: pan, click to clear selection
+let pan = null;
+svg.addEventListener('pointerdown', (ev) => {
+  if (ev.target.closest('.rel-node, .rel-edge')) return;
+  pan = { x: ev.clientX, y: ev.clientY, vx: view.x, vy: view.y, moved: false }; svg.setPointerCapture(ev.pointerId); svg.classList.add('panning');
+});
+svg.addEventListener('pointermove', (ev) => { if (!pan) return; const dx = ev.clientX - pan.x, dy = ev.clientY - pan.y; if (Math.abs(dx) + Math.abs(dy) > 3) pan.moved = true; view.x = pan.vx + dx; view.y = pan.vy + dy; userView = true; render(); });
+svg.addEventListener('pointerup', () => { if (pan && !pan.moved) dismiss(); pan = null; svg.classList.remove('panning'); });
+
+// nodes: drag to move, click to select
+function attachNodeDrag(g, n) {
+  let drag = null;
+  g.addEventListener('pointerdown', (ev) => { ev.stopPropagation(); g.setPointerCapture(ev.pointerId); drag = { sx: ev.clientX, sy: ev.clientY, moved: false }; n.pinned = true; });
+  g.addEventListener('pointermove', (ev) => {
+    if (!drag) return;
+    if (Math.abs(ev.clientX - drag.sx) + Math.abs(ev.clientY - drag.sy) > 4) drag.moved = true;
+    if (drag.moved) { userView = true; const p = toGraph(ev.clientX, ev.clientY); n.x = p.x; n.y = p.y; if (!focusNode) reheat(0.35); render(); }
+  });
+  g.addEventListener('pointerup', () => { if (!drag) return; n.pinned = false; if (!drag.moved) select({ kind: 'node', ref: n }); drag = null; });
+}
+
+// ------------------------------------------------------------------ selection + detail card
+function select(sel) {
+  selected = sel;
+  if (sel.kind === 'node') enterFocus(sel.ref);
+  applyHighlight(); showDetail(); syncUrl();
+}
+function hideDetail() { const d = $('rel-detail'); d.hidden = true; d.innerHTML = ''; $('rel-hint').style.display = ''; }
+const toneDot = (tone) => `<i class="rel-dot" style="background:${toneSwatchCSS(tone)}"></i>`;
+function typeSwatch(type, tone) {
+  const st = lineStyle(type);
+  if (st.rails) {
+    // a real two-rail swatch, offset by the same gap used on the graph itself (kinship only —
+    // always neutral, so tone is never 'mixed' here)
+    const c = tone == null ? TONE.neutral : TONE[tone];
+    const half = st.rails / 2;
+    return `<svg class="rel-swatch" width="36" height="14" viewBox="0 0 36 14" aria-hidden="true"><line x1="2" y1="${7 - half}" x2="34" y2="${7 - half}" stroke="${c}" stroke-width="${st.w}" stroke-linecap="${st.cap}"/><line x1="2" y1="${7 + half}" x2="34" y2="${7 + half}" stroke="${c}" stroke-width="${st.w}" stroke-linecap="${st.cap}"/></svg>`;
+  }
+  const dash = st.dash ? ` stroke-dasharray="${st.dash}"` : '';
+  // a mixed tone has no single colour to give the little preview line, so it gets split into a
+  // blue half and a red half instead — the same trick the real graph edges use, just without a
+  // gradient def for one throwaway icon.
+  const base = tone === 'mixed'
+    ? `<line x1="2" y1="7" x2="18" y2="7" stroke="${TONE.positive}" stroke-width="${st.w}" stroke-linecap="${st.cap}"${dash}/><line x1="18" y1="7" x2="34" y2="7" stroke="${TONE.negative}" stroke-width="${st.w}" stroke-linecap="${st.cap}"${dash}/>`
+    : `<line x1="2" y1="7" x2="34" y2="7" stroke="${tone == null ? TONE.neutral : TONE[tone]}" stroke-width="${st.w}" stroke-linecap="${st.cap}"${dash}/>`;
+  return `<svg class="rel-swatch" width="36" height="14" viewBox="0 0 36 14" aria-hidden="true">${base}</svg>`;
+}
+// Bilingual header for a person: current-language name/courtesy name large, the other
+// language shown smaller alongside — same pairing as the journey panel on the overall map.
+function nameHtml(n) {
+  const zhAttr = (v) => (v ? ` lang="${v}"` : '');
+  const primaryLang = isZh ? LANG : '';
+  const secondaryLang = isZh ? '' : 'zh-hant';
+  const secondaryName = NAME === 'en' ? n.n.zht : n.n.en;
+  const nameRow = `<div class="rel-d-name"><span${zhAttr(primaryLang)}>${esc(label(n.n))}</span>${secondaryName ? `<span class="rel-d-name-secondary"${zhAttr(secondaryLang)}>${esc(secondaryName)}</span>` : ''}</div>`;
+  let courtesyRow = '';
+  if (n.c) {
+    const secondaryCourtesy = NAME === 'en' ? n.c.zht : n.c.en;
+    courtesyRow = `<div class="rel-d-courtesy"><span${zhAttr(primaryLang)}>${esc(label(n.c))}</span>${secondaryCourtesy ? `<span class="rel-d-courtesy-secondary"${zhAttr(secondaryLang)}>${esc(secondaryCourtesy)}</span>` : ''}</div>`;
+  }
+  return nameRow + courtesyRow;
+}
+function showDetail() {
+  const d = $('rel-detail'); $('rel-hint').style.display = 'none';
+  const close = `<button type="button" class="rel-d-close" id="rel-d-close" aria-label="${esc(UI.close)}"><i class="ti ti-x" aria-hidden="true"></i></button>`;
+  const noteLink = (chId) => `<a class="rel-note-link" href="${DATA.chapterBase}/${chId}" target="_blank" rel="noopener">${esc(UI.seePassage)} <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a>`;
+  let html = '';
+  d.classList.toggle('wide', selected.kind === 'edge');
+  if (selected.kind === 'edge') {
+    const e = selected.ref; const a = nodesById.get(e.a), b = nodesById.get(e.b);
+    // Allegiance edges (e.g. a long-serving officer under one lord) can carry many
+    // appointment notes — those collapse into one summary line instead of a long list.
+    const appointmentNotes = e.t === 'service' ? e.notes.filter((nt) => nt.ttl) : [];
+    const otherNotes = e.notes.filter((nt) => !appointmentNotes.includes(nt));
+    const appointmentsHtml = appointmentNotes.length
+      ? `<div class="rel-d-appointments"${isZh ? ` lang="${LANG}"` : ''}>${esc(UI.appointmentsUnder.replace('{lord}', label(b.n)))} ${esc(appointmentNotes.map((nt) => label(nt.ttl)).join(isZh ? '、' : ', '))}</div>`
+      : '';
+    const otherNotesHtml = otherNotes.length
+      ? `<ul class="rel-notes">${otherNotes.map((nt) => `<li><span ${isZh ? `lang="${LANG}"` : ''}>${esc(nt.x[NAME] || nt.x.en || nt.x.zht || '')}</span></li>`).join('')}</ul>`
+      : '';
+    html = `${close}<div class="rel-d-pair"><span ${isZh ? `lang="${LANG}"` : ''}>${esc(label(a.n))}</span><span class="rel-d-arrow">${e.d ? '→' : '—'}</span><span ${isZh ? `lang="${LANG}"` : ''}>${esc(label(b.n))}</span></div>
+      <div class="rel-chips"><span class="rel-chip">${typeSwatch(e.t, e.p)} ${esc(UI.types[e.t])}</span><span class="rel-chip">${toneDot(e.p)} ${esc(UI.tones[e.p])}</span></div>
+      ${e.anc ? `<div class="rel-d-anc"><i class="ti ti-history" aria-hidden="true"></i> ${esc(UI.ancestral)}</div>` : ''}
+      <div class="rel-d-label rel-d-label-row"><span>${esc(UI.notes)}</span>${[...new Set(e.notes.map((nt) => nt.ch))].map(noteLink).join('')}</div>
+      ${appointmentsHtml}${otherNotesHtml}`;
+  } else {
+    const n = selected.ref;
+    const mine = edges.filter((e) => (e.a === n.id || e.b === n.id) && visibleEdge(e));
+    const bioId = bioChapterOf.get(n.id);
+    const bioLink = bioId ? `<a class="rel-d-bio" href="${DATA.chapterBase}/${bioId}" target="_blank" rel="noopener" aria-label="${esc(UI.readChapter)}" title="${esc(UI.readChapter)}"><i class="ti ti-book-2" aria-hidden="true"></i></a>` : '';
+    const journeyLink = bioId ? `<a class="rel-d-journey" href="${DATA.mapBase}?journey=${bioId}&person=${encodeURIComponent(n.id)}" target="_blank" rel="noopener" aria-label="${esc(UI.journey)}" title="${esc(UI.journey)}"><i class="ti ti-route" aria-hidden="true"></i></a>` : '';
+    // With both corner icons stacked, a name alone (no courtesy line under it) doesn't
+    // reach as far down as the icon column — pad the label so it clears the journey icon.
+    const labelClass = bioId && !n.c ? ' rel-d-label-gap' : '';
+    html = `${close}${bioLink}${journeyLink}${nameHtml(n)}<div class="rel-d-label${labelClass}">${mine.length} ${esc(UI.relations)}</div>`;
+  }
+  d.innerHTML = html; d.hidden = false;
+  $('rel-d-close').addEventListener('click', dismiss);
+}
+
+// ------------------------------------------------------------------ legend (also the filters)
+function buildLegend() {
+  const box = $('rel-legend'); box.textContent = '';
+  const hasAnc = edges.some((e) => e.anc);
+  const mk = (cls, html, onclick, off) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'rel-lg ' + cls; b.innerHTML = html; b.setAttribute('aria-pressed', String(!off)); b.addEventListener('click', onclick); return b; };
+  const t1 = document.createElement('div'); t1.className = 'rel-lg-title'; t1.textContent = UI.legendTypes; box.appendChild(t1);
+  for (const type of TYPES) {
+    if (!edges.some((e) => e.t === type)) continue;
+    const b = mk('', `${typeSwatch(type)}<span>${esc(UI.types[type])}</span>`, () => { hiddenTypes.has(type) ? hiddenTypes.delete(type) : hiddenTypes.add(type); buildLegend(); applyVisibility(); }, hiddenTypes.has(type));
+    b.classList.toggle('off', hiddenTypes.has(type)); box.appendChild(b);
+  }
+  const t2 = document.createElement('div'); t2.className = 'rel-lg-title'; t2.textContent = UI.legendTone; box.appendChild(t2);
+  const toneRow = document.createElement('div'); toneRow.className = 'rel-lg-row'; box.appendChild(toneRow);
+  // no separate swatch for "mixed": it reads as the blue and red already shown here
+  for (const tone of TONES) {
+    if (!edges.some((e) => e.p === tone || (e.p === 'mixed' && tone !== 'neutral'))) continue;
+    const b = mk('rel-lg-dot', `<i class="rel-dot" style="background:${TONE[tone]}"></i>`, () => { hiddenTones.has(tone) ? hiddenTones.delete(tone) : hiddenTones.add(tone); buildLegend(); applyVisibility(); }, hiddenTones.has(tone));
+    b.title = UI.tones[tone]; b.setAttribute('aria-label', UI.tones[tone]);
+    b.classList.toggle('off', hiddenTones.has(tone)); toneRow.appendChild(b);
+  }
+  if (hasAnc) {
+    const b = mk('', `<i class="ti ti-history" aria-hidden="true"></i><span>${esc(UI.showAncestors)}</span>`, () => { showAncestors = !showAncestors; buildLegend(); applyVisibility(); }, !showAncestors);
+    b.classList.toggle('off', !showAncestors); box.appendChild(b);
+  }
+  const note = document.createElement('div'); note.className = 'rel-lg-note'; note.textContent = UI.arrowNote; box.appendChild(note);
+  applyVisibility();
+}
+
+// ------------------------------------------------------------------ search (compact dropdown)
+const norm = (s) => String(s || '').toLowerCase().replace(/[\s.'’\-·]/g, '');
+function buildSearchResults() {
+  const q = norm($('rel-search').value);
+  const box = $('rel-search-results');
+  const list = [...nodesById.values()].filter((n) => {
+    if (!q) return true;
+    const hay = [n.n.en, n.n.zht, n.n.zhs, n.c && n.c.en, n.c && n.c.zht, n.c && n.c.zhs, ...(n.al || [])].map(norm);
+    return hay.some((h) => h.includes(q));
+  }).sort((a, b) => b.deg - a.deg || label(a.n).localeCompare(label(b.n))).slice(0, 8);
+  box.textContent = '';
+  if (!list.length) {
+    const p = document.createElement('div'); p.className = 'rel-search-empty'; p.textContent = UI.noMatch; box.appendChild(p);
+  } else {
+    for (const n of list) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'rel-search-row'; b.dataset.id = n.id;
+      const c = n.c ? (NAME === 'en' ? n.c.en : label(n.c)) : '';
+      b.innerHTML = `<span class="rp-name" ${isZh ? `lang="${LANG}"` : ''}>${esc(label(n.n))}</span>${c ? `<span class="rp-c">${esc(c)}</span>` : ''}`;
+      b.addEventListener('click', () => {
+        const node = nodesById.get(n.id);
+        select({ kind: 'node', ref: node });
+        $('rel-search').value = ''; box.hidden = true; box.textContent = '';
+      });
+      box.appendChild(b);
+    }
+  }
+  box.hidden = false;
+}
+$('rel-search').addEventListener('input', buildSearchResults);
+$('rel-search').addEventListener('focus', buildSearchResults);
+$('rel-search').addEventListener('blur', () => { setTimeout(() => { $('rel-search-results').hidden = true; }, 150); });
+
+// ------------------------------------------------------------------ URL (person deep-link only — filtering is search + legend, not a chapter picker)
+const params = new URLSearchParams(location.search);
+function syncUrl() {
+  const p = new URLSearchParams();
+  if (selected && selected.kind === 'node') p.set('person', selected.ref.id);
+  history.replaceState(null, '', `${location.pathname}?${p.toString()}`);
+}
+loadGraph();
+const startPerson = params.get('person');
+if (startPerson && nodesById.has(startPerson)) {
+  const node = nodesById.get(startPerson);
+  select({ kind: 'node', ref: node });
+}
+if (!DATA.graph.nodes.length) { $('rel-hint').textContent = '—'; }
+</script>
+
+<style is:global>
+.site { max-width: 100%; background: var(--color-bg); display: flex; flex-direction: column; min-height: 100vh; }
+.rel-main { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+
+.page-header { padding: 1.5rem 2rem 0; }
+.breadcrumb { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.bc-link { font-size: 15px; color: #d5ad6b; text-decoration: none; }
+.bc-link:hover { color: #f0d39a; }
+.bc-sep { font-size: 14px; color: rgba(232,221,202,0.35); }
+.bc-cur { font-size: 16px; color: rgba(232,221,202,0.66); }
+
+.rel-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem 2rem 1.25rem; border-bottom: 0.5px solid var(--color-border); }
+.rel-title { font-family: var(--font-heading-en); font-size: 35px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 2px; }
+.rel-header-actions { display: flex; align-items: center; gap: 12px; }
+.rel-btn { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--color-text-secondary); text-decoration: none; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 0.35rem 0.8rem; transition: border-color 0.15s, color 0.15s; }
+.rel-btn:hover { border-color: var(--archive-gold-soft, #d0aa6b); color: var(--archive-gold-soft, #d0aa6b); }
+
+.rel-body { display: flex; flex: 1; min-height: 0; }
+.rel-canvas-wrap { display: flex; flex: 1; flex-direction: column; height: calc(100vh - 210px); min-height: 560px; min-width: 0; background: var(--color-bg); }
+.rel-stage { position: relative; flex: 1; min-height: 0; background: radial-gradient(ellipse at center, #141414 0%, #0d0d0d 70%); overflow: hidden; touch-action: none; }
+.rel-svg { width: 100%; height: 100%; display: block; cursor: grab; user-select: none; }
+.rel-svg.panning { cursor: grabbing; }
+
+.rel-edge-line { transition: opacity 0.15s, stroke-opacity 0.15s; stroke-opacity: 0.55; }
+.rel-svg.focused .rel-edge-line { stroke-opacity: 0.9; }
+.rel-edge:hover .rel-edge-line, .rel-edge.sel .rel-edge-line { stroke-opacity: 1; }
+.rel-edge { cursor: pointer; }
+.rel-edge:hover .rel-edge-line { filter: brightness(1.25); }
+.rel-edge.sel .rel-edge-line { filter: drop-shadow(0 0 5px currentColor) brightness(1.3); }
+.rel-edge.dim, .rel-node.dim { opacity: 0.13; }
+/* Once a person (or edge) is selected, a dimmed line stops being clickable — otherwise a faint
+   line from someone else's relationship can sit right under the highlighted ones and steal a
+   click meant for them. Nodes stay clickable while dimmed, so jumping to a different person is
+   still one click away. */
+.rel-edge.dim { pointer-events: none; }
+.rel-edge.hide, .rel-node.hide { display: none; }
+.rel-node { cursor: pointer; outline: none; }
+.rel-node-c { fill: #1b1b1b; stroke: #8b8778; stroke-width: 1.6; transition: stroke 0.15s, fill 0.15s; }
+.rel-node.subject .rel-node-c { stroke: var(--archive-gold-soft, #d0aa6b); stroke-width: 2.6; fill: #2a2418; }
+.rel-node:hover .rel-node-c, .rel-node:focus-visible .rel-node-c, .rel-node.sel .rel-node-c { stroke: var(--archive-gold-soft, #d0aa6b); fill: #2a2418; }
+.rel-node.sel .rel-node-c { stroke-width: 3; }
+.rel-node-t { fill: var(--color-text-primary); font-size: 14px; paint-order: stroke; stroke: #0d0d0d; stroke-width: 4px; stroke-linejoin: round; pointer-events: none; }
+.rel-node-t[lang="zh-hans"], .rel-node-t[lang="zh-hant"] { font-family: 'LXGW WenKai', serif; font-size: 16px; }
+.rel-node.subject .rel-node-t { fill: var(--archive-gold-soft, #d0aa6b); font-weight: 500; }
+.rel-node-zh { fill: var(--color-text-primary); font-family: 'LXGW WenKai', serif; font-weight: 600; pointer-events: none; opacity: 0; transition: opacity 0.15s; }
+.rel-node.subject .rel-node-zh { fill: var(--archive-gold-soft, #d0aa6b); }
+
+.rel-panel { position: absolute; left: 12px; top: 12px; z-index: 5; width: 230px; max-width: calc(100% - 24px); display: flex; flex-direction: column; gap: 8px; padding: 10px; background: rgba(22,22,22,0.94); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); }
+.rel-panel-search { position: relative; }
+.rel-panel-search .person-search-icon { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); font-size: 14px; color: var(--color-text-tertiary); pointer-events: none; }
+.rel-panel-search .person-search-input { width: 100%; padding: 0.4rem 0.6rem 0.4rem 1.9rem; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); background: rgba(255,255,255,0.03); color: var(--color-text-primary); font-size: 13px; font-family: inherit; }
+.rel-panel-search .person-search-input:focus { outline: none; border-color: var(--archive-gold-soft, #d0aa6b); }
+.rel-search-results { position: absolute; left: 0; right: 0; top: calc(100% + 6px); max-height: 260px; overflow-y: auto; background: rgba(20,20,20,0.98); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); box-shadow: 0 6px 20px rgba(0,0,0,0.4); z-index: 6; scrollbar-width: thin; }
+.rel-search-results[hidden] { display: none; }
+.rel-search-row { display: flex; align-items: baseline; gap: 8px; width: 100%; background: none; border: none; padding: 0.45rem 0.65rem; cursor: pointer; font-family: inherit; text-align: left; color: var(--color-text-primary); }
+.rel-search-row:hover { background: rgba(208, 170, 107, 0.08); }
+.rel-search-empty { font-size: 12.5px; color: var(--color-text-tertiary); font-style: italic; padding: 0.5rem 0.65rem; }
+
+.rel-legend { display: flex; flex-direction: column; gap: 5px; }
+.rel-lg-title { font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin: 3px 0 0; }
+.rel-lg-title:first-child { margin-top: 0; }
+.rel-lg { display: flex; align-items: center; gap: 8px; background: none; border: none; color: var(--color-text-secondary); font-size: 12.5px; font-family: inherit; padding: 2px 4px; border-radius: 4px; cursor: pointer; text-align: left; }
+.rel-lg:hover { background: rgba(255,255,255,0.05); color: var(--color-text-primary); }
+.rel-lg.off { opacity: 0.4; }
+.rel-lg i.ti { font-size: 14px; width: 18px; text-align: center; }
+.rel-swatch { flex-shrink: 0; }
+.rel-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.rel-lg-row { display: flex; align-items: center; gap: 4px; }
+.rel-lg-dot { padding: 4px; }
+.rel-lg-note { padding-top: 5px; margin-top: 2px; border-top: 0.5px solid var(--color-border); font-size: 10.5px; line-height: 1.4; color: var(--color-text-tertiary); }
+
+.rel-controls { position: absolute; right: 12px; bottom: 12px; display: flex; flex-direction: column; gap: 6px; }
+.rel-ctl { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: rgba(22,22,22,0.9); color: var(--color-text-secondary); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); cursor: pointer; font-size: 16px; }
+.rel-ctl:hover { color: var(--archive-gold-soft, #d0aa6b); border-color: var(--archive-gold-soft, #d0aa6b); }
+.rel-hint { position: absolute; left: 12px; bottom: 12px; font-size: 12.5px; color: var(--color-text-tertiary); background: rgba(22,22,22,0.7); padding: 4px 12px; border-radius: 999px; pointer-events: none; }
+
+/* muted grey scrollbar for the popup and the search list, instead of the browser's bright default */
+.rel-detail, .rel-search-results { scrollbar-width: thin; scrollbar-color: rgba(140,136,124,0.32) transparent; }
+.rel-detail::-webkit-scrollbar, .rel-search-results::-webkit-scrollbar { width: 6px; }
+.rel-detail::-webkit-scrollbar-track, .rel-search-results::-webkit-scrollbar-track { background: transparent; }
+.rel-detail::-webkit-scrollbar-thumb, .rel-search-results::-webkit-scrollbar-thumb { background: rgba(140,136,124,0.3); border-radius: 3px; }
+.rel-detail::-webkit-scrollbar-thumb:hover, .rel-search-results::-webkit-scrollbar-thumb:hover { background: rgba(140,136,124,0.55); }
+.rel-detail { position: absolute; left: 12px; bottom: 12px; width: 300px; max-width: calc(100% - 40px); max-height: 46%; overflow-y: auto; padding: 12px 14px; background: rgba(22,22,22,0.96); border: 1px solid rgba(208, 170, 107, 0.4); border-radius: var(--radius-md); scrollbar-width: thin; }
+.rel-detail.wide { width: 400px; }
+.rel-d-appointments[lang] { font-family: 'LXGW WenKai', serif; font-size: 16px; }
+.rel-d-appointments { font-size: 14px; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 4px; }
+.rel-detail[hidden] { display: none; }
+.rel-d-close { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: none; border: none; color: var(--color-text-tertiary); cursor: pointer; font-size: 14px; }
+.rel-d-close:hover { color: var(--color-text-primary); }
+.rel-d-bio, .rel-d-journey { position: absolute; left: 8px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; color: var(--color-text-tertiary); text-decoration: none; font-size: 14px; }
+.rel-d-bio { top: 8px; }
+.rel-d-journey { top: 32px; }
+.rel-d-bio:hover, .rel-d-journey:hover { color: var(--archive-gold-soft, #d0aa6b); }
+.rel-d-name { font-size: 20px; color: var(--archive-gold-soft, #d0aa6b); padding-left: 24px; padding-right: 24px; margin-bottom: 6px; text-align: center; }
+.rel-d-name span[lang] { font-family: 'LXGW WenKai', serif; }
+.rel-d-name-secondary { font-size: 15px; color: var(--color-text-tertiary); margin-left: 7px; }
+.rel-d-courtesy { font-size: 16px; font-style: italic; color: var(--color-text-secondary); margin-bottom: 8px; text-align: center; padding-left: 24px; padding-right: 24px; }
+.rel-d-courtesy span[lang] { font-family: 'LXGW WenKai', serif; font-style: normal; }
+.rel-d-courtesy-secondary { font-size: 14px; font-style: normal; color: var(--color-text-tertiary); margin-left: 6px; }
+.rel-d-pair { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: 17px; color: var(--color-text-primary); padding-right: 24px; }
+.rel-d-pair span[lang] { font-family: 'LXGW WenKai', serif; }
+.rel-d-arrow { color: var(--color-text-tertiary); }
+.rel-chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 4px; }
+.rel-chip { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; color: var(--color-text-secondary); border: 0.5px solid var(--color-border); border-radius: 999px; padding: 1px 10px 1px 4px; }
+.rel-chip .rel-dot { margin: 0 4px 0 6px; width: 9px; height: 9px; }
+.rel-chip .rel-swatch { width: 28px; }
+.rel-d-anc { font-size: 12.5px; color: var(--color-text-tertiary); margin: 4px 0; }
+.rel-d-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin: 10px 0 4px; }
+.rel-d-label-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.rel-d-label-row .rel-note-link { text-transform: none; letter-spacing: 0; }
+.rel-d-label-gap { margin-top: 20px; }
+.rel-notes { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.rel-notes li { font-size: 14.5px; line-height: 1.6; color: var(--color-text-primary); }
+.rel-notes li span[lang] { font-family: 'LXGW WenKai', serif; font-size: 16px; }
+.rel-note-link { font-size: 12px; color: var(--archive-gold-soft, #d0aa6b); text-decoration: none; white-space: nowrap; margin-left: 4px; }
+.rel-note-link:hover { text-decoration: underline; }
+
+.rp-name { font-size: 14.5px; }
+.rp-name[lang] { font-family: 'LXGW WenKai', serif; font-size: 16px; }
+.rp-c { font-size: 12px; color: var(--color-text-tertiary); }
+
+.site-footer { border-top: 0.5px solid var(--color-border); padding: 0.875rem 2rem; display: flex; justify-content: space-between; align-items: center; background: var(--color-bg-secondary); margin-top: auto; }
+.footer-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; }
+.footer-copy { font-size: 0.82rem; color: var(--color-text-tertiary); }
+.footer-github { color: var(--color-text-tertiary); font-size: 18px; text-decoration: none; transition: color 0.15s; }
+.footer-github:hover { color: var(--color-text-primary); }
+.footer-quote { font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; white-space: pre-line; }
+
+@media (max-width: 800px) {
+  .page-header { padding: 1rem 1rem 0; }
+  .rel-header { padding: 0.875rem 1rem 1rem; }
+  .rel-title { font-size: 26px; }
+  .rel-canvas-wrap { height: 78vh; min-height: 460px; }
+  .rel-panel { width: auto; right: 12px; }
+  .rel-lg-note { display: none; }
+  .rel-hint { display: none; }
+  .site-footer { flex-direction: column; align-items: center; gap: 0.75rem; padding: 1rem; text-align: center; }
+}
+</style>

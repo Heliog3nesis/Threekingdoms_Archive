@@ -1,0 +1,1441 @@
+{
+  "chapter": {
+    "id": "wei-shu-16e",
+    "order": 16,
+    "label": {
+      "zht": "鄭渾傳",
+      "zhs": "郑浑传",
+      "en": "Biography of Zheng Hun"
+    },
+    "title": {
+      "zht": "魏書十六 · 鄭渾傳",
+      "zhs": "魏书十六 · 郑浑传",
+      "en": "Book of Wei, Chapter 16 · Biography of Zheng Hun"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.5856252,
+      "lng": 114.28191177,
+      "name": "Kaifeng",
+      "persons": [
+        "鄭渾（文公）",
+        "鄭泰（公業）",
+        "鄭袤（林叔）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "24",
+      "persons": [
+        "鄭渾（文公）",
+        "鄭泰（公業）",
+        "鄭袤（林叔）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "71",
+      "persons": [
+        "鄭渾（文公）",
+        "鄭袤（林叔）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.71353337,
+      "lng": 116.7293608,
+      "name": "Xiacai",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.60565556,
+      "lng": 114.15360904,
+      "name": "Shaoling",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "151",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "17",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "142",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "鄭渾（文公）",
+        "鄭泰（公業）",
+        "鄭袤（林叔）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "161",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "26",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "34",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "162",
+      "persons": [
+        "鄭渾（文公）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.31264639,
+      "lng": 108.87167209,
+      "name": "Chang'an",
+      "persons": [
+        "鄭泰（公業）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.68354088,
+      "lng": 114.58305267,
+      "name": "Liyang",
+      "persons": [
+        "鄭袤（林叔）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "38",
+      "persons": [
+        "鄭袤（林叔）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "160",
+      "persons": [
+        "鄭袤（林叔）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "鄭渾（文公）",
+      "name": {
+        "en": "Zheng Hun",
+        "zht": "鄭渾",
+        "zhs": "郑浑"
+      },
+      "courtesyName": {
+        "en": "Wengong",
+        "zht": "文公",
+        "zhs": "文公"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng, Henan",
+              "zht": "河南開封",
+              "zhs": "河南开封"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.5856252,
+              "lng": 114.28191177,
+              "name": "Kaifeng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            },
+            {
+              "en": "Yuzhang",
+              "zht": "豫章",
+              "zhs": "豫章"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "24"
+            },
+            {
+              "kind": "admin",
+              "id": "71"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Xiacai",
+              "zht": "下蔡",
+              "zhs": "下蔡"
+            },
+            {
+              "en": "Shaoling",
+              "zht": "邵陵",
+              "zhs": "邵陵"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Chief",
+              "zht": "長",
+              "zhs": "长"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.71353337,
+              "lng": 116.7293608,
+              "name": "Xiacai"
+            },
+            {
+              "kind": "town",
+              "lat": 33.60565556,
+              "lng": 114.15360904,
+              "name": "Shaoling"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "County Chief",
+              "zht": "長",
+              "zhs": "长",
+              "url": "/translations/officials/regional#counties-089"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令",
+              "url": "/translations/officials/regional#counties-088"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "Before the 17th year of Jian'an",
+            "zht": "建安十七年前",
+            "zhs": "建安十七年前"
+          },
+          "year": 212,
+          "age": null,
+          "location": [
+            {
+              "en": "Pingyi",
+              "zht": "馮翊",
+              "zhs": "冯翊"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "151"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Shangdang",
+              "zht": "上黨",
+              "zhs": "上党"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "17"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": 215,
+          "age": null,
+          "location": [
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            }
+          ],
+          "position": [
+            {
+              "en": "Intendant of Jingzhao",
+              "zht": "京兆尹",
+              "zhs": "京兆尹"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "142"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Intendant of Jingzhao",
+              "zht": "京兆尹",
+              "zhs": "京兆尹",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Attendant Censor",
+              "zht": "侍御史",
+              "zhs": "侍御史"
+            },
+            {
+              "en": "Commandant of Escorting Cavalry",
+              "zht": "駙馬都尉",
+              "zhs": "驸马都尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Attendant Censor",
+              "zht": "侍御史",
+              "zhs": "侍御史",
+              "url": "/translations/officials/departments#censorate-049"
+            },
+            {
+              "en": "Commandant of Escorting Cavalry",
+              "zht": "駙馬都尉",
+              "zhs": "驸马都尉",
+              "url": "/translations/officials/ministers#-nine-ministers-i-177"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Yangping",
+              "zht": "陽平",
+              "zhs": "阳平"
+            },
+            {
+              "en": "Pei State",
+              "zht": "沛",
+              "zhs": "沛"
+            },
+            {
+              "en": "Shanyang",
+              "zht": "山陽",
+              "zhs": "山阳"
+            },
+            {
+              "en": "Wei",
+              "zht": "魏",
+              "zhs": "魏"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "161"
+            },
+            {
+              "kind": "admin",
+              "id": "26"
+            },
+            {
+              "kind": "admin",
+              "id": "34"
+            },
+            {
+              "kind": "admin",
+              "id": "162"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "鄭泰（公業）",
+      "name": {
+        "en": "Zheng Tai",
+        "zht": "鄭泰",
+        "zhs": "郑泰"
+      },
+      "courtesyName": {
+        "en": "Gongye",
+        "zht": "公業",
+        "zhs": "公业"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng, Henan",
+              "zht": "河南開封",
+              "zhs": "河南开封"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.5856252,
+              "lng": 114.28191177,
+              "name": "Kaifeng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "during the Zhongping Era",
+            "zht": "中平年間",
+            "zhs": "中平年间"
+          },
+          "year": "180s",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Imperial Secretariat Attendant Gentleman",
+              "zht": "尚書侍郎",
+              "zhs": "尚书侍郎"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Imperial Secretariat Attendant Gentleman",
+              "zht": "尚書侍郎",
+              "zhs": "尚书侍郎",
+              "url": "/translations/officials/departments#state-affairs-037"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Chuping",
+            "zht": "初平元年",
+            "zhs": "初平元年"
+          },
+          "year": 190,
+          "age": null,
+          "location": [
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            }
+          ],
+          "position": [
+            {
+              "en": "Imperial Secretariat Attendant Gentleman",
+              "zht": "尚書侍郎",
+              "zhs": "尚书侍郎"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.31264639,
+              "lng": 108.87167209,
+              "name": "Chang'an"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Imperial Secretariat Attendant Gentleman",
+              "zht": "尚書侍郎",
+              "zhs": "尚书侍郎",
+              "url": "/translations/officials/departments#state-affairs-037"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            }
+          ],
+          "position": [
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "24"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史",
+              "url": "/translations/officials/regional#provinces-014"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "鄭袤（林叔）",
+      "name": {
+        "en": "Zheng Mao",
+        "zht": "鄭袤",
+        "zhs": "郑袤"
+      },
+      "courtesyName": {
+        "en": "Linshu",
+        "zht": "林叔",
+        "zhs": "林叔"
+      },
+      "born": {
+        "era": {
+          "en": "6th year of Zhongping",
+          "zht": "中平六年",
+          "zhs": "中平六年"
+        },
+        "year": 189
+      },
+      "died": {
+        "era": {
+          "en": "9th year of Taishi",
+          "zht": "泰始九年",
+          "zhs": "泰始九年"
+        },
+        "year": 273
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng, Henan",
+              "zht": "河南開封",
+              "zhs": "河南开封"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.5856252,
+              "lng": 114.28191177,
+              "name": "Kaifeng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            },
+            {
+              "en": "Yuzhang",
+              "zht": "豫章",
+              "zhs": "豫章"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "24"
+            },
+            {
+              "kind": "admin",
+              "id": "71"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng",
+              "zht": "開封",
+              "zhs": "開封"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.5856252,
+              "lng": 114.28191177,
+              "name": "Kaifeng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Luoyang",
+            "zht": "洛陽",
+            "zhs": "洛阳"
+          },
+          "position": [
+            {
+              "en": "Scholar to the Marquis of Linzi",
+              "zht": "臨菑侯文學",
+              "zhs": "临菑侯文学"
+            },
+            {
+              "en": "Staff of the Excellency of Works",
+              "zht": "司空掾",
+              "zhs": "司空掾"
+            },
+            {
+              "en": "Imperial Secretariat Gentleman",
+              "zht": "尚書郎",
+              "zhs": "尚书郎"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Scholar to the Marquis of Linzi",
+              "zht": "臨菑侯文學",
+              "zhs": "临菑侯文学",
+              "url": "/translations/officials/regional#states-087"
+            },
+            {
+              "en": "Staff of the Excellency of Works",
+              "zht": "司空掾",
+              "zhs": "司空掾",
+              "url": "/translations/officials/ministers#three-excellencies-105"
+            },
+            {
+              "en": "Imperial Secretariat Gentleman",
+              "zht": "尚書郎",
+              "zhs": "尚书郎",
+              "url": "/translations/officials/departments#state-affairs-033"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Liyang",
+              "zht": "黎陽",
+              "zhs": "黎阳"
+            },
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            },
+            {
+              "en": "Jiyin",
+              "zht": "濟陰",
+              "zhs": "濟阴"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Magistrate",
+              "zht": "縣令",
+              "zhs": "县令"
+            },
+            {
+              "en": "Imperial Secretariat Right Assistant",
+              "zht": "尚書右丞",
+              "zhs": "尚书右丞"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.68354088,
+              "lng": 114.58305267,
+              "name": "Liyang"
+            },
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            },
+            {
+              "kind": "admin",
+              "id": "38"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "County Magistrate",
+              "zht": "縣令",
+              "zhs": "县令",
+              "url": "/translations/officials/regional#counties-088"
+            },
+            {
+              "en": "Imperial Secretariat Right Assistant",
+              "zht": "尚書右丞",
+              "zhs": "尚书右丞",
+              "url": "/translations/officials/departments#state-affairs-033"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            },
+            {
+              "en": "Guangping",
+              "zht": "廣平",
+              "zhs": "广平"
+            }
+          ],
+          "position": [
+            {
+              "en": "Assisting Inner Gentleman of the Grand General",
+              "zht": "大將軍從事中郎",
+              "zhs": "大将军从事中郎"
+            },
+            {
+              "en": "Cavalier Regular Attendant",
+              "zht": "散騎常侍",
+              "zhs": "散骑常侍"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            },
+            {
+              "en": "Minister of the Lesser Treasury",
+              "zht": "少府",
+              "zhs": "少府"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            },
+            {
+              "kind": "admin",
+              "id": "160"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Assisting Inner Gentleman of the Grand General",
+              "zht": "大將軍從事中郎",
+              "zhs": "大将军从事中郎",
+              "url": "/translations/officials/ministers#superior-excellency-077"
+            },
+            {
+              "en": "Cavalier Regular Attendant",
+              "zht": "散騎常侍",
+              "zhs": "散骑常侍",
+              "url": "/translations/officials/departments#chancellery-013"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "Minister of the Lesser Treasury",
+              "zht": "少府",
+              "zhs": "少府",
+              "url": "/translations/officials/ministers#-nine-ministers-iii-256"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Zhengyuan",
+            "zht": "正元元年",
+            "zhs": "正元元年"
+          },
+          "year": 254,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            },
+            {
+              "en": "Minister of the Household",
+              "zht": "光祿勳",
+              "zhs": "光禄勋"
+            },
+            {
+              "en": "Minister for Imperial Clansmen",
+              "zht": "宗正",
+              "zhs": "宗正"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-neighbourhood-marquis"
+            },
+            {
+              "en": "Minister of the Household",
+              "zht": "光祿勳",
+              "zhs": "光禄勋",
+              "url": "/translations/officials/ministers#-nine-ministers-i-141"
+            },
+            {
+              "en": "Minister for Imperial Clansmen",
+              "zht": "宗正",
+              "zhs": "宗正",
+              "url": "/translations/officials/ministers#-nine-ministers-iii-232"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Minister of Ceremonies",
+              "zht": "太常",
+              "zhs": "太常"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Minister of Ceremonies",
+              "zht": "太常",
+              "zhs": "太常",
+              "url": "/translations/officials/ministers#-nine-ministers-i-120"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": "/translations/officials#glossary-township-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "Beginning of Jingchu era",
+            "zht": "景初初",
+            "zhs": "景初初"
+          },
+          "year": "~260",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Household Counsellor",
+              "zht": "光祿大夫",
+              "zhs": "光禄大夫"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Household Counsellor",
+              "zht": "光祿大夫",
+              "zhs": "光禄大夫",
+              "url": "/translations/officials/ministers#civil-honorary-officials-119"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "7th year of Taishi",
+            "zht": "泰始七年",
+            "zhs": "泰始七年"
+          },
+          "year": "271",
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "With Prestige Equal to the Three Excellencies",
+              "zht": "儀同三司",
+              "zhs": "仪同三司"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "With Prestige Equal to the Three Excellencies",
+              "zht": "儀同三司",
+              "zhs": "仪同三司",
+              "url": "/translations/officials/ministers#civil-honorary-officials-117"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭衆（子師）",
+      "type": "高祖父",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭衆（子師）",
+      "to": "鄭興（少贛）",
+      "type": "父",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭泰（公業）",
+      "type": "兄",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "荀攸",
+      "type": "同謀",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "荀攸",
+      "type": "善",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "華歆",
+      "type": "善",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "華歆",
+      "to": "鄭泰（公業）",
+      "type": "善",
+      "passageId": "ws16e-p2"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭袤（林叔）",
+      "type": "從子",
+      "passageId": "ws16e-p2"
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "何進",
+      "type": "屬下",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "何進",
+      "to": "董卓",
+      "type": "潛在盟友",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "董卓",
+      "type": "屬下",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "王允",
+      "type": "同謀",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "袁術",
+      "type": "屬下",
+      "passageId": "ws16e-p1"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "袁術",
+      "type": "賓主",
+      "passageId": "ws16e-p2"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "華歆",
+      "type": "投奔",
+      "passageId": "ws16e-p2"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹操",
+      "type": "屬下",
+      "passageId": "ws16e-p2"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "梁興",
+      "type": "敵人",
+      "passageId": "ws16e-p3"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "梁興",
+      "type": "敵人",
+      "passageId": "ws16e-p4"
+    },
+    {
+      "from": "夏侯淵",
+      "to": "鄭渾（文公）",
+      "type": "協作",
+      "passageId": "ws16e-p4"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "靳富",
+      "type": "敵人",
+      "passageId": "ws16e-p4"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "趙青龍",
+      "type": "敵人",
+      "passageId": "ws16e-p4"
+    },
+    {
+      "from": "程休",
+      "to": "趙青龍",
+      "type": "被殺",
+      "passageId": "ws16e-p4"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹操",
+      "type": "屬下",
+      "passageId": "ws16e-p5"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹丕",
+      "type": "屬下",
+      "passageId": "ws16e-p5"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹叡",
+      "type": "屬下",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭袤（林叔）",
+      "to": "華歆",
+      "type": "見譽",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭袤（林叔）",
+      "to": "鄭默（思元）",
+      "type": "父",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭質",
+      "type": "弟",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭舒",
+      "type": "弟",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭詡",
+      "type": "弟",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭球",
+      "type": "父",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭球",
+      "to": "鄭豫",
+      "type": "弟",
+      "passageId": "ws16e-p6"
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭崇",
+      "type": "父",
+      "passageId": "ws16e-p6"
+    }
+  ]
+}

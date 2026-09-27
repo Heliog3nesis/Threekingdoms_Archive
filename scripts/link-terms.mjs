@@ -48,11 +48,47 @@
 // so already-resolved [[phrase|url]] tags (including hand-corrected ones)
 // are never touched.
 //
+// VERNACULAR (白話) FIELD
+// Every passage AND every annotation carries  vern: { zht, zhs }  — the
+// modern-Chinese rendering shown paired under the classical text in the 白話
+// view (footnotes have none). You write ONLY vern.zhs (plain text is fine);
+// on each run, for every passage/annotation whose vern.zhs is non-empty,
+// this script:
+//   a. Links terms: every resolved [[label|url]] tag in the ORIGINAL zhs
+//      text (a passage's orig.zhs, or an annotation's own zhs) is looked up
+//      (by its label) in vern.zhs and the matches are wrapped with the same
+//      URL. A multi-paragraph annotation (paragraphs split by a blank line)
+//      is matched paragraph by paragraph when the vernacular has the same
+//      number of paragraphs (flagged if not, and matched as a whole).
+//      Counts are compared per term, per passage/annotation/paragraph:
+//        - counts agree            -> link all occurrences, no comment.
+//        - counts differ, label of 2+ characters -> link ALL occurrences
+//          anyway, and flag it in the report for you to check.
+//        - counts differ, label of 1 character -> do NOT link (a single
+//          character matches inside far too many unrelated words), flag it.
+//        - term not found in vern.zhs at all -> flag it.
+//      A term that already carries ANY tag in vern.zhs is treated as
+//      reviewed and left alone, so tags you add/remove by hand survive
+//      re-runs (to link a flagged 1-character term yourself, just wrap the
+//      right occurrences in [[char|url]] by hand). Longer terms win over
+//      shorter ones that sit inside them.
+//   b. Regenerates vern.zht from the (now linked) vern.zhs with OpenCC
+//      (Simplified -> Traditional). vern.zht is fully derived and
+//      overwritten on every run — edit vern.zhs, not vern.zht. Link URLs
+//      are swapped to the matching /zh-hant/ URL of the original zht tag
+//      at the same position (falling back to a plain prefix swap).
+//   c. Passages listed in SKIP_VERN_LINKING (hand-reviewed, false links
+//      removed on purpose) are not auto-linked again; their vern.zht is
+//      still regenerated from vern.zhs (step b). See the constant below.
+// Passages/annotations that don't have a vern object yet get an empty
+// placeholder (after "orig" for a passage, after "zhs" for an annotation).
+//
 // Usage (run from the project root, i.e. the "web" folder):
 //   node scripts/link-terms.mjs
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { Converter } from 'opencc-js';
 
 const ROOT = process.cwd();
 const SGZ_DIR = path.join(ROOT, 'src/data/sgz');
@@ -73,8 +109,26 @@ const OFFICIALS_FILES = {
   household: 'rear-eastern-palace-database.json',
 };
 
+// Passages whose vernacular links were reviewed and fixed by hand. For these,
+// term-linking is skipped (so a link that was deliberately removed is not
+// added back on the next run), but vern.zht is STILL regenerated from
+// vern.zhs, so later hand edits to the zhs still reach the traditional text.
+// Only the passage itself is skipped, not its annotations. Add an entry
+// (passage id -> reason) whenever you hand-remove a false link that this
+// script would re-add: it matches single characters / substrings, and only
+// leaves a term alone if a tag with that exact label is already in the text.
+const SKIP_VERN_LINKING = {
+  'ws18b-p4': '孤军独守: 守 = "hold out", not the office 太守 (it would be linked as 守)',
+  'ws18e-p5': '汝南、颍川: the original 汝/潁 are rivers, so linking the 汝 of 汝南 is misleading',
+};
+
 const LANGS = ['zht', 'zhs', 'en'];
 const ADMIN_SUFFIXES = { zht: ['縣', '郡', '國'], zhs: ['县', '郡', '国'] };
+
+// vern.zhs -> vern.zht. 't' is OpenCC's standard Traditional (script
+// conversion only); switch `to` to 'tw'/'twp'/'hk' if regional vocabulary
+// swaps (e.g. 軟體 vs 軟件) are ever wanted for the Traditional site.
+const toTraditional = Converter({ from: 'cn', to: 't' });
 
 function readJson(p) {
   return JSON.parse(fs.readFileSync(p, 'utf-8'));
@@ -371,10 +425,246 @@ function resolveGroup(fieldsText, sources, report, location) {
   };
 }
 
+// ── Vernacular (白話) ────────────────────────────────────────────────
+
+// Adds an empty vern placeholder right after `afterKey` ("orig" for a
+// passage, "zhs" for an annotation) if the object has none.
+function ensureVern(obj, afterKey) {
+  if (obj.vern !== undefined) return obj;
+  const out = {};
+  for (const [k, v] of Object.entries(obj)) {
+    out[k] = v;
+    if (k === afterKey) out.vern = { zht: '', zhs: '' };
+  }
+  if (out.vern === undefined) out.vern = { zht: '', zhs: '' };
+  return out;
+}
+
+// Passage + each of its annotations. Returns the same object if nothing
+// needed adding, so callers can tell whether anything changed.
+function ensureVernDeep(p) {
+  const withVern = ensureVern(p, 'orig');
+  if (!Array.isArray(withVern.annotations)) return withVern;
+  const anns = withVern.annotations.map((a) => ensureVern(a, 'zhs'));
+  if (anns.every((a, i) => a === withVern.annotations[i])) return withVern;
+  return { ...withVern, annotations: anns };
+}
+
+// Resolved [[label|url]] tags, in order.
+function resolvedTags(text) {
+  if (typeof text !== 'string') return [];
+  const tags = [];
+  const re = /\[\[([^|\]]+)\|([^\]]+)\]\]/g;
+  let m;
+  while ((m = re.exec(text)) !== null) tags.push({ label: m[1].trim(), url: m[2].trim() });
+  return tags;
+}
+
+function countBareTags(text) {
+  return typeof text === 'string' ? (text.match(/\[\[[^|\]]+\]\]/g) ?? []).length : 0;
+}
+
+// Splits text into alternating plain runs and existing [[...]] tags
+// (resolved or bare) — tags are protected from being matched inside.
+function splitByTags(text) {
+  const parts = [];
+  const re = /\[\[([^|\]]*)(?:\|[^\]]*)?\]\]/g;
+  let last = 0;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) parts.push({ tag: false, text: text.slice(last, m.index) });
+    parts.push({ tag: true, text: m[0], label: m[1].trim() });
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parts.push({ tag: false, text: text.slice(last) });
+  return parts;
+}
+
+// Tokenizes a plain run into { text, term } pieces, where term is the
+// matched term object (or null). `terms` must be sorted longest-label-first
+// so a long term wins over a shorter one sitting inside it.
+function scanForTerms(text, terms) {
+  const tokens = [];
+  let buf = '';
+  let i = 0;
+  while (i < text.length) {
+    const t = terms.find((term) => text.startsWith(term.label, i));
+    if (t) {
+      if (buf) tokens.push({ text: buf, term: null });
+      buf = '';
+      tokens.push({ text: t.label, term: t });
+      i += t.label.length;
+    } else {
+      buf += text[i++];
+    }
+  }
+  if (buf) tokens.push({ text: buf, term: null });
+  return tokens;
+}
+
+function swapToTraditionalPrefix(url) {
+  return url.replace(/^\/zh-hans(?=\/|$)/, '/zh-hant');
+}
+
+// zhs-url -> zht-url, by position, from the original's own tags. Only
+// trusted when both languages have the same number of resolved tags.
+function buildZhtUrlMap(origZhs, origZht) {
+  const zhs = resolvedTags(origZhs);
+  const zht = resolvedTags(origZht);
+  const map = new Map();
+  if (zhs.length !== zht.length) return map;
+  zhs.forEach((t, i) => { if (!map.has(t.url)) map.set(t.url, zht[i].url); });
+  return map;
+}
+
+// Converts tagged vern.zhs to Traditional. Each tag's label is kept inline
+// (wrapped in private-use markers) so OpenCC still sees its context, while
+// the URLs are held aside — they're never run through the converter.
+function convertVernToTraditional(zhsText, urlMap) {
+  const urls = [];
+  const masked = zhsText.replace(/\[\[([^|\]]+)(?:\|([^\]]*))?\]\]/g, (_m, label, url) => {
+    urls.push(url);
+    return `${label}`;
+  });
+  const converted = toTraditional(masked);
+  let i = 0;
+  return converted.replace(/([^]*)/g, (_m, label) => {
+    const url = urls[i++];
+    if (url === undefined) return `[[${label}]]`;
+    return `[[${label}|${urlMap.get(url) ?? swapToTraditionalPrefix(url)}]]`;
+  });
+}
+
+// Links the terms of ONE unit (a whole passage/annotation, or one paragraph
+// of a multi-paragraph annotation): every resolved tag in `origText` is
+// searched for in `vernText`. Returns the vernacular text with links added
+// and how many were added. `flag(kind, extra)` records anything to check.
+function linkVernUnit(origText, vernText, flag) {
+  // Distinct terms in the original, with how many times each is tagged.
+  const termMap = new Map();
+  for (const { label, url } of resolvedTags(origText)) {
+    const t = termMap.get(label) ?? { label, count: 0, urls: [] };
+    t.count++;
+    if (!t.urls.includes(url)) t.urls.push(url);
+    termMap.set(label, t);
+  }
+  const terms = [...termMap.values()].sort((a, b) => b.label.length - a.label.length);
+
+  const parts = splitByTags(vernText);
+  const reviewed = new Set(parts.filter((x) => x.tag).map((x) => x.label));
+  const scanned = parts.map((part) => (part.tag ? null : scanForTerms(part.text, terms)));
+
+  const plainCount = new Map();
+  for (const tokens of scanned) {
+    for (const tok of tokens ?? []) {
+      if (tok.term) plainCount.set(tok.term.label, (plainCount.get(tok.term.label) ?? 0) + 1);
+    }
+  }
+
+  const linkSet = new Set();
+  for (const t of terms) {
+    if (reviewed.has(t.label)) continue;
+    const found = plainCount.get(t.label) ?? 0;
+    if (found === 0) {
+      flag('absent', { label: t.label, orig: t.count });
+      continue;
+    }
+    const consistent = found === t.count;
+    const isSingleChar = [...t.label].length === 1;
+    if (isSingleChar && !consistent) {
+      flag('notLinked', { label: t.label, orig: t.count, vern: found });
+      continue;
+    }
+    linkSet.add(t.label);
+    if (!consistent) flag('linkedAll', { label: t.label, orig: t.count, vern: found });
+    if (t.urls.length > 1) flag('multiUrl', { label: t.label, urls: t.urls });
+  }
+
+  let added = 0;
+  const newZhs = parts
+    .map((part, i) => {
+      if (part.tag) return part.text;
+      return scanned[i]
+        .map((tok) => {
+          if (tok.term && linkSet.has(tok.term.label)) {
+            added++;
+            return `[[${tok.text}|${tok.term.urls[0]}]]`;
+          }
+          return tok.text;
+        })
+        .join('');
+    })
+    .join('');
+  return { text: newZhs, added };
+}
+
+// Handles one passage or annotation (`target`, which carries .vern) whose
+// classical text is origZhs / origZht. `loc` = { file, passage, annotation? }
+// for the report.
+//
+// A multi-paragraph annotation (paragraphs split by a blank line, same as
+// the page does) is matched paragraph by paragraph when the vernacular has
+// the same number of paragraphs — the same condition under which the 白話
+// view can pair them up. If the counts differ, the whole text is matched
+// as one unit and that's flagged.
+function processVern(target, origZhs, origZht, loc, report) {
+  const vern = target.vern;
+  if (!vern || typeof vern.zhs !== 'string' || !vern.zhs.trim()) return;
+
+  const stats = report.vern;
+  const flag = (para) => (kind, extra) => stats.flags.push({ ...loc, para, kind, ...extra });
+  stats.items++;
+
+  origZhs = origZhs ?? '';
+  let newZhs = vern.zhs;
+
+  if (!loc.annotation && Object.hasOwn(SKIP_VERN_LINKING, loc.passage)) {
+    // Hand-reviewed passage: leave vern.zhs (and its links) exactly as it is.
+    stats.skipped.push(loc.passage);
+  } else {
+    const bare = countBareTags(origZhs);
+    if (bare > 0) flag(null)('bareInOrig', { count: bare });
+
+    const origParas = origZhs.split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean);
+    const pieces = vern.zhs.split(/(\n\s*\n)/); // text, separator, text, ...
+    const textIdx = pieces.map((s, i) => i).filter((i) => i % 2 === 0 && pieces[i].trim() !== '');
+    const paired = origParas.length > 1 && origParas.length === textIdx.length;
+    if (origParas.length > 1 && !paired) {
+      flag(null)('paraMismatch', { orig: origParas.length, vern: textIdx.length });
+    }
+
+    if (paired) {
+      textIdx.forEach((pi, k) => {
+        const r = linkVernUnit(origParas[k], pieces[pi], flag(k + 1));
+        pieces[pi] = r.text;
+        stats.tagsAdded += r.added;
+      });
+      newZhs = pieces.join('');
+    } else {
+      const r = linkVernUnit(origZhs, vern.zhs, flag(null));
+      stats.tagsAdded += r.added;
+      newZhs = r.text;
+    }
+    vern.zhs = newZhs;
+  }
+
+  const newZht = convertVernToTraditional(newZhs, buildZhtUrlMap(origZhs, origZht ?? ''));
+  if (newZht !== vern.zht) stats.zhtUpdated++;
+  vern.zht = newZht;
+}
+
 function processChapterFile(filePath, sources, report) {
   const data = readJson(filePath);
   let changed = false;
   const fileName = path.basename(filePath);
+
+  if (Array.isArray(data.passages)) {
+    const ensured = data.passages.map(ensureVernDeep);
+    if (ensured.some((q, i) => q !== data.passages[i])) {
+      data.passages = ensured;
+      changed = true;
+    }
+  }
 
   for (const p of data.passages ?? []) {
     const before = JSON.stringify(p);
@@ -388,7 +678,10 @@ function processChapterFile(filePath, sources, report) {
     if (p.orig?.zhs !== undefined) p.orig.zhs = passageResolved.zhs;
     if (p.en !== undefined) p.en = passageResolved.en;
 
-    for (const a of p.annotations ?? []) {
+    // After the original's own tags are resolved, so their URLs exist to copy.
+    processVern(p, p.orig?.zhs, p.orig?.zht, { file: fileName, passage: p.id }, report);
+
+    (p.annotations ?? []).forEach((a, ai) => {
       const annResolved = resolveGroup(
         { zht: a.zht, zhs: a.zhs, en: a.en },
         sources, report,
@@ -397,7 +690,9 @@ function processChapterFile(filePath, sources, report) {
       if (a.zht !== undefined) a.zht = annResolved.zht;
       if (a.zhs !== undefined) a.zhs = annResolved.zhs;
       if (a.en !== undefined) a.en = annResolved.en;
-    }
+
+      processVern(a, a.zhs, a.zht, { file: fileName, passage: p.id, annotation: ai + 1 }, report);
+    });
 
     if (JSON.stringify(p) !== before) changed = true;
   }
@@ -452,7 +747,32 @@ function printReport(report) {
     }
   }
 
-  const summary = `\nSummary: ${report.filled.length} auto-filled, ${report.ambiguous.length} ambiguous, ${report.unresolved.length} unresolved, ${report.conflict.length} conflicts, ${report.countMismatch.length} count mismatches.\n`;
+  // Vernacular (白話) term-linking flags, grouped per passage.
+  const vernGroups = {};
+  for (const f of report.vern.flags) {
+    const where = f.annotation ? ` annotation #${f.annotation}` : '';
+    (vernGroups[`${f.file} / ${f.passage}${where} [vern]`] ||= []).push(f);
+  }
+  const vernLine = {
+    linkedAll: (f) => `⚠ "${f.label}" — original has ${f.orig}, vernacular has ${f.vern}: linked all ${f.vern}, please check`,
+    notLinked: (f) => `⚠ "${f.label}" (1 character) — original has ${f.orig}, vernacular has ${f.vern}: NOT linked, please check`,
+    absent: (f) => `✗ "${f.label}" — original has ${f.orig}, not found in vernacular`,
+    multiUrl: (f) => `⚠ "${f.label}" — original links it to ${f.urls.length} different targets, used the first: ${f.urls[0]}`,
+    bareInOrig: (f) => `⚠ original still has ${f.count} unresolved bare [[...]] tag(s) — those were not copied`,
+    paraMismatch: (f) => `⚠ original has ${f.orig} paragraphs, vernacular has ${f.vern} — matched on the whole text, and the 白話 view can't pair them paragraph by paragraph`,
+  };
+  for (const [key, flags] of Object.entries(vernGroups)) {
+    lines.push(`\n${key}:`);
+    for (const f of flags) lines.push(`  ${f.para ? `[¶${f.para}] ` : ''}${vernLine[f.kind](f)}`);
+  }
+
+  const v = report.vern;
+  const summary =
+    `\nSummary: ${report.filled.length} auto-filled, ${report.ambiguous.length} ambiguous, ${report.unresolved.length} unresolved, ${report.conflict.length} conflicts, ${report.countMismatch.length} count mismatches.\n` +
+    `Vernacular: ${v.items} passage/annotation text(s) with vern, ${v.tagsAdded} term link(s) added, ${v.zhtUpdated} vern.zht updated, ${v.flags.length} item(s) to check.\n` +
+    (v.skipped.length
+      ? `Vernacular linking skipped for ${v.skipped.length} hand-reviewed passage(s) (SKIP_VERN_LINKING): ${v.skipped.join(', ')}\n`
+      : '');
   const output = lines.join('\n') + '\n' + summary;
 
   console.log(output);
@@ -493,7 +813,10 @@ function main() {
   const files = fs.readdirSync(SGZ_DIR).filter((f) => f.endsWith('.json'));
   console.log(`\nScanning ${files.length} chapter file(s) in src/data/sgz...`);
 
-  const report = { filled: [], ambiguous: [], unresolved: [], conflict: [], countMismatch: [] };
+  const report = {
+    filled: [], ambiguous: [], unresolved: [], conflict: [], countMismatch: [],
+    vern: { items: 0, tagsAdded: 0, zhtUpdated: 0, flags: [], skipped: [] },
+  };
   for (const file of files) {
     processChapterFile(path.join(SGZ_DIR, file), sources, report);
   }

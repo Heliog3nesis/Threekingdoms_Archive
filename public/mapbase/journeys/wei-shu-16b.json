@@ -1,0 +1,573 @@
+{
+  "chapter": {
+    "id": "wei-shu-16b",
+    "order": 16,
+    "label": {
+      "zht": "蘇則傳",
+      "zhs": "苏则传",
+      "en": "Biography of Su Ze"
+    },
+    "title": {
+      "zht": "魏書十六 · 苏则传",
+      "zhs": "魏书十六 · 苏则传",
+      "en": "Book of Wei, Chapter 16 · Biography of Su Ze"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.24976179,
+      "lng": 108.02453445,
+      "name": "Wugong",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "143",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "152",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "141",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "111",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "139",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "137",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "蘇則（文師）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "蘇則（文師）",
+      "name": {
+        "en": "Su Ze",
+        "zht": "蘇則",
+        "zhs": "苏则"
+      },
+      "courtesyName": {
+        "en": "Wenshi",
+        "zht": "文師",
+        "zhs": "文师"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "Huangchu 4",
+          "zht": "黃初四年",
+          "zhs": "黄初四年"
+        },
+        "year": 223
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Wugong, Fufeng",
+              "zht": "扶風武功",
+              "zhs": "扶风武功"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.24976179,
+              "lng": 108.02453445,
+              "name": "Wugong"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "2nd year of Xingping",
+            "zht": "兴平二年",
+            "zhs": "兴平二年"
+          },
+          "year": 195,
+          "age": null,
+          "location": [
+            {
+              "en": "Beidi",
+              "zht": "北地",
+              "zhs": "北地"
+            },
+            {
+              "en": "Anding",
+              "zht": "安定",
+              "zhs": "安定"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "143"
+            },
+            {
+              "kind": "admin",
+              "id": "152"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jiuquan",
+              "zht": "酒泉",
+              "zhs": "酒泉"
+            },
+            {
+              "en": "Anding",
+              "zht": "安定",
+              "zhs": "安定"
+            },
+            {
+              "en": "Wudu",
+              "zht": "武都",
+              "zhs": "武都"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "141"
+            },
+            {
+              "kind": "admin",
+              "id": "152"
+            },
+            {
+              "kind": "admin",
+              "id": "111"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": 215,
+          "age": null,
+          "location": [
+            {
+              "en": "Jincheng",
+              "zht": "金城",
+              "zhs": "金城"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "139"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黃初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhangye",
+              "zht": "張掖",
+              "zhs": "张掖"
+            },
+            {
+              "en": "Jincheng",
+              "zht": "金城",
+              "zhs": "金城"
+            }
+          ],
+          "position": [
+            {
+              "en": "Colonel Protecting the Qiang",
+              "zht": "䕶羌校尉",
+              "zhs": "䕶羌校尉"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "137"
+            },
+            {
+              "kind": "admin",
+              "id": "139"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Colonel Protecting the Qiang",
+              "zht": "䕶羌校尉",
+              "zhs": "䕶羌校尉",
+              "url": "/translations/officials/military#colonels--commandants-189"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯",
+              "url": "/translations/officials#glossary-marquis-within-the-pass"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Palace Attendant",
+              "zht": "侍中",
+              "zhs": "侍中"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Palace Attendant",
+              "zht": "侍中",
+              "zhs": "侍中",
+              "url": "/translations/officials/departments#chancellery-001"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "4th year of Huangchu",
+            "zht": "黃初四年",
+            "zhs": "黄初四年"
+          },
+          "year": 223,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Principality Chancellor",
+              "zht": "王國相",
+              "zhs": "王国相"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Principality Chancellor",
+              "zht": "王國相",
+              "zhs": "王国相",
+              "url": "/translations/officials/regional#states-064"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "蘇則（文師）",
+      "to": "師亮",
+      "type": "refugee and host",
+      "passageId": "ws16b-p1"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "吉茂",
+      "type": "retreat companion",
+      "passageId": "ws16b-p1"
+    },
+    {
+      "from": "曹操",
+      "to": "蘇則（文師）",
+      "type": "superior and subordinate",
+      "passageId": "ws16b-p2"
+    },
+    {
+      "from": "張魯",
+      "to": "曹操",
+      "type": "enemy",
+      "passageId": "ws16b-p2"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "李越",
+      "type": "enemy",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "曹丕",
+      "to": "蘇則（文師）",
+      "type": "ruler and subject",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "麴演",
+      "to": "蘇則（文師）",
+      "type": "enemy",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "張進",
+      "to": "杜通",
+      "type": "captor",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "黃華",
+      "to": "辛機",
+      "type": "rejected",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "毌丘興",
+      "to": "蘇則（文師）",
+      "type": "ally",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "曹丕",
+      "to": "張既",
+      "type": "ruler and subject",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "韓遂",
+      "to": "蘇則（文師）",
+      "type": "historical relation",
+      "passageId": "ws16b-p3"
+    },
+    {
+      "from": "郝昭",
+      "to": "蘇則（文師）",
+      "type": "ally",
+      "passageId": "ws16b-p4"
+    },
+    {
+      "from": "魏平",
+      "to": "蘇則（文師）",
+      "type": "ally",
+      "passageId": "ws16b-p4"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "麴演",
+      "type": "enemy",
+      "passageId": "ws16b-p5"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "張進",
+      "type": "enemy",
+      "passageId": "ws16b-p5"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "黃華",
+      "type": "enemy",
+      "passageId": "ws16b-p5"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "董昭",
+      "type": "colleague",
+      "passageId": "ws16b-p6"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "曹植",
+      "type": "shared mourner",
+      "passageId": "ws16b-p6"
+    },
+    {
+      "from": "曹丕",
+      "to": "蘇則（文師）",
+      "type": "ruler and subject",
+      "passageId": "ws16b-p6"
+    },
+    {
+      "from": "傅巽",
+      "to": "蘇則（文師）",
+      "type": "colleague",
+      "passageId": "ws16b-p6"
+    },
+    {
+      "from": "吉茂",
+      "to": "蘇則（文師）",
+      "type": "fellow townsman",
+      "passageId": "ws16b-p6"
+    },
+    {
+      "from": "曹丕",
+      "to": "蘇則（文師）",
+      "type": "ruler and subject",
+      "passageId": "ws16b-p7"
+    },
+    {
+      "from": "曹丕",
+      "to": "蘇則（文師）",
+      "type": "ruler and subject",
+      "passageId": "ws16b-p8"
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "蘇怡",
+      "type": "father and son",
+      "passageId": "ws16b-p8"
+    },
+    {
+      "from": "蘇怡",
+      "to": "蘇愉（休豫）",
+      "type": "brother",
+      "passageId": "ws16b-p8"
+    },
+    {
+      "from": "蘇愉（休豫）",
+      "to": "蘇紹（世嗣）",
+      "type": "father and son",
+      "passageId": "ws16b-p8"
+    },
+    {
+      "from": "蘇紹（世嗣）",
+      "to": "石崇",
+      "type": "wife's elder brother",
+      "passageId": "ws16b-p8"
+    },
+    {
+      "from": "蘇紹（世嗣）",
+      "to": "蘇慎",
+      "type": "brother",
+      "passageId": "ws16b-p8"
+    },
+    {
+      "from": "山濤",
+      "to": "蘇愉（休豫）",
+      "type": "praiser",
+      "passageId": "ws16b-p8"
+    }
+  ]
+}

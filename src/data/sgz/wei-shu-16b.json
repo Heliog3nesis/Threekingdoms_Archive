@@ -1,0 +1,929 @@
+{
+  "id": "wei-shu-16b",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 16,
+  "num": "16",
+  "label": {
+    "zht": "蘇則傳",
+    "zhs": "苏则传",
+    "en": "Biography of Su Ze"
+  },
+  "title": {
+    "zht": "魏書十六 · 蘇則傳",
+    "zhs": "魏书十六 · 苏则传",
+    "en": "Book of Wei, Chapter 16 · Biography of Su Ze"
+  },
+  "relationships": [
+    {
+      "from": "師亮",
+      "to": "蘇則（文師）",
+      "type": "personal",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p1",
+          "text": {
+            "en": "Fleeing the chaos, Su Ze sought refuge with the wealthy Shi Liang in Anding, who did not treat him as well as he had expected; Su Ze vowed indignantly to return as Grand Administrator and humble such men, and when he did, he sent a messenger to reassure the fearful Shi Liang and treated him with courtesy.",
+            "zht": "蘇則避亂寄居安定，投靠富人師亮，師亮待他不如所望，蘇則憤然發誓日後必回任太守以折辱此輩；後來他果然出任安定太守，師亮等人懼而欲逃，蘇則遣使安撫，並以禮相待。",
+            "zhs": "苏则避乱寄居安定，投靠富人师亮，师亮待他不如所望，苏则愤然发誓日后必回任太守以折辱此辈；后来他果然出任安定太守，师亮等人惧而欲逃，苏则遣使安抚，并以礼相待。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "吉茂（叔暢）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p1",
+          "text": {
+            "en": "Su Ze withdrew with his fellow townsman Ji Mao to Mount Taibai, where they took delight in their books.",
+            "zht": "蘇則與同鄉吉茂一同隱居太白山，以讀書為樂。",
+            "zhs": "苏则与同乡吉茂一同隐居太白山，以读书为乐。"
+          }
+        },
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "When Ji Mao mocked him for rising no further than a Palace Attendant who \"bears a chamber pot\", Su Ze laughed and retorted that he could not match Ji Mao's leisurely rides in a deer cart.",
+            "zht": "吉茂譏笑蘇則官至侍中不過是「捧虎子」，蘇則笑答自己實在比不上吉茂悠然乘坐鹿車。",
+            "zhs": "吉茂讥笑苏则官至侍中不过是「捧虎子」，苏则笑答自己实在比不上吉茂悠然乘坐鹿车。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p2",
+          "text": {
+            "en": "When Cao Cao campaigned against Zhang Lu he passed through Su Ze's commandery, was pleased on meeting him, and made him guide to the army; Su Ze afterwards pacified the Di of Xiabian, reopened the route to Hexi, and was transferred to Grand Administrator of Jincheng, where he restored the shattered population.",
+            "zht": "曹操徵張魯途經蘇則所在郡，與之相見甚悅，任命他為軍導；張魯敗後，蘇則安撫下辯氐人，重開河西之路，遷任金城太守，安撫戰亂後離散的百姓。",
+            "zhs": "曹操征张鲁途经苏则所在郡，与之相见甚悦，任命他为军导；张鲁败后，苏则安抚下辩氐人，重开河西之路，迁任金城太守，安抚战乱后离散的百姓。"
+          },
+          "title": {
+            "en": "Grand Administrator of Jincheng",
+            "zht": "金城太守",
+            "zhs": "金城太守"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "李越",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "When Li Yue rebelled in Longxi, Su Ze led the Qiang and Hu in besieging him, and Li Yue promptly sought to submit.",
+            "zht": "李越在隴西反叛，蘇則率羌胡圍攻，李越隨即請降。",
+            "zhs": "李越在陇西反叛，苏则率羌胡围攻，李越随即请降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "麹演",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "After Cao Cao's death Qu Yan of Xiping rebelled; Su Ze marched against him and Qu Yan begged to surrender, but later rebelled again.",
+            "zht": "曹操死後西平麴演反叛，蘇則出兵征討，麴演懼敗請降，後又再度反叛。",
+            "zhs": "曹操死后西平麹演反叛，苏则出兵征讨，麹演惧败请降，后又再度反叛。"
+          }
+        },
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "When Qu Yan came with three thousand troops claiming to reinforce him but intending treachery, Su Ze lured him to a meeting, beheaded him, and displayed his head before the troops.",
+            "zht": "麴演率三千步騎前來，佯稱助戰實懷奸謀，蘇則誘他會面，將其斬首示眾。",
+            "zhs": "麹演率三千步骑前来，佯称助战实怀奸谋，苏则诱他会面，将其斩首示众。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "張進",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "Su Ze and the other forces besieged Zhangye and took it, executing Zhang Jin and his supporters.",
+            "zht": "蘇則與諸軍圍攻張掖，攻克後誅殺張進及其黨羽。",
+            "zhs": "苏则与诸军围攻张掖，攻克后诛杀张进及其党羽。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張進",
+      "to": "杜通",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Zhang Jin seized Du Tong, Grand Administrator of his native Zhangye, and proclaimed himself Grand Administrator.",
+            "zht": "張進擒獲本郡張掖太守杜通，自稱太守。",
+            "zhs": "张进擒获本郡张掖太守杜通，自称太守。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "黃華",
+      "to": "辛機",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Huang Hua refused to acknowledge Xin Ji, Grand Administrator of his native Jiuquan, and proclaimed himself Grand Administrator.",
+            "zht": "黃華不肯承認本郡酒泉太守辛機，自稱太守。",
+            "zhs": "黄华不肯承认本郡酒泉太守辛机，自称太守。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "黃華",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "With Qu Yan's army defeated, Huang Hua took fright, released his captives, and begged to surrender, and Hexi was pacified.",
+            "zht": "麴演軍敗後，黃華恐懼，釋放所俘之人請降，河西遂告平定。",
+            "zhs": "麹演军败后，黄华恐惧，释放所俘之人请降，河西遂告平定。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "毌丘興",
+      "to": "蘇則（文師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Guanqiu Xing, Grand Administrator of Wuwei, sent Su Ze an urgent appeal for help against the rebels and later joined him in attacking Zhang Jin.",
+            "zht": "武威太守毌丘興向蘇則急請援助，後又與他聯軍攻打張進。",
+            "zhs": "武威太守毌丘兴向苏则急请援助，后又与他联军攻打张进。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郝昭（伯道）",
+      "to": "蘇則（文師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p4",
+          "text": {
+            "en": "Hao Zhao agreed with Su Ze's plan to act on their own authority and raised troops to relieve Wuwei.",
+            "zht": "郝昭贊同蘇則先發制敵之策，與他一同出兵解武威之圍。",
+            "zhs": "郝昭赞同苏则先发制敌之策，与他一同出兵解武威之围。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "魏平",
+      "to": "蘇則（文師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p4",
+          "text": {
+            "en": "Wei Ping agreed with Su Ze's plan to act on their own authority and raised troops to relieve Wuwei.",
+            "zht": "魏平贊同蘇則先發制敵之策，與他一同出兵解武威之圍。",
+            "zhs": "魏平赞同苏则先发制敌之策，与他一同出兵解武威之围。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "For pacifying Qu Yan, Cao Pi appointed Su Ze Colonel Protecting the Qiang and enfeoffed him as Marquis Within the Pass; Cao Pi also privately sought the Inspector's opinion on raising his rank.",
+            "zht": "曹丕因蘇則平定麴演之功，任命他為護羌校尉，封關內侯，並私下詢問雍州刺史是否應進其爵邑。",
+            "zhs": "曹丕因苏则平定麹演之功，任命他为护羌校尉，封关内侯，并私下询问雍州刺史是否应进其爵邑。"
+          },
+          "title": {
+            "en": "Colonel Protecting the Qiang",
+            "zht": "護羌校尉",
+            "zhs": "护羌校尉"
+          }
+        },
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "After Su Ze pacified Hexi he was advanced to Capital Neighbourhood Marquis.",
+            "zht": "蘇則平定河西后，進封都亭侯。",
+            "zhs": "苏则平定河西后，进封都亭侯。"
+          }
+        },
+        {
+          "passageId": "ws16b-p7",
+          "text": {
+            "en": "Su Ze told Cao Pi that pearls sought by purchase were not worth prizing and knelt to plead for the hunt officials' lives over an escaped deer; Cao Pi called him an upright minister and pardoned them, but afterwards grew wary of him.",
+            "zht": "蘇則勸曹丕求購寶珠不足貴，又在獵場逃鹿事件中叩首為眾官請命；曹丕稱他為正直之臣而赦免眾人，此後卻對他心存忌憚。",
+            "zhs": "苏则劝曹丕求购宝珠不足贵，又在猎场逃鹿事件中叩首为众官请命；曹丕称他为正直之臣而赦免众人，此后却对他心存忌惮。"
+          }
+        },
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "In the fourth year of Huangchu, Su Ze was demoted to Principality Chancellor of Dongping and died on the way to his post; he was posthumously titled Marquis Gang.",
+            "zht": "黃初四年，蘇則被貶為東平相，赴任途中病逝，追諡剛侯。",
+            "zhs": "黄初四年，苏则被贬为东平相，赴任途中病逝，追谥刚侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張既（德容）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Cao Pi consulted Inspector Zhang Ji in confidence about whether Su Ze deserved a higher rank and fief.",
+            "zht": "曹丕密詢雍州刺史張既，蘇則之功是否應增加爵邑。",
+            "zhs": "曹丕密询雍州刺史张既，苏则之功是否应增加爵邑。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張既（德容）",
+      "to": "蘇則（文師）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Asked for his view, Zhang Ji praised Su Ze for restoring Jincheng's population, winning back the Qiang, and putting down Qu Yan with utmost loyalty, and endorsed raising his rank.",
+            "zht": "張既奉詢時盛讚蘇則安撫金城遺民、招撫羌人、討平麴演，忠節備至，並贊同增其爵邑。",
+            "zhs": "张既奉询时盛赞苏则安抚金城遗民、招抚羌人、讨平麹演，忠节备至，并赞同增其爵邑。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "董昭（公仁）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "When Dong Zhao laid his head on Su Ze's knees, Su Ze pushed him off, saying his knees were no pillow for a sycophant.",
+            "zht": "董昭將頭枕在蘇則膝上，蘇則推開他，說自己的膝蓋不是給諂媚之人當枕頭的。",
+            "zhs": "董昭将头枕在苏则膝上，苏则推开他，说自己的膝盖不是给谄媚之人当枕头的。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "曹植（子建）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "On hearing that Wei had supplanted the Han, Su Ze and Cao Zhi both donned mourning dress and wept bitterly.",
+            "zht": "聽聞魏代漢，蘇則與曹植都身著喪服，痛哭流涕。",
+            "zhs": "听闻魏代汉，苏则与曹植都身着丧服，痛哭流涕。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "傅巽（公悌）",
+      "to": "蘇則（文師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "When Su Ze thought Cao Pi's remark about someone weeping at the abdication was aimed at him and was about to answer forthrightly, Palace Attendant Fu Xun pinched him and signalled that it was not.",
+            "zht": "曹丕說有人在禪讓時哭泣，蘇則以為指自己，正欲直言相對，侍中傅巽掐他並示意並非說他。",
+            "zhs": "曹丕说有人在禅让时哭泣，苏则以为指自己，正欲直言相对，侍中傅巽掐他并示意并非说他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "蘇怡",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Ze's son Su Yi succeeded him as marquis.",
+            "zht": "蘇則之子蘇怡襲爵。",
+            "zhs": "苏则之子苏怡袭爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "蘇愉（休豫）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Yi died without a son, so Su Ze's younger son Su Yu inherited the fief and later became Minister of Ceremonies.",
+            "zht": "蘇怡無子而卒，蘇則次子蘇愉繼承封爵，後官至太常。",
+            "zhs": "苏怡无子而卒，苏则次子苏愉继承封爵，后官至太常。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇怡",
+      "to": "蘇愉（休豫）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Yi died without a son, so his younger brother Su Yu inherited the fief.",
+            "zht": "蘇怡無子而卒，其弟蘇愉繼承封爵。",
+            "zhs": "苏怡无子而卒，其弟苏愉继承封爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇愉（休豫）",
+      "to": "蘇紹（世嗣）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Yu's son Su Shao, courtesy name Shisi, served as tutor to the Prince of Wu.",
+            "zht": "蘇愉之子蘇紹，字世嗣，曾任吳王師。",
+            "zhs": "苏愉之子苏绍，字世嗣，曾任吴王师。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇紹（世嗣）",
+      "to": "蘇慎",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Shao's younger brother Su Shen was General of the Central Guards on the Left.",
+            "zht": "蘇紹之弟蘇慎官至左中郎將。",
+            "zhs": "苏绍之弟苏慎官至左中郎将。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇紹（世嗣）",
+      "to": "石崇（季倫）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Shi Chong's wife was Su Shao's elder sister, making them brothers-in-law.",
+            "zht": "石崇之妻為蘇紹之姊，二人為姻親。",
+            "zhs": "石崇之妻为苏绍之姊，二人为姻亲。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "山濤（巨源）",
+      "to": "蘇愉（休豫）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "In The Explanation of Matters, Shan Tao praised Su Yu as loyal and steadfast, with sound judgement.",
+            "zht": "山濤在《啟事》中稱讚蘇愉忠貞堅定，識見明達。",
+            "zhs": "山涛在《启事》中称赞苏愉忠贞坚定，识见明达。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "蘇則（文師）",
+      "name": {
+        "en": "Su Ze",
+        "zht": "蘇則",
+        "zhs": "苏则"
+      },
+      "courtesyName": {
+        "en": "Wenshi",
+        "zht": "文師",
+        "zhs": "文师"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "Huangchu 4",
+          "zht": "黃初四年",
+          "zhs": "黄初四年"
+        },
+        "year": 223
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Wugong, Fufeng",
+              "zht": "扶風武功",
+              "zhs": "扶风武功"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "2nd year of Xingping",
+            "zht": "兴平二年",
+            "zhs": "兴平二年"
+          },
+          "year": 195,
+          "age": null,
+          "location": [
+            {
+              "en": "Beidi",
+              "zht": "北地",
+              "zhs": "北地"
+            },
+            {
+              "en": "Anding",
+              "zht": "安定",
+              "zhs": "安定"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jiuquan",
+              "zht": "酒泉",
+              "zhs": "酒泉"
+            },
+            {
+              "en": "Anding",
+              "zht": "安定",
+              "zhs": "安定"
+            },
+            {
+              "en": "Wudu",
+              "zht": "武都",
+              "zhs": "武都"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": 215,
+          "age": null,
+          "location": [
+            {
+              "en": "Jincheng",
+              "zht": "金城",
+              "zhs": "金城"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黃初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhangye",
+              "zht": "張掖",
+              "zhs": "张掖"
+            },
+            {
+              "en": "Jincheng",
+              "zht": "金城",
+              "zhs": "金城"
+            }
+          ],
+          "position": [
+            {
+              "en": "Colonel Protecting the Qiang",
+              "zht": "䕶羌校尉",
+              "zhs": "䕶羌校尉"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Palace Attendant",
+              "zht": "侍中",
+              "zhs": "侍中"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "4th year of Huangchu",
+            "zht": "黃初四年",
+            "zhs": "黄初四年"
+          },
+          "year": 223,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Principality Chancellor",
+              "zht": "王國相",
+              "zhs": "王国相"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws16b-p1",
+      "orig": {
+        "zht": "蘇則字文師，[[扶風武功|/zh-hant/maps/map-overall?lat=34.24976179&lng=108.02453445&name=Wugong]]人也。少以學行聞，舉孝廉[[茂才|/zh-hant/translations/officials#glossary-flourishing-talent]]，辟公府，皆不就。起家為[[酒泉|/zh-hant/maps/map-overall?admin=141]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，轉[[安定|/zh-hant/maps/map-overall?admin=152]]、[[武都|/zh-hant/maps/map-overall?admin=111]]，所在有威名。",
+        "zhs": "苏则字文师，[[扶风武功|/zh-hans/maps/map-overall?lat=34.24976179&lng=108.02453445&name=Wugong]]人也。少以学行闻，举孝廉[[茂才|/zh-hans/translations/officials#glossary-flourishing-talent]]，辟公府，皆不就。起家为[[酒泉|/zh-hans/maps/map-overall?admin=141]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，转[[安定|/zh-hans/maps/map-overall?admin=152]]、[[武都|/zh-hans/maps/map-overall?admin=111]]，所在有威名。"
+      },
+      "vern": {
+        "zht": "蘇則，字文師，[[扶風郡武功縣|/zh-hant/maps/map-overall?lat=34.24976179&lng=108.02453445&name=Wugong]]人。少年時就以學問操行聞名鄉里。被舉薦爲孝廉和[[茂才|/zh-hant/translations/officials#glossary-flourishing-talent]]，三公任命他爲下屬；他都沒有接受。後來出仕，初次做官就擔任[[酒泉|/zh-hant/maps/map-overall?admin=141]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。又調任[[安定|/zh-hant/maps/map-overall?admin=152]]郡、[[武都|/zh-hant/maps/map-overall?admin=111]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，他在這些地方都有威嚴的名聲。",
+        "zhs": "苏则，字文师，[[扶风郡武功县|/zh-hans/maps/map-overall?lat=34.24976179&lng=108.02453445&name=Wugong]]人。少年时就以学问操行闻名乡里。被举荐为孝廉和[[茂才|/zh-hans/translations/officials#glossary-flourishing-talent]]，三公任命他为下属；他都没有接受。后来出仕，初次做官就担任[[酒泉|/zh-hans/maps/map-overall?admin=141]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。又调任[[安定|/zh-hans/maps/map-overall?admin=152]]郡、[[武都|/zh-hans/maps/map-overall?admin=111]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，他在这些地方都有威严的名声。"
+      },
+      "en": "Su Ze, courtesy name Wenshi, was from [[Wugong, Fufeng|/maps/map-overall?lat=34.24976179&lng=108.02453445&name=Wugong]]. As a young man, he was renowned for his learning and conduct. He was nominated as Filial and Incorrupt and as a [[Flourishing Talent|/translations/officials#glossary-flourishing-talent]], and was summoned to serve in the excellencies' offices, but declined every appointment. He began his official career as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jiuquan|/maps/map-overall?admin=141]], then served successively in [[Anding|/maps/map-overall?admin=152]] and [[Wudu|/maps/map-overall?admin=111]]. Wherever he held office, he commanded awe and respect.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：則剛直疾惡，常慕汲黯之為人。",
+          "zhs": "《魏书》曰：则刚直疾恶，常慕汲黯之为人。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏书》记载：苏则刚直不阿，憎恶邪恶，常常仰慕汲黯的为人。"
+          },
+          "en": "The Book of Wei states: Su Ze was resolute and upright, and abhorred evil. He often admired Ji An's character. "
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：則世為著姓，興平中，[[三輔|/zh-hant/translations/officials#glossary-three-capital-regions]]亂，饑窮，避難[[北地|/zh-hant/maps/map-overall?admin=143]]。客[[安定|/zh-hant/maps/map-overall?admin=152]]，依富室師亮。亮待遇不足，則慨然歎曰：「天下會安，當不乆爾，必還為此郡守，折庸輩士也。」後與[[馮翊|/zh-hant/maps/map-overall?admin=151]]吉茂等隱於郡南太白山中，以書籍自娛。及為[[安定|/zh-hant/maps/map-overall?admin=152]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，而師亮等皆欲逃走。則聞之，豫使人解語，以禮報之。",
+          "zhs": "《魏略》曰：则世为著姓，兴平中，[[三辅|/zh-hans/translations/officials#glossary-three-capital-regions]]乱，饥穷，避难[[北地|/zh-hans/maps/map-overall?admin=143]]。客[[安定|/zh-hans/maps/map-overall?admin=152]]，依富室师亮。亮待遇不足，则慨然叹曰：「天下会安，当不乆尔，必还为此郡守，折庸辈士也。」后与[[冯翊|/zh-hans/maps/map-overall?admin=151]]吉茂等隐于郡南太白山中，以书籍自娱。及为[[安定|/zh-hans/maps/map-overall?admin=152]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，而师亮等皆欲逃走。则闻之，豫使人解语，以礼报之。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：苏则家族世代都是名门望族。兴平年间，三辅地区发生战乱，苏则又饥饿又穷困，就去北地郡避难，客居在安定郡，依附当地的大户人家师亮生活。师亮对他的待遇不够好，苏则感慨地叹息说：“天下总会安定的，时间不会太久了，我一定要回来做这里的郡守，折服那些平庸的人。”后来他和冯翊人吉茂等人一起隐居在安定郡南的太白山中，靠读书来自我娱乐。等到苏则担任安定太守时，师亮等人都想逃走，苏则听说后，预先派人去解释开导，以礼相待。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Su Ze came from a family prominent for generations. During the Xingping era, the [[Three Capital Regions|/translations/officials#glossary-three-capital-regions]] descended into chaos and famine, and he fled to [[Beidi|/maps/map-overall?admin=143]]. While sojourning in [[Anding|/maps/map-overall?admin=152]], he sought refuge with a wealthy man named Shi Liang, who did not treat him as well as he had expected. Su Ze sighed indignantly, \"Peace will soon be restored throughout the realm. I shall surely return as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of this commandery and humble such mediocrities.\" He later withdrew with Ji Mao of [[Pingyi|/maps/map-overall?admin=151]] and others to Mount Taibai, south of the commandery, where they took delight in their books. When Su Ze became Grand Administrator of [[Anding|/maps/map-overall?admin=152]], Shi Liang and the others all sought to flee. Hearing of this, Su Ze sent a messenger to reassure them and treated them with courtesy."
+        }
+      ]
+    },
+    {
+      "id": "ws16b-p2",
+      "orig": {
+        "zht": "太祖征張魯，過其郡，見則恱之，使為軍導。魯破，則綏安[[下辯|/zh-hant/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]諸氐，通河西道，徙為[[金城|/zh-hant/maps/map-overall?admin=139]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。是時喪亂之後，吏民流散饑窮，戶口損耗，則撫循之甚謹。外招懷羌胡，得其牛羊，以養貧老。與民分糧而食，旬月之閒，流民皆歸，得數千家。乃明為禁令，有干犯者輒戮，其從教者必賞。親自教民耕種，其歲大豐收，由是歸附者日多。",
+        "zhs": "太祖征张鲁，过其郡，见则恱之，使为军导。鲁破，则绥安[[下辩|/zh-hans/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]诸氐，通河西道，徙为[[金城|/zh-hans/maps/map-overall?admin=139]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。是时丧乱之后，吏民流散饥穷，户口损耗，则抚循之甚谨。外招怀羌胡，得其牛羊，以养贫老。与民分粮而食，旬月之闲，流民皆归，得数千家。乃明为禁令，有干犯者辄戮，其从教者必赏。亲自教民耕种，其岁大丰收，由是归附者日多。"
+      },
+      "vern": {
+        "zht": "太祖征伐張魯，經過蘇則所管轄的郡；對他很欣賞，讓他擔任部隊的前導。打敗張魯以後，蘇則安撫住在[[下辯|/zh-hant/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]縣一帶的各氐族部落，打通了河西走廊。轉任[[金城|/zh-hant/maps/map-overall?admin=139]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。當時正是戰亂之後，官吏百姓流離失所，飢餓貧窮，戶口銳減。蘇則認真安撫照顧百姓流民，非常盡力；對外招納羌人，得到他們的牛羊，用來贍養貧困老弱的人；他和百姓平分口糧：一個多月後，流民陸續都回來了，一共有幾千家。於是蘇則明確宣佈若干禁令，有違犯的就殺掉，對聽從教育的一定獎賞。他親自教百姓耕種，當年就獲得了大豐收。從那以後，前來歸附的人越來越多。",
+        "zhs": "太祖征伐张鲁，经过苏则所管辖的郡；对他很欣赏，让他担任部队的前导。打败张鲁以后，苏则安抚住在[[下辩|/zh-hans/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]县一带的各氐族部落，打通了河西走廊。转任[[金城|/zh-hans/maps/map-overall?admin=139]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。当时正是战乱之后，官吏百姓流离失所，饥饿贫穷，户口锐减。苏则认真安抚照顾百姓流民，非常尽力；对外招纳羌人，得到他们的牛羊，用来赡养贫困老弱的人；他和百姓平分口粮：一个多月后，流民陆续都回来了，一共有几千家。于是苏则明确宣布若干禁令，有违犯的就杀掉，对听从教育的一定奖赏。他亲自教百姓耕种，当年就获得了大丰收。从那以后，前来归附的人越来越多。"
+      },
+      "en": "When Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) campaigned against Zhang Lu, he passed through Su Ze's commandery. Cao Cao was pleased upon meeting Su Ze, appointing him as guide to the army. After Zhang Lu was defeated, Su Ze pacified the Di tribes of [[Xiabian|/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]] and re-established the route to Hexi. He was then relocated to serve as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jincheng|/maps/map-overall?admin=139]]. In the aftermath of war and disorder, officials and commoners had scattered, famine and destitution were rife, and the population had sharply declined. Su Ze tended the people with great care. He won over the Qiang and Hu peoples, obtaining cattle and sheep from them to support the poor and elderly. He also shared grain with the people, and within a month the displaced had all returned, amounting to several thousand households. Su Ze then clearly proclaimed laws and prohibitions. Those who violated them were summarily executed, while those who obeyed were invariably rewarded. He personally taught the people to till and sow, and that year the harvest was abundant. From then on, those who came to submit grew by the day."
+    },
+    {
+      "id": "ws16b-p3",
+      "orig": {
+        "zht": "李越以[[隴西|/zh-hant/maps/map-overall?admin=150]]反，則率羌胡圍越，越即請服。太祖崩，[[西平|/zh-hant/maps/map-overall?admin=140]]麴演叛，稱[[護羌校尉|/zh-hant/translations/officials/military#colonels--commandants-189]]。則勒兵討之。演恐，乞降。文帝以其功，加則[[護羌校尉|/zh-hant/translations/officials/military#colonels--commandants-189]]，賜爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。後演復結旁郡為亂，[[張掖|/zh-hant/maps/map-overall?admin=137]]張進執[[太守|/zh-hant/translations/officials/regional#commanderies-039]]杜通，[[酒泉|/zh-hant/maps/map-overall?admin=141]]黃華不受[[太守|/zh-hant/translations/officials/regional#commanderies-039]]辛機，進、華皆自稱[[太守|/zh-hant/translations/officials/regional#commanderies-039]]以應之。又[[武威|/zh-hant/maps/map-overall?admin=138]]三種胡並寇鈔，道路斷絕。[[武威|/zh-hant/maps/map-overall?admin=138]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]毌丘興告急於則。",
+        "zhs": "李越以[[陇西|/zh-hans/maps/map-overall?admin=150]]反，则率羌胡围越，越即请服。太祖崩，[[西平|/zh-hans/maps/map-overall?admin=140]]麹演叛，称[[护羌校尉|/zh-hans/translations/officials/military#colonels--commandants-189]]。则勒兵讨之。演恐，乞降。文帝以其功，加则[[护羌校尉|/zh-hans/translations/officials/military#colonels--commandants-189]]，赐爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。后演复结旁郡为乱，[[张掖|/zh-hans/maps/map-overall?admin=137]]张进执[[太守|/zh-hans/translations/officials/regional#commanderies-039]]杜通，[[酒泉|/zh-hans/maps/map-overall?admin=141]]黄华不受[[太守|/zh-hans/translations/officials/regional#commanderies-039]]辛机，进、华皆自称[[太守|/zh-hans/translations/officials/regional#commanderies-039]]以应之。又[[武威|/zh-hans/maps/map-overall?admin=138]]三种胡并寇钞，道路断绝。[[武威|/zh-hans/maps/map-overall?admin=138]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]毌丘兴告急於则。"
+      },
+      "vern": {
+        "zht": "[[隴西|/zh-hant/maps/map-overall?admin=150]]郡的李越發動叛亂，蘇則率領羌族軍隊包圍了李越，李越請求投降。太祖去世，[[西平|/zh-hant/maps/map-overall?admin=140]]郡的麴演造反，自稱[[護羌校尉|/zh-hant/translations/officials/military#colonels--commandants-189]]。蘇則指揮軍隊討伐；麴演害怕了，也只好投降。魏文帝因爲蘇則的功勞，讓他兼任[[護羌校尉|/zh-hant/translations/officials/military#colonels--commandants-189]]，賜予[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]的爵位。後來麴演又勾結附近的郡發動叛亂。[[張掖|/zh-hant/maps/map-overall?admin=137]]郡的張進扣押了本郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]杜通，[[酒泉|/zh-hant/maps/map-overall?admin=141]]郡的黃華不讓新任[[太守|/zh-hant/translations/officials/regional#commanderies-039]]辛機入境；張進、黃華都自稱[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，響應麴演。再加上[[武威|/zh-hant/maps/map-overall?admin=138]]郡的三種少數族，也趁勢擄掠，河西的道路再度斷絕。[[武威|/zh-hant/maps/map-overall?admin=138]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]毌丘興向蘇則告急。",
+        "zhs": "[[陇西|/zh-hans/maps/map-overall?admin=150]]郡的李越发动叛乱，苏则率领羌族军队包围了李越，李越请求投降。太祖去世，[[西平|/zh-hans/maps/map-overall?admin=140]]郡的麹演造反，自称[[护羌校尉|/zh-hans/translations/officials/military#colonels--commandants-189]]。苏则指挥军队讨伐；麹演害怕了，也只好投降。魏文帝因为苏则的功劳，让他兼任[[护羌校尉|/zh-hans/translations/officials/military#colonels--commandants-189]]，赐予[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]的爵位。后来麹演又勾结附近的郡发动叛乱。[[张掖|/zh-hans/maps/map-overall?admin=137]]郡的张进扣押了本郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]杜通，[[酒泉|/zh-hans/maps/map-overall?admin=141]]郡的黄华不让新任[[太守|/zh-hans/translations/officials/regional#commanderies-039]]辛机入境；张进、黄华都自称[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，响应麹演。再加上[[武威|/zh-hans/maps/map-overall?admin=138]]郡的三种少数族，也趁势掳掠，河西的道路再度断绝。[[武威|/zh-hans/maps/map-overall?admin=138]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]毌丘兴向苏则告急。"
+      },
+      "en": "When Li Yue rebelled in [[Longxi|/maps/map-overall?admin=150]], Su Ze led the Qiang and Hu in laying siege to him, and Li Yue promptly sought to submit. After Cao Cao's death, Qu Yan of [[Xiping|/maps/map-overall?admin=140]] rebelled and proclaimed himself [[Colonel Protecting the Qiang|/translations/officials/military#colonels--commandants-189]]. Su Ze mustered his troops and marched against him. Fearing defeat, Qu Yan begged to surrender. In recognition of Ze's achievement, Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) appointed him [[Colonel Protecting the Qiang|/translations/officials/military#colonels--commandants-189]] and enfeoffed him as [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]. Later, Qu Yan again joined with neighbouring commanderies in rebellion. Zhang Jin seized Du Tong, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of his native [[Zhangye|/maps/map-overall?admin=137]], while Huang Hua refused to acknowledge Xin Ji, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of his native [[Jiuquan|/maps/map-overall?admin=141]]. Zhang Jin and Huang Hua each proclaimed himself [[Grand Administrator|/translations/officials/regional#commanderies-039]] and rallied to Qu Yan. Three Hu tribes from [[Wuwei|/maps/map-overall?admin=138]] also began raiding and plundering, severing the roads. Guanqiu Xing, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Wuwei|/maps/map-overall?admin=138]], sent an urgent appeal to Su Ze.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏名臣奏",
+            "zhs": "魏名臣奏",
+            "en": "Memorials of Famous Ministers of Wei"
+          },
+          "zht": "《魏名臣奏》載文帝令問[[雍州|/zh-hant/maps/map-overall?admin=14]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]張旣曰：「試守[[金城|/zh-hant/maps/map-overall?admin=139]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]蘇則，旣有綏民平夷之功，聞又出軍西定湟中，為河西作聲勢，吾甚嘉之。則之功効，為可加爵邑未邪？封爵重事，故以問卿。密白意，且勿宣露也。」旣荅曰：「[[金城|/zh-hant/maps/map-overall?admin=139]]郡，昔為韓遂所見屠剥，死喪流亡，或竄戎狄，或陷寇亂，戶不滿五百。則到官，內撫彫殘，外鳩離散，今見戶千餘。又梁燒雜種羌，昔與遂同惡，遂斃之後，越出障塞。則前後招懷，歸就郡者三千餘落，皆卹以威恩，為官效用。[[西平|/zh-hant/maps/map-overall?admin=140]]麴演等唱造邪謀，則尋出軍，臨其項領，演則歸命送質，破絕賊糧。則旣有卹民之效，又能和戎狄，盡忠效節。遭遇聖明，有功必錄。若則加爵邑，誠足以勸忠臣，勵風俗也。」",
+          "zhs": "《魏名臣奏》载文帝令问[[雍州|/zh-hans/maps/map-overall?admin=14]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]张既曰：「试守[[金城|/zh-hans/maps/map-overall?admin=139]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]苏则，既有绥民平夷之功，闻又出军西定湟中，为河西作声势，吾甚嘉之。则之功効，为可加爵邑未邪？封爵重事，故以问卿。密白意，且勿宣露也。」既荅曰：「[[金城|/zh-hans/maps/map-overall?admin=139]]郡，昔为韩遂所见屠剥，死丧流亡，或窜戎狄，或陷寇乱，户不满五百。则到官，内抚雕残，外鸠离散，今见户千余。又梁烧杂种羌，昔与遂同恶，遂毙之后，越出障塞。则前后招怀，归就郡者三千余落，皆恤以威恩，为官效用。[[西平|/zh-hans/maps/map-overall?admin=140]]麹演等唱造邪谋，则寻出军，临其项领，演则归命送质，破绝贼粮。则既有恤民之效，又能和戎狄，尽忠效节。遭遇圣明，有功必录。若则加爵邑，诚足以劝忠臣，励风俗也。」",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏名臣奏》记载，魏文帝下诏询问雍州刺史张既说：“暂代金城太守的苏则，既有安抚百姓、平定夷族的功劳，又听说他出兵向西平定了湟中，为河西地区造出声势，我十分赞赏他。苏则的功绩和成效，是否可以增加他的爵位和封邑呢？封爵是重要的事情，所以我来问你，你要秘密地告诉我你的看法，先不要对外泄露这件事。”张既回答说：“金城郡过去被韩遂屠杀洗劫，百姓死亡、逃亡，有的逃奔戎狄部落，有的陷入贼寇动乱中，户口不足五百。苏则到任后，对内安抚遭受战乱创伤的百姓，对外聚集离散的民众，如今现有的民户已达一千多户。另外，梁觉等混杂的羌人部落，过去曾与韩遂一同作恶，于是消灭了他们。后来，他们越过边塞，苏则前后招抚怀柔，归附到郡中的有三千多部落，苏则都用威严和恩德去体恤他们，让他们为官府效力。西平的麹演等人阴谋起事，苏则立即出兵兵临其要害之地，麹演马上投降并送来人质，苏则还断绝了叛贼的粮草。苏则既有抚恤百姓的功效，又能与戎狄和睦相处，竭尽忠诚，恪守节操，遇到圣明的君主，有功劳必定会被记录。如果给苏则增加爵位和封邑，确实足以劝勉忠臣，激励社会风气。”"
+          },
+          "en": "The Memorials of Renowned Ministers of Wei records: Cao Pi issued an order asking Zhang Ji, [[Inspector|/translations/officials/regional#provinces-014]] of [[Yong Province|/maps/map-overall?admin=14]]: \"Su Ze, acting [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jincheng|/maps/map-overall?admin=139]], has already earned merit by pacifying the people and subduing the Yi. I hear that he has also led troops west to pacify Huangzhong, thereby bolstering our position in Hexi. I greatly commend him. Do Su Ze's achievements warrant an increase in noble rank and fief? The conferral of titles is a weighty matter, so I ask your opinion. Report your views in confidence, and do not disclose them for the present.\" Zhang Ji replied: \"[[Jincheng|/maps/map-overall?admin=139]] Commandery was once slaughtered and despoiled by Han Sui. Its people were killed or driven into exile. Some fled to the Rong and Di, while others were engulfed by rebellion and disorder. Fewer than five hundred households remained. When Su Ze took office, he comforted the ravaged survivors within the commandery and gathered in those scattered beyond it. There are now more than a thousand registered households. Moreover, the Qiang tribes of Liangshao had formerly joined Han Sui in wrongdoing and, after his death, fled beyond the frontier barriers. Su Ze repeatedly summoned and conciliated them, and more than three thousand tribes returned to settle in the commandery. He governed them all with authority and benevolence, and they rendered service to the state. When Qu Yan of [[Xiping|/maps/map-overall?admin=140]] and others hatched a treacherous plot, Su Ze promptly sent out troops and bore down upon them. Qu Yan submitted and sent hostages, while Su Ze destroyed and cut off the rebels' supplies. Su Ze not only relieved the people, but also brought harmony to the Rong and Di, displaying the utmost loyalty and integrity. Under an enlightened sovereign, merit is certain to be recognised. To increase Su Ze's noble rank and fief would indeed encourage loyal ministers and improve the customs of the age.\""
+        }
+      ]
+    },
+    {
+      "id": "ws16b-p4",
+      "orig": {
+        "zht": "時[[雍|/zh-hant/maps/map-overall?admin=14]]、[[涼|/zh-hant/maps/map-overall?admin=5]]諸豪皆驅略羌胡以從進等，郡人咸以為進不可當。又將軍郝昭、魏平先是各屯守[[金城|/zh-hant/maps/map-overall?admin=139]]，亦受詔不得西度。則乃見郡中大吏及昭等與羌豪帥謀曰：「今賊雖盛，然皆新合，或有脅從，未必同心；因釁擊之，善惡必離，離而歸我，我增而彼損矣。旣獲益衆之實，且有倍氣之勢，率以進討，破之必矣。若待大軍，曠日持乆，善人無歸，必合於惡，善惡旣合，勢難卒離。雖有詔命，違而合權，專之可也。」",
+        "zhs": "时[[雍|/zh-hans/maps/map-overall?admin=14]]、[[凉|/zh-hans/maps/map-overall?admin=5]]诸豪皆驱略羌胡以从进等，郡人咸以为进不可当。又将军郝昭、魏平先是各屯守[[金城|/zh-hans/maps/map-overall?admin=139]]，亦受诏不得西度。则乃见郡中大吏及昭等与羌豪帅谋曰：「今贼虽盛，然皆新合，或有胁从，未必同心；因衅击之，善恶必离，离而归我，我增而彼损矣。既获益众之实，且有倍气之势，率以进讨，破之必矣。若待大军，旷日持乆，善人无归，必合于恶，善恶既合，势难卒离。虽有诏命，违而合权，专之可也。」"
+      },
+      "vern": {
+        "zht": "當時[[雍|/zh-hant/maps/map-overall?admin=14]]州、[[涼|/zh-hant/maps/map-overall?admin=5]]州的豪強大族，都逼迫羌族人追隨張進等；[[金城|/zh-hant/maps/map-overall?admin=139]]郡的人認爲張進勢不可當。在此以前，將軍郝昭、魏平，在[[金城|/zh-hant/maps/map-overall?admin=139]]屯兵駐守，又接到不許西進的詔書。蘇則親自會見郡中的重要官員和郝昭等人，一起和羌族的首領商議說：“現在敵人的勢力雖然強盛，但都是烏合之衆；有的還是被迫參加的，不一定能同心合力。利用他們的矛盾進行打擊，好人和壞人必定會分離；好的分離出來歸順我軍，我軍的數量增加而敵人的數量便要減少。既得到增加兵力的實惠，又使我軍氣勢倍增；到這時全軍出動討伐敵人，一定會打得他們落花流水。如果坐等大軍支援，曠日持久；好人找不到歸宿，必然要和壞人同流合污；善惡攪在一塊，就很難把他們一下子分開了。現在雖然有朝廷不許西進的詔命，違背它而合乎權變，完全可以自行決定。”",
+        "zhs": "当时[[雍|/zh-hans/maps/map-overall?admin=14]]州、[[凉|/zh-hans/maps/map-overall?admin=5]]州的豪强大族，都逼迫羌族人追随张进等；[[金城|/zh-hans/maps/map-overall?admin=139]]郡的人认为张进势不可当。在此以前，将军郝昭、魏平，在[[金城|/zh-hans/maps/map-overall?admin=139]]屯兵驻守，又接到不许西进的诏书。苏则亲自会见郡中的重要官员和郝昭等人，一起和羌族的首领商议说：“现在敌人的势力虽然强盛，但都是乌合之众；有的还是被迫参加的，不一定能同心合力。利用他们的矛盾进行打击，好人和坏人必定会分离；好的分离出来归顺我军，我军的数量增加而敌人的数量便要减少。既得到增加兵力的实惠，又使我军气势倍增；到这时全军出动讨伐敌人，一定会打得他们落花流水。如果坐等大军支援，旷日持久；好人找不到归宿，必然要和坏人同流合污；善恶搅在一块，就很难把他们一下子分开了。现在虽然有朝廷不许西进的诏命，违背它而合乎权变，完全可以自行决定。”"
+      },
+      "en": "At the time, the powerful clans of [[Yong Province|/maps/map-overall?admin=14]] and [[Liang Province|/maps/map-overall?admin=5]] were all seizing Qiang and Hu tribesmen and compelling them to join Zhang Jin and his followers. The people of the commandery believed Zhang Jin could not be withstood. Furthermore, the generals Hao Zhao and Wei Ping had previously been stationed separately at [[Jincheng|/maps/map-overall?admin=139]] and were also ordered not to cross westwards. Su Ze therefore met with the commandery's senior officials, Hao Zhao and the others, and the Qiang chieftains, and said: \"Though the rebels are now strong, they have only recently banded together. Some were coerced into joining them, and they are unlikely to be of one mind. If we exploit an opening and attack, the good and the wicked will surely part. The good will then come over to us, swelling our numbers while diminishing theirs. With our forces enlarged and our spirit doubled, we can lead them against the rebels and are certain to prevail. But if we wait for the main army, the conflict will be prolonged. With nowhere else to turn, the good will inevitably join the wicked. Once they have joined together, it will be difficult to separate them swiftly. Though acting now would contravene the imperial command, it is justified by expediency. We should therefore act on our own authority.\""
+    },
+    {
+      "id": "ws16b-p5",
+      "orig": {
+        "zht": "於是昭等從之，乃發兵救[[武威|/zh-hant/maps/map-overall?admin=138]]，降其三種胡，與興擊進於[[張掖|/zh-hant/maps/map-overall?admin=137]]。演聞之，將步騎三千迎則，辭來助軍，而實欲為變。則誘與相見，因斬之，出以徇軍，其黨皆散走。則遂與諸軍圍[[張掖|/zh-hant/maps/map-overall?admin=137]]，破之，斬進及其支黨，衆皆降。演軍敗，華懼，出所執乞降，河西平。乃還[[金城|/zh-hant/maps/map-overall?admin=139]]。進封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百戶。",
+        "zhs": "于是昭等从之，乃发兵救[[武威|/zh-hans/maps/map-overall?admin=138]]，降其三种胡，与兴击进于[[张掖|/zh-hans/maps/map-overall?admin=137]]。演闻之，将步骑三千迎则，辞来助军，而实欲为变。则诱与相见，因斩之，出以徇军，其党皆散走。则遂与诸军围[[张掖|/zh-hans/maps/map-overall?admin=137]]，破之，斩进及其支党，众皆降。演军败，华惧，出所执乞降，河西平。乃还[[金城|/zh-hans/maps/map-overall?admin=139]]。进封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑三百户。"
+      },
+      "vern": {
+        "zht": "郝昭等人聽從了蘇則的意見，發兵去救[[武威|/zh-hant/maps/map-overall?admin=138]]郡；迫使作亂的三種少數族人投降，並與毌丘興率軍在[[張掖|/zh-hant/maps/map-overall?admin=137]]郡攻擊張進。麴演得到消息，率領步軍、騎兵共三千人來迎接蘇則；說是前來援助，其實打算發動突然襲擊。蘇則引誘他來見面，趁機將他斬首示衆，他的黨羽都四散逃走。蘇則與各路軍隊包圍了[[張掖|/zh-hant/maps/map-overall?admin=137]]，大敗敵人；殺死了張進和他的黨羽，敵兵全部投降。麴演的部隊被打敗後，黃華感到恐懼，交出了他所扣押的人質乞求投降。河西一帶完全平定，蘇則回到[[金城|/zh-hant/maps/map-overall?admin=139]]。晉爵爲[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，食邑三百戶。",
+        "zhs": "郝昭等人听从了苏则的意见，发兵去救[[武威|/zh-hans/maps/map-overall?admin=138]]郡；迫使作乱的三种少数族人投降，并与毌丘兴率军在[[张掖|/zh-hans/maps/map-overall?admin=137]]郡攻击张进。麹演得到消息，率领步军、骑兵共三千人来迎接苏则；说是前来援助，其实打算发动突然袭击。苏则引诱他来见面，趁机将他斩首示众，他的党羽都四散逃走。苏则与各路军队包围了[[张掖|/zh-hans/maps/map-overall?admin=137]]，大败敌人；杀死了张进和他的党羽，敌兵全部投降。麹演的部队被打败后，黄华感到恐惧，交出了他所扣押的人质乞求投降。河西一带完全平定，苏则回到[[金城|/zh-hans/maps/map-overall?admin=139]]。晋爵为[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，食邑三百户。"
+      },
+      "en": "Hao Zhao and the others agreed. They then raised troops to relieve [[Wuwei|/maps/map-overall?admin=138]], secured the surrender of the three Hu tribes, and joined Guanqiu Xing in attacking Zhang Jin at [[Zhangye|/maps/map-overall?admin=137]]. Hearing of this, Qu Yan led three thousand infantry and cavalry to meet Su Ze, claiming that he had come to reinforce the army, though he in fact intended treachery. Su Ze lured him to a meeting, beheaded him, and displayed his head before the troops. Qu Yan's followers scattered and fled. Su Ze and the other forces then besieged [[Zhangye|/maps/map-overall?admin=137]] and took it, executing Zhang Jin and his supporters. The rest of the rebels all surrendered. With Qu Yan's army defeated, Huang Hua took fright, released his captives, and begged to surrender. Hexi was thus pacified, and Su Ze returned to [[Jincheng|/maps/map-overall?admin=139]]. He was advanced to [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]], with a fief of three hundred households."
+    },
+    {
+      "id": "ws16b-p6",
+      "orig": {
+        "zht": "徵拜[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]，與董昭同寮。昭嘗枕則膝卧，則推下之，曰：「蘇則之膝，非佞人之枕也。」初，則及[[臨菑侯|/zh-hant/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]]植聞魏氏代漢，皆發服悲哭，文帝聞植如此，而不聞則也。帝在[[洛陽|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，嘗從容言曰：「吾應天而禪，而聞有哭者，何也？」則謂為見問，鬚髯悉張，欲正論以對。[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]傅巽掐則曰：「不謂卿也。」於是乃止。",
+        "zhs": "征拜[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]，与董昭同寮。昭尝枕则膝卧，则推下之，曰：「苏则之膝，非佞人之枕也。」初，则及[[临菑侯|/zh-hans/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]]植闻魏氏代汉，皆发服悲哭，文帝闻植如此，而不闻则也。帝在[[洛阳|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，尝从容言曰：「吾应天而禅，而闻有哭者，何也？」则谓为见问，须髯悉张，欲正论以对。[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]傅巽掐则曰：「不谓卿也。」于是乃止。"
+      },
+      "vern": {
+        "zht": "朝廷徵召蘇則入朝任[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]，與董昭是同僚。有一次，董昭枕着蘇則的膝蓋睡覺，蘇則把他的頭推下去，說：“蘇則的膝蓋，可不是逢迎諂媚之輩的枕頭！”當初，蘇則同臨淄侯曹植，聽說曹魏取代漢朝，都穿上喪服爲滅亡的漢朝悲哀哭泣。曹植的舉動被魏文帝聽說了，卻不知道蘇則也是這樣。後來文帝在[[洛陽|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，有一次空閒時問道：“我順應天命受漢朝禪讓當了皇帝，卻聽說有人爲此悲哭，哭什麼呢？”蘇則還以爲是質問自己，鬍鬚都豎立起來，想要以正當的理由嚴肅地辯論一番。[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]傅巽連忙用手掐他並悄悄說：“不是說您啊。”，蘇則才停了下來。",
+        "zhs": "朝廷征召苏则入朝任[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]，与董昭是同僚。有一次，董昭枕着苏则的膝盖睡觉，苏则把他的头推下去，说：“苏则的膝盖，可不是逢迎谄媚之辈的枕头！”当初，苏则同临淄侯曹植，听说曹魏取代汉朝，都穿上丧服为灭亡的汉朝悲哀哭泣。曹植的举动被魏文帝听说了，却不知道苏则也是这样。后来文帝在[[洛阳|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]，有一次空闲时问道：“我顺应天命受汉朝禅让当了皇帝，却听说有人为此悲哭，哭什么呢？”苏则还以为是质问自己，胡须都竖立起来，想要以正当的理由严肃地辩论一番。[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]傅巽连忙用手掐他并悄悄说：“不是说您啊。”，苏则才停了下来。"
+      },
+      "en": "Thereafter, Su Ze was summoned and appointed [[Palace Attendant|/translations/officials/departments#chancellery-001]], serving alongside Dong Zhao. Dong Zhao once laid his head on Su Ze's knees. Su Ze pushed him off, saying, \"Su Ze's knees are no pillow for a sycophant.\" When Su Ze and Marquis of [[Linzi|/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]], Cao Zhi, first heard that Wei had supplanted the Han, both donned mourning dress and wept bitterly. Cao Pi heard of Cao Zhi's conduct, but not Su Ze's. Once, while in [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]], the emperor casually remarked, \"I accepted the abdication in accordance with Heaven, yet I hear that someone wept. Why was that?\" Su Ze thought the question was addressed to him. His beard bristled, and he was about to answer with a forthright remonstrance when the [[Palace Attendant|/translations/officials/departments#chancellery-001]] Fu Xun pinched him and said, \"His Majesty was not referring to you.\" Su Ze then desisted.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：舊儀，[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]親省起居，故俗謂之執虎子。始則同郡吉茂者，是時仕甫歷[[縣令|/zh-hant/translations/officials/regional#counties-088]]，遷為宂散。茂見則，嘲之曰：「仕進不止執虎子。」則笑曰：「我誠不能效汝蹇蹇驅鹿車馳也。」初，則在[[金城|/zh-hant/maps/map-overall?admin=139]]，聞漢帝禪位，以為崩也，乃發喪；後聞其在，自以不審，意頗默然。[[臨菑|/zh-hant/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]]侯植自傷失先帝意，亦怨激而哭。其後文帝出游，追恨臨菑，顧謂左右曰：「人心不同，當我登大位之時，天下有哭者。」時從臣知帝此言，有為而發也，而則以為為己，欲下馬謝。[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]傅巽目之，乃悟。",
+          "zhs": "《魏略》曰：旧仪，[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]亲省起居，故俗谓之执虎子。始则同郡吉茂者，是时仕甫历[[县令|/zh-hans/translations/officials/regional#counties-088]]，迁为宂散。茂见则，嘲之曰：「仕进不止执虎子。」则笑曰：「我诚不能效汝蹇蹇驱鹿车驰也。」初，则在[[金城|/zh-hans/maps/map-overall?admin=139]]，闻汉帝禅位，以为崩也，乃发丧；后闻其在，自以不审，意颇默然。[[临菑|/zh-hans/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]]侯植自伤失先帝意，亦怨激而哭。其后文帝出游，追恨临菑，顾谓左右曰：「人心不同，当我登大位之时，天下有哭者。」时从臣知帝此言，有为而发也，而则以为为己，欲下马谢。[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]傅巽目之，乃悟。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：按照故旧礼仪，侍中要亲自照料皇帝的起居，所以民间把他们称为“执虎子”。起初，苏则的同郡人吉茂，当时刚刚担任过县令，迁任为散职官员。吉茂见到苏则，就嘲笑他说：“你当官一直升却还是执虎子啊！”苏则笑道：“我确实不能效仿你慢慢地赶着鹿车啊！”当初，苏则在金城时，听说汉帝禅让皇位，以为汉帝驾崩了，于是为汉帝发丧。后来听说他还活着，自认为没有弄清楚情况，很是沉默不语。临菑侯曹植为自己失去曹操的宠爱而伤心，也因怨恨激动而哭泣。后来魏文帝出游，追恨临菑侯，回头对左右的人说：“人心各不相同，当我登上皇位的时候，天下有哭泣的人。”当时随从群臣都知道文帝这番话心有所指。而苏则以为是在说自己，欲下马谢罪，侍中傅巽用眼神示意他，他才醒悟过来。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Under the conventional rites system, the [[Palace Attendant|/translations/officials/departments#chancellery-001]] personally attended to the emperor's daily needs, and was therefore commonly referred to as \"the chamber-pot bearer\". At first, Ji Mao, a man of Sun Ze's home commandery, had only just served as a [[County Magistrate|/translations/officials/regional#counties-088]] before being transferred to a supernumerary post. On seeing Sun Ze, Ji Mao mocked him: \"Your advancement in office has brought you no further than bearing a chamber pot.\" Su Ze laughed and replied, \"I truly cannot emulate you, riding leisurely about in a deer cart.\" Earlier, while in [[Jincheng|/maps/map-overall?admin=139]], Su Ze had heard that the Han emperor abdicated the throne and mistakenly believed that he had died, so he went into mourning. When he later learnt that the emperor was still alive, he reproached himself for not having ascertained the truth and became markedly subdued. The Marquis of [[Linzi|/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]], Cao Zhi, grieved that he had lost Cao Cao's favour, had also wept in bitter anguish. Later, while Cao Pi was out on an excursion, he recalled Cao Zhi with resentment and turned to his attendants, saying, \"Men's hearts differ. When I ascended the throne, there were those in the empire who wept.\" The accompanying ministers understood that the emperor's remark was directed at someone in particular. Su Ze thought it referred to him and was about to dismount and apologise. The [[Palace Attendant|/translations/officials/departments#chancellery-001]] Fu Xun signalled to Su Ze with his eyes, and only then did Su Ze understand that the remark was not directed at him."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "孫盛",
+            "zhs": "孙盛",
+            "en": "Sun Sheng"
+          },
+          "zht": "孫盛曰：夫士不事其所非，不非其所事，趣舍出處，而豈徒哉！則旣策名新朝，委質異代，而方懷二心生忿，欲奮爽言，豈大雅君子去就之分哉？詩云：「士也罔極，二三其德。」士之二三，猶喪妃偶，況人臣乎？",
+          "zhs": "孙盛曰：夫士不事其所非，不非其所事，趣舍出处，而岂徒哉！则既策名新朝，委质异代，而方怀二心生忿，欲奋爽言，岂大雅君子去就之分哉？诗云：「士也罔极，二三其德。」士之二三，犹丧妃偶，况人臣乎？",
+          "vern": {
+            "zht": "",
+            "zhs": "孙盛说：士人不侍奉自己认为不对的君主，不非议自己所侍奉的君主，他们的取舍进退，难道是没有原因的吗？则既然已经在新朝出仕为官，向新的君主称臣效忠，却还心怀二心，心生怨愤想要痛快地说出不满之言，这难道是大雅君子在去留问题上应有的操守吗！《诗经》说：“士人没有准则，德行反复无常。”士人反复无常，尚且会失去配偶，何况是作为臣子呢？"
+          },
+          "en": "Sun Sheng remarked: A gentleman does not serve one he condemns, nor condemn one he serves. His decisions to give or withdraw his allegiance, to take office or retire, are surely not made lightly. Yet having entered his name on the rolls of a new court and pledged his service to another dynasty, he still harboured divided loyalties, grew resentful, and sought to vent his feelings through outspoken criticism. Is this truly the principle a noble gentleman should uphold when choosing whether to remain or withdraw? The Odes states, \"You know no constancy; fickle is your conduct\". A man's fickleness may cost him his spouse; how much more so for a minister?"
+        }
+      ]
+    },
+    {
+      "id": "ws16b-p7",
+      "orig": {
+        "zht": "文帝問則曰：「前破[[酒泉|/zh-hant/maps/map-overall?admin=141]]、[[張掖|/zh-hant/maps/map-overall?admin=137]]，西域通使，燉煌獻徑[[寸|/zh-hant/translations/officials#glossary-cun]]大珠，可復求市益得不？」則對曰：「若陛下化洽中國，德流沙漠，即不求自至；求而得之，不足貴也。」帝嘿然。後則從行獵，槎桎拔，失鹿，帝大怒，踞胡牀拔刀，悉收督吏，將斬之。則稽首曰：「臣聞古之聖王不以禽獸害人，今陛下方隆唐堯之化，而以獵戲多殺羣吏，愚臣以為不可。敢以死請！」帝曰：「卿，直臣也。」遂皆赦之。然以此見憚。",
+        "zhs": "文帝问则曰：「前破[[酒泉|/zh-hans/maps/map-overall?admin=141]]、[[张掖|/zh-hans/maps/map-overall?admin=137]]，西域通使，炖煌献径[[寸|/zh-hans/translations/officials#glossary-cun]]大珠，可复求市益得不？」则对曰：「若陛下化洽中国，德流沙漠，即不求自至；求而得之，不足贵也。」帝嘿然。后则从行猎，槎桎拔，失鹿，帝大怒，踞胡床拔刀，悉收督吏，将斩之。则稽首曰：「臣闻古之圣王不以禽兽害人，今陛下方隆唐尧之化，而以猎戏多杀群吏，愚臣以为不可。敢以死请！」帝曰：「卿，直臣也。」遂皆赦之。然以此见惮。"
+      },
+      "vern": {
+        "zht": "這才擋住了他。文帝問蘇則說：“前些時攻破[[酒泉|/zh-hant/maps/map-overall?admin=141]]郡、[[張掖|/zh-hant/maps/map-overall?admin=137]]郡，和西域互通使節，敦煌郡獻上直徑一[[寸|/zh-hant/translations/officials#glossary-cun]]的大珠。這樣的寶珠還能不能再買到呢？”蘇則回答說：“陛下的德澤如果能充分滋潤中原，並且流佈到西北邊境之外，寶珠就會不求自來；如果自己去求然後得到，那麼也就值不得珍貴了。”文帝聽了，頓時默然無語。後來蘇則陪同文帝打獵，包圍的籬笆設置不牢固，被鹿撞破逃走了。文帝大怒，腳踩胡牀拔出佩刀，把有關官吏都抓起來，要處死他們。蘇則跪地叩拜，說：“爲臣聽說古代的聖明君王，不會因爲禽獸而殺人。現在陛下正推崇唐堯的教化，卻因爲打獵的遊戲要殺死很多吏員；愚臣認爲絕對不能這樣，所以斗膽用我的生命來求情！”文帝說：“您，真是正直的大臣啊！”便把那些官吏全部赦免。然而蘇則也因此受到文帝的忌恨和畏懼。",
+        "zhs": "这才挡住了他。文帝问苏则说：“前些时攻破[[酒泉|/zh-hans/maps/map-overall?admin=141]]郡、[[张掖|/zh-hans/maps/map-overall?admin=137]]郡，和西域互通使节，敦煌郡献上直径一[[寸|/zh-hans/translations/officials#glossary-cun]]的大珠。这样的宝珠还能不能再买到呢？”苏则回答说：“陛下的德泽如果能充分滋润中原，并且流布到西北边境之外，宝珠就会不求自来；如果自己去求然后得到，那么也就值不得珍贵了。”文帝听了，顿时默然无语。后来苏则陪同文帝打猎，包围的篱笆设置不牢固，被鹿撞破逃走了。文帝大怒，脚踩胡床拔出佩刀，把有关官吏都抓起来，要处死他们。苏则跪地叩拜，说：“为臣听说古代的圣明君王，不会因为禽兽而杀人。现在陛下正推崇唐尧的教化，却因为打猎的游戏要杀死很多吏员；愚臣认为绝对不能这样，所以斗胆用我的生命来求情！”文帝说：“您，真是正直的大臣啊！”便把那些官吏全部赦免。然而苏则也因此受到文帝的忌恨和畏惧。"
+      },
+      "en": "Cao Pi asked Su Ze, \"When we conquered [[Jiuquan|/maps/map-overall?admin=141]] and [[Zhangye|/maps/map-overall?admin=137]], envoys began travelling to and from the Western Regions, and Dunhuang presented a pearl one [[cun|/translations/officials#glossary-cun]] across. Could more be obtained by purchase?\" Su Ze replied, \"If Your Majesty's transforming influence pervades the realm and your virtue reaches even the deserts, such pearls will come of themselves without being sought. If they must be sought out and purchased, they are not worth prizing.\" The emperor fell silent. Later, Su Ze accompanied him on a hunt. A stake in the hunting enclosure came loose, allowing a deer to escape. The emperor was furious. Seated on a stool, he drew his sword and ordered all the officers overseeing the hunt arrested for execution. Su Ze knelt and bowed his head to the ground, saying, \"I, your servant, have heard that the sage kings of old never harmed men for the sake of beasts. Your Majesty now seeks to exalt the civilising rule of Yao, yet would put numerous officials to death over a hunt. Your foolish servant believes this cannot be allowed. I dare plead for their lives on pain of death.\" The emperor said, \"Sir, you are an upright minister,\" and pardoned them all. Yet thereafter, the emperor grew wary of Su Ze."
+    },
+    {
+      "id": "ws16b-p8",
+      "orig": {
+        "zht": "黃初四年，左遷[[東平|/zh-hant/maps/map-overall?admin=37]][[相|/zh-hant/translations/officials/regional#states-064]]。未至，道病薨，謚曰剛侯。子怡嗣。怡薨，無子，弟愉襲封。愉，咸熈中為[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。",
+        "zhs": "黄初四年，左迁[[东平|/zh-hans/maps/map-overall?admin=37]][[相|/zh-hans/translations/officials/regional#states-064]]。未至，道病薨，谥曰刚侯。子怡嗣。怡薨，无子，弟愉袭封。愉，咸熈中为[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。"
+      },
+      "vern": {
+        "zht": "黃初四年（公元 223），他被降職爲河東國[[相|/zh-hant/translations/officials/regional#states-064]]。赴任途中，得病去世，諡爲剛侯。他的兒子蘇怡繼承了爵位。蘇怡死後，沒有兒子，由他的弟弟蘇愉繼承爵位。蘇愉，在咸熙年間曾擔任[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。",
+        "zhs": "黄初四年（公元 223），他被降职为河东国[[相|/zh-hans/translations/officials/regional#states-064]]。赴任途中，得病去世，谥为刚侯。他的儿子苏怡继承了爵位。苏怡死后，没有儿子，由他的弟弟苏愉继承爵位。苏愉，在咸熙年间曾担任[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。"
+      },
+      "en": "In the fourth year of Huangchu, Su Ze was demoted to [[Principality Chancellor|/translations/officials/regional#states-064]] of [[Dongping State|/maps/map-overall?admin=37]]. Before reaching his post, he fell ill and died en route. He was posthumously titled Marquis Gang, the Resolute Marquis. His son Su Yi succeeded him. Su Yi died without a son, so his younger brother Su Yu inherited the fief. During the Xianxi era, Su Yu served as an [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "愉字休豫，歷位[[太常|/zh-hant/translations/officials/ministers#-nine-ministers-i-120]][[光祿大夫|/zh-hant/translations/officials/ministers#civil-honorary-officials-119]]，見晉百官名。山濤啟事稱愉忠篤有智意。臣松之案愉子紹，字世嗣，為吳王師。石崇妻，紹之女兄也。紹有詩在金谷集。紹弟慎，[[左衞將軍|/zh-hant/translations/officials/ministers#superior-excellency-002]]。",
+          "zhs": "愉字休豫，历位[[太常|/zh-hans/translations/officials/ministers#-nine-ministers-i-120]][[光禄大夫|/zh-hans/translations/officials/ministers#civil-honorary-officials-119]]，见晋百官名。山涛启事称愉忠笃有智意。臣松之案愉子绍，字世嗣，为吴王师。石崇妻，绍之女兄也。绍有诗在金谷集。绍弟慎，[[左衞将军|/zh-hans/translations/officials/ministers#superior-excellency-002]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "苏愉字休豫，历任太常、光禄大夫。见于《晋百官名》。山涛的《启事》中称赞愉忠诚笃厚且有智谋。臣裴松之考证：苏愉的儿子绍，字世嗣，担任吴王的老师。石崇的妻子，是苏绍的姐姐。苏绍有诗收录在《金谷集》中。他弟弟苏慎，担任左卫将军。"
+          },
+          "en": "Su Yu, courtesy name Xiuyu, successively served as [[Minister of Ceremonies|/translations/officials/ministers#-nine-ministers-i-120]] and [[Household Counsellor|/translations/officials/ministers#civil-honorary-officials-119]], and is listed in the Official Posts of Jin. In Shan Tao's The Explanation of Matters, Shan Tao praised him as loyal and steadfast, with sound judgement. Your servant Songzi notes that Su Yu's son Su Shao, courtesy name Shisi, served as tutor to the Prince of Wu. Shi Chong's wife was Su Shao's elder sister. Su Shao's poems are in the Jingu Collection. Su Shao's younger brother, Su Shen, was [[General of the Central Guards on the Left|/translations/officials/ministers#superior-excellency-002]]."
+        }
+      ]
+    }
+  ]
+}

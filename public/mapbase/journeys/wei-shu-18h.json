@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18h",
+    "order": 18,
+    "label": {
+      "zht": "龐德傳",
+      "zhs": "庞德传",
+      "en": "Biography of Pang De"
+    },
+    "title": {
+      "zht": "魏書十八 · 龐德傳",
+      "zhs": "魏书十八 · 庞德传",
+      "en": "Book of Wei, Chapter 18 · Biography of Pang De"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -74,6 +88,16 @@
   "journeyOverviews": [
     {
       "person": "龐德（令明）",
+      "name": {
+        "en": "Pang De",
+        "zht": "龐德",
+        "zhs": "庞德"
+      },
+      "courtesyName": {
+        "en": "Lingming",
+        "zht": "令明",
+        "zhs": "令明"
+      },
       "born": {
         "en": "unknown",
         "zht": "不詳",
@@ -179,7 +203,7 @@
           },
           "position": [
             {
-              "en": "Gentleman General",
+              "en": "Gentleman-General",
               "zht": "中郎將",
               "zhs": "中郎将"
             },
@@ -200,17 +224,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Gentleman General",
-                "zht": "中郎將",
-                "zhs": "中郎将"
-              },
-              "1": {
-                "en": "Capital Neighbourhood Marquis",
-                "zht": "都亭侯",
-                "zhs": "都亭侯"
-              },
+              "en": "Gentleman-General",
+              "zht": "中郎將",
+              "zhs": "中郎将",
               "url": null
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },
@@ -311,17 +334,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General Who Champions Righteousness",
-                "zht": "立義將軍",
-                "zhs": "立义将军"
-              },
-              "1": {
-                "en": "Neighbourhood Marquis",
-                "zht": "亭侯",
-                "zhs": "亭侯"
-              },
-              "url": null
+              "en": "General Who Champions Righteousness",
+              "zht": "立義將軍",
+              "zhs": "立义将军",
+              "url": "/translations/officials/military#four-direction--misc-148"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },

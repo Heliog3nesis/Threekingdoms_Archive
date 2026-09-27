@@ -1,0 +1,857 @@
+{
+  "id": "wei-shu-16f",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 16,
+  "num": "16",
+  "label": {
+    "zht": "倉慈傳 · 附顏斐、令狐邵、孔乂",
+    "zhs": "仓慈传 · 附颜斐、令狐邵、孔乂",
+    "en": "Biography of Cang Ci · with Yan Fei, Linghu Shao, Kong Yi"
+  },
+  "title": {
+    "zht": "魏書十六 · 倉慈傳 · 附顏斐、令狐邵、孔乂",
+    "zhs": "魏书十六 · 仓慈传 · 附颜斐、令狐邵、孔乂",
+    "en": "Book of Wei, Chapter 16 · Biography of Cang Ci · with Yan Fei, Linghu Shao, Kong Yi"
+  },
+  "relationships": [
+    {
+      "from": "倉慈（孝仁）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p1",
+          "text": {
+            "en": "During the Jian'an era Cao Cao recruited settlers to establish agricultural colonies in Huainan and appointed Cang Ci Commandant Who Calms and Gathers.",
+            "zht": "建安年間曹操招募流民在淮南屯田，任命倉慈為綏集都尉。",
+            "zhs": "建安年间曹操招募流民在淮南屯田，任命仓慈为绥集都尉。"
+          },
+          "title": {
+            "en": "Commandant Who Calms and Gathers",
+            "zht": "綏集都尉",
+            "zhs": "绥集都尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "尹奉",
+      "to": "倉慈（孝仁）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p2",
+          "text": {
+            "en": "Former Grand Administrators of Dunhuang such as Yin Feng had merely followed established practice and made no attempt to reform it; Cang Ci succeeded them and curbed the powerful clans, redistributed surplus land, and cleared the backlog of lawsuits.",
+            "zht": "尹奉等敦煌歷任太守只是沿襲舊例，未加改革；倉慈繼任後抑制豪強，重新分配多佔的土地，並清理積壓的訴訟。",
+            "zhs": "尹奉等敦煌历任太守只是沿袭旧例，未加改革；仓慈继任后抑制豪强，重新分配多占的土地，并清理积压的诉讼。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "倉慈（孝仁）",
+      "to": "王遷",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p3",
+          "text": {
+            "en": "After Cang Ci died in office, Wang Qian of Tianshui succeeded him as Grand Administrator of Dunhuang; he followed Cang Ci's practices but could not equal him.",
+            "zht": "倉慈在任去世後，天水人王遷繼任敦煌太守；他沿用倉慈的做法，卻不及倉慈。",
+            "zhs": "仓慈在任去世后，天水人王迁继任敦煌太守；他沿用仓慈的做法，却不及仓慈。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "王遷",
+      "to": "趙基",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p3",
+          "text": {
+            "en": "Zhao Ji of Jincheng succeeded Wang Qian as Grand Administrator of Dunhuang but proved inferior even to him.",
+            "zht": "金城人趙基繼王遷任敦煌太守，還不及王遷。",
+            "zhs": "金城人赵基继王迁任敦煌太守，还不及王迁。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙基",
+      "to": "皇甫隆",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p3",
+          "text": {
+            "en": "Huangfu Long of Anding succeeded Zhao Ji and taught the people of Dunhuang to make seed drills and irrigate efficiently, halving the labour and raising the yield by half.",
+            "zht": "安定人皇甫隆繼趙基任太守，教敦煌百姓製作耬犁、改進灌溉，省工過半，收成增加五成。",
+            "zhs": "安定人皇甫隆继赵基任太守，教敦煌百姓制作耧犁、改进灌溉，省工过半，收成增加五成。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "令狐邵（孔叔）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "When Cao Cao captured Maocheng, he spared Linghu Shao on recognising his father's name and appointed him Military Strategy Section Administrator; Linghu Shao went on to serve as county magistrate, commandery governor, Registrar to the Chancellor and Grand Administrator of Hongnong.",
+            "zht": "曹操攻破毛城，見令狐邵衣冠舉止像士人，問及家世，認出其父之名，遂將他釋放，署為軍謀掾；令狐邵後歷任縣令、郡守、丞相主簿，出為弘農太守。",
+            "zhs": "曹操攻破毛城，见令狐邵衣冠举止像士人，问及家世，认出其父之名，遂将他释放，署为军谋掾；令狐邵后历任县令、郡守、丞相主簿，出为弘农太守。"
+          },
+          "title": {
+            "en": "Military Strategy Section Administrator",
+            "zht": "軍謀掾",
+            "zhs": "军谋掾"
+          }
+        }
+      ]
+    },
+    {
+      "from": "令狐邵（孔叔）",
+      "to": "樂詳（文載）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "As Grand Administrator of Hongnong, Linghu Shao sent officials to Hedong to study the Classics under Yue Xiang, then established schools when they returned, so that learning gradually flourished in Hongnong.",
+            "zht": "令狐邵任弘農太守時，遣送吏民赴河東跟隨樂詳學習經書，學成歸來後設立學校，弘農學風漸盛。",
+            "zhs": "令狐邵任弘农太守时，遣送吏民赴河东跟随乐详学习经书，学成归来后设立学校，弘农学风渐盛。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "令狐邵（孔叔）",
+      "to": "令狐愚",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "Linghu Yu was Linghu Shao's younger clansman.",
+            "zht": "令狐愚是令狐邵的族侄。",
+            "zhs": "令狐愚是令狐邵的族侄。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "令狐邵（孔叔）",
+      "to": "令狐愚",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "When everyone expected Linghu Yu to honour the clan, Linghu Shao alone predicted he would bring ruin upon it, and Linghu Yu resented this; years later Linghu Yu conspired with Wang Ling to depose the emperor and his household was executed, as Linghu Shao had foretold.",
+            "zht": "眾人都認為令狐愚將光耀門楣，唯令狐邵斷言他必敗家族，令狐愚聞之懷恨；多年後令狐愚與王淩合謀廢立，全家被誅，果如令狐邵所料。",
+            "zhs": "众人都认为令狐愚将光耀门楣，唯令狐邵断言他必败家族，令狐愚闻之怀恨；多年后令狐愚与王凌合谋废立，全家被诛，果如令狐邵所料。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "王淩（彥雲）",
+      "to": "令狐愚",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "As Inspector of Yan Province, Linghu Yu conspired with Wang Ling to depose the emperor and install another.",
+            "zht": "令狐愚任兗州刺史時，與王淩合謀廢立皇帝。",
+            "zhs": "令狐愚任兖州刺史时，与王凌合谋废立皇帝。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "令狐邵（孔叔）",
+      "to": "令狐華",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "Linghu Shao's son Linghu Hua, then Assistant to the Grand Administrator of Hongnong, escaped implication in Linghu Yu's downfall because of their distant kinship.",
+            "zht": "令狐邵之子令狐華時任弘農太守丞，因與令狐愚親緣疏遠而未受牽連。",
+            "zhs": "令狐邵之子令狐华时任弘农太守丞，因与令狐愚亲缘疏远而未受牵连。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "顏斐（文林）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "A note records that the Chancellor Cao Cao summoned Yan Fei, a man of talent and learning, to serve as Frontrider of the Crown Prince.",
+            "zht": "有註記載丞相曹操徵召才學出眾的顏斐，任為太子門下先馬。",
+            "zhs": "有注记载丞相曹操征召才学出众的颜斐，任为太子门下先马。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "顏斐（文林）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "At the beginning of the Huangchu era Yan Fei was transferred to Attendant Gentleman within the Yellow Gates and later became Grand Administrator of Jingzhao.",
+            "zht": "黃初初年顏斐調任黃門侍郎，後出任京兆太守。",
+            "zhs": "黄初初年颜斐调任黄门侍郎，后出任京兆太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Jingzhao",
+            "zht": "京兆太守",
+            "zhs": "京兆太守"
+          }
+        }
+      ]
+    },
+    {
+      "from": "顏斐（文林）",
+      "to": "司馬懿（仲達）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "When Sima Yi set up a military market at Chang'an and its soldiers abused the county's people, Yan Fei reported it; Sima Yi had the captain beaten a hundred strokes in front of him, and Yan Fei declined to offer thanks so as not to misread Sima Yi's impartiality, after which Sima Yi kept his soldiers under strict control.",
+            "zht": "司馬懿在長安設軍市，軍吏欺凌縣民，顏斐向他報告；司馬懿將軍市候當面杖責一百，顏斐拒絕道謝，以免辜負司馬懿一視同仁之意，此後司馬懿嚴加約束軍吏。",
+            "zhs": "司马懿在长安设军市，军吏欺凌县民，颜斐向他报告；司马懿将军市候当面杖责一百，颜斐拒绝道谢，以免辜负司马懿一视同仁之意，此后司马懿严加约束军吏。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "孔疇（元矩）",
+      "to": "孔乂（元儁）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "A note records that Kong Yi's great-grandfather Kong Chou, courtesy name Yuanju, served as Principality Chancellor of Chen and erected a stele before the image of Confucius.",
+            "zht": "注載孔乂的曾祖父孔疇，字元矩，官至陳相，曾在孔子像前立碑。",
+            "zhs": "注载孔乂的曾祖父孔畴，字元矩，官至陈相，曾在孔子像前立碑。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "孔乂（元儁）",
+      "to": "孔子（仲尼）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "According to the Kong Family Genealogy, Kong Yi, courtesy name Yuanjun, was a descendant of Confucius.",
+            "zht": "據《孔氏譜》，孔乂，字元儁，為孔子之後。",
+            "zhs": "据《孔氏谱》，孔乂，字元儁，为孔子之后。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "孔乂（元儁）",
+      "to": "孔恂（士信）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "Kong Yi's son Kong Xun, courtesy name Shixin, served under Jin as General Who Subdues the East and Commandant of the Guards.",
+            "zht": "孔乂之子孔恂，字士信，仕晉官至征東將軍、衛尉。",
+            "zhs": "孔乂之子孔恂，字士信，仕晋官至征东将军、卫尉。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "倉慈（孝仁）",
+      "name": {
+        "en": "Cang Ci",
+        "zht": "倉慈",
+        "zhs": "仓慈"
+      },
+      "courtesyName": {
+        "en": "Xiaoren",
+        "zht": "孝仁",
+        "zhs": "孝仁"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during the Jian'an Era",
+            "zht": "建安年間",
+            "zhs": "建安年间"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            }
+          ],
+          "position": [
+            {
+              "en": "Commandant Who Pacifies and Gathers",
+              "zht": "綏集都尉",
+              "zhs": "绥集都尉"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "late Huangchu Era",
+            "zht": "黄初末",
+            "zhs": "黄初末"
+          },
+          "year": 225,
+          "age": null,
+          "location": [
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during the Taihe Era",
+            "zht": "太和年間",
+            "zhs": "太和年间"
+          },
+          "year": "230s",
+          "age": null,
+          "location": [
+            {
+              "en": "Dunhuang",
+              "zht": "燉煌",
+              "zhs": "炖煌"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    },
+    {
+      "person": "顏斐（文林）",
+      "name": {
+        "en": "Yan Fei",
+        "zht": "顏斐",
+        "zhs": "颜斐"
+      },
+      "courtesyName": {
+        "en": "Wenlin",
+        "zht": "文林",
+        "zhs": "文林"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jibei State",
+              "zht": "濟北",
+              "zhs": "济北"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "Before Huangchu Era",
+            "zht": "黃初前",
+            "zhs": "黄初前"
+          },
+          "year": "<220",
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Frontrider of the Crown Prince",
+              "zht": "太子洗馬",
+              "zhs": "太子洗马"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during Huangchu Era - during the Qinglong Era",
+            "zht": "黃初年間 - 青龍年間",
+            "zhs": "黄初年间 - 青龙年间"
+          },
+          "year": "220s - 230s",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛",
+              "zhs": "洛"
+            },
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            }
+          ],
+          "position": [
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "給事黃門侍郎",
+              "zhs": "给事黄门侍郎"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Pingyuan",
+              "zht": "平原",
+              "zhs": "平原"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    },
+    {
+      "person": "令狐邵（孔叔）",
+      "name": {
+        "en": "Linghu Shao",
+        "zht": "令狐邵",
+        "zhs": "令狐邵"
+      },
+      "courtesyName": {
+        "en": "Kongshu",
+        "zht": "孔叔",
+        "zhs": "孔叔"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Taiyuan",
+              "zht": "太原",
+              "zhs": "太原"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "Beginning of Jian'an Era",
+            "zht": "建安初",
+            "zhs": "建安初"
+          },
+          "year": "~200",
+          "age": null,
+          "location": [
+            {
+              "en": "Ye",
+              "zht": "鄴",
+              "zhs": "邺"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "9th year of Jian'an",
+            "zht": "建安九年",
+            "zhs": "建安九年"
+          },
+          "year": 204,
+          "age": null,
+          "location": [
+            {
+              "en": "Wu'an",
+              "zht": "武安",
+              "zhs": "武安"
+            }
+          ],
+          "position": [
+            {
+              "en": "Military Strategy Section Administrator",
+              "zht": "軍謀掾",
+              "zhs": "军谋掾"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Hongnong",
+              "zht": "弘農",
+              "zhs": "弘农"
+            }
+          ],
+          "position": [
+            {
+              "en": "Registrar",
+              "zht": "主簿",
+              "zhs": "主簿"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "Beginning of Huangchu Era",
+            "zht": "黃初初",
+            "zhs": "黄初初"
+          },
+          "year": "~220",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛",
+              "zhs": "洛"
+            }
+          ],
+          "position": [
+            {
+              "en": "Feathered Forest Gentleman",
+              "zht": "羽林郎",
+              "zhs": "羽林郎"
+            },
+            {
+              "en": "Gentleman-General of the Rapid Tigers",
+              "zht": "虎賁中郎將",
+              "zhs": "虎贲中郎将"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws16f-p1",
+      "orig": {
+        "zht": "倉慈字孝仁，[[淮南|/zh-hant/maps/map-overall?admin=24]]人也。始為郡吏。建安中，太祖開募屯田於[[淮南|/zh-hant/maps/map-overall?admin=24]]，以慈為綏集都尉。黃初末，為[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]][[令|/zh-hant/translations/officials/regional#counties-088]]，清約有方，吏民畏而愛之。太和中，遷[[燉煌|/zh-hant/maps/map-overall?admin=135]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。郡在西陲，以喪亂隔絕，曠無[[太守|/zh-hant/translations/officials/regional#commanderies-039]]二十歲，大姓雄張，遂以為俗。",
+        "zhs": "仓慈字孝仁，[[淮南|/zh-hans/maps/map-overall?admin=24]]人也。始为郡吏。建安中，太祖开募屯田于[[淮南|/zh-hans/maps/map-overall?admin=24]]，以慈为绥集都尉。黄初末，为[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]][[令|/zh-hans/translations/officials/regional#counties-088]]，清约有方，吏民畏而爱之。太和中，迁[[炖煌|/zh-hans/maps/map-overall?admin=135]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。郡在西陲，以丧乱隔绝，旷无[[太守|/zh-hans/translations/officials/regional#commanderies-039]]二十岁，大姓雄张，遂以为俗。"
+      },
+      "vern": {
+        "zht": "倉慈，字孝仁，[[淮南|/zh-hant/maps/map-overall?admin=24]]郡人。他起初做本郡政府辦事員。建安年間，太祖曹操在[[淮南|/zh-hant/maps/map-overall?admin=24]]招募流亡百姓屯田，任命倉慈爲綏集都尉。魏文帝黃初末年，他擔任[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]縣[[令|/zh-hant/translations/officials/regional#counties-088]]。爲官清正簡約很有辦法，吏員百姓既怕他但又愛戴他。魏明帝太和年間，倉慈升任[[敦煌|/zh-hant/maps/map-overall?admin=135]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。這個郡在西部邊陲，由於動亂而和內地隔絕，已經有二十年沒有委派[[太守|/zh-hant/translations/officials/regional#commanderies-039]]了。豪強大族霸道囂張，在當地形成風氣。",
+        "zhs": "仓慈，字孝仁，[[淮南|/zh-hans/maps/map-overall?admin=24]]郡人。他起初做本郡政府办事员。建安年间，太祖曹操在[[淮南|/zh-hans/maps/map-overall?admin=24]]招募流亡百姓屯田，任命仓慈为绥集都尉。魏文帝黄初末年，他担任[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]县[[令|/zh-hans/translations/officials/regional#counties-088]]。为官清正简约很有办法，吏员百姓既怕他但又爱戴他。魏明帝太和年间，仓慈升任[[敦煌|/zh-hans/maps/map-overall?admin=135]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。这个郡在西部边陲，由于动乱而和内地隔绝，已经有二十年没有委派[[太守|/zh-hans/translations/officials/regional#commanderies-039]]了。豪强大族霸道嚣张，在当地形成风气。"
+      },
+      "en": "Cang Ci, courtesy name Xiaoren, was from [[Huainan|/maps/map-overall?admin=24]]. He began his career as a commandery clerk. During the Jian'an era, Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) recruited settlers to establish agricultural colonies in [[Huainan|/maps/map-overall?admin=24]] and appointed Cang Ci Commandant Who Calms and Gathers. Towards the end of the Huangchu era, Cang Ci became [[County Magistrate|/translations/officials/regional#counties-088]] of [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]. Upright, frugal, and an able administrator, he was admired and loved by officials and commoners. During the Taihe era, Cang Ci was transferred to serve as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Dunhuang|/maps/map-overall?admin=135]]. The commandery lay on the western frontier and had been cut off by war and disorder. The post of [[Grand Administrator|/translations/officials/regional#commanderies-039]] had stood vacant for twenty years, during which the powerful local clans grew increasingly influential, until their dominance became accepted as the local norm."
+    },
+    {
+      "id": "ws16f-p2",
+      "orig": {
+        "zht": "前[[太守|/zh-hant/translations/officials/regional#commanderies-039]]尹奉等，循故而已，無所匡革。慈到，抑挫權右，撫恤貧羸，甚得其理。舊大族田地有餘，而小民無立錐之土；慈皆隨口割賦，稍稍使畢其本直。先是屬城獄訟衆猥，縣不能決，多集治下；慈躬往省閱，料簡輕重，自非殊死，但鞭杖遣之，一歲決刑曾不滿十人。又常日西域雜胡欲來貢獻，而諸豪族多逆斷絕；旣與貿遷，欺詐侮易，多不得分明。胡常怨望，慈皆勞之。",
+        "zhs": "前[[太守|/zh-hans/translations/officials/regional#commanderies-039]]尹奉等，循故而已，无所匡革。慈到，抑挫权右，抚恤贫羸，甚得其理。旧大族田地有余，而小民无立锥之土；慈皆随口割赋，稍稍使毕其本直。先是属城狱讼众猥，县不能决，多集治下；慈躬往省阅，料简轻重，自非殊死，但鞭杖遣之，一岁决刑曾不满十人。又常日西域杂胡欲来贡献，而诸豪族多逆断绝；既与贸迁，欺诈侮易，多不得分明。胡常怨望，慈皆劳之。"
+      },
+      "vern": {
+        "zht": "前任[[太守|/zh-hant/translations/officials/regional#commanderies-039]]尹奉等人，依照過去的慣例敷衍而已，也不去改革匡正。倉慈到任以後，抑制豪強大族，撫卹貧弱的百姓，很符合做官的正道。過去豪強大族田地有剩餘，可是小民百姓卻沒有立錐之地；倉慈到了之後，按人口的多少把豪強大族的田地分一部分給小民百姓，讓他們逐步償還田地所值的價錢。起初，下面縣城的案件又多又雜，縣裏不能決斷，就都集中推到郡城。倉慈親自審閱案卷，衡量罪刑的輕重；除了重罪必殺的囚犯之外，都處以鞭杖的刑罰然後釋放，一年中判決死刑的還不到十個人。另外，平時西域的各種少數族人要到京城進貢禮物，郡中的豪強總是阻撓不讓通過；與這些少數族進行貿易，也常常欺壓對方，最終是非曲直還無法弄清楚：少數族人一直很不滿。倉慈親自安慰他們。",
+        "zhs": "前任[[太守|/zh-hans/translations/officials/regional#commanderies-039]]尹奉等人，依照过去的惯例敷衍而已，也不去改革匡正。仓慈到任以后，抑制豪强大族，抚恤贫弱的百姓，很符合做官的正道。过去豪强大族田地有剩余，可是小民百姓却没有立锥之地；仓慈到了之后，按人口的多少把豪强大族的田地分一部分给小民百姓，让他们逐步偿还田地所值的价钱。起初，下面县城的案件又多又杂，县里不能决断，就都集中推到郡城。仓慈亲自审阅案卷，衡量罪刑的轻重；除了重罪必杀的囚犯之外，都处以鞭杖的刑罚然后释放，一年中判决死刑的还不到十个人。另外，平时西域的各种少数族人要到京城进贡礼物，郡中的豪强总是阻挠不让通过；与这些少数族进行贸易，也常常欺压对方，最终是非曲直还无法弄清楚：少数族人一直很不满。仓慈亲自安慰他们。"
+      },
+      "en": "Former [[Grand Administrators|/translations/officials/regional#commanderies-039]] such as Yin Feng had merely followed established practice and made no attempt to rectify or reform it. When Cang Ci arrived, he curbed the powerful, assisted the poor and weak, and handled all affairs with fairness and good judgement. The great clans had long held more land than they needed, while the common people had not so much as a patch on which to plant an awl. Cang Ci redistributed the surplus according to household size, allowing those who received the land to repay its original value in instalments. Previously, a mass of unresolved lawsuits and criminal cases from the subordinate counties had accumulated at the commandery seat because the county authorities were unable to decide them. Cang Ci personally reviewed the cases and assessed their severity. Unless an offence warranted death, he had the offender flogged and released. In an entire year, fewer than ten people were sentenced to death.  In addition, the various Hu peoples of the Western Regions often wished to come and offer tribute, but the powerful clans would obstruct them. In trade, they cheated and mistreated the Hu, who could seldom obtain redress. They therefore harboured deep resentment, and Cang Ci conciliated them."
+    },
+    {
+      "id": "ws16f-p3",
+      "orig": {
+        "zht": "欲詣[[洛|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]者，為封過所，欲從郡還者，官為平取，輙以府見物與共交市，使吏民護送道路，由是民夷翕然稱其德惠。數年卒官，吏民悲感如喪親戚，圖畫其形，思其遺像。及西域諸胡聞慈死，悉共會聚於[[戊己校尉|/zh-hant/translations/officials/military#colonels--commandants-188]]及長吏治下發哀，或有以刀畫面，以明血誠，又為立祠，遙共祠之。",
+        "zhs": "欲诣[[洛|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]者，为封过所，欲从郡还者，官为平取，輙以府见物与共交市，使吏民护送道路，由是民夷翕然称其德惠。数年卒官，吏民悲感如丧亲戚，图画其形，思其遗像。及西域诸胡闻慈死，悉共会聚于[[戊己校尉|/zh-hans/translations/officials/military#colonels--commandants-188]]及长吏治下发哀，或有以刀画面，以明血诚，又为立祠，遥共祠之。"
+      },
+      "vern": {
+        "zht": "有要到京城[[洛|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]陽去的，就替他們辦好沿路的通行證書；有要從郡城回國的，官府與他們進行公平交換，用現成貨物同他們進行交易，讓官吏百姓沿途護送他們。從此漢族與少數族百姓都一致稱讚倉慈的德澤恩惠。幾年以後，他死在任上。官吏百姓都像死了親戚一樣悲痛，畫出他的肖像，寄託哀思。西域各族的人民聽到倉慈去世的消息，紛紛聚集到[[戊己校尉|/zh-hant/translations/officials/military#colonels--commandants-188]]的官署和縣城中致哀；有些人甚至還用刀割破自己的臉，以鮮血表示心意。又爲他建立祠堂，共同祭祀。",
+        "zhs": "有要到京城[[洛|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]阳去的，就替他们办好沿路的通行证书；有要从郡城回国的，官府与他们进行公平交换，用现成货物同他们进行交易，让官吏百姓沿途护送他们。从此汉族与少数族百姓都一致称赞仓慈的德泽恩惠。几年以后，他死在任上。官吏百姓都像死了亲戚一样悲痛，画出他的肖像，寄托哀思。西域各族的人民听到仓慈去世的消息，纷纷聚集到[[戊己校尉|/zh-hans/translations/officials/military#colonels--commandants-188]]的官署和县城中致哀；有些人甚至还用刀割破自己的脸，以鲜血表示心意。又为他建立祠堂，共同祭祀。"
+      },
+      "en": "Those wishing to travel to [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]] were issued permits. For those wishing to return home from the commandery, the authorities purchased their goods at fair prices, using the resources of the commandery administration to trade with them. Officials and people were then assigned to escort them along the way. Thus Hu and Han alike praised Cang Ci's virtue and beneficence. After several years, Cang Ci died in office. Officials and commoners grieved as though they had lost a kinsman. They had portraits of him painted to preserve his likeness and honour his memory. When the peoples of the Western Regions heard of his death, they gathered at the headquarters of the [[Colonel of the Western Regions Central Garrison|/translations/officials/military#colonels--commandants-188]] and at their respective administrative offices to mourn him. Some slashed their faces with knives, shedding blood to show their devotion. They also erected a shrine to him and worshipped him together from afar.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：[[天水|/zh-hant/maps/map-overall?admin=148]]王遷，承代慈，雖循其迹，不能及也。[[金城|/zh-hant/maps/map-overall?admin=139]]趙基承遷後，復不如遷。至嘉平中，[[安定|/zh-hant/maps/map-overall?admin=152]]皇甫隆代基為[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。初，[[燉煌|/zh-hant/maps/map-overall?admin=135]]不甚曉田，常灌溉滀水，使極濡洽，然後乃耕。又不曉作耬犂，用水，及種，人牛功力旣費，而收穀更少。隆到，教作耬犂，又教衍溉，歲終率計，其所省庸力過半，得穀加五。又[[燉煌|/zh-hant/maps/map-overall?admin=135]]俗，婦人作裙，攣縮如羊腸，用布一匹；隆又禁改之，所省復不訾。故[[燉煌|/zh-hant/maps/map-overall?admin=135]]人以為隆剛斷嚴毅不及於慈，至於勤恪愛惠，為下興利，可以亞之。",
+          "zhs": "《魏略》曰：[[天水|/zh-hans/maps/map-overall?admin=148]]王迁，承代慈，虽循其迹，不能及也。[[金城|/zh-hans/maps/map-overall?admin=139]]赵基承迁后，复不如迁。至嘉平中，[[安定|/zh-hans/maps/map-overall?admin=152]]皇甫隆代基为[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。初，[[炖煌|/zh-hans/maps/map-overall?admin=135]]不甚晓田，常灌溉滀水，使极濡洽，然后乃耕。又不晓作耧犂，用水，及种，人牛功力既费，而收谷更少。隆到，教作耧犂，又教衍溉，岁终率计，其所省庸力过半，得谷加五。又[[炖煌|/zh-hans/maps/map-overall?admin=135]]俗，妇人作裙，挛缩如羊肠，用布一匹；隆又禁改之，所省复不訾。故[[炖煌|/zh-hans/maps/map-overall?admin=135]]人以为隆刚断严毅不及于慈，至于勤恪爱惠，为下兴利，可以亚之。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：天水人王迁接替仓慈，虽然遵循他的做法，但还是比不上他。金城人赵基接替王迁之后，治理能力又比不上王迁。到了嘉平年间，安定人皇甫隆接替赵基担任太守。起初，敦煌人不太懂得种田，常常灌溉蓄水，使土地充分湿润，然后才耕种。又不懂得制作耧犁，用水灌溉以及播种时用人力和牛力，既浪费了人力和物力，而收获的谷物也很少。皇甫隆到任后，教百姓制作耧犁。他教百姓制作楼犁，又教导改进灌溉方法，到了年终统计节省的劳力超过一半，收获的谷物增加了五成。另外，依照敦煌的风俗，妇女做裙子，褶裥缩拢得像羊肠一样，要用掉一匹布。皇甫隆又禁止这种习俗并加以改变，节省下来的布料又不计其数。所以敦煌人认为皇甫隆在刚毅果断、威严坚毅方面比不上仓慈，但是在勤恳尽职、爱护百姓、为百姓谋福利方面，能够仅次于仓慈。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Wang Qian of [[Tianshui|/maps/map-overall?admin=148]] succeeded Cang Ci. Though he followed Cang Ci's practices, he could not equal him. Zhao Ji of [[Jincheng|/maps/map-overall?admin=139]] succeeded Wang Qian, but proved inferior even to him. During the Jiaping era, Huangfu Long of [[Anding|/maps/map-overall?admin=152]] succeeded Zhao Ji as [[Grand Administrator|/translations/officials/regional#commanderies-039]]. At first, the people of [[Dunhuang|/maps/map-overall?admin=135]] understood little of farming. They would keep the fields flooded until the soil was thoroughly saturated, and only then plough it. Nor did they know how to make seed drills. They expended much human and animal labour in irrigation and sowing, yet reaped meagre harvests. After Huangfu Long arrived, he taught them to make seed drills and to irrigate more efficiently. By the end of the year, calculations showed that more than half the labour had been saved, while the grain yield had risen by fifty per cent. It was also the custom in [[Dunhuang|/maps/map-overall?admin=135]] for women to make skirts with folds gathered like sheep's intestines, each requiring an entire bolt of cloth. Huangfu Long prohibited the practice and had the style altered, thereby saving an incalculable quantity of cloth. Thus the people of [[Dunhuang|/maps/map-overall?admin=135]] considered Huangfu Long inferior to Cang Ci in firm decisiveness and stern resolve, but in diligence, conscientiousness, benevolence, and the benefits he brought to those under his rule, he was second only to him."
+        }
+      ]
+    },
+    {
+      "id": "ws16f-p4",
+      "orig": {
+        "zht": "自太祖迄于咸熈，[[魏|/zh-hant/maps/map-overall?admin=162]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]][[陳|/zh-hant/maps/map-overall?admin=30]]國吳瓘、[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]][[太守|/zh-hant/translations/officials/regional#commanderies-039]][[樂安|/zh-hant/maps/map-overall?admin=47]]任燠、[[京兆|/zh-hant/maps/map-overall?admin=142]][[太守|/zh-hant/translations/officials/regional#commanderies-039]][[濟北|/zh-hant/maps/map-overall?admin=36]]顏斐、[[弘農|/zh-hant/maps/map-overall?admin=54]][[太守|/zh-hant/translations/officials/regional#commanderies-039]][[太原|/zh-hant/maps/map-overall?admin=21]]令狐邵、[[濟南|/zh-hant/maps/map-overall?admin=42]][[相|/zh-hant/translations/officials/regional#states-064]][[魯|/zh-hant/maps/map-overall?admin=41]]國孔乂，或哀矜折獄，或推誠惠愛，或治身清白，或擿姦發伏，咸為良二千[[石|/zh-hant/translations/officials#glossary-shi]]。",
+        "zhs": "自太祖迄于咸熈，[[魏|/zh-hans/maps/map-overall?admin=162]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]][[陈|/zh-hans/maps/map-overall?admin=30]]国吴瓘、[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]][[太守|/zh-hans/translations/officials/regional#commanderies-039]][[乐安|/zh-hans/maps/map-overall?admin=47]]任燠、[[京兆|/zh-hans/maps/map-overall?admin=142]][[太守|/zh-hans/translations/officials/regional#commanderies-039]][[济北|/zh-hans/maps/map-overall?admin=36]]颜斐、[[弘农|/zh-hans/maps/map-overall?admin=54]][[太守|/zh-hans/translations/officials/regional#commanderies-039]][[太原|/zh-hans/maps/map-overall?admin=21]]令狐邵、[[济南|/zh-hans/maps/map-overall?admin=42]][[相|/zh-hans/translations/officials/regional#states-064]][[鲁|/zh-hans/maps/map-overall?admin=41]]国孔乂，或哀矜折狱，或推诚惠爱，或治身清白，或擿奸发伏，咸为良二千[[石|/zh-hans/translations/officials#glossary-shi]]。"
+      },
+      "vern": {
+        "zht": "從太祖時起到魏末的咸熙年間，魏郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]有[[陳|/zh-hant/maps/map-overall?admin=30]]國的吳瓘，[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]有[[樂安|/zh-hant/maps/map-overall?admin=47]]的任燠，[[京兆|/zh-hant/maps/map-overall?admin=142]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]有[[濟北|/zh-hant/maps/map-overall?admin=36]]的顏斐，[[弘農|/zh-hant/maps/map-overall?admin=54]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]有[[太原|/zh-hant/maps/map-overall?admin=21]]的令狐邵，[[濟南|/zh-hant/maps/map-overall?admin=42]][[相|/zh-hant/translations/officials/regional#states-064]]有[[魯|/zh-hant/maps/map-overall?admin=41]]國的孔乂：他們或者是從寬斷案，或者是真誠仁愛，或者是廉潔清白，或者是揭露懲治壞人壞事，都屬於魏朝郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]當中的佼佼者。",
+        "zhs": "从太祖时起到魏末的咸熙年间，魏郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]有[[陈|/zh-hans/maps/map-overall?admin=30]]国的吴瓘，[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]有[[乐安|/zh-hans/maps/map-overall?admin=47]]的任燠，[[京兆|/zh-hans/maps/map-overall?admin=142]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]有[[济北|/zh-hans/maps/map-overall?admin=36]]的颜斐，[[弘农|/zh-hans/maps/map-overall?admin=54]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]有[[太原|/zh-hans/maps/map-overall?admin=21]]的令狐邵，[[济南|/zh-hans/maps/map-overall?admin=42]][[相|/zh-hans/translations/officials/regional#states-064]]有[[鲁|/zh-hans/maps/map-overall?admin=41]]国的孔乂：他们或者是从宽断案，或者是真诚仁爱，或者是廉洁清白，或者是揭露惩治坏人坏事，都属于魏朝郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]当中的佼佼者。"
+      },
+      "en": "From the time of Cao Cao through the Xianxi era, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Wei|/maps/map-overall?admin=162]], Wu Guan of [[Chen|/maps/map-overall?admin=30]]; [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Qinghe|/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]], Ren Yu of [[Le'an|/maps/map-overall?admin=47]]; [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jingzhao|/maps/map-overall?admin=142]], Yan Fei of [[Jibei State|/maps/map-overall?admin=36]]; [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hongnong|/maps/map-overall?admin=54]], Linghu Shao of [[Taiyuan|/maps/map-overall?admin=21]]; and  [[Principality Chancellor|/translations/officials/regional#states-064]] of [[Jinan State|/maps/map-overall?admin=42]], Kong Yi of [[Lu|/maps/map-overall?admin=41]], all proved worthy officials of the two-thousand [[Shi|/translations/officials#glossary-shi]] rank. Some showed compassion in judging cases; some treated the people with sincerity and benevolence; some kept their own conduct pure and blameless; and some exposed treachery and brought hidden wrongdoing to light.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "瓘、燠事行無所見。",
+          "zhs": "瓘、燠事行无所见。",
+          "vern": {
+            "zht": "",
+            "zhs": "吴瓘、任燠的事迹行为没有记载。"
+          },
+          "en": "Nothing is known of the careers or conduct of Wu Guan and Ren Yu."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：顏斐字文林。有才學。[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]]召為[[太子洗馬|/zh-hant/translations/officials/household#eastern-palace-023]]，黃初初轉為[[黃門侍郎|/zh-hant/translations/officials/departments#chancellery-003]]，後為[[京兆|/zh-hant/maps/map-overall?admin=142]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。始，[[京兆|/zh-hant/maps/map-overall?admin=142]]從馬超破後，民人多不專於農殖，又歷數四二千[[石|/zh-hant/translations/officials#glossary-shi]]，取解目前，亦不為民作乆遠計。斐到官，乃令屬縣整阡陌，樹桑果。是時民多無車牛。斐又課民以閑月取車材，使轉相教匠作車。又課民無牛者，令畜豬狗，賣以買牛。始者民以為煩，一二年閒，家家有丁車、大牛。又起文學，聽吏民欲讀書者，復其小傜。又於府下起菜園，使吏役閑鉏治。又課民當輸租時，車牛各因便致薪兩束，為冬寒冰炙筆硯。於是風化大行，吏不煩民，民不求吏。\n\n[[京兆|/zh-hant/maps/map-overall?admin=142]]與[[馮翊|/zh-hant/maps/map-overall?admin=151]]、[[扶風|/zh-hant/maps/map-overall?admin=146]]接界，二郡道路旣穢塞，田疇又荒萊，人民饑凍，而[[京兆|/zh-hant/maps/map-overall?admin=142]]皆整頓開明，豐富常為[[雍州|/zh-hant/maps/map-overall?admin=14]]十郡最。斐又清己，仰奉而已，於是吏民恐其遷轉也。至青龍中，司馬宣王在[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]立軍市，而軍中吏士多侵侮縣民，斐以白宣王。宣王乃發怒召軍市候，便於斐前杖一百。時[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]][[典農|/zh-hant/translations/officials/ministers#-nine-ministers-iii-240]]與斐共坐，以為斐宜謝，乃私推築斐。斐不肯謝，良乆乃曰：「斐意觀明公受分陝之任，乃欲一齊衆庶，必非有所左右也。而典農竊見推築，欲令斐謝；假令斐謝，是更為不得明公意也。」宣王遂嚴持吏士。自是之後，軍營、郡縣各得其分。\n\n後數歲，遷為[[平原|/zh-hant/maps/map-overall?admin=153]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，吏民啼泣遮道，車不得前，步步稽留，十餘日乃出界，東行至崤而疾困。斐素心戀[[京兆|/zh-hant/maps/map-overall?admin=142]]，其家人從者見斐病甚，勸之，言：「[[平原|/zh-hant/maps/map-overall?admin=153]]當自勉勵作健。」斐曰：「我心不願[[平原|/zh-hant/maps/map-overall?admin=153]]，汝曹等呼我，何不言[[京兆|/zh-hant/maps/map-overall?admin=142]]邪？」遂卒，還[[平原|/zh-hant/maps/map-overall?admin=153]]。[[京兆|/zh-hant/maps/map-overall?admin=142]]聞之，皆為流涕，為立碑，于今稱頌之。\n\n令狐邵字孔叔。父仕漢，為[[烏丸校尉|/zh-hant/translations/officials/military#colonels--commandants-191]]。建安初，袁氏在[[兾州|/zh-hant/maps/map-overall?admin=4]]，邵去本郡家居[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]。九年，暫出到[[武安|/zh-hant/maps/map-overall?lat=36.66960149&lng=114.16854843&name=Wu%27an]]毛城中。會太祖破[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，遂圍毛城。城破，執邵等輩十餘人，皆當斬。太祖閱見之，疑其衣冠也，問其祖考，而識其父，乃解放，署[[軍謀掾|/zh-hant/translations/officials/ministers#superior-excellency-036]]。仍歷宰守，後徙[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]][[主簿|/zh-hant/translations/officials/ministers#superior-excellency-012]]，出為[[弘農|/zh-hant/maps/map-overall?admin=54]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。所在清如冰雪，妻子希至官省；舉善而教，恕以待人，不好獄訟，與下無忌。是時，郡無知經者，乃歷問諸吏，有欲遠行就師，輒假遣，令詣[[河東|/zh-hant/maps/map-overall?admin=57]]就樂詳學經，粗明乃還，因設文學。由是[[弘農|/zh-hant/maps/map-overall?admin=54]]學業轉興。\n\n至黃初初，徵拜[[羽林郎|/zh-hant/translations/officials/ministers#-nine-ministers-i-170]]，遷[[虎賁中郎將|/zh-hant/translations/officials/ministers#-nine-ministers-i-163]]，三歲，病亡。始，邵族子愚，為白衣時，常有高志，衆人謂愚必榮令狐氏，而邵獨以為「愚性倜儻，不脩德而願大，必滅我宗」。愚聞邵言，其心不平。及邵為虎賁郎將，而愚仕進已多所更歷，所在有名稱。愚見邵，因從容言次，微激之曰：「先時聞大人謂愚為不繼，愚今竟云何邪？」邵熟視而不荅也。然私謂其妻子曰：「公治性度猶如故也。以吾觀之，終當敗滅。但不知我乆當坐之不邪？將逮汝曹耳！」邵沒之後，十餘年間，愚為[[兖州|/zh-hant/maps/map-overall?admin=11]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，果與王淩謀廢立，家屬誅滅。邵子華，時為[[弘農|/zh-hant/maps/map-overall?admin=54]][[郡丞|/zh-hant/translations/officials/regional#commanderies-040]]，以屬疏得不坐。",
+          "zhs": "《魏略》曰：颜斐字文林。有才学。[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]]召为[[太子洗马|/zh-hans/translations/officials/household#eastern-palace-023]]，黄初初转为[[黄门侍郎|/zh-hans/translations/officials/departments#chancellery-003]]，后为[[京兆|/zh-hans/maps/map-overall?admin=142]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。始，[[京兆|/zh-hans/maps/map-overall?admin=142]]从马超破后，民人多不专于农殖，又历数四二千[[石|/zh-hans/translations/officials#glossary-shi]]，取解目前，亦不为民作乆远计。斐到官，乃令属县整阡陌，树桑果。是时民多无车牛。斐又课民以闲月取车材，使转相教匠作车。又课民无牛者，令畜猪狗，卖以买牛。始者民以为烦，一二年闲，家家有丁车、大牛。又起文学，听吏民欲读书者，复其小傜。又于府下起菜园，使吏役闲鉏治。又课民当输租时，车牛各因便致薪两束，为冬寒冰炙笔砚。于是风化大行，吏不烦民，民不求吏。\n\n[[京兆|/zh-hans/maps/map-overall?admin=142]]与[[冯翊|/zh-hans/maps/map-overall?admin=151]]、[[扶风|/zh-hans/maps/map-overall?admin=146]]接界，二郡道路既秽塞，田畴又荒莱，人民饥冻，而[[京兆|/zh-hans/maps/map-overall?admin=142]]皆整顿开明，丰富常为[[雍州|/zh-hans/maps/map-overall?admin=14]]十郡最。斐又清己，仰奉而已，于是吏民恐其迁转也。至青龙中，司马宣王在[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]立军市，而军中吏士多侵侮县民，斐以白宣王。宣王乃发怒召军市候，便于斐前杖一百。时[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]][[典农|/zh-hans/translations/officials/ministers#-nine-ministers-iii-240]]与斐共坐，以为斐宜谢，乃私推筑斐。斐不肯谢，良乆乃曰：「斐意观明公受分陕之任，乃欲一齐众庶，必非有所左右也。而典农窃见推筑，欲令斐谢；假令斐谢，是更为不得明公意也。」宣王遂严持吏士。自是之后，军营、郡县各得其分。\n\n后数岁，迁为[[平原|/zh-hans/maps/map-overall?admin=153]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，吏民啼泣遮道，车不得前，步步稽留，十余日乃出界，东行至崤而疾困。斐素心恋[[京兆|/zh-hans/maps/map-overall?admin=142]]，其家人从者见斐病甚，劝之，言：「[[平原|/zh-hans/maps/map-overall?admin=153]]当自勉励作健。」斐曰：「我心不愿[[平原|/zh-hans/maps/map-overall?admin=153]]，汝曹等呼我，何不言[[京兆|/zh-hans/maps/map-overall?admin=142]]邪？」遂卒，还[[平原|/zh-hans/maps/map-overall?admin=153]]。[[京兆|/zh-hans/maps/map-overall?admin=142]]闻之，皆为流涕，为立碑，于今称颂之。\n\n令狐邵字孔叔。父仕汉，为[[乌丸校尉|/zh-hans/translations/officials/military#colonels--commandants-191]]。建安初，袁氏在[[兾州|/zh-hans/maps/map-overall?admin=4]]，邵去本郡家居[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]。九年，暂出到[[武安|/zh-hans/maps/map-overall?lat=36.66960149&lng=114.16854843&name=Wu%27an]]毛城中。会太祖破[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，遂围毛城。城破，执邵等辈十余人，皆当斩。太祖阅见之，疑其衣冠也，问其祖考，而识其父，乃解放，署[[军谋掾|/zh-hans/translations/officials/ministers#superior-excellency-036]]。仍历宰守，后徙[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]][[主簿|/zh-hans/translations/officials/ministers#superior-excellency-012]]，出为[[弘农|/zh-hans/maps/map-overall?admin=54]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。所在清如冰雪，妻子希至官省；举善而教，恕以待人，不好狱讼，与下无忌。是时，郡无知经者，乃历问诸吏，有欲远行就师，辄假遣，令诣[[河东|/zh-hans/maps/map-overall?admin=57]]就乐详学经，粗明乃还，因设文学。由是[[弘农|/zh-hans/maps/map-overall?admin=54]]学业转兴。\n\n至黄初初，征拜[[羽林郎|/zh-hans/translations/officials/ministers#-nine-ministers-i-170]]，迁[[虎贲中郎将|/zh-hans/translations/officials/ministers#-nine-ministers-i-163]]，三岁，病亡。始，邵族子愚，为白衣时，常有高志，众人谓愚必荣令狐氏，而邵独以为「愚性倜傥，不修德而愿大，必灭我宗」。愚闻邵言，其心不平。及邵为虎贲郎将，而愚仕进已多所更历，所在有名称。愚见邵，因从容言次，微激之曰：「先时闻大人谓愚为不继，愚今竟云何邪？」邵熟视而不荅也。然私谓其妻子曰：「公治性度犹如故也。以吾观之，终当败灭。但不知我乆当坐之不邪？将逮汝曹耳！」邵没之后，十余年间，愚为[[兖州|/zh-hans/maps/map-overall?admin=11]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，果与王凌谋废立，家属诛灭。邵子华，时为[[弘农|/zh-hans/maps/map-overall?admin=54]][[郡丞|/zh-hans/translations/officials/regional#commanderies-040]]，以属疏得不坐。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：颜斐，字文林，有才华学问，丞相征召他担任太子洗马。颜斐到任之后，就命令下属各县修整田间道路，种植桑树和果树。当时百姓大多没有车和牛，颜斐又督促百姓在农闲的月份去砍伐造车的木材，让他们互相传授技艺来制作车子。又督促那些没有牛的百姓，让他们饲养猪狗，卖掉猪狗来买牛。开始的时候百姓认为这些事很麻烦，但一两年间，家家都有了可用的车和健壮的牛。颜斐又设立学校，允许官吏和百姓中想要读书的人，免除他们的小徭役。又在官府旁边开辟菜园，让官吏和差役在空闲时间耕作管理。又督促百姓在缴纳租税的时候，用牛车顺便各自带两捆柴薪，用来在冬天寒冷结冰时烤化笔砚。于是良好的社会风气广泛盛行，官吏不烦扰百姓，百姓不向官吏乞求。\n\n京兆与冯翊、扶风接壤，那两个郡道路既肮脏又堵塞，田地又荒芜，百姓饥饿受冻，而京兆却治理有序、政治清明、物产丰饶，常常是雍州十郡中最出色的。颜斐又清廉自守，只靠俸禄生活而已，于是官吏和百姓都担心他会调任别处。到了青龙年间，司马宣王在长安设立军市，军中的官吏士兵经常欺负侵犯县里的百姓，颜斐把这件事报告给司马宣王，司马宣王于是发怒，叫来军市候就在颜斐面前打了他一百杖。当时长安的典农与斐一起坐着，认为斐应该道谢，于是私下里推了斐一下。推搡斐，斐不肯谢罪，过了很久，才说：“我看明公您接受分陕之任，是想要使百姓齐一，必定不会有所偏袒啊。而典农私下推搡我，想让我道歉，假如我道歉了，这反而更不符合明公的心意了。”司马宣王于是严格管束军中官吏和士兵。从这以后，军营和郡县，各自安守本分。\n\n几年以后，他转任为平原太守。官吏和百姓哭泣着拦住道路，车子无法前进，每走一步都被耽搁，过了十多天，才走出平原郡的地界。他向东行进到崤山时就病重了。颜斐向来内心眷恋京兆，他的家人和随从见他病得很重，劝他说：“颜平原应当自己勉励自己，振作起来。”颜斐说：“我心里不想在平原任职，你们这些人叫我，为什么不说京兆呢？”后来在路上便死了，遗体送到了平原。京兆的百姓听到这个消息，都为之流泪，为他立了碑，至今仍在称颂他。\n\n令狐邵，字孔叔，他的父亲在汉朝为官，担任乌丸校尉。建安初年，袁氏占据冀州，令狐邵离开本郡，安家在邺城。建安九年，暂时离开邺城到武安毛城。恰逢太祖攻破邺城，于是就包围了毛城。毛城被攻破，令狐邵等十几个人被抓住，都应当被斩首。太祖见到他，怀疑他是士大夫，询问他的祖父和父亲后就认出了他的父亲，于是就释放了他，并任命他为军谋掾。令狐邵历任地方长官。后来改任丞相主簿，出任弘农太守，在他所治理的地方都廉洁如冰雪。他的妻子儿女很少到他的官署去，他推举善良的人并教育他们，以宽恕之心对待他人，不喜欢打官司，和下属相处没有隔阂猜忌。当时郡里没有通晓经书的人，他就逐一询问各位官吏，有想远行拜师求学的，就准假派他们去河东，向乐详学习，粗略通晓经书后，就让他们回来，于是设立了学官。从此弘农的学问和教育逐渐兴盛了起来。\n\n到了黄初初年，他被征召任命为羽林郎，又升任虎贲中郎将，任职三年就因病去世。当初，令狐邵的族子令狐愚还是平民时，就常有远大的志向，众人都说令狐愚必定能使令狐家族荣耀，而只有令狐邵认为令狐愚生性洒脱不拘，不修养德行却野心很大，必定会使家族覆灭。令狐愚听到令狐邵的话，心中很不平。等到令狐邵担任虎贲中郎将时，令狐愚在仕途上已经辗转担任过多个官职了，并且在任职的地方都很有声望。令狐愚见到令狐邵，在随意交谈之际，委婉地刺激他说：“先前听您说我不能承继令狐氏，如今觉得怎样呢？”令狐邵仔细看了看他，没有回答，然而私下里对他的妻子儿女说：“公治的性情度量还是和以前一样啊。以我来看，最终他一定会失败灭亡，不知我会不会受他牵连，但将来会连累你们啊！令狐邵去世之后，十多年间，愚担任兖州刺史，果然和王凌谋划废除皇帝另立他人，家属都被诛杀了。令狐邵儿子令狐华当时担任弘农郡丞，因为亲属关系疏远，没有被牵连。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Yan Fei, courtesy name Wenlin, was a man of talent and learning. The [[Chancellor|/translations/officials/ministers#superior-excellency-001]] summoned him to serve as [[Frontrider of the Crown Prince|/translations/officials/household#eastern-palace-023]]. At the beginning of the Huangchu era, he was transferred to the post of [[Attendant Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]], and later became [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jingzhao|/maps/map-overall?admin=142]]. After [[Jingzhao|/maps/map-overall?admin=142]] had been devastated by Ma Chao, many of its people no longer devoted themselves to farming or cultivation. Several successive officials of two-thousand [[Shi|/translations/officials#glossary-shi]] had sought only to resolve immediate problems, without making long-term plans for the people. On taking office, Yan Fei ordered the subordinate counties to repair field paths and plant mulberry and fruit trees. At the time, many people had neither carts nor oxen. During the slack season, Yan Fei had the people gather timber for carts and teach one another the craft of cart-making. He also required those without oxen to raise pigs and dogs, then sell them to purchase oxen. At first the people found these measures burdensome, but within a year or two every household possessed a sturdy cart and a full-grown ox. Yan Fei also established schools. Officials and commoners who wished to study were exempted from minor corvée duties. He also laid out a vegetable garden beside his office and had clerks and labourers tend it in their spare time. Whenever the people paid their taxes, Yan Fei required each cart to bring two bundles of firewood, which were used in winter to thaw frozen brushes and inkstones. Good customs thus spread widely. Officials did not harass the people, nor did the people beg favours from officials. \n\n[[Jingzhao|/maps/map-overall?admin=142]] bordered [[Pingyi|/maps/map-overall?admin=151]] and [[Fufeng|/maps/map-overall?admin=146]]. In those two commanderies, the roads were foul and obstructed, the fields overgrown with weeds, and the people hungry and cold. [[Jingzhao|/maps/map-overall?admin=142]], by contrast, was orderly, well governed, and prosperous, and consistently ranked first among the ten commanderies of [[Yong Province|/maps/map-overall?admin=14]]. Yan Fei was also incorruptible and self-disciplined, living solely on his official salary. Officials and commoners alike feared that he would be transferred elsewhere. During the Qinglong era, Sima Yi (posthumously honoured as King Xuan, the Renowned King) was at [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]] and established a military market. Many officers and soldiers abused the people of the county, and Yan Fei reported this to him. Sima Yi was enraged, summoned the military market captain, and had him beaten one hundred strokes in Yan Fei's presence. The [[Gentleman-General Directing Agriculture|/translations/officials/ministers#-nine-ministers-iii-240]] at [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]] was sitting with Fei at the time. Thinking that Yan Fei should express gratitude, he privately nudged him. Yan Fei refused. After a long while, Yan Fei said: \"I had understood that Your Lordship, entrusted with authority in the west, intended to treat all the people alike and show favour to none. [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]t the Gentleman-General Directing Agriculture has privately urged me to offer thanks. Were I to do so, it would show that I had failed to understand Your Lordship's intentions.\" Sima Yi thereafter kept the officers and soldiers under strict control. From then on, the military camps and the commanderies and counties each remained within their proper bounds. \n\nSeveral years later, Yan Fei was transferred to become [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Pingyuan|/maps/map-overall?admin=153]]. Officials and commoners wept and blocked the road, preventing his carriage from advancing. Delayed at every step, he took more than ten days to leave the borders of [[Jingzhao|/maps/map-overall?admin=142]]. Travelling east, he reached Mount Yao, where he became gravely ill. Yan Fei had always remained deeply attached to [[Jingzhao|/maps/map-overall?admin=142]]. Seeing how ill he was, the family members accompanying him urged him on, saying, \"[[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Pingyuan|/maps/map-overall?admin=153]], you must take care to recover your health.\" Yan Fei replied, \"My heart has no desire for [[Pingyuan|/maps/map-overall?admin=153]]. When you encourage me, why do you not address me by my title of [[Jingzhao|/maps/map-overall?admin=142]] instead?\" He then died, and his remains were taken on to [[Pingyuan|/maps/map-overall?admin=153]]. When the people of Jingzhao heard of his death, they all shed tears. They erected a stele in his honour, and his praises are still sung today.\n\n Linghu Shao, courtesy name Kongshu, was the son of a Han official who had served as [[Colonel Protecting the Wuhuan|/translations/officials/military#colonels--commandants-191]]. At the beginning of the Jian'an era, when the Yuan family controlled [[Ji Province|/maps/map-overall?admin=4]], Linghu Shao left his native commandery and settled his household at [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]. In the ninth year of Jian'an, he briefly went to Maocheng in [[Wu'an|/maps/map-overall?lat=36.66960149&lng=114.16854843&name=Wu%27an]]. Cao Cao happened to capture Ye and then laid siege to Maocheng. When the city fell, Linghu Shao and more than ten others were seized and condemned to death. Cao Cao inspected them and, judging from Linghu Shao's dress and bearing that he was a gentleman, asked about his family background. On recognising his father's name, he released Shao and appointed him [[Military Strategy Section Administrator|/translations/officials/ministers#superior-excellency-036]]. Linghu Shao went on to serve successively as a county magistrate and commandery governor. He was later transferred to become [[Registrar|/translations/officials/ministers#superior-excellency-012]] to the [[Chancellor|/translations/officials/ministers#superior-excellency-001]], then sent out as Grand Administrator of [[Hongnong|/maps/map-overall?admin=54]]. Wherever he served, his integrity was pure as ice and snow. His wife and children seldom visited his offices. He promoted worthy men and instructed the people, treated others with forbearance, disliked litigation, and dealt openly with his subordinates and the people, without suspicion or reserve. At the time, no one in the commandery understood the Classics. Linghu Shao therefore questioned the officials individually. For any who wished to travel afar in search of a teacher, he granted them leave and sent them to [[Hedong|/maps/map-overall?admin=57]] to study the Classics under Yue Xiang. Once they had acquired a general understanding, they returned, whereupon he established schools. Thus learning and education gradually flourished in [[Hongnong|/maps/map-overall?admin=54]]. \n\nAt the beginning of the Huangchu era, Linghu Shao was summoned and appointed [[Feathered Forest Gentleman|/translations/officials/ministers#-nine-ministers-i-170]], then promoted to [[Gentleman-General of the Rapid Tigers|/translations/officials/ministers#-nine-ministers-i-163]]. He died of illness three years later. Earlier, when Linghu Shao's younger clansman Linghu Yu was still a commoner, he often displayed lofty ambitions. Everyone believed that Linghu Yu would bring honour to the Linghu clan, but Linghu Shao alone said, \"Yu is unrestrained by nature. He does not cultivate virtue, yet harbours great ambitions. He will surely bring ruin upon our clan.\" When Linghu Yu heard this, he was resentful. By the time Shao became Gentleman-General of the Rapid Tigers, Linghu Yu had already held a succession of offices and earned a reputation wherever he served. Meeting Linghu Shao, he took an opportunity in the course of their conversation to challenge him obliquely: \"Honoured elder, I once heard that you said I would fail to uphold our clan. What do you think of me now?\" Linghu Shao looked at him intently but made no reply. In private, however, he told his wife and children: \"Gongzhi's temperament is just as it was before. In my judgement, he will eventually bring ruin upon himself. I do not know whether I shall live long enough to be caught up in his downfall, but the calamity will fall upon you!\" More than ten years after Linghu Shao's death, Linghu Yu became [[Inspector|/translations/officials/regional#provinces-014]] of [[Yan Province|/maps/map-overall?admin=11]]. As Linghu Shao had foretold, he conspired with Wang Ling to depose the emperor and install another, and his entire household was executed. Linghu Shao's son Linghu Hua was then serving as [[Assistant to the Grand Administrator|/translations/officials/regional#commanderies-040]] of [[Hongnong|/maps/map-overall?admin=54]]. Because his kinship with Linghu Yu was distant, he escaped implication."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "案《孔氏譜》：孔乂字元儁，孔子之後。曾祖疇，字元矩，[[陳|/zh-hant/maps/map-overall?admin=30]][[相|/zh-hant/translations/officials/regional#states-064]]。漢桓帝立老子廟於[[苦縣|/zh-hant/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]之賴鄉，畫孔子像於壁；疇為[[陳|/zh-hant/maps/map-overall?admin=30]][[相|/zh-hant/translations/officials/regional#states-064]]，立孔子碑於像前，今見存。乂父祖皆二千[[石|/zh-hant/translations/officials#glossary-shi]]，乂為[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]，上疏規諫。語在三少帝紀。至[[大鴻臚|/zh-hant/translations/officials/ministers#-nine-ministers-ii-228]]。子恂字士信，晉[[平東將軍|/zh-hant/translations/officials/military#pacifying--subduing-095]][[衞尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-196]]也。",
+          "zhs": "案《孔氏谱》：孔乂字元俊，孔子之后。曾祖畴，字元矩，[[陈|/zh-hans/maps/map-overall?admin=30]][[相|/zh-hans/translations/officials/regional#states-064]]。汉桓帝立老子庙于[[苦县|/zh-hans/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]]之赖乡，画孔子像于壁；畴为[[陈|/zh-hans/maps/map-overall?admin=30]][[相|/zh-hans/translations/officials/regional#states-064]]，立孔子碑于像前，今见存。乂父祖皆二千[[石|/zh-hans/translations/officials#glossary-shi]]，乂为[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]，上疏规谏。语在三少帝纪。至[[大鸿胪|/zh-hans/translations/officials/ministers#-nine-ministers-ii-228]]。子恂字士信，晋[[平东将军|/zh-hans/translations/officials/military#pacifying--subduing-095]][[衞尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-196]]也。",
+          "vern": {
+            "zht": "",
+            "zhs": "据《孔氏谱》记载：孔乂，字元俊，是孔子的后代。曾祖父孔畴，字元矩，曾任陈国国相。汉桓帝在苦县的赖乡建立老子庙，在墙壁上画了孔子的画像。孔畴担任陈相时，在老子庙孔子画像的前面立了一座孔子碑，这座碑现在还留存着。孔乂的父亲和祖父都担任过二千石的官职。孔乂担任散骑常侍时，上疏进行规谏，相关内容记载在《三少帝纪》中，他后来官至大鸿胪。他的儿子孔恂，字士信，是晋朝的平东将军、卫尉。"
+          },
+          "en": "According to the Kong Family Genealogy, Kong Yi, courtesy name Yuanjun, was a descendant of Confucius. His great-grandfather Kong Chou, courtesy name Yuanju, served as [[Principality Chancellor|/translations/officials/regional#states-064]] of [[Chen|/maps/map-overall?admin=30]]. Emperor Huan of Han built a temple to Laozi in Lai Township in [[Ku|/maps/map-overall?lat=33.85223507&lng=115.48516721&name=Ku]] and had an image of Confucius painted on its wall. While serving as [[Principality Chancellor|/translations/officials/regional#states-064]] of [[Chen|/maps/map-overall?admin=30]], Kong Chou erected a stele before the image, which survives to this day. Kong Yi's father and grandfather both attained the rank of two-thousand [[Shi|/translations/officials#glossary-shi]]. Kong Yi served as [[Cavalier Regular Attendant|/translations/officials/departments#chancellery-013]] and submitted a memorial of remonstrance, recorded in the Annals of the Three Young Emperors. He later rose to [[Minister Herald|/translations/officials/ministers#-nine-ministers-ii-228]]. His son Kong Xun, courtesy name Shixin, served under Jin as [[General Who Subdues the East|/translations/officials/military#pacifying--subduing-095]] and [[Commandant of the Guards|/translations/officials/ministers#-nine-ministers-i-196]]."
+        }
+      ]
+    }
+  ]
+}

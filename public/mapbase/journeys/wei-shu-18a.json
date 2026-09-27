@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18a",
+    "order": 18,
+    "label": {
+      "zht": "李典傳",
+      "zhs": "李典传",
+      "en": "Biography of Li Dian"
+    },
+    "title": {
+      "zht": "魏書十八 · 李典傳",
+      "zhs": "魏书十八 · 李典传",
+      "en": "Book of Wei, Chapter 18 · Biography of Li Dian"
+    }
+  },
   "pins": [
     {
       "kind": "town",

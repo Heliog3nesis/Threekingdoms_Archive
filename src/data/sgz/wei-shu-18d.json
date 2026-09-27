@@ -21,93 +21,310 @@
   "relationships": [
     {
       "from": "文聘（仲業）",
-      "to": "劉表",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p1"
+      "to": "劉表（景升）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p1",
+          "text": {
+            "en": "Wen Pin served as a general under Liu Biao, guarding his northern front.",
+            "zht": "文聘任劉表部將，鎮守其北境。",
+            "zhs": "文聘任刘表部将，镇守其北境。"
+          }
+        }
+      ]
     },
     {
-      "from": "劉表",
+      "from": "劉表（景升）",
       "to": "劉琮",
-      "type": "father-son",
-      "passageId": "ws18d-p1"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p1",
+          "text": {
+            "en": "Liu Cong succeeded his father Liu Biao as governor of Jing Province.",
+            "zht": "劉琮繼承其父劉表，成為荊州之主。",
+            "zhs": "刘琮继承其父刘表，成为荆州之主。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
       "to": "劉琮",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p1"
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p1",
+          "text": {
+            "en": "When Liu Cong surrendered Jing Province to Cao Cao and summoned Wen Pin to join him, Wen Pin declined, saying he could only await punishment for failing to preserve the province.",
+            "zht": "劉琮舉荊州降曹操，召文聘同行，文聘婉拒，稱自己未能保全州境，只能待罪。",
+            "zhs": "刘琮举荆州降曹操，召文聘同行，文聘婉拒，称自己未能保全州境，只能待罪。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "曹操",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p2"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p2",
+          "text": {
+            "en": "When Wen Pin finally came before Cao Cao and explained his grief at having failed to preserve Jing Province, Cao Cao was deeply moved and declared him a truly loyal servant of the state.",
+            "zht": "文聘終於前來拜見曹操，訴說未能保全荊州的愧疚，曹操深受感動，稱讚他真乃國家忠臣。",
+            "zhs": "文聘终于前来拜见曹操，诉说未能保全荆州的愧疚，曹操深受感动，称赞他真乃国家忠臣。"
+          }
+        },
+        {
+          "passageId": "ws18d-p3",
+          "text": {
+            "en": "After joining Cao Chun in pursuing Liu Bei at Changban, Wen Pin was made Grand Administrator of Jiangxia, placed in command of the northern forces, and enfeoffed as Marquis Within the Pass.",
+            "zht": "文聘隨曹純於長阪追討劉備後，獲任江夏太守，統領北兵，賜爵關內侯。",
+            "zhs": "文聘随曹纯于长阪追讨刘备后，获任江夏太守，统领北兵，赐爵关内侯。"
+          },
+          "title": {
+            "en": "Grand Administrator of Jiangxia, Marquis Within the Pass",
+            "zht": "江夏太守、關內侯",
+            "zhs": "江夏太守、关内侯"
+          }
+        },
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Together with Yue Jin, Wen Pin campaigned against Guan Yu at Xunkou and burned his supply ships at Jingcheng, for which he was advanced to Yanshou Neighbourhood Marquis and General Who Suppresses the Rebels.",
+            "zht": "文聘與樂進於尋口討關羽，並於荊城焚燬其船，因功進封延壽亭侯，加討逆將軍。",
+            "zhs": "文聘与乐进于寻口讨关羽，并于荆城焚毁其船，因功进封延寿亭侯，加讨逆将军。"
+          },
+          "title": {
+            "en": "Yanshou Neighbourhood Marquis, General Who Suppresses the Rebels",
+            "zht": "延壽亭侯、討逆將軍",
+            "zhs": "延寿亭侯、讨逆将军"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "曹純",
-      "type": "comrades",
-      "passageId": "ws18d-p3"
+      "to": "曹純（子和）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p3",
+          "text": {
+            "en": "Wen Pin joined Cao Chun in pursuing Liu Bei at Changban.",
+            "zht": "文聘與曹純於長阪共同追討劉備。",
+            "zhs": "文聘与曹纯于长阪共同追讨刘备。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "劉備",
-      "type": "battlefield-opponents",
-      "passageId": "ws18d-p3"
+      "to": "劉備（玄德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p3",
+          "text": {
+            "en": "Wen Pin pursued and attacked Liu Bei at Changban.",
+            "zht": "文聘於長阪追擊劉備。",
+            "zhs": "文聘于长阪追击刘备。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "樂進",
-      "type": "comrades",
-      "passageId": "ws18d-p5"
+      "to": "樂進（文謙）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Together with Yue Jin, Wen Pin campaigned against Guan Yu at Xunkou.",
+            "zht": "文聘與樂進於尋口討伐關羽。",
+            "zhs": "文聘与乐进于寻口讨伐关羽。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "關羽",
-      "type": "battlefield-opponents",
-      "passageId": "ws18d-p5"
+      "to": "關羽（雲長）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Wen Pin campaigned against Guan Yu at Xunkou, attacking his supply train and burning his ships at Jingcheng.",
+            "zht": "文聘於尋口討伐關羽，攻其輜重，於荊城焚燬其船。",
+            "zhs": "文聘于寻口讨伐关羽，攻其辎重，于荆城焚毁其船。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "曹丕",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p5"
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "When Cao Pi ascended the throne, Wen Pin was advanced to Chang'an Township Marquis and made Provisional Bearer of the Tally.",
+            "zht": "文帝踐阼，文聘進爵長安鄉侯，假節。",
+            "zhs": "文帝践阼，文聘进爵长安乡侯，假节。"
+          },
+          "title": {
+            "en": "Chang'an Township Marquis, Provisional Bearer of the Tally",
+            "zht": "長安鄉侯、假節",
+            "zhs": "长安乡侯、假节"
+          }
+        },
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "After besieging Jiangling with Xiahou Shang, Wen Pin held Shifan at Miankou with an independent command, and for his merits defending against the enemy was promoted General of the Rear and enfeoffed Marquis of Xinye.",
+            "zht": "文聘與夏侯尚圍江陵後，別屯沔口，據守石梵，自當一隊，禦賊有功，遷後將軍，封新野侯。",
+            "zhs": "文聘与夏侯尚围江陵后，别屯沔口，据守石梵，自当一队，御贼有功，迁后将军，封新野侯。"
+          },
+          "title": {
+            "en": "General of the Rear, Marquis of Xinye",
+            "zht": "後將軍、新野侯",
+            "zhs": "后将军、新野侯"
+          }
+        },
+        {
+          "passageId": "ws18d-p5",
+          "text": {
+            "en": "For successfully defending Shiyang against Sun Quan's siege, Wen Pin's fief was increased by five hundred households, to nineteen hundred in total.",
+            "zht": "文聘力守石陽卻敵有功，增邑五百戶，共計一千九百戶。",
+            "zhs": "文聘力守石阳却敌有功，增邑五百户，共计一千九百户。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "夏侯尚",
-      "type": "comrades",
-      "passageId": "ws18d-p5"
+      "to": "夏侯尚（伯仁）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Together with Xiahou Shang, Wen Pin besieged Jiangling.",
+            "zht": "文聘與夏侯尚共同圍攻江陵。",
+            "zhs": "文聘与夏侯尚共同围攻江陵。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "孫權",
-      "type": "battlefield-opponents",
-      "passageId": "ws18d-p6"
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p5",
+          "text": {
+            "en": "Sun Quan personally led fifty thousand troops to besiege Wen Pin at Shiyang; Wen Pin held firm for over twenty days until Sun Quan withdrew, then pursued and defeated the retreating Wu troops.",
+            "zht": "孫權親率五萬大軍圍攻文聘於石陽，文聘堅守二十餘日，孫權方才撤退，文聘更追擊破敵。",
+            "zhs": "孙权亲率五万大军围攻文聘于石阳，文聘坚守二十余日，孙权方才撤退，文聘更追击破敌。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "岱",
-      "type": "father-son",
-      "passageId": "ws18d-p9"
+      "to": "文岱",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "Wen Dai was Wen Pin's son, enfeoffed as a marquis with part of his father's fief; he died before his father.",
+            "zht": "文岱是文聘之子，獲分其父食邑封為列侯，先於其父去世。",
+            "zhs": "文岱是文聘之子，获分其父食邑封为列侯，先于其父去世。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "厚",
-      "type": "uncle-nephew",
-      "passageId": "ws18d-p9"
+      "to": "文厚",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "Wen Hou was Wen Pin's nephew, granted the rank of Marquis Within the Pass.",
+            "zht": "文厚是文聘之姪，獲賜爵關內侯。",
+            "zhs": "文厚是文聘之侄，获赐爵关内侯。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "休",
-      "type": "adoptive-father-son",
-      "passageId": "ws18d-p9"
+      "to": "文休",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "As his son Wen Dai had already died, Wen Pin's adopted son Wen Xiu succeeded him upon his own death.",
+            "zht": "因子文岱已先亡，文聘去世後由養子文休嗣位。",
+            "zhs": "因子文岱已先亡，文聘去世后由养子文休嗣位。"
+          }
+        }
+      ]
     },
     {
-      "from": "休",
-      "to": "武",
-      "type": "father-son",
-      "passageId": "ws18d-p9"
+      "from": "文休",
+      "to": "文武",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "Wen Wu succeeded his father Wen Xiu upon his death.",
+            "zht": "文休去世後，子文武嗣位。",
+            "zhs": "文休去世后，子文武嗣位。"
+          }
+        }
+      ]
     }
   ],
   "journeyOverviews": [
@@ -324,6 +541,10 @@
         "zht": "文聘字仲業，[[南陽宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]人也，為劉表大將，使禦北方。表死，其子琮立。太祖征[[荊州|/zh-hant/maps/map-overall?admin=2]]，琮舉州降，呼聘欲與俱，聘曰：「聘不能全州，當待罪而已。」",
         "zhs": "文聘字仲业，[[南阳宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]人也，为刘表大将，使御北方。表死，其子琮立。太祖征[[荆州|/zh-hans/maps/map-overall?admin=2]]，琮举州降，呼聘欲与俱，聘曰：「聘不能全州，当待罪而已。」"
       },
+      "vern": {
+        "zht": "文聘，字仲業，[[南陽郡宛縣|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]人。在劉表手下任大將時，劉表派他防禦北方。劉表死後，他的兒子劉琮繼承權位。太祖討伐[[荊州|/zh-hant/maps/map-overall?admin=2]]，劉琮獻出全州歸順朝廷，又招呼文聘一起投降。文聘說：“我不能保全[[荊州|/zh-hant/maps/map-overall?admin=2]]，只有聽候治罪而已。”",
+        "zhs": "文聘，字仲业，[[南阳郡宛县|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]人。在刘表手下任大将时，刘表派他防御北方。刘表死后，他的儿子刘琮继承权位。太祖讨伐[[荆州|/zh-hans/maps/map-overall?admin=2]]，刘琮献出全州归顺朝廷，又招呼文聘一起投降。文聘说：“我不能保全[[荆州|/zh-hans/maps/map-overall?admin=2]]，只有听候治罪而已。”"
+      },
       "en": "Wen Pin, courtesy name Zhongye, was from [[Wan, Nanyang|/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]], and served as a general under Liu Biao, guarding his northern front. When Liu Biao died, his son Liu Cong succeeded him. When Cao Cao  (posthumously honoured as Taizu, the Grand Progenitor) campaigned against [[Jing Province|/maps/map-overall?admin=2]], Liu Cong surrendered the province in its entirety, and summoned Wen Pin to come with him. Wen Pin declined, \"I was unable to preserve the province intact. I can only await punishment for my failure.\""
     },
     {
@@ -332,6 +553,10 @@
         "zht": "太祖濟漢，聘乃詣太祖，太祖問曰：「來何遲邪？」聘曰：「先日不能輔弼劉荊州以奉國家，[[荊州|/zh-hant/maps/map-overall?admin=2]]雖沒，常願據守漢川，保全土境，生不負於孤弱，死無愧於地下，而計不得已，以至於此。實懷悲慙，無顏早見耳。」遂欷歔流涕。太祖為之愴然曰：「仲業，卿真忠臣也。」厚禮待之。",
         "zhs": "太祖济汉，聘乃诣太祖，太祖问曰：「来何迟邪？」聘曰：「先日不能辅弼刘荆州以奉国家，[[荆州|/zh-hans/maps/map-overall?admin=2]]虽没，常愿据守汉川，保全土境，生不负于孤弱，死无愧于地下，而计不得已，以至于此。实怀悲惭，无颜早见耳。」遂欷歔流涕。太祖为之怆然曰：「仲业，卿真忠臣也。」厚礼待之。"
       },
+      "vern": {
+        "zht": "太祖渡過漢水之後，文聘纔來投奔。太祖問他：“爲什麼來得這樣晚呢？”文聘說：“先前不能輔助劉表尊奉朝廷。劉表雖死，我總想依據漢水固守，保全[[荊州|/zh-hant/maps/map-overall?admin=2]]；生不辜負劉家的孤兒弱女，死不愧見地下的主人。然而形勢迫不得已，以至到了現在這個地步。實在感到慚愧悲傷，沒臉面早來見您啊。”說完抽泣流淚不止。太祖也爲之感動，說：“仲業，您真是忠臣啊！”對他非常尊重厚待。",
+        "zhs": "太祖渡过汉水之后，文聘才来投奔。太祖问他：“为什么来得这样晚呢？”文聘说：“先前不能辅助刘表尊奉朝廷。刘表虽死，我总想依据汉水固守，保全[[荆州|/zh-hans/maps/map-overall?admin=2]]；生不辜负刘家的孤儿弱女，死不愧见地下的主人。然而形势迫不得已，以至到了现在这个地步。实在感到惭愧悲伤，没脸面早来见您啊。”说完抽泣流泪不止。太祖也为之感动，说：“仲业，您真是忠臣啊！”对他非常尊重厚待。"
+      },
       "en": "When Cao Cao crossed the Han River, Wen Pin then came to see him. Cao Cao asked, \"Why have you come so late?\" Wen Pin replied, \"Previously, I was unable to assist Governor Liu in serving the state. Although [[Jing Province|/maps/map-overall?admin=2]] has now fallen, I had still hoped to hold the Han River region and preserve its territory. In life, I would not betray the young and the weak entrusted to my care; in death, I would bring no shame before those below. Yet circumstances left me no choice, and it has come to this. I am filled with grief and shame, and could not bear to come before you sooner.\" He then sighed and wept. Cao Cao was deeply moved and said, \"Zhongye, you are truly a loyal servant of the state.\" Cao Cao thereafter treated Wen Pin with the utmost courtesy."
     },
     {
@@ -339,6 +564,10 @@
       "orig": {
         "zht": "授聘兵，使與曹純追討劉備於[[長阪|/zh-hant/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]。太祖先定[[荊州|/zh-hant/maps/map-overall?admin=2]]，[[江夏|/zh-hant/maps/map-overall?admin=83]]與吳接，民心不安，乃以聘為[[江夏|/zh-hant/maps/map-overall?admin=83]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，使典北兵，委以邊事，賜爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
         "zhs": "授聘兵，使与曹纯追讨刘备于[[长阪|/zh-hans/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]。太祖先定[[荆州|/zh-hans/maps/map-overall?admin=2]]，[[江夏|/zh-hans/maps/map-overall?admin=83]]与吴接，民心不安，乃以聘为[[江夏|/zh-hans/maps/map-overall?admin=83]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，使典北兵，委以边事，赐爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
+      },
+      "vern": {
+        "zht": "授予他軍隊，讓他同曹純趕往[[長坂|/zh-hant/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]追擊劉備。太祖平定了[[荊州|/zh-hant/maps/map-overall?admin=2]]，這個州的[[江夏|/zh-hant/maps/map-overall?admin=83]]郡與孫吳接壤，民心動盪。便任命文聘爲[[江夏|/zh-hant/maps/map-overall?admin=83]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，讓他統領從北方來的軍隊，把鎮守邊境的任務託付給他，賜他[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]的爵位。",
+        "zhs": "授予他军队，让他同曹纯赶往[[长坂|/zh-hans/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]追击刘备。太祖平定了[[荆州|/zh-hans/maps/map-overall?admin=2]]，这个州的[[江夏|/zh-hans/maps/map-overall?admin=83]]郡与孙吴接壤，民心动荡。便任命文聘为[[江夏|/zh-hans/maps/map-overall?admin=83]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，让他统领从北方来的军队，把镇守边境的任务托付给他，赐他[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]的爵位。"
       },
       "en": "Cao Cao gave Wen Pin troops, and had him join Cao Chun in pursuing and attacking Liu Bei at [[Changban|/maps/map-overall?lat=30.87339199&lng=112.03128322&name=Changban]]. As Cao Cao had only recently taken [[Jing Province|/maps/map-overall?admin=2]], and [[Jiangxia Commandery|/maps/map-overall?admin=83]] bordered Wu, the people remained unsettled. Cao Cao therefore made Wen Pin [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jiangxia Commandery|/maps/map-overall?admin=83]], placed him in command of the northern forces, entrusted him with frontier matters, and enfeoffed him as [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]].",
       "annotations": [
@@ -355,6 +584,10 @@
           },
           "zht": "孫盛曰：資父事君，忠孝道一。臧霸少有孝烈之稱，文聘著垂泣之誠，是以魏武一面，委之以二方之任，豈直壯武見知於倉卒之間哉！",
           "zhs": "孙盛曰：资父事君，忠孝道一。臧霸少有孝烈之称，文聘著垂泣之诚，是以魏武一面，委之以二方之任，岂直壮武见知于仓卒之间哉！",
+          "vern": {
+            "zht": "",
+            "zhs": "孙盛说：以侍奉父亲的态度来侍奉君主，忠君与孝亲的道理是一样的。臧霸年少时就有孝顺忠烈的名声，文聘也以痛哭流涕表达出了自己的忠诚，因此魏武帝曹操初次见面就委任他们两人分别承担两个地方的重任，难道仅仅是因为他们的勇武在仓促之间被赏识吗！"
+          },
           "en": "Sun Sheng states: In serving one's father and serving one's lord, loyalty and filial piety are one and the same. Zang Ba was renowned in his youth for his filial devotion, while Wen Pin displayed the sincerity of his grief in tears. It was for this reason that, after but a single meeting, Cao Cao entrusted them with the defence of two regions. Surely this was not merely because he had come to appreciate their valor and martial prowess during those brief encounters!"
         }
       ]
@@ -364,6 +597,10 @@
       "orig": {
         "zht": "與樂進討關羽於尋口[^1]，有功，進封延壽[[亭侯|/zh-hant/translations/officials#glossary-neighbourhood-marquis]]，加[[討逆將軍|/zh-hant/translations/officials/military#four-direction--misc-153]]。又攻羽輜重於漢津[^1]，燒其船於[[荊城|/zh-hant/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]。文帝踐阼，進爵長安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。與夏侯尚圍[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，使聘別屯[[沔口|/zh-hant/maps/map-overall?lat=30.53922127&lng=114.30304043&name=Xiakou]]，止石梵[^2]，自當一隊，禦賊有功，遷[[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]，封[[新野|/zh-hant/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]。",
         "zhs": "与乐进讨关羽于寻口[^1]，有功，进封延寿[[亭侯|/zh-hans/translations/officials#glossary-neighbourhood-marquis]]，加[[讨逆将军|/zh-hans/translations/officials/military#four-direction--misc-153]]。又攻羽辎重于汉津[^1]，烧其船于[[荆城|/zh-hans/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]。文帝践阼，进爵长安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。与夏侯尚围[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，使聘别屯[[沔口|/zh-hans/maps/map-overall?lat=30.53922127&lng=114.30304043&name=Xiakou]]，止石梵[^2]，自当一队，御贼有功，迁[[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]，封[[新野|/zh-hans/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]。"
+      },
+      "vern": {
+        "zht": "文聘與樂進到尋口討伐關羽，立下戰功，晉爵延壽[[亭侯|/zh-hant/translations/officials#glossary-neighbourhood-marquis]]，加授[[討逆將軍|/zh-hant/translations/officials/military#four-direction--misc-153]]的軍職。又在漢津攻擊關羽的輜重車隊，在[[荊城|/zh-hant/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]焚燒了關羽的船隻。魏文帝即皇帝位後，文聘晉爵爲長安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]，持有節杖。又會同夏侯尚包圍[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，文帝命文聘另率一支部隊到[[沔口|/zh-hant/maps/map-overall?lat=30.53922127&lng=114.30304043&name=Xiakou]]駐守，中途暫時在石梵停留；抵禦敵軍來犯的一支軍隊，立下戰功。升任[[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]，封[[新野|/zh-hant/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]]侯。",
+        "zhs": "文聘与乐进到寻口讨伐关羽，立下战功，晋爵延寿[[亭侯|/zh-hans/translations/officials#glossary-neighbourhood-marquis]]，加授[[讨逆将军|/zh-hans/translations/officials/military#four-direction--misc-153]]的军职。又在汉津攻击关羽的辎重车队，在[[荆城|/zh-hans/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]焚烧了关羽的船只。魏文帝即皇帝位后，文聘晋爵为长安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]，持有节杖。又会同夏侯尚包围[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，文帝命文聘另率一支部队到[[沔口|/zh-hans/maps/map-overall?lat=30.53922127&lng=114.30304043&name=Xiakou]]驻守，中途暂时在石梵停留；抵御敌军来犯的一支军队，立下战功。升任[[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]，封[[新野|/zh-hans/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]]侯。"
       },
       "en": "Together with Yue Jin, Wen Pin campaigned against Guan Yu at Xunkou[^1], and for his achievements was advanced to Yanshou [[Neighbourhood Marquis|/translations/officials#glossary-neighbourhood-marquis]], and [[General Who Suppresses the Rebels|/translations/officials/military#four-direction--misc-153]]. Wen Pin later attacked Guan Yu's supply train at Hanjin[^1], and burned his ships at [[Jingcheng|/maps/map-overall?lat=30.8600171&lng=112.56997007&name=Jingcheng]]. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) ascended the throne, Wen Pin was advanced in rank to Chang'an [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]], and made [[Provisional Bearer of the Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. Together with Xiahou Shang, Wen Pin besieged [[Jiangling|/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]. He was then detached and temporarily stationed at [[Miankou|/maps/map-overall?lat=30.53922127&lng=114.30304043&name=Xiakou]], where he held Shifan [^2] and commanded an independent force to resist the enemy. For his merits, he was promoted to [[General of the Rear|/translations/officials/military#four-direction--misc-115]], and enfeoffed as [[Marquis|/translations/officials#glossary-county-marquis]] of [[Xinye|/maps/map-overall?lat=32.49896526&lng=112.3841824&name=Xinye]].",
       "footnotes": [
@@ -387,6 +624,10 @@
         "zht": "孫權以五萬衆自圍聘於[[石陽|/zh-hant/maps/map-overall?lat=30.75166501&lng=113.71979427&name=Shiyang]]，甚急，聘堅守不動，權住二十餘日乃解去。聘追擊破之。增邑五百戶，并前千九百戶。",
         "zhs": "孙权以五万众自围聘于[[石阳|/zh-hans/maps/map-overall?lat=30.75166501&lng=113.71979427&name=Shiyang]]，甚急，聘坚守不动，权住二十余日乃解去。聘追击破之。增邑五百户，并前千九百户。"
       },
+      "vern": {
+        "zht": "孫權親自率領五萬人馬，在[[石陽|/zh-hant/maps/map-overall?lat=30.75166501&lng=113.71979427&name=Shiyang]]城包圍了文聘，形勢危急；文聘堅守不動。孫權包圍了二十多天後撤退。文聘乘機追擊，打敗了吳軍。朝廷爲他增加封邑五百戶，連同以前的共一千九百戶。",
+        "zhs": "孙权亲自率领五万人马，在[[石阳|/zh-hans/maps/map-overall?lat=30.75166501&lng=113.71979427&name=Shiyang]]城包围了文聘，形势危急；文聘坚守不动。孙权包围了二十多天后撤退。文聘乘机追击，打败了吴军。朝廷为他增加封邑五百户，连同以前的共一千九百户。"
+      },
       "en": "Later, Sun Quan personally led fifty thousand troops to besiege Wen Pin at [[Shiyang|/maps/map-overall?lat=30.75166501&lng=113.71979427&name=Shiyang]]. The situation was extremely dire, yet Wen Pin held firm and did not retreat. After more than twenty days, Sun Quan withdrew. Wen Pin pursued and defeated the Wu troops. His fief was increased by five hundred households, bringing his total to one thousand nine hundred.",
       "annotations": [
         {
@@ -402,6 +643,10 @@
           },
           "zht": "魏略曰：孫權嘗自將數萬衆卒至。時大雨，城柵崩壞，人民散在田野，未及補治。聘聞權到，不知所施，乃思惟莫若潛默可以疑之。乃勑城中人使不得見，又自卧舍中不起。權果疑之，語其部黨曰：「北方以此人忠臣也，故委之以此郡，今我至而不動，此不有密圖，必當有外救。」遂不敢攻而去。\n\n魏略此語，與本傳反。",
           "zhs": "魏略曰：孙权尝自将数万众卒至。时大雨，城栅崩坏，人民散在田野，未及补治。聘闻权到，不知所施，乃思惟莫若潜默可以疑之。乃敕城中人使不得见，又自卧舍中不起。权果疑之，语其部党曰：「北方以此人忠臣也，故委之以此郡，今我至而不动，此不有密图，必当有外救。」遂不敢攻而去。\n\n魏略此语，与本传反。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：孙权曾经亲自率领数万人马突然到来，当时正下着大雨，城墙和栅栏都坍塌毁坏了，百姓分散在田野里，还来不及修复整治。文聘听说孙权到了，不知道该怎么办，思考后觉得不如隐藏起来保持沉默，这样可以让孙权产生疑惑。于是命令城中的人不能让敌人看见，自己又卧在房舍中不起来。孙权果然对他产生了怀疑，对他的部众说：“北方人认为这个人是忠臣，所以把这个郡交给他。”如今我来了他却按兵不动，这若不是有秘密图谋，就一定有外部的救兵。于是不敢进攻就离开了。《魏略》里的这些话与本传的记载相反。"
+          },
           "en": "The Weilüe / Brief History of Wei states: Sun Quan once personally led several tens of thousands of troops in a sudden attack. At the time, there were heavy rains, and the city's stockade walls collapsed. The residents were dispersed across the countryside, and there is no time to repair the damaged walls. When Wen Pin learned of Sun Quan's arrival, he was uncertain how best to respond. He concluded that nothing would serve better than to remain perfectly still and let the enemy fall into doubt. He therefore ordered that no one within the city was to show themselves, then withdrew to his quarters and remained there without emerging. Sun Quan indeed grew suspicious and said to his officers, \"The northern court regards this man as a loyal servant of the state, and for that reason entrusted him with this commandery. Now that I have arrived and he remains inactive, he must either have made secret preparations, or reinforcements are surely on their way.\" Sun Quan therefore dared not attack and withdrew. \n\nThis account in the Weilüe contradicts the main biography."
         }
       ]
@@ -412,6 +657,10 @@
         "zht": "聘在[[江夏|/zh-hant/maps/map-overall?admin=83]]數十年，有威恩，名震敵國，賊不敢侵。分聘戶邑封聘子岱為[[列侯|/zh-hant/translations/officials#glossary-marquis]]，又賜聘從子厚爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。聘薨，謚曰壯侯。岱又先亡，聘養子休嗣。卒，子武嗣。",
         "zhs": "聘在[[江夏|/zh-hans/maps/map-overall?admin=83]]数十年，有威恩，名震敌国，贼不敢侵。分聘户邑封聘子岱为[[列侯|/zh-hans/translations/officials#glossary-marquis]]，又赐聘从子厚爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。聘薨，谥曰壮侯。岱又先亡，聘养子休嗣。卒，子武嗣。"
       },
+      "vern": {
+        "zht": "文聘在[[江夏|/zh-hant/maps/map-overall?admin=83]]郡前後幾十年，恩威並施；名震敵國，賊寇不敢輕易侵犯。朝廷把文聘的封邑分出一部分，封他的兒子文岱爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]；又賜他的侄兒文厚[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]的爵位。文聘死後，諡爲壯侯。文岱先死，文聘的養子文休繼承爵位。文休死後，他的兒子文武繼承爵位。",
+        "zhs": "文聘在[[江夏|/zh-hans/maps/map-overall?admin=83]]郡前后几十年，恩威并施；名震敌国，贼寇不敢轻易侵犯。朝廷把文聘的封邑分出一部分，封他的儿子文岱为[[列侯|/zh-hans/translations/officials#glossary-marquis]]；又赐他的侄儿文厚[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]的爵位。文聘死后，谥为壮侯。文岱先死，文聘的养子文休继承爵位。文休死后，他的儿子文武继承爵位。"
+      },
       "en": "Wen Pin remained in [[Jiangxia Commandery|/maps/map-overall?admin=83]] for several decades. He was held in both awe and affection, and his reputation resounded throughout the enemy state, such that no one dared invade. Part of Wen Pin's fief was divided off to enfeoff his son, Wen Dai, as a [[Marquis|/translations/officials#glossary-marquis]], and his nephew Wen Hou was also granted the rank of [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]. When Wen Pin died, he was posthumously honoured as Marquis Zhuang, the Valiant Marquis. Wen Dai had already died before him, so Wen Pin's adopted son Wen Xiu succeeded him. When Wen Xiu died, his son Wen Wu succeeded him."
     },
     {
@@ -419,6 +668,10 @@
       "orig": {
         "zht": "嘉平中，[[譙|/zh-hant/maps/map-overall?admin=28]]郡桓禺為[[江夏|/zh-hant/maps/map-overall?admin=83]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，清儉有威惠，名亞於聘。",
         "zhs": "嘉平中，[[谯|/zh-hans/maps/map-overall?admin=28]]郡桓禺为[[江夏|/zh-hans/maps/map-overall?admin=83]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，清俭有威惠，名亚于聘。"
+      },
+      "vern": {
+        "zht": "嘉平年間，[[譙|/zh-hant/maps/map-overall?admin=28]]郡的桓禺又擔任[[江夏|/zh-hant/maps/map-overall?admin=83]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]；清廉儉樸，也是恩威並施，不過名聲次於文聘。",
+        "zhs": "嘉平年间，[[谯|/zh-hans/maps/map-overall?admin=28]]郡的桓禺又担任[[江夏|/zh-hans/maps/map-overall?admin=83]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]；清廉俭朴，也是恩威并施，不过名声次于文聘。"
       },
       "en": "During the Jiaping Era, Huan Yu of [[Qiao|/maps/map-overall?admin=28]] Commandery served as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jiangxia|/maps/map-overall?admin=83]]. He was upright and frugal, well respected, and governed with beneficence. His reputation was second only to Wen Pin."
     }

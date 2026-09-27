@@ -99,6 +99,16 @@
                 "zht": "中衛將軍",
                 "zhs": "中卫将军",
                 "en": "General of the Central Guards"
+              },
+              {
+                "zht": "左衛將軍",
+                "zhs": "左卫将军",
+                "en": "General of the Central Guards on the Left"
+              },
+              {
+                "zht": "右衛將軍",
+                "zhs": "右卫将军",
+                "en": "General of the Central Guards on the Right"
               }
             ],
             "shu": null,
@@ -118,9 +128,9 @@
           },
           "notes": [
             {
-              "zht": "司馬昭始置",
-              "zhs": "司马昭始置",
-              "en": "First established  by Sima Zhao"
+              "zht": "司馬昭始置，司馬炎分左右",
+              "zhs": "司马昭始置，司马炎分左右",
+              "en": "First established by Sima Zhao, later divided into left and right by Sima Yan"
             }
           ]
         },

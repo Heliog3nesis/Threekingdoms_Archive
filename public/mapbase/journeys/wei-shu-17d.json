@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-17d",
+    "order": 17,
+    "label": {
+      "zht": "張郃傳",
+      "zhs": "张郃传",
+      "en": "Biography of Zhang He"
+    },
+    "title": {
+      "zht": "魏書十七 · 張郃傳",
+      "zhs": "魏书十七 · 张郃传",
+      "en": "Book of Wei, Chapter 17 · Biography of Zhang He"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -323,12 +337,10 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "Major",
-                "zht": "司馬",
-                "zhs": "司马"
-              },
-              "url": null
+              "en": "Major",
+              "zht": "司馬",
+              "zhs": "司马",
+              "url": "/translations/officials/military#conquering--garrisoning-074"
             }
           ]
         },
@@ -348,7 +360,7 @@
               "zhs": "校尉"
             },
             {
-              "en": "Gentleman General Who Pacifies the State",
+              "en": "Gentleman-General Who Pacifies the State",
               "zht": "寧國中郎將",
               "zhs": "宁国中郎将"
             }
@@ -357,16 +369,15 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "Colonel",
-                "zht": "校尉",
-                "zhs": "校尉"
-              },
-              "1": {
-                "en": "Gentleman General Who Pacifies the State",
-                "zht": "寧國中郎將",
-                "zhs": "宁国中郎将"
-              },
+              "en": "Colonel",
+              "zht": "校尉",
+              "zhs": "校尉",
+              "url": "/translations/officials/regional#commanderies-060"
+            },
+            {
+              "en": "Gentleman-General Who Pacifies the State",
+              "zht": "寧國中郎將",
+              "zhs": "宁国中郎将",
               "url": null
             }
           ]
@@ -409,17 +420,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Adjunct General",
-                "zht": "偏將軍",
-                "zhs": "偏将军"
-              },
-              "1": {
-                "en": "Capital Township Marquis",
-                "zht": "都鄉侯",
-                "zhs": "都乡侯"
-              },
-              "url": null
+              "en": "Adjunct General",
+              "zht": "偏將軍",
+              "zhs": "偏将军",
+              "url": "/translations/officials/military#four-direction--misc-164"
+            },
+            {
+              "en": "Capital Township Marquis",
+              "zht": "都鄉侯",
+              "zhs": "都乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
             }
           ]
         },
@@ -496,12 +506,10 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General Who Subdues the Di",
-                "zht": "平狄將軍",
-                "zhs": "平狄将军"
-              },
-              "url": null
+              "en": "General Who Subdues the Di",
+              "zht": "平狄將軍",
+              "zhs": "平狄将军",
+              "url": "/translations/officials/military#four-direction--misc-131"
             }
           ]
         },
@@ -652,12 +660,10 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General Who Sweeps the Bandits",
-                "zht": "盪寇將軍",
-                "zhs": "荡寇将军"
-              },
-              "url": null
+              "en": "General Who Sweeps the Bandits",
+              "zht": "盪寇將軍",
+              "zhs": "荡寇将军",
+              "url": "/translations/officials/military#four-direction--misc-153"
             }
           ]
         },
@@ -700,12 +706,10 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Provisional Bearer of the Imperial Tally",
-                "zht": "假郃節",
-                "zhs": "假郃节"
-              },
-              "url": null
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假郃節",
+              "zhs": "假郃节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
             }
           ]
         },
@@ -750,22 +754,22 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General of the Left",
-                "zht": "左將軍",
-                "zhs": "左将军"
-              },
-              "1": {
-                "en": "Capital Township Marquis",
-                "zht": "都鄉侯",
-                "zhs": "都乡侯"
-              },
-              "2": {
-                "en": "County Marquis",
-                "zht": "縣侯",
-                "zhs": "县侯"
-              },
-              "url": null
+              "en": "General of the Left",
+              "zht": "左將軍",
+              "zhs": "左将军",
+              "url": "/translations/officials/military#four-direction--misc-116"
+            },
+            {
+              "en": "Capital Township Marquis",
+              "zht": "都鄉侯",
+              "zhs": "都乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯",
+              "url": "/translations/officials#glossary-county-marquis"
             }
           ]
         },
@@ -925,17 +929,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Specially Advanced",
-                "zht": "特進",
-                "zhs": "特进"
-              },
-              "1": {
-                "en": "General of Chariots and Cavalry",
-                "zht": "車騎將軍",
-                "zhs": "车骑将军"
-              },
-              "url": null
+              "en": "Specially Advanced",
+              "zht": "特進",
+              "zhs": "特进",
+              "url": "/translations/officials/ministers#civil-honorary-officials-118"
+            },
+            {
+              "en": "General of Chariots and Cavalry",
+              "zht": "車騎將軍",
+              "zhs": "车骑将军",
+              "url": "/translations/officials/military#various-grand-generals-037"
             }
           ]
         },

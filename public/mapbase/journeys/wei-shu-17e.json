@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-17e",
+    "order": 17,
+    "label": {
+      "zht": "徐晃傳 · 附朱靈",
+      "zhs": "徐晃传 · 附朱灵",
+      "en": "Biography of Xu Huang · with Zhu Ling"
+    },
+    "title": {
+      "zht": "魏書十七 · 徐晃傳 · 附朱靈",
+      "zhs": "魏书十七 · 徐晃传 · 附朱灵",
+      "en": "Book of Wei, Chapter 17 · Biography of Xu Huang · with Zhu Ling"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -15,7 +29,8 @@
       "lng": 108.87167209,
       "name": "Chang'an",
       "persons": [
-        "徐晃（公明）"
+        "徐晃（公明）",
+        "朱靈（文博）"
       ]
     },
     {
@@ -155,7 +170,8 @@
       "kind": "admin",
       "id": "2",
       "persons": [
-        "徐晃（公明）"
+        "徐晃（公明）",
+        "朱靈（文博）"
       ]
     },
     {
@@ -225,7 +241,8 @@
       "lng": 110.32268475,
       "name": "Tongguan",
       "persons": [
-        "徐晃（公明）"
+        "徐晃（公明）",
+        "朱靈（文博）"
       ]
     },
     {
@@ -234,7 +251,8 @@
       "lng": 110.28348954,
       "name": "Pubanjin",
       "persons": [
-        "徐晃（公明）"
+        "徐晃（公明）",
+        "朱靈（文博）"
       ]
     },
     {
@@ -243,7 +261,8 @@
       "lng": 107.17845258,
       "name": "Yumi",
       "persons": [
-        "徐晃（公明）"
+        "徐晃（公明）",
+        "朱靈（文博）"
       ]
     },
     {
@@ -252,7 +271,8 @@
       "lng": 106.85666136,
       "name": "Qian",
       "persons": [
-        "徐晃（公明）"
+        "徐晃（公明）",
+        "朱靈（文博）"
       ]
     },
     {
@@ -315,8 +335,10 @@
       ]
     },
     {
-      "kind": "admin",
-      "id": "89",
+      "kind": "town",
+      "lat": 32.00162374,
+      "lng": 112.14985623,
+      "name": "襄陽",
       "persons": [
         "徐晃（公明）"
       ]
@@ -337,6 +359,47 @@
       "name": "Shangyong",
       "persons": [
         "徐晃（公明）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.99635407,
+      "lng": 116.31260117,
+      "name": "Shu",
+      "persons": [
+        "朱靈（文博）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "8",
+      "persons": [
+        "朱靈（文博）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "4",
+      "persons": [
+        "朱靈（文博）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.14679273,
+      "lng": 113.48608338,
+      "name": "Yangdi",
+      "persons": [
+        "朱靈（文博）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.029893,
+      "lng": 114.02211887,
+      "name": "Xuchang",
+      "persons": [
+        "朱靈（文博）"
       ]
     }
   ],
@@ -422,17 +485,16 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "Commandery Clerk",
-                "zht": "郡吏",
-                "zhs": "郡吏"
-              },
-              "1": {
-                "en": "Commandant of Cavalry",
-                "zht": "騎都尉",
-                "zhs": "骑都尉"
-              },
+              "en": "Commandery Clerk",
+              "zht": "郡吏",
+              "zhs": "郡吏",
               "url": null
+            },
+            {
+              "en": "Commandant of Cavalry",
+              "zht": "騎都尉",
+              "zhs": "骑都尉",
+              "url": "/translations/officials/ministers#-nine-ministers-i-178"
             }
           ]
         },
@@ -502,12 +564,10 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Capital Neighbourhood Marquis",
-                "zht": "都亭侯",
-                "zhs": "都亭侯"
-              },
-              "url": null
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },
@@ -602,17 +662,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Assistant General",
-                "zht": "裨將軍",
-                "zhs": "裨将军"
-              },
-              "1": {
-                "en": "Capital Neighbourhood Marquis",
-                "zht": "都亭侯",
-                "zhs": "都亭侯"
-              },
-              "url": null
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军",
+              "url": "/translations/officials/military#four-direction--misc-165"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },
@@ -720,12 +779,10 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General Who Sweeps the Wilds",
-                "zht": "橫野將軍",
-                "zhs": "横野将军"
-              },
-              "url": null
+              "en": "General Who Sweeps the Wilds",
+              "zht": "橫野將軍",
+              "zhs": "横野将军",
+              "url": "/translations/officials/military#four-direction--misc-157"
             }
           ]
         },
@@ -1023,8 +1080,10 @@
               "name": "Wan"
             },
             {
-              "kind": "admin",
-              "id": "89"
+              "kind": "town",
+              "lat": 32.00162374,
+              "lng": 112.14985623,
+              "name": "襄陽"
             },
             {
               "kind": "town",
@@ -1041,22 +1100,22 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General of the Right",
-                "zht": "右將軍",
-                "zhs": "右将军"
-              },
-              "1": {
-                "en": "Township Marquis",
-                "zht": "鄉侯",
-                "zhs": "乡侯"
-              },
-              "2": {
-                "en": "County Marquis",
-                "zht": "縣侯",
-                "zhs": "县侯"
-              },
-              "url": null
+              "en": "General of the Right",
+              "zht": "右將軍",
+              "zhs": "右将军",
+              "url": "/translations/officials/military#four-direction--misc-117"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯",
+              "url": "/translations/officials#glossary-county-marquis"
             }
           ]
         },
@@ -1093,11 +1152,351 @@
           "passageId": "",
           "resolvedLocations": [
             {
-              "kind": "admin",
-              "id": "89"
+              "kind": "town",
+              "lat": 32.00162374,
+              "lng": 112.14985623,
+              "name": "襄陽"
             }
           ],
           "positionLinks": []
+        }
+      ]
+    },
+    {
+      "person": "朱靈（文博）",
+      "name": {
+        "en": "Zhu Ling",
+        "zht": "朱靈",
+        "zhs": "朱灵"
+      },
+      "courtesyName": {
+        "en": "Wenbo",
+        "zht": "文博",
+        "zhs": "文博"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Shu",
+              "zht": "鄃",
+              "zhs": "鄃"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.99635407,
+              "lng": 116.31260117,
+              "name": "Shu"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "2nd - 4th year of Chuping",
+            "zht": "初平二年 - 四年",
+            "zhs": "初平二年 - 四年"
+          },
+          "year": "191 - 193",
+          "age": null,
+          "location": [
+            {
+              "en": "Shu",
+              "zht": "鄃",
+              "zhs": "鄃"
+            },
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "passageId": "",
+          "position": null,
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.99635407,
+              "lng": 116.31260117,
+              "name": "Shu"
+            },
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "4th year of Jian'an",
+            "zht": "建安四年",
+            "zhs": "建安四年"
+          },
+          "year": 199,
+          "age": null,
+          "location": [
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            }
+          ],
+          "passageId": "",
+          "position": null,
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "8"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "9th - 10th year of Jian'an",
+            "zht": "建安九年 - 十年",
+            "zhs": "建安九年 - 十年"
+          },
+          "year": "204 - 205",
+          "age": null,
+          "location": [
+            {
+              "en": "Ji Province",
+              "zht": "冀州",
+              "zhs": "冀州"
+            }
+          ],
+          "passageId": "",
+          "position": null,
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "4"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Yangdi",
+              "zht": "陽翟",
+              "zhs": "阳翟"
+            },
+            {
+              "en": "South of Xuchang",
+              "zht": "許南",
+              "zhs": "许南"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.14679273,
+              "lng": 113.48608338,
+              "name": "Yangdi"
+            },
+            {
+              "kind": "town",
+              "lat": 34.029893,
+              "lng": 114.02211887,
+              "name": "Xuchang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "13th year of Jian'an",
+            "zht": "建安十三年",
+            "zhs": "建安十三年"
+          },
+          "year": 208,
+          "age": null,
+          "location": [
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            }
+          ],
+          "passageId": "",
+          "position": null,
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "2"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "16th - 17th year of Jian'an",
+            "zht": "建安十六年 - 十七年",
+            "zhs": "建安十六年 - 十七年"
+          },
+          "year": "211 - 212",
+          "age": null,
+          "location": [
+            {
+              "en": "Tongguan",
+              "zht": "潼關",
+              "zhs": "潼关"
+            },
+            {
+              "en": "Pubanjin",
+              "zht": "蒲阪津",
+              "zhs": "蒲阪津"
+            },
+            {
+              "en": "Yumi",
+              "zht": "隃麋",
+              "zhs": "隃麋"
+            },
+            {
+              "en": "Qian",
+              "zht": "汧",
+              "zhs": "汧"
+            },
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            }
+          ],
+          "passageId": "",
+          "position": null,
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.59426174,
+              "lng": 110.32268475,
+              "name": "Tongguan"
+            },
+            {
+              "kind": "town",
+              "lat": 34.87374888,
+              "lng": 110.28348954,
+              "name": "Pubanjin"
+            },
+            {
+              "kind": "town",
+              "lat": 34.63936227,
+              "lng": 107.17845258,
+              "name": "Yumi"
+            },
+            {
+              "kind": "town",
+              "lat": 34.83685651,
+              "lng": 106.85666136,
+              "name": "Qian"
+            },
+            {
+              "kind": "town",
+              "lat": 34.31264639,
+              "lng": 108.87167209,
+              "name": "Chang'an"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "13th year of Jian'an",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节"
+            },
+            {
+              "en": "General of the Rear",
+              "zht": "後將軍",
+              "zhs": "后将军"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节",
+              "url": "/translations/officials#glossary-envoy-imperial-tally"
+            },
+            {
+              "en": "General of the Rear",
+              "zht": "後將軍",
+              "zhs": "后将军",
+              "url": "/translations/officials/military#four-direction--misc-115"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯",
+              "url": "/translations/officials#glossary-county-marquis"
+            }
+          ]
         }
       ]
     }

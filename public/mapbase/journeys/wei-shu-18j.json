@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18j",
+    "order": 18,
+    "label": {
+      "zht": "閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zhs": "阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
+      "en": "Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
+    },
+    "title": {
+      "zht": "魏書十八 · 閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zhs": "魏书十八 · 阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
+      "en": "Book of Wei, Chapter 18 · Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -56,6 +70,16 @@
   "journeyOverviews": [
     {
       "person": "閻溫（伯儉）",
+      "name": {
+        "en": "Yan Wen",
+        "zht": "閻溫",
+        "zhs": "阎温"
+      },
+      "courtesyName": {
+        "en": "Bojian",
+        "zht": "伯儉",
+        "zhs": "伯俭"
+      },
       "born": "unknown",
       "died": {
         "era": {
@@ -127,17 +151,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Deputy Aide",
-                "zht": "別駕",
-                "zhs": "别驾"
-              },
-              "1": {
-                "en": "County Magistrate",
-                "zht": "令",
-                "zhs": "令"
-              },
-              "url": null
+              "en": "Deputy Aide",
+              "zht": "別駕",
+              "zhs": "别驾",
+              "url": "/translations/officials/regional#provinces-017"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令",
+              "url": "/translations/officials/regional?lat=34.59061668&lng=105.70732186"
             }
           ]
         },
@@ -183,6 +206,16 @@
     },
     {
       "person": "張恭",
+      "name": {
+        "en": "Zhang Gong",
+        "zht": "張恭",
+        "zhs": "张恭"
+      },
+      "courtesyName": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
       "born": "unknown",
       "died": {
         "era": {
@@ -249,7 +282,7 @@
           ],
           "position": [
             {
-              "en": "Colonel of the Central Garrison",
+              "en": "Colonel of the Western Regions Central Garrison",
               "zht": "戊己校尉",
               "zhs": " 戊己校尉"
             },
@@ -274,17 +307,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Colonel of the Central Garrison",
-                "zht": "戊己校尉",
-                "zhs": " 戊己校尉"
-              },
-              "1": {
-                "en": "Marquis Within the Pass",
-                "zht": "關内侯",
-                "zhs": "关内侯"
-              },
-              "url": null
+              "en": "Colonel of the Western Regions Central Garrison",
+              "zht": "戊己校尉",
+              "zhs": " 戊己校尉",
+              "url": "/translations/officials/military#colonels--commandants-188"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關内侯",
+              "zhs": "关内侯",
+              "url": "/translations/officials#glossary-marquis-within-the-pass"
             }
           ]
         },
@@ -298,17 +330,17 @@
           "age": null,
           "location": null,
           "position": {
-            "en": "posthumously Bearer of the Golden Mace",
-            "zht": "贈執金吾",
-            "zhs": "赠执金吾"
+            "en": "Posthumously Bearer of the Golden Mace",
+            "zht": "追贈執金吾",
+            "zhs": "追贈执金吾"
           },
           "passageId": "ws18j-p4",
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "en": "posthumously Bearer of the Golden Mace",
-              "zht": "贈執金吾",
-              "zhs": "赠执金吾",
+              "en": "Posthumously Bearer of the Golden Mace",
+              "zht": "追贈執金吾",
+              "zhs": "追贈执金吾",
               "url": "/translations/officials/ministers#others-282"
             }
           ]

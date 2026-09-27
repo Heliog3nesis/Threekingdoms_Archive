@@ -1,0 +1,98 @@
+{
+  "id": "wei-shu-18-appraisal",
+  "kind": "appraisal",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 18,
+  "num": "18",
+  "label": {
+    "zht": "評",
+    "zhs": "评",
+    "en": "Appraisal"
+  },
+  "title": {
+    "zht": "魏書十八 · 評",
+    "zhs": "魏书十八 · 评",
+    "en": "Book of Wei, Chapter 18 · Appraisal"
+  },
+  "relationships": [],
+  "journeyOverviews": [],
+  "passages": [
+    {
+      "id": "ws18-appr-p1",
+      "orig": {
+        "zht": "評曰：[[李典|/zh-hant/translations/sanguozhi/wei-shu-18a]]貴尚儒雅，義忘私隙，美矣。",
+        "zhs": "评曰：[[李典|/zh-hans/translations/sanguozhi/wei-shu-18a]]贵尚儒雅，义忘私隙，美矣。"
+      },
+      "vern": {
+        "zht": "陳壽評論道：[[李典|/zh-hant/translations/sanguozhi/wei-shu-18a]]崇尚儒雅，重義氣而能忘掉私人恩怨，值得讚美啊！",
+        "zhs": "陈寿评论道：[[李典|/zh-hans/translations/sanguozhi/wei-shu-18a]]崇尚儒雅，重义气而能忘掉私人恩怨，值得赞美啊！"
+      },
+      "en": "Chen Shou appraises: [[Li Dian|/translations/sanguozhi/wei-shu-18a]] esteemed refinement and learning, and for the sake of righteousness set aside private grievances. Admirable indeed!"
+    },
+    {
+      "id": "ws18-appr-p2",
+      "orig": {
+        "zht": "[[李通|/zh-hant/translations/sanguozhi/wei-shu-18b]]、[[臧霸|/zh-hant/translations/sanguozhi/wei-shu-18c]]、[[文聘|/zh-hant/translations/sanguozhi/wei-shu-18d]]、[[呂虔|/zh-hant/translations/sanguozhi/wei-shu-18e]]鎮衞州郡，並著威惠。",
+        "zhs": "[[李通|/zh-hans/translations/sanguozhi/wei-shu-18b]]、[[臧霸|/zh-hans/translations/sanguozhi/wei-shu-18c]]、[[文聘|/zh-hans/translations/sanguozhi/wei-shu-18d]]、[[吕虔|/zh-hans/translations/sanguozhi/wei-shu-18e]]镇衞州郡，并著威惠。"
+      },
+      "vern": {
+        "zht": "[[李通|/zh-hant/translations/sanguozhi/wei-shu-18b]]、[[臧霸|/zh-hant/translations/sanguozhi/wei-shu-18c]]、[[文聘|/zh-hant/translations/sanguozhi/wei-shu-18d]]、[[呂虔|/zh-hant/translations/sanguozhi/wei-shu-18e]]鎮守州郡，都有威信和恩德。",
+        "zhs": "[[李通|/zh-hans/translations/sanguozhi/wei-shu-18b]]、[[臧霸|/zh-hans/translations/sanguozhi/wei-shu-18c]]、[[文聘|/zh-hans/translations/sanguozhi/wei-shu-18d]]、[[吕虔|/zh-hans/translations/sanguozhi/wei-shu-18e]]镇守州郡，都有威信和恩德。"
+      },
+      "en": "[[Li Tong|/translations/sanguozhi/wei-shu-18b]], [[Zang Ba|/translations/sanguozhi/wei-shu-18c]], [[Wen Pin|/translations/sanguozhi/wei-shu-18d]], and [[Lü Qian|/translations/sanguozhi/wei-shu-18e]] guarded provinces and commanderies, and all became renowned for both authority and benevolence."
+    },
+    {
+      "id": "ws18-appr-p3",
+      "orig": {
+        "zht": "[[許褚|/zh-hant/translations/sanguozhi/wei-shu-18f]]、[[典韋|/zh-hant/translations/sanguozhi/wei-shu-18g]]折衝左右，抑亦漢之樊噲也。",
+        "zhs": "[[许褚|/zh-hans/translations/sanguozhi/wei-shu-18f]]、[[典韦|/zh-hans/translations/sanguozhi/wei-shu-18g]]折冲左右，抑亦汉之樊哙也。"
+      },
+      "vern": {
+        "zht": "[[許褚|/zh-hant/translations/sanguozhi/wei-shu-18f]]、[[典韋|/zh-hant/translations/sanguozhi/wei-shu-18g]]在君主左右衝鋒陷陣、護衛周全，差不多如同漢代的樊噲了。",
+        "zhs": "[[许褚|/zh-hans/translations/sanguozhi/wei-shu-18f]]、[[典韦|/zh-hans/translations/sanguozhi/wei-shu-18g]]在君主左右冲锋陷阵、护卫周全，差不多如同汉代的樊哙了。"
+      },
+      "en": "[[Xu Chu|/translations/sanguozhi/wei-shu-18f]] and [[Dian Wei|/translations/sanguozhi/wei-shu-18g]] repelled danger at their lord’s side, resembling Fan Kuai of the Han."
+    },
+    {
+      "id": "ws18-appr-p4",
+      "orig": {
+        "zht": "[[龐悳|/zh-hant/translations/sanguozhi/wei-shu-18h]]授命叱敵，有周苛之節。",
+        "zhs": "[[庞悳|/zh-hans/translations/sanguozhi/wei-shu-18h]]授命叱敌，有周苛之节。"
+      },
+      "vern": {
+        "zht": "[[龐德|/zh-hant/translations/sanguozhi/wei-shu-18h]]獻出生命、叱責敵人，有周苛那樣的節操。",
+        "zhs": "[[庞德|/zh-hans/translations/sanguozhi/wei-shu-18h]]献出生命、叱责敌人，有周苛那样的节操。"
+      },
+      "en": "[[Pang De|/translations/sanguozhi/wei-shu-18h]] gave his life and defiantly rebuked the enemy, displaying the integrity of Zhou Ke."
+    },
+    {
+      "id": "ws18-appr-p5",
+      "orig": {
+        "zht": "[[龐淯|/zh-hant/translations/sanguozhi/wei-shu-18i]]不憚伏劒，而誠感鄰國。",
+        "zhs": "[[庞淯|/zh-hans/translations/sanguozhi/wei-shu-18i]]不惮伏劒，而诚感邻国。"
+      },
+      "vern": {
+        "zht": "[[龐淯|/zh-hant/translations/sanguozhi/wei-shu-18i]]不怕伏劍自殺，他的誠心感動了鄰郡。",
+        "zhs": "[[庞淯|/zh-hans/translations/sanguozhi/wei-shu-18i]]不怕伏剑自杀，他的诚心感动了邻郡。"
+      },
+      "en": "[[Pang Yu|/translations/sanguozhi/wei-shu-18i]] did not shrink from the threat of the sword, and by his sincerity moved the neighbouring commanderies."
+    },
+    {
+      "id": "ws18-appr-p6",
+      "orig": {
+        "zht": "[[閻溫|/zh-hant/translations/sanguozhi/wei-shu-18j]]向城大呼，齊解、路之烈焉。",
+        "zhs": "[[阎温|/zh-hans/translations/sanguozhi/wei-shu-18j]]向城大呼，齐解、路之烈焉。"
+      },
+      "vern": {
+        "zht": "[[閻溫|/zh-hant/translations/sanguozhi/wei-shu-18j]]向城池大聲呼喊，具有齊解、路中大夫那樣的剛烈啊！",
+        "zhs": "[[阎温|/zh-hans/translations/sanguozhi/wei-shu-18j]]向城池大声呼喊，具有齐解、路中大夫那样的刚烈啊！"
+      },
+      "en": "[[Yan Wen|/translations/sanguozhi/wei-shu-18j]] faced the city and cried out at the top of his voice, matching the heroic resolve of Xie Yang and Counsellor Lu of Qi."
+    }
+  ]
+}

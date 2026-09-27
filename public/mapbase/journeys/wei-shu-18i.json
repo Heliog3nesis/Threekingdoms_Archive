@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18i",
+    "order": 18,
+    "label": {
+      "zht": "龐淯傳 · 附张猛、赵娥",
+      "zhs": "庞淯传 · 附张猛、赵娥",
+      "en": "Biography of Pang Yu · with Zhang Meng and Zhao E"
+    },
+    "title": {
+      "zht": "魏書十八 · 龐淯傳 · 附张猛、赵娥",
+      "zhs": "魏书十八 · 庞淯传 · 附张猛、赵娥",
+      "en": "Book of Wei, Chapter 18 · Biography of Pang Yu · with Zhang Meng and Zhao E"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -66,6 +80,16 @@
   "journeyOverviews": [
     {
       "person": "龐淯（子異）",
+      "name": {
+        "en": "Pang Yu",
+        "zht": "龐淯",
+        "zhs": "庞淯"
+      },
+      "courtesyName": {
+        "en": "Ziyi",
+        "zht": "子異",
+        "zhs": "子异"
+      },
       "born": "unknown",
       "died": "unknown",
       "stops": [
@@ -130,17 +154,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Aide",
-                "zht": "從事",
-                "zhs": "从事"
-              },
-              "1": {
-                "en": "Chief",
-                "zht": "縣長",
-                "zhs": "县长"
-              },
+              "en": "Aide",
+              "zht": "從事",
+              "zhs": "从事",
               "url": null
+            },
+            {
+              "en": "Chief",
+              "zht": "縣長",
+              "zhs": "县长",
+              "url": "/translations/officials/regional#counties-089"
             }
           ]
         },
@@ -278,27 +301,28 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Commandant of Escorting Cavalry",
-                "zht": "駙馬都尉",
-                "zhs": "驸马都尉"
-              },
-              "1": {
-                "en": "Grand Administrator",
-                "zht": "太守",
-                "zhs": "太守"
-              },
-              "2": {
-                "en": "Marquis Within the Pass",
-                "zht": "關内侯",
-                "zhs": "关内侯"
-              },
-              "3": {
-                "en": "Palace Attendant Counsellor",
-                "zht": "中散大夫",
-                "zhs": "中散大夫"
-              },
-              "url": null
+              "en": "Commandant of Escorting Cavalry",
+              "zht": "駙馬都尉",
+              "zhs": "驸马都尉",
+              "url": "/translations/officials/ministers#-nine-ministers-i-177"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關内侯",
+              "zhs": "关内侯",
+              "url": "/translations/officials#glossary-marquis-within-the-pass"
+            },
+            {
+              "en": "Palace Attendant Counsellor",
+              "zht": "中散大夫",
+              "zhs": "中散大夫",
+              "url": "/translations/officials/ministers#-nine-ministers-i-180"
             }
           ]
         }

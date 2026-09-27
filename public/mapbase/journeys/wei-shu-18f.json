@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18f",
+    "order": 18,
+    "label": {
+      "zht": "許褚傳",
+      "zhs": "许褚传",
+      "en": "Biography of Xu Chu"
+    },
+    "title": {
+      "zht": "魏書十八 · 許褚傳",
+      "zhs": "魏书十八 · 许褚传",
+      "en": "Book of Wei, Chapter 18 · Biography of Xu Chu"
+    }
+  },
   "pins": [
     {
       "kind": "town",

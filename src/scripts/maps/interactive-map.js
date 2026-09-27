@@ -1,4 +1,4 @@
-﻿// interactive-map.js
+// interactive-map.js
 // Fully self-contained MapTiler SDK interactive map for the Three Kingdoms Archive.
 // Fetches its own data; exposes initInteractiveMap() and flyToLocation().
 
@@ -59,18 +59,17 @@ const KINGDOM_LABEL = {
 
 const UI_TEXT = {
   en: {
-    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery', tributary: 'Tributary State', island: 'Island', counties: 'Counties', commanderies: 'Commanderies', type: 'Type', region: 'Region', biography: 'Biography', previousPerson: 'Previous person', nextPerson: 'Next person', exitJourney: 'Exit journey', hometown: 'Hometown', dateUnknown: 'Unknown', uncertainYearNote: 'Year is uncertain or approximate', connectionsWeb: 'Connections', titlesLabel: 'Titles',
+    unnamedLocation: 'Unnamed location', settlement: 'Settlement', modern: 'Modern', administrativeNote: 'Administrative Note', close: 'Close', showAllTowns: 'Show all towns', failedToLoadMap: 'Failed to load map', waterBody: 'River', province: 'Province', commandery: 'Commandery', tributary: 'Tributary State', westernRegionsTributary: 'Western Regions Tributary state', westernRegionsOffice: 'Office of the Chief Clerk of the Western Regions', island: 'Island', counties: 'Counties', commanderies: 'Commanderies', type: 'Type', region: 'Region', biography: 'Biography', previousPerson: 'Previous person', nextPerson: 'Next person', exitJourney: 'Exit journey', returnToOverview: 'Return to journey overview', hometown: 'Hometown', dateUnknown: 'Unknown', uncertainYearNote: 'Year is uncertain or approximate', connectionsWeb: 'Connections', titlesLabel: 'Titles', fromChapter: 'from', journeysTitle: 'Journeys', searchAName: 'Search a name…', sortAlpha: 'A–Z', sortState: 'By state', sortBiography: 'Biography order', noResults: 'No matches',
     kingdomLabels: { wei: 'Wei', shu: 'Shu', wu: 'Wu', unknown: '' },
     typeLabels: { 'Provincial Seat': 'Provincial Seat', 'Commandery Seat': 'Commandery Seat', 'County Seat': 'County Seat', 'Military Pass': 'Military Pass', Landmark: 'Landmark', Others: 'Others' }
   },
   'zh-hant': {
-    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡', tributary: '藩屬國', island: '島嶼', counties: '轄縣數', commanderies: '轄郡數', type: '類型', region: '政區', biography: '傳記', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生軌跡', hometown: '籍貫', dateUnknown: '不詳', uncertainYearNote: '年份不確定或為推算', connectionsWeb: '人物關係', titlesLabel: '官爵',
+    unnamedLocation: '未命名地點', settlement: '地點', modern: '現代位置', administrativeNote: '政區考釋', close: '關閉', showAllTowns: '顯示全部地點', failedToLoadMap: '地圖加載失敗', waterBody: '河流', province: '州', commandery: '郡', tributary: '藩屬國', westernRegionsTributary: '西域藩屬國', westernRegionsOffice: '西域長史府', island: '島嶼', counties: '轄縣數', commanderies: '轄郡數', type: '類型', region: '政區', biography: '傳記', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生軌跡', returnToOverview: '返回足跡總覽', hometown: '籍貫', dateUnknown: '不詳', uncertainYearNote: '年份不確定或為推算', connectionsWeb: '人物關係', titlesLabel: '官爵', fromChapter: '出自', journeysTitle: '足跡', searchAName: '搜尋姓名…', sortAlpha: 'A–Z', sortState: '按國家', sortBiography: '按傳記順序', noResults: '無符合結果',
     kingdomLabels: { wei: '魏', shu: '蜀', wu: '吳', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '縣治', 'Military Pass': '關隘', Landmark: '地標', Others: '其他' }
   },
   'zh-hans': {
-    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡', tributary: '藩属国', island: '岛屿', counties: '辖县数', commanderies: '辖郡数', type: '类型', region: '政区', biography: '传记', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生轨迹', hometown: '籍贯', dateUnknown: '不详', uncertainYearNote: '年份不确定或为推算', connectionsWeb: '人物关系', titlesLabel: '官爵',
-    kingdomLabels: { wei: '魏', shu: '蜀', wu: '吴', unknown: '' },
+    unnamedLocation: '未命名地点', settlement: '地点', modern: '现代位置', administrativeNote: '政区考释', close: '关闭', showAllTowns: '显示全部地点', failedToLoadMap: '地图加载失败', waterBody: '河流', province: '州', commandery: '郡', tributary: '藩属国', westernRegionsTributary: '西域藩属国', westernRegionsOffice: '西域长史府', island: '岛屿', counties: '辖县数', commanderies: '辖郡数', type: '类型', region: '政区', biography: '传记', previousPerson: '上一人', nextPerson: '下一人', exitJourney: '退出人生轨迹', returnToOverview: '返回足迹总览', hometown: '籍贯', dateUnknown: '不详', uncertainYearNote: '年份不确定或为推算', connectionsWeb: '人物关系', titlesLabel: '官爵', fromChapter: '出自', journeysTitle: '足迹', searchAName: '搜索姓名…', sortAlpha: 'A–Z', sortState: '按国家', sortBiography: '按传记顺序', noResults: '无符合结果',    kingdomLabels: { wei: '魏', shu: '蜀', wu: '吴', unknown: '' },
     typeLabels: { 'Provincial Seat': '州治', 'Commandery Seat': '郡治', 'County Seat': '县治', 'Military Pass': '关隘', Landmark: '地标', Others: '其他' }
   }
 };
@@ -100,7 +99,7 @@ const SETTLEMENT_COLOUR = {
 };
 const DETAIL_SETTLEMENT_ZOOM = 7.5;
 
-const PROVINCE_LAYERS = ['province-fill', 'province-line', 'commandery-line'];
+const PROVINCE_LAYERS = ['province-fill', 'province-line', 'commandery-fill', 'commandery-line'];
 const YELLOW_RIVER_LAYERS = ['yellow-river-old-course-halo', 'yellow-river-old-course'];
 // Western Regions (西域) tributary states — a standalone overlay from
 // Xiyu.json. Always displayed (no toggle); rendered in Wei's colours since
@@ -215,12 +214,13 @@ async function fetchProvincesAndCommanderies() {
     }
   });
 
-  // All_Provinces.json contains both provinces (level: 'province') and
-  // commandery sub-boundaries (level: 'commandery'). The province fill/line
-  // layer only ever draws the 18 true provinces; commanderies render as a
-  // separate thin line layer, shown together under the same toggle.
+  // Provinces use the main fill/line layers. Commanderies and tributary
+  // states in All_Provinces.json (including Huimo) share the clickable
+  // sub-boundary layer, retaining their original level for detail labels.
+  // Western Regions states are loaded separately from Xiyu.json.
   const provinceFeatures = raw.features.filter(f => (f.properties?.level ?? 'province') === 'province');
-  const commanderyFeatures = raw.features.filter(f => f.properties?.level === 'commandery');
+  const commanderyFeatures = raw.features.filter(f =>
+    f.properties?.level === 'commandery' || f.properties?.level === 'tributary');
 
   return {
     provinces: {
@@ -388,7 +388,10 @@ function computeFeatureLabelPoint(geometry) {
 async function fetchXiyu() {
   try {
     const raw = await fetch(url('/mapbase/Xiyu.json')).then(r => r.json());
-    xiyuRawFeatures = raw.features ?? [];
+    xiyuRawFeatures = (raw.features ?? []).map(feature => ({
+      ...feature,
+      properties: { ...feature.properties, westernRegionsTributary: true }
+    }));
     const shouldConvert = provinceDataUsesWebMercator(raw);
 
     const features = xiyuRawFeatures.map(f => ({
@@ -454,11 +457,13 @@ function townLabelField() {
 }
 
 function buildTownsGeoJSON() {
+  const minZoomOverrides = computeMinZoomOverrides();
   return {
     type: 'FeatureCollection',
     features: allTowns
-      .filter(t => Number.isFinite(Number(t.Longitude)) && Number.isFinite(Number(t.Latitude)))
-      .map(t => ({
+      .map((t, i) => ({ t, i }))
+      .filter(({ t }) => Number.isFinite(Number(t.Longitude)) && Number.isFinite(Number(t.Latitude)))
+      .map(({ t, i }) => ({
         type: 'Feature',
         geometry: {
           type: 'Point',
@@ -470,6 +475,7 @@ function buildTownsGeoJSON() {
           Town_CHS: t.Town_CHS,
           Type: t.Type,
           settlementType: normaliseTownType(t.Type),
+          min_zoom_override: minZoomOverrides[i],
           Prov_EN: t.Prov_EN,
           Prov_CH: t.Prov_CH,
           Prov_CHS: t.Prov_CHS,
@@ -483,6 +489,7 @@ function buildTownsGeoJSON() {
           Modern_Province_CH: t.Modern_Province_CH,
           Modern_Province_CHS: t.Modern_Province_CHS,
           Annotation: t.Annotation,
+          Annotation_CHS: t.Annotation_CHS,
           Longitude: t.Longitude,
           Latitude: t.Latitude,
           kingdom: PROVINCE_KINGDOM[t.Prov_EN] ?? 'unknown',
@@ -651,10 +658,24 @@ function formatAnnotation(annotation) {
     };
   }
 
-  const chineseMatch = raw.match(/[\p{Script=Han}（）()]+/gu);
+  // A slash bridging two Han-script segments (e.g. "車師國 / 車師前部國都",
+  // two alternate/successive state names) is deliberately kept as part of
+  // the Chinese match here, not stripped as English - without the
+  // (?:\s*\/\s*...)* part below, the regex splits into two separate
+  // matches at the slash, and joining them with '' silently drops both
+  // the slash AND the surrounding spaces, producing "車師國車師前部國都"
+  // instead of "車師國 / 車師前部國都". \s* on both sides of the slash
+  // matters specifically because the real data uses " / " (spaced), not
+  // a bare adjacent "/" - an earlier version of this fix only handled
+  // the unspaced case and missed this one. Requiring Han script on both
+  // sides of any included slash (rather than just adding '/' to the
+  // character class outright) keeps a purely-English slash, e.g.
+  // "Old/New", from being misclassified as Chinese just for containing
+  // a bare '/'.
+  const chineseMatch = raw.match(/[\p{Script=Han}（）()]+(?:\s*\/\s*[\p{Script=Han}（）()]+)*/gu);
   const chinese = chineseMatch?.join('') ?? '';
   const english = raw
-    .replace(/[\p{Script=Han}（）()]+/gu, ' ')
+    .replace(/[\p{Script=Han}（）()]+(?:\s*\/\s*[\p{Script=Han}（）()]+)*/gu, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 
@@ -667,7 +688,15 @@ function formatAnnotation(annotation) {
   // within it, so "Seat of X State"/"X國治所" would misrepresent them).
   // Guards against double-wrapping in case the source text already has
   // the phrasing baked in from the previous convention.
-  const isTributaryStateName = /state$/i.test(english) || /[國国]$/.test(chinese);
+  // 城 (walled city) is the same category as 國/国 here - it names the
+  // place itself rather than describing a governance seat within it, so
+  // it shouldn't get wrapped as "Seat of X City" either. 國都/国都
+  // (national capital) is checked as its own 2-character suffix rather
+  // than adding 都 to the single-character set above, since 都 alone is
+  // far too broad a character to treat as a state-name marker on its own.
+  const isTributaryStateName = /state$/i.test(english) ||
+    /[國国城]$/.test(chinese) ||
+    /(?:國都|国都)$/.test(chinese);
   if (raw.includes('新城') || isTributaryStateName) {
     return {
       english: english || '',
@@ -761,7 +790,7 @@ function buildTownDetailHtml(town, { mobile = false, showClose = mobile } = {}) 
   const kingdomLabel = KINGDOM_LABEL[kingdom] || '';
   const region = formatHistoricalRegion(town);
   const modern = formatModernPlace(town);
-  const annotation = formatAnnotation(town.Annotation);
+  const annotation = formatAnnotation(currentLang === 'zh-hans' ? (town.Annotation_CHS || town.Annotation) : town.Annotation);
   const annotationText = annotation
     ? (isChineseMap() ? annotation.chinese : annotation.english)
     : '';
@@ -832,6 +861,113 @@ function hideMobileTownDetail() {
 // 'towns' source, so dimming is done by swapping in a data-driven
 // opacity expression per layer rather than iterating individual features.
 
+// SPARSE-REGION ZOOM THRESHOLDS ────────────────────────────────
+// County/military/landmark/other-tier settlements all share one flat
+// DETAIL_SETTLEMENT_ZOOM regardless of how isolated they are - fine in
+// dense regions (central plains, many towns close together, where a
+// low threshold would just produce label clutter), but means a genuinely
+// sparse region (Xiyu's Jushihou area, a handful of towns spread across
+// a huge area with zero collision risk) needs exactly the same amount of
+// zooming-in as a dense one to show anything at all, despite there being
+// nothing to protect against there.
+//
+// MapLibre's own layer-level `minzoom` can't vary per feature, so this
+// bakes a per-town `min_zoom_override` property (computed once, client-
+// side, from nearest-neighbor distance among the same settlement tier)
+// into each feature, and drives visibility via an opacity expression
+// using a top-level zoom step with feature tests inside each band.
+// MapLibre does not allow zoom inside a comparison or nested case.
+const SPARSE_ZOOM_LAYER_IDS = new Set([
+  'towns-county', 'towns-county-label',
+  'towns-military', 'towns-military-label',
+  'towns-landmark', 'towns-landmark-label',
+  'towns-others', 'towns-others-label',
+]);
+
+// Below this, the per-town override never kicks in early - keeps even
+// the most isolated single town from appearing so early it looks like
+// a rendering glitch alongside continent-scale labeling.
+const SPARSE_ZOOM_FLOOR = 4.5;
+
+function haversineKm(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+// Nearest-neighbor distance -> min_zoom_override, as a step curve rather
+// than a smooth interpolation - a handful of hand-picked bands are easier
+// to reason about and tune by eye than a continuous formula, and the
+// visual difference between "zoom 5.6 vs 5.8" isn't meaningful anyway.
+function minZoomForDistance(km) {
+  if (km > 150) return SPARSE_ZOOM_FLOOR;
+  if (km > 100) return 5.5;
+  if (km > 50) return 6.5;
+  if (km > 25) return 7;
+  return DETAIL_SETTLEMENT_ZOOM; // dense - unchanged from today's behavior
+}
+
+let minZoomOverrideCache = null;
+
+// Computed once per session from allTowns (not from the already-built
+// GeoJSON, since this needs to run before buildTownsGeoJSON can embed
+// the result into each feature's properties) and cached, since allTowns
+// doesn't change during a session and recomputing ~1445x1445 distance
+// pairs on every rebuild would be wasteful.
+// Maps normaliseTownType's return value to its corresponding layer-id
+// prefix - NOT a naive `towns-${type}` concatenation, since 'other' ->
+// 'towns-others' is an irregular plural that string concatenation would
+// silently produce 'towns-other' for (matching nothing in
+// SPARSE_ZOOM_LAYER_IDS, and quietly leaving every "other"-type town
+// stuck at the dense-default threshold forever).
+const SETTLEMENT_TYPE_TO_LAYER_PREFIX = {
+  county: 'towns-county',
+  military: 'towns-military',
+  landmark: 'towns-landmark',
+  other: 'towns-others',
+};
+
+function computeMinZoomOverrides() {
+  if (minZoomOverrideCache) return minZoomOverrideCache;
+
+  const eligible = allTowns
+    .map((t, i) => ({ i, lat: Number(t.Latitude), lng: Number(t.Longitude), type: normaliseTownType(t.Type) }))
+    .filter(t => Number.isFinite(t.lat) && Number.isFinite(t.lng) &&
+      SPARSE_ZOOM_LAYER_IDS.has(SETTLEMENT_TYPE_TO_LAYER_PREFIX[t.type]));
+
+  const overrides = new Array(allTowns.length).fill(DETAIL_SETTLEMENT_ZOOM);
+
+  eligible.forEach(t => {
+    let nearest = Infinity;
+    eligible.forEach(other => {
+      if (other.i === t.i) return;
+      const d = haversineKm(t.lat, t.lng, other.lat, other.lng);
+      if (d < nearest) nearest = d;
+    });
+    overrides[t.i] = minZoomForDistance(nearest);
+  });
+
+  minZoomOverrideCache = overrides;
+  return overrides;
+}
+
+// Shared by both the initial layer paint (below) and the two dimming
+// functions (dimTownsOutsideRegion / clearTownDimming) that would
+// otherwise clobber this with a flat value whenever either runs.
+function zoomOverrideExpr(normalValue) {
+  // Keep these stops in sync with minZoomForDistance. The zoom expression
+  // must remain at the top level, including while a region is highlighted.
+  const stops = [...new Set([SPARSE_ZOOM_FLOOR, 5.5, 6.5, 7, DETAIL_SETTLEMENT_ZOOM])]
+    .sort((a, b) => a - b);
+  const threshold = ['to-number', ['get', 'min_zoom_override'], DETAIL_SETTLEMENT_ZOOM];
+  return ['step', ['zoom'], 0, ...stops.flatMap(stop => [
+    stop, ['case', ['<=', threshold, stop], normalValue, 0]
+  ])];
+}
+
 const TOWN_DIM_OPACITY = 0.5;
 const TOWN_DIM_LAYERS = [
   { id: 'towns-provincial', prop: 'text-opacity', normal: 1 },
@@ -839,6 +975,7 @@ const TOWN_DIM_LAYERS = [
   { id: 'towns-commandery', prop: 'circle-opacity', normal: 0.95 },
   { id: 'towns-commandery-label', prop: 'text-opacity', normal: 1 },
   { id: 'towns-county', prop: 'circle-opacity', normal: 1 },
+  { id: 'towns-county', prop: 'circle-stroke-opacity', normal: 0.95 },
   { id: 'towns-county-label', prop: 'text-opacity', normal: 1 },
   { id: 'towns-military', prop: 'text-opacity', normal: 1 },
   { id: 'towns-military-label', prop: 'text-opacity', normal: 1 },
@@ -862,19 +999,17 @@ function dimTownsOutsideRegion(propName, value, secondaryPropName, secondaryValu
     : ['==', ['get', propName], value];
   TOWN_DIM_LAYERS.forEach(({ id, prop, normal }) => {
     if (!map.getLayer(id)) return;
-    map.setPaintProperty(id, prop, ['case', matchExpr, normal, TOWN_DIM_OPACITY]);
+    const opacity = ['case', matchExpr, normal, TOWN_DIM_OPACITY];
+    map.setPaintProperty(id, prop, SPARSE_ZOOM_LAYER_IDS.has(id) ? zoomOverrideExpr(opacity) : opacity);
   });
-  if (map.getLayer('towns-county')) {
-    map.setPaintProperty('towns-county', 'circle-stroke-opacity', ['case', matchExpr, 0.95, TOWN_DIM_OPACITY]);
-  }
 }
 
 function clearTownDimming() {
   if (!map) return;
   TOWN_DIM_LAYERS.forEach(({ id, prop, normal }) => {
-    if (map.getLayer(id)) map.setPaintProperty(id, prop, normal);
+    if (!map.getLayer(id)) return;
+    map.setPaintProperty(id, prop, SPARSE_ZOOM_LAYER_IDS.has(id) ? zoomOverrideExpr(normal) : normal);
   });
-  if (map.getLayer('towns-county')) map.setPaintProperty('towns-county', 'circle-stroke-opacity', 0.95);
 }
 
 let townHighlightMarker = null;
@@ -955,6 +1090,7 @@ async function highlightTownContext(town) {
 
 function showMobileTownDetail(town) {
   hideMobileTownDetail();
+  hideMobileRegionDetail();
 
   const content = document.querySelector('.imap-content');
   if (!content) return;
@@ -966,6 +1102,35 @@ function showMobileTownDetail(town) {
   content.appendChild(sheet);
 
   sheet.querySelector('.imap-town-close')?.addEventListener('click', hideMobileTownDetail);
+}
+
+// Same bottom-sheet pattern as the town detail above, for commandery/
+// province/tributary-state clicks - showSearchResultPanel previously
+// always populated the desktop-only #imap-right-dock (force-hidden on
+// mobile via CSS), with no mobile equivalent ever built, unlike towns
+// which already had this branch. html here already includes its own
+// close button (from showSearchResultPanel), so this just needs to wire
+// it up the same way the town sheet's own close button is wired.
+function hideMobileRegionDetail() {
+  document.getElementById('imap-region-sheet')?.remove();
+}
+
+function showMobileRegionDetail(html) {
+  hideMobileRegionDetail();
+  hideMobileTownDetail();
+
+  const content = document.querySelector('.imap-content');
+  if (!content) return;
+
+  const sheet = document.createElement('div');
+  sheet.id = 'imap-region-sheet';
+  sheet.className = 'imap-region-sheet';
+  sheet.innerHTML = html;
+  content.appendChild(sheet);
+
+  sheet.querySelector('.imap-searchresult-close')?.addEventListener('click', () => {
+    clearRegionHighlight();
+  });
 }
 
 export function openTownDetail(town, fallbackLngLat, { keepJourney = false } = {}) {
@@ -1236,6 +1401,7 @@ function extractPolygonOnly(geometry) {
 // dock itself depending on whether either panel actually has content.
 
 function clearSearchResultPanel() {
+  hideMobileRegionDetail();
   const panel = document.getElementById('imap-region-panel');
   if (!panel || panel.innerHTML.trim() === '') return;
   panel.innerHTML = '';
@@ -1303,13 +1469,21 @@ function clearRegionHighlight() {
 }
 
 function showSearchResultPanel(html, highlightId) {
-  const panel = document.getElementById('imap-region-panel');
-  if (!panel) return;
-
-  panel.innerHTML = `
+  const fullHtml = `
     <button class="imap-searchresult-close" type="button" aria-label="${escapeHtml(uiText.close)}">✕</button>
     ${html}
   `;
+
+  if (window.matchMedia('(max-width: 950px)').matches) {
+    showMobileRegionDetail(fullHtml);
+    return;
+  }
+
+  hideMobileRegionDetail();
+  const panel = document.getElementById('imap-region-panel');
+  if (!panel) return;
+
+  panel.innerHTML = fullHtml;
   syncRightDockVisibility();
 
   panel.querySelector('.imap-searchresult-close')?.addEventListener('click', () => {
@@ -1529,6 +1703,10 @@ function buildAdminBoundaryDetailHtml(props) {
   const subtitle = formatAdminBoundarySubtitle(props);
   const isCommandery = props?.level === 'commandery';
   const isTributary = props?.level === 'tributary';
+  const isWesternRegionsTributary = isTributary && (
+    props.westernRegionsTributary === true ||
+    props.Prov_EN === 'Xiyu' || props.Prov_CH === '西域' || props.Prov_CHS === '西域'
+  );
   // Not formally administered territory with its own sub-counties, same
   // as a tributary - explicit check rather than falling through to
   // isProvince by default, which is what silently misclassified this as
@@ -1539,6 +1717,7 @@ function buildAdminBoundaryDetailHtml(props) {
 
   let typeLabel;
   if (isCommandery) typeLabel = uiText.commandery;
+  else if (isWesternRegionsTributary) typeLabel = uiText.westernRegionsTributary;
   else if (isTributary) typeLabel = uiText.tributary;
   else if (isIsland) typeLabel = uiText.island;
   else typeLabel = uiText.province;
@@ -1546,11 +1725,12 @@ function buildAdminBoundaryDetailHtml(props) {
   const kingdom = getAdminKingdom(props);
   const kingdomLabel = KINGDOM_LABEL[kingdom] || '';
 
-  // Tributaries and islands aren't administered territory, so they keep
-  // the original "Province · Name" breadcrumb rather than the
-  // province/count fields that make sense for real administrative units.
+  // Western Regions states use their supervising office in the breadcrumb.
+  const regionParent = isWesternRegionsTributary
+    ? uiText.westernRegionsOffice
+    : formatAdminParentName(props);
   const tributaryFamily = (isTributary || isIsland)
-    ? `${escapeHtml(formatAdminParentName(props))} · ${escapeHtml(name)}`
+    ? `${escapeHtml(regionParent)} · ${escapeHtml(name)}`
     : '';
 
   const provinceName = isCommandery ? formatAdminParentName(props) : '';
@@ -1681,7 +1861,7 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
       data: commanderiesGeoJSON
     });
 
-    // Sub-boundaries nested inside each province — same kingdom hue as the
+    // Commandery and tributary boundaries — same kingdom hue as the
     // province line, but dashed to distinguish the hierarchy. Shown/hidden
     // together with province-fill/province-line via the same "Historical
     // Provinces" toggle (see PROVINCE_LAYERS).
@@ -1757,7 +1937,7 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
           lineWidth: ['interpolate', ['linear'], ['zoom'], 3, 1.5, 8, 2.5, 12, 3.5],
           lineOpacity: 0.8
         });
-        showSearchResultPanel(buildAdminBoundaryDetailHtml(raw.properties), `commandery-${id ?? ''}`);
+        showSearchResultPanel(buildAdminBoundaryDetailHtml(raw.properties), `${raw.properties?.level || 'commandery'}-${id ?? ''}`);
       });
 
       map.on('mouseenter', 'commandery-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
@@ -1872,18 +2052,20 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
 
       map.on('click', 'xiyu-fill', e => {
         const id = e.features[0]?.properties?.id;
-        // Re-highlight from the untouched 3857 original — renderSearchHighlight
-        // expects web-mercator input and would double-convert the already
-        // projected geometry carried on the rendered feature.
+        // Convert the original boundary once, then use the same black
+        // outline treatment as commandery and Huimo selections.
         const raw = xiyuRawFeatures.find(f => f.properties?.id === id);
         if (!raw) return;
-        renderSearchHighlight(
-          raw.geometry,
-          raw.properties,
-          buildAdminBoundaryDetailHtml(raw.properties),
-          `xiyu-${id ?? ''}`,
-          { showFill: false, showLine: false }
-        );
+        clearWaterBodyHighlight();
+        const convertedGeometry = convertGeometryToLngLat(raw.geometry, WATER_BODIES_ARE_WEB_MERCATOR);
+        renderJourneyBoundaryLayer({
+          type: 'FeatureCollection',
+          features: [{ type: 'Feature', properties: raw.properties || {}, geometry: convertedGeometry }]
+        }, {
+          lineWidth: ['interpolate', ['linear'], ['zoom'], 3, 1.5, 8, 2.5, 12, 3.5],
+          lineOpacity: 0.8
+        });
+        showSearchResultPanel(buildAdminBoundaryDetailHtml(raw.properties), `xiyu-${id ?? ''}`);
       });
 
       map.on('mouseenter', 'xiyu-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
@@ -1979,15 +2161,15 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     id: 'towns-county',
     type: 'circle',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: townTypeFilter(TOWN_TYPES.county),
     paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 4, 12, 7],
       'circle-color': 'rgba(0,0,0,0)',
       'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 6, 1.8, 12, 2.4],
       'circle-stroke-color': '#1b1b1b',
-      'circle-opacity': 1,
-      'circle-stroke-opacity': 0.95
+      'circle-opacity': zoomOverrideExpr(1),
+      'circle-stroke-opacity': zoomOverrideExpr(0.95)
     }
   });
 
@@ -1995,21 +2177,21 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     id: 'towns-county-label',
     type: 'symbol',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: townTypeFilter(TOWN_TYPES.county),
     layout: {
       ...lbl(0.8),
       'text-size': ['interpolate', ['linear'], ['zoom'], 4, 9, 8, 11],
       'symbol-sort-key': 2
     },
-    paint: lp(1.3)
+    paint: { ...lp(1.3), 'text-opacity': zoomOverrideExpr(1) }
   });
 
   map.addLayer({
     id: 'towns-military',
     type: 'symbol',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: townTypeFilter(TOWN_TYPES.military),
     layout: {
       'text-field': '×',
@@ -2023,7 +2205,8 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     paint: {
       'text-color': SETTLEMENT_COLOUR.military,
       'text-halo-color': '#fff',
-      'text-halo-width': 1
+      'text-halo-width': 1,
+      'text-opacity': zoomOverrideExpr(1)
     }
   });
 
@@ -2031,21 +2214,21 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     id: 'towns-military-label',
     type: 'symbol',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: townTypeFilter(TOWN_TYPES.military),
     layout: {
       ...lbl(0.8),
       'text-size': ['interpolate', ['linear'], ['zoom'], 4, 9, 8, 11],
       'symbol-sort-key': 1
     },
-    paint: lp(1.3)
+    paint: { ...lp(1.3), 'text-opacity': zoomOverrideExpr(1) }
   });
 
   map.addLayer({
     id: 'towns-landmark',
     type: 'symbol',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: townTypeFilter(TOWN_TYPES.landmark),
     layout: {
       'text-field': '★',
@@ -2059,7 +2242,8 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     paint: {
       'text-color': SETTLEMENT_COLOUR.landmark,
       'text-halo-color': '#fff',
-      'text-halo-width': 1
+      'text-halo-width': 1,
+      'text-opacity': zoomOverrideExpr(1)
     }
   });
 
@@ -2067,14 +2251,14 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     id: 'towns-landmark-label',
     type: 'symbol',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: townTypeFilter(TOWN_TYPES.landmark),
     layout: {
       ...lbl(0.8),
       'text-size': ['interpolate', ['linear'], ['zoom'], 4, 9, 8, 11],
       'symbol-sort-key': 1
     },
-    paint: lp(1.3)
+    paint: { ...lp(1.3), 'text-opacity': zoomOverrideExpr(1) }
   });
 
   const otherF = townTypeFilter(TOWN_TYPES.other);
@@ -2083,7 +2267,7 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     id: 'towns-others',
     type: 'symbol',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: otherF,
     layout: {
       'text-field': '◇',
@@ -2097,7 +2281,8 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     paint: {
       'text-color': SETTLEMENT_COLOUR.other,
       'text-halo-color': '#fff',
-      'text-halo-width': 1.25
+      'text-halo-width': 1.25,
+      'text-opacity': zoomOverrideExpr(1)
     }
   });
 
@@ -2105,14 +2290,14 @@ function addLayers(provincesGeoJSON, yellowRiverOldCourseGeoJSON = yellowRiverOl
     id: 'towns-others-label',
     type: 'symbol',
     source: 'towns',
-    minzoom: DETAIL_SETTLEMENT_ZOOM,
+    minzoom: SPARSE_ZOOM_FLOOR,
     filter: otherF,
     layout: {
       ...lbl(0.8),
       'text-size': ['interpolate', ['linear'], ['zoom'], 4, 9, 8, 11],
       'symbol-sort-key': 1
     },
-    paint: lp(1)
+    paint: { ...lp(1), 'text-opacity': zoomOverrideExpr(1) }
   });
 
   orderSettlementLayersByHierarchy();

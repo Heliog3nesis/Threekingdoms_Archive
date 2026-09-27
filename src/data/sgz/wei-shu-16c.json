@@ -1,0 +1,1354 @@
+{
+  "id": "wei-shu-16c",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 16,
+  "num": "16",
+  "label": {
+    "zht": "杜畿傳",
+    "zhs": "杜畿传",
+    "en": "Biography of Du Ji"
+  },
+  "title": {
+    "zht": "魏書十六 · 杜畿傳",
+    "zhs": "魏书十六 · 杜畿传",
+    "en": "Book of Wei, Chapter 16 · Biography of Du Ji"
+  },
+  "relationships": [
+    {
+      "from": "杜畿（伯侯）",
+      "to": "杜延年（幼公）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p1",
+          "text": {
+            "en": "A note records that Du Ji was a descendant of the Han Imperial Censor Du Yannian, whose family later settled at Duling.",
+            "zht": "有註記載杜畿為漢御史大夫杜延年之後，其家後來世居杜陵。",
+            "zhs": "有注记载杜畿为汉御史大夫杜延年之后，其家后来世居杜陵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜周（長孺）",
+      "to": "杜延年（幼公）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p1",
+          "text": {
+            "en": "Du Yannian's father Du Zhou moved from Nanyang to Maoling.",
+            "zht": "杜延年之父杜周自南陽遷居茂陵。",
+            "zhs": "杜延年之父杜周自南阳迁居茂陵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "荀彧（文若）",
+      "to": "杜畿（伯侯）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "After hearing Du Ji converse through the night with his neighbour Geng Ji, Xun Yu was much impressed, felt he understood him as though they had long been acquainted, and promptly recommended him to the court.",
+            "zht": "荀彧聽聞杜畿與鄰居耿紀徹夜長談，深為讚賞，與之相見如舊識，隨即向朝廷舉薦了他。",
+            "zhs": "荀彧听闻杜畿与邻居耿纪彻夜长谈，深为赞赏，与之相见如旧识，随即向朝廷举荐了他。"
+          }
+        },
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "When Cao Cao asked Xun Yu to recommend a Xiao He or Kou Xun to hold the strategic commandery of Hedong, Xun Yu answered, \"Du Ji is the man,\" commending him as brave enough to face great peril and resourceful enough to adapt to change.",
+            "zht": "曹操請荀彧舉薦能鎮守河東的蕭何、寇恂之才，荀彧答道：「杜畿其人也。」稱他勇於臨危而善於應變。",
+            "zhs": "曹操请荀彧举荐能镇守河东的萧何、寇恂之才，荀彧答道：「杜畿其人也。」称他勇于临危而善于应变。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "耿紀",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "On reaching Xu, Du Ji met the Palace Attendant Geng Ji and conversed with him throughout the night.",
+            "zht": "杜畿抵達許都後拜訪侍中耿紀，與之徹夜長談。",
+            "zhs": "杜畿抵达许都后拜访侍中耿纪，与之彻夜长谈。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "荀彧（文若）",
+      "to": "耿紀",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "Having overheard Du Ji's conversation next door, Xun Yu sent word to his neighbour Geng Ji at dawn, reproaching him for knowing such a talent yet failing to recommend him.",
+            "zht": "荀彧隔壁聽聞杜畿談論，天明遣人責備鄰居耿紀知有奇才而不舉薦。",
+            "zhs": "荀彧隔壁听闻杜畿谈论，天明遣人责备邻居耿纪知有奇才而不举荐。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張時",
+      "to": "杜畿（伯侯）",
+      "type": "colleagues",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "Du Ji's old acquaintance Zhang Shi, Intendant of Jingzhao, made him his Merit Section Administrator, but disliked his free and easy temperament and called him derelict and unfit for the post; Du Ji retorted that he might not be fit to be Merit Section Administrator but was fit to be Grand Administrator of Hedong.",
+            "zht": "舊識張時任京兆尹，任命杜畿為功曹，卻嫌他放逸不理事，說他不宜任功曹；杜畿私下回應說自己不宜為功曹，卻宜為河東太守。",
+            "zhs": "旧识张时任京兆尹，任命杜畿为功曹，却嫌他放逸不理事，说他不宜任功曹；杜畿私下回应说自己不宜为功曹，却宜为河东太守。"
+          }
+        },
+        {
+          "passageId": "ws16c-p4",
+          "text": {
+            "en": "When Du Ji later went to welcome the Colonel of the Capital and met Zhang Shi at Huayin, Zhang Shi sighed, \"Yesterday a Merit Section Administrator, today a commandery's governor!\"",
+            "zht": "杜畿後來迎接司隸校尉，在華陰遇見張時，張時感嘆：「昨日功曹，今為郡將！」",
+            "zhs": "杜畿后来迎接司隶校尉，在华阴遇见张时，张时感叹：「昨日功曹，今为郡将！」"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "Recommended by Xun Yu, Du Ji was appointed Rectifier under the Excellency of Works, then Colonel Protecting the Qiang and Grand Administrator of Xiping.",
+            "zht": "經荀彧舉薦，杜畿被曹操任命為司空司直，後遷護羌校尉，兼任西平太守。",
+            "zhs": "经荀彧举荐，杜畿被曹操任命为司空司直，后迁护羌校尉，兼任西平太守。"
+          },
+          "title": {
+            "en": "Rectifier under the Excellency of Works",
+            "zht": "司空司直",
+            "zhs": "司空司直"
+          }
+        },
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "When Gao Gan rebelled and Hedong was in danger, Cao Cao recalled Du Ji and appointed him Grand Administrator of Hedong.",
+            "zht": "高幹叛亂、河東告急之際，曹操召回杜畿，任命他為河東太守。",
+            "zhs": "高幹叛乱、河东告急之际，曹操召回杜畿，任命他为河东太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Hedong",
+            "zht": "河東太守",
+            "zhs": "河东太守"
+          }
+        },
+        {
+          "passageId": "ws16c-p9",
+          "text": {
+            "en": "Cao Cao praised Du Ji as a man of whom Confucius might have said \"I can find no fault in him\", raised his rank to Fully 2000 Shi, and circulated a proclamation urging all to look up to Du Ji's conduct.",
+            "zht": "曹操稱杜畿為孔子所謂「吾無間然」之人，將他的秩祿提升為中二千石，並頒令諸州郡以杜畿為榜樣。",
+            "zhs": "曹操称杜畿为孔子所谓「吾无间然」之人，将他的秩禄提升为中二千石，并颁令诸州郡以杜畿为榜样。"
+          },
+          "title": {
+            "en": "Fully 2000 Shi",
+            "zht": "中二千石",
+            "zhs": "中二千石"
+          }
+        },
+        {
+          "passageId": "ws16c-p10",
+          "text": {
+            "en": "When the kingdom of Wei was established Du Ji was appointed to the Imperial Secretariat, but Cao Cao asked him to remain and secure Hedong, which he governed for sixteen years with the finest record in the realm.",
+            "zht": "魏國建立後杜畿被任命為尚書，曹操卻請他留鎮河東，前後十六年，政績為天下最。",
+            "zhs": "魏国建立后杜畿被任命为尚书，曹操却请他留镇河东，前后十六年，政绩为天下最。"
+          },
+          "title": {
+            "en": "Imperial Secretariat",
+            "zht": "尚書",
+            "zhs": "尚书"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "衞固",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p4",
+          "text": {
+            "en": "Wei Gu had known Du Ji since youth and often treated him with contempt, cursing him when Du Ji jokingly announced he was now administrator of Hedong.",
+            "zht": "衞固自少與杜畿相熟，常輕視他，杜畿戲稱自己將為河東太守時，衞固撩衣咒罵。",
+            "zhs": "卫固自少与杜畿相熟，常轻视他，杜畿戏称自己将为河东太守时，卫固撩衣咒骂。"
+          }
+        },
+        {
+          "passageId": "ws16c-p7",
+          "text": {
+            "en": "Wei Gu joined Gao Gan and Zhang Sheng in attacking Du Ji but could not defeat him, and was executed once the main army arrived.",
+            "zht": "衞固聯合高幹、張晟進攻杜畿而不能取勝，大軍到達後被誅殺。",
+            "zhs": "卫固联合高干、张晟进攻杜畿而不能取胜，大军到达后被诛杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "衞固",
+      "to": "杜畿（伯侯）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p5",
+          "text": {
+            "en": "Du Ji appointed Wei Gu Commander and Assistant of the commandery, but though Wei Gu nominally served him he paid him little heed, secretly summoned troops, and joined the rebellion.",
+            "zht": "杜畿任命衞固為都督、行郡丞事，衞固名義上服從，實則不放在眼裡，暗中召兵並加入叛亂。",
+            "zhs": "杜畿任命卫固为都督、行郡丞事，卫固名义上服从，实则不放在眼里，暗中召兵并加入叛乱。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "范先",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p5",
+          "text": {
+            "en": "Fan Xian wished to kill Du Ji to establish his authority and beheaded more than thirty officials at the gate in front of him, while Du Ji remained perfectly composed; he later urged that Du Ji be killed as a future menace.",
+            "zht": "范先欲殺杜畿以立威，當著他的面在門前斬殺三十餘名官吏，杜畿神色自若；范先後來仍主張除掉杜畿以絕後患。",
+            "zhs": "范先欲杀杜畿以立威，当着他的面在门前斩杀三十余名官吏，杜畿神色自若；范先后来仍主张除掉杜畿以绝后患。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "范先",
+      "to": "杜畿（伯侯）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p5",
+          "text": {
+            "en": "Du Ji placed all the military officers, officials and troops under Fan Xian's command, but Fan Xian only nominally served him and plotted against him with Wei Gu.",
+            "zht": "杜畿將全郡將吏兵馬交由范先統領，范先名義上服從，實則與衞固合謀對抗他。",
+            "zhs": "杜畿将全郡将吏兵马交由范先统领，范先名义上服从，实则与卫固合谋对抗他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "衞固",
+      "to": "高幹（元才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "Wei Gu and Fan Xian publicly petitioned for Hedong's Grand Administrator to stay, but were secretly plotting with Gao Gan; Wei Gu later joined Gao Gan in attacking Du Ji.",
+            "zht": "衞固、范先表面上請求留任河東太守，暗中卻與高幹勾結；衞固後來與高幹一同進攻杜畿。",
+            "zhs": "卫固、范先表面上请求留任河东太守，暗中却与高幹勾结；卫固后来与高幹一同进攻杜畿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "范先",
+      "to": "高幹（元才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "Wei Gu and Fan Xian publicly petitioned for Hedong's Grand Administrator to stay, but were secretly plotting with Gao Gan.",
+            "zht": "衞固、范先表面上請求留任河東太守，暗中卻與高幹勾結。",
+            "zhs": "卫固、范先表面上请求留任河东太守，暗中却与高幹勾结。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "高幹（元才）",
+      "to": "張晟",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p7",
+          "text": {
+            "en": "Gao Gan and Zhang Sheng together, with Wei Gu, attacked Du Ji at Zhangbi and were defeated when the main army arrived.",
+            "zht": "高幹與張晟聯合衞固攻打杜畿，大軍到達後被擊敗。",
+            "zhs": "高幹与张晟联合卫固攻打杜畿，大军到达后被击败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "衞固",
+      "to": "張晟",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p7",
+          "text": {
+            "en": "Wei Gu and others joined Gao Gan and Zhang Sheng in attacking Du Ji and raiding the counties.",
+            "zht": "衞固等人聯合高幹、張晟進攻杜畿並劫掠諸縣。",
+            "zhs": "卫固等人联合高幹、张晟进攻杜畿并劫掠诸县。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張晟",
+      "to": "劉表（景升）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "Zhang Sheng was raiding the region between Mount Yao and Mianchi and had established contact with Liu Biao to the south.",
+            "zht": "張晟劫掠崤山、澠池一帶，並與南方的劉表建立了聯繫。",
+            "zhs": "张晟劫掠崤山、渑池一带，并与南方的刘表建立了联系。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "樂詳（文載）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p8",
+          "text": {
+            "en": "A note records that the Erudite Yue Xiang owed his advancement to Du Ji, and that Hedong's many scholars were also Du Ji's doing.",
+            "zht": "有註記載博士樂詳的仕進得益於杜畿，河東多有學者亦是杜畿之功。",
+            "zhs": "有注记载博士乐详的仕进得益于杜畿，河东多有学者亦是杜畿之功。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "劉勳",
+      "to": "杜畿（伯侯）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p9",
+          "text": {
+            "en": "Liu Xun, a favourite of Cao Cao whose influence awed the court, asked Du Ji for some large jujubes, but Du Ji put him off; after Liu Xun's execution Cao Cao found the letter and remarked that Du Ji did not curry favour with the stove.",
+            "zht": "曹操寵臣劉勳權勢威震朝廷，曾向杜畿索要大棗，杜畿推託不與；劉勳被誅後曹操發現此信，感嘆杜畿真可謂「不媚灶」之人。",
+            "zhs": "曹操宠臣刘勋权势威震朝廷，曾向杜畿索要大枣，杜畿推托不与；刘勋被诛后曹操发现此信，感叹杜畿真可谓「不媚灶」之人。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "劉勳",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p9",
+          "text": {
+            "en": "Liu Xun, General Who Subdues the Enemies, was a favourite of Cao Cao whose influence awed the court, until his execution.",
+            "zht": "徵虜將軍劉勳為曹操寵臣，威勢震懾朝廷，後被誅殺。",
+            "zhs": "征虏将军刘勋为曹操宠臣，威势震慑朝廷，后被诛杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p11",
+          "text": {
+            "en": "When Cao Pi became king he granted Du Ji the title Marquis Within the Pass and summoned him to the Imperial Secretariat; on ascending the throne he made him Neighbourhood Marquis of Fengle and acting Colonel of the Capital, and during the Wu campaign Deputy Director of the Imperial Secretariat in charge of the capital. When Du Ji drowned testing a tower ship, the emperor wept.",
+            "zht": "曹丕即王位後賜杜畿關內侯並徵入尚書檯；稱帝后進封杜畿為豐樂亭侯，行司隸校尉事；伐吳時任尚書僕射，留守都城。杜畿試乘樓船溺亡，曹丕為之流涕。",
+            "zhs": "曹丕即王位后赐杜畿关内侯并征入尚书台；称帝后进封杜畿为丰乐亭侯，行司隶校尉事；伐吴时任尚书仆射，留守都城。杜畿试乘楼船溺亡，曹丕为之流涕。"
+          },
+          "title": {
+            "en": "Deputy Director of the Imperial Secretariat",
+            "zht": "尚書僕射",
+            "zhs": "尚书仆射"
+          }
+        },
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Cao Pi's edict mourned Du Ji's loyalty, likening his death on the water to sage officials of old; he was posthumously appointed Minister Coachman with the title Marquis Dai.",
+            "zht": "曹丕下詔哀悼杜畿之忠，以古代賢臣歿於水事相比；追贈太僕，諡戴侯。",
+            "zhs": "曹丕下诏哀悼杜畿之忠，以古代贤臣殁于水事相比；追赠太仆，谥戴侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "趙儼（伯然）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p11",
+          "text": {
+            "en": "Zhao Yan succeeded Du Ji in Hedong and sent many widows to be registered where Du Ji had sent few; Du Ji told Cao Pi that those he registered were wives of dead men while Zhao Yan's were wives of living men.",
+            "zht": "趙儼接任河東太守後，登記送走的寡婦遠多於杜畿；杜畿對曹丕說自己送的都是亡夫之妻，趙儼送的卻是活人之妻。",
+            "zhs": "赵俨接任河东太守后，登记送走的寡妇远多于杜畿；杜畿对曹丕说自己送的都是亡夫之妻，赵俨送的却是活人之妻。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "杜恕（務伯）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Du Ji's son Du Shu succeeded him as marquis.",
+            "zht": "杜畿之子杜恕襲爵。",
+            "zhs": "杜畿之子杜恕袭爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "李恢",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Du Ji was on good terms with Li Hui, the Minister Coachman, and lamented after meeting his son Li Feng that Li Hui's house might soon perish; Li Feng was later executed with his father's household.",
+            "zht": "杜畿與太僕李恢交好，見其子李豐後感嘆李恢之家恐將覆亡；後來李豐果然被誅。",
+            "zhs": "杜畿与太仆李恢交好，见其子李丰后感叹李恢之家恐将覆亡；后来李丰果然被诛。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "郭智",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Du Ji was on good terms with Guo Zhi, Grand Administrator of Dong'an, and predicted his son Guo Chong would carry on the family legacy, as he did.",
+            "zht": "杜畿與東安太守郭智交好，預言其子郭沖能繼承家業，後來果然如此。",
+            "zhs": "杜畿与东安太守郭智交好，预言其子郭冲能继承家业，后来果然如此。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "李恢",
+      "to": "李豐（安國）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Li Hui's son Li Feng became renowned for his talent but was executed together with his father's household; another account gives Li Feng's father the name Yi, perhaps an alternative name for Hui.",
+            "zht": "李恢之子李豐以才智聞名天下，後與父兄同被誅殺；另有說法稱李豐之父名義，或為恢之別名。",
+            "zhs": "李恢之子李丰以才智闻名天下，后与父兄同被诛杀；另有说法称李丰之父名义，或为恢之别名。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郭智",
+      "to": "郭沖",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Guo Zhi's son Guo Chong became Grand Administrator of Dai and carried on his father's career.",
+            "zht": "郭智之子郭沖官至代郡太守，繼承父業。",
+            "zhs": "郭智之子郭冲官至代郡太守，继承父业。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "杜畿（伯侯）",
+      "name": {
+        "en": "Du Ji",
+        "zht": "杜畿",
+        "zhs": "杜畿"
+      },
+      "courtesyName": {
+        "en": "Bohou",
+        "zht": "伯侯",
+        "zhs": "伯侯"
+      },
+      "born": {
+        "era": {
+          "en": "6th year of Yanxi",
+          "zht": "延熹六年",
+          "zhs": "延熹六年"
+        },
+        "year": 163
+      },
+      "died": {
+        "era": {
+          "en": "5th year of Huangchu",
+          "zht": "黄初五年",
+          "zhs": "黄初五年"
+        },
+        "year": 224
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Du, Jingzhao",
+              "zht": "京兆杜",
+              "zhs": "京兆杜"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "5th year of Guanghe",
+            "zht": "光和五年",
+            "zhs": "光和五年"
+          },
+          "year": 182,
+          "age": null,
+          "location": [
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            },
+            {
+              "en": "Zheng",
+              "zht": "鄭縣",
+              "zhs": "郑县"
+            }
+          ],
+          "position": [
+            {
+              "en": "Merit Section Administrator",
+              "zht": "郡功曹",
+              "zhs": "郡功曹"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            }
+          ],
+          "position": [
+            {
+              "en": "Merit Section Administrator",
+              "zht": "郡功曹",
+              "zhs": "郡功曹"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Xuchang",
+              "zht": "許",
+              "zhs": "许"
+            },
+            {
+              "en": "Xiping",
+              "zht": "西平",
+              "zhs": "西平"
+            }
+          ],
+          "position": [
+            {
+              "en": "Rectifier",
+              "zht": "司直",
+              "zhs": "司直"
+            },
+            {
+              "en": "Colonel Protecting the Qiang",
+              "zht": "護羌校尉",
+              "zhs": "护羌校尉"
+            },
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "age": null,
+          "location": [
+            {
+              "en": "Hedong",
+              "zht": "河東",
+              "zhs": "河东"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Imperial Secretariat",
+              "zht": "尚書",
+              "zhs": "尚书"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黃初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Imperial Secretariat",
+              "zht": "尚書",
+              "zhs": "尚书"
+            },
+            {
+              "en": "Colonel of the Capital",
+              "zht": "司隷校尉",
+              "zhs": "司隷校尉"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "3rd year of Huangchu",
+            "zht": "黄初三年",
+            "zhs": "黄初三年"
+          },
+          "year": 222,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Deputy Director of the Imperial Secretariat",
+              "zht": "尚書僕射",
+              "zhs": "尚书仆射"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "5th year of Huangchu",
+            "zht": "黃初五年",
+            "zhs": "黄初五年"
+          },
+          "year": 224,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Posthumously Minister Coachman",
+              "zht": "追贈太僕",
+              "zhs": "追贈太仆"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws16c-p1",
+      "orig": {
+        "zht": "杜畿字伯侯，[[京兆杜陵|/zh-hant/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]人也。少孤，繼母苦之，以孝聞。年二十，為[[郡功曹|/zh-hant/translations/officials/regional#commanderies-049]]，守[[鄭縣|/zh-hant/maps/map-overall?lat=34.52728749&lng=109.77084398&name=Zheng]][[令|/zh-hant/translations/officials/regional#counties-088]]。縣囚繫數百人，畿親臨獄，裁其輕重，盡決遣之，雖未悉當，郡中奇其年少而有大意也。",
+        "zhs": "杜畿字伯侯，[[京兆杜陵|/zh-hans/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]人也。少孤，继母苦之，以孝闻。年二十，为[[郡功曹|/zh-hans/translations/officials/regional#commanderies-049]]，守[[郑县|/zh-hans/maps/map-overall?lat=34.52728749&lng=109.77084398&name=Zheng]][[令|/zh-hans/translations/officials/regional#counties-088]]。县囚系数百人，畿亲临狱，裁其轻重，尽决遣之，虽未悉当，郡中奇其年少而有大意也。"
+      },
+      "vern": {
+        "zht": "杜畿，字伯侯，[[京兆尹杜陵縣|/zh-hant/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]人。幼年時父親死亡，繼母虐待他，他卻以孝順繼母而出了名。二十歲時在郡中擔任功曹，又代理[[鄭縣|/zh-hant/maps/map-overall?lat=34.52728749&lng=109.77084398&name=Zheng]]的縣[[令|/zh-hant/translations/officials/regional#counties-088]]。縣裏關押了幾百囚犯，杜畿親自審問，衡量犯人罪行的輕重，全部判決定案然後遣送執行；雖然不是都判決得很恰當，但是郡中的人們見他這樣年輕卻對重大問題很有主見感到驚奇。",
+        "zhs": "杜畿，字伯侯，[[京兆尹杜陵县|/zh-hans/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]人。幼年时父亲死亡，继母虐待他，他却以孝顺继母而出了名。二十岁时在郡中担任功曹，又代理[[郑县|/zh-hans/maps/map-overall?lat=34.52728749&lng=109.77084398&name=Zheng]]的县[[令|/zh-hans/translations/officials/regional#counties-088]]。县里关押了几百囚犯，杜畿亲自审问，衡量犯人罪行的轻重，全部判决定案然后遣送执行；虽然不是都判决得很恰当，但是郡中的人们见他这样年轻却对重大问题很有主见感到惊奇。"
+      },
+      "en": "Du Ji, courtesy name Bohou, was from [[Du, Jingzhao|/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]. Orphaned young, he was harshly treated by his stepmother, yet became known for his filial devotion. At twenty, Du Ji served as [[Merit Section Administrator|/translations/officials/regional#commanderies-049]] in the commandery and acting [[County Magistrate|/translations/officials/regional#counties-088]] of [[Zheng|/maps/map-overall?lat=34.52728749&lng=109.77084398&name=Zheng]]. Several hundred prisoners were then held in the county jail. Du Ji personally examined their cases, weighed the gravity of each offence, adjudicated each case, and released those whose circumstances warranted it. Though not every decision was entirely just, the commandery marvelled that, at so young an age, he already possessed such lofty ambitions.\n",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "傅子",
+            "zhs": "傅子",
+            "en": "Fu Zi / The Book of Master Fu"
+          },
+          "zht": "《傅子》曰：畿，漢御史大夫杜延年之後。延年父周，自[[南陽|/zh-hant/maps/map-overall?admin=85]]徙茂陵，延年徙[[杜陵|/zh-hant/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]，子孫世居焉。[^1]",
+          "zhs": "《傅子》曰：畿，汉御史大夫杜延年之后。延年父周，自[[南阳|/zh-hans/maps/map-overall?admin=85]]徙茂陵，延年徙[[杜陵|/zh-hans/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]，子孙世居焉。[^1]",
+          "vern": {
+            "zht": "",
+            "zhs": "《傅子》记载：杜畿，是汉朝御史大夫杜延年的后代。杜延年的父亲杜周，从南阳迁徙到茂陵，杜延年迁到杜陵，子孙世代居住在那里。[^1]"
+          },
+          "en": "The Fu Zi / Book of Master Fu states: Du Ji was a descendant of Du Yannian, an Imperial Censor under the Han. Du Yannian's father, Du Zhou, moved from [[Nanyang|/maps/map-overall?admin=85]] to Maoling; Du Yannian later moved to [[Duling|/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]], where his descendants lived for generations.[^1]",
+          "footnotes": [
+            {
+              "n": 1,
+              "zht": "茂陵為漢武帝陵，杜陵為漢宣帝陵。杜陵即[[杜縣|/zh-hant/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]。",
+              "zhs": "茂陵为汉武帝陵，杜陵为汉宣帝陵。杜陵即[[杜县|/zh-hans/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]。",
+              "en": "Maoling is the mausoleum of Emperor Wu of Han, the Martial Emperor, and Duling is the mausoleum of Emperor Xuan of Han, the Renowned Emperor. Duling is another name for [[Du County|/maps/map-overall?lat=34.21174681&lng=109.02506097&name=Du]]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p2",
+      "orig": {
+        "zht": "舉[[孝廉|/zh-hant/translations/officials#glossary-filial-and-incorrupt]]，除[[漢中|/zh-hant/maps/map-overall?admin=110]][[府丞|/zh-hant/translations/officials/regional#commanderies-040]]。會天下亂，遂棄官客[[荊州|/zh-hant/maps/map-overall?admin=2]]，建安中乃還。荀彧進之太祖，太祖以畿為[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]][[司直|/zh-hant/translations/officials/ministers#superior-excellency-006]][^1]，遷[[護羌校尉|/zh-hant/translations/officials/military#colonels--commandants-189]]，[[使持節|/zh-hant/translations/officials#glossary-envoy-bearing-the-imperial-tally]]，領[[西平|/zh-hant/maps/map-overall?admin=140]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+        "zhs": "举[[孝廉|/zh-hans/translations/officials#glossary-filial-and-incorrupt]]，除[[汉中|/zh-hans/maps/map-overall?admin=110]][[府丞|/zh-hans/translations/officials/regional#commanderies-040]]。会天下乱，遂弃官客[[荆州|/zh-hans/maps/map-overall?admin=2]]，建安中乃还。荀彧进之太祖，太祖以畿为[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]][[司直|/zh-hans/translations/officials/ministers#superior-excellency-006]][^1]，迁[[护羌校尉|/zh-hans/translations/officials/military#colonels--commandants-189]]，[[使持节|/zh-hans/translations/officials#glossary-envoy-bearing-the-imperial-tally]]，领[[西平|/zh-hans/maps/map-overall?admin=140]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+      },
+      "vern": {
+        "zht": "後來他被舉薦爲[[孝廉|/zh-hant/translations/officials#glossary-filial-and-incorrupt]]，擔任[[漢中|/zh-hant/maps/map-overall?admin=110]]郡丞。碰上天下大亂，他拋棄官職，客居[[荊州|/zh-hant/maps/map-overall?admin=2]]。建安年間纔回到故鄉。荀彧把他推薦給太祖，太祖委任他爲[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]]府[[司直|/zh-hant/translations/officials/ministers#superior-excellency-006]]。升任[[護羌校尉|/zh-hant/translations/officials/military#colonels--commandants-189]]，持有節杖，兼任[[西平|/zh-hant/maps/map-overall?admin=140]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]的職務。",
+        "zhs": "后来他被举荐为[[孝廉|/zh-hans/translations/officials#glossary-filial-and-incorrupt]]，担任[[汉中|/zh-hans/maps/map-overall?admin=110]]郡丞。碰上天下大乱，他抛弃官职，客居[[荆州|/zh-hans/maps/map-overall?admin=2]]。建安年间才回到故乡。荀彧把他推荐给太祖，太祖委任他为[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]]府[[司直|/zh-hans/translations/officials/ministers#superior-excellency-006]]。升任[[护羌校尉|/zh-hans/translations/officials/military#colonels--commandants-189]]，持有节杖，兼任[[西平|/zh-hans/maps/map-overall?admin=140]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]的职务。"
+      },
+      "en": "Du Ji was nominated as [[Filial and Incorrupt|/translations/officials#glossary-filial-and-incorrupt]] and appointed as an [[Assistant to the Grand Administrator|/translations/officials/regional#commanderies-040]] of [[Hanzhong|/maps/map-overall?admin=110]]. When disorder swept the realm, he abandoned his office and took refuge in [[Jing Province|/maps/map-overall?admin=2]], returning only during the Jian'an era. Xun Yu recommended him to Cao Cao, who appointed him [[Rectifier|/translations/officials/ministers#superior-excellency-006]] under the [[Excellency of Works|/translations/officials/ministers#three-excellencies-105]].[^1] Du Ji was later promoted to [[Colonel Protecting the Qiang|/translations/officials/military#colonels--commandants-189]], made [[Envoy Bearing the Imperial Tally|/translations/officials#glossary-envoy-bearing-the-imperial-tally]], and concurrently appointed [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Xiping|/maps/map-overall?admin=140]].",
+      "footnotes": [
+        {
+          "n": 1,
+          "zht": "時曹操為[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]]。",
+          "zhs": "时曹操为[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]]。",
+          "en": "At that time, Cao Cao was the [[Excellency of Works|/translations/officials/ministers#three-excellencies-105]]."
+        }
+      ],
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "傅子",
+            "zhs": "傅子",
+            "en": "Fu Zi / The Book of Master Fu"
+          },
+          "zht": "《傅子》曰：畿自[[荊州|/zh-hant/maps/map-overall?admin=2]]還，後至[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，見[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]耿紀，語終夜。[[尚書令|/zh-hant/translations/officials/departments#state-affairs-031]]荀彧與紀比屋，夜聞畿言，異之，旦遣人謂紀曰：「有國士而不進，何以居位？」旣見畿，知之如舊相識者，遂進畿於朝。",
+          "zhs": "《傅子》曰：畿自[[荆州|/zh-hans/maps/map-overall?admin=2]]还，后至[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，见[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]耿纪，语终夜。[[尚书令|/zh-hans/translations/officials/departments#state-affairs-031]]荀彧与纪比屋，夜闻畿言，异之，旦遣人谓纪曰：「有国士而不进，何以居位？」既见畿，知之如旧相识者，遂进畿于朝。",
+          "vern": {
+            "zht": "",
+            "zhs": "《傅子》记载：杜畿从荆州回来，后来到了许昌，见到侍中耿纪，两人交谈了一整夜。尚书令荀彧和耿纪住处相邻，夜里听到杜畿的话，对此感到惊异，派人对耿纪说：“有这样的国士却不举荐，您凭什么处在这个位置上？”见到杜畿后，就像认识了很久的老朋友一样了解彼此，于是向朝廷举荐了杜畿。"
+          },
+          "en": "The Fu Zi / Book of Master Fu states: Du Ji returned from [[Jing Province|/maps/map-overall?admin=2]] and later reached [[Xu|/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]], where he met the [[Palace Attendant|/translations/officials/departments#chancellery-001]] Geng Ji and conversed with him throughout the night. The [[Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-031]] Xun Yu lived next door to Geng Ji. Hearing what Du Ji said that night, Xun Yu was much impressed. At dawn, he sent someone to Geng Ji: \"You know a man of outstanding talent, yet fail to recommend him. How can you remain in office?\" When Xun Yu met Du Ji, he understood him as though they had long been acquainted, and promptly recommended him to the court."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：畿少有大志。在[[荊州|/zh-hant/maps/map-overall?admin=2]]數歲，繼母亡後，以[[三輔|/zh-hant/translations/officials#glossary-three-capital-regions]]開通，負其母喪北歸。道為賊所劫略，衆人奔走，畿獨不去。賊射之，畿請賊曰：「卿欲得財耳，今我無物，用射我何為邪？」賊乃止。畿到鄉里，[[京兆|/zh-hant/maps/map-overall?admin=142]]尹張時，[[河東|/zh-hant/maps/map-overall?admin=57]]人也，與畿有舊，署為[[功曹|/zh-hant/translations/officials/regional#commanderies-038]]。嘗嫌其闊達，不助留意於諸事，言此家疏誕，不中[[功曹|/zh-hant/translations/officials/regional#commanderies-049]]也。畿竊云：「不中[[功曹|/zh-hant/translations/officials/regional#commanderies-038]]，中[[河東|/zh-hant/maps/map-overall?admin=57]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]也。」",
+          "zhs": "《魏略》曰：畿少有大志。在[[荆州|/zh-hans/maps/map-overall?admin=2]]数岁，继母亡后，以[[三辅|/zh-hans/translations/officials#glossary-three-capital-regions]]开通，负其母丧北归。道为贼所劫略，众人奔走，畿独不去。贼射之，畿请贼曰：「卿欲得财耳，今我无物，用射我何为邪？」贼乃止。畿到乡里，[[京兆|/zh-hans/maps/map-overall?admin=142]]尹张时，[[河东|/zh-hans/maps/map-overall?admin=57]]人也，与畿有旧，署为[[功曹|/zh-hans/translations/officials/regional#commanderies-038]]。尝嫌其阔达，不助留意于诸事，言此家疏诞，不中[[功曹|/zh-hans/translations/officials/regional#commanderies-049]]也。畿窃云：「不中[[功曹|/zh-hans/translations/officials/regional#commanderies-038]]，中[[河东|/zh-hans/maps/map-overall?admin=57]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]也。」",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：杜畿年少时就有远大志向，在荆州几年后，他的继母去世了。后来因为三辅地区道路畅通，他背着继母的灵柩向北返回，在路上被贼寇劫掠，众人都逃走了，只有他不离开，贼寇就向他射箭。杜畿向盗贼请求道：“你们想要钱财罢了，现在我什么都没有，射我干什么呢？”盗贼于是停止了射箭。杜畿回到家乡，京兆尹张时是河东人，和他有旧交情，就任用他做功曹。张时曾经嫌弃他豁达不拘小节，不协助处理事务，便点评杜畿这个人做事粗疏放诞，不适合担任功曹。杜畿私下说：“我不适合担任功曹，却适合担任河东太守。”"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Du Ji had lofty ambitions from an early age. He spent several years in [[Jing Province|/maps/map-overall?admin=2]]. After his stepmother died and the routes to the [[Three Capital Regions|/translations/officials#glossary-three-capital-regions]] reopened, he carried her coffin north back to his homeland. On the way, bandits attacked and plundered the travellers. Everyone else fled, but Du Ji alone remained. When the bandits shot at him, he called out, \"You merely want wealth, and I have nothing, so why shoot me?\" The bandits then desisted. Upon Du Ji's return home, Zhang Shi, the Intendant of [[Jingzhao|/maps/map-overall?admin=142]], was in office. A native of [[Hedong|/maps/map-overall?admin=57]] and an old acquaintance, he appointed Du Ji his [[Merit Section Administrator|/translations/officials/regional#commanderies-049]]. Yet Zhang Shi disliked Du Ji for being too free and easy in temperament and for paying little attention to affairs. He remarked that Du Ji was derelict and undisciplined, and not fit to be [[Merit Section Administrator|/translations/officials/regional#commanderies-049]]. Du Ji privately said, \"I may not be fit to be [[Merit Section Administrator|/translations/officials/regional#commanderies-049]], but I am fit to be [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hedong|/maps/map-overall?admin=57]].\""
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p3",
+      "orig": {
+        "zht": "太祖旣定[[河|/zh-hant/maps/map-overall?water=265]]北，而高幹舉[[并州|/zh-hant/maps/map-overall?admin=0]]反。時[[河東|/zh-hant/maps/map-overall?admin=57]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]王邑被徵，[[河東|/zh-hant/maps/map-overall?admin=57]]人衞固、范先外以請邑為名，而內實與幹通謀。太祖謂荀彧曰：「[[關西|/zh-hant/translations/officials#glossary-west-of-the-pass-guanxi]]諸將，恃險與馬，征必為亂。張晟寇殽、[[澠|/zh-hant/maps/map-overall?lat=34.46873726&lng=111.46934986&name=黽池]]閒，南通劉表，固等因之，吾恐其為害深。[[河東|/zh-hant/maps/map-overall?admin=57]]被山帶河，四鄰多變，當今天下之要地也。君為我舉蕭何、寇恂以鎮之。」彧曰：「杜畿其人也。」於是追拜畿為[[河東|/zh-hant/maps/map-overall?admin=57]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+        "zhs": "太祖既定[[河|/zh-hans/maps/map-overall?water=265]]北，而高幹举[[并州|/zh-hans/maps/map-overall?admin=0]]反。时[[河东|/zh-hans/maps/map-overall?admin=57]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]王邑被征，[[河东|/zh-hans/maps/map-overall?admin=57]]人卫固、范先外以请邑为名，而内实与干通谋。太祖谓荀彧曰：「[[关西|/zh-hans/translations/officials#glossary-west-of-the-pass-guanxi]]诸将，恃险与马，征必为乱。张晟寇殽、[[渑|/zh-hans/maps/map-overall?lat=34.46873726&lng=111.46934986&name=黽池]]闲，南通刘表，固等因之，吾恐其为害深。[[河东|/zh-hans/maps/map-overall?admin=57]]被山带河，四邻多变，当今天下之要地也。君为我举萧何、寇恂以镇之。」彧曰：「杜畿其人也。」于是追拜畿为[[河东|/zh-hans/maps/map-overall?admin=57]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+      },
+      "vern": {
+        "zht": "太祖平定了河北，高幹在[[幷州|/zh-hant/maps/map-overall?admin=0]]反叛。當時[[河東|/zh-hant/maps/map-overall?admin=57]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]王邑，被朝廷徵召；[[河東|/zh-hant/maps/map-overall?admin=57]]人衛固、範先表面上請求王邑留任，背地裏卻同高幹勾結。太祖對荀彧說：“[[關西|/zh-hant/translations/officials#glossary-west-of-the-pass-guanxi]]的那些將領憑藉險要的地形和騎兵，要是去征伐他們一定會引起大規模叛亂。張晟在崤山、[[澠|/zh-hant/maps/map-overall?lat=34.46873726&lng=111.46934986&name=黽池]]縣之間燒殺搶掠，向南聯絡劉表；衛固等人也借張晟的力量起事，我擔心他們造成嚴重危害。[[河東|/zh-hant/maps/map-overall?admin=57]]郡依傍大山面臨黃河，四周的鄰郡又總是發生變亂，是當今天下的戰略要地。請您爲我推薦像蕭何、寇恂那樣的人去鎮守[[河東|/zh-hant/maps/map-overall?admin=57]]。”荀彧說：“杜畿就是合適的人選。”於是太祖派人追趕正在前往西平郡上任的杜畿，改派他當[[河東|/zh-hant/maps/map-overall?admin=57]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+        "zhs": "太祖平定了河北，高幹在[[并州|/zh-hans/maps/map-overall?admin=0]]反叛。当时[[河东|/zh-hans/maps/map-overall?admin=57]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]王邑，被朝廷征召；[[河东|/zh-hans/maps/map-overall?admin=57]]人卫固、范先表面上请求王邑留任，背地里却同高幹勾结。太祖对荀彧说：“[[关西|/zh-hans/translations/officials#glossary-west-of-the-pass-guanxi]]的那些将领凭借险要的地形和骑兵，要是去征伐他们一定会引起大规模叛乱。张晟在崤山、[[渑|/zh-hans/maps/map-overall?lat=34.46873726&lng=111.46934986&name=黽池]]县之间烧杀抢掠，向南联络刘表；卫固等人也借张晟的力量起事，我担心他们造成严重危害。[[河东|/zh-hans/maps/map-overall?admin=57]]郡依傍大山面临黄河，四周的邻郡又总是发生变乱，是当今天下的战略要地。请您为我推荐像萧何、寇恂那样的人去镇守[[河东|/zh-hans/maps/map-overall?admin=57]]。”荀彧说：“杜畿就是合适的人选。”于是太祖派人追赶正在前往西平郡上任的杜畿，改派他当[[河东|/zh-hans/maps/map-overall?admin=57]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+      },
+      "en": "After Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) had pacified the region north of the [[Yellow River|/maps/map-overall?water=265]], Gao Gan raised [[Bing Province|/maps/map-overall?admin=0]] in rebellion. At the time, Wang Yi, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hedong|/maps/map-overall?admin=57]], had been summoned to court. Wei Gu and Fan Xian of [[Hedong|/maps/map-overall?admin=57]] publicly petitioned for Wang Yi to remain in office, but were secretly plotting with Gao Gan. Cao Cao said to Xun Yu, \"The generals [[West of the Pass|/translations/officials#glossary-west-of-the-pass-guanxi]] rely on the rugged terrain and their cavalry. If summoned, they will surely rebel. Zhang Sheng is raiding the region between Mount Yao and [[Mianchi|/maps/map-overall?lat=34.46873726&lng=111.46934986&name=黽池]], and has established contact with Liu Biao to the south. With Wei Gu and the others taking advantage of this, I fear they may do great harm. [[Hedong|/maps/map-overall?admin=57]] is enclosed by mountains and rivers, while unrest abounds on every side. It is now a key strategic region of the realm. I wish for you to recommend a Xiao He or Kou Xun to hold it.\" Xun Yu replied, \"Du Ji is the man.\" Cao Cao therefore recalled Du Ji and appointed him [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hedong|/maps/map-overall?admin=57]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "傅子",
+            "zhs": "傅子",
+            "en": "Fu Zi / The Book of Master Fu"
+          },
+          "zht": "《傅子》曰：彧稱畿勇足以當大難，智能應變，其可試之。",
+          "zhs": "《傅子》曰：彧称畿勇足以当大难，智能应变，其可试之。",
+          "vern": {
+            "zht": "",
+            "zhs": "《傅子》记载：荀彧称赞杜畿的勇敢足以应对重大危难，智慧足以随机应变，因此可以试用他。"
+          },
+          "en": "The Fu Zi / Book of Master Fu states: Xun Yu commended Du Ji as brave enough to face great peril and resourceful enough to adapt to changing circumstances, and therefore fit for the job.\""
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p4",
+      "orig": {
+        "zht": "固等使兵數千人絕[[陝津|/zh-hant/maps/map-overall?lat=34.8005&lng=111.1228&name=Shanjin]]，畿至不得渡。太祖遣夏侯惇討之，未至。彧謂畿曰：「宜須大兵。」畿曰：「[[河東|/zh-hant/maps/map-overall?admin=57]]有三萬戶，非皆欲為亂也。今兵迫之急，欲為善者無主，必懼而聽於固。固等勢專，必以死戰。討之不勝，四鄰應之，天下之變未息也；討之而勝，是殘一郡之民也。且固等未顯絕王命，外以請故君為名，必不害新君。吾單車直往，出其不意。固為人多計而無斷，必偽受吾。吾得居郡一月，以計縻之，足矣。」遂詭道從[[郖津|/zh-hant/maps/map-overall?lat=34.68352043&lng=110.86352877&name=Doujin]]度。",
+        "zhs": "固等使兵数千人绝[[陕津|/zh-hans/maps/map-overall?lat=34.8005&lng=111.1228&name=Shanjin]]，畿至不得渡。太祖遣夏侯惇讨之，未至。彧谓畿曰：「宜须大兵。」畿曰：「[[河东|/zh-hans/maps/map-overall?admin=57]]有三万户，非皆欲为乱也。今兵迫之急，欲为善者无主，必惧而听于固。固等势专，必以死战。讨之不胜，四邻应之，天下之变未息也；讨之而胜，是残一郡之民也。且固等未显绝王命，外以请故君为名，必不害新君。吾单车直往，出其不意。固为人多计而无断，必伪受吾。吾得居郡一月，以计縻之，足矣。」遂诡道从[[郖津|/zh-hans/maps/map-overall?lat=34.68352043&lng=110.86352877&name=Doujin]]度。"
+      },
+      "vern": {
+        "zht": "衛固等人派了幾千人馬截斷[[陝津|/zh-hant/maps/map-overall?lat=34.8005&lng=111.1228&name=Shanjin]]，杜畿到了那兒，不能渡過黃河去上任。太祖派夏侯惇征討衛固，兵還未到。有人對杜畿說：“應該等待大兵來再走。”杜畿說：“[[河東|/zh-hant/maps/map-overall?admin=57]]郡有三萬戶人家，絕對不是人人都想作亂。如果大兵壓境，把他們逼急了，想做好事的也找不到帶頭人，就會因爲懼怕而服從衛固；衛固一旦能夠集中力量，必然要拼死抵抗。我們討伐他難以取勝，四周的鄰郡也會響應他，天下的變亂就平息不下來；即使我們能夠戰勝他，也要摧殘到一郡的百姓。況且衛固等人還沒有明目張膽地抗拒朝廷，表面上仍然以請求過去的太守留任爲名，一定不會加害於新太守。我單身乘車前去，出其不意；衛固爲人計謀多而缺乏決斷，一定會假裝接受我的指揮。我只要在郡城停留上一個月，就能設法用計困住他，這就夠了。”於是假裝從另外的路走而暗中從[[郖津|/zh-hant/maps/map-overall?lat=34.68352043&lng=110.86352877&name=Doujin]]北渡黃河。",
+        "zhs": "卫固等人派了几千人马截断[[陕津|/zh-hans/maps/map-overall?lat=34.8005&lng=111.1228&name=Shanjin]]，杜畿到了那儿，不能渡过黄河去上任。太祖派夏侯惇征讨卫固，兵还未到。有人对杜畿说：“应该等待大兵来再走。”杜畿说：“[[河东|/zh-hans/maps/map-overall?admin=57]]郡有三万户人家，绝对不是人人都想作乱。如果大兵压境，把他们逼急了，想做好事的也找不到带头人，就会因为惧怕而服从卫固；卫固一旦能够集中力量，必然要拼死抵抗。我们讨伐他难以取胜，四周的邻郡也会响应他，天下的变乱就平息不下来；即使我们能够战胜他，也要摧残到一郡的百姓。况且卫固等人还没有明目张胆地抗拒朝廷，表面上仍然以请求过去的太守留任为名，一定不会加害于新太守。我单身乘车前去，出其不意；卫固为人计谋多而缺乏决断，一定会假装接受我的指挥。我只要在郡城停留上一个月，就能设法用计困住他，这就够了。”于是假装从另外的路走而暗中从[[郖津|/zh-hans/maps/map-overall?lat=34.68352043&lng=110.86352877&name=Doujin]]北渡黄河。"
+      },
+      "en": "Wei Gu and his followers sent several thousand troops to block [[Shanjin|/maps/map-overall?lat=34.8005&lng=111.1228&name=Shanjin]], preventing Du Ji from crossing. Cao Cao sent Xiahou Dun against them, but he had not yet arrived. Xun Yu said to Du Ji, \"You should wait for the main army.\" Du Ji replied, \"[[Hedong|/maps/map-overall?admin=57]] has thirty thousand households, and not all wish to rebel. If we press them hard with troops, those who wish to remain loyal will have no leader. In fear, they will submit to Wei Gu. Once Wei Gu and his followers have secured sole control, they will fight to the death. If the campaign against them failed, the neighbouring regions would rise in response, and turmoil throughout the realm would not cease. If the campaign succeeded, we would have ravaged the people of an entire commandery. Moreover, Wei Gu and his followers have not openly defied the imperial command. Their declared cause is the retention of their former administrator, so they will surely not harm the new one. I shall go directly there in a single carriage and take them by surprise. Wei Gu is full of schemes but incapable of decision. He will feign acceptance of me. If I can remain in the commandery for a month, that will be enough to bring him under control by strategic manoeuvres.\" Du Ji then took a circuitous route and crossed at [[Doujin|/maps/map-overall?lat=34.68352043&lng=110.86352877&name=Doujin]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "郖音豆。",
+          "zhs": "郖音豆。",
+          "vern": {
+            "zht": "",
+            "zhs": "郖读音为豆"
+          },
+          "en": "郖 (Dou) is pronounced like 豆 (Dou)."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：初，畿與衞固少相侮狎，固常輕畿。畿嘗與固博而爭道，畿嘗謂固曰：「仲堅[^1]，我今作[[河東|/zh-hant/maps/map-overall?admin=57]]也。」固褰衣罵之。及畿之官，而固為郡[[功曹|/zh-hant/translations/officials/regional#commanderies-049]]。張時故任[[京兆|/zh-hant/maps/map-overall?admin=142]]。畿迎[[司隷|/zh-hant/translations/officials/regional#sili-001]]，與時會[[華陰|/zh-hant/maps/map-overall?lat=34.5574832&lng=110.08263445&name=Huayin]]，時、畿相見，於儀當各持版。時歎曰：「昨日[[功曹|/zh-hant/translations/officials/regional#commanderies-049]]，今為郡將也！」",
+          "zhs": "《魏略》曰：初，畿与卫固少相侮狎，固常轻畿。畿尝与固博而争道，畿尝谓固曰：「仲坚[^1]，我今作[[河东|/zh-hans/maps/map-overall?admin=57]]也。」固褰衣骂之。及畿之官，而固为郡[[功曹|/zh-hans/translations/officials/regional#commanderies-049]]。张时故任[[京兆|/zh-hans/maps/map-overall?admin=142]]。畿迎[[司隷|/zh-hans/translations/officials/regional#sili-001]]，与时会[[华阴|/zh-hans/maps/map-overall?lat=34.5574832&lng=110.08263445&name=Huayin]]，时、畿相见，于仪当各持版。时叹曰：「昨日[[功曹|/zh-hans/translations/officials/regional#commanderies-049]]，今为郡将也！」",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：当初，杜畿和卫固年少时相互轻慢戏弄，卫固曾经轻视杜畿。杜畿曾经和卫固一起下棋并争论棋路，杜畿曾对卫固说：“仲坚[^1]，我如今可要治理河东了。”卫固撩起衣服骂他。等到杜畿到任，卫固担任郡功曹。张时过去曾担任京兆尹，杜畿去迎接司隶校尉，和张时在华阴相会，按当时的礼仪，各自手持笏板。张时感叹说：“昨天还是郡里的功曹，今天就成了郡守了！”"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Previously, Du Ji and Wei Gu had been familiar with one another from a young age, and Wei Gu often treated Du Ji with contempt. Once, while the two were playing a board game and disputing a move, Du Ji said, \"Zhongjian,[^1] I am now administrator of [[Hedong|/maps/map-overall?admin=57]].\" Wei Gu hitched up his robes and cursed him. When Du Ji later took up the post, Wei Gu became the commandery's [[Merit Section Administrator|/translations/officials/regional#commanderies-049]]. Zhang Shi had formerly been Intendant of [[Jingzhao|/maps/map-overall?admin=142]]. When Du Ji went to welcome the [[Colonel of the Capital|/translations/officials/regional#sili-001]], he met Zhang Shi at [[Huayin|/maps/map-overall?lat=34.5574832&lng=110.08263445&name=Huayin]]. By protocol, each was required to carry his official tablet when they met. Zhang Shi sighed, \"Yesterday a [[Merit Section Administrator|/translations/officials/regional#commanderies-049]], today a commandery's governor!\"",
+          "footnotes": [
+            {
+              "n": 1,
+              "zht": "衞固字仲堅。",
+              "zhs": "卫固字仲坚。",
+              "en": "Wei Gu's courtesy name was Zhongjian."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p5",
+      "orig": {
+        "zht": "范先欲殺畿以威衆。且觀畿去就，於門下斬殺[[主簿|/zh-hant/translations/officials/regional#commanderies-051]]已下三十餘人，畿舉動自若。於是固曰：「殺之無損，徒有惡名；且制之在我。」遂奉之。畿謂衞固、范先曰：「衞、范，[[河東|/zh-hant/maps/map-overall?admin=57]]之望也，吾仰成而已。然君臣有定義，成敗同之，大事當共平議。」以固為都督，行[[丞|/zh-hant/translations/officials/regional#commanderies-040]]事，領[[功曹|/zh-hant/translations/officials/regional#commanderies-049]]；將校吏兵三千餘人，皆范先督之。固等喜，雖陽事畿，不以為意。固欲大發兵，畿患之，說固曰：「夫欲為非常之事，不可動衆心。今大發兵，衆必擾，不如徐以貲募兵。」",
+        "zhs": "范先欲杀畿以威众。且观畿去就，于门下斩杀[[主簿|/zh-hans/translations/officials/regional#commanderies-051]]已下三十余人，畿举动自若。于是固曰：「杀之无损，徒有恶名；且制之在我。」遂奉之。畿谓卫固、范先曰：「卫、范，[[河东|/zh-hans/maps/map-overall?admin=57]]之望也，吾仰成而已。然君臣有定义，成败同之，大事当共平议。」以固为都督，行[[丞|/zh-hans/translations/officials/regional#commanderies-040]]事，领[[功曹|/zh-hans/translations/officials/regional#commanderies-049]]；将校吏兵三千余人，皆范先督之。固等喜，虽阳事畿，不以为意。固欲大发兵，畿患之，说固曰：「夫欲为非常之事，不可动众心。今大发兵，众必扰，不如徐以赀募兵。」"
+      },
+      "vern": {
+        "zht": "到達之後，範先想殺杜畿藉以威懾部下，同時也觀察一下杜畿的反應，便在郡政府門前邊連續殺了郡中[[主簿|/zh-hant/translations/officials/regional#commanderies-051]]以下的官吏三十多人；杜畿目睹慘狀若無其事。於是衛固說：“殺了他也沒有什麼用，徒然給咱們添上惡名；況且他也完全控制在我們手中。”於是承認杜畿爲本郡的太守。杜畿對衛固、範先說：“你們二位，是[[河東|/zh-hant/maps/map-overall?admin=57]]郡民衆敬重的人士，我只能仰仗你們爲我完成一切而已。但是上下級之間有固定的規矩，成敗禍福共同承當：遇到大事應當共同商議。”於是他下令任命衛固爲都督，代理郡[[丞|/zh-hant/translations/officials/regional#commanderies-040]]職務，又兼任[[功曹|/zh-hant/translations/officials/regional#commanderies-049]]；將軍、校尉、吏員、士兵三千多人，都歸範先統管。衛固等人很高興，雖然表面上假裝服從杜畿，心裏面卻不把他當回事。衛固要大舉徵兵；杜畿很擔憂，勸衛固說：“要想成就非常的大事，就不能動搖民心。現在如果大規模徵兵，民衆一定會騷亂；不如慢慢用錢財來招募軍隊。”",
+        "zhs": "到达之后，范先想杀杜畿借以威慑部下，同时也观察一下杜畿的反应，便在郡政府门前边连续杀了郡中[[主簿|/zh-hans/translations/officials/regional#commanderies-051]]以下的官吏三十多人；杜畿目睹惨状若无其事。于是卫固说：“杀了他也没有什么用，徒然给咱们添上恶名；况且他也完全控制在我们手中。”于是承认杜畿为本郡的太守。杜畿对卫固、范先说：“你们二位，是[[河东|/zh-hans/maps/map-overall?admin=57]]郡民众敬重的人士，我只能仰仗你们为我完成一切而已。但是上下级之间有固定的规矩，成败祸福共同承当：遇到大事应当共同商议。”于是他下令任命卫固为都督，代理郡[[丞|/zh-hans/translations/officials/regional#commanderies-040]]职务，又兼任[[功曹|/zh-hans/translations/officials/regional#commanderies-049]]；将军、校尉、吏员、士兵三千多人，都归范先统管。卫固等人很高兴，虽然表面上假装服从杜畿，心里面却不把他当回事。卫固要大举征兵；杜畿很担忧，劝卫固说：“要想成就非常的大事，就不能动摇民心。现在如果大规模征兵，民众一定会骚乱；不如慢慢用钱财来招募军队。”"
+      },
+      "en": "Fan Xian initially wished to kill Du Ji to establish his authority over the populace, but also wanted to see what course Du Ji would take. He therefore had more than thirty officials, from the [[Registrar|/translations/officials/regional#commanderies-051]] down, beheaded at the gate before Du Ji. Du Ji remained perfectly composed. Wei Gu then said, \"Killing him would gain us nothing and merely earn us a bad name. Besides, he is under my control.\" They therefore acknowledged Du Ji's authority. Du Ji said to Wei Gu and Fan Xian, \"Your clans are the leading families of [[Hedong|/maps/map-overall?admin=57]]. I need only rely on you to see matters accomplished. Yet sovereign and subject have fixed obligations, and we must share success or failure. Major affairs should be discussed and decided together.\" Du Ji appointed Wei Gu as Commander, acting as the commandery [[Assistant|/translations/officials/regional#commanderies-040]], and concurrently [[Merit Section Administrator|/translations/officials/regional#commanderies-049]], while placing all the military officers, officials, and troops of more than three thousand, under Fan Xian's command. Wei Gu and the others were delighted. Though they nominally served Du Ji, they paid him little heed. Wei Gu wished to raise troops on a large scale. Troubled by this, Du Ji persuaded him, saying, \"Anyone who seeks to undertake the extraordinary must not alarm the people. A mass levy now would inevitably cause unrest. It would be better to recruit troops gradually with money.\"",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "傅子",
+            "zhs": "傅子",
+            "en": "Fu Zi / The Book of Master Fu"
+          },
+          "zht": "《傅子》曰：先云：「旣欲為虎而惡食人肉，失所以為虎矣。今不殺，必為後患。」",
+          "zhs": "《傅子》曰：先云：「既欲为虎而恶食人肉，失所以为虎矣。今不杀，必为后患。」",
+          "vern": {
+            "zht": "",
+            "zhs": "《傅子》记载：范先说：“既然想成为老虎，却又厌恶吃人肉，那就丧失了作为老虎的根本。现在不杀他，必然成为后患。”"
+          },
+          "en": "The Fu Zi / Book of Master Fu states: Fan Xian said, \"To aspire to be a tiger yet shrink from eating human flesh is to forfeit what makes one a tiger. If Du Ji is not killed now, he will surely prove a future menace.\""
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p6",
+      "orig": {
+        "zht": "固以為然，從之，遂為貲調發，數十日乃定，諸將貪多應募而少遣兵。又入喻固等曰：「人情顧家，諸將掾史，可分遣休息，急緩召之不難。」固等惡逆衆心，又從之。於是善人在外，陰為己援；惡人分散，各還其家，則衆離矣。會白騎攻[[東垣|/zh-hant/maps/map-overall?lat=35.17529361&lng=111.78118056&name=Dongyuan]][^1]，高幹入[[濩澤|/zh-hant/maps/map-overall?lat=35.4950886&lng=112.24702337&name=Huoze]]，[[上黨|/zh-hant/maps/map-overall?admin=17]]諸縣殺長吏，[[弘農|/zh-hant/maps/map-overall?admin=54]]執[[郡守|/zh-hant/translations/officials/regional#commanderies-039]]，固等密調兵未至。",
+        "zhs": "固以为然，从之，遂为赀调发，数十日乃定，诸将贪多应募而少遣兵。又入喻固等曰：「人情顾家，诸将掾史，可分遣休息，急缓召之不难。」固等恶逆众心，又从之。于是善人在外，阴为己援；恶人分散，各还其家，则众离矣。会白骑攻[[东垣|/zh-hans/maps/map-overall?lat=35.17529361&lng=111.78118056&name=Dongyuan]][^1]，高幹入[[濩泽|/zh-hans/maps/map-overall?lat=35.4950886&lng=112.24702337&name=Huoze]]，[[上党|/zh-hans/maps/map-overall?admin=17]]诸县杀长吏，[[弘农|/zh-hans/maps/map-overall?admin=54]]执[[郡守|/zh-hans/translations/officials/regional#commanderies-039]]，固等密调兵未至。"
+      },
+      "vern": {
+        "zht": "衛固認爲他說得對，同意照辦；於是用錢財來招募，拖了幾十天才做好招兵的準備。而下面的將領都多領錢財而少招兵丁，以便從中貪污。杜畿又去勸告衛固說：“人們都顧戀家屬。可以讓將軍和官吏們分批迴家休息，有緊急情況再召他們回來也不難。”衛固等人不願意違揹人心，又聽從了杜畿的勸告。這樣一來，不肯謀反的好人留在外邊，可以暗地裏支援杜畿；而壞人被分開，各自回家：敵對勢力就離散了。碰上農民起義軍首領張白騎的兵馬攻打[[東垣|/zh-hant/maps/map-overall?lat=35.17529361&lng=111.78118056&name=Dongyuan]]縣，高幹的叛軍進入[[濩澤|/zh-hant/maps/map-overall?lat=35.4950886&lng=112.24702337&name=Huoze]]縣境。[[上黨|/zh-hant/maps/map-overall?admin=17]]郡各縣殺死縣官，[[弘農|/zh-hant/maps/map-overall?admin=54]]郡扣押了郡太守。",
+        "zhs": "卫固认为他说得对，同意照办；于是用钱财来招募，拖了几十天才做好招兵的准备。而下面的将领都多领钱财而少招兵丁，以便从中贪污。杜畿又去劝告卫固说：“人们都顾恋家属。可以让将军和官吏们分批回家休息，有紧急情况再召他们回来也不难。”卫固等人不愿意违背人心，又听从了杜畿的劝告。这样一来，不肯谋反的好人留在外边，可以暗地里支援杜畿；而坏人被分开，各自回家：敌对势力就离散了。碰上农民起义军首领张白骑的兵马攻打[[东垣|/zh-hans/maps/map-overall?lat=35.17529361&lng=111.78118056&name=Dongyuan]]县，高幹的叛军进入[[濩泽|/zh-hans/maps/map-overall?lat=35.4950886&lng=112.24702337&name=Huoze]]县境。[[上党|/zh-hans/maps/map-overall?admin=17]]郡各县杀死县官，[[弘农|/zh-hans/maps/map-overall?admin=54]]郡扣押了郡太守。"
+      },
+      "en": "Wei Gu agreed and followed Du Ji's advice. He then assessed the households and organised the levy, a process that took several dozen days. The commanders, eager to claim rewards, pledged many recruits but sent few troops. Du Ji again went to Wei Gu and the others and advised them: \"Men naturally care for their families. The officers and clerks may be sent home in separate groups to rest. It will not be difficult to recall them when the need arises.\" Wei Gu and the others feared antagonising the men and again followed his advice. Thus, the loyal men remained outside and secretly lent Du Ji support, while the disloyal dispersed and returned to their homes. Their following consequently fell apart. Just then, Baiqi attacked [[Dongyuan|/maps/map-overall?lat=35.17529361&lng=111.78118056&name=Dongyuan]] in Hedong,[^1] Gao Gan entered [[Huoze|/maps/map-overall?lat=35.4950886&lng=112.24702337&name=Huoze]], the counties of [[Shangdang|/maps/map-overall?admin=17]] killed their chief officials, and men in [[Hongnong|/maps/map-overall?admin=54]] seized the [[commandery administrator|/translations/officials/regional#commanderies-039]], while the troops secretly summoned by Wei Gu and the others had yet to arrive.",
+      "footnotes": [
+        {
+          "n": 1,
+          "zht": "白騎為黑山軍首領之一，騎白馬而得名。清何焯言或為張晟。",
+          "zhs": "白骑为黑山军首领之一，骑白马而得名。清何焯言或为张晟。",
+          "en": "Baiqi was a leader of the Heishan / Black Mountain bandits, known for riding a white horse. Qing scholar He Zhuo commented that this person might be Zhang Sheng."
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p7",
+      "orig": {
+        "zht": "畿知諸縣附己，因出，單將數十騎，赴張辟拒守[^1]，吏民多舉城助畿者，比數十日，得四千餘人。固等與幹、晟共攻畿，不下，略諸縣，無所得。會大兵至，幹、晟敗，固等伏誅，其餘黨與皆赦之，使復其居業。",
+        "zhs": "畿知诸县附己，因出，单将数十骑，赴张辟拒守[^1]，吏民多举城助畿者，比数十日，得四千余人。固等与干、晟共攻畿，不下，略诸县，无所得。会大兵至，干、晟败，固等伏诛，其余党与皆赦之，使复其居业。"
+      },
+      "vern": {
+        "zht": "衛固等人也想乘機公開反叛，祕密下令調兵而軍隊不按時前來；杜畿知道周圍各縣都支持自己，就藉機出城，單獨率領幾十名騎兵到一處堅固的壁壘固守。官吏百姓得知消息後都全力幫助杜畿，過了幾十天，聚集了四千多人。衛固等人與高幹、張晟聯合起來攻打杜畿的壁壘，卻久攻不破；搶掠附近的縣城，又一無所得。這時朝廷的大兵到達，高幹、張晟都被打敗，衛固等人被抓獲砍頭。杜畿赦免了衛固等人的餘黨，讓他們恢復過去的住所產業。",
+        "zhs": "卫固等人也想乘机公开反叛，秘密下令调兵而军队不按时前来；杜畿知道周围各县都支持自己，就借机出城，单独率领几十名骑兵到一处坚固的壁垒固守。官吏百姓得知消息后都全力帮助杜畿，过了几十天，聚集了四千多人。卫固等人与高幹、张晟联合起来攻打杜畿的壁垒，却久攻不破；抢掠附近的县城，又一无所得。这时朝廷的大兵到达，高幹、张晟都被打败，卫固等人被抓获砍头。杜畿赦免了卫固等人的余党，让他们恢复过去的住所产业。"
+      },
+      "en": "Du Ji knew that the various counties supported him, so he set out with only a few dozen horsemen and hastened to Zhangbi.[^1] They held out against the rebels, and many officials and commoners brought whole towns over to support Du Ji. Within a few dozen days Du Ji had gathered more than four thousand men. Wei Gu and the others joined Gao Gan and Zhang Sheng in attacking him, but could not defeat him. They raided the counties but gained nothing. When the main army arrived, Gao Gan and Zhang Sheng were defeated, and Wei Gu and the others were executed. All their remaining followers were pardoned and allowed to return to their homes and occupations.",
+      "footnotes": [
+        {
+          "n": 1,
+          "zht": "張辟無考，或為人名，或爲地名。《通鑒》作「赴堅壁而守之」。",
+          "zhs": "张辟无考，或为人名，或为地名。《通鉴》作「赴坚壁而守之」。",
+          "en": "The exact meaning of Zhangbi is unknown.This may have been a person's name or a place name. The Zizhi Tongjian / Comprehensive Mirror in Aid of Governance renders it as \"went to a stronghold and defended it.\""
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p8",
+      "orig": {
+        "zht": "是時天下郡縣皆殘破，[[河東|/zh-hant/maps/map-overall?admin=57]]最先定，少耗減。畿治之，崇寬惠，與民無為。民嘗辭訟，有相告者，畿親見為陳大義，遣令歸諦思之，若意有所不盡，更來詣府。鄉邑父老自相責怒曰：「有君如此，柰何不從其教？」自是少有辭訟。班下屬縣，舉孝子、貞婦、順孫，復其繇役，隨時慰勉之。漸課民畜牸牛、草馬，下逮雞豚犬豕，皆有章程。百姓勤農，家家豐實。畿乃曰：「民富矣，不可不教也。」於是冬月脩戎講武，又開學宮，親自執經教授，郡中化之。",
+        "zhs": "是时天下郡县皆残破，[[河东|/zh-hans/maps/map-overall?admin=57]]最先定，少耗减。畿治之，崇宽惠，与民无为。民尝辞讼，有相告者，畿亲见为陈大义，遣令归谛思之，若意有所不尽，更来诣府。乡邑父老自相责怒曰：「有君如此，柰何不从其教？」自是少有辞讼。班下属县，举孝子、贞妇、顺孙，复其繇役，随时慰勉之。渐课民畜牸牛、草马，下逮鸡豚犬豕，皆有章程。百姓勤农，家家丰实。畿乃曰：「民富矣，不可不教也。」于是冬月修戎讲武，又开学宫，亲自执经教授，郡中化之。"
+      },
+      "vern": {
+        "zht": "當時，全國的郡縣都殘破不全，[[河東|/zh-hant/maps/map-overall?admin=57]]郡卻最先平定，所以損失較小。杜畿治理[[河東|/zh-hant/maps/map-overall?admin=57]]，推行寬厚利民的政策，讓百姓休養生息。有人家曾經打官司，相互告發；杜畿親自爲雙方講清道理，讓他們回去仔細想一想；如果還有什麼話，可以再來太守府申訴。鄉親父老都生氣地責備打官司的人：“有這麼好的太守，你們爲什麼不聽他的教誨！”從那以後，就很少再有打官司的了。杜畿向下屬各縣頒佈命令：要求推選孝順子孫、貞潔婦女，中選者都免除徭役；並隨時去慰問勉勵他們。他又開始督促百姓飼養母牛、母馬，以及雞、豬、狗，都有具體的章程制度，百姓勤勞地耕作，家家戶戶豐衣足食。於是杜畿說：“百姓富足了，不可不進行教育。”便在冬天訓練軍隊，講習武藝；又開設學校，親自講授儒家的經典：郡中風氣變得越來越好。",
+        "zhs": "当时，全国的郡县都残破不全，[[河东|/zh-hans/maps/map-overall?admin=57]]郡却最先平定，所以损失较小。杜畿治理[[河东|/zh-hans/maps/map-overall?admin=57]]，推行宽厚利民的政策，让百姓休养生息。有人家曾经打官司，相互告发；杜畿亲自为双方讲清道理，让他们回去仔细想一想；如果还有什么话，可以再来太守府申诉。乡亲父老都生气地责备打官司的人：“有这么好的太守，你们为什么不听他的教诲！”从那以后，就很少再有打官司的了。杜畿向下属各县颁布命令：要求推选孝顺子孙、贞洁妇女，中选者都免除徭役；并随时去慰问勉励他们。他又开始督促百姓饲养母牛、母马，以及鸡、猪、狗，都有具体的章程制度，百姓勤劳地耕作，家家户户丰衣足食。于是杜畿说：“百姓富足了，不可不进行教育。”便在冬天训练军队，讲习武艺；又开设学校，亲自讲授儒家的经典：郡中风气变得越来越好。"
+      },
+      "en": "At this time, the commanderies and counties throughout the realm lay devastated. [[Hedong|/maps/map-overall?admin=57]] was the first to be pacified and had suffered comparatively little depletion. Du Ji governed with leniency and benevolence, interfering as little as possible in the people's affairs. Whenever disputes arose and accusations were brought before him, he received the parties in person and explained the grand principles at stake. He then sent them home to reflect carefully, telling them that if they still felt the matter unresolved, they might return to his office. The village elders reproached one another, saying, \"With such a governor, how can we fail to heed his teaching?\" Thereafter, lawsuits became rare. Du Ji issued orders to the subordinate counties to identify filial sons, chaste women, and dutiful grandsons. He exempted them from corvée, and often commended and encouraged them. He gradually led the people to rear cows and horses, as well as chickens, dogs, and swine, all according to prescribed regulations. The people applied themselves to farming, and every household prospered. Du Ji then said, \"The people are now prosperous; they must also be taught.\" During the winter months, he conducted military training and instructed them in warfare. He also established schools, where he personally expounded the Classics. The whole commandery was transformed by his example.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：博士樂詳，由畿而升。至今[[河東|/zh-hant/maps/map-overall?admin=57]]特多儒者，則畿之由矣。",
+          "zhs": "《魏略》曰：博士乐详，由畿而升。至今[[河东|/zh-hans/maps/map-overall?admin=57]]特多儒者，则畿之由矣。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：博士乐详，是因为杜畿的提拔而得以升迁，至今河东郡儒者特别多，这都是杜畿的缘故。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: The Erudite Yue Xiang owed his advancement to Du Ji. To this day, [[Hedong|/maps/map-overall?admin=57]] has an exceptional number of scholars, and this too is Du Ji's doing."
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p9",
+      "orig": {
+        "zht": "韓遂、馬超之叛也，[[弘農|/zh-hant/maps/map-overall?admin=54]]、[[馮翊|/zh-hant/maps/map-overall?admin=151]]多舉縣邑以應之。[[河東|/zh-hant/maps/map-overall?admin=57]]雖與賊接，民無異心。太祖西征至[[蒲阪|/zh-hant/maps/map-overall?lat=34.84242176&lng=110.29953942&name=蒲坂]]，與賊夾[[渭|/zh-hant/maps/map-overall?water=14]]為軍，軍食一仰[[河東|/zh-hant/maps/map-overall?admin=57]]。及賊破，餘畜二十餘萬[[斛|/zh-hant/translations/officials#glossary-hu]]。太祖下令曰：「[[河東|/zh-hant/maps/map-overall?admin=57]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]杜畿，孔子所謂『禹，吾無閒然矣』[^1]。增秩中二千[[石|/zh-hant/translations/officials#glossary-shi]]。」太祖征[[漢中|/zh-hant/maps/map-overall?admin=110]]，遣五千人運，運者自率勉曰：「人生有一死，不可負我府君。」終無一人逃亡，其得人心如此。",
+        "zhs": "韩遂、马超之叛也，[[弘农|/zh-hans/maps/map-overall?admin=54]]、[[冯翊|/zh-hans/maps/map-overall?admin=151]]多举县邑以应之。[[河东|/zh-hans/maps/map-overall?admin=57]]虽与贼接，民无异心。太祖西征至[[蒲阪|/zh-hans/maps/map-overall?lat=34.84242176&lng=110.29953942&name=蒲坂]]，与贼夹[[渭|/zh-hans/maps/map-overall?water=14]]为军，军食一仰[[河东|/zh-hans/maps/map-overall?admin=57]]。及贼破，余畜二十余万[[斛|/zh-hans/translations/officials#glossary-hu]]。太祖下令曰：「[[河东|/zh-hans/maps/map-overall?admin=57]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]杜畿，孔子所谓『禹，吾无闲然矣』[^1]。增秩中二千[[石|/zh-hans/translations/officials#glossary-shi]]。」太祖征[[汉中|/zh-hans/maps/map-overall?admin=110]]，遣五千人运，运者自率勉曰：「人生有一死，不可负我府君。」终无一人逃亡，其得人心如此。"
+      },
+      "vern": {
+        "zht": "韓遂、馬超反叛的時候，[[弘農|/zh-hant/maps/map-overall?admin=54]]郡、[[馮翊|/zh-hant/maps/map-overall?admin=151]]郡很多縣城都起兵響應。[[河東|/zh-hant/maps/map-overall?admin=57]]郡雖然同敵境相連，百姓卻沒有二心。太祖西征到達[[蒲坂|/zh-hant/maps/map-overall?lat=34.84242176&lng=110.29953942&name=蒲坂]]，與敵人隔着[[渭|/zh-hant/maps/map-overall?water=14]]河排開陣勢，軍糧完全依賴[[河東|/zh-hant/maps/map-overall?admin=57]]郡供給。等到敵人被打敗，郡中儲備的糧食還剩二十多萬[[斛|/zh-hant/translations/officials#glossary-hu]]之多。太祖下令說：“[[河東|/zh-hant/maps/map-overall?admin=57]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]杜畿，完全可以用孔子所說的‘禹，完美得使我對他沒有任何批評’這句話來形容了。”於是把他的俸祿破格提高到中二千[[石|/zh-hant/translations/officials#glossary-shi]]這一級。後來太祖征伐[[漢中|/zh-hant/maps/map-overall?admin=110]]，調遣河中郡的五千民夫擔任運輸工作。這些人自動地互相勉勵說：“做人總免不了一死，可不能辜負了我們的好[[太守|/zh-hant/translations/officials/regional#commanderies-039]]！”始終沒有一個人逃跑，杜畿就是這樣得人心。",
+        "zhs": "韩遂、马超反叛的时候，[[弘农|/zh-hans/maps/map-overall?admin=54]]郡、[[冯翊|/zh-hans/maps/map-overall?admin=151]]郡很多县城都起兵响应。[[河东|/zh-hans/maps/map-overall?admin=57]]郡虽然同敌境相连，百姓却没有二心。太祖西征到达[[蒲坂|/zh-hans/maps/map-overall?lat=34.84242176&lng=110.29953942&name=蒲坂]]，与敌人隔着[[渭|/zh-hans/maps/map-overall?water=14]]河排开阵势，军粮完全依赖[[河东|/zh-hans/maps/map-overall?admin=57]]郡供给。等到敌人被打败，郡中储备的粮食还剩二十多万[[斛|/zh-hans/translations/officials#glossary-hu]]之多。太祖下令说：“[[河东|/zh-hans/maps/map-overall?admin=57]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]杜畿，完全可以用孔子所说的‘禹，完美得使我对他没有任何批评’这句话来形容了。”于是把他的俸禄破格提高到中二千[[石|/zh-hans/translations/officials#glossary-shi]]这一级。后来太祖征伐[[汉中|/zh-hans/maps/map-overall?admin=110]]，调遣河中郡的五千民夫担任运输工作。这些人自动地互相勉励说：“做人总免不了一死，可不能辜负了我们的好[[太守|/zh-hans/translations/officials/regional#commanderies-039]]！”始终没有一个人逃跑，杜畿就是这样得人心。"
+      },
+      "en": "When Han Sui and Ma Chao rebelled, many counties and towns in [[Hongnong|/maps/map-overall?admin=54]] and [[Pingyi|/maps/map-overall?admin=151]] rose in support. Though [[Hedong|/maps/map-overall?admin=57]] bordered rebel territory, its people remained loyal. Cao Cao marched west to [[Puban|/maps/map-overall?lat=34.84242176&lng=110.29953942&name=蒲坂]] and encamped across the [[Wei River|/maps/map-overall?water=14]] from the rebels. His army depended entirely on [[Hedong|/maps/map-overall?admin=57]] for provisions. After the rebels were defeated, more than 200000 [[Hu|/translations/officials#glossary-hu]] remained in store. Cao Cao issued an order: \"Du Ji, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hedong|/maps/map-overall?admin=57]], is a man of whom Confucius might have said, 'As for Yu, I can find no fault in him.'[^1] Let his rank be raised to the Fully 2000 [[Shi|/translations/officials#glossary-shi]].\" When Cao Cao campaigned in [[Hanzhong|/maps/map-overall?admin=110]], Du Ji sent five thousand men to transport supplies. The men encouraged one another, saying, \"A man must die but once. We cannot fail our commandery lord.\" Not one of them deserted. Such was Du Ji's hold on the hearts of the people.",
+      "footnotes": [
+        {
+          "n": 1,
+          "zht": "語出《論語》。孔子以此贊嘆大禹無可挑剔。",
+          "zhs": "语出《论语》。孔子以此赞叹大禹无可挑剔。",
+          "en": "This quote came from the Analects. Confucius used it to praise Yu the Great as being flawless.  "
+        }
+      ],
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：[[平虜將軍|/zh-hant/translations/officials/military#four-direction--misc-125]]劉勳，為太祖所親，貴震朝廷。嘗從畿求大棗，畿拒以他故。後勳伏法，太祖得其書，歎曰：「杜畿可謂『不媚於竈』者也。[^1]」稱畿功美，以下州郡，曰：「昔仲尼之於顏子，每言不能不歎，旣情愛發中，又宜率馬以驥。今吾亦冀衆人仰高山，慕景行也。」",
+          "zhs": "《杜氏新书》曰：[[平虏将军|/zh-hans/translations/officials/military#four-direction--misc-125]]刘勋，为太祖所亲，贵震朝廷。尝从畿求大枣，畿拒以他故。后勋伏法，太祖得其书，叹曰：「杜畿可谓『不媚于灶』者也。[^1]」称畿功美，以下州郡，曰：「昔仲尼之于颜子，每言不能不叹，既情爱发中，又宜率马以骥。今吾亦冀众人仰高山，慕景行也。」",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》记载：平虏将军刘勋深受太祖亲近，其显贵威震朝廷。刘勋曾经向杜畿索要大枣，杜畿用别的理由拒绝了他。后来刘勋被依法处死。太祖收到那封信，叹息着说：“杜畿可以说是‘不媚于灶’的人了。”太祖称赞杜畿的功劳和美德，向州郡下达命令说：“从前孔子对于颜子，每次谈到他都不能不赞叹。这既是心中对他的喜爱之情，也是相以良马引领劣马。现在我也希望众人能敬仰他高尚的品德，仰慕他美好的德行。”"
+          },
+          "en": "The Du Shi Xinshu / New Book of Du Clan states: Liu Xun, [[General Who Subdues the Enemies|/translations/officials/military#four-direction--misc-125]], was a favourite of Cao Cao, and his influence awed the court. He once asked Du Ji for some large jujubes, but Du Ji put him off with an excuse. After Liu Xun was executed, Cao Cao found his letter and sighed, \"Du Ji may truly be called one who 'does not curry favour with the stove'.[^1]\" Cao Cao commended Du Ji's meritorious conduct in a proclamation circulated to the provinces and commanderies: \"In former days, whenever Confucius spoke of Yan Hui, he could not help but praise him. This was not only because affection welled up from his heart, but also because he wished to set him forth as the finest steed at the head of the herd. I too hope that all men will look up to the lofty mountain and aspire to the noble path of Du Ji.\"",
+          "footnotes": [
+            {
+              "n": 1,
+              "zht": "語出《論語》。後世以此稱贊清廉無私，不向權貴低頭之人。",
+              "zhs": "语出《论语》。后世以此称赞清廉无私，不向权贵低头之人。",
+              "en": "This quote came from the Analects. In later times, it was used to praise those who were incorruptible and would not yield to those in power."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p10",
+      "orig": {
+        "zht": "魏國旣建，以畿為[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。事平，更有令曰：「昔蕭何定[[關中|/zh-hant/translations/officials#glossary-inside-the-pass-guanzhong]]，寇恂平[[河內|/zh-hant/maps/map-overall?admin=55]]，卿有功，閒將授卿以納言之職；顧念[[河東|/zh-hant/maps/map-overall?admin=57]]吾股肱郡，充實之所，足以制天下，故且煩卿卧鎮之。」畿在[[河東|/zh-hant/maps/map-overall?admin=57]]十六年，常為天下最。",
+        "zhs": "魏国既建，以畿为[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。事平，更有令曰：「昔萧何定[[关中|/zh-hans/translations/officials#glossary-inside-the-pass-guanzhong]]，寇恂平[[河内|/zh-hans/maps/map-overall?admin=55]]，卿有功，闲将授卿以纳言之职；顾念[[河东|/zh-hans/maps/map-overall?admin=57]]吾股肱郡，充实之所，足以制天下，故且烦卿卧镇之。」畿在[[河东|/zh-hans/maps/map-overall?admin=57]]十六年，常为天下最。"
+      },
+      "vern": {
+        "zht": "魏國建立以後，用杜畿爲[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。任命文書已經通過審議，太祖又下令給杜畿說：“過去蕭何安定[[關中|/zh-hant/translations/officials#glossary-inside-the-pass-guanzhong]]，寇恂安定[[河內|/zh-hant/maps/map-overall?admin=55]]，您也有他們那樣的功勞。最近將授予您[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]的職位；但是又考慮到[[河東|/zh-hant/maps/map-overall?admin=57]]郡是我起支柱作用的要地，是充實儲備的所在，佔據那裏就足以控制全國：所以還要麻煩您坐鎮那裏。”杜畿在[[河東|/zh-hant/maps/map-overall?admin=57]]郡十六年，他的政績總是全國最好的。",
+        "zhs": "魏国建立以后，用杜畿为[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。任命文书已经通过审议，太祖又下令给杜畿说：“过去萧何安定[[关中|/zh-hans/translations/officials#glossary-inside-the-pass-guanzhong]]，寇恂安定[[河内|/zh-hans/maps/map-overall?admin=55]]，您也有他们那样的功劳。最近将授予您[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]的职位；但是又考虑到[[河东|/zh-hans/maps/map-overall?admin=57]]郡是我起支柱作用的要地，是充实储备的所在，占据那里就足以控制全国：所以还要麻烦您坐镇那里。”杜畿在[[河东|/zh-hans/maps/map-overall?admin=57]]郡十六年，他的政绩总是全国最好的。"
+      },
+      "en": "When the kingdom of Wei was established, Du Ji was appointed to the [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]]. After affairs had been settled, a further decree was issued: \"In former times, Xiao He secured the region [[Inside the Pass|/translations/officials#glossary-inside-the-pass-guanzhong]] and Kou Xun pacified [[Henei|/maps/map-overall?admin=55]]. You, my minister, too have rendered distinguished service, and I had intended to give you a post charged with remonstrance. Yet [[Hedong|/maps/map-overall?admin=57]] is a commandery vital to me, whose wealth and resources are needed to command the realm. I must therefore trouble you to remain there and secure it.\" Du Ji governed [[Hedong|/maps/map-overall?admin=57]] for sixteen years, and his administrative record was consistently judged the finest in the realm."
+    },
+    {
+      "id": "ws16c-p11",
+      "orig": {
+        "zht": "文帝即王位，賜爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。徵為[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。及踐阼，進封豐樂[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。邑百戶，守[[司隷校尉|/zh-hant/translations/officials/regional#sili-001]]。帝征吳，以畿為[[尚書僕射|/zh-hant/translations/officials/departments#state-affairs-032]]，統留事。其後帝幸[[許昌|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，畿復居守。受詔作御樓船，於陶河試船，遇風沒。帝為之流涕。",
+        "zhs": "文帝即王位，赐爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。征为[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。及践阼，进封丰乐[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。邑百户，守[[司隷校尉|/zh-hans/translations/officials/regional#sili-001]]。帝征吴，以畿为[[尚书仆射|/zh-hans/translations/officials/departments#state-affairs-032]]，统留事。其后帝幸[[许昌|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，畿复居守。受诏作御楼船，于陶河试船，遇风没。帝为之流涕。"
+      },
+      "vern": {
+        "zht": "魏文帝即魏王位，賜給杜畿[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]的爵位，召他擔任[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。文帝稱帝以後，杜畿晉爵爲豐樂[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，食邑一百戶；代理司隸校尉。文帝親自征伐吳國，任命杜畿爲[[尚書僕射|/zh-hant/translations/officials/departments#state-affairs-032]]，在京城處理留守事務。後來文帝去[[許昌|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，仍然命杜畿留守。杜畿奉詔製造御用樓船，在陶河試航，遇到大風沉沒而死。",
+        "zhs": "魏文帝即魏王位，赐给杜畿[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]的爵位，召他担任[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。文帝称帝以后，杜畿晋爵为丰乐[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，食邑一百户；代理司隶校尉。文帝亲自征伐吴国，任命杜畿为[[尚书仆射|/zh-hans/translations/officials/departments#state-affairs-032]]，在京城处理留守事务。后来文帝去[[许昌|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，仍然命杜畿留守。杜畿奉诏制造御用楼船，在陶河试航，遇到大风沉没而死。"
+      },
+      "en": "When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) assumed the kingship, he granted Du Ji the title [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]] and summoned him to serve in the [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]]. On ascending the throne, Cao Pi promoted him to [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Fengle, with a fief of one hundred households, and appointed him acting [[Colonel of the Capital|/translations/officials/regional#sili-001]]. When the emperor campaigned against Wu, he made Du Ji [[Deputy Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-032]] and placed him in charge of affairs at the capital. Later, when the emperor visited [[Xuchang|/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]], Ji again remained behind to govern. Du Ji was ordered to build a tower ship for the emperor, but while testing it on the Tao River, he encountered a gale and drowned. The emperor wept for him.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：初畿在郡，被書錄寡婦。是時他郡或有已自相配嫁，依書皆錄奪，啼哭道路。畿但取寡者，故所送少；及趙儼代畿而所送多。文帝問畿：「前君所送何少，今何多也？」畿對曰：「臣前所錄皆亡者妻，今儼送生人婦也。」帝及左右顧而失色。",
+          "zhs": "《魏略》曰：初畿在郡，被书录寡妇。是时他郡或有已自相配嫁，依书皆录夺，啼哭道路。畿但取寡者，故所送少；及赵俨代畿而所送多。文帝问畿：「前君所送何少，今何多也？」畿对曰：「臣前所录皆亡者妻，今俨送生人妇也。」帝及左右顾而失色。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：当初，杜畿在河东郡时，接到文书要登记寡妇，当时其他郡有的已经自行将寡妇许配他人了。那些已经改嫁的，依照文书都被强行夺回，在路上啼哭不止。杜畿只选取真正的寡妇，所以送去的人很少。等到赵俨接替畿后，送去的寡妇就多了。文帝问杜畿：“之前您送的寡妇为什么那么少，现在为什么这么多呢？”杜畿回答说：“我以前所登记的都是死去丈夫的妻子，现在赵俨送来的是活人的妻子。”文帝和左右的人面面相觑，大惊失色。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: When Du Ji was serving in the commandery, he received an order requiring widows to be registered. In other commanderies, some of these women had already remarried, yet by carrying out the order they were all registered and taken away from their husbands, their lamentations filling the roads. Du Ji selected only those who remained widowed, and so sent few. When Zhao Yan succeeded him, he sent many. Cao Pi asked Du Ji, \"Why did you send so few before, when so many are sent now?\" Du Ji replied, \"Those I registered were all wives of dead men. Those Zhao Yan sends now are wives of living men.\" The emperor and his attendants looked at one another and turned pale."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏氏春秋",
+            "zhs": "魏氏春秋",
+            "en": "Chronicles of the Wei"
+          },
+          "zht": "《魏氏春秋》曰：初，畿嘗見童子謂之曰：「司命使我召子。」畿固請之，童子曰：「今將為君求相代者。君其慎勿言！」言卒，忽然不見。至此二十年矣，畿乃言之。其日而卒，時年六十二。",
+          "zhs": "《魏氏春秋》曰：初，畿尝见童子谓之曰：「司命使我召子。」畿固请之，童子曰：「今将为君求相代者。君其慎勿言！」言卒，忽然不见。至此二十年矣，畿乃言之。其日而卒，时年六十二。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏氏春秋》记载：当初，杜畿曾见到一个童子，童子对他说：“司命神派我来召见你。”杜畿不停地请求他，童子说：“现在我将为您寻找替代者，您一定要谨慎，不要透露这件事。”童子的话刚说完，他忽然不见了，到现在已经二十年了。杜畿于是说出了这件事，当天便去世了，享年六十二岁。"
+          },
+          "en": "The Chronicles of the Wei records: Du Ji once encountered a boy who said to him, \"The Arbiter of Fate has sent me to summon you.\" Du Ji pleaded earnestly with him. The boy then said, \"I shall now seek someone to take your place. Take care to tell no one.\" As soon as he had spoken, he vanished. Twenty years had passed when Du Ji finally spoke of the encounter. He died that same day, aged sixty-two."
+        }
+      ]
+    },
+    {
+      "id": "ws16c-p12",
+      "orig": {
+        "zht": "詔曰：「昔冥勤其官而水死，稷勤百穀而山死。故[[尚書僕射|/zh-hant/translations/officials/departments#state-affairs-032]]杜畿於[[孟津|/zh-hant/maps/map-overall?lat=34.80924482&lng=112.79529435&name=Mengjin]]試船，遂至覆沒，忠之至也。朕甚愍焉。」追贈[[太僕|/zh-hant/translations/officials/ministers#-nine-ministers-ii-205]]，謚曰戴侯。子恕嗣。",
+        "zhs": "诏曰：「昔冥勤其官而水死，稷勤百谷而山死。故[[尚书仆射|/zh-hans/translations/officials/departments#state-affairs-032]]杜畿于[[孟津|/zh-hans/maps/map-overall?lat=34.80924482&lng=112.79529435&name=Mengjin]]试船，遂至覆没，忠之至也。朕甚愍焉。」追赠[[太仆|/zh-hans/translations/officials/ministers#-nine-ministers-ii-205]]，谥曰戴侯。子恕嗣。"
+      },
+      "vern": {
+        "zht": "文帝爲他的死而流淚，下詔說：“從前冥勤勞地治水而死在水中，后稷勤勞地播種穀物而死在山上。已故的[[尚書僕射|/zh-hant/translations/officials/departments#state-affairs-032]]杜畿，在[[孟津|/zh-hant/maps/map-overall?lat=34.80924482&lng=112.79529435&name=Mengjin]]試航，結果翻船沉沒；這是極度忠誠的表現，朕非常痛惜他！”下令追贈杜畿[[太僕|/zh-hant/translations/officials/ministers#-nine-ministers-ii-205]]的官銜，諡爲戴侯。他的兒子杜恕繼承了爵位。",
+        "zhs": "文帝为他的死而流泪，下诏说：“从前冥勤劳地治水而死在水中，后稷勤劳地播种谷物而死在山上。已故的[[尚书仆射|/zh-hans/translations/officials/departments#state-affairs-032]]杜畿，在[[孟津|/zh-hans/maps/map-overall?lat=34.80924482&lng=112.79529435&name=Mengjin]]试航，结果翻船沉没；这是极度忠诚的表现，朕非常痛惜他！”下令追赠杜畿[[太仆|/zh-hans/translations/officials/ministers#-nine-ministers-ii-205]]的官衔，谥为戴侯。他的儿子杜恕继承了爵位。"
+      },
+      "en": "An edict proclaimed: \"In former times, Ming devoted himself to his office and died in the waters, while Ji tended the hundred grains and died in the mountains. The late [[Deputy Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-032]], Du Ji, was testing a boat at [[Mengjin|/maps/map-overall?lat=34.80924482&lng=112.79529435&name=Mengjin]] when it capsized and he drowned. Such was the height of his loyalty. I grieve deeply for him.\" He was posthumously appointed [[Minister Coachman|/translations/officials/ministers#-nine-ministers-ii-205]] and granted the posthumous title Marquis Dai, the Exemplary Marquis. His son Du Shu succeeded him.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "韋昭國語註",
+            "zhs": "韦昭国语注",
+            "en": "Commentary on the Guoyu / Discourses of the States (Wei Zhao)"
+          },
+          "zht": "韋昭《國語註》稱毛詩傳曰：「冥，契六世孫也，為夏水官，勤於其職而死於水。稷，周棄也，勤播百穀，死於黑水之山。」",
+          "zhs": "韦昭《国语注》称毛诗传曰：「冥，契六世孙也，为夏水官，勤于其职而死于水。稷，周弃也，勤播百谷，死于黑水之山。」",
+          "vern": {
+            "zht": "",
+            "zhs": "韦昭的《国语注》引用《毛诗传》的话说：冥，是契的六世孙，担任夏朝的水官，因勤于职守而死于水中。稷，是周弃，他辛勤地播种各种谷物，死在黑水之山。"
+          },
+          "en": "Wei Zhao's Commentary on the Guoyu / Discourses of the States cites the Mao Commentary on the Book of Odes: \"Ming was a sixth-generation descendant of Xie. He served as an official in charge of waterways under the Xia dynasty, devoted himself to his duties, and died in the water. Ji was Qi of Zhou dynasty. He laboured diligently to sow the hundred grains and died on a mountain by the Black River.\""
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "傅子",
+            "zhs": "傅子",
+            "en": "Fu Zi / The Book of Master Fu"
+          },
+          "zht": "《傅子》曰：畿與[[太僕|/zh-hant/translations/officials/ministers#-nine-ministers-ii-205]]李恢、[[東安|/zh-hant/maps/map-overall?lat=35.66325322&lng=118.53989694&name=Dong%27an]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]郭智有好。恢子豐交結英雋，以才智顯於天下。智子沖有內實而無外觀，州里弗稱也。畿為[[尚書僕射|/zh-hant/translations/officials/departments#state-affairs-032]]，二人各脩子孫禮見畿。旣退，畿歎曰：「孝懿無子；非徒無子，殆將無家。君謀為不死也，其子足繼其業。」時人皆以畿為誤。恢死後，[[豐|/zh-hant/maps/map-overall?lat=34.69357509&lng=116.60589347&name=Fengguo]]為[[中書令|/zh-hant/translations/officials/departments#palace-secretariat-020]]，父子兄弟皆誅；沖為[[代|/zh-hant/maps/map-overall?admin=133]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，卒繼父業；世乃服畿知人。",
+          "zhs": "《傅子》曰：畿与[[太仆|/zh-hans/translations/officials/ministers#-nine-ministers-ii-205]]李恢、[[东安|/zh-hans/maps/map-overall?lat=35.66325322&lng=118.53989694&name=Dong%27an]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]郭智有好。恢子丰交结英隽，以才智显于天下。智子冲有内实而无外观，州里弗称也。畿为[[尚书仆射|/zh-hans/translations/officials/departments#state-affairs-032]]，二人各修子孙礼见畿。既退，畿叹曰：「孝懿无子；非徒无子，殆将无家。君谋为不死也，其子足继其业。」时人皆以畿为误。恢死后，[[丰|/zh-hans/maps/map-overall?lat=34.69357509&lng=116.60589347&name=Fengguo]]为[[中书令|/zh-hans/translations/officials/departments#palace-secretariat-020]]，父子兄弟皆诛；冲为[[代|/zh-hans/maps/map-overall?admin=133]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，卒继父业；世乃服畿知人。",
+          "vern": {
+            "zht": "",
+            "zhs": "《傅子》说：杜畿和太仆李恢、东安太守郭智关系很好。李恢的儿子李丰，结交才德出众的人，凭借才智在天下闻名。郭智的儿子郭冲，有内在的才华和品德，但是外在表现不出众，州里的人都不称赞他。杜畿担任尚书仆射时，二人各自以子孙的礼节拜见杜畿。两人离开后，杜畿叹息说：“孝懿没有儿子，不只是没有儿子，恐怕连家道都要衰败了。郭智不会后继无人，他的儿子完全能够继承他的事业。”当时的人都认为杜畿说错了。李恢死后，李丰担任中书令，父子兄弟都被诛杀。郭冲担任代郡太守，最终继承了父亲的事业，世人才佩服杜畿有知人之明。"
+          },
+          "en": "The Fu Zi / Book of Master Fu states: Du Ji was on good terms with Li Hui, the [[Minister Coachman|/translations/officials/ministers#-nine-ministers-ii-205]], and Guo Zhi, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Dong'an|/maps/map-overall?lat=35.66325322&lng=118.53989694&name=Dong%27an]]. Li Hui's son Feng associated with men of outstanding talent and became renowned throughout the realm for his ability and intelligence. Guo Zhi's son Chong possessed inward substance but lacked outward distinction, and won no acclaim in his province. When Du Ji was [[Deputy Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-032]], both young men visited him with the deference due from younger clansmen. After they had left, Du Ji sighed: \"Xiaoyi (Li Hui) has no son. In fact, not only does he not have a son, his house itself may soon perish. Junmou (Guo Zhi) on the other hand will not die, for his son is worthy to carry on his legacy.\" People at the time all thought Du Ji was mistaken. After Li Hui's death, Li Feng became [[Director of the Palace Secretariat|/translations/officials/departments#palace-secretariat-020]], but he, his father, and his brothers were all executed. Guo Chong became [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Dai|/maps/map-overall?admin=133]] and ultimately carried on his father's career. Only then did the contemporary acknowledge Du Ji's discernment of men.",
+          "footnotes": [
+            {
+              "n": 1,
+              "zht": "李恢字孝懿，郭智字君谋。",
+              "zhs": "李恢字孝懿，郭智字君谋。",
+              "en": "Li Hui's courtesy name was Xiaoyi, and Guo Zhi's courtesy name was Junmou."
+            }
+          ]
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "《魏略》曰李豐父名義，與此不同，義蓋恢之別名也。",
+          "zhs": "《魏略》曰李丰父名义，与此不同，义盖恢之别名也。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：李丰的父亲名叫义，和这里的记载不同。义大概是李恢的别名。"
+          },
+          "en": "The Weilüe / Brief History of Wei states that Li Feng's father was named Yi, contrary to the account here. Yi was perhaps an alternative name for Hui."
+        }
+      ]
+    }
+  ]
+}

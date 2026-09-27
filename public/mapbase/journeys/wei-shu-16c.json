@@ -1,0 +1,772 @@
+{
+  "chapter": {
+    "id": "wei-shu-16c",
+    "order": 16,
+    "label": {
+      "zht": "杜畿傳",
+      "zhs": "杜畿传",
+      "en": "Biography of Du Ji"
+    },
+    "title": {
+      "zht": "魏書十六 · 杜畿传",
+      "zhs": "魏书十六 · 杜畿传",
+      "en": "Book of Wei, Chapter 16 · Biography of Du Ji"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.21174681,
+      "lng": 109.02506097,
+      "name": "Du",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "142",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.52728749,
+      "lng": 109.77084398,
+      "name": "Zheng",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "110",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "2",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.029893,
+      "lng": 114.02211887,
+      "name": "Xuchang",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "140",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "57",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "杜畿（伯侯）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "杜畿（伯侯）",
+      "name": {
+        "en": "Du Ji",
+        "zht": "杜畿",
+        "zhs": "杜畿"
+      },
+      "courtesyName": {
+        "en": "Bohou",
+        "zht": "伯侯",
+        "zhs": "伯侯"
+      },
+      "born": {
+        "era": {
+          "en": "6th year of Yanxi",
+          "zht": "延熹六年",
+          "zhs": "延熹六年"
+        },
+        "year": 163
+      },
+      "died": {
+        "era": {
+          "en": "5th year of Huangchu",
+          "zht": "黄初五年",
+          "zhs": "黄初五年"
+        },
+        "year": 224
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Du, Jingzhao",
+              "zht": "京兆杜",
+              "zhs": "京兆杜"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.21174681,
+              "lng": 109.02506097,
+              "name": "Du"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "5th year of Guanghe",
+            "zht": "光和五年",
+            "zhs": "光和五年"
+          },
+          "year": 182,
+          "age": null,
+          "location": [
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            },
+            {
+              "en": "Zheng",
+              "zht": "鄭縣",
+              "zhs": "郑县"
+            }
+          ],
+          "position": [
+            {
+              "en": "Merit Section Administrator",
+              "zht": "郡功曹",
+              "zhs": "郡功曹"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "142"
+            },
+            {
+              "kind": "town",
+              "lat": 34.52728749,
+              "lng": 109.77084398,
+              "name": "Zheng"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Merit Section Administrator",
+              "zht": "郡功曹",
+              "zhs": "郡功曹",
+              "url": "/translations/officials/regional#commanderies-049"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令",
+              "url": "/translations/officials/regional#counties-088"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "110"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "2"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            }
+          ],
+          "position": [
+            {
+              "en": "Merit Section Administrator",
+              "zht": "郡功曹",
+              "zhs": "郡功曹"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "142"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Merit Section Administrator",
+              "zht": "郡功曹",
+              "zhs": "郡功曹",
+              "url": "/translations/officials/regional#commanderies-049"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Xuchang",
+              "zht": "許",
+              "zhs": "许"
+            },
+            {
+              "en": "Xiping",
+              "zht": "西平",
+              "zhs": "西平"
+            }
+          ],
+          "position": [
+            {
+              "en": "Rectifier",
+              "zht": "司直",
+              "zhs": "司直"
+            },
+            {
+              "en": "Colonel Protecting the Qiang",
+              "zht": "護羌校尉",
+              "zhs": "护羌校尉"
+            },
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.029893,
+              "lng": 114.02211887,
+              "name": "Xuchang"
+            },
+            {
+              "kind": "admin",
+              "id": "140"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Rectifier",
+              "zht": "司直",
+              "zhs": "司直",
+              "url": "/translations/officials/ministers#superior-excellency-006"
+            },
+            {
+              "en": "Colonel Protecting the Qiang",
+              "zht": "護羌校尉",
+              "zhs": "护羌校尉",
+              "url": "/translations/officials/military#colonels--commandants-189"
+            },
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节",
+              "url": "/translations/officials#glossary-envoy-bearing-the-imperial-tally"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "age": null,
+          "location": [
+            {
+              "en": "Hedong",
+              "zht": "河東",
+              "zhs": "河东"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "57"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Imperial Secretariat",
+              "zht": "尚書",
+              "zhs": "尚书"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Imperial Secretariat",
+              "zht": "尚書",
+              "zhs": "尚书",
+              "url": "/translations/officials/departments#state-affairs-033"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黃初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Imperial Secretariat",
+              "zht": "尚書",
+              "zhs": "尚书"
+            },
+            {
+              "en": "Colonel of the Capital",
+              "zht": "司隷校尉",
+              "zhs": "司隷校尉"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Imperial Secretariat",
+              "zht": "尚書",
+              "zhs": "尚书",
+              "url": "/translations/officials/departments#state-affairs-033"
+            },
+            {
+              "en": "Colonel of the Capital",
+              "zht": "司隷校尉",
+              "zhs": "司隷校尉",
+              "url": "/translations/officials/regional#sili-001"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯",
+              "url": "/translations/officials#glossary-marquis-within-the-pass"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "3rd year of Huangchu",
+            "zht": "黄初三年",
+            "zhs": "黄初三年"
+          },
+          "year": 222,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Deputy Director of the Imperial Secretariat",
+              "zht": "尚書僕射",
+              "zhs": "尚书仆射"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Deputy Director of the Imperial Secretariat",
+              "zht": "尚書僕射",
+              "zhs": "尚书仆射",
+              "url": "/translations/officials/departments#state-affairs-032"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "5th year of Huangchu",
+            "zht": "黃初五年",
+            "zhs": "黄初五年"
+          },
+          "year": 224,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Posthumously Minister Coachman",
+              "zht": "追贈太僕",
+              "zhs": "追贈太仆"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Posthumously Minister Coachman",
+              "zht": "追贈太僕",
+              "zhs": "追贈太仆",
+              "url": "/translations/officials/ministers#-nine-ministers-ii-205"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "杜畿（伯侯）",
+      "to": "杜延年",
+      "type": "descendant of",
+      "passageId": "ws16c-p1"
+    },
+    {
+      "from": "杜延年",
+      "to": "杜周",
+      "type": "son of",
+      "passageId": "ws16c-p1"
+    },
+    {
+      "from": "荀彧",
+      "to": "曹操",
+      "type": "recommended 杜畿 to",
+      "passageId": "ws16c-p2"
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "耿紀",
+      "type": "acquaintance",
+      "passageId": "ws16c-p2"
+    },
+    {
+      "from": "荀彧",
+      "to": "耿紀",
+      "type": "neighbour",
+      "passageId": "ws16c-p2"
+    },
+    {
+      "from": "張時",
+      "to": "杜畿（伯侯）",
+      "type": "old acquaintance, superior",
+      "passageId": "ws16c-p2"
+    },
+    {
+      "from": "張時",
+      "to": "杜畿（伯侯）",
+      "type": "old acquaintance",
+      "passageId": "ws16c-p4"
+    },
+    {
+      "from": "衞固",
+      "to": "高幹",
+      "type": "co-conspirator",
+      "passageId": "ws16c-p3"
+    },
+    {
+      "from": "范先",
+      "to": "高幹",
+      "type": "co-conspirator",
+      "passageId": "ws16c-p3"
+    },
+    {
+      "from": "張晟",
+      "to": "劉表",
+      "type": "contact",
+      "passageId": "ws16c-p3"
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "衞固",
+      "type": "old acquaintance, rival",
+      "passageId": "ws16c-p4"
+    },
+    {
+      "from": "曹操",
+      "to": "夏侯惇",
+      "type": "sent to suppress",
+      "passageId": "ws16c-p4"
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "衞固",
+      "type": "subordinate relationship",
+      "passageId": "ws16c-p5"
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "范先",
+      "type": "subordinate relationship",
+      "passageId": "ws16c-p5"
+    },
+    {
+      "from": "白騎",
+      "to": "高幹",
+      "type": "contemporary rebel",
+      "passageId": "ws16c-p6"
+    },
+    {
+      "from": "高幹",
+      "to": "衞固",
+      "type": "ally",
+      "passageId": "ws16c-p7"
+    },
+    {
+      "from": "高幹",
+      "to": "張晟",
+      "type": "ally",
+      "passageId": "ws16c-p7"
+    },
+    {
+      "from": "樂詳",
+      "to": "杜畿（伯侯）",
+      "type": "career advanced by",
+      "passageId": "ws16c-p8"
+    },
+    {
+      "from": "韓遂",
+      "to": "馬超",
+      "type": "co-rebel",
+      "passageId": "ws16c-p9"
+    },
+    {
+      "from": "劉勳",
+      "to": "曹操",
+      "type": "favourite of",
+      "passageId": "ws16c-p9"
+    },
+    {
+      "from": "曹操",
+      "to": "杜畿（伯侯）",
+      "type": "commended",
+      "passageId": "ws16c-p9"
+    },
+    {
+      "from": "曹操",
+      "to": "杜畿（伯侯）",
+      "type": "superior",
+      "passageId": "ws16c-p10"
+    },
+    {
+      "from": "曹丕",
+      "to": "杜畿（伯侯）",
+      "type": "granted title, appointed",
+      "passageId": "ws16c-p11"
+    },
+    {
+      "from": "趙儼",
+      "to": "杜畿（伯侯）",
+      "type": "successor",
+      "passageId": "ws16c-p11"
+    },
+    {
+      "from": "曹丕",
+      "to": "杜畿（伯侯）",
+      "type": "superior",
+      "passageId": "ws16c-p12"
+    },
+    {
+      "from": "杜恕",
+      "to": "杜畿（伯侯）",
+      "type": "son of",
+      "passageId": "ws16c-p12"
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "李恢",
+      "type": "friend",
+      "passageId": "ws16c-p12"
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "郭智",
+      "type": "friend",
+      "passageId": "ws16c-p12"
+    },
+    {
+      "from": "李豐",
+      "to": "李恢",
+      "type": "son of",
+      "passageId": "ws16c-p12"
+    },
+    {
+      "from": "郭沖",
+      "to": "郭智",
+      "type": "son of",
+      "passageId": "ws16c-p12"
+    },
+    {
+      "from": "李義",
+      "to": "李豐",
+      "type": "father of",
+      "passageId": "ws16c-p12"
+    }
+  ]
+}

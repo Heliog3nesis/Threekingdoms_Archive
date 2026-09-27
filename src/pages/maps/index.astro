@@ -36,7 +36,7 @@ const tabs = ['All', ...groupEntries.map(([, g]) => g.label)];
       <div class="page-banner-overlay"></div>
       <div class="page-header">
         <div class="page-icon">
-          <img src={url('/icon-maps.svg')} alt="" style="width: 42px; height: 42px; object-fit: contain;" />
+          <img src={url('/icon-maps.svg')} alt="" style="width: 54px; height: 54px; object-fit: contain;" />
         </div>
         <h1 class="page-title">{m.title}</h1>
         <p class="page-sub">{m.subtitle}</p>
@@ -156,9 +156,7 @@ const tabs = ['All', ...groupEntries.map(([, g]) => g.label)];
 }
 
 .page-icon {
-  width: 52px; height: 52px;
-  border-radius: var(--radius-md);
-  background: #183b62;
+  width: 64px; height: 64px;
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 1rem;
 }

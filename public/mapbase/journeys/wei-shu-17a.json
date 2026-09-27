@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-17a",
+    "order": 17,
+    "label": {
+      "zht": "張遼傳",
+      "zhs": "张辽传",
+      "en": "Biography of Zhang Liao"
+    },
+    "title": {
+      "zht": "魏書十七 · 張遼傳",
+      "zhs": "魏书十七 · 张辽传",
+      "en": "Book of Wei, Chapter 17 · Biography of Zhang Liao"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -429,17 +443,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Gentleman-General",
-                "zht": "中郎將",
-                "zhs": "中郎将"
-              },
-              "1": {
-                "en": "Marquis Within the Pass",
-                "zht": "關內侯",
-                "zhs": "关内侯"
-              },
+              "en": "Gentleman-General",
+              "zht": "中郎將",
+              "zhs": "中郎将",
               "url": null
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯",
+              "url": "/translations/officials#glossary-marquis-within-the-pass"
             }
           ]
         },
@@ -479,12 +492,10 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "Assistant General",
-                "zht": "裨將軍",
-                "zhs": "裨將军"
-              },
-              "url": null
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨將军",
+              "url": "/translations/officials/military#four-direction--misc-165"
             }
           ]
         },
@@ -608,12 +619,10 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": " General Who Sweeps the Bandits",
-                "zht": "盪寇將軍",
-                "zhs": "荡寇将军"
-              },
-              "url": null
+              "en": " General Who Sweeps the Bandits",
+              "zht": "盪寇將軍",
+              "zhs": "荡寇将军",
+              "url": "/translations/officials/military#four-direction--misc-153"
             }
           ]
         },
@@ -745,12 +754,10 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Provisional Bearer of the Imperial Tally",
-                "zht": "假節",
-                "zhs": "假节"
-              },
-              "url": null
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
             }
           ]
         },
@@ -880,22 +887,22 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General of the Front",
-                "zht": "前將軍",
-                "zhs": "前将军"
-              },
-              "1": {
-                "en": "Capital Township Marquis",
-                "zht": "都鄉侯",
-                "zhs": "都乡侯"
-              },
-              "2": {
-                "en": "County Marquis",
-                "zht": "縣侯",
-                "zhs": "县侯"
-              },
-              "url": null
+              "en": "General of the Front",
+              "zht": "前將軍",
+              "zhs": "前将军",
+              "url": "/translations/officials/military#four-direction--misc-114"
+            },
+            {
+              "en": "Capital Township Marquis",
+              "zht": "都鄉侯",
+              "zhs": "都乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯",
+              "url": "/translations/officials#glossary-county-marquis"
             }
           ]
         },

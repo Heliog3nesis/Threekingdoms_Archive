@@ -42,12 +42,36 @@
 // Admin boundary / water body entries work the same way, in case a
 // stop's location ever resolves to one of those instead of a town.
 //
+// TITLES (stop.position) follow the same idea. Each title is first matched
+// against the chapter's own officials-page / glossary tags (exact, then
+// "the title wraps a tagged core title"). A title that STILL has no link
+// after that is no longer silently left unlinked — the script now asks,
+// in three steps, mirroring the location flow:
+//   1. tags in the chapter (officials/glossary links only) whose label
+//      CONTAINS the title — pick one, or Enter for the next step.
+//   2. a search of the officials databases (src/data/officials/*.json:
+//      every position name across Wei/Shu/Wu) and the glossary (fief
+//      titles like Marquis, tally titles, etc.) — the closest few matches
+//      (exact name first, then nearest in length) are offered, pick one
+//      or Enter for the next step.
+//   3. paste an officials link (…/translations/officials/<page>#<id> or
+//      …/translations/officials#glossary-<id>, any language version, even
+//      a full URL) — Enter skips it this time, and typing x marks the
+//      title as intentionally unlinked so it's never asked about again.
+// Answers are cached in the same overrides file, keyed by chapter + title
+// (chapter-wide rather than per passage, since a title means the same
+// thing wherever it appears in one biography), so no title is asked about
+// twice. Pass --skip-titles to skip this whole interactive pass (titles
+// then stay exactly as before: linked only if a tag already matches).
+//
 // Usage (run from the project root, i.e. the "web" folder):
 //   node scripts/build-journeys.mjs
+//   node scripts/build-journeys.mjs --skip-titles
 
 import fs from 'node:fs';
 import path from 'node:path';
 import readline from 'node:readline/promises';
+import { pathToFileURL } from 'node:url';
 import { stdin as input, stdout as output } from 'node:process';
 
 const ROOT = process.cwd();
@@ -55,12 +79,45 @@ const SGZ_DIR = path.join(ROOT, 'src/data/sgz');
 const OUT_DIR = path.join(ROOT, 'public/mapbase/journeys');
 const OVERRIDES_PATH = path.join(ROOT, 'scripts/.journey-location-overrides.json');
 
+// Title (position) linking — see the TITLES section in the header.
+const SKIP_TITLES = process.argv.includes('--skip-titles');
+const TITLE_SKIP_MARK = 'none'; // override-cache value meaning "intentionally unlinked"
+const MAX_TITLE_SUGGESTIONS = 8;
+const OFFICIALS_DIR = path.join(ROOT, 'src/data/officials');
+// Officials page id -> its JSON file. Mirrors link-terms.mjs /
+// build-officials-index.ts, so the same pages that get searched here are
+// the ones the links actually point to.
+const OFFICIALS_FILES = {
+  departments: 'central-court-database.json',
+  ministers: 'excellencies-database.json',
+  military: 'military-officials-database.json',
+  regional: 'provincial-officials-database.json',
+  household: 'rear-eastern-palace-database.json',
+};
+const GLOSSARY_PATH = path.join(OFFICIALS_DIR, 'glossary-data.ts');
+
 // The same location databases the map itself reads at runtime — used for
 // step 2's database-search fallback. Loaded lazily (only if a term
 // actually reaches that step) and cached across the whole run. If a path
 // doesn't match your actual repo layout, this warns once and that
 // particular kind is just skipped for database search rather than
 // crashing the whole script - adjust the paths below if needed.
+// Mirrored from interactive-map.js's own PROVINCE_KINGDOM - kept as a
+// separate copy rather than a shared import since this script and the
+// frontend build in entirely different environments (Node vs browser
+// bundle). Used only to derive each person's kingdom for the journey
+// index's "sort by state" option - if the two ever drift apart, that
+// sort option is the only thing affected, not the map itself.
+const PROVINCE_KINGDOM = {
+  'Bingzhou': 'wei', 'Jizhou': 'wei', 'Qingzhou': 'wei',
+  'Yanzhou': 'wei', 'Yuzhou': 'wei', 'Youzhou': 'wei',
+  'Liangzhou': 'wei', 'Sili': 'wei', 'Yongzhou': 'wei',
+  'Xuzhou': 'wei', 'Jingzhou (Wei)': 'wei', 'Yangzhou (Wei)': 'wei',
+  'Yizhou (North)': 'shu', 'Yizhou (South)': 'shu',
+  'Jiaozhou': 'wu', 'Jingzhou (Wu)': 'wu', 'Yangzhou (Wu)': 'wu',
+  'Xiyu': 'wei',
+};
+
 const DB_PATHS = {
   town: path.join(ROOT, 'public/mapbase/All_Towns.json'),
   admin: path.join(ROOT, 'public/mapbase/All_Provinces.json'),
@@ -112,6 +169,40 @@ function loadLocationDatabase() {
 
   locationDatabaseCache = { towns, admin, water };
   return locationDatabaseCache;
+}
+
+// Derives a person's kingdom from their hometown - the first stop in
+// their own journey, which is always their birthplace per the existing
+// "first stop is always hometown" convention. Used only for the journey
+// index's "sort by state" option; a person's actual allegiance can shift
+// over their life, but their birthplace's kingdom is a stable, always-
+// available single value to sort by, which "the kingdom they died
+// serving" or similar wouldn't be for someone whose stops don't resolve
+// that far.
+function getPersonKingdom(person) {
+  const firstEntry = person.stops?.[0]?.resolvedLocations?.[0];
+  if (!firstEntry) return 'unknown';
+
+  const db = loadLocationDatabase();
+
+  if (firstEntry.kind === 'town') {
+    const town = db.towns.find(
+      (t) => Number(t.Latitude) === firstEntry.lat && Number(t.Longitude) === firstEntry.lng
+    );
+    return (town && PROVINCE_KINGDOM[town.Prov_EN]) || 'unknown';
+  }
+
+  if (firstEntry.kind === 'admin') {
+    const feature = db.admin.find((f) => String((f.properties ?? f).id) === String(firstEntry.id));
+    const props = feature ? (feature.properties ?? feature) : null;
+    if (!props) return 'unknown';
+    const provEn = props.level === 'commandery' || props.level === 'tributary' || props.level === 'island'
+      ? props.Prov_EN
+      : props.Name_EN;
+    return PROVINCE_KINGDOM[provEn] || 'unknown';
+  }
+
+  return 'unknown';
 }
 
 // Case-insensitive containment in either direction - a term matches a
@@ -551,6 +642,17 @@ function findMatchingTagUrlBySubstring(tags, zhCandidates) {
 // isn't cleanly parallel across languages), the whole position is kept
 // as one segment rather than guessing at a misaligned pairing.
 function splitPositionSegments(position) {
+  // Some stops already store multiple titles as a proper array of
+  // separate {en,zht,zhs} objects (e.g. "Gentleman-General" and
+  // "Marquis Within the Pass" held together in one year) rather than as
+  // delimiter-separated text packed into a single object's fields. That
+  // shape needs no splitting at all - each array element already IS one
+  // complete segment. Treating the whole array as if it were a single
+  // {en,zht,zhs} object (the bug this replaces) silently produced a
+  // broken segment with numeric keys instead of language fields, which
+  // downstream rendering correctly refused to display at all.
+  if (Array.isArray(position)) return position;
+
   const delimRe = /[;；，,、]/;
   const splitField = (f) => (f || '').split(delimRe).map((s) => s.trim()).filter(Boolean);
 
@@ -570,19 +672,267 @@ function splitPositionSegments(position) {
   return segments;
 }
 
+function stripHtml(str) {
+  return (str ?? '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '').trim();
+}
+
+// Every non-placeholder name a position goes by across Wei/Shu/Wu
+// (deduplicated), same approach as link-terms.mjs — a title can be called
+// something different in each kingdom, and any of them should be findable.
+function allPositionNames(pos, key) {
+  const all = [...(pos.name?.wei ?? []), ...(pos.name?.shu ?? []), ...(pos.name?.wu ?? [])];
+  const names = [];
+  for (const n of all) {
+    const val = stripHtml(n?.[key] ?? n?.en);
+    if (val && val !== '?' && val !== '-' && !names.includes(val)) names.push(val);
+  }
+  if (names.length === 0) {
+    const dn = stripHtml(pos.displayName?.[key] ?? pos.displayName?.en ?? '');
+    if (dn) names.push(dn);
+  }
+  return names;
+}
+
+// Loads every officials position plus every glossary term as
+// { names: {en,zht,zhs}, url, where }, once per run. The glossary is a
+// TypeScript file, imported directly (needs a Node with TypeScript type
+// stripping — 22.18+ / 24); if that fails, positions are still searched
+// and only the glossary is skipped, with a warning.
+let officialsDatabaseCache = null;
+async function loadOfficialsDatabase() {
+  if (officialsDatabaseCache) return officialsDatabaseCache;
+  const entries = [];
+
+  for (const [pageId, filename] of Object.entries(OFFICIALS_FILES)) {
+    const filePath = path.join(OFFICIALS_DIR, filename);
+    if (!fs.existsSync(filePath)) {
+      console.warn(`  ! ${filename} not found at ${filePath} — title search will skip it`);
+      continue;
+    }
+    try {
+      for (const cat of readJson(filePath).categories ?? []) {
+        const posList = [...(cat.sections ?? []).flatMap((s) => s.positions ?? []), ...(cat.positions ?? [])];
+        for (const pos of posList) {
+          entries.push({
+            names: { en: allPositionNames(pos, 'en'), zht: allPositionNames(pos, 'zht'), zhs: allPositionNames(pos, 'zhs') },
+            url: `/translations/officials/${pageId}#${pos.id}`,
+            where: `${pageId}${cat.label?.en ? ` · ${cat.label.en}` : ''}`,
+          });
+        }
+      }
+    } catch (e) {
+      console.warn(`  ! could not read ${filename} — title search will skip it (${e.message})`);
+    }
+  }
+
+  try {
+    const mod = await import(pathToFileURL(GLOSSARY_PATH).href);
+    for (const t of mod.glossaryTerms ?? []) {
+      entries.push({
+        names: { en: [t.term?.en].filter(Boolean), zht: [t.term?.zht].filter(Boolean), zhs: [t.term?.zhs].filter(Boolean) },
+        url: `/translations/officials#glossary-${t.id}`,
+        where: 'glossary',
+      });
+    }
+  } catch (e) {
+    console.warn(`  ! could not load the glossary (${e.message}) — title search will cover positions only`);
+  }
+
+  officialsDatabaseCache = entries;
+  return entries;
+}
+
+// True if `hay` contains `needle` as a proper piece: for English, on whole
+// word boundaries (so "commander" does NOT match inside "commandery");
+// for Chinese, plain substring. Both arguments already lowercased.
+function containsPiece(hay, needle, lang) {
+  if (!needle || !hay.includes(needle)) return false;
+  if (lang !== 'en') return true;
+  const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`(?<![a-z])${escaped}(?![a-z])`).test(hay);
+}
+
+// Step 2 of the title flow. Compares each of the title's en/zht/zhs forms
+// against the same language's names of every officials entry:
+//   exact match ................ best
+//   one contains the other ..... ranked by how close the two are in length
+//                                (so "Township Marquis" outranks a far
+//                                longer title that merely contains the word)
+// A contained/containing piece must be 2+ characters — single characters
+// like 令 or 侯 would otherwise match half the database. Returns at most
+// MAX_TITLE_SUGGESTIONS distinct links, best first, as candidates in the
+// shape promptChooseCandidate expects.
+function searchOfficialsDatabase(entries, seg) {
+  const forms = { en: seg.en, zht: seg.zht, zhs: seg.zhs };
+  const len = (s) => [...s].length;
+  const scored = [];
+
+  for (const e of entries) {
+    let best = null;
+    for (const lang of ['en', 'zht', 'zhs']) {
+      const c = String(forms[lang] ?? '').trim().toLowerCase();
+      if (!c) continue;
+      for (const raw of e.names[lang] ?? []) {
+        const n = String(raw).trim().toLowerCase();
+        if (!n) continue;
+        let score;
+        if (n === c) score = 0;
+        else if (len(n) >= 2 && len(c) >= 2 && (containsPiece(n, c, lang) || containsPiece(c, n, lang))) score = 1 + Math.abs(len(n) - len(c));
+        else continue;
+        if (best === null || score < best) best = score;
+      }
+    }
+    if (best !== null) scored.push({ e, score: best });
+  }
+
+  scored.sort((a, b) => a.score - b.score);
+  const seen = new Set();
+  const results = [];
+  for (const { e } of scored) {
+    if (seen.has(e.url)) continue;
+    seen.add(e.url);
+    results.push({
+      label: `${e.names.en[0] ?? ''} ${e.names.zht[0] ?? ''}`.trim() || e.url,
+      disambiguation: e.where,
+      entry: e.url,
+    });
+    if (results.length >= MAX_TITLE_SUGGESTIONS) break;
+  }
+  return results;
+}
+
+// Step 1 of the title flow: officials/glossary tags in the chapter whose
+// label CONTAINS the title (e.g. the journey says "Chief Clerk" but the
+// text only tags "Chief Clerk of the Chancellor"). The reverse direction —
+// a title wrapping a tag — was already handled automatically before this
+// point, so only this direction is left to ask about. 2+ characters only,
+// for the same reason as above.
+function findTitleContainsMatches(tags, seg) {
+  const forms = ['en', 'zht', 'zhs']
+    .map((lang) => ({ lang, text: String(seg[lang] ?? '').trim().toLowerCase() }))
+    .filter((f) => [...f.text].length >= 2);
+  if (forms.length === 0) return [];
+  const seen = new Set();
+  const results = [];
+  for (const tag of tags) {
+    if (!isOfficialsTagUrl(tag.url)) continue;
+    const label = String(tag.label ?? '').toLowerCase();
+    if (!forms.some((f) => containsPiece(label, f.text, f.lang))) continue;
+    const url = stripLangPrefix(tag.url);
+    if (seen.has(url)) continue;
+    seen.add(url);
+    results.push({ label: tag.label, disambiguation: url, entry: url });
+  }
+  return results;
+}
+
+// Accepts an officials link pasted in any form — a bare path, one with a
+// /zh-hant or /zh-hans prefix, a site-prefixed one, or a full URL — and
+// returns the language-neutral "/translations/officials/…" part, or null
+// if it isn't an officials/glossary link.
+function parseOfficialsLink(raw) {
+  const s = String(raw ?? '').trim().replace(/^["']|["']$/g, '');
+  const i = s.indexOf('/translations/officials');
+  if (i === -1) return null;
+  const rest = s.slice(i);
+  return isOfficialsTagUrl(rest) ? rest : null;
+}
+
+// A title that no tag matched (see resolvePositionLinks): asks, in three
+// steps, how to link it — see the TITLES section in the header. Returns
+// the link (language-neutral) or null if it stays unlinked.
+async function resolveUnlinkedTitle(rl, overrides, chapterId, passageTags, chapterTags, seg, passageId, warnings) {
+  const displayName = seg.en || seg.zht || seg.zhs;
+  if (!displayName) return null;
+  const promptName = [seg.en, seg.zht].filter(Boolean).join(' / ');
+  const cacheKey = `${chapterId}::title::${displayName}`;
+
+  const cached = overrides[cacheKey];
+  if (cached === TITLE_SKIP_MARK) return null; // intentionally unlinked
+  if (cached) {
+    const cachedUrl = parseOfficialsLink(cached);
+    if (cachedUrl) return cachedUrl;
+  }
+
+  let url = null;
+
+  // Step 1: officials/glossary tags in the chapter that contain the title.
+  const seen = new Set();
+  const containsCandidates = [...findTitleContainsMatches(passageTags, seg), ...findTitleContainsMatches(chapterTags, seg)].filter((c) => {
+    if (seen.has(c.entry)) return false;
+    seen.add(c.entry);
+    return true;
+  });
+  if (containsCandidates.length) {
+    url = await promptChooseCandidate(
+      rl,
+      containsCandidates,
+      `title: ${promptName}`,
+      passageId,
+      `no tag matches this title, but ${containsCandidates.length} officials tag(s) in the chapter contain it`
+    );
+  }
+
+  // Step 2: search the officials databases + glossary.
+  if (!url) {
+    const dbCandidates = searchOfficialsDatabase(await loadOfficialsDatabase(), seg);
+    if (dbCandidates.length) {
+      url = await promptChooseCandidate(
+        rl,
+        dbCandidates,
+        `title: ${promptName}`,
+        passageId,
+        `closest ${dbCandidates.length} match(es) in the officials database / glossary`
+      );
+    }
+  }
+
+  // Step 3: paste a link, skip, or mark as never-link.
+  if (!url) {
+    const answer = (
+      await rl.question(
+        `\n  ? Could not link title "${promptName}" (chapter ${chapterId}, passageId: ${passageId || 'none'}).\n` +
+          `    Paste an officials link (…/translations/officials/<page>#<id> or …#glossary-<id>, any language version),\n` +
+          `    press Enter to skip for now, or type x to leave it unlinked for good: `
+      )
+    ).trim();
+
+    if (answer.toLowerCase() === 'x') {
+      overrides[cacheKey] = TITLE_SKIP_MARK;
+      saveOverrides(overrides);
+      return null;
+    }
+    if (answer) {
+      url = parseOfficialsLink(answer);
+      if (!url) warnings.push(`  ! the link provided for title "${promptName}" didn't look like an officials/glossary link — skipped`);
+    }
+  }
+
+  if (url) {
+    overrides[cacheKey] = url;
+    saveOverrides(overrides); // persist immediately, in case of a later crash
+  } else {
+    warnings.push(`  ! title "${promptName}" (passageId: ${passageId || 'none'}) is still unlinked`);
+  }
+  return url;
+}
+
 // Resolves EACH title segment independently, per the grammar rules — the
 // core title xx within each segment is looked up exactly first, falling
 // back to a substring match (still requiring an officials-page tag) for
-// the "yyxxzz" wrapped form. Returns one {en, zht, zhs, url} per
-// segment, url null if that specific segment didn't resolve.
-function resolvePositionLinks(passagesById, chapterTags, stop) {
+// the "yyxxzz" wrapped form. Anything still unlinked after that goes
+// through the interactive resolveUnlinkedTitle flow (unless --skip-titles).
+// Returns one {en, zht, zhs, url} per segment, url null if that specific
+// segment didn't resolve.
+async function resolvePositionLinks(rl, overrides, chapterId, passagesById, chapterTags, stop, warnings) {
   if (!stop.position) return [];
 
   const segments = splitPositionSegments(stop.position);
   const passage = stop.passageId ? passagesById.get(stop.passageId) : null;
   const passageTags = passage ? collectTagsFromPassage(passage) : [];
 
-  return segments.map((seg) => {
+  const links = [];
+  for (const seg of segments) {
     const candidates = [seg.en, seg.zht, seg.zhs];
     const zhCandidates = [seg.zht, seg.zhs];
 
@@ -593,8 +943,13 @@ function resolvePositionLinks(passagesById, chapterTags, stop) {
         findMatchingTagUrlBySubstring(chapterTags, zhCandidates);
     }
 
-    return { ...seg, url: rawUrl ? stripLangPrefix(rawUrl) : null };
-  });
+    let url = rawUrl ? stripLangPrefix(rawUrl) : null;
+    if (!url && !SKIP_TITLES) {
+      url = await resolveUnlinkedTitle(rl, overrides, chapterId, passageTags, chapterTags, seg, stop.passageId, warnings);
+    }
+    links.push({ ...seg, url });
+  }
+  return links;
 }
 
 async function collectEntriesFromChapter(rl, overrides, data, chapterId, warnings) {
@@ -619,7 +974,7 @@ async function collectEntriesFromChapter(rl, overrides, data, chapterId, warning
       // re-derive coordinates from a name at render time — which would
       // risk ambiguous matches when multiple pins share the same name.
       stop.resolvedLocations = entries;
-      stop.positionLinks = resolvePositionLinks(passagesById, chapterTags, stop);
+      stop.positionLinks = await resolvePositionLinks(rl, overrides, chapterId, passagesById, chapterTags, stop, warnings);
 
       for (const entry of entries) {
         if (!entry) continue; // an unresolved location - kept as null in resolvedLocations for index alignment, but not a real pin
@@ -643,6 +998,19 @@ async function collectEntriesFromChapter(rl, overrides, data, chapterId, warning
   return { pins: [...entriesByKey.values()], journeyOverviews };
 }
 
+// Extracts just the "Book of Wei, Chapter 16" / "魏書十六" portion from a
+// chapter's full title (e.g. "Book of Wei, Chapter 16 · Biography of Du
+// Ji" / "魏書十六 · 杜畿传"). Splitting on the title's own consistent " · "
+// separator rather than rebuilding this from bookLabel+num directly,
+// since the Chinese side uses author-written numerals (十六) that don't
+// derive cleanly from num's raw "16" - reusing the already-correct title
+// avoids needing a number-to-Chinese-numeral converter of our own.
+function extractChapterTag(titleField) {
+  if (!titleField) return null;
+  const split = (s) => (s ? s.split(' · ')[0].trim() : '');
+  return { en: split(titleField.en), zht: split(titleField.zht), zhs: split(titleField.zhs) };
+}
+
 async function main() {
   if (!fs.existsSync(SGZ_DIR)) {
     console.error(`ERROR: ${SGZ_DIR} not found. Run this from the project root.`);
@@ -658,6 +1026,7 @@ async function main() {
 
   let written = 0;
   let emptyChapters = 0;
+  const index = [];
 
   for (const file of files) {
     const filePath = path.join(SGZ_DIR, file);
@@ -675,8 +1044,20 @@ async function main() {
     const townCount = entries.filter((e) => e.kind === 'town').length;
     const otherCount = entries.length - townCount;
 
+    // The chapter's own label/order (e.g. "Biographies of Ren, Su, Du,
+    // Zheng, Cang", order 16) - carried into the output so the frontend
+    // can show "from [this chapter]" when paging between several people
+    // who share one biography, without needing a second fetch just for
+    // that context.
+    // title already combines bookLabel + num + label (e.g. "Book of
+    // Wei, Chapter 16 · Biography of Du Ji" / "魏書十六 · 杜畿传") - carried
+    // over as-is rather than reconstructing the same thing from book/num/
+    // label separately, since the chapter data already did that work.
+    const chapter = { id: chapterId, order: data.order ?? null, label: data.label ?? null, title: data.title ?? null };
+
     const outPath = path.join(OUT_DIR, `${chapterId}.json`);
     const outData = {
+      chapter,
       pins: entries,
       journeyOverviews: enrichedOverviews,
       relationships: data.relationships ?? []
@@ -687,7 +1068,27 @@ async function main() {
       `  ${chapterId}: ${townCount} town(s)${otherCount ? `, ${otherCount} admin/water boundary(ies)` : ''} -> journeys/${chapterId}.json`
     );
     for (const w of warnings) console.log(w);
+
+    // One index entry per person in this chapter - enough for the
+    // journey landing page to search/sort/display without fetching every
+    // chapter's full journey data up front.
+    for (const person of enrichedOverviews) {
+      index.push({
+        person: person.person,
+        name: person.name ?? null,
+        courtesyName: person.courtesyName ?? null,
+        chapterId,
+        chapterOrder: data.order ?? null,
+        chapterLabel: data.label ?? null,
+        chapterTag: extractChapterTag(data.title),
+        kingdom: getPersonKingdom(person),
+      });
+    }
   }
+
+  const indexPath = path.join(OUT_DIR, 'index.json');
+  fs.writeFileSync(indexPath, JSON.stringify(index, null, 2) + '\n', 'utf-8');
+  console.log(`\nWrote journey index: ${index.length} people across ${written} chapter(s) -> journeys/index.json`);
 
   rl.close();
   console.log(`\nDone. ${written} journey file(s) written, ${emptyChapters} chapter(s) had no journeyOverviews data.`);

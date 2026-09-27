@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18c",
+    "order": 18,
+    "label": {
+      "zht": "臧霸傳 · 附孫觀",
+      "zhs": "臧霸传 · 附孙观",
+      "en": "Biography of Zang Ba · with Sun Guan"
+    },
+    "title": {
+      "zht": "魏書十八 · 臧霸傳 · 附孫觀",
+      "zhs": "魏书十八 · 臧霸传 · 附孙观",
+      "en": "Book of Wei, Chapter 18 · Biography of Zang Ba · with Sun Guan"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -446,17 +460,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General Who Awes the Enemies",
-                "zht": "威虜將軍",
-                "zhs": "威虏将军"
-              },
-              "1": {
-                "en": "Capital Neighbourhood Marquis",
-                "zht": "都亭侯",
-                "zhs": "都亭侯"
-              },
-              "url": null
+              "en": "General Who Awes the Enemies",
+              "zht": "威虜將軍",
+              "zhs": "威虏将军",
+              "url": "/translations/officials/military#four-direction--misc-154"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },
@@ -609,17 +622,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General Who Promotes Might",
-                "zht": "揚威將軍",
-                "zhs": "扬威将军"
-              },
-              "1": {
-                "en": "Provisional Bearer of the Imperial Tally",
-                "zht": "假節",
-                "zhs": "假节"
-              },
-              "url": null
+              "en": "General Who Promotes Might",
+              "zht": "揚威將軍",
+              "zhs": "扬威将军",
+              "url": "/translations/officials/military#four-direction--misc-137"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
             }
           ]
         },
@@ -939,17 +951,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Adjunct General",
-                "zht": "偏將軍",
-                "zhs": "偏将军"
-              },
-              "1": {
-                "en": "Capital Neighbourhood Marquis",
-                "zht": "都亭侯",
-                "zhs": "都亭侯"
-              },
-              "url": null
+              "en": "Adjunct General",
+              "zht": "偏將軍",
+              "zhs": "偏将军",
+              "url": "/translations/officials/military#four-direction--misc-164"
+            },
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },
@@ -986,17 +997,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Inspector of Qing Province",
-                "zht": "青州刺史",
-                "zhs": "青州刺史"
-              },
-              "1": {
-                "en": "Provisional Bearer of the Imperial Tally",
-                "zht": "假節",
-                "zhs": "假节"
-              },
-              "url": null
+              "en": "Inspector of Qing Province",
+              "zht": "青州刺史",
+              "zhs": "青州刺史",
+              "url": "/translations/officials/regional#provinces-014"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
             }
           ]
         },

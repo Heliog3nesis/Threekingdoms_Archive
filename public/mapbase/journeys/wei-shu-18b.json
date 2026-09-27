@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18b",
+    "order": 18,
+    "label": {
+      "zht": "李通傳",
+      "zhs": "李通传",
+      "en": "Biography of Li Tong"
+    },
+    "title": {
+      "zht": "魏書十八 · 李通傳",
+      "zhs": "魏书十八 · 李通传",
+      "en": "Book of Wei, Chapter 18 · Biography of Li Tong"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -213,17 +227,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Assistant General",
-                "zht": "裨將軍",
-                "zhs": "裨将军"
-              },
-              "1": {
-                "en": "Commandant of Yang'an",
-                "zht": "陽安都尉",
-                "zhs": "阳安都尉"
-              },
-              "url": null
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军",
+              "url": "/translations/officials/military#four-direction--misc-165"
+            },
+            {
+              "en": "Commandant of Yang'an",
+              "zht": "陽安都尉",
+              "zhs": "阳安都尉",
+              "url": "/translations/officials/regional?lat=32.90764066&lng=114.05769361"
             }
           ]
         },
@@ -260,17 +273,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Capital Neighbourhood Marquis",
-                "zht": "都亭侯",
-                "zhs": "都亭侯"
-              },
-              "1": {
-                "en": "Grand Administrator of Runan",
-                "zht": "汝南太守",
-                "zhs": "汝南太守"
-              },
-              "url": null
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            },
+            {
+              "en": "Grand Administrator of Runan",
+              "zht": "汝南太守",
+              "zhs": "汝南太守",
+              "url": "/translations/officials/regional#commanderies-039"
             }
           ]
         },

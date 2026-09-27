@@ -12,6 +12,10 @@ import {
   linkifyParagraphs,
   linkifyParagraphPairs,
   renderFootnotes,
+  isAppraisal,
+  compareChapters,
+  biographyCount,
+  renderAppraisalSubjects,
 } from '../../../scripts/translations/chapterFormat';
 
 const TEXT_TITLE = { zht: '三國志', zhs: '三国志', en: 'Records of the Three Kingdoms' };
@@ -22,7 +26,7 @@ const chapterModules = import.meta.glob('../../../data/sgz/*.json', { eager: tru
 
 const chapters = Object.values(chapterModules)
   .map((mod: any) => mod.default ?? mod)
-  .sort((a: any, b: any) => a.order - b.order);
+  .sort(compareChapters);
 
 // Sidebar sections, grouped by book, in the order chapters first appear
 const bookSections: any[] = [];
@@ -60,7 +64,7 @@ export function getStaticPaths() {
   const mods = import.meta.glob('../../../data/sgz/*.json', { eager: true });
   const chs = Object.values(mods)
     .map((mod: any) => mod.default ?? mod)
-    .sort((a: any, b: any) => a.order - b.order);
+    .sort(compareChapters);
   const paths: any[] = [{ params: { chapter: undefined } }]; // cover
   for (const ch of chs) {
     paths.push({ params: { chapter: ch.id } });
@@ -74,6 +78,14 @@ const currentIndex = isCover ? -1 : chapters.findIndex((c: any) => c.id === chap
 const currentChapter = currentIndex >= 0 ? chapters[currentIndex] : null;
 const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
 const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
+
+// The relationships page only understands the new relationship schema so far — only some
+// chapters have been converted (see scripts/validate-relationships.mjs). Only link to it
+// from a chapter that actually has data there, so "Show relationships" never silently lands
+// on a different chapter's graph.
+function hasRelationshipsData(ch: any): boolean {
+  return Array.isArray(ch?.relationships) && ch.relationships.length > 0 && ch.relationships.every((r: any) => Array.isArray(r.notes));
+}
 
 const lang: string = 'en';
 const strings = t(lang);
@@ -99,7 +111,7 @@ const baseUrl = url('/translations/sanguozhi');
 const chapterUrl = (id: string) => `${baseUrl}/${id}`;
 
 // Only chapters with real translated content — used for the cover's Contents list
-const translatedChapters = chapters.filter((c: any) => c.passages && c.passages.length > 0);
+const translatedChapters = chapters.filter((c: any) => c.passages && c.passages.length > 0 && !isAppraisal(c));
 const coverChapters = translatedChapters.length > 0 ? translatedChapters : chapters;
 
 // Person index for the cover's search panel — one entry per translated
@@ -112,7 +124,7 @@ const coverChapters = translatedChapters.length > 0 ? translatedChapters : chapt
 // still matches, even though only the English label is displayed here.
 type PersonEntry = { zht: string; zhs: string; en: string; chapterId: string; bookEn: string };
 const personIndex: PersonEntry[] = chapters
-  .filter((ch: any) => ch.passages && ch.passages.length > 0)
+  .filter((ch: any) => ch.passages && ch.passages.length > 0 && !isAppraisal(ch))
   .map((ch: any) => ({
     zht: ch.label.zht, zhs: ch.label.zhs, en: ch.label.en || ch.title?.en || '',
     chapterId: ch.id, bookEn: ch.bookLabel.en,
@@ -167,13 +179,13 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                       >
                         <i class="ti ti-chevron-right sb-juan-chevron" aria-hidden="true"></i>
                         <span class="sb-ch-num">{group.num}</span>
-                        <span class="sb-juan-count">{group.chapters.length} biographies</span>
+                        <span class="sb-juan-count">{biographyCount(group.chapters)} {biographyCount(group.chapters) === 1 ? 'biography' : 'biographies'}</span>
                       </button>
                       <div class:list={['sb-juan-body', { open: groupHasActive }]}>
                         {group.chapters.map((ch: any) => (
                           <a
                             href={chapterUrl(ch.id)}
-                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId }]}
+                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId, 'sb-ch-appraisal': isAppraisal(ch) }]}
                             data-sgz-link
                             data-chapter={ch.id}
                           >
@@ -236,13 +248,13 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                       >
                         <i class="ti ti-chevron-right sb-juan-chevron" aria-hidden="true"></i>
                         <span class="sb-ch-num">{group.num}</span>
-                        <span class="sb-juan-count">{group.chapters.length} biographies</span>
+                        <span class="sb-juan-count">{biographyCount(group.chapters)} {biographyCount(group.chapters) === 1 ? 'biography' : 'biographies'}</span>
                       </button>
                       <div class:list={['sb-juan-body', { open: groupHasActive }]}>
                         {group.chapters.map((ch: any) => (
                           <a
                             href={chapterUrl(ch.id)}
-                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId }]}
+                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId, 'sb-ch-appraisal': isAppraisal(ch) }]}
                             data-sgz-link
                             data-chapter={ch.id}
                           >
@@ -305,7 +317,12 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                 </p>
               </div>
               <div class="cover-right">
-                <div class="cover-contents-label">Find a person</div>
+                <div class="cover-contents-label-row">
+                  <div class="cover-contents-label">Find a person</div>
+                  <a href={url('/translations/sanguozhi/relationships')} class="cover-relationships-link" target="_blank" rel="noopener">
+                    <i class="ti ti-affiliate" aria-hidden="true"></i> Relationships
+                  </a>
+                </div>
                 <div class="person-search-wrap">
                   <i class="ti ti-search person-search-icon" aria-hidden="true"></i>
                   <input
@@ -336,6 +353,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
               <div class="chapter-header">
                 <div class="ch-title-group">
                   <h1 class="ch-title-en">{currentChapter.title.en}</h1>
+                  {isAppraisal(currentChapter) && <Fragment set:html={renderAppraisalSubjects(currentChapter, chapters, 'en', chapterUrl)} />}
                 </div>
                 <div class="view-toggle" role="group" aria-label="View mode">
                   <button class="view-toggle-btn active" data-view="both" type="button">Parallel</button>
@@ -353,9 +371,16 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                     <span class="term-toggle-track"><span class="term-toggle-thumb"></span></span>
                     <span class="term-toggle-label">Show links</span>
                   </label>
-                  <a href={url(`/maps/map-overall?journey=${currentChapter.id}`)} class="term-journey-link" target="_blank" rel="noopener">
-                    <i class="ti ti-route" aria-hidden="true"></i> Show life journey
-                  </a>
+                  {!isAppraisal(currentChapter) && (
+                    <a href={url(`/maps/map-overall?journey=${currentChapter.id}`)} class="term-journey-link" target="_blank" rel="noopener">
+                      <i class="ti ti-route" aria-hidden="true"></i> Show life journey
+                    </a>
+                  )}
+                  {hasRelationshipsData(currentChapter) && (
+                    <a href={url(`/translations/sanguozhi/relationships${currentChapter.journeyOverviews?.[0]?.person ? `?person=${encodeURIComponent(currentChapter.journeyOverviews[0].person)}` : ''}`)} class="term-journey-link" target="_blank" rel="noopener">
+                      <i class="ti ti-affiliate" aria-hidden="true"></i> Show relationships
+                    </a>
+                  )}
                 </div>
               </div>
 
@@ -446,11 +471,19 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
     linkifyParagraphs,
     linkifyParagraphPairs,
     renderFootnotes,
+    isAppraisal,
+    renderAppraisalSubjects,
   } from '../../../scripts/translations/chapterFormat';
 
   const dataEl = document.getElementById('sgz-data');
   const DATA = JSON.parse(dataEl ? dataEl.textContent ?? '{}' : '{}');
   const { chapters, bookSections, baseUrl, personIndex, initialChapterId } = DATA;
+
+  // Mirrors hasRelationshipsData() in the frontmatter — only some chapters have been
+  // converted to the new relationship schema the relationships page understands.
+  function hasRelationshipsData(ch: any): boolean {
+    return Array.isArray(ch?.relationships) && ch.relationships.length > 0 && ch.relationships.every((r: any) => Array.isArray(r.notes));
+  }
   const STR = {
     annotationBy: 'Annotation', previous: 'Previous', next: 'Next',
     pending: 'Translation in progress.', translations: 'Translations',
@@ -510,7 +543,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
   }
 
   function renderCover(): string {
-    const translated = chapters.filter((c: any) => c.passages && c.passages.length > 0);
+    const translated = chapters.filter((c: any) => c.passages && c.passages.length > 0 && !isAppraisal(c));
     const coverChapters = translated.length > 0 ? translated : chapters;
     const defaultResults = coverChapters.map((ch: any) => `
       <a href="${baseUrl}/${ch.id}" class="person-result" data-sgz-link data-chapter="${ch.id}">
@@ -536,7 +569,12 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                   A Collaborative translation with ZL181.</p>
         </div>
         <div class="cover-right">
-          <div class="cover-contents-label">Find a person</div>
+          <div class="cover-contents-label-row">
+            <div class="cover-contents-label">Find a person</div>
+            <a href="${url('/translations/sanguozhi/relationships')}" class="cover-relationships-link" target="_blank" rel="noopener">
+              <i class="ti ti-affiliate" aria-hidden="true"></i> Relationships
+            </a>
+          </div>
           <div class="person-search-wrap">
             <i class="ti ti-search person-search-icon" aria-hidden="true"></i>
             <input type="text" id="person-search-input" class="person-search-input" placeholder="Search by name, Chinese or English..." autocomplete="off" />
@@ -565,6 +603,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
       <div class="chapter-header">
         <div class="ch-title-group">
           <h1 class="ch-title-en">${esc(ch.title.en)}</h1>
+          ${isAppraisal(ch) ? renderAppraisalSubjects(ch, chapters, 'en', (id: string) => `${baseUrl}/${id}`) : ''}
         </div>
         <div class="view-toggle" role="group" aria-label="View mode">
           <button class="view-toggle-btn active" data-view="both" type="button">Parallel</button>
@@ -581,9 +620,16 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
             <span class="term-toggle-track"><span class="term-toggle-thumb"></span></span>
             <span class="term-toggle-label">Show links</span>
           </label>
-          <a href="${url(`/maps/map-overall?journey=${ch.id}`)}" class="term-journey-link" target="_blank" rel="noopener">
-            <i class="ti ti-route" aria-hidden="true"></i> Show life journey
-          </a>
+          ${isAppraisal(ch) ? '' : `
+            <a href="${url(`/maps/map-overall?journey=${ch.id}`)}" class="term-journey-link" target="_blank" rel="noopener">
+              <i class="ti ti-route" aria-hidden="true"></i> Show life journey
+            </a>
+          `}
+          ${hasRelationshipsData(ch) ? `
+            <a href="${url(`/translations/sanguozhi/relationships${ch.journeyOverviews?.[0]?.person ? `?person=${encodeURIComponent(ch.journeyOverviews[0].person)}` : ''}`)}" class="term-journey-link" target="_blank" rel="noopener">
+              <i class="ti ti-affiliate" aria-hidden="true"></i> Show relationships
+            </a>
+          ` : ''}
         </div>
       </div>
       <div class="passages">${passages}</div>
@@ -819,6 +865,12 @@ function updateMobileToolbar(chapterId: string | null, idx: number): void {
 .sb-juan-body.open { display: flex; }
 .sb-ch-nested { padding-left: 2.75rem; }
 .sb-ch-nested.on { padding-left: calc(2.75rem - 2px); }
+/* Chen Shou's appraisal (評) — last in its juan, set apart from the biographies */
+.sb-ch-appraisal { font-style: italic; border-top: 0.5px dashed var(--color-border); margin-top: 2px; }
+.appraisal-subjects { margin: 0.4rem 0 0; font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; }
+.appraisal-subjects-lead { color: var(--color-text-tertiary); }
+.appraisal-subject { color: var(--archive-gold-soft, #d0aa6b); text-decoration: none; border-bottom: 1px dotted currentColor; }
+.appraisal-subject:hover { border-bottom-style: solid; }
 
 
 
@@ -844,6 +896,10 @@ function updateMobileToolbar(chapterId: string | null, idx: number): void {
 
 .cover-right { padding-left: 2.5rem; border-left: 0.5px solid var(--color-border); display: flex; flex-direction: column; }
 .cover-contents-label { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 12px; }
+.cover-contents-label-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.cover-contents-label-row .cover-contents-label { margin-bottom: 12px; }
+.cover-relationships-link { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-text-secondary); text-decoration: none; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 0.25rem 0.65rem; margin-bottom: 10px; transition: border-color 0.15s, color 0.15s; }
+.cover-relationships-link:hover { border-color: var(--archive-gold-soft, #d0aa6b); color: var(--archive-gold-soft, #d0aa6b); }
 .person-search-wrap { position: relative; margin-bottom: 14px; }
 .person-search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 16px; color: var(--color-text-tertiary); pointer-events: none; }
 .person-search-input {

@@ -1,0 +1,1446 @@
+{
+  "id": "wei-shu-16e",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 16,
+  "num": "16",
+  "label": {
+    "zht": "鄭渾傳",
+    "zhs": "郑浑传",
+    "en": "Biography of Zheng Hun"
+  },
+  "title": {
+    "zht": "魏書十六 · 鄭渾傳",
+    "zhs": "魏书十六 · 郑浑传",
+    "en": "Book of Wei, Chapter 16 · Biography of Zheng Hun"
+  },
+  "relationships": [
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭衆（子師）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Hun's great-great-grandfather Zheng Zhong, courtesy name Zishi, was a renowned Confucian scholar and Minister of Agriculture.",
+            "zht": "鄭渾的高祖父鄭衆，字子師，為著名儒者，官至大司農。",
+            "zhs": "郑浑的高祖父郑众，字子师，为著名儒者，官至大司农。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭興（少贛）",
+      "to": "鄭衆（子師）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Zhong's father Zheng Xing, courtesy name Shaogan, was a renowned Confucian scholar and Counsellor Remonstrant.",
+            "zht": "鄭衆之父鄭興，字少贛，為著名儒者，官至諫議大夫。",
+            "zhs": "郑众之父郑兴，字少赣，为著名儒者，官至谏议大夫。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭泰（公業）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Hun's elder brother Zheng Tai plotted with Xun You and others to put Dong Zhuo to death.",
+            "zht": "鄭渾之兄鄭泰與荀攸等人合謀誅殺董卓。",
+            "zhs": "郑浑之兄郑泰与荀攸等人合谋诛杀董卓。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭崇",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "After Zheng Hun died, having been so frugal that his family went hungry and cold, his son Zheng Chong was appointed a Court Gentleman.",
+            "zht": "鄭渾去世時家境清貧，妻兒飢寒，其子鄭崇被任命為郎中。",
+            "zhs": "郑浑去世时家境清贫，妻儿饥寒，其子郑崇被任命为郎中。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "鄭袤（林叔）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Zheng Tai's young son Zheng Mao was taken by Zheng Hun to seek refuge in Huainan.",
+            "zht": "鄭泰之幼子鄭袤被鄭渾帶著一同逃往淮南。",
+            "zhs": "郑泰之幼子郑袤被郑浑带着一同逃往淮南。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭袤（林叔）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Zheng Hun took his nephew Zheng Mao, Zheng Tai's young son, with him when he fled to Huainan and then across the Yangtze.",
+            "zht": "鄭渾帶著侄子鄭袤逃往淮南，後又渡江南下。",
+            "zhs": "郑浑带着侄子郑袤逃往淮南，后又渡江南下。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "荀攸（公達）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Tai told his friend Xun You that He Jin was not easy to assist, and plotted with him and others to put Dong Zhuo to death.",
+            "zht": "鄭泰對好友荀攸說何公難以輔佐，並與他等人合謀誅殺董卓。",
+            "zhs": "郑泰对好友荀攸说何公难以辅佐，并与他等人合谋诛杀董卓。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "華歆（子魚）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Tai was good friends with Hua Xin and Xun You.",
+            "zht": "鄭泰與華歆、荀攸交好。",
+            "zhs": "郑泰与华歆、荀攸交好。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "華歆（子魚）",
+      "to": "鄭袤（林叔）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "On seeing Zheng Mao, Hua Xin exclaimed, \"Zheng Gongye will not perish after all!\"",
+            "zht": "華歆見到鄭袤，讚歎道：「鄭公業不死矣！」",
+            "zhs": "华歆见到郑袤，赞叹道：「郑公业不死矣！」"
+          }
+        }
+      ]
+    },
+    {
+      "from": "華歆（子魚）",
+      "to": "鄭渾（文公）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Knowing Yuan Shu was bound to fail, Zheng Hun crossed the Yangtze and joined Hua Xin, Grand Administrator of Yuzhang and a longtime friend of his elder brother, who took him in.",
+            "zht": "鄭渾知袁術必敗，渡江投奔豫章太守華歆，華歆與其兄鄭泰是舊友，收留了他。",
+            "zhs": "郑浑知袁术必败，渡江投奔豫章太守华歆，华歆与其兄郑泰是旧友，收留了他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "何進（遂高）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "He Jin appointed Zheng Tai Imperial Secretariat Attendant Gentleman and Commandant of Imperial Carriages, but Zheng Tai's warning against summoning Dong Zhuo went unheeded, so he resigned and left, saying Lord He was not easy to assist.",
+            "zht": "何進任命鄭泰為尚書侍郎、奉車都尉，但鄭泰勸阻召董卓入京，何進不聽，鄭泰遂辭官而去，說何公難以輔佐。",
+            "zhs": "何进任命郑泰为尚书侍郎、奉车都尉，但郑泰劝阻召董卓入京，何进不听，郑泰遂辞官而去，说何公难以辅佐。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "何進（遂高）",
+      "to": "董卓（仲穎）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "He Jin intended to execute the palace eunuchs and wished to summon Dong Zhuo to assist him.",
+            "zht": "何進打算誅殺宦官，想召董卓入京相助。",
+            "zhs": "何进打算诛杀宦官，想召董卓入京相助。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "董卓（仲穎）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Tai talked Dong Zhuo out of a massive mobilisation against East of the Pass with ten arguments, and Dong Zhuo made him a general in command of the armies sent against it; when told he had ties with the east, Dong Zhuo took away his troops and kept him at court, and Zheng Tai later conspired with Wang Yun to kill him and fled east.",
+            "zht": "鄭泰以十條理由勸阻董卓大舉出兵關東，董卓遂任命他為將、統領東征之軍；有人說他與山東諸侯有聯繫，董卓便收回他的兵馬，將他留在朝中，鄭泰後來與王允合謀刺董，並逃出武關東去。",
+            "zhs": "郑泰以十条理由劝阻董卓大举出兵关东，董卓遂任命他为将、统领东征之军；有人说他与山东诸侯有联系，董卓便收回他的兵马，将他留在朝中，郑泰后来与王允合谋刺董，并逃出武关东去。"
+          },
+          "title": {
+            "en": "Gentleman Consultant",
+            "zht": "議郎",
+            "zhs": "议郎"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "王允（子師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Tai later conspired with Wang Yun to kill Dong Zhuo, then escaped east through Wuguan.",
+            "zht": "鄭泰後來與王允合謀刺殺董卓，隨後逃出武關東去。",
+            "zhs": "郑泰后来与王允合谋刺杀董卓，随后逃出武关东去。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "袁術（公路）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Yuan Shu, General of the Rear, appointed Zheng Tai Inspector of Yang Province, but he died on the way before taking office, aged forty-two.",
+            "zht": "後將軍袁術任命鄭泰為揚州刺史，他赴任途中去世，年四十二歲。",
+            "zhs": "后将军袁术任命郑泰为扬州刺史，他赴任途中去世，年四十二岁。"
+          },
+          "title": {
+            "en": "Inspector of Yang Province",
+            "zht": "揚州刺史",
+            "zhs": "扬州刺史"
+          }
+        }
+      ]
+    },
+    {
+      "from": "袁術（公路）",
+      "to": "鄭渾（文公）",
+      "type": "personal",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Yuan Shu received Zheng Hun and his young nephew in Huainan with great courtesy, but Zheng Hun, knowing Yuan Shu was bound to fail, soon left him and crossed the Yangtze.",
+            "zht": "袁術在淮南以厚禮接待鄭渾及其幼侄，但鄭渾知袁術必敗，不久便離開他渡江南下。",
+            "zhs": "袁术在淮南以厚礼接待郑浑及其幼侄，但郑浑知袁术必败，不久便离开他渡江南下。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Hearing of Zheng Hun's steadfast conduct, Cao Cao summoned him to his staff and promoted him to County Chief of Xiacai, County Magistrate of Shaoling, and later Intendant of Pingyi; wherever he served he made the people farm and raise silkworms and stopped them abandoning children, and they prospered.",
+            "zht": "曹操聞鄭渾操守堅定，召他為掾屬，後升任下蔡長、邵陵令，又任丞相掾屬、馮翊太守；他所到之處令百姓耕桑、嚴禁棄子，使民生殷實。",
+            "zhs": "曹操闻郑浑操守坚定，召他为掾属，后升任下蔡长、邵陵令，又任丞相掾属、冯翊太守；他所到之处令百姓耕桑、严禁弃子，使民生殷实。"
+          },
+          "title": {
+            "en": "Intendant of Pingyi",
+            "zht": "馮翊太守",
+            "zhs": "冯翊太守"
+          }
+        },
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Cao Cao sent Xiahou Yuan to support Zheng Hun's suppression of Liang Xing's bandits; the mountain bandits were fully pacified and Zheng Hun was transferred to Grand Administrator of Shangdang.",
+            "zht": "曹操派夏侯淵協助鄭渾討伐梁興等盜賊，山賊盡平，鄭渾調任上黨太守。",
+            "zhs": "曹操派夏侯渊协助郑浑讨伐梁兴等盗贼，山贼尽平，郑浑调任上党太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Shangdang",
+            "zht": "上黨太守",
+            "zhs": "上党太守"
+          }
+        },
+        {
+          "passageId": "ws16e-p5",
+          "text": {
+            "en": "During the Hanzhong campaign Cao Cao appointed Zheng Hun Intendant of Jingzhao; his administration ranked foremost in transporting military grain, and Cao Cao, esteeming him all the more, recalled him to the Chancellor's staff.",
+            "zht": "曹操徵漢中時任命鄭渾為京兆尹，其轄區轉運軍糧居首，曹操益加器重，召回任丞相掾屬。",
+            "zhs": "曹操征汉中时任命郑浑为京兆尹，其辖区转运军粮居首，曹操益加器重，召回任丞相掾属。"
+          },
+          "title": {
+            "en": "Intendant of Jingzhao",
+            "zht": "京兆尹",
+            "zhs": "京兆尹"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p5",
+          "text": {
+            "en": "When Cao Pi ascended the throne, Zheng Hun became Attendant Censor and Commandant of Escorting Cavalry, then Grand Administrator of Yangping and Pei State, where he built embankments and weirs and opened rice paddies.",
+            "zht": "曹丕稱帝后，鄭渾任侍御史、駙馬都尉，後歷任陽平、沛郡太守，在蕭、相二縣之間修築堤堰、開闢稻田。",
+            "zhs": "曹丕称帝后，郑浑任侍御史、驸马都尉，后历任阳平、沛郡太守，在萧、相二县之间修筑堤堰、开辟稻田。"
+          },
+          "title": {
+            "en": "Attendant Censor",
+            "zht": "侍御史",
+            "zhs": "侍御史"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "After Zheng Hun's works in Wei Commandery made it prosperous, Cao Rui issued an edict commending him, proclaimed his achievements throughout the realm, and promoted him to Minister of Works.",
+            "zht": "鄭渾治魏郡成效顯著，曹叡下詔褒獎，將其政績宣示天下，並升他為大司農。",
+            "zhs": "郑浑治魏郡成效显著，曹叡下诏褒奖，将其政绩宣示天下，并升他为大司农。"
+          },
+          "title": {
+            "en": "Minister of Works",
+            "zht": "大司農",
+            "zhs": "大司农"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "梁興",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p3",
+          "text": {
+            "en": "When Liang Xing's band abducted over five thousand households and turned to plundering, Zheng Hun rebuffed advice to retreat, held the commandery, pursued the bandits and broke up their bands by making them exchange captured women.",
+            "zht": "梁興等人擄掠五千餘戶並劫掠地方，鄭渾不採納退守之議，堅守郡城並追剿盜賊，令其交還所掠婦女，使其部眾瓦解。",
+            "zhs": "梁兴等人掳掠五千余户并劫掠地方，郑浑不采纳退守之议，坚守郡城并追剿盗贼，令其交还所掠妇女，使其部众瓦解。"
+          }
+        },
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Liang Xing gathered his remaining followers at Fucheng, and with Xiahou Yuan's help Zheng Hun led the officials and people in the vanguard, beheading Liang Xing and his accomplices.",
+            "zht": "梁興聚集殘部於鄜城，鄭渾在夏侯淵協助下率官民為先鋒，斬殺梁興及其同黨。",
+            "zhs": "梁兴聚集残部于鄜城，郑浑在夏侯渊协助下率官民为先锋，斩杀梁兴及其同党。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "鄭渾（文公）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Cao Cao sent Xiahou Yuan to assist the commandery in attacking Liang Xing's remnants at Fucheng.",
+            "zht": "曹操派夏侯淵協助郡府攻打駐鄜城的梁興殘部。",
+            "zhs": "曹操派夏侯渊协助郡府攻打驻鄜城的梁兴残部。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "靳富",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "When the bandit Jin Fu abducted the Xiayang and Shaoling county officials into Mount Wei, Zheng Hun attacked, defeated him, and rescued the officials.",
+            "zht": "盜賊靳富劫持夏陽、邵陵二縣長吏及百姓入山，鄭渾出兵擊敗他，救出被劫官員。",
+            "zhs": "盗贼靳富劫持夏阳、邵陵二县长吏及百姓入山，郑浑出兵击败他，救出被劫官员。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "趙青龍",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "After Zhao Qinglong killed the administrator Cheng Xiu, Zheng Hun sent brave men to take his head.",
+            "zht": "趙青龍殺害左內史程休後，鄭渾派勇士取其首級。",
+            "zhs": "赵青龙杀害左内史程休后，郑浑派勇士取其首级。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙青龍",
+      "to": "程休",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Zhao Qinglong killed Cheng Xiu, the administrator of Zuoneishi.",
+            "zht": "趙青龍殺害了左內史程休。",
+            "zhs": "赵青龙杀害了左内史程休。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭袤（林叔）",
+      "to": "鄭默（思元）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "A note records that Zheng Mao's son Zheng Mo, courtesy name Siyuan, upheld the family tradition and rose to Minister of Ceremonies.",
+            "zht": "注載鄭袤之子鄭默，字思元，承繼家風，官至太常。",
+            "zhs": "注载郑袤之子郑默，字思元，承继家风，官至太常。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭質",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's younger brother Zheng Zhi attained ministerial office.",
+            "zht": "鄭默之弟鄭質官至九卿。",
+            "zhs": "郑默之弟郑质官至九卿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭舒",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's younger brother Zheng Shu attained ministerial office.",
+            "zht": "鄭默之弟鄭舒官至九卿。",
+            "zhs": "郑默之弟郑舒官至九卿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭詡",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's younger brother Zheng Xu attained ministerial office.",
+            "zht": "鄭默之弟鄭詡官至九卿。",
+            "zhs": "郑默之弟郑诩官至九卿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭球",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's son Zheng Qiu was incorruptible and upright, and served as Deputy Director of the Imperial Secretariat.",
+            "zht": "鄭默之子鄭球清廉正直，官至尚書僕射。",
+            "zhs": "郑默之子郑球清廉正直，官至尚书仆射。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭球",
+      "to": "鄭豫",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Qiu's younger brother Zheng Yu served as an Imperial Secretariat.",
+            "zht": "鄭球之弟鄭豫官至尚書。",
+            "zhs": "郑球之弟郑豫官至尚书。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "鄭渾（文公）",
+      "name": {
+        "en": "Zheng Hun",
+        "zht": "鄭渾",
+        "zhs": "郑浑"
+      },
+      "courtesyName": {
+        "en": "Wengong",
+        "zht": "文公",
+        "zhs": "文公"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng, Henan",
+              "zht": "河南開封",
+              "zhs": "河南开封"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            },
+            {
+              "en": "Yuzhang",
+              "zht": "豫章",
+              "zhs": "豫章"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Xiacai",
+              "zht": "下蔡",
+              "zhs": "下蔡"
+            },
+            {
+              "en": "Shaoling",
+              "zht": "邵陵",
+              "zhs": "邵陵"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Chief",
+              "zht": "長",
+              "zhs": "长"
+            },
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "Before the 17th year of Jian'an",
+            "zht": "建安十七年前",
+            "zhs": "建安十七年前"
+          },
+          "year": 212,
+          "age": null,
+          "location": [
+            {
+              "en": "Pingyi",
+              "zht": "馮翊",
+              "zhs": "冯翊"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Shangdang",
+              "zht": "上黨",
+              "zhs": "上党"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": 215,
+          "age": null,
+          "location": [
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            }
+          ],
+          "position": [
+            {
+              "en": "Intendant of Jingzhao",
+              "zht": "京兆尹",
+              "zhs": "京兆尹"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Attendant Censor",
+              "zht": "侍御史",
+              "zhs": "侍御史"
+            },
+            {
+              "en": "Commandant of Escorting Cavalry",
+              "zht": "駙馬都尉",
+              "zhs": "驸马都尉"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Yangping",
+              "zht": "陽平",
+              "zhs": "阳平"
+            },
+            {
+              "en": "Pei State",
+              "zht": "沛",
+              "zhs": "沛"
+            },
+            {
+              "en": "Shanyang",
+              "zht": "山陽",
+              "zhs": "山阳"
+            },
+            {
+              "en": "Wei",
+              "zht": "魏",
+              "zhs": "魏"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    },
+    {
+      "person": "鄭泰（公業）",
+      "name": {
+        "en": "Zheng Tai",
+        "zht": "鄭泰",
+        "zhs": "郑泰"
+      },
+      "courtesyName": {
+        "en": "Gongye",
+        "zht": "公業",
+        "zhs": "公业"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng, Henan",
+              "zht": "河南開封",
+              "zhs": "河南开封"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during the Zhongping Era",
+            "zht": "中平年間",
+            "zhs": "中平年间"
+          },
+          "year": "180s",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Imperial Secretariat Attendant Gentleman",
+              "zht": "尚書侍郎",
+              "zhs": "尚书侍郎"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Chuping",
+            "zht": "初平元年",
+            "zhs": "初平元年"
+          },
+          "year": 190,
+          "age": null,
+          "location": [
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            }
+          ],
+          "position": [
+            {
+              "en": "Imperial Secretariat Attendant Gentleman",
+              "zht": "尚書侍郎",
+              "zhs": "尚书侍郎"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            }
+          ],
+          "position": [
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    },
+    {
+      "person": "鄭袤（林叔）",
+      "name": {
+        "en": "Zheng Mao",
+        "zht": "鄭袤",
+        "zhs": "郑袤"
+      },
+      "courtesyName": {
+        "en": "Linshu",
+        "zht": "林叔",
+        "zhs": "林叔"
+      },
+      "born": {
+        "era": {
+          "en": "6th year of Zhongping",
+          "zht": "中平六年",
+          "zhs": "中平六年"
+        },
+        "year": 189
+      },
+      "died": {
+        "era": {
+          "en": "9th year of Taishi",
+          "zht": "泰始九年",
+          "zhs": "泰始九年"
+        },
+        "year": 273
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng, Henan",
+              "zht": "河南開封",
+              "zhs": "河南开封"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            },
+            {
+              "en": "Yuzhang",
+              "zht": "豫章",
+              "zhs": "豫章"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "10th year of Jian'an",
+            "zht": "建安十年",
+            "zhs": "建安十年"
+          },
+          "year": 205,
+          "age": null,
+          "location": [
+            {
+              "en": "Kaifeng",
+              "zht": "開封",
+              "zhs": "開封"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": {
+            "en": "Luoyang",
+            "zht": "洛陽",
+            "zhs": "洛阳"
+          },
+          "position": [
+            {
+              "en": "Scholar to the Marquis of Linzi",
+              "zht": "臨菑侯文學",
+              "zhs": "临菑侯文学"
+            },
+            {
+              "en": "Staff of the Excellency of Works",
+              "zht": "司空掾",
+              "zhs": "司空掾"
+            },
+            {
+              "en": "Imperial Secretariat Gentleman",
+              "zht": "尚書郎",
+              "zhs": "尚书郎"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Liyang",
+              "zht": "黎陽",
+              "zhs": "黎阳"
+            },
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            },
+            {
+              "en": "Jiyin",
+              "zht": "濟陰",
+              "zhs": "濟阴"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Magistrate",
+              "zht": "縣令",
+              "zhs": "县令"
+            },
+            {
+              "en": "Imperial Secretariat Right Assistant",
+              "zht": "尚書右丞",
+              "zhs": "尚书右丞"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            },
+            {
+              "en": "Guangping",
+              "zht": "廣平",
+              "zhs": "广平"
+            }
+          ],
+          "position": [
+            {
+              "en": "Assisting Inner Gentleman of the Grand General",
+              "zht": "大將軍從事中郎",
+              "zhs": "大将军从事中郎"
+            },
+            {
+              "en": "Cavalier Regular Attendant",
+              "zht": "散騎常侍",
+              "zhs": "散骑常侍"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            },
+            {
+              "en": "Minister of the Lesser Treasury",
+              "zht": "少府",
+              "zhs": "少府"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Zhengyuan",
+            "zht": "正元元年",
+            "zhs": "正元元年"
+          },
+          "year": 254,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            },
+            {
+              "en": "Minister of the Household",
+              "zht": "光祿勳",
+              "zhs": "光禄勋"
+            },
+            {
+              "en": "Minister for Imperial Clansmen",
+              "zht": "宗正",
+              "zhs": "宗正"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Minister of Ceremonies",
+              "zht": "太常",
+              "zhs": "太常"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "Beginning of Jingchu era",
+            "zht": "景初初",
+            "zhs": "景初初"
+          },
+          "year": "~260",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Household Counsellor",
+              "zht": "光祿大夫",
+              "zhs": "光禄大夫"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "7th year of Taishi",
+            "zht": "泰始七年",
+            "zhs": "泰始七年"
+          },
+          "year": "271",
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "With Prestige Equal to the Three Excellencies",
+              "zht": "儀同三司",
+              "zhs": "仪同三司"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws16e-p1",
+      "orig": {
+        "zht": "鄭渾字文公，[[河南開封|/zh-hant/maps/map-overall?lat=34.5856252&lng=114.28191177&name=Kaifeng]]人也。高祖父衆，衆父興，皆為名儒。渾兄泰，與荀攸等謀誅董卓，為[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，卒。",
+        "zhs": "郑浑字文公，[[河南开封|/zh-hans/maps/map-overall?lat=34.5856252&lng=114.28191177&name=Kaifeng]]人也。高祖父众，众父兴，皆为名儒。浑兄泰，与荀攸等谋诛董卓，为[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，卒。"
+      },
+      "vern": {
+        "zht": "鄭渾，字文公，[[河南尹開封縣|/zh-hant/maps/map-overall?lat=34.5856252&lng=114.28191177&name=Kaifeng]]人。他的曾祖父鄭衆，鄭衆的父親鄭興，都是當時著名儒學家。鄭渾的哥哥鄭泰，曾和荀攸等人策劃誅殺董卓；在[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]任上去世。",
+        "zhs": "郑浑，字文公，[[河南尹开封县|/zh-hans/maps/map-overall?lat=34.5856252&lng=114.28191177&name=Kaifeng]]人。他的曾祖父郑众，郑众的父亲郑兴，都是当时著名儒学家。郑浑的哥哥郑泰，曾和荀攸等人策划诛杀董卓；在[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]任上去世。"
+      },
+      "en": "Zheng Hun, courtesy name Wengong, was from [[Kaifeng, Henan|/maps/map-overall?lat=34.5856252&lng=114.28191177&name=Kaifeng]]. His great-great-grandfather Zheng Zhong and Zhong's father, Zheng Xing, were both renowned Confucian scholars. Zheng Hun's elder brother, Zheng Tai, plotted with Xun You and others to put Dong Zhuo to death. He later served as [[Inspector|/translations/officials/regional#provinces-014]] of [[Yang Province|/maps/map-overall?admin=9]], and died early.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "續漢書",
+            "zhs": "续汉书",
+            "en": "Xu Han Shu / Continuation of the Book of Han"
+          },
+          "zht": "《續漢書》曰：興字少贛，[[諫議大夫|/zh-hant/translations/officials/ministers#-nine-ministers-i-181]]。衆字子師，[[大司農|/zh-hant/translations/officials/ministers#-nine-ministers-iii-238]]。",
+          "zhs": "《续汉书》曰：兴字少赣，[[谏议大夫|/zh-hans/translations/officials/ministers#-nine-ministers-i-181]]。众字子师，[[大司农|/zh-hans/translations/officials/ministers#-nine-ministers-iii-238]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "《续汉书》记载：郑兴字少赣，担任谏议大夫。郑众字子师，担任大司农。郑浑的哥哥郑泰，和荀攸等人谋划诛杀董卓，担任扬州刺史，后来去世了。"
+          },
+          "en": "The Xu Han Shu / Continuation of the Book of Han states: Zheng Xing, courtesy name Shaogan, was [[Counsellor Remonstrant|/translations/officials/ministers#-nine-ministers-i-181]]. Zheng Zhong, courtesy name Zishi, was [[Minister of Agriculture|/translations/officials/ministers#-nine-ministers-iii-238]]."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "漢紀 (張璠)",
+            "zhs": "汉纪 (张璠)",
+            "en": "Annals of Han (Zhang Fan)"
+          },
+          "zht": "張璠《漢紀》曰：泰字公業。少有才略，多謀計，知天下將亂，陰交結豪傑。家富於財，有田四百頃，而食常不足，名聞[[山東|/zh-hant/translations/officials#glossary-east-of-the-mountain-shandong]]。舉[[孝廉|/zh-hant/translations/officials#glossary-filial-and-incorrupt]]，三府辟，公車徵，皆不就。何進輔政，徵用名士，以泰為[[尚書侍郎|/zh-hant/translations/officials/departments#state-affairs-037]]，加[[奉車都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-176]]。進將誅黃門，欲召董卓為助，泰謂進曰：「董卓彊忍寡義，志欲無饜，若借之朝政，授之大事，將肆其心以危朝廷。以明公之威德，據阿衡之重任，秉意獨斷，誅除有罪，誠不待卓以為資援也。且事留變生，其鑒不遠。」又為陳時之要務，進不能用，乃棄官去。謂[[潁川|/zh-hant/maps/map-overall?admin=31]]人荀攸曰：「何公未易輔也。」\n\n進尋見害，卓果專權，廢帝。[[關東|/zh-hant/translations/officials#glossary-east-of-the-pass-guandong]]義兵起，卓會議大發兵，羣寮咸憚卓，莫敢忤旨。泰恐其彊，益將難制，乃曰：「夫治在德，不在兵也。」卓不恱曰：「如此，兵無益邪？」衆人莫不變容，為泰震慄。泰乃詭辭對曰：「非以無益，以[[山東|/zh-hant/translations/officials#glossary-east-of-the-mountain-shandong]]不足加兵也。今[[山東|/zh-hant/translations/officials#glossary-east-of-the-mountain-shandong]]議欲起兵，州郡相連，人衆相動，非不能也。然中國自光武以來，無雞鳴狗吠之驚，百姓忘戰日乆；仲尼有言『不教民戰，是謂棄之』，雖衆不能為害，一也。明公出自西州，少為國將，閑習軍事，數踐戰場，名稱當世；以此威民，民懷懾服，二也。\n\n袁本初公卿子弟，生處京師，體長婦人；張孟卓[[東平|/zh-hant/maps/map-overall?admin=37]]長者，坐不窺堂；孔公緒能清談高論，噓枯吹生，無軍帥之才，負霜露之勤；臨鋒履刃，決敵雌雄，皆非明公敵，三也。察[[山東|/zh-hant/translations/officials#glossary-east-of-the-mountain-shandong]]之士，力能跨馬控弦，勇等孟賁，捷齊慶忌，信有[[聊城|/zh-hant/maps/map-overall?lat=36.54725461&lng=115.90606352&name=Liaocheng]]之守，策有良平之謀；可任以偏師，責以成功，未聞有其人者，四也。就有其人，王爵不相加，婦姑位不定，各恃衆怙力，將人人棊跱，以觀成敗，不肯同心共膽，率徒旅進，五也。\n\n[[關西|/zh-hant/translations/officials#glossary-west-of-the-pass-guanxi]]諸郡，北接[[上黨|/zh-hant/maps/map-overall?admin=17]]、[[太原|/zh-hant/maps/map-overall?admin=21]]、[[馮翊|/zh-hant/maps/map-overall?admin=151]]、[[扶風|/zh-hant/maps/map-overall?admin=146]]、[[安定|/zh-hant/maps/map-overall?admin=152]]，自頃以來，數與胡戰，婦女載戟挾矛，弦弓負矢，況其悍夫；以此當[[山東|/zh-hant/translations/officials#glossary-east-of-the-mountain-shandong]]忘戰之民，譬驅羣羊向虎狼，其勝可必，六也。且天下之權勇，今見在者不過并、涼、匈奴、屠各、湟中、義從、八種西羌，皆百姓素所畏服，而明公權以為爪牙，壯夫震慄，況小醜乎！七也。又明公之將帥，皆中表腹心，周旋日乆，自三原、硤口以來，恩信醇著，忠誠可遠任，智謀可特使，以此當[[山東|/zh-hant/translations/officials#glossary-east-of-the-mountain-shandong]]解合之虛誕，實不相若，八也。\n\n夫戰有三亡：以亂攻治者亡，以邪攻正者亡，以逆攻順者亡。今明公秉國政平，討夷凶宦，忠義克立；以三德待於三亡，奉辭伐罪，誰人敢禦？九也。東州有鄭康成，學該古今，儒生之所以集；[[北海|/zh-hant/maps/map-overall?admin=44]]邴根矩，清高直亮，羣士之楷式。彼諸將若詢其計畫，案典校之彊弱，燕、趙、齊、梁非不盛，終見滅於秦，吳、楚七國非不衆，而不敢踰[[滎陽|/zh-hant/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]]，況今德政之赫赫，股肱之邦良，欲造亂以徼不義者，必不相然讚，成其凶謀，十也。若十事少有可采，無事徵兵以驚天下，使患役之民，相聚為非，棄德恃衆，以輕威重。」\n\n卓乃恱，以泰為將軍，統諸軍擊[[關東|/zh-hant/translations/officials#glossary-east-of-the-pass-guandong]]。或謂卓曰：「鄭泰智略過人，而結謀[[山東|/zh-hant/translations/officials#glossary-east-of-the-mountain-shandong]]，今資之士馬，使就其黨，切為明公懼之。」卓收其兵馬，留拜[[議郎|/zh-hant/translations/officials/ministers#-nine-ministers-i-182]]。後又與王允謀共誅卓，泰脫身自[[武關|/zh-hant/maps/map-overall?lat=33.46821825&lng=110.82115832&name=Wuguan]]走，東歸。[[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]袁術以為[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，未至官，道卒，時年四十二。",
+          "zhs": "张璠《汉纪》曰：泰字公业。少有才略，多谋计，知天下将乱，阴交结豪杰。家富于财，有田四百顷，而食常不足，名闻[[山东|/zh-hans/translations/officials#glossary-east-of-the-mountain-shandong]]。举[[孝廉|/zh-hans/translations/officials#glossary-filial-and-incorrupt]]，三府辟，公车征，皆不就。何进辅政，征用名士，以泰为[[尚书侍郎|/zh-hans/translations/officials/departments#state-affairs-037]]，加[[奉车都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-176]]。进将诛黄门，欲召董卓为助，泰谓进曰：「董卓彊忍寡义，志欲无餍，若借之朝政，授之大事，将肆其心以危朝廷。以明公之威德，据阿衡之重任，秉意独断，诛除有罪，诚不待卓以为资援也。且事留变生，其鉴不远。」又为陈时之要务，进不能用，乃弃官去。谓[[颍川|/zh-hans/maps/map-overall?admin=31]]人荀攸曰：「何公未易辅也。」\n\n进寻见害，卓果专权，废帝。[[关东|/zh-hans/translations/officials#glossary-east-of-the-pass-guandong]]义兵起，卓会议大发兵，群寮咸惮卓，莫敢忤旨。泰恐其彊，益将难制，乃曰：「夫治在德，不在兵也。」卓不恱曰：「如此，兵无益邪？」众人莫不变容，为泰震栗。泰乃诡辞对曰：「非以无益，以[[山东|/zh-hans/translations/officials#glossary-east-of-the-mountain-shandong]]不足加兵也。今[[山东|/zh-hans/translations/officials#glossary-east-of-the-mountain-shandong]]议欲起兵，州郡相连，人众相动，非不能也。然中国自光武以来，无鸡鸣狗吠之惊，百姓忘战日乆；仲尼有言『不教民战，是谓弃之』，虽众不能为害，一也。明公出自西州，少为国将，闲习军事，数践战场，名称当世；以此威民，民怀慑服，二也。\n\n袁本初公卿子弟，生处京师，体长妇人；张孟卓[[东平|/zh-hans/maps/map-overall?admin=37]]长者，坐不窥堂；孔公绪能清谈高论，嘘枯吹生，无军帅之才，负霜露之勤；临锋履刃，决敌雌雄，皆非明公敌，三也。察[[山东|/zh-hans/translations/officials#glossary-east-of-the-mountain-shandong]]之士，力能跨马控弦，勇等孟贲，捷齐庆忌，信有[[聊城|/zh-hans/maps/map-overall?lat=36.54725461&lng=115.90606352&name=Liaocheng]]之守，策有良平之谋；可任以偏师，责以成功，未闻有其人者，四也。就有其人，王爵不相加，妇姑位不定，各恃众怙力，将人人棋跱，以观成败，不肯同心共胆，率徒旅进，五也。\n\n[[关西|/zh-hans/translations/officials#glossary-west-of-the-pass-guanxi]]诸郡，北接[[上党|/zh-hans/maps/map-overall?admin=17]]、[[太原|/zh-hans/maps/map-overall?admin=21]]、[[冯翊|/zh-hans/maps/map-overall?admin=151]]、[[扶风|/zh-hans/maps/map-overall?admin=146]]、[[安定|/zh-hans/maps/map-overall?admin=152]]，自顷以来，数与胡战，妇女载戟挟矛，弦弓负矢，况其悍夫；以此当[[山东|/zh-hans/translations/officials#glossary-east-of-the-mountain-shandong]]忘战之民，譬驱群羊向虎狼，其胜可必，六也。且天下之权勇，今见在者不过并、凉、匈奴、屠各、湟中、义从、八种西羌，皆百姓素所畏服，而明公权以为爪牙，壮夫震栗，况小丑乎！七也。又明公之将帅，皆中表腹心，周旋日乆，自三原、硖口以来，恩信醇著，忠诚可远任，智谋可特使，以此当[[山东|/zh-hans/translations/officials#glossary-east-of-the-mountain-shandong]]解合之虚诞，实不相若，八也。\n\n夫战有三亡：以乱攻治者亡，以邪攻正者亡，以逆攻顺者亡。今明公秉国政平，讨夷凶宦，忠义克立；以三德待于三亡，奉辞伐罪，谁人敢御？九也。东州有郑康成，学该古今，儒生之所以集；[[北海|/zh-hans/maps/map-overall?admin=44]]邴根矩，清高直亮，群士之楷式。彼诸将若询其计划，案典校之彊弱，燕、赵、齐、梁非不盛，终见灭于秦，吴、楚七国非不众，而不敢逾[[荥阳|/zh-hans/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]]，况今德政之赫赫，股肱之邦良，欲造乱以徼不义者，必不相然赞，成其凶谋，十也。若十事少有可采，无事征兵以惊天下，使患役之民，相聚为非，弃德恃众，以轻威重。」\n\n卓乃恱，以泰为将军，统诸军击[[关东|/zh-hans/translations/officials#glossary-east-of-the-pass-guandong]]。或谓卓曰：「郑泰智略过人，而结谋[[山东|/zh-hans/translations/officials#glossary-east-of-the-mountain-shandong]]，今资之士马，使就其党，切为明公惧之。」卓收其兵马，留拜[[议郎|/zh-hans/translations/officials/ministers#-nine-ministers-i-182]]。后又与王允谋共诛卓，泰脱身自[[武关|/zh-hans/maps/map-overall?lat=33.46821825&lng=110.82115832&name=Wuguan]]走，东归。[[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]袁术以为[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，未至官，道卒，时年四十二。",
+          "vern": {
+            "zht": "",
+            "zhs": "张璠的《汉纪》记载：郑泰字公业，年少时就有才能谋略，富有计谋，知道天下即将大乱，暗中结交豪杰，家中富有钱财，有四百顷田地，但粮食却常常不够吃，他的名声在崤山以东地区广为流传。他被举荐为孝廉，三公府以公车征召他，他都没有去就任。何进辅佐朝政时，征召任用有名望的士人，任命郑泰为尚书侍郎，加授奉车都尉。何进将要诛杀宦官，想要征召董卓前来相助。泰对何进说：“董卓强悍残忍且缺少道义，欲望没有止境，如果把朝政交给他，将大事交给他处理，他会肆意放纵自己的野心，从而危害朝廷。凭借您的威望和德行，身居辅佐帝王的重要职位，您可以根据自己的意愿独自决断，诛杀有罪之人，实在不用借助董卓的力量。况且事情拖延就会发生变故，这方面的教训离现在并不远。”郑泰又向他陈述了当时的重要事务。何进没有采纳他的建议，于是他就弃官离去，对颍川人荀攸说：“何公不容易辅佐啊。”\n\n何进不久就被杀害了。董卓果然独揽大权，废除了皇帝。关东的义兵兴起，董卓召开会议，大规模发兵，群臣都畏惧董卓，没有人敢违背他的旨意。郑泰担心董卓的势力变得更加强大之后会难以控制，就说：“治理天下依靠的是德行，而不是兵力。”董卓不高兴，说：“照你这么说，军队就没有用处了吗？”众人没有不变色的，为郑泰感到害怕战栗。泰于是诡辩道：“不是认为军队没有用，而是认为崤山以东的地区不值得动用兵力。现在崤山以东的人商议要起兵，各州郡相互联合，百姓也都响应行动起来。不是说他们没有能力起兵，然而中原地区自从光武以来，就没有发生过战乱，百姓忘记战争已经很久了。孔子曾经说过，‘不教导百姓作战，这叫做抛弃他们。’他们虽然人数众多，但也不能造成危害。这是第一个原因。您出身于西州，年轻时就担任国家将领，熟悉军事，多次亲临战场，声名传于当世，凭借这些来威慑百姓，百姓心怀畏惧而服从，这是第二个原因。\n\n袁绍是公卿子弟，生长在京城，身材长得像妇人一样。张孟卓是东平的忠厚长者，端坐时目不斜视。孔公绪只会高谈阔论，能把死的说活、活的说死，但没有军事统帅的才能，不能承受行军作战的辛苦，在战场上冲锋陷阵、与敌人一决胜负，这些人都不是您的对手。这是第三点。观察崤山以东的士人，力量能骑马射箭，勇猛如同孟贲，敏捷如同庆忌，诚信有聊城之守那样的信义，谋略如同张良、陈平，可以委任他们率领一支军队，要求他们取得成功，但却没听说有这样的人。这是第四点。即使有这样的人，王爵封号未授，就像婆媳一样没有地位的上下之分，他们各自依仗人多势众，将会像棋子一样各自对峙，坐观成败，不肯同心协力，率领军队一同前进。这是第五点。\n\n关西各郡，北边与上党、太原、冯翊、扶风、安定接壤，近来，多次与胡人交战，妇女都能手持戟矛，拉弓背箭，何况那些强悍的男子呢。让这些关西士兵去对抗山东那些很久没有经历过战事的百姓，就好比驱赶羊群冲向虎狼，胜利是必然的。这是第六点。况且天下有权势且勇猛的人，如今还存在的，不过是并州、凉州、匈奴、屠各、湟中、义从这八种人。西羌人都是百姓向来敬畏顺服的，而您暂且把他们作为得力助手，就连身强力壮的人都会感到震惊恐惧，何况那些无能之辈呢？这是第七个原因。再者您的将帅，都是您的中表心腹，交往时间很久了，自三原狭口以来，恩德信义深厚显著，忠诚可靠，可以委以重任，智谋出众，可以特殊任用，以此应对山东解合的虚浮虚妄，实在无法比拟，这是第八点。\n\n战争中有三种失败的情况：用混乱的军队去攻打治理有序的军队会失败，以邪恶的一方去攻打正义的一方会失败，用叛逆的军队去攻打顺应的一方会失败。如今您执掌国家政务，平定讨伐凶恶的宦官，忠义得以树立，凭借这三种美德来应对那三种必然灭亡的情况，奉天子之命讨伐有罪之人，谁又敢抵抗呢？这是第九点。东州有位郑康成，学问贯通古今，儒生们因此聚集；北海有位邴根矩，品行清高正直，是众士人的楷模。那些将领如果询问他们的计划。根据典籍来考察双方的强弱，当年燕国、赵国、齐国、梁国并非不强大，最终还是被秦国所灭；吴、楚等七国并非兵力不多，却不敢越过荥阳。何况如今您的德政显著，有得力的辅佐之臣，那些真正想制造叛乱来谋取不义之财的人，一定不会赞同他们的邪恶阴谋，这是第十点。如果这十件事稍有可采纳之处，就不要无故征兵，以免惊动天下，让那些害怕服劳役的百姓聚集起来为非作歹，放弃德行而依仗人多势众，从而轻视威严和重要地位。”\n\n董卓很高兴，任命郑泰为将军，统领各路军队攻打关东。有人对董卓说：“郑泰智谋才略超过常人，而且与崤山以东的人合谋，如今您资助他兵马，让他去和他的同党会合，我私下里为您感到担忧。”董卓于是收回了他的兵马，留下他并任命他为议郎。后来郑泰又与王允谋划共同诛杀董卓，郑泰从武关脱身向东逃走。后来郑泰又与王允谋划共同诛杀董卓，郑泰从武关脱身向东逃走。后将军袁术任命他为扬州刺史，他还没到任，就在途中去世了，当时年仅四十一岁。"
+          },
+          "en": "Zhang Fan's Annals of Han states: Zheng Tai, courtesy name Gongye, showed considerable talent and ability from an early age. Resourceful and astute, he foresaw that the realm was heading into disorder and secretly formed ties with men of distinction. His family was wealthy and owned four hundred qing of land, yet the household never had enough food. His fame thus spread throughout [[East of the Mountain|/translations/officials#glossary-east-of-the-mountain-shandong]]. He was recommended as [[Filial and Incorrupt|/translations/officials#glossary-filial-and-incorrupt]], summoned by each of the Three Excellencies, and called to court by Official Carriage, but declined every appointment. When He Jin took charge of the government, he summoned eminent men to office. He appointed Zheng Tai as [[Imperial Secretariat Attendant Gentleman|/translations/officials/departments#state-affairs-037]] and additionally [[Commandant of Imperial Carriages|/translations/officials/ministers#-nine-ministers-i-176]]. He Jin intended to execute the palace eunuchs and wished to summon Dong Zhuo to assist him. Zheng Tai said: \"Dong Zhuo is forceful and ruthless, with little sense of righteousness, and his ambitions know no bounds. If you give him a part in court government and entrust him with great affairs, he will indulge his desires and endanger the imperial court. With Your Excellency's authority and virtue, and the weighty charge you bear as chief minister, you need only judge the matters yourself and put the guilty to death. There is truly no need to call upon Dong Zhuo for support. Moreover, if the affair is delayed, unforeseen changes may arise. The warning of a similar affair in the recent past lies close at hand.\" He further set out the urgent affairs of the time, but He Jin did not listen. Zheng Tai therefore resigned and departed. He told Xun You of [[Yingchuan|/maps/map-overall?admin=31]], \"Lord He is not easy to assist.\" \n\nHe Jin was soon killed, and Dong Zhuo did indeed seize power for himself and depose the emperor. When the righteous armies of [[East of the Pass|/translations/officials#glossary-east-of-the-pass-guandong]] rose, Dong Zhuo convened his officials to discuss a massive mobilisation. All the officials feared him, and none dared oppose his wishes. Zheng Tai was concerned that, if Dong Zhuo's strength increased further, he would become even harder to control. He therefore said, \"Good governance rests on virtue, not on arms.\" Dong Zhuo was displeased. \"Then are troops of no use?\" Everyone's expression changed, and they feared for Zheng Tai. Zheng Tai then answered craftily, saying, \"I do not mean that troops are useless, only that [[East of the Mountain|/translations/officials#glossary-east-of-the-mountain-shandong]] is not worth sending them against. First, The men of [[East of the Mountain|/translations/officials#glossary-east-of-the-mountain-shandong]] now propose to raise armies. Their provinces and commanderies are linked, and their people will incite one another to action. It is not that such a chain of events will not occur. Yet since the time of Emperor Guangwu, the Illustrious Martial Emperor, the central lands have known no alarm even at the crowing of cocks and barking of dogs. The people have long forgotten warfare. Confucius said, 'To send an untrained people into battle is to cast them away.' However numerous they may be, they can do no harm. Second, Your Excellency comes from the western provinces. From an early age you served as a general of the state, became thoroughly practised in military affairs, and repeatedly took the field. Your name is renowned in this age. The people are awed by your might and submit in fear. \n\nThird, Yuan Benchu is the son of a family of high ministers. Born and raised in the capital, he grew up among women. Zhang Mengzhuo is merely a respectable gentleman of [[Dongping State|/maps/map-overall?admin=37]], one who sits decorously and never casts his gaze about heedlessly. Kong Gongxu can engage in pure conversation and lofty discourse, with words that can revive the fallen and bring down the flourishing, but he lacks a commander's ability and cannot endure the hardships of frost and dew. When it comes to facing spearpoints, braving blades, and deciding victory or defeat, none is Your Excellency's match. Fourth, consider the men of [[East of the Mountain|/translations/officials#glossary-east-of-the-mountain-shandong]]. Is there among them anyone who can mount a horse and draw a bow, whose courage equals Meng Ben's and whose swiftness matches Qing Ji's; whose fidelity could sustain the defence of [[Liaocheng|/maps/map-overall?lat=36.54725461&lng=115.90606352&name=Liaocheng]], and whose strategies are worthy of Zhang Liang and Chen Ping; who could be entrusted with a detached force and charged with securing victory? I have heard of no such man. Fifth, even if such men exist, no royal title has been conferred upon any one of them, and their respective ranks remain unsettled. Each relies on the strength of his own following, and they will stand apart like pieces on a chessboard, watching to see who succeeds and who fails. They will be unwilling to act with one heart and one resolve, or to lead their forces forward together. \n\nSixth, the commanderies of [[West of the Pass|/translations/officials#glossary-west-of-the-pass-guanxi]], extending north to [[Shangdang|/maps/map-overall?admin=17]], [[Taiyuan|/maps/map-overall?admin=21]], [[Pingyi|/maps/map-overall?admin=151]], [[Fufeng|/maps/map-overall?admin=146]], and [[Anding|/maps/map-overall?admin=152]], have repeatedly fought the Hu in recent years. Even their women carry halberds, tuck spears beneath their arms, string bows, and bear arrows, to say nothing of their fierce men. To pit them against the people of [[East of the Mountain|/translations/officials#glossary-east-of-the-mountain-shandong]], who have long forgotten warfare, would be like driving a flock of sheep before tigers and wolves. Victory would be certain. Seventh, the strongest and bravest forces now under heaven are found only in Bing and Liang provinces, among the Xiongnu, the Tuge, the Huangzhong, the Yichong, and the Eight Tribes of the Western Qiang. These are all peoples whom the common folk have long feared and obeyed, and Your Excellency commands them as your claws and fangs. Even stout-hearted men tremble before them, to say nothing of this petty rabble. Eighth, Your Excellency's commanders are all kinsmen and trusted intimates who have served with you for many years. Ever since Sanyuan and Xiakou, your favour and good faith towards them have been clearly demonstrated. Their loyalty makes them worthy of distant commands, and their resourcefulness fits them for independent missions. Compared with the empty bluster of [[East of the Mountain|/translations/officials#glossary-east-of-the-mountain-shandong]]'s loose confederacy, they are truly of a different order. \n\nNinth, there are three causes of defeat in war: when disorder attacks order, wickedness attacks righteousness, and rebellion attacks rightful authority. Your Excellency now directs the government of the state, has put down and punished the vicious eunuchs, and has established loyalty and righteousness. Possessing these three virtues, you confront enemies who embody all three causes of defeat. If you proclaim their crimes and march forth to punish the guilty, who will dare resist? Tenth, in the eastern provinces there is Zheng Kangcheng, whose learning encompasses antiquity and the present, and around whom scholars gather. In [[Beihai State|/maps/map-overall?admin=44]] there is Bing Genju, pure, principled, upright, and sincere, a model for all scholars. If those commanders consult such men on their plans and examine the precedents of antiquity to compare strength and weakness, they will see that Yan, Zhao, Qi, and Liang, though powerful, were all eventually destroyed by Qin, while Wu, Chu, and the other seven kingdoms, though populous, did not dare advance beyond [[Xingyang|/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]]. How much less, under Your Excellency's illustrious and virtuous government, would these worthy pillars of the realm approve of those who seek to create disorder in pursuit of injustice, encourage their actions, and help them accomplish their wicked designs? If even a few of these ten considerations are worth adopting, there is no need to raise troops and alarm the realm. To do so would only cause people already burdened by service to gather and make trouble, forsaking virtue to rely on mere numbers and using their paltry strength to diminish the weight of your authority.\" \n\nDong Zhuo was pleased. He appointed Zheng Tai a general and placed him in command of the armies sent against [[East of the Pass|/translations/officials#glossary-east-of-the-pass-guandong]]. Someone then told Dong Zhuo, \"Zheng Tai's intelligence and strategic ability surpass those of ordinary men, and he has ties and plans with [[East of the Mountain|/translations/officials#glossary-east-of-the-mountain-shandong]]. If you now provide him with troops and horses and allow him to join his associates, I greatly fear for Your Excellency.\" Dong Zhuo therefore took away Zheng Tai's troops and horses, kept him at court, and appointed him [[Gentleman Consultant|/translations/officials/ministers#-nine-ministers-i-182]]. Zheng Tai later conspired with Wang Yun to kill Dong Zhuo. He escaped through [[Wuguan|/maps/map-overall?lat=33.46821825&lng=110.82115832&name=Wuguan]] and fled east. Yuan Shu, [[General of the Rear|/translations/officials/military#four-direction--misc-115]], appointed him [[Inspector|/translations/officials/regional#provinces-014]] of [[Yang Province|/maps/map-overall?admin=9]], but he died on the way before taking office. He was forty-two."
+        }
+      ]
+    },
+    {
+      "id": "ws16e-p2",
+      "orig": {
+        "zht": "渾將泰小子袤避難[[淮南|/zh-hant/maps/map-overall?admin=24]]，袁術賔禮甚厚。渾知術必敗。時華歆為[[豫章|/zh-hant/maps/map-overall?admin=71]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，素與泰善，渾乃渡江投歆。太祖聞其篤行，召為掾，復遷[[下蔡|/zh-hant/maps/map-overall?lat=32.71353337&lng=116.7293608&name=Xiacai]][[長|/zh-hant/translations/officials/regional#counties-089]]、[[邵陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[令|/zh-hant/translations/officials/regional#counties-088]]。天下未定，民皆剽輕，不念產殖；其生子無以相活，率皆不舉。渾所在奪其漁獵之具，課使耕桑，又兼開稻田，重去子之法。民初畏罪，後稍豐給，無不舉贍；所育男女，多以鄭為字。辟為[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]]掾屬，遷左[[馮翊|/zh-hant/maps/map-overall?admin=151]]。",
+        "zhs": "浑将泰小子袤避难[[淮南|/zh-hans/maps/map-overall?admin=24]]，袁术賔礼甚厚。浑知术必败。时华歆为[[豫章|/zh-hans/maps/map-overall?admin=71]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，素与泰善，浑乃渡江投歆。太祖闻其笃行，召为掾，复迁[[下蔡|/zh-hans/maps/map-overall?lat=32.71353337&lng=116.7293608&name=Xiacai]][[长|/zh-hans/translations/officials/regional#counties-089]]、[[邵陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[令|/zh-hans/translations/officials/regional#counties-088]]。天下未定，民皆剽轻，不念产殖；其生子无以相活，率皆不举。浑所在夺其渔猎之具，课使耕桑，又兼开稻田，重去子之法。民初畏罪，后稍丰给，无不举赡；所育男女，多以郑为字。辟为[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]]掾属，迁左[[冯翊|/zh-hans/maps/map-overall?admin=151]]。"
+      },
+      "vern": {
+        "zht": "鄭渾帶着鄭泰的小兒子鄭袤到[[淮南|/zh-hant/maps/map-overall?admin=24]]避難，袁術對他非常尊重。但是鄭渾知道袁術一定會失敗，當時華歆擔任[[豫章|/zh-hant/maps/map-overall?admin=71]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，素來和鄭泰是很好的朋友，鄭渾便渡過長江去投靠華歆。太祖曹操聽說他行爲忠厚，召他擔任下屬。又升任[[下蔡|/zh-hant/maps/map-overall?lat=32.71353337&lng=116.7293608&name=Xiacai]]縣長、[[邵陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]縣[[令|/zh-hant/translations/officials/regional#counties-088]]。當時天下還沒有平定，百姓都強悍隨便，不想從事農副業生產。那些生了兒女沒有辦法養活的，就一概把嬰兒丟棄了。鄭渾每到一地任職，就沒收當地人的漁獵工具，督促他們種地養蠶；又連帶開闢水田種稻，加重對棄嬰者的處罰。開始百姓怕犯法不敢懷孩子，後來生活逐漸富裕，就再沒有不懷孕和不養育嬰兒的了。生下來的男女嬰兒，很多都取“鄭”字爲名字以表達對他的感激。後來鄭渾被任命爲[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]]府下屬，又升任左[[馮翊|/zh-hant/maps/map-overall?admin=151]]。",
+        "zhs": "郑浑带着郑泰的小儿子郑袤到[[淮南|/zh-hans/maps/map-overall?admin=24]]避难，袁术对他非常尊重。但是郑浑知道袁术一定会失败，当时华歆担任[[豫章|/zh-hans/maps/map-overall?admin=71]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，素来和郑泰是很好的朋友，郑浑便渡过长江去投靠华歆。太祖曹操听说他行为忠厚，召他担任下属。又升任[[下蔡|/zh-hans/maps/map-overall?lat=32.71353337&lng=116.7293608&name=Xiacai]]县长、[[邵陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]县[[令|/zh-hans/translations/officials/regional#counties-088]]。当时天下还没有平定，百姓都强悍随便，不想从事农副业生产。那些生了儿女没有办法养活的，就一概把婴儿丢弃了。郑浑每到一地任职，就没收当地人的渔猎工具，督促他们种地养蚕；又连带开辟水田种稻，加重对弃婴者的处罚。开始百姓怕犯法不敢怀孩子，后来生活逐渐富裕，就再没有不怀孕和不养育婴儿的了。生下来的男女婴儿，很多都取“郑”字为名字以表达对他的感激。后来郑浑被任命为[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]]府下属，又升任左[[冯翊|/zh-hans/maps/map-overall?admin=151]]。"
+      },
+      "en": "Zheng Hun took Zheng Tai's young son Zheng Mao with him and sought refuge in [[Huainan|/maps/map-overall?admin=24]], where Yuan Shu received them with great courtesy. Knowing that Yuan Shu was bound to fail, Zheng Hun crossed the Yangtze and joined Hua Xin, then [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Yuzhang|/maps/map-overall?admin=71]], who had long been a friend of his elder brother Zheng Tai. When Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) heard of Zheng Hun's steadfast conduct, he summoned him to serve as his staff, then promoted him later to [[County Chief|/translations/officials/regional#counties-089]] of [[Xiacai|/maps/map-overall?lat=32.71353337&lng=116.7293608&name=Xiacai]] and [[County Magistrate|/translations/officials/regional#counties-088]] of [[Shaoling|/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]. The realm was not yet settled, and the people were restless and improvident, giving no thought to farming or production. When they had children they could not support, most left them to die. Wherever Zheng Hun served, he confiscated their fishing and hunting equipment and required them to farm and raise silkworms. He also opened paddy fields and imposed severe penalties for abandoning children. At first, the people obeyed out of fear of punishment, but in time they grew prosperous, and their households became well provided for. All were then able to raise and support their children, and many named the sons and daughters born to them \"Zheng\".  Zheng Hun was later appointed to the [[Chancellor|/translations/officials/ministers#superior-excellency-001]]'s staff and promoted to Intendant of [[Pingyi|/maps/map-overall?admin=151]]."
+    },
+    {
+      "id": "ws16e-p3",
+      "orig": {
+        "zht": "時梁興等略吏民五千餘家為寇鈔，諸縣不能禦，皆恐懼，寄治郡下。議者悉以為當移就險，渾曰：「興等破散，竄在山阻。雖有隨者，率脅從耳。今當廣開降路，宣喻恩信。而保險自守，此示弱也。」乃聚歛吏民，治城郭，為守禦之備。遂發民逐賊，明賞罰，與要誓，其所得獲，十以七賞。百姓大恱，皆願捕賊，多得婦女、財物。賊之失妻子者，皆還求降。渾責其得他婦女，然後還其妻子，於是轉相寇盜，黨與離散。",
+        "zhs": "时梁兴等略吏民五千余家为寇钞，诸县不能御，皆恐惧，寄治郡下。议者悉以为当移就险，浑曰：「兴等破散，窜在山阻。虽有随者，率胁从耳。今当广开降路，宣喻恩信。而保险自守，此示弱也。」乃聚歛吏民，治城郭，为守御之备。遂发民逐贼，明赏罚，与要誓，其所得获，十以七赏。百姓大恱，皆愿捕贼，多得妇女、财物。贼之失妻子者，皆还求降。浑责其得他妇女，然后还其妻子，于是转相寇盗，党与离散。"
+      },
+      "vern": {
+        "zht": "當時梁興等人控制了左馮翊轄區中五千多戶人家，強迫他們一同燒殺搶掠；周圍各縣無力抵抗，非常恐懼，縣令都把自己的官署轉移到郡治所在的臨晉縣城。商議對策的人都認爲應當把郡治轉移到險要的地方。鄭渾說：“梁興等都是被擊潰的散兵遊勇，流竄在附近的山區。雖然有很多同夥，大都是被迫跟隨他的。現在應當鼓勵他的同夥來投降，大力宣傳說明朝廷的恩德信義；要是跑到山區憑藉險要地形防守，那是向敵人示弱啊。”於是便召集官吏民衆，修築城牆做好防禦的準備。而後發動民衆追捕賊寇，明確賞罰的制度，商定公約誓言；凡是老百姓在追捕賊寇時繳獲的財物，十分之七都獎賞給本人。老百姓都非常高興，很願意捕捉賊寇，以便多得婦女、財物。結果賊寇中失去妻子兒女的，都回來請求投降。鄭渾責令他們去捉獲同夥的婦女，然後還給他們自己的妻子；這一來敵寇內部互相搶奪攻擊，梁興的黨羽開始土崩瓦解。",
+        "zhs": "当时梁兴等人控制了左冯翊辖区中五千多户人家，强迫他们一同烧杀抢掠；周围各县无力抵抗，非常恐惧，县令都把自己的官署转移到郡治所在的临晋县城。商议对策的人都认为应当把郡治转移到险要的地方。郑浑说：“梁兴等都是被击溃的散兵游勇，流窜在附近的山区。虽然有很多同伙，大都是被迫跟随他的。现在应当鼓励他的同伙来投降，大力宣传说明朝廷的恩德信义；要是跑到山区凭借险要地形防守，那是向敌人示弱啊。”于是便召集官吏民众，修筑城墙做好防御的准备。而后发动民众追捕贼寇，明确赏罚的制度，商定公约誓言；凡是老百姓在追捕贼寇时缴获的财物，十分之七都奖赏给本人。老百姓都非常高兴，很愿意捕捉贼寇，以便多得妇女、财物。结果贼寇中失去妻子儿女的，都回来请求投降。郑浑责令他们去捉获同伙的妇女，然后还给他们自己的妻子；这一来敌寇内部互相抢夺攻击，梁兴的党羽开始土崩瓦解。"
+      },
+      "en": "At the time, Liang Xing and his men had abducted more than five thousand households of officials and commoners and turned to plundering. Unable to withstand them, the county officials fled in fear and administered their counties from the commandery seat. The counsellors all urged a withdrawal to defensible ground, but Zheng Hun said, \"Liang Xing and his men have been defeated and scattered, and now hide in the mountains. Though some still follow them, most have been coerced. We should open every avenue to surrender and proclaim our clemency and good faith. To retreat to strong ground and stand on the defensive would only reveal weakness.\" He assembled the officials and people, repaired the city walls, and prepared the defences. He then mobilised the people to pursue the bandits, clearly set out rewards and punishments, and pledged to them that seven-tenths of whatever they captured would be theirs. The people were delighted and eagerly hunted the bandits, seizing many women and much property. Those bandits who had lost their wives and children came to seek surrender. Zheng Hun required each to hand over women he had seized from others before returning his own wife and children. The bandits then began preying on one another, and their bands fell apart."
+    },
+    {
+      "id": "ws16e-p4",
+      "orig": {
+        "zht": "又遣吏民有恩信者，分布山谷告喻，出者相繼，乃使諸縣長吏各還本治以安集之。興等懼，將餘衆聚[[鄜城|/zh-hant/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]。太祖使夏侯淵就助郡擊之，渾率吏民前登，斬興及其支黨。又賊靳富等，脅將[[夏陽|/zh-hant/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]][[長|/zh-hant/translations/officials/regional#counties-089]]、[[邵陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[令|/zh-hant/translations/officials/regional#counties-088]][^1]并其吏民入磑山，渾復討擊破富等，獲二縣長吏，將其所略還。及趙青龍者，殺左內史程休，渾聞，遣壯士就梟其首。前後歸附四千餘家，由是山賊皆平，民安產業。轉為[[上黨|/zh-hant/maps/map-overall?admin=17]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+        "zhs": "又遣吏民有恩信者，分布山谷告喻，出者相继，乃使诸县长吏各还本治以安集之。兴等惧，将余众聚[[鄜城|/zh-hans/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]。太祖使夏侯渊就助郡击之，浑率吏民前登，斩兴及其支党。又贼靳富等，胁将[[夏阳|/zh-hans/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]][[长|/zh-hans/translations/officials/regional#counties-089]]、[[邵陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[令|/zh-hans/translations/officials/regional#counties-088]][^1]并其吏民入硙山，浑复讨击破富等，获二县长吏，将其所略还。及赵青龙者，杀左内史程休，浑闻，遣壮士就枭其首。前后归附四千余家，由是山贼皆平，民安产业。转为[[上党|/zh-hans/maps/map-overall?admin=17]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+      },
+      "vern": {
+        "zht": "鄭渾又分派有威信的官吏百姓，到山中去勸告。結果出山投降者接連不斷。鄭渾讓各縣的長官，都回到原來管轄的縣，安撫和召集回來投誠的百姓。梁興等人很是害怕，率領餘黨聚集在[[鄜城|/zh-hant/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]。太祖派夏侯淵率軍前去協助鄭渾出擊；鄭渾帶領下屬和民衆爲先鋒，殺死梁興及其黨羽。另有賊寇靳富等人，挾持[[夏陽|/zh-hant/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]縣長、[[邵陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]縣[[令|/zh-hant/translations/officials/regional#counties-088]]和很多官吏百姓進入磑山。鄭渾再次帶兵進剿，擊敗靳富，解救出兩個縣的行政長官，帶領被劫持的百姓回到家鄉。又有一個叫趙青龍的人，殺死左內史程休。鄭渾聽說後，派遣壯士前去砍下了趙青龍的頭顱。前後投誠歸附鄭渾的百姓達到四千多家，從此山賊都被掃平，人民安居樂業。鄭渾轉任[[上黨|/zh-hant/maps/map-overall?admin=17]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+        "zhs": "郑浑又分派有威信的官吏百姓，到山中去劝告。结果出山投降者接连不断。郑浑让各县的长官，都回到原来管辖的县，安抚和召集回来投诚的百姓。梁兴等人很是害怕，率领余党聚集在[[鄜城|/zh-hans/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]。太祖派夏侯渊率军前去协助郑浑出击；郑浑带领下属和民众为先锋，杀死梁兴及其党羽。另有贼寇靳富等人，挟持[[夏阳|/zh-hans/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]县长、[[邵陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]县[[令|/zh-hans/translations/officials/regional#counties-088]]和很多官吏百姓进入硙山。郑浑再次带兵进剿，击败靳富，解救出两个县的行政长官，带领被劫持的百姓回到家乡。又有一个叫赵青龙的人，杀死左内史程休。郑浑听说后，派遣壮士前去砍下了赵青龙的头颅。前后投诚归附郑浑的百姓达到四千多家，从此山贼都被扫平，人民安居乐业。郑浑转任[[上党|/zh-hans/maps/map-overall?admin=17]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+      },
+      "en": "Zheng Hun also sent trusted and respected officials and local men throughout the hills and valleys to proclaim his intentions. People emerged in succession, whereupon he ordered the senior officials of each county to return to their posts and resettle them. Liang Xing and the others, now fearful, gathered their remaining followers at [[Fucheng|/maps/map-overall?lat=35.60832708&lng=109.61482388&name=Fucheng]]. Cao Cao sent Xiahou Yuan to assist the commandery in attacking them. Zheng Hun led the officials and people in the vanguard, beheading Liang Xing and his accomplices. Thereafter, the bandits Jin Fu and others abducted the [[Xiayang|/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]] [[County Chief|/translations/officials/regional#counties-089]] and the [[Shaoling|/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]] [[County Magistrate|/translations/officials/regional#counties-088]],[^1] together with their officials and people, and took them into Mount Wei. Zheng Hun again attacked, defeated Jin Fu and his men, rescued the officials of both counties, and brought back those who had been abducted. Later, a man named Zhao Qinglong killed Cheng Xiu, the administrator of Zuoneishi. On hearing of this, Zheng Hun sent brave men to take his head. In total, more than four thousand households submitted to him. The mountain bandits were thus completely pacified, and the people could pursue their livelihoods in peace. Zheng Hun was transferred to serve as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Shangdang|/maps/map-overall?admin=17]].",
+      "footnotes": [
+        {
+          "n": 1,
+          "zht": "邵陵在[[汝南|/zh-hant/maps/map-overall?admin=29]]，距[[夏陽|/zh-hant/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]甚遠。清何焯言或為[[郃陽|/zh-hant/maps/map-overall?lat=35.16910795&lng=110.2867993&name=郃陽]]之誤。",
+          "zhs": "邵陵在[[汝南|/zh-hans/maps/map-overall?admin=29]]，距[[夏阳|/zh-hans/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]甚远。清何焯言或为[[郃阳|/zh-hans/maps/map-overall?lat=35.16910795&lng=110.2867993&name=郃阳]]之误。",
+          "en": "Shaoling is located in [[Runan|/maps/map-overall?admin=29]], which is quite far from [[Xiayang|/maps/map-overall?lat=35.39983275&lng=110.38547776&name=Xiayang]]. Qing scholar He Zhuo suggested that it may have been mistaken for [[Heyang|/maps/map-overall?lat=35.16910795&lng=110.2867993&name=Heyang]]."
+        }
+      ]
+    },
+    {
+      "id": "ws16e-p5",
+      "orig": {
+        "zht": "太祖征[[漢中|/zh-hant/maps/map-overall?admin=110]]，以渾為[[京兆|/zh-hant/maps/map-overall?admin=142]]尹。渾以百姓新集，為制移居之法，使兼複者與單輕者相伍，溫信者與孤老為比，勤稼穡，明禁令，以發姦者。由是民安於農，而盜賊止息。及大軍入[[漢中|/zh-hant/maps/map-overall?admin=110]]，運轉軍糧為最。又遣民田[[漢中|/zh-hant/maps/map-overall?admin=110]]，無逃亡者。太祖益嘉之，復入為[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]]掾。文帝即位，為[[侍御史|/zh-hant/translations/officials/departments#censorate-049]]，加[[駙馬都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-177]]，遷[[陽平|/zh-hant/maps/map-overall?admin=161]]、[[沛|/zh-hant/maps/map-overall?admin=26]]郡二[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。郡界下溼，患水澇，百姓饑乏。渾於[[蕭|/zh-hant/maps/map-overall?lat=34.23551368&lng=116.90273838&name=Xiao]]、[[相|/zh-hant/maps/map-overall?lat=33.9834785&lng=116.66258134&name=Xiang]]二縣界，興陂遏，開稻田。",
+        "zhs": "太祖征[[汉中|/zh-hans/maps/map-overall?admin=110]]，以浑为[[京兆|/zh-hans/maps/map-overall?admin=142]]尹。浑以百姓新集，为制移居之法，使兼复者与单轻者相伍，温信者与孤老为比，勤稼穑，明禁令，以发奸者。由是民安于农，而盗贼止息。及大军入[[汉中|/zh-hans/maps/map-overall?admin=110]]，运转军粮为最。又遣民田[[汉中|/zh-hans/maps/map-overall?admin=110]]，无逃亡者。太祖益嘉之，复入为[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]]掾。文帝即位，为[[侍御史|/zh-hans/translations/officials/departments#censorate-049]]，加[[驸马都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-177]]，迁[[阳平|/zh-hans/maps/map-overall?admin=161]]、[[沛|/zh-hans/maps/map-overall?admin=26]]郡二[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。郡界下湿，患水涝，百姓饥乏。浑于[[萧|/zh-hans/maps/map-overall?lat=34.23551368&lng=116.90273838&name=Xiao]]、[[相|/zh-hans/maps/map-overall?lat=33.9834785&lng=116.66258134&name=Xiang]]二县界，兴陂遏，开稻田。"
+      },
+      "vern": {
+        "zht": "太祖征伐[[漢中|/zh-hant/maps/map-overall?admin=110]]郡，派鄭渾任[[京兆|/zh-hant/maps/map-overall?admin=142]]尹。鄭渾因爲[[京兆|/zh-hant/maps/map-overall?admin=142]]地區的百姓都是新近遷來的，便制定了移居的辦法：讓代數多而人口衆的家族同人丁單弱的人家配搭，組成居民的小單位；讓溫和誠實的人家同孤寡老人做鄰居；督促他們勤勞地耕作，又明確宣佈禁令，要求大家揭露壞人。從那以後，百姓安心務農，盜賊也銷聲匿跡。大軍進入[[漢中|/zh-hant/maps/map-overall?admin=110]]之後，就數[[京兆|/zh-hant/maps/map-overall?admin=142]]地區運送的軍糧爲最多。鄭渾又派遣一部分人去[[漢中|/zh-hant/maps/map-overall?admin=110]]屯田，這些人當中沒有一箇中途逃跑。太祖更加讚賞鄭渾，讓他再次入朝擔任[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]]府下屬。文帝曹丕即位，鄭渾任[[侍御史|/zh-hant/translations/officials/departments#censorate-049]]，加[[駙馬都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-177]]職銜。後來又出任[[陽平|/zh-hant/maps/map-overall?admin=161]]郡和[[沛|/zh-hant/maps/map-overall?admin=26]]郡兩處的[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。這兩個郡的地勢低窪潮溼，總是遭遇水災，百姓窮困飢餓。鄭渾在[[蕭|/zh-hant/maps/map-overall?lat=34.23551368&lng=116.90273838&name=Xiao]]、[[相|/zh-hant/maps/map-overall?lat=33.9834785&lng=116.66258134&name=Xiang]]兩縣的邊界，興修陂塘的堤堰，開闢水田種稻。",
+        "zhs": "太祖征伐[[汉中|/zh-hans/maps/map-overall?admin=110]]郡，派郑浑任[[京兆|/zh-hans/maps/map-overall?admin=142]]尹。郑浑因为[[京兆|/zh-hans/maps/map-overall?admin=142]]地区的百姓都是新近迁来的，便制定了移居的办法：让代数多而人口众的家族同人丁单弱的人家配搭，组成居民的小单位；让温和诚实的人家同孤寡老人做邻居；督促他们勤劳地耕作，又明确宣布禁令，要求大家揭露坏人。从那以后，百姓安心务农，盗贼也销声匿迹。大军进入[[汉中|/zh-hans/maps/map-overall?admin=110]]之后，就数[[京兆|/zh-hans/maps/map-overall?admin=142]]地区运送的军粮为最多。郑浑又派遣一部分人去[[汉中|/zh-hans/maps/map-overall?admin=110]]屯田，这些人当中没有一个中途逃跑。太祖更加赞赏郑浑，让他再次入朝担任[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]]府下属。文帝曹丕即位，郑浑任[[侍御史|/zh-hans/translations/officials/departments#censorate-049]]，加[[驸马都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-177]]职衔。后来又出任[[阳平|/zh-hans/maps/map-overall?admin=161]]郡和[[沛|/zh-hans/maps/map-overall?admin=26]]郡两处的[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。这两个郡的地势低洼潮湿，总是遭遇水灾，百姓穷困饥饿。郑浑在[[萧|/zh-hans/maps/map-overall?lat=34.23551368&lng=116.90273838&name=Xiao]]、[[相|/zh-hans/maps/map-overall?lat=33.9834785&lng=116.66258134&name=Xiang]]两县的边界，兴修陂塘的堤堰，开辟水田种稻。"
+      },
+      "en": "When Cao Cao campaigned in [[Hanzhong|/maps/map-overall?admin=110]], he appointed Zheng Hun Intendant of [[Jingzhao|/maps/map-overall?admin=142]].As the people had only recently resettled, Zheng Hun established a system for their settlement: large and populous households were placed alongside the small and weak, while the kind and trustworthy were made neighbours to orphans and the elderly. He encouraged agriculture and made the prohibitions clear, thereby helping to expose wrongdoers. The people thus settled peacefully to farming, and banditry ceased. When the main army entered [[Hanzhong|/maps/map-overall?admin=110]], Zheng Hun's administration ranked foremost in transporting military grain. He also sent people to cultivate land in [[Hanzhong|/maps/map-overall?admin=110]], and none fled. Cao Cao esteemed him all the more and recalled him to serve once more on the [[Chancellor|/translations/officials/ministers#superior-excellency-001]]'s staff. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) ascended the throne, Zheng Hun became [[Attendant Censor|/translations/officials/departments#censorate-049]] and additionally [[Commandant of Escorting Cavalry|/translations/officials/ministers#-nine-ministers-i-177]]. He was later transferred successively as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Yangping|/maps/map-overall?admin=161]] and [[Pei State|/maps/map-overall?admin=26]]. These commanderies were low-lying and damp and frequently suffered from flooding, leaving the people short of food. Along the border between [[Xiao|/maps/map-overall?lat=34.23551368&lng=116.90273838&name=Xiao]] and [[Xiang|/maps/map-overall?lat=33.9834785&lng=116.66258134&name=Xiang]] counties, Zheng Hun constructed embankments and weirs and opened up rice paddies."
+    },
+    {
+      "id": "ws16e-p6",
+      "orig": {
+        "zht": "郡人皆以為不便，渾曰：「地勢洿下，宜溉灌，終有魚稻經乆之利，此豐民之本也。」遂躬率吏民，興立功夫，一冬閒皆成。比年大收，頃畒歲增，租入倍常，民賴其利，刻石頌之，號曰[[鄭陂|/zh-hant/maps/map-overall?lat=34.24712016&lng=116.75632163&name=Zheng%20Reservoir]]。轉為[[山陽|/zh-hant/maps/map-overall?admin=34]]、[[魏|/zh-hant/maps/map-overall?admin=162]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，其治放此。又以郡下百姓，苦乏材木，乃課樹榆為籬，並益樹五果；榆皆成藩，五果豐實。入[[魏|/zh-hant/maps/map-overall?admin=162]]郡界，村落齊整如一，民得財足用饒。明帝聞之，下詔稱述，布告天下，遷將作大匠。渾清素在公，妻子不免於饑寒。及卒，以子崇為郎中。",
+        "zhs": "郡人皆以为不便，浑曰：「地势洿下，宜溉灌，终有鱼稻经乆之利，此丰民之本也。」遂躬率吏民，兴立功夫，一冬闲皆成。比年大收，顷畒岁增，租入倍常，民赖其利，刻石颂之，号曰[[郑陂|/zh-hans/maps/map-overall?lat=34.24712016&lng=116.75632163&name=Zheng%20Reservoir]]。转为[[山阳|/zh-hans/maps/map-overall?admin=34]]、[[魏|/zh-hans/maps/map-overall?admin=162]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，其治放此。又以郡下百姓，苦乏材木，乃课树榆为篱，并益树五果；榆皆成藩，五果丰实。入[[魏|/zh-hans/maps/map-overall?admin=162]]郡界，村落齐整如一，民得财足用饶。明帝闻之，下诏称述，布告天下，迁将作大匠。浑清素在公，妻子不免于饥寒。及卒，以子崇为郎中。"
+      },
+      "vern": {
+        "zht": "郡中的人都認爲這事很困難，鄭渾說：“此處地勢低平，適於放水灌溉，最終一定會變成魚米之鄉。這是富民的根本途徑啊。”於是親自率領官吏百姓，興建水利工程，經過一個冬天終於完成。從此連年大豐收，糧食不斷增產，租稅的收入也成倍增長。百姓依靠這些水利工程得到很大的利益，紛紛刻碑頌揚鄭渾的功績，還把他興建的水利工程稱爲“[[鄭陂|/zh-hant/maps/map-overall?lat=34.24712016&lng=116.75632163&name=Zheng%20Reservoir]]”。鄭渾又調任[[山陽|/zh-hant/maps/map-overall?admin=34]]郡、魏郡的[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，也遵照治理陽平郡、沛郡時的方法。他看到魏郡的百姓因缺少木材而苦惱，就督促他們種植榆樹作爲籬笆，又多栽桃、李、杏、栗、棗五種果樹。後來，榆樹都長得很高，五種果樹也結出豐碩的果實。一進入魏郡的邊界，就會看到村落整齊劃一，人民富裕豐饒。魏明帝聽說後，專門下詔讚揚，把他的事蹟宣佈天下，任命他爲將作大匠。鄭渾做官清廉樸素一心爲公，妻子兒女常常忍飢受凍。鄭渾死後，他的兒子鄭崇被任命爲郎中。",
+        "zhs": "郡中的人都认为这事很困难，郑浑说：“此处地势低平，适于放水灌溉，最终一定会变成鱼米之乡。这是富民的根本途径啊。”于是亲自率领官吏百姓，兴建水利工程，经过一个冬天终于完成。从此连年大丰收，粮食不断增产，租税的收入也成倍增长。百姓依靠这些水利工程得到很大的利益，纷纷刻碑颂扬郑浑的功绩，还把他兴建的水利工程称为“[[郑陂|/zh-hans/maps/map-overall?lat=34.24712016&lng=116.75632163&name=Zheng%20Reservoir]]”。郑浑又调任[[山阳|/zh-hans/maps/map-overall?admin=34]]郡、魏郡的[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，也遵照治理阳平郡、沛郡时的方法。他看到魏郡的百姓因缺少木材而苦恼，就督促他们种植榆树作为篱笆，又多栽桃、李、杏、栗、枣五种果树。后来，榆树都长得很高，五种果树也结出丰硕的果实。一进入魏郡的边界，就会看到村落整齐划一，人民富裕丰饶。魏明帝听说后，专门下诏赞扬，把他的事迹宣布天下，任命他为将作大匠。郑浑做官清廉朴素一心为公，妻子儿女常常忍饥受冻。郑浑死后，他的儿子郑崇被任命为郎中。"
+      },
+      "en": "The people of the commandery all considered the scheme impracticable. Zheng Hun said, \"The land is low-lying and well suited to irrigation. In time, fish and rice will bring lasting profit. This is the foundation of the people's prosperity.\" He personally led the officials and people in undertaking the work, and it was completed within a single winter. In successive years the harvests were abundant, the cultivated acreage increased annually, and tax receipts doubled. The people benefited from the works and carved a stone inscription in his praise, naming it the [[Zheng Reservoir|/maps/map-overall?lat=34.24712016&lng=116.75632163&name=Zheng%20Reservoir]]. Zheng Hun was transferred to serve as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Shanyang|/maps/map-overall?admin=34]] and later of [[Wei|/maps/map-overall?admin=162]] Commandery, where he governed on the same principles. As the people suffered from a shortage of timber, he required them to plant elms for hedges, together with five other kinds of fruit trees. The elms grew into sturdy barriers, while the fruit trees yielded abundantly. On entering [[Wei|/maps/map-overall?admin=162]] Commandery, one found every village neat and orderly, and the people prosperous and well provided for. When Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) heard of this, he issued an edict commending Zheng Hun and proclaimed his achievements throughout the realm. Zheng Hun was promoted to Minister of Works. Zheng Hun remained incorruptible and frugal in office, to the point that even his wife and children suffered from hunger and cold. After his death, his son Zheng Chong was appointed a Court Gentleman.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "晉陽秋 (孫盛)",
+            "zhs": "晋阳秋 (孙盛)",
+            "en": "Jin Yang Qiu / Annals of Jin (Sun Sheng)"
+          },
+          "zht": "《晉陽秋》曰：泰子袤，字林叔。泰與華歆、荀攸善。見袤曰：「鄭公業為不亡矣。」初為[[臨菑|/zh-hant/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]]侯[[文學|/zh-hant/translations/officials/regional#states-087]]，稍遷至[[光祿大夫|/zh-hant/translations/officials/ministers#civil-honorary-officials-119]]。泰始七年，以袤為[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]]，固辭不受，終於家。子默，字思元。晉諸公贊曰：默遵守家業，以篤素稱，位至[[太常|/zh-hant/translations/officials/ministers#-nine-ministers-i-120]]。默弟質、舒、詡，皆為卿。默子球，清直有理識，[[尚書右僕射|/zh-hant/translations/officials/departments#state-affairs-032]]、領選。球弟豫，為[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。",
+          "zhs": "《晋阳秋》曰：泰子袤，字林叔。泰与华歆、荀攸善。见袤曰：「郑公业为不亡矣。」初为[[临菑|/zh-hans/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]]侯[[文学|/zh-hans/translations/officials/regional#states-087]]，稍迁至[[光禄大夫|/zh-hans/translations/officials/ministers#civil-honorary-officials-119]]。泰始七年，以袤为[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]]，固辞不受，终于家。子默，字思元。晋诸公赞曰：默遵守家业，以笃素称，位至[[太常|/zh-hans/translations/officials/ministers#-nine-ministers-i-120]]。默弟质、舒、诩，皆为卿。默子球，清直有理识，[[尚书右仆射|/zh-hans/translations/officials/departments#state-affairs-032]]、领选。球弟豫，为[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "《晋阳秋》记载：郑泰的儿子袤，字林叔。郑泰与华歆、荀攸关系很好，见到郑袤说：“郑公业不会断绝后代了。”"
+          },
+          "en": "The Jin Yang Qiu / Annals of Jin states: Zheng Tai's son Zheng Mao had the courtesy name Linshu. Zheng Tai was good friends with Hua Xin and Xun You. On seeing Zheng Mao, Hua Xin said, \"Zheng Gongye will not perish after all!\" Zheng Mao began his career as [[Scholar|/translations/officials/regional#states-087]] to the Marquis of [[Linzi|/maps/map-overall?lat=36.88984425&lng=118.33708136&name=Linzi]] and rose to become [[Household Counsellor|/translations/officials/ministers#civil-honorary-officials-119]]. In the seventh year of Taishi, he was appointed [[Excellency of Works|/translations/officials/ministers#three-excellencies-105]], but firmly declined the office. He died at home. His son Zheng Mo, courtesy name Siyuan. The *Appraisals of the Lords of Jin* states: Zheng Mo upheld his family tradition and was renowned for his steadfast simplicity, eventually rising to [[Minister of Ceremonies|/translations/officials/ministers#-nine-ministers-i-120]]. His younger brothers Zheng Zhi, Zheng Shu, and Zheng Xu all attained ministerial office. Zheng Mo's son Zheng Qiu was incorruptible and upright, with sound judgement. He served as [[Deputy Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-032]] and oversaw official appointments. Zheng Qiu's younger brother Zheng Yu served as an [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]]."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "晉諸公贊",
+            "zhs": "晋诸公赞",
+            "en": "Jin Zhugong Zan / Appraisal of Officials of Jin (Fu Chang)"
+          },
+          "zht": "《晉諸公贊》曰：默遵守家業，以篤素稱，位至[[太常|/zh-hant/translations/officials/ministers#-nine-ministers-i-120]]。默弟質、舒、詡，皆為卿。默子球，清直有理識，[[尚書右僕射|/zh-hant/translations/officials/departments#state-affairs-032]]，領選。球弟豫，為[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。",
+          "zhs": "《晋诸公赞》曰：默遵守家业，以笃素称，位至[[太常|/zh-hans/translations/officials/ministers#-nine-ministers-i-120]]。默弟质、舒、诩，皆为卿。默子球，清直有理识，[[尚书右仆射|/zh-hans/translations/officials/departments#state-affairs-032]]，领选。球弟豫，为[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "《晋诸公赞》记载：郑默恪守家业，以朴实忠厚著称，官至太常。他的弟弟质、舒、诩，都担任了卿的官职。郑默的儿子郑球，为人清廉正直有见识，担任尚书右仆射，兼管选拔官吏之事。郑球的弟弟郑豫，担任尚书。"
+          },
+          "en": "The Jin Zhugong Zan / Appraisal of Officials of Jin states: Zheng Mo upheld his family tradition and was renowned for his steadfast simplicity, eventually rising to [[Minister of Ceremonies|/translations/officials/ministers#-nine-ministers-i-120]]. His younger brothers Zheng Zhi, Zheng Shu, and Zheng Xu all attained ministerial office. Zheng Mo's son Zheng Qiu was incorruptible and upright, with sound judgement. He served as [[Deputy Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-032]] and oversaw official appointments. Zheng Qiu's younger brother Zheng Yu served as an [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]]."
+        }
+      ]
+    }
+  ]
+}

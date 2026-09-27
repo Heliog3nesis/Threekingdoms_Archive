@@ -114,7 +114,7 @@
             {
               "zht": "魏制，中領軍領五校﹑中壘﹑武衞三營；其資重者為領軍將軍，資輕者為中領軍，出征則置行領軍",
               "zhs": "魏制，中领军领五校﹑中垒﹑武衞三营；其资重者为领军将军，资轻者为中领军，出征则置行领军",
-              "en": "In Wei, the Commander of the Central Army directed the three camps led by the Five Commandants, General of the Central Garrison and General of the Martial Guard. Those with higher prestige and experience held the title General Commanding the Army, while those of lower prestige and experienced held the title Commander of the Central Army; when on campaign, an Acting Commander of the Army would be appointed"
+              "en": "In Wei, the Commander of the Central Army directed the three camps led by the Five Commandants, General of the Central Encampment and General of the Martial Guard. Those with higher prestige and experience held the title General Commanding the Army, while those of lower prestige and experienced held the title Commander of the Central Army; when on campaign, an Acting Commander of the Army would be appointed"
             }
           ]
         },
@@ -453,7 +453,7 @@
           "displayName": {
             "zht": "中壘將軍",
             "zhs": "中垒将军",
-            "en": "General of the Central Garrison"
+            "en": "General of the Central Encampment"
           },
           "hasMultipleNames": false,
           "gradeNum": 4,
@@ -463,7 +463,7 @@
               {
                 "zht": "中壘將軍",
                 "zhs": "中垒将军",
-                "en": "General of the Central Garrison"
+                "en": "General of the Central Encampment"
               }
             ],
             "shu": null,
@@ -9699,7 +9699,7 @@
           "displayName": {
             "zht": "戊已校尉",
             "zhs": "戊已校尉",
-            "en": "Colonel of the Central Garrison"
+            "en": "Colonel of the Western Regions Central Garrison"
           },
           "hasMultipleNames": false,
           "gradeNum": 4,
@@ -9709,7 +9709,7 @@
               {
                 "zht": "戊已校尉",
                 "zhs": "戊已校尉",
-                "en": "Colonel of the Central Garrison"
+                "en": "Colonel of the Western Regions Central Garrison"
               }
             ],
             "shu": null,
@@ -9739,9 +9739,9 @@
           },
           "notes": [
             {
-              "zht": "黃初三年西域內附始置，治高昌",
-              "zhs": "黄初三年西域内附始置，治高昌",
-              "en": "Established in the 3rd year of Huangchu, when the Western Regions submitted to Wei, stationed at Gaochang"
+              "zht": "黃初三年西域內附始置，治高昌。戊己為十天干。一說十天干甲乙丙丁庚辛壬癸皆正位，唯戊己寄治耳；今所置校尉亦無常居，故取戊己為名也。一說戊己居中，鎮覆四方，今所置校尉亦處西域中，撫諸國也。",
+              "zhs": "黄初三年西域内附始置，治高昌。戊己为十天干。一说十天干甲乙丙丁庚辛壬癸皆正位，唯戊己寄治耳；今所置校尉亦无常居，故取戊己为名也。一说戊己居中，镇覆四方，今所置校尉亦处西域中，抚诸国也。",
+              "en": "Established in the 3rd year of Huangchu, when the Western Regions submitted to Wei, stationed at Gaochang. Wu (戊) and Ji (己) refer to two of the Ten Heavenly Stems. One explanation is that the Ten Heavenly Stems all occupy fixed positions except wu and ji, which are assigned to other positions. The Colonel established here in the Western Regions likewise had no fixed seat. Another explanation holds that wu and ji occupy the centre and preside over the four quarters. Likewise, the colonel was stationed in the central part of the Western Regions, where they carried out the task of pacifying the various states."
             }
           ]
         },

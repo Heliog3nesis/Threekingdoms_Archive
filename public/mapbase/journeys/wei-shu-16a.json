@@ -1,0 +1,489 @@
+{
+  "chapter": {
+    "id": "wei-shu-16a",
+    "order": 16,
+    "label": {
+      "zht": "任峻傳 · 附棗祗",
+      "zhs": "任峻传 · 附枣祗",
+      "en": "Biography of Ren Jun · with Zao Zhi"
+    },
+    "title": {
+      "zht": "魏書十六 · 任峻傳 · 附棗祗",
+      "zhs": "魏书十六 · 任峻传 · 附枣祗",
+      "en": "Book of Wei, Chapter 16 · Biography of Ren Jun · with Zao Zhi"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.75197436,
+      "lng": 114.07467163,
+      "name": "Zhongmu",
+      "persons": [
+        "任峻（伯達）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.22759282,
+      "lng": 113.85446672,
+      "name": "Changshe",
+      "persons": [
+        "棗祗"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.17486442,
+      "lng": 116.06783548,
+      "name": "Dong'a",
+      "persons": [
+        "棗祗"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "任峻（伯達）",
+      "name": {
+        "en": "Ren Jun",
+        "zht": "任峻",
+        "zhs": "任峻"
+      },
+      "courtesyName": {
+        "en": "Boda",
+        "zht": "伯達",
+        "zhs": "伯达"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "Jian'an ninth year",
+          "zht": "建安九年",
+          "zhs": "建安九年"
+        },
+        "year": 204
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhongmu, Henan",
+              "zht": "河南中牟",
+              "zhs": "河南中牟"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.75197436,
+              "lng": 114.07467163,
+              "name": "Zhongmu"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "1st year of Chuping",
+            "zht": "初平元年",
+            "zhs": "初平元年"
+          },
+          "year": 190,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhongmu",
+              "zht": "中牟",
+              "zhs": "中牟"
+            }
+          ],
+          "position": [
+            {
+              "en": "Registrar",
+              "zht": "主簿",
+              "zhs": "主簿"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.75197436,
+              "lng": 114.07467163,
+              "name": "Zhongmu"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Registrar",
+              "zht": "主簿",
+              "zhs": "主簿",
+              "url": "/translations/officials/regional#commanderies-051"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Jian'an",
+            "zht": "建安元年",
+            "zhs": "建安元年"
+          },
+          "year": 196,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Gentleman-General Directing Agriculture",
+              "zht": "典農中郎將",
+              "zhs": "典农中郎将"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Gentleman-General Directing Agriculture",
+              "zht": "典農中郎將",
+              "zhs": "典农中郎将",
+              "url": "/translations/officials/ministers#-nine-ministers-iii-240"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            },
+            {
+              "en": "Colonel of the Changshui Regiment",
+              "zht": "長水校尉",
+              "zhs": "长水校尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            },
+            {
+              "en": "Colonel of the Changshui Regiment",
+              "zht": "長水校尉",
+              "zhs": "长水校尉",
+              "url": "/translations/officials/military#central-army-014"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "棗祗",
+      "name": {
+        "en": "Zao Zhi",
+        "zht": "棗祗",
+        "zhs": "枣祗"
+      },
+      "courtesyName": {
+        "en": "",
+        "zht": "",
+        "zhs": ""
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "After 1st year of Jian'an",
+          "zht": "建安元年後",
+          "zhs": "建安元年后"
+        },
+        "year": ">196"
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Changshe",
+              "zht": "長社",
+              "zhs": "长社"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.22759282,
+              "lng": 113.85446672,
+              "name": "Changshe"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "3rd year of Chuping - 2nd year of Xingping",
+            "zht": "初平三年 - 興平二年",
+            "zhs": "初平三年 - 兴平二年"
+          },
+          "year": "192 - 195",
+          "age": null,
+          "location": [
+            {
+              "en": "Dong'a",
+              "zht": "東阿",
+              "zhs": "东阿"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.17486442,
+              "lng": 116.06783548,
+              "name": "Dong'a"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令",
+              "url": "/translations/officials/regional#counties-088"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Jian'an",
+            "zht": "建安元年",
+            "zhs": "建安元年"
+          },
+          "year": 196,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Superintendent of the Feathered Forest",
+              "zht": "羽林監",
+              "zhs": "羽林监"
+            },
+            {
+              "en": "Commandant Directing Agriculture",
+              "zht": "屯田都尉",
+              "zhs": "屯田都尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Superintendent of the Feathered Forest",
+              "zht": "羽林監",
+              "zhs": "羽林监",
+              "url": "/translations/officials/ministers#-nine-ministers-i-171"
+            },
+            {
+              "en": "Commandant Directing Agriculture",
+              "zht": "屯田都尉",
+              "zhs": "屯田都尉",
+              "url": "/translations/officials/ministers#-nine-ministers-iii-244"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Posthumously Grand Administrator",
+              "zht": "追贈太守",
+              "zhs": "追贈太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Posthumously Grand Administrator",
+              "zht": "追贈太守",
+              "zhs": "追贈太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "任峻（伯達）",
+      "to": "楊原",
+      "type": "served under",
+      "passageId": "ws16a-p1"
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "曹操",
+      "type": "pledged allegiance to",
+      "passageId": "ws16a-p2"
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "張奮",
+      "type": "consulted with",
+      "passageId": "ws16a-p2"
+    },
+    {
+      "from": "曹操",
+      "to": "任峻（伯達）",
+      "type": "gave cousin in marriage to",
+      "passageId": "ws16a-p2"
+    },
+    {
+      "from": "曹操",
+      "to": "任峻（伯達）",
+      "type": "appointed",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "曹操",
+      "to": "棗祗",
+      "type": "appointed",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "曹操",
+      "to": "任峻（伯達）",
+      "type": "enfeoffed",
+      "passageId": "ws16a-p4"
+    },
+    {
+      "from": "曹操",
+      "to": "任峻（伯達）",
+      "type": "promoted",
+      "passageId": "ws16a-p4"
+    },
+    {
+      "from": "曹丕",
+      "to": "任峻（伯達）",
+      "type": "bestowed posthumous title on",
+      "passageId": "ws16a-p4"
+    },
+    {
+      "from": "曹丕",
+      "to": "任覽",
+      "type": "enfeoffed",
+      "passageId": "ws16a-p4"
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "任先",
+      "type": "father of",
+      "passageId": "ws16a-p4"
+    },
+    {
+      "from": "任峻（伯達）",
+      "to": "任覽",
+      "type": "father of",
+      "passageId": "ws16a-p4"
+    },
+    {
+      "from": "棗祗",
+      "to": "棗處中",
+      "type": "father of",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "棗祗",
+      "to": "棗據（道彥）",
+      "type": "grandfather of",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "棗據（道彥）",
+      "to": "棗嵩（臺產）",
+      "type": "father of",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "棗據（道彥）",
+      "to": "棗腆（玄方）",
+      "type": "father of",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "棗嵩（臺產）",
+      "to": "棗腆（玄方）",
+      "type": "younger brother of",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "荀彧",
+      "to": "棗祗",
+      "type": "discussed with",
+      "passageId": "ws16a-p3"
+    },
+    {
+      "from": "侯聲",
+      "to": "荀彧",
+      "type": "raised doubts in",
+      "passageId": "ws16a-p3"
+    }
+  ]
+}

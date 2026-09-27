@@ -1,0 +1,74 @@
+{
+  "id": "wei-shu-17-appraisal",
+  "kind": "appraisal",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 17,
+  "num": "17",
+  "label": {
+    "zht": "評",
+    "zhs": "评",
+    "en": "Appraisal"
+  },
+  "title": {
+    "zht": "魏書十七 · 評",
+    "zhs": "魏书十七 · 评",
+    "en": "Book of Wei, Chapter 17 · Appraisal"
+  },
+  "relationships": [],
+  "journeyOverviews": [],
+  "passages": [
+    {
+      "id": "ws17-appr-p1",
+      "orig": {
+        "zht": "評曰：太祖建茲武功，而時之良將，五子為先。",
+        "zhs": "评曰：太祖建兹武功，而时之良将，五子为先。"
+      },
+      "vern": {
+        "zht": "陳壽評論道：太祖曹操建立如此輝煌的武功，而當時的良將，以這五位爲首。",
+        "zhs": "陈寿评论道：太祖曹操建立如此辉煌的武功，而当时的良将，以这五位为首。"
+      },
+      "en": "Chen Shou appraises: Cao Cao achieved such brilliant military accomplishments, and among the able generals of the time, these five stood foremost."
+    },
+    {
+      "id": "ws17-appr-p2",
+      "orig": {
+        "zht": "[[于禁|/zh-hant/translations/sanguozhi/wei-shu-17c]]最號毅重，然弗克其終。",
+        "zhs": "[[于禁|/zh-hans/translations/sanguozhi/wei-shu-17c]]最号毅重，然弗克其终。"
+      },
+      "vern": {
+        "zht": "[[于禁|/zh-hant/translations/sanguozhi/wei-shu-17c]]最爲剛毅穩重，但沒能保持有始有終。",
+        "zhs": "[[于禁|/zh-hans/translations/sanguozhi/wei-shu-17c]]最为刚毅稳重，但没能保持有始有终。"
+      },
+      "en": "[[Yu Jin|/translations/sanguozhi/wei-shu-17c]] was especially renowned for firmness and solemnity, yet he failed to maintain these qualities to the end."
+    },
+    {
+      "id": "ws17-appr-p3",
+      "orig": {
+        "zht": "[[張郃|/zh-hant/translations/sanguozhi/wei-shu-17d]]以巧變為稱，[[樂進|/zh-hant/translations/sanguozhi/wei-shu-17b]]以驍果顯名，而鑒其行事，未副所聞。",
+        "zhs": "[[张郃|/zh-hans/translations/sanguozhi/wei-shu-17d]]以巧变为称，[[乐进|/zh-hans/translations/sanguozhi/wei-shu-17b]]以骁果显名，而鉴其行事，未副所闻。"
+      },
+      "vern": {
+        "zht": "[[張郃|/zh-hant/translations/sanguozhi/wei-shu-17d]]以機智靈活著稱，[[樂進|/zh-hant/translations/sanguozhi/wei-shu-17b]]以驍勇果敢聞名，但觀覽他們的事蹟，與所聽到的名聲並不相稱。",
+        "zhs": "[[张郃|/zh-hans/translations/sanguozhi/wei-shu-17d]]以机智灵活著称，[[乐进|/zh-hans/translations/sanguozhi/wei-shu-17b]]以骁勇果敢闻名，但观览他们的事迹，与所听到的名声并不相称。"
+      },
+      "en": "[[Zhang He|/translations/sanguozhi/wei-shu-17d]] was celebrated for his resourcefulness and adaptability, while [[Yue Jin|/translations/sanguozhi/wei-shu-17b]] was famed for his valour and decisiveness. Yet when one examines the deeds recorded of them, they do not seem to fully match their reputations."
+    },
+    {
+      "id": "ws17-appr-p4",
+      "orig": {
+        "zht": "或注記有遺漏，未如[[張遼|/zh-hant/translations/sanguozhi/wei-shu-17a]]、[[徐晃|/zh-hant/translations/sanguozhi/wei-shu-17e]]之備詳也。",
+        "zhs": "或注记有遗漏，未如[[张辽|/zh-hans/translations/sanguozhi/wei-shu-17a]]、[[徐晃|/zh-hans/translations/sanguozhi/wei-shu-17e]]之备详也。"
+      },
+      "vern": {
+        "zht": "也許是生平事蹟記載有遺漏，不如[[張遼|/zh-hant/translations/sanguozhi/wei-shu-17a]]、[[徐晃|/zh-hant/translations/sanguozhi/wei-shu-17e]]那樣完備詳細吧。",
+        "zhs": "也许是生平事迹记载有遗漏，不如[[张辽|/zh-hans/translations/sanguozhi/wei-shu-17a]]、[[徐晃|/zh-hans/translations/sanguozhi/wei-shu-17e]]那样完备详细吧。"
+      },
+      "en": "Perhaps some details of their lives were missing from the records, which were therefore not as full and detailed as those of [[Zhang Liao|/translations/sanguozhi/wei-shu-17a]] and [[Xu Huang|/translations/sanguozhi/wei-shu-17e]]."
+    }
+  ]
+}

@@ -1,0 +1,768 @@
+{
+  "chapter": {
+    "id": "wei-shu-16f",
+    "order": 16,
+    "label": {
+      "zht": "倉慈傳 · 附顏斐、令狐邵、孔乂",
+      "zhs": "仓慈传 · 附颜斐、令狐邵、孔乂",
+      "en": "Biography of Cang Ci · with Yan Fei, Linghu Shao, Kong Yi"
+    },
+    "title": {
+      "zht": "魏書十六 · 倉慈傳 · 附顏斐、令狐邵、孔乂",
+      "zhs": "魏书十六 · 仓慈传 · 附颜斐、令狐邵、孔乂",
+      "en": "Book of Wei, Chapter 16 · Biography of Cang Ci · with Yan Fei, Linghu Shao, Kong Yi"
+    }
+  },
+  "pins": [
+    {
+      "kind": "admin",
+      "id": "24",
+      "persons": [
+        "倉慈（孝仁）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.31264639,
+      "lng": 108.87167209,
+      "name": "Chang'an",
+      "persons": [
+        "倉慈（孝仁）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "135",
+      "persons": [
+        "倉慈（孝仁）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "36",
+      "persons": [
+        "顏斐（文林）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "顏斐（文林）",
+        "令狐邵（孔叔）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "142",
+      "persons": [
+        "顏斐（文林）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "153",
+      "persons": [
+        "顏斐（文林）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "21",
+      "persons": [
+        "令狐邵（孔叔）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.29000818,
+      "lng": 114.3635467,
+      "name": "Ye",
+      "persons": [
+        "令狐邵（孔叔）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.66960149,
+      "lng": 114.16854843,
+      "name": "Wu'an",
+      "persons": [
+        "令狐邵（孔叔）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "54",
+      "persons": [
+        "令狐邵（孔叔）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "倉慈（孝仁）",
+      "name": {
+        "en": "Cang Ci",
+        "zht": "倉慈",
+        "zhs": "仓慈"
+      },
+      "courtesyName": {
+        "en": "Xiaoren",
+        "zht": "孝仁",
+        "zhs": "孝仁"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "24"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "during the Jian'an Era",
+            "zht": "建安年間",
+            "zhs": "建安年间"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huainan",
+              "zht": "淮南",
+              "zhs": "淮南"
+            }
+          ],
+          "position": [
+            {
+              "en": "Commandant Who Pacifies and Gathers",
+              "zht": "綏集都尉",
+              "zhs": "绥集都尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "24"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Commandant Who Pacifies and Gathers",
+              "zht": "綏集都尉",
+              "zhs": "绥集都尉",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "late Huangchu Era",
+            "zht": "黄初末",
+            "zhs": "黄初末"
+          },
+          "year": 225,
+          "age": null,
+          "location": [
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.31264639,
+              "lng": 108.87167209,
+              "name": "Chang'an"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "County Magistrate",
+              "zht": "令",
+              "zhs": "令",
+              "url": "/translations/officials/regional#counties-088"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "during the Taihe Era",
+            "zht": "太和年間",
+            "zhs": "太和年间"
+          },
+          "year": "230s",
+          "age": null,
+          "location": [
+            {
+              "en": "Dunhuang",
+              "zht": "燉煌",
+              "zhs": "炖煌"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "135"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "顏斐（文林）",
+      "name": {
+        "en": "Yan Fei",
+        "zht": "顏斐",
+        "zhs": "颜斐"
+      },
+      "courtesyName": {
+        "en": "Wenlin",
+        "zht": "文林",
+        "zhs": "文林"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Jibei State",
+              "zht": "濟北",
+              "zhs": "济北"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "36"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "Before Huangchu Era",
+            "zht": "黃初前",
+            "zhs": "黄初前"
+          },
+          "year": "<220",
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Frontrider of the Crown Prince",
+              "zht": "太子洗馬",
+              "zhs": "太子洗马"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Frontrider of the Crown Prince",
+              "zht": "太子洗馬",
+              "zhs": "太子洗马",
+              "url": "/translations/officials/household#eastern-palace-023"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "during Huangchu Era - during the Qinglong Era",
+            "zht": "黃初年間 - 青龍年間",
+            "zhs": "黄初年间 - 青龙年间"
+          },
+          "year": "220s - 230s",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛",
+              "zhs": "洛"
+            },
+            {
+              "en": "Jingzhao",
+              "zht": "京兆",
+              "zhs": "京兆"
+            }
+          ],
+          "position": [
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "給事黃門侍郎",
+              "zhs": "给事黄门侍郎"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            },
+            {
+              "kind": "admin",
+              "id": "142"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "給事黃門侍郎",
+              "zhs": "给事黄门侍郎",
+              "url": "/translations/officials/departments#chancellery-003"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Pingyuan",
+              "zht": "平原",
+              "zhs": "平原"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "153"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "令狐邵（孔叔）",
+      "name": {
+        "en": "Linghu Shao",
+        "zht": "令狐邵",
+        "zhs": "令狐邵"
+      },
+      "courtesyName": {
+        "en": "Kongshu",
+        "zht": "孔叔",
+        "zhs": "孔叔"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Taiyuan",
+              "zht": "太原",
+              "zhs": "太原"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "21"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "Beginning of Jian'an Era",
+            "zht": "建安初",
+            "zhs": "建安初"
+          },
+          "year": "~200",
+          "age": null,
+          "location": [
+            {
+              "en": "Ye",
+              "zht": "鄴",
+              "zhs": "邺"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.29000818,
+              "lng": 114.3635467,
+              "name": "Ye"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "9th year of Jian'an",
+            "zht": "建安九年",
+            "zhs": "建安九年"
+          },
+          "year": 204,
+          "age": null,
+          "location": [
+            {
+              "en": "Wu'an",
+              "zht": "武安",
+              "zhs": "武安"
+            }
+          ],
+          "position": [
+            {
+              "en": "Military Strategy Section Administrator",
+              "zht": "軍謀掾",
+              "zhs": "军谋掾"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.66960149,
+              "lng": 114.16854843,
+              "name": "Wu'an"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Military Strategy Section Administrator",
+              "zht": "軍謀掾",
+              "zhs": "军谋掾",
+              "url": "/translations/officials/ministers#superior-excellency-036"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Hongnong",
+              "zht": "弘農",
+              "zhs": "弘农"
+            }
+          ],
+          "position": [
+            {
+              "en": "Registrar",
+              "zht": "主簿",
+              "zhs": "主簿"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "54"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Registrar",
+              "zht": "主簿",
+              "zhs": "主簿",
+              "url": "/translations/officials/ministers#superior-excellency-012"
+            },
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "Beginning of Huangchu Era",
+            "zht": "黃初初",
+            "zhs": "黄初初"
+          },
+          "year": "~220",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛",
+              "zhs": "洛"
+            }
+          ],
+          "position": [
+            {
+              "en": "Feathered Forest Gentleman",
+              "zht": "羽林郎",
+              "zhs": "羽林郎"
+            },
+            {
+              "en": "Gentleman-General of the Rapid Tigers",
+              "zht": "虎賁中郎將",
+              "zhs": "虎贲中郎将"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Feathered Forest Gentleman",
+              "zht": "羽林郎",
+              "zhs": "羽林郎",
+              "url": "/translations/officials/ministers#-nine-ministers-i-170"
+            },
+            {
+              "en": "Gentleman-General of the Rapid Tigers",
+              "zht": "虎賁中郎將",
+              "zhs": "虎贲中郎将",
+              "url": "/translations/officials/ministers#-nine-ministers-i-163"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "尹奉",
+      "to": "倉慈（孝仁）",
+      "type": "前者為燉煌太守，後者繼任",
+      "passageId": "ws16f-p2"
+    },
+    {
+      "from": "曹操",
+      "to": "倉慈（孝仁）",
+      "type": "曹操招募屯田，任命倉慈為綏集都尉",
+      "passageId": "ws16f-p1"
+    },
+    {
+      "from": "曹操",
+      "to": "令狐邵（孔叔）",
+      "type": "曹操破毛城後釋放令狐邵，署軍謀掾",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "樂詳",
+      "to": "令狐邵（孔叔）",
+      "type": "令狐邵遣吏民詣河東就樂詳學經",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "王遷",
+      "to": "倉慈（孝仁）",
+      "type": "王遷繼倉慈為燉煌太守",
+      "passageId": "ws16f-p3"
+    },
+    {
+      "from": "趙基",
+      "to": "王遷",
+      "type": "趙基繼王遷為燉煌太守",
+      "passageId": "ws16f-p3"
+    },
+    {
+      "from": "皇甫隆",
+      "to": "趙基",
+      "type": "皇甫隆繼趙基為燉煌太守",
+      "passageId": "ws16f-p3"
+    },
+    {
+      "from": "令狐愚",
+      "to": "令狐邵（孔叔）",
+      "type": "族子（年輕族人）",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "王淩",
+      "to": "令狐愚",
+      "type": "共謀廢立",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "令狐華",
+      "to": "令狐邵（孔叔）",
+      "type": "父子",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "司馬懿",
+      "to": "顏斐（文林）",
+      "type": "司馬懿於長安立軍市，顏斐向其報告軍吏侵侮縣民",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "孔疇（元矩）",
+      "to": "孔乂（元儁）",
+      "type": "曾祖父與曾孫",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "孔恂（士信）",
+      "to": "孔乂（元儁）",
+      "type": "父子",
+      "passageId": "ws16f-p4"
+    },
+    {
+      "from": "孔乂（元儁）",
+      "to": "孔子",
+      "type": "後代",
+      "passageId": "ws16f-p4"
+    }
+  ]
+}

@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-17c",
+    "order": 17,
+    "label": {
+      "zht": "于禁傳",
+      "zhs": "于禁传",
+      "en": "Biography of Yu Jin"
+    },
+    "title": {
+      "zht": "魏書十七 · 于禁傳",
+      "zhs": "魏书十七 · 于禁传",
+      "en": "Book of Wei, Chapter 17 · Biography of Yu Jin"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -384,16 +398,15 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Army Major",
-                "zht": "軍司馬",
-                "zhs": "军司马"
-              },
-              "1": {
-                "en": "Commandant Who Breaks Formations",
-                "zht": "陷陣都尉",
-                "zhs": "陷阵都尉"
-              },
+              "en": "Army Major",
+              "zht": "軍司馬",
+              "zhs": "军司马",
+              "url": null
+            },
+            {
+              "en": "Commandant Who Breaks Formations",
+              "zht": "陷陣都尉",
+              "zhs": "陷阵都尉",
               "url": null
             }
           ]
@@ -464,17 +477,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Colonel Who Subdues the Enemies",
-                "zht": "平虜校尉",
-                "zhs": "平虏校尉"
-              },
-              "1": {
-                "en": "Neighbourhood Marquis",
-                "zht": "亭侯",
-                "zhs": "亭侯"
-              },
+              "en": "Colonel Who Subdues the Enemies",
+              "zht": "平虜校尉",
+              "zhs": "平虏校尉",
               "url": null
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
             }
           ]
         },
@@ -576,17 +588,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Assistant General",
-                "zht": "裨將軍",
-                "zhs": "裨将军"
-              },
-              "1": {
-                "en": "Adjunct General",
-                "zht": "偏將軍",
-                "zhs": "偏将军"
-              },
-              "url": null
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军",
+              "url": "/translations/officials/military#four-direction--misc-165"
+            },
+            {
+              "en": "Adjunct General",
+              "zht": "偏將軍",
+              "zhs": "偏将军",
+              "url": "/translations/officials/military#four-direction--misc-164"
             }
           ]
         },
@@ -604,9 +615,9 @@
             "zhs": "博望"
           },
           "position": {
-            "en": "裨將軍",
-            "zht": "",
-            "zhs": ""
+            "en": "Assistant General",
+            "zht": "裨將軍",
+            "zhs": "裨将军"
           },
           "passageId": "ws17c-p6",
           "resolvedLocations": [
@@ -619,9 +630,9 @@
           ],
           "positionLinks": [
             {
-              "en": "裨將軍",
-              "zht": "",
-              "zhs": "",
+              "en": "Assistant General",
+              "zht": "裨將軍",
+              "zhs": "裨将军",
               "url": "/translations/officials/military#four-direction--misc-165"
             }
           ]
@@ -719,17 +730,16 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "General of the Left",
-                "zht": "左將軍",
-                "zhs": "左将军"
-              },
-              "1": {
-                "en": "Provisional Bearer of the Imperial Tally",
-                "zht": "假節",
-                "zhs": "假节"
-              },
-              "url": null
+              "en": "General of the Left",
+              "zht": "左將軍",
+              "zhs": "左将军",
+              "url": "/translations/officials/military#four-direction--misc-116"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
             }
           ]
         },

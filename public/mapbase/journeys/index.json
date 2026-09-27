@@ -1,0 +1,826 @@
+[
+  {
+    "person": "任峻（伯達）",
+    "name": {
+      "en": "Ren Jun",
+      "zht": "任峻",
+      "zhs": "任峻"
+    },
+    "courtesyName": {
+      "en": "Boda",
+      "zht": "伯達",
+      "zhs": "伯达"
+    },
+    "chapterId": "wei-shu-16a",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "任峻傳 · 附棗祗",
+      "zhs": "任峻传 · 附枣祗",
+      "en": "Biography of Ren Jun · with Zao Zhi"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "棗祗",
+    "name": {
+      "en": "Zao Zhi",
+      "zht": "棗祗",
+      "zhs": "枣祗"
+    },
+    "courtesyName": {
+      "en": "",
+      "zht": "",
+      "zhs": ""
+    },
+    "chapterId": "wei-shu-16a",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "任峻傳 · 附棗祗",
+      "zhs": "任峻传 · 附枣祗",
+      "en": "Biography of Ren Jun · with Zao Zhi"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "蘇則（文師）",
+    "name": {
+      "en": "Su Ze",
+      "zht": "蘇則",
+      "zhs": "苏则"
+    },
+    "courtesyName": {
+      "en": "Wenshi",
+      "zht": "文師",
+      "zhs": "文师"
+    },
+    "chapterId": "wei-shu-16b",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "蘇則傳",
+      "zhs": "苏则传",
+      "en": "Biography of Su Ze"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "杜畿（伯侯）",
+    "name": {
+      "en": "Du Ji",
+      "zht": "杜畿",
+      "zhs": "杜畿"
+    },
+    "courtesyName": {
+      "en": "Bohou",
+      "zht": "伯侯",
+      "zhs": "伯侯"
+    },
+    "chapterId": "wei-shu-16c",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "杜畿傳",
+      "zhs": "杜畿传",
+      "en": "Biography of Du Ji"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "杜恕（務伯）",
+    "name": {
+      "en": "Du Shu",
+      "zht": "杜恕",
+      "zhs": "杜恕"
+    },
+    "courtesyName": {
+      "en": "Wubo",
+      "zht": "務伯",
+      "zhs": "务伯"
+    },
+    "chapterId": "wei-shu-16d",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "杜畿子恕傳 · 附孟康、樂詳",
+      "zhs": "杜畿子恕传 · 附孟康、乐详",
+      "en": "Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "孟康（公休）",
+    "name": {
+      "en": "Meng Kang",
+      "zht": "孟康",
+      "zhs": "孟康"
+    },
+    "courtesyName": {
+      "en": "Gongxiu",
+      "zht": "公休",
+      "zhs": "公休"
+    },
+    "chapterId": "wei-shu-16d",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "杜畿子恕傳 · 附孟康、樂詳",
+      "zhs": "杜畿子恕传 · 附孟康、乐详",
+      "en": "Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "鄭渾（文公）",
+    "name": {
+      "en": "Zheng Hun",
+      "zht": "鄭渾",
+      "zhs": "郑浑"
+    },
+    "courtesyName": {
+      "en": "Wengong",
+      "zht": "文公",
+      "zhs": "文公"
+    },
+    "chapterId": "wei-shu-16e",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "鄭渾傳",
+      "zhs": "郑浑传",
+      "en": "Biography of Zheng Hun"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "鄭泰（公業）",
+    "name": {
+      "en": "Zheng Tai",
+      "zht": "鄭泰",
+      "zhs": "郑泰"
+    },
+    "courtesyName": {
+      "en": "Gongye",
+      "zht": "公業",
+      "zhs": "公业"
+    },
+    "chapterId": "wei-shu-16e",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "鄭渾傳",
+      "zhs": "郑浑传",
+      "en": "Biography of Zheng Hun"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "鄭袤（林叔）",
+    "name": {
+      "en": "Zheng Mao",
+      "zht": "鄭袤",
+      "zhs": "郑袤"
+    },
+    "courtesyName": {
+      "en": "Linshu",
+      "zht": "林叔",
+      "zhs": "林叔"
+    },
+    "chapterId": "wei-shu-16e",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "鄭渾傳",
+      "zhs": "郑浑传",
+      "en": "Biography of Zheng Hun"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "倉慈（孝仁）",
+    "name": {
+      "en": "Cang Ci",
+      "zht": "倉慈",
+      "zhs": "仓慈"
+    },
+    "courtesyName": {
+      "en": "Xiaoren",
+      "zht": "孝仁",
+      "zhs": "孝仁"
+    },
+    "chapterId": "wei-shu-16f",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "倉慈傳 · 附顏斐、令狐邵、孔乂",
+      "zhs": "仓慈传 · 附颜斐、令狐邵、孔乂",
+      "en": "Biography of Cang Ci · with Yan Fei, Linghu Shao, Kong Yi"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "顏斐（文林）",
+    "name": {
+      "en": "Yan Fei",
+      "zht": "顏斐",
+      "zhs": "颜斐"
+    },
+    "courtesyName": {
+      "en": "Wenlin",
+      "zht": "文林",
+      "zhs": "文林"
+    },
+    "chapterId": "wei-shu-16f",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "倉慈傳 · 附顏斐、令狐邵、孔乂",
+      "zhs": "仓慈传 · 附颜斐、令狐邵、孔乂",
+      "en": "Biography of Cang Ci · with Yan Fei, Linghu Shao, Kong Yi"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "令狐邵（孔叔）",
+    "name": {
+      "en": "Linghu Shao",
+      "zht": "令狐邵",
+      "zhs": "令狐邵"
+    },
+    "courtesyName": {
+      "en": "Kongshu",
+      "zht": "孔叔",
+      "zhs": "孔叔"
+    },
+    "chapterId": "wei-shu-16f",
+    "chapterOrder": 16,
+    "chapterLabel": {
+      "zht": "倉慈傳 · 附顏斐、令狐邵、孔乂",
+      "zhs": "仓慈传 · 附颜斐、令狐邵、孔乂",
+      "en": "Biography of Cang Ci · with Yan Fei, Linghu Shao, Kong Yi"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 16",
+      "zht": "魏書十六",
+      "zhs": "魏书十六"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "張遼（文遠）",
+    "name": {
+      "en": "Zhang Liao",
+      "zht": "張遼",
+      "zhs": "张辽"
+    },
+    "courtesyName": {
+      "en": "Wenyuan",
+      "zht": "文遠",
+      "zhs": "文远"
+    },
+    "chapterId": "wei-shu-17a",
+    "chapterOrder": 17,
+    "chapterLabel": {
+      "zht": "張遼傳",
+      "zhs": "张辽传",
+      "en": "Biography of Zhang Liao"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 17",
+      "zht": "魏書十七",
+      "zhs": "魏书十七"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "樂進（文謙）",
+    "name": {
+      "en": "Yue Jin",
+      "zht": "樂進",
+      "zhs": "乐进"
+    },
+    "courtesyName": {
+      "en": "Wenqian",
+      "zht": "文謙",
+      "zhs": "文谦"
+    },
+    "chapterId": "wei-shu-17b",
+    "chapterOrder": 17,
+    "chapterLabel": {
+      "zht": "樂進傳",
+      "zhs": "乐进传",
+      "en": "Biography of Yue Jin"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 17",
+      "zht": "魏書十七",
+      "zhs": "魏书十七"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "于禁（文則）",
+    "name": {
+      "en": "Yu Jin",
+      "zht": "于禁",
+      "zhs": "于禁"
+    },
+    "courtesyName": {
+      "en": "Wenze",
+      "zht": "文則",
+      "zhs": "文则"
+    },
+    "chapterId": "wei-shu-17c",
+    "chapterOrder": 17,
+    "chapterLabel": {
+      "zht": "于禁傳",
+      "zhs": "于禁传",
+      "en": "Biography of Yu Jin"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 17",
+      "zht": "魏書十七",
+      "zhs": "魏书十七"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "張郃（儁乂）",
+    "name": {
+      "en": "Zhang He",
+      "zht": "張郃",
+      "zhs": "张郃"
+    },
+    "courtesyName": {
+      "en": "Junyi",
+      "zht": "儁乂",
+      "zhs": "俊乂"
+    },
+    "chapterId": "wei-shu-17d",
+    "chapterOrder": 17,
+    "chapterLabel": {
+      "zht": "張郃傳",
+      "zhs": "张郃传",
+      "en": "Biography of Zhang He"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 17",
+      "zht": "魏書十七",
+      "zhs": "魏书十七"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "徐晃（公明）",
+    "name": {
+      "en": "Xu Huang",
+      "zht": "徐晃",
+      "zhs": "徐晃"
+    },
+    "courtesyName": {
+      "en": "Gongming",
+      "zht": "公明",
+      "zhs": "公明"
+    },
+    "chapterId": "wei-shu-17e",
+    "chapterOrder": 17,
+    "chapterLabel": {
+      "zht": "徐晃傳 · 附朱靈",
+      "zhs": "徐晃传 · 附朱灵",
+      "en": "Biography of Xu Huang · with Zhu Ling"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 17",
+      "zht": "魏書十七",
+      "zhs": "魏书十七"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "朱靈（文博）",
+    "name": {
+      "en": "Zhu Ling",
+      "zht": "朱靈",
+      "zhs": "朱灵"
+    },
+    "courtesyName": {
+      "en": "Wenbo",
+      "zht": "文博",
+      "zhs": "文博"
+    },
+    "chapterId": "wei-shu-17e",
+    "chapterOrder": 17,
+    "chapterLabel": {
+      "zht": "徐晃傳 · 附朱靈",
+      "zhs": "徐晃传 · 附朱灵",
+      "en": "Biography of Xu Huang · with Zhu Ling"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 17",
+      "zht": "魏書十七",
+      "zhs": "魏书十七"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "李典（曼成）",
+    "name": {
+      "en": "Li Dian",
+      "zht": "李典",
+      "zhs": "李典"
+    },
+    "courtesyName": {
+      "en": "Mancheng",
+      "zht": "曼成",
+      "zhs": "曼成"
+    },
+    "chapterId": "wei-shu-18a",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "李典傳",
+      "zhs": "李典传",
+      "en": "Biography of Li Dian"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "李乾",
+    "name": {
+      "en": "Li Qian",
+      "zht": "李乾",
+      "zhs": "李乾"
+    },
+    "courtesyName": null,
+    "chapterId": "wei-shu-18a",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "李典傳",
+      "zhs": "李典传",
+      "en": "Biography of Li Dian"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "李整",
+    "name": {
+      "en": "Li Zheng",
+      "zht": "李整",
+      "zhs": "李整"
+    },
+    "courtesyName": null,
+    "chapterId": "wei-shu-18a",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "李典傳",
+      "zhs": "李典传",
+      "en": "Biography of Li Dian"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "李通（文達）",
+    "name": {
+      "en": "Li Tong",
+      "zht": "李通",
+      "zhs": "李通"
+    },
+    "courtesyName": {
+      "en": "Wenda",
+      "zht": "文達",
+      "zhs": "文达"
+    },
+    "chapterId": "wei-shu-18b",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "李通傳",
+      "zhs": "李通传",
+      "en": "Biography of Li Tong"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "臧霸（宣高）",
+    "name": {
+      "en": "Zang Ba",
+      "zht": "臧霸",
+      "zhs": "臧霸"
+    },
+    "courtesyName": {
+      "en": "Xuangao",
+      "zht": "宣高",
+      "zhs": "宣高"
+    },
+    "chapterId": "wei-shu-18c",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "臧霸傳 · 附孫觀",
+      "zhs": "臧霸传 · 附孙观",
+      "en": "Biography of Zang Ba · with Sun Guan"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "孫觀（仲臺）",
+    "name": {
+      "en": "Sun Guan",
+      "zht": "孫觀",
+      "zhs": "孙观"
+    },
+    "courtesyName": {
+      "en": "Zhongtai",
+      "zht": "仲臺",
+      "zhs": "仲台"
+    },
+    "chapterId": "wei-shu-18c",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "臧霸傳 · 附孫觀",
+      "zhs": "臧霸传 · 附孙观",
+      "en": "Biography of Zang Ba · with Sun Guan"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "文聘（仲業）",
+    "name": {
+      "en": "Wen Pin",
+      "zht": "文聘",
+      "zhs": "文聘"
+    },
+    "courtesyName": {
+      "en": "Zhongye",
+      "zht": "仲業",
+      "zhs": "仲业"
+    },
+    "chapterId": "wei-shu-18d",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "文聘傳",
+      "zhs": "文聘传",
+      "en": "Biography of Wen Pin"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "呂虔（子恪）",
+    "name": {
+      "en": "Lü Qian",
+      "zht": "呂虔",
+      "zhs": "吕虔"
+    },
+    "courtesyName": {
+      "en": "Zike",
+      "zht": "子恪",
+      "zhs": "子恪"
+    },
+    "chapterId": "wei-shu-18e",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "呂虔傳 · 附王祥",
+      "zhs": "吕虔传 · 附王祥",
+      "en": "Biography of Lü Qian · with Wang Xiang"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "許褚（仲康）",
+    "name": {
+      "en": "Xu Chu",
+      "zht": "許褚",
+      "zhs": "许褚"
+    },
+    "courtesyName": {
+      "en": "Zhongkang",
+      "zht": "仲康",
+      "zhs": "仲康"
+    },
+    "chapterId": "wei-shu-18f",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "許褚傳",
+      "zhs": "许褚传",
+      "en": "Biography of Xu Chu"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "典韋",
+    "name": {
+      "en": "Dian Wei",
+      "zht": "典韋",
+      "zhs": "典韦"
+    },
+    "courtesyName": {
+      "en": "unknown",
+      "zht": "不詳",
+      "zhs": "不详"
+    },
+    "chapterId": "wei-shu-18g",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "典韋傳",
+      "zhs": "典韦传",
+      "en": "Biography of Dian Wei"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "龐德（令明）",
+    "name": {
+      "en": "Pang De",
+      "zht": "龐德",
+      "zhs": "庞德"
+    },
+    "courtesyName": {
+      "en": "Lingming",
+      "zht": "令明",
+      "zhs": "令明"
+    },
+    "chapterId": "wei-shu-18h",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "龐德傳",
+      "zhs": "庞德传",
+      "en": "Biography of Pang De"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "龐淯（子異）",
+    "name": {
+      "en": "Pang Yu",
+      "zht": "龐淯",
+      "zhs": "庞淯"
+    },
+    "courtesyName": {
+      "en": "Ziyi",
+      "zht": "子異",
+      "zhs": "子异"
+    },
+    "chapterId": "wei-shu-18i",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "龐淯傳 · 附张猛、赵娥",
+      "zhs": "庞淯传 · 附张猛、赵娥",
+      "en": "Biography of Pang Yu · with Zhang Meng and Zhao E"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "閻溫（伯儉）",
+    "name": {
+      "en": "Yan Wen",
+      "zht": "閻溫",
+      "zhs": "阎温"
+    },
+    "courtesyName": {
+      "en": "Bojian",
+      "zht": "伯儉",
+      "zhs": "伯俭"
+    },
+    "chapterId": "wei-shu-18j",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zhs": "阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
+      "en": "Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "張恭",
+    "name": {
+      "en": "Zhang Gong",
+      "zht": "張恭",
+      "zhs": "张恭"
+    },
+    "courtesyName": {
+      "en": "unknown",
+      "zht": "不詳",
+      "zhs": "不详"
+    },
+    "chapterId": "wei-shu-18j",
+    "chapterOrder": 18,
+    "chapterLabel": {
+      "zht": "閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zhs": "阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
+      "en": "Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 18",
+      "zht": "魏書十八",
+      "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  }
+]

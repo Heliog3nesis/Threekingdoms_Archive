@@ -22,170 +22,531 @@
     {
       "from": "臧戒",
       "to": "臧霸（宣高）",
-      "type": "father-son",
-      "passageId": "ws18c-p1"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p1",
+          "text": {
+            "en": "When his father Zang Jie was seized for defying an unjust execution order, eighteen-year-old Zang Ba led retainers to rescue him, becoming known for his bravery.",
+            "zht": "父親臧戒因拒行不義之殺令而被捕，十八歲的臧霸率部曲將他救出，因而以勇烈聞名。",
+            "zhs": "父亲臧戒因拒行不义之杀令而被捕，十八岁的臧霸率部曲将他救出，因而以勇烈闻名。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "陶謙",
-      "type": "lord-subordinate",
-      "passageId": "ws18c-p2"
+      "to": "陶謙（恭祖）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p2",
+          "text": {
+            "en": "Zang Ba followed Tao Qian in defeating the Yellow Turbans and was appointed Commandant of Cavalry.",
+            "zht": "臧霸隨陶謙擊破黃巾軍，獲拜騎都尉。",
+            "zhs": "臧霸随陶谦击破黄巾军，获拜骑都尉。"
+          },
+          "title": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "孫觀（仲臺）",
-      "type": "comrades",
-      "passageId": "ws18c-p2"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p2",
+          "text": {
+            "en": "Zang Ba, Sun Guan, Wu Dun, Yin Li, and others gathered their followers together at Kaiyang under Zang Ba's leadership, and later all surrendered to Cao Cao together.",
+            "zht": "臧霸與孫觀、吳敦、尹禮等聚眾屯於開陽，以霸為帥，後一同歸降曹操。",
+            "zhs": "臧霸与孙观、吴敦、尹礼等聚众屯于开阳，以霸为帅，后一同归降曹操。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "吳敦",
-      "type": "comrades",
-      "passageId": "ws18c-p2"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p2",
+          "text": {
+            "en": "Zang Ba, Sun Guan, Wu Dun, Yin Li, and others gathered their followers together at Kaiyang under Zang Ba's leadership, and later all surrendered to Cao Cao together.",
+            "zht": "臧霸與孫觀、吳敦、尹禮等聚眾屯於開陽，以霸為帥，後一同歸降曹操。",
+            "zhs": "臧霸与孙观、吴敦、尹礼等聚众屯于开阳，以霸为帅，后一同归降曹操。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "尹禮",
-      "type": "comrades",
-      "passageId": "ws18c-p2"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p2",
+          "text": {
+            "en": "Zang Ba, Sun Guan, Wu Dun, Yin Li, and others gathered their followers together at Kaiyang under Zang Ba's leadership, and later all surrendered to Cao Cao together.",
+            "zht": "臧霸與孫觀、吳敦、尹禮等聚眾屯於開陽，以霸為帥，後一同歸降曹操。",
+            "zhs": "臧霸与孙观、吴敦、尹礼等聚众屯于开阳，以霸为帅，后一同归降曹操。"
+          }
+        }
+      ]
     },
     {
       "from": "孫觀（仲臺）",
       "to": "孫康",
-      "type": "brothers",
-      "passageId": "ws18c-p2"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p2",
+          "text": {
+            "en": "Sun Kang was Sun Guan's elder brother; both surrendered to Cao Cao together and were made Grand Administrators.",
+            "zht": "孫康是孫觀之兄，二人一同歸降曹操，皆獲任太守。",
+            "zhs": "孙康是孙观之兄，二人一同归降曹操，皆获任太守。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "呂布",
-      "type": "allies",
-      "passageId": "ws18c-p2"
+      "to": "呂布（奉先）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p2",
+          "text": {
+            "en": "When Cao Cao campaigned against Lü Bu, Zang Ba and the others led troops to assist him; after Lü Bu's capture, Zang Ba went into hiding.",
+            "zht": "曹操征討呂布時，臧霸等率兵相助；呂布被擒後，臧霸潛逃隱匿。",
+            "zhs": "曹操征讨吕布时，臧霸等率兵相助；吕布被擒后，臧霸潜逃隐匿。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "曹操",
-      "type": "lord-subordinate",
-      "passageId": "ws18c-p2"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p2",
+          "text": {
+            "en": "Cao Cao, delighted to find Zang Ba after his capture of Lü Bu, had him persuade his former comrades to surrender, then made him Chancellor of Langya, entrusting him with the two provinces of Qing and Xu.",
+            "zht": "曹操於呂布事平後尋得臧霸，見而喜悅，令其招降舊部，遂以霸為琅邪相，並將青、徐二州委任於他。",
+            "zhs": "曹操于吕布事平后寻得臧霸，见而喜悦，令其招降旧部，遂以霸为琅邪相，并将青、徐二州委任于他。"
+          },
+          "title": {
+            "en": "Chancellor of Langya",
+            "zht": "琅邪相",
+            "zhs": "琅邪相"
+          }
+        },
+        {
+          "passageId": "ws18c-p3",
+          "text": {
+            "en": "When Cao Cao ordered Zang Ba to hand over two defectors who had sought refuge with him, Zang Ba appealed through Liu Bei rather than comply directly; Cao Cao was pleased by his courage to uphold what he owed them, and spared both men.",
+            "zht": "曹操命臧霸交出投奔他的徐翕、毛暉二人，臧霸不願直接從命，轉託劉備代為說情；曹操讚賞其守義之勇，遂赦免二人。",
+            "zhs": "曹操命臧霸交出投奔他的徐翕、毛晖二人，臧霸不愿直接从命，转托刘备代为说情；曹操赞赏其守义之勇，遂赦免二人。"
+          }
+        },
+        {
+          "passageId": "ws18c-p4",
+          "text": {
+            "en": "As Zang Ba's repeated strikes into Qing Province let Cao Cao focus fully on Yuan Shao, and after Cao Cao graciously declined his offer to send kinsmen as hostages to Ye, Zang Ba was enfeoffed Capital Neighbourhood Marquis and made General Who Awes the Enemies for pacifying the region between Mount Tai and the Bohai Sea.",
+            "zht": "臧霸屢以精兵入青州牽制，使曹操得以專心對付袁紹；曹操又婉拒其遣子弟為質於鄴之請。臧霸等平定泰山、渤海一帶，功勳卓著，獲封都亭侯，加威虜將軍。",
+            "zhs": "臧霸屡以精兵入青州牵制，使曹操得以专心对付袁绍；曹操又婉拒其遣子弟为质于邺之请。臧霸等平定泰山、渤海一带，功勋卓著，获封都亭侯，加威虏将军。"
+          },
+          "title": {
+            "en": "Capital Neighbourhood Marquis, General Who Awes the Enemies",
+            "zht": "都亭侯、威虜將軍",
+            "zhs": "都亭侯、威虏将军"
+          }
+        },
+        {
+          "passageId": "ws18c-p5",
+          "text": {
+            "en": "After campaigning with Yu Jin against Chang Xi and with Xiahou Yuan against Yellow Turban remnants, Zang Ba was promoted to Inspector of Xu Province.",
+            "zht": "臧霸與于禁討昌豨，又與夏侯淵討黃巾餘賊，因功升任徐州刺史。",
+            "zhs": "臧霸与于禁讨昌豨，又与夏侯渊讨黄巾余贼，因功升任徐州刺史。"
+          },
+          "title": {
+            "en": "Inspector of Xu Province",
+            "zht": "徐州刺史",
+            "zhs": "徐州刺史"
+          }
+        },
+        {
+          "passageId": "ws18c-p7",
+          "text": {
+            "en": "When Zang Ba stopped Zhang Liao from a premature retreat during the Ruxukou campaign, correctly trusting that Cao Cao would not abandon them, Cao Cao praised his judgement and appointed him General Who Promotes Might and Provisional Bearer of the Tally.",
+            "zht": "濡須口之役，臧霸勸阻張遼勿倉促撤退，深信曹操不會棄之不顧；曹操聞後讚許其識見，拜揚威將軍，假節。",
+            "zhs": "濡须口之役，臧霸劝阻张辽勿仓促撤退，深信曹操不会弃之不顾；曹操闻后赞许其识见，拜扬威将军，假节。"
+          },
+          "title": {
+            "en": "General Who Promotes Might, Provisional Bearer of the Tally",
+            "zht": "揚威將軍、假節",
+            "zhs": "扬威将军、假节"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "徐翕",
-      "type": "protector-dependent",
-      "passageId": "ws18c-p3"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p3",
+          "text": {
+            "en": "When the fugitive defector Xu Xi sought refuge with him, Zang Ba refused to hand him over even at Cao Cao's order, appealing through Liu Bei instead; Cao Cao ultimately spared and reappointed him.",
+            "zht": "叛將徐翕逃來投奔，臧霸即使曹操下令索取亦不肯交出，轉託劉備代為說情；曹操最終赦免並重新任用他。",
+            "zhs": "叛将徐翕逃来投奔，臧霸即使曹操下令索取亦不肯交出，转托刘备代为说情；曹操最终赦免并重新任用他。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "毛暉",
-      "type": "protector-dependent",
-      "passageId": "ws18c-p3"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p3",
+          "text": {
+            "en": "Zang Ba sheltered the fugitive Mao Hui and refused to hand him over even at Cao Cao's order, appealing through Liu Bei instead; Cao Cao ultimately spared and reappointed him.",
+            "zht": "臧霸庇護亡命的毛暉，即使曹操下令索取亦不肯交出，轉託劉備代為說情；曹操最終赦免並重新任用他。",
+            "zhs": "臧霸庇护亡命的毛晖，即使曹操下令索取亦不肯交出，转托刘备代为说情；曹操最终赦免并重新任用他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "劉備（玄德）",
+      "to": "臧霸（宣高）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p3",
+          "text": {
+            "en": "At Zang Ba's request, Liu Bei relayed his appeal to Cao Cao on behalf of the two fugitives he sheltered, which Cao Cao ultimately granted.",
+            "zht": "應臧霸所託，劉備將他為所庇二人求情之言轉告曹操，曹操最終應允。",
+            "zhs": "应臧霸所托，刘备将他为所庇二人求情之言转告曹操，曹操最终应允。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "劉備",
-      "type": "comrades",
-      "passageId": "ws18c-p3"
+      "to": "于禁（文則）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p5",
+          "text": {
+            "en": "Zang Ba joined Yu Jin in campaigning against Chang Xi.",
+            "zht": "臧霸與于禁共同討伐昌豨。",
+            "zhs": "臧霸与于禁共同讨伐昌豨。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "于禁",
-      "type": "comrades",
-      "passageId": "ws18c-p5"
-    },
-    {
-      "from": "臧霸（宣高）",
-      "to": "夏侯淵",
-      "type": "comrades",
-      "passageId": "ws18c-p5"
+      "to": "夏侯淵（妙才）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p5",
+          "text": {
+            "en": "Zang Ba joined Xiahou Yuan in campaigning against Yellow Turban remnants under Xu He.",
+            "zht": "臧霸與夏侯淵共同討伐黃巾餘賊徐和等。",
+            "zhs": "臧霸与夏侯渊共同讨伐黄巾余贼徐和等。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "武周",
-      "type": "friends",
-      "passageId": "ws18c-p5"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p5",
+          "text": {
+            "en": "Zang Ba respected and admired Wu Zhou, Prefect of Xiapi, personally visiting his residence, and esteemed him all the more after Wu Zhou justly prosecuted a corrupt aide.",
+            "zht": "臧霸敬重下邳令武周，親自登門拜訪；後武周秉公查辦不法的部從事，臧霸因此更加敬佩他。",
+            "zhs": "臧霸敬重下邳令武周，亲自登门拜访；后武周秉公查办不法的部从事，臧霸因此更加敬佩他。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "孫權",
-      "type": "enemies",
-      "passageId": "ws18c-p5"
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p5",
+          "text": {
+            "en": "Zang Ba joined the campaign against Sun Quan, leading the vanguard, and advanced into Chao Lake to capture Juchao.",
+            "zht": "臧霸隨軍討伐孫權，為先登，後進入巢湖攻取居巢。",
+            "zhs": "臧霸随军讨伐孙权，为先登，后进入巢湖攻取居巢。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "張遼",
-      "type": "comrades",
-      "passageId": "ws18c-p6"
+      "to": "張遼（文遠）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p6",
+          "text": {
+            "en": "While Zhang Liao campaigned against Chen Lan, Zang Ba was separately dispatched to defeat the Wu general Han Dang and cut off relief, enabling Zhang Liao's victory.",
+            "zht": "張遼征討陳蘭時，臧霸奉命另擊吳將韓當，斷絕援軍，使張遼得以獲勝。",
+            "zhs": "张辽征讨陈兰时，臧霸奉命另击吴将韩当，断绝援军，使张辽得以获胜。"
+          }
+        },
+        {
+          "passageId": "ws18c-p7",
+          "text": {
+            "en": "Serving as vanguard together with Zhang Liao at Ruxukou, Zang Ba talked him out of a premature retreat, correctly trusting that Cao Cao would not abandon them.",
+            "zht": "濡須口之役，臧霸與張遼同為前鋒，勸阻其倉促撤退，深信曹操不會棄之不顧。",
+            "zhs": "濡须口之役，臧霸与张辽同为前锋，劝阻其仓促撤退，深信曹操不会弃之不顾。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "韓當",
-      "type": "battlefield-opponents",
-      "passageId": "ws18c-p6"
+      "to": "韓當（義公）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p6",
+          "text": {
+            "en": "Zang Ba fought and defeated Han Dang at Fenglong and Jiashi, cutting off his relief of Chen Lan.",
+            "zht": "臧霸於逢龍、夾石等地擊敗韓當，斷絕其對陳蘭的救援。",
+            "zhs": "臧霸于逢龙、夹石等地击败韩当，断绝其对陈兰的救援。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "張遼",
-      "type": "comrades",
-      "passageId": "ws18c-p7"
+      "to": "夏侯惇（元讓）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p7",
+          "text": {
+            "en": "After Sun Quan sought to surrender and Cao Cao withdrew, Zang Ba remained with Xiahou Dun and others to garrison Juchao.",
+            "zht": "孫權求降、曹操撤軍後，臧霸與夏侯惇等留守居巢。",
+            "zhs": "孙权求降、曹操撤军后，臧霸与夏侯惇等留守居巢。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "夏侯惇",
-      "type": "comrades",
-      "passageId": "ws18c-p7"
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p8",
+          "text": {
+            "en": "When Cao Pi succeeded as King of Wei, Zang Ba was promoted General Who Garrisons the East, advanced to Wu'an Township Marquis, and made Commander of all military affairs in Qing Province; upon Cao Pi's enthronement, he was further enfeoffed Marquis of Kaiyang, then reassigned Marquis of Liangcheng.",
+            "zht": "文帝即王位，臧霸升任鎮東將軍，進爵武安鄉侯，都督青州諸軍事；及踐阼，進封開陽侯，後徙封良成侯。",
+            "zhs": "文帝即王位，臧霸升任镇东将军，进爵武安乡侯，都督青州诸军事；及践阼，进封开阳侯，后徙封良成侯。"
+          },
+          "title": {
+            "en": "General Who Garrisons the East, Wu'an Township Marquis, Marquis of Kaiyang, Marquis of Liangcheng",
+            "zht": "鎮東將軍、武安鄉侯、開陽侯、良成侯",
+            "zhs": "镇东将军、武安乡侯、开阳侯、良成侯"
+          }
+        },
+        {
+          "passageId": "ws18c-p8",
+          "text": {
+            "en": "When Cao Cao died, Zang Ba's troops beat their drums and departed without orders; Cao Pi, already suspicious of him for this, grew more so when Zang Ba boasted to Cao Xiu of what he could achieve with more troops, and stripped him of his command.",
+            "zht": "曹操去世時，臧霸部眾擅自擊鼓離營；文帝因此心生猜疑，後臧霸又向曹休誇言若予重兵可如何建功，文帝疑心更甚，遂奪其兵權。",
+            "zhs": "曹操去世时，臧霸部众擅自击鼓离营；文帝因此心生猜疑，后臧霸又向曹休夸言若予重兵可如何建功，文帝疑心更甚，遂夺其兵权。"
+          }
+        },
+        {
+          "passageId": "ws18c-p8",
+          "text": {
+            "en": "After joining Cao Xiu to defeat Lü Fan at Dongpu, Zang Ba was summoned to the capital as Bearer of the Golden Mace, ranked Specially Advanced, and the Emperor regularly sought his counsel on military affairs.",
+            "zht": "臧霸與曹休討吳，於洞浦擊破呂範，其後被徵召入朝任執金吾，位特進，每逢軍事，帝常向他諮詢。",
+            "zhs": "臧霸与曹休讨吴，于洞浦击破吕范，其后被征召入朝任执金吾，位特进，每逢军事，帝常向他咨询。"
+          },
+          "title": {
+            "en": "Bearer of the Golden Mace, Specially Advanced",
+            "zht": "執金吾、特進",
+            "zhs": "执金吾、特进"
+          }
+        },
+        {
+          "passageId": "ws18c-p9",
+          "text": {
+            "en": "When Zang Ba died, he was posthumously honoured as Marquis Wei, the Formidable Marquis; across his career, three of his sons were enfeoffed as marquises and one granted Marquis Within the Pass.",
+            "zht": "臧霸去世，追諡威侯；其一生功勳，使三子封侯，一子獲賜關內侯。",
+            "zhs": "臧霸去世，追谥威侯；其一生功勋，使三子封侯，一子获赐关内侯。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
-      "to": "曹丕",
-      "type": "lord-subordinate",
-      "passageId": "ws18c-p8"
-    },
-    {
-      "from": "臧霸（宣高）",
-      "to": "曹休",
-      "type": "comrades",
-      "passageId": "ws18c-p8"
+      "to": "曹休（文烈）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18c-p8",
+          "text": {
+            "en": "Zang Ba joined Cao Xiu in campaigning against Wu, defeating Lü Fan at Dongpu.",
+            "zht": "臧霸與曹休共同討伐東吳，於洞浦擊破呂範。",
+            "zhs": "臧霸与曹休共同讨伐东吴，于洞浦击破吕范。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "臧艾",
-      "type": "father-son",
-      "passageId": "ws18c-p9"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p9",
+          "text": {
+            "en": "Zang Ai was Zang Ba's son, who succeeded him and rose to become Inspector of Qing Province and Minister of the Lesser Treasury.",
+            "zht": "臧艾是臧霸之子，承襲其位，後官至青州刺史、少府。",
+            "zhs": "臧艾是臧霸之子，承袭其位，后官至青州刺史、少府。"
+          }
+        }
+      ]
     },
     {
       "from": "臧艾",
       "to": "臧權",
-      "type": "father-son",
-      "passageId": "ws18c-p9"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p9",
+          "text": {
+            "en": "Zang Quan succeeded his father Zang Ai, who was posthumously honoured as Marquis Gong.",
+            "zht": "臧艾去世後追諡恭侯，子臧權嗣位。",
+            "zhs": "臧艾去世后追谥恭侯，子臧权嗣位。"
+          }
+        }
+      ]
     },
     {
       "from": "臧霸（宣高）",
       "to": "臧舜（太伯）",
-      "type": "father-son",
-      "passageId": "ws18c-p10"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p9",
+          "text": {
+            "en": "Zang Shun, courtesy name Taibo, was Zang Ba's other son, who under the Jin became Cavalier Regular Attendant.",
+            "zht": "臧舜字太伯，是臧霸另一子，入晉後官至散騎常侍。",
+            "zhs": "臧舜字太伯，是臧霸另一子，入晋后官至散骑常侍。"
+          }
+        }
+      ]
     },
     {
       "from": "孫觀（仲臺）",
       "to": "孫毓",
-      "type": "father-son",
-      "passageId": "ws18c-p11"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p10",
+          "text": {
+            "en": "Sun Yu succeeded his father Sun Guan and likewise rose to become Inspector of Qing Province.",
+            "zht": "孫觀去世後，子孫毓嗣位，同樣官至青州刺史。",
+            "zhs": "孙观去世后，子孙毓嗣位，同样官至青州刺史。"
+          }
+        }
+      ]
     },
     {
       "from": "孫觀（仲臺）",
-      "to": "孫康",
-      "type": "brothers",
-      "passageId": "ws18c-p12"
-    },
-    {
-      "from": "孫觀（仲臺）",
-      "to": "臧霸（宣高）",
-      "type": "comrades",
-      "passageId": "ws18c-p12"
-    },
-    {
-      "from": "孫觀（仲臺）",
-      "to": "曹操",
-      "type": "lord-subordinate",
-      "passageId": "ws18c-p12"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18c-p10",
+          "text": {
+            "en": "Sun Guan rose to become Inspector of Qing Province and Provisional Bearer of the Tally, and followed Cao Cao in campaigning against Sun Quan, where he was wounded in battle and died.",
+            "zht": "孫觀官至青州刺史，假節，隨曹操征討孫權，於陣中負傷而死。",
+            "zhs": "孙观官至青州刺史，假节，随曹操征讨孙权，于阵中负伤而死。"
+          },
+          "title": {
+            "en": "Inspector of Qing Province, Provisional Bearer of the Tally",
+            "zht": "青州刺史、假節",
+            "zhs": "青州刺史、假节"
+          }
+        }
+      ]
     }
   ],
   "journeyOverviews": [
@@ -725,6 +1086,10 @@
         "zht": "臧霸字宣高，[[泰山華|/zh-hant/maps/map-overall?lat=35.32124106&lng=118.18296699&name=Hua]]人也。父戒，為縣獄掾，據法不聽[[太守|/zh-hant/translations/officials/regional#commanderies-039]]欲所私殺。[[太守|/zh-hant/translations/officials/regional#commanderies-039]]大怒，令收戒詣府，時送者百餘人。霸年十八，將客數十人徑於[[費|/zh-hant/maps/map-overall?lat=35.35221866&lng=117.93768412&name=Fei]]西山中要奪之，送者莫敢動，因與父俱亡命[[東海|/zh-hant/maps/map-overall?admin=50]]，由是以勇壯聞。",
         "zhs": "臧霸字宣高，[[泰山华|/zh-hans/maps/map-overall?lat=35.32124106&lng=118.18296699&name=Hua]]人也。父戒，为县狱掾，据法不听[[太守|/zh-hans/translations/officials/regional#commanderies-039]]欲所私杀。[[太守|/zh-hans/translations/officials/regional#commanderies-039]]大怒，令收戒诣府，时送者百余人。霸年十八，将客数十人径于[[费|/zh-hans/maps/map-overall?lat=35.35221866&lng=117.93768412&name=Fei]]西山中要夺之，送者莫敢动，因与父俱亡命[[东海|/zh-hans/maps/map-overall?admin=50]]，由是以勇壮闻。"
       },
+      "vern": {
+        "zht": "臧霸，字宣高，[[泰山郡華縣|/zh-hant/maps/map-overall?lat=35.32124106&lng=118.18296699&name=Hua]]人。父親臧戒，在縣裏擔任審案的獄掾。因爲不肯依從本郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]隨便處死想殺的犯人，[[太守|/zh-hant/translations/officials/regional#commanderies-039]]大怒；下令逮捕臧戒送往郡政府，押送的士兵有一百多人。那年臧霸十八歲，帶着幾十名門客；徑直到[[費|/zh-hant/maps/map-overall?lat=35.35221866&lng=117.93768412&name=Fei]]縣西部山上攔截，搶回臧戒，押送的士兵沒人敢動，於是他同父親一起逃亡到[[東海|/zh-hant/maps/map-overall?admin=50]]郡，從此以勇壯聞名。",
+        "zhs": "臧霸，字宣高，[[泰山郡华县|/zh-hans/maps/map-overall?lat=35.32124106&lng=118.18296699&name=Hua]]人。父亲臧戒，在县里担任审案的狱掾。因为不肯依从本郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]随便处死想杀的犯人，[[太守|/zh-hans/translations/officials/regional#commanderies-039]]大怒；下令逮捕臧戒送往郡政府，押送的士兵有一百多人。那年臧霸十八岁，带着几十名门客；径直到[[费|/zh-hans/maps/map-overall?lat=35.35221866&lng=117.93768412&name=Fei]]县西部山上拦截，抢回臧戒，押送的士兵没人敢动，于是他同父亲一起逃亡到[[东海|/zh-hans/maps/map-overall?admin=50]]郡，从此以勇壮闻名。"
+      },
       "en": "Zang Ba, courtesy name Xuangao, was from [[Hua, Taishan|/maps/map-overall?lat=35.32124106&lng=118.18296699&name=Hua]]. His father, Zang Jie, served as a county prison administrator. Adhering to the law, he refused the [[Grand Administrator|/translations/officials/regional#commanderies-039]]'s order to execute a man out of personal spite. The [[Grand Administrator|/translations/officials/regional#commanderies-039]], greatly enraged, ordered Zang Jie seized and brought to his headquarters, dispatching over a hundred men to escort him. Zang Ba, then eighteen, led several dozen retainers to intercept them directly in the hills west of [[Fei|/maps/map-overall?lat=35.35221866&lng=117.93768412&name=Fei]] and rescue his father. None of the escorts dared resist. He then fled into hiding at [[Donghai|/maps/map-overall?admin=50]] together with his father, and from this became known for his bravery and spirit."
     },
     {
@@ -732,6 +1097,10 @@
       "orig": {
         "zht": "黃巾起，霸從陶謙擊破之，拜[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。遂收兵於[[徐州|/zh-hant/maps/map-overall?admin=8]]，與孫觀、吳敦、尹禮等並聚衆，霸為帥，屯於[[開陽|/zh-hant/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]]。太祖之討呂布也，霸等將兵助布。旣禽布，霸自匿。太祖募索得霸，見而恱之，使霸招吳敦、尹禮、孫觀、觀兄康等，皆詣太祖。太祖以霸為[[琅邪|/zh-hant/maps/map-overall?admin=51]][[相|/zh-hant/translations/officials/regional#states-064]]，敦[[利城|/zh-hant/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]]、禮[[東莞|/zh-hant/maps/map-overall?admin=52]]、觀[[北海|/zh-hant/maps/map-overall?admin=44]]、康[[城陽|/zh-hant/maps/map-overall?admin=45]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，割[[青|/zh-hant/maps/map-overall?admin=6]]、[[徐|/zh-hant/maps/map-overall?admin=8]]二州，委之於霸。",
         "zhs": "黄巾起，霸从陶谦击破之，拜[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。遂收兵于[[徐州|/zh-hans/maps/map-overall?admin=8]]，与孙观、吴敦、尹礼等并聚众，霸为帅，屯于[[开阳|/zh-hans/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]]。太祖之讨吕布也，霸等将兵助布。既禽布，霸自匿。太祖募索得霸，见而恱之，使霸招吴敦、尹礼、孙观、观兄康等，皆诣太祖。太祖以霸为[[琅邪|/zh-hans/maps/map-overall?admin=51]][[相|/zh-hans/translations/officials/regional#states-064]]，敦[[利城|/zh-hans/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]]、礼[[东莞|/zh-hans/maps/map-overall?admin=52]]、观[[北海|/zh-hans/maps/map-overall?admin=44]]、康[[城阳|/zh-hans/maps/map-overall?admin=45]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，割[[青|/zh-hans/maps/map-overall?admin=6]]、[[徐|/zh-hans/maps/map-overall?admin=8]]二州，委之于霸。"
+      },
+      "vern": {
+        "zht": "黃巾軍起事，臧霸跟隨陶謙打敗黃巾軍，擔任[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。他趁機在[[徐州|/zh-hant/maps/map-overall?admin=8]]招兵買馬，與孫觀、吳敦、尹禮等人一起聚集力量；由臧霸任首領，屯駐在[[開陽|/zh-hant/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]]。太祖曹操討伐呂布的時候，臧霸領兵援助呂布。後來呂布被擒殺，臧霸只好躲藏起來。太祖懸賞捉住他，見到他時很高興；讓他招降吳敦、尹禮、孫觀、孫觀的哥哥孫康等人，都來見太祖。太祖任命臧霸爲[[琅邪|/zh-hant/maps/map-overall?admin=51]]國[[相|/zh-hant/translations/officials/regional#states-064]]，吳敦爲[[利城|/zh-hant/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，尹禮爲[[東莞|/zh-hant/maps/map-overall?admin=52]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，孫觀爲[[北海|/zh-hant/maps/map-overall?admin=44]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，孫康爲[[城陽|/zh-hant/maps/map-overall?admin=45]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]；把[[青|/zh-hant/maps/map-overall?admin=6]]州、[[徐州|/zh-hant/maps/map-overall?admin=8]]的沿海地區分割出來，委託給臧霸治理。",
+        "zhs": "黄巾军起事，臧霸跟随陶谦打败黄巾军，担任[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。他趁机在[[徐州|/zh-hans/maps/map-overall?admin=8]]招兵买马，与孙观、吴敦、尹礼等人一起聚集力量；由臧霸任首领，屯驻在[[开阳|/zh-hans/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]]。太祖曹操讨伐吕布的时候，臧霸领兵援助吕布。后来吕布被擒杀，臧霸只好躲藏起来。太祖悬赏捉住他，见到他时很高兴；让他招降吴敦、尹礼、孙观、孙观的哥哥孙康等人，都来见太祖。太祖任命臧霸为[[琅邪|/zh-hans/maps/map-overall?admin=51]]国[[相|/zh-hans/translations/officials/regional#states-064]]，吴敦为[[利城|/zh-hans/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，尹礼为[[东莞|/zh-hans/maps/map-overall?admin=52]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，孙观为[[北海|/zh-hans/maps/map-overall?admin=44]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，孙康为[[城阳|/zh-hans/maps/map-overall?admin=45]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]；把[[青|/zh-hans/maps/map-overall?admin=6]]州、[[徐州|/zh-hans/maps/map-overall?admin=8]]的沿海地区分割出来，委托给臧霸治理。"
       },
       "en": "When the Yellow Turbans rose, Zang Ba followed Tao Qian in defeating them, and was appointed [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]]. Zang Ba then raised troops in [[Xu Province|/maps/map-overall?admin=8]], and together with Sun Guan, Wu Dun, Yin Li, and others, assembled a following under his leadership. They garrisoned at [[Kaiyang|/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]]. When Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) campaigned against Lü Bu, Zang Ba and the others led troops to assist Lü Bu. When Lü Bu was captured, Zang Ba went into hiding. Cao Cao searched for Zang Ba and was delighted when he was eventually found. Cao Cao had Zang Ba persuade Wu Dun, Yin Li, Sun Guan, and Sun Guan's elder brother, Sun Kang, to surrender, and all came to Cao Cao. Cao Cao made Zang Ba [[Chancellor|/translations/officials/regional#states-064]] of [[Langya|/maps/map-overall?admin=51]], and appointed Wu Dun to [[Licheng|/maps/map-overall?lat=34.84932865&lng=118.79955895&name=Licheng]], Yin Li to [[Dongguan|/maps/map-overall?admin=52]], Sun Guan to [[Beihai|/maps/map-overall?admin=44]], and Sun Kang to [[Chengyang|/maps/map-overall?admin=45]] as [[Grand Administrators|/translations/officials/regional#commanderies-039]], entrusting to Zang ba the two provinces of [[Qing|/maps/map-overall?admin=6]] and [[Xu|/maps/map-overall?admin=8]]."
     },
@@ -741,6 +1110,10 @@
         "zht": "太祖之在[[兖州|/zh-hant/maps/map-overall?admin=11]]，以徐翕、毛暉為將。[[兖州|/zh-hant/maps/map-overall?admin=11]]亂，翕、暉皆叛。後[[兖州|/zh-hant/maps/map-overall?admin=11]]定，翕、暉亡命投霸。太祖語劉備，令語霸送二人首。霸謂備曰：「霸所以能自立者，以不謂此也。霸受公生全之恩，不敢違命。然王霸之君可以義告，願將軍為之辭。」備以霸言白太祖，太祖歎息，謂霸曰：「此古人之事而君能行之，孤之願也。」乃皆以翕、暉為[[郡守|/zh-hant/translations/officials/regional#commanderies-039]]。",
         "zhs": "太祖之在[[兖州|/zh-hans/maps/map-overall?admin=11]]，以徐翕、毛晖为将。[[兖州|/zh-hans/maps/map-overall?admin=11]]乱，翕、晖皆叛。后[[兖州|/zh-hans/maps/map-overall?admin=11]]定，翕、晖亡命投霸。太祖语刘备，令语霸送二人首。霸谓备曰：「霸所以能自立者，以不谓此也。霸受公生全之恩，不敢违命。然王霸之君可以义告，愿将军为之辞。」备以霸言白太祖，太祖叹息，谓霸曰：「此古人之事而君能行之，孤之愿也。」乃皆以翕、晖为[[郡守|/zh-hans/translations/officials/regional#commanderies-039]]。"
       },
+      "vern": {
+        "zht": "太祖在[[兗州|/zh-hant/maps/map-overall?admin=11]]，用徐翕、毛暉爲將軍。後來[[兗州|/zh-hant/maps/map-overall?admin=11]]大亂，徐翕、毛暉一同叛變。[[兗州|/zh-hant/maps/map-overall?admin=11]]平定後，徐翕、毛暉逃亡到臧霸那裏。太祖告訴劉備，讓劉備通知臧霸，送上徐、毛二人的腦袋。臧霸對劉備說：“敝人之所以能夠自立，就是因爲不幹這種事。我受曹公不殺的大恩，不敢違抗命令。但是致力於王霸大業的主上可以用信義來打動，希望將軍爲這件事說說話。”劉備把臧霸的話告訴太祖，太祖感嘆不已，說：“這是古人才能做出的高尚事情而臧霸能夠辦到，我當然贊成啊！”便把徐翕、毛暉都任命爲郡太守。",
+        "zhs": "太祖在[[兖州|/zh-hans/maps/map-overall?admin=11]]，用徐翕、毛晖为将军。后来[[兖州|/zh-hans/maps/map-overall?admin=11]]大乱，徐翕、毛晖一同叛变。[[兖州|/zh-hans/maps/map-overall?admin=11]]平定后，徐翕、毛晖逃亡到臧霸那里。太祖告诉刘备，让刘备通知臧霸，送上徐、毛二人的脑袋。臧霸对刘备说：“敝人之所以能够自立，就是因为不干这种事。我受曹公不杀的大恩，不敢违抗命令。但是致力于王霸大业的主上可以用信义来打动，希望将军为这件事说说话。”刘备把臧霸的话告诉太祖，太祖感叹不已，说：“这是古人才能做出的高尚事情而臧霸能够办到，我当然赞成啊！”便把徐翕、毛晖都任命为郡太守。"
+      },
       "en": "When Cao Cao was in [[Yan Province|/maps/map-overall?admin=11]], he made Xu Xi and Mao Hui generals. When [[Yan Province|/maps/map-overall?admin=11]] fell into turmoil, both Xu Xi and Mao Hui turned traitor. After [[Yan Province|/maps/map-overall?admin=11]] was later pacified, they fled to seek refuge with Zang Ba. Cao Cao told Liu Bei to have Zang Ba send back the two men's heads. Zang Ba said to Liu Bei, \"The reason I have attained my present standing is that I would never do such a thing. I have received from His Excellency the grace of being spared and preserved, and dare not defy his command. Yet a ruler destined for greatness can be reasoned with through righteousness. I hope you, General, will speak on my behalf.\" Liu Bei relayed Zang Ba's words to Cao Cao, who sighed and said to Zang Ba, \"This is a deed of the ancients, and that you had the courage to uphold it is precisely what I had hoped to see.\" He then made both Xu Xi and Mao Hui [[Grand Administrators|/translations/officials/regional#commanderies-039]]."
     },
     {
@@ -748,6 +1121,10 @@
       "orig": {
         "zht": "時太祖方與袁紹相拒，而霸數以精兵入[[青州|/zh-hant/maps/map-overall?admin=6]]，故太祖得專事紹，不以東方為念。太祖破袁譚於[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，霸等會賀。霸因求遣子弟及諸將父兄家屬詣[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，太祖曰：「諸君忠孝，豈復在是！昔蕭何遣子弟入侍，而高祖不拒，耿純焚室輿櫬以從，而光武不逆，吾將何以易之哉！」東州擾攘，霸等執義征暴，清定海岱，功莫大焉，皆封[[列侯|/zh-hant/translations/officials#glossary-marquis]]。霸為[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，加[[威虜將軍|/zh-hant/translations/officials/military#four-direction--misc-154]]。",
         "zhs": "时太祖方与袁绍相拒，而霸数以精兵入[[青州|/zh-hans/maps/map-overall?admin=6]]，故太祖得专事绍，不以东方为念。太祖破袁谭于[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，霸等会贺。霸因求遣子弟及诸将父兄家属诣[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，太祖曰：「诸君忠孝，岂复在是！昔萧何遣子弟入侍，而高祖不拒，耿纯焚室舆榇以从，而光武不逆，吾将何以易之哉！」东州扰攘，霸等执义征暴，清定海岱，功莫大焉，皆封[[列侯|/translations/officials#glossary-marquis]]。霸为[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，加[[威虏将军|/zh-hans/translations/officials/military#four-direction--misc-154]]。"
+      },
+      "vern": {
+        "zht": "當時，太祖正與袁紹相持。臧霸幾次率精兵進入[[青州|/zh-hant/maps/map-overall?admin=6]]威脅袁紹的側翼，所以太祖能夠專心對付袁紹，不用顧慮東部的局勢。太祖在[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]大破袁譚，臧霸等人都來聚會慶賀；臧霸借這個機會請求把自己家族的子弟和部下衆將的父兄家眷，全部遷到[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]縣居住。太祖說：“各位的忠誠，難道還需要用這來表現嗎！不過，從前蕭何讓子弟入京侍奉皇帝，漢高祖沒有阻止；耿純焚燒自家的住宅，載着棺材追隨光武帝，光武帝也沒有阻攔：我又有什麼理由改變這樣的慣例啊！[[青州|/zh-hant/maps/map-overall?admin=6]]發生動亂，臧霸等人堅持正義出兵討伐暴亂者，平定了[[青州|/zh-hant/maps/map-overall?admin=6]]地區，功績最大：都封爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]。”臧霸封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，加任[[威虜將軍|/zh-hant/translations/officials/military#four-direction--misc-154]]。",
+        "zhs": "当时，太祖正与袁绍相持。臧霸几次率精兵进入[[青州|/zh-hans/maps/map-overall?admin=6]]威胁袁绍的侧翼，所以太祖能够专心对付袁绍，不用顾虑东部的局势。太祖在[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]大破袁谭，臧霸等人都来聚会庆贺；臧霸借这个机会请求把自己家族的子弟和部下众将的父兄家眷，全部迁到[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]县居住。太祖说：“各位的忠诚，难道还需要用这来表现吗！不过，从前萧何让子弟入京侍奉皇帝，汉高祖没有阻止；耿纯焚烧自家的住宅，载着棺材追随光武帝，光武帝也没有阻拦：我又有什么理由改变这样的惯例啊！[[青州|/zh-hans/maps/map-overall?admin=6]]发生动乱，臧霸等人坚持正义出兵讨伐暴乱者，平定了[[青州|/zh-hans/maps/map-overall?admin=6]]地区，功绩最大：都封为[[列侯|/translations/officials#glossary-marquis]]。”臧霸封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，加任[[威虏将军|/zh-hans/translations/officials/military#four-direction--misc-154]]。"
       },
       "en": "At the time, Cao Cao was locked in confrontation with Yuan Shao. As Zang Ba repeatedly launched attacks into [[Qing Province|/maps/map-overall?admin=6]] with elite troops, Cao Cao was free to devote his full attention to Yuan Shao without concern for the eastern front. When Cao Cao defeated Yuan Tan at [[Nanpi|/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]], Zang Ba and the others gathered to congratulate. Zang Ba then asked to send his younger clansmen and the families of his generals to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]. Cao Cao said, \"Your loyalty and filial devotion surely do not depend on this! In the past, Xiao He sent his younger kinsmen to serve at court, and Emperor Gaozu did not refuse them. Geng Chun burned down his home and brought along his own coffin to follow Emperor Guangwu, and Emperor Guangwu did not turn him away. How could I do otherwise!\" As the eastern provinces were in turmoil, Zang Ba and the others upheld righteousness and pacified the region between Mount Tai and the Bohai Sea. None surpassed their achievements, and all were enfeoffed as [[Marquises|/translations/officials#glossary-marquis]]. Zang Ba became a [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]], and [[General Who Awes the Enemies|/translations/officials/military#four-direction--misc-154]]. "
     },
@@ -757,6 +1134,10 @@
         "zht": "又與于禁討昌豨，與夏侯淵討黃巾餘賊徐和等，有功，遷[[徐州|/zh-hant/maps/map-overall?admin=8]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。[[沛國|/zh-hant/maps/map-overall?admin=26]]武周為[[下邳|/zh-hant/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]令，霸敬異周，身詣令舍。[[部從事|/zh-hant/translations/officials/regional#provinces-021]]謥詷不法，周得其罪，便收考竟，霸益以善周。從討孫權，先登，再入[[巢湖|/zh-hant/maps/map-overall?water=276]]，攻[[居巢|/zh-hant/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]，破之。",
         "zhs": "又与于禁讨昌豨，与夏侯渊讨黄巾余贼徐和等，有功，迁[[徐州|/zh-hans/maps/map-overall?admin=8]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。[[沛国|/zh-hans/maps/map-overall?admin=26]]武周为[[下邳|/zh-hans/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]令，霸敬异周，身诣令舍。[[部从事|/zh-hans/translations/officials/regional#provinces-021]]谥詷不法，周得其罪，便收考竟，霸益以善周。从讨孙权，先登，再入[[巢湖|/zh-hans/maps/map-overall?water=276]]，攻[[居巢|/zh-hans/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]，破之。"
       },
+      "vern": {
+        "zht": "又同於禁討伐昌豨，與夏侯淵討伐黃巾軍餘黨徐和等人；都立下戰功，升任[[徐州|/zh-hant/maps/map-overall?admin=8]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。[[沛國|/zh-hant/maps/map-overall?admin=26]]人武周擔任[[下邳|/zh-hant/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]縣令，臧霸尊重優待武周，親自到他的縣政府探訪。州政府中的一名部郡國從事史浮躁而不守法，武周獲得罪證，把他逮捕審問後處死；臧霸因此更加看重武周。後來，臧霸又跟隨太祖征討孫權，率先衝鋒；又進入[[巢湖|/zh-hant/maps/map-overall?water=276]]，攻打[[居巢|/zh-hant/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]，攻破城池。",
+        "zhs": "又同于禁讨伐昌豨，与夏侯渊讨伐黄巾军余党徐和等人；都立下战功，升任[[徐州|/zh-hans/maps/map-overall?admin=8]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。[[沛国|/zh-hans/maps/map-overall?admin=26]]人武周担任[[下邳|/zh-hans/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]县令，臧霸尊重优待武周，亲自到他的县政府探访。州政府中的一名部郡国从事史浮躁而不守法，武周获得罪证，把他逮捕审问后处死；臧霸因此更加看重武周。后来，臧霸又跟随太祖征讨孙权，率先冲锋；又进入[[巢湖|/zh-hans/maps/map-overall?water=276]]，攻打[[居巢|/zh-hans/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]，攻破城池。"
+      },
       "en": "Zang Ba also joined Yu Jin in campaigning against Chang Xi, and Xiahou Yuan in campaigning against Xu He and other Yellow Turban remnants. For his achievements he was promoted to [[Inspector|/translations/officials/regional#provinces-014]] of [[Xu Province|/maps/map-overall?admin=8]]. At the time, Wu Zhou of [[Pei State|/maps/map-overall?admin=26]] served as Prefect of [[Xiapi|/maps/map-overall?lat=34.12209323&lng=117.9033062&name=Xiapi]]. Zang Ba respected and admired Wu Zhou, and personally visited his residence. When a [[Regional Affairs Aide|/translations/officials/regional#provinces-021]] acted unlawfully and abused his authority, Wu Zhou uncovered his crimes, arrested him, and brought him to justice. Zang Ba held Zhou in even higher regard as a result. Zang Ba then joined the campaign against Sun Quan, taking the lead in the assault. He later advanced into [[Chao Lake|/maps/map-overall?water=276]], attacked [[Juchao|/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]], and captured it."
     },
     {
@@ -764,6 +1145,10 @@
       "orig": {
         "zht": "張遼之討陳蘭，霸別遣至[[皖|/zh-hant/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]，討吳將韓當，使權不得救蘭。當遣兵逆霸，霸與戰於逢龍，當復遣兵邀霸於[[夾石|/zh-hant/maps/map-overall?lat=31.24804329&lng=116.99614735&name=Jiashi]]，與戰破之，還屯[[舒|/zh-hant/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]。權遣數萬人乘舩屯[[舒口|/zh-hant/maps/map-overall?lat=31.53432438&lng=117.36806282&name=Shukou]]，分兵救蘭，聞霸軍在[[舒|/zh-hant/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]，遁還。霸夜追之，比明，行百餘里，邀賊前後擊之。賊窘急，不得上舩，赴水者甚衆。由是賊不得救蘭，遼遂破之。",
         "zhs": "张辽之讨陈兰，霸别遣至[[皖|/zh-hans/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]，讨吴将韩当，使权不得救兰。当遣兵逆霸，霸与战于逢龙，当复遣兵邀霸于[[夹石|/zh-hans/maps/map-overall?lat=31.24804329&lng=116.99614735&name=Jiashi]]，与战破之，还屯[[舒|/zh-hans/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]。权遣数万人乘船屯[[舒口|/zh-hans/maps/map-overall?lat=31.53432438&lng=117.36806282&name=Shukou]]，分兵救兰，闻霸军在[[舒|/zh-hans/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]，遁还。霸夜追之，比明，行百余里，邀贼前后击之。贼窘急，不得上船，赴水者甚众。由是贼不得救兰，辽遂破之。"
+      },
+      "vern": {
+        "zht": "張遼征剿陳蘭的時候，臧霸被派往[[皖|/zh-hant/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]縣，討伐吳將韓當，使孫權不能援救陳蘭。韓當派兵迎擊臧霸，在逢龍展開激戰；韓當另外又派兵在[[夾石|/zh-hant/maps/map-overall?lat=31.24804329&lng=116.99614735&name=Jiashi]]截擊臧霸，臧霸打敗敵人，回軍駐紮在[[舒|/zh-hant/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]城。孫權派幾萬人馬乘船進駐[[舒口|/zh-hant/maps/map-overall?lat=31.53432438&lng=117.36806282&name=Shukou]]，分兵援救陳蘭；聽說臧霸的部隊在[[舒|/zh-hant/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]城，只好退回。臧霸連夜追擊，天剛亮時，已行軍一百多里，追上敵人之後先從中間截斷，然後前後夾擊；敵軍陷入困境，一時又上不了船，很多人跳到水中淹死。由於陳蘭未能得到援助，張遼才消滅了陳蘭。",
+        "zhs": "张辽征剿陈兰的时候，臧霸被派往[[皖|/zh-hans/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]县，讨伐吴将韩当，使孙权不能援救陈兰。韩当派兵迎击臧霸，在逢龙展开激战；韩当另外又派兵在[[夹石|/zh-hans/maps/map-overall?lat=31.24804329&lng=116.99614735&name=Jiashi]]截击臧霸，臧霸打败敌人，回军驻扎在[[舒|/zh-hans/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]城。孙权派几万人马乘船进驻[[舒口|/zh-hans/maps/map-overall?lat=31.53432438&lng=117.36806282&name=Shukou]]，分兵援救陈兰；听说臧霸的部队在[[舒|/zh-hans/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]城，只好退回。臧霸连夜追击，天刚亮时，已行军一百多里，追上敌人之后先从中间截断，然后前后夹击；敌军陷入困境，一时又上不了船，很多人跳到水中淹死。由于陈兰未能得到援助，张辽才消灭了陈兰。"
       },
       "en": "When Zhang Liao campaigned against Chen Lan, Zang Ba was separately dispatched to [[Wan|/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]], to attack the Wu general Han Dang, so as to prevent Sun Quan from relieving Chen Lan. Han Dang sent troops to meet Zang Ba, and they fought at Fenglong. Han Dang again sent troops to intercept Zang Ba at [[Jiashi|/maps/map-overall?lat=31.24804329&lng=116.99614735&name=Jiashi]]. Zang Ba fought and defeated them there, then withdrew to garrison at [[Shu|/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]]. Sun Quan dispatched several tens of thousands of troops by boat to garrison at [[Shukou|/maps/map-overall?lat=31.53432438&lng=117.36806282&name=Shukou]], detaching a force to relieve Chen Lan. Upon hearing that Zang Ba's army was at [[Shu|/maps/map-overall?lat=31.15710957&lng=117.26205139&name=Shu]], they retreated immediately. Zang Ba pursued through the night, and by dawn had marched over a hundred li, intercepting the enemy and striking them front and back. Pressed by the attacks, the enemy could not reach their boats, and many threw themselves into the water. Because of this the enemy could not relieve Chen Lan, and Zhang Liao went on to defeat him."
     },
@@ -773,6 +1158,10 @@
         "zht": "霸從討孫權於[[濡須口|/zh-hant/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]]，與張遼為前鋒，行遇霖雨，大軍先及，水遂長，賊舩稍進，將士皆不安。遼欲去，霸止之曰：「公明於利鈍，寧肯捐吾等邪？」明日果有令。遼至，以語太祖。太祖善之，拜[[揚威將軍|/zh-hant/translations/officials/military#four-direction--misc-137]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。後權乞降，太祖還，留霸與夏侯惇等屯[[居巢|/zh-hant/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]。",
         "zhs": "霸从讨孙权于[[濡须口|/zh-hans/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]]，与张辽为前锋，行遇霖雨，大军先及，水遂长，贼船稍进，将士皆不安。辽欲去，霸止之曰：「公明于利钝，宁肯捐吾等邪？」明日果有令。辽至，以语太祖。太祖善之，拜[[扬威将军|/zh-hans/translations/officials/military#four-direction--misc-137]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。后权乞降，太祖还，留霸与夏侯惇等屯[[居巢|/zh-hans/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]。"
       },
+      "vern": {
+        "zht": "臧霸隨太祖到[[濡須口|/zh-hant/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]]征討孫權，同張遼一起充任先鋒。半路遇到大雨，後面的大軍先行撤退；水勢上漲，敵船逐漸逼近，擔任先鋒的將士都很不安。張遼想要自行撤退，臧霸阻止他說：“曹公對形勢的有利與否看得非常清楚，難道肯捨棄我們嗎！”第二天果然接到了撤退的命令。張遼回去後，把臧霸的表現對太祖講了。太祖對臧霸很滿意，任命他爲[[揚威將軍|/zh-hant/translations/officials/military#four-direction--misc-137]]，持有節杖。後來孫權請求投降，太祖回朝，留下臧霸與夏侯惇在[[居巢|/zh-hant/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]鎮守。",
+        "zhs": "臧霸随太祖到[[濡须口|/zh-hans/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]]征讨孙权，同张辽一起充任先锋。半路遇到大雨，后面的大军先行撤退；水势上涨，敌船逐渐逼近，担任先锋的将士都很不安。张辽想要自行撤退，臧霸阻止他说：“曹公对形势的有利与否看得非常清楚，难道肯舍弃我们吗！”第二天果然接到了撤退的命令。张辽回去后，把臧霸的表现对太祖讲了。太祖对臧霸很满意，任命他为[[扬威将军|/zh-hans/translations/officials/military#four-direction--misc-137]]，持有节杖。后来孙权请求投降，太祖回朝，留下臧霸与夏侯惇在[[居巢|/zh-hans/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]镇守。"
+      },
       "en": "Zang Ba later joined the campaign against Sun Quan at [[Ruxukou|/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]], serving as vanguard together with Zhang Liao. On the march, the army encountered continuous rain. After the main force arrived, the waters rose, and the enemy's boats gradually advanced, causing unease among the men. Zhang Liao wished to withdraw, but Zang Ba stopped him, saying, \"His Excellency understands perfectly what is at stake. Why would he abandon us?\" The next day, orders to retreat did indeed arrive. Zhang Liao then told Cao Cao of the conversation. Cao Cao praised Zang Ba, and appointed him [[General Who Promotes Might|/translations/officials/military#four-direction--misc-137]], and [[Provisional Bearer of the Imperial Tally|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. Afterwards, when Sun Quan sought to surrender, Cao Cao withdrew, leaving Zang Ba together with Xiahou Dun and others to garrison at [[Juchao|/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]."
     },
     {
@@ -780,6 +1169,10 @@
       "orig": {
         "zht": "文帝即王位，遷[[鎮東將軍|/zh-hant/translations/officials/military#conquering--garrisoning-068]]，進爵武安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]，[[都督|/zh-hant/translations/officials/military#various-commanders-027]][[青州|/zh-hant/maps/map-overall?admin=6]]諸軍事。及踐阼，進封[[開陽|/zh-hant/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]，徙封[[良成|/zh-hant/maps/map-overall?lat=34.28604285&lng=118.02894911&name=Liangcheng]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]。與曹休討吳賊，破呂範於[[洞浦|/zh-hant/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]，徵為[[執金吾|/zh-hant/translations/officials/ministers#others-282]]，位[[特進|/zh-hant/translations/officials/ministers#civil-honorary-officials-118]]。每有軍事，帝常咨訪焉。",
         "zhs": "文帝即王位，迁[[镇东将军|/zh-hans/translations/officials/military#conquering--garrisoning-068]]，进爵武安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]，[[都督|/zh-hans/translations/officials/military#various-commanders-027]][[青州|/zh-hans/maps/map-overall?admin=6]]诸军事。及践阼，进封[[开阳|/zh-hans/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]，徙封[[良成|/zh-hans/maps/map-overall?lat=34.28604285&lng=118.02894911&name=Liangcheng]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]。与曹休讨吴贼，破吕范于[[洞浦|/zh-hans/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]，征为[[执金吾|/zh-hans/translations/officials/ministers#others-282]]，位[[特进|/zh-hans/translations/officials/ministers#civil-honorary-officials-118]]。每有军事，帝常咨访焉。"
+      },
+      "vern": {
+        "zht": "文帝曹丕繼魏王位，升任臧霸爲[[鎮東將軍|/zh-hant/translations/officials/military#conquering--garrisoning-068]]，晉爵爲武安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]，負責指揮[[青州|/zh-hant/maps/map-overall?admin=6]]各路軍隊。後來文帝做了皇帝，他又晉爵爲[[開陽|/zh-hant/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]、改封[[良成|/zh-hant/maps/map-overall?lat=34.28604285&lng=118.02894911&name=Liangcheng]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]。他同曹休討伐孫吳，在[[洞浦|/zh-hant/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]大破敵將呂範。朝廷召他入朝任[[執金吾|/zh-hant/translations/officials/ministers#others-282]]，賜給[[特進|/zh-hant/translations/officials/ministers#civil-honorary-officials-118]]的官號。每有軍事行動，文帝總是先聽取他的意見。",
+        "zhs": "文帝曹丕继魏王位，升任臧霸为[[镇东将军|/zh-hans/translations/officials/military#conquering--garrisoning-068]]，晋爵为武安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]，负责指挥[[青州|/zh-hans/maps/map-overall?admin=6]]各路军队。后来文帝做了皇帝，他又晋爵为[[开阳|/zh-hans/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]、改封[[良成|/zh-hans/maps/map-overall?lat=34.28604285&lng=118.02894911&name=Liangcheng]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]。他同曹休讨伐孙吴，在[[洞浦|/zh-hans/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]大破敌将吕范。朝廷召他入朝任[[执金吾|/zh-hans/translations/officials/ministers#others-282]]，赐给[[特进|/zh-hans/translations/officials/ministers#civil-honorary-officials-118]]的官号。每有军事行动，文帝总是先听取他的意见。"
       },
       "en": "When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) succeeded as King of Wei, Zang Ba was promoted to [[General Who Garrisons the East|/translations/officials/military#conquering--garrisoning-068]], advanced in rank to Wu'an [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]], the Township Marquis of Martial Pacification, and appointed as [[Commander|/translations/officials/military#various-commanders-027]] of all military affairs in [[Qing Province|/maps/map-overall?admin=6]]. When Cao Pi ascended the imperial throne, Zang Ba was further enfeoffed as [[Marquis|/translations/officials#glossary-county-marquis]] of [[Kaiyang|/maps/map-overall?lat=35.1238282&lng=118.35003654&name=Kaiyang]], then reassigned as [[Marquis|/translations/officials#glossary-county-marquis]] of [[Liangcheng|/maps/map-overall?lat=34.28604285&lng=118.02894911&name=Liangcheng]]. He joined Cao Xiu in campaigning against the Wu, defeating Lü Fan at [[Dongpu|/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]], and was summoned to the capital to become [[Bearer of the Golden Mace|/translations/officials/ministers#others-282]], ranked [[Specially Advanced|/translations/officials/ministers#civil-honorary-officials-118]]. Whenever military affairs arose, the Emperor regularly sought his counsel.",
       "annotations": [
@@ -796,6 +1189,10 @@
           },
           "zht": "魏略曰：霸一名奴寇。孫觀名嬰子。吳敦名黯奴。尹禮名盧兒。建安二十四年，霸遣別軍在[[洛|/zh-hant/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]。會太祖崩，霸所部及[[青州|/zh-hant/maps/map-overall?admin=6]]兵，以為天下將亂，皆鳴鼓擅去。文帝即位，以曹休[[都督|/zh-hant/translations/officials/military#various-commanders-027]][[青|/zh-hant/maps/map-overall?admin=6]]、[[徐|/zh-hant/maps/map-overall?admin=8]]，霸謂休曰：「國家未肯聽霸耳！若假霸步騎萬人，必能橫行江表。」休言之於帝，帝疑霸軍前擅去，今意壯乃爾。遂東巡，因霸來朝而奪其兵。",
           "zhs": "魏略曰：霸一名奴寇。孙观名婴子。吴敦名黯奴。尹礼名卢儿。建安二十四年，霸遣别军在[[洛|/zh-hans/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]。会太祖崩，霸所部及[[青州|/zh-hans/maps/map-overall?admin=6]]兵，以为天下将乱，皆鸣鼓擅去。文帝即位，以曹休[[都督|/zh-hans/translations/officials/military#various-commanders-027]][[青|/zh-hans/maps/map-overall?admin=6]]、[[徐|/zh-hans/maps/map-overall?admin=8]]，霸谓休曰：「国家未肯听霸耳！若假霸步骑万人，必能横行江表。」休言之于帝，帝疑霸军前擅去，今意壮乃尔。遂东巡，因霸来朝而夺其兵。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：霸又名奴寇，孙观又名婴子，吴敦又名黯奴，尹礼又名卢儿。建安二十四年，臧霸派遣一支分遣部队驻扎在洛阳。恰逢太祖去世，臧霸所率领的部队以及青州兵，认为天下将要大乱，都敲着鼓擅自离去。文帝即位后，任命曹休统领青州、徐州的军事。臧霸对曹休说：“朝廷只是不肯听从我的建议罢了，如果能给我一万步骑兵，我必定能在长江以南纵横驰骋。”曹休将此事告知皇帝，皇帝因臧霸的军队之前擅自离去有所怀疑，又看他如今竟然还如此意气豪壮。于是东巡，并趁着臧霸前来朝见，夺取了他的兵权。"
+          },
           "en": "The Weilüe / Brief History of Wei states: Zang Ba's other name was Nukou. Sun Guan's other name was Yingzi. Wu Dun's other name was Annu. Yin Li's other name was Lu'er. In the 24th year of Jian'an, Zang Ba sent a detached force stationed at [[Luoyang|/maps/map-overall?lat=34.69341538&lng=112.5823423&name=Luoyang]]. When Cao Cao died, Zang Ba's own troops together with the [[Qing Province|/maps/map-overall?admin=6]] soldiery, believing the realm was about to fall into chaos, all beat their drums and departed without orders. When Cao Pi ascended the throne, he had Cao Xiu serve as [[Commander|/translations/officials/military#various-commanders-027]] over [[Qing|/maps/map-overall?admin=6]] and [[Xu|/maps/map-overall?admin=8]] provinces. Zang Ba said to Cao Xiu, \"The court has simply not been willing to entrust me! If I were given ten thousand infantry and cavalry, I could certainly sweep across the Yangtze frontier.\" Cao Xiu reported this to the Emperor. The Emperor had long been suspicious of Zang Ba for previously withdrawing his army without orders. Now, seeing that he remained as bold as ever, the emperor made an eastern tour and, when Zang Ba came to court, stripped him of his command."
         }
       ]
@@ -806,7 +1203,11 @@
         "zht": "明帝即位，增邑五百，并前三千五百戶。薨，謚曰威侯。子艾嗣。艾官至[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]、[[少府|/zh-hant/translations/officials/ministers#-nine-ministers-iii-256]]。艾薨，謚曰恭侯。子權嗣。霸前後有功，封子三人[[列侯|/zh-hant/translations/officials#glossary-marquis]]，賜一人爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
         "zhs": "明帝即位，增邑五百，并前三千五百户。薨，谥曰威侯。子艾嗣。艾官至[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]、[[少府|/zh-hans/translations/officials/ministers#-nine-ministers-iii-256]]。艾薨，谥曰恭侯。子权嗣。霸前后有功，封子三人[[列侯|/zh-hans/translations/officials#glossary-marquis]]，赐一人爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
       },
-      "en": "When Cao Rui (posthumously honoured as Emperor Ming, the Illustrious Emperor) ascended the throne, Zang Ba's fief was increased by five hundred households, bringing his total to three thousand five hundred. When Zang Ba died, he was posthumously honoured as Marquis Wei, the Formidable Marquis. His son Zang Ai succeeded him. Zang Ai eventually rose in office to [[Inspector|/translations/officials/regional#provinces-014]] of [[Qing Province|/maps/map-overall?admin=6]] and [[Minister of the Lesser Treasury|/translations/officials/ministers#-nine-ministers-iii-256]]. When Zang Ai died, he was posthumously honoured as Marquis Gong, the Deferential Marquis. Zang Ai's son Zang Quan succeeded him. Across his career Zang Ba had rendered such service that three of his sons were enfeoffed as [[Marquises|/translations/officials#glossary-marquis]], and one was granted the rank of [[Marquis Within the Passes|/translations/officials#glossary-marquis-within-the-pass]].",
+      "vern": {
+        "zht": "魏明帝即位，爲他增加五百戶封邑，連同以前的共三千五百戶。臧霸去世後，諡爲威侯。他兒子臧艾繼承爵位。臧艾官至[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]、[[少府|/zh-hant/translations/officials/ministers#-nine-ministers-iii-256]]，死後諡爲恭侯。他的兒子臧權繼承爵位。臧霸前後立下戰功，有三個兒子被封爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]，一個兒子被賜予[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
+        "zhs": "魏明帝即位，为他增加五百户封邑，连同以前的共三千五百户。臧霸去世后，谥为威侯。他儿子臧艾继承爵位。臧艾官至[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]、[[少府|/zh-hans/translations/officials/ministers#-nine-ministers-iii-256]]，死后谥为恭侯。他的儿子臧权继承爵位。臧霸前后立下战功，有三个儿子被封为[[列侯|/zh-hans/translations/officials#glossary-marquis]]，一个儿子被赐予[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
+      },
+      "en": "When Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) ascended the throne, Zang Ba's fief was increased by five hundred households, bringing his total to three thousand five hundred. When Zang Ba died, he was posthumously honoured as Marquis Wei, the Formidable Marquis. His son Zang Ai succeeded him. Zang Ai eventually rose in office to [[Inspector|/translations/officials/regional#provinces-014]] of [[Qing Province|/maps/map-overall?admin=6]] and [[Minister of the Lesser Treasury|/translations/officials/ministers#-nine-ministers-iii-256]]. When Zang Ai died, he was posthumously honoured as Marquis Gong, the Deferential Marquis. Zang Ai's son Zang Quan succeeded him. Across his career Zang Ba had rendered such service that three of his sons were enfeoffed as [[Marquises|/translations/officials#glossary-marquis]], and one was granted the rank of [[Marquis Within the Passes|/translations/officials#glossary-marquis-within-the-pass]].",
       "annotations": [
         {
           "annotator": {
@@ -821,6 +1222,10 @@
           },
           "zht": "魏書曰：艾少以才理稱，為[[黃門郎|/zh-hant/translations/officials/departments#chancellery-003]]，歷位[[郡守|/zh-hant/translations/officials/regional#commanderies-039]]。霸一子舜，字太伯，晉[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]，見武帝百官名。此百官名，不知誰所撰也，皆有題目，稱舜「才頴條暢，識贊時宜」也。",
           "zhs": "魏书曰：艾少以才理称，为[[黄门郎|/zh-hans/translations/officials/departments#chancellery-003]]，历位[[郡守|/zh-hans/translations/officials/regional#commanderies-039]]。霸一子舜，字太伯，晋[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]，见武帝百官名。此百官名，不知谁所撰也，皆有题目，称舜「才颖条畅，识赞时宜」也。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏书》记载：臧艾年少时就以才能和处理政务的能力受到称赞，担任过黄门郎，还先后担任过多个郡的郡守。臧霸有一个儿子叫臧舜，字太伯，担任晋朝的散骑常侍，在《武帝百官名》中有记载。这本《百官名》，不知道是谁撰写的，里面每个人名下都有评语，其中称赞臧舜才能出众、条理清晰，见识符合时宜。"
+          },
           "en": "The Book of Wei states: Zang Ai, while young, was praised for his talent and judgement. He became [[Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]], and served successively as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of various commanderies. Zang Ba had another son, Zang Shun, courtesy name Taibo, who under the Jin became [[Cavalier Regular Attendant|/translations/officials/departments#chancellery-013]]. This is mentioned in the book Wudi Baiguanming, The Register of Officials under Emperor Wu. The author of this book is unknown. Each entry in the book carries a heading, and Zang Shun's states that he was \"Exceptionally talented, clear-minded, and discerning in the affairs of the age.\""
         }
       ]
@@ -830,6 +1235,10 @@
       "orig": {
         "zht": "而孫觀亦至[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，從太祖討孫權，戰被創，薨。子毓嗣，亦至[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。",
         "zhs": "而孙观亦至[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，从太祖讨孙权，战被创，薨。子毓嗣，亦至[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。"
+      },
+      "vern": {
+        "zht": "上面提到的孫觀，也做到[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，持有節杖；他曾跟隨太祖討伐孫權，交戰中負傷，去世。他的兒子孫毓繼承爵位，官也做到[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。",
+        "zhs": "上面提到的孙观，也做到[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，持有节杖；他曾跟随太祖讨伐孙权，交战中负伤，去世。他的儿子孙毓继承爵位，官也做到[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。"
       },
       "en": "Sun Guan likewise rose to become [[Inspector|/translations/officials/regional#provinces-014]] of [[Qing Province|/maps/map-overall?admin=6]], and [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. He followed Cao Cao in campaigning against Sun Quan, was wounded in battle, and died. His son Sun Yu succeeded him, and likewise rose to become [[Inspector|/translations/officials/regional#provinces-014]] of [[Qing Province|/maps/map-overall?admin=6]].",
       "annotations": [
@@ -846,6 +1255,10 @@
           },
           "zht": "魏書曰：孫觀字仲臺，[[泰山|/zh-hant/maps/map-overall?admin=33]]人。與臧霸俱起，討黃巾，拜[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。太祖破呂布，使霸招觀兄弟，皆厚遇之。與霸俱戰伐，觀常為先登，征定[[青|/zh-hant/maps/map-overall?admin=6]]、[[徐|/zh-hant/maps/map-overall?admin=8]]羣賊，功次於霸，封呂都[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。康亦以功封列侯。與太祖會[[南皮|/zh-hant/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，遣子弟入居[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，拜觀[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]，遷[[青州|/zh-hant/maps/map-overall?admin=6]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。從征孫權於[[濡須口|/zh-hant/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]]，假節。攻權，為流矢所中，傷左足，力戰不顧，太祖勞之曰：「將軍被創深重，而猛氣益奮，不當為國愛身乎？」轉[[振威將軍|/zh-hant/translations/officials/military#four-direction--misc-137]]，創甚，遂卒。",
           "zhs": "魏书曰：孙观字仲台，[[泰山|/zh-hans/maps/map-overall?admin=33]]人。与臧霸俱起，讨黄巾，拜[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。太祖破吕布，使霸招观兄弟，皆厚遇之。与霸俱战伐，观常为先登，征定[[青|/zh-hans/maps/map-overall?admin=6]]、[[徐|/zh-hans/maps/map-overall?admin=8]]羣贼，功次于霸，封吕都[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。康亦以功封列侯。与太祖会[[南皮|/zh-hans/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]]，遣子弟入居[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，拜观[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]，迁[[青州|/zh-hans/maps/map-overall?admin=6]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。从征孙权于[[濡须口|/zh-hans/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]]，假节。攻权，为流矢所中，伤左足，力战不顾，太祖劳之曰：「将军被创深重，而猛气益奋，不当为国爱身乎？」转[[振威将军|/zh-hans/translations/officials/military#four-direction--misc-137]]，创甚，遂卒。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏书》记载：孙观，字仲台，是泰山人。孙观和臧霸一同起兵，讨伐黄巾军，被任命为骑都尉。太祖击败吕布后，派臧霸去招降孙观兄弟，对他们都给予了优厚的待遇。孙观和臧霸一起征战讨伐，作战时孙观常常作为先锋冲锋陷阵。孙观征讨平定青州、徐州的各路贼寇，功劳仅次于臧霸，被封为吕都亭侯。康也凭借功劳被封为列侯。跟随太祖到濡须口征讨孙权，被授予符节去进攻孙权，被飞箭射中，伤到了左脚，却奋力作战而不顾惜自身。太祖慰劳他说：“将军受的伤非常严重，却打得更加勇猛，难道不应该为国家爱惜自己的身体吗？”孙观转任振为振威将军。之后伤势加重，最终去世。"
+          },
           "en": "The Book of Wei states: Sun Guan, courtesy name Zhongtai, was from [[Taishan|/maps/map-overall?admin=33]]. He rose up together with Zang Ba, campaigning against the Yellow Turbans, and was appointed [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]]. When Cao Cao defeated Lü Bu, he had Zang Ba summon Sun Guan and his brothers, and treated them all generously. Fighting alongside Zang Ba in every campaign, Sun Guan was always at the forefront of the assaults. In pacifying the various rebel bands of [[Qing|/maps/map-overall?admin=6]] and [[Xu|/maps/map-overall?admin=8]] provinces, his achievements ranked just below Zang Ba's, and he was enfeoffed as Lüdu [[Neighborhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]. Sun Kang was likewise enfeoffed as a Marquis for his achievements. When he met with Cao Cao at [[Nanpi|/maps/map-overall?lat=38.0926547&lng=116.68045911&name=Nanpi]], Sun Guan sent his younger kin to reside at [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]], and was appointed [[Adjunct General|/translations/officials/military#four-direction--misc-164]], later promoted to [[Inspector|/translations/officials/regional#provinces-014]] of [[Qing Province|/maps/map-overall?admin=6]]. He followed the campaign against Sun Quan at [[Ruxukou|/maps/map-overall?lat=31.2019282&lng=117.97307792&name=Ruxukou]], and was made Provisional Bearer of the Imperial Tally. During the campaign against Sun Quan, he was struck by a stray arrow that severely wounded his left foot. Yet he fought on relentlessly. Cao Cao commended him, saying, \"General, your wound is grievous, yet your fighting spirit only grows fiercer. Should you not also cherish yourself for the sake of the state?\" He was relocated to [[General Who Rallies Might|/translations/officials/military#four-direction--misc-137]]. Later his wound worsened, and he died."
         }
       ]

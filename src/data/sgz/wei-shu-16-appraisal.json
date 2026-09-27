@@ -1,0 +1,93 @@
+{
+  "id": "wei-shu-16-appraisal",
+  "kind": "appraisal",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 16,
+  "num": "16",
+  "label": {
+    "zht": "評",
+    "zhs": "评",
+    "en": "Appraisal"
+  },
+  "title": {
+    "zht": "魏書十六 · 評",
+    "zhs": "魏书十六 · 评",
+    "en": "Book of Wei, Chapter 16 · Appraisal"
+  },
+  "relationships": [],
+  "journeyOverviews": [],
+  "subjectNames": {
+    "wei-shu-16d": {
+      "zht": "杜恕",
+      "zhs": "杜恕",
+      "en": "Du Shu"
+    }
+  },
+  "passages": [
+    {
+      "id": "ws16-appr-p1",
+      "orig": {
+        "zht": "評曰：[[任峻|/zh-hant/translations/sanguozhi/wei-shu-16a]]始興義兵，以歸太祖，闢土殖穀，倉庾盈溢，庸績致矣。",
+        "zhs": "评曰：[[任峻|/zh-hans/translations/sanguozhi/wei-shu-16a]]始兴义兵，以归太祖，辟土殖谷，仓庾盈溢，庸绩致矣。"
+      },
+      "vern": {
+        "zht": "陳壽評論道：[[任峻|/zh-hant/translations/sanguozhi/wei-shu-16a]]起初興起義兵時，就歸附曹操，開闢土地、種植穀物，使糧倉充實盈溢，立了大功。",
+        "zhs": "陈寿评论道：[[任峻|/zh-hans/translations/sanguozhi/wei-shu-16a]]起初兴起义兵时，就归附曹操，开辟土地、种植谷物，使粮仓充实盈溢，立了大功。"
+      },
+      "en": "Chen Shou appraises: When [[Ren Jun|/translations/sanguozhi/wei-shu-16a]] first raised troops for the righteous cause, he submitted to Cao Cao. He opened up land for cultivation and planted grain, until the granaries were filled to overflowing. In this, he rendered great service."
+    },
+    {
+      "id": "ws16-appr-p2",
+      "orig": {
+        "zht": "[[蘇則|/zh-hant/translations/sanguozhi/wei-shu-16b]]威以平亂，旣政事之良，又矯矯剛直，風烈足稱。",
+        "zhs": "[[苏则|/zh-hans/translations/sanguozhi/wei-shu-16b]]威以平乱，既政事之良，又矫矫刚直，风烈足称。"
+      },
+      "vern": {
+        "zht": "[[蘇則|/zh-hant/translations/sanguozhi/wei-shu-16b]]以威勢平定叛亂，既是政事上的良才，又剛強正直，高風亮節足以稱道。",
+        "zhs": "[[苏则|/zh-hans/translations/sanguozhi/wei-shu-16b]]以威势平定叛乱，既是政事上的良才，又刚强正直，高风亮节足以称道。"
+      },
+      "en": "[[Su Ze|/translations/sanguozhi/wei-shu-16b]] quelled disorder through the weight of his authority. He was not only an able administrator, but also upright and unyielding, and his high principles were worthy of praise."
+    },
+    {
+      "id": "ws16-appr-p3",
+      "orig": {
+        "zht": "[[杜畿|/zh-hant/translations/sanguozhi/wei-shu-16c]]寬猛克濟，惠以康民。",
+        "zhs": "[[杜畿|/zh-hans/translations/sanguozhi/wei-shu-16c]]宽猛克济，惠以康民。"
+      },
+      "vern": {
+        "zht": "[[杜畿|/zh-hant/translations/sanguozhi/wei-shu-16c]]寬嚴相濟、能施恩惠來安定百姓。",
+        "zhs": "[[杜畿|/zh-hans/translations/sanguozhi/wei-shu-16c]]宽严相济、能施恩惠来安定百姓。"
+      },
+      "en": "[[Du Ji|/translations/sanguozhi/wei-shu-16c]] combined leniency with firmness and brought peace to the people through benevolent governance."
+    },
+    {
+      "id": "ws16-appr-p4",
+      "orig": {
+        "zht": "[[鄭渾|/zh-hant/translations/sanguozhi/wei-shu-16e]]、[[倉慈|/zh-hant/translations/sanguozhi/wei-shu-16f]]，恤理有方。抑皆魏代之名守乎！",
+        "zhs": "[[郑浑|/zh-hans/translations/sanguozhi/wei-shu-16e]]、[[仓慈|/zh-hans/translations/sanguozhi/wei-shu-16f]]，恤理有方。抑皆魏代之名守乎！"
+      },
+      "vern": {
+        "zht": "[[鄭渾|/zh-hant/translations/sanguozhi/wei-shu-16e]]、[[倉慈|/zh-hant/translations/sanguozhi/wei-shu-16f]]，撫卹治理百姓有方。他們大概都是魏代有名的太守吧！",
+        "zhs": "[[郑浑|/zh-hans/translations/sanguozhi/wei-shu-16e]]、[[仓慈|/zh-hans/translations/sanguozhi/wei-shu-16f]]，抚恤治理百姓有方。他们大概都是魏代有名的太守吧！"
+      },
+      "en": "[[Zheng Hun|/translations/sanguozhi/wei-shu-16e]] and [[Cang Ci|/translations/sanguozhi/wei-shu-16f]] likewise showed skill in caring for and governing the people. Perhaps all of them may be considered renowned Grand Administrators of Wei!"
+    },
+    {
+      "id": "ws16-appr-p5",
+      "orig": {
+        "zht": "[[恕|/zh-hant/translations/sanguozhi/wei-shu-16d]]屢陳時政，經論治體，蓋有可觀焉。",
+        "zhs": "[[恕|/zh-hans/translations/sanguozhi/wei-shu-16d]]屡陈时政，经论治体，盖有可观焉。"
+      },
+      "vern": {
+        "zht": "[[杜恕|/zh-hant/translations/sanguozhi/wei-shu-16d]]多次陳說時政利弊，籌劃論述治理國家的綱領，也值得一看。",
+        "zhs": "[[杜恕|/zh-hans/translations/sanguozhi/wei-shu-16d]]多次陈说时政利弊，筹划论述治理国家的纲领，也值得一看。"
+      },
+      "en": "[[Du Shu|/translations/sanguozhi/wei-shu-16d]] repeatedly set forth the strengths and weaknesses of current policy and discussed the principles of governance; his writings, too, are well worth reading."
+    }
+  ]
+}

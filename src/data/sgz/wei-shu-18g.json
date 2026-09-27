@@ -22,55 +22,140 @@
     {
       "from": "典韋",
       "to": "李永",
-      "type": "killer-victim",
-      "passageId": "ws18g-p2"
-    },
-    {
-      "from": "典韋",
-      "to": "李永妻",
-      "type": "killer-victim",
-      "passageId": "ws18g-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p2",
+          "text": {
+            "en": "Avenging a feud on behalf of the Liu family, Dian Wei killed Li Yong, a former county chief, in his own home.",
+            "zht": "典韋為劉氏報仇，闖入李永家中將他殺死。李永曾任長。",
+            "zhs": "典韦为刘氏报仇，闯入李永家中将他杀死。李永曾任长。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
       "to": "趙寵",
-      "type": "subordinate-superior",
-      "passageId": "ws18g-p3"
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p3",
+          "text": {
+            "en": "Dian Wei served as a soldier under Major Zhao Chong, who marvelled at his strength after he single-handedly raised the camp's massive gate banner.",
+            "zht": "典韋在司馬趙寵麾下為士，曾獨力舉起營中沉重的牙門旗，趙寵驚異於他的才力。",
+            "zhs": "典韦在司马赵宠麾下为士，曾独力举起营中沉重的牙门旗，赵宠惊异于他的才力。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
-      "to": "夏侯惇",
-      "type": "subordinate-superior",
-      "passageId": "ws18g-p3"
+      "to": "夏侯惇（元讓）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18g-p3",
+          "text": {
+            "en": "Later attached to Xiahou Dun, Dian Wei beheaded numerous enemies and was appointed Major for his merit.",
+            "zht": "典韋後隸屬夏侯惇，屢立斬首之功，因功拜為司馬。",
+            "zhs": "典韦后隶属夏侯惇，屡立斩首之功，因功拜为司马。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
-      "to": "曹操",
-      "type": "subordinate-superior",
-      "passageId": "ws18g-p6"
-    },
-    {
-      "from": "典韋",
-      "to": "曹操",
-      "type": "bodyguard-protected",
-      "passageId": "ws18g-p7"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p6",
+          "text": {
+            "en": "Cao Cao appointed Dian Wei Commandant of his personal guard, and later promoted him to Colonel.",
+            "zht": "曹操拜典韋為都尉，統領親兵，後又升任校尉。",
+            "zhs": "曹操拜典韦为都尉，统领亲兵，后又升任校尉。"
+          },
+          "title": {
+            "en": "Commandant, Colonel",
+            "zht": "都尉、校尉",
+            "zhs": "都尉、校尉"
+          }
+        },
+        {
+          "passageId": "ws18g-p7",
+          "text": {
+            "en": "At a banquet for the surrendered Zhang Xiu, Dian Wei stood behind Cao Cao brandishing a great axe, so intimidating Zhang Xiu's officers that none dared look up.",
+            "zht": "張繡歸降的宴席上，典韋持大斧立於曹操身後，威懾張繡諸將，無人敢仰視。",
+            "zhs": "张绣归降的宴席上，典韦持大斧立于曹操身后，威慑张绣诸将，无人敢仰视。"
+          }
+        },
+        {
+          "passageId": "ws18g-p8",
+          "text": {
+            "en": "When Zhang Xiu's rebels attacked the camp, Dian Wei held the gate alone until his wounds overcame him; hearing of his death, Cao Cao wept and personally mourned him.",
+            "zht": "張繡叛軍襲營時，典韋獨力守住營門直至傷重而死；曹操聞訊痛哭，親自臨哭祭奠。",
+            "zhs": "张绣叛军袭营时，典韦独力守住营门直至伤重而死；曹操闻讯痛哭，亲自临哭祭奠。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
       "to": "張繡",
-      "type": "killer-victim",
-      "passageId": "ws18g-p8"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18g-p8",
+          "text": {
+            "en": "When Zhang Xiu rebelled and attacked Cao Cao's camp, Dian Wei fought his rebels to the death, killing several before he himself was overwhelmed.",
+            "zht": "張繡反叛襲營，典韋與其叛軍死戰，殺傷數人，終因傷重不敵而死。",
+            "zhs": "张绣反叛袭营，典韦与其叛军死战，杀伤数人，终因伤重不敌而死。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
       "to": "典滿",
-      "type": "father-son",
-      "passageId": "ws18g-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p8",
+          "text": {
+            "en": "Dian Man was Dian Wei's son.",
+            "zht": "典滿是典韋之子。",
+            "zhs": "典满是典韦之子。"
+          }
+        }
+      ]
     }
   ],
   "journeyOverviews": [
     {
       "person": "典韋",
+      "name": {
+        "en": "Dian Wei",
+        "zht": "典韋",
+        "zhs": "典韦"
+      },
+      "courtesyName": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
       "born": {
         "en": "unknown",
         "zht": "不詳",
@@ -203,6 +288,10 @@
         "zht": "典韋，[[陳留己吾|/zh-hant/maps/map-overall?lat=34.30412003&lng=115.20493966&name=Jiwu]]人也。形貌魁梧，旅力過人，有志節任俠。",
         "zhs": "典韦，[[陈留己吾|/zh-hans/maps/map-overall?lat=34.30412003&lng=115.20493966&name=Jiwu]]人也。形貌魁梧，旅力过人，有志节任侠。"
       },
+      "vern": {
+        "zht": "典韋，[[陳留郡己吾縣|/zh-hant/maps/map-overall?lat=34.30412003&lng=115.20493966&name=Jiwu]]人。體形魁偉，膂力過人；有志向節操，喜歡行俠仗義。",
+        "zhs": "典韦，[[陈留郡己吾县|/zh-hans/maps/map-overall?lat=34.30412003&lng=115.20493966&name=Jiwu]]人。体形魁伟，膂力过人；有志向节操，喜欢行侠仗义。"
+      },
       "en": "Dian Wei was from [[Jiwu, Chenliu|/maps/map-overall?lat=34.30412003&lng=115.20493966&name=Jiwu]]. Stout and imposing, with extraordinary strength, he was driven and principled, often displaying a chivalrous spirit."
     },
     {
@@ -210,6 +299,10 @@
       "orig": {
         "zht": "[[襄邑|/zh-hant/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]劉氏與[[睢陽|/zh-hant/maps/map-overall?lat=34.34955451&lng=115.62816361&name=Suiyang]]李永為讎，韋為報之。永故[[富春|/zh-hant/maps/map-overall?lat=30.07278277&lng=119.94914701&name=Fuchun]][[長|/zh-hant/translations/officials/regional#counties-089]]，備衞甚謹。韋乘車載雞酒，偽為候者，門開，懷匕首入殺永，并殺其妻，徐出，取車上刀戟，步出。永居近巿，一巿盡駭。追者數百，莫敢近。行四五[[里|/zh-hant/translations/officials#glossary-li]]，遇其伴，轉戰得脫。由是為豪傑所識。",
         "zhs": "[[襄邑|/zh-hans/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]刘氏与[[睢阳|/zh-hans/maps/map-overall?lat=34.34955451&lng=115.62816361&name=Suiyang]]李永为雠，韦为报之。永故[[富春|/zh-hans/maps/map-overall?lat=30.07278277&lng=119.94914701&name=Fuchun]][[长|/zh-hans/translations/officials/regional#counties-089]]，备衞甚谨。韦乘车载鸡酒，伪为候者，门开，怀匕首入杀永，并杀其妻，徐出，取车上刀戟，步出。永居近巿，一巿尽骇。追者数百，莫敢近。行四五[[里|/zh-hans/translations/officials#glossary-li]]，遇其伴，转战得脱。由是为豪杰所识。"
+      },
+      "vern": {
+        "zht": "[[襄邑|/zh-hant/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]縣的劉氏和[[睢陽|/zh-hant/maps/map-overall?lat=34.34955451&lng=115.62816361&name=Suiyang]]縣的李永有仇，典韋要替劉氏報仇。而李永曾任[[富春|/zh-hant/maps/map-overall?lat=30.07278277&lng=119.94914701&name=Fuchun]]縣[[長|/zh-hant/translations/officials/regional#counties-089]]，防備得很嚴密。典韋坐着車帶着雞和酒，僞裝成等待拜見李永的人；門一開，他就帶着匕首衝進去殺了李永，連他的妻子也殺了。然後慢慢走出來，取出車上的刀戟，緩步走了。李永的住處接近集市，整個集市的人都震驚了；有幾百人去追典韋，可是沒有誰敢靠近他。走了四五[[裏|/zh-hant/translations/officials#glossary-li]]，遇到他的夥伴，奮戰一陣才脫身。從此地方上的豪傑都知道他的大名。",
+        "zhs": "[[襄邑|/zh-hans/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]县的刘氏和[[睢阳|/zh-hans/maps/map-overall?lat=34.34955451&lng=115.62816361&name=Suiyang]]县的李永有仇，典韦要替刘氏报仇。而李永曾任[[富春|/zh-hans/maps/map-overall?lat=30.07278277&lng=119.94914701&name=Fuchun]]县[[长|/zh-hans/translations/officials/regional#counties-089]]，防备得很严密。典韦坐着车带着鸡和酒，伪装成等待拜见李永的人；门一开，他就带着匕首冲进去杀了李永，连他的妻子也杀了。然后慢慢走出来，取出车上的刀戟，缓步走了。李永的住处接近集市，整个集市的人都震惊了；有几百人去追典韦，可是没有谁敢靠近他。走了四五[[里|/zh-hans/translations/officials#glossary-li]]，遇到他的伙伴，奋战一阵才脱身。从此地方上的豪杰都知道他的大名。"
       },
       "en": "The Liu family of [[Xiangyi|/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]] had a feud with Li Yong of [[Suiyang|/maps/map-overall?lat=34.34955451&lng=115.62816361&name=Suiyang]], and Dian Wei took revenge on their behalf. Li Yong, formerly [[Chief|/translations/officials/regional#counties-089]] of [[Fuchun|/maps/map-overall?lat=30.07278277&lng=119.94914701&name=Fuchun]], kept himself under close guard. Dian Wei drove a cart filled with chicken and wine, feigning to be a visitor. Once the gate was opened, he entered with a dagger concealed and slew Li Yong and his wife. He then strolled out, retrieved a sword and halberd from the cart, and continued on foot. As Li Yong's house was near the market, the entire area was alarmed. Several hundred pursuers came, but none dared approach. After walking four or five [[li||/translations/officials#glossary-li]], he met his companions, fought off the pursuit, and escaped. Thereafter, Dian Wei became known among heroes and men of eminence."
     },
@@ -219,6 +312,10 @@
         "zht": "初平中，張邈舉義兵，韋為士，屬司馬趙寵。牙門旗長大，人莫能勝，韋一手建之，寵異其才力。後屬夏侯惇，數斬首有功，拜司馬。",
         "zhs": "初平中，张邈举义兵，韦为士，属司马赵宠。牙门旗长大，人莫能胜，韦一手建之，宠异其才力。后属夏侯惇，数斩首有功，拜司马。"
       },
+      "vern": {
+        "zht": "初平年間，張邈發動義軍討伐董卓。典韋擔任士兵，是司馬趙寵的部下。軍營正門的大旗又高又大，士兵都舉不動；典韋只用一隻手就把它舉了起來，趙寵對他的力量很驚異。後來典韋又轉到夏侯惇手下，屢次殺敵立功，升爲司馬。",
+        "zhs": "初平年间，张邈发动义军讨伐董卓。典韦担任士兵，是司马赵宠的部下。军营正门的大旗又高又大，士兵都举不动；典韦只用一只手就把它举了起来，赵宠对他的力量很惊异。后来典韦又转到夏侯惇手下，屡次杀敌立功，升为司马。"
+      },
       "en": "During the Chuping era, when Zhang Miao raised righteous troops, Dian Wei served as a soldier under Major Zhao Chong. The towering gate banner at headquarters was heavy, and none could lift it. Dian Wei raised it with a single hand, and Zhao Chong was astounded by his strength. Later, under Xiahou Dun, Dian Wei beheaded numerous enemies and for his merit, was appointed Major."
     },
     {
@@ -226,6 +323,10 @@
       "orig": {
         "zht": "太祖討呂布於[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]。布有別屯在[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]西四五十[[里|/zh-hant/translations/officials?lat=35.61104535&lng=114.9728879]]，太祖夜襲，比明破之。未及還，會布救兵至，三面掉戰。時布身自搏戰，自旦至日昳數十合，相持急。太祖募陷陣，韋先占，將應募者數十人，皆重衣兩鎧，棄楯，但持長矛撩戟。",
         "zhs": "太祖讨吕布于[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]。布有别屯在[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]西四五十[[里|/zh-hans/translations/officials?lat=35.61104535&lng=114.9728879]]，太祖夜袭，比明破之。未及还，会布救兵至，三面掉战。时布身自搏战，自旦至日昳数十合，相持急。太祖募陷阵，韦先占，将应募者数十人，皆重衣两铠，弃楯，但持长矛撩戟。"
+      },
+      "vern": {
+        "zht": "太祖在[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]縣討伐呂布。呂布在[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]西邊四五十[[裏|/zh-hant/translations/officials?lat=35.61104535&lng=114.9728879]]的地方有另一處兵營。太祖夜間去偷襲，到天亮時擊潰敵人。還沒有來得及撤回，呂布的救兵趕到，從三面交替進攻。當時呂布親自上陣衝殺，從早晨到太陽偏西打了幾十個回合，相持不下，情況十分緊急。太祖招募衝鋒陷陣的敢死隊，典韋首先報名；他帶領應募的幾十名勇士，都穿上幾層衣服雙重鎧甲，丟下盾牌，只拿着長矛大戟。",
+        "zhs": "太祖在[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]县讨伐吕布。吕布在[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]西边四五十[[里|/zh-hans/translations/officials?lat=35.61104535&lng=114.9728879]]的地方有另一处兵营。太祖夜间去偷袭，到天亮时击溃敌人。还没有来得及撤回，吕布的救兵赶到，从三面交替进攻。当时吕布亲自上阵冲杀，从早晨到太阳偏西打了几十个回合，相持不下，情况十分紧急。太祖招募冲锋陷阵的敢死队，典韦首先报名；他带领应募的几十名勇士，都穿上几层衣服双重铠甲，丢下盾牌，只拿着长矛大戟。"
       },
       "en": "Later, Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) launched an attack against Lü Bu at [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]. Lü Bu had stationed a separate camp forty or fifty [[li|/translations/officials?lat=35.61104535&lng=114.9728879]] to the west of [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]. Cao Cao launched a night raid and broke the camp by dawn. Before they could return, Lü Bu's relief forces arrived, and a three-sided battle ensued. Lü Bu himself took to the field, and from dawn till late afternoon, they engaged in numerous fierce clashes. Cao Cao called for volunteers to charge into the enemy's formation. Dian Wei was the first to respond. He led several dozen volunteers, each clad in two layers of armour and armed only with long spears and halberds, without shields."
     },
@@ -235,6 +336,10 @@
         "zht": "時西面又急，韋進當之，賊弓弩亂發，矢至如雨，韋不視，謂等人曰：「虜來十步，乃白之。」等人曰：「十步矣。」又曰：「五步乃白。」等人懼，疾言「虜至矣」！韋手持十餘戟，大呼起，所抵無不應手倒者。布衆退。會日暮，太祖乃得引去。",
         "zhs": "时西面又急，韦进当之，贼弓弩乱发，矢至如雨，韦不视，谓等人曰：「虏来十步，乃白之。」等人曰：「十步矣。」又曰：「五步乃白。」等人惧，疾言「虏至矣」！韦手持十余戟，大呼起，所抵无不应手倒者。布众退。会日暮，太祖乃得引去。"
       },
+      "vern": {
+        "zht": "這時西面告急，典韋率軍阻擋；敵兵用弓箭亂射，箭像雨點一樣飛來。典韋看也不看，對同伴說：“敵人衝到離我十步遠的時候，再告訴我！”同伴說：“十步了！”典韋又說：“到五步再告訴我。”同伴都害怕了，大聲疾呼：“敵人到了！”典韋手握十幾支戟，大吼一聲躍起，碰上他的戟鋒沒有不立即倒地的，呂布率軍退卻。正好天色也到傍晚，太祖得以撤退。",
+        "zhs": "这时西面告急，典韦率军阻挡；敌兵用弓箭乱射，箭像雨点一样飞来。典韦看也不看，对同伴说：“敌人冲到离我十步远的时候，再告诉我！”同伴说：“十步了！”典韦又说：“到五步再告诉我。”同伴都害怕了，大声疾呼：“敌人到了！”典韦手握十几支戟，大吼一声跃起，碰上他的戟锋没有不立即倒地的，吕布率军退却。正好天色也到傍晚，太祖得以撤退。"
+      },
       "en": "At that moment, the situation on the western flank became dire. Dian Wei went forward to meet the enemy. The bandits unleashed a chaotic volley of arrows, the shafts falling like rain, but Dian Wei remained unfazed. He told his comrades, \"Let me know when the enemy is ten paces away.\" They informed him, \"It is ten paces now.\" He then said, \"Tell me when it is five paces.\" His comrades, growing anxious, cried out urgently, \"The enemy is upon us!\" Wei, grasping a dozen halberds, let out a tremendous shout and rose, felling each adversary he struck. Lü Bu's forces retreated. As dusk fell, Cao Cao was able to withdraw."
     },
     {
@@ -243,21 +348,33 @@
         "zht": "拜韋都尉，引置左右，將親兵數百人，常繞大帳。韋旣壯武，其所將皆選卒，每戰鬬，常先登陷陣。遷為校尉。性忠至謹重，常晝立侍終日，夜宿帳左右，稀歸私寢。好酒食，飲噉兼人，每賜食於前，大飲長歠，左右相屬，數人益乃供，太祖壯之。韋好持大雙戟與長刀等，軍中為之語曰：「帳下壯士有典君，提一雙戟八十[[斤|/zh-hant/translations/officials#glossary-jin]]。」",
         "zhs": "拜韦都尉，引置左右，将亲兵数百人，常绕大帐。韦既壮武，其所将皆选卒，每战鬬，常先登陷阵。迁为校尉。性忠至谨重，常昼立侍终日，夜宿帐左右，稀归私寝。好酒食，饮噉兼人，每赐食于前，大饮长歠，左右相属，数人益乃供，太祖壮之。韦好持大双戟与长刀等，军中为之语曰：「帐下壮士有典君，提一双戟八十[[斤|/zh-hans/translations/officials#glossary-jin]]。」"
       },
+      "vern": {
+        "zht": "於是太祖任命典韋爲都尉，讓他在自己身邊；率領親兵幾百人，常常環繞大帳巡邏。典韋雄壯勇武，部下都是嚴格挑選的士兵；每次戰鬥，他都先衝上去攻陷敵陣。典韋升任校尉，他的性格非常忠誠謹慎穩重；總是白天在太祖旁邊侍立，夜晚睡在大帳左右，很少回到自己的帳中歇宿。他喜歡喝酒喫肉，食量相當於兩個甚至兩個以上的人；太祖每次賜他飲食，他就要暢飲猛喫，左右不斷送上酒菜，幾個人要輪番端來才供得上。太祖覺得他真是豪壯。典韋好使大雙戟，他的雙戟，威力比得上長刀。軍中爲他編了順口溜說：“帳下壯士有典君，提一雙戟八十[[斤|/zh-hant/translations/officials#glossary-jin]]！”",
+        "zhs": "于是太祖任命典韦为都尉，让他在自己身边；率领亲兵几百人，常常环绕大帐巡逻。典韦雄壮勇武，部下都是严格挑选的士兵；每次战斗，他都先冲上去攻陷敌阵。典韦升任校尉，他的性格非常忠诚谨慎稳重；总是白天在太祖旁边侍立，夜晚睡在大帐左右，很少回到自己的帐中歇宿。他喜欢喝酒吃肉，食量相当于两个甚至两个以上的人；太祖每次赐他饮食，他就要畅饮猛吃，左右不断送上酒菜，几个人要轮番端来才供得上。太祖觉得他真是豪壮。典韦好使大双戟，他的双戟，威力比得上长刀。军中为他编了顺口溜说：“帐下壮士有典君，提一双戟八十[[斤|/zh-hans/translations/officials#glossary-jin]]！”"
+      },
       "en": "Dian Wei was appointed Commandant and stationed near Cao Cao. He commanded several hundred personal guards who kept constant watch over the main tent. Dian Wei was himself strong and valiant, and the men under his command were all picked soldiers. Whenever battle was joined, he was always among the first to break into the enemy ranks. He was later promoted to Colonel. He was innately loyal, cautious, and solemn. By day, he stood in constant attendance, and at night, he slept near the tent, rarely returning to his private quarters. He delighted in wine and food, with a capacity for drinking and eating that surpassed ordinary men. Whenever Cao Cao bestowed food before him, he would drink and eat heartily. Attendants had to succeed one another at his side, and several men were needed to keep him supplied. The Grand Progenitor marvelled at his prowess. Dian Wei was fond of wielding a large pair of halberds as well as a long sabre, and the troops had a saying: \"Lord Dian stands beneath the tent, eighty-[[jin|/translations/officials#glossary-jin]] halberds in his hands.\""
     },
     {
       "id": "ws18g-p7",
       "orig": {
-        "zht": "太祖征[[荊州|/zh-hant/maps/map-overall?admin=2]]，至[[宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]，張繡迎降。太祖甚恱，延繡及其將帥，置酒高會。太祖行酒，韋持大斧立後，刃徑尺，太祖所至之前，韋輒舉斧目之。竟酒，繡及其將帥莫敢仰視。後十餘日，繡反，襲太祖營，太祖出戰不利，輕騎引去。韋戰於門中，賊不得入。兵遂散從他門並入。時韋校尚有十餘人，皆殊死戰，無不一當十。賊前後至稍多，韋以長戟左右擊之，一叉入，輒十餘矛摧。左右死傷者略盡。",
-        "zhs": "太祖征[[荆州|/zh-hans/maps/map-overall?admin=2]]，至[[宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]，张绣迎降。太祖甚恱，延绣及其将帅，置酒高会。太祖行酒，韦持大斧立后，刃径尺，太祖所至之前，韦辄举斧目之。竟酒，绣及其将帅莫敢仰视。后十余日，绣反，袭太祖营，太祖出战不利，轻骑引去。韦战于门中，贼不得入。兵遂散从他门并入。时韦校尚有十余人，皆殊死战，无不一当十。贼前后至稍多，韦以长戟左右击之，一叉入，辄十余矛摧。左右死伤者略尽。"
+        "zht": "太祖征[[荊州|/zh-hant/maps/map-overall?admin=2]]，至[[宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]，張繡迎降。太祖甚恱，延繡及其將帥，置酒高會。太祖行酒，韋持大斧立後，刃徑[[尺|/zh-hant/translations/officials#glossary-chi]]，太祖所至之前，韋輒舉斧目之。竟酒，繡及其將帥莫敢仰視。後十餘日，繡反，襲太祖營，太祖出戰不利，輕騎引去。韋戰於門中，賊不得入。兵遂散從他門並入。時韋校尚有十餘人，皆殊死戰，無不一當十。賊前後至稍多，韋以長戟左右擊之，一叉入，輒十餘矛摧。左右死傷者略盡。",
+        "zhs": "太祖征[[荆州|/zh-hans/maps/map-overall?admin=2]]，至[[宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]，张绣迎降。太祖甚恱，延绣及其将帅，置酒高会。太祖行酒，韦持大斧立后，刃径[[尺|/zh-hans/translations/officials#glossary-chi]]，太祖所至之前，韦辄举斧目之。竟酒，绣及其将帅莫敢仰视。后十余日，绣反，袭太祖营，太祖出战不利，轻骑引去。韦战于门中，贼不得入。兵遂散从他门并入。时韦校尚有十余人，皆殊死战，无不一当十。贼前后至稍多，韦以长戟左右击之，一叉入，辄十余矛摧。左右死伤者略尽。"
       },
-      "en": "When Cao Cao campaigned in the [[Jing Province|/maps/map-overall?admin=2]] and reached [[Wan|/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]], Zhang Xiu came out to surrender, greatly pleasing Cao Cao. Cao Cao invited Zhang Xiu and his officers to a lavish banquet. At the feast, as Cao Cao went around toasting the guests, Dian Wei stood behind him, holding a great axe with a blade one chi wide. Whenever Cao Cao approached someone, Dian Wei would raise the axe and fix them with a glare. Until the end of the banquet, Zhang Xiu and his officers dared not look up at Dian Wei. Over ten days later, Zhang Xiu rebelled and attacked Cao Cao's camp. Cao Cao went out to fight but was unsuccessful and fled. Dian Wei held his ground at the gate, preventing the rebels from entering. The soldiers then dispersed and entered through other gates. By this time, Dian Wei's group had dwindled to about ten men, but all fought bravely, each holding his own against ten foes. As more rebels advanced from all sides, Dian Wei wielded his long halberd, striking left and right. With each thrust, he shattered a dozen or more spears. His men were nearly all dead or wounded."
+      "vern": {
+        "zht": "太祖征伐[[荊州|/zh-hant/maps/map-overall?admin=2]]，到[[宛|/zh-hant/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]城，張繡來投降。太祖非常高興，招請張繡和他的將領，設宴歡聚。太祖親自斟酒，典韋握着大斧站在背後；斧刃長達一[[尺|/zh-hant/translations/officials#glossary-chi]]，太祖每到一個人的前面斟酒，典韋就舉起長斧盯住那個人。酒宴從始至終，張繡和他的將領沒有人敢抬頭看。過了十多天，張繡造反，偷襲太祖大營。太祖戰鬥失利，輕裝騎馬逃跑。典韋在營門裏面死戰，叛軍攻不進去；就散開從別的門一擁而入。當時典韋身邊的部下還有十多人，都拼死戰鬥，無不以一當十。叛軍在前後越聚越多，典韋用長戟左右攻擊；一戟殺去，就有十幾支矛被擊斷。部下死傷殆盡，典韋也受傷數十處。",
+        "zhs": "太祖征伐[[荆州|/zh-hans/maps/map-overall?admin=2]]，到[[宛|/zh-hans/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]]城，张绣来投降。太祖非常高兴，招请张绣和他的将领，设宴欢聚。太祖亲自斟酒，典韦握着大斧站在背后；斧刃长达一[[尺|/zh-hans/translations/officials#glossary-chi]]，太祖每到一个人的前面斟酒，典韦就举起长斧盯住那个人。酒宴从始至终，张绣和他的将领没有人敢抬头看。过了十多天，张绣造反，偷袭太祖大营。太祖战斗失利，轻装骑马逃跑。典韦在营门里面死战，叛军攻不进去；就散开从别的门一拥而入。当时典韦身边的部下还有十多人，都拼死战斗，无不以一当十。叛军在前后越聚越多，典韦用长戟左右攻击；一戟杀去，就有十几支矛被击断。部下死伤殆尽，典韦也受伤数十处。"
+      },
+      "en": "When Cao Cao campaigned in the [[Jing Province|/maps/map-overall?admin=2]] and reached [[Wan|/maps/map-overall?lat=32.98790226&lng=112.53739567&name=Wan]], Zhang Xiu came out to surrender, greatly pleasing Cao Cao. Cao Cao invited Zhang Xiu and his officers to a lavish banquet. At the feast, as Cao Cao went around toasting the guests, Dian Wei stood behind him, holding a great axe with a blade one [[chi|/translations/officials#glossary-chi]] wide. Whenever Cao Cao approached someone, Dian Wei would raise the axe and fix them with a glare. Until the end of the banquet, Zhang Xiu and his officers dared not look up at Dian Wei. Over ten days later, Zhang Xiu rebelled and attacked Cao Cao's camp. Cao Cao went out to fight but was unsuccessful and fled. Dian Wei held his ground at the gate, preventing the rebels from entering. The soldiers then dispersed and entered through other gates. By this time, Dian Wei's group had dwindled to about ten men, but all fought bravely, each holding his own against ten foes. As more rebels advanced from all sides, Dian Wei wielded his long halberd, striking left and right. With each thrust, he shattered a dozen or more spears. His men were nearly all dead or wounded."
     },
     {
       "id": "ws18g-p8",
       "orig": {
         "zht": "韋被數十創，短兵接戰，賊前搏之。韋雙挾兩賊擊殺之，餘賊不敢前。韋復前突賊，殺數人，創重發，瞋目大罵而死。賊乃敢前，取其頭，傳觀之，覆軍就視其軀。太祖退住[[舞陰|/zh-hant/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]，聞韋死，為流涕，募閒取其喪，親自臨哭之，遣歸葬[[襄邑|/zh-hant/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]，拜子滿為郎中。車駕每過，常祠以中牢。太祖思韋，拜滿為司馬，引自近。文帝即王位，以滿為都尉，賜爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。",
         "zhs": "韦被数十创，短兵接战，贼前搏之。韦双挟两贼击杀之，余贼不敢前。韦复前突贼，杀数人，创重发，瞋目大骂而死。贼乃敢前，取其头，传观之，覆军就视其躯。太祖退住[[舞阴|/zh-hans/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]，闻韦死，为流涕，募闲取其丧，亲自临哭之，遣归葬[[襄邑|/zh-hans/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]，拜子满为郎中。车驾每过，常祠以中牢。太祖思韦，拜满为司马，引自近。文帝即王位，以满为都尉，赐爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。"
+      },
+      "vern": {
+        "zht": "又用短兵器接戰，敵兵衝上前肉搏。典韋用雙臂挾住兩人用來擊打敵人，剩下的不敢上前。典韋又衝上前去突擊，殺死幾人；這時重傷發作，他瞪眼大罵而死。敵人這纔敢上前，割下他的頭，互相傳看，又返回來看他的軀體。太祖退到[[舞陰|/zh-hant/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]縣，聽說典韋英勇戰死，痛哭流涕；招募間諜取回他的遺體，親自哭泣祭奠後，派人送到[[襄邑|/zh-hant/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]縣安葬。讓他的兒子典滿擔任郎中。太祖每次經過他的墓地，總用豬、羊二牲來祭奠他。太祖思念典韋，任命典滿爲司馬，讓他在自己身邊。文帝曹丕即魏王位，任命典滿爲都尉，賜他[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]的爵位。",
+        "zhs": "又用短兵器接战，敌兵冲上前肉搏。典韦用双臂挟住两人用来击打敌人，剩下的不敢上前。典韦又冲上前去突击，杀死几人；这时重伤发作，他瞪眼大骂而死。敌人这才敢上前，割下他的头，互相传看，又返回来看他的躯体。太祖退到[[舞阴|/zh-hans/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]县，听说典韦英勇战死，痛哭流涕；招募间谍取回他的遗体，亲自哭泣祭奠后，派人送到[[襄邑|/zh-hans/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]县安葬。让他的儿子典满担任郎中。太祖每次经过他的墓地，总用猪、羊二牲来祭奠他。太祖思念典韦，任命典满为司马，让他在自己身边。文帝曹丕即魏王位，任命典满为都尉，赐他[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]的爵位。"
       },
       "en": "Dian Wei himself was severely wounded in numerous places. As the fighting closed to hand-to-hand combat, the rebels rushed forward to grapple with him. Dian Wei seized two of them, one under each arm, and killed them. The remaining rebels dared not advance. He charged forward once more, killing several enemies, but his wounds worsened. Glaring fiercely, he cursed loudly and died. Only then did the enemy dare to approach, cut off his head, and pass it around. They then covered his body to examine it. Cao Cao retreated successfully to [[Wuyin|/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]. Upon hearing of Dian Wei's death, he wept and secretly hired men to retrieve his remains. He personally mourned over Dian Wei, and sent the body back for burial at [[Xiangyi|/maps/map-overall?lat=34.42565297&lng=115.07977176&name=Xiangyi]]. Cao Cao appointed Dian Wei's son, Dian Man, as a Court Gentleman. Whenever the imperial carriage passed by his tomb, Cao Cao would offer a sacrifice of middle-grade livestock. Remembering Dian Wei, Cao Cao promoted Dian Man to Major and kept him close. When Emperor Wen (posthumously honoured as the Civil Emperor) ascended the throne, he made Dian Man a Commandant and [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]."
     }

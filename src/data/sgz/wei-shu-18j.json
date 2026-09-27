@@ -9,86 +9,534 @@
   "order": 18,
   "num": "18",
   "label": {
-    "zht": "閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+    "zht": "閻溫傳 · 附張恭、孫賔碩、楊阿若、鮑出",
     "zhs": "阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
     "en": "Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
   },
   "title": {
-    "zht": "魏書十八 · 閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+    "zht": "魏書十八 · 閻溫傳 · 附張恭、孫賔碩、楊阿若、鮑出",
     "zhs": "魏书十八 · 阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
     "en": "Book of Wei, Chapter 18 · Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
   },
   "relationships": [
     {
-      "from": "閻溫（伯儉）",
-      "to": "馬超",
-      "type": "captor-captive",
-      "passageId": "ws18j-p1"
-    },
-    {
-      "from": "閻溫（伯儉）",
-      "to": "馬超",
-      "type": "enemy/defied",
-      "passageId": "ws18j-p2"
+      "from": "馬超（孟起）",
+      "to": "閻溫（伯儉）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p1",
+          "text": {
+            "en": "Yan Wen was captured by Ma Chao's forces while trying to bring word of relief to the besieged provincial seat.",
+            "zht": "閻溫為圍城求援時，為馬超軍所擒獲。",
+            "zhs": "阎温为围城求援时，为马超军所擒获。"
+          }
+        },
+        {
+          "passageId": "ws18j-p2",
+          "text": {
+            "en": "Ma Chao tried to force Yan Wen to tell the defenders that no relief was coming, but Yan Wen instead cried out that rescue was near, and when he refused to be turned, Ma Chao had him killed for his unwavering loyalty.",
+            "zht": "馬超逼迫閻溫向城中宣告援軍不至，閻溫卻高呼救兵將至；因其忠貞不改，馬超遂將他殺害。",
+            "zhs": "马超逼迫阎温向城中宣告援军不至，阎温却高呼救兵将至；因其忠贞不改，马超遂将他杀害。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "張就",
-      "type": "father-son",
-      "passageId": "ws18j-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p3",
+          "text": {
+            "en": "Zhang Jiu was Zhang Gong's son, sent east to petition Cao Cao for a new Grand Administrator of Dunhuang.",
+            "zht": "張就是張恭之子，被派往東方向曹操請求另派敦煌太守。",
+            "zhs": "张就是张恭之子，被派往东方向曹操请求另派敦煌太守。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "張華",
-      "type": "cousins",
-      "passageId": "ws18j-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gong sent his cousin Zhang Hua to attack the rebel-held counties of Shatou and Ganqi.",
+            "zht": "張恭派其從弟張華攻打叛軍所據的沙頭、乾齊二縣。",
+            "zhs": "张恭派其从弟张华攻打叛军所据的沙头、干齐二县。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "馬艾",
-      "type": "superior-subordinate (former)",
-      "passageId": "ws18j-p3"
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p3",
+          "text": {
+            "en": "Zhang Gong served as Merit Section Foreman Clerk under Grand Administrator Ma Ai of Dunhuang before Ma Ai died in office.",
+            "zht": "張恭曾任敦煌太守馬艾麾下功曹，馬艾後卒於任上。",
+            "zhs": "张恭曾任敦煌太守马艾麾下功曹，马艾后死于任上。"
+          }
+        }
+      ]
     },
     {
       "from": "黃華",
       "to": "張就",
-      "type": "captor-captive",
-      "passageId": "ws18j-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p3",
+          "text": {
+            "en": "When Zhang Jiu passed through Jiuquan, Huang Hua detained him and threatened him at swordpoint, but Zhang Jiu never wavered.",
+            "zht": "張就途經酒泉時，為黃華所扣留，以兵刃相脅，張就仍不為所動。",
+            "zhs": "张就途经酒泉时，为黄华所扣留，以兵刃相胁，张就仍不为所动。"
+          }
+        }
+      ]
     },
     {
       "from": "張進",
       "to": "黃華",
-      "type": "allies",
-      "passageId": "ws18j-p4"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Jin of Zhangye depended on Huang Hua's aid; Huang Hua wished to rescue him but feared attack from the rear.",
+            "zht": "張掖的張進倚仗黃華相助；黃華欲往救援，卻顧慮腹背受敵。",
+            "zhs": "张掖的张进倚仗黄华相助；黄华欲往救援，却顾虑腹背受敌。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "黃華",
-      "type": "enemy (military opponent)",
-      "passageId": "ws18j-p4"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gong sent his cousin Zhang Hua to attack Huang Hua's counties of Shatou and Ganqi in Jiuquan, threatening him from the rear and forcing him to abandon his ally.",
+            "zht": "張恭遣從弟張華攻打黃華於酒泉所轄的沙頭、乾齊，自後方施壓，迫使黃華放棄盟友。",
+            "zhs": "张恭遣从弟张华攻打黄华于酒泉所辖的沙头、干齐，自后方施压，迫使黄华放弃盟友。"
+          }
+        }
+      ]
     },
     {
       "from": "黃華",
-      "to": "蘇則",
-      "type": "surrendered to",
-      "passageId": "ws18j-p4"
+      "to": "蘇則（文師）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Fearing attack from the rear, Huang Hua abandoned his ally and surrendered to Su Ze, Grand Administrator of Jincheng.",
+            "zht": "黃華因懼腹背受敵，放棄盟友，向金城太守蘇則投降。",
+            "zhs": "黄华因惧腹背受敌，放弃盟友，向金城太守苏则投降。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "尹奉",
-      "type": "escorted/protected",
-      "passageId": "ws18j-p4"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gong dispatched two hundred armoured cavalry to escort the newly arriving Grand Administrator, Yin Feng, safely to his post.",
+            "zht": "張恭派遣兩百名甲騎，護送新任太守尹奉安全抵達任所。",
+            "zhs": "张恭派遣两百名甲骑，护送新任太守尹奉安全抵达任所。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張恭",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "In the second year of Huangchu, an edict was issued commending Zhang Gong, enfeoffing him as Marquis Within the Pass and appointing him Colonel of the Western Regions Central Garrison.",
+            "zht": "黃初二年，下詔襃揚張恭，賜爵關內侯，拜西域戊己校尉。",
+            "zhs": "黄初二年，下诏襃扬张恭，赐爵关内侯，拜西域戊己校尉。"
+          },
+          "title": {
+            "en": "Marquis Within the Pass, Colonel of the Western Regions Central Garrison",
+            "zht": "關內侯、西域戊己校尉",
+            "zhs": "关内侯、西域戊己校尉"
+          }
+        }
+      ]
     },
     {
       "from": "張就",
-      "to": "張恭",
-      "type": "son-father",
-      "passageId": "ws18j-p3"
+      "to": "張敩（祖文）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Xiao, courtesy name Zuwen, was Zhang Jiu's son, resolute and upright, who rose to become Grand Administrator of Guanghan.",
+            "zht": "張敩字祖文，是張就之子，弘毅有幹正，官至廣漢太守。",
+            "zhs": "张敩字祖文，是张就之子，弘毅有干正，官至广汉太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Guanghan",
+            "zht": "廣漢太守",
+            "zhs": "广汉太守"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張敩（祖文）",
+      "to": "張固（元安）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gu, courtesy name Yuan'an, was Zhang Xiao's son and took after him; he served as Gentleman within the Yellow Gates, but died young.",
+            "zht": "張固字元安，是張敩之子，有其父之風，官至黃門郎，早卒。",
+            "zhs": "张固字元安，是张敩之子，有其父之风，官至黄门郎，早卒。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張敩（祖文）",
+      "to": "司馬炎（安世）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "As Grand Administrator of Guanghan, Zhang Xiao arrested one of Wang Jun's aides who lacked proper authority to recruit troops; when Emperor Wu questioned his not reporting it secretly instead, Zhang Xiao explained his reasoning, and the Emperor approved of his response.",
+            "zht": "張敩任廣漢太守時，逮捕了無虎符擅自募兵的王濬從事；晉武帝責其未先密啟便逕自收捕，張敩陳述緣由，帝甚讚許其言。",
+            "zhs": "张敩任广汉太守时，逮捕了无虎符擅自募兵的王濬从事；晋武帝责其未先密启便径自收捕，张敩陈述缘由，帝甚赞许其言。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "唐衡",
+      "to": "趙息",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "After Zhao Xi rebuked his younger brother's arrogance and delayed his letter of thanks, an enraged Tang Heng schemed to become Intendant of Jingzhao and exterminate the entire Zhao clan.",
+            "zht": "趙息因斥責唐衡之弟傲慢無禮，又延誤其謝函，唐衡大怒，遂謀求出任京兆尹，欲滅趙氏滿門。",
+            "zhs": "赵息因斥责唐衡之弟傲慢无礼，又延误其谢函，唐衡大怒，遂谋求出任京兆尹，欲灭赵氏满门。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "唐衡",
+      "to": "趙仲台",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "As part of his revenge on the Zhao clan, Tang Heng had Zhao Zhongtai, then Inspector of Liang Province, recalled by edict and put to death.",
+            "zht": "唐衡為報復趙氏，矯詔徵還時任涼州刺史的趙仲台，將他殺害。",
+            "zhs": "唐衡为报复赵氏，矫诏征还时任凉州刺史的赵仲台，将他杀害。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "孫賓碩",
+      "to": "趙岐",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Recognising the fugitive pancake-seller as no ordinary man, Sun Binshuo took Zhao Qi into his own home and hid him within a double wall for years until his persecutors died; decades later the two met again in Jing Province in tears, and when Sun Binshuo died Zhao Qi observed mourning for him.",
+            "zht": "孫賓碩見販餅者氣度不凡，收留趙岐於家中，藏於複壁數年，直至仇家盡亡；後於荊州重逢，相對流涕，賓碩病逝後，趙岐更為他服喪。",
+            "zhs": "孙宾硕见贩饼者气度不凡，收留赵岐于家中，藏于复壁数年，直至仇家尽亡；后于荆州重逢，相对流涕，宾硕病逝后，赵岐更为他服丧。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙岐",
+      "to": "趙仲台",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhao Qi and Zhao Zhongtai were clansmen of the same generation, both counted as paternal uncles of Zhao Xi; Zhao Zhongtai was killed in Tang Heng's purge of the clan, while Zhao Qi escaped by fleeing in disguise.",
+            "zht": "趙岐與趙仲台同輩族人，皆為趙息之從父；趙仲台於唐衡誅滅趙氏一族時遇害，趙岐則變姓易名逃亡得免。",
+            "zhs": "赵岐与赵仲台同辈族人，皆为赵息之从父；赵仲台于唐衡诛灭赵氏一族时遇害，赵岐则变姓易名逃亡得免。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙岐",
+      "to": "趙息",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhao Qi was Zhao Xi's paternal uncle; it was Zhao Xi's rebuke of Tang Heng's brother that first set off the persecution of the whole Zhao clan.",
+            "zht": "趙岐是趙息的從父；正是趙息斥責唐衡之弟一事，引來唐衡對趙氏滿門的迫害。",
+            "zhs": "赵岐是赵息的从父；正是赵息斥责唐衡之弟一事，引来唐衡对赵氏满门的迫害。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "劉表（景升）",
+      "to": "孫賓碩",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "After Zhao Qi related Sun Binshuo's story to Liu Biao, Liu Biao treated Sun Binshuo with still greater honour.",
+            "zht": "趙岐向劉表述說孫賓碩之事後，劉表對孫賓碩更加禮遇。",
+            "zhs": "赵岐向刘表述说孙宾硕之事后，刘表对孙宾硕更加礼遇。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "徐揖",
+      "to": "黃昂",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Grand Administrator Xu Yi executed the powerful Huang clan of his commandery; the surviving Huang Ang raised over a thousand men with his family's gold and attacked him.",
+            "zht": "太守徐揖誅殺郡中豪族黃氏，倖存的黃昂以家財募得千餘人攻打徐揖。",
+            "zhs": "太守徐揖诛杀郡中豪族黄氏，幸存的黄昂以家财募得千余人攻打徐揖。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "徐揖",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Regarding Huang Ang's rebellion as unjust, Yang Feng warned Xu Yi and left his own family behind to seek relief troops from Zhangye.",
+            "zht": "楊豐認為黃昂舉兵不義，通報徐揖，並拋下妻兒趕赴張掖求援。",
+            "zhs": "杨丰认为黄昂举兵不义，通报徐揖，并抛下妻儿赶赴张掖求援。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "黃昂",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "After Huang Ang put a bounty on his capture, Yang Feng later raised over a thousand cavalry, feigned an army's approach to rout Jiuquan's defenders, and killed the captured Huang Ang in revenge for Xu Yi.",
+            "zht": "黃昂懸賞捉拿楊豐後，楊豐招得千餘騎兵，佯裝大軍逼近使酒泉守軍潰散，並將被擒的黃昂處死，為徐揖報仇。",
+            "zhs": "黄昂悬赏捉拿杨丰后，杨丰招得千余骑兵，佯装大军逼近使酒泉守军溃散，并将被擒的黄昂处死，为徐揖报仇。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "張猛（叔威）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Meng, Grand Administrator of Wuwei, provisionally appointed Yang Feng Commandant and authorised him to avenge Xu Yi against Huang Ang.",
+            "zht": "武威太守張猛任命楊豐為代理都尉，授權他為徐揖向黃昂復仇。",
+            "zhs": "武威太守张猛任命杨丰为代理都尉，授权他为徐揖向黄昂复仇。"
+          },
+          "title": {
+            "en": "Commandant",
+            "zht": "都尉",
+            "zhs": "都尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "黃華",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Fearing retaliation once Huang Hua returned east to retake the commandery, Yang Feng fled to Dunhuang, only returning once Huang Hua eventually surrendered.",
+            "zht": "黃華還領郡後，楊豐懼其報復，逃往燉煌，直至黃華投降方才返郡。",
+            "zhs": "黄华还领郡后，杨丰惧其报复，逃往燉煌，直至黄华投降方才返郡。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "During the Huangchu era, the commandery and province praised Yang Feng's righteousness and courage, and by imperial edict he was appointed Commandant of Escorting Cavalry.",
+            "zht": "黃初年間，郡州表彰楊豐之義勇，詔拜駙馬都尉。",
+            "zhs": "黄初年间，郡州表彰杨丰之义勇，诏拜驸马都尉。"
+          },
+          "title": {
+            "en": "Commandant of Escorting Cavalry",
+            "zht": "駙馬都尉",
+            "zhs": "驸马都尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鮑出（文才）",
+      "to": "鮑初",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Bao Chu (elder brother) was one of Bao Chu's four brothers; when bandits abducted their mother while gathering food during a famine, the brothers who first returned home dared not pursue, but Bao Chu fought through the bandits alone and won her back.",
+            "zht": "鮑初是鮑出四位兄弟之一；饑荒中採食時，母親為賊人擄走，先歸家的兄弟不敢追趕，鮑出獨自奮戰救回母親。",
+            "zhs": "鲍初是鲍出四位兄弟之一；饥荒中采食时，母亲为贼人掳走，先归家的兄弟不敢追赶，鲍出独自奋战救回母亲。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鮑出（文才）",
+      "to": "鮑雅",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Bao Ya was one of Bao Chu's four brothers, part of the family that fled together to Nanyang after Bao Chu rescued their mother from bandits.",
+            "zht": "鮑雅是鮑出四位兄弟之一，鮑出自賊人手中救回母親後，一家相扶南下客居南陽。",
+            "zhs": "鲍雅是鲍出四位兄弟之一，鲍出自贼人手中救回母亲后，一家相扶南下客居南阳。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鮑出（文才）",
+      "to": "鮑成",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Bao Cheng was one of Bao Chu's four brothers; years later, when their mother could no longer walk, Bao Chu carried her home alone in a basket rather than risk a cart on the mountain roads.",
+            "zht": "鮑成是鮑出四位兄弟之一；多年後母親不良於行，鮑出不願以車冒險走山路，遂獨自以籠背負母親返鄉。",
+            "zhs": "鲍成是鲍出四位兄弟之一；多年后母亲不良于行，鲍出不愿以车冒险走山路，遂独自以笼背负母亲返乡。"
+          }
+        }
+      ]
     }
   ],
   "journeyOverviews": [
     {
       "person": "閻溫（伯儉）",
+      "name": {
+        "en": "Yan Wen",
+        "zht": "閻溫",
+        "zhs": "阎温"
+      },
+      "courtesyName": {
+        "en": "Bojian",
+        "zht": "伯儉",
+        "zhs": "伯俭"
+      },
       "born": "unknown",
       "died": {
         "era": {
@@ -169,6 +617,16 @@
     },
     {
       "person": "張恭",
+      "name": {
+        "en": "Zhang Gong",
+        "zht": "張恭",
+        "zhs": "张恭"
+      },
+      "courtesyName": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
       "born": "unknown",
       "died": {
         "era": {
@@ -221,7 +679,7 @@
           ],
           "position": [
             {
-              "en": "Colonel of the Central Garrison",
+              "en": "Colonel of the Western Regions Central Garrison",
               "zht": "戊己校尉",
               "zhs": " 戊己校尉"
             },
@@ -243,9 +701,9 @@
           "age": null,
           "location": null,
           "position": {
-            "en": "posthumously Bearer of the Golden Mace",
-            "zht": "贈執金吾",
-            "zhs": "赠执金吾"
+            "en": "Posthumously Bearer of the Golden Mace",
+            "zht": "追贈執金吾",
+            "zhs": "追贈执金吾"
           },
           "passageId": "ws18j-p4"
         }
@@ -259,6 +717,10 @@
         "zht": "閻溫字伯儉，[[天水西城|/zh-hant/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]人也。以[[涼州|/zh-hant/maps/map-overall?admin=5]][[別駕|/zh-hant/translations/officials/regional#provinces-017]]守[[上邽|/zh-hant/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]][[令|/zh-hant/translations/officials/regional?lat=34.59061668&lng=105.70732186]]。馬超走奔[[上邽|/zh-hant/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]]，郡人任養等舉衆迎之。溫止之，不能禁，乃馳還州。超復圍州所治[[兾城|/zh-hant/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]]甚急，州乃遣溫密出，告急於夏侯淵。賊圍數重，溫夜從水中潛出。明日，賊見其迹，遣人追遮之，於[[顯親|/zh-hant/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]界得溫，執還詣超。",
         "zhs": "阎温字伯俭，[[天水西城|/zh-hans/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]人也。以[[凉州|/zh-hans/maps/map-overall?admin=5]][[别驾|/zh-hans/translations/officials/regional#provinces-017]]守[[上邽|/zh-hans/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]][[令|/zh-hans/translations/officials/regional?lat=34.59061668&lng=105.70732186]]。马超走奔[[上邽|/zh-hans/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]]，郡人任养等举众迎之。温止之，不能禁，乃驰还州。超复围州所治[[兾城|/zh-hans/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]]甚急，州乃遣温密出，告急于夏侯渊。贼围数重，温夜从水中潜出。明日，贼见其迹，遣人追遮之，于[[显亲|/zh-hans/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]界得温，执还诣超。"
       },
+      "vern": {
+        "zht": "閻溫，字伯儉，[[天水郡西縣|/zh-hant/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]人。以[[涼州|/zh-hant/maps/map-overall?admin=5]][[別駕|/zh-hant/translations/officials/regional#provinces-017]]的職銜代理[[上邽|/zh-hant/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]]縣的縣[[令|/zh-hant/translations/officials/regional?lat=34.59061668&lng=105.70732186]]。馬超逃亡來到[[上邽|/zh-hant/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]]，本郡的任養等人率衆迎接；閻溫阻擋任養，禁止不住，只好騎馬逃回州城。馬超又包圍了[[涼州|/zh-hant/maps/map-overall?admin=5]]當時的治所[[冀縣|/zh-hant/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]]，形勢緊迫；州刺史派閻溫祕密出城，向夏侯淵告急。而馬超軍隊的包圍圈有好幾層，閻溫夜裏潛水出城。第二天，敵人發現蹤跡，派人追蹤攔截。在[[顯親|/zh-hant/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]縣界內追上他，捉住他來見馬超。",
+        "zhs": "阎温，字伯俭，[[天水郡西县|/zh-hans/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]人。以[[凉州|/zh-hans/maps/map-overall?admin=5]][[别驾|/zh-hans/translations/officials/regional#provinces-017]]的职衔代理[[上邽|/zh-hans/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]]县的县[[令|/zh-hans/translations/officials/regional?lat=34.59061668&lng=105.70732186]]。马超逃亡来到[[上邽|/zh-hans/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]]，本郡的任养等人率众迎接；阎温阻挡任养，禁止不住，只好骑马逃回州城。马超又包围了[[凉州|/zh-hans/maps/map-overall?admin=5]]当时的治所[[冀县|/zh-hans/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]]，形势紧迫；州刺史派阎温秘密出城，向夏侯渊告急。而马超军队的包围圈有好几层，阎温夜里潜水出城。第二天，敌人发现踪迹，派人追踪拦截。在[[显亲|/zh-hans/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]县界内追上他，捉住他来见马超。"
+      },
       "en": "Yan Wen, courtesy name Bojian, was from [[Xi County, Tianshui|/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]. As the [[Deputy Aide|/translations/officials/regional#provinces-017]] to the Inspector of [[Liang Province|/maps/map-overall?admin=5]], he served as the acting [[Magistrate|/translations/officials/regional?lat=34.59061668&lng=105.70732186]] of [[Shanggui|/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]]. When Ma Chao fled to [[Shanggui|/maps/map-overall?lat=34.59061668&lng=105.70732186&name=Shanggui]], commandery men led by Ren Yang gathered to welcome him. Yan Wen tried to stop them but could not, and galloped back to the provincial seat. Ma Chao then laid close siege to [[Ji|/maps/map-overall?lat=34.70667265&lng=105.41239497&name=Ji]], the provincial seat. The provincial authorities secretly sent Yan Wen to seek assistance from Xiahou Yuan. The rebels had encircled the city in several rings, but Yan Wen slipped out through the water by night. The next day, the enemies discovered his tracks and sent men in pursuit. Yan Wen was caught near the borders of [[Xianqin|/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]], seized, and brought before Ma Chao."
     },
     {
@@ -266,6 +728,10 @@
       "orig": {
         "zht": "超解其縛，謂曰：「今成敗可見，足下為孤城請救而執於人手，義何所施？若從吾言，反謂城中，東方無救，此轉禍為福之計也。不然，今為戮矣。」溫偽許之，超乃載溫詣城下。溫向城大呼曰：「大軍不過三日至，勉之！」城中皆泣，稱萬歲。超怒數之曰：「足下不為命計邪？」溫不應。時超攻城乆不下，故徐誘溫，兾其改意。復謂溫曰：「城中故人，有欲與吾同者不？」溫又不應。遂切責之，溫曰：「夫事君有死無貳，而卿乃欲令長者出不義之言，吾豈苟生者乎？」超遂殺之。",
         "zhs": "超解其缚，谓曰：「今成败可见，足下为孤城请救而执于人手，义何所施？若从吾言，反谓城中，东方无救，此转祸为福之计也。不然，今为戮矣。」温伪许之，超乃载温诣城下。温向城大呼曰：「大军不过三日至，勉之！」城中皆泣，称万岁。超怒数之曰：「足下不为命计邪？」温不应。时超攻城乆不下，故徐诱温，兾其改意。复谓温曰：「城中故人，有欲与吾同者不？」温又不应。遂切责之，温曰：「夫事君有死无贰，而卿乃欲令长者出不义之言，吾岂苟生者乎？」超遂杀之。"
+      },
+      "vern": {
+        "zht": "馬超解開他的繩索，對他說：“現在的勝敗形勢已經分明，您爲這座孤城請救兵卻被人捉住，還怎麼表現大義呢？如果聽我的話，回去告訴城裏，東方不會有救兵來了，這纔是轉禍爲福的計策。若其不然，今天就把您殺了！”閻溫假裝同意，馬超用車載着他來到城下。他朝着城內大聲喊道：“大軍不出三天就會到達，大家要努力呀！”城中將士都感動得哭泣，高呼萬歲。馬超惱怒得很，責問他：“您不要命了嗎？”閻溫拒不回答。當時馬超久攻冀縣不下，所以打主意慢慢引誘閻溫，盼他回心轉意。又對他說：“您城裏的朋友，有想跟我合作的嗎？”閻溫又不理睬。馬超便嚴厲地責備他。閻溫說：“事君之道誓死不生二心，你卻要讓忠厚的人說出不義的話，我難道是苟且偷生的人嗎！”馬超於是殺了他。",
+        "zhs": "马超解开他的绳索，对他说：“现在的胜败形势已经分明，您为这座孤城请救兵却被人捉住，还怎么表现大义呢？如果听我的话，回去告诉城里，东方不会有救兵来了，这才是转祸为福的计策。若其不然，今天就把您杀了！”阎温假装同意，马超用车载着他来到城下。他朝着城内大声喊道：“大军不出三天就会到达，大家要努力呀！”城中将士都感动得哭泣，高呼万岁。马超恼怒得很，责问他：“您不要命了吗？”阎温拒不回答。当时马超久攻冀县不下，所以打主意慢慢引诱阎温，盼他回心转意。又对他说：“您城里的朋友，有想跟我合作的吗？”阎温又不理睬。马超便严厉地责备他。阎温说：“事君之道誓死不生二心，你却要让忠厚的人说出不义的话，我难道是苟且偷生的人吗！”马超于是杀了他。"
       },
       "en": "Ma Chao untied Yan Wen and said, \"The outcome is now plain. You went to seek relief for an isolated city, only to fall into another's hands. What can your loyalty accomplish now? If you heed my advice, return and tell those within the city that no relief will come from the east, and you may thereby turn disaster into good fortune. Otherwise, you will be put to death at once.\" Yan Wen feigned agreement, so Ma Chao put him in a cart and sent him beneath the city walls. Facing the city, Yan Wen cried out, \"The main army will arrive within three days. Stand firm!\" Everyone within the city wept and cried out in jubilation. Ma Chao angrily reproached him: \"Do you not care for your own life?\" Yan Wen did not answer. Ma Chao sieged the city for a long time without success, and so continued patiently to coax Yan Wen, hoping he might change his mind. Ma Chao asked again, \"Are there any among your old friends within the city who would join me?\" Yan Wen again did not reply. Ma Chao then pressed him harshly, and Yan Wen said, \"In serving one's lord, there is death but no divided loyalty. Yet you wished for a man of honour to utter unrighteous words. Am I one who would cling to life at any cost?\" Chao thereupon killed him."
     },
@@ -275,6 +741,10 @@
         "zht": "先是，河右擾亂，隔絕不通，[[燉煌|/zh-hant/maps/map-overall?admin=135]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]馬艾卒官，府又無[[丞|/zh-hant/translations/officials/regional#commanderies-040]]。[[功曹|/zh-hant/translations/officials/regional#commanderies-038]]張恭素有學行，郡人推行[[長史|/zh-hant/translations/officials/regional#commanderies-041]]事，恩信甚著，乃遣子就東詣太祖，請[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。時[[酒泉|/zh-hant/maps/map-overall?admin=141]]黃華、[[張掖|/zh-hant/maps/map-overall?admin=137]]張進各據其郡，欲與恭并勢。就至[[酒泉|/zh-hant/maps/map-overall?admin=141]]，為華所拘執，劫以白刃。就終不回，私與恭疏曰：「大人率厲[[燉煌|/zh-hant/maps/map-overall?admin=135]]，忠義顯然，豈以就在困厄之中而替之哉？昔樂羊食子，李通覆家，經國之臣，寧懷妻孥邪？今大軍垂至，但當促兵以掎之耳；願不以下流之愛，使就有恨於黃壤也。」",
         "zhs": "先是，河右扰乱，隔绝不通，[[燉煌|/zh-hans/maps/map-overall?admin=135]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]马艾卒官，府又无[[丞|/zh-hans/translations/officials/regional#commanderies-040]]。[[功曹|/zh-hans/translations/officials/regional#commanderies-038]]张恭素有学行，郡人推行[[长史|/zh-hans/translations/officials/regional#commanderies-041]]事，恩信甚著，乃遣子就东诣太祖，请[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。时[[酒泉|/zh-hans/maps/map-overall?admin=141]]黄华、[[张掖|/zh-hans/maps/map-overall?admin=137]]张进各据其郡，欲与恭并势。就至[[酒泉|/zh-hans/maps/map-overall?admin=141]]，为华所拘执，劫以白刃。就终不回，私与恭疏曰：「大人率厉[[燉煌|/zh-hans/maps/map-overall?admin=135]]，忠义显然，岂以就在困厄之中而替之哉？昔乐羊食子，李通覆家，经国之臣，宁怀妻孥邪？今大军垂至，但当促兵以掎之耳；愿不以下流之爱，使就有恨于黄壤也。」"
       },
+      "vern": {
+        "zht": "先前，河西一帶發生騷亂，道路隔絕不通。[[敦煌|/zh-hant/maps/map-overall?admin=135]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]馬艾死在任上，[[太守|/zh-hant/translations/officials/regional#commanderies-039]]府裏又沒有郡[[丞|/zh-hant/translations/officials/regional#commanderies-040]]；[[功曹|/zh-hant/translations/officials/regional#commanderies-038]]張恭學問品行素來都好，郡中的人便推舉他代理[[長史|/zh-hant/translations/officials/regional#commanderies-041]]的職務：恩惠信用都很顯著。張恭派兒子張就往東去見太祖曹操，請求委新[[太守|/zh-hant/translations/officials/regional#commanderies-039]]來。當時[[酒泉|/zh-hant/maps/map-overall?admin=141]]郡的黃華、[[張掖|/zh-hant/maps/map-overall?admin=137]]郡的張進，都各自佔領本郡，準備拉張恭加入造反。所以張就到了[[酒泉|/zh-hant/maps/map-overall?admin=141]]，即被黃華扣押；用利刀相威脅，張就始終不屈服。私下給張恭寫信說：“大人統領鼓勵[[敦煌|/zh-hant/maps/map-overall?admin=135]]軍民，忠義顯著，難道因爲兒子在困厄之中就放棄了自己的初衷嗎！從前樂羊喝了用兒子的肉做成的羹，李通全家人都被王莽殺害；報國的臣僚難道能顧念妻子兒女嗎！現在大軍快要到了，只應當趕快出兵牽制住叛軍！希望不要顧及對子孫後輩的寵愛，以免讓我死不瞑目。”",
+        "zhs": "先前，河西一带发生骚乱，道路隔绝不通。[[敦煌|/zh-hans/maps/map-overall?admin=135]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]马艾死在任上，[[太守|/zh-hans/translations/officials/regional#commanderies-039]]府里又没有郡[[丞|/zh-hans/translations/officials/regional#commanderies-040]]；[[功曹|/zh-hans/translations/officials/regional#commanderies-038]]张恭学问品行素来都好，郡中的人便推举他代理[[长史|/zh-hans/translations/officials/regional#commanderies-041]]的职务：恩惠信用都很显著。张恭派儿子张就往东去见太祖曹操，请求委新[[太守|/zh-hans/translations/officials/regional#commanderies-039]]来。当时[[酒泉|/zh-hans/maps/map-overall?admin=141]]郡的黄华、[[张掖|/zh-hans/maps/map-overall?admin=137]]郡的张进，都各自占领本郡，准备拉张恭加入造反。所以张就到了[[酒泉|/zh-hans/maps/map-overall?admin=141]]，即被黄华扣押；用利刀相威胁，张就始终不屈服。私下给张恭写信说：“大人统领鼓励[[敦煌|/zh-hans/maps/map-overall?admin=135]]军民，忠义显著，难道因为儿子在困厄之中就放弃了自己的初衷吗！从前乐羊喝了用儿子的肉做成的羹，李通全家人都被王莽杀害；报国的臣僚难道能顾念妻子儿女吗！现在大军快要到了，只应当赶快出兵牵制住叛军！希望不要顾及对子孙后辈的宠爱，以免让我死不瞑目。”"
+      },
       "en": "Previously, the lands west of the Yellow River had fallen into disorder, and communications were cut off. Ma Ai, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Dunhuang|/maps/map-overall?admin=135]], died in office, and the commandery had no [[Assistant|/translations/officials/regional#commanderies-040]] to take over. Zhang Gong, the [[Merit Section Foreman Clerk|/translations/officials/regional#commanderies-038]], had long been esteemed for his learning and conduct. The people of the commandery therefore chose him to act as [[Chief Clerk|/translations/officials/regional#commanderies-041]], and he won renown for his benevolence and good faith. He sent his son Zhang Jiu east to Cao Cao (posthumously honoured as the Grand Progenitor) to request a new [[Grand Administrator|/translations/officials/regional#commanderies-039]]. At the time, Huang Hua in [[Jiuquan|/maps/map-overall?admin=141]] and Zhang Jin in [[Zhangye|/maps/map-overall?admin=137]] had each seized control of his commandery and sought to join forces with Zhang Gong. When Zhang Jiu reached [[Jiuquan|/maps/map-overall?admin=141]], Huang Hua detained him and threatened him at swordpoint. Zhang Jiu never wavered, but secretly sent Zhang Gong a letter: \"Father, you have rallied and inspired [[Dunhuang|/maps/map-overall?admin=135]], and your loyalty and righteousness are plain to all. Would you abandon them merely because I am in peril? In former times, Yue Yang ate the flesh of his son, and Li Tong sacrificed his whole household. How could ministers entrusted with governing the realm place concern for their wives and children above their duty? The great army is now close at hand. You need only hasten your troops to strike him from the rear. I beg you not to yield to the lesser affection of ordinary men and leave me with regret beneath the yellow earth.\""
     },
     {
@@ -283,7 +753,11 @@
         "zht": "恭即遣從弟華攻[[酒泉|/zh-hant/maps/map-overall?admin=141&lat=40.42635394&lng=96.97019492]][[沙頭|/zh-hant/maps/map-overall?lat=40.42234572&lng=97.00968411&name=Shatou]]、[[乾齊|/zh-hant/maps/map-overall?lat=40.18161983&lng=97.17394899&name=Ganqi]]二縣。恭又連兵尋繼華後，以為首尾之援。別遣鐵騎二百，迎吏官屬，東緣[[酒泉|/zh-hant/maps/map-overall?admin=141]]北塞，徑出[[張掖|/zh-hant/maps/map-overall?admin=137]]北河，逢迎[[太守|/zh-hant/translations/officials/regional#commanderies-039]]尹奉。於是張進須黃華之助；華欲救進，西顧恭兵，恐急擊其後，遂詣[[金城|/zh-hant/maps/map-overall?admin=139]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]蘇則降。就竟平安。奉得之官。黃初二年，下詔襃揚，賜恭爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]，拜西域[[戊己校尉|/zh-hant/translations/officials/military#colonels--commandants-188]]。數歲徵還，將授以侍臣之位，而以子就代焉。恭至燉煌，固辭疾篤。太和中卒，贈[[執金吾|/zh-hant/translations/officials/ministers#others-282]]。就後為[[金城|/zh-hant/maps/map-overall?admin=139]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，父子著稱於西州。",
         "zhs": "恭即遣从弟华攻[[酒泉|/zh-hans/maps/map-overall?admin=141&lat=40.42635394&lng=96.97019492]][[沙头|/zh-hans/maps/map-overall?lat=40.42234572&lng=97.00968411&name=Shatou]]、[[干齐|/zh-hans/maps/map-overall?lat=40.18161983&lng=97.17394899&name=Ganqi]]二县。恭又连兵寻继华后，以为首尾之援。别遣铁骑二百，迎吏官属，东缘[[酒泉|/zh-hans/maps/map-overall?admin=141]]北塞，径出[[张掖|/zh-hans/maps/map-overall?admin=137]]北河，逢迎[[太守|/zh-hans/translations/officials/regional#commanderies-039]]尹奉。于是张进须黄华之助；华欲救进，西顾恭兵，恐急击其后，遂诣[[金城|/zh-hans/maps/map-overall?admin=139]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]苏则降。就竟平安。奉得之官。黄初二年，下诏襃扬，赐恭爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]，拜西域[[戊己校尉|/zh-hans/translations/officials/military#colonels--commandants-188]]。数岁征还，将授以侍臣之位，而以子就代焉。恭至燉煌，固辞疾笃。太和中卒，赠[[执金吾|/zh-hans/translations/officials/ministers#others-282]]。就后为[[金城|/zh-hans/maps/map-overall?admin=139]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，父子著称于西州。"
       },
-      "en": "Zhang Gong immediately sent his cousin Zhang Hua to attack the counties of [[Shatou|/maps/map-overall?lat=40.42635394&lng=96.97019492&name=Shatou]] and [[Ganqi|/maps/map-overall?lat=40.18161983&lng=97.17394899&name=Ganqi]] in [[Jiuquan|/maps/map-overall?admin=141]]. He then led another force close behind, so that the two armies could support each other front and rear. He also dispatched two hundred armoured cavalrymen to escort the newly arriving officials and their staff. Travelling east along the northern frontier of [[Jiuquan|/maps/map-overall?admin=141]], then took a direct route to a river in northern [[Zhangye|/maps/map-overall?admin=137]], and received the incoming [[Grand Administrator|/translations/officials/regional#commanderies-039]], Yin Feng. Zhang Jin now depended on Huang Hua's aid. Huang Hua wished to rescue him, but, mindful of Zhang Gong's troops to the west, feared a sudden attack on his rear. Huang Hua therefore went to surrender to Su Ze, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jincheng|/maps/map-overall?admin=139]]. Zhang Jiu ultimately came through unharmed, and Yin Feng was able to take up his post. In the second year of Huangchu, an edict was issued commending Zhang Gong. He was enfeoffed as [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]] and appointed [[Colonel of the Central Garrison|/translations/officials/military#colonels--commandants-188]]. Several years later, he was summoned to the capital to receive a position among the imperial attendants, with his son Zhang Jiu succeeding him. On reaching Dunhuang, Zhang Gong firmly declined the rewards, pleading grave illness. He died during the Taihe era and was posthumously appointed [[Bearer of the Golden Mace|/translations/officials/ministers#others-282]]. Zhang Jiu later became [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jincheng|/maps/map-overall?admin=139]], and both father and son won renown in the western provinces.",
+      "vern": {
+        "zht": "張恭看了來信立即派堂弟張華，領兵攻打[[酒泉|/zh-hant/maps/map-overall?admin=141&lat=40.42635394&lng=96.97019492]]郡的[[沙頭|/zh-hant/maps/map-overall?lat=40.42234572&lng=97.00968411&name=Shatou]]、[[幹齊|/zh-hant/maps/map-overall?lat=40.18161983&lng=97.17394899&name=Ganqi]]兩縣。張恭又連續派兵緊跟在張華的後面，準備彼此隨時支援。另派二百名鐵騎兵，再加上去迎接新[[太守|/zh-hant/translations/officials/regional#commanderies-039]]的吏員下屬；往東沿着[[酒泉|/zh-hant/maps/map-overall?admin=141&lat=40.42635394&lng=96.97019492]]郡的北部邊塞，直接出[[張掖|/zh-hant/maps/map-overall?admin=137]]郡的北河，去迎接新任[[太守|/zh-hant/translations/officials/regional#commanderies-039]]尹奉。當時，張進在等黃華的援助；黃華想要救張進，又顧慮西面張恭的部隊，怕他們襲擊自己的後方，只好向[[金城|/zh-hant/maps/map-overall?admin=139]]郡的[[太守|/zh-hant/translations/officials/regional#commanderies-039]]蘇則投降：張就竟然平安活了下來，尹奉也得以到達任所。黃初二年（公元 221），朝廷下詔褒獎張恭，賜他[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]的爵位。此後任命他爲西域[[戊己校尉|/zh-hant/translations/officials/military#colonels--commandants-188]]，過了幾年又召他回朝，要授予他侍從近臣的職務，讓他的兒子張就接替西域[[戊己校尉|/zh-hant/translations/officials/military#colonels--commandants-188]]一職。張恭到了敦煌縣，堅持說自己病重推辭了朝廷的徵召。他在太和年間去世，朝廷贈他[[執金吾|/zh-hant/translations/officials/ministers#others-282]]官銜。張就後來擔任[[金城|/zh-hant/maps/map-overall?admin=139]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，父子都著稱於涼州。",
+        "zhs": "张恭看了来信立即派堂弟张华，领兵攻打[[酒泉|/zh-hans/maps/map-overall?admin=141&lat=40.42635394&lng=96.97019492]]郡的[[沙头|/zh-hans/maps/map-overall?lat=40.42234572&lng=97.00968411&name=Shatou]]、[[干齐|/zh-hans/maps/map-overall?lat=40.18161983&lng=97.17394899&name=Ganqi]]两县。张恭又连续派兵紧跟在张华的后面，准备彼此随时支援。另派二百名铁骑兵，再加上去迎接新[[太守|/zh-hans/translations/officials/regional#commanderies-039]]的吏员下属；往东沿着[[酒泉|/zh-hans/maps/map-overall?admin=141&lat=40.42635394&lng=96.97019492]]郡的北部边塞，直接出[[张掖|/zh-hans/maps/map-overall?admin=137]]郡的北河，去迎接新任[[太守|/zh-hans/translations/officials/regional#commanderies-039]]尹奉。当时，张进在等黄华的援助；黄华想要救张进，又顾虑西面张恭的部队，怕他们袭击自己的后方，只好向[[金城|/zh-hans/maps/map-overall?admin=139]]郡的[[太守|/zh-hans/translations/officials/regional#commanderies-039]]苏则投降：张就竟然平安活了下来，尹奉也得以到达任所。黄初二年（公元 221），朝廷下诏褒奖张恭，赐他[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]的爵位。此后任命他为西域[[戊己校尉|/zh-hans/translations/officials/military#colonels--commandants-188]]，过了几年又召他回朝，要授予他侍从近臣的职务，让他的儿子张就接替西域[[戊己校尉|/zh-hans/translations/officials/military#colonels--commandants-188]]一职。张恭到了敦煌县，坚持说自己病重推辞了朝廷的征召。他在太和年间去世，朝廷赠他[[执金吾|/zh-hans/translations/officials/ministers#others-282]]官衔。张就后来担任[[金城|/zh-hans/maps/map-overall?admin=139]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，父子都著称于凉州。"
+      },
+      "en": "Zhang Gong immediately sent his cousin Zhang Hua to attack the counties of [[Shatou|/maps/map-overall?lat=40.42635394&lng=96.97019492&name=Shatou]] and [[Ganqi|/maps/map-overall?lat=40.18161983&lng=97.17394899&name=Ganqi]] in [[Jiuquan|/maps/map-overall?admin=141]]. He then led another force close behind, so that the two armies could support each other front and rear. He also dispatched two hundred armoured cavalrymen to escort the newly arriving officials and their staff. Travelling east along the northern frontier of [[Jiuquan|/maps/map-overall?admin=141]], then took a direct route to a river in northern [[Zhangye|/maps/map-overall?admin=137]], and received the incoming [[Grand Administrator|/translations/officials/regional#commanderies-039]], Yin Feng. Zhang Jin now depended on Huang Hua's aid. Huang Hua wished to rescue him, but, mindful of Zhang Gong's troops to the west, feared a sudden attack on his rear. Huang Hua therefore went to surrender to Su Ze, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jincheng|/maps/map-overall?admin=139]]. Zhang Jiu ultimately came through unharmed, and Yin Feng was able to take up his post. In the second year of Huangchu, an edict was issued commending Zhang Gong. He was enfeoffed as [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]] and appointed [[Colonel of the Western Regions Central Garrison|/translations/officials/military#colonels--commandants-188]]. Several years later, he was summoned to the capital to receive a position among the imperial attendants, with his son Zhang Jiu succeeding him. On reaching Dunhuang, Zhang Gong firmly declined the rewards, pleading grave illness. He died during the Taihe era and was posthumously appointed [[Bearer of the Golden Mace|/translations/officials/ministers#others-282]]. Zhang Jiu later became [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Jincheng|/maps/map-overall?admin=139]], and both father and son won renown in the western provinces.",
       "annotations": [
         {
           "annotator": {
@@ -298,6 +772,10 @@
           },
           "zht": "世語曰：就子斆，字祖文，弘毅有幹正，晉武帝世為[[廣漢|/zh-hant/maps/map-overall?admin=104]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。王濬在[[益州|/zh-hant/maps/map-overall?admin=12]]，受中制募兵討吳，無虎符，斆收濬從事列上，由此召斆還。帝責斆：「何不密啟而便收從事？」斆曰：「蜀漢絕遠，劉備嘗用之。輒收，臣猶以為輕。」帝善之。官至[[匈奴中郎將|/zh-hant/translations/officials/military#gentleman-generals-169]]。斆子固，字元安，有斆風，為[[黃門郎|/zh-hant/translations/officials/departments#chancellery-003]]，早卒。斆，一本作勃。",
           "zhs": "世语曰：就子敩，字祖文，弘毅有干正，晋武帝世为[[广汉|/zh-hans/maps/map-overall?admin=104]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。王濬在[[益州|/zh-hans/maps/map-overall?admin=12]]，受中制募兵讨吴，无虎符，敩收濬从事列上，由此召敩还。帝责敩：「何不密启而便收从事？」敩曰：「蜀汉绝远，刘备尝用之。辄收，臣犹以为轻。」帝善之。官至[[匈奴中郎将|/zh-hans/translations/officials/military#gentleman-generals-169]]。敩子固，字元安，有敩风，为[[黄门郎|/zh-hans/translations/officials/departments#chancellery-003]]，早卒。敩，一本作勃。",
+          "vern": {
+            "zht": "",
+            "zhs": "《世语》说：张就的儿子张敩，字祖文，宽宏坚毅，有才能且品行端正。晋武帝在位时，他担任广汉太守。王濬在益州，接受朝廷的命令，招募士兵讨伐吴国，却没有虎符，张敩逮捕了王濬的从事并上报，因此朝廷召回了张敩。皇帝责备张敩说：“你为什么不秘密奏报就直接逮捕从事呢？”张敩说：“蜀汉极其偏远，刘备就曾利用过这种情况，我当即收捕相关人员，还认为处理得轻了。”皇帝认为他说得很好。官职做到匈奴中郎将。张敩的儿子固，字元安，有敩的风范，担任黄门郎，但很早就去世了。“敩”，另一版本写作“勃”。"
+          },
           "en": "The Shiyu / Accounts of this Generation states: Zhang Jiu's son Zhang Xiao, courtesy name Zuwen, was resolute, capable, and upright. During the reign of Emperor Wu of Jin, the Martial Emperor, he served as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Guanghan|/maps/map-overall?admin=104]]. While Wang Jun was in [[Yi Province|/maps/map-overall?admin=12]], he received an imperial command to recruit troops for an attack on Wu, but had no tiger tally to verify his authority. Zhang Xiao arrested one of Wang Jun's aides and memorialised the matter, for which he was summoned back to court. The Emperor reproached Zhang Xiao: \"Why did you not report the matter in secret, rather than immediately arrest his aide?\" Zhang Xiao replied: \"Shu-Han is exceedingly remote, and Liu Bei once exploited that very fact. Even in making the arrest, I considered myself too lenient.\" The Emperor approved of his response. Zhang Xiao eventually became [[Gentleman-General Protecting the Xiongnu|/translations/officials/military#gentleman-generals-169]]. His son Zhang Gu, courtesy name Yuan'an, took after him. Zhang Gu served as [[Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]], but died young. In one edition, Zhang Xiao's name is written as Zhang Bo."
         },
         {
@@ -311,9 +789,13 @@
             "zhs": "魏略 (鱼豢)",
             "en": "Weilüe / Brief History of Wei (Yu Huan)"
           },
-          "zht": "魏略勇俠傳載孫賔碩、祝公道、楊阿若、鮑出等四人，賔碩雖漢人，而魚豢編之魏書，蓋以其人接魏，事義相類故也。論其行節，皆龐、閻之流。其祝公道一人，已見賈逵傳。今列賔碩等三人于後。\n\n孫賔碩者，[[北海|/zh-hant/maps/map-overall?admin=44]]人也，家素貧。當漢桓帝時，[[常侍|/zh-hant/translations/officials/regional#states-074]]左悺、唐衡等權侔人主。延熹中，衡弟為[[京兆|/zh-hant/maps/map-overall?admin=142]]虎牙[[都尉|/zh-hant/translations/officials/regional#commanderies-043]]，秩比二千[[石|/zh-hant/translations/officials#glossary-shi]]，而統屬郡。衡弟初之官，不脩敬於[[京兆|/zh-hant/maps/map-overall?admin=142]]尹，入門不持版，郡[[功曹|/zh-hant/translations/officials/regional#commanderies-038]]趙息呵廊下曰：「虎牙儀如屬城，何得放臂入府門？」促收其[[主簿|/zh-hant/translations/officials/regional#commanderies-051]]。衡弟顧促取版，旣入見尹，尹欲脩主人，勑外為市買。息又啟云：「左悺子弟，來為虎牙，非德選，不足為特酤買，宜隨中舍菜食而已。」及其到官，遣吏奉牋謝尹，息又勑門，言「無常見此無陰兒輩子弟邪，用其箋記為通乎？」晚乃通之，又不得即令報。\n\n衡弟皆知之，甚恚，欲滅諸趙。因書與衡，求為[[京兆|/zh-hant/maps/map-overall?admin=142]]尹，旬月之間，得為之。息自知前過，乃逃走。時息從父仲臺，見為[[涼州|/zh-hant/maps/map-overall?admin=5]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，於是衡為詔徵仲臺，遣歸。遂詔中都官及郡部[[督郵|/zh-hant/translations/officials/regional#commanderies-055]]，捕諸趙尺兒以上，及仲臺皆殺之，有藏者與同罪。時息從父岐為[[皮氏|/zh-hant/maps/map-overall?lat=35.58996403&lng=110.67438942&name=Pishi]][[長|/zh-hant/translations/officials/regional#counties-089]]，聞有家禍，因從官舍逃，走之[[河間|/zh-hant/maps/map-overall?admin=156&lat=35.58996403&lng=110.67438942]]，變姓字，又轉詣[[北海|/zh-hant/maps/map-overall?admin=44]]，著絮巾布袴，常於市中販胡餅。\n\n賔碩時年二十餘，乘犢車，將騎入市。觀見岐，疑其非常人也。因問之曰：「自有餅邪，販之邪？」岐曰：「販之。」賔碩曰：「買幾錢？賣幾錢？」岐曰：「買三十，賣亦三十。」賔碩曰：「視處士之望，非似賣餅者，殆有故！」乃開車後戶，顧所將兩騎，令下馬扶上之。時岐以為是唐氏耳目也，甚怖，面失色。賔碩閉車後戶，下前襜，謂之曰：「視處士狀貌，旣非販餅者，加今面色變動，即不有重怨，則當亡命。我[[北海|/zh-hant/maps/map-overall?admin=44]]孫賔碩也，闔門百口，又有百歲老母在堂，勢能相度者也，終不相負，必語我以實。」\n\n岐乃具告之。賔碩遂載岐驅歸。住車門外，先入，白母言：「今日出得死友在外，當來入拜。」乃出，延岐入，椎牛鍾酒，快相娛樂。一二日，因載著別田舍，藏置複壁中。後數歲，唐衡及弟皆死。岐乃得出，還本郡。三府並辟，展轉仕進，至郡[[守|/zh-hant/translations/officials/regional#commanderies-039]]、[[刺史|/zh-hant/translations/officials/regional#provinces-014]]、[[太僕|/zh-hant/translations/officials/ministers#-nine-ministers-ii-205]]，而賔碩亦從此顯名於東國，仕至[[豫州|/zh-hant/maps/map-overall?admin=16]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。初平末，賔碩以東方飢荒，南客[[荊州|/zh-hant/maps/map-overall?admin=2]]。至[[興平|/zh-hant/maps/map-overall?lat=27.45613666&lng=115.62884387&name=Xingping]]中，趙岐以[[太僕|/zh-hant/translations/officials/ministers#-nine-ministers-ii-205]][[持節|/zh-hant/translations/officials#glossary-bearer-of-the-imperial-tally]]使安慰天下，南詣[[荊州|/zh-hant/maps/map-overall?admin=2]]，乃復與賔碩相遇，相對流涕。岐為劉表陳其本末，由是益禮賔碩。頃之，賔碩病亡，岐在南，為行喪也。\n\n楊阿若後名豐，字伯陽，[[酒泉|/zh-hant/maps/map-overall?admin=141]]人。少游俠，常以報仇解怨為事，故時人為之號曰：「東市相斫楊阿若，西市相斫楊阿若。」至建安年中，[[太守|/zh-hant/translations/officials/regional#commanderies-039]]徐揖誅郡中彊族黃氏。時黃昂得脫在外，乃以其家粟金數斛，募衆得千餘人以攻揖。揖城守。豐時在外，以昂為不義，乃告揖，捐妻子走詣[[張掖|/zh-hant/maps/map-overall?admin=137]]求救。會[[張掖|/zh-hant/maps/map-overall?admin=137]]又反，殺[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，而昂亦陷城殺揖，二郡合勢。昂恚豐不與己同，乃重募取豐，欲令[[張掖|/zh-hant/maps/map-overall?admin=137]]以麻繫其頭，生致之。豐遂逃走。\n\n[[武威|/zh-hant/maps/map-overall?admin=138]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]張猛假豐為[[都尉|/zh-hant/translations/officials/regional#commanderies-043]]，使齎檄告[[酒泉|/zh-hant/maps/map-overall?admin=141]]，聽豐為揖報仇。豐遂單騎入南羌中，合衆得千餘騎，從[[樂涫|/zh-hant/maps/map-overall?lat=39.52222931&lng=98.90869979&name=Leguan]]南山中出，指趨郡城。未到三十[[里|/zh-hant/translations/officials#glossary-li]]，皆令騎下馬，曳柴揚塵。[[酒泉|/zh-hant/maps/map-overall?admin=141]]郡人望見塵起，以為東大兵到，遂破散。昂獨走出，羌捕得昂，豐謂昂曰：「卿前欲生繫我頸，今反為我所繫，云何？」昂慙謝，豐遂殺之。時黃華在東，又還領郡。豐畏華，復走依燉煌。至黃初中，河西興復，黃華降，豐乃還郡。郡舉孝廉，州表其義勇，詔即拜[[駙馬都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-177]]。後二十餘年，病亡。\n\n鮑出字文才，[[京兆|/zh-hant/maps/map-overall?admin=142]][[新豐|/zh-hant/maps/map-overall?lat=34.49086422&lng=109.37253375&name=Xinfeng]]人也。少游俠。興平中，三輔亂，出與老母兄弟五人家居本縣，以饑餓，留其母守舍，相將行採蓬實，合得數升，使其二兄初、雅及其弟成持歸，為母作食，獨與小弟在後採蓬。初等到家，而噉人賊數十人已略其母，以繩貫其手掌，驅去。初等怖恐，不敢追逐。須臾，出從後到，知母為賊所略，欲追賊。兄弟皆云：「賊衆，當如何？」出怒曰：「有母而使賊貫其手，將去煑噉之，用活何為？」乃攘臂結衽獨追之，行數[[里|/zh-hant/translations/officials#glossary-li]]及賊。\n\n賊望見出，乃共布列待之。出到，回從一頭斫賊四五人。賊走，復合聚圍出，出跳越圍斫之，又殺十餘人。時賊分布，驅出母前去。賊連擊出，不勝，乃走與前輩合。出復追擊之，還見其母與比舍嫗同貫相連，出遂復奮擊賊。賊問出曰：「卿欲何得？」出責數賊，指其母以示之，賊乃解還出母。比舍嫗獨不解，遙望出求哀。出復斫賊，賊謂出曰：「已還卿母，何為不止？」出又指求哀嫗：「此我嫂也。」賊復解還之。出得母還，遂相扶將，客[[南陽|/zh-hant/maps/map-overall?admin=85&lat=35.61104535&lng=114.9728879]]。\n\n建安五年，關中始開，出來北歸，而其母不能步行，兄弟欲共輿之。出以輿車歷山險危，不如負之安穩，乃以籠盛其母，獨自負之，到鄉里。鄉里士大夫嘉其孝烈，欲薦州郡，郡辟召出，出曰：「田民不堪冠帶。」至青龍中，母年百餘歲乃終，出時年七十餘，行喪如禮，於今年八九十，才若五六十者。\n\n魚豢曰：昔孔子歎顏回，以為三月不違仁者，蓋觀其心耳，孰如孫、祝菜色於市里，顛倒於牢獄，據有實事哉？且夫[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]周氏不敢匿迹，魯之朱家不問情實，是何也？懼禍之及，且心不安也。而太史公猶貴其竟脫季布，豈若二賢，厥義多乎？今故遠收孫、祝，而近錄楊、鮑，旣不欲其泯滅，且敦薄俗。至於鮑出，不染禮教，心痛意發，起於自然，迹雖在編戶，與篤烈君子何以異乎？若夫楊阿若，少稱任俠，長遂蹈義，自西徂東，摧討逆節，可謂勇而有仁者也。",
-          "zhs": "魏略勇侠传载孙賔硕、祝公道、杨阿若、鲍出等四人，賔硕虽汉人，而鱼豢编之魏书，盖以其人接魏，事义相类故也。论其行节，皆庞、阎之流。其祝公道一人，已见贾逵传。今列賔硕等三人于后。\n\n孙賔硕者，[[北海|/zh-hans/maps/map-overall?admin=44]]人也，家素贫。当汉桓帝时，[[常侍|/zh-hans/translations/officials/regional#states-074]]左悺、唐衡等权侔人主。延熹中，衡弟为[[京兆|/zh-hans/maps/map-overall?admin=142]]虎牙[[都尉|/zh-hans/translations/officials/regional#commanderies-043]]，秩比二千[[石|/zh-hans/translations/officials#glossary-shi]]，而统属郡。衡弟初之官，不修敬于[[京兆|/zh-hans/maps/map-overall?admin=142]]尹，入门不持版，郡[[功曹|/zh-hans/translations/officials/regional#commanderies-038]]赵息呵廊下曰：「虎牙仪如属城，何得放臂入府门？」促收其[[主簿|/zh-hans/translations/officials/regional#commanderies-051]]。衡弟顾促取版，既入见尹，尹欲修主人，𠡠外为市买。息又启云：「左悺子弟，来为虎牙，非德选，不足为特酤买，宜随中舍菜食而已。」及其到官，遣吏奉牋谢尹，息又𠡠门，言「无常见此无阴儿辈子弟邪，用其笺记为通乎？」晚乃通之，又不得即令报。\n\n衡弟皆知之，甚恚，欲灭诸赵。因书与衡，求为[[京兆|/zh-hans/maps/map-overall?admin=142]]尹，旬月之间，得为之。息自知前过，乃逃走。时息从父仲台，见为[[凉州|/zh-hans/maps/map-overall?admin=5]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，于是衡为诏征仲台，遣归。遂诏中都官及郡部[[督邮|/zh-hans/translations/officials/regional#commanderies-055]]，捕诸赵尺儿以上，及仲台皆杀之，有藏者与同罪。时息从父岐为[[皮氏|/zh-hans/maps/map-overall?lat=35.58996403&lng=110.67438942&name=Pishi]][[长|/zh-hans/translations/officials/regional#counties-089]]，闻有家祸，因从官舍逃，走之[[河间|/zh-hans/maps/map-overall?admin=156&lat=35.58996403&lng=110.67438942]]，变姓字，又转诣[[北海|/zh-hans/maps/map-overall?admin=44]]，著絮巾布袴，常于市中贩胡饼。\n\n賔硕时年二十余，乘犊车，将骑入市。观见岐，疑其非常人也。因问之曰：「自有饼邪，贩之邪？」岐曰：「贩之。」賔硕曰：「买几钱？卖几钱？」岐曰：「买三十，卖亦三十。」賔硕曰：「视处士之望，非似卖饼者，殆有故！」乃开车后户，顾所将两骑，令下马扶上之。时岐以为是唐氏耳目也，甚怖，面失色。賔硕闭车后户，下前襜，谓之曰：「视处士状貌，既非贩饼者，加今面色变动，即不有重怨，则当亡命。我[[北海|/zh-hans/maps/map-overall?admin=44]]孙賔硕也，阖门百口，又有百岁老母在堂，势能相度者也，终不相负，必语我以实。」\n\n岐乃具告之。賔硕遂载岐驱归。住车门外，先入，白母言：「今日出得死友在外，当来入拜。」乃出，延岐入，椎牛钟酒，快相娱乐。一二日，因载著别田舍，藏置复壁中。后数岁，唐衡及弟皆死。岐乃得出，还本郡。三府并辟，展转仕进，至郡[[守|/zh-hans/translations/officials/regional#commanderies-039]]、[[刺史|/zh-hans/translations/officials/regional#provinces-014]]、[[太仆|/zh-hans/translations/officials/ministers#-nine-ministers-ii-205]]，而賔硕亦从此显名于东国，仕至[[豫州|/zh-hans/maps/map-overall?admin=16]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。初平末，賔硕以东方饥荒，南客[[荆州|/zh-hans/maps/map-overall?admin=2]]。至[[兴平|/zh-hans/maps/map-overall?lat=27.45613666&lng=115.62884387&name=Xingping]]中，赵岐以[[太仆|/zh-hans/translations/officials/ministers#-nine-ministers-ii-205]][[持节|/zh-hans/translations/officials#glossary-bearer-of-the-imperial-tally]]使安慰天下，南诣[[荆州|/zh-hans/maps/map-overall?admin=2]]，乃复与賔硕相遇，相对流涕。岐为刘表陈其本末，由是益礼賔硕。顷之，賔硕病亡，岐在南，为行丧也。\n\n杨阿若后名丰，字伯阳，[[酒泉|/zh-hans/maps/map-overall?admin=141]]人。少游侠，常以报仇解怨为事，故时人为之号曰：「东市相斫杨阿若，西市相斫杨阿若。」至建安年中，[[太守|/zh-hans/translations/officials/regional#commanderies-039]]徐揖诛郡中彊族黄氏。时黄昂得脱在外，乃以其家粟金数斛，募众得千余人以攻揖。揖城守。丰时在外，以昂为不义，乃告揖，捐妻子走诣[[张掖|/zh-hans/maps/map-overall?admin=137]]求救。会[[张掖|/zh-hans/maps/map-overall?admin=137]]又反，杀[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，而昂亦陷城杀揖，二郡合势。昂恚丰不与己同，乃重募取丰，欲令[[张掖|/zh-hans/maps/map-overall?admin=137]]以麻系其头，生致之。丰遂逃走。\n\n[[武威|/zh-hans/maps/map-overall?admin=138]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]张猛假丰为[[都尉|/zh-hans/translations/officials/regional#commanderies-043]]，使赍檄告[[酒泉|/zh-hans/maps/map-overall?admin=141]]，听丰为揖报仇。丰遂单骑入南羌中，合众得千余骑，从[[乐涫|/zh-hans/maps/map-overall?lat=39.52222931&lng=98.90869979&name=Leguan]]南山中出，指趋郡城。未到三十[[里|/zh-hans/translations/officials#glossary-li]]，皆令骑下马，曳柴扬尘。[[酒泉|/zh-hans/maps/map-overall?admin=141]]郡人望见尘起，以为东大兵到，遂破散。昂独走出，羌捕得昂，丰谓昂曰：「卿前欲生系我颈，今反为我所系，云何？」昂慙谢，丰遂杀之。时黄华在东，又还领郡。丰畏华，复走依燉煌。至黄初中，河西兴复，黄华降，丰乃还郡。郡举孝廉，州表其义勇，诏即拜[[驸马都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-177]]。后二十余年，病亡。\n\n鲍出字文才，[[京兆|/zh-hans/maps/map-overall?admin=142]][[新丰|/zh-hans/maps/map-overall?lat=34.49086422&lng=109.37253375&name=Xinfeng]]人也。少游侠。兴平中，三辅乱，出与老母兄弟五人家居本县，以饥饿，留其母守舍，相将行采蓬实，合得数升，使其二兄初、雅及其弟成持归，为母作食，独与小弟在后采蓬。初等到家，而噉人贼数十人已略其母，以绳贯其手掌，驱去。初等怖恐，不敢追逐。须臾，出从后到，知母为贼所略，欲追贼。兄弟皆云：「贼众，当如何？」出怒曰：「有母而使贼贯其手，将去煑噉之，用活何为？」乃攘臂结衽独追之，行数[[里|/zh-hans/translations/officials#glossary-li]]及贼。\n\n贼望见出，乃共布列待之。出到，回从一头斫贼四五人。贼走，复合聚围出，出跳越围斫之，又杀十余人。时贼分布，驱出母前去。贼连击出，不胜，乃走与前辈合。出复追击之，还见其母与比舍妪同贯相连，出遂复奋击贼。贼问出曰：「卿欲何得？」出责数贼，指其母以示之，贼乃解还出母。比舍妪独不解，遥望出求哀。出复斫贼，贼谓出曰：「已还卿母，何为不止？」出又指求哀妪：「此我嫂也。」贼复解还之。出得母还，遂相扶将，客[[南阳|/zh-hans/maps/map-overall?admin=85&lat=35.61104535&lng=114.9728879]]。\n\n建安五年，关中始开，出来北归，而其母不能步行，兄弟欲共舆之。出以舆车历山险危，不如负之安稳，乃以笼盛其母，独自负之，到乡里。乡里士大夫嘉其孝烈，欲荐州郡，郡辟召出，出曰：「田民不堪冠带。」至青龙中，母年百余岁乃终，出时年七十余，行丧如礼，于今年八九十，才若五六十者。\n\n鱼豢曰：昔孔子叹颜回，以为三月不违仁者，盖观其心耳，孰如孙、祝菜色于市里，颠倒于牢狱，据有实事哉？且夫[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]周氏不敢匿迹，鲁之朱家不问情实，是何也？惧祸之及，且心不安也。而太史公犹贵其竟脱季布，岂若二贤，厥义多乎？今故远收孙、祝，而近录杨、鲍，既不欲其泯灭，且敦薄俗。至于鲍出，不染礼教，心痛意发，起于自然，迹虽在编户，与笃烈君子何以异乎？若夫杨阿若，少称任侠，长遂蹈义，自西徂东，摧讨逆节，可谓勇而有仁者也。",
-          "en": "The Biographies of the Brave and Chivalrous in the Weilüe / Brief History of Wei records four men: Sun Binshuo, Zhu Gongdao, Yang A'ruo, and Bao Chu. Although Binshuo was a man of Shu-Han, Yu Huan included him in his book, presumably because these men had links with Wei and their deeds were of a kind. In conduct and integrity, they all belonged to the class of Pang Yu and Yan Wen. Zhu Gongdao has already appeared in the Biography of Jia Kui. The other three are set out below.\n\nSun Binshuo was from [[Beihai State|/maps/map-overall?admin=44]]. His family had always been poor. During the reign of Emperor Huan of Han, the Accomplished Emperor, [[Regular Attendant|/translations/officials/regional#states-074]] Zuo Guan, Tang Heng, and others wielded power equal to the ruler. During the Yanxi era, Tang Heng's younger brother became Tiger Tooth [[Commandant|/translations/officials/regional#commanderies-043]] of [[Jingzhao|/maps/map-overall?admin=142]], an office subordinate to the commandery and ranked equivalent to 2000 [[Shi|/translations/officials#glossary-shi]]. When Tang Heng's brother first took office, he showed no respect to the Intendant of [[Jingzhao|/maps/map-overall?admin=142]]. He entered the gates without carrying his tablet, and Zhao Xi, the commandery's [[Merit Section Foreman Clerk|/translations/officials/regional#commanderies-038]], rebuked him from the corridor: \"The standing of the Tiger Tooth is subordinate to the Intendant. How dare you stroll into the Intendant's office with arms swinging free?\" Zhao Xi then had his [[Registrar|/translations/officials/regional#commanderies-051]] arrested. Tang Heng's brother hurriedly sent for his tablet. Once he had entered and met the Intendant, the latter wished to receive him with due hospitality and ordered provisions from the market for his welcome. Zhao Xi remonstrated again: \"A kinsman of a man like Zuo Guan has come here as Tiger Tooth [[Commandant|/translations/officials/regional#commanderies-043]]. He was not chosen for his virtue and merits no special provision of wine and food. He should simply eat the ordinary fare of the lodge.\" Upon taking up his post, he sent an official to present a formal letter of thanks to the Intendant. Zhao Xi again instructed the gatekeepers, saying, \"Do you not often see the sons and younger kinsmen of these eunuchs? Why should a mere letter from him gain him admittance?\" It was not passed on until evening, and even then no immediate reply was given.\n\nTang Heng's brother learnt of all this and was furious. He resolved to exterminate the entire Zhao clan. He wrote to Tang Heng asking to become Intendant of [[Jingzhao|/maps/map-overall?admin=142]], and within a month or so secured the post. Recognising the imminent danger, Zhao Xi fled. At the time, his paternal uncle Zhao Zhongtai was about to become [[Inspector|/translations/officials/regional#provinces-014]] of [[Liang Province|/maps/map-overall?admin=5]]. Tang Heng procured an edict summoning Zhao Zhongtai and dismissed him. An imperial order then commanded the capital offices and the [[Post Marshal|/translations/officials/regional?lat=35.58996403&lng=110.67438942]]s of the commanderies to arrest and kill every member of the Zhao clan, including Zhao Zhongtai, from children one chi tall upwards. Anyone who sheltered them was subject to the same punishment. Another of Zhao Xi's paternal uncles, Zhao Qi, was then [[Chief|/translations/officials/regional#counties-089]] of [[Pishi|/maps/map-overall?lat=35.58996403&lng=110.67438942&name=Pishi]]. When he heard of the disaster that had befallen his clan, he abandoned his post and fled to [[Hejian|/maps/map-overall?admin=156]]. He changed his name and courtesy name, then moved on to [[Beihai State|/maps/map-overall?admin=44]]. Wearing a padded cap and coarse trousers, he made a living selling flatbreads in the marketplace. \n\nSun Binshuo, then in his twenties, entered the market in an ox-cart. When he saw Zhao Qi, he suspected that he was no ordinary man. He asked, \"Do you make these cakes yourself, or resell them?\" \"I resell them,\" Zhao Qi replied. \"What do they cost, and what do you charge?\" \"I buy them for thirty cash and sell them for thirty.\" Sun Binshuo said, \"By your bearing, sir, you do not look like a bread seller. There must be some reason for this.\" He opened the rear door of the cart and ordered his two horsemen to dismount and help Zhao Qi inside. Zhao Qi thought they must be agents of the Tang family and was terrified. Sun Binshuo closed the rear door, lowered the front curtain, and said, \"By your appearance, you are clearly no bread seller. Now your face has changed colour as well. Either you have incurred a bitter feud or you are a fugitive. I am Sun Binshuo of [[Beihai State|/maps/map-overall?admin=44]]. My household numbers a hundred mouths, and I have a mother of a hundred years at home. I understand your circumstances. I would never betray you. You must tell me the truth.\" \n\nZhao Qi then told him everything. Sun Binshuo drove him straight home, halted the cart outside the gate, and went in first to tell his mother: \"Today I met a friend worth dying for. He is outside and will come in to pay his respects.\" He went out, invited Zhao Qi inside, slaughtered an ox, brought out wine, and feasted with him. A day or two later, he transported Zhao Qi to a detached farmstead and hid him within a double wall. Several years later, Tang Heng and his brother both died. Zhao Qi was at last able to emerge and return to his home commandery. All Three Excellencies summoned him to service, and he rose successively through office to become a commandery [[Administrator|/translations/officials/regional#commanderies-039]], [[Inspector|/translations/officials/regional#provinces-014]], and [[Minister Coachman|/translations/officials/ministers#-nine-ministers-ii-205]]. Sun Binshuo likewise became renowned throughout the eastern provinces and eventually served as [[Inspector|/translations/officials/regional#provinces-014]] of [[Yu Province|/maps/map-overall?admin=16]].At the end of the Chuping era, famine in the east drove Sun Binshuo south to [[Jing Province|/maps/map-overall?admin=2]]. During the [[Xingping|/maps/map-overall?lat=27.45613666&lng=115.62884387&name=Xingping]] era, Zhao Qi, then [[Minister Coachman|/translations/officials/ministers#-nine-ministers-ii-205]], was sent out as [[Bearer of the Imperial Tally|/translations/officials#glossary-bearer-of-the-imperial-tally]] to conciliate the realm. When he travelled south to [[Jing Province|/maps/map-overall?admin=2]], he met Sun Binshuo again, and the two faced each other with tears streaming down their cheeks. Zhao Qi related the whole affair to Liu Biao, who thereafter treated Binshuo with still greater honour. Before long Binshuo died of illness. Zhao Qi, still in the south, observed mourning for him. \n\nYang Aruo, later named Feng and with the courtesy name Boyang, was from [[Jiuquan|/maps/map-overall?admin=141]]. In his youth, he was known for his chivalrous ways, often avenging wrongs and settling grievances. People of the time therefore had a saying: \"When blades clash in the eastern market, there is Yang Aruo. When blades clash in the western market, there is Yang Aruo.\" During the Jian'an era, [[Grand Administrator|/translations/officials/regional#commanderies-039]] Xu Yi executed the powerful Huang clan of his commandery. Huang Ang escaped and used several hu of gold from his family's stores to recruit more than a thousand men, with whom he attacked Xu Yi. Xu Yi held the city against him. Yang Feng was then away from home, but regarded Huang Ang's cause as unjust. He sent word to Xu Yi, left his wife and children, and hastened to [[Zhangye|/maps/map-overall?admin=137]] to seek aid. Just then, a rebellion also broke out in [[Zhangye|/maps/map-overall?admin=137]], and the [[Grand Administrator|/translations/officials/regional#commanderies-039]] was killed. Huang Ang likewise captured the city and killed Xu Yi, after which the forces of the two commanderies united. Enraged that Yang Feng had refused to join him, Huang Ang offered a large reward for his capture. He wanted the men of [[Zhangye|/maps/map-overall?admin=137]] to bind Yang Feng by the head with hemp and deliver him alive. Yang Feng was forced to flee.\n\n Zhang Meng, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Wuwei|/maps/map-overall?admin=138]], provisionally appointed Yang Feng Commandant and sent him with a proclamation to [[Jiuquan|/maps/map-overall?admin=141]], authorising him to avenge Xu Yi. Yang Feng rode alone among the Southern Qiang and gathered more than a thousand cavalry. Emerging through the southern mountains of [[Leguan|/maps/map-overall?lat=39.52222931&lng=98.90869979&name=Leguan]], he headed directly for the commandery seat. When still thirty [[Li|/translations/officials#glossary-li]] away, he ordered every rider to dismount and drag bundles of brushwood behind him, raising clouds of dust. The people of [[Jiuquan|/maps/map-overall?admin=141]] saw the dust and believed that a great army had arrived from the east. Their forces collapsed and scattered. Huang Ang escaped alone, but the Qiang army caught him. Yang Feng said, \"You once meant to bind me by the neck and take me alive. Now it is you who are bound before me. What have you to say?\" Huang Ang pleaded in shame, but Yang Feng killed him. Huang Hua was then in the east and returned to take control of the commandery. Fearing that Huang Hua might retaliate against him, Yang Feng fled once more, this time to Dunhuang. During the Huangchu era, order was restored in the Hexi region and Huang Hua surrendered. Feng then returned to his commandery. The commandery nominated him as Filial and Incorrupt, while the province submitted a memorial praising his righteousness and courage. By imperial edict he was immediately appointed [[Commandant of Escorting Cavalry|/translations/officials/ministers#-nine-ministers-i-177]]. He died of illness more than twenty years later. \n\nBao Chu, courtesy name Wencai, was from [[Xinfeng|/maps/map-overall?lat=34.49086422&lng=109.37253375&name=Xinfeng]], [[Jingzhao|/maps/map-overall?admin=142]].In his youth, he was also known for his chivalrous ways. During the Xingping era, when the Three Capital Areas were in turmoil, Bao Chu and his four brothers lived with their aged mother in their native county. Driven by hunger, they left their mother to look after the house while they went together to gather lotus seeds. After they had collected several pints, Bao Chu sent his elder brothers Chu and Ya and his younger brother Cheng home to prepare food for their mother, while he and his youngest brother remained to gather more. By the time the three reached home, several dozen man-eating bandits had abducted their mother. They had tied her hands and were about to drive her away. Terrified, the brothers dared not pursue them. Soon afterwards Bao Chu returned and learnt that his mother had been taken. He made ready to follow the bandits. His brothers all said, \"There are too many of them. What can we do?\" Bao Chu answered furiously, \"What use is there in living if, while our mother still lives, we allow bandits to bind her hands, carry her off, boil her, and eat her?\" He bared his arms, hitched up his robe, and set off alone. After several li, he caught up with the bandits. \n\nSeeing him, they drew together and waited for his approach. Bao Chu charged them, wheeled around, and struck one end of their line, cutting down four or five men. The rest fled, but soon regrouped and surrounded him. Bao Chu broke out of the encirclement and charged them again, killing more than ten. Meanwhile, some of the bandits had gone ahead with Bao Chu's mother. The others repeatedly attacked him but could not overcome him, so they fled to join the forward party. Bao Chu pursued them and again attacked. He then saw his mother bound by the same rope to an old woman from a neighbouring house, and renewed his assault. The bandits called out, \"What do you want?\" Bao Chu denounced their crimes and pointed at his mother. They untied her and gave her back. The neighbour remained bound and cried out to Bao Chu for mercy from afar. Bao Chu attacked the bandits once more. The bandit said, \"We have already returned your mother. Why will you not stop?\" Pointing to the woman who had called to him, Bao Chu replied, \"She is my sister-in-law.\" The bandits untied her too and let her go. Bao Chu received his mother, and the family helped one another south to seek refuge in [[Nanyang|/maps/map-overall?admin=85]]. \n\nIn the fifth year of Jian'an, when Guanzhong first reopened, Bao Chu set out north for home. His mother could no longer walk, and his brothers wanted to carry her together in a cart. Bao Chu thought a cart would be perilous over the mountain roads and that carrying her on his back would be safer. He therefore placed her in a basket and bore her home alone. The local gentry admired his intense filial devotion and wished to recommend him to the province and commandery. When the commandery summoned him to office, Bao Chu said, \"I am a man of the fields and unfit for cap and sash.\" During the Qinglong era, his mother died at more than a hundred years of age. Bao Chu was then over seventy. He observed every mourning rite. He is now between eighty and ninety, yet looked like a man of fifty or sixty. \n\nYu Huan said: When Confucius praised Yan Hui for not straying from benevolence for three months, he could only have been judging his heart. Who can compare with Sun Bingsuo and Zhu Gongdao, one gaunt in the marketplace and the other suffering in prison, whose virtue was borne out by their deeds? Moreover, the Zhou family of [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]] did not dare openly shelter the fugitive, while Zhu Jia of Lu did not ask the truth of the matter. Why was this? They feared that disaster might reach them, yet their consciences would not let them stand aside. Even so, the Grand Historian esteemed Zhu Jia for ultimately securing Ji Bu's release. How could he compare with these two worthies, whose righteousness was greater still? I have therefore gathered the more distant accounts of Sun Bingsuo and Zhu Gongdao and recorded the more recent deeds of Yang Feng and Bao Chu. I wished not only to preserve their names from oblivion, but also to strengthen the weak morals of our age. Bao Chu had never been imbued with ritual instruction. The pain in his heart stirred his resolve, and his actions sprang entirely from his natural feelings. Though but a common man, how did he differ from a gentleman of steadfast and ardent virtue? Yang Aruo was famed in youth for his chivalry, and in maturity distinguished himself through righteous deeds. From west to east, he struck down and punished rebels. He may truly be called courageous and benevolent."
+          "zht": "魏略勇俠傳載孫賔碩、祝公道、楊阿若、鮑出等四人，賔碩雖漢人，而魚豢編之魏書，蓋以其人接魏，事義相類故也。論其行節，皆龐、閻之流。其祝公道一人，已見賈逵傳。今列賔碩等三人于後。\n\n孫賔碩者，[[北海|/zh-hant/maps/map-overall?admin=44]]人也，家素貧。當漢桓帝時，[[常侍|/zh-hant/translations/officials/regional#states-074]]左悺、唐衡等權侔人主。延熹中，衡弟為[[京兆|/zh-hant/maps/map-overall?admin=142]]虎牙[[都尉|/zh-hant/translations/officials/regional#commanderies-043]]，秩比二千[[石|/zh-hant/translations/officials#glossary-shi]]，而統屬郡。衡弟初之官，不脩敬於[[京兆|/zh-hant/maps/map-overall?admin=142]]尹，入門不持版，郡[[功曹|/zh-hant/translations/officials/regional#commanderies-038]]趙息呵廊下曰：「虎牙儀如屬城，何得放臂入府門？」促收其[[主簿|/zh-hant/translations/officials/regional#commanderies-051]]。衡弟顧促取版，旣入見尹，尹欲脩主人，勑外為市買。息又啟云：「左悺子弟，來為虎牙，非德選，不足為特酤買，宜隨中舍菜食而已。」及其到官，遣吏奉牋謝尹，息又勑門，言「無常見此無陰兒輩子弟邪，用其箋記為通乎？」晚乃通之，又不得即令報。\n\n衡弟皆知之，甚恚，欲滅諸趙。因書與衡，求為[[京兆|/zh-hant/maps/map-overall?admin=142]]尹，旬月之間，得為之。息自知前過，乃逃走。時息從父仲臺，見為[[涼州|/zh-hant/maps/map-overall?admin=5]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，於是衡為詔徵仲臺，遣歸。遂詔中都官及郡部[[督郵|/zh-hant/translations/officials/regional#commanderies-055]]，捕諸趙尺兒以上，及仲臺皆殺之，有藏者與同罪。時息從父岐為[[皮氏|/zh-hant/maps/map-overall?lat=35.58996403&lng=110.67438942&name=Pishi]][[長|/zh-hant/translations/officials/regional#counties-089]]，聞有家禍，因從官舍逃，走之[[河間|/zh-hant/maps/map-overall?admin=156&lat=35.58996403&lng=110.67438942]]，變姓字，又轉詣[[北海|/zh-hant/maps/map-overall?admin=44]]，著絮巾布袴，常於市中販胡餅。\n\n賔碩時年二十餘，乘犢車，將騎入市。觀見岐，疑其非常人也。因問之曰：「自有餅邪，販之邪？」岐曰：「販之。」賔碩曰：「買幾錢？賣幾錢？」岐曰：「買三十，賣亦三十。」賔碩曰：「視處士之望，非似賣餅者，殆有故！」乃開車後戶，顧所將兩騎，令下馬扶上之。時岐以為是唐氏耳目也，甚怖，面失色。賔碩閉車後戶，下前襜，謂之曰：「視處士狀貌，旣非販餅者，加今面色變動，即不有重怨，則當亡命。我[[北海|/zh-hant/maps/map-overall?admin=44]]孫賔碩也，闔門百口，又有百歲老母在堂，勢能相度者也，終不相負，必語我以實。」\n\n岐乃具告之。賔碩遂載岐驅歸。住車門外，先入，白母言：「今日出得死友在外，當來入拜。」乃出，延岐入，椎牛鍾酒，快相娛樂。一二日，因載著別田舍，藏置複壁中。後數歲，唐衡及弟皆死。岐乃得出，還本郡。三府並辟，展轉仕進，至郡[[守|/zh-hant/translations/officials/regional#commanderies-039]]、[[刺史|/zh-hant/translations/officials/regional#provinces-014]]、[[太僕|/zh-hant/translations/officials/ministers#-nine-ministers-ii-205]]，而賔碩亦從此顯名於東國，仕至[[豫州|/zh-hant/maps/map-overall?admin=16]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。初平末，賔碩以東方飢荒，南客[[荊州|/zh-hant/maps/map-overall?admin=2]]。至[[興平|/zh-hant/maps/map-overall?lat=27.45613666&lng=115.62884387&name=Xingping]]中，趙岐以[[太僕|/zh-hant/translations/officials/ministers#-nine-ministers-ii-205]][[持節|/zh-hant/translations/officials#glossary-bearer-of-the-imperial-tally]]使安慰天下，南詣[[荊州|/zh-hant/maps/map-overall?admin=2]]，乃復與賔碩相遇，相對流涕。岐為劉表陳其本末，由是益禮賔碩。頃之，賔碩病亡，岐在南，為行喪也。\n\n楊阿若後名豐，字伯陽，[[酒泉|/zh-hant/maps/map-overall?admin=141]]人。少游俠，常以報仇解怨為事，故時人為之號曰：「東市相斫楊阿若，西市相斫楊阿若。」至建安年中，[[太守|/zh-hant/translations/officials/regional#commanderies-039]]徐揖誅郡中彊族黃氏。時黃昂得脫在外，乃以其家粟金數斛，募衆得千餘人以攻揖。揖城守。豐時在外，以昂為不義，乃告揖，捐妻子走詣[[張掖|/zh-hant/maps/map-overall?admin=137]]求救。會[[張掖|/zh-hant/maps/map-overall?admin=137]]又反，殺[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，而昂亦陷城殺揖，二郡合勢。昂恚豐不與己同，乃重募取豐，欲令[[張掖|/zh-hant/maps/map-overall?admin=137]]以麻繫其頭，生致之。豐遂逃走。\n\n[[武威|/zh-hant/maps/map-overall?admin=138]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]張猛假豐為[[都尉|/zh-hant/translations/officials/regional#commanderies-043]]，使齎檄告[[酒泉|/zh-hant/maps/map-overall?admin=141]]，聽豐為揖報仇。豐遂單騎入南羌中，合衆得千餘騎，從[[樂涫|/zh-hant/maps/map-overall?lat=39.52222931&lng=98.90869979&name=Leguan]]南山中出，指趨郡城。未到三十[[里|/zh-hant/translations/officials#glossary-li]]，皆令騎下馬，曳柴揚塵。[[酒泉|/zh-hant/maps/map-overall?admin=141]]郡人望見塵起，以為東大兵到，遂破散。昂獨走出，羌捕得昂，豐謂昂曰：「卿前欲生繫我頸，今反為我所繫，云何？」昂慙謝，豐遂殺之。時黃華在東，又還領郡。豐畏華，復走依燉煌。至黃初中，河西興復，黃華降，豐乃還郡。郡舉孝廉，州表其義勇，詔即拜[[駙馬都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-177]]。後二十餘年，病亡。\n\n鮑出字文才，[[京兆|/zh-hant/maps/map-overall?admin=142]][[新豐|/zh-hant/maps/map-overall?lat=34.49086422&lng=109.37253375&name=Xinfeng]]人也。少游俠。興平中，[[三輔|/zh-hant/translations/officials#glossary-three-capital-regions]]亂，出與老母兄弟五人家居本縣，以饑餓，留其母守舍，相將行採蓬實，合得數升，使其二兄初、雅及其弟成持歸，為母作食，獨與小弟在後採蓬。初等到家，而噉人賊數十人已略其母，以繩貫其手掌，驅去。初等怖恐，不敢追逐。須臾，出從後到，知母為賊所略，欲追賊。兄弟皆云：「賊衆，當如何？」出怒曰：「有母而使賊貫其手，將去煑噉之，用活何為？」乃攘臂結衽獨追之，行數[[里|/zh-hant/translations/officials#glossary-li]]及賊。\n\n賊望見出，乃共布列待之。出到，回從一頭斫賊四五人。賊走，復合聚圍出，出跳越圍斫之，又殺十餘人。時賊分布，驅出母前去。賊連擊出，不勝，乃走與前輩合。出復追擊之，還見其母與比舍嫗同貫相連，出遂復奮擊賊。賊問出曰：「卿欲何得？」出責數賊，指其母以示之，賊乃解還出母。比舍嫗獨不解，遙望出求哀。出復斫賊，賊謂出曰：「已還卿母，何為不止？」出又指求哀嫗：「此我嫂也。」賊復解還之。出得母還，遂相扶將，客[[南陽|/zh-hant/maps/map-overall?admin=85&lat=35.61104535&lng=114.9728879]]。\n\n建安五年，[[關中|/zh-hant/translations/officials#glossary-inside-the-pass-guanzhong]]始開，出來北歸，而其母不能步行，兄弟欲共輿之。出以輿車歷山險危，不如負之安穩，乃以籠盛其母，獨自負之，到鄉里。鄉里士大夫嘉其孝烈，欲薦州郡，郡辟召出，出曰：「田民不堪冠帶。」至青龍中，母年百餘歲乃終，出時年七十餘，行喪如禮，於今年八九十，才若五六十者。\n\n魚豢曰：昔孔子歎顏回，以為三月不違仁者，蓋觀其心耳，孰如孫、祝菜色於市里，顛倒於牢獄，據有實事哉？且夫[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]周氏不敢匿迹，魯之朱家不問情實，是何也？懼禍之及，且心不安也。而太史公猶貴其竟脫季布，豈若二賢，厥義多乎？今故遠收孫、祝，而近錄楊、鮑，旣不欲其泯滅，且敦薄俗。至於鮑出，不染禮教，心痛意發，起於自然，迹雖在編戶，與篤烈君子何以異乎？若夫楊阿若，少稱任俠，長遂蹈義，自西徂東，摧討逆節，可謂勇而有仁者也。",
+          "zhs": "魏略勇侠传载孙賔硕、祝公道、杨阿若、鲍出等四人，賔硕虽汉人，而鱼豢编之魏书，盖以其人接魏，事义相类故也。论其行节，皆庞、阎之流。其祝公道一人，已见贾逵传。今列賔硕等三人于后。\n\n孙賔硕者，[[北海|/zh-hans/maps/map-overall?admin=44]]人也，家素贫。当汉桓帝时，[[常侍|/zh-hans/translations/officials/regional#states-074]]左悺、唐衡等权侔人主。延熹中，衡弟为[[京兆|/zh-hans/maps/map-overall?admin=142]]虎牙[[都尉|/zh-hans/translations/officials/regional#commanderies-043]]，秩比二千[[石|/zh-hans/translations/officials#glossary-shi]]，而统属郡。衡弟初之官，不修敬于[[京兆|/zh-hans/maps/map-overall?admin=142]]尹，入门不持版，郡[[功曹|/zh-hans/translations/officials/regional#commanderies-038]]赵息呵廊下曰：「虎牙仪如属城，何得放臂入府门？」促收其[[主簿|/zh-hans/translations/officials/regional#commanderies-051]]。衡弟顾促取版，既入见尹，尹欲修主人，𠡠外为市买。息又启云：「左悺子弟，来为虎牙，非德选，不足为特酤买，宜随中舍菜食而已。」及其到官，遣吏奉牋谢尹，息又𠡠门，言「无常见此无阴儿辈子弟邪，用其笺记为通乎？」晚乃通之，又不得即令报。\n\n衡弟皆知之，甚恚，欲灭诸赵。因书与衡，求为[[京兆|/zh-hans/maps/map-overall?admin=142]]尹，旬月之间，得为之。息自知前过，乃逃走。时息从父仲台，见为[[凉州|/zh-hans/maps/map-overall?admin=5]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，于是衡为诏征仲台，遣归。遂诏中都官及郡部[[督邮|/zh-hans/translations/officials/regional#commanderies-055]]，捕诸赵尺儿以上，及仲台皆杀之，有藏者与同罪。时息从父岐为[[皮氏|/zh-hans/maps/map-overall?lat=35.58996403&lng=110.67438942&name=Pishi]][[长|/zh-hans/translations/officials/regional#counties-089]]，闻有家祸，因从官舍逃，走之[[河间|/zh-hans/maps/map-overall?admin=156&lat=35.58996403&lng=110.67438942]]，变姓字，又转诣[[北海|/zh-hans/maps/map-overall?admin=44]]，著絮巾布袴，常于市中贩胡饼。\n\n賔硕时年二十余，乘犊车，将骑入市。观见岐，疑其非常人也。因问之曰：「自有饼邪，贩之邪？」岐曰：「贩之。」賔硕曰：「买几钱？卖几钱？」岐曰：「买三十，卖亦三十。」賔硕曰：「视处士之望，非似卖饼者，殆有故！」乃开车后户，顾所将两骑，令下马扶上之。时岐以为是唐氏耳目也，甚怖，面失色。賔硕闭车后户，下前襜，谓之曰：「视处士状貌，既非贩饼者，加今面色变动，即不有重怨，则当亡命。我[[北海|/zh-hans/maps/map-overall?admin=44]]孙賔硕也，阖门百口，又有百岁老母在堂，势能相度者也，终不相负，必语我以实。」\n\n岐乃具告之。賔硕遂载岐驱归。住车门外，先入，白母言：「今日出得死友在外，当来入拜。」乃出，延岐入，椎牛钟酒，快相娱乐。一二日，因载著别田舍，藏置复壁中。后数岁，唐衡及弟皆死。岐乃得出，还本郡。三府并辟，展转仕进，至郡[[守|/zh-hans/translations/officials/regional#commanderies-039]]、[[刺史|/zh-hans/translations/officials/regional#provinces-014]]、[[太仆|/zh-hans/translations/officials/ministers#-nine-ministers-ii-205]]，而賔硕亦从此显名于东国，仕至[[豫州|/zh-hans/maps/map-overall?admin=16]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。初平末，賔硕以东方饥荒，南客[[荆州|/zh-hans/maps/map-overall?admin=2]]。至[[兴平|/zh-hans/maps/map-overall?lat=27.45613666&lng=115.62884387&name=Xingping]]中，赵岐以[[太仆|/zh-hans/translations/officials/ministers#-nine-ministers-ii-205]][[持节|/zh-hans/translations/officials#glossary-bearer-of-the-imperial-tally]]使安慰天下，南诣[[荆州|/zh-hans/maps/map-overall?admin=2]]，乃复与賔硕相遇，相对流涕。岐为刘表陈其本末，由是益礼賔硕。顷之，賔硕病亡，岐在南，为行丧也。\n\n杨阿若后名丰，字伯阳，[[酒泉|/zh-hans/maps/map-overall?admin=141]]人。少游侠，常以报仇解怨为事，故时人为之号曰：「东市相斫杨阿若，西市相斫杨阿若。」至建安年中，[[太守|/zh-hans/translations/officials/regional#commanderies-039]]徐揖诛郡中彊族黄氏。时黄昂得脱在外，乃以其家粟金数斛，募众得千余人以攻揖。揖城守。丰时在外，以昂为不义，乃告揖，捐妻子走诣[[张掖|/zh-hans/maps/map-overall?admin=137]]求救。会[[张掖|/zh-hans/maps/map-overall?admin=137]]又反，杀[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，而昂亦陷城杀揖，二郡合势。昂恚丰不与己同，乃重募取丰，欲令[[张掖|/zh-hans/maps/map-overall?admin=137]]以麻系其头，生致之。丰遂逃走。\n\n[[武威|/zh-hans/maps/map-overall?admin=138]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]张猛假丰为[[都尉|/zh-hans/translations/officials/regional#commanderies-043]]，使赍檄告[[酒泉|/zh-hans/maps/map-overall?admin=141]]，听丰为揖报仇。丰遂单骑入南羌中，合众得千余骑，从[[乐涫|/zh-hans/maps/map-overall?lat=39.52222931&lng=98.90869979&name=Leguan]]南山中出，指趋郡城。未到三十[[里|/zh-hans/translations/officials#glossary-li]]，皆令骑下马，曳柴扬尘。[[酒泉|/zh-hans/maps/map-overall?admin=141]]郡人望见尘起，以为东大兵到，遂破散。昂独走出，羌捕得昂，丰谓昂曰：「卿前欲生系我颈，今反为我所系，云何？」昂慙谢，丰遂杀之。时黄华在东，又还领郡。丰畏华，复走依燉煌。至黄初中，河西兴复，黄华降，丰乃还郡。郡举孝廉，州表其义勇，诏即拜[[驸马都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-177]]。后二十余年，病亡。\n\n鲍出字文才，[[京兆|/zh-hans/maps/map-overall?admin=142]][[新丰|/zh-hans/maps/map-overall?lat=34.49086422&lng=109.37253375&name=Xinfeng]]人也。少游侠。兴平中，[[三辅|/zh-hans/translations/officials#glossary-three-capital-regions]]乱，出与老母兄弟五人家居本县，以饥饿，留其母守舍，相将行采蓬实，合得数升，使其二兄初、雅及其弟成持归，为母作食，独与小弟在后采蓬。初等到家，而噉人贼数十人已略其母，以绳贯其手掌，驱去。初等怖恐，不敢追逐。须臾，出从后到，知母为贼所略，欲追贼。兄弟皆云：「贼众，当如何？」出怒曰：「有母而使贼贯其手，将去煑噉之，用活何为？」乃攘臂结衽独追之，行数[[里|/zh-hans/translations/officials#glossary-li]]及贼。\n\n贼望见出，乃共布列待之。出到，回从一头斫贼四五人。贼走，复合聚围出，出跳越围斫之，又杀十余人。时贼分布，驱出母前去。贼连击出，不胜，乃走与前辈合。出复追击之，还见其母与比舍妪同贯相连，出遂复奋击贼。贼问出曰：「卿欲何得？」出责数贼，指其母以示之，贼乃解还出母。比舍妪独不解，遥望出求哀。出复斫贼，贼谓出曰：「已还卿母，何为不止？」出又指求哀妪：「此我嫂也。」贼复解还之。出得母还，遂相扶将，客[[南阳|/zh-hans/maps/map-overall?admin=85&lat=35.61104535&lng=114.9728879]]。\n\n建安五年，[[关中|/zh-hans/translations/officials#glossary-inside-the-pass-guanzhong]]始开，出来北归，而其母不能步行，兄弟欲共舆之。出以舆车历山险危，不如负之安稳，乃以笼盛其母，独自负之，到乡里。乡里士大夫嘉其孝烈，欲荐州郡，郡辟召出，出曰：「田民不堪冠带。」至青龙中，母年百余岁乃终，出时年七十余，行丧如礼，于今年八九十，才若五六十者。\n\n鱼豢曰：昔孔子叹颜回，以为三月不违仁者，盖观其心耳，孰如孙、祝菜色于市里，颠倒于牢狱，据有实事哉？且夫[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]周氏不敢匿迹，鲁之朱家不问情实，是何也？惧祸之及，且心不安也。而太史公犹贵其竟脱季布，岂若二贤，厥义多乎？今故远收孙、祝，而近录杨、鲍，既不欲其泯灭，且敦薄俗。至于鲍出，不染礼教，心痛意发，起于自然，迹虽在编户，与笃烈君子何以异乎？若夫杨阿若，少称任侠，长遂蹈义，自西徂东，摧讨逆节，可谓勇而有仁者也。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略·勇侠传》记载了孙宾硕、祝公道、杨阿若、鲍出等四人的事迹。孙宾硕虽然是汉朝人，但鱼豢把他编入《魏书》，大概是因为他与曹魏有交集，事迹的意义相类似的缘故。论及他们的品行气节，都是庞淯、阎温一类的人。其中祝公道这个人，他的事迹已经在《贾逵传》中出现过了，现在把孙宾硕等三人的事迹列在这里。\n\n孙宾硕是北海人，家中向来贫穷，在汉桓帝时，常侍左悺、唐衡等人，权势与君主相当。延熹年间，唐衡的弟弟担任京兆虎牙都尉，俸禄等级相当于二千石，并且统管所属的郡县。唐衡的弟弟刚到任时，对京兆尹没有表示出应有的尊敬，进门时不拿着笏板。郡功曹赵息在廊下呵斥说：“虎牙都尉的礼仪就像属城官员一样，怎么能随意大摇大摆地进入府门呢？”便将他的主簿抓了起来。唐衡的弟弟急忙让人取来笏板。唐衡的弟弟进去拜见京兆尹后，京兆尹想要尽地主之谊，就命令外面的人去市场上购买物品。赵息又启奏说：“左家的子弟来担任虎牙都尉，不是凭借德行被选拔出来的，不适合担任此职，只是买来的官职，应当让他只在官署中吃粗茶淡饭而已。”等到左唐衡的弟弟到任后，派属吏带着书信去拜见京兆尹表示感谢，赵息又告诫守门人说：“难道没见过这种宦官子弟吗？还要为他们递上的书信通报吗？”直到晚上才得以通报，通报了也没有答复。\n\n唐衡的弟弟知道了这些事情后，非常愤怒，想要灭掉赵家所有人，于是写信给唐衡，请求担任京兆尹，在一个月之内，就得到了这个职位。赵息知道自己之前得罪了左唐衡的弟弟，于是逃走了。当时赵息的叔父仲台正担任凉州刺史，于是唐衡伪造诏书罢免仲台，接着下诏令中都官和郡部督邮，逮捕所有赵姓家族中身高一尺以上的人以及仲台，然后将他们全部杀掉。如果有人藏匿赵家的人，和罪犯同罪。当时赵息的叔父赵岐担任皮氏县长，听说家中遭遇灾祸，便从官舍逃走，前往河间，更改了姓名，又辗转来到北海，头戴棉絮头巾、身穿布裤，经常在集市中售卖胡饼。\n\n孙宾硕当时二十多岁，乘坐着牛车，带着随从骑马进入集市，看到赵岐，怀疑他不是一般人，于是问他说：“这是你自己做的饼吗？是自己有饼，还是靠卖饼为生呢？”赵岐说：“我只是卖的。”。宾硕问：“买饼花多少钱，卖多少钱？”赵岐说：“买进时是三十钱，卖出时也是三十钱。”宾硕说：“看您的样子，不像是卖饼的人，大概是有什么缘故。”于是他打开车后门，并示意他所带的两名骑马的随从，让他们下马把人扶上车。当时赵岐以为宾硕是唐家人的眼线，非常害怕，脸色都变了。宾硕关上车后门，拉下车前的帘子，对他说：“看您的样子，显然不是卖饼的人，再加上现在脸色变了，如果不是有深仇大恨，那就是在逃亡。我是北海的孙宾硕，全家上百口人，还有百岁老母在世，有能力帮你想办法解决困境。我绝对不会辜负你，你一定要把实情告诉我。”\n\n赵岐于是把事情的经过详细地告诉了他。宾硕于是载着赵岐驱车回家，把车停在门外，先进去禀告母亲说：“今天出门，在外面结识了一位生死之交的朋友，他随后会进来拜见您。”之后孙宾硕出来邀请赵岐进屋，杀牛摆酒，尽情地一同欢乐了一两天，接着用车把他送到另外一处田庄，藏在夹壁墙里。几年后，唐衡和他的弟弟都死了，赵岐才得以回到本郡。三公府同时征召他，他辗转任职升迁，官至郡守、刺史、太仆。而孙宾硕也从此在东方地区声名远扬，官至豫州刺史。初平末年，宾硕因为东方发生饥荒，就到南方的荆州客居。到了兴平年间，赵岐以太仆的身份持着符节出使去安抚天下百姓，向南前往荆州，于是又与宾硕相遇，两人相对流泪。赵岐向刘表讲述了事情的来龙去脉，因此刘表更加礼待孙宾硕。不久，宾硕因病去世，赵岐在南方为他操办丧事。\n\n杨阿若后来改名叫丰，字伯阳，是酒泉人。年少时就行侠仗义，常常把替人报仇化解仇怨当作自己的事，所以当时的人给他起了个称号，叫“东市互殴找杨阿若，西市互殴找杨阿若”。到了建安年间，太守徐揖诛杀了郡中的豪强大族黄氏。当时黄昂逃脱在外，于是用他家的几斛粮食和钱财，招募到一千多人，来攻打徐揖。徐揖据城坚守，杨丰当时在城外，认为黄昂的行为不正义，于是告知徐揖，舍弃妻子儿女跑到张掖求救。恰逢张掖又发生叛乱，杀死了太守，而黄昂也攻陷城池杀死了徐揖。两个郡联合起来，形成了势力。黄昂恼怒杨丰不与自己同心，于是重金悬赏捉拿杨丰，想要让张掖人用麻绳系住他的头，将他活捉送来。杨丰于是逃走了。\n\n武威太守张猛任命杨丰代理都尉，让他带着檄文去通告酒泉郡，准许杨丰为徐揖报仇。杨丰于是单人匹马进入南羌地区，聚集部众得到一千多骑兵，从乐涫南山中出来，直奔郡城。距离郡城还有三十里时，就命令骑兵都下马，拖着柴草扬起尘土。酒泉郡的人远远望见扬起的尘土，以为是东边的大军到了，于是四散奔逃。黄昂独自逃了出去。羌人捕获了昂，杨丰对昂说：“你之前想把我活捉绑住脖子，现在反而被我绑住了，你还有什么话说？”黄昂道歉谢罪并感到羞愧，杨丰于是杀了他。当时黄华在东边，又回来担任酒泉郡太守。丰畏惧他，又逃到敦煌。到了黄初年间，河西地区重新安定下来，黄华二十多年后，他因病去世。投降后，杨丰才回到了酒泉郡。郡里举荐他为孝廉，州里上表称赞他的义勇，朝廷下诏立即任命他为驸马都尉。\n\n鲍出，字文才，是京兆郡新丰县人。鲍出年轻时行侠仗义。兴平年间，三辅地区发生动乱，鲍出与老母亲和兄弟五人居住在本县，由于饥饿，留下母亲看守房屋，兄弟们一起出去采摘蓬草籽，一共采得几升，让他的两个哥哥鲍初、鲍雅以及弟弟鲍成拿回去，给母亲做饭，自己单独和小弟在后面采摘蓬草籽。鲍初等人回到家，却发现有几十个吃人肉的贼人，已经掳掠了他们的母亲，用绳子穿过她的手掌，驱赶着她离开。鲍初等人惊恐害怕，不敢去追赶。过了一会儿，鲍出从后面赶到，知道母亲被贼人掳走，想要去追赶贼人。兄弟们都说：“贼寇人多势众，我们能怎么办呢？”鲍出愤怒地说：“有母亲却让贼人把她的手穿绑住，将她带走煮着吃，我活着还有什么用？”于是捋起袖子扎好衣襟，独自去追赶贼人。走了几里路，赶上了贼人。\n\n贼人望见鲍出，就一起排开阵势等待他。鲍出赶到后，转身从一侧砍杀了四五个贼人。贼人逃跑后，又重新聚集起来将鲍出包围，鲍出纵身跳出包围圈砍杀他们，又杀死了十多人。这时贼人分散开来，赶着鲍出的母亲继续往前走，贼人接连攻击鲍出，不能取胜，就逃走了，与前面的贼人会合。鲍出又继续追击那些贼人，回来时看到自己的母亲和邻居老妇人的手掌被绳子穿在一起，鲍出于是又奋力攻击贼人。贼人问鲍出说：“你想要什么？”鲍出斥责数落这些贼人，指着自己的母亲给他们看，贼人于是就解开绳子，归还了鲍出的母亲。邻居家的老妇人还没有被解开绳索，远远地望着鲍出哀求。鲍出又去砍杀贼人，贼人对鲍出说：“已经把你的母亲还给你了，为什么还不停手呢？”鲍出又指着哀求的老妇人说：“这是我的嫂子。”贼人又解开绳子把邻居老妇人还给了他。鲍出救回母亲后，便相互扶持着客居南阳。\n\n建安五年，关中开始开放，鲍出向北返回，而他的母亲不能步行，兄弟们想共同用车载她。但鲍出认为用车经过山路险峻危险，不如背着安稳，于是就把母亲放在笼子里，独自背着笼子回到乡里，乡里的士大夫赞赏他的孝顺和刚勇，想向州郡举荐他，郡里征召出，出说：“我就是个种田的百姓，做不了官。”到了青龙年间，他母亲一百多岁才去世。鲍出当时七十多岁，按照礼仪为母亲守丧。到现在他八九十岁了，看起来才像五六十岁的人。\n\n鱼豢说：从前孔子赞叹颜回，认为他能在三个月内不违背仁德，大概是观察他的内心罢了。怎么能比得上孙、祝面奔波在集市，身处牢狱遭受磨难，这些可都是实实在在发生的事情啊？况且濮阳周氏不敢隐匿行踪，鲁地的朱家不过问事情的实际情况，这是为什么呢？害怕灾祸降临到自己身上，而且内心也感到不安。而太史公还推崇他们最终使季布逃脱，这难道比得上这两位贤士的义举吗？现在所以收录年代久远的孙、祝，以及年代较近的杨、鲍，既不想让他们的事迹湮灭，又想以此来敦厚浇薄的风俗。至于鲍出，没有受到礼教的熏陶，内心的悲痛之情自发产生，出于自然本性，虽然身为普通百姓，和那些笃厚刚烈的君子又有什么不同呢？至于杨阿若，年少时就以侠义闻名，长大后践行道义，从西到东，讨伐叛逆之人，可以说是勇敢且有仁德的人。"
+          },
+          "en": "The Biographies of the Brave and Chivalrous in the Weilüe / Brief History of Wei records four men: Sun Binshuo, Zhu Gongdao, Yang A'ruo, and Bao Chu. Although Binshuo was a man of Shu-Han, Yu Huan included him in his book, presumably because these men had links with Wei and their deeds were of a kind. In conduct and integrity, they all belonged to the class of Pang Yu and Yan Wen. Zhu Gongdao has already appeared in the Biography of Jia Kui. The other three are set out below.\n\nSun Binshuo was from [[Beihai State|/maps/map-overall?admin=44]]. His family had always been poor. During the reign of Emperor Huan of Han, the Accomplished Emperor, [[Regular Attendant|/translations/officials/regional#states-074]] Zuo Guan, Tang Heng, and others wielded power equal to the ruler. During the Yanxi era, Tang Heng's younger brother became Tiger Tooth [[Commandant|/translations/officials/regional#commanderies-043]] of [[Jingzhao|/maps/map-overall?admin=142]], an office subordinate to the commandery and ranked equivalent to 2000 [[Shi|/translations/officials#glossary-shi]]. When Tang Heng's brother first took office, he showed no respect to the Intendant of [[Jingzhao|/maps/map-overall?admin=142]]. He entered the gates without carrying his tablet, and Zhao Xi, the commandery's [[Merit Section Foreman Clerk|/translations/officials/regional#commanderies-038]], rebuked him from the corridor: \"The standing of the Tiger Tooth is subordinate to the Intendant. How dare you stroll into the Intendant's office with arms swinging free?\" Zhao Xi then had his [[Registrar|/translations/officials/regional#commanderies-051]] arrested. Tang Heng's brother hurriedly sent for his tablet. Once he had entered and met the Intendant, the latter wished to receive him with due hospitality and ordered provisions from the market for his welcome. Zhao Xi remonstrated again: \"A kinsman of a man like Zuo Guan has come here as Tiger Tooth [[Commandant|/translations/officials/regional#commanderies-043]]. He was not chosen for his virtue and merits no special provision of wine and food. He should simply eat the ordinary fare of the lodge.\" Upon taking up his post, he sent an official to present a formal letter of thanks to the Intendant. Zhao Xi again instructed the gatekeepers, saying, \"Do you not often see the sons and younger kinsmen of these eunuchs? Why should we transmit his letter?\" It was not passed on until evening, and even then no immediate reply was given.\n\nTang Heng's brother learnt of all this and was furious. He resolved to exterminate the entire Zhao clan. He wrote to Tang Heng asking to become Intendant of [[Jingzhao|/maps/map-overall?admin=142]], and within a month or so secured the post. Recognising the imminent danger, Zhao Xi fled. At the time, his paternal uncle Zhao Zhongtai was about to become [[Inspector|/translations/officials/regional#provinces-014]] of [[Liang Province|/maps/map-overall?admin=5]]. Tang Heng procured an edict summoning Zhao Zhongtai and dismissed him. An imperial order then commanded the capital offices and the [[Post Marshal|/translations/officials/regional?lat=35.58996403&lng=110.67438942]]s of the commanderies to arrest and kill every member of the Zhao clan, including Zhao Zhongtai, from children one chi tall upwards. Anyone who sheltered them was subject to the same punishment. Another of Zhao Xi's paternal uncles, Zhao Qi, was then [[Chief|/translations/officials/regional#counties-089]] of [[Pishi|/maps/map-overall?lat=35.58996403&lng=110.67438942&name=Pishi]]. When he heard of the disaster that had befallen his clan, he abandoned his post and fled to [[Hejian|/maps/map-overall?admin=156]]. He changed his name and courtesy name, then moved on to [[Beihai State|/maps/map-overall?admin=44]]. Wearing a padded cap and coarse trousers, he made a living selling flatbreads in the marketplace. \n\nSun Binshuo, then in his twenties, entered the market in an ox-cart. When he saw Zhao Qi, he suspected that he was no ordinary man. He asked, \"Do you make these cakes yourself, or resell them?\" \"I resell them,\" Zhao Qi replied. \"What do they cost, and what do you charge?\" \"I buy them for thirty cash and sell them for thirty.\" Sun Binshuo said, \"By your bearing, sir, you do not look like a bread seller. There must be some reason for this.\" He opened the rear door of the cart and ordered his two horsemen to dismount and help Zhao Qi inside. Zhao Qi thought they must be agents of the Tang family and was terrified. Sun Binshuo closed the rear door, lowered the front curtain, and said, \"By your appearance, you are clearly no bread seller. Now your face has changed colour as well. Either you have incurred a bitter feud or you are a fugitive. I am Sun Binshuo of [[Beihai State|/maps/map-overall?admin=44]]. My household numbers a hundred mouths, and I have a mother of a hundred years at home. I understand your circumstances. I would never betray you. You must tell me the truth.\" \n\nZhao Qi then told him everything. Sun Binshuo drove him straight home, halted the cart outside the gate, and went in first to tell his mother: \"Today I met a friend worth dying for. He is outside and will come in to pay his respects.\" He went out, invited Zhao Qi inside, slaughtered an ox, brought out wine, and feasted with him. A day or two later, he transported Zhao Qi to a detached farmstead and hid him within a double wall. Several years later, Tang Heng and his brother both died. Zhao Qi was at last able to emerge and return to his home commandery. All Three Excellencies summoned him to service, and he rose successively through office to become a commandery [[Administrator|/translations/officials/regional#commanderies-039]], [[Inspector|/translations/officials/regional#provinces-014]], and [[Minister Coachman|/translations/officials/ministers#-nine-ministers-ii-205]]. Sun Binshuo likewise became renowned throughout the eastern provinces and eventually served as [[Inspector|/translations/officials/regional#provinces-014]] of [[Yu Province|/maps/map-overall?admin=16]].At the end of the Chuping era, famine in the east drove Sun Binshuo south to [[Jing Province|/maps/map-overall?admin=2]]. During the [[Xingping|/maps/map-overall?lat=27.45613666&lng=115.62884387&name=Xingping]] era, Zhao Qi, then [[Minister Coachman|/translations/officials/ministers#-nine-ministers-ii-205]], was sent out as [[Bearer of the Imperial Tally|/translations/officials#glossary-bearer-of-the-imperial-tally]] to conciliate the realm. When he travelled south to [[Jing Province|/maps/map-overall?admin=2]], he met Sun Binshuo again, and the two faced each other with tears streaming down their cheeks. Zhao Qi related the whole affair to Liu Biao, who thereafter treated Binshuo with still greater honour. Before long Binshuo died of illness. Zhao Qi, still in the south, observed mourning for him. \n\nYang Aruo, later named Feng and with the courtesy name Boyang, was from [[Jiuquan|/maps/map-overall?admin=141]]. In his youth, he was known for his chivalrous ways, often avenging wrongs and settling grievances. People of the time therefore had a saying: \"When blades clash in the eastern market, there is Yang Aruo. When blades clash in the western market, there is Yang Aruo.\" During the Jian'an era, [[Grand Administrator|/translations/officials/regional#commanderies-039]] Xu Yi executed the powerful Huang clan of his commandery. Huang Ang escaped and used several hu of gold from his family's stores to recruit more than a thousand men, with whom he attacked Xu Yi. Xu Yi held the city against him. Yang Feng was then away from home, but regarded Huang Ang's cause as unjust. He sent word to Xu Yi, left his wife and children, and hastened to [[Zhangye|/maps/map-overall?admin=137]] to seek aid. Just then, a rebellion also broke out in [[Zhangye|/maps/map-overall?admin=137]], and the [[Grand Administrator|/translations/officials/regional#commanderies-039]] was killed. Huang Ang likewise captured the city and killed Xu Yi, after which the forces of the two commanderies united. Enraged that Yang Feng had refused to join him, Huang Ang offered a large reward for his capture. He wanted the men of [[Zhangye|/maps/map-overall?admin=137]] to bind Yang Feng by the head with hemp and deliver him alive. Yang Feng was forced to flee.\n\n Zhang Meng, [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Wuwei|/maps/map-overall?admin=138]], provisionally appointed Yang Feng Commandant and sent him with a proclamation to [[Jiuquan|/maps/map-overall?admin=141]], authorising him to avenge Xu Yi. Yang Feng rode alone among the Southern Qiang and gathered more than a thousand cavalry. Emerging through the southern mountains of [[Leguan|/maps/map-overall?lat=39.52222931&lng=98.90869979&name=Leguan]], he headed directly for the commandery seat. When still thirty [[Li|/translations/officials#glossary-li]] away, he ordered every rider to dismount and drag bundles of brushwood behind him, raising clouds of dust. The people of [[Jiuquan|/maps/map-overall?admin=141]] saw the dust and believed that a great army had arrived from the east. Their forces collapsed and scattered. Huang Ang escaped alone, but the Qiang army caught him. Yang Feng said, \"You once meant to bind me by the neck and take me alive. Now it is you who are bound before me. What have you to say?\" Huang Ang pleaded in shame, but Yang Feng killed him. Huang Hua was then in the east and returned to take control of the commandery. Fearing that Huang Hua might retaliate against him, Yang Feng fled once more, this time to Dunhuang. During the Huangchu era, order was restored in the Hexi region and Huang Hua surrendered. Feng then returned to his commandery. The commandery nominated him as Filial and Incorrupt, while the province submitted a memorial praising his righteousness and courage. By imperial edict he was immediately appointed [[Commandant of Escorting Cavalry|/translations/officials/ministers#-nine-ministers-i-177]]. He died of illness more than twenty years later. \n\nBao Chu, courtesy name Wencai, was from [[Xinfeng|/maps/map-overall?lat=34.49086422&lng=109.37253375&name=Xinfeng]], [[Jingzhao|/maps/map-overall?admin=142]].In his youth, he was also known for his chivalrous ways. During the Xingping era, when the [[Three Capital Regions|/translations/officials#glossary-three-capital-regions]] were in turmoil, Bao Chu and his four brothers lived with their aged mother in their native county. Driven by hunger, they left their mother to look after the house while they went together to gather seeds. After they had collected several pints, Bao Chu sent his elder brothers Chu and Ya and his younger brother Cheng home to prepare food for their mother, while he and his youngest brother remained to gather more. By the time the three reached home, several dozen man-eating bandits had abducted their mother. They had tied her hands and were about to drive her away. Terrified, the brothers dared not pursue them. Soon afterwards Bao Chu returned and learnt that his mother had been taken. He made ready to follow the bandits. His brothers all said, \"There are too many of them. What can we do?\" Bao Chu answered furiously, \"What use is there in living if, while our mother still lives, we allow bandits to bind her hands, carry her off, boil her, and eat her?\" He bared his arms, hitched up his robe, and set off alone. After several li, he caught up with the bandits. \n\nSeeing him, they drew together and waited for his approach. Bao Chu charged them, wheeled around, and struck one end of their line, cutting down four or five men. The rest fled, but soon regrouped and surrounded him. Bao Chu broke out of the encirclement and charged them again, killing more than ten. Meanwhile, some of the bandits had gone ahead with Bao Chu's mother. The others repeatedly attacked him but could not overcome him, so they fled to join the forward party. Bao Chu pursued them and again attacked. He then saw his mother bound by the same rope to an old woman from a neighbouring house, and renewed his assault. The bandits called out, \"What do you want?\" Bao Chu denounced their crimes and pointed at his mother. They untied her and gave her back. The neighbour remained bound and cried out to Bao Chu for mercy from afar. Bao Chu attacked the bandits once more. The bandit said, \"We have already returned your mother. Why will you not stop?\" Pointing to the woman who had called to him, Bao Chu replied, \"She is my sister-in-law.\" The bandits untied her too and let her go. Bao Chu received his mother, and the family helped one another south to seek refuge in [[Nanyang|/maps/map-overall?admin=85]]. \n\nIn the fifth year of Jian'an, when the region [[Inside the Pass|/translations/officials#glossary-inside-the-pass-guanzhong]] first reopened, Bao Chu set out north for home. His mother could no longer walk, and his brothers wanted to carry her together in a cart. Bao Chu thought a cart would be perilous over the mountain roads and that carrying her on his back would be safer. He therefore placed her in a basket and bore her home alone. The local gentry admired his intense filial devotion and wished to recommend him to the province and commandery. When the commandery summoned him to office, Bao Chu said, \"I am a man of the fields and unfit for cap and sash.\" During the Qinglong era, his mother died at more than a hundred years of age. Bao Chu was then over seventy. He observed every mourning rite. He is now between eighty and ninety, yet looked like a man of fifty or sixty. \n\nYu Huan said: When Confucius praised Yan Hui for not straying from benevolence for three months, he could only have been judging his heart. Who can compare with Sun Bingsuo and Zhu Gongdao, one gaunt in the marketplace and the other suffering in prison, whose virtue was borne out by their deeds? Moreover, the Zhou family of [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]] did not dare openly shelter the fugitive, while Zhu Jia of Lu did not ask the truth of the matter. Why was this? They feared that disaster might reach them, yet their consciences would not let them stand aside. Even so, the Grand Historian esteemed Zhu Jia for ultimately securing Ji Bu's release. How could he compare with these two worthies, whose righteousness was greater still? I have therefore gathered the more distant accounts of Sun Bingsuo and Zhu Gongdao and recorded the more recent deeds of Yang Feng and Bao Chu. I wished not only to preserve their names from oblivion, but also to strengthen the weak morals of our age. Bao Chu had never been imbued with ritual instruction. The pain in his heart stirred his resolve, and his actions sprang entirely from his natural feelings. Though but a common man, how did he differ from a gentleman of steadfast and ardent virtue? Yang Aruo was famed in youth for his chivalry, and in maturity distinguished himself through righteous deeds. From west to east, he struck down and punished rebels. He may truly be called courageous and benevolent."
         }
       ]
     }

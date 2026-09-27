@@ -1,0 +1,1555 @@
+{
+  "id": "wei-shu-16d",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 16,
+  "num": "16",
+  "label": {
+    "zht": "杜畿子恕傳 · 附孟康、樂詳",
+    "zhs": "杜畿子恕传 · 附孟康、乐详",
+    "en": "Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
+  },
+  "title": {
+    "zht": "魏書十六 · 杜畿子恕傳 · 附孟康、樂詳",
+    "zhs": "魏书十六 · 杜畿子恕传 · 附孟康、乐详",
+    "en": "Book of Wei, Chapter 16 · Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
+  },
+  "relationships": [
+    {
+      "from": "杜恕（務伯）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "During the Taihe era Du Shu served Cao Rui as Cavalier Attendant Gentleman and Attendant Gentleman within the Yellow Gates; Cao Rui, considering him the son of a great minister, promoted him despite his lack of early reputation.",
+            "zht": "太和年間杜恕侍奉曹叡，任散騎侍郎、黃門侍郎；曹叡因他是大臣之子而加以提拔，雖然他早年並無聲名。",
+            "zhs": "太和年间杜恕侍奉曹叡，任散骑侍郎、黄门侍郎；曹叡因他是大臣之子而加以提拔，虽然他早年并无声名。"
+          },
+          "title": {
+            "en": "Attendant Gentleman within the Yellow Gates",
+            "zht": "黃門侍郎",
+            "zhs": "黄门侍郎"
+          }
+        },
+        {
+          "passageId": "ws16d-p23",
+          "text": {
+            "en": "For eight years at court, Du Shu submitted uncompromising and forthright memorials on economy, official assessment and the ruler's use of ministers.",
+            "zht": "杜恕在朝八年，屢次上疏直言，論財用、考課及君主用臣之道，無所迴避。",
+            "zhs": "杜恕在朝八年，屡次上疏直言，论财用、考课及君主用臣之道，无所回避。"
+          }
+        },
+        {
+          "passageId": "ws16d-p24",
+          "text": {
+            "en": "Because he would not conform to his contemporaries' ways, Du Shu was repeatedly sent out of the capital, as Grand Administrator of Hongnong and Hedong, Protector of the Provincial Army north of the Huai, and Inspector of You Province with the Imperial Tally.",
+            "zht": "杜恕在朝不肯隨俗，屢被外放，歷任弘農太守、河東太守、淮北都督護軍，後出任幽州刺史，持節，領護烏丸校尉。",
+            "zhs": "杜恕在朝不肯随俗，屡被外放，历任弘农太守、河东太守、淮北都督护军，后出任幽州刺史，持节，领护乌丸校尉。"
+          },
+          "title": {
+            "en": "Inspector of You Province",
+            "zht": "幽州刺史",
+            "zhs": "幽州刺史"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "李豐（安國）",
+      "type": "personal",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Du Shu and Li Feng had been close since childhood, but as adults their aims diverged sharply: Li Feng assiduously cultivated his reputation while Du Shu was unrestrained, and Li Feng regarded Du Shu with hostility, rising at court while Du Shu stayed at home; they later served together at court.",
+            "zht": "杜恕與李豐自幼親近，成年後志趣迥異：李豐刻意修飾名聲，杜恕則不拘小節，李豐因此敵視杜恕；李豐在朝中顯達時杜恕仍閒居在家，後來二人同朝為官。",
+            "zhs": "杜恕与李丰自幼亲近，成年后志趣迥异：李丰刻意修饰名声，杜恕则不拘小节，李丰因此敌视杜恕；李丰在朝中显达时杜恕仍闲居在家，后来二人同朝为官。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "辛毗（佐治）",
+      "to": "杜恕（務伯）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Because Du Shu cultivated no private connections and spoke forthrightly for the public good, Palace Attendant Xin Pi and others held him in high regard.",
+            "zht": "杜恕在朝不結私黨、一心為公，敢於直言，侍中辛毗等人因此十分敬重他。",
+            "zhs": "杜恕在朝不结私党、一心为公，敢于直言，侍中辛毗等人因此十分敬重他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "杜恕（務伯）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p4",
+          "text": {
+            "en": "Du Shu objected to giving Lü Zhao, General Who Garrisons the North, charge of Ji Province as well, arguing that a man of his abilities could readily be replaced and that civil and military offices should be separate.",
+            "zht": "杜恕反對讓鎮北將軍呂昭兼領冀州，認為以他的才幹不難另擇他人，並主張文武分職。",
+            "zhs": "杜恕反对让镇北将军吕昭兼领冀州，认为以他的才干不难另择他人，并主张文武分职。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "袁侃",
+      "to": "杜恕（務伯）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p12",
+          "text": {
+            "en": "Yuan Kan, a Gentleman within the Yellow Gates, was Du Shu's colleague and close friend, and later warned him to be careful in dealing with Cheng Xi, which Du Shu ignored.",
+            "zht": "黃門侍郎袁侃是杜恕的同僚與摯友，後來曾勸他謹慎對待程喜，杜恕卻不以為意。",
+            "zhs": "黄门侍郎袁侃是杜恕的同僚与挚友，后来曾劝他谨慎对待程喜，杜恕却不以为意。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "荀俁",
+      "to": "杜恕（務伯）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p12",
+          "text": {
+            "en": "Xun Yu, later Grand Administrator of Dong Commandery, was Du Shu's colleague and close friend.",
+            "zht": "荀俁是杜恕的同僚與摯友，後任東郡太守。",
+            "zhs": "荀俁是杜恕的同僚与挚友，后任东郡太守。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "廉昭",
+      "to": "曹璠",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p14",
+          "text": {
+            "en": "Imperial Secretariat Gentleman Lian Zhao submitted a memorial accusing Cao Fan, the Imperial Secretariat Left Assistant, of imposing punishments contrary to imperial edicts, and Cao Fan was tried and questioned.",
+            "zht": "尚書郎廉昭上奏彈劾尚書左丞曹璠用刑違背詔令，曹璠因此受到審訊。",
+            "zhs": "尚书郎廉昭上奏弹劾尚书左丞曹璠用刑违背诏令，曹璠因此受到审讯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "廉昭",
+      "to": "陳矯（季弼）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p14",
+          "text": {
+            "en": "Lian Zhao's accusation drew in the Director of the Imperial Secretariat, Chen Jiao, who submitted a memorial declaring he dared not evade punishment nor impose heavy penalties.",
+            "zht": "廉昭的彈劾牽涉尚書令陳矯，陳矯上奏表示不敢逃避責罰，也不敢加重處罰。",
+            "zhs": "廉昭的弹劾牵涉尚书令陈矫，陈矫上奏表示不敢逃避责罚，也不敢加重处罚。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "廉昭",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p13",
+          "text": {
+            "en": "Du Shu submitted a memorial remonstrating strongly against Lian Zhao, an outspoken official promoted for his abilities, urging the emperor not to let men like him sow confusion among the great ministers.",
+            "zht": "杜恕上疏強烈諫止，批評因才幹受提拔的廉昭好評議時事，請求皇帝勿讓此類人攪亂大臣。",
+            "zhs": "杜恕上疏强烈谏止，批评因才干受提拔的廉昭好评议时事，请求皇帝勿让此类人搅乱大臣。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "孔羨",
+      "to": "司馬通",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p21",
+          "text": {
+            "en": "Kong Xian, Colonel of the Capital, recruited the Grand General Sima Yi's arrogant and unruly younger brother Sima Tong, and the responsible officials stayed silent; Du Shu cited this as worse than yielding to private solicitation.",
+            "zht": "司隸校尉孔羨闢用大將軍司馬懿驕縱不羈的弟弟司馬通，有司緘口不言；杜恕認為此事比順從私托更為惡劣。",
+            "zhs": "司隶校尉孔羡辟用大将军司马懿骄纵不羁的弟弟司马通，有司缄口不言；杜恕认为此事比顺从私托更为恶劣。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "司馬懿（仲達）",
+      "to": "司馬通",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p21",
+          "text": {
+            "en": "A note identifies Sima Tong as King Xuan's fifth younger brother, an aide to the Colonel of the Capital.",
+            "zht": "注稱司馬通為宣王司馬懿的五弟，曾任司隸校尉屬官。",
+            "zhs": "注称司马通为宣王司马懿的五弟，曾任司隶校尉属官。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "司馬通",
+      "to": "司馬順",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p21",
+          "text": {
+            "en": "Sima Tong's son Sima Shun was enfeoffed as Neighbourhood Marquis of Longyang, but when Jin accepted Wei's abdication he refused to recognise the new mandate and was stripped of his title and exiled to Wuwei.",
+            "zht": "司馬通之子司馬順封隆陽亭侯，晉受魏禪時他拒不承認天命，被削爵流放武威。",
+            "zhs": "司马通之子司马顺封隆阳亭侯，晋受魏禅时他拒不承认天命，被削爵流放武威。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "孟康（公休）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p24",
+          "text": {
+            "en": "When Du Shu was transferred from Hongnong, Meng Kang succeeded him as Grand Administrator, governing with integrity, frugality and benevolence that won the praise of officials and people.",
+            "zht": "杜恕自弘農調任後，孟康繼任太守，為政清廉簡樸、仁厚有方，官民稱頌。",
+            "zhs": "杜恕自弘农调任后，孟康继任太守，为政清廉简朴、仁厚有方，官民称颂。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "程喜",
+      "to": "杜恕（務伯）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "After Du Shu's provincial authorities executed a young attendant of a Xianbei chieftain's son without a memorial, Cheng Xi, General Who Conquers the North, impeached him; Du Shu was sentenced to death, then pardoned for his father's sake, reduced to commoner status and exiled to Zhangwu.",
+            "zht": "鮮卑首領之子的隨從被幽州官府未經上奏擅自處死，北征將軍程喜彈劾杜恕，杜恕被判死罪，因其父杜畿殉職之功獲赦，廢為庶人，流放章武郡。",
+            "zhs": "鲜卑首领之子的随从被幽州官府未经上奏擅自处死，北征将军程喜弹劾杜恕，杜恕被判死罪，因其父杜畿殉职之功获赦，废为庶人，流放章武郡。"
+          }
+        },
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "Cheng Xi had wanted Du Shu to humble himself and apologise, and when Du Shu refused he drew up a harsh indictment against him.",
+            "zht": "程喜本想讓杜恕低頭謝罪，杜恕不從，他便寫下措辭嚴厲的彈劾文書。",
+            "zhs": "程喜本想让杜恕低头谢罪，杜恕不从，他便写下措辞严厉的弹劾文书。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "宋權",
+      "to": "程喜",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "Major Song Quan conveyed Cheng Xi's wish that Du Shu apologise.",
+            "zht": "軍司馬宋權轉達了程喜希望杜恕謝罪的意思。",
+            "zhs": "军司马宋权转达了程喜希望杜恕谢罪的意思。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "宋權",
+      "to": "杜恕（務伯）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "Du Shu replied to Song Quan in a letter explaining that he acted on his own convictions and would bear the consequences himself, whether or not Cheng Xi understood.",
+            "zht": "杜恕致書宋權，說明自己依己見行事，無論程喜是否理解，後果皆由自己承擔。",
+            "zhs": "杜恕致书宋权，说明自己依己见行事，无论程喜是否理解，后果皆由自己承担。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "阮武（文業）",
+      "to": "杜恕（務伯）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p26",
+          "text": {
+            "en": "When both were recalled and stood before the Commandant of Justice, Ruan Wu counselled Du Shu that he had talent but lacked firmness and singleness of purpose, and urged him to use his leisure to set forth a teaching of his own; Du Shu then wrote the Discourse on Fundamentals in exile.",
+            "zht": "二人同被召至廷尉，阮武勸告杜恕有才而少堅定、專一，請他利用閒暇著書立說；杜恕在流放期間遂作《體論》。",
+            "zhs": "二人同被召至廷尉，阮武劝告杜恕有才而少坚定、专一，请他利用闲暇著书立说；杜恕在流放期间遂作《体论》。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "杜預（元凱）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "In the second year of Ganlu, Yue Xiang's memorial on Du Ji's achievements moved the court to enfeoff Du Shu's son Du Yu as Neighbourhood Marquis of Fengle.",
+            "zht": "甘露二年，樂詳上表陳述杜畿的功績，朝廷感動，封杜恕之子杜預為豐樂亭侯。",
+            "zhs": "甘露二年，乐详上表陈述杜畿的功绩，朝廷感动，封杜恕之子杜预为丰乐亭侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜預（元凱）",
+      "to": "杜錫（世嘏）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Yu's son Du Xi, courtesy name Shigu, served as Imperial Secretariat Left Assistant.",
+            "zht": "杜預之子杜錫，字世嘏，官至尚書左丞。",
+            "zhs": "杜预之子杜锡，字世嘏，官至尚书左丞。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜預（元凱）",
+      "to": "司馬懿（仲達）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Yu was Sima Yi's son-in-law, and later rendered distinguished service to the house of Jin.",
+            "zht": "杜預是司馬懿的女婿，後來為晉室立下殊勳。",
+            "zhs": "杜预是司马懿的女婿，后来为晋室立下殊勋。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "杜理（務仲）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Ji's son Du Li, courtesy name Wuzhong, was keenly perceptive but died aged twenty-one.",
+            "zht": "杜畿之子杜理，字務仲，敏銳有識，二十一歲去世。",
+            "zhs": "杜畿之子杜理，字务仲，敏锐有识，二十一岁去世。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "杜寬（務叔）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Ji's son Du Kuan, courtesy name Wushu, was a learned, withdrawn scholar who died aged forty-two.",
+            "zht": "杜畿之子杜寬，字務叔，博學淡泊，四十二歲去世。",
+            "zhs": "杜畿之子杜宽，字务叔，博学淡泊，四十二岁去世。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "謝該",
+      "to": "樂詳（文載）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Yue Xiang travelled on foot from Nanyang to seek out Xie Gai, who was well versed in the Zuo Tradition, and had his doubts and difficulties resolved.",
+            "zht": "樂詳聞知南郡謝該精通《左傳》，徒步自南陽前往拜訪，請教疑難，得其解答。",
+            "zhs": "乐详闻知南郡谢该精通《左传》，徒步自南阳前往拜访，请教疑难，得其解答。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "司馬倫（子彝）",
+      "to": "杜武（世將）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Wu, Du Yu's elder cousin, served as Gentleman within the Yellow Gates but was unjustly executed by Sima Lun, Prince of Zhao.",
+            "zht": "杜預的堂兄杜武官至黃門侍郎，卻被趙王司馬倫冤殺。",
+            "zhs": "杜预的堂兄杜武官至黄门侍郎，却被赵王司马伦冤杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "阮武（文業）",
+      "to": "阮炳（叔文）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Wu's younger brother Ruan Bing, courtesy name Shuwen, served as Intendant of Henan and compiled a volume of prescriptions.",
+            "zht": "阮武之弟阮炳，字叔文，官至河南尹，並編有醫方一卷。",
+            "zhs": "阮武之弟阮炳，字叔文，官至河南尹，并编有医方一卷。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "阮炳（叔文）",
+      "to": "阮坦（弘舒）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Bing's son Ruan Tan, courtesy name Hongshu, served under Jin as Junior Tutor of the Crown Prince and General Who Subdues the East.",
+            "zht": "阮炳之子阮坦，字弘舒，仕晉官至太子少傅、征東將軍。",
+            "zhs": "阮炳之子阮坦，字弘舒，仕晋官至太子少傅、征东将军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "阮坦（弘舒）",
+      "to": "阮柯（士度）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Tan's younger brother Ruan Ke, courtesy name Shidu, ended up inheriting the fief that Ruan Tan felt should have been his.",
+            "zht": "阮坦之弟阮柯，字士度，最終繼承了阮坦自認應由自己承襲的封爵。",
+            "zhs": "阮坦之弟阮柯，字士度，最终继承了阮坦自认应由自己承袭的封爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "阮諶（士信）",
+      "to": "阮武（文業）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Wu's father Ruan Chen, courtesy name Shixin, declined every summons and compiled the Illustrations of the Three Rites.",
+            "zht": "阮武之父阮諶，字士信，屢召不仕，撰有《三禮圖》。",
+            "zhs": "阮武之父阮谌，字士信，屡召不仕，撰有《三礼图》。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂巽（長悌）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Zhao's eldest son Lü Xun served on the Chancellor's staff and enjoyed Sima Zhao's favour.",
+            "zht": "呂昭長子呂巽任相國掾屬，受司馬昭寵信。",
+            "zhs": "吕昭长子吕巽任相国掾属，受司马昭宠信。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂安（仲悌）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Zhao's second son Lü An was a close friend of Ji Kang and was executed with him.",
+            "zht": "呂昭次子呂安與嵇康交好，與他一同被殺。",
+            "zhs": "吕昭次子吕安与嵇康交好，与他一同被杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂粹（季悌）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Zhao's son Lü Cui, courtesy name Jiti, served as Intendant of Henan.",
+            "zht": "呂昭之子呂粹，字季悌，官至河南尹。",
+            "zhs": "吕昭之子吕粹，字季悌，官至河南尹。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂粹（季悌）",
+      "to": "呂預（景虞）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Cui's son Lü Yu, courtesy name Jingyu, served as Deputy Imperial Censor.",
+            "zht": "呂粹之子呂預，字景虞，官至御史中丞。",
+            "zhs": "吕粹之子吕预，字景虞，官至御史中丞。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂安（仲悌）",
+      "to": "嵇康（叔夜）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü An was a close friend of Ji Kang and was executed together with him.",
+            "zht": "呂安與嵇康交厚，二人一同被殺。",
+            "zhs": "吕安与嵇康交厚，二人一同被杀。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "杜恕（務伯）",
+      "name": {
+        "en": "Du Shu",
+        "zht": "杜恕",
+        "zhs": "杜恕"
+      },
+      "courtesyName": {
+        "en": "Wubo",
+        "zht": "務伯",
+        "zhs": "务伯"
+      },
+      "born": {
+        "era": {
+          "en": "3rd year of Jian'an",
+          "zht": "建安三年",
+          "zhs": "建安三年"
+        },
+        "year": 198
+      },
+      "died": {
+        "era": {
+          "en": "4th year of Jiaping",
+          "zht": "嘉平四年",
+          "zhs": "嘉平四年"
+        },
+        "year": 252
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Du",
+              "zht": "杜縣",
+              "zhs": "杜县"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during the Taihe Era",
+            "zht": "太和年間",
+            "zhs": "太和年间"
+          },
+          "year": "227 - 232",
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Cavalier Attendant Gentleman",
+              "zht": "散騎侍郎",
+              "zhs": "散骑侍郎"
+            },
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "黃門侍郎",
+              "zhs": "黄门侍郎"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Hongnong",
+              "zht": "弘農",
+              "zhs": "弘农"
+            },
+            {
+              "en": "Zhao State",
+              "zht": "趙",
+              "zhs": "赵"
+            },
+            {
+              "en": "Hedong",
+              "zht": "河東",
+              "zhs": "河东"
+            },
+            {
+              "en": "Yiquanwu/Yufuyi",
+              "zht": "一泉塢",
+              "zhs": "一泉坞"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守"
+            },
+            {
+              "en": "Principality Chancellor",
+              "zht": "相",
+              "zhs": "相"
+            },
+            {
+              "en": "Protector of the Provincial Army",
+              "zht": "都督護軍",
+              "zhs": "都督护军"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "1st year of Jiaping",
+            "zht": "嘉平元年",
+            "zhs": "嘉平元年"
+          },
+          "year": 249,
+          "age": null,
+          "location": [
+            {
+              "en": "Ji",
+              "zht": "薊",
+              "zhs": "蓟"
+            },
+            {
+              "en": "Zhangwu",
+              "zht": "章武",
+              "zhs": "章武"
+            }
+          ],
+          "position": [
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史"
+            },
+            {
+              "en": "General Who Establishes Might",
+              "zht": "建威將軍",
+              "zhs": "建威将军"
+            },
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节"
+            },
+            {
+              "en": "Colonel Protecting the Wuhuan",
+              "zht": "護烏丸校尉",
+              "zhs": "护乌丸校尉"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "4th year of Jiaping",
+            "zht": "嘉平四年",
+            "zhs": "嘉平四年"
+          },
+          "year": 252,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhangwu",
+              "zht": "章武",
+              "zhs": "章武"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        }
+      ]
+    },
+    {
+      "person": "孟康（公休）",
+      "name": {
+        "en": "Meng Kang",
+        "zht": "孟康",
+        "zhs": "孟康"
+      },
+      "courtesyName": {
+        "en": "Gongxiu",
+        "zht": "公休",
+        "zhs": "公休"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Guangzong",
+              "zht": "廣宗",
+              "zhs": "广宗"
+            }
+          ],
+          "position": null,
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during the Huangchu Era",
+            "zht": "黃初年間",
+            "zhs": "黄初年间"
+          },
+          "year": "220 - 226",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Cavalier Attendant Gentleman",
+              "zht": "散騎侍郎",
+              "zhs": "散骑侍郎"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during the Zhengshi Era",
+            "zht": "正始年間",
+            "zhs": "正始年间"
+          },
+          "year": "240 - 249",
+          "age": null,
+          "location": [
+            {
+              "en": "Hongnong",
+              "zht": "弘農",
+              "zhs": "弘农"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守"
+            },
+            {
+              "en": "Colonel Directing Agriculture",
+              "zht": "典農校尉",
+              "zhs": "典农校尉"
+            }
+          ],
+          "passageId": ""
+        },
+        {
+          "era": {
+            "en": "during the Jiaping Era",
+            "zht": "嘉平年間",
+            "zhs": "嘉平年间"
+          },
+          "year": "249 - 254",
+          "age": null,
+          "location": [
+            {
+              "en": "Bohai",
+              "zht": "渤海",
+              "zhs": "渤海"
+            },
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守"
+            },
+            {
+              "en": "Director of the Palace Secretariat",
+              "zht": "中書令",
+              "zhs": "中书令"
+            },
+            {
+              "en": "Supervisor of the Palace Secretariat",
+              "zht": "中書監",
+              "zhs": "中书监"
+            }
+          ],
+          "passageId": ""
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws16d-p1",
+      "orig": {
+        "zht": "恕字務伯，太和中為[[散騎|/zh-hant/translations/officials/departments#chancellery-016]][[黃門侍郎|/zh-hant/translations/officials/departments#chancellery-003]]。恕推誠以質，不治飾，少無名譽。及在朝，不結交援，專心向公。每政有得失，常引綱維以正言，於是[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]辛毗等器重之。時公卿以下大議損益，恕以為「古之[[刺史|/zh-hant/translations/officials/regional#provinces-014]]，奉宣六條，以清靜為名，威風著稱，今可勿令領兵，以專民事。」俄而[[鎮北將軍|/zh-hant/translations/officials/military#conquering--garrisoning-071]]呂昭又領[[兾州|/zh-hant/maps/map-overall?admin=4]]，乃上疏曰：",
+        "zhs": "恕字务伯，太和中为[[散骑|/zh-hans/translations/officials/departments#chancellery-016]][[黄门侍郎|/zh-hans/translations/officials/departments#chancellery-003]]。恕推诚以质，不治饰，少无名誉。及在朝，不结交援，专心向公。每政有得失，常引纲维以正言，于是[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]辛毗等器重之。时公卿以下大议损益，恕以为「古之[[刺史|/zh-hans/translations/officials/regional#provinces-014]]，奉宣六条，以清静为名，威风著称，今可勿令领兵，以专民事。」俄而[[镇北将军|/zh-hans/translations/officials/military#conquering--garrisoning-071]]吕昭又领[[兾州|/zh-hans/maps/map-overall?admin=4]]，乃上疏曰："
+      },
+      "vern": {
+        "zht": "杜恕，字務伯。太和年間，任[[散騎|/zh-hant/translations/officials/departments#chancellery-016]]侍郎、[[黃門侍郎|/zh-hant/translations/officials/departments#chancellery-003]]。他爲人在質樸中見真誠，不故意修飾自己，所以從小就沒有什麼名聲。到了在朝中做官，也不拉幫結派，一心爲公；每當政策有失誤，他總是引用統治國家的基本原則發表正直的言論。因此很受[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]辛毗等人的器重。當時自公卿以下的官員們，廣泛議論朝廷制度的改革問題。杜恕認爲：“古代的[[刺史|/zh-hant/translations/officials/regional#provinces-014]]，奉行和宣示朝廷詔書中的六條規定；以清靜爲名譽，以威嚴受到稱讚。現在可以不再讓[[刺史|/zh-hant/translations/officials/regional#provinces-014]]掌握兵權，以便專心管理民政。”不久，[[鎮北將軍|/zh-hant/translations/officials/military#conquering--garrisoning-071]]呂昭又兼任[[冀州|/zh-hant/maps/map-overall?admin=4]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，杜恕便上奏說：",
+        "zhs": "杜恕，字务伯。太和年间，任[[散骑|/zh-hans/translations/officials/departments#chancellery-016]]侍郎、[[黄门侍郎|/zh-hans/translations/officials/departments#chancellery-003]]。他为人在质朴中见真诚，不故意修饰自己，所以从小就没有什么名声。到了在朝中做官，也不拉帮结派，一心为公；每当政策有失误，他总是引用统治国家的基本原则发表正直的言论。因此很受[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]辛毗等人的器重。当时自公卿以下的官员们，广泛议论朝廷制度的改革问题。杜恕认为：“古代的[[刺史|/zh-hans/translations/officials/regional#provinces-014]]，奉行和宣示朝廷诏书中的六条规定；以清静为名誉，以威严受到称赞。现在可以不再让[[刺史|/zh-hans/translations/officials/regional#provinces-014]]掌握兵权，以便专心管理民政。”不久，[[镇北将军|/zh-hans/translations/officials/military#conquering--garrisoning-071]]吕昭又兼任[[冀州|/zh-hans/maps/map-overall?admin=4]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，杜恕便上奏说："
+      },
+      "en": "Du Shu, courtesy name Wubo, served during the Taihe era as a [[Cavalier Attendant Gentleman|/translations/officials/departments#chancellery-016]] and [[Attendant Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]]. Sincere and straightforward, he did not put on appearances, and in his youth had no reputation. When at court, Du Shu cultivated no private connections, but devoted himself wholly to the public good. Whenever discussing the merits and faults of government policy, he appealed to the principles of the state and spoke forthrightly to set matters right. [[Palace Attendant|/translations/officials/departments#chancellery-001]] Xin Pi and others therefore held him in high regard. At the time, the excellencies and  ministers below them held a wide-ranging debate on administrative reforms. Du Shu argued: \"The [[Inspector|/translations/officials/regional#provinces-014]]s of old proclaimed and enforced the Six Articles. They were renowned for governing with restraint and tranquillity and for the authority they commanded. Inspectors today should not be permitted to command troops, so that they may devote themselves to only civil affairs.\" Soon afterwards, Lü Zhao, [[General Who Garrisons the North|/translations/officials/military#conquering--garrisoning-071]], was also given charge of [[Ji Province|/maps/map-overall?admin=4]]. Du Shu thereupon submitted a memorial:",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：恕少與[[馮翊|/zh-hant/maps/map-overall?admin=151]]李豐俱為父任，緫角相善。及各成人，豐砥礪名行以要世譽，而恕誕節直意，與豐殊趣。豐竟馳名一時，京師之士多為之游說。而當路者或以豐名過其實，而恕被褐懷玉也。由此為豐所不善。恕亦任其自然，不力行以合時。豐以顯仕朝廷，恕猶居家自若。明帝以恕大臣子，擢拜[[散騎侍郎|/zh-hant/translations/officials/departments#chancellery-016]]，數月，轉補[[黃門侍郎|/zh-hant/translations/officials/departments#chancellery-003]]。",
+          "zhs": "《杜氏新书》曰：恕少与[[冯翊|/zh-hans/maps/map-overall?admin=151]]李丰俱为父任，緫角相善。及各成人，丰砥砺名行以要世誉，而恕诞节直意，与丰殊趣。丰竟驰名一时，京师之士多为之游说。而当路者或以丰名过其实，而恕被褐怀玉也。由此为丰所不善。恕亦任其自然，不力行以合时。丰以显仕朝廷，恕犹居家自若。明帝以恕大臣子，擢拜[[散骑侍郎|/zh-hans/translations/officials/departments#chancellery-016]]，数月，转补[[黄门侍郎|/zh-hans/translations/officials/departments#chancellery-003]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》记载：杜恕年少时和冯翊人李丰都因为父亲的恩荫而任职，童年时就关系很好。等到各自长大成人，李丰磨炼自己的名声和品行，以此来求取世人的赞誉，而杜恕不受拘束、率性而为，和李丰的志趣完全不同。李丰最终名噪一时，京城的士人大多为他四处宣扬，而也有些掌权的大臣认为李丰的名声超过了他的实际才能，而杜恕则是穿着粗布衣服却怀揣美玉。因此杜开始不为李丰所喜，杜恕也顺其自然，不勉强自己去迎合时世。李丰在朝廷担任显要官职，杜恕却依然在家中安闲自若。明帝因为杜恕是大臣的儿子，提拔他担任散骑侍郎，几个月后，又转任补授黄门侍郎。"
+          },
+          "en": "The Du Shi Xinshu / New Book of Du Clan states: In their youth, Du Shu and Li Feng of [[Pingyi|/maps/map-overall?admin=151]] both received appointments on account of their fathers, and had been close since childhood. As they reached adulthood, Li Feng assiduously cultivated his reputation and conduct to win public acclaim, whereas Du Shu was unrestrained in manner and forthright in his actions. Their aspirations thus diverged sharply. Li Feng ultimately did win fame in his day, and many gentlemen in the capital praised and recommended him. Yet some among those in power considered Li Feng's fame greater than his substance, while Du Shu wore coarse cloth but harboured jade within. Li Feng therefore regarded him with hostility.  Du Shu continued to follow his own nature and made no effort to conform to the times. When Li Feng rose to prominent positions at court, Du Shu was still at home without office, unperturbed. Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor), considering Du Shu the son of a great minister, promoted him and appointed him [[Cavalier Attendant Gentleman|/translations/officials/departments#chancellery-016]]. Several months later, he was transferred to the post of [[Attendant Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]]."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "世語",
+            "zhs": "世语",
+            "en": "Shiyu / Accounts of this Generation"
+          },
+          "zht": "《世語》曰：昭字子展，[[東平|/zh-hant/maps/map-overall?admin=37]]人。長子巽，字長悌，為[[相國|/zh-hant/translations/officials/ministers#superior-excellency-001]]掾，有寵於司馬文王。次子安，字仲悌，與嵇康善，與康俱被誅。次子粹，字季悌，[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]。粹子預，字景虞，[[御史中丞|/zh-hant/translations/officials/departments#censorate-044]]。",
+          "zhs": "《世语》曰：昭字子展，[[东平|/zh-hans/maps/map-overall?admin=37]]人。长子巽，字长悌，为[[相国|/zh-hans/translations/officials/ministers#superior-excellency-001]]掾，有宠于司马文王。次子安，字仲悌，与嵇康善，与康俱被诛。次子粹，字季悌，[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]。粹子预，字景虞，[[御史中丞|/zh-hans/translations/officials/departments#censorate-044]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "《世语》记载：吕昭字子展，是东平人。吕昭的长子吕巽，字长悌，担任相国掾，受到司马文王的宠信。次子吕安，字仲悌，与嵇康交好，与嵇康一同被诛杀。次子名粹，字季悌，担任河南尹。吕粹的儿子吕预，字景虞，担任御史中丞。"
+          },
+          "en": "The Shiyu / Accounts of this Generation states: Lü Zhao, courtesy name Zizhan, was from [[Dongping State|/maps/map-overall?admin=37]]. His eldest son, Lü Xun, courtesy name Changti, served as a staff of the [[Chancellor of State|/translations/officials/ministers#superior-excellency-001]] and enjoyed the favour of Sima Zhao (posthumously honoured as King Wen, the Civil King). His second son, Lü An, courtesy name Zhongti, was a close friend of Ji Kang and was executed with him. Another son, Lü Cui, courtesy name Jiti, served as [[Intendant of Henan|/translations/officials/regional#commanderies-032]]. Lü Cui's son Lü Yu, courtesy name Jingyu, served as [[Deputy Imperial Censor|/translations/officials/departments#censorate-044]]."
+        }
+      ]
+    },
+    {
+      "id": "ws16d-p2",
+      "orig": {
+        "zht": "「帝王之道，莫尚乎安民；安民之術，在於豐財。豐財者，務本而節用也。方今二賊未滅。戎車亟駕，此自熊虎之士展力之秋也。然搢紳之儒，橫加榮慕，搤腕抗論，以孫、吳為首，州郡[[牧|/zh-hant/translations/officials/regional#provinces-014]][[守|/zh-hant/translations/officials/regional#commanderies-039]]，咸共忽恤民之術，脩將率之事。農桑之民，競干戈之業，不可謂務本。帑藏歲虛而制度歲廣，民力歲衰而賦役歲興，不可謂節用。",
+        "zhs": "「帝王之道，莫尚乎安民；安民之术，在于丰财。丰财者，务本而节用也。方今二贼未灭。戎车亟驾，此自熊虎之士展力之秋也。然搢绅之儒，横加荣慕，搤腕抗论，以孙、吴为首，州郡[[牧|/zh-hans/translations/officials/regional#provinces-014]][[守|/zh-hans/translations/officials/regional#commanderies-039]]，咸共忽恤民之术，修将率之事。农桑之民，竞干戈之业，不可谓务本。帑藏岁虚而制度岁广，民力岁衰而赋役岁兴，不可谓节用。"
+      },
+      "vern": {
+        "zht": "帝王之道，以安民最爲重要；安民的辦法，在於增加財富；而要增加財富，必須加強農業並節約開支。當今吳、蜀二賊還沒有消滅，戰爭不斷發生，這正是勇武的人努力奮鬥的時候。但是朝中以儒學見長的文臣，竟然也羨慕起建立戰功的軍人來，激動得握住手腕高聲議論，認爲孫武、吳起是第一流人物；州、郡的行政長官，也都忽視安撫人民的政治措施，而把精力花在充當將帥上面；種地養蠶的百姓，也爭着進行打仗的準備：這不能算是在加強農業。國庫一年比一年空虛而行政機構的規模一年比一年擴大；民力一年比一年衰弱而賦役一年比一年增多：這也不能說是在節省開支。",
+        "zhs": "帝王之道，以安民最为重要；安民的办法，在于增加财富；而要增加财富，必须加强农业并节约开支。当今吴、蜀二贼还没有消灭，战争不断发生，这正是勇武的人努力奋斗的时候。但是朝中以儒学见长的文臣，竟然也羡慕起建立战功的军人来，激动得握住手腕高声议论，认为孙武、吴起是第一流人物；州、郡的行政长官，也都忽视安抚人民的政治措施，而把精力花在充当将帅上面；种地养蚕的百姓，也争着进行打仗的准备：这不能算是在加强农业。国库一年比一年空虚而行政机构的规模一年比一年扩大；民力一年比一年衰弱而赋役一年比一年增多：这也不能说是在节省开支。"
+      },
+      "en": "\"The Way of emperors and kings holds nothing higher than bringing peace to the people. The means of doing so lie in increasing wealth, and wealth is increased by strengthening foundations and curbing expenditure. At present, the two rebels have yet to be destroyed, and the war chariots are repeatedly put in motion. This is indeed the time for warriors fierce as bears and tigers to exert their strength. Yet even our robed scholars rashly aspire to martial glory, clasping their wrists and declaiming, with Sun Wu and Wu Qi as their foremost models. [[Governor|/translations/officials/regional#provinces-014]]s and [[Grand Administrator|/translations/officials/regional#commanderies-039]]s throughout the provinces and commanderies neglect the art of caring for the people and apply themselves instead to the business of generals. Those who should till the fields and tend silkworms turn instead to the pursuit of arms. This cannot be called fostering the foundations of livelihood. The treasury is depleted year by year while official establishments continue to expand; the people's strength declines year by year while taxes and corvée multiply. This cannot be called curbing expenditure."
+    },
+    {
+      "id": "ws16d-p3",
+      "orig": {
+        "zht": "今大魏奄有十州之地，而承喪亂之弊，計其戶口不如往昔一州之民，然而二方僭逆，北虜未賔，三邊遘難，繞天略帀；所以統一州之民，經營九州之地，其為艱難，譬策羸馬以取道里，豈可不加意愛惜其力哉？以武皇帝之節儉，府藏充實，猶不能十州擁兵；郡且二十也。今[[荊|/zh-hant/maps/map-overall?admin=2]]、[[揚|/zh-hant/maps/map-overall?admin=9]]、[[青|/zh-hant/maps/map-overall?admin=6]]、[[徐|/zh-hant/maps/map-overall?admin=8]]、[[幽|/zh-hant/maps/map-overall?admin=15]]、[[并|/zh-hant/maps/map-overall?admin=0]]、[[雍|/zh-hant/maps/map-overall?admin=14]]、[[涼|/zh-hant/maps/map-overall?admin=5]]緣邊諸州皆有兵矣，其所恃內充府庫外制四夷者，惟[[兖|/zh-hant/maps/map-overall?admin=11]]、[[豫|/zh-hant/maps/map-overall?admin=16]]、[[司|/zh-hant/maps/map-overall?admin=7]]、[[兾|/zh-hant/maps/map-overall?admin=4]]而已。",
+        "zhs": "今大魏奄有十州之地，而承丧乱之弊，计其户口不如往昔一州之民，然而二方僭逆，北虏未賔，三边遘难，绕天略帀；所以统一州之民，经营九州之地，其为艰难，譬策羸马以取道里，岂可不加意爱惜其力哉？以武皇帝之节俭，府藏充实，犹不能十州拥兵；郡且二十也。今[[荆|/zh-hans/maps/map-overall?admin=2]]、[[扬|/zh-hans/maps/map-overall?admin=9]]、[[青|/zh-hans/maps/map-overall?admin=6]]、[[徐|/zh-hans/maps/map-overall?admin=8]]、[[幽|/zh-hans/maps/map-overall?admin=15]]、[[并|/zh-hans/maps/map-overall?admin=0]]、[[雍|/zh-hans/maps/map-overall?admin=14]]、[[凉|/zh-hans/maps/map-overall?admin=5]]缘边诸州皆有兵矣，其所恃内充府库外制四夷者，惟[[兖|/zh-hans/maps/map-overall?admin=11]]、[[豫|/zh-hans/maps/map-overall?admin=16]]、[[司|/zh-hans/maps/map-overall?admin=7]]、[[兾|/zh-hans/maps/map-overall?admin=4]]而已。"
+      },
+      "vern": {
+        "zht": "現在魏國雖然擁有十個州的土地，然而由於死亡動亂的影響，十州的戶口加起來還不如過去一州的多。現在吳、蜀非分地稱帝與我們對抗，北方的鮮卑族也沒有臣服，南、西、北三個方向的邊境都有敵對勢力，幾乎要在我們周圍形成一個包圍圈。只有過去一個州的人口，而要想統治全國的地域，這種艱難，就如同趕着一匹瘦弱的馬走遠路，能不特別愛惜它的力量嗎！當初武皇帝是何等的節儉，倉庫中是何等的充實，也不能讓十個州再加上將近二十個郡，都擁有各自的軍隊。現在邊疆的[[荊|/zh-hant/maps/map-overall?admin=2]]州、[[揚|/zh-hant/maps/map-overall?admin=9]]州、[[青|/zh-hant/maps/map-overall?admin=6]]州、[[徐|/zh-hant/maps/map-overall?admin=8]]州、[[幽|/zh-hant/maps/map-overall?admin=15]]州、[[並|/zh-hant/maps/map-overall?admin=0]]州、[[雍|/zh-hant/maps/map-overall?admin=14]]州、[[涼|/zh-hant/maps/map-overall?admin=5]]州，都有軍隊了；能夠用來給國家倉庫提供糧食物資從而控制四方的，就只有[[兗|/zh-hant/maps/map-overall?admin=11]]州、[[豫|/zh-hant/maps/map-overall?admin=16]]州、[[司|/zh-hant/maps/map-overall?admin=7]]州、冀州了。",
+        "zhs": "现在魏国虽然拥有十个州的土地，然而由于死亡动乱的影响，十州的户口加起来还不如过去一州的多。现在吴、蜀非分地称帝与我们对抗，北方的鲜卑族也没有臣服，南、西、北三个方向的边境都有敌对势力，几乎要在我们周围形成一个包围圈。只有过去一个州的人口，而要想统治全国的地域，这种艰难，就如同赶着一匹瘦弱的马走远路，能不特别爱惜它的力量吗！当初武皇帝是何等的节俭，仓库中是何等的充实，也不能让十个州再加上将近二十个郡，都拥有各自的军队。现在边疆的[[荆|/zh-hans/maps/map-overall?admin=2]]州、[[扬|/zh-hans/maps/map-overall?admin=9]]州、[[青|/zh-hans/maps/map-overall?admin=6]]州、[[徐|/zh-hans/maps/map-overall?admin=8]]州、[[幽|/zh-hans/maps/map-overall?admin=15]]州、[[并|/zh-hans/maps/map-overall?admin=0]]州、[[雍|/zh-hans/maps/map-overall?admin=14]]州、[[凉|/zh-hans/maps/map-overall?admin=5]]州，都有军队了；能够用来给国家仓库提供粮食物资从而控制四方的，就只有[[兖|/zh-hans/maps/map-overall?admin=11]]州、[[豫|/zh-hans/maps/map-overall?admin=16]]州、[[司|/zh-hans/maps/map-overall?admin=7]]州、冀州了。"
+      },
+      "en": "The Great Wei now holds the lands of ten provinces, yet has inherited the ravages of war and disorder. Its population, by calculation, is smaller than that of a single province in former times. But usurpers remain in two quarters, the northern tribes have not submitted, and three frontiers are beset by troubles; danger presses upon the realm from almost every side. Thus, in reality, we have the people of but one province, yet must administer the lands of nine. The difficulty is like driving a weary horse over a long road. How could we not carefully husband its remaining strength? Even with Cao Cao's (posthumously honoured as Emperor Wu, the Martial Emperor) frugality and full treasuries, the state could not sustain troops across ten provinces when it possessed only twenty commanderies. Now the frontier provinces of [[Jing Province|/maps/map-overall?admin=2]], [[Yang Province|/maps/map-overall?admin=9]], [[Qing Province|/maps/map-overall?admin=6]], [[Xu Province|/maps/map-overall?admin=8]], [[You Province|/maps/map-overall?admin=15]], [[Bing Province|/maps/map-overall?admin=0]], [[Yong Province|/maps/map-overall?admin=14]], and [[Liang Province|/maps/map-overall?admin=5]] all maintain armies. Only [[Yan Province|/maps/map-overall?admin=11]], [[Yu Province|/maps/map-overall?admin=16]], [[Si Province|/maps/map-overall?admin=7]], and [[Ji Province|/maps/map-overall?admin=4]] remain to supply the treasuries within and hold the peoples beyond the frontiers in check."
+    },
+    {
+      "id": "ws16d-p4",
+      "orig": {
+        "zht": "臣前以州郡典兵，則專心軍功，不勤民事，宜別置將守，以盡治理之務；而陛下復以[[兾州|/zh-hant/maps/map-overall?admin=4]]寵秩呂昭。[[兾州|/zh-hant/maps/map-overall?admin=4]]戶口最多，田多墾闢，又有桑棗之饒，國家徵求之府，誠不當復任以兵事也。若以北方當須鎮守，自可專置大將以鎮安之。計所置吏士之費，與兼官無異。然昭於人才尚復易；中朝苟乏人，兼才者勢不獨多。以此推之，知國家以人擇官，不為官擇人也。官得其人，則政平訟理；政平故民富實，訟理故囹圄空虛。",
+        "zhs": "臣前以州郡典兵，则专心军功，不勤民事，宜别置将守，以尽治理之务；而陛下复以[[兾州|/zh-hans/maps/map-overall?admin=4]]宠秩吕昭。[[兾州|/zh-hans/maps/map-overall?admin=4]]户口最多，田多垦辟，又有桑枣之饶，国家征求之府，诚不当复任以兵事也。若以北方当须镇守，自可专置大将以镇安之。计所置吏士之费，与兼官无异。然昭于人才尚复易；中朝苟乏人，兼才者势不独多。以此推之，知国家以人择官，不为官择人也。官得其人，则政平讼理；政平故民富实，讼理故囹圄空虚。"
+      },
+      "vern": {
+        "zht": "我從前已經提出：“州和郡的行政長官如果兼領軍隊，就會只在建立軍功上用心，而不注意民政；應該另外安排人帶領軍隊，讓州郡行政長官盡心來完成治理地方的任務。”但是陛下由於寵信呂昭，現今又讓他兼任[[冀州|/zh-hant/maps/map-overall?admin=4]]刺史的職務。[[冀州|/zh-hant/maps/map-overall?admin=4]]人口最多，田地大部分已經開墾耕種，蠶桑果樹副業也很發達；是國家糧食物資的重要供應地區，實在不該讓冀州再承擔軍事任務。倘若認爲北方應當派兵鎮守，自然應當專門委派大將去冀州；而專門委派大將所需的費用，計算下來與行政長官兼任軍職時的費用也差不多。何況呂昭的才幹並不特別優秀，就是要設軍政兩兼的官員，也應該在朝廷中挑選；朝廷中即使缺乏軍政兼長的人才，但也不至於非挑選呂昭不可。由此推斷，可知陛下是因人設官職，而不是爲官職而挑選人。官吏如果得到了稱職的人選，那麼政治就會平穩，訴訟也會得到審理。政治平穩，百姓就富足；訴訟得到審理，監獄就沒有什麼囚犯。",
+        "zhs": "我从前已经提出：“州和郡的行政长官如果兼领军队，就会只在建立军功上用心，而不注意民政；应该另外安排人带领军队，让州郡行政长官尽心来完成治理地方的任务。”但是陛下由于宠信吕昭，现今又让他兼任[[冀州|/zh-hans/maps/map-overall?admin=4]]刺史的职务。[[冀州|/zh-hans/maps/map-overall?admin=4]]人口最多，田地大部分已经开垦耕种，蚕桑果树副业也很发达；是国家粮食物资的重要供应地区，实在不该让冀州再承担军事任务。倘若认为北方应当派兵镇守，自然应当专门委派大将去冀州；而专门委派大将所需的费用，计算下来与行政长官兼任军职时的费用也差不多。何况吕昭的才干并不特别优秀，就是要设军政两兼的官员，也应该在朝廷中挑选；朝廷中即使缺乏军政兼长的人才，但也不至于非挑选吕昭不可。由此推断，可知陛下是因人设官职，而不是为官职而挑选人。官吏如果得到了称职的人选，那么政治就会平稳，诉讼也会得到审理。政治平稳，百姓就富足；诉讼得到审理，监狱就没有什么囚犯。"
+      },
+      "en": "I, your servant, previously believed that when provincial and commandery officials command troops, they devote themselves to military achievements and neglect civil affairs. Generals and governors should therefore be appointed separately, so that civil affairs may be properly administered. Yet Your Majesty has again honoured Lü Zhao with appointment over [[Ji Province|/maps/map-overall?admin=4]]. [[Ji Province|/maps/map-overall?admin=4]] has the largest population, much cultivated land, and an abundance of mulberries and jujubes. It is the chief source of the state's levies and should certainly not also be burdened with military affairs. It is the chief source of the state's levies and should certainly not also be burdened with military affairs. If the north requires defence, a senior general may be appointed specifically to secure it. The cost of the necessary officers and troops would be no greater than if the civil and military offices remained combined. Even considering Lu Zhao alone, a man of his abilities could readily be replaced. Can the court truly be so lacking in men that those capable in both civil and military affairs are so few? From this, it appears that the state tailors offices to men, rather than selecting men to suit the offices. When the right man holds office, government is equitable and lawsuits are justly settled. Equitable government enriches the people; justly settled lawsuits leave the prisons empty."
+    },
+    {
+      "id": "ws16d-p5",
+      "orig": {
+        "zht": "陛下踐阼，天下斷獄百數十人，歲歲增多，至五百餘人矣。民不益多，法不益峻。以此推之，非政教陵遲，[[牧|/zh-hant/translations/officials/regional#provinces-014]][[守|/zh-hant/translations/officials/regional#commanderies-039]]不稱之明效歟？往年牛死，通率天下十能損二；麥不半收，秋種未下。若二賊游魂於疆埸，飛芻輓粟，千[[里|/zh-hant/translations/officials#glossary-li]]不及。究此之術，豈在彊兵乎？武士勁卒愈多，愈多愈病耳。夫天下猶人之體，腹心充實，四支雖病，終無大患；今[[兖|/zh-hant/maps/map-overall?admin=11]]、[[豫|/zh-hant/maps/map-overall?admin=16]]、[[司|/zh-hant/maps/map-overall?admin=7]]、[[兾|/zh-hant/maps/map-overall?admin=4]]亦天下之腹心也。是以愚臣慺慺，實願四州之[[牧|/zh-hant/translations/officials/regional#provinces-014]][[守|/zh-hant/translations/officials/regional#commanderies-039]]，獨脩務本之業，以堪四支之重。",
+        "zhs": "陛下践阼，天下断狱百数十人，岁岁增多，至五百余人矣。民不益多，法不益峻。以此推之，非政教陵迟，[[牧|/zh-hans/translations/officials/regional#provinces-014]][[守|/zh-hans/translations/officials/regional#commanderies-039]]不称之明效欤？往年牛死，通率天下十能损二；麦不半收，秋种未下。若二贼游魂于疆埸，飞刍挽粟，千[[里|/zh-hans/translations/officials#glossary-li]]不及。究此之术，岂在彊兵乎？武士劲卒愈多，愈多愈病耳。夫天下犹人之体，腹心充实，四支虽病，终无大患；今[[兖|/zh-hans/maps/map-overall?admin=11]]、[[豫|/zh-hans/maps/map-overall?admin=16]]、[[司|/zh-hans/maps/map-overall?admin=7]]、[[兾|/zh-hans/maps/map-overall?admin=4]]亦天下之腹心也。是以愚臣㥪㥪，实愿四州之[[牧|/zh-hans/translations/officials/regional#provinces-014]][[守|/zh-hans/translations/officials/regional#commanderies-039]]，独修务本之业，以堪四支之重。"
+      },
+      "vern": {
+        "zht": "陛下即位的時候，全國每年判決的死刑犯只有一百多人；此後一年年增加，現在每年已經到了五百多人了。百姓沒有增加得很多，法律也沒有更嚴刻。那麼死刑犯的增多，原因豈不是明顯在於政治教化的衰落，在於州郡行政長官的不稱職嗎？去年耕牛大量死亡，大體說來，全國的牛十頭裏面就要死去兩頭；麥子收穫上來的還不到一半；而秋天的種子卻還沒播下。要是吳、蜀二敵再在邊境上發起進攻，那我們即使鞭打牛馬飛快地拉車運糧，千里迢迢也來不及了。追究治國的方略，難道只在加強兵力嗎？就現今的情況而言，勇士精兵越多越壞事啊！一個國家就如同人的身體：心腹充實了，四肢即使生了病，終究不會有大的妨害。現在的[[兗|/zh-hant/maps/map-overall?admin=11]]州、[[豫|/zh-hant/maps/map-overall?admin=16]]州、[[司|/zh-hant/maps/map-overall?admin=7]]州、冀州，就是國家的心腹。所以愚臣我懷着懇切的心情，實在是希望四州的各級行政長官，專心地加強農業生產，來承擔四肢的需要。",
+        "zhs": "陛下即位的时候，全国每年判决的死刑犯只有一百多人；此后一年年增加，现在每年已经到了五百多人了。百姓没有增加得很多，法律也没有更严刻。那么死刑犯的增多，原因岂不是明显在于政治教化的衰落，在于州郡行政长官的不称职吗？去年耕牛大量死亡，大体说来，全国的牛十头里面就要死去两头；麦子收获上来的还不到一半；而秋天的种子却还没播下。要是吴、蜀二敌再在边境上发起进攻，那我们即使鞭打牛马飞快地拉车运粮，千里迢迢也来不及了。追究治国的方略，难道只在加强兵力吗？就现今的情况而言，勇士精兵越多越坏事啊！一个国家就如同人的身体：心腹充实了，四肢即使生了病，终究不会有大的妨害。现在的[[兖|/zh-hans/maps/map-overall?admin=11]]州、[[豫|/zh-hans/maps/map-overall?admin=16]]州、[[司|/zh-hans/maps/map-overall?admin=7]]州、冀州，就是国家的心腹。所以愚臣我怀着恳切的心情，实在是希望四州的各级行政长官，专心地加强农业生产，来承担四肢的需要。"
+      },
+      "en": "Since Your Majesty ascended the throne, the number condemned by courts throughout the realm has risen each year, from just over a hundred to more than five hundred. The population has not increased, nor have the laws grown harsher. Is this not clear proof that government and moral instruction are in decline, and that the [[Governor|/translations/officials/regional#provinces-014]]s and [[Grand Administrator|/translations/officials/regional#commanderies-039]]s are not fit for their offices? In past years, two oxen in every ten died across the realm. This year, the wheat yielded less than half its former amount, and the autumn sowing has yet to begin. Should the two rebels continue to haunt the frontiers like wandering spirits, fodder and grain would have to be rushed forward, yet supplies transported a thousand [[Li|/translations/officials#glossary-li]] would never arrive in time. Can strengthening the army truly provide the remedy? The more warriors we raise, the more grievously the realm will suffer. The realm is like the human body. If the heart and belly are strong, sickness in the four limbs will cause no grave harm. Today, [[Yan Province|/maps/map-overall?admin=11]], [[Yu Province|/maps/map-overall?admin=16]], [[Si Province|/maps/map-overall?admin=7]], and [[Ji Province|/maps/map-overall?admin=4]] are the heart and belly of the realm. In my humble devotion, I therefore earnestly hope that the [[Governors|/translations/officials/regional#provinces-014]] and [[Grand Administrators|/translations/officials/regional#commanderies-039]] of these four regions will devote themselves solely to strengthening the foundations, so that they may bear the burden of the four limbs."
+    },
+    {
+      "id": "ws16d-p6",
+      "orig": {
+        "zht": "然孤論難持，犯欲難成，衆怨難積，疑似難分，故累載不為明主所察。凡言此者，類皆疏賤；疏賤之言，實未易聽。若使善策必出於親貴，親貴固不犯四難以求忠愛，此古今之所常患也。」",
+        "zhs": "然孤论难持，犯欲难成，众怨难积，疑似难分，故累载不为明主所察。凡言此者，类皆疏贱；疏贱之言，实未易听。若使善策必出于亲贵，亲贵固不犯四难以求忠爱，此古今之所常患也。」"
+      },
+      "vern": {
+        "zht": "但孤獨一人的議論難以堅持，觸犯大家慾望的事難以取得成功；衆人的不滿難以承受，似是而非的道理難以分清：所以建議提出了多年也沒有被英明的君主理解。凡是議論上述問題的，都是被陛下疏遠而地位低下的人；這種人說的話，確實不容易被採納。如果讓好的建議都從親信權貴們的口裏說出來，親信權貴就決不會冒犯上面我所說的四個“難以”：而這正是古往今來常見的政治弊病啊。",
+        "zhs": "但孤独一人的议论难以坚持，触犯大家欲望的事难以取得成功；众人的不满难以承受，似是而非的道理难以分清：所以建议提出了多年也没有被英明的君主理解。凡是议论上述问题的，都是被陛下疏远而地位低下的人；这种人说的话，确实不容易被采纳。如果让好的建议都从亲信权贵们的口里说出来，亲信权贵就决不会冒犯上面我所说的四个“难以”：而这正是古往今来常见的政治弊病啊。"
+      },
+      "en": "Yet a lone opinion is hard to maintain, the ruler's wishes hard to oppose, the resentment of the many hard to bear, and truth hard to distinguish from falsehood. Thus such matters may escape even an enlightened ruler's notice for years. Those who speak of them are generally distant and lowly, and their words are never readily heard. If it is believed that sound counsel must come from intimates and dignitaries, such men will surely not brave these four difficulties merely for imperial favour. This has ever been a source of trouble in governing the realm, both in ancient times and today.\""
+    },
+    {
+      "id": "ws16d-p7",
+      "orig": {
+        "zht": "時又大議考課之制，以考內外衆官。恕以為用不盡其人，雖才且無益，所存非所務，所務非世要。上疏曰：",
+        "zhs": "时又大议考课之制，以考内外众官。恕以为用不尽其人，虽才且无益，所存非所务，所务非世要。上疏曰："
+      },
+      "vern": {
+        "zht": "當時又對官吏的考覈制度展開大規模的議論，朝廷內外的官吏都要考覈。杜恕認爲：“用人而不能讓他完全發揮自己的才能，那麼即便制定了考覈制度的文件也沒有多大用處；應當關心的問題沒有急着去解決，急着去解決的卻不是當前要緊的事務。”於是他上疏說：",
+        "zhs": "当时又对官吏的考核制度展开大规模的议论，朝廷内外的官吏都要考核。杜恕认为：“用人而不能让他完全发挥自己的才能，那么即便制定了考核制度的文件也没有多大用处；应当关心的问题没有急着去解决，急着去解决的却不是当前要紧的事务。”于是他上疏说："
+      },
+      "en": "At the time, there was also renewed debate over establishing a system to assess the performance of officials both at court and in the provinces. Du Shu held that unless men's talents were put to their proper use, talent itself was of no avail. Their duties made little use of their talents, and what they accomplished could not answer the needs of the age. He submitted a memorial to the throne:"
+    },
+    {
+      "id": "ws16d-p8",
+      "orig": {
+        "zht": "「書稱『 明試以功，三考黜陟』，誠帝王之盛制。使有能者當其官，有功者受其祿，譬猶烏獲之舉千鈞，良、樂之選驥足也。雖歷六代而考績之法不著，關七聖而課試之文不垂，臣誠以為其法可粗依，其詳難備舉故也。語曰：『世有亂人而無亂法。』若使法可專任，則唐、虞可不須稷、契之佐，殷、周無貴伊、呂之輔矣。今奏考功者，陳周、漢之法為，終京房之本旨，可謂明考課之要矣。於以崇揖讓之風，興濟濟之治，臣以為未盡善也。",
+        "zhs": "「书称『 明试以功，三考黜陟』，诚帝王之盛制。使有能者当其官，有功者受其禄，譬犹乌获之举千钧，良、乐之选骥足也。虽历六代而考绩之法不著，关七圣而课试之文不垂，臣诚以为其法可粗依，其详难备举故也。语曰：『世有乱人而无乱法。』若使法可专任，则唐、虞可不须稷、契之佐，殷、周无贵伊、吕之辅矣。今奏考功者，陈周、汉之法为，终京房之本旨，可谓明考课之要矣。于以崇揖让之风，兴济济之治，臣以为未尽善也。"
+      },
+      "vern": {
+        "zht": "《尚書》中說，“認真考察官吏的成績”，“通過三次考察後，黜退成績差的，提拔成績好的”。這實在是帝王創立的偉大制度。讓有才能的人做官，有功績的人受祿；就如同大力士烏獲舉起千鈞重物，王良、伯樂識別駿馬一樣令人心悅誠服。但是，經歷了唐、虞、夏、商、周、漢六代而考覈的制度仍然不明確，經過了唐堯、虞舜、夏禹、商湯、周文王、周武王、周公七位聖人而考覈的規章卻沒有流傳下來。我確實認爲這是由於考覈的辦法只能粗略地依據，而詳細的條款難以完全列舉的緣故。俗話說：“世上有作亂的人而沒有作亂的法。”要是治理國家可以只依靠法規的話，那麼堯、舜也就用不着稷、契的輔佐，商、周的君主也就不會重視伊尹、呂望的幫助了。現在上奏請求實施考覈制度的官員，陳述周、漢兩朝的有關說法和做法，繼承京房制定考課法的原則，可以說是懂得考覈制度的要點了。但是對於推崇禮讓的風氣，建立美好的政治，我認爲還沒有達到盡善的地步。",
+        "zhs": "《尚书》中说，“认真考察官吏的成绩”，“通过三次考察后，黜退成绩差的，提拔成绩好的”。这实在是帝王创立的伟大制度。让有才能的人做官，有功绩的人受禄；就如同大力士乌获举起千钧重物，王良、伯乐识别骏马一样令人心悦诚服。但是，经历了唐、虞、夏、商、周、汉六代而考核的制度仍然不明确，经过了唐尧、虞舜、夏禹、商汤、周文王、周武王、周公七位圣人而考核的规章却没有流传下来。我确实认为这是由于考核的办法只能粗略地依据，而详细的条款难以完全列举的缘故。俗话说：“世上有作乱的人而没有作乱的法。”要是治理国家可以只依靠法规的话，那么尧、舜也就用不着稷、契的辅佐，商、周的君主也就不会重视伊尹、吕望的帮助了。现在上奏请求实施考核制度的官员，陈述周、汉两朝的有关说法和做法，继承京房制定考课法的原则，可以说是懂得考核制度的要点了。但是对于推崇礼让的风气，建立美好的政治，我认为还没有达到尽善的地步。"
+      },
+      "en": "\"The Documents says, 'Examine them clearly by their achievements; after three examinations, demote or advance them.' This is indeed a splendid institution for emperors and kings. It ensures that the able hold the offices suited to them and the meritorious receive their due emoluments, just as Wu Huo could lift a thousand jun and Wang Liang and Bo Le could pick out the finest steeds. Though this system passed through six dynasties without its regulations recorded, and through seven sage rulers without their writings on it transmitted to us, I believe this is because its broad principles may be followed, but its particulars cannot all be set forth. There is a saying: 'It is men who cause disorder, not laws.' If laws alone could be relied upon, Yao and Shun would not have needed the aid of Ji and Xie, nor would the Shang and  Province have prized the assistance of Yi Yin and Lü Shang. Those who now memorialise on the assessment of merit expound the methods of the  Province and Han, and continued Jing Fang's fundamental principles. They may be said to have elucidated the essentials of official assessment. Yet as a means of fostering a spirit of courteous deference and filling the government with worthy men, I, your servant, do not consider their proposals wholly satisfactory."
+    },
+    {
+      "id": "ws16d-p9",
+      "orig": {
+        "zht": "其欲使州郡考士，必由[[四科|/zh-hant/translations/officials#glossary-flourishing-talent]]，皆有事效，然後察舉，試辟公府，為親民長吏，轉以功次補郡守者，或就增秩賜爵，此最考課之急務也。臣以為便當顯其身，用其言，使具為課州郡之法，法具施行，立必信之賞，施必行之罰。至於公卿及內職大臣，亦當俱以其職考課之也。古之三公，坐而論道，內職大臣，納言補闕，無善不紀，無過不舉。且天下至大，萬機至衆，誠非一明所能徧照。故君為元首，臣作股肱，明其一體相須而成也。",
+        "zhs": "其欲使州郡考士，必由[[四科|/zh-hans/translations/officials#glossary-flourishing-talent]]，皆有事效，然后察举，试辟公府，为亲民长吏，转以功次补郡守者，或就增秩赐爵，此最考课之急务也。臣以为便当显其身，用其言，使具为课州郡之法，法具施行，立必信之赏，施必行之罚。至于公卿及内职大臣，亦当俱以其职考课之也。古之三公，坐而论道，内职大臣，纳言补阙，无善不纪，无过不举。且天下至大，万机至众，诚非一明所能徧照。故君为元首，臣作股肱，明其一体相须而成也。"
+      },
+      "vern": {
+        "zht": "不過，這些官員的上奏中提到州郡考察人才時，必須從品德、學問、處理公文、行政才幹四方面衡量；都要有具體的事例效果，然後才舉薦；由三公府試用，再擔任直接治理人民的縣令縣長；按成績和年資升任郡太守的官職，有的可以就地增加品級，賜予爵位等等：倒確實是當前考覈官吏中最爲緊要的工作。我認爲應當立即表彰提出上述建議的官員，採納他們的意見，讓他們詳細制定出考覈州郡官員的辦法。辦法制定好後就付諸實施，有功的一定獎賞，有過失的一定處罰。至於朝廷的公卿和皇帝身邊的侍臣，爲臣認爲也應該根據他履行職務的情況進行考覈。古代的三公，坐着討論國家的大政方針；宮內的侍從大臣，進獻建議彌補缺失：君主的善事沒有一條不記錄，君主的過失沒有一條不指出。再說國家太大了，事務太多了，單靠君主一個人的光明確實不能照亮所有的地方。所以皇帝被稱爲頭腦，臣僚被稱爲四肢，說明他們是一體，具有相輔相成的關係。",
+        "zhs": "不过，这些官员的上奏中提到州郡考察人才时，必须从品德、学问、处理公文、行政才干四方面衡量；都要有具体的事例效果，然后才举荐；由三公府试用，再担任直接治理人民的县令县长；按成绩和年资升任郡太守的官职，有的可以就地增加品级，赐予爵位等等：倒确实是当前考核官吏中最为紧要的工作。我认为应当立即表彰提出上述建议的官员，采纳他们的意见，让他们详细制定出考核州郡官员的办法。办法制定好后就付诸实施，有功的一定奖赏，有过失的一定处罚。至于朝廷的公卿和皇帝身边的侍臣，为臣认为也应该根据他履行职务的情况进行考核。古代的三公，坐着讨论国家的大政方针；宫内的侍从大臣，进献建议弥补缺失：君主的善事没有一条不记录，君主的过失没有一条不指出。再说国家太大了，事务太多了，单靠君主一个人的光明确实不能照亮所有的地方。所以皇帝被称为头脑，臣僚被称为四肢，说明他们是一体，具有相辅相成的关系。"
+      },
+      "en": "If the provinces and commanderies are to assess men, the [[Four Categories|/translations/officials#glossary-flourishing-talent]] must be adopted, and only those with proven achievements in them should be recommended. Those recommended should then be tested in the offices of the Excellencies and appointed as magistrates governing the people. Thereafter, they may be promoted by merit to vacancies as commandery administrators, or receive increases in rank and grants of nobility. This is the most urgent task in the assessment of officials. II, your servant, believe that those whose proposals have merit should be brought to prominence and their views adopted. On this basis, comprehensive regulations should be drawn up for assessing the provinces and commanderies and then put into effect, with rewards made certain and punishments inexorable. The Excellencies, ministers, and officials of the inner court should likewise be assessed according to the duties of their offices. In ancient times, the Three Excellencies sat and discoursed upon the Way, while ministers of the inner court conveyed counsel and filled in what was lacking. No merit went unrecorded and no fault unreported. The realm is vast and its affairs innumerable; no single intelligence can illuminate them all. Thus the ruler is the head and his ministers the limbs: together they form a single body, and neither can accomplish its task without the other."
+    },
+    {
+      "id": "ws16d-p10",
+      "orig": {
+        "zht": "是以古人稱廊廟之材，非一木之枝；帝王之業，非一士之略。由是言之，焉有大臣守職辨課可以致雍熙者哉！且布衣之交，猶有務信誓而蹈水火，感知己而披肝膽，徇聲名而立節義者；況於束帶立朝，致位卿相，所務者非特匹夫之信，所感者非徒知己之惠，所徇者豈聲名而已乎！諸蒙寵祿受重任者，不徒欲舉明主於唐、虞之上而已；身亦欲厠稷、契之列。是以古人不患於念治之心不盡，患於自任之意不足，此誠人主使之然也。",
+        "zhs": "是以古人称廊庙之材，非一木之枝；帝王之业，非一士之略。由是言之，焉有大臣守职辨课可以致雍熙者哉！且布衣之交，犹有务信誓而蹈水火，感知己而披肝胆，徇声名而立节义者；况于束带立朝，致位卿相，所务者非特匹夫之信，所感者非徒知己之惠，所徇者岂声名而已乎！诸蒙宠禄受重任者，不徒欲举明主于唐、虞之上而已；身亦欲厕稷、契之列。是以古人不患于念治之心不尽，患于自任之意不足，此诚人主使之然也。"
+      },
+      "vern": {
+        "zht": "古人說過：朝廷的殿堂，不是一根木頭能夠支撐起來的；帝王的功業，也不是一位謀臣的策略所能實現的。從這個道理來說，哪有大臣只知道死守本分弄清楚考覈的條文就能實現天下太平的道理呢？平民百姓之間交往，還有因爲看重信義而去赴湯蹈火的人，還有因爲彼此知己而披肝瀝膽的人，還有因爲追求聲名而樹立節操的人；何況是那些衣冠楚楚站在朝廷中間，官位達到卿相，所追求的不只是平民之間的信義，所感動的不只是知己間的恩惠，所追求的也不只是個人聲名的那些大臣呢！得到寵幸和俸祿並且擔當重任的大臣，不只是想把英明的君主推到比唐堯、虞舜還高的位置，他們自己也想躋身於稷、契的行列。所以古人不擔心關注政治的心情不迫切，而擔心自己受到的信任程度不夠，而這實在又是君主造成的。",
+        "zhs": "古人说过：朝廷的殿堂，不是一根木头能够支撑起来的；帝王的功业，也不是一位谋臣的策略所能实现的。从这个道理来说，哪有大臣只知道死守本分弄清楚考核的条文就能实现天下太平的道理呢？平民百姓之间交往，还有因为看重信义而去赴汤蹈火的人，还有因为彼此知己而披肝沥胆的人，还有因为追求声名而树立节操的人；何况是那些衣冠楚楚站在朝廷中间，官位达到卿相，所追求的不只是平民之间的信义，所感动的不只是知己间的恩惠，所追求的也不只是个人声名的那些大臣呢！得到宠幸和俸禄并且担当重任的大臣，不只是想把英明的君主推到比唐尧、虞舜还高的位置，他们自己也想跻身于稷、契的行列。所以古人不担心关注政治的心情不迫切，而担心自己受到的信任程度不够，而这实在又是君主造成的。"
+      },
+      "en": "Therefore the ancients said that the timber for palaces and temples cannot come from a single tree, nor can an emperor's enterprise rest on the strategy of a single man. How, then, could great ministers bring about harmonious prosperity merely by keeping to their posts and assessment duties? Even friendships among commoners produce men who honour their pledges and brave fire and water, who bare their hearts in gratitude to those who understand them, and who uphold integrity at the cost of their lives for the sake of their good name. How much more so for those who don court robes, take their place among the ranks of officials, and rise to the highest ministerial offices?  What these ministers pursue rises above the fidelity of an ordinary man; what moves them goes beyond the favour of one who understands them. Can it be that all they seek is merely reputation? Those entrusted with favour, emolument, and grave responsibilities seek not only to raise an enlightened ruler above Tang and Yu; they also aspire to rank alongside Ji and Xie. Thus the ancients did not fear that they lacked the desire to govern the realm well, but that they lacked the resolve to take its responsibilities upon themselves. That ministers should possess such resolve is, in truth, the work of their ruler."
+    },
+    {
+      "id": "ws16d-p11",
+      "orig": {
+        "zht": "唐、虞之君，委任稷、契、夔、龍而責成功，及其罪也，殛鯀而放四凶。今大臣親奉明詔，給事目下，其有夙夜在公，恪勤特立，當官不撓貴勢，執平不阿所私，危言危行以處朝廷者，自明主所察也。若尸祿以為高，拱嘿以為智，當官苟在於免負，立朝不忘於容身，絜行遜言以處朝廷者，亦明主所察也。誠使容身保位，無放退之辜，而盡節在公，抱見疑之勢，公義不脩而私議成俗，雖仲尼為謀，猶不能盡一才，又況於世俗之人乎！",
+        "zhs": "唐、虞之君，委任稷、契、夔、龙而责成功，及其罪也，殛鲧而放四凶。今大臣亲奉明诏，给事目下，其有夙夜在公，恪勤特立，当官不挠贵势，执平不阿所私，危言危行以处朝廷者，自明主所察也。若尸禄以为高，拱嘿以为智，当官苟在于免负，立朝不忘于容身，絜行逊言以处朝廷者，亦明主所察也。诚使容身保位，无放退之辜，而尽节在公，抱见疑之势，公义不修而私议成俗，虽仲尼为谋，犹不能尽一才，又况于世俗之人乎！"
+      },
+      "vern": {
+        "zht": "唐堯、虞舜那樣的君主，任用稷、契、夔、龍而要求他們把公事辦成功；一旦官員犯了罪，便處死鯀而放逐了四凶。現在的大臣親自領受明確的詔旨，在君主的眼皮底下服務。這些人當中有的是從早到晚忙於處理公務，恭敬勤懇超過常人，不對權貴屈服，辦事公正不徇私情，言語行爲都非常正直的臣子，他們自然是英明的君主您都清楚的；還有一些卻是隻拿俸祿不幹事卻自認爲清高，遇事拱手沉默不發表意見卻自認爲聰明，當着官卻一心想着逃避罪責，站在朝廷中卻總不忘爲自己謀求安全位置，明哲保身謹小慎微的臣子，他們自然也是英明的君主您都清楚的。如果真要讓那些爲自己保職位的臣子順順當當在朝做官；反而讓那些爲公家盡忠誠的臣子受到懷疑；正義得不到扶植；而出於私心的議論反而佔了上風：那麼即使請孔子來出謀劃策，也不能讓哪怕一個人充分貢獻自己的才能，更何況不是孔子而是普通的凡人呢？",
+        "zhs": "唐尧、虞舜那样的君主，任用稷、契、夔、龙而要求他们把公事办成功；一旦官员犯了罪，便处死鲧而放逐了四凶。现在的大臣亲自领受明确的诏旨，在君主的眼皮底下服务。这些人当中有的是从早到晚忙于处理公务，恭敬勤恳超过常人，不对权贵屈服，办事公正不徇私情，言语行为都非常正直的臣子，他们自然是英明的君主您都清楚的；还有一些却是只拿俸禄不干事却自认为清高，遇事拱手沉默不发表意见却自认为聪明，当着官却一心想着逃避罪责，站在朝廷中却总不忘为自己谋求安全位置，明哲保身谨小慎微的臣子，他们自然也是英明的君主您都清楚的。如果真要让那些为自己保职位的臣子顺顺当当在朝做官；反而让那些为公家尽忠诚的臣子受到怀疑；正义得不到扶植；而出于私心的议论反而占了上风：那么即使请孔子来出谋划策，也不能让哪怕一个人充分贡献自己的才能，更何况不是孔子而是普通的凡人呢？"
+      },
+      "en": "The sovereigns of Tang and Yu entrusted office to Ji, Xie, Kui, and Long, and held them responsible for success. When offences arose, they put Gun to death and banished the Four Evildoers. Today, the great ministers receive the enlightened sovereign's commands in person and serve beneath his very gaze. Those who labour for the public good from dawn till dusk, who are scrupulous and independent, who do not yield in office to the power of the great, who uphold impartiality without favouring their intimates, and who remain upright in word and deed at court, are known to an enlightened ruler. Those who pride themselves on drawing their salaries without rendering service, who regard folded hands and silence as wisdom, who seek only to avoid blame in office and preserve their standing at court, conducting themselves cautiously and speaking deferentially, are likewise known to an enlightened ruler. If ministers must think only of protecting themselves and preserving their positions to avoid fault that might lead to dismissal, while those who devote themselves wholeheartedly to public affairs instead fall under suspicion, then public righteousness will go unfulfilled while selfish private opinions become the prevailing custom. Even if Confucius devised the system, he could not make full use of every man's abilities; how much less could ordinary men do so?"
+    },
+    {
+      "id": "ws16d-p12",
+      "orig": {
+        "zht": "今之學者，師商、韓而上法術，競以儒家為迂闊，不周世用，此最風俗之流弊，創業者之所致慎也。」後考課竟不行。",
+        "zhs": "今之学者，师商、韩而上法术，竞以儒家为迂阔，不周世用，此最风俗之流弊，创业者之所致慎也。」后考课竟不行。"
+      },
+      "vern": {
+        "zht": "當今的學者，以商鞅、韓非爲師而崇尚法律和手段，爭着指責儒家學說迂腐疏闊，說它不適合現世使用。這是不良風氣當中最壞的弊病，創業的君主最應當謹慎對待的問題。後來，考覈官吏的制度終究沒有施行。",
+        "zhs": "当今的学者，以商鞅、韩非为师而崇尚法律和手段，争着指责儒家学说迂腐疏阔，说它不适合现世使用。这是不良风气当中最坏的弊病，创业的君主最应当谨慎对待的问题。后来，考核官吏的制度终究没有施行。"
+      },
+      "en": "Scholars today take Shang Yang and Han Fei as their masters and exalt Legalist methods. They compete with one another in dismissing the Confucians as pedantic and impractical, unfit for the needs of the age. This is the gravest corruption of the prevailing custom, and those who found great enterprises must guard against it with particular care.\" In the end, the new system for evaluating officials was not implemented.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：時李豐為[[常侍|/zh-hant/translations/officials/regional#states-074]]，[[黃門郎|/zh-hant/translations/officials/departments#chancellery-003]]袁侃見轉為[[吏部郎|/zh-hant/translations/officials/departments#state-affairs-037]]，荀俁出為[[東|/zh-hant/maps/map-overall?admin=40]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，二人皆恕之同班友善。",
+          "zhs": "《杜氏新书》曰：时李丰为[[常侍|/zh-hans/translations/officials/regional#states-074]]，[[黄门郎|/zh-hans/translations/officials/departments#chancellery-003]]袁侃见转为[[吏部郎|/zh-hans/translations/officials/departments#state-affairs-037]]，荀俣出为[[东|/zh-hans/maps/map-overall?admin=40]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，二人皆恕之同班友善。",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》记载：当时李丰担任常侍、黄门郎，袁侃被调任为吏部郎，荀俣出任东郡太守。这两人都是他的同僚，关系友善。"
+          },
+          "en": "The New Book of Du Clan states: At the time, Li Feng was a [[Regular Attendant|/translations/officials/regional#states-074]]. Yuan Kan, [[Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]], was transferred to the post of [[Personnel Section Gentleman|/translations/officials/departments#state-affairs-037]], while Xun Yu was appointed [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Dong|/maps/map-overall?admin=40]] Commandery. Both were Du Shu's colleagues and close friends."
+        }
+      ]
+    },
+    {
+      "id": "ws16d-p13",
+      "orig": {
+        "zht": "[[樂安|/zh-hant/maps/map-overall?admin=47]]廉昭以才能拔擢，頗好言事。恕上疏極諫曰：",
+        "zhs": "[[乐安|/zh-hans/maps/map-overall?admin=47]]廉昭以才能拔擢，颇好言事。恕上疏极谏曰："
+      },
+      "vern": {
+        "zht": "[[樂安|/zh-hant/maps/map-overall?admin=47]]國的廉昭，因爲有才能被提拔，非常喜歡發表意見。杜恕上疏朝廷竭力規勸說：",
+        "zhs": "[[乐安|/zh-hans/maps/map-overall?admin=47]]国的廉昭，因为有才能被提拔，非常喜欢发表意见。杜恕上疏朝廷竭力规劝说："
+      },
+      "en": "Lian Zhao of [[Le'an|/maps/map-overall?admin=47]] was promoted for his abilities and was rather fond of commenting on affairs. Du Su submitted a memorial remonstrating strongly:"
+    },
+    {
+      "id": "ws16d-p14",
+      "orig": {
+        "zht": "「伏見[[尚書郎|/zh-hant/translations/officials/departments#state-affairs-037]]廉昭奏[[左丞|/zh-hant/translations/officials/departments#state-affairs-034]]曹璠以罰當關不依詔，坐判問。又云「諸當坐者別奏」。[[尚書令|/zh-hant/translations/officials/departments#state-affairs-031]]陳矯自奏不敢辭罰，亦不敢以處重為恭，意至懇惻。臣竊愍然為朝廷惜之！夫聖人不擇世而興，不易民而治，然而生必有賢智之佐者，蓋進之以道，率之以禮故也。古之帝王之所以能輔世長民者，莫不遠得百姓之懽心，近盡羣臣之智力。誠使今朝任職之臣皆天下之選，而不能盡其力，不可謂能使人；若非天下之選，亦不可謂能官人。",
+        "zhs": "「伏见[[尚书郎|/zh-hans/translations/officials/departments#state-affairs-037]]廉昭奏[[左丞|/zh-hans/translations/officials/departments#state-affairs-034]]曹璠以罚当关不依诏，坐判问。又云「诸当坐者别奏」。[[尚书令|/zh-hans/translations/officials/departments#state-affairs-031]]陈矫自奏不敢辞罚，亦不敢以处重为恭，意至恳恻。臣窃愍然为朝廷惜之！夫圣人不择世而兴，不易民而治，然而生必有贤智之佐者，盖进之以道，率之以礼故也。古之帝王之所以能辅世长民者，莫不远得百姓之懽心，近尽群臣之智力。诚使今朝任职之臣皆天下之选，而不能尽其力，不可谓能使人；若非天下之选，亦不可谓能官人。"
+      },
+      "vern": {
+        "zht": "我看到[[尚書郎|/zh-hant/translations/officials/departments#state-affairs-037]]廉昭的奏章，說“尚書[[左丞|/zh-hant/translations/officials/departments#state-affairs-034]]曹璠在懲罰吏員時沒有遵照詔令向上級報告”，曹璠因此被治罪；又說“其他有關人員應當判罪的另外上奏”。[[尚書令|/zh-hant/translations/officials/departments#state-affairs-031]]陳矯自己上奏說不敢逃避處罰，也不敢爲自己申訴，情辭十分懇切傷心。爲臣知道這一切後私下裏很爲朝廷憐憫惋惜。聖人出現時自己不能挑選時代，治理天下時也不能挑選人民；但聖人出現之後必然有賢能智慧的人做輔佐，原因就在於他用道義作爲標準選擇他們，又用禮儀作爲規範來統率他們。古代能夠治理國家、撫育人民的帝王，沒有誰不是遠能得到百姓的歡心，近能使羣臣盡心竭力的。如果現在任職的官員都是從全國推選出來的優秀人才，而不能讓他們充分發揮力量的話，那就算不上會用人；如果他們不是全國推選出來的優秀人才的話，那就算不上會任命人。",
+        "zhs": "我看到[[尚书郎|/zh-hans/translations/officials/departments#state-affairs-037]]廉昭的奏章，说“尚书[[左丞|/zh-hans/translations/officials/departments#state-affairs-034]]曹璠在惩罚吏员时没有遵照诏令向上级报告”，曹璠因此被治罪；又说“其他有关人员应当判罪的另外上奏”。[[尚书令|/zh-hans/translations/officials/departments#state-affairs-031]]陈矫自己上奏说不敢逃避处罚，也不敢为自己申诉，情辞十分恳切伤心。为臣知道这一切后私下里很为朝廷怜悯惋惜。圣人出现时自己不能挑选时代，治理天下时也不能挑选人民；但圣人出现之后必然有贤能智慧的人做辅佐，原因就在于他用道义作为标准选择他们，又用礼仪作为规范来统率他们。古代能够治理国家、抚育人民的帝王，没有谁不是远能得到百姓的欢心，近能使群臣尽心竭力的。如果现在任职的官员都是从全国推选出来的优秀人才，而不能让他们充分发挥力量的话，那就算不上会用人；如果他们不是全国推选出来的优秀人才的话，那就算不上会任命人。"
+      },
+      "en": "\"I have seen the memorial of [[Imperial Secretariat Gentleman|/translations/officials/departments#state-affairs-037]] Lian Zhao, accusing Cao Fan, the [[Imperial Secretariat Left Assistant|/translations/officials/departments#state-affairs-034]], of imposing punishments contrary to the orders outlined in the imperial edicts. Cao Fan was tried and questioned. He further stated: 'All others who should be held culpable are to be reported separately.' Chen Jiao, [[Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-031]], has submitted a memorial declaring that he dares not evade punishment, nor impose heavy penalties. His words are most earnest and heartfelt. I am deeply grieved and regret this for the sake of the court. Sages do not choose their age before arising, nor choose another people to govern. Yet worthy and wise men invariably come forward to assist them, because they are advanced in accordance with the Way and guided by ritual. The emperors and kings of old could uphold their age and govern the people, because they won the willing allegiance of the common people throughout the realm and drew fully upon the wisdom and strength of their ministers at court. If those now holding office are indeed the finest men in the realm, yet cannot exercise their abilities to the full, then it cannot be said that men are being properly employed. If they are not the finest men in the realm, then it cannot be said that appointments are being properly made."
+    },
+    {
+      "id": "ws16d-p15",
+      "orig": {
+        "zht": "陛下憂勞萬機，或親燈火，而庶事不康，刑禁日弛，豈非股肱不稱之明效歟？原其所由，非獨臣有不盡忠，亦主有不能使。百里奚愚於虞而智於秦，豫讓苟容中行而著節智伯，斯則古人之明驗矣。今臣言一朝皆不忠，是誣一朝也；然其事類，可推而得。陛下感帑藏之不充實，而軍事未息，至乃斷四時之賦衣，薄御府之私穀，帥由聖意，舉朝稱明，與聞政事密勿大臣，寧有懇懇憂此者乎？",
+        "zhs": "陛下忧劳万机，或亲灯火，而庶事不康，刑禁日弛，岂非股肱不称之明效欤？原其所由，非独臣有不尽忠，亦主有不能使。百里奚愚于虞而智于秦，豫让苟容中行而著节智伯，斯则古人之明验矣。今臣言一朝皆不忠，是诬一朝也；然其事类，可推而得。陛下感帑藏之不充实，而军事未息，至乃断四时之赋衣，薄御府之私谷，帅由圣意，举朝称明，与闻政事密勿大臣，宁有恳恳忧此者乎？"
+      },
+      "vern": {
+        "zht": "陛下憂慮辛苦日理萬機，有時甚至夜以繼日；然而諸事不順，刑法禁令一天一天廢弛：這明顯是輔政大臣不稱職而造成的結果。深究其原因，不僅僅是做臣子的有不盡忠的表現，君主也有不善用人的缺點。百里奚，在虞國很愚鈍而在秦國就能表現出很高的智慧；豫讓，在中行氏手下表現平庸而在智伯手下就能展示非凡的節操：這是古人顯著的例證。現在我說滿朝的臣僚都不忠，是誣衊滿朝的人。但是其中的事理，卻可以推求得到。陛下感慨倉庫的貯存不充實，而四方的征戰又還沒有平息；以至於停止賞賜手下四季的衣服，減少了宮廷的口糧供給：這完全出於您自己的意思，滿朝文武都稱讚陛下英明。但是當今參與政事機密的大臣，又有誰像您這樣一心憂念國事的呢？",
+        "zhs": "陛下忧虑辛苦日理万机，有时甚至夜以继日；然而诸事不顺，刑法禁令一天一天废弛：这明显是辅政大臣不称职而造成的结果。深究其原因，不仅仅是做臣子的有不尽忠的表现，君主也有不善用人的缺点。百里奚，在虞国很愚钝而在秦国就能表现出很高的智慧；豫让，在中行氏手下表现平庸而在智伯手下就能展示非凡的节操：这是古人显著的例证。现在我说满朝的臣僚都不忠，是诬蔑满朝的人。但是其中的事理，却可以推求得到。陛下感慨仓库的贮存不充实，而四方的征战又还没有平息；以至于停止赏赐手下四季的衣服，减少了宫廷的口粮供给：这完全出于您自己的意思，满朝文武都称赞陛下英明。但是当今参与政事机密的大臣，又有谁像您这样一心忧念国事的呢？"
+      },
+      "en": "Your Majesty wears yourself out over the myriad affairs of state, sometimes personally labouring by lamplight, Yet public affairs remain unsettled, and the enforcement of the laws grows more lax by the day. Is this not clear proof that your ministers are unequal to their responsibilities? If we seek the cause, it lies not only in ministers failing to give their full loyalty, but also in a ruler's inability to employ them. Baili Xi seemed a fool in Yu but proved wise in Qin; Yu Rang merely held his place under Zhonghang, but won renown for his fidelity to Zhi Bo. These are clear precedents from antiquity. Were I to say that the entire court is disloyal, I would be slandering the entire court. Yet the truth may be inferred from the nature of events. Distressed that the treasury remains depleted while warfare continues unabated, Your Majesty has gone so far as to discontinue the seasonal provision of robes and reduce the grain reserved for imperial use. These measures were Your Majesty's own initiative, and the whole court acclaimed your wisdom. Yet among the senior ministers privy to affairs of state, has any shown heartfelt concern over matters like this?"
+    },
+    {
+      "id": "ws16d-p16",
+      "orig": {
+        "zht": "[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]王才、幸樂人孟思所為不法，振動京都，而其罪狀發於小吏，公卿大臣初無一言。自陛下踐阼以來，[[司隷校尉|/zh-hant/translations/officials/regional#sili-001]]、[[御史中丞|/zh-hant/translations/officials/departments#censorate-044]]寧有舉綱維以督姦宄，使朝廷肅然者邪？若陛下以為今世無良才，朝廷乏賢佐，豈可追望稷、契之遐蹤，坐待來世之儁乂乎！今之所謂賢者，盡有大官而享厚祿矣，然而奉上之節未立，向公之心不一者，委任之責不專，而俗多忌諱故也。臣以為忠臣不必親，親臣不必忠。何者？以其居無嫌之地而事得自盡也。",
+        "zhs": "[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]王才、幸乐人孟思所为不法，振动京都，而其罪状发于小吏，公卿大臣初无一言。自陛下践阼以来，[[司隷校尉|/zh-hans/translations/officials/regional#sili-001]]、[[御史中丞|/zh-hans/translations/officials/departments#censorate-044]]宁有举纲维以督奸宄，使朝廷肃然者邪？若陛下以为今世无良才，朝廷乏贤佐，岂可追望稷、契之遐踪，坐待来世之俊乂乎！今之所谓贤者，尽有大官而享厚禄矣，然而奉上之节未立，向公之心不一者，委任之责不专，而俗多忌讳故也。臣以为忠臣不必亲，亲臣不必忠。何者？以其居无嫌之地而事得自尽也。"
+      },
+      "vern": {
+        "zht": "[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]王才，寵愛演奏音樂的孟思，幹了不少非法的事，擾動了京城；而他的罪狀卻是一個小吏揭發出來的，公卿大臣連一句批評的話也沒說過。自從陛下即位以來，司隸校尉、[[御史中丞|/zh-hant/translations/officials/departments#censorate-044]]，難道有認真執行法紀來督察作奸犯法的官員，使朝廷秩序得到整肅的嗎？倘若陛下認爲當今沒有良才，朝廷缺乏賢明的輔佐，難道可以空自追想稷、契遙遠的蹤跡，坐等來世的優秀人才嗎？現今所謂的賢者，都當了大官而享受厚祿了；然而輔佐君主的大節沒有樹立，爲公家辦事的心意不專：原因就在於委任給他們的職責不確定，而習慣上又有很多忌諱的緣故。我認爲：忠臣不一定想和君主非常親熱，而和君主非常親熱的臣子不一定就有忠心。爲什麼呢？忠臣問心無愧而什麼事情都想盡心盡力去辦啊。",
+        "zhs": "[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]王才，宠爱演奏音乐的孟思，干了不少非法的事，扰动了京城；而他的罪状却是一个小吏揭发出来的，公卿大臣连一句批评的话也没说过。自从陛下即位以来，司隶校尉、[[御史中丞|/zh-hans/translations/officials/departments#censorate-044]]，难道有认真执行法纪来督察作奸犯法的官员，使朝廷秩序得到整肃的吗？倘若陛下认为当今没有良才，朝廷缺乏贤明的辅佐，难道可以空自追想稷、契遥远的踪迹，坐等来世的优秀人才吗？现今所谓的贤者，都当了大官而享受厚禄了；然而辅佐君主的大节没有树立，为公家办事的心意不专：原因就在于委任给他们的职责不确定，而习惯上又有很多忌讳的缘故。我认为：忠臣不一定想和君主非常亲热，而和君主非常亲热的臣子不一定就有忠心。为什么呢？忠臣问心无愧而什么事情都想尽心尽力去办啊。"
+      },
+      "en": "The unlawful acts of Wang Cai, [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]], and Meng Si, a favoured entertainer, shook the capital, yet their crimes were exposed by a petty official, while the highest ministers initially said not a word. Since Your Majesty ascended the throne, has any [[Colonel of the Capital|/translations/officials/regional#sili-001]] or [[Deputy Imperial Censor|/translations/officials/departments#censorate-044]] upheld law and discipline, curbed wickedness, and inspired awe throughout the court? If Your Majesty believes that this age has no men of worth and the court lacks able counsellors, are we then merely admiring the distant example of Ji and Xie, while sitting idle and awaiting the outstanding men of a future age? Those now deemed worthy all hold high office and enjoy generous stipends. Yet they have shown neither steadfast devotion to their sovereign nor single-minded dedication to the public good. This is because responsibility is not entrusted exclusively, while prevailing custom imposes too many restraints. I, your servant, believe that a loyal minister need not be close to the sovereign, nor is a close minister necessarily loyal. Why is this? Because when a man occupies a position that gives no cause for suspicion, he can devote himself wholly to his duties."
+    },
+    {
+      "id": "ws16d-p17",
+      "orig": {
+        "zht": "今有疏者毀人不實其所毀，而必曰私報所憎，譽人不實其所譽，而必曰私愛所親，左右或因之以進憎愛之說。非獨毀譽有之，政事損益，亦皆有嫌。陛下當思所以闡廣朝臣之心，篤厲有道之節，使之自同古人，望與竹帛耳。反使如廉昭者擾亂其間，臣懼大臣遂將容身保位，坐觀得失，為來世戒也！",
+        "zhs": "今有疏者毁人不实其所毁，而必曰私报所憎，誉人不实其所誉，而必曰私爱所亲，左右或因之以进憎爱之说。非独毁誉有之，政事损益，亦皆有嫌。陛下当思所以阐广朝臣之心，笃厉有道之节，使之自同古人，望与竹帛耳。反使如廉昭者扰乱其间，臣惧大臣遂将容身保位，坐观得失，为来世戒也！"
+      },
+      "vern": {
+        "zht": "現在如果有一位與陛下關係疏遠的臣子批評別人而情況不真實，人們就一定會說他是公報私仇；如果他讚揚別人而情況也不真實，人們就一定會說他是有偏心。您左右的人也會順勢發表帶個人感情的言論。不單單是褒貶人有這種現象，國家政策的增減，也都有相似的地方。陛下應當考慮如何開闊朝臣們的胸襟，鼓勵高尚的節操；讓他們自動地同古人相比較，希望名留青史。現在卻讓廉昭這種人擾亂朝廷，我恐怕大臣們，就要設法保住自己的職位，袖手觀望得失，成爲後世的人的鑑戒了。",
+        "zhs": "现在如果有一位与陛下关系疏远的臣子批评别人而情况不真实，人们就一定会说他是公报私仇；如果他赞扬别人而情况也不真实，人们就一定会说他是有偏心。您左右的人也会顺势发表带个人感情的言论。不单单是褒贬人有这种现象，国家政策的增减，也都有相似的地方。陛下应当考虑如何开阔朝臣们的胸襟，鼓励高尚的节操；让他们自动地同古人相比较，希望名留青史。现在却让廉昭这种人扰乱朝廷，我恐怕大臣们，就要设法保住自己的职位，袖手观望得失，成为后世的人的鉴戒了。"
+      },
+      "en": "Now, when a distant minister criticises someone, Your Majesty suspects that he is privately taking revenge on one he hates; when he praises someone, Your Majesty suspects that he is privately favouring one close to him. Those around Your Majesty may then take the opportunity to allege their own personal likes and dislikes, and so distant ministers dare no longer offer either criticism or praise. It is not only praise and censure that are affected; every proposal to alter government policy likewise arouses suspicion. I hope Your Majesty will consider how to give freer scope to the minds of your ministers at court and strengthen the integrity of men, so that they may model themselves on the ancients and aspire only to leave their names in the histories. Instead, men such as Lian Zhao are allowed to sow confusion among them. I fear that henceforth the great ministers will seek only to protect themselves and preserve their positions, sitting by as affairs prosper or fail, leaving a warning to generations to come!"
+    },
+    {
+      "id": "ws16d-p18",
+      "orig": {
+        "zht": "昔周公戒魯侯曰「無使大臣怨乎不已」，言賢愚明皆當世用也。堯數舜之功，稱去四凶，不言大小，有罪則去也。今者朝臣不自以為不能，以陛下為不任也；不自以為不知，以陛下為不問也。陛下何不遵周公之所以用，大舜之所以去？使[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]、[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]坐則侍帷幄，行則從華輦，親對詔問，所陳必達，則羣臣之行能否，皆可得而知；忠能者進，闇劣者退，誰敢依違而不自盡？",
+        "zhs": "昔周公戒鲁侯曰「无使大臣怨乎不已」，言贤愚明皆当世用也。尧数舜之功，称去四凶，不言大小，有罪则去也。今者朝臣不自以为不能，以陛下为不任也；不自以为不知，以陛下为不问也。陛下何不遵周公之所以用，大舜之所以去？使[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]、[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]坐则侍帷幄，行则从华辇，亲对诏问，所陈必达，则群臣之行能否，皆可得而知；忠能者进，暗劣者退，谁敢依违而不自尽？"
+      },
+      "vern": {
+        "zht": "過去周公告誡兒子伯禽說：“不要讓大臣埋怨不受重用。”他沒有說這些大臣中還要分出賢愚高下，說明都可以在社會發揮作用。唐堯列舉虞舜的功績，稱讚他能去除四個惡人，唐堯沒有說四個惡人的罪惡大小，意思是隻要有罪就該除掉。現在朝臣並不認爲自己沒有才能，而是認爲陛下不信任他們；不認爲自己沒有智謀，而是認爲陛下不向他們諮詢。陛下何不遵循周公用人的標準、大舜處罰人的標準呢？讓[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]、[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]這一類官員，坐則侍奉在您的旁邊，行就緊跟在您的大駕之後，當面回答您的詢問，他們有什麼建議一定能夠順利地上達，那麼，羣臣的品行，能力的高低您就都可以知道；忠誠而有才能的人就進用，昏庸無能的人就斥退，那麼，誰還敢辦事敷衍而不盡力呢？",
+        "zhs": "过去周公告诫儿子伯禽说：“不要让大臣埋怨不受重用。”他没有说这些大臣中还要分出贤愚高下，说明都可以在社会发挥作用。唐尧列举虞舜的功绩，称赞他能去除四个恶人，唐尧没有说四个恶人的罪恶大小，意思是只要有罪就该除掉。现在朝臣并不认为自己没有才能，而是认为陛下不信任他们；不认为自己没有智谋，而是认为陛下不向他们咨询。陛下何不遵循周公用人的标准、大舜处罚人的标准呢？让[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]、[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]这一类官员，坐则侍奉在您的旁边，行就紧跟在您的大驾之后，当面回答您的询问，他们有什么建议一定能够顺利地上达，那么，群臣的品行，能力的高低您就都可以知道；忠诚而有才能的人就进用，昏庸无能的人就斥退，那么，谁还敢办事敷衍而不尽力呢？"
+      },
+      "en": "Long ago, the Duke of  Province admonished the Marquis of Lu: 'Do not let great ministers resent being left unemployed.' He meant that the worthy and unworthy should be clearly distinguished and employed as the age required. When Yao recounted Shun's achievements, he praised him for casting out the Four Villains. He made no distinction of rank: whoever was guilty was removed. Court officials today do not believe themselves incapable, but believe that Your Majesty has failed to employ them; they do not believe themselves ignorant, but believe that Your Majesty has failed to consult them. Why does Your Majesty not follow the Duke of  Province's principles in employing men and the Great Shun's principles in dismissing them? Let the [[Palace Attendants|/translations/officials/departments#chancellery-001]] and officials of the [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]] attend within the curtains when Your Majesty is seated and accompany the splendid carriage when you travel. Let them personally answer your questions, so that every voice may reach you. Then the conduct and abilities of every minister may be known. Advance the loyal and capable, and dismiss the benighted and inferior. Who then would dare equivocate rather than exert himself to the utmost?"
+    },
+    {
+      "id": "ws16d-p19",
+      "orig": {
+        "zht": "以陛下之聖明，親與羣臣論議政事，使羣臣人得自盡，人自以為親，人思所以報，賢愚能否，在陛下之所用。以此治事，何事不辦？以此建功，何功不成？每有軍事，詔書常曰：「誰當憂此者邪？吾當自憂耳。」近詔又曰：「憂公忘私者必不然，但先公後私即自辦也。」伏讀明詔，乃知聖思究盡下情，然亦怪陛下不治其本而憂其末也。人之能否，實有本性，雖臣亦以為朝臣不盡稱職也。",
+        "zhs": "以陛下之圣明，亲与群臣论议政事，使群臣人得自尽，人自以为亲，人思所以报，贤愚能否，在陛下之所用。以此治事，何事不办？以此建功，何功不成？每有军事，诏书常曰：「谁当忧此者邪？吾当自忧耳。」近诏又曰：「忧公忘私者必不然，但先公后私即自办也。」伏读明诏，乃知圣思究尽下情，然亦怪陛下不治其本而忧其末也。人之能否，实有本性，虽臣亦以为朝臣不尽称职也。"
+      },
+      "vern": {
+        "zht": "憑着陛下的聖明，親自與羣臣討論政事；使羣臣人人都能盡心竭力，人人都自認爲是親信，人人都想報答陛下；賢明的和愚鈍的，能幹的和不能幹的，全在於陛下您量才任用：這樣來治理國家，還有什麼事辦不好呢？這樣來建立功業，還有什麼功績建不成呢？每當有緊急軍情，陛下的詔書常說：“誰會爲此而擔憂呢？只有我自己擔憂而已啊！”最近的詔書又說：“公而忘私不一定做得到，只要能先公後私也就辦得好事情了。”拜讀英明的詔書，才知道陛下的心裏完全知道下邊的情況；但還是對陛下不從事情的根本上着手解決而只擔憂那些枝節問題而感到奇怪。人的能幹與否，實在受他天賦的制約；即便是我也認爲朝臣並不都稱職。",
+        "zhs": "凭着陛下的圣明，亲自与群臣讨论政事；使群臣人人都能尽心竭力，人人都自认为是亲信，人人都想报答陛下；贤明的和愚钝的，能干的和不能干的，全在于陛下您量才任用：这样来治理国家，还有什么事办不好呢？这样来建立功业，还有什么功绩建不成呢？每当有紧急军情，陛下的诏书常说：“谁会为此而担忧呢？只有我自己担忧而已啊！”最近的诏书又说：“公而忘私不一定做得到，只要能先公后私也就办得好事情了。”拜读英明的诏书，才知道陛下的心里完全知道下边的情况；但还是对陛下不从事情的根本上着手解决而只担忧那些枝节问题而感到奇怪。人的能干与否，实在受他天赋的制约；即便是我也认为朝臣并不都称职。"
+      },
+      "en": "With Your Majesty's sagacity, you personally deliberate affairs of government with your ministers, allowing each to exert himself to the utmost. Each feels close to you and considers how he may repay you. Whether men prove worthy or mediocre, capable or incapable, depends entirely on how Your Majesty employs them. What affair could not be managed in this way? What achievement could not be attained? Whenever military matters arise, edicts invariably say, 'Who should bear this concern? I shall bear it myself.' A recent edict also said, 'Men cannot truly be expected to serve the public good and forget private interests. It is enough that they put public concerns before private ones, and affairs will naturally be accomplished.' On humbly reading this enlightened edict, I saw that Your Majesty's sagacious thought had fully fathomed the sentiments of those below. Yet I also venture to suggest that Your Majesty may be concerning yourself with the consequences rather than addressing the root. Whether a man is capable or not does indeed depend on his innate nature, and even I believe that not all the ministers at court are equal to their offices."
+    },
+    {
+      "id": "ws16d-p20",
+      "orig": {
+        "zht": "明主之用人也，使能者不敢遺其力，而不能者不得處非其任。選舉非其人，未必為有罪也；舉朝共容非其人，乃為怪耳。陛下知其不盡力也，而代之憂其職，知其不能也，而教之治其事，豈徒主勞而臣逸哉？雖聖賢並世，終不能以此為治也。陛下又患臺閣禁令之不密，人事請屬之不絕，聽伊尹作迎客出入之制，選[[司徒|/zh-hant/translations/officials/ministers#superior-excellency-001]]更惡吏以守寺門；威禁由之，實未得為禁之本也。",
+        "zhs": "明主之用人也，使能者不敢遗其力，而不能者不得处非其任。选举非其人，未必为有罪也；举朝共容非其人，乃为怪耳。陛下知其不尽力也，而代之忧其职，知其不能也，而教之治其事，岂徒主劳而臣逸哉？虽圣贤并世，终不能以此为治也。陛下又患台阁禁令之不密，人事请属之不绝，听伊尹作迎客出入之制，选[[司徒|/zh-hans/translations/officials/ministers#superior-excellency-001]]更恶吏以守寺门；威禁由之，实未得为禁之本也。"
+      },
+      "vern": {
+        "zht": "英明的君主用人，應該使能幹的不敢留有餘力；不能幹的不要分給他不該擔任的職務。推選上來的人不合格，不一定就是犯罪；而滿朝都容忍不合格的人，這纔是怪事啊。陛下知道臣僚不盡力，卻替臣僚擔憂他們分內的事；知道臣僚沒有才能，卻勉強教導他如何處理公務：這難道僅僅是君主勞碌而臣子舒服的問題嗎？即使聖賢出世，畢竟也不能這樣來治理國家呀！陛下又擔心尚書檯的禁令不夠嚴密，人情請託的現象制止不住，所以才讓輔政大臣制定了尚書檯的會客制度，又讓[[司徒|/zh-hant/translations/officials/ministers#superior-excellency-001]]重新選了兇惡的吏員守衛尚書檯大門，進出的人都得聽從他們安排：這實際上並沒有找到禁絕不正之風的關鍵。",
+        "zhs": "英明的君主用人，应该使能干的不敢留有余力；不能干的不要分给他不该担任的职务。推选上来的人不合格，不一定就是犯罪；而满朝都容忍不合格的人，这才是怪事啊。陛下知道臣僚不尽力，却替臣僚担忧他们分内的事；知道臣僚没有才能，却勉强教导他如何处理公务：这难道仅仅是君主劳碌而臣子舒服的问题吗？即使圣贤出世，毕竟也不能这样来治理国家呀！陛下又担心尚书台的禁令不够严密，人情请托的现象制止不住，所以才让辅政大臣制定了尚书台的会客制度，又让[[司徒|/zh-hans/translations/officials/ministers#superior-excellency-001]]重新选了凶恶的吏员守卫尚书台大门，进出的人都得听从他们安排：这实际上并没有找到禁绝不正之风的关键。"
+      },
+      "en": "An enlightened ruler employs men so that the able dare not withhold their utmost efforts, while the incapable cannot remain in posts beyond their competence. To select the wrong man is not necessarily culpable; what is extraordinary is for the whole court to tolerate him. Your Majesty knows that such men do not exert themselves fully, yet worries about their offices on their behalf; knows that they are incapable, yet instructs them in the conduct of their duties. Can this result in anything but toil for the ruler and ease for his ministers? Even if sages and worthies all arose in the same age, order could not be brought to the realm in this way. Your Majesty is also troubled that prohibitions within the palace and departments are not strictly enforced, and that private solicitations and appeals never cease. Even if Yi Yin himself framed rules governing the reception and passage of visitors, and the [[Excellency over the Masses|/translations/officials/ministers#superior-excellency-001]] appointed sterner clerks to guard the office gates, such measures might enforce obedience through fear, but they would not address the root of the abuse."
+    },
+    {
+      "id": "ws16d-p21",
+      "orig": {
+        "zht": "昔漢安帝時，[[少府|/zh-hant/translations/officials/ministers#-nine-ministers-iii-256]]竇嘉辟[[廷尉|/zh-hant/translations/officials/ministers#-nine-ministers-ii-221]]郭躬無罪之兄子，猶見舉奏，章劾紛紛。近[[司隷校尉|/zh-hant/translations/officials/regional#sili-001]]孔羨辟[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]狂悖之弟，而有司嘿爾，望風希指，甚於受屬。選舉不以實，人事之大者也。嘉有親戚之寵，躬非社稷重臣，猶尚如此；以今況古，陛下自不督必行之罰以絕阿黨之原耳。伊尹之制，與惡吏守門，非治世之具也。使臣之言少蒙察納，何患於姦不削滅，而養若昭等乎！",
+        "zhs": "昔汉安帝时，[[少府|/zh-hans/translations/officials/ministers#-nine-ministers-iii-256]]窦嘉辟[[廷尉|/zh-hans/translations/officials/ministers#-nine-ministers-ii-221]]郭躬无罪之兄子，犹见举奏，章劾纷纷。近[[司隷校尉|/zh-hans/translations/officials/regional#sili-001]]孔羡辟[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]狂悖之弟，而有司嘿尔，望风希指，甚于受属。选举不以实，人事之大者也。嘉有亲戚之宠，躬非社稷重臣，犹尚如此；以今况古，陛下自不督必行之罚以绝阿党之原耳。伊尹之制，与恶吏守门，非治世之具也。使臣之言少蒙察纳，何患于奸不削灭，而养若昭等乎！"
+      },
+      "vern": {
+        "zht": "從前漢安帝的時候，[[少府|/zh-hant/translations/officials/ministers#-nine-ministers-iii-256]]竇嘉，任命[[廷尉|/zh-hant/translations/officials/ministers#-nine-ministers-ii-221]]郭躬清清白白的侄子爲下屬，還被人舉報了，彈劾的奏章紛紛遞上。而最近司隸校尉孔羨，任命[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]司馬懿言行反常悖理的弟弟爲下屬，有關的官員對此卻一言不發。迎合別人的意旨，比接受別人請託的影響還要惡劣。選拔人才弄虛作假，這是人事當中最大的問題。竇嘉是皇親國戚受皇帝的寵愛，而他任命的郭躬又不是社稷重臣，可還是受到了彈劾；用今天的事來和古代相比，陛下可是自己沒有督促執行必須遵守的法紀來杜絕結黨營私的根源了。輔政大臣制定的會客制度，讓兇惡吏員看守大門，並不是治理天下的正確措施。假使我的話能被您稍微採納一些，還擔心什麼奸黨不能剷除，又怎麼會豢養像廉昭這樣的人啊？",
+        "zhs": "从前汉安帝的时候，[[少府|/zh-hans/translations/officials/ministers#-nine-ministers-iii-256]]窦嘉，任命[[廷尉|/zh-hans/translations/officials/ministers#-nine-ministers-ii-221]]郭躬清清白白的侄子为下属，还被人举报了，弹劾的奏章纷纷递上。而最近司隶校尉孔羡，任命[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]司马懿言行反常悖理的弟弟为下属，有关的官员对此却一言不发。迎合别人的意旨，比接受别人请托的影响还要恶劣。选拔人才弄虚作假，这是人事当中最大的问题。窦嘉是皇亲国戚受皇帝的宠爱，而他任命的郭躬又不是社稷重臣，可还是受到了弹劾；用今天的事来和古代相比，陛下可是自己没有督促执行必须遵守的法纪来杜绝结党营私的根源了。辅政大臣制定的会客制度，让凶恶吏员看守大门，并不是治理天下的正确措施。假使我的话能被您稍微采纳一些，还担心什么奸党不能铲除，又怎么会豢养像廉昭这样的人啊？"
+      },
+      "en": "During the reign of Emperor An of Han, Dou Jia, the [[Minister of the Lesser Treasury|/translations/officials/ministers#-nine-ministers-iii-256]], recruited an innocent nephew of Guo Gong, the [[Commandant of Justice|/translations/officials/ministers#-nine-ministers-ii-221]]. Even so, he was impeached, and memorials denouncing him came in a flood. Recently, Kong Xian, [[Colonel of the Capital|/translations/officials/regional#sili-001]], recruited the [[Grand General|/translations/officials/ministers#superior-excellency-064]]'s arrogant and unruly younger brother, yet the responsible officials remained silent, watching the prevailing winds and seeking to anticipate his wishes. This was worse than yielding to private solicitation. To make appointments without regard to merit is a matter of the gravest consequence. Dou Jia enjoyed favour as an imperial kinsman, while Guo Gong was no minister on whom the dynasty's survival depended, yet even then the response was such. Compared with the past, the present state of affairs exists only because Your Majesty does not personally ensure that punishment is inexorably enforced, thereby cutting off favouritism and faction at their source. The institutions of Yi Yin and the posting of wicked officials at the gates are no instruments for governing an orderly age. If my words should receive even the slightest consideration, why should treachery not be rooted out? Why continue to tolerate the likes of Lian Zhao?",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "臣松之案[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]，司馬宣王也。晉書云：「宣王第五弟，名通，為[[司隷|/zh-hant/translations/officials/regional#sili-001]]從事。」疑恕所云狂悖者。通子順，封龍陽[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。晉初受禪，以不達天命，守節不移，削爵土，徙[[武威|/zh-hant/maps/map-overall?admin=138]]。",
+          "zhs": "臣松之案[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]，司马宣王也。晋书云：「宣王第五弟，名通，为[[司隷|/zh-hans/translations/officials/regional#sili-001]]从事。」疑恕所云狂悖者。通子顺，封龙阳[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。晋初受禅，以不达天命，守节不移，削爵土，徙[[武威|/zh-hans/maps/map-overall?admin=138]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "臣松之案：大将军，指的是司马宣王司马懿。《晋书》说：宣王的第五个弟弟名字叫通，担任司隶从事。怀疑杜恕所说的狂妄悖逆的人。司马通的儿子司马顺，封为龙阳亭侯。晋朝刚刚接受禅让的时候，因为他不明白天命，坚守节操而不变节，被削除爵位和封地，流放到武威。"
+          },
+          "en": "Your servant Songzhi notes that the [[Grand General|/translations/officials/ministers#superior-excellency-064]] was Sima Yi (posthumously honoured as King Xuan, the Renowned King). The Book of Jin states: \"King Xuan's fifth younger brother, named Tong, served as an aide to the [[Colonel of the Capital|/translations/officials/regional#sili-001]].\" I suspect he was the reckless and rebellious man mentioned by Du Shu. Sima Tong's son Sima Shun was enfeoffed as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Longyang. When Jin first accepted the abdication from Wei, Sima Shun refused to recognise Heaven's mandate and remained steadfast in his allegiance. He was stripped of his title and fief and exiled to [[Wuwei|/maps/map-overall?admin=138]]."
+        }
+      ]
+    },
+    {
+      "id": "ws16d-p22",
+      "orig": {
+        "zht": "夫糾擿姦宄，忠事也，然而世憎小人行之者，以其不顧道理而苟求容進也。若陛下不復考其終始，必以違衆忤世為奉公，密行白人為盡節，焉有通人大才而更不能為此邪？誠顧道理而弗為耳。使天下皆背道而趨利，則人主之所最病者，陛下將何樂焉，胡不絕其萌乎！夫先意承旨以求容美，率皆天下淺薄無行義者，其意務在於適人主之心而已，非欲治天下安百姓也。陛下何不試變業而示之，彼豈執其所守以違聖意哉？夫人臣得人主之心，安業也；處尊顯之官，榮事也；食千鍾之祿，厚實也。",
+        "zhs": "夫纠擿奸宄，忠事也，然而世憎小人行之者，以其不顾道理而苟求容进也。若陛下不复考其终始，必以违众忤世为奉公，密行白人为尽节，焉有通人大才而更不能为此邪？诚顾道理而弗为耳。使天下皆背道而趋利，则人主之所最病者，陛下将何乐焉，胡不绝其萌乎！夫先意承旨以求容美，率皆天下浅薄无行义者，其意务在于适人主之心而已，非欲治天下安百姓也。陛下何不试变业而示之，彼岂执其所守以违圣意哉？夫人臣得人主之心，安业也；处尊显之官，荣事也；食千钟之禄，厚实也。"
+      },
+      "vern": {
+        "zht": "糾察舉報奸惡的人，是一種忠誠的事情；然而世人都憎惡小人來做這種事，因爲他們的目的只是想以不正當的手段謀求私利而不講道理。倘若陛下又不去查考事情的整個過程，就一定會把違揹人心牴觸社會的行爲當做奉公，把悄悄告發別人的做法當做盡忠。未必通情達理才能出衆的人就做不來這種事嗎？只不過因爲遵守做人的原則而不肯去那樣幹罷了。如果讓天下的人都違背道義而去爭逐利益，那可是君主最擔憂的事；陛下怎麼能高興得起來？爲什麼還不切斷它的萌芽呢？那種預先設法揣摩君主的心意然後加以迎合以求取悅君主的人，全都是世上淺薄無聊，不講信義之輩；他們一心想的只是如何得到君主的歡心，而不是治理天下安定百姓。陛下何不故意改變自己慣常的想法去試一試他們，看他們是否會堅持自己原來的立場而違背聖意呢？臣僚得到君主的歡心，這是安全的事情；擔任尊貴顯要的官職，這是光榮的事情；享受豐厚的俸祿，這是實惠的事情。",
+        "zhs": "纠察举报奸恶的人，是一种忠诚的事情；然而世人都憎恶小人来做这种事，因为他们的目的只是想以不正当的手段谋求私利而不讲道理。倘若陛下又不去查考事情的整个过程，就一定会把违背人心抵触社会的行为当做奉公，把悄悄告发别人的做法当做尽忠。未必通情达理才能出众的人就做不来这种事吗？只不过因为遵守做人的原则而不肯去那样干罢了。如果让天下的人都违背道义而去争逐利益，那可是君主最担忧的事；陛下怎么能高兴得起来？为什么还不切断它的萌芽呢？那种预先设法揣摩君主的心意然后加以迎合以求取悦君主的人，全都是世上浅薄无聊，不讲信义之辈；他们一心想的只是如何得到君主的欢心，而不是治理天下安定百姓。陛下何不故意改变自己惯常的想法去试一试他们，看他们是否会坚持自己原来的立场而违背圣意呢？臣僚得到君主的欢心，这是安全的事情；担任尊贵显要的官职，这是光荣的事情；享受丰厚的俸禄，这是实惠的事情。"
+      },
+      "en": "To expose and denounce treachery is an act of loyalty. Yet the world despises petty men who do so, because they disregard principle and seek only favour and advancement. If Your Majesty does not examine their conduct from beginning to end, you will inevitably mistake defying the multitude and offending the world for devotion to the public good, and secretly informing against others for the utmost loyalty. Could men of broad understanding and great ability truly be incapable of such things? They refrain only because they have regard for principle. If all under Heaven were to forsake the Way and pursue profit, this would be a ruler's gravest affliction. What pleasure could Your Majesty take in it? Why not suppress it at its first stirrings? Those who anticipate the ruler's wishes and bend to his will in pursuit of favour and praise are most likely shallow men devoid of honour. Their sole concern is to gratify the ruler, not to govern the realm or bring peace to the people. Might Your Majesty not alter your course as a test and make your wishes known to them? Would they then cling to their principles in defiance of your sacred will? For a minister, winning his ruler's favour secures his position; holding a high and eminent office brings honour; and receiving a stipend of a thousand zhong brings abundant wealth."
+    },
+    {
+      "id": "ws16d-p23",
+      "orig": {
+        "zht": "人臣雖愚，未有不樂此而喜干迕者也，迫於道，自彊耳。誠以為陛下當憐而佑之，少委任焉，如何反錄昭等傾側之意，而忽若人者乎？今者外有伺隙之寇，內有貧曠之民，陛下當大計天下之損益，政事之得失，誠不可以怠也。」恕在朝八年，其論議亢直，皆此類也。",
+        "zhs": "人臣虽愚，未有不乐此而喜干迕者也，迫于道，自彊耳。诚以为陛下当怜而佑之，少委任焉，如何反录昭等倾侧之意，而忽若人者乎？今者外有伺隙之寇，内有贫旷之民，陛下当大计天下之损益，政事之得失，诚不可以怠也。」恕在朝八年，其论议亢直，皆此类也。"
+      },
+      "vern": {
+        "zht": "做臣僚的即使再愚蠢，也不會不喜歡這些而去觸犯君主；而觸犯君主的人，只是迫於道義，所以強制自己走正路而已。我認爲陛下實在是應當憐惜他們保護他們，對他們稍加信任；怎麼反而聽信廉昭等人有意陷害的話，而忽視那些忠良之臣呢？現今外有伺機而動的敵寇，內有貧困不滿的人民。陛下應該好好考慮國家的改革和政治的得失，實在不可以懈怠。杜恕在朝任官八年，他的議論剛正直率，都像上面所記載的那樣。",
+        "zhs": "做臣僚的即使再愚蠢，也不会不喜欢这些而去触犯君主；而触犯君主的人，只是迫于道义，所以强制自己走正路而已。我认为陛下实在是应当怜惜他们保护他们，对他们稍加信任；怎么反而听信廉昭等人有意陷害的话，而忽视那些忠良之臣呢？现今外有伺机而动的敌寇，内有贫困不满的人民。陛下应该好好考虑国家的改革和政治的得失，实在不可以懈怠。杜恕在朝任官八年，他的议论刚正直率，都像上面所记载的那样。"
+      },
+      "en": "No minister, however foolish, would forgo these benefits and instead go against his ruler's will. He does so only because duty compels him, forcing himself to speak out. He does so only because duty compels him, steeling himself to speak. I truly believe that such men deserve Your Majesty's care and support, and should be granted some measure of trust. How could the subversive designs of Zhao and his associates be heeded, while men of this kind are disregarded? Abroad, enemies watch for an opening; at home, the people are impoverished and neglected. I respectfully hope that Your Majesty will carefully weigh the gains and losses of the realm and the successes and failures of government, and will not permit the slightest remissness.\" Du Shu served at court for eight years, and his arguments were invariably as uncompromising and forthright as this."
+    },
+    {
+      "id": "ws16d-p24",
+      "orig": {
+        "zht": "出為[[弘農|/zh-hant/maps/map-overall?admin=54]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，數歲轉[[趙|/zh-hant/maps/map-overall?admin=159]][[相|/zh-hant/translations/officials/regional#states-064]]，以疾去官。起家為[[河東|/zh-hant/maps/map-overall?admin=57]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，歲餘，遷[[淮|/zh-hant/maps/map-overall?water=43]]北[[都督護軍|/zh-hant/translations/officials/military#various-commanders-028]]，復以疾去。恕所在，務存大體而已，其樹惠愛，益得百姓歡心，不及於畿。頃之，拜[[御史中丞|/zh-hant/translations/officials/departments#censorate-044]]。恕在朝廷，以不得當世之和，故屢在外任。復出為[[幽州|/zh-hant/maps/map-overall?admin=15]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，加[[建威將軍|/zh-hant/translations/officials/military#four-direction--misc-136]]，[[使持節|/zh-hant/translations/officials#glossary-envoy-bearing-the-imperial-tally]]，[[護烏丸校尉|/zh-hant/translations/officials/military#colonels--commandants-191]]。時[[征北將軍|/zh-hant/translations/officials/military#conquering--garrisoning-067]]程喜屯[[薊|/zh-hant/maps/map-overall?lat=39.90756441&lng=116.38324912&name=Ji]]，[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]袁侃等戒恕曰：「程申伯處先帝之世，傾田園讓於[[青州|/zh-hant/maps/map-overall?admin=6]]。足下今俱杖節，使共屯一城，宜深有以待之。」而恕不以為意。",
+        "zhs": "出为[[弘农|/zh-hans/maps/map-overall?admin=54]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，数岁转[[赵|/zh-hans/maps/map-overall?admin=159]][[相|/zh-hans/translations/officials/regional#states-064]]，以疾去官。起家为[[河东|/zh-hans/maps/map-overall?admin=57]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，岁余，迁[[淮|/zh-hans/maps/map-overall?water=43]]北[[都督护军|/zh-hans/translations/officials/military#various-commanders-028]]，复以疾去。恕所在，务存大体而已，其树惠爱，益得百姓欢心，不及于畿。顷之，拜[[御史中丞|/zh-hans/translations/officials/departments#censorate-044]]。恕在朝廷，以不得当世之和，故屡在外任。复出为[[幽州|/zh-hans/maps/map-overall?admin=15]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，加[[建威将军|/zh-hans/translations/officials/military#four-direction--misc-136]]，[[使持节|/zh-hans/translations/officials#glossary-envoy-bearing-the-imperial-tally]]，[[护乌丸校尉|/zh-hans/translations/officials/military#colonels--commandants-191]]。时[[征北将军|/zh-hans/translations/officials/military#conquering--garrisoning-067]]程喜屯[[蓟|/zh-hans/maps/map-overall?lat=39.90756441&lng=116.38324912&name=Ji]]，[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]袁侃等戒恕曰：「程申伯处先帝之世，倾田园让于[[青州|/zh-hans/maps/map-overall?admin=6]]。足下今俱杖节，使共屯一城，宜深有以待之。」而恕不以为意。"
+      },
+      "vern": {
+        "zht": "杜恕出任[[弘農|/zh-hant/maps/map-overall?admin=54]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。幾年後轉任[[趙|/zh-hant/maps/map-overall?admin=159]]國[[相|/zh-hant/translations/officials/regional#states-064]]，因病離職。不久後又被起用爲[[河東|/zh-hant/maps/map-overall?admin=57]]太守，一年多後升任[[淮|/zh-hant/maps/map-overall?water=43]]北[[都督護軍|/zh-hant/translations/officials/military#various-commanders-028]]，再次因生病離職。他在任職的地方，治理政事着眼於大的方面；在施與恩惠仁愛，更加得到百姓愛戴這方面，比不上他的父親杜畿。不久，朝廷任命他爲[[御史中丞|/zh-hant/translations/officials/departments#censorate-044]]。杜恕在朝廷，因爲與當權的大臣不和睦，所以屢次出外任職。後來又出任[[幽州|/zh-hant/maps/map-overall?admin=15]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，加[[建威將軍|/zh-hant/translations/officials/military#four-direction--misc-136]]的官銜，持有節杖，兼任[[護烏丸校尉|/zh-hant/translations/officials/military#colonels--commandants-191]]。當時，[[征北將軍|/zh-hant/translations/officials/military#conquering--garrisoning-067]]程喜，也在杜恕所在的[[薊|/zh-hant/maps/map-overall?lat=39.90756441&lng=116.38324912&name=Ji]]縣駐紮，[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]袁侃等人告誡杜恕說：“程喜在先帝時，曾在[[青州|/zh-hant/maps/map-overall?admin=6]]排擠田國讓；現在您和他都是持有朝廷的節杖指揮軍隊的使臣，又駐紮在同一座城裏：應該深思對策。”但杜恕並不在意。",
+        "zhs": "杜恕出任[[弘农|/zh-hans/maps/map-overall?admin=54]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。几年后转任[[赵|/zh-hans/maps/map-overall?admin=159]]国[[相|/zh-hans/translations/officials/regional#states-064]]，因病离职。不久后又被起用为[[河东|/zh-hans/maps/map-overall?admin=57]]太守，一年多后升任[[淮|/zh-hans/maps/map-overall?water=43]]北[[都督护军|/zh-hans/translations/officials/military#various-commanders-028]]，再次因生病离职。他在任职的地方，治理政事着眼于大的方面；在施与恩惠仁爱，更加得到百姓爱戴这方面，比不上他的父亲杜畿。不久，朝廷任命他为[[御史中丞|/zh-hans/translations/officials/departments#censorate-044]]。杜恕在朝廷，因为与当权的大臣不和睦，所以屡次出外任职。后来又出任[[幽州|/zh-hans/maps/map-overall?admin=15]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，加[[建威将军|/zh-hans/translations/officials/military#four-direction--misc-136]]的官衔，持有节杖，兼任[[护乌丸校尉|/zh-hans/translations/officials/military#colonels--commandants-191]]。当时，[[征北将军|/zh-hans/translations/officials/military#conquering--garrisoning-067]]程喜，也在杜恕所在的[[蓟|/zh-hans/maps/map-overall?lat=39.90756441&lng=116.38324912&name=Ji]]县驻扎，[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]袁侃等人告诫杜恕说：“程喜在先帝时，曾在[[青州|/zh-hans/maps/map-overall?admin=6]]排挤田国让；现在您和他都是持有朝廷的节杖指挥军队的使臣，又驻扎在同一座城里：应该深思对策。”但杜恕并不在意。"
+      },
+      "en": "Thereafter, Du Su left the capital to serve as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hongnong|/maps/map-overall?admin=54]]. After several years, he was transferred to serve as [[Principality Chancellor|/translations/officials/regional#states-064]] of [[Zhao State|/maps/map-overall?admin=159]], but resigned owing to illness. He was later recalled as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hedong|/maps/map-overall?admin=57]]. A year or so later, Du Su was promoted to [[Protector of the Provincial Army|/translations/officials/military#various-commanders-028]] north of the [[Huai River|/maps/map-overall?water=43]], but again resigned owing to illness. Wherever Du Shu served, he concerned himself chiefly with the larger principles of government. In governing with kindness and winning the people's affection, he did not equal his father, Du [[Ji|/maps/map-overall?lat=39.90756441&lng=116.38324912&name=Ji]]. Before long, Du Su was appointed [[Deputy Imperial Censor|/translations/officials/departments#censorate-044]]. At court, Du Shu would not conform to the ways of his contemporaries, and was therefore repeatedly assigned to posts outside the capital. He was again sent out as [[Inspector|/translations/officials/regional#provinces-014]] of [[You Province|/maps/map-overall?admin=15]], with the additional titles [[General Who Establishes Might|/translations/officials/military#four-direction--misc-136]], [[Envoy Bearing the Imperial Tally|/translations/officials#glossary-envoy-bearing-the-imperial-tally]] and [[Colonel Protecting the Wuhuan|/translations/officials/military#colonels--commandants-191]]. At the time, Cheng Xi, [[General Who Conquers the North|/translations/officials/military#conquering--garrisoning-067]], was garrisoned at Ji. [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]] Yuan Kan and others warned Du Shu: \"Under the late emperor, Cheng Shenbo forced Tian Guorang out of [[Qing Province|/maps/map-overall?admin=6]]. You now both bear imperial tallies and are to garrison the same city. You should take great care in dealing with him.\" Du Shu paid no heed.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：恕在[[弘農|/zh-hant/maps/map-overall?admin=54]]，寬和有惠愛。及遷，以孟康代恕為[[弘農|/zh-hant/maps/map-overall?admin=54]]。康字公休，[[安平|/zh-hant/maps/map-overall?admin=157]]人。黃初中，以於郭后有外屬，并受九親賜拜，遂轉為[[散騎侍郎|/zh-hant/translations/officials/departments#chancellery-016]]。是時，散騎皆以高才英儒充其選，而康獨緣妃嬙雜在其間，故于時皆共輕之，號為阿九。康旣無才敏，因在宂官，博讀書傳，後遂有所彈駮，其文義雅而切要，衆人乃更加意。正始中，出為[[弘農|/zh-hant/maps/map-overall?admin=54]]，領[[典農校尉|/zh-hant/translations/officials/ministers#-nine-ministers-iii-242]]。康到官，清己奉職，嘉善而矜不能，省息獄訟，緣民所欲，因而利之。\n\n郡領吏二百餘人，涉春遣休，常四分遣一。事無宿諾，時出案行，皆豫勑[[督郵|/zh-hant/translations/officials/regional#commanderies-055]]平水，不得令屬官遣人探候，脩設曲敬。又不欲煩損吏民，常豫勑吏卒，行各持鐮，所在自刈馬草，不止亭傳，露宿樹下，又所從常不過十餘人。郡帶道路，其諸過賔客，自非公法無所出給；若知舊造之，自出於家。康之始拜，衆人雖知其有志量，以其未嘗宰牧，不保其能也；而康恩澤治能乃爾，吏民稱歌焉。嘉平末，徙[[渤海|/zh-hant/maps/map-overall?admin=155]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，徵入為[[中書令|/zh-hant/translations/officials/departments#palace-secretariat-020]]，後轉為[[監|zh-hant/translations/officials/departments#palace-secretariat-019]]。",
+          "zhs": "《魏略》曰：恕在[[弘农|/zh-hans/maps/map-overall?admin=54]]，宽和有惠爱。及迁，以孟康代恕为[[弘农|/zh-hans/maps/map-overall?admin=54]]。康字公休，[[安平|/zh-hans/maps/map-overall?admin=157]]人。黄初中，以于郭后有外属，并受九亲赐拜，遂转为[[散骑侍郎|/zh-hans/translations/officials/departments#chancellery-016]]。是时，散骑皆以高才英儒充其选，而康独缘妃嫱杂在其间，故于时皆共轻之，号为阿九。康既无才敏，因在宂官，博读书传，后遂有所弹駮，其文义雅而切要，众人乃更加意。正始中，出为[[弘农|/zh-hans/maps/map-overall?admin=54]]，领[[典农校尉|/zh-hans/translations/officials/ministers#-nine-ministers-iii-242]]。康到官，清己奉职，嘉善而矜不能，省息狱讼，缘民所欲，因而利之。\n\n郡领吏二百余人，涉春遣休，常四分遣一。事无宿诺，时出案行，皆豫𠡠[[督邮|/zh-hans/translations/officials/regional#commanderies-055]]平水，不得令属官遣人探候，修设曲敬。又不欲烦损吏民，常豫𠡠吏卒，行各持镰，所在自刈马草，不止亭传，露宿树下，又所从常不过十余人。郡带道路，其诸过賔客，自非公法无所出给；若知旧造之，自出于家。康之始拜，众人虽知其有志量，以其未尝宰牧，不保其能也；而康恩泽治能乃尔，吏民称歌焉。嘉平末，徙[[渤海|/zh-hans/maps/map-overall?admin=155]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，征入为[[中书令|/zh-hans/translations/officials/departments#palace-secretariat-020]]，后转为[[监|zh-hans/translations/officials/departments#palace-secretariat-019]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：杜恕在弘农任职时，宽厚温和，对百姓有仁爱之心。等到杜恕升迁的时候，朝廷任用孟康代替杜恕担任弘农太守。孟康字公休，是安平人。黄初年间，因为与郭皇后有外戚关系，孟康连同九族亲属一同受到赏赐封官，于是转任散骑侍郎。当时散骑侍郎的职位都是由才能卓越、学识渊博的大儒来担任的，而孟康只是因为与郭皇后有外戚关系才得以在其中任职，所以当时的人都轻视他，给他取了个外号叫“阿九”。孟康本来并没有敏捷的才思，因为担任的是闲散官职，他就广泛地阅读典籍，后来就提出了一些弹劾和批驳的奏章，他的文辞义理既典雅又切中要害，大家于是才对他更加留意。正始年间，孟康外任弘农太守，兼任典农校尉。孟康到任后，清廉自律，恪尽职守，嘉奖贤善之人，怜悯能力不足之人，减少诉讼案件，顺着百姓的愿望，顺势为他们谋取利益。\n\n弘农郡管辖的官吏有两百多人，春季期间安排他们休假，常常派遣四分之一的官吏放假，承诺的事务从不隔夜未完成。他时常外出巡视，都预先告诫督邮、平水，不许让下属官员派人探听伺候，曲意逢迎。又不想烦扰损害官吏百姓。他常常预先告诫官吏士兵，出行时各自带着镰刀，在所到之处自己割马草，不在驿站停留，露天睡在树下。而且他所带领的随从常常不超过十多人。弘农郡地处交通要道。对于那些过往的宾客，如果并非出于公事之需，官府就不提供任何供给；如果是熟悉的老朋友造访，则自己从家中拿出东西款待。孟康刚被任命时，众人虽然知道他有志向和度量，因为他未曾担任过地方长官，所以不敢保证他能胜任。然而孟康的恩惠和治理才能如此卓著，官吏和百姓都称赞歌颂他。嘉平末年，他调任渤海太守，被征召入朝担任中书令，后来转任中书监。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: While Du Shu was in [[Hongnong|/maps/map-overall?admin=54]], he governed with leniency and restraint, and showed benevolent care for the people. When he was transferred, Meng Kang succeeded him in [[Hongnong|/maps/map-overall?admin=54]]. Meng Kang, courtesy name Gongxiu, was a native of [[Anping|/maps/map-overall?admin=157]]. During the Huangchu era, owing to his Ninefold kinship with Empress Guo, he received imperial bestowments and appointments. He was subsequently made [[Cavalier Attendant Gentleman|/translations/officials/departments#chancellery-016]]. At the time, the post was filled by men of outstanding talent and eminent scholars. Meng Kang alone had gained his position through his connection to an imperial consort, so his contemporaries all looked down on him and called him \"A-Jiu\" (the ninth). Though lacking in talent and quick wit, Meng Kang used the leisure afforded by his sinecure to read widely in the classics and commentaries. He later wrote impeachments and critiques whose arguments were elegant and incisive, and people began to regard him more highly. During the Zhengshi era, Meng Kang was sent out to govern [[Hongnong|/maps/map-overall?admin=54]], concurrently serving as [[Colonel Directing Agriculture|/translations/officials/ministers#-nine-ministers-iii-242]]. On taking office, Meng Kang lived with integrity and fulfilled his duties faithfully. He commended the worthy and showed compassion to those of limited ability. He reduced litigation and imprisonment, accommodated the people's wishes, and sought thereby to benefit them. \n\nThe commandery employed more than two hundred officials. Each spring, he granted them leave in batches, one quarter at a time. He never left a promise unfulfilled overnight. Whenever he went out on tours of inspection, he instructed the waterways officials and [[Post Marshals|/translations/officials/regional#commanderies-055]] in advance not to let subordinate offices send men to watch for his arrival or make elaborate preparations to receive him. Unwilling to burden officials or people, he ordered his attendants to carry sickles whenever they travelled, so that they could cut fodder for the horses themselves. He did not lodge at post stations, but slept in the open beneath the trees, and his retinue never exceeded a dozen or so men. For those passing through the commandery, unless they were on official business, Meng Kang strictly observed the regulations and provided them with nothing. If old friends or acquaintances came to visit, he supplied their needs from his own household. When Meng Kang was first appointed, people recognised his ambition and sound judgement, but as he had never before governed a commandery or province, they doubted his ability. Yet he governed with such benevolence and skill that officials and people alike sang his praises. At the end of the Jiaping era, he was transferred to serve as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Bohai|/maps/map-overall?admin=155]]. He was later recalled to the capital as [[Director of the Palace Secretariat|/translations/officials/departments#palace-secretariat-020]] and subsequently promoted to [[Supervisor of the Palace Secretariat|/translations/officials/departments#palace-secretariat-019]]."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：恕遂去京師，營[[宜陽|/zh-hant/maps/map-overall?lat=34.49993554&lng=111.94207324&name=Yiyang]][[一泉塢|/zh-hant/maps/map-overall?lat=34.45577314&lng=111.83783648&name=Yiquanwu/Yufuyi]]，因其壘壍之固，小大家焉。明帝崩時，人多為恕言者。",
+          "zhs": "《杜氏新书》曰：恕遂去京师，营[[宜阳|/zh-hans/maps/map-overall?lat=34.49993554&lng=111.94207324&name=Yiyang]][[一泉坞|/zh-hans/maps/map-overall?lat=34.45577314&lng=111.83783648&name=Yiquanwu/Yufuyi]]，因其垒壍之固，小大家焉。明帝崩时，人多为恕言者。",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》记载：杜恕于是离开京城，在宜阳的一泉坞建造居所，凭借那里壁垒壕沟的坚固，大小一家都住在那里。明帝驾崩之后，当时有很多人为杜恕说话。"
+          },
+          "en": "The New Book of Du Clan states: Du Shu then left the capital and built [[Yiquanwu|/maps/map-overall?lat=34.45577314&lng=111.83783648&name=Yiquanwu/Yufuyi]] in [[Yiyang|/maps/map-overall?lat=34.49993554&lng=111.94207324&name=Yiyang]]. Relying on the strength of its ramparts and moat, he settled his entire family there. When Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) died, many spoke on Du Shu's behalf."
+        }
+      ]
+    },
+    {
+      "id": "ws16d-p25",
+      "orig": {
+        "zht": "至官未期，有鮮卑大人兒，不由關塞，徑將數十騎詣州，州斬所從來小子一人，無表言上。喜於是劾奏恕，下[[廷尉|/zh-hant/translations/officials/ministers#-nine-ministers-ii-221]]，當死。以父畿勤事水死，免為庶人，徙[[章武|/zh-hant/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]郡，是歲嘉平元年。恕倜儻任意，而思不防患，終致此敗。",
+        "zhs": "至官未期，有鲜卑大人儿，不由关塞，径将数十骑诣州，州斩所从来小子一人，无表言上。喜于是劾奏恕，下[[廷尉|/zh-hans/translations/officials/ministers#-nine-ministers-ii-221]]，当死。以父畿勤事水死，免为庶人，徙[[章武|/zh-hans/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]郡，是岁嘉平元年。恕倜傥任意，而思不防患，终致此败。"
+      },
+      "vern": {
+        "zht": "他到任不滿一個月，有一個鮮卑族首領的兒子，帶領幾十名騎兵，沒有經過邊境上的關卡就擅自來到州治薊縣；州政府處死了其中一名隨從，沒有寫表章上報。於是程喜上奏彈劾杜恕，杜恕被逮捕入獄，由[[廷尉|/zh-hant/translations/officials/ministers#-nine-ministers-ii-221]]審理，依法應當處死。因爲他父親杜畿勤於國事又以身殉職，得以減刑，被免職爲平民，流放到[[章武|/zh-hant/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]郡。這一年是嘉平元年（公元 249）。杜恕爲人豪放不羈，想不到要防備別人，終於招致這樣的災禍。",
+        "zhs": "他到任不满一个月，有一个鲜卑族首领的儿子，带领几十名骑兵，没有经过边境上的关卡就擅自来到州治蓟县；州政府处死了其中一名随从，没有写表章上报。于是程喜上奏弹劾杜恕，杜恕被逮捕入狱，由[[廷尉|/zh-hans/translations/officials/ministers#-nine-ministers-ii-221]]审理，依法应当处死。因为他父亲杜畿勤于国事又以身殉职，得以减刑，被免职为平民，流放到[[章武|/zh-hans/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]郡。这一年是嘉平元年（公元 249）。杜恕为人豪放不羁，想不到要防备别人，终于招致这样的灾祸。"
+      },
+      "en": "Before he had been in office for a year, the son of a Xianbei chieftain bypassed the frontier passes and rode directly to the province with several dozen horsemen. The provincial authorities executed one of his young attendants without submitting a memorial to the throne. Cheng Xi thereupon impeached Du Shu, who was handed over to the [[Commandant of Justice|/translations/officials/ministers#-nine-ministers-ii-221]] and sentenced to death. Because his father Du Ji had drowned in devoted service to the state, Du Shu was pardoned, reduced to commoner status, and exiled to [[Zhangwu|/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]] Commandery. This was in the first year of Jiaping. Du Shu was free-spirited and unconcerned with conventions, but he did not know how to guard against trouble, and ultimately brought this disaster upon himself.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：喜欲恕折節謝己，諷司馬宋權示之以微意。恕荅權書曰：「況示委曲。夫法天下事，以善意相待，無不致快也；以不善意相待，無不致嫌隙也。而議者言，凡人天性皆不善，不當待以善意，更墮其調中。僕得此輩，隨欲歸蹈滄海乘桴耳，不能自諧在其間也。然以年五十二，不見廢棄，頗遭明達君子亮其本心；若不見亮，使人刳心著地，正與數[[斤|/zh-hant/translations/officials#glossary-jin]]肉相似，何足有所明，故終不自解說。\n\n程[[征北|/zh-hant/translations/officials/military#conquering--garrisoning-067]]功名宿著，在僕前甚多，有人出征北乎！若令下官事無大小，咨而後行，則非上司彈繩之意；若咨而不從，又非上下相順之宜。故推一心，任一意，直而行之耳。殺胡之事，天下謂之是邪，是僕諧也；呼為非邪，僕自受之，無所怨咎。程征北明之亦善，不明之亦善，諸君子自共為其心耳，不在僕言也。」喜於是遂深文劾恕。",
+          "zhs": "《杜氏新书》曰：喜欲恕折节谢己，讽司马宋权示之以微意。恕荅权书曰：「况示委曲。夫法天下事，以善意相待，无不致快也；以不善意相待，无不致嫌隙也。而议者言，凡人天性皆不善，不当待以善意，更堕其调中。仆得此辈，随欲归蹈沧海乘桴耳，不能自谐在其间也。然以年五十二，不见废弃，颇遭明达君子亮其本心；若不见亮，使人刳心著地，正与数[[斤|/zh-hans/translations/officials#glossary-jin]]肉相似，何足有所明，故终不自解说。\n\n程[[征北|/zh-hans/translations/officials/military#conquering--garrisoning-067]]功名宿著，在仆前甚多，有人出征北乎！若令下官事无大小，咨而后行，则非上司弹绳之意；若咨而不从，又非上下相顺之宜。故推一心，任一意，直而行之耳。杀胡之事，天下谓之是邪，是仆谐也；呼为非邪，仆自受之，无所怨咎。程征北明之亦善，不明之亦善，诸君子自共为其心耳，不在仆言也。」喜于是遂深文劾恕。",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》记载：程喜想让杜恕屈身向自己道歉，就暗示司马宋权向杜恕委婉表达这个意思。杜恕给宋权回信说：“何必如此委婉曲折？处理天下的事务，以善意相待，没有不带来愉快的；以不善意相待，没有不产生嫌隙的。我遇到这样的人，就想隐退到沧海，坐木筏漂流罢了，无法与他们和谐相处。然而我五十二岁了，还没有被弃置不用，也遇到了不少明达的君子，理解我的本心。如果我的本心不能被理解，就算我把自己的心剖出来放在地上，它也正像几斤肉一样，又怎么能说明什么呢，所以我始终不自我辩解。\n\n程征北的功名一向显著，比我高出很多，还有人能超过征北将军吗？如果让我处理事务，无论事情大小。凡事都先向上司咨询而后再行动，那就不符合上司督察的本意了；如果咨询了却不遵从上司的意见，又不符合上下顺畅相处的道理，所以我就秉持着自己的本心，按照自己的意愿，直接去做事罢了。诛杀胡人这件事，天下人认为它是对的，那就是我做成的。若说这是错的，那我自己承担后果，没有任何怨恨和责怪。程征北能理解我也很好，不能理解我也很好，诸位君子各凭本心行事就行了，不在于我的话。程喜于是就罗织罪名弹劾恕。"
+          },
+          "en": "The New Book of Du Clan states: Cheng Xi wanted Du Shu to humble himself deferentially and apologise, and prompted Major Song Quan to convey his wishes discreetly. Du Shu replied to Song Quan in a letter: \"What of the subtle intentions that lay beneath the surface? In dealing with the affairs of the world, goodwill always brings satisfaction, while ill will invariably breeds resentment. Some critics say that human nature is wholly bad, and that one should not treat others with goodwill, lest one fall prey to their schemes. If I had to live among such men, I would rather take to the blue sea on a raft, for I could never accommodate myself to them. Yet at fifty-two I have not been cast aside, and have often met discerning gentlemen who understood my true intentions. If no one understood me, even cutting out my heart and laying it on the ground would reveal no more than several [[Jin|/translations/officials#glossary-jin]] of flesh. What could that prove? I have therefore never sought to explain myself. \n\nThe [[General Who Conquers the North|/translations/officials/military#conquering--garrisoning-067]] Cheng Xi has long enjoyed distinguished merit and renown, far surpassing my own. Who could surpass the General? If I, as his subordinate, were required to consult him before acting in every matter, great or small, that would not accord with his duty as a superior to impeach wrongdoing. If I consulted him but did not follow his direction, that too would disrupt the harmony between us. I therefore follow my own convictions, rely on my own judgement, and act forthrightly. As for the killing of the Hu, if the people of the realm judge that I acted rightly, then I accomplished the deed; if they say that I acted wrongly, I shall bear the consequences myself and blame no one else. It matters little whether Cheng, General Who Conquers the North, understands the matter or not. The various gentlemen will judge it for themselves; it does not depend on anything I might say.\" Cheng Xi thereupon drew up a harsh indictment against Du Shu. "
+        }
+      ]
+    },
+    {
+      "id": "ws16d-p26",
+      "orig": {
+        "zht": "初，恕從[[趙|/zh-hant/maps/map-overall?admin=159]]郡還，[[陳留|/zh-hant/maps/map-overall?admin=39]]阮武亦從[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]徵，俱自薄[[廷尉|/zh-hant/translations/officials/ministers#-nine-ministers-ii-221]]。謂恕曰：「相觀才性可以由公道而持之不厲，器能可以處大官而求之不順，才學可以述古今而志之不一，此所謂有其才而無其用。今向閑暇，可試潛思，成一家言。」在[[章武|/zh-hant/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]，遂著體論八節。又著興性論一篇，蓋興於為己也。四年，卒於徙所。",
+        "zhs": "初，恕从[[赵|/zh-hans/maps/map-overall?admin=159]]郡还，[[陈留|/zh-hans/maps/map-overall?admin=39]]阮武亦从[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]征，俱自薄[[廷尉|/zh-hans/translations/officials/ministers#-nine-ministers-ii-221]]。谓恕曰：「相观才性可以由公道而持之不厉，器能可以处大官而求之不顺，才学可以述古今而志之不一，此所谓有其才而无其用。今向闲暇，可试潜思，成一家言。」在[[章武|/zh-hans/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]，遂著体论八节。又著兴性论一篇，盖兴于为己也。四年，卒于徙所。"
+      },
+      "vern": {
+        "zht": "當初杜恕從[[趙|/zh-hant/maps/map-overall?admin=159]]郡回京，[[陳留|/zh-hant/maps/map-overall?admin=39]]郡的阮武也從[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]的職位上被徵召入朝；兩人都被叫到[[廷尉|/zh-hant/translations/officials/ministers#-nine-ministers-ii-221]]的公堂接受審問和對證。見了面之後阮武對杜恕說：“我觀察後發現您的品德能夠遵循公正之道，但還堅持得不夠嚴格；您的能力可以擔任重要官職，但是追求仕途的升遷又很不順利；您的才學可以記述古今，但志向不夠專一：這就是人們所說的有那樣的才能卻沒有發揮那樣的作用。現在將會有空閒了，可以試着深思一番，對此寫出自己的獨立見解來。”杜恕在[[章武|/zh-hant/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]郡，便撰寫了《體論》八篇。又寫出《興性論》一篇，大概是有感於自己的遭遇而寫的。嘉平四年（公元 252），他死在流放的地方。",
+        "zhs": "当初杜恕从[[赵|/zh-hans/maps/map-overall?admin=159]]郡回京，[[陈留|/zh-hans/maps/map-overall?admin=39]]郡的阮武也从[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]的职位上被征召入朝；两人都被叫到[[廷尉|/zh-hans/translations/officials/ministers#-nine-ministers-ii-221]]的公堂接受审问和对证。见了面之后阮武对杜恕说：“我观察后发现您的品德能够遵循公正之道，但还坚持得不够严格；您的能力可以担任重要官职，但是追求仕途的升迁又很不顺利；您的才学可以记述古今，但志向不够专一：这就是人们所说的有那样的才能却没有发挥那样的作用。现在将会有空闲了，可以试着深思一番，对此写出自己的独立见解来。”杜恕在[[章武|/zh-hans/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]]郡，便撰写了《体论》八篇。又写出《兴性论》一篇，大概是有感于自己的遭遇而写的。嘉平四年（公元 252），他死在流放的地方。"
+      },
+      "en": "Previously, when Du Shu returned from [[Zhao|/maps/map-overall?admin=159]], Ruan Wu of [[Chenliu|/maps/map-overall?admin=39]] was likewise recalled from his post as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Qinghe|/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]. Both appeared before the [[Commandant of Justice|/translations/officials/ministers#-nine-ministers-ii-221]]. Ruan Wu said to Du Shu, \"As I see it, you have the talent and character to follow the Way, yet lack firmness in upholding it; you have the capacity to hold high office, yet your path to advancement is beset with obstacles; and you have the learning to expound past and present, yet lack singleness of purpose. This is what is meant by possessing talent without putting it to use. Now that you have leisure, devote yourself to quiet reflection and set forth a teaching of your own.\" While at [[Zhangwu|/maps/map-overall?lat=38.56299818&lng=117.17636367&name=Zhangwu]], Du Shu accordingly wrote the Discourse on Fundamentals in eight sections, and another essay entitled Discourse on Arousing the Nature. Both likely sprang from his commitment to self-cultivation. In the fourth year, he died in exile.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：以為人倫之大綱，莫重於君臣；立身之基本，莫大於言行；安上理民，莫精於政法；勝殘去殺，莫善於用兵。夫禮也者，萬物之體也，萬物皆得其體，無有不善，故謂之體論。",
+          "zhs": "《杜氏新书》曰：以为人伦之大纲，莫重于君臣；立身之基本，莫大于言行；安上理民，莫精于政法；胜残去杀，莫善于用兵。夫礼也者，万物之体也，万物皆得其体，无有不善，故谓之体论。",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》集中：杜恕认为人伦的大纲，没有比君臣关系更重要的；安身立命的根本，没有比言行更重要的。安定君主、治理百姓，没有比政法更精深的；遏制残暴、消除杀戮，没有比用兵更有效的。礼，是万物的根本准则。万物都遵循了礼这个根本，就不会有不好的地方，所以把这本书命名为《体论》。"
+          },
+          "en": "The Du Shi Xinshu / New Book of Du Clan states: Du Shu held that of the cardinal bonds of human society, none was weightier than that between ruler and subject; of the foundations of personal conduct, none was greater than speech and action; for securing the ruler and governing the people, nothing surpassed institutions and laws; and for subduing cruelty and putting an end to killing, nothing was better than the art of war. Ritual gives form to all things, and when all things attain their proper form, all are brought to goodness. Hence he called the work the Discourse on Form."
+        }
+      ]
+    },
+    {
+      "id": "ws16d-p27",
+      "orig": {
+        "zht": "甘露二年，[[河東|/zh-hant/maps/map-overall?admin=57]]樂詳年九十餘，上書訟畿之遺績，朝廷感焉。詔封恕子預為豐樂[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑百戶。恕奏議論駮皆可觀，掇其切世大事著于篇。",
+        "zhs": "甘露二年，[[河东|/zh-hans/maps/map-overall?admin=57]]乐详年九十余，上书讼畿之遗绩，朝廷感焉。诏封恕子预为丰乐[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，邑百户。恕奏议论駮皆可观，掇其切世大事著于篇。"
+      },
+      "vern": {
+        "zht": "甘露二年（公元 257），[[河東|/zh-hant/maps/map-overall?admin=57]]郡九十多歲的樂詳，上書申訴杜畿留下來的功績。朝廷受到感動，下詔封杜恕的兒子杜預爲豐樂[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，食邑一百戶。杜恕的奏議論辯文章都值得一讀，這裏選取其中切合當時政治大事的幾篇記載在他的傳記中。",
+        "zhs": "甘露二年（公元 257），[[河东|/zh-hans/maps/map-overall?admin=57]]郡九十多岁的乐详，上书申诉杜畿留下来的功绩。朝廷受到感动，下诏封杜恕的儿子杜预为丰乐[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，食邑一百户。杜恕的奏议论辩文章都值得一读，这里选取其中切合当时政治大事的几篇记载在他的传记中。"
+      },
+      "en": "In the second year of Ganlu, Yue Xiang of [[Hedong|/maps/map-overall?admin=57]], then over ninety, submitted a memorial recounting Du Ji's lasting achievements. The court was moved and decreed that Du Shu's son Du Yu be enfeoffed as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Fengle, with a fief of one hundred households. Du Shu's memorials, proposals, arguments, and rebuttals are all worthy of attention. Those bearing most directly on the great affairs of his age are recorded here.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": " 《魏略》曰：樂詳字文載。少好學，建安初，詳聞[[公車司馬令|/zh-hant/translations/officials/ministers#-nine-ministers-i-198]][[南|/zh-hant/maps/map-overall?admin=80]]郡謝該善左氏傳，乃從[[南陽|/zh-hant/maps/map-overall?admin=85]]步詣該，問疑難諸要，今左氏樂氏問七十二事，詳所撰也。所問旣了而歸鄉里，時杜畿為[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，亦甚好學，署詳[[文學祭酒|/zh-hant/translations/officials/regional#commanderies-054]]，使教後進，於是[[河東|/zh-hant/maps/map-overall?admin=57]]學業大興。\n\n至黃初中，徵拜博士。于時太學初立，有博士十餘人，學多褊狹，又不熟悉，略不親教，備員而已。惟詳五業並授，其或難教，質而不解，詳無慍色，以杖畫地，牽譬引類，至忘寢食，以是獨擅名於遠近。詳學旣精悉，又善推步三五，別受詔與太史典定律歷。太和中，轉拜[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。詳學優能少，故歷三世，竟不出為宰守。至正始中，以年老罷歸於舍，本國宗族歸之，門徒數千人。",
+          "zhs": "《魏略》曰：乐详字文载。少好学，建安初，详闻[[公车司马令|/zh-hans/translations/officials/ministers#-nine-ministers-i-198]][[南|/zh-hans/maps/map-overall?admin=80]]郡谢该善左氏传，乃从[[南阳|/zh-hans/maps/map-overall?admin=85]]步诣该，问疑难诸要，今左氏乐氏问七十二事，详所撰也。所问既了而归乡里，时杜畿为[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，亦甚好学，署详[[文学祭酒|zh-hans/translations/officials/regional#commanderies-054]]，使教后进，于是[[河东|/zh-hans/maps/map-overall?admin=57]]学业大兴。\n\n至黄初中，征拜博士。于时太学初立，有博士十余人，学多褊狭，又不熟悉，略不亲教，备员而已。惟详五业并授，其或难教，质而不解，详无愠色，以杖画地，牵譬引类，至忘寝食，以是独擅名于远近。详学既精悉，又善推步三五，别受诏与太史典定律历。太和中，转拜[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。详学优能少，故历三世，竟不出为宰守。至正始中，以年老罢归于舍，本国宗族归之，门徒数千人。",
+          "vern": {
+            "zht": "",
+            "zhs": "《魏略》记载：乐详，字文载，年少时就喜爱学习。建安初年，乐详听说公车司马令、南郡人谢该擅长讲解《左氏传》，就从南阳步行前往拜访他，询问诸多疑难要点。如今《左氏乐氏问》中的七十二件事，是乐详所撰写的。当所问的问题都已经弄清楚后，他就回到了家乡。当时杜畿担任太守，也非常好学，任命乐详为文学祭酒，让他教导后辈学生。于是河东的学术事业十分兴盛起来。\n\n到了黄初年间，朝廷征召乐详并任命他为博士。当时太学刚刚设立，有十多位博士，学问大多浅陋狭窄，又不熟悉教学，几乎不亲自授课，只是充数罢了。只有乐详同时教授五经。有的问题很难理解，向他询问也还是不明白，乐详也没有生气的神色，用手杖在地上比划，旁征博引、类比举例，甚至到了废寝忘食的地步，因此他独远近闻名。乐详的学问精深全面，又擅长推算天文历法，朝廷另外下诏让他和太史一起制定历法。太和年间，他转任骑都尉。详学识优秀但能力不足，因此历经三代，最终没有出任地方长官。到正始年间，因为年老退休回家。他本乡的宗族都归附他，门徒有数千人。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Yue Xiang, courtesy name Wenzai, was fond of learning from an early age. At the beginning of the Jian'an era, he heard that Xie Gai of [[Nan|/maps/map-overall?admin=80]] Commandery, [[Director of Official Carriages at Sima Gate|/translations/officials/ministers#-nine-ministers-i-198]], was well versed in the Zuo Tradition. He therefore travelled on foot from [[Nanyang|/maps/map-overall?admin=85]] to visit him and seek answers to doubts and difficulties. The extant Master Yue's Seventy-Two Questions on the Zuo Tradition was written by Xiang. Once his questions had been resolved, he returned home. At the time, Du Ji was [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Hedong|/maps/map-overall?admin=57]]. He too was deeply devoted to learning and appointed Yue Xiang [[Literary Section Libationer|/translations/officials/regional#commanderies-054]], entrusting him with the instruction of younger scholars. Thereafter, learning flourished greatly in Hedong. \n\nDuring the Huangchu era, Yue Xiang was summoned and appointed an Erudite. The Imperial Academy had only recently been established, with only ten or so Erudites. Most were narrow in their learning and lacked mastery of their subjects. They seldom taught in person and merely filled their posts. Yue Xiang alone taught all five classics. When some pupils proved difficult to teach and still failed to understand after repeated questioning, Yue Xiang showed no anger. Drawing diagrams on the ground with his staff, he used analogies and comparable examples to explain the matter, often forgetting sleep and food. Thus he alone won renown far and wide. Yue Xiang possessed both profound and comprehensive learning and was also skilled in calendrical calculation. By a separate edict, he was ordered to work with the Grand Astrologer in establishing the standard calendar. During the Taihe era, he was transferred to [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]]. Though eminent in scholarship, Xiang lacked administrative abilities. Consequently, through three reigns, he was never sent out to serve as governor or Grand Administrator. During the Zhengshi era, Yue Xiang retired on account of old age and returned home. He was highly esteemed by the clans of his native commandery, and his disciples numbered several thousand."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：恕弟理，字務仲。少而機察精要，畿奇之，故名之曰理。年二十一而卒。弟寬，字務叔。清虛玄靜，敏而好古。以名臣門戶，少長京師，而篤志博學，絕於世務，其意欲探賾索隱，由此顯名，當塗之士多交焉。舉[[孝廉|/zh-hant/translations/officials#glossary-filial-and-incorrupt]]，除郎中。年四十二而卒。經傳之義，多所論駮，皆草創未就，惟刪集禮記及春秋左氏傳解，今存于世。",
+          "zhs": "《杜氏新书》曰：恕弟理，字务仲。少而机察精要，畿奇之，故名之曰理。年二十一而卒。弟宽，字务叔。清虚玄静，敏而好古。以名臣门户，少长京师，而笃志博学，绝于世务，其意欲探赜索隐，由此显名，当涂之士多交焉。举[[孝廉|/zh-hans/translations/officials#glossary-filial-and-incorrupt]]，除郎中。年四十二而卒。经传之义，多所论駮，皆草创未就，惟删集礼记及春秋左氏传解，今存于世。",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》记载：杜恕的弟弟杜理，字务仲，年少时就机敏明察、能抓住关键要点，杜畿认为他很奇特，所以给他取名为理。他二十一岁就去世了。另一个弟弟杜宽，字务叔，淡泊宁静，聪明而喜好古代文化事物。因为出身于名臣之家，从小在京城长大，却志向坚定，学识渊博，不参与世俗的事务，只想要探究幽深隐微的道理，因此他名声显著，当权的人大多和他交往。他被推举为孝廉，被任命为郎中，四十二岁时去世。他对于经传的义理，有很多自己的论述和辩驳，但都只是初稿没有完成，只有删集的《礼记》和《春秋左氏传解》，如今流传于世。"
+          },
+          "en": "The Du Shi Xinshu / New Book of Du Clan states: Du Shu's younger brother Du Li, courtesy name Wuzhong, was keenly perceptive from an early age and had a fine grasp of essentials. Du Ji thought him remarkable and therefore named him Li. He died aged twenty-one. Du Shu's younger brother Kuan, courtesy name Wushu, was pure and detached, profound and tranquil, quick-witted and fond of antiquity. Born into the family of an eminent minister, he grew up in the capital. Yet he devoted himself to broad learning and withdrew entirely from worldly affairs, intent on probing the abstruse and uncovering the hidden. He thereby gained renown, and many men in positions of influence befriended him. He was nominated as a [[Filial and Incorrupt|/translations/officials#glossary-filial-and-incorrupt]] and appointed Gentleman of the Household. He died aged forty-two. Du Kuan produced many critical discussions of the meanings of the Classics and their commentaries, but all remained unfinished drafts. Only his edited compilation of the Record of Rites and his explanations of Zuo's Commentary on the Spring and Autumn Annals survive today."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "預字元凱，司馬宣王女壻。王隱晉書稱預智謀淵博，明於理亂，常稱「德者非所以企及，立功立言，所庶幾也」。大觀羣典，謂公羊、穀梁，詭辨之言。又非先儒說左氏未究丘明意，而橫以二傳亂之。乃錯綜微言，著春秋左氏經傳集解，又參考衆家，謂之釋例，又作盟會圖、春秋長歷，備成一家之學，至老乃成。[[尚書郎|/zh-hant/translations/officials/departments#state-affairs-037]]摯虞甚重之，曰：「左丘明本為春秋作傳，而左傳遂自孤行；釋例本為傳設，而所發明何但左傳，故亦孤行。」\n\n預有大功名於晉室，位至[[征南大將軍|/zh-hant/translations/officials/military#conquering--garrisoning-065]]，[[開府|/zh-hant/translations/officials#glossary-open-office]]，封[[當陽|/zh-hant/maps/map-overall?lat=30.83899565&lng=112.01347539&name=Dangyang]]侯，食邑八千戶。子錫，字世嘏，[[尚書左丞|/zh-hant/translations/officials/departments#state-affairs-034]]。",
+          "zhs": "预字元凯，司马宣王女壻。王隐晋书称预智谋渊博，明于理乱，常称「德者非所以企及，立功立言，所庶几也」。大观群典，谓公羊、谷梁，诡辨之言。又非先儒说左氏未究丘明意，而横以二传乱之。乃错综微言，著春秋左氏经传集解，又参考众家，谓之释例，又作盟会图、春秋长历，备成一家之学，至老乃成。[[尚书郎|/zh-hans/translations/officials/departments#state-affairs-037]]挚虞甚重之，曰：「左丘明本为春秋作传，而左传遂自孤行；释例本为传设，而所发明何但左传，故亦孤行。」\n\n预有大功名于晋室，位至[[征南大将军|/zh-hans/translations/officials/military#conquering--garrisoning-065]]，[[开府|/zh-hans/translations/officials#glossary-open-office]]，封[[当阳|/zh-hans/maps/map-overall?lat=30.83899565&lng=112.01347539&name=Dangyang]]侯，食邑八千户。子锡，字世嘏，[[尚书左丞|/zh-hans/translations/officials/departments#state-affairs-034]]。",
+          "vern": {
+            "zht": "",
+            "zhs": "杜预字元凯，是司马宣王的女婿。王隐的《晋书》称杜预智谋渊博，明白治乱之道，他常说：“道德方面，不是自己所能达到的，建立功业、著书立说，或许自己还能做到。”杜预广泛阅览各种典籍，认为《公羊传》《谷梁传》是诡辩的言论，也不符合先代儒家的学说。前人对《左传》的注释没有探究到左丘明的本意，还随意用《公羊传》《谷梁传》的内容混淆《左传》，于是杜预梳理《左传》中的精深微妙的言辞，撰写了《春秋左氏经传集解》，又参考了其他各家学说，把它称为《释例》。又创作了《盟会图》《春秋长历》，完备地形成了自成一家的学说，到年老时才完成。尚书郎挚虞非常看重他的这些著作，说：“左丘明本来是为《春秋》作传，而《左传》于是独自流传。《释例》本来是为《左传》而作，但它所阐发的道理，又岂止是《左传》，所以它也能独立流传。”杜预在晋朝立下了很大的功勋和名声，官至征南大将军，开府，被封为当阳侯，食邑八千户。他的儿子杜嘏，担任尚书左丞。"
+          },
+          "en": "Du Yu, courtesy name Yuankai, was the son-in-law of Sima Yi. Wang Yin's Book of Jin records that Du Yu possessed profound intelligence and strategic insight, and clearly understood the principles of good government. Du Yu often said, \"To establish virtue lies beyond the reach of men like me; but to establish merit and leave words behind are things that ordinary men may accomplish.\" After surveying the classical canon, he deemed the Gongyang and Guliang traditions as merely specious arguments. He also criticised earlier scholars for failing to grasp Zuo Qiuming's intent and arbitrarily confusing his work with those two traditions. Weaving together the text's subtle meanings, he composed the Collected Explanations of the Classic and Commentary of Master Zuo on the Spring and Autumn Annals. He also consulted the works of many scholars to produce the Explication of Precedents, as well as the Charts of Covenants and Assemblies and the Long Chronology of the Spring and Autumn Annals. Together these formed a complete school of scholarship, but he did not finish them until old age. Zhi Yu, an [[Imperial Secretariat Court Gentleman|/translations/officials/departments#state-affairs-037]], esteemed his works highly, saying: \"Zuo Qiuming originally wrote his commentary for the Spring and Autumn Annals, yet the Zuo Commentary came to circulate independently. The Explication of Precedents was originally written for that commentary, but what it illuminates is by no means confined to the Zuo Commentary. It too should therefore circulate independently.\" \n\nDu Yu rendered distinguished service to the house of Jin. He rose to become [[Grand General Who Conquers the South|/translations/officials/military#conquering--garrisoning-065]], received the privilege to [[Open Office|/translations/officials#glossary-open-office]], and was enfeoffed as Marquis of [[Dangyang|/maps/map-overall?lat=30.83899565&lng=112.01347539&name=Dangyang]], with a fief of eight thousand households. His son Du Xi, courtesy name Shigu, served as [[Imperial Secretariat Left Assistant|/translations/officials/departments#state-affairs-034]]."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "晉諸公贊",
+            "zhs": "晋诸公赞",
+            "en": "Jin Zhugong Zan / Appraisal of Officials of Jin (Fu Chang)"
+          },
+          "zht": "《晉諸公贊》曰：嘏有器局。預從兄武，字世將，亦有才望，為[[黃門郎|/zh-hant/translations/officials/departments#chancellery-003]]，為趙王倫所枉殺。嘏子乂，字弘治。少有令名，為[[丹陽|/zh-hant/maps/map-overall?admin=60]][[丞|/zh-hant/translations/officials/regional#commanderies-040]]，早卒。阮武者，亦拓落大才也。案阮氏譜：武父諶，字士信，徵辟無所就，造三禮圖傳於世。",
+          "zhs": "《晋诸公赞》曰：嘏有器局。预从兄武，字世将，亦有才望，为[[黄门郎|/zh-hans/translations/officials/departments#chancellery-003]]，为赵王伦所枉杀。嘏子乂，字弘治。少有令名，为[[丹阳|/zh-hans/maps/map-overall?admin=60]][[丞|/zh-hans/translations/officials/regional#commanderies-040]]，早卒。阮武者，亦拓落大才也。案阮氏谱：武父谌，字士信，征辟无所就，造三礼图传于世。",
+          "vern": {
+            "zht": "",
+            "zhs": "《晋诸公赞》记载：杜嘏有度量和才识。杜预的堂兄杜斌，字世将，也很有才能和名望，担任黄门郎，被赵王伦冤枉杀害。杜嘏的儿子杜乂，字洪治，年少时就有好名声，担任丹杨丞，很早就去世了。阮武也是一个豁达洒脱、有大才的人。根据《阮氏谱》记载，阮武的父亲阮谌，字士信，朝廷征召他为官他都没有去赴任，他绘制了《三礼图》，流传于世。"
+          },
+          "en": "The Jin Zhugong Zan / Appraisal of Officials of Jin states: \"Du Gu possessed both ability and breadth of mind.\" Du Yu's elder cousin Du Wu, courtesy name Shijiang, was likewise talented and highly regarded. He served as [[Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]], but was unjustly executed by Sima Lun, Prince of Zhao. Du Gu's son Du Yi, courtesy name Hongzhi, won a fine reputation in his youth. He served as [[Assistant to the Grand Administrator|/translations/officials/regional#commanderies-040]] of [[Danyang|/maps/map-overall?admin=60]], but died young. Ruan Wu was also a man of unfettered spirit and great talent. According to the Genealogy of the Ruan Clan, his father Ruan Chen, courtesy name Shixin, declined every summons and offer of office. He compiled the Illustrations of the Three Rites, which circulated throughout the realm."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "杜氏新書",
+            "zhs": "杜氏新书",
+            "en": "Du Shi Xinshu / New Book of Du Clan"
+          },
+          "zht": "《杜氏新書》曰：武字文業，闊達博通，淵雅之士。位止[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。武弟炳，字叔文，[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]。精意醫術，撰藥方一部。炳子坦，字弘舒，晉[[太子少傅|/zh-hant/translations/officials/household#eastern-palace-010]]，[[平東將軍|/zh-hant/translations/officials/military#pacifying--subduing-095]]。坦弟柯，字士度。",
+          "zhs": "《杜氏新书》曰：武字文业，阔达博通，渊雅之士。位止[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。武弟炳，字叔文，[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]。精意医术，撰药方一部。炳子坦，字弘舒，晋[[太子少傅|/zh-hans/translations/officials/household#eastern-palace-010]]，[[平东将军|/zh-hans/translations/officials/military#pacifying--subduing-095]]。坦弟柯，字士度。",
+          "vern": {
+            "zht": "",
+            "zhs": "《杜氏新书》。说：阮武字文业，豁达博通，是个渊博高雅的人，官职只做到清河太守。阮武的弟弟阮炳，字叔文，担任河南尹。他专心致力于医术，撰写了一部药方。阮炳的儿子阮坦，字弘舒，是晋朝的太子少傅、平东将军。阮坦的弟弟阮柯，字士度。"
+          },
+          "en": "The Du Shi Xinshu / New Book of Du Clan states: Ruan Wu, courtesy name Wenye, was broad-minded and widely learned, and a man of profound refinement. He rose no higher than [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Qinghe|/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]. His younger brother Ruan Bing, courtesy name Shuwen, served as [[Intendant of Henan|/translations/officials/regional#commanderies-032]]. Ruan Bing devoted himself to medicine and compiled a volume of prescriptions. Ruan Bing's son Ruan Tan, courtesy name Hongshu, served under the Jin as [[Junior Tutor of the Crown Prince|/translations/officials/household#eastern-palace-010]] and [[General Who Subdues the East|/translations/officials/military#pacifying--subduing-095]]. Ruan Tan's younger brother Ruan Ke had the courtesy name Shidu."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "兖州記 (荀綽)",
+            "zhs": "兖州记 (荀绰)",
+            "en": "Records of Yan Province (Xun Chuo)"
+          },
+          "zht": "荀綽《兖州記》曰：坦出紹伯父，亡，次兄當襲爵，父愛柯，言名傳之，遂承封。時幼小，不能讓，及長悔恨，遂幅巾而居，後雖出身，未嘗釋也。性純篤閑雅，好禮無違，存心經誥，博學洽聞。選為[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]王[[文學|/zh-hant/translations/officials/regional#states-087]]，遷[[領軍|/zh-hant/translations/officials/military#central-army-001]][[長史|/zh-hant/translations/officials/military#central-army-003]]，喪官。王衍時為[[領軍|/zh-hant/translations/officials/military#central-army-001]]，哭之甚慟。",
+          "zhs": "荀绰《兖州记》曰：坦出绍伯父，亡，次兄当袭爵，父爱柯，言名传之，遂承封。时幼小，不能让，及长悔恨，遂幅巾而居，后虽出身，未尝释也。性纯笃闲雅，好礼无违，存心经诰，博学洽闻。选为[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]王[[文学|/zh-hans/translations/officials/regional#states-087]]，迁[[领军|/zh-hans/translations/officials/military#central-army-001]][[长史|/zh-hans/translations/officials/military#central-army-003]]，丧官。王衍时为[[领军|/zh-hans/translations/officials/military#central-army-001]]，哭之甚恸。",
+          "vern": {
+            "zht": "",
+            "zhs": "荀绰的《兖州记》说：阮坦出继给伯父，父亲去世后，本应继承爵位，父亲喜爱阮柯，说要把爵位传给他，于是阮柯继承了封爵。当时他年纪幼小，不能推让爵位，等到长大后，为此感到悔恨，于是头戴幅巾隐居起来。后来虽然做了官，但一直没有解下幅巾。他生性淳朴笃厚，娴静文雅，喜好礼仪，从无违背之处，潜心钻研经籍诰命，学识渊博，见闻广博，被选任为濮阳王文学，后升任领军长史，在任上去世。王衍当时担任领军，为他的死哭得非常悲痛。"
+          },
+          "en": "The Records of Yan province (Xun Chuo) states: Ruan Tan had been adopted to continue the line of their paternal uncle. When their uncle died, he should have inherited the title. Their father, however, favoured Ruan Ke and claimed that Ruan Tan had named him as his heir, so Ruan Ke succeeded to the fief. Ruan Tan was too young to object at the time, but deeply regretted it when he came of age. Thereafter, he wore a plain cloth cap and, even after entering official service, never removed it. Sincere, steadfast, serene, and refined by nature, Ruan Tan observed the rites without fail. He devoted himself to the canonical texts and was widely learned and well informed. He was selected as [[Scholar|/translations/officials/regional#states-087]] to the Prince of [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]], then promoted to [[Chief Clerk|/translations/officials/military#central-army-003]] to the [[Commander of the Central Army|/translations/officials/military#central-army-001]]. He died in office. Wang Yan, then [[Commander of the Central Army|/translations/officials/military#central-army-001]], wept for him in profound grief."
+        }
+      ]
+    }
+  ]
+}

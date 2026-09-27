@@ -22,164 +22,488 @@
     {
       "from": "李通（文達）",
       "to": "陳恭",
-      "type": "comrades",
-      "passageId": "ws18b-p1"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p1",
+          "text": {
+            "en": "Li Tong and Chen Gong, fellow commandery natives, jointly raised troops at Langling, rallying many followers to their cause.",
+            "zht": "李通與同郡陳恭在朗陵共同起兵，眾人紛紛歸附。",
+            "zhs": "李通与同郡陈恭在朗陵共同起兵，众人纷纷归附。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "周直",
-      "type": "enemies",
-      "passageId": "ws18b-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p2",
+          "text": {
+            "en": "Though outwardly friendly, Li Tong and Zhou Zhi were secretly at odds; Li Tong invited Zhou Zhi to a feast and killed him once he was drunk.",
+            "zht": "李通與周直表面交好，實則暗中不合；李通設宴邀請周直，待其酒醉後將其殺害。",
+            "zhs": "李通与周直表面交好，实则暗中不合；李通设宴邀请周直，待其酒醉后将其杀害。"
+          }
+        }
+      ]
     },
     {
       "from": "陳恭",
       "to": "周直",
-      "type": "enemies",
-      "passageId": "ws18b-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p2",
+          "text": {
+            "en": "Though outwardly friendly, Chen Gong was secretly at odds with Zhou Zhi, though he lacked the resolve to act against him.",
+            "zht": "陳恭與周直表面交好，實則暗中不合，然無決斷之力對付他。",
+            "zhs": "陈恭与周直表面交好，实则暗中不合，然无决断之力对付他。"
+          }
+        }
+      ]
     },
     {
       "from": "陳恭",
       "to": "陳郃",
-      "type": "brothers-in-law",
-      "passageId": "ws18b-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p2",
+          "text": {
+            "en": "Chen He was Chen Gong's brother-in-law; after murdering Chen Gong and seizing his followers, he was defeated and killed by Li Tong.",
+            "zht": "陳郃是陳恭的姊夫；他殺害陳恭並奪其部眾後，為李通所擊敗誅殺。",
+            "zhs": "陈郃是陈恭的姊夫；他杀害陈恭并夺其部众后，为李通所击败诛杀。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "陳郃",
-      "type": "enemies",
-      "passageId": "ws18b-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p2",
+          "text": {
+            "en": "After Chen He murdered Chen Gong and seized his followers, Li Tong defeated and killed him, offering his head in sacrifice at Chen Gong's tomb.",
+            "zht": "陳郃殺害陳恭並奪其部眾後，李通將他擊敗誅殺，並以其首級祭奠陳恭之墓。",
+            "zhs": "陈郃杀害陈恭并夺其部众后，李通将他击败诛杀，并以其首级祭奠陈恭之墓。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "吳霸",
-      "type": "enemies",
-      "passageId": "ws18b-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p2",
+          "text": {
+            "en": "Li Tong captured the Yellow Turban commander Wu Ba alive and persuaded his followers to surrender.",
+            "zht": "李通生擒黃巾軍首領吳霸，並勸降其部眾。",
+            "zhs": "李通生擒黄巾军首领吴霸，并劝降其部众。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
-      "to": "曹操",
-      "type": "lord-subordinate",
-      "passageId": "ws18b-p4"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p3",
+          "text": {
+            "en": "At the start of the Jian'an era, Li Tong led his followers to join Cao Cao at Xuchang; after leading the front assault that defeated Zhang Xiu's army, he was promoted from Gentleman-General Who Rallies Might to Assistant General, enfeoffed Marquis Jianggong, and made Commandant of Yang'an.",
+            "zht": "建安初，李通率眾於許都投奔曹操，先拜振威中郎將；後於擊破張繡軍一役中為先登，升任裨將軍，封建功侯，任陽安都尉。",
+            "zhs": "建安初，李通率众于许都投奔曹操，先拜振威中郎将；后于击破张绣军一役中为先登，升任裨将军，封建功侯，任阳安都尉。"
+          },
+          "title": {
+            "en": "Gentleman-General Who Rallies Might; later Assistant General, Marquis Jianggong, Commandant of Yang'an",
+            "zht": "振威中郎將；後裨將軍、建功侯、陽安都尉",
+            "zhs": "振威中郎将；后裨将军、建功侯、阳安都尉"
+          }
+        },
+        {
+          "passageId": "ws18b-p4",
+          "text": {
+            "en": "When Yuan Shao and Liu Biao both tried to win him over, Li Tong refused both, declaring he would rather die than betray his allegiance, executed Yuan Shao's envoy, and defeated the local rebels Qu Gong, Jiang Gong, and Shen Cheng, pacifying the Huai and Ru regions; he was then enfeoffed Capital Neighbourhood Marquis and made Grand Administrator of Runan.",
+            "zht": "袁紹、劉表皆欲招攬李通，李通悉數拒絕，誓以死不貳，並斬殺袁紹使者，又擊破郡賊瞿恭、江宮、沈成等，平定淮、汝之地；遂改封都亭侯，拜汝南太守。",
+            "zhs": "袁绍、刘表皆欲招揽李通，李通悉数拒绝，誓以死不贰，并斩杀袁绍使者，又击破郡贼瞿恭、江宫、沈成等，平定淮、汝之地；遂改封都亭侯，拜汝南太守。"
+          },
+          "title": {
+            "en": "Capital Neighbourhood Marquis, Grand Administrator of Runan",
+            "zht": "都亭侯、汝南太守",
+            "zhs": "都亭侯、汝南太守"
+          }
+        },
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "After breaking through the encirclement to relieve Cao Ren at Jiangling, Li Tong fell ill on the march and died at forty-two; Cao Pi posthumously honoured him as Marquis Gang and commended his unwavering loyalty during the Yuan Shao crisis, appointing his sons Li Ji and Li Xu as Gentleman-Generals in recognition of the family's service.",
+            "zht": "李通突圍解江陵之圍後，於行軍途中病逝，年四十二；文帝追諡剛侯，嘉許他在袁紹之難中秉義不貳，並拜其子李基、李緒為中郎將，以彰其家世代功勳。",
+            "zhs": "李通突围解江陵之围后，于行军途中病逝，年四十二；文帝追谥刚侯，嘉许他在袁绍之难中秉义不贰，并拜其子李基、李绪为中郎将，以彰其家世代功勋。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "張繡",
-      "type": "enemies",
-      "passageId": "ws18b-p4"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p3",
+          "text": {
+            "en": "When Cao Cao campaigned against Zhang Xiu, Li Tong led the front assault and swiftly defeated his army.",
+            "zht": "曹操征討張繡時，李通為先登，迅速擊破其軍。",
+            "zhs": "曹操征讨张绣时，李通为先登，迅速击破其军。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
-      "to": "劉表",
-      "type": "enemies",
-      "passageId": "ws18b-p4"
+      "to": "劉表（景升）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p3",
+          "text": {
+            "en": "Liu Biao sent troops to reinforce Zhang Xiu against Cao Cao's campaign.",
+            "zht": "劉表遣兵援助張繡，對抗曹操的征討。",
+            "zhs": "刘表遣兵援助张绣，对抗曹操的征讨。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
-      "to": "趙儼",
-      "type": "close-friends",
-      "passageId": "ws18b-p5"
+      "to": "趙儼（伯然）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p4",
+          "text": {
+            "en": "After Li Tong praised Zhao Yan for impartially prosecuting Li Tong's own wife's uncle despite her pleas for mercy, the two became close friends.",
+            "zht": "趙儼秉公治罪李通妻伯父，不因其妻哀求而寬貸，李通反而讚賞其執法不阿，二人因此結為至交。",
+            "zhs": "赵俨秉公治罪李通妻伯父，不因其妻哀求而宽贷，李通反而赞赏其执法不阿，二人因此结为至交。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
-      "to": "袁紹",
-      "type": "political-opponents",
-      "passageId": "ws18b-p5"
+      "to": "袁紹（本初）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p4",
+          "text": {
+            "en": "When Yuan Shao sent an envoy offering to appoint him General Who Conquers the South, Li Tong refused, executed the envoy, and sent the seal to Cao Cao instead.",
+            "zht": "袁紹遣使欲拜李通為征南將軍，李通拒絕，斬殺使者，並將印綬送予曹操。",
+            "zhs": "袁绍遣使欲拜李通为征南将军，李通拒绝，斩杀使者，并将印绶送予曹操。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "瞿恭",
-      "type": "enemies",
-      "passageId": "ws18b-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p4",
+          "text": {
+            "en": "Li Tong attacked and defeated the local rebel leaders Qu Gong, Jiang Gong, and Shen Cheng, sending their heads to Cao Cao.",
+            "zht": "李通擊破郡賊瞿恭、江宮、沈成等，將其首級送予曹操。",
+            "zhs": "李通击破郡贼瞿恭、江宫、沈成等，将其首级送予曹操。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "江宮",
-      "type": "enemies",
-      "passageId": "ws18b-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p4",
+          "text": {
+            "en": "Li Tong attacked and defeated the local rebel leaders Qu Gong, Jiang Gong, and Shen Cheng, sending their heads to Cao Cao.",
+            "zht": "李通擊破郡賊瞿恭、江宮、沈成等，將其首級送予曹操。",
+            "zhs": "李通击破郡贼瞿恭、江宫、沈成等，将其首级送予曹操。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "沈成",
-      "type": "enemies",
-      "passageId": "ws18b-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p4",
+          "text": {
+            "en": "Li Tong attacked and defeated the local rebel leaders Qu Gong, Jiang Gong, and Shen Cheng, sending their heads to Cao Cao.",
+            "zht": "李通擊破郡賊瞿恭、江宮、沈成等，將其首級送予曹操。",
+            "zhs": "李通击破郡贼瞿恭、江宫、沈成等，将其首级送予曹操。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "張赤",
-      "type": "enemies",
-      "passageId": "ws18b-p6"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Tong defeated the rebel Zhang Chi, who had gathered over five thousand households at Taoshan.",
+            "zht": "李通擊破聚眾桃山、擁眾五千餘家的賊人張赤。",
+            "zhs": "李通击破聚众桃山、拥众五千余家的贼人张赤。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
-      "to": "關羽",
-      "type": "battlefield-opponents",
-      "passageId": "ws18b-p6"
+      "to": "關羽（雲長）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "When Guan Yu was dispatched to cut off the northern route during the siege of Jiangling, Li Tong led his troops against him, breaking through the encirclement to link up with Cao Ren.",
+            "zht": "關羽奉命於江陵之圍中截斷北道，李通率眾迎擊，突圍與曹仁軍會合。",
+            "zhs": "关羽奉命于江陵之围中截断北道，李通率众迎击，突围与曹仁军会合。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
-      "to": "曹仁",
-      "type": "allies",
-      "passageId": "ws18b-p6"
+      "to": "曹仁（子孝）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Tong broke through Liu Bei and Zhou Yu's encirclement to link up with Cao Ren's besieged army at Jiangling, his courage surpassing all other generals.",
+            "zht": "李通突破劉備、周瑜的包圍，與被圍於江陵的曹仁軍會合，其勇冠於諸將。",
+            "zhs": "李通突破刘备、周瑜的包围，与被围于江陵的曹仁军会合，其勇冠于诸将。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "李基",
-      "type": "father-son",
-      "passageId": "ws18b-p6"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Ji was Li Tong's son, who inherited his title.",
+            "zht": "李基是李通之子，承襲其爵位。",
+            "zhs": "李基是李通之子，承袭其爵位。"
+          }
+        }
+      ]
     },
     {
       "from": "李通（文達）",
       "to": "李緒",
-      "type": "father-son",
-      "passageId": "ws18b-p6"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Xu was Li Tong's elder son, who had formerly garrisoned Fancheng and also rendered meritorious service.",
+            "zht": "李緒是李通長子，曾屯守樊城，亦立有戰功。",
+            "zhs": "李绪是李通长子，曾屯守樊城，亦立有战功。"
+          }
+        }
+      ]
     },
     {
       "from": "李緒",
       "to": "李基",
-      "type": "elder-brother-younger-brother",
-      "passageId": "ws18b-p6"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Xu was Li Ji's elder brother.",
+            "zht": "李緒是李基的兄長。",
+            "zhs": "李绪是李基的兄长。"
+          }
+        }
+      ]
     },
     {
       "from": "李緒",
       "to": "李秉（玄冑）",
-      "type": "father-son",
-      "passageId": "ws18b-p7"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Bing was Li Xu's son, a man of outstanding talent highly esteemed by his contemporaries, who rose to become Inspector of Qin Province.",
+            "zht": "李秉是李緒之子，才幹出眾，深受時人推重，官至秦州刺史。",
+            "zhs": "李秉是李绪之子，才干出众，深受时人推重，官至秦州刺史。"
+          },
+          "title": { "en": "Inspector of Qin Province", "zht": "秦州刺史", "zhs": "秦州刺史" }
+        }
+      ]
     },
     {
       "from": "李秉（玄冑）",
-      "to": "司馬昭",
-      "type": "ruler-subordinate",
-      "passageId": "ws18b-p7"
+      "to": "司馬昭（子上）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Bing attended Sima Zhao's court audiences, and long treasured an exchange in which Sima Zhao praised his reasoning on prudence and asked his views on the most prudent men of the age.",
+            "zht": "李秉侍從司馬昭朝會，曾與其論及審慎之道，司馬昭讚其所言有理，並問及當世最謹慎之人，李秉深以此事為訓。",
+            "zhs": "李秉侍从司马昭朝会，曾与其论及审慎之道，司马昭赞其所言有理，并问及当世最谨慎之人，李秉深以此事为训。"
+          }
+        }
+      ]
     },
     {
       "from": "李秉（玄冑）",
       "to": "李重（茂曾）",
-      "type": "father-son",
-      "passageId": "ws18b-p7"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Chong, courtesy name Maozeng, was Li Bing's son; he became known while still young, serving as Personnel Division Gentleman and Grand Administrator of Pingyang.",
+            "zht": "李重字茂曾，是李秉之子，年輕即知名，歷任吏部郎、平陽太守。",
+            "zhs": "李重字茂曾，是李秉之子，年轻即知名，历任吏部郎、平阳太守。"
+          }
+        }
+      ]
     },
     {
       "from": "李重（茂曾）",
-      "to": "司馬倫",
-      "type": "political-opponents",
-      "passageId": "ws18b-p8"
+      "to": "司馬倫（子彝）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "When Sima Lun, Prince of Zhao, sought to appoint the ailing Li Chong as Major on the Right, Li Chong, realising Sima Lun intended to rebel, tried to refuse; Sima Lun's unrelenting pressure to accept the post led directly to Li Chong's death days later.",
+            "zht": "趙王司馬倫欲拜抱病的李重為右軍將軍，李重察其有反意，力辭不受；司馬倫逼迫不已，李重被迫受任，數日後即去世。",
+            "zhs": "赵王司马伦欲拜抱病的李重为右军将军，李重察其有反意，力辞不受；司马伦逼迫不已，李重被迫受任，数日后即去世。"
+          }
+        }
+      ]
     },
     {
       "from": "李重（茂曾）",
       "to": "李尚（茂仲）",
-      "type": "elder-brother-younger-brother",
-      "passageId": "ws18b-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Shang, courtesy name Maozhong, was Li Chong's younger brother, and served as a commandery Administrator during the Yongjia era.",
+            "zht": "李尚字茂仲，是李重之弟，永嘉年間任郡太守。",
+            "zhs": "李尚字茂仲，是李重之弟，永嘉年间任郡太守。"
+          }
+        }
+      ]
     },
     {
       "from": "李重（茂曾）",
       "to": "李矩（茂約）",
-      "type": "elder-brother-younger-brother",
-      "passageId": "ws18b-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Ju, courtesy name Maoyue, was Li Chong's younger brother, and eventually rose to become Inspector of Jiangzhou.",
+            "zht": "李矩字茂約，是李重之弟，後官至江州刺史。",
+            "zhs": "李矩字茂约，是李重之弟，后官至江州刺史。"
+          }
+        }
+      ]
     },
     {
       "from": "李重（茂曾）",
       "to": "李式（景則）",
-      "type": "father-son",
-      "passageId": "ws18b-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18b-p5",
+          "text": {
+            "en": "Li Shi, courtesy name Jingze, was Li Chong's son, whose highest office was Palace Attendant.",
+            "zht": "李式字景則，是李重之子，官至侍中。",
+            "zhs": "李式字景则，是李重之子，官至侍中。"
+          }
+        }
+      ]
     }
   ],
   "journeyOverviews": [
@@ -346,6 +670,10 @@
         "zht": "李通字文達，[[江夏平春|/zh-hant/maps/map-overall/?lat=32.27259562&lng=113.86954284&name=Pingchun]]人也。以俠聞於江、汝之間。與其郡人陳恭共起兵於[[朗陵|/zh-hant/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]]，衆多歸之。",
         "zhs": "李通字文达，[[江夏平春|/zh-hans/maps/map-overall?lat=32.27259562&lng=113.86954284&name=Pingchun]]人也。以侠闻于江、汝之间。与其郡人陈恭共起兵于[[朗陵|/zh-hans/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]]，众多归之。"
       },
+      "vern": {
+        "zht": "李通，字文達，[[江夏郡平春縣|/zh-hant/maps/map-overall/?lat=32.27259562&lng=113.86954284&name=Pingchun]]人。以行俠仗義著名於長江、汝水之間。與同郡人陳恭在[[朗陵|/zh-hant/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]]縣起兵，很多人都去投奔他。",
+        "zhs": "李通，字文达，[[江夏郡平春县|/zh-hans/maps/map-overall?lat=32.27259562&lng=113.86954284&name=Pingchun]]人。以行侠仗义著名于长江、汝水之间。与同郡人陈恭在[[朗陵|/zh-hans/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]]县起兵，很多人都去投奔他。"
+      },
       "en": "Li Tong, courtesy name Wenda, was from [[Pingchun, Jiangxia|/maps/map-overall?lat=32.27259562&lng=113.86954284&name=Pingchun]]. He was renowned throughout the region between the Yangtze and Ru Rivers for his chivalrous character. Together with Chen Gong, a fellow native of his commandery, he raised troops at [[Langling|/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]], and many people rallied to their cause.",
       "annotations": [
         {
@@ -361,6 +689,10 @@
           },
           "zht": "《魏略》曰：通小字萬億。",
           "zhs": "《魏略》曰：通小字万亿。",
+          "vern": {
+            "zht": "《魏略》記載：李通小名叫萬億，憑藉俠義之舉在長江、汝水一帶聞名。",
+            "zhs": "《魏略》记载：李通小名叫万亿，凭借侠义之举在长江、汝水一带闻名。"
+          },
           "en": "The Weilüe / Brief History of Wei states: Tong's childhood name was Wanyi."
         }
       ]
@@ -371,6 +703,10 @@
         "zht": "時有周直者，衆二千餘家，與恭、通外和內違。通欲圖殺直而恭難之。通知恭無斷，乃獨定策，與直克會，酒酣殺直。衆人大擾，通率恭誅其黨帥，盡并其營。後恭妻弟陳郃，殺恭而據其衆。通攻破郃軍，斬郃首以祭恭墓。又生禽黃巾大帥吳霸而降其屬。遭歲大饑，通傾家振施，與士分糟糠，皆爭為用，由是盜賊不敢犯。",
         "zhs": "时有周直者，众二千余家，与恭、通外和内违。通欲图杀直而恭难之。通知恭无断，乃独定策，与直克会，酒酣杀直。众人大扰，通率恭诛其党帅，尽并其营。后恭妻弟陈郃，杀恭而据其众。通攻破郃军，斩郃首以祭恭墓。又生禽黄巾大帅吴霸而降其属。遭岁大饥，通倾家振施，与士分糟糠，皆争为用，由是盗贼不敢犯。"
       },
+      "vern": {
+        "zht": "當時有個叫周直的，部下有兩千多戶人家，與陳恭、李通表面和睦而心中不滿。李通想設法殺掉周直，而陳恭不願意；李通知道陳恭沒有決斷，便自定計策。約定時間聚會，趁酒興正濃的時候殺了周直。周直的部下頓時大亂，李通帶領陳恭殺了周直部下的頭目，吞併了他的隊伍。後來陳恭的妻弟陳郃，又殺死陳恭奪取了他的部隊。李通擊敗陳郃，砍下他的頭顱來，祭奠陳恭的墳墓。又活捉了黃巾軍大首領吳霸並招降了他的部下。碰上大饑荒，李通傾家蕩產賑濟災民，同士兵同喫酒糟、糠皮之類的粗劣食物；大家都爭着爲他效力，從那以後，盜賊再不敢來侵犯。",
+        "zhs": "当时有个叫周直的，部下有两千多户人家，与陈恭、李通表面和睦而心中不满。李通想设法杀掉周直，而陈恭不愿意；李通知道陈恭没有决断，便自定计策。约定时间聚会，趁酒兴正浓的时候杀了周直。周直的部下顿时大乱，李通带领陈恭杀了周直部下的头目，吞并了他的队伍。后来陈恭的妻弟陈郃，又杀死陈恭夺取了他的部队。李通击败陈郃，砍下他的头颅来，祭奠陈恭的坟墓。又活捉了黄巾军大首领吴霸并招降了他的部下。碰上大饥荒，李通倾家荡产赈济灾民，同士兵同吃酒糟、糠皮之类的粗劣食物；大家都争着为他效力，从那以后，盗贼再不敢来侵犯。"
+      },
       "en": "At that time there was a man named Zhou Zhi who commanded more than two thousand households. Although he appeared to be on friendly terms with Chen Gong and Li Tong, they were secretly at odds. Li Tong wished to have Zhou Zhi killed, but Chen Gong refused to agree. Realising that Chen Gong lacked the resolve to act, Li Tong therefore made the plan himself. He invited Zhou Zhi to meet with him and, after Zhou Zhi had become drunk, killed him. Zhou Zhi's followers were thrown into confusion, and Li Tong led Chen Gong in killing their leaders before absorbing the entire force. Later, Chen Gong's brother-in-law, Chen He, murdered Chen Gong and took command of his followers. Li Tong attacked and defeated Chen He's army, cut off Chen He's head, and offered it in sacrifice at Chen Gong's tomb. He also captured alive Wu Ba, a leading commander of the Yellow Turbans, and persuaded his followers to surrender. A severe famine then struck. Li Tong exhausted his family's wealth to provide relief, sharing whatever provisions he had with his men. All were eager to serve him, and as a result even the bandits did not dare trouble them."
     },
     {
@@ -378,6 +714,10 @@
       "orig": {
         "zht": "建安初，通舉衆詣太祖于[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]。拜通[[振威中郎將|/zh-hant/translations/officials/military#gentleman-generals-176]]，屯[[汝南|/zh-hant/maps/map-overall?admin=29]]西界。太祖討張繡，劉表遣兵以助繡，太祖軍不利。通將兵夜詣太祖，太祖得以復戰，通為先登，大破繡軍。拜[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]，封建功侯。分[[汝南|/zh-hant/maps/map-overall?admin=29]]二縣，以通為[[陽安|/maps/map-overall?lat=32.90764066&lng=114.05769361&name=Yang%27an]][[都尉|/zh-hant/translations/officials/regional?lat=32.90764066&lng=114.05769361]]。",
         "zhs": "建安初，通举众诣太祖于[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]。拜通[[振威中郎将|/zh-hans/translations/officials/military#gentleman-generals-176]]，屯[[汝南|/zh-hans/maps/map-overall?admin=29]]西界。太祖讨张绣，刘表遣兵以助绣，太祖军不利。通将兵夜诣太祖，太祖得以复战，通为先登，大破绣军。拜[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]，封建功侯。分[[汝南|/zh-hans/maps/map-overall?admin=29]]二县，以通为[[阳安|/zh-hans/maps/map-overall?lat=32.90764066&lng=114.05769361&name=Yang%27an]][[都尉|/zh-hans/translations/officials/regional?lat=32.90764066&lng=114.05769361]]。"
+      },
+      "vern": {
+        "zht": "建安初年，李通帶領部下到[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]縣投奔太祖。太祖任命他爲[[振威中郎將|/zh-hant/translations/officials/military#gentleman-generals-176]]，駐紮在[[汝南|/zh-hant/maps/map-overall?admin=29]]郡西邊。太祖征討張繡，劉表派兵援助張繡；太祖軍隊失利。李通帶兵連夜趕到，太祖得以再戰；李通搶先登城，大敗張繡的軍隊，升任[[裨將軍|/zh-hant/translations/officials/military#four-direction--misc-165]]，封爲建功侯。太祖分出[[汝南|/zh-hant/maps/map-overall?admin=29]]郡的兩個縣，命李通在那裏擔任[[陽安|/maps/map-overall?lat=32.90764066&lng=114.05769361&name=Yang%27an]][[都尉|/zh-hant/translations/officials/regional?lat=32.90764066&lng=114.05769361]]。",
+        "zhs": "建安初年，李通带领部下到[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]县投奔太祖。太祖任命他为[[振威中郎将|/zh-hans/translations/officials/military#gentleman-generals-176]]，驻扎在[[汝南|/zh-hans/maps/map-overall?admin=29]]郡西边。太祖征讨张绣，刘表派兵援助张绣；太祖军队失利。李通带兵连夜赶到，太祖得以再战；李通抢先登城，大败张绣的军队，升任[[裨将军|/zh-hans/translations/officials/military#four-direction--misc-165]]，封为建功侯。太祖分出[[汝南|/zh-hans/maps/map-overall?admin=29]]郡的两个县，命李通在那里担任[[阳安|/zh-hans/maps/map-overall?lat=32.90764066&lng=114.05769361&name=Yang%27an]][[都尉|/zh-hans/translations/officials/regional?lat=32.90764066&lng=114.05769361]]。"
       },
       "en": "At the beginning of the Jian'an Era, Li Tong led his followers to [[Xuchang|/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]] to join Cao Cao (posthumously honoured as Taizu, the Grand Progenitor). Cao Cao appointed him [[Gentleman-General Who Rallies Might|/translations/officials/military#gentleman-generals-176]] and stationed him on the western frontier of [[Runan|/maps/map-overall?admin=29]] Commandery. When Cao Cao campaigned against Zhang Xiu, Liu Biao sent troops to reinforce Zhang Xiu, and Cao Cao's army suffered a setback. Li Tong marched through the night to join Cao Cao, allowing Cao Cao to continue the campaign. Li Tong led the attack from the front, and swiftly defeated Zhang Xiu's army. He was promoted to [[Assistant General|/translations/officials/military#four-direction--misc-165]] and enfeoffed as Marquis Jianggong, the Marquis of Establishing Merit. Two counties were separated from [[Runan|/maps/map-overall?admin=29]] Commandery and placed under Li Tong's governance, with Li Tong appointed [[Commandant|/translations/officials/regional?lat=32.90764066&lng=114.05769361]] of [[Yang'an|/maps/map-overall?lat=32.90764066&lng=114.05769361&name=Yang%27an]]."
     },
@@ -387,6 +727,10 @@
         "zht": "通妻伯父犯法，[[朗陵|/zh-hant/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]][[長|/zh-hant/translations/officials/regional?lat=32.66120337&lng=113.98029452]]趙儼收治，致之大辟。是時殺生之柄，決於[[牧|/zh-hant/translations/officials/regional#provinces-014]][[守|/zh-hant/translations/officials/regional#commanderies-039]]，通妻子號泣以請其命。通曰：「方與曹公勠力，義不以私廢公。」嘉儼執憲不阿，與為親交。太祖與袁紹相拒於[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]。紹遣使拜通[[征南將軍|/zh-hant/translations/officials/military#conquering--garrisoning-065]]，劉表亦陰招之，通皆拒焉。通親戚部曲流涕曰：「今孤危獨守，以失大援，亡可立而待也，不如亟從紹。」通按劒以叱之曰：「曹公明哲，必定天下。紹雖彊盛，而任使無方，終為之虜耳。吾以死不貳。」即斬紹使，送印綬詣太祖。又擊郡賊瞿恭、江宮、沈成等，皆破殘其衆，送其首。遂定淮、汝之地。改封[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，拜[[汝南|/zh-hant/maps/map-overall?admin=29]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
         "zhs": "通妻伯父犯法，[[朗陵|/zh-hans/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]][[长|/zh-hans/translations/officials/regional?lat=32.66120337&lng=113.98029452]]赵俨收治，致之大辟。是时杀生之柄，决于[[牧|/zh-hans/translations/officials/regional#provinces-014]][[守|/zh-hans/translations/officials/regional#commanderies-039]]，通妻子号泣以请其命。通曰：「方与曹公勠力，义不以私废公。」嘉俨执宪不阿，与为亲交。太祖与袁绍相拒于[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]。绍遣使拜通[[征南将军|/zh-hans/translations/officials/military#conquering--garrisoning-065]]，刘表亦阴招之，通皆拒焉。通亲戚部曲流涕曰：「今孤危独守，以失大援，亡可立而待也，不如亟从绍。」通按剑以叱之曰：「曹公明哲，必定天下。绍虽强盛，而任使无方，终为之虏耳。吾以死不贰。」即斩绍使，送印绶诣太祖。又击郡贼瞿恭、江宫、沈成等，皆破残其众，送其首。遂定淮、汝之地。改封[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，拜[[汝南|/zh-hans/maps/map-overall?admin=29]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
       },
+      "vern": {
+        "zht": "李通妻子的伯父犯了法，下屬的[[朗陵|/zh-hant/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]]縣[[長|/zh-hant/translations/officials/regional?lat=32.66120337&lng=113.98029452]]趙儼將他關押起來，準備處以死刑。當時百姓的生殺大權，掌握在州[[牧|/zh-hant/translations/officials/regional#provinces-014]]、[[太守|/zh-hant/translations/officials/regional#commanderies-039]]的手中，李通的妻子號哭着向他求情。李通說：“我剛剛要與曹公共同效力朝廷，從道義上說不能以私廢公！”讚賞趙儼執法不徇私情，與他結成親密朋友。太祖與袁紹在[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]相持。袁紹派使者到李通駐地，任命李通爲[[征南將軍|/zh-hant/translations/officials/military#conquering--garrisoning-065]]，劉表也在暗中招引他：李通一概拒絕。他的親戚部屬流着淚勸他說：“現在我們孤軍獨守，失去大軍的援助，滅亡已經是眼前的事了；不如趕緊投奔袁紹。”李通手按劍柄怒斥他們說：“曹公英明智慧，一定能平定天下；袁紹雖然強盛，卻指揮無方，最終必將成爲曹公的俘虜。我寧死也不懷二心！”當下殺了袁紹的使者，把送來的[[征南將軍|/zh-hant/translations/officials/military#conquering--garrisoning-065]]印綬送交太祖。又掃蕩郡中的賊寇瞿恭、江宮、沈成等人，把他們全部擊潰，砍頭顱呈送朝廷：平定了淮河、汝水一帶。太祖改封李通爲[[都亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，任命他爲[[汝南|/zh-hant/maps/map-overall?admin=29]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+        "zhs": "李通妻子的伯父犯了法，下属的[[朗陵|/zh-hans/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]]县[[长|/zh-hans/translations/officials/regional?lat=32.66120337&lng=113.98029452]]赵俨将他关押起来，准备处以死刑。当时百姓的生杀大权，掌握在州[[牧|/zh-hans/translations/officials/regional#provinces-014]]、[[太守|/zh-hans/translations/officials/regional#commanderies-039]]的手中，李通的妻子号哭着向他求情。李通说：“我刚刚要与曹公共同效力朝廷，从道义上说不能以私废公！”赞赏赵俨执法不徇私情，与他结成亲密朋友。太祖与袁绍在[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]相持。袁绍派使者到李通驻地，任命李通为[[征南将军|/zh-hans/translations/officials/military#conquering--garrisoning-065]]，刘表也在暗中招引他：李通一概拒绝。他的亲戚部属流着泪劝他说：“现在我们孤军独守，失去大军的援助，灭亡已经是眼前的事了；不如赶紧投奔袁绍。”李通手按剑柄怒斥他们说：“曹公英明智慧，一定能平定天下；袁绍虽然强盛，却指挥无方，最终必将成为曹公的俘虏。我宁死也不怀二心！”当下杀了袁绍的使者，把送来的[[征南将军|/zh-hans/translations/officials/military#conquering--garrisoning-065]]印绶送交太祖。又扫荡郡中的贼寇瞿恭、江宫、沈成等人，把他们全部击溃，砍头颅呈送朝廷：平定了淮河、汝水一带。太祖改封李通为[[都亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，任命他为[[汝南|/zh-hans/maps/map-overall?admin=29]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+      },
       "en": "Li Tong's wife's elder uncle committed an offence, and Zhao Yan, the [[Chief|/translations/officials/regional?lat=32.66120337&lng=113.98029452]] of [[Langling|/maps/map-overall?lat=32.66120337&lng=113.98029452&name=Langling]], arrested and prosecuted him, sentencing him to death. At that time, the power over life and death rested with the [[Governor|/translations/officials/regional#provinces-014]] or the [[Grand Administrator|/translations/officials/regional#commanderies-039]], and Li Tong's wife wept and pleaded for her uncle's life. Li Tong replied, \"I am now striving together with Excellency Cao. It would be wrong to set aside the public good for private concerns.\" He praised Zhao Yan for enforcing the law impartially, and the two became close friends. When Cao Cao opposed Yuan Shao at [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]], Yuan Shao sent an envoy to appoint Li Tong [[General Who Conquers the South|/translations/officials/military#conquering--garrisoning-065]], while Liu Biao also secretly sought to win him over, but Li Tong rejected them both. His relatives and retainers wept, saying, \"Now we stand isolated and in peril. If we lose this great source of support, we can only remain where we are and await destruction. We should submit to Yuan Shao at once.\" Li Tong rested his hand upon his sword and rebuked them: \"Excellency Cao is wise and far-sighted and will surely unite the realm. Yuan Shao may be powerful today, but he has no judgement in the appointment and employment of men. In the end, he will surely become Excellency Cao's captive. I would rather die than betray my allegiance.\" He immediately executed Yuan Shao's envoy and sent the seal of appointment to Cao Cao. He then attacked the local rebel leaders Qu Gong, Jiang Gong, Shen Cheng, and others, defeating their forces and sending their heads to Cao Cao. He thereby pacified the Huai and Ru regions. His marquisate was changed to [[Capital Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]], and he was appointed [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Runan Commandery|/maps/map-overall?admin=29]] ."
     },
     {
@@ -394,6 +738,10 @@
       "orig": {
         "zht": "時賊張赤等五千餘家聚桃山，通攻破之。劉備與周瑜圍曹仁於[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，別遣關羽絕北道。通率衆擊之，下馬拔鹿角入圍，且戰且前，以迎仁軍，勇冠諸將。通道得病薨，時年四十二。追增邑二百戶，并前四百戶。文帝踐阼，謚曰剛侯。詔曰：「昔袁紹之難，自[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]、[[蔡|/zh-hant/maps/map-overall?lat=33.23780803&lng=114.22617315&name=Shangcai]]以南，人懷異心。通秉義不顧，使攜貳率服，朕甚嘉之。不幸早薨，子基雖已襲爵，未足醻其庸勳。基兄緒，前屯[[樊城|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又有功。世篤其勞，以基為[[奉義中郎將|/zh-hant/translations/officials/military#gentleman-generals-177]]，緒[[平虜中郎將|/zh-hant/translations/officials/military#gentleman-generals-174]]，以寵異焉。」",
         "zhs": "时贼张赤等五千余家聚桃山，通攻破之。刘备与周瑜围曹仁于[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]，别遣关羽绝北道。通率众击之，下马拔鹿角入围，且战且前，以迎仁军，勇冠诸将。通道得病薨，时年四十二。追增邑二百户，并前四百户。文帝践阼，谥曰刚侯。诏曰：「昔袁绍之难，自[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]、[[蔡|/zh-hans/maps/map-overall?lat=33.23780803&lng=114.22617315&name=Shangcai]]以南，人怀异心。通秉义不顾，使携贰率服，朕甚嘉之。不幸早薨，子基虽已袭爵，未足酬其庸勋。基兄绪，前屯[[樊城|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又有功。世笃其劳，以基为[[奉义中郎将|/zh-hans/translations/officials/military#gentleman-generals-177]]，绪[[平虏中郎将|/zh-hans/translations/officials/military#gentleman-generals-174]]，以宠异焉。」"
+      },
+      "vern": {
+        "zht": "這時候，賊寇張赤在桃山集聚黨羽五千多家，被李通攻破。劉備同周瑜在[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]包圍了曹仁，另派關羽斷絕了[[江陵|/zh-hant/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]北面的交通。李通率兵出擊，親自下馬拔除敵方設置的障礙物，衝進敵人的包圍；一邊戰鬥一邊前進，接應曹仁的部隊，全軍將士中以李通最爲勇敢。不久他在行軍途中得病去世。終年四十二歲。朝廷追賜他的封邑二百戶，連同以前的共有四百戶。魏文帝曹丕即帝位，諡他爲剛侯。下詔說：“當初袁紹大兵壓境，[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]縣、[[蔡|/zh-hant/maps/map-overall?lat=33.23780803&lng=114.22617315&name=Shangcai]]縣以南，人人都懷有異心；只有李通堅持正義不顧個人安危，使懷有二心的人紛紛服從：朕對此非常讚賞！他不幸早逝。兒子李基雖已繼承了爵位，仍然不足以酬勞他的功勳。李基的哥哥李緒，此前屯駐[[樊城|/zh-hant/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又立戰功，世代都專注於爲國效勞。現在任命李基爲[[奉義中郎將|/zh-hant/translations/officials/military#gentleman-generals-177]]，李緒爲[[平虜中郎將|/zh-hant/translations/officials/military#gentleman-generals-174]]，以表示特殊的優待。”",
+        "zhs": "这时候，贼寇张赤在桃山集聚党羽五千多家，被李通攻破。刘备同周瑜在[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]包围了曹仁，另派关羽断绝了[[江陵|/zh-hans/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]]北面的交通。李通率兵出击，亲自下马拔除敌方设置的障碍物，冲进敌人的包围；一边战斗一边前进，接应曹仁的部队，全军将士中以李通最为勇敢。不久他在行军途中得病去世。终年四十二岁。朝廷追赐他的封邑二百户，连同以前的共有四百户。魏文帝曹丕即帝位，谥他为刚侯。下诏说：“当初袁绍大兵压境，[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]县、[[蔡|/zh-hans/maps/map-overall?lat=33.23780803&lng=114.22617315&name=Shangcai]]县以南，人人都怀有异心；只有李通坚持正义不顾个人安危，使怀有二心的人纷纷服从：朕对此非常赞赏！他不幸早逝。儿子李基虽已继承了爵位，仍然不足以酬劳他的功勋。李基的哥哥李绪，此前屯驻[[樊城|/zh-hans/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]]，又立战功，世代都专注于为国效劳。现在任命李基为[[奉义中郎将|/zh-hans/translations/officials/military#gentleman-generals-177]]，李绪为[[平虏中郎将|/zh-hans/translations/officials/military#gentleman-generals-174]]，以表示特殊的优待。”"
       },
       "en": "At that time the rebel Zhang Chi and more than five thousand households had gathered at Taoshan, and Li Tong defeated them. Later, when Liu Bei and Zhou Yu besieged Cao Ren at [[Jiangling|/maps/map-overall?lat=30.34078806&lng=112.18710173&name=Jiangling]] and separately dispatched Guan Yu to cut off the northern route, Li Tong led his troops against him. Dismounting, he pulled up the caltrops and forced his way into the encirclement. Fighting as he advanced, he succeeded in linking up with Cao Ren's army. His courage surpassed that of all the other generals. Li Tong fell ill on the march and died at the age of forty-two. His fief was increased posthumously by two hundred households, bringing his total to four hundred households. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) ascended the throne, Li Tong was posthumously honoured as Marquis Gang, the Resolute Marquis. An imperial edict declared: \"During the crisis brought about by Yuan Shao, from [[Xuchang|/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]] southwards to [[Shangcai|/maps/map-overall?lat=33.23780803&lng=114.22617315&name=Shangcai]], many men entertained divided loyalties. Li Tong upheld righteousness without hesitation, causing those inclined to waver to submit. I greatly commend him for this. It is regrettable that he died so young. Although his son Li Ji has inherited his title, this is still insufficient reward for his distinguished service. Li Ji's elder brother, Li Xu, formerly garrisoned [[Fancheng|/maps/map-overall?lat=32.04746989&lng=112.06874333&name=Fancheng]], also rendered meritorious service. In recognition of the family's enduring achievements, Li Ji is appointed [[Gentleman-General Who Upholds Righteousness|/translations/officials/military#gentleman-generals-177]], and Li Xu [[Gentleman-General Who Subdues the Enemies|/translations/officials/military#gentleman-generals-174]], so as to distinguish them with exceptional favour.\"",
       "annotations": [
@@ -410,6 +758,10 @@
           },
           "zht": "《晉書》曰：緒子秉，字玄冑，有儁才，為時所貴，官至秦州[[刺史|/zh-hant/translations/officials/regional#provinces-014]]。\n\n秉嘗荅司馬文王問，因以為家誡曰：「昔侍坐於先帝，時有三長吏俱見。臨辭出，上曰：『為官長當清，當慎，當勤，脩此三者，何患不治乎？』並受詔。旣出，上顧謂吾等曰：『相誡勑正當爾不？』侍坐衆賢，莫不贊善。上又問曰：『必不得已，於斯三者何先？』或對曰：『清固為本。』次復問吾，對曰：『清慎之道，相須而成，必不得已，慎乃為大。夫清者不必慎，慎者必自清，亦由仁者必有勇，勇者不必有仁，是以易稱括囊無咎[^1]，藉用白茅[^2]，皆慎之至也。』上曰：『卿言得之爾。可舉近世能慎者誰乎？』諸人各未知所對，吾乃舉故[[太尉|/zh-hant/translations/officials/ministers#three-excellencies-084]]荀景倩、[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]董仲連、[[僕射|/zh-hant/translations/officials/departments/#state-affairs-032]]王公仲並可謂為慎。\n\n上曰：『此諸人者，溫恭朝夕，執事有恪，亦各其慎也。然天下之至慎，其惟阮嗣宗乎！每與之言，言及玄遠，而未曾評論時事，臧否人物，真可謂至慎矣。』吾每思此言，亦足以為明誡。凡人行事，年少立身，不可不慎，勿輕論人，勿輕說事，如此則悔吝何由而生，患禍無從而至矣。」\n\n秉子重，字茂曾。少知名，歷位[[吏部郎|/zh-hant/officials/departments/#state-affairs-037]]、[[平陽|/zh-hant/translations/officials/regional#commanderies-039]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
           "zhs": "《晋书》曰：绪子秉，字玄胄，有儁才，为时所贵，官至秦州[[刺史|/zh-hans/translations/officials/regional#provinces-014]]。\n\n秉尝荅司马文王问，因以为家诫曰：「昔侍坐于先帝，时有三长吏俱见。临辞出，上曰：『 为官长当清，当慎，当勤，修此三者，何患不治乎？』并受诏。旣出，上顾谓吾等曰：『 相诫勑正当尔不？』侍坐衆贤，莫不赞善。上又问曰：『 必不得已，于斯三者何先？』或对曰：『 清固为本。』次复问吾，对曰：『 清慎之道，相须而成，必不得已，慎乃为大。夫清者不必慎，慎者必自清，亦由仁者必有勇，勇者不必有仁，是以易称括囊无咎[^1]，藉用白茅[^2]，皆慎之至也。』上曰：『 卿言得之尔。可举近世能慎者谁乎？』诸人各未知所对，吾乃举故[[太尉|/zh-hans/translations/officials/ministers#three-excellencies-084]]荀景倩、[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]董仲连、[[仆射|/zh-hans/translations/officials/departments/#state-affairs-032]]王公仲并可谓为慎。\n\n上曰：『 此诸人者，温恭朝夕，执事有恪，亦各其慎也。然天下之至慎，其惟阮嗣宗乎！每与之言，言及玄远，而未曾评论时事，臧否人物，真可谓至慎矣。』吾每思此言，亦足以为明诫。凡人行事，年少立身，不可不慎，勿轻论人，勿轻说事，如此则悔吝何由而生，患祸无从而至矣。」\n\n秉子重，字茂曾。少知名，历位[[吏部郎|/zh-hans/officials/departments/#state-affairs-037]]、[[平阳|/zh-hans/translations/officials/regional#commanderies-039]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。",
+          "vern": {
+            "zht": "王隱的《晉書》記載：李緒的兒子秉，字玄胄，有卓越的才能，受到當時人們的敬重，官至秦州[[刺史|/zh-hant/translations/officials/regional#provinces-014]]。\n\n李秉曾經得到司馬文王的詢問，於是把這作爲家誡說：“從前陪坐在先帝身邊，當時，有三位長吏一同被召見，臨到告辭出去的時候，皇上說：‘做長官應當清廉、應當謹慎、應當勤勉，做到這三點，還擔心治理不好嗎？’三人一起接受了皇帝的詔令。三人出去後，皇上回頭對我們說：互相告誡勸勉，就應當如此。陪坐的衆人，無不稱讚說得好，皇上又表示‘若實在要選，這三者應先重視哪一個呢？’有人回答說：‘清廉就是根本。’接着又問我，我回答說：‘清廉和謹慎這兩種品德，是相輔相成的，如果一定要分出先後，謹慎更爲重要。清廉的人不一定謹慎，謹慎的人一定能做到清廉，這就如同有仁德的人一定有勇氣，有勇氣的人不一定有仁德，因此《易經》說“紮緊口袋不會有災禍；用白茅草包裹祭品”，這都是謹慎到了極點啊。’皇上說：‘你說得對。可以列舉出近世能夠做到謹慎的人嗎？’衆人都不知道該如何回答。我於是舉薦了已故[[太尉|/zh-hant/translations/officials/ministers#three-excellencies-084]]荀景倩、[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]董仲連、[[僕射|/zh-hant/translations/officials/departments/#state-affairs-032]]王公仲，他們都可以稱得上是謹慎的人。\n\n皇上說：‘這些人，從早到晚都溫和恭敬，處理事務恪盡職守，也都算得上是謹慎之人了。然而天下最謹慎的人，大概只有阮嗣宗了吧！每次和他交談，談論的都是玄深玄遠的道理，卻從未評論過時事、褒貶過人物，真可以說是極其謹慎了。’我每次想到這番話，也足以把它作爲明確的告誡。凡是人做事，年少時立身處世，不可不謹慎，不要輕易評論他人，不要輕易談論事情，像這樣，悔恨和災禍又從哪裏產生呢，福氣和災禍也就無從降臨了。”\n\n李秉的兒子重，字茂曾，年少時就有名聲，先後擔任[[吏部郎|/zh-hant/officials/departments/#state-affairs-037]]、[[平陽|/zh-hant/translations/officials/regional#commanderies-039]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。",
+            "zhs": "王隐的《晋书》记载：李绪的儿子秉，字玄胄，有卓越的才能，受到当时人们的敬重，官至秦州[[刺史|/zh-hans/translations/officials/regional#provinces-014]]。\n\n李秉曾经得到司马文王的询问，于是把这作为家诫说：“从前陪坐在先帝身边，当时，有三位长吏一同被召见，临到告辞出去的时候，皇上说：‘做长官应当清廉、应当谨慎、应当勤勉，做到这三点，还担心治理不好吗？’三人一起接受了皇帝的诏令。三人出去后，皇上回头对我们说：互相告诫劝勉，就应当如此。陪坐的众人，无不称赞说得好，皇上又表示‘若实在要选，这三者应先重视哪一个呢？’有人回答说：‘清廉就是根本。’接着又问我，我回答说：‘清廉和谨慎这两种品德，是相辅相成的，如果一定要分出先后，谨慎更为重要。清廉的人不一定谨慎，谨慎的人一定能做到清廉，这就如同有仁德的人一定有勇气，有勇气的人不一定有仁德，因此《易经》说“扎紧口袋不会有灾祸；用白茅草包裹祭品”，这都是谨慎到了极点啊。’皇上说：‘你说得对。可以列举出近世能够做到谨慎的人吗？’众人都不知道该如何回答。我于是举荐了已故[[太尉|/zh-hans/translations/officials/ministers#three-excellencies-084]]荀景倩、[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]董仲连、[[仆射|/zh-hans/translations/officials/departments/#state-affairs-032]]王公仲，他们都可以称得上是谨慎的人。\n\n皇上说：‘这些人，从早到晚都温和恭敬，处理事务恪尽职守，也都算得上是谨慎之人了。然而天下最谨慎的人，大概只有阮嗣宗了吧！每次和他交谈，谈论的都是玄深玄远的道理，却从未评论过时事、褒贬过人物，真可以说是极其谨慎了。’我每次想到这番话，也足以把它作为明确的告诫。凡是人做事，年少时立身处世，不可不谨慎，不要轻易评论他人，不要轻易谈论事情，像这样，悔恨和灾祸又从哪里产生呢，福气和灾祸也就无从降临了。”\n\n李秉的儿子重，字茂曾，年少时就有名声，先后担任[[吏部郎|/zh-hans/officials/departments/#state-affairs-037]]、[[平阳|/zh-hans/translations/officials/regional#commanderies-039]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。"
+          },
           "en": "The Book of Jin states: Li Xu's son was Li Bing, courtesy name Xuanzhou. He was a man of outstanding talent, highly esteemed by his contemporaries, and rose to become [[Inspector|/translations/officials/regional#provinces-014]] of Qin Province. \n\nLi Bing once recounted an exchange with Sima Zhao (posthumously honoured as King Wen, the Civil King), which he afterwards adopted as a piece of family advice: \"When I was attending upon the late Emperor, three senior officials happened to have an audience together. As they were taking their leave, His Majesty said, 'Those who serve as senior officials should be honest, prudent, and diligent. If they cultivate these three qualities, what difficulty can there be in governing well?' They all received his instruction. After they had departed, His Majesty turned to those of us in attendance and asked, 'My words of guidance to them were appropriate, right?' Everyone attending His Majesty voiced their approval. His Majesty then asked again, 'If one were absolutely compelled to choose among these three, which should come first?' Someone replied, 'Honesty must surely be the foundation.' His Majesty then asked me, and I answered, 'Honesty and prudence complement one another and cannot easily be separated. But if one were compelled to choose, prudence is the more important. An honest man is not necessarily prudent, but a prudent man will naturally be honest. It is like the saying that the benevolent are always courageous, whereas the courageous are not always benevolent. Thus the Book of Changes says, \"Tie the mouth of the sack, and there will be no blame.\"[^1] and \"Lay down white thatch as a mat.\"[^2] Both illustrate the utmost importance of prudence.' His Majesty said, 'You have reasoned well. Can you name any men of recent times who truly exemplified prudence?' The others did not know how to answer, so I named the former [[Grand Commandant|/translations/officials/ministers#three-excellencies-084]] Xun Jingqian, [[Secretariat|/translations/officials/departments#state-affairs-033]] Dong Zhonglian, and [[Deputy Director|/translations/officials/departments/#state-affairs-032]] Wang Gongzhong, all of whom could rightly be called prudent. \n\nHis Majesty replied, 'These men are all gentle and respectful in their daily conduct, conscientious in the discharge of their duties, and each displays prudence in his own way. Yet the most prudent man in this realm can only be Ruan Sizong. Whenever I spoke with him, our conversations always turned to profound and abstruse subjects, yet he never once discussed current affairs or passed judgement upon other people. He may truly be called the very model of prudence.' Whenever I reflect upon these words, I find them a most illuminating piece of advice. Whatever a man undertakes, especially while establishing himself in youth, he cannot afford to be imprudent. Do not speak lightly of other people, nor speak lightly of affairs. If one conducts oneself in this way, from where can regret arise? How could calamity or misfortune find a way to reach him?\" \n\nLi Bing's son was Li Chong, courtesy name Maozeng. He became well known while still young, and successively served as [[Personnel Division Gentleman|/officials/departments/#state-affairs-037]] and [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Pingyang|/translations/officials/regional#commanderies-039]].",
           "footnotes": [
             {
@@ -439,6 +791,10 @@
           },
           "zht": "《晉諸公贊》曰：重以清尚稱。[[相國|/zh-hant/translations/officials/ministers#superior-excellency-001]]趙王倫以重望取為[[右司馬|/zh-hant/translations/officials/ministers/#superior-excellency-009]]。重以倫將為亂，辭疾不就。倫逼之不已，重遂不復自活，至於困篤，扶曳受拜，數日卒，贈[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]。\n\n重二弟，尚字茂仲，矩字茂約，永嘉中並典郡；矩至[[江州|/zh-hant/maps/map-overall?lat=29.55282177&lng=106.5473568&name=Jiangzhou]][[刺史|/zh-hant/translations/officials/regional?lat=29.55282177&lng=106.5473568]]。重子式，字景則，官至[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]。",
           "zhs": "《晋诸公赞》曰：重以清尚称。[[相国|/zh-hans/translations/officials/ministers#superior-excellency-001]]赵王伦以重望取为[[右司马|//zh-hans/translations/officials/ministers/#superior-excellency-009]]。重以伦将为乱，辞疾不就。伦逼之不已，重遂不复自活，至于困篤，扶曳受拜，数日卒，赠[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]。\n\n重二弟，尚字茂仲，矩字茂约，永嘉中并典郡；矩至[[江州|/zh-hans/maps/map-overall?lat=29.55282177&lng=106.5473568&name=Jiangzhou]][[刺史|/zh-hans/translations/officials/regional?lat=29.55282177&lng=106.5473568]]。重子式，字景则，官至[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]。",
+          "vern": {
+            "zht": "《晉諸公贊》記載：李重以清正高尚受到稱讚。[[相國|/zh-hant/translations/officials/ministers#superior-excellency-001]]趙王倫因爲秉子重有聲望，任用他爲[[右司馬|/zh-hant/translations/officials/ministers/#superior-excellency-009]]。李重因爲趙王倫將要作亂，便以生病爲由推辭不去就職。趙王倫不停地逼迫他，李重於是不再求生，以至於病重，被人攙扶着接受任命，幾天後就去世了，朝廷追贈他爲[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]。\n\n李重的兩個弟弟，尚字茂仲，矩字茂約，永嘉年間都擔任郡守之職。李矩做到了[[江州|/zh-hant/maps/map-overall?lat=29.55282177&lng=106.5473568&name=Jiangzhou]][[刺史|/zh-hant/translations/officials/regional?lat=29.55282177&lng=106.5473568]]一職。李重的兒子式，字景則，做到了[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]。",
+            "zhs": "《晋诸公赞》记载：李重以清正高尚受到称赞。[[相国|/zh-hans/translations/officials/ministers#superior-excellency-001]]赵王伦因为秉子重有声望，任用他为[[右司马|//zh-hans/translations/officials/ministers/#superior-excellency-009]]。李重因为赵王伦将要作乱，便以生病为由推辞不去就职。赵王伦不停地逼迫他，李重于是不再求生，以至于病重，被人搀扶着接受任命，几天后就去世了，朝廷追赠他为[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]。\n\n李重的两个弟弟，尚字茂仲，矩字茂约，永嘉年间都担任郡守之职。李矩做到了[[江州|/zh-hans/maps/map-overall?lat=29.55282177&lng=106.5473568&name=Jiangzhou]][[刺史|/zh-hans/translations/officials/regional?lat=29.55282177&lng=106.5473568]]一职。李重的儿子式，字景则，做到了[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]。"
+          },
           "en": "The Jin Zhugong Zan / Appraisal of Officials of Jin states: Li Chong was renowned for his integrity and lofty character. Sima Lun, Prince of Zhao and [[Chancellor of State|/translations/officials/ministers#superior-excellency-001]], admired Li Chong's reputation and sought to appoint him [[Major on the Right|/translations/officials/ministers/#superior-excellency-009]]. Realising that Sima Lun intended to rebel, Li Chong claimed illness and refused the appointment. Sima Lun continued to pressure him without relenting, whereupon Li Chong ceased taking care of himself. His condition eventually became critical, and he had to be supported as he went to receive the appointment. He died only a few days later. He was posthumously granted the office of [[Cavalier Regular Attendant|/translations/officials/departments#chancellery-013]]. \n\nLi Chong had two younger brothers: Li Shang, courtesy name Maozhong, and Li Ju, courtesy name Maoyue. During the Yongjia Era, both served as Administrators of commanderies, while Li Ju eventually rose to become [[Inspector|/translations/officials/regional?lat=29.55282177&lng=106.5473568]] of [[Jiangzhou|/maps/map-overall?lat=29.55282177&lng=106.5473568&name=Jiangzhou]]. Li Chong's son was Li Shi, courtesy name Jingze, whose highest office was [[Palace Attendant|/translations/officials/departments#chancellery-001]]."
         }
       ]

@@ -12,6 +12,15 @@ import {
   linkifyParagraphs,
   linkifyParagraphPairs,
   renderFootnotes,
+  linkifyParagraphPairsVern,
+  vernOf,
+  chapterHasVern,
+  toClientChapter,
+  toClientBookSections,
+  isAppraisal,
+  compareChapters,
+  biographyCount,
+  renderAppraisalSubjects,
 } from '../../../../scripts/translations/chapterFormat';
 
 const TEXT_TITLE = { zht: '三國志', zhs: '三国志', en: 'Records of the Three Kingdoms' };
@@ -20,7 +29,7 @@ const chapterModules = import.meta.glob('../../../../data/sgz/*.json', { eager: 
 
 const chapters = Object.values(chapterModules)
   .map((mod: any) => mod.default ?? mod)
-  .sort((a: any, b: any) => a.order - b.order);
+  .sort(compareChapters);
 
 // Sidebar sections, grouped by book, in the order chapters first appear
 const bookSections: any[] = [];
@@ -58,7 +67,7 @@ export function getStaticPaths() {
   const mods = import.meta.glob('../../../../data/sgz/*.json', { eager: true });
   const chs = Object.values(mods)
     .map((mod: any) => mod.default ?? mod)
-    .sort((a: any, b: any) => a.order - b.order);
+    .sort(compareChapters);
   const paths: any[] = [{ params: { chapter: undefined } }]; // cover
   for (const ch of chs) {
     paths.push({ params: { chapter: ch.id } });
@@ -72,6 +81,14 @@ const currentIndex = isCover ? -1 : chapters.findIndex((c: any) => c.id === chap
 const currentChapter = currentIndex >= 0 ? chapters[currentIndex] : null;
 const prevChapter = currentIndex > 0 ? chapters[currentIndex - 1] : null;
 const nextChapter = currentIndex >= 0 && currentIndex < chapters.length - 1 ? chapters[currentIndex + 1] : null;
+
+// The relationships page only understands the new relationship schema so far — only some
+// chapters have been converted (see scripts/validate-relationships.mjs). Only link to it
+// from a chapter that actually has data there, so the button never silently lands on a
+// different chapter's graph.
+function hasRelationshipsData(ch: any): boolean {
+  return Array.isArray(ch?.relationships) && ch.relationships.length > 0 && ch.relationships.every((r: any) => Array.isArray(r.notes));
+}
 
 const lang: string = 'zh-hans';
 const strings = t(lang);
@@ -97,7 +114,7 @@ const baseUrl = url('/zh-hans/translations/sanguozhi');
 const chapterUrl = (id: string) => `${baseUrl}/${id}`;
 
 // Only chapters with real translated content — used for the cover's Contents list
-const translatedChapters = chapters.filter((c: any) => c.passages && c.passages.length > 0);
+const translatedChapters = chapters.filter((c: any) => c.passages && c.passages.length > 0 && !isAppraisal(c));
 const coverChapters = translatedChapters.length > 0 ? translatedChapters : chapters;
 
 // Person index for the cover's search panel — one entry per translated
@@ -111,14 +128,26 @@ const coverChapters = translatedChapters.length > 0 ? translatedChapters : chapt
 // typed in traditional Chinese or English/pinyin still matches.
 type PersonEntry = { zh: string; zht: string; en: string; chapterId: string; bookZh: string };
 const personIndex: PersonEntry[] = chapters
-  .filter((ch: any) => ch.passages && ch.passages.length > 0)
+  .filter((ch: any) => ch.passages && ch.passages.length > 0 && !isAppraisal(ch))
   .map((ch: any) => ({
     zh: cn(ch.label), zht: ch.label.zht, en: ch.label.en || ch.title?.en || '',
     chapterId: ch.id, bookZh: cn(ch.bookLabel),
   }));
 
-// Embedded once, used by client JS to swap content with no reload/fetch
-const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex, initialChapterId: chapterId ?? null }).replace(/</g, '\\u003c');
+// Whether the current chapter has any vernacular (白话) text — the 白话 view
+// button is only shown when it does.
+const hasVern = !!currentChapter && chapterHasVern(currentChapter, cnField as 'zht' | 'zhs');
+
+// Embedded once, used by client JS to swap content with no reload/fetch.
+// Slimmed to what the client script uses: this page's script only (no zht
+// twin of every field), and no relationships/journeyOverviews (map-only
+// data). bookSections keeps its shape but carries chapter metadata only —
+// each chapter's passages already ship once, in `chapters`.
+const clientData = JSON.stringify({
+  chapters: chapters.map((ch: any) => toClientChapter(ch, cnField as 'zht' | 'zhs')),
+  bookSections: toClientBookSections(bookSections, cnField as 'zht' | 'zhs'),
+  baseUrl, personIndex, initialChapterId: chapterId ?? null,
+}).replace(/</g, '\\u003c');
 ---
 
 <Base title={`${cn(TEXT_TITLE)} · ${strings.siteTitle}`} lang="zh-hans">
@@ -166,13 +195,13 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                       >
                         <i class="ti ti-chevron-right sb-juan-chevron" aria-hidden="true"></i>
                         <span class="sb-ch-num">{group.num}</span>
-                        <span class="sb-juan-count">{group.chapters.length} 篇</span>
+                        <span class="sb-juan-count">{biographyCount(group.chapters)} 篇</span>
                       </button>
                       <div class:list={['sb-juan-body', { open: groupHasActive }]}>
                         {group.chapters.map((ch: any) => (
                           <a
                             href={chapterUrl(ch.id)}
-                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId }]}
+                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId, 'sb-ch-appraisal': isAppraisal(ch) }]}
                             data-sgz-link
                             data-chapter={ch.id}
                           >
@@ -238,13 +267,13 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                       >
                         <i class="ti ti-chevron-right sb-juan-chevron" aria-hidden="true"></i>
                         <span class="sb-ch-num">{group.num}</span>
-                        <span class="sb-juan-count">{group.chapters.length} 篇</span>
+                        <span class="sb-juan-count">{biographyCount(group.chapters)} 篇</span>
                       </button>
                       <div class:list={['sb-juan-body', { open: groupHasActive }]}>
                         {group.chapters.map((ch: any) => (
                           <a
                             href={chapterUrl(ch.id)}
-                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId }]}
+                            class:list={['sb-ch', 'sb-ch-nested', { on: ch.id === chapterId, 'sb-ch-appraisal': isAppraisal(ch) }]}
                             data-sgz-link
                             data-chapter={ch.id}
                           >
@@ -306,7 +335,12 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                 </p>
               </div>
               <div class="cover-right">
-                <div class="cover-contents-label">查找人物</div>
+                <div class="cover-contents-label-row">
+                  <div class="cover-contents-label">查找人物</div>
+                  <a href={url('/zh-hans/translations/sanguozhi/relationships')} class="cover-relationships-link" target="_blank" rel="noopener">
+                    <i class="ti ti-affiliate" aria-hidden="true"></i> 人物关系
+                  </a>
+                </div>
                 <div class="person-search-wrap">
                   <i class="ti ti-search person-search-icon" aria-hidden="true"></i>
                   <input
@@ -337,11 +371,13 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
               <div class="chapter-header">
                 <div class="ch-title-group">
                   <h1 class="ch-title-zh" lang={cnLangAttr}>{cn(currentChapter.title)}</h1>
+                  {isAppraisal(currentChapter) && <Fragment set:html={renderAppraisalSubjects(currentChapter, chapters, cnField as 'zht' | 'zhs', chapterUrl)} />}
                 </div>
                 <div class="view-toggle" role="group" aria-label="View mode">
                   <button class="view-toggle-btn active" data-view="both" type="button">对照</button>
                   <button class="view-toggle-btn" data-view="orig" type="button">原文</button>
                   <button class="view-toggle-btn" data-view="en" type="button">英译</button>
+                  {hasVern && <button class="view-toggle-btn" data-view="vern" type="button">白话</button>}
                 </div>
               </div>
 
@@ -354,9 +390,16 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                     <span class="term-toggle-track"><span class="term-toggle-thumb"></span></span>
                     <span class="term-toggle-label">显示标记</span>
                   </label>
-                  <a href={url(`/zh-hans/maps/map-overall?journey=${currentChapter.id}`)} class="term-journey-link" target="_blank" rel="noopener">
-                    <i class="ti ti-route" aria-hidden="true"></i> 查看足迹
-                  </a>
+                  {!isAppraisal(currentChapter) && (
+                    <a href={url(`/zh-hans/maps/map-overall?journey=${currentChapter.id}`)} class="term-journey-link" target="_blank" rel="noopener">
+                      <i class="ti ti-route" aria-hidden="true"></i> 查看足迹
+                    </a>
+                  )}
+                  {hasRelationshipsData(currentChapter) && (
+                    <a href={url(`/zh-hans/translations/sanguozhi/relationships${currentChapter.journeyOverviews?.[0]?.person ? `?person=${encodeURIComponent(currentChapter.journeyOverviews[0].person)}` : ''}`)} class="term-journey-link" target="_blank" rel="noopener">
+                      <i class="ti ti-affiliate" aria-hidden="true"></i> 查看人物关系
+                    </a>
+                  )}
                 </div>
               </div>
 
@@ -367,6 +410,9 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                 {currentChapter.passages.map((p: any) => (
                   <div class="passage" id={p.id}>
                     <p class="ps-orig" lang={cnLangAttr} set:html={linkify(cn(p.orig))} />
+                    {vernOf(p, cnField as 'zht' | 'zhs') && (
+                      <p class="ps-vern" lang={cnLangAttr} set:html={linkify(vernOf(p, cnField as 'zht' | 'zhs'))} />
+                    )}
                     <p class="ps-en" set:html={linkify(p.en)} />
                     <div set:html={renderFootnotes(p.footnotes, cnField as 'zht' | 'zhs', cnLangAttr, 'passage')} />
                     {p.annotations && p.annotations.length > 0 && (
@@ -386,7 +432,10 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                               </span>
                             </button>
                             <div class="ann-body" data-passage={p.id} data-idx={ai}>
-                              <div class="ann-body-parallel" set:html={linkifyParagraphPairs(cn(a), a.en, cnLangAttr)} />
+                              <div class:list={['ann-body-parallel', { 'has-vern': !!vernOf(a, cnField as 'zht' | 'zhs') }]} set:html={linkifyParagraphPairs(cn(a), a.en, cnLangAttr)} />
+                              {vernOf(a, cnField as 'zht' | 'zhs') && (
+                                <div class="ann-body-vern" set:html={linkifyParagraphPairsVern(cn(a), vernOf(a, cnField as 'zht' | 'zhs'), cnLangAttr)} />
+                              )}
                               <div set:html={renderFootnotes(a.footnotes, cnField as 'zht' | 'zhs', cnLangAttr, 'annotation')} />
                             </div>
                           </div>
@@ -447,11 +496,21 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
     linkifyParagraphs,
     linkifyParagraphPairs,
     renderFootnotes,
+    linkifyParagraphPairsVern,
+    vernOf as vernOfShared,
+    chapterHasVern as chapterHasVernShared,
+    isAppraisal,
+    renderAppraisalSubjects,
   } from '../../../../scripts/translations/chapterFormat';
 
   const dataEl = document.getElementById('sgz-data');
   const DATA = JSON.parse(dataEl ? dataEl.textContent ?? '{}' : '{}');
   const { chapters, bookSections, baseUrl, personIndex, initialChapterId } = DATA;
+
+  // Mirrors hasRelationshipsData() in the frontmatter.
+  function hasRelationshipsData(ch: any): boolean {
+    return Array.isArray(ch?.relationships) && ch.relationships.length > 0 && ch.relationships.every((r: any) => Array.isArray(r.notes));
+  }
   const STR = {
     annotationBy: 'Annotation', previous: '上一章', next: '下一章',
     pending: '翻译中……', translations: '翻译',
@@ -485,6 +544,9 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
   function formatSourceZh(source: any) {
     return formatSourceZhShared(source, CN_FIELD);
   }
+  function vernOf(p: any) {
+    return vernOfShared(p, CN_FIELD);
+  }
 
   function renderPassage(p: any): string {
     const anns = (p.annotations || []).map((a: any, ai: number) => `
@@ -497,13 +559,15 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
           </span>
         </button>
         <div class="ann-body" data-passage="${p.id}" data-idx="${ai}">
-          <div class="ann-body-parallel">${linkifyParagraphPairs(cn(a), a.en, CN_LANG_ATTR)}</div>
+          <div class="ann-body-parallel${vernOf(a) ? ' has-vern' : ''}">${linkifyParagraphPairs(cn(a), a.en, CN_LANG_ATTR)}</div>
+          ${vernOf(a) ? `<div class="ann-body-vern">${linkifyParagraphPairsVern(cn(a), vernOf(a), CN_LANG_ATTR)}</div>` : ''}
           ${renderFootnotes(a.footnotes, CN_FIELD, CN_LANG_ATTR, 'annotation')}
         </div>
       </div>`).join('');
     return `
       <div class="passage" id="${p.id}">
         <p class="ps-orig" lang="${CN_LANG_ATTR}">${linkify(cn(p.orig))}</p>
+        ${vernOf(p) ? `<p class="ps-vern" lang="${CN_LANG_ATTR}">${linkify(vernOf(p))}</p>` : ''}
         <p class="ps-en">${linkify(p.en)}</p>
         ${renderFootnotes(p.footnotes, CN_FIELD, CN_LANG_ATTR, 'passage')}
         ${anns ? `<div class="annotations">${anns}</div>` : ''}
@@ -511,7 +575,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
   }
 
   function renderCover(): string {
-    const translated = chapters.filter((c: any) => c.passages && c.passages.length > 0);
+    const translated = chapters.filter((c: any) => c.passages && c.passages.length > 0 && !isAppraisal(c));
     const coverChapters = translated.length > 0 ? translated : chapters;
     const defaultResults = coverChapters.map((ch: any) => `
       <a href="${baseUrl}/${ch.id}" class="person-result" data-sgz-link data-chapter="${ch.id}">
@@ -536,7 +600,12 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
                   与ZL181合作翻译。</p>
         </div>
         <div class="cover-right">
-          <div class="cover-contents-label">查找人物</div>
+          <div class="cover-contents-label-row">
+            <div class="cover-contents-label">查找人物</div>
+            <a href="${url('/zh-hans/translations/sanguozhi/relationships')}" class="cover-relationships-link" target="_blank" rel="noopener">
+              <i class="ti ti-affiliate" aria-hidden="true"></i> 人物关系
+            </a>
+          </div>
           <div class="person-search-wrap">
             <i class="ti ti-search person-search-icon" aria-hidden="true"></i>
             <input type="text" id="person-search-input" class="person-search-input" placeholder="输入中文或英文姓名搜索…" autocomplete="off" />
@@ -565,11 +634,13 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
       <div class="chapter-header">
         <div class="ch-title-group">
           <h1 class="ch-title-zh" lang="zh-hans">${esc(ch.title.zhs || ch.title.zht)}</h1>
+          ${isAppraisal(ch) ? renderAppraisalSubjects(ch, chapters, CN_FIELD, (id: string) => `${baseUrl}/${id}`) : ''}
         </div>
         <div class="view-toggle" role="group" aria-label="View mode">
           <button class="view-toggle-btn active" data-view="both" type="button">对照</button>
           <button class="view-toggle-btn" data-view="orig" type="button">原文</button>
           <button class="view-toggle-btn" data-view="en" type="button">英译</button>
+          ${chapterHasVernShared(ch, CN_FIELD) ? '<button class="view-toggle-btn" data-view="vern" type="button">白话</button>' : ''}
         </div>
       </div>
       <div class="term-legend">
@@ -581,9 +652,16 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
             <span class="term-toggle-track"><span class="term-toggle-thumb"></span></span>
             <span class="term-toggle-label">显示标记</span>
           </label>
-          <a href="${url(`/zh-hans/maps/map-overall?journey=${ch.id}`)}" class="term-journey-link" target="_blank" rel="noopener">
-            <i class="ti ti-route" aria-hidden="true"></i> 查看足迹
-          </a>
+          ${isAppraisal(ch) ? '' : `
+            <a href="${url(`/zh-hans/maps/map-overall?journey=${ch.id}`)}" class="term-journey-link" target="_blank" rel="noopener">
+              <i class="ti ti-route" aria-hidden="true"></i> 查看足迹
+            </a>
+          `}
+          ${hasRelationshipsData(ch) ? `
+            <a href="${url(`/zh-hans/translations/sanguozhi/relationships${ch.journeyOverviews?.[0]?.person ? `?person=${encodeURIComponent(ch.journeyOverviews[0].person)}` : ''}`)}" class="term-journey-link" target="_blank" rel="noopener">
+              <i class="ti ti-affiliate" aria-hidden="true"></i> 查看人物关系
+            </a>
+          ` : ''}
         </div>
       </div>
       <div class="passages">${passages}</div>
@@ -669,9 +747,10 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
         const view = btn.getAttribute('data-view');
         document.querySelectorAll('.view-toggle-btn').forEach((b) => b.classList.toggle('active', b === btn));
         if (passagesEl) {
-          passagesEl.classList.remove('view-orig', 'view-en');
+          passagesEl.classList.remove('view-orig', 'view-en', 'view-vern');
           if (view === 'orig') passagesEl.classList.add('view-orig');
           if (view === 'en') passagesEl.classList.add('view-en');
+          if (view === 'vern') passagesEl.classList.add('view-vern');
         }
       });
     });
@@ -819,6 +898,12 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
 .sb-juan-body.open { display: flex; }
 .sb-ch-nested { padding-left: 2.75rem; }
 .sb-ch-nested.on { padding-left: calc(2.75rem - 2px); }
+/* Chen Shou's appraisal (評) — last in its juan, set apart from the biographies */
+.sb-ch-appraisal { font-style: italic; border-top: 0.5px dashed var(--color-border); margin-top: 2px; }
+.appraisal-subjects { margin: 0.4rem 0 0; font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; }
+.appraisal-subjects-lead { color: var(--color-text-tertiary); }
+.appraisal-subject { color: var(--archive-gold-soft, #d0aa6b); text-decoration: none; border-bottom: 1px dotted currentColor; }
+.appraisal-subject:hover { border-bottom-style: solid; }
 
 
 
@@ -844,6 +929,10 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
 
 .cover-right { padding-left: 2.5rem; border-left: 0.5px solid var(--color-border); display: flex; flex-direction: column; }
 .cover-contents-label { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 12px; }
+.cover-contents-label-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.cover-contents-label-row .cover-contents-label { margin-bottom: 12px; }
+.cover-relationships-link { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-text-secondary); text-decoration: none; border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 0.25rem 0.65rem; margin-bottom: 10px; transition: border-color 0.15s, color 0.15s; }
+.cover-relationships-link:hover { border-color: var(--archive-gold-soft, #d0aa6b); color: var(--archive-gold-soft, #d0aa6b); }
 .person-search-wrap { position: relative; margin-bottom: 14px; }
 .person-search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 16px; color: var(--color-text-tertiary); pointer-events: none; }
 .person-search-input {
@@ -882,6 +971,15 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
 
 .passages.view-orig .ps-en, .passages.view-orig .ann-en, .passages.view-orig .ann-label-en, .passages.view-orig .ann-para-en, .passages.view-orig .footnote-en { display: none; }
 .passages.view-en .ps-orig, .passages.view-en .ann-zh, .passages.view-en .ann-label-zh, .passages.view-en .ann-para-zh, .passages.view-en .footnote-zh { display: none; }
+/* 白话: classical + vernacular paired per passage, no English. The vernacular
+   line only ever shows in this view; annotations/footnotes keep their normal
+   Chinese text. */
+.ps-vern { display: none; }
+.passages.view-vern .ps-vern { display: block; }
+.ann-body-vern { display: none; }
+.passages.view-vern .ann-body-vern { display: block; }
+.passages.view-vern .ann-body-parallel.has-vern { display: none; }
+.passages.view-vern .ps-en, .passages.view-vern .ann-en, .passages.view-vern .ann-label-en, .passages.view-vern .ann-para-en, .passages.view-vern .footnote-en { display: none; }
 
 .term-legend { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; padding: 0.75rem 2rem; border-bottom: 0.5px solid var(--color-border); font-size: 15px; color: var(--color-text-tertiary); }
 .term-legend-item { display: flex; align-items: center; gap: 5px; }
@@ -914,6 +1012,7 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
 .ps-pending { font-size: 14px; color: var(--color-text-tertiary); font-style: italic; }
 .passage { display: flex; flex-direction: column; gap: 6px; }
 .ps-orig { font-family: 'LXGW WenKai', serif; font-size: 19px; line-height: 1.9; color: var(--color-text-primary); }
+.ps-vern { font-family: 'LXGW WenKai', serif; font-size: 18px; line-height: 1.75; color: var(--color-text-secondary); font-weight: 400; }
 .ps-en { font-size: 17px; line-height: 1.75; color: var(--color-text-secondary); font-weight: 400; }
 .passages .ps-en { font-family: var(--font-body-en); }
 
@@ -938,6 +1037,11 @@ const clientData = JSON.stringify({ chapters, bookSections, baseUrl, personIndex
 .ann-para-en { font-size: 16.5px; color: var(--archive-jade, #7fa896); line-height: 1.6; opacity: 0.8; margin: 0 0 0.9em; }
 .ann-para-en:last-child { margin-bottom: 0; }
 .ann-body .ann-para-en { font-family: var(--font-body-en); }
+.ann-vern { font-family: 'LXGW WenKai', serif; font-size: 17.5px; color: var(--archive-jade, #7fa896); line-height: 1.6; opacity: 0.8; }
+.ann-vern p { margin: 0 0 0.7em; }
+.ann-vern p:last-child { margin-bottom: 0; }
+.ann-para-vern { font-family: 'LXGW WenKai', serif; font-size: 17.5px; color: var(--archive-jade, #7fa896); line-height: 1.6; opacity: 0.8; margin: 0 0 0.9em; }
+.ann-para-vern:last-child { margin-bottom: 0; }
 
 .footnote-ref {
   color: var(--archive-gold-soft, #d0aa6b);

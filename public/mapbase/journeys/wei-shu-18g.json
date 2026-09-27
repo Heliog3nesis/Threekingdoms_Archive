@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18g",
+    "order": 18,
+    "label": {
+      "zht": "典韋傳",
+      "zhs": "典韦传",
+      "en": "Biography of Dian Wei"
+    },
+    "title": {
+      "zht": "魏書十八 · 典韋傳",
+      "zhs": "魏书十八 · 典韦传",
+      "en": "Book of Wei, Chapter 18 · Biography of Dian Wei"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -49,6 +63,16 @@
   "journeyOverviews": [
     {
       "person": "典韋",
+      "name": {
+        "en": "Dian Wei",
+        "zht": "典韋",
+        "zhs": "典韦"
+      },
+      "courtesyName": {
+        "en": "unknown",
+        "zht": "不詳",
+        "zhs": "不详"
+      },
       "born": {
         "en": "unknown",
         "zht": "不詳",
@@ -200,16 +224,15 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "Commandant",
-                "zht": "都尉",
-                "zhs": "都尉"
-              },
-              "1": {
-                "en": "Colonel",
-                "zht": "校尉",
-                "zhs": "校尉"
-              },
+              "en": "Commandant",
+              "zht": "都尉",
+              "zhs": "都尉",
+              "url": null
+            },
+            {
+              "en": "Colonel",
+              "zht": "校尉",
+              "zhs": "校尉",
               "url": null
             }
           ]

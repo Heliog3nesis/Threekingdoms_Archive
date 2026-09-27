@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-18d",
+    "order": 18,
+    "label": {
+      "zht": "文聘傳",
+      "zhs": "文聘传",
+      "en": "Biography of Wen Pin"
+    },
+    "title": {
+      "zht": "魏書十八 · 文聘傳",
+      "zhs": "魏书十八 · 文聘传",
+      "en": "Book of Wei, Chapter 18 · Biography of Wen Pin"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -238,27 +252,28 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Grand Administrator of Jiangxia",
-                "zht": "江夏太守",
-                "zhs": "江夏太守"
-              },
-              "1": {
-                "en": "Marquis Within the Pass",
-                "zht": "關內侯",
-                "zhs": "关内侯"
-              },
-              "2": {
-                "en": "General Who Suppresses the Rebels",
-                "zht": "討逆將軍",
-                "zhs": "讨逆将军"
-              },
-              "3": {
-                "en": "Neighbourhood Marquis",
-                "zht": "亭侯",
-                "zhs": "亭侯"
-              },
-              "url": null
+              "en": "Grand Administrator of Jiangxia",
+              "zht": "江夏太守",
+              "zhs": "江夏太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "Marquis Within the Pass",
+              "zht": "關內侯",
+              "zhs": "关内侯",
+              "url": "/translations/officials#glossary-marquis-within-the-pass"
+            },
+            {
+              "en": "General Who Suppresses the Rebels",
+              "zht": "討逆將軍",
+              "zhs": "讨逆将军",
+              "url": "/translations/officials/military#four-direction--misc-153"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-neighbourhood-marquis"
             }
           ]
         },
@@ -286,17 +301,16 @@
           "resolvedLocations": [],
           "positionLinks": [
             {
-              "0": {
-                "en": "Township Marquis",
-                "zht": "鄉侯",
-                "zhs": "乡侯"
-              },
-              "1": {
-                "en": "Provisional Bearer of the Imperial Tally",
-                "zht": "假節",
-                "zhs": "假节"
-              },
-              "url": null
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
             }
           ]
         },
@@ -354,17 +368,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "General of the Rear",
-                "zht": "後將軍",
-                "zhs": "后将军"
-              },
-              "1": {
-                "en": "County Marquis",
-                "zht": "縣侯",
-                "zhs": "县侯"
-              },
-              "url": null
+              "en": "General of the Rear",
+              "zht": "後將軍",
+              "zhs": "后将军",
+              "url": "/translations/officials/military#four-direction--misc-115"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯",
+              "url": "/translations/officials#glossary-county-marquis"
             }
           ]
         },

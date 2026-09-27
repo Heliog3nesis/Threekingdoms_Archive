@@ -1,4 +1,18 @@
 {
+  "chapter": {
+    "id": "wei-shu-17b",
+    "order": 17,
+    "label": {
+      "zht": "樂進傳",
+      "zhs": "乐进传",
+      "en": "Biography of Yue Jin"
+    },
+    "title": {
+      "zht": "魏書十七 · 樂進傳",
+      "zhs": "魏书十七 · 乐进传",
+      "en": "Book of Wei, Chapter 17 · Biography of Yue Jin"
+    }
+  },
   "pins": [
     {
       "kind": "town",
@@ -282,21 +296,21 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Clerk Under the Tent",
-                "zht": "帳下吏",
-                "zhs": "帐下吏"
-              },
-              "1": {
-                "en": "Acting Major",
-                "zht": "假司馬",
-                "zhs": "假司马"
-              },
-              "2": {
-                "en": "Commandant Who Breaks Formations",
-                "zht": "陷陣都尉",
-                "zhs": "陷阵都尉"
-              },
+              "en": "Clerk Under the Tent",
+              "zht": "帳下吏",
+              "zhs": "帐下吏",
+              "url": null
+            },
+            {
+              "en": "Acting Major",
+              "zht": "假司馬",
+              "zhs": "假司马",
+              "url": "/translations/officials/regional#commanderies-044"
+            },
+            {
+              "en": "Commandant Who Breaks Formations",
+              "zht": "陷陣都尉",
+              "zhs": "陷阵都尉",
               "url": null
             }
           ]
@@ -421,16 +435,15 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": "Neighbourhood Marquis",
-                "zht": "亭侯",
-                "zhs": "亭侯"
-              },
-              "1": {
-                "en": "Commandant Who Suppresses Bandits",
-                "zht": "討寇校尉",
-                "zhs": "讨寇校尉"
-              },
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            },
+            {
+              "en": "Commandant Who Suppresses Bandits",
+              "zht": "討寇校尉",
+              "zhs": "讨寇校尉",
               "url": null
             }
           ]
@@ -739,17 +752,16 @@
           ],
           "positionLinks": [
             {
-              "0": {
-                "en": " Provisional Bearer of the Imperial Tally",
-                "zht": "假節",
-                "zhs": "假节"
-              },
-              "1": {
-                "en": "Right General",
-                "zht": "右将军",
-                "zhs": "右将军"
-              },
-              "url": null
+              "en": " Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-acting"
+            },
+            {
+              "en": "Right General",
+              "zht": "右将军",
+              "zhs": "右将军",
+              "url": "/translations/officials/military#four-direction--misc-117"
             }
           ]
         }

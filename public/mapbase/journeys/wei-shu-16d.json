@@ -1,0 +1,829 @@
+{
+  "chapter": {
+    "id": "wei-shu-16d",
+    "order": 16,
+    "label": {
+      "zht": "杜畿子恕傳 · 附孟康、樂詳",
+      "zhs": "杜畿子恕传 · 附孟康、乐详",
+      "en": "Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
+    },
+    "title": {
+      "zht": "魏書十六 · 杜畿子恕传 · 附孟康、樂詳",
+      "zhs": "魏书十六 · 杜畿子恕传 · 附孟康、乐详",
+      "en": "Book of Wei, Chapter 16 · Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 34.21174681,
+      "lng": 109.02506097,
+      "name": "Du",
+      "persons": [
+        "杜恕（務伯）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "54",
+      "persons": [
+        "杜恕（務伯）",
+        "孟康（公休）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "159",
+      "persons": [
+        "杜恕（務伯）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "57",
+      "persons": [
+        "杜恕（務伯）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.45577314,
+      "lng": 111.83783648,
+      "name": "Yiquanwu/Yufuyi",
+      "persons": [
+        "杜恕（務伯）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 39.90756441,
+      "lng": 116.38324912,
+      "name": "Ji",
+      "persons": [
+        "杜恕（務伯）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 38.56299818,
+      "lng": 117.17636367,
+      "name": "Zhangwu",
+      "persons": [
+        "杜恕（務伯）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.98679389,
+      "lng": 115.32151252,
+      "name": "Guangzong",
+      "persons": [
+        "孟康（公休）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "孟康（公休）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "155",
+      "persons": [
+        "孟康（公休）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "杜恕（務伯）",
+      "name": {
+        "en": "Du Shu",
+        "zht": "杜恕",
+        "zhs": "杜恕"
+      },
+      "courtesyName": {
+        "en": "Wubo",
+        "zht": "務伯",
+        "zhs": "务伯"
+      },
+      "born": {
+        "era": {
+          "en": "3rd year of Jian'an",
+          "zht": "建安三年",
+          "zhs": "建安三年"
+        },
+        "year": 198
+      },
+      "died": {
+        "era": {
+          "en": "4th year of Jiaping",
+          "zht": "嘉平四年",
+          "zhs": "嘉平四年"
+        },
+        "year": 252
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Du",
+              "zht": "杜縣",
+              "zhs": "杜县"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.21174681,
+              "lng": 109.02506097,
+              "name": "Du"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "during the Taihe Era",
+            "zht": "太和年間",
+            "zhs": "太和年间"
+          },
+          "year": "227 - 232",
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Cavalier Attendant Gentleman",
+              "zht": "散騎侍郎",
+              "zhs": "散骑侍郎"
+            },
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "黃門侍郎",
+              "zhs": "黄门侍郎"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Cavalier Attendant Gentleman",
+              "zht": "散騎侍郎",
+              "zhs": "散骑侍郎",
+              "url": "/translations/officials/departments#chancellery-016"
+            },
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "黃門侍郎",
+              "zhs": "黄门侍郎",
+              "url": "/translations/officials/departments#chancellery-003"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Hongnong",
+              "zht": "弘農",
+              "zhs": "弘农"
+            },
+            {
+              "en": "Zhao State",
+              "zht": "趙",
+              "zhs": "赵"
+            },
+            {
+              "en": "Hedong",
+              "zht": "河東",
+              "zhs": "河东"
+            },
+            {
+              "en": "Yiquanwu/Yufuyi",
+              "zht": "一泉塢",
+              "zhs": "一泉坞"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守"
+            },
+            {
+              "en": "Principality Chancellor",
+              "zht": "相",
+              "zhs": "相"
+            },
+            {
+              "en": "Protector of the Provincial Army",
+              "zht": "都督護軍",
+              "zhs": "都督护军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "54"
+            },
+            {
+              "kind": "admin",
+              "id": "159"
+            },
+            {
+              "kind": "admin",
+              "id": "57"
+            },
+            {
+              "kind": "town",
+              "lat": 34.45577314,
+              "lng": 111.83783648,
+              "name": "Yiquanwu/Yufuyi"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "Principality Chancellor",
+              "zht": "相",
+              "zhs": "相",
+              "url": "/translations/officials/regional#states-064"
+            },
+            {
+              "en": "Protector of the Provincial Army",
+              "zht": "都督護軍",
+              "zhs": "都督护军",
+              "url": "/translations/officials/military#various-commanders-028"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Jiaping",
+            "zht": "嘉平元年",
+            "zhs": "嘉平元年"
+          },
+          "year": 249,
+          "age": null,
+          "location": [
+            {
+              "en": "Ji",
+              "zht": "薊",
+              "zhs": "蓟"
+            },
+            {
+              "en": "Zhangwu",
+              "zht": "章武",
+              "zhs": "章武"
+            }
+          ],
+          "position": [
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史"
+            },
+            {
+              "en": "General Who Establishes Might",
+              "zht": "建威將軍",
+              "zhs": "建威将军"
+            },
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节"
+            },
+            {
+              "en": "Colonel Protecting the Wuhuan",
+              "zht": "護烏丸校尉",
+              "zhs": "护乌丸校尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 39.90756441,
+              "lng": 116.38324912,
+              "name": "Ji"
+            },
+            {
+              "kind": "town",
+              "lat": 38.56299818,
+              "lng": 117.17636367,
+              "name": "Zhangwu"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史",
+              "url": "/translations/officials/regional#provinces-014"
+            },
+            {
+              "en": "General Who Establishes Might",
+              "zht": "建威將軍",
+              "zhs": "建威将军",
+              "url": "/translations/officials/military#four-direction--misc-136"
+            },
+            {
+              "en": "Envoy Bearing the Imperial Tally",
+              "zht": "使持節",
+              "zhs": "使持节",
+              "url": "/translations/officials#glossary-envoy-bearing-the-imperial-tally"
+            },
+            {
+              "en": "Colonel Protecting the Wuhuan",
+              "zht": "護烏丸校尉",
+              "zhs": "护乌丸校尉",
+              "url": "/translations/officials/military#colonels--commandants-191"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "4th year of Jiaping",
+            "zht": "嘉平四年",
+            "zhs": "嘉平四年"
+          },
+          "year": 252,
+          "age": null,
+          "location": [
+            {
+              "en": "Zhangwu",
+              "zht": "章武",
+              "zhs": "章武"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 38.56299818,
+              "lng": 117.17636367,
+              "name": "Zhangwu"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    },
+    {
+      "person": "孟康（公休）",
+      "name": {
+        "en": "Meng Kang",
+        "zht": "孟康",
+        "zhs": "孟康"
+      },
+      "courtesyName": {
+        "en": "Gongxiu",
+        "zht": "公休",
+        "zhs": "公休"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Guangzong",
+              "zht": "廣宗",
+              "zhs": "广宗"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.98679389,
+              "lng": 115.32151252,
+              "name": "Guangzong"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "during the Huangchu Era",
+            "zht": "黃初年間",
+            "zhs": "黄初年间"
+          },
+          "year": "220 - 226",
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Cavalier Attendant Gentleman",
+              "zht": "散騎侍郎",
+              "zhs": "散骑侍郎"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Cavalier Attendant Gentleman",
+              "zht": "散騎侍郎",
+              "zhs": "散骑侍郎",
+              "url": "/translations/officials/departments#chancellery-016"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "during the Zhengshi Era",
+            "zht": "正始年間",
+            "zhs": "正始年间"
+          },
+          "year": "240 - 249",
+          "age": null,
+          "location": [
+            {
+              "en": "Hongnong",
+              "zht": "弘農",
+              "zhs": "弘农"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守"
+            },
+            {
+              "en": "Colonel Directing Agriculture",
+              "zht": "典農校尉",
+              "zhs": "典农校尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "54"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "Colonel Directing Agriculture",
+              "zht": "典農校尉",
+              "zhs": "典农校尉",
+              "url": "/translations/officials/ministers#-nine-ministers-iii-242"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "during the Jiaping Era",
+            "zht": "嘉平年間",
+            "zhs": "嘉平年间"
+          },
+          "year": "249 - 254",
+          "age": null,
+          "location": [
+            {
+              "en": "Bohai",
+              "zht": "渤海",
+              "zhs": "渤海"
+            },
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守"
+            },
+            {
+              "en": "Director of the Palace Secretariat",
+              "zht": "中書令",
+              "zhs": "中书令"
+            },
+            {
+              "en": "Supervisor of the Palace Secretariat",
+              "zht": "中書監",
+              "zhs": "中书监"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "155"
+            },
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "守",
+              "zhs": "守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "Director of the Palace Secretariat",
+              "zht": "中書令",
+              "zhs": "中书令",
+              "url": "/translations/officials/departments#palace-secretariat-020"
+            },
+            {
+              "en": "Supervisor of the Palace Secretariat",
+              "zht": "中書監",
+              "zhs": "中书监",
+              "url": "/translations/officials/departments#palace-secretariat-019"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "杜恕（務伯）",
+      "to": "李豐",
+      "type": "childhood friends and later rivals",
+      "passageId": "ws16d-p1"
+    },
+    {
+      "from": "辛毗",
+      "to": "杜恕（務伯）",
+      "type": "held in high regard",
+      "passageId": "ws16d-p1"
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂巽（長悌）",
+      "type": "father-son",
+      "passageId": "ws16d-p1"
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂安（仲悌）",
+      "type": "father-son",
+      "passageId": "ws16d-p1"
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂粹（季悌）",
+      "type": "father-son",
+      "passageId": "ws16d-p1"
+    },
+    {
+      "from": "呂粹（季悌）",
+      "to": "呂預（景虞）",
+      "type": "father-son",
+      "passageId": "ws16d-p1"
+    },
+    {
+      "from": "呂安（仲悌）",
+      "to": "嵇康",
+      "type": "close friend",
+      "passageId": "ws16d-p1"
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "曹叡",
+      "type": "minister to sovereign",
+      "passageId": "ws16d-p4"
+    },
+    {
+      "from": "李豐",
+      "to": "杜恕（務伯）",
+      "type": "colleague",
+      "passageId": "ws16d-p12"
+    },
+    {
+      "from": "袁侃",
+      "to": "杜恕（務伯）",
+      "type": "colleague and close friend",
+      "passageId": "ws16d-p12"
+    },
+    {
+      "from": "荀俁",
+      "to": "杜恕（務伯）",
+      "type": "colleague and close friend",
+      "passageId": "ws16d-p12"
+    },
+    {
+      "from": "廉昭",
+      "to": "曹璠",
+      "type": "accused colleague",
+      "passageId": "ws16d-p14"
+    },
+    {
+      "from": "陳矯",
+      "to": "廉昭",
+      "type": "accused by",
+      "passageId": "ws16d-p14"
+    },
+    {
+      "from": "竇嘉",
+      "to": "郭躬",
+      "type": "recruited innocent nephew of",
+      "passageId": "ws16d-p21"
+    },
+    {
+      "from": "孔羨",
+      "to": "司馬懿",
+      "type": "recruited younger brother of",
+      "passageId": "ws16d-p21"
+    },
+    {
+      "from": "司馬通",
+      "to": "司馬順",
+      "type": "father-son",
+      "passageId": "ws16d-p21"
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "孟康（公休）",
+      "type": "successor as Grand Administrator of Hongnong",
+      "passageId": "ws16d-p24"
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "程喜",
+      "type": "colleague and later impeached by",
+      "passageId": "ws16d-p24"
+    },
+    {
+      "from": "程喜",
+      "to": "杜恕（務伯）",
+      "type": "colleague and later impeacher",
+      "passageId": "ws16d-p24"
+    },
+    {
+      "from": "宋權",
+      "to": "程喜",
+      "type": "subordinate",
+      "passageId": "ws16d-p25"
+    },
+    {
+      "from": "阮武（文業）",
+      "to": "杜恕（務伯）",
+      "type": "friend and advisor",
+      "passageId": "ws16d-p26"
+    },
+    {
+      "from": "杜恕（務伯）",
+      "to": "杜預（元凱）",
+      "type": "father-son",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "杜預（元凱）",
+      "to": "杜錫（世嘏）",
+      "type": "father-son",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "杜預（元凱）",
+      "to": "司馬懿",
+      "type": "son-in-law to",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "杜畿",
+      "to": "杜恕（務伯）",
+      "type": "father-son",
+      "passageId": "ws16d-p24"
+    },
+    {
+      "from": "杜畿",
+      "to": "杜理（務仲）",
+      "type": "father-son",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "杜畿",
+      "to": "杜寬（務叔）",
+      "type": "father-son",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "杜畿",
+      "to": "樂詳（文載）",
+      "type": "appointed Scholar Libationer",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "樂詳（文載）",
+      "to": "謝該",
+      "type": "sought teaching from",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "杜武（世將）",
+      "to": "司馬倫",
+      "type": "executed by",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "阮武（文業）",
+      "to": "阮炳（叔文）",
+      "type": "younger brother",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "阮炳（叔文）",
+      "to": "阮坦（弘舒）",
+      "type": "father-son",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "阮坦（弘舒）",
+      "to": "阮柯（士度）",
+      "type": "younger brother",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "杜乂（弘治）",
+      "to": "阮坦（弘舒）",
+      "type": "adopted son",
+      "passageId": "ws16d-p27"
+    },
+    {
+      "from": "阮諶（士信）",
+      "to": "阮武（文業）",
+      "type": "father-son",
+      "passageId": "ws16d-p27"
+    }
+  ]
+}

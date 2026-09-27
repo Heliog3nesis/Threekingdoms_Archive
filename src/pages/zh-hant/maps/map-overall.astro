@@ -178,7 +178,7 @@ const relatedMaps = [
                   <label class="imap-toggle-row imap-map-toggle">
                     <input type="checkbox" id="toggle-yellow-river" checked />
                     <span class="imap-toggle-track"></span>
-                    <span>黃河故道</span>
+                    <span>漢黃河下游故道</span>
                   </label>
                   <label class="imap-toggle-row imap-map-toggle">
                     <input type="checkbox" id="toggle-labels" />
@@ -239,7 +239,7 @@ const relatedMaps = [
              same space), while still being absolutely positioned to
              overlay the map on desktop, below the legend icon, via
              #panel-interactive's position:relative. -->
-        <button class="imap-journey-toggle" id="imap-journey-toggle" type="button" aria-label="Show journey overview" aria-expanded="false" style="display:none;">
+        <button class="imap-journey-toggle" id="imap-journey-toggle" type="button" aria-label="Show journey overview" aria-expanded="false">
           <i class="ti ti-route" aria-hidden="true"></i>
         </button>
         <div class="imap-journey-dropdown" id="imap-journey-dropdown" style="display:none;">
@@ -592,14 +592,15 @@ function formatProvinceLabel(provEn) {
   async function focusLocationFromUrl() {
     const params = new URLSearchParams(window.location.search);
 
-    // "View life journey" links carry only ?journey=<chapterId>, no
-    // lat/lng/water/admin at all — checked first and independently of
-    // everything else below, since it's a pure overview (all of a
-    // chapter's places at once), not tied to any single point.
+    // "View life journey" links carry ?journey=<chapterId>, plus an optional
+    // &person=<key> when linked from a specific person (e.g. the relationships
+    // page) rather than the chapter as a whole — checked first and
+    // independently of everything else below, since it's a pure overview (all
+    // of a chapter's places at once), not tied to any single point.
     const journeyId = params.get('journey');
     if (journeyId) {
       showTab('interactive');
-      showJourney(journeyId);
+      showJourney(journeyId, params.get('person') || undefined);
       return;
     }
 
@@ -856,7 +857,18 @@ function formatProvinceLabel(provEn) {
     journeyToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = journeyDropdown.style.display !== 'none';
-      journeyDropdown.style.display = isOpen ? 'none' : 'block';
+      if (!isOpen && !journeyDropdown.classList.contains('imap-journey-has-data')) {
+        // First open with nothing loaded yet (browsing the map directly,
+        // not arrived via a chapter's "view life journey" link) - show
+        // the landing page instead of an empty dropdown. This itself
+        // sets display:block and adds imap-journey-has-data, so this
+        // branch only ever runs once per session unless
+        // returnToJourneyOverview clears that state again (see the
+        // journey panel's own "return to overview" button below).
+        showJourneyLandingPage();
+      } else {
+        journeyDropdown.style.display = isOpen ? 'none' : 'block';
+      }
       journeyToggle.setAttribute('aria-expanded', String(!isOpen));
     });
     document.addEventListener('click', (e) => {
@@ -868,9 +880,7 @@ function formatProvinceLabel(provEn) {
   }
 
   journeyExitBtn?.addEventListener('click', () => {
-    exitJourneyMode();
-    if (journeyDropdown) journeyDropdown.style.display = 'none';
-    if (journeyToggle) journeyToggle.setAttribute('aria-expanded', 'false');
+    returnToJourneyOverview();
   });
 
   // INTERACTIVE MAP
@@ -887,7 +897,8 @@ function formatProvinceLabel(provEn) {
   } from '../../../scripts/maps/interactive-map.js';
   import {
     showJourney,
-    exitJourneyMode
+    showJourneyLandingPage,
+    returnToJourneyOverview
   } from '../../../scripts/maps/journey.js';
 </script>
 
@@ -1202,12 +1213,12 @@ function formatProvinceLabel(provEn) {
 
 .imap-journey-header {
   position: relative;
-  padding: 0 28px; /* leaves room for the absolute-positioned corner icons */
+  padding: 0 8px; /* small inset only, so the name gets as much room as possible; the corner icon is pulled out into the panel's own padding instead (see .imap-journey-bio-link) */
 }
 .imap-journey-bio-link {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -8px;
+  right: -8px;
   color: #d0a66a;
   font-size: 17px;
   text-decoration: none;
@@ -1241,32 +1252,158 @@ function formatProvinceLabel(provEn) {
   font-family: 'Noto Serif TC', serif;
   font-size: 26px;
   color: #eee8da;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 .imap-journey-name-secondary {
   font-family: initial;
   font-size: 17px;
   color: var(--color-text-secondary);
   margin-left: 6px;
+  white-space: nowrap;
 }
 .imap-journey-courtesy {
   font-family: 'Noto Serif TC', serif;
   font-size: 16px;
-  font-style: italic;
+  font-style: normal;
   color: #eee8da;
   margin-top: 2px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 .imap-journey-courtesy-secondary {
   font-family: initial;
   font-size: 14px;
-  font-style: normal;
+  font-style: italic;
   color: var(--color-text-secondary);
   margin-left: 5px;
+  white-space: nowrap;
 }
 .imap-journey-person-count {
   text-align: center;
   font-size: 11px;
   color: rgba(238,232,218,0.4);
   margin-top: 4px;
+}
+
+.imap-journey-chapter-caption {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(208,166,106,0.55);
+  margin-top: 2px;
+}
+.imap-journey-chapter-caption-secondary {
+  display: block;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+/* ── Journey landing page ──────────────────────────────────── */
+.imap-journey-landing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.imap-journey-landing-title {
+  font-family: Georgia, 'Noto Serif TC', serif;
+  font-size: 19px;
+  color: #eee8da;
+}
+
+.imap-journey-landing-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(202,163,106,0.25);
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+.imap-journey-landing-search i {
+  font-size: 14px;
+  color: rgba(238,232,218,0.4);
+  flex-shrink: 0;
+}
+.imap-journey-landing-search input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #eee8da;
+  width: 100%;
+}
+.imap-journey-landing-search input::placeholder {
+  color: rgba(238,232,218,0.35);
+}
+
+.imap-journey-sort-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.imap-journey-sort-pill {
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: rgba(238,232,218,0.55);
+  border: 1px solid rgba(202,163,106,0.2);
+  cursor: pointer;
+}
+.imap-journey-sort-pill:hover {
+  border-color: rgba(202,163,106,0.4);
+}
+.imap-journey-sort-pill-active {
+  background: rgba(208,166,106,0.18);
+  color: #d0a66a;
+  border-color: rgba(208,166,106,0.4);
+}
+
+.imap-journey-landing-list {
+  overflow-y: auto;
+  max-height: calc(90vh - 260px);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.imap-journey-landing-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 8px;
+  border-radius: 4px;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  font-size: 15px;
+  color: #eee8da;
+}
+.imap-journey-landing-item-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+.imap-journey-landing-item-chaptertag {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: rgba(238,232,218,0.4);
+  white-space: nowrap;
+}
+.imap-journey-landing-item:hover {
+  background: rgba(255,255,255,0.04);
+}
+.imap-journey-landing-item-secondary {
+  font-size: 13px;
+  color: rgba(238,232,218,0.5);
+}
+.imap-journey-landing-empty {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(238,232,218,0.4);
+  padding: 24px 0;
 }
 
 .imap-journey-dates {
@@ -1328,8 +1465,8 @@ function formatProvinceLabel(provEn) {
   background: rgba(202,163,106,0.4);
 }
 .imap-journey-stop-when-label {
-  font-size: 12px;
-  color: rgba(208,166,106,0.6);
+  font-size: 14px;
+  color: rgba(208,166,106,0.7);
 }
 .imap-journey-stop-when-dated {
   font-size: 15px;
@@ -1357,10 +1494,10 @@ function formatProvinceLabel(provEn) {
   text-decoration-color: #d0a66a;
 }
 .imap-journey-stop-position-label {
-  font-size: 11px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: rgba(238,232,218,0.4);
+  color: rgba(238,232,218,0.7);
   margin-top: 6px;
 }
 .imap-journey-stop-position {
@@ -1948,19 +2085,27 @@ function formatProvinceLabel(provEn) {
     gap: 1rem;
   }
   .imap-content { width: 100vw; margin-left: calc(-50vw + 50%); }
-  #imap-container .maplibregl-ctrl-top-left { left: 12px !important; top: 54px !important; flex-direction: column !important; gap: 0; }
+  #imap-container .maplibregl-ctrl-top-left { left: 12px !important; top: 98px !important; flex-direction: column !important; gap: 0; }
   #imap-container .maplibregl-ctrl-top-left .maplibregl-ctrl-group { flex-direction: column !important; }
   .imap-style-btn { font-size: 13px; }
   .imap-map-toggle { font-size: 13px; }
   .imap-toggle-row input { width: 19px; height: 19px; }
-  /* journey — the floating desktop toggle+dropdown is replaced entirely
-     by a normal-flow section below the map, since the toggle's fixed
-     top:54px position would otherwise collide with the legend icon on
-     a narrow screen, and the map's own floating chrome is already
-     crowded enough without a second overlay competing for space. */
-  .imap-journey-toggle { display: none !important; }
+  /* journey — previously hidden entirely on mobile with a "replaced by
+     a normal-flow section below the map" plan that was never actually
+     built as a separate structure, leaving no way to reach the feature
+     on mobile at all. The panel's own rendering logic already works
+     correctly regardless of viewport (showJourneyPanel/
+     renderJourneyView don't care about screen size) - what was actually
+     missing was just this CSS blocking it. Now shown using the same
+     fixed toggle position as desktop (it already stacks cleanly below
+     the legend toggle, top:10px vs top:54px, neither of which has its
+     own mobile override), with the dropdown resized to fit a narrow
+     screen the same way imap-legend-dropdown already does, instead of
+     keeping its fixed 360px desktop width. */
   .imap-journey-dropdown {
-    display: none !important;
+    left: 12px; right: 12px; width: auto;
+    max-height: 55vh;
+    padding: 0.7rem 0.85rem;
   }
   .imap-journey-dropdown.imap-journey-has-data {
     position: static;
