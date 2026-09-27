@@ -20,179 +20,412 @@
   },
   "relationships": [
     {
-      "from": "張遼（文遠）", "to": "聶壹", "type": "kinship", "polarity": "neutral", "directed": true, "ancestral": true,
-      "notes": [{ "passageId": "ws17a-p1", "text": {
-        "en": "Zhang Liao's family descended from Nie Yi but had changed its surname generations earlier to escape a feud.",
-        "zht": "張遼家族本是聶壹的後裔，因躲避仇家而在多代以前改換了姓氏。",
-        "zhs": "张辽家族本是聂壹的后裔，因躲避仇家而在多代以前改换了姓氏。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "丁原（建陽）", "type": "service", "polarity": "positive", "directed": true,
-      "notes": [{ "passageId": "ws17a-p1", "text": {
-        "en": "Recognising Zhang Liao's exceptional martial prowess, Ding Yuan, Inspector of Bing Province, summoned him as an aide and had him lead troops to Luoyang.",
-        "zht": "幷州刺史丁原見張遼武藝過人，召他爲從事，命他領兵前往洛陽。",
-        "zhs": "并州刺史丁原见张辽武艺过人，召他为从事，命他领兵前往洛阳。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "何進（遂高）", "type": "service", "polarity": "positive", "directed": true,
-      "notes": [{ "passageId": "ws17a-p1", "text": {
-        "en": "He Jin sent Zhang Liao north of the Yellow River to recruit troops, where he raised over a thousand men.",
-        "zht": "何進派張遼到黃河以北招募士兵，張遼招得千餘人。",
-        "zhs": "何进派张辽到黄河以北招募士兵，张辽招得千余人。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "董卓（仲穎）", "type": "service", "polarity": "positive", "directed": true,
-      "notes": [{ "passageId": "ws17a-p1", "text": {
-        "en": "After He Jin's fall, Zhang Liao and his troops came under Dong Zhuo.",
-        "zht": "何進敗亡後，張遼率部轉歸董卓。",
-        "zhs": "何进败亡后，张辽率部转归董卓。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "呂布（奉先）", "type": "service", "polarity": "positive", "directed": true,
-      "notes": [{ "passageId": "ws17a-p1", "text": {
-        "en": "After Dong Zhuo's fall, Zhang Liao and his troops came under Lü Bu; when Lü Bu was defeated by Li Jue, Zhang Liao fled east with him to Xu Province.",
-        "zht": "董卓敗亡後，張遼率部轉歸呂布；呂布被李傕打敗後，張遼隨他東逃徐州。",
-        "zhs": "董卓败亡后，张辽率部转归吕布；吕布被李傕打败后，张辽随他东逃徐州。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "曹操（孟德）", "type": "service", "polarity": "positive", "directed": true,
+      "from": "聶壹",
+      "to": "張遼（文遠）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
       "notes": [
-        { "passageId": "ws17a-p2", "text": {
-          "en": "After Cao Cao defeated Lü Bu at Xiapi, Zhang Liao surrendered with his troops and was appointed Gentleman-General and Marquis Within the Pass.",
-          "zht": "曹操在下邳擊破呂布，張遼率衆投降，被任命爲中郎將，賜關內侯爵位。",
-          "zhs": "曹操在下邳击破吕布，张辽率众投降，被任命为中郎将，赐关内侯爵位。" },
-          "title": { "en": "Gentleman-General", "zht": "中郎將", "zhs": "中郎将" } },
-        { "passageId": "ws17a-p4", "text": {
-          "en": "When Zhang Liao returned to Ye after his campaigns, Cao Cao personally came out to welcome him and invited him to ride in the same carriage, then appointed him General Who Sweeps the Bandits.",
-          "zht": "張遼從前線返回鄴城時，曹操親自出迎，請他同乘一車，任命他爲蕩寇將軍。",
-          "zhs": "张辽从前线返回邺城时，曹操亲自出迎，请他同乘一车，任命他为荡寇将军。" },
-          "title": { "en": "General Who Sweeps the Bandits", "zht": "盪寇將軍", "zhs": "荡寇将军" } },
-        { "passageId": "ws17a-p4", "text": {
-          "en": "Before the Liucheng campaign, Zhang Liao warned Cao Cao that marching far north while the emperor remained at Xu risked Liu Biao sending Liu Bei to seize the capital; Cao Cao judged Liu Biao would never trust Liu Bei with such a task and set out regardless.",
-          "zht": "柳城之役前，張遼提醒曹操：遠征在外恐劉表遣劉備襲取許都；曹操料定劉表必不肯重用劉備，遂照常出征。",
-          "zhs": "柳城之役前，张辽提醒曹操：远征在外恐刘表遣刘备袭取许都；曹操料定刘表必不肯重用刘备，遂照常出征。" } },
-        { "passageId": "ws17a-p6", "text": {
-          "en": "After Zhang Liao scaled Mount Tianzhu and defeated Chen Lan and Mei Cheng, Cao Cao praised the feat, increased his fief, and made him Provisional Bearer of the Imperial Tally.",
-          "zht": "張遼登天柱山擊破陳蘭、梅成後，曹操稱讚其功，增其封邑，並授予假節之權。",
-          "zhs": "张辽登天柱山击破陈兰、梅成后，曹操称赞其功，增其封邑，并授予假节之权。" } },
-        { "passageId": "ws17a-p9", "text": {
-          "en": "After Zhang Liao routed Sun Quan's siege of Hefei with a mere eight hundred men, Cao Cao, greatly impressed by his valour, appointed him General Who Conquers the East.",
-          "zht": "張遼以八百人大破孫權合肥之圍後，曹操極爲讚賞其勇武，任命他爲征東將軍。",
-          "zhs": "张辽以八百人大破孙权合肥之围后，曹操极为赞赏其勇武，任命他为征东将军。" },
-          "title": { "en": "General Who Conquers the East", "zht": "征東將軍", "zhs": "征东将军" } },
-        { "passageId": "ws17a-p10", "text": {
-          "en": "Cao Cao toured the site of Zhang Liao's Hefei battle and sighed in admiration for a long while, then reinforced his garrison.",
-          "zht": "曹操巡視張遼合肥舊戰場，感嘆良久，並爲他增兵。",
-          "zhs": "曹操巡视张辽合肥旧战场，感叹良久，并为他增兵。" } }
+        {
+          "passageId": "ws17a-p1",
+          "text": {
+            "en": "Zhang Liao's family descended from Nie Yi but had changed its surname generations earlier to escape a feud.",
+            "zht": "張遼家族本是聶壹的後裔，因躲避仇家而在多代以前改換了姓氏。",
+            "zhs": "张辽家族本是聂壹的后裔，因躲避仇家而在多代以前改换了姓氏。"
+          }
+        }
+      ],
+      "ancestral": true
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "丁原（建陽）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p1",
+          "text": {
+            "en": "Recognising Zhang Liao's exceptional martial prowess, Ding Yuan, Inspector of Bing Province, summoned him as an aide and had him lead troops to Luoyang.",
+            "zht": "幷州刺史丁原見張遼武藝過人，召他爲從事，命他領兵前往洛陽。",
+            "zhs": "并州刺史丁原见张辽武艺过人，召他为从事，命他领兵前往洛阳。"
+          }
+        }
       ]
     },
     {
-      "from": "張遼（文遠）", "to": "夏侯淵（妙才）", "type": "colleagues", "polarity": "positive", "directed": false,
-      "notes": [{ "passageId": "ws17a-p2", "text": {
-        "en": "Zhang Liao and Xiahou Yuan jointly besieged Chang Xi at Donghai; reading Chang Xi's hesitation from his behaviour, Zhang Liao proposed parleying with him rather than withdrawing.",
-        "zht": "張遼與夏侯淵在東海合圍昌豨；張遼從昌豨的舉止看出其猶豫不決，提議與其對話勸降，而非撤軍。",
-        "zhs": "张辽与夏侯渊在东海合围昌豨；张辽从昌豨的举止看出其犹豫不决，提议与其对话劝降，而非撤军。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "曹丕（子桓）", "type": "service", "polarity": "positive", "directed": true,
+      "from": "張遼（文遠）",
+      "to": "何進（遂高）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
       "notes": [
-        { "passageId": "ws17a-p11", "text": {
-          "en": "When Cao Pi succeeded as King of Wei, Zhang Liao was transferred to General of the Front, and his elder brother and one son were each enfeoffed as marquises.",
-          "zht": "曹丕即魏王位後，張遼轉任前將軍，其兄與一子皆獲封列侯。",
-          "zhs": "曹丕即魏王位后，张辽转任前将军，其兄与一子皆获封列侯。" },
-          "title": { "en": "General of the Front", "zht": "前將軍", "zhs": "前将军" } },
-        { "passageId": "ws17a-p12", "text": {
-          "en": "When Cao Pi ascended the throne, he promoted Zhang Liao to Marquis of Jinyang, received him at Jianshi Hall to ask about the Hefei campaign, compared him to the ancient general Shao Hu, and had a residence built for him and a hall for his mother.",
-          "zht": "曹丕稱帝後，進封張遼爲晉陽侯，在建始殿接見他詢問破吳經過，讚其可比古之召虎，並爲他及其母分別建造宅第、殿堂。",
-          "zhs": "曹丕称帝后，进封张辽为晋阳侯，在建始殿接见他询问破吴经过，赞其可比古之召虎，并为他及其母分别建造宅第、殿堂。" } },
-        { "passageId": "ws17a-p13", "text": {
-          "en": "When Zhang Liao fell ill, Cao Pi sent a palace attendant and imperial physicians to attend him, personally visited him, took his hand, and bestowed imperial robes and food.",
-          "zht": "張遼患病時，曹丕遣侍中與太醫診治，並親自探視，握其手，賜御衣、御食。",
-          "zhs": "张辽患病时，曹丕遣侍中与太医诊治，并亲自探视，握其手，赐御衣、御食。" } }
+        {
+          "passageId": "ws17a-p1",
+          "text": {
+            "en": "He Jin sent Zhang Liao north of the Yellow River to recruit troops, where he raised over a thousand men.",
+            "zht": "何進派張遼到黃河以北招募士兵，張遼招得千餘人。",
+            "zhs": "何进派张辽到黄河以北招募士兵，张辽招得千余人。"
+          }
+        }
       ]
     },
     {
-      "from": "張遼（文遠）", "to": "張汎", "type": "kinship", "polarity": "neutral", "directed": false,
-      "notes": [{ "passageId": "ws17a-p11", "text": {
-        "en": "When Cao Pi succeeded as King, Zhang Liao's elder brother Zhang Fan was enfeoffed as a marquis.",
-        "zht": "曹丕即魏王位後，張遼的兄長張汎被封爲列侯。",
-        "zhs": "曹丕即魏王位后，张辽的兄长张汎被封为列侯。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "張虎", "type": "kinship", "polarity": "neutral", "directed": true,
-      "notes": [{ "passageId": "ws17a-p14", "text": {
-        "en": "Zhang Liao's son Zhang Hu succeeded him as marquis and later served as Adjunct General.",
-        "zht": "張遼之子張虎襲爵，後任偏將軍。",
-        "zhs": "张辽之子张虎袭爵，后任偏将军。" } }]
-    },
-    {
-      "from": "張虎", "to": "張統", "type": "kinship", "polarity": "neutral", "directed": true,
-      "notes": [{ "passageId": "ws17a-p14", "text": {
-        "en": "After Zhang Hu's death, his son Zhang Tong succeeded him as marquis.",
-        "zht": "張虎去世後，其子張統襲爵。",
-        "zhs": "张虎去世后，其子张统袭爵。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "昌豨", "type": "personal", "polarity": "positive", "directed": true,
-      "notes": [{ "passageId": "ws17a-p2", "text": {
-        "en": "Zhang Liao persuaded the wavering Chang Xi to parley, then went alone and unarmed into his stronghold to pay respects to his family, winning his trust and surrender.",
-        "zht": "張遼察覺昌豨猶豫不決，勸其對話，隨後獨自一人進入昌豨營壘拜見其妻兒，贏得昌豨的信任並促成其投降。",
-        "zhs": "张辽察觉昌豨犹豫不决，劝其对话，随后独自一人进入昌豨营垒拜见其妻儿，赢得昌豨的信任并促成其投降。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "張郃（㑺乂）", "type": "colleagues", "polarity": "positive", "directed": false,
-      "notes": [{ "passageId": "ws17a-p5", "text": {
-        "en": "Zhang Liao commanded Zhang He and Niu Gai in the campaign against the rebel Chen Lan.",
-        "zht": "張遼督領張郃、牛蓋等征討叛將陳蘭。",
-        "zhs": "张辽督领张郃、牛盖等征讨叛将陈兰。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "陳蘭", "type": "personal", "polarity": "negative", "directed": true,
-      "notes": [{ "passageId": "ws17a-p6", "text": {
-        "en": "Zhang Liao led the campaign against the rebel Chen Lan, scaling Mount Tianzhu to defeat and behead him.",
-        "zht": "張遼率軍征討叛亂的陳蘭，登天柱山將其擊敗並斬首。",
-        "zhs": "张辽率军征讨叛乱的陈兰，登天柱山将其击败并斩首。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "梅成", "type": "personal", "polarity": "negative", "directed": true,
-      "notes": [{ "passageId": "ws17a-p6", "text": {
-        "en": "After Mei Cheng rebelled and joined Chen Lan at Mount Tianzhu, Zhang Liao's forces defeated and beheaded him alongside Chen Lan.",
-        "zht": "梅成叛亂後與陳蘭會合退入天柱山，張遼率軍將其與陳蘭一併擊敗斬首。",
-        "zhs": "梅成叛乱后与陈兰会合退入天柱山，张辽率军将其与陈兰一并击败斩首。" } }]
-    },
-    {
-      "from": "梅成", "to": "于禁（文則）", "type": "personal", "polarity": "negative", "directed": false,
-      "notes": [{ "passageId": "ws17a-p5", "text": {
-        "en": "Mei Cheng feigned surrender to Yu Jin, then slipped away to join Chen Lan once Yu Jin had withdrawn.",
-        "zht": "梅成假意向于禁投降，待于禁撤軍後便轉而投奔陳蘭。",
-        "zhs": "梅成假意向于禁投降，待于禁撤军后便转而投奔陈兰。" } }]
-    },
-    {
-      "from": "張遼（文遠）", "to": "孫權（仲謀）", "type": "personal", "polarity": "negative", "directed": false,
+      "from": "張遼（文遠）",
+      "to": "董卓（仲穎）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
       "notes": [
-        { "passageId": "ws17a-p8", "text": {
-          "en": "With eight hundred volunteers, Zhang Liao broke into Sun Quan's siege lines at Hefei, reached his standard, and routed his hundred-thousand-strong army, forcing Sun Quan to withdraw.",
-          "zht": "張遼率八百敢死之士突破孫權合肥圍城，直逼其麾下大旗，大破十萬吳軍，迫使孫權退兵。",
-          "zhs": "张辽率八百敢死之士突破孙权合肥围城，直逼其麾下大旗，大破十万吴军，迫使孙权退兵。" } },
-        { "passageId": "ws17a-p13", "text": {
-          "en": "Even while gravely ill, Zhang Liao so unnerved Sun Quan that he warned his generals not to underestimate him.",
-          "zht": "張遼雖重病在身，孫權仍深爲忌憚，告誡部將不可輕敵。",
-          "zhs": "张辽虽重病在身，孙权仍深为忌惮，告诫部将不可轻敌。" } }
+        {
+          "passageId": "ws17a-p1",
+          "text": {
+            "en": "After He Jin's fall, Zhang Liao and his troops came under Dong Zhuo.",
+            "zht": "何進敗亡後，張遼率部轉歸董卓。",
+            "zhs": "何进败亡后，张辽率部转归董卓。"
+          }
+        }
       ]
     },
     {
-      "from": "張遼（文遠）", "to": "呂範（子衡）", "type": "personal", "polarity": "negative", "directed": false,
-      "notes": [{ "passageId": "ws17a-p13", "text": {
-        "en": "Zhang Liao and the other generals defeated Sun Quan's general Lü Fan.",
-        "zht": "張遼與諸將擊敗孫權部將呂範。",
-        "zhs": "张辽与诸将击败孙权部将吕范。" } }]
+      "from": "張遼（文遠）",
+      "to": "呂布（奉先）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p1",
+          "text": {
+            "en": "After Dong Zhuo's fall, Zhang Liao and his troops came under Lü Bu; when Lü Bu was defeated by Li Jue, Zhang Liao fled east with him to Xu Province.",
+            "zht": "董卓敗亡後，張遼率部轉歸呂布；呂布被李傕打敗後，張遼隨他東逃徐州。",
+            "zhs": "董卓败亡后，张辽率部转归吕布；吕布被李傕打败后，张辽随他东逃徐州。"
+          }
+        }
+      ]
     },
     {
-      "from": "張遼（文遠）", "to": "曹休（文烈）", "type": "colleagues", "polarity": "positive", "directed": false,
-      "notes": [{ "passageId": "ws17a-p13", "text": {
-        "en": "When Sun Quan rebelled again, Cao Pi sent Zhang Liao by boat together with Cao Xiu to confront him at Hailing.",
-        "zht": "孫權再叛時，曹丕遣張遼與曹休一同乘船至海陵迎擊。",
-        "zhs": "孙权再叛时，曹丕遣张辽与曹休一同乘船至海陵迎击。" } }]
+      "from": "張遼（文遠）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p2",
+          "text": {
+            "en": "After Cao Cao defeated Lü Bu at Xiapi, Zhang Liao surrendered with his troops and was appointed Gentleman-General and Marquis Within the Pass.",
+            "zht": "曹操在下邳擊破呂布，張遼率衆投降，被任命爲中郎將，賜關內侯爵位。",
+            "zhs": "曹操在下邳击破吕布，张辽率众投降，被任命为中郎将，赐关内侯爵位。"
+          },
+          "title": {
+            "en": "Gentleman-General",
+            "zht": "中郎將",
+            "zhs": "中郎将"
+          }
+        },
+        {
+          "passageId": "ws17a-p4",
+          "text": {
+            "en": "When Zhang Liao returned to Ye after his campaigns, Cao Cao personally came out to welcome him and invited him to ride in the same carriage, then appointed him General Who Sweeps the Bandits.",
+            "zht": "張遼從前線返回鄴城時，曹操親自出迎，請他同乘一車，任命他爲蕩寇將軍。",
+            "zhs": "张辽从前线返回邺城时，曹操亲自出迎，请他同乘一车，任命他为荡寇将军。"
+          },
+          "title": {
+            "en": "General Who Sweeps the Bandits",
+            "zht": "盪寇將軍",
+            "zhs": "荡寇将军"
+          }
+        },
+        {
+          "passageId": "ws17a-p4",
+          "text": {
+            "en": "Before the Liucheng campaign, Zhang Liao warned Cao Cao that marching far north while the emperor remained at Xu risked Liu Biao sending Liu Bei to seize the capital; Cao Cao judged Liu Biao would never trust Liu Bei with such a task and set out regardless.",
+            "zht": "柳城之役前，張遼提醒曹操：遠征在外恐劉表遣劉備襲取許都；曹操料定劉表必不肯重用劉備，遂照常出征。",
+            "zhs": "柳城之役前，张辽提醒曹操：远征在外恐刘表遣刘备袭取许都；曹操料定刘表必不肯重用刘备，遂照常出征。"
+          }
+        },
+        {
+          "passageId": "ws17a-p6",
+          "text": {
+            "en": "After Zhang Liao scaled Mount Tianzhu and defeated Chen Lan and Mei Cheng, Cao Cao praised the feat, increased his fief, and made him Provisional Bearer of the Imperial Tally.",
+            "zht": "張遼登天柱山擊破陳蘭、梅成後，曹操稱讚其功，增其封邑，並授予假節之權。",
+            "zhs": "张辽登天柱山击破陈兰、梅成后，曹操称赞其功，增其封邑，并授予假节之权。"
+          }
+        },
+        {
+          "passageId": "ws17a-p9",
+          "text": {
+            "en": "After Zhang Liao routed Sun Quan's siege of Hefei with a mere eight hundred men, Cao Cao, greatly impressed by his valour, appointed him General Who Conquers the East.",
+            "zht": "張遼以八百人大破孫權合肥之圍後，曹操極爲讚賞其勇武，任命他爲征東將軍。",
+            "zhs": "张辽以八百人大破孙权合肥之围后，曹操极为赞赏其勇武，任命他为征东将军。"
+          },
+          "title": {
+            "en": "General Who Conquers the East",
+            "zht": "征東將軍",
+            "zhs": "征东将军"
+          }
+        },
+        {
+          "passageId": "ws17a-p10",
+          "text": {
+            "en": "Cao Cao toured the site of Zhang Liao's Hefei battle and sighed in admiration for a long while, then reinforced his garrison.",
+            "zht": "曹操巡視張遼合肥舊戰場，感嘆良久，並爲他增兵。",
+            "zhs": "曹操巡视张辽合肥旧战场，感叹良久，并为他增兵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "夏侯淵（妙才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17a-p2",
+          "text": {
+            "en": "Zhang Liao and Xiahou Yuan jointly besieged Chang Xi at Donghai; reading Chang Xi's hesitation from his behaviour, Zhang Liao proposed parleying with him rather than withdrawing.",
+            "zht": "張遼與夏侯淵在東海合圍昌豨；張遼從昌豨的舉止看出其猶豫不決，提議與其對話勸降，而非撤軍。",
+            "zhs": "张辽与夏侯渊在东海合围昌豨；张辽从昌豨的举止看出其犹豫不决，提议与其对话劝降，而非撤军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p11",
+          "text": {
+            "en": "When Cao Pi succeeded as King of Wei, Zhang Liao was transferred to General of the Front, and his elder brother and one son were each enfeoffed as marquises.",
+            "zht": "曹丕即魏王位後，張遼轉任前將軍，其兄與一子皆獲封列侯。",
+            "zhs": "曹丕即魏王位后，张辽转任前将军，其兄与一子皆获封列侯。"
+          },
+          "title": {
+            "en": "General of the Front",
+            "zht": "前將軍",
+            "zhs": "前将军"
+          }
+        },
+        {
+          "passageId": "ws17a-p12",
+          "text": {
+            "en": "When Cao Pi ascended the throne, he promoted Zhang Liao to Marquis of Jinyang, received him at Jianshi Hall to ask about the Hefei campaign, compared him to the ancient general Shao Hu, and had a residence built for him and a hall for his mother.",
+            "zht": "曹丕稱帝後，進封張遼爲晉陽侯，在建始殿接見他詢問破吳經過，讚其可比古之召虎，並爲他及其母分別建造宅第、殿堂。",
+            "zhs": "曹丕称帝后，进封张辽为晋阳侯，在建始殿接见他询问破吴经过，赞其可比古之召虎，并为他及其母分别建造宅第、殿堂。"
+          }
+        },
+        {
+          "passageId": "ws17a-p13",
+          "text": {
+            "en": "When Zhang Liao fell ill, Cao Pi sent a palace attendant and imperial physicians to attend him, personally visited him, took his hand, and bestowed imperial robes and food.",
+            "zht": "張遼患病時，曹丕遣侍中與太醫診治，並親自探視，握其手，賜御衣、御食。",
+            "zhs": "张辽患病时，曹丕遣侍中与太医诊治，并亲自探视，握其手，赐御衣、御食。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "張汎",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17a-p11",
+          "text": {
+            "en": "When Cao Pi succeeded as King, Zhang Liao's elder brother Zhang Fan was enfeoffed as a marquis.",
+            "zht": "曹丕即魏王位後，張遼的兄長張汎被封爲列侯。",
+            "zhs": "曹丕即魏王位后，张辽的兄长张汎被封为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "張虎",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p14",
+          "text": {
+            "en": "Zhang Liao's son Zhang Hu succeeded him as marquis and later served as Adjunct General.",
+            "zht": "張遼之子張虎襲爵，後任偏將軍。",
+            "zhs": "张辽之子张虎袭爵，后任偏将军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張虎",
+      "to": "張統",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p14",
+          "text": {
+            "en": "After Zhang Hu's death, his son Zhang Tong succeeded him as marquis.",
+            "zht": "張虎去世後，其子張統襲爵。",
+            "zhs": "张虎去世后，其子张统袭爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "昌豨",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p2",
+          "text": {
+            "en": "Zhang Liao persuaded the wavering Chang Xi to parley, then went alone and unarmed into his stronghold to pay respects to his family, winning his trust and surrender.",
+            "zht": "張遼察覺昌豨猶豫不決，勸其對話，隨後獨自一人進入昌豨營壘拜見其妻兒，贏得昌豨的信任並促成其投降。",
+            "zhs": "张辽察觉昌豨犹豫不决，劝其对话，随后独自一人进入昌豨营垒拜见其妻儿，赢得昌豨的信任并促成其投降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "張郃（㑺乂）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17a-p5",
+          "text": {
+            "en": "Zhang Liao commanded Zhang He and Niu Gai in the campaign against the rebel Chen Lan.",
+            "zht": "張遼督領張郃、牛蓋等征討叛將陳蘭。",
+            "zhs": "张辽督领张郃、牛盖等征讨叛将陈兰。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "陳蘭",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p6",
+          "text": {
+            "en": "Zhang Liao led the campaign against the rebel Chen Lan, scaling Mount Tianzhu to defeat and behead him.",
+            "zht": "張遼率軍征討叛亂的陳蘭，登天柱山將其擊敗並斬首。",
+            "zhs": "张辽率军征讨叛乱的陈兰，登天柱山将其击败并斩首。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "梅成",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17a-p6",
+          "text": {
+            "en": "After Mei Cheng rebelled and joined Chen Lan at Mount Tianzhu, Zhang Liao's forces defeated and beheaded him alongside Chen Lan.",
+            "zht": "梅成叛亂後與陳蘭會合退入天柱山，張遼率軍將其與陳蘭一併擊敗斬首。",
+            "zhs": "梅成叛乱后与陈兰会合退入天柱山，张辽率军将其与陈兰一并击败斩首。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "梅成",
+      "to": "于禁（文則）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17a-p5",
+          "text": {
+            "en": "Mei Cheng feigned surrender to Yu Jin, then slipped away to join Chen Lan once Yu Jin had withdrawn.",
+            "zht": "梅成假意向于禁投降，待于禁撤軍後便轉而投奔陳蘭。",
+            "zhs": "梅成假意向于禁投降，待于禁撤军后便转而投奔陈兰。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17a-p8",
+          "text": {
+            "en": "With eight hundred volunteers, Zhang Liao broke into Sun Quan's siege lines at Hefei, reached his standard, and routed his hundred-thousand-strong army, forcing Sun Quan to withdraw.",
+            "zht": "張遼率八百敢死之士突破孫權合肥圍城，直逼其麾下大旗，大破十萬吳軍，迫使孫權退兵。",
+            "zhs": "张辽率八百敢死之士突破孙权合肥围城，直逼其麾下大旗，大破十万吴军，迫使孙权退兵。"
+          }
+        },
+        {
+          "passageId": "ws17a-p13",
+          "text": {
+            "en": "Even while gravely ill, Zhang Liao so unnerved Sun Quan that he warned his generals not to underestimate him.",
+            "zht": "張遼雖重病在身，孫權仍深爲忌憚，告誡部將不可輕敵。",
+            "zhs": "张辽虽重病在身，孙权仍深为忌惮，告诫部将不可轻敌。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "呂範（子衡）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17a-p13",
+          "text": {
+            "en": "Zhang Liao and the other generals defeated Sun Quan's general Lü Fan.",
+            "zht": "張遼與諸將擊敗孫權部將呂範。",
+            "zhs": "张辽与诸将击败孙权部将吕范。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張遼（文遠）",
+      "to": "曹休（文烈）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17a-p13",
+          "text": {
+            "en": "When Sun Quan rebelled again, Cao Pi sent Zhang Liao by boat together with Cao Xiu to confront him at Hailing.",
+            "zht": "孫權再叛時，曹丕遣張遼與曹休一同乘船至海陵迎擊。",
+            "zhs": "孙权再叛时，曹丕遣张辽与曹休一同乘船至海陵迎击。"
+          }
+        }
+      ]
     }
   ],
   "journeyOverviews": [

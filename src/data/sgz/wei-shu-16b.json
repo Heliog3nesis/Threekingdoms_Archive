@@ -432,7 +432,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16b-p8",
@@ -450,7 +449,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": false,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16b-p8",
@@ -468,7 +466,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": false,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16b-p8",

@@ -278,7 +278,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16f-p4",
@@ -288,15 +287,15 @@
             "zhs": "注载孔乂的曾祖父孔畴，字元矩，官至陈相，曾在孔子像前立碑。"
           }
         }
-      ]
+      ],
+      "ancestral": true
     },
     {
-      "from": "孔乂（元儁）",
-      "to": "孔子（仲尼）",
+      "from": "孔子（仲尼）",
+      "to": "孔乂（元儁）",
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16f-p4",
@@ -306,7 +305,8 @@
             "zhs": "据《孔氏谱》，孔乂，字元儁，为孔子之后。"
           }
         }
-      ]
+      ],
+      "ancestral": true
     },
     {
       "from": "孔乂（元儁）",
@@ -314,7 +314,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16f-p4",

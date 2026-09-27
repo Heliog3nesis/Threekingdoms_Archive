@@ -30,7 +30,7 @@
 //             undirected relationships (friends, enemies, siblings, colleagues,
 //             ...) have directed:false and from/to order carries no meaning
 //   ancestral true (kinship only) = the other person is an ancestor / not a
-//             contemporary; hide by default
+//             contemporary; hidden by default (descendants are NOT ancestral)
 //   notes     one entry per event/passage, text = { en?, zht?, zhs? }; the note
 //             is what the detail panel shows. passageId must exist in the chapter.
 //   All relationships are between contemporaries; comparisons with historical

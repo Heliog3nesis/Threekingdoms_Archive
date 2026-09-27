@@ -20,12 +20,11 @@
   },
   "relationships": [
     {
-      "from": "鄭渾（文公）",
-      "to": "鄭衆（子師）",
+      "from": "鄭衆（子師）",
+      "to": "鄭渾（文公）",
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p1",
@@ -35,7 +34,8 @@
             "zhs": "郑浑的高祖父郑众，字子师，为著名儒者，官至大司农。"
           }
         }
-      ]
+      ],
+      "ancestral": true
     },
     {
       "from": "鄭興（少贛）",
@@ -43,7 +43,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p1",
@@ -53,7 +52,8 @@
             "zhs": "郑众之父郑兴，字少赣，为著名儒者，官至谏议大夫。"
           }
         }
-      ]
+      ],
+      "ancestral": true
     },
     {
       "from": "鄭渾（文公）",
@@ -494,7 +494,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p6",
@@ -512,7 +511,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": false,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p6",
@@ -530,7 +528,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": false,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p6",
@@ -548,7 +545,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": false,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p6",
@@ -566,7 +562,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p6",
@@ -584,7 +579,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": false,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16e-p6",

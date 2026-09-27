@@ -238,7 +238,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16d-p21",
@@ -366,7 +365,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16d-p27",
@@ -486,7 +484,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16d-p27",
@@ -504,7 +501,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": false,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16d-p27",
@@ -590,7 +586,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16d-p1",

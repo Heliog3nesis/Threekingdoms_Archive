@@ -20,12 +20,11 @@
   },
   "relationships": [
     {
-      "from": "杜畿（伯侯）",
-      "to": "杜延年（幼公）",
+      "from": "杜延年（幼公）",
+      "to": "杜畿（伯侯）",
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16c-p1",
@@ -35,7 +34,8 @@
             "zhs": "有注记载杜畿为汉御史大夫杜延年之后，其家后来世居杜陵。"
           }
         }
-      ]
+      ],
+      "ancestral": true
     },
     {
       "from": "杜周（長孺）",
@@ -43,7 +43,6 @@
       "type": "kinship",
       "polarity": "neutral",
       "directed": true,
-      "ancestral": true,
       "notes": [
         {
           "passageId": "ws16c-p1",
@@ -53,7 +52,8 @@
             "zhs": "杜延年之父杜周自南阳迁居茂陵。"
           }
         }
-      ]
+      ],
+      "ancestral": true
     },
     {
       "from": "荀彧（文若）",
