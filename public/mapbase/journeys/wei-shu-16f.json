@@ -553,9 +553,9 @@
           ],
           "position": [
             {
-              "en": "Military Strategy Section Administrator",
-              "zht": "軍謀掾",
-              "zhs": "军谋掾"
+              "en": "Military Strategy Section Administrator (deputised)",
+              "zht": "署軍謀掾",
+              "zhs": "署军谋掾"
             }
           ],
           "passageId": "",
@@ -569,9 +569,9 @@
           ],
           "positionLinks": [
             {
-              "en": "Military Strategy Section Administrator",
-              "zht": "軍謀掾",
-              "zhs": "军谋掾",
+              "en": "Military Strategy Section Administrator (deputised)",
+              "zht": "署軍謀掾",
+              "zhs": "署军谋掾",
               "url": "/translations/officials/ministers#superior-excellency-036"
             }
           ]
@@ -681,88 +681,310 @@
   ],
   "relationships": [
     {
+      "from": "倉慈（孝仁）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p1",
+          "text": {
+            "en": "During the Jian'an era Cao Cao recruited settlers to establish agricultural colonies in Huainan and appointed Cang Ci Commandant Who Calms and Gathers.",
+            "zht": "建安年間曹操招募流民在淮南屯田，任命倉慈為綏集都尉。",
+            "zhs": "建安年间曹操招募流民在淮南屯田，任命仓慈为绥集都尉。"
+          },
+          "title": {
+            "en": "Commandant Who Calms and Gathers",
+            "zht": "綏集都尉",
+            "zhs": "绥集都尉"
+          }
+        }
+      ]
+    },
+    {
       "from": "尹奉",
       "to": "倉慈（孝仁）",
-      "type": "前者為燉煌太守，後者繼任",
-      "passageId": "ws16f-p2"
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p2",
+          "text": {
+            "en": "Former Grand Administrators of Dunhuang such as Yin Feng had merely followed established practice and made no attempt to reform it; Cang Ci succeeded them and curbed the powerful clans, redistributed surplus land, and cleared the backlog of lawsuits.",
+            "zht": "尹奉等敦煌歷任太守只是沿襲舊例，未加改革；倉慈繼任後抑制豪強，重新分配多佔的土地，並清理積壓的訴訟。",
+            "zhs": "尹奉等敦煌历任太守只是沿袭旧例，未加改革；仓慈继任后抑制豪强，重新分配多占的土地，并清理积压的诉讼。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "倉慈（孝仁）",
-      "type": "曹操招募屯田，任命倉慈為綏集都尉",
-      "passageId": "ws16f-p1"
-    },
-    {
-      "from": "曹操",
-      "to": "令狐邵（孔叔）",
-      "type": "曹操破毛城後釋放令狐邵，署軍謀掾",
-      "passageId": "ws16f-p4"
-    },
-    {
-      "from": "樂詳",
-      "to": "令狐邵（孔叔）",
-      "type": "令狐邵遣吏民詣河東就樂詳學經",
-      "passageId": "ws16f-p4"
+      "from": "倉慈（孝仁）",
+      "to": "王遷",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p3",
+          "text": {
+            "en": "After Cang Ci died in office, Wang Qian of Tianshui succeeded him as Grand Administrator of Dunhuang; he followed Cang Ci's practices but could not equal him.",
+            "zht": "倉慈在任去世後，天水人王遷繼任敦煌太守；他沿用倉慈的做法，卻不及倉慈。",
+            "zhs": "仓慈在任去世后，天水人王迁继任敦煌太守；他沿用仓慈的做法，却不及仓慈。"
+          }
+        }
+      ]
     },
     {
       "from": "王遷",
-      "to": "倉慈（孝仁）",
-      "type": "王遷繼倉慈為燉煌太守",
-      "passageId": "ws16f-p3"
+      "to": "趙基",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p3",
+          "text": {
+            "en": "Zhao Ji of Jincheng succeeded Wang Qian as Grand Administrator of Dunhuang but proved inferior even to him.",
+            "zht": "金城人趙基繼王遷任敦煌太守，還不及王遷。",
+            "zhs": "金城人赵基继王迁任敦煌太守，还不及王迁。"
+          }
+        }
+      ]
     },
     {
       "from": "趙基",
-      "to": "王遷",
-      "type": "趙基繼王遷為燉煌太守",
-      "passageId": "ws16f-p3"
+      "to": "皇甫隆",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p3",
+          "text": {
+            "en": "Huangfu Long of Anding succeeded Zhao Ji and taught the people of Dunhuang to make seed drills and irrigate efficiently, halving the labour and raising the yield by half.",
+            "zht": "安定人皇甫隆繼趙基任太守，教敦煌百姓製作耬犁、改進灌溉，省工過半，收成增加五成。",
+            "zhs": "安定人皇甫隆继赵基任太守，教敦煌百姓制作耧犁、改进灌溉，省工过半，收成增加五成。"
+          }
+        }
+      ]
     },
     {
-      "from": "皇甫隆",
-      "to": "趙基",
-      "type": "皇甫隆繼趙基為燉煌太守",
-      "passageId": "ws16f-p3"
+      "from": "令狐邵（孔叔）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "When Cao Cao captured Maocheng, he spared Linghu Shao on recognising his father's name and appointed him Military Strategy Section Administrator; Linghu Shao went on to serve as county magistrate, commandery governor, Registrar to the Chancellor and Grand Administrator of Hongnong.",
+            "zht": "曹操攻破毛城，見令狐邵衣冠舉止像士人，問及家世，認出其父之名，遂將他釋放，署為軍謀掾；令狐邵後歷任縣令、郡守、丞相主簿，出為弘農太守。",
+            "zhs": "曹操攻破毛城，见令狐邵衣冠举止像士人，问及家世，认出其父之名，遂将他释放，署为军谋掾；令狐邵后历任县令、郡守、丞相主簿，出为弘农太守。"
+          },
+          "title": {
+            "en": "Military Strategy Section Administrator",
+            "zht": "軍謀掾",
+            "zhs": "军谋掾"
+          }
+        }
+      ]
     },
     {
-      "from": "令狐愚",
-      "to": "令狐邵（孔叔）",
-      "type": "族子（年輕族人）",
-      "passageId": "ws16f-p4"
+      "from": "令狐邵（孔叔）",
+      "to": "樂詳（文載）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "As Grand Administrator of Hongnong, Linghu Shao sent officials to Hedong to study the Classics under Yue Xiang, then established schools when they returned, so that learning gradually flourished in Hongnong.",
+            "zht": "令狐邵任弘農太守時，遣送吏民赴河東跟隨樂詳學習經書，學成歸來後設立學校，弘農學風漸盛。",
+            "zhs": "令狐邵任弘农太守时，遣送吏民赴河东跟随乐详学习经书，学成归来后设立学校，弘农学风渐盛。"
+          }
+        }
+      ]
     },
     {
-      "from": "王淩",
+      "from": "令狐邵（孔叔）",
       "to": "令狐愚",
-      "type": "共謀廢立",
-      "passageId": "ws16f-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "Linghu Yu was Linghu Shao's younger clansman.",
+            "zht": "令狐愚是令狐邵的族侄。",
+            "zhs": "令狐愚是令狐邵的族侄。"
+          }
+        }
+      ]
     },
     {
-      "from": "令狐華",
-      "to": "令狐邵（孔叔）",
-      "type": "父子",
-      "passageId": "ws16f-p4"
+      "from": "令狐邵（孔叔）",
+      "to": "令狐愚",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "When everyone expected Linghu Yu to honour the clan, Linghu Shao alone predicted he would bring ruin upon it, and Linghu Yu resented this; years later Linghu Yu conspired with Wang Ling to depose the emperor and his household was executed, as Linghu Shao had foretold.",
+            "zht": "眾人都認為令狐愚將光耀門楣，唯令狐邵斷言他必敗家族，令狐愚聞之懷恨；多年後令狐愚與王淩合謀廢立，全家被誅，果如令狐邵所料。",
+            "zhs": "众人都认为令狐愚将光耀门楣，唯令狐邵断言他必败家族，令狐愚闻之怀恨；多年后令狐愚与王凌合谋废立，全家被诛，果如令狐邵所料。"
+          }
+        }
+      ]
     },
     {
-      "from": "司馬懿",
-      "to": "顏斐（文林）",
-      "type": "司馬懿於長安立軍市，顏斐向其報告軍吏侵侮縣民",
-      "passageId": "ws16f-p4"
+      "from": "王淩（彥雲）",
+      "to": "令狐愚",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "As Inspector of Yan Province, Linghu Yu conspired with Wang Ling to depose the emperor and install another.",
+            "zht": "令狐愚任兗州刺史時，與王淩合謀廢立皇帝。",
+            "zhs": "令狐愚任兖州刺史时，与王凌合谋废立皇帝。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "令狐邵（孔叔）",
+      "to": "令狐華",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "Linghu Shao's son Linghu Hua, then Assistant to the Grand Administrator of Hongnong, escaped implication in Linghu Yu's downfall because of their distant kinship.",
+            "zht": "令狐邵之子令狐華時任弘農太守丞，因與令狐愚親緣疏遠而未受牽連。",
+            "zhs": "令狐邵之子令狐华时任弘农太守丞，因与令狐愚亲缘疏远而未受牵连。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "顏斐（文林）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "A note records that the Chancellor Cao Cao summoned Yan Fei, a man of talent and learning, to serve as Frontrider of the Crown Prince.",
+            "zht": "有註記載丞相曹操徵召才學出眾的顏斐，任為太子門下先馬。",
+            "zhs": "有注记载丞相曹操征召才学出众的颜斐，任为太子门下先马。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "顏斐（文林）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "At the beginning of the Huangchu era Yan Fei was transferred to Attendant Gentleman within the Yellow Gates and later became Grand Administrator of Jingzhao.",
+            "zht": "黃初初年顏斐調任黃門侍郎，後出任京兆太守。",
+            "zhs": "黄初初年颜斐调任黄门侍郎，后出任京兆太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Jingzhao",
+            "zht": "京兆太守",
+            "zhs": "京兆太守"
+          }
+        }
+      ]
+    },
+    {
+      "from": "顏斐（文林）",
+      "to": "司馬懿（仲達）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "When Sima Yi set up a military market at Chang'an and its soldiers abused the county's people, Yan Fei reported it; Sima Yi had the captain beaten a hundred strokes in front of him, and Yan Fei declined to offer thanks so as not to misread Sima Yi's impartiality, after which Sima Yi kept his soldiers under strict control.",
+            "zht": "司馬懿在長安設軍市，軍吏欺凌縣民，顏斐向他報告；司馬懿將軍市候當面杖責一百，顏斐拒絕道謝，以免辜負司馬懿一視同仁之意，此後司馬懿嚴加約束軍吏。",
+            "zhs": "司马懿在长安设军市，军吏欺凌县民，颜斐向他报告；司马懿将军市候当面杖责一百，颜斐拒绝道谢，以免辜负司马懿一视同仁之意，此后司马懿严加约束军吏。"
+          }
+        }
+      ]
     },
     {
       "from": "孔疇（元矩）",
       "to": "孔乂（元儁）",
-      "type": "曾祖父與曾孫",
-      "passageId": "ws16f-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "A note records that Kong Yi's great-grandfather Kong Chou, courtesy name Yuanju, served as Principality Chancellor of Chen and erected a stele before the image of Confucius.",
+            "zht": "注載孔乂的曾祖父孔疇，字元矩，官至陳相，曾在孔子像前立碑。",
+            "zhs": "注载孔乂的曾祖父孔畴，字元矩，官至陈相，曾在孔子像前立碑。"
+          }
+        }
+      ],
+      "ancestral": true
     },
     {
-      "from": "孔恂（士信）",
+      "from": "孔子（仲尼）",
       "to": "孔乂（元儁）",
-      "type": "父子",
-      "passageId": "ws16f-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "According to the Kong Family Genealogy, Kong Yi, courtesy name Yuanjun, was a descendant of Confucius.",
+            "zht": "據《孔氏譜》，孔乂，字元儁，為孔子之後。",
+            "zhs": "据《孔氏谱》，孔乂，字元儁，为孔子之后。"
+          }
+        }
+      ],
+      "ancestral": true
     },
     {
       "from": "孔乂（元儁）",
-      "to": "孔子",
-      "type": "後代",
-      "passageId": "ws16f-p4"
+      "to": "孔恂（士信）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16f-p4",
+          "text": {
+            "en": "Kong Yi's son Kong Xun, courtesy name Shixin, served under Jin as General Who Subdues the East and Commandant of the Guards.",
+            "zht": "孔乂之子孔恂，字士信，仕晉官至征東將軍、衛尉。",
+            "zhs": "孔乂之子孔恂，字士信，仕晋官至征东将军、卫尉。"
+          }
+        }
+      ]
     }
   ]
 }

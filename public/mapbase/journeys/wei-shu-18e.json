@@ -9,7 +9,7 @@
     },
     "title": {
       "zht": "魏書十八 · 呂虔傳 · 附王祥",
-      "zhs": "魏书十八 · 呂虔传 · 附王祥",
+      "zhs": "魏书十八 · 吕虔传 · 附王祥",
       "en": "Book of Wei, Chapter 18 · Biography of Lü Qian · with Wang Xiang"
     }
   },
@@ -206,9 +206,9 @@
             "zhs": "泰山"
           },
           "position": {
-            "en": "Grand Administrator of Taishan",
-            "zht": "泰山太守",
-            "zhs": "泰山太守"
+            "en": "Grand Administrator of Taishan (concurrent)",
+            "zht": "領泰山太守",
+            "zhs": "领泰山太守"
           },
           "passageId": "ws18e-p3",
           "resolvedLocations": [
@@ -219,9 +219,9 @@
           ],
           "positionLinks": [
             {
-              "en": "Grand Administrator of Taishan",
-              "zht": "泰山太守",
-              "zhs": "泰山太守",
+              "en": "Grand Administrator of Taishan (concurrent)",
+              "zht": "領泰山太守",
+              "zhs": "领泰山太守",
               "url": "/translations/officials/regional#commanderies-039"
             }
           ]
@@ -361,111 +361,315 @@
   "relationships": [
     {
       "from": "呂虔（子恪）",
-      "to": "曹操",
-      "type": "lord-subordinate",
-      "passageId": "ws18e-p1"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p1",
+          "text": {
+            "en": "Cao Cao, learning of Lü Qian's courage and resourcefulness, appointed him Aide and had him lead his household troops to guard Hulu.",
+            "zht": "曹操聞呂虔膽略過人，任命他為從事，命其率部曲鎮守湖陸。",
+            "zhs": "曹操闻吕虔胆略过人，任命他为从事，命其率部曲镇守湖陆。"
+          }
+        }
+      ]
     },
     {
-      "from": "呂虔（子恪）",
-      "to": "杜松",
-      "type": "successor-predecessor",
-      "passageId": "ws18e-p2"
+      "from": "杜松",
+      "to": "呂虔（子恪）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p2",
+          "text": {
+            "en": "Lü Qian replaced Du Song as Colonel of Xiangben after Du Song's subordinate Jiong Mu rebelled.",
+            "zht": "杜松部下炅毋叛亂後，呂虔接替杜松出任向棼校尉。",
+            "zhs": "杜松部下炅毋叛乱后，吕虔接替杜松出任向棼校尉。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
       "to": "炅毋",
-      "type": "enemies",
-      "passageId": "ws18e-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p2",
+          "text": {
+            "en": "Lü Qian lured Jiong Mu and his fellow conspirators to a feast, then had hidden soldiers kill them all once they were drunk.",
+            "zht": "呂虔誘騙炅毋及其同黨赴宴，待其酒醉後令伏兵盡數擊殺。",
+            "zhs": "吕虔诱骗炅毋及其同党赴宴，待其酒醉后令伏兵尽数击杀。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
       "to": "昌豨",
-      "type": "enemies",
-      "passageId": "ws18e-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p2",
+          "text": {
+            "en": "Jiong Mu's rebellion was conspired together with Chang Xi; Lü Qian crushed the revolt by ambushing and killing Jiong Mu's faction.",
+            "zht": "炅毋叛亂與昌豨合謀，呂虔設伏擊殺炅毋一黨，平定叛亂。",
+            "zhs": "炅毋叛乱与昌豨合谋，吕虔设伏击杀炅毋一党，平定叛乱。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
       "to": "郭祖",
-      "type": "enemies",
-      "passageId": "ws18e-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p3",
+          "text": {
+            "en": "Guo Zu and his fellow bandits occupied the mountains of Taishan; through Lü Qian's benevolent governance, their followers surrendered.",
+            "zht": "郭祖等賊寇盤踞泰山，呂虔以仁信治郡，其黨徒盡皆歸降。",
+            "zhs": "郭祖等贼寇盘踞泰山，吕虔以仁信治郡，其党徒尽皆归降。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
       "to": "公孫犢",
-      "type": "enemies",
-      "passageId": "ws18e-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p3",
+          "text": {
+            "en": "Gongsun Du and his fellow bandits also occupied the mountains of Taishan; they too surrendered to Lü Qian's benevolent rule.",
+            "zht": "公孫犢等賊寇亦盤踞泰山，同樣歸降於呂虔的仁政。",
+            "zhs": "公孙犊等贼寇亦盘踞泰山，同样归降于吕虔的仁政。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
-      "to": "夏侯淵",
-      "type": "comrades",
-      "passageId": "ws18e-p4"
+      "to": "夏侯淵（妙才）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p4",
+          "text": {
+            "en": "Lü Qian joined Xiahou Yuan in campaigning against the Yellow Turban rebel Xu He, fighting several dozen battles together.",
+            "zht": "呂虔與夏侯淵共同討伐黃巾賊徐和，交戰數十次。",
+            "zhs": "吕虔与夏侯渊共同讨伐黄巾贼徐和，交战数十次。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
       "to": "徐和",
-      "type": "enemies",
-      "passageId": "ws18e-p4"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p4",
+          "text": {
+            "en": "Lü Qian and Xiahou Yuan fought the Yellow Turban rebel Xu He in several dozen battles, killing and capturing several thousand.",
+            "zht": "呂虔與夏侯淵與黃巾賊徐和交戰數十次，殺獲數千人。",
+            "zhs": "吕虔与夏侯渊与黄巾贼徐和交战数十次，杀获数千人。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
       "to": "李條",
-      "type": "enemies",
-      "passageId": "ws18e-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p5",
+          "text": {
+            "en": "Lü Qian commanded the troops of Qing Province to campaign against the Donglai rebel Li Tiao.",
+            "zht": "呂虔統領青州諸郡兵馬，征討東萊叛賊李條。",
+            "zhs": "吕虔统领青州诸郡兵马，征讨东莱叛贼李条。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
-      "to": "曹丕",
-      "type": "lord-subordinate",
-      "passageId": "ws18e-p6"
-    },
-    {
-      "from": "呂虔（子恪）",
-      "to": "王祥（休徵）",
-      "type": "superior-subordinate",
-      "passageId": "ws18e-p6"
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p6",
+          "text": {
+            "en": "When Cao Pi assumed the kingship, Lü Qian was appointed Assistant General and enfeoffed Yishou Neighbourhood Marquis, later promoted Inspector of Xu Province and General Who Awes the Enemies.",
+            "zht": "文帝即王位，呂虔獲任裨將軍，封益壽亭侯，後升任徐州刺史、威虜將軍。",
+            "zhs": "文帝即王位，吕虔获任裨将军，封益寿亭侯，后升任徐州刺史、威虏将军。"
+          },
+          "title": {
+            "en": "Assistant General, Yishou Neighbourhood Marquis, Inspector of Xu Province, General Who Awes the Enemies",
+            "zht": "裨將軍、益壽亭侯、徐州刺史、威虜將軍",
+            "zhs": "裨将军、益寿亭侯、徐州刺史、威虏将军"
+          }
+        },
+        {
+          "passageId": "ws18e-p7",
+          "text": {
+            "en": "Lü Qian campaigned against the rebels of Licheng, killing and capturing many; when he died, his son Lü Fan succeeded him, and when Lü Fan died, his son Lü Gui succeeded him.",
+            "zht": "呂虔後征討利城叛賊，多有殺獲；呂虔去世後，子呂翻嗣位，呂翻去世後，子呂桂嗣位。",
+            "zhs": "吕虔后征讨利城叛贼，多有杀获；吕虔去世后，子吕翻嗣位，吕翻去世后，子吕桂嗣位。"
+          }
+        }
+      ]
     },
     {
       "from": "王祥（休徵）",
-      "to": "王祥後母",
-      "type": "stepson-stepmother",
-      "passageId": "ws18e-p7"
-    },
-    {
-      "from": "王祥（休徵）",
-      "to": "司馬昭",
-      "type": "ruler-subordinate",
-      "passageId": "ws18e-p8"
-    },
-    {
-      "from": "王祥（休徵）",
-      "to": "荀顗",
+      "to": "呂虔（子恪）",
       "type": "colleagues",
-      "passageId": "ws18e-p8"
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p6",
+          "text": {
+            "en": "Lü Qian requested Wang Xiang of Langya to serve as his Deputy Aide, entrusting him with all civil affairs; contemporaries widely praised Lü Qian for his ability to employ worthy men.",
+            "zht": "呂虔請琅邪王祥出任別駕，委以州中政事；時人皆稱其善於用人。",
+            "zhs": "吕虔请琅邪王祥出任别驾，委以州中政事；时人皆称其善于用人。"
+          }
+        }
+      ]
     },
     {
       "from": "王祥（休徵）",
-      "to": "司馬炎",
-      "type": "ruler-subordinate",
-      "passageId": "ws18e-p8"
+      "to": "曹髦（彥士）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p6",
+          "text": {
+            "en": "When Cao Mao, Duke of Gaogui Township, entered the Imperial Academy, Wang Xiang served as one of the Three Elders, and was promoted to Excellency of Works and then Grand Commandant.",
+            "zht": "高貴鄉公曹髦入太學，王祥為三老，遷司空，後升太尉。",
+            "zhs": "高贵乡公曹髦入太学，王祥为三老，迁司空，后升太尉。"
+          },
+          "title": {
+            "en": "Excellency of Works, Grand Commandant",
+            "zht": "司空、太尉",
+            "zhs": "司空、太尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "王祥（休徵）",
+      "to": "荀顗（景倩）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p6",
+          "text": {
+            "en": "When Sima Zhao first became King of Jin, Excellency of Works Xun Yi wanted Wang Xiang to pay him full ceremonial respect, but Wang Xiang refused.",
+            "zht": "司馬昭初為晉王時，司空荀顗欲王祥對其盡敬，王祥不從。",
+            "zhs": "司马昭初为晋王时，司空荀顗欲王祥对其尽敬，王祥不从。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "王祥（休徵）",
+      "to": "司馬炎（安世）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p6",
+          "text": {
+            "en": "When Sima Yan ascended the throne, he appointed Wang Xiang Grand Guardian and enfeoffed him as Duke of Suiling.",
+            "zht": "晉武帝司馬炎踐阼，拜王祥為太保，封雎陵公。",
+            "zhs": "晋武帝司马炎践阼，拜王祥为太保，封睢陵公。"
+          },
+          "title": {
+            "en": "Grand Guardian, Duke of Suiling",
+            "zht": "太保、雎陵公",
+            "zhs": "太保、睢陵公"
+          }
+        }
+      ]
     },
     {
       "from": "王祥（休徵）",
       "to": "王覽（玄通）",
-      "type": "elder-brother-younger-brother",
-      "passageId": "ws18e-p9"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18e-p6",
+          "text": {
+            "en": "Wang Lan, courtesy name Xuantong, was Wang Xiang's younger brother; he served as Household Counsellor, and his descendants flourished with many men of talent across successive generations.",
+            "zht": "王覽字玄通，是王祥之弟，官至光祿大夫；其子孫繁衍，頗有賢才相繼，弈世之盛。",
+            "zhs": "王览字玄通，是王祥之弟，官至光禄大夫；其子孙繁衍，颇有贤才相继，弈世之盛。"
+          }
+        }
+      ]
     },
     {
       "from": "呂虔（子恪）",
       "to": "呂翻",
-      "type": "father-son",
-      "passageId": "ws18e-p11"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p7",
+          "text": {
+            "en": "When Lü Qian died, his son Lü Fan succeeded him.",
+            "zht": "呂虔去世後，子呂翻嗣位。",
+            "zhs": "吕虔去世后，子吕翻嗣位。"
+          }
+        }
+      ]
     },
     {
       "from": "呂翻",
       "to": "呂桂",
-      "type": "father-son",
-      "passageId": "ws18e-p11"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18e-p7",
+          "text": {
+            "en": "When Lü Fan died, his son Lü Gui succeeded him.",
+            "zht": "呂翻去世後，子呂桂嗣位。",
+            "zhs": "吕翻去世后，子吕桂嗣位。"
+          }
+        }
+      ]
     }
   ]
 }

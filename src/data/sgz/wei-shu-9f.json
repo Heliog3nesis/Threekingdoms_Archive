@@ -1,0 +1,954 @@
+{
+  "id": "wei-shu-9f",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 9,
+  "num": "9",
+  "label": {
+    "zht": "曹真傳",
+    "zhs": "曹真传",
+    "en": "Biography of Cao Zhen"
+  },
+  "title": {
+    "zht": "魏書九 · 曹真傳",
+    "zhs": "魏书九 · 曹真传",
+    "en": "Book of Wei, Chapter 9 · Biography of Cao Zhen"
+  },
+  "relationships": [
+    {
+      "from": "曹操（孟德）",
+      "to": "曹真（子丹）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Cao Zhen was the son of one of Cao Cao's clansmen; Cao Cao took pity on the orphaned boy, adopted him and raised him as one of his own sons.",
+            "zht": "曹真是曹操的族子；曹操憐惜他年少喪父，將他收養，待他與自己的兒子一樣。",
+            "zhs": "曹真是曹操的族子；曹操怜惜他年少丧父，将他收养，待他与自己的儿子一样。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹邵",
+      "to": "曹真（子丹）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Cao Zhen's father Cao Shao recruited followers when Cao Cao raised troops and was killed by the provincial and commandery authorities, leaving Cao Zhen an orphan.",
+            "zht": "曹真之父曹邵在曹操起兵時招募徒衆，被州郡官府所殺，曹真從小成了孤兒。",
+            "zhs": "曹真之父曹邵在曹操起兵时招募徒众，被州郡官府所杀，曹真从小成了孤儿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "秦伯南",
+      "to": "曹真（子丹）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "According to the Weilüe, Cao Zhen was born a Qin and his father was Qin Bonan; Cao Cao changed his surname in gratitude for his father's sacrifice.",
+            "zht": "據《魏略》記載，曹真本姓秦，父親是秦伯南；曹操感念他父親的恩德，爲他改姓曹。",
+            "zhs": "据《魏略》记载，曹真本姓秦，父亲是秦伯南；曹操感念他父亲的恩德，为他改姓曹。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "秦伯南",
+      "to": "曹操（孟德）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Qin Bonan, an old friend of Cao Cao, took him in when Yuan Shu's men were pursuing him, told them he himself was Cao Cao, and was killed in his place.",
+            "zht": "秦伯南向來與曹操交好；袁術部下追殺曹操時，秦伯南開門收留他，並對追兵自稱是曹操，結果被殺。",
+            "zhs": "秦伯南向来与曹操交好；袁术部下追杀曹操时，秦伯南开门收留他，并对追兵自称是曹操，结果被杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹邵",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Loyal and capable, Cao Shao was trusted by Cao Cao and raised followers to accompany him when he took up arms in the Chuping era.",
+            "zht": "曹邵忠厚有才智，深得曹操信任；初平年間曹操起兵時，他招募徒衆跟隨曹操。",
+            "zhs": "曹邵忠厚有才智，深得曹操信任；初平年间曹操起兵时，他招募徒众跟随曹操。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "黃琬（子琰）",
+      "to": "曹邵",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "When Huang Wan, Inspector of Yu Province, tried to harm Cao Cao, Cao Cao escaped but Cao Shao was killed.",
+            "zht": "豫州刺史黃琬想加害曹操，曹操躲過一劫，曹邵卻獨自遇害。",
+            "zhs": "豫州刺史黄琬想加害曹操，曹操躲过一劫，曹邵却独自遇害。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹丕（子桓）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Cao Cao had Cao Zhen live together with Cao Pi.",
+            "zht": "曹操讓曹真與曹丕一同居住。",
+            "zhs": "曹操让曹真与曹丕一同居住。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Impressed when Cao Zhen shot down a pursuing tiger, Cao Cao placed him in command of the Tiger and Leopard Cavalry.",
+            "zht": "曹真在打獵時回身射倒追趕他的老虎，曹操讚賞他的勇猛，讓他統領虎豹騎。",
+            "zhs": "曹真在打猎时回身射倒追赶他的老虎，曹操赞赏他的勇猛，让他统领虎豹骑。"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "After capturing the rebel town of Lingqiu, Cao Zhen was enfeoffed as Neighbourhood Marquis of Lingshou.",
+            "zht": "曹真攻克靈丘賊寇後，被封爲靈壽亭侯。",
+            "zhs": "曹真攻克灵丘贼寇后，被封为灵寿亭侯。"
+          },
+          "title": {
+            "en": "Neighbourhood Marquis of Lingshou",
+            "zht": "靈壽亭侯",
+            "zhs": "灵寿亭侯"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "After defeating one of Liu Bei's generals at Xiabian, Cao Zhen was appointed General of the Central Vanguard, and at Chang'an became Commander of the Central Army.",
+            "zht": "曹真在下辯擊破劉備部將後，被任命爲中堅將軍，到長安後兼任中領軍。",
+            "zhs": "曹真在下辩击破刘备部将后，被任命为中坚将军，到长安后兼任中领军。"
+          },
+          "title": {
+            "en": "General of the Central Vanguard, Commander of the Central Army",
+            "zht": "中堅將軍、中領軍",
+            "zhs": "中坚将军、中领军"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Worried after Xiahou Yuan's death, Cao Cao made Cao Zhen Protector of the Army for the expedition against Shu, and later sent him to Wudu to bring Cao Hong and the others back to Chencang.",
+            "zht": "夏侯淵陣亡後，曹操憂心忡忡，任命曹真爲征蜀護軍；後來又派他到武都接曹洪等人回駐陳倉。",
+            "zhs": "夏侯渊阵亡后，曹操忧心忡忡，任命曹真为征蜀护军；后来又派他到武都接曹洪等人回驻陈仓。"
+          },
+          "title": {
+            "en": "Protector of the Army for the Expedition against Shu",
+            "zht": "征蜀護軍",
+            "zhs": "征蜀护军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "When Cao Pi became king, he appointed Cao Zhen General Who Garrisons the West with command of Yong and Liang provinces, and advanced him to Township Marquis of Dong.",
+            "zht": "曹丕即王位後，任命曹真爲鎮西將軍，都督雍、涼二州諸軍事，進封東鄉侯。",
+            "zhs": "曹丕即王位后，任命曹真为镇西将军，都督雍、凉二州诸军事，进封东乡侯。"
+          },
+          "title": {
+            "en": "General Who Garrisons the West, Township Marquis of Dong",
+            "zht": "鎮西將軍、東鄉侯",
+            "zhs": "镇西将军、东乡侯"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "On his return to the capital, Cao Zhen was appointed Grand General of the Upper Army and Commander of All Forces.",
+            "zht": "曹真回到京城後，被任命爲上軍大將軍，都督中外諸軍事。",
+            "zhs": "曹真回到京城后，被任命为上军大将军，都督中外诸军事。"
+          },
+          "title": {
+            "en": "Grand General of the Upper Army",
+            "zht": "上軍大將軍",
+            "zhs": "上军大将军"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "After the victory at Niuzhu, Cao Zhen was made Grand General of the Central Army with the additional office of Palace Aide.",
+            "zht": "牛渚大捷後，曹真轉任中軍大將軍，加給事中。",
+            "zhs": "牛渚大捷后，曹真转任中军大将军，加给事中。"
+          },
+          "title": {
+            "en": "Grand General of the Central Army",
+            "zht": "中軍大將軍",
+            "zhs": "中军大将军"
+          }
+        },
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "On his deathbed, Cao Pi named Cao Zhen, Chen Qun and Sima Yi to receive his testamentary edict and assist in governing.",
+            "zht": "曹丕病重時，曹真與陳羣、司馬懿等人一同接受遺詔輔政。",
+            "zhs": "曹丕病重时，曹真与陈群、司马懿等人一同接受遗诏辅政。"
+          }
+        },
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Pi set aside two hundred households from Cao Zhen's fief to enfeoff his younger brother Cao Bin as a Marquis.",
+            "zht": "曹丕分出曹真的封戶二百，封他的弟弟曹彬爲列侯。",
+            "zhs": "曹丕分出曹真的封户二百，封他的弟弟曹彬为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "When Cao Rui ascended the throne, he advanced Cao Zhen to County Marquis of Shaoling and promoted him to Grand General.",
+            "zht": "明帝即位後，曹真進封邵陵侯，升任大將軍。",
+            "zhs": "明帝即位后，曹真进封邵陵侯，升任大将军。"
+          },
+          "title": {
+            "en": "County Marquis of Shaoling, Grand General",
+            "zht": "邵陵侯、大將軍",
+            "zhs": "邵陵侯、大将军"
+          }
+        },
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Rui sent Cao Zhen to lead the armies at Meiguo against Zhuge Liang's first northern campaign.",
+            "zht": "諸葛亮第一次北伐時，明帝派曹真督率諸軍駐守郿縣。",
+            "zhs": "诸葛亮第一次北伐时，明帝派曹真督率诸军驻守郿县。"
+          }
+        },
+        {
+          "passageId": "ws9f-p4",
+          "text": {
+            "en": "Cao Zhen was promoted to Grand Marshal and granted the right to wear his sword and shoes in the palace hall and to attend court without quickening his step.",
+            "zht": "曹真升任大司馬，獲准佩劍穿履上殿、入朝不必小步快走。",
+            "zhs": "曹真升任大司马，获准佩剑穿履上殿、入朝不必小步快走。"
+          },
+          "title": {
+            "en": "Grand Marshal",
+            "zht": "大司馬",
+            "zhs": "大司马"
+          }
+        },
+        {
+          "passageId": "ws9f-p4",
+          "text": {
+            "en": "Cao Rui accepted Cao Zhen's plan to invade Shu along several routes and saw him off in person, but recalled him when thirty days of rain cut the plank roads.",
+            "zht": "明帝採納曹真多路伐蜀的計劃，親自爲他送行；後因連降大雨三十多天、棧道斷絕，下詔讓曹真撤軍。",
+            "zhs": "明帝采纳曹真多路伐蜀的计划，亲自为他送行；后因连降大雨三十多天、栈道断绝，下诏让曹真撤军。"
+          }
+        },
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Rui granted Cao Zhen's request to share his fief with the sons of Cao Zun and Zhu Zan, likening him to Shuxiang and Yan Ping.",
+            "zht": "明帝准許曹真分出封邑給曹遵、朱讚的兒子，稱讚他有叔向撫孤之仁、晏平仲久要之分。",
+            "zhs": "明帝准许曹真分出封邑给曹遵、朱赞的儿子，称赞他有叔向抚孤之仁、晏平仲久要之分。"
+          }
+        },
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Rui visited the ailing Cao Zhen at his residence; after his death he praised his loyalty and modesty and enfeoffed all five of his sons as Marquises.",
+            "zht": "曹真病重時，明帝親自到他府上探望；曹真死後，明帝下詔稱讚他忠節謙遜，把他的五個兒子都封爲列侯。",
+            "zhs": "曹真病重时，明帝亲自到他府上探望；曹真死后，明帝下诏称赞他忠节谦逊，把他的五个儿子都封为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "劉備（玄德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Zhen defeated one of Liu Bei's subordinate generals at Xiabian, and later Liu Bei's general Gao Xiang at Yangping.",
+            "zht": "曹真在下辯擊敗劉備的部將，後來又在陽平擊敗劉備部將高詳。",
+            "zhs": "曹真在下辩击败刘备的部将，后来又在阳平击败刘备部将高详。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "高詳",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Commanding Xu Huang and others, Cao Zhen defeated Liu Bei's general Gao Xiang at Yangping.",
+            "zht": "曹真督率徐晃等人，在陽平擊敗劉備部將高詳。",
+            "zhs": "曹真督率徐晃等人，在阳平击败刘备部将高详。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "徐晃（公明）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "As Protector of the Army for the expedition against Shu, Cao Zhen commanded Xu Huang and others in defeating Gao Xiang at Yangping.",
+            "zht": "曹真任征蜀護軍，督率徐晃等人在陽平擊敗高詳。",
+            "zhs": "曹真任征蜀护军，督率徐晃等人在阳平击败高详。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹洪（子廉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Cao sent Cao Zhen to Wudu to meet Cao Hong and the others and bring them back to garrison Chencang.",
+            "zht": "曹操派曹真到武都迎接曹洪等人，回駐陳倉。",
+            "zhs": "曹操派曹真到武都迎接曹洪等人，回驻陈仓。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "費耀",
+      "to": "曹真（子丹）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "When Zhang Jin and others rebelled in Jiuquan, Cao Zhen sent Fei Yao against them.",
+            "zht": "張進等人在酒泉造反，曹真派費耀前去討伐。",
+            "zhs": "张进等人在酒泉造反，曹真派费曜前去讨伐。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "費耀",
+      "to": "張進",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Fei Yao defeated the Jiuquan rebels and beheaded Zhang Jin and the others.",
+            "zht": "費耀擊破酒泉叛軍，斬殺張進等人。",
+            "zhs": "费曜击破酒泉叛军，斩杀张进等人。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "張進",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "When Zhang Jin rebelled in Jiuquan, Cao Zhen sent Fei Yao to crush the rebellion.",
+            "zht": "張進在酒泉造反，曹真派費耀將其討平。",
+            "zhs": "张进在酒泉造反，曹真派费曜将其讨平。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "夏侯尚（伯仁）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Zhen joined Xiahou Shang and others in the campaign against Sun Quan, defeating the garrison at Niuzhu.",
+            "zht": "曹真與夏侯尚等人一同征討孫權，擊破牛渚的守軍。",
+            "zhs": "曹真与夏侯尚等人一同征讨孙权，击破牛渚的守军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Zhen campaigned against Sun Quan and defeated his garrison at Niuzhu.",
+            "zht": "曹真征討孫權，擊破牛渚屯軍。",
+            "zhs": "曹真征讨孙权，击破牛渚屯军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "陳羣（長文）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen, Chen Qun and Sima Yi together received Cao Pi's testamentary edict to assist in governing.",
+            "zht": "曹真與陳羣、司馬懿一同接受曹丕遺詔輔政。",
+            "zhs": "曹真与陈群、司马懿一同接受曹丕遗诏辅政。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "司馬懿（仲達）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen and Sima Yi together received Cao Pi's testamentary edict to assist in governing.",
+            "zht": "曹真與司馬懿一同接受曹丕遺詔輔政。",
+            "zhs": "曹真与司马懿一同接受曹丕遗诏辅政。"
+          }
+        },
+        {
+          "passageId": "ws9f-p4",
+          "text": {
+            "en": "In the invasion of Shu, Cao Zhen marched along the Ziwu Road while Sima Yi went up the Han River, planning to meet at Nanzheng.",
+            "zht": "伐蜀時，曹真從子午道南下，司馬懿沿漢水逆流而上，約定在南鄭會師。",
+            "zhs": "伐蜀时，曹真从子午道南下，司马懿沿汉水逆流而上，约定在南郑会师。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "諸葛亮（孔明）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "When Zhuge Liang besieged Qishan and three commanderies rose for him, Cao Zhen led the armies that pacified them.",
+            "zht": "諸葛亮圍攻祁山，三郡起而響應，曹真率軍平定了三郡。",
+            "zhs": "诸葛亮围攻祁山，三郡起而响应，曹真率军平定了三郡。"
+          }
+        },
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Predicting that Zhuge Liang would come through Chencang next, Cao Zhen had it fortified, and Zhuge Liang's siege there the following spring failed.",
+            "zht": "曹真預料諸葛亮下次必從陳倉出兵，事先加固城防；次年春諸葛亮果然圍攻陳倉，未能攻克。",
+            "zhs": "曹真预料诸葛亮下次必从陈仓出兵，事先加固城防；次年春诸葛亮果然围攻陈仓，未能攻克。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張郃（㑺乂）",
+      "to": "馬謖（幼常）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Sent by Cao Rui against Zhuge Liang's general Ma Su, Zhang He decisively defeated him.",
+            "zht": "張郃奉明帝之命進攻諸葛亮部將馬謖，將他大敗。",
+            "zhs": "张郃奉明帝之命进攻诸葛亮部将马谡，将他大败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "楊條",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "When Cao Zhen besieged Yuezhicheng, Yang Tiao told his followers he wished to surrender now the Grand General had come in person, and came out bound.",
+            "zht": "曹真圍攻月支城，楊條對部衆說：“大將軍親自來了，我願早日投降。”便自縛出城。",
+            "zhs": "曹真围攻月支城，杨条对部众说：“大将军亲自来了，我愿早日投降。”便自缚出城。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郝昭（伯道）",
+      "to": "曹真（子丹）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen sent the general Hao Zhao, with Wang Sheng, to defend Chencang and repair its fortifications, and Zhuge Liang could not take it.",
+            "zht": "曹真派將軍郝昭與王生守衛陳倉、修治城防，諸葛亮未能攻克。",
+            "zhs": "曹真派将军郝昭与王生守卫陈仓、修治城防，诸葛亮未能攻克。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "王生",
+      "to": "曹真（子丹）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen sent the general Wang Sheng, with Hao Zhao, to defend Chencang and repair its fortifications.",
+            "zht": "曹真派將軍王生與郝昭守衛陳倉、修治城防。",
+            "zhs": "曹真派将军王生与郝昭守卫陈仓、修治城防。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郝昭（伯道）",
+      "to": "諸葛亮（孔明）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Zhuge Liang besieged Chencang the following spring, but Hao Zhao's defences held.",
+            "zht": "次年春諸葛亮圍攻陳倉，郝昭嚴陣以待，諸葛亮未能攻克。",
+            "zhs": "次年春诸葛亮围攻陈仓，郝昭严阵以待，诸葛亮未能攻克。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹遵",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Zun was Cao Zhen's kinsman.",
+            "zht": "曹遵是曹真的同宗族人。",
+            "zhs": "曹遵是曹真的同宗族人。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹遵",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In his youth Cao Zhen served Cao Cao alongside his kinsman Cao Zun; after Cao Zun died young, Cao Zhen asked to divide his own fief to enfeoff Zun's son.",
+            "zht": "曹真年少時與同宗曹遵一同侍奉曹操；曹遵早逝後，曹真請求分出自己的封邑封給曹遵的兒子。",
+            "zhs": "曹真年少时与同宗曹遵一同侍奉曹操；曹遵早逝后，曹真请求分出自己的封邑封给曹遵的儿子。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "朱讚",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In his youth Cao Zhen served Cao Cao alongside his fellow townsman Zhu Zan; after Zhu Zan died young, Cao Zhen asked to divide his own fief to enfeoff Zan's son.",
+            "zht": "曹真年少時與同鄉朱讚一同侍奉曹操；朱讚早逝後，曹真請求分出自己的封邑封給朱讚的兒子。",
+            "zhs": "曹真年少时与同乡朱赞一同侍奉曹操；朱赞早逝后，曹真请求分出自己的封邑封给朱赞的儿子。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹爽（昭伯）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Zhen's son Cao Shuang succeeded him.",
+            "zht": "曹真之子曹爽繼承爵位。",
+            "zhs": "曹真之子曹爽继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹羲",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Xi as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹羲爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹羲为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹訓",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Xun as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹訓爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹训为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹則",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Ze as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹則爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹则为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹彥",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Yan as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹彥爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹彦为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹皚",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Ai as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹皚爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹皑为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹彬",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Zhen's younger brother Cao Bin was enfeoffed as a Marquis from part of Cao Zhen's fief.",
+            "zht": "曹真的弟弟曹彬從曹真的封邑中分得封戶，被封爲列侯。",
+            "zhs": "曹真的弟弟曹彬从曹真的封邑中分得封户，被封为列侯。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "曹真（子丹）",
+      "name": { "en": "Cao Zhen", "zht": "曹真", "zhs": "曹真" },
+      "courtesyName": { "en": "Zidan", "zht": "子丹", "zhs": "子丹" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "5th year of Taihe", "zht": "太和五年", "zhs": "太和五年" }, "year": 231 },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Qiao", "zht": "譙縣", "zhs": "谯县" }], "position": null, "passageId": "ws9f-p2" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Lingqiu", "zht": "靈丘", "zhs": "灵丘" }], "position": [{ "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }], "passageId": "ws9f-p2" },
+        { "era": { "en": "23rd - 24th year of Jian'an", "zht": "建安二十三 - 二十四年", "zhs": "建安二十三 - 二十四年" }, "year": "218 - 219", "age": null, "location": [{ "en": "Xiabian", "zht": "下辯", "zhs": "下辩" }, { "en": "Chang'an", "zht": "長安", "zhs": "长安" }, { "en": "Yangpingguan", "zht": "陽平", "zhs": "阳平" }, { "en": "Wudu", "zht": "武都", "zhs": "武都" }, { "en": "Chencang", "zht": "陳倉", "zhs": "陈仓" }], "position": [{ "en": "General of the Central Vanguard", "zht": "中堅將軍", "zhs": "中坚将军" }, { "en": "Commander of the Central Army", "zht": "中領軍", "zhs": "中领军" }, { "en": "Protector of the Army", "zht": "護軍", "zhs": "护军" }], "passageId": "ws9f-p2" },
+        { "era": { "en": "1st year of Huangchu", "zht": "黃初元年", "zhs": "黄初元年" }, "year": 220, "age": null, "location": [{ "en": "Jiuquan", "zht": "酒泉", "zhs": "酒泉" }], "position": [{ "en": "General Who Garrisons the West", "zht": "鎮西將軍", "zhs": "镇西将军" }, { "en": "Provisional Bearer of the Imperial Tally", "zht": "假節", "zhs": "假节" }, { "en": "Commander", "zht": "都督", "zhs": "都督" }, { "en": "Township Marquis", "zht": "鄉侯", "zhs": "乡侯" }], "passageId": "ws9f-p2" },
+        { "era": { "en": "3rd year of Huangchu", "zht": "黃初三年", "zhs": "黄初三年" }, "year": 221, "age": null, "location": [{ "en": "Niuzhu", "zht": "牛渚", "zhs": "牛渚" }, { "en": "Jiangling", "zht": "江陵", "zhs": "江陵" }], "position": [{ "en": "Grand General of the Upper Army", "zht": "上軍大將軍", "zhs": "上军大将军" }, { "en": "Commander", "zht": "都督", "zhs": "都督" }, { "en": "Provisional Bearer of the Imperial Tally", "zht": "假節", "zhs": "假节" }, { "en": "Grand General of the Central Army", "zht": "中軍大將軍", "zhs": "中军大将军" }, { "en": "Palace Aide", "zht": "給事中", "zhs": "给事中" }], "passageId": "ws9f-p2" },
+        { "era": { "en": "1st year of Taihe", "zht": "太和元年", "zhs": "太和元年" }, "year": 226, "age": null, "location": null, "position": [{ "en": "Grand General", "zht": "大將軍", "zhs": "大将军" }, { "en": "County Marquis", "zht": "縣侯", "zhs": "县侯" }], "passageId": "ws9f-p3" },
+        { "era": { "en": "2nd year of Taihe", "zht": "太和二年", "zhs": "太和二年" }, "year": 228, "age": null, "location": [{ "en": "Meiguo", "zht": "郿", "zhs": "郿" }, { "en": "Yuezhicheng", "zht": "月支城", "zhs": "月支城" }], "position": [{ "en": "Commander", "zht": "都督", "zhs": "都督" }], "passageId": "ws9f-p3" },
+        { "era": { "en": "4th year of Taihe", "zht": "太和四年", "zhs": "太和四年" }, "year": 230, "age": null, "location": [{ "en": "Luoyang", "zht": "洛陽", "zhs": "洛阳" }, { "en": "Chang'an", "zht": "長安", "zhs": "长安" }, { "en": "Ziwu Valley", "zht": "子午谷", "zhs": "子午谷" }], "position": [{ "en": "Grand Marshal", "zht": "大司馬", "zhs": "大司马" }], "passageId": "ws9f-p4" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws9f-p1",
+      "orig": {
+        "zht": "曹真字子丹，太祖族子也。太祖起兵，真父邵募徒衆，為州郡所殺。太祖哀真少孤，收養與諸子同，使與文帝共止。常獵，為虎所逐，顧射虎，應聲而倒。太祖壯其鷙勇，使將虎豹騎。",
+        "zhs": "曹真字子丹，太祖族子也。太祖起兵，真父邵募徒众，为州郡所杀。太祖哀真少孤，收养与诸子同，使与文帝共止。常猎，为虎所逐，顾射虎，应声而倒。太祖壮其鸷勇，使将虎豹骑。"
+      },
+      "vern": {
+        "zht": "曹真字子丹，是太祖同族兄弟的兒子。太祖起兵時，曹真的父親曹邵招募部衆，被州郡殺死。太祖憐憫曹真年幼喪父，收養了他，待他與自己的兒子們一樣，讓他與文帝同住。一次打獵時，他被老虎追趕，回頭射擊，老虎應聲而倒。太祖讚賞他的兇猛勇敢，讓他統率虎豹騎。",
+        "zhs": "曹真字子丹，是太祖同族兄弟的儿子。太祖起兵时，曹真的父亲曹邵招募部众，被州郡杀死。太祖怜悯曹真年幼丧父，收养了他，待他与自己的儿子们一样，让他与文帝同住。一次打猎时，他被老虎追赶，回头射击，老虎应声而倒。太祖赞赏他的凶猛勇敢，让他统率虎豹骑。"
+      },
+      "en": "Cao Zhen, courtesy name Zidan, was the son of a clansman of Cao Cao (posthumously honoured as Taizu, the Grand Progenitor). When Cao Cao raised troops, Cao Zhen's father, Cao Shao, recruited followers and was killed by the provincial and commandery authorities. Cao Cao took pity on Cao Zhen, who had lost his father at an early age, and adopted him. He treated him as one of his own sons and had him live with Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor). Once, while hunting, Cao Zhen was pursued by a tiger. He turned and loosed an arrow, and the tiger fell at the sound of his bowstring. Cao Cao admired his fierceness and courage and placed him in command of the Tiger and Leopard Cavalry.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：真本姓秦，養曹氏。或云其父伯南夙與太祖善。興平末，袁術部黨與太祖攻劫，太祖出，為寇所追，走入秦氏，伯南開門受之。寇問太祖所在，荅云：「我是也。」遂害之。由此太祖思其功，故變其姓。",
+          "zhs": "《魏略》曰：真本姓秦，养曹氏。或云其父伯南夙与太祖善。兴平末，袁术部党与太祖攻劫，太祖出，为寇所追，走入秦氏，伯南开门受之。寇问太祖所在，荅云：「我是也。」遂害之。由此太祖思其功，故变其姓。",
+          "vern": {
+            "zht": "《魏略》記載：曹真本來姓秦，被曹氏收養。有人說他的父親秦伯南一向與太祖交好。興平末年，袁術的部衆與太祖互相攻擊劫掠，太祖外出，被賊寇追趕，跑進秦氏家中，秦伯南開門接納了他。賊寇問太祖在哪裏，秦伯南迴答說：“我就是太祖。”於是賊寇殺害了秦伯南。太祖感念秦伯南的功勞，所以改其子真的姓氏。",
+            "zhs": "《魏略》记载：曹真本来姓秦，被曹氏收养。有人说他的父亲秦伯南一向与太祖交好。兴平末年，袁术的部众与太祖互相攻击劫掠，太祖外出，被贼寇追赶，跑进秦氏家中，秦伯南开门接纳了他。贼寇问太祖在哪里，秦伯南回答说：“我就是太祖。”于是贼寇杀害了秦伯南。太祖感念秦伯南的功劳，所以改其子真的姓氏。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Cao Zhen's original surname was Qin, and he was adopted by the Cao family. Some say that his father, Bonan, had long been on friendly terms with Cao Cao. At the end of the Xingping era, Yuan Shu's followers and Cao Cao attacked and plundered each other. Once, Cao Cao was out, and raiders pursued him. He fled to the Qin household, where Bonan opened the gate and took him in. When the raiders asked where Cao Cao was, Bonan replied, \"I am Cao Cao.\" The raiders then killed him. In gratitude for Bonan's service, Cao Cao changed Cao Zhen's surname."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：邵以忠篤有才智，為太祖所親信。初平中，太祖興義兵，邵募徒衆，從太祖周旋。時[[豫州|/zh-hant/maps/map-overall?admin=16]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]黃琬欲害太祖，太祖避之而邵獨遇害。",
+          "zhs": "《魏书》曰：邵以忠笃有才智，为太祖所亲信。初平中，太祖兴义兵，邵募徒众，从太祖周旋。时[[豫州|/zh-hans/maps/map-overall?admin=16]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]黄琬欲害太祖，太祖避之而邵独遇害。",
+          "vern": {
+            "zht": "《魏書》記載：曹邵因爲忠誠篤實、有才智，受到太祖親近信任。初平年間，太祖興義兵，曹邵招募部衆，跟隨太祖征戰。當時[[豫州|/zh-hant/maps/map-overall?admin=16]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]黃琬想要殺害太祖，太祖成功逃避，唯獨曹邵遇害。",
+            "zhs": "《魏书》记载：曹邵因为忠诚笃实、有才智，受到太祖亲近信任。初平年间，太祖兴义兵，曹邵招募部众，跟随太祖征战。当时[[豫州|/zh-hans/maps/map-overall?admin=16]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]黄琬想要杀害太祖，太祖成功逃避，唯独曹邵遇害。"
+          },
+          "en": "The Book of Wei states: Cao Shao's steadfast loyalty and intelligence earned him Cao Cao's trust and affection. During the Chuping era, when Cao Cao raised a righteous army, Cao Shao recruited followers and accompanied him on campaigns. At the time, Huang Wan, [[Inspector|/translations/officials/regional#provinces-014]] of [[Yu Province|/maps/map-overall?admin=16]], sought to kill Cao Cao. Cao Cao escaped, but Cao Shao was killed."
+        }
+      ]
+    },
+    {
+      "id": "ws9f-p2",
+      "orig": {
+        "zht": "討[[靈丘|/zh-hant/maps/map-overall?lat=39.44483391&lng=114.29041788&name=Lingqiu]]賊，拔之，封靈壽[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。以[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]將兵擊劉備別將於[[下辯|/zh-hant/maps/map-overall?lat=33.80983291&lng=105.64254196&name=下辨]]，破之，[[拜|/zh-hant/translations/officials#glossary-formally-appoint]][[中堅將軍|/zh-hant/translations/officials/military#four-direction--misc-132]]。從至[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，[[領|/zh-hant/translations/officials#glossary-concurrently-oversee]][[中領軍|/zh-hant/translations/officials/military#central-army-001]]。是時，夏侯淵沒於[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，太祖憂之。以真為征蜀[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]，督徐晃等破劉備別將高詳於[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。太祖自至[[漢中|/zh-hant/maps/map-overall?admin=110]]，拔出諸軍，使真至[[武都|/zh-hant/maps/map-overall?admin=111]]迎曹洪等還屯[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]。文帝即王位，以真為[[鎮西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-070]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]][[都督|/zh-hant/translations/officials/military#various-commanders-027]][[雍|/zh-hant/maps/map-overall?admin=14]]、[[涼州|/zh-hant/maps/map-overall?admin=5]]諸軍事。錄前後功，進封東[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。張進等反於[[酒泉|/zh-hant/maps/map-overall?admin=141]]，真遣費耀討破之，斬進等。黃初三年還京都，以真為[[上軍大將軍|/zh-hant/translations/officials/military#various-grand-generals-040]]，[[都督中外諸軍事|/zh-hant/translations/officials/military#various-commanders-026]]，[[假節鉞|/zh-hant/translations/officials#glossary-tally-yue]]。與夏侯尚等征孫權，擊[[牛渚|/zh-hant/maps/map-overall?lat=31.62661897&lng=118.48800336&name=Niuzhu]]屯，破之。[[轉|/zh-hant/translations/officials#glossary-transfer]][[拜|/zh-hant/translations/officials#glossary-formally-appoint]][[中軍大將軍|/zh-hant/translations/officials/military#various-grand-generals-039]]，加[[給事中|/zh-hant/translations/officials/departments#chancellery-018]]。",
+        "zhs": "讨[[灵丘|/zh-hans/maps/map-overall?lat=39.44483391&lng=114.29041788&name=Lingqiu]]贼，拔之，封灵寿[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。以[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]将兵击刘备别将于[[下辩|/zh-hans/maps/map-overall?lat=33.80983291&lng=105.64254196&name=下辨]]，破之，[[拜|/zh-hans/translations/officials#glossary-formally-appoint]][[中坚将军|/zh-hans/translations/officials/military#four-direction--misc-132]]。从至[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，[[领|/zh-hans/translations/officials#glossary-concurrently-oversee]][[中领军|/zh-hans/translations/officials/military#central-army-001]]。是时，夏侯渊没于[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，太祖忧之。以真为征蜀[[护军|/zh-hans/translations/officials/military#various-commanders-034]]，督徐晃等破刘备别将高详于[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]。太祖自至[[汉中|/zh-hans/maps/map-overall?admin=110]]，拔出诸军，使真至[[武都|/zh-hans/maps/map-overall?admin=111]]迎曹洪等还屯[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]。文帝即王位，以真为[[镇西将军|/zh-hans/translations/officials/military#conquering--garrisoning-070]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]][[都督|/zh-hans/translations/officials/military#various-commanders-027]][[雍|/zh-hans/maps/map-overall?admin=14]]、[[凉州|/zh-hans/maps/map-overall?admin=5]]诸军事。录前后功，进封东[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。张进等反于[[酒泉|/zh-hans/maps/map-overall?admin=141]]，真遣费耀讨破之，斩进等。黄初三年还京都，以真为[[上军大将军|/zh-hans/translations/officials/military#various-grand-generals-040]]，[[都督中外诸军事|/zh-hans/translations/officials/military#various-commanders-026]]，[[假节钺|/zh-hans/translations/officials#glossary-tally-yue]]。与夏侯尚等征孙权，击[[牛渚|/zh-hans/maps/map-overall?lat=31.62661897&lng=118.48800336&name=Niuzhu]]屯，破之。[[转|/zh-hans/translations/officials#glossary-transfer]][[拜|/zh-hans/translations/officials#glossary-formally-appoint]][[中军大将军|/zh-hans/translations/officials/military#various-grand-generals-039]]，加[[给事中|/zh-hans/translations/officials/departments#chancellery-018]]。"
+      },
+      "vern": {
+        "zht": "後來曹真討伐[[靈丘|/zh-hant/maps/map-overall?lat=39.44483391&lng=114.29041788&name=Lingqiu]]賊，攻克[[靈丘|/zh-hant/maps/map-overall?lat=39.44483391&lng=114.29041788&name=Lingqiu]]，被封爲靈壽[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。又以[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]身份率兵在[[下辯|/zh-hant/maps/map-overall?lat=33.80983291&lng=105.64254196&name=下辨]]攻擊劉備的別將，擊敗對方，被任命爲[[中堅將軍|/zh-hant/translations/officials/military#four-direction--misc-132]]。之後隨太祖到[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，兼任[[中領軍|/zh-hant/translations/officials/military#central-army-001]]。這時，夏侯淵在[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]戰死，太祖很是憂慮。於是太祖任命曹真爲徵蜀[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]，督率徐晃等在[[陽平|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]擊敗劉備的別將高詳。而後太祖親自到[[漢中|/zh-hant/maps/map-overall?admin=110]]，撤出各軍，並派曹真到[[武都|/zh-hant/maps/map-overall?admin=111]]迎接曹洪等人返回[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]屯駐。文帝即王位，任命曹真爲[[鎮西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-070]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，[[都督|/zh-hant/translations/officials/military#various-commanders-027]][[雍|/zh-hant/maps/map-overall?admin=14]]、[[涼州|/zh-hant/maps/map-overall?admin=5]]諸軍事，並記錄前後功勞，進封爲東[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。張進等人在[[酒泉|/zh-hant/maps/map-overall?admin=141]]反叛時，曹真派費耀討伐並擊破他們，斬殺張進等人。黃初三年，曹真回到京都，文帝任命他爲[[上軍大將軍|/zh-hant/translations/officials/military#various-grand-generals-040]]，[[都督中外諸軍事|/zh-hant/translations/officials/military#various-commanders-026]]，[[假節鉞|/zh-hant/translations/officials#glossary-tally-yue]]。曹真又與夏侯尚等征討孫權，攻擊[[牛渚|/zh-hant/maps/map-overall?lat=31.62661897&lng=118.48800336&name=Niuzhu]]屯，將其擊破。[[轉|/zh-hant/translations/officials#glossary-transfer]]任[[中軍大將軍|/zh-hant/translations/officials/military#various-grand-generals-039]]，加[[給事中|/zh-hant/translations/officials/departments#chancellery-018]]。",
+        "zhs": "后来曹真讨伐[[灵丘|/zh-hans/maps/map-overall?lat=39.44483391&lng=114.29041788&name=Lingqiu]]贼，攻克[[灵丘|/zh-hans/maps/map-overall?lat=39.44483391&lng=114.29041788&name=Lingqiu]]，被封为灵寿[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。又以[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]身份率兵在[[下辩|/zh-hans/maps/map-overall?lat=33.80983291&lng=105.64254196&name=下辨]]攻击刘备的别将，击败对方，被任命为[[中坚将军|/zh-hans/translations/officials/military#four-direction--misc-132]]。之后随太祖到[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，兼任[[中领军|/zh-hans/translations/officials/military#central-army-001]]。这时，夏侯渊在[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]战死，太祖很是忧虑。于是太祖任命曹真为征蜀[[护军|/zh-hans/translations/officials/military#various-commanders-034]]，督率徐晃等在[[阳平|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]击败刘备的别将高详。而后太祖亲自到[[汉中|/zh-hans/maps/map-overall?admin=110]]，撤出各军，并派曹真到[[武都|/zh-hans/maps/map-overall?admin=111]]迎接曹洪等人返回[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]屯驻。文帝即王位，任命曹真为[[镇西将军|/zh-hans/translations/officials/military#conquering--garrisoning-070]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，[[都督|/zh-hans/translations/officials/military#various-commanders-027]][[雍|/zh-hans/maps/map-overall?admin=14]]、[[凉州|/zh-hans/maps/map-overall?admin=5]]诸军事，并记录前后功劳，进封为东[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。张进等人在[[酒泉|/zh-hans/maps/map-overall?admin=141]]反叛时，曹真派费耀讨伐并击破他们，斩杀张进等人。黄初三年，曹真回到京都，文帝任命他为[[上军大将军|/zh-hans/translations/officials/military#various-grand-generals-040]]，[[都督中外诸军事|/zh-hans/translations/officials/military#various-commanders-026]]，[[假节钺|/zh-hans/translations/officials#glossary-tally-yue]]。曹真又与夏侯尚等征讨孙权，攻击[[牛渚|/zh-hans/maps/map-overall?lat=31.62661897&lng=118.48800336&name=Niuzhu]]屯，将其击破。[[转|/zh-hans/translations/officials#glossary-transfer]]任[[中军大将军|/zh-hans/translations/officials/military#various-grand-generals-039]]，加[[给事中|/zh-hans/translations/officials/departments#chancellery-018]]。"
+      },
+      "en": "Later, Cao Zhen attacked the rebels at [[Lingqiu|/maps/map-overall?lat=39.44483391&lng=114.29041788&name=Lingqiu]] and captured the town. He was enfeoffed as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Lingshou. As [[Adjunct General|/translations/officials/military#four-direction--misc-164]], he also led troops against one of Liu Bei's subordinate generals at [[Xiabian|/maps/map-overall?lat=33.80983291&lng=105.64254196&name=下辨]] and defeated him. He was then [[formally appointed|/translations/officials#glossary-formally-appoint]] [[General of the Central Vanguard|/translations/officials/military#four-direction--misc-132]]. Thereafter, he accompanied Cao Cao to [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]], where he [[concurrently served as|/translations/officials#glossary-concurrently-oversee]] [[Commander of the Central Army|/translations/officials/military#central-army-001]]. Around this time, Xiahou Yuan was killed in battle at [[Yangping|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]], and Cao Cao was greatly concerned. Cao Cao thus appointed Cao Zhen [[Protector of the Army|/translations/officials/military#various-commanders-034]] for the expedition against Shu. Cao Zhen commanded Xu Huang and others in defeating Liu Bei's subordinate general Gao Xiang at [[Yangping|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]. Cao Cao then went in person to [[Hanzhong|/maps/map-overall?admin=110]] and withdrew the armies. He also sent Cao Zhen to [[Wudu|/maps/map-overall?admin=111]] to meet Cao Hong and the others and bring them back to garrison at [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]. When Cao Pi became king, he appointed Cao Zhen [[General Who Garrisons the West|/translations/officials/military#conquering--garrisoning-070]], made him [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]], and named him [[Commander of Provincial Forces|/translations/officials/military#various-commanders-026]] in [[Yong|/maps/map-overall?admin=14]] and [[Liang|/maps/map-overall?admin=5]] provinces. In recognition of Cao Zhen's accumulated merits, Cao Pi advanced him to [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]] of Dong. When Zhang Jin and others rebelled in [[Jiuquan|/maps/map-overall?admin=141]], Cao Zhen sent Fei Yao against them. Fei Yao defeated them and beheaded Zhang Jin and the others. In the third year of Huangchu, Cao Zhen returned to the capital. He was appointed [[Grand General of the Upper Army|/translations/officials/military#various-grand-generals-040]] and [[Commander of All Forces|/translations/officials/military#various-commanders-027]], with provisional [[Imperial Tally and Yue|/translations/officials#glossary-tally-yue]]. Afterwards, he joined Xiahou Shang and others in the campaign against Sun Quan. They attacked and defeated the garrison at [[Niuzhu|/maps/map-overall?lat=31.62661897&lng=118.48800336&name=Niuzhu]]. Cao Zhen was then [[transferred|/translations/officials#glossary-transfer]] and [[formally appointed|/translations/officials#glossary-formally-appoint]] [[Grand General of the Central Army|/translations/officials/military#various-grand-generals-039]], with the additional office of [[Palace Aide|/translations/officials/departments#chancellery-018]]."
+    },
+    {
+      "id": "ws9f-p3",
+      "orig": {
+        "zht": "七年，文帝寢疾，真與陳羣、司馬宣王等受遺詔輔政。明帝即位，進封[[邵陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]，[[遷|/zh-hant/translations/officials#glossary-reassign]][[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]。諸葛亮圍祁山，[[南安|/zh-hant/maps/map-overall?admin=149]]、[[天水|/zh-hant/maps/map-overall?admin=148]]、[[安定|/zh-hant/maps/map-overall?admin=152]]三郡反應亮。帝遣真督諸軍軍[[郿|/zh-hant/maps/map-overall?lat=34.26350531&lng=107.81047146&name=Meiguo]]，遣張郃擊亮將馬謖，大破之。[[安定|/zh-hant/maps/map-overall?admin=152]]民楊條等略吏民保[[月支城|/zh-hant/maps/map-overall?lat=35.92712007&lng=107.34478513&name=Yuezhicheng]]，真進軍圍之。條謂其衆曰：「[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]自來，吾願早降耳。」遂自縛出。三郡皆平。真以亮懲於祁山，後出必從[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，乃使將軍郝昭、王生守[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，治其城。明年春，亮果圍[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，已有備而不能克。增邑，并前二千九百戶。",
+        "zhs": "七年，文帝寝疾，真与陈群、司马宣王等受遗诏辅政。明帝即位，进封[[邵陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]，[[迁|/zh-hans/translations/officials#glossary-reassign]][[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]。诸葛亮围祁山，[[南安|/zh-hans/maps/map-overall?admin=149]]、[[天水|/zh-hans/maps/map-overall?admin=148]]、[[安定|/zh-hans/maps/map-overall?admin=152]]三郡反应亮。帝遣真督诸军军[[郿|/zh-hans/maps/map-overall?lat=34.26350531&lng=107.81047146&name=Meiguo]]，遣张郃击亮将马谡，大破之。[[安定|/zh-hans/maps/map-overall?admin=152]]民杨条等略吏民保[[月支城|/zh-hans/maps/map-overall?lat=35.92712007&lng=107.34478513&name=Yuezhicheng]]，真进军围之。条谓其众曰：「[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]自来，吾愿早降耳。」遂自缚出。三郡皆平。真以亮惩于祁山，后出必从[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，乃使将军郝昭、王生守[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，治其城。明年春，亮果围[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，已有备而不能克。增邑，并前二千九百户。"
+      },
+      "vern": {
+        "zht": "七年，文帝臥病在牀，曹真與陳羣、司馬宣王等人接受遺詔輔佐朝政。明帝即位，曹真進封爲[[邵陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]，升任[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]。諸葛亮圍攻祁山，[[南安|/zh-hant/maps/map-overall?admin=149]]、[[天水|/zh-hant/maps/map-overall?admin=148]]、[[安定|/zh-hant/maps/map-overall?admin=152]]三郡反叛響應諸葛亮。明帝派曹真督率各軍駐紮在[[郿|/zh-hant/maps/map-overall?lat=34.26350531&lng=107.81047146&name=Meiguo]]，又派張郃攻擊諸葛亮的部將馬謖，大敗馬謖。[[安定|/zh-hant/maps/map-overall?admin=152]]百姓楊條等人裹挾官吏百姓，據守[[月支城|/zh-hant/maps/map-overall?lat=35.92712007&lng=107.34478513&name=Yuezhicheng]]，曹真進軍包圍了該城。楊條對部衆說：“[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]親自前來，我願意儘早出降！”於是把自己捆綁起來出城投降。三郡全部平定。曹真認爲諸葛亮在祁山受到教訓，以後再出兵必定從[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]來，於是派將軍郝昭、王生守衛[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，整修城池。第二年春天，諸葛亮果然圍攻[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，但因城中已有防備而未能攻克。朝廷增加曹真封邑，連同以前的共二千九百戶。",
+        "zhs": "七年，文帝卧病在床，曹真与陈群、司马宣王等人接受遗诏辅佐朝政。明帝即位，曹真进封为[[邵陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]，升任[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]。诸葛亮围攻祁山，[[南安|/zh-hans/maps/map-overall?admin=149]]、[[天水|/zh-hans/maps/map-overall?admin=148]]、[[安定|/zh-hans/maps/map-overall?admin=152]]三郡反叛响应诸葛亮。明帝派曹真督率各军驻扎在[[郿|/zh-hans/maps/map-overall?lat=34.26350531&lng=107.81047146&name=Meiguo]]，又派张郃攻击诸葛亮的部将马谡，大败马谡。[[安定|/zh-hans/maps/map-overall?admin=152]]百姓杨条等人裹挟官吏百姓，据守[[月支城|/zh-hans/maps/map-overall?lat=35.92712007&lng=107.34478513&name=Yuezhicheng]]，曹真进军包围了该城。杨条对部众说：“[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]亲自前来，我愿意尽早出降！”于是把自己捆绑起来出城投降。三郡全部平定。曹真认为诸葛亮在祁山受到教训，以后再出兵必定从[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]来，于是派将军郝昭、王生守卫[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，整修城池。第二年春天，诸葛亮果然围攻[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]，但因城中已有防备而未能攻克。朝廷增加曹真封邑，连同以前的共二千九百户。"
+      },
+      "en": "In the seventh year, Cao Pi lay ill. Cao Zhen, Chen Qun, Sima Yi (posthumously honoured as King Xuan, the Renowned King), and others received his testamentary edict to assist in governing. When Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) ascended the throne, Cao Zhen was advanced to [[County Marquis|/translations/officials#glossary-county-marquis]] of [[Shaoling|/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]] and [[promoted|/translations/officials#glossary-reassign]] to [[Grand General|/translations/officials/ministers#superior-excellency-064]]. When Zhuge Liang besieged Qishan, the three commanderies of [[Nan'an|/maps/map-overall?admin=149]], [[Tianshui|/maps/map-overall?admin=148]], and [[Anding|/maps/map-overall?admin=152]] rebelled in support of him. Cao Rui sent Cao Zhen to lead the armies to garrison at [[Meiguo|/maps/map-overall?lat=34.26350531&lng=107.81047146&name=Meiguo]]. He also dispatched Zhang He to attack Zhuge Liang's general Ma Su, whom Zhang He decisively defeated. Yang Tiao and others of [[Anding|/maps/map-overall?admin=152]] seized officials and commoners and held [[Yuezhicheng|/maps/map-overall?lat=35.92712007&lng=107.34478513&name=Yuezhicheng]]. Cao Zhen advanced and besieged the city. Yang Tiao told his followers, \"The [[Grand General|/translations/officials/ministers#superior-excellency-064]] has come in person. I only wish to surrender without delay.\" He then had himself bound and came out. All three commanderies were pacified. Cao Zhen judged that Zhuge Liang, chastened by his setback at Qishan, would certainly advance through [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]] on his next campaign. He therefore sent the generals Hao Zhao and Wang Sheng to defend [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]] and repair its fortifications. The following spring, Zhuge Liang did indeed besiege [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]], but its defences were ready, and he could not take it. Cao Zhen's fief was enlarged to a total of two thousand nine hundred households.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "",
+            "zhs": "",
+            "en": ""
+          },
+          "zht": "臣松之案：真父名邵。封邵陵侯[^1]，若非書誤，則事不可論。",
+          "zhs": "臣松之案：真父名邵。封邵陵侯[^1]，若非书误，则事不可论。",
+          "vern": {
+            "zht": "臣松之按：曹真的父親名叫邵。曹真被封爲邵陵侯[^1]，如果不是文字有誤，那麼這件事就無法解釋了。",
+            "zhs": "臣松之按：曹真的父亲名叫邵。曹真被封为邵陵侯[^1]，如果不是文字有误，那么这件事就无法解释了。"
+          },
+          "en": "I, your servant Pei Songzhi, note: Cao Zhen's father was named Shao (邵). Cao Zhen was made Marquis of Shaoling (邵陵).[^1] Unless this is a textual error, the matter is inexplicable.",
+          "footnotes": [
+            {
+              "n": 1,
+              "zht": "古人避父祖名諱，受封之地若與父名同字，於禮不合，故裴松之以為可疑。按三國志其他傳記，三國時此地應為[[召陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]，晉時方改稱邵陵。",
+              "zhs": "古人避父祖名讳，受封之地若与父名同字，于礼不合，故裴松之以为可疑。按三國志其他傳記，三國時此地應為[[召陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]，晉時方改称邵陵。",
+              "en": "It was customary to avoid the personal names of one's father and ancestors. A fief whose name shared a character with the father's name would breach this taboo, which is why Pei Songzhi found it doubtful. According to other biographies in the Records of the Three Kingdoms, during the Three Kingdoms period this place was [[Shaoling (召陵) |/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]], but in the Jin dynasty it was renamed to Shaoling (邵陵)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ws9f-p4",
+      "orig": {
+        "zht": "四年，朝洛陽，[[遷|/zh-hant/translations/officials#glossary-reassign]][[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]，賜劒履上殿，入朝不趨。真以「蜀連出侵邊境，宜遂伐之。數道並入，可大克也」。帝從其計。真當發西討，帝親臨送。真以八月發[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，從子午道南入。司馬宣王泝[[漢水|/zh-hant/maps/map-overall?water=52]]，當會[[南鄭|/zh-hant/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]。諸軍或從[[斜谷|/zh-hant/maps/map-overall?lat=34.07702592&lng=107.50056331&name=Ye%20Valley]]道，或從[[武威|/zh-hant/maps/map-overall?admin=138]]入。會大霖雨三十餘日，或棧道斷絕，詔真還軍。",
+        "zhs": "四年，朝洛阳，[[迁|/zh-hans/translations/officials#glossary-reassign]][[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]，赐劒履上殿，入朝不趋。真以「蜀连出侵边境，宜遂伐之。数道并入，可大克也」。帝从其计。真当发西讨，帝亲临送。真以八月发[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，从子午道南入。司马宣王溯[[汉水|/zh-hans/maps/map-overall?water=52]]，当会[[南郑|/zh-hans/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]。诸军或从[[斜谷|/zh-hans/maps/map-overall?lat=34.07702592&lng=107.50056331&name=Ye%20Valley]]道，或从[[武威|/zh-hans/maps/map-overall?admin=138]]入。会大霖雨三十余日，或栈道断绝，诏真还军。"
+      },
+      "vern": {
+        "zht": "四年，曹真到洛陽朝見，升任[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]，皇帝賜給他帶劍穿鞋上殿、入朝不必小步快走的禮遇。曹真認爲：“蜀國接連出兵侵犯邊境，應當就此討伐它；分幾路一起推進，可以大獲全勝。”皇帝聽從了他的計策。曹真將要出發西征時，皇帝親自到場送行。曹真在八月從[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]出發，由子午道向南進入。司馬宣王逆[[漢水|/zh-hant/maps/map-overall?water=52]]而上，預定在[[南鄭|/zh-hant/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]會合。其他各軍有的從[[斜谷|/zh-hant/maps/map-overall?lat=34.07702592&lng=107.50056331&name=Ye%20Valley]]道進軍，有的從[[武威|/zh-hant/maps/map-overall?admin=138]]進入。適逢大雨連下三十多天，有的棧道中斷，皇帝下詔命曹真回軍。",
+        "zhs": "四年，曹真到洛阳朝见，升任[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]，皇帝赐给他带剑穿鞋上殿、入朝不必小步快走的礼遇。曹真认为：“蜀国接连出兵侵犯边境，应当就此讨伐它；分几路一起推进，可以大获全胜。”皇帝听从了他的计策。曹真将要出发西征时，皇帝亲自到场送行。曹真在八月从[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]出发，由子午道向南进入。司马宣王逆[[汉水|/zh-hans/maps/map-overall?water=52]]而上，预定在[[南郑|/zh-hans/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]会合。其他各军有的从[[斜谷|/zh-hans/maps/map-overall?lat=34.07702592&lng=107.50056331&name=Ye%20Valley]]道进军，有的从[[武威|/zh-hans/maps/map-overall?admin=138]]进入。适逢大雨连下三十多天，有的栈道中断，皇帝下诏命曹真回军。"
+      },
+      "en": "In the fourth year, Cao Zhen attended court at Luoyang and was [[promoted|/translations/officials#glossary-reassign]] to [[Grand Marshal|/translations/officials/ministers#superior-excellency-056]]. He was granted the privileges of entering the palace hall with his sword at his side and his shoes on, and of attending court without having to quicken his step. Cao Zhen argued, \"Shu has repeatedly invaded the frontier. We should therefore campaign against it. By advancing along several routes at once, we can win a decisive victory.\" The emperor accepted his plan and came in person to see him off as he prepared to march west. In the eighth month, Cao Zhen set out from [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]] and advanced south along the Ziwu Road. Sima Yi proceeded upstream along the [[Han River|/maps/map-overall?water=52]] and was to rendezvous at [[Nanzheng|/maps/map-overall?lat=33.07615412&lng=107.04307789&name=Nanzheng]]. The other armies advanced either along the [[Ye Valley|/maps/map-overall?lat=34.07702592&lng=107.50056331&name=Ye%20Valley]] road or through [[Wuwei|/maps/map-overall?admin=138]]. Heavy rain then fell for more than thirty days, cutting off sections of the plank roads. The emperor issued an edict ordering Cao Zhen to withdraw his army."
+    },
+    {
+      "id": "ws9f-p5",
+      "orig": {
+        "zht": "真少與宗人曹遵、鄉人朱讚並事太祖。遵、讚早亡，真愍之，乞分所食邑封遵、讚子。詔曰：「[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]有叔向撫孤之仁，篤晏平乆要之分。君子成人之羙，聽分真邑賜遵、讚子爵[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]，各百戶。」真每征行，與將士同勞苦，軍賞不足，輒以家財班賜，士卒皆願為用。真病還洛陽，帝自幸其第省疾。真薨，謚曰元侯。子爽嗣。帝追思真功，詔曰：「[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]蹈履忠節，佐命二祖，內不恃親戚之寵，外不驕白屋之士，可謂能持盈守位，勞謙其德者也。其悉封真五子羲、訓、則、彥、皚皆為[[列侯|/zh-hant/translations/officials#glossary-marquis]]。」初，文帝分真邑二百戶，封真弟彬為[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "真少与宗人曹遵、乡人朱赞并事太祖。遵、赞早亡，真愍之，乞分所食邑封遵、赞子。诏曰：「[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]有叔向抚孤之仁，笃晏平乆要之分。君子成人之羙，听分真邑赐遵、赞子爵[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]，各百户。」真每征行，与将士同劳苦，军赏不足，辄以家财班赐，士卒皆愿为用。真病还洛阳，帝自幸其第省疾。真薨，谥曰元侯。子爽嗣。帝追思真功，诏曰：「[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]蹈履忠节，佐命二祖，内不恃亲戚之宠，外不骄白屋之士，可谓能持盈守位，劳谦其德者也。其悉封真五子羲、训、则、彦、皑皆为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。」初，文帝分真邑二百户，封真弟彬为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "vern": {
+        "zht": "曹真年輕時與同宗曹遵、同鄉朱贊一起侍奉太祖。曹遵、朱贊去世得早，曹真憐憫他們，請求從自己的食邑中分出一部分封給曹遵、朱讚的兒子。明帝下詔說：“[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]有叔向撫養孤兒那樣的仁德，篤守晏平那樣不忘舊約的情分。君子成人之美，准許分出曹真的封邑，賜給曹遵、朱讚的兒子[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]的爵位，各一百戶。”曹真每次出征，都與將士同勞苦；軍中賞賜不足，總是拿自家的財物分賜給將士，士兵都願爲他效力。曹真因病回到洛陽，明帝親自到他府第探望病情。曹真去世後，諡號爲元侯，兒子曹爽繼承爵位。明帝追念曹真的功勞，下詔說：“[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]履行忠節，輔佐二祖，對內不倚仗身爲親戚所得的寵遇，對外不傲視出身寒微的士人，可以說是能夠保守盈滿、安守祿位，有功勞而謙遜、保持德行的人。將曹真的五個兒子曹羲、曹訓、曹則、曹彥、曹皚全都封爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]。”當初，文帝從曹真的封邑中分出二百戶，封曹真的弟弟曹彬爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "曹真年轻时与同宗曹遵、同乡朱赞一起侍奉太祖。曹遵、朱赞去世得早，曹真怜悯他们，请求从自己的食邑中分出一部分封给曹遵、朱赞的儿子。明帝下诏说：“[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]有叔向抚养孤儿那样的仁德，笃守晏平那样不忘旧约的情分。君子成人之美，准许分出曹真的封邑，赐给曹遵、朱赞的儿子[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]的爵位，各一百户。”曹真每次出征，都与将士同劳苦；军中赏赐不足，总是拿自家的财物分赐给将士，士兵都愿为他效力。曹真因病回到洛阳，明帝亲自到他府第探望病情。曹真去世后，谥号为元侯，儿子曹爽继承爵位。明帝追念曹真的功劳，下诏说：“[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]履行忠节，辅佐二祖，对内不倚仗身为亲戚所得的宠遇，对外不傲视出身寒微的士人，可以说是能够保守盈满、安守禄位，有功劳而谦逊、保持德行的人。将曹真的五个儿子曹羲、曹训、曹则、曹彦、曹皑全都封为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。”当初，文帝从曹真的封邑中分出二百户，封曹真的弟弟曹彬为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "en": "In his youth, Cao Zhen served Cao Cao alongside his kinsman Cao Zun and his fellow townsman Zhu Zan. Cao Zun and Zhu Zan both died early. Out of compassion for them, Cao Zhen requested that part of his own fief be allotted to their sons. An edict declared: \"The [[Grand Marshal|/translations/officials/ministers#superior-excellency-056]] shows the benevolence of Shuxiang in caring for orphans and the constancy of Yan Ping in remaining true to old bonds. A gentleman helps others bring good intentions to fulfilment. Cao Zhen’s request was therefore granted, and part of his fief was divided to enfeoff the sons of Cao Zun and Zhu Zan as [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]], each with one hundred households.\" On every campaign, Cao Zhen shared the hardships of his officers and men. Whenever funds for military rewards fell short, he distributed his own wealth among them. All his soldiers were willing to serve him. When Cao Zhen fell ill and returned to Luoyang, the emperor visited his residence in person to enquire after his health. After Cao Zhen died, he was given the posthumous title Marquis Yuan, the Exalted Marquis. His son Cao Shuang succeeded him. Recalling Cao Zhen's achievements, the emperor issued an edict: \"The [[Grand Marshal|/translations/officials/ministers#superior-excellency-056]] upheld loyalty and integrity, assisting the two founders in establishing their rule. At court, he did not presume upon the favour he enjoyed as an imperial kinsman; outside it, he did not look down upon men from humble homes. He may truly be said to have upheld his prosperity and position, remaining modest despite his achievements. Let all five of Cao Zhen's sons, Xi, Xun, Ze, Yan and Ai, be enfeoffed as [[Marquises|/translations/officials#glossary-marquis]].\" Earlier, Cao Pi had set aside two hundred households from Cao Zhen's fief and enfeoffed Cao Zhen's younger brother Cao Bin as a [[Marquis|/translations/officials#glossary-marquis]]."
+    }
+  ]
+}

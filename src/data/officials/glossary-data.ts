@@ -11,15 +11,125 @@ export interface GlossaryTerm {
 
 export const glossaryTerms: GlossaryTerm[] = [
   {
+    id: 'formally-appoint',
+    term: { en: 'Formally Appoint', zht: '拜', zhs: '拜' },
+    pinyin: 'bài',
+    definition: {
+      en: 'A formal appointment conferred by the court, usually to a high or important office, accompanied by solemn ceremony as a mark of esteem.',
+      zht: '朝廷正式授予官職。通常為授予高官或要職，伴有隆重的禮儀，以表敬重。',
+      zhs: '朝廷正式授予官职。通常为授予高官或要职，伴有隆重的礼仪，以表敬重。',
+    },
+    seeAlso: ['reassign', 'reinstate'],
+  },
+  {
+    id: 'reassign',
+    term: { en: 'Reassign', zht: '遷', zhs: '迁' },
+    pinyin: 'qiān',
+    definition: {
+      en: 'To move from one office to another. A promotion was termed "moving right" (右遷), and a demotion "moving left" (左遷).',
+      zht: '由一官調任另一官。通常升職稱「右遷」；降職則稱「左遷」。',
+      zhs: '由一官调任另一官。通常升职称「右迁」；降职则称「左迁」。',
+    },
+    seeAlso: ['transfer', 'formally-appoint'],
+  },
+  {
+    id: 'transfer',
+    term: { en: 'Transfer', zht: '轉', zhs: '转' },
+    pinyin: 'zhuǎn',
+    definition: {
+      en: 'To change to another office, usually a lateral move of similar rank.',
+      zht: '改任另一官職，多為平調。',
+      zhs: '改任另一官职，多为平调。',
+    },
+    seeAlso: ['reassign'],
+  },
+  {
     id: 'acting',
-    term: { en: 'Acting', zht: '假', zhs: '假' },
+    term: { en: 'Acting', zht: '行', zhs: '行' },
+    pinyin: 'xíng',
+    definition: {
+      en: 'To temporarily exercise the authority of an office, usually an official of lower substantive rank standing in for a higher post. The emphasis is on carrying out the office\'s duties, e.g. Acting General Who Conquers the South (行征南將軍).',
+      zht: '暫時以某官職權行事。多以低級本官代理高官職務。注重職務、事務，如行征南將軍。',
+      zhs: '暂时以某官职权行事。多以低级本官代理高官职务。注重职务、事务，如行征南将军。',
+    },
+    seeAlso: ['interim', 'concurrently-oversee', 'deputise', 'provisional'],
+  },
+  {
+    id: 'concurrently-oversee',
+    term: { en: 'Concurrently Oversee', zht: '領', zhs: '领' },
+    pinyin: 'lǐng',
+    definition: {
+      en: 'To take charge of another office in addition to one\'s own, usually an official of higher substantive rank overseeing the duties of a lower post, e.g. Grand General, Overseeing Imperial Secretariat Affairs (大將軍領尚書事).',
+      zht: '於本職之外兼掌另一職。多以高級本官代理低官職務，如大將軍領尚書事。',
+      zhs: '于本职之外兼掌另一职。多以高级本官代理低官职务，如大将军领尚书事。',
+    },
+    seeAlso: ['acting', 'interim'],
+  },
+  {
+    id: 'provisional',
+    term: { en: 'Provisional', zht: '假', zhs: '假' },
     pinyin: 'jiǎ',
     definition: {
-      en: 'A temporary or provisional appointment to an office or title.',
-      zht: '臨時代理或暫攝的權宜任命。',
-      zhs: '临时代理或暂摄的权宜任命。',
+      en: 'Authority or office granted on a temporary basis, revoked once the matter at hand was concluded.',
+      zht: '指代臨時授予的權力、官職。事情結束即撤銷。',
+      zhs: '指代临时授予的权力、官职。事情结束即撤销。',
     },
-    seeAlso: ['provisional-imperial-tally'],
+    seeAlso: ['provisional-imperial-tally', 'acting', 'deputise'],
+  },
+  {
+    id: 'interim',
+    term: { en: 'Interim', zht: '守', zhs: '守' },
+    pinyin: 'shǒu',
+    definition: {
+      en: 'Similar to Acting: an official of lower substantive rank temporarily occupying a higher post, but with the emphasis on the post itself rather than its duties. It can also denote a probationary appointment (試守).',
+      zht: '與行相似，以低級本官代理高官，暫居其位，但更注重官位本身。也有試用之意，即「試守」。',
+      zhs: '与行相似，以低级本官代理高官，暂居其位，但更注重官位本身。也有试用之意，即「试守」。',
+    },
+    seeAlso: ['acting', 'deputise'],
+  },
+  {
+    id: 'deputise',
+    term: { en: 'Deputise', zht: '署 / 攝', zhs: '署 / 摄' },
+    pinyin: 'shǔ / shè',
+    definition: {
+      en: 'A temporary appointment to handle a specific matter or the duties of a particular office.',
+      zht: '臨時任命，暫時代理某特定事務，或某官職務。',
+      zhs: '临时任命，暂时代理某特定事务，或某官职务。',
+    },
+    seeAlso: ['acting', 'interim', 'provisional'],
+  },
+  {
+    id: 'summon',
+    term: { en: 'Summon', zht: '徵', zhs: '征' },
+    pinyin: 'zhēng',
+    definition: {
+      en: 'To be summoned into service by the emperor or the central court. Sometimes also used to summon external officials to an office in the central court.',
+      zht: '由皇帝或中央朝廷徵召入仕。也可用於徵召外臣入朝爲官。',
+      zhs: '由皇帝或中央朝廷征召入仕。也可用于征召外臣入朝为官。',
+    },
+    seeAlso: ['recruit', 'filial-incorrupt', 'flourishing-talent'],
+  },
+  {
+    id: 'recruit',
+    term: { en: 'Recruit', zht: '辟', zhs: '辟' },
+    pinyin: 'bì',
+    definition: {
+      en: 'To be recruited into service by a high-ranking official.',
+      zht: '由高官招聘入職。',
+      zhs: '由高官招聘入职。',
+    },
+    seeAlso: ['summon', 'filial-incorrupt', 'flourishing-talent'],
+  },
+  {
+    id: 'reinstate',
+    term: { en: 'Reinstate', zht: '起', zhs: '起' },
+    pinyin: 'qǐ',
+    definition: {
+      en: 'To be appointed to office again after being out of office, dismissed, in mourning, or retired.',
+      zht: '從無官、免官、服喪或退居狀態重新任官。',
+      zhs: '从无官、免官、服丧或退居状态重新任官。',
+    },
+    seeAlso: ['formally-appoint'],
   },
   {
     id: 'envoy-imperial-tally',
@@ -52,7 +162,7 @@ export const glossaryTerms: GlossaryTerm[] = [
       zht: '節是皇帝授予的權力憑證，持節者可代天子行事。持節使者中，以假節位最低。',
       zhs: '节是皇帝授予的权力凭证，持节者可代天子行事。持节使者中，以假节位最低。',
     },
-    seeAlso: ['envoy-imperial-tally', 'bearer-imperial-tally', 'acting'],
+    seeAlso: ['envoy-imperial-tally', 'bearer-imperial-tally', 'provisional'],
   },
   {
     id: 'grade',
@@ -326,5 +436,27 @@ export const glossaryTerms: GlossaryTerm[] = [
       zhs: '三辅为汉代负责治理京畿长安附近的三个长官的合称，即京兆尹、左冯翊、右扶风。后演变为指代长安一带。',
     },
     seeAlso: ['inside-pass','within-pass','west-pass']
+  },
+  {
+    id: 'west-river',
+    term: { en: 'West of the River / Hexi / Heyou', zht: '河西 / 河右', zhs: '河西 / 河右' },
+    pinyin: 'héxī / héyòu',
+    definition: {
+      en: 'The West of the River, or Hexi / Heyou, originally referred to the region west of the north-south stretch of the Yellow River between Yong and Bing provinces. More broadly, however, it could also denote what is now known as the Hexi Corridor: the vast northwestern region extending across Yong and Liang provinces as far as Yumenguan / Yumen Pass.',
+      zht: '河西/河右原指雍州、并州一帶南北走向的黃河以西地區，廣義上也泛指河西走廊，即雍涼至玉門關的西北一帶。',
+      zhs: '河西/河右原指雍州、并州一带南北走向的黄河以西地区，广义上也泛指河西走廊，即雍凉至玉门关的西北一带。',
+    },
+    seeAlso: ['inside-pass','within-pass','west-pass','outside-pass','east-pass']
+  },
+  {
+    id: 'west-long',
+    term: { en: 'West of the Long Mountains / Longxi / Longyou', zht: '隴西 / 隴右', zhs: '陇西 / 陇右' },
+    pinyin: 'lǒngxī / lǒngyòu',
+    definition: {
+      en: 'The West of the Long Mountains, or Longxi/Longyou, refers to the region west of the Long Mountains and east of the Yellow River. During the Three Kingdoms period, it corresponded roughly to the commanderies of Longxi, Nan\'an, Tianshui, and Guangwei, and at times also included Anding.',
+      zht: '隴西/隴右指的是隴山以西，黃河以東的區域。大體為此時的隴西、南安、天水、廣魏四郡，有時也包含安定。',
+      zhs: '陇西/陇右指的是陇山以西，黄河以东的区域。大体为此时的陇西、南安、天水、广魏四郡，有时也包含安定。',
+    },
+    seeAlso: ['inside-pass','within-pass','west-pass','outside-pass','east-pass']
   },
 ];

@@ -280,50 +280,125 @@
     {
       "from": "典韋",
       "to": "李永",
-      "type": "killer-victim",
-      "passageId": "ws18g-p2"
-    },
-    {
-      "from": "典韋",
-      "to": "李永妻",
-      "type": "killer-victim",
-      "passageId": "ws18g-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p2",
+          "text": {
+            "en": "Avenging a feud on behalf of the Liu family, Dian Wei killed Li Yong, a former county chief, in his own home.",
+            "zht": "典韋為劉氏報仇，闖入李永家中將他殺死。李永曾任長。",
+            "zhs": "典韦为刘氏报仇，闯入李永家中将他杀死。李永曾任长。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
       "to": "趙寵",
-      "type": "subordinate-superior",
-      "passageId": "ws18g-p3"
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p3",
+          "text": {
+            "en": "Dian Wei served as a soldier under Major Zhao Chong, who marvelled at his strength after he single-handedly raised the camp's massive gate banner.",
+            "zht": "典韋在司馬趙寵麾下為士，曾獨力舉起營中沉重的牙門旗，趙寵驚異於他的才力。",
+            "zhs": "典韦在司马赵宠麾下为士，曾独力举起营中沉重的牙门旗，赵宠惊异于他的才力。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
-      "to": "夏侯惇",
-      "type": "subordinate-superior",
-      "passageId": "ws18g-p3"
+      "to": "夏侯惇（元讓）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18g-p3",
+          "text": {
+            "en": "Later attached to Xiahou Dun, Dian Wei beheaded numerous enemies and was appointed Major for his merit.",
+            "zht": "典韋後隸屬夏侯惇，屢立斬首之功，因功拜為司馬。",
+            "zhs": "典韦后隶属夏侯惇，屡立斩首之功，因功拜为司马。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
-      "to": "曹操",
-      "type": "subordinate-superior",
-      "passageId": "ws18g-p6"
-    },
-    {
-      "from": "典韋",
-      "to": "曹操",
-      "type": "bodyguard-protected",
-      "passageId": "ws18g-p7"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p6",
+          "text": {
+            "en": "Cao Cao appointed Dian Wei Commandant of his personal guard, and later promoted him to Colonel.",
+            "zht": "曹操拜典韋為都尉，統領親兵，後又升任校尉。",
+            "zhs": "曹操拜典韦为都尉，统领亲兵，后又升任校尉。"
+          },
+          "title": {
+            "en": "Commandant, Colonel",
+            "zht": "都尉、校尉",
+            "zhs": "都尉、校尉"
+          }
+        },
+        {
+          "passageId": "ws18g-p7",
+          "text": {
+            "en": "At a banquet for the surrendered Zhang Xiu, Dian Wei stood behind Cao Cao brandishing a great axe, so intimidating Zhang Xiu's officers that none dared look up.",
+            "zht": "張繡歸降的宴席上，典韋持大斧立於曹操身後，威懾張繡諸將，無人敢仰視。",
+            "zhs": "张绣归降的宴席上，典韦持大斧立于曹操身后，威慑张绣诸将，无人敢仰视。"
+          }
+        },
+        {
+          "passageId": "ws18g-p8",
+          "text": {
+            "en": "When Zhang Xiu's rebels attacked the camp, Dian Wei held the gate alone until his wounds overcame him; hearing of his death, Cao Cao wept and personally mourned him.",
+            "zht": "張繡叛軍襲營時，典韋獨力守住營門直至傷重而死；曹操聞訊痛哭，親自臨哭祭奠。",
+            "zhs": "张绣叛军袭营时，典韦独力守住营门直至伤重而死；曹操闻讯痛哭，亲自临哭祭奠。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
       "to": "張繡",
-      "type": "killer-victim",
-      "passageId": "ws18g-p8"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18g-p8",
+          "text": {
+            "en": "When Zhang Xiu rebelled and attacked Cao Cao's camp, Dian Wei fought his rebels to the death, killing several before he himself was overwhelmed.",
+            "zht": "張繡反叛襲營，典韋與其叛軍死戰，殺傷數人，終因傷重不敵而死。",
+            "zhs": "张绣反叛袭营，典韦与其叛军死战，杀伤数人，终因伤重不敌而死。"
+          }
+        }
+      ]
     },
     {
       "from": "典韋",
       "to": "典滿",
-      "type": "father-son",
-      "passageId": "ws18g-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18g-p8",
+          "text": {
+            "en": "Dian Man was Dian Wei's son.",
+            "zht": "典滿是典韋之子。",
+            "zhs": "典满是典韦之子。"
+          }
+        }
+      ]
     }
   ]
 }

@@ -95,8 +95,8 @@
     },
     {
       "kind": "town",
-      "lat": 36.29000818,
-      "lng": 114.3635467,
+      "lat": 35.28689031,
+      "lng": 113.79111676,
       "name": "Huojia",
       "persons": [
         "樂進（文謙）"
@@ -104,8 +104,8 @@
     },
     {
       "kind": "town",
-      "lat": 35.28689031,
-      "lng": 113.79111676,
+      "lat": 34.81631685,
+      "lng": 114.04675874,
       "name": "Guandu",
       "persons": [
         "樂進（文謙）"
@@ -113,8 +113,8 @@
     },
     {
       "kind": "town",
-      "lat": 35.68541005,
-      "lng": 114.60606513,
+      "lat": 35.68354088,
+      "lng": 114.58305267,
       "name": "Liyang",
       "persons": [
         "樂進（文謙）"
@@ -123,6 +123,15 @@
     {
       "kind": "admin",
       "id": "47",
+      "persons": [
+        "樂進（文謙）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.29000818,
+      "lng": 114.3635467,
+      "name": "Ye",
       "persons": [
         "樂進（文謙）"
       ]
@@ -277,7 +286,7 @@
               "zhs": "帐下吏"
             },
             {
-              "en": "Acting Major",
+              "en": "Provisional Major",
               "zht": "假司馬",
               "zhs": "假司马"
             },
@@ -302,7 +311,7 @@
               "url": null
             },
             {
-              "en": "Acting Major",
+              "en": "Provisional Major",
               "zht": "假司馬",
               "zhs": "假司马",
               "url": "/translations/officials/regional#commanderies-044"
@@ -473,14 +482,14 @@
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 36.29000818,
-              "lng": 114.3635467,
+              "lat": 35.28689031,
+              "lng": 113.79111676,
               "name": "Huojia"
             },
             {
               "kind": "town",
-              "lat": 35.28689031,
-              "lng": 113.79111676,
+              "lat": 34.81631685,
+              "lng": 114.04675874,
               "name": "Guandu"
             }
           ],
@@ -522,16 +531,16 @@
             }
           ],
           "position": {
-            "en": "General of the Mobile Forces",
-            "zht": "游擊將軍",
-            "zhs": "游击将军"
+            "en": "Acting General of the Mobile Forces",
+            "zht": "行游擊將軍",
+            "zhs": "行游击将军"
           },
           "passageId": "ws17b-p2",
           "resolvedLocations": [
             {
               "kind": "town",
-              "lat": 35.68541005,
-              "lng": 114.60606513,
+              "lat": 35.68354088,
+              "lng": 114.58305267,
               "name": "Liyang"
             },
             {
@@ -559,9 +568,9 @@
           ],
           "positionLinks": [
             {
-              "en": "General of the Mobile Forces",
-              "zht": "游擊將軍",
-              "zhs": "游击将军",
+              "en": "Acting General of the Mobile Forces",
+              "zht": "行游擊將軍",
+              "zhs": "行游击将军",
               "url": "/translations/officials/military#four-direction--misc-134"
             }
           ]
@@ -755,7 +764,7 @@
               "en": " Provisional Bearer of the Imperial Tally",
               "zht": "假節",
               "zhs": "假节",
-              "url": "/translations/officials#glossary-acting"
+              "url": "/translations/officials#glossary-provisional"
             },
             {
               "en": "Right General",
@@ -771,27 +780,182 @@
   "relationships": [
     {
       "from": "樂進（文謙）",
-      "to": "太祖",
-      "type": "lord-vassal",
-      "passageId": "ws17b-p1"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17b-p1",
+          "text": {
+            "en": "Bold and valiant despite his short stature, Yue Jin entered Cao Cao's service as a clerk Under the Tent; sent to recruit troops, he raised over a thousand men and was made Acting Major and Commandant Who Breaks Formations.",
+            "zht": "樂進雖然身材短小，卻憑着勇敢無畏投身太祖麾下，任帳下吏；奉命招募士兵得千餘人，升任軍中司馬之副、陷陣都尉。",
+            "zhs": "乐进虽然身材短小，却凭着勇敢无畏投身太祖麾下，任帐下吏；奉命招募士兵得千余人，升任军中司马之副、陷阵都尉。"
+          }
+        },
+        {
+          "passageId": "ws17b-p3",
+          "text": {
+            "en": "Cao Cao memorialised the emperor praising Yue Jin's martial prowess, loyalty, and leadership in battle, and appointed him General Who Breaks the Charge.",
+            "zht": "曹操上表漢帝，稱讚樂進武力弘毅、忠信守節、每戰身先士卒，任命他爲折衝將軍。",
+            "zhs": "曹操上表汉帝，称赞乐进武力弘毅、忠信守节、每战身先士卒，任命他为折冲将军。"
+          },
+          "title": {
+            "en": "General Who Breaks the Charge",
+            "zht": "折衝將軍",
+            "zhs": "折冲将军"
+          }
+        },
+        {
+          "passageId": "ws17b-p5",
+          "text": {
+            "en": "For his repeated merit, Cao Cao granted Yue Jin the Imperial Tally, increased his fief, enfeoffed one of his sons as a marquis, and promoted him to General of the Right.",
+            "zht": "因樂進屢立戰功，太祖授予他節杖，增加封邑，封他一子爲列侯，並升任他爲右將軍。",
+            "zhs": "因乐进屡立战功，太祖授予他节杖，增加封邑，封他一子为列侯，并升任他为右将军。"
+          },
+          "title": {
+            "en": "General of the Right",
+            "zht": "右將軍",
+            "zhs": "右将军"
+          }
+        }
+      ]
     },
     {
       "from": "樂進（文謙）",
       "to": "樂綝",
-      "type": "father-son",
-      "passageId": "ws17b-p6"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17b-p6",
+          "text": {
+            "en": "Yue Jin's son Yue Chen, resolute like his father, succeeded him and rose to become Inspector of Yang Province.",
+            "zht": "樂進之子樂綝繼承爵位，果敢剛毅有父風，官至揚州刺史。",
+            "zhs": "乐进之子乐綝继承爵位，果敢刚毅有父风，官至扬州刺史。"
+          }
+        }
+      ]
     },
     {
       "from": "樂綝",
       "to": "樂肇",
-      "type": "father-son",
-      "passageId": "ws17b-p6"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17b-p6",
+          "text": {
+            "en": "After Yue Chen was killed in Zhuge Dan's rebellion, his son Yue Zhao succeeded him.",
+            "zht": "樂綝在諸葛誕叛亂中被殺後，其子樂肇繼承爵位。",
+            "zhs": "乐綝在诸葛诞叛乱中被杀后，其子乐肇继承爵位。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "樂進",
-      "type": "commander-subordinate",
-      "passageId": "ws17b-p3"
+      "from": "樂進（文謙）",
+      "to": "于禁（文則）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17b-p3",
+          "text": {
+            "en": "Cao Cao's memorial to the emperor commended Yue Jin together with Yu Jin and Zhang Liao for their shared martial prowess, loyalty, and battlefield leadership, and all three were honoured with new titles.",
+            "zht": "曹操上表漢帝，將樂進與于禁、張遼一併稱讚爲武力弘毅、忠信守節之將，三人同時獲授新職。",
+            "zhs": "曹操上表汉帝，将乐进与于禁、张辽一并称赞为武力弘毅、忠信守节之将，三人同时获授新职。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "樂進（文謙）",
+      "to": "高幹（元才）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17b-p4",
+          "text": {
+            "en": "Sent to campaign separately against Gao Gan, Yue Jin circled behind his lines and fought him in successive engagements at Huguan, though the stronghold fell only once Cao Cao came in person.",
+            "zht": "樂進奉命征討高幹，迂迴至其後方，在壺關與其連番交戰，然壺關直至太祖親征才被攻破。",
+            "zhs": "乐进奉命征讨高幹，迂回至其后方，在壶关与其连番交战，然壶关直至太祖亲征才被攻破。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "樂進（文謙）",
+      "to": "管承",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17b-p4",
+          "text": {
+            "en": "Yue Jin and Li Dian defeated Guan Cheng, who fled to an offshore island, allowing the coast to be pacified.",
+            "zht": "樂進與李典擊敗管承，管承逃往海島，海濱一帶因而平定。",
+            "zhs": "乐进与李典击败管承，管承逃往海岛，海滨一带因而平定。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "樂進（文謙）",
+      "to": "淳于瓊（仲簡）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17b-p2",
+          "text": {
+            "en": "At the Battle of Guandu, Yue Jin fought fiercely and slew Yuan Shao's general Chunyu Qiong.",
+            "zht": "官渡之戰中，樂進奮力作戰，斬殺袁紹大將淳于瓊。",
+            "zhs": "官渡之战中，乐进奋力作战，斩杀袁绍大将淳于琼。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "樂進（文謙）",
+      "to": "嚴敬",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17b-p2",
+          "text": {
+            "en": "During the campaign against Yuan Tan and Yuan Shang at Liyang, Yue Jin slew their general Yan Jing.",
+            "zht": "在黎陽攻打袁譚、袁尚的戰役中，樂進斬殺其大將嚴敬。",
+            "zhs": "在黎阳攻打袁谭、袁尚的战役中，乐进斩杀其大将严敬。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "樂進（文謙）",
+      "to": "關羽（雲長）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17b-p4",
+          "text": {
+            "en": "While garrisoning Xiangyang after the pacification of Jing Province, Yue Jin attacked and routed Guan Yu.",
+            "zht": "荊州平定後，樂進留守襄陽，出擊關羽，將其擊退。",
+            "zhs": "荆州平定后，乐进留守襄阳，出击关羽，将其击退。"
+          }
+        }
+      ]
     }
   ]
 }

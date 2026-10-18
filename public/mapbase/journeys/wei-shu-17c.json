@@ -797,46 +797,253 @@
   ],
   "relationships": [
     {
-      "from": "于禁",
+      "from": "于禁（文則）",
       "to": "鮑信",
-      "type": "follower",
-      "passageId": "ws17c-p1"
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p1",
+          "text": {
+            "en": "When the Yellow Turbans rose, Bao Xin gathered a band of followers, and Yu Jin joined him.",
+            "zht": "黃巾軍起事，鮑信招募軍隊，于禁參加了他的隊伍。",
+            "zhs": "黄巾军起事，鲍信招募军队，于禁参加了他的队伍。"
+          }
+        }
+      ]
     },
     {
-      "from": "于禁",
-      "to": "王朗",
-      "type": "subordinate-superior",
-      "passageId": "ws17c-p1"
+      "from": "于禁（文則）",
+      "to": "王朗（景興）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p1",
+          "text": {
+            "en": "Yu Jin served as Commander of a Hundred under General Wang Lang, who was impressed by him and recommended him as talented enough to become a Grand General.",
+            "zht": "于禁任都伯，歸將軍王朗指揮；王朗器重於禁，向太祖推薦其才幹可任大將。",
+            "zhs": "于禁任都伯，归将军王朗指挥；王朗器重于禁，向太祖推荐其才干可任大将。"
+          }
+        }
+      ]
     },
     {
-      "from": "于禁",
-      "to": "曹操",
-      "type": "subordinate-superior",
-      "passageId": "ws17c-p2"
+      "from": "于禁（文則）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p2",
+          "text": {
+            "en": "Cao Cao personally summoned and spoke with Yu Jin, appointed him Major, and sent him to lead troops in a string of campaigns against Lü Bu and others.",
+            "zht": "太祖召見于禁與之交談，任命他爲司馬，派他領兵接連征討呂布等敵軍。",
+            "zhs": "太祖召见于禁与之交谈，任命他为司马，派他领兵接连征讨吕布等敌军。"
+          }
+        },
+        {
+          "passageId": "ws17c-p4",
+          "text": {
+            "en": "After Yu Jin calmly secured his camp before disciplining marauding Qing Province troops rather than rushing to defend himself, Cao Cao praised his steadfastness as unmatched even by generals of old and enfeoffed him Neighbourhood Marquis of Yishou.",
+            "zht": "于禁不急於自辯，先安頓好營壘再懲治劫掠的青州兵，太祖讚其節操堅定，古之名將亦不能及，封他爲益壽亭侯。",
+            "zhs": "于禁不急于自辩，先安顿好营垒再惩治劫掠的青州兵，太祖赞其节操坚定，古之名将亦不能及，封他为益寿亭侯。"
+          }
+        },
+        {
+          "passageId": "ws17c-p5",
+          "text": {
+            "en": "Cao Cao, admiring Yu Jin's courage, entrusted him with two thousand troops to hold Yanjin against Yuan Shao, which he did successfully.",
+            "zht": "太祖賞識于禁之勇，命他率二千人扼守延津抵禦袁紹，于禁堅守未被攻破。",
+            "zhs": "太祖赏识于禁之勇，命他率二千人扼守延津抵御袁绍，于禁坚守未被攻破。"
+          }
+        },
+        {
+          "passageId": "ws17c-p8",
+          "text": {
+            "en": "Alongside Zhang Liao, Yue Jin, Zhang He, and Xu Huang, Yu Jin was counted among Cao Cao's most renowned generals; disciplined and taking no spoils for himself, he was rewarded especially generously, though his strict rule did not win his men's hearts.",
+            "zht": "于禁與張遼、樂進、張郃、徐晃並爲太祖麾下名將，治軍嚴整、不取財物，因此賞賜特重，然嚴法馭下，不甚得士心。",
+            "zhs": "于禁与张辽、乐进、张郃、徐晃并为太祖麾下名将，治军严整、不取财物，因此赏赐特重，然严法驭下，不甚得士心。"
+          }
+        },
+        {
+          "passageId": "ws17c-p9",
+          "text": {
+            "en": "Trusting Yu Jin's formidable authority, Cao Cao sent him to strip the disfavoured Zhu Ling of his command, which he did without resistance; Yu Jin was then promoted General of the Left and Provisional Bearer of the Imperial Tally and Battle-axe.",
+            "zht": "太祖信任于禁的威信，派他解除失寵的朱靈之兵權，朱靈不敢妄動；于禁升任左將軍，獲授節鉞。",
+            "zhs": "太祖信任于禁的威信，派他解除失宠的朱灵之兵权，朱灵不敢妄动；于禁升任左将军，获授节钺。"
+          },
+          "title": {
+            "en": "General of the Left",
+            "zht": "左將軍",
+            "zhs": "左将军"
+          }
+        },
+        {
+          "passageId": "ws17c-p10",
+          "text": {
+            "en": "After Yu Jin's seven armies were overwhelmed by flooding at Fancheng and he surrendered to Guan Yu, Cao Cao lamented for a long while: \"I have known Yu Jin for thirty years — who would have thought that, facing peril, he would prove inferior to Pang De?\"",
+            "zht": "樊城之役于禁七軍為洪水所沒，向關羽投降後，太祖哀嘆良久：「吾知禁三十年，何意臨危處難，反不如龐悳邪！」",
+            "zhs": "樊城之役于禁七军为洪水所没，向关羽投降后，太祖哀叹良久：「吾知禁三十年，何意临危处难，反不如庞悳邪！」"
+          }
+        }
+      ]
     },
     {
-      "from": "于禁",
+      "from": "于禁（文則）",
       "to": "昌豨",
-      "type": "old friends",
-      "passageId": "ws17c-p7"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p7",
+          "text": {
+            "en": "When his old acquaintance Chang Xi rebelled again and surrendered to him personally rather than to Cao Cao, Yu Jin refused to spare him despite their friendship, insisting that upholding the standing order against those who surrender only when besieged was a subordinate's duty; he wept as he had Chang Xi executed. Pei Songzhi later judged that Yu Jin could have sent Chang Xi to Cao Cao without disobeying orders, and that indulging his taste for killing over an old friend's plea was fitting cause for his own disgraceful end.",
+            "zht": "舊識昌豨再叛，向于禁本人而非太祖投降；于禁不顧交情，堅持圍而後降者依令不赦是爲臣的節操，含淚將其處斬。裴松之後來評論，于禁其實可將昌豨解送太祖而不算違令，其縱嗜殺之心而不顧舊交，終致自身晚節不保，實屬咎由自取。",
+            "zhs": "旧识昌豨再叛，向于禁本人而非太祖投降；于禁不顾交情，坚持围而后降者依令不赦是为臣的节操，含泪将其处斩。裴松之后来评论，于禁其实可将昌豨解送太祖而不算违令，其纵嗜杀之心而不顾旧交，终致自身晚节不保，实属咎由自取。"
+          }
+        }
+      ]
     },
     {
-      "from": "于禁",
-      "to": "龐悳",
-      "type": "comrades-in-arms",
-      "passageId": "ws17c-p10"
+      "from": "于禁（文則）",
+      "to": "龐德（令明）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17c-p10",
+          "text": {
+            "en": "When Guan Yu's flood overwhelmed their armies at Fancheng, Yu Jin surrendered while his fellow commander Pang De alone refused and died for it — a contrast later commissioned as a mural showing Pang De's defiance beside Yu Jin's submission.",
+            "zht": "樊城洪水沒軍後，于禁投降，而同僚龐德拒不投降而死，二人形成鮮明對比，後來更被繪成陵堂壁畫並列展示。",
+            "zhs": "樊城洪水没军后，于禁投降，而同僚庞德拒不投降而死，二人形成鲜明对比，后来更被绘成陵堂壁画并列展示。"
+          }
+        }
+      ]
     },
     {
-      "from": "于禁",
-      "to": "曹丕",
-      "type": "subordinate-superior",
-      "passageId": "ws17c-p11"
+      "from": "于禁（文則）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p11",
+          "text": {
+            "en": "Cao Pi received the aged, haggard Yu Jin sympathetically, citing ancient precedents of restored generals and appointing him General Who Pacifies the Distant — but then, intending to send him to Wu, had him first pay homage at Cao Cao's mausoleum, where a mural commissioned in advance depicted Guan Yu triumphant and Pang De defiant beside Yu Jin's surrender; shame and resentment at the sight brought on the illness that killed him.",
+            "zht": "曹丕見于禁鬚髮皓白、形容憔悴，以荀林父、孟明視故事安慰他，拜爲安遠將軍；卻在遣他使吳前，先令他北謁太祖陵墓，陵屋內早已畫上關羽戰勝、龐德憤怒不屈、于禁降服的情景，于禁見之慚恚發病而薨。",
+            "zhs": "曹丕见于禁须发皓白、形容憔悴，以荀林父、孟明视故事安慰他，拜为安远将军；却在遣他使吴前，先令他北谒太祖陵墓，陵屋内早已画上关羽战胜、庞德愤怒不屈、于禁降服的情景，于禁见之惭恚发病而薨。"
+          }
+        }
+      ]
     },
     {
-      "from": "于禁",
+      "from": "于禁（文則）",
       "to": "于圭",
-      "type": "father-son",
-      "passageId": "ws17c-p11"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p11",
+          "text": {
+            "en": "Yu Jin's son Yu Gui succeeded him as Neighbourhood Marquis of Yishou.",
+            "zht": "于禁之子于圭襲爵益壽亭侯。",
+            "zhs": "于禁之子于圭袭爵益寿亭侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "于禁（文則）",
+      "to": "橋蕤",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p2",
+          "text": {
+            "en": "Yu Jin joined the siege of Qiao Rui at Ku, where Qiao Rui and three other generals were beheaded.",
+            "zht": "于禁隨太祖在苦縣包圍橋蕤，斬橋蕤等四名敵將。",
+            "zhs": "于禁随太祖在苦县包围桥蕤，斩桥蕤等四名敌将。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "于禁（文則）",
+      "to": "朱靈（文博）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p9",
+          "text": {
+            "en": "On Cao Cao's order, Yu Jin rode to Zhu Ling's camp and stripped him of his command; neither Zhu Ling nor his men dared resist, and Zhu Ling was made a subordinate commander under Yu Jin.",
+            "zht": "奉太祖之命，于禁徑赴朱靈營中解除其兵權，朱靈及部衆不敢妄動，遂爲于禁部下督。",
+            "zhs": "奉太祖之命，于禁径赴朱灵营中解除其兵权，朱灵及部众不敢妄动，遂为于禁部下督。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "于禁（文則）",
+      "to": "曹仁（子孝）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17c-p10",
+          "text": {
+            "en": "Cao Cao sent Yu Jin to reinforce Cao Ren's campaign against Guan Yu at Fancheng.",
+            "zht": "太祖遣于禁協助曹仁在樊城討伐關羽。",
+            "zhs": "太祖遣于禁协助曹仁在樊城讨伐关羽。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "關羽（雲長）",
+      "to": "于禁（文則）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p10",
+          "text": {
+            "en": "When the flooded Han River overwhelmed his seven armies, Yu Jin had nowhere to retreat as Guan Yu attacked by ship, and he surrendered; the moment was later immortalised in a mural at Cao Cao's mausoleum contrasting Guan Yu's triumph with Yu Jin's submission.",
+            "zht": "漢水暴漲淹沒七軍，于禁無所回避，關羽乘船進攻，于禁遂降；此事後來被繪入太祖陵堂壁畫，與關羽的戰勝並列。",
+            "zhs": "汉水暴涨淹没七军，于禁无所回避，关羽乘船进攻，于禁遂降；此事后来被绘入太祖陵堂壁画，与关羽的战胜并列。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "孫權（仲謀）",
+      "to": "于禁（文則）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17c-p10",
+          "text": {
+            "en": "When Sun Quan captured Guan Yu and seized his forces, Yu Jin fell into Wu's hands, remaining there until Sun Quan submitted as a vassal and sent him back.",
+            "zht": "孫權擒殺關羽，俘獲其部衆，于禁因而落入吳國，直至孫權稱藩才被遣送回國。",
+            "zhs": "孙权擒杀关羽，俘获其部众，于禁因而落入吴国，直至孙权称藩才被遣送回国。"
+          }
+        }
+      ]
     }
   ]
 }

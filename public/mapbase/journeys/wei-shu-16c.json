@@ -8,7 +8,7 @@
       "en": "Biography of Du Ji"
     },
     "title": {
-      "zht": "魏書十六 · 杜畿传",
+      "zht": "魏書十六 · 杜畿傳",
       "zhs": "魏书十六 · 杜畿传",
       "en": "Book of Wei, Chapter 16 · Biography of Du Ji"
     }
@@ -170,9 +170,9 @@
               "zhs": "郡功曹"
             },
             {
-              "en": "County Magistrate",
-              "zht": "令",
-              "zhs": "令"
+              "en": "Interim County Magistrate",
+              "zht": "守令",
+              "zhs": "守令"
             }
           ],
           "passageId": "",
@@ -196,10 +196,10 @@
               "url": "/translations/officials/regional#commanderies-049"
             },
             {
-              "en": "County Magistrate",
-              "zht": "令",
-              "zhs": "令",
-              "url": "/translations/officials/regional#counties-088"
+              "en": "Interim County Magistrate",
+              "zht": "守令",
+              "zhs": "守令",
+              "url": "/translations/officials#glossary-interim"
             }
           ]
         },
@@ -328,9 +328,9 @@
               "zhs": "使持节"
             },
             {
-              "en": "Grand Administrator",
-              "zht": "太守",
-              "zhs": "太守"
+              "en": "Grand Administrator (concurrent)",
+              "zht": "領太守",
+              "zhs": "领太守"
             }
           ],
           "passageId": "",
@@ -366,9 +366,9 @@
               "url": "/translations/officials#glossary-envoy-bearing-the-imperial-tally"
             },
             {
-              "en": "Grand Administrator",
-              "zht": "太守",
-              "zhs": "太守",
+              "en": "Grand Administrator (concurrent)",
+              "zht": "領太守",
+              "zhs": "领太守",
               "url": "/translations/officials/regional#commanderies-039"
             }
           ]
@@ -460,9 +460,9 @@
               "zhs": "尚书"
             },
             {
-              "en": "Colonel of the Capital",
-              "zht": "司隷校尉",
-              "zhs": "司隷校尉"
+              "en": "Interim Colonel of the Capital",
+              "zht": "守司隷校尉",
+              "zhs": "守司隷校尉"
             },
             {
               "en": "Marquis Within the Pass",
@@ -492,9 +492,9 @@
               "url": "/translations/officials/departments#state-affairs-033"
             },
             {
-              "en": "Colonel of the Capital",
-              "zht": "司隷校尉",
-              "zhs": "司隷校尉",
+              "en": "Interim Colonel of the Capital",
+              "zht": "守司隷校尉",
+              "zhs": "守司隷校尉",
               "url": "/translations/officials/regional#sili-001"
             },
             {
@@ -583,190 +583,529 @@
   ],
   "relationships": [
     {
-      "from": "杜畿（伯侯）",
-      "to": "杜延年",
-      "type": "descendant of",
-      "passageId": "ws16c-p1"
+      "from": "杜延年（幼公）",
+      "to": "杜畿（伯侯）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p1",
+          "text": {
+            "en": "A note records that Du Ji was a descendant of the Han Imperial Censor Du Yannian, whose family later settled at Duling.",
+            "zht": "有註記載杜畿為漢御史大夫杜延年之後，其家後來世居杜陵。",
+            "zhs": "有注记载杜畿为汉御史大夫杜延年之后，其家后来世居杜陵。"
+          }
+        }
+      ],
+      "ancestral": true
     },
     {
-      "from": "杜延年",
-      "to": "杜周",
-      "type": "son of",
-      "passageId": "ws16c-p1"
+      "from": "杜周（長孺）",
+      "to": "杜延年（幼公）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p1",
+          "text": {
+            "en": "Du Yannian's father Du Zhou moved from Nanyang to Maoling.",
+            "zht": "杜延年之父杜周自南陽遷居茂陵。",
+            "zhs": "杜延年之父杜周自南阳迁居茂陵。"
+          }
+        }
+      ],
+      "ancestral": true
     },
     {
-      "from": "荀彧",
-      "to": "曹操",
-      "type": "recommended 杜畿 to",
-      "passageId": "ws16c-p2"
+      "from": "荀彧（文若）",
+      "to": "杜畿（伯侯）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "After hearing Du Ji converse through the night with his neighbour Geng Ji, Xun Yu was much impressed, felt he understood him as though they had long been acquainted, and promptly recommended him to the court.",
+            "zht": "荀彧聽聞杜畿與鄰居耿紀徹夜長談，深為讚賞，與之相見如舊識，隨即向朝廷舉薦了他。",
+            "zhs": "荀彧听闻杜畿与邻居耿纪彻夜长谈，深为赞赏，与之相见如旧识，随即向朝廷举荐了他。"
+          }
+        },
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "When Cao Cao asked Xun Yu to recommend a Xiao He or Kou Xun to hold the strategic commandery of Hedong, Xun Yu answered, \"Du Ji is the man,\" commending him as brave enough to face great peril and resourceful enough to adapt to change.",
+            "zht": "曹操請荀彧舉薦能鎮守河東的蕭何、寇恂之才，荀彧答道：「杜畿其人也。」稱他勇於臨危而善於應變。",
+            "zhs": "曹操请荀彧举荐能镇守河东的萧何、寇恂之才，荀彧答道：「杜畿其人也。」称他勇于临危而善于应变。"
+          }
+        }
+      ]
     },
     {
       "from": "杜畿（伯侯）",
       "to": "耿紀",
-      "type": "acquaintance",
-      "passageId": "ws16c-p2"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "On reaching Xu, Du Ji met the Palace Attendant Geng Ji and conversed with him throughout the night.",
+            "zht": "杜畿抵達許都後拜訪侍中耿紀，與之徹夜長談。",
+            "zhs": "杜畿抵达许都后拜访侍中耿纪，与之彻夜长谈。"
+          }
+        }
+      ]
     },
     {
-      "from": "荀彧",
+      "from": "荀彧（文若）",
       "to": "耿紀",
-      "type": "neighbour",
-      "passageId": "ws16c-p2"
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "Having overheard Du Ji's conversation next door, Xun Yu sent word to his neighbour Geng Ji at dawn, reproaching him for knowing such a talent yet failing to recommend him.",
+            "zht": "荀彧隔壁聽聞杜畿談論，天明遣人責備鄰居耿紀知有奇才而不舉薦。",
+            "zhs": "荀彧隔壁听闻杜畿谈论，天明遣人责备邻居耿纪知有奇才而不举荐。"
+          }
+        }
+      ]
     },
     {
       "from": "張時",
       "to": "杜畿（伯侯）",
-      "type": "old acquaintance, superior",
-      "passageId": "ws16c-p2"
+      "type": "colleagues",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "Du Ji's old acquaintance Zhang Shi, Intendant of Jingzhao, made him his Merit Section Administrator, but disliked his free and easy temperament and called him derelict and unfit for the post; Du Ji retorted that he might not be fit to be Merit Section Administrator but was fit to be Grand Administrator of Hedong.",
+            "zht": "舊識張時任京兆尹，任命杜畿為功曹，卻嫌他放逸不理事，說他不宜任功曹；杜畿私下回應說自己不宜為功曹，卻宜為河東太守。",
+            "zhs": "旧识张时任京兆尹，任命杜畿为功曹，却嫌他放逸不理事，说他不宜任功曹；杜畿私下回应说自己不宜为功曹，却宜为河东太守。"
+          }
+        },
+        {
+          "passageId": "ws16c-p4",
+          "text": {
+            "en": "When Du Ji later went to welcome the Colonel of the Capital and met Zhang Shi at Huayin, Zhang Shi sighed, \"Yesterday a Merit Section Administrator, today a commandery's governor!\"",
+            "zht": "杜畿後來迎接司隸校尉，在華陰遇見張時，張時感嘆：「昨日功曹，今為郡將！」",
+            "zhs": "杜畿后来迎接司隶校尉，在华阴遇见张时，张时感叹：「昨日功曹，今为郡将！」"
+          }
+        }
+      ]
     },
     {
-      "from": "張時",
-      "to": "杜畿（伯侯）",
-      "type": "old acquaintance",
-      "passageId": "ws16c-p4"
+      "from": "杜畿（伯侯）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p2",
+          "text": {
+            "en": "Recommended by Xun Yu, Du Ji was appointed Rectifier under the Excellency of Works, then Colonel Protecting the Qiang and Grand Administrator of Xiping.",
+            "zht": "經荀彧舉薦，杜畿被曹操任命為司空司直，後遷護羌校尉，兼任西平太守。",
+            "zhs": "经荀彧举荐，杜畿被曹操任命为司空司直，后迁护羌校尉，兼任西平太守。"
+          },
+          "title": {
+            "en": "Rectifier under the Excellency of Works",
+            "zht": "司空司直",
+            "zhs": "司空司直"
+          }
+        },
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "When Gao Gan rebelled and Hedong was in danger, Cao Cao recalled Du Ji and appointed him Grand Administrator of Hedong.",
+            "zht": "高幹叛亂、河東告急之際，曹操召回杜畿，任命他為河東太守。",
+            "zhs": "高幹叛乱、河东告急之际，曹操召回杜畿，任命他为河东太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Hedong",
+            "zht": "河東太守",
+            "zhs": "河东太守"
+          }
+        },
+        {
+          "passageId": "ws16c-p9",
+          "text": {
+            "en": "Cao Cao praised Du Ji as a man of whom Confucius might have said \"I can find no fault in him\", raised his rank to Fully 2000 Shi, and circulated a proclamation urging all to look up to Du Ji's conduct.",
+            "zht": "曹操稱杜畿為孔子所謂「吾無間然」之人，將他的秩祿提升為中二千石，並頒令諸州郡以杜畿為榜樣。",
+            "zhs": "曹操称杜畿为孔子所谓「吾无间然」之人，将他的秩禄提升为中二千石，并颁令诸州郡以杜畿为榜样。"
+          },
+          "title": {
+            "en": "Fully 2000 Shi",
+            "zht": "中二千石",
+            "zhs": "中二千石"
+          }
+        },
+        {
+          "passageId": "ws16c-p10",
+          "text": {
+            "en": "When the kingdom of Wei was established Du Ji was appointed to the Imperial Secretariat, but Cao Cao asked him to remain and secure Hedong, which he governed for sixteen years with the finest record in the realm.",
+            "zht": "魏國建立後杜畿被任命為尚書，曹操卻請他留鎮河東，前後十六年，政績為天下最。",
+            "zhs": "魏国建立后杜畿被任命为尚书，曹操却请他留镇河东，前后十六年，政绩为天下最。"
+          },
+          "title": {
+            "en": "Imperial Secretariat",
+            "zht": "尚書",
+            "zhs": "尚书"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "衞固",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p4",
+          "text": {
+            "en": "Wei Gu had known Du Ji since youth and often treated him with contempt, cursing him when Du Ji jokingly announced he was now administrator of Hedong.",
+            "zht": "衞固自少與杜畿相熟，常輕視他，杜畿戲稱自己將為河東太守時，衞固撩衣咒罵。",
+            "zhs": "卫固自少与杜畿相熟，常轻视他，杜畿戏称自己将为河东太守时，卫固撩衣咒骂。"
+          }
+        },
+        {
+          "passageId": "ws16c-p7",
+          "text": {
+            "en": "Wei Gu joined Gao Gan and Zhang Sheng in attacking Du Ji but could not defeat him, and was executed once the main army arrived.",
+            "zht": "衞固聯合高幹、張晟進攻杜畿而不能取勝，大軍到達後被誅殺。",
+            "zhs": "卫固联合高干、张晟进攻杜畿而不能取胜，大军到达后被诛杀。"
+          }
+        }
+      ]
     },
     {
       "from": "衞固",
-      "to": "高幹",
-      "type": "co-conspirator",
-      "passageId": "ws16c-p3"
-    },
-    {
-      "from": "范先",
-      "to": "高幹",
-      "type": "co-conspirator",
-      "passageId": "ws16c-p3"
-    },
-    {
-      "from": "張晟",
-      "to": "劉表",
-      "type": "contact",
-      "passageId": "ws16c-p3"
-    },
-    {
-      "from": "杜畿（伯侯）",
-      "to": "衞固",
-      "type": "old acquaintance, rival",
-      "passageId": "ws16c-p4"
-    },
-    {
-      "from": "曹操",
-      "to": "夏侯惇",
-      "type": "sent to suppress",
-      "passageId": "ws16c-p4"
-    },
-    {
-      "from": "杜畿（伯侯）",
-      "to": "衞固",
-      "type": "subordinate relationship",
-      "passageId": "ws16c-p5"
+      "to": "杜畿（伯侯）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p5",
+          "text": {
+            "en": "Du Ji appointed Wei Gu Commander and Assistant of the commandery, but though Wei Gu nominally served him he paid him little heed, secretly summoned troops, and joined the rebellion.",
+            "zht": "杜畿任命衞固為都督、行郡丞事，衞固名義上服從，實則不放在眼裡，暗中召兵並加入叛亂。",
+            "zhs": "杜畿任命卫固为都督、行郡丞事，卫固名义上服从，实则不放在眼里，暗中召兵并加入叛乱。"
+          }
+        }
+      ]
     },
     {
       "from": "杜畿（伯侯）",
       "to": "范先",
-      "type": "subordinate relationship",
-      "passageId": "ws16c-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p5",
+          "text": {
+            "en": "Fan Xian wished to kill Du Ji to establish his authority and beheaded more than thirty officials at the gate in front of him, while Du Ji remained perfectly composed; he later urged that Du Ji be killed as a future menace.",
+            "zht": "范先欲殺杜畿以立威，當著他的面在門前斬殺三十餘名官吏，杜畿神色自若；范先後來仍主張除掉杜畿以絕後患。",
+            "zhs": "范先欲杀杜畿以立威，当着他的面在门前斩杀三十余名官吏，杜畿神色自若；范先后来仍主张除掉杜畿以绝后患。"
+          }
+        }
+      ]
     },
     {
-      "from": "白騎",
-      "to": "高幹",
-      "type": "contemporary rebel",
-      "passageId": "ws16c-p6"
-    },
-    {
-      "from": "高幹",
-      "to": "衞固",
-      "type": "ally",
-      "passageId": "ws16c-p7"
-    },
-    {
-      "from": "高幹",
-      "to": "張晟",
-      "type": "ally",
-      "passageId": "ws16c-p7"
-    },
-    {
-      "from": "樂詳",
+      "from": "范先",
       "to": "杜畿（伯侯）",
-      "type": "career advanced by",
-      "passageId": "ws16c-p8"
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p5",
+          "text": {
+            "en": "Du Ji placed all the military officers, officials and troops under Fan Xian's command, but Fan Xian only nominally served him and plotted against him with Wei Gu.",
+            "zht": "杜畿將全郡將吏兵馬交由范先統領，范先名義上服從，實則與衞固合謀對抗他。",
+            "zhs": "杜畿将全郡将吏兵马交由范先统领，范先名义上服从，实则与卫固合谋对抗他。"
+          }
+        }
+      ]
     },
     {
-      "from": "韓遂",
-      "to": "馬超",
-      "type": "co-rebel",
-      "passageId": "ws16c-p9"
+      "from": "衞固",
+      "to": "高幹（元才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "Wei Gu and Fan Xian publicly petitioned for Hedong's Grand Administrator to stay, but were secretly plotting with Gao Gan; Wei Gu later joined Gao Gan in attacking Du Ji.",
+            "zht": "衞固、范先表面上請求留任河東太守，暗中卻與高幹勾結；衞固後來與高幹一同進攻杜畿。",
+            "zhs": "卫固、范先表面上请求留任河东太守，暗中却与高幹勾结；卫固后来与高幹一同进攻杜畿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "范先",
+      "to": "高幹（元才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "Wei Gu and Fan Xian publicly petitioned for Hedong's Grand Administrator to stay, but were secretly plotting with Gao Gan.",
+            "zht": "衞固、范先表面上請求留任河東太守，暗中卻與高幹勾結。",
+            "zhs": "卫固、范先表面上请求留任河东太守，暗中却与高幹勾结。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "高幹（元才）",
+      "to": "張晟",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p7",
+          "text": {
+            "en": "Gao Gan and Zhang Sheng together, with Wei Gu, attacked Du Ji at Zhangbi and were defeated when the main army arrived.",
+            "zht": "高幹與張晟聯合衞固攻打杜畿，大軍到達後被擊敗。",
+            "zhs": "高幹与张晟联合卫固攻打杜畿，大军到达后被击败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "衞固",
+      "to": "張晟",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p7",
+          "text": {
+            "en": "Wei Gu and others joined Gao Gan and Zhang Sheng in attacking Du Ji and raiding the counties.",
+            "zht": "衞固等人聯合高幹、張晟進攻杜畿並劫掠諸縣。",
+            "zhs": "卫固等人联合高幹、张晟进攻杜畿并劫掠诸县。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張晟",
+      "to": "劉表（景升）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p3",
+          "text": {
+            "en": "Zhang Sheng was raiding the region between Mount Yao and Mianchi and had established contact with Liu Biao to the south.",
+            "zht": "張晟劫掠崤山、澠池一帶，並與南方的劉表建立了聯繫。",
+            "zhs": "张晟劫掠崤山、渑池一带，并与南方的刘表建立了联系。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜畿（伯侯）",
+      "to": "樂詳（文載）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p8",
+          "text": {
+            "en": "A note records that the Erudite Yue Xiang owed his advancement to Du Ji, and that Hedong's many scholars were also Du Ji's doing.",
+            "zht": "有註記載博士樂詳的仕進得益於杜畿，河東多有學者亦是杜畿之功。",
+            "zhs": "有注记载博士乐详的仕进得益于杜畿，河东多有学者亦是杜畿之功。"
+          }
+        }
+      ]
     },
     {
       "from": "劉勳",
-      "to": "曹操",
-      "type": "favourite of",
-      "passageId": "ws16c-p9"
+      "to": "杜畿（伯侯）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p9",
+          "text": {
+            "en": "Liu Xun, a favourite of Cao Cao whose influence awed the court, asked Du Ji for some large jujubes, but Du Ji put him off; after Liu Xun's execution Cao Cao found the letter and remarked that Du Ji did not curry favour with the stove.",
+            "zht": "曹操寵臣劉勳權勢威震朝廷，曾向杜畿索要大棗，杜畿推託不與；劉勳被誅後曹操發現此信，感嘆杜畿真可謂「不媚灶」之人。",
+            "zhs": "曹操宠臣刘勋权势威震朝廷，曾向杜畿索要大枣，杜畿推托不与；刘勋被诛后曹操发现此信，感叹杜畿真可谓「不媚灶」之人。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "杜畿（伯侯）",
-      "type": "commended",
-      "passageId": "ws16c-p9"
+      "from": "劉勳",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p9",
+          "text": {
+            "en": "Liu Xun, General Who Subdues the Enemies, was a favourite of Cao Cao whose influence awed the court, until his execution.",
+            "zht": "徵虜將軍劉勳為曹操寵臣，威勢震懾朝廷，後被誅殺。",
+            "zhs": "征虏将军刘勋为曹操宠臣，威势震慑朝廷，后被诛杀。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "杜畿（伯侯）",
-      "type": "superior",
-      "passageId": "ws16c-p10"
+      "from": "杜畿（伯侯）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p11",
+          "text": {
+            "en": "When Cao Pi became king he granted Du Ji the title Marquis Within the Pass and summoned him to the Imperial Secretariat; on ascending the throne he made him Neighbourhood Marquis of Fengle and acting Colonel of the Capital, and during the Wu campaign Deputy Director of the Imperial Secretariat in charge of the capital. When Du Ji drowned testing a tower ship, the emperor wept.",
+            "zht": "曹丕即王位後賜杜畿關內侯並徵入尚書檯；稱帝后進封杜畿為豐樂亭侯，行司隸校尉事；伐吳時任尚書僕射，留守都城。杜畿試乘樓船溺亡，曹丕為之流涕。",
+            "zhs": "曹丕即王位后赐杜畿关内侯并征入尚书台；称帝后进封杜畿为丰乐亭侯，行司隶校尉事；伐吴时任尚书仆射，留守都城。杜畿试乘楼船溺亡，曹丕为之流涕。"
+          },
+          "title": {
+            "en": "Deputy Director of the Imperial Secretariat",
+            "zht": "尚書僕射",
+            "zhs": "尚书仆射"
+          }
+        },
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Cao Pi's edict mourned Du Ji's loyalty, likening his death on the water to sage officials of old; he was posthumously appointed Minister Coachman with the title Marquis Dai.",
+            "zht": "曹丕下詔哀悼杜畿之忠，以古代賢臣歿於水事相比；追贈太僕，諡戴侯。",
+            "zhs": "曹丕下诏哀悼杜畿之忠，以古代贤臣殁于水事相比；追赠太仆，谥戴侯。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹丕",
-      "to": "杜畿（伯侯）",
-      "type": "granted title, appointed",
-      "passageId": "ws16c-p11"
+      "from": "杜畿（伯侯）",
+      "to": "趙儼（伯然）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p11",
+          "text": {
+            "en": "Zhao Yan succeeded Du Ji in Hedong and sent many widows to be registered where Du Ji had sent few; Du Ji told Cao Pi that those he registered were wives of dead men while Zhao Yan's were wives of living men.",
+            "zht": "趙儼接任河東太守後，登記送走的寡婦遠多於杜畿；杜畿對曹丕說自己送的都是亡夫之妻，趙儼送的卻是活人之妻。",
+            "zhs": "赵俨接任河东太守后，登记送走的寡妇远多于杜畿；杜畿对曹丕说自己送的都是亡夫之妻，赵俨送的却是活人之妻。"
+          }
+        }
+      ]
     },
     {
-      "from": "趙儼",
-      "to": "杜畿（伯侯）",
-      "type": "successor",
-      "passageId": "ws16c-p11"
-    },
-    {
-      "from": "曹丕",
-      "to": "杜畿（伯侯）",
-      "type": "superior",
-      "passageId": "ws16c-p12"
-    },
-    {
-      "from": "杜恕",
-      "to": "杜畿（伯侯）",
-      "type": "son of",
-      "passageId": "ws16c-p12"
+      "from": "杜畿（伯侯）",
+      "to": "杜恕（務伯）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Du Ji's son Du Shu succeeded him as marquis.",
+            "zht": "杜畿之子杜恕襲爵。",
+            "zhs": "杜畿之子杜恕袭爵。"
+          }
+        }
+      ]
     },
     {
       "from": "杜畿（伯侯）",
       "to": "李恢",
-      "type": "friend",
-      "passageId": "ws16c-p12"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Du Ji was on good terms with Li Hui, the Minister Coachman, and lamented after meeting his son Li Feng that Li Hui's house might soon perish; Li Feng was later executed with his father's household.",
+            "zht": "杜畿與太僕李恢交好，見其子李豐後感嘆李恢之家恐將覆亡；後來李豐果然被誅。",
+            "zhs": "杜畿与太仆李恢交好，见其子李丰后感叹李恢之家恐将覆亡；后来李丰果然被诛。"
+          }
+        }
+      ]
     },
     {
       "from": "杜畿（伯侯）",
       "to": "郭智",
-      "type": "friend",
-      "passageId": "ws16c-p12"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Du Ji was on good terms with Guo Zhi, Grand Administrator of Dong'an, and predicted his son Guo Chong would carry on the family legacy, as he did.",
+            "zht": "杜畿與東安太守郭智交好，預言其子郭沖能繼承家業，後來果然如此。",
+            "zhs": "杜畿与东安太守郭智交好，预言其子郭冲能继承家业，后来果然如此。"
+          }
+        }
+      ]
     },
     {
-      "from": "李豐",
-      "to": "李恢",
-      "type": "son of",
-      "passageId": "ws16c-p12"
+      "from": "李恢",
+      "to": "李豐（安國）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Li Hui's son Li Feng became renowned for his talent but was executed together with his father's household; another account gives Li Feng's father the name Yi, perhaps an alternative name for Hui.",
+            "zht": "李恢之子李豐以才智聞名天下，後與父兄同被誅殺；另有說法稱李豐之父名義，或為恢之別名。",
+            "zhs": "李恢之子李丰以才智闻名天下，后与父兄同被诛杀；另有说法称李丰之父名义，或为恢之别名。"
+          }
+        }
+      ]
     },
     {
-      "from": "郭沖",
-      "to": "郭智",
-      "type": "son of",
-      "passageId": "ws16c-p12"
-    },
-    {
-      "from": "李義",
-      "to": "李豐",
-      "type": "father of",
-      "passageId": "ws16c-p12"
+      "from": "郭智",
+      "to": "郭沖",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16c-p12",
+          "text": {
+            "en": "Guo Zhi's son Guo Chong became Grand Administrator of Dai and carried on his father's career.",
+            "zht": "郭智之子郭沖官至代郡太守，繼承父業。",
+            "zhs": "郭智之子郭冲官至代郡太守，继承父业。"
+          }
+        }
+      ]
     }
   ]
 }

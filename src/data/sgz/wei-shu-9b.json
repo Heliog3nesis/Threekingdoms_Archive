@@ -1,0 +1,1408 @@
+{
+  "id": "wei-shu-9b",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 9,
+  "num": "9",
+  "label": {
+    "zht": "夏侯淵傳 · 附夏侯霸",
+    "zhs": "夏侯渊传 · 附夏侯霸",
+    "en": "Biography of Xiahou Yuan · with Xiahou Ba"
+  },
+  "title": {
+    "zht": "魏書九 · 夏侯淵傳 · 附夏侯霸",
+    "zhs": "魏书九 · 夏侯渊传 · 附夏侯霸",
+    "en": "Book of Wei, Chapter 9 · Biography of Xiahou Yuan · with Xiahou Ba"
+  },
+  "relationships": [
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯惇（元讓）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p1",
+          "text": {
+            "en": "Xiahou Yuan was a younger clansman of Xiahou Dun.",
+            "zht": "夏侯淵是夏侯惇的族弟。",
+            "zhs": "夏侯渊是夏侯惇的族弟。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "曹操（孟德）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Yuan's wife was the younger sister of Cao Cao's wife.",
+            "zht": "夏侯淵的妻子是曹操妻子的妹妹。",
+            "zhs": "夏侯渊的妻子是曹操妻子的妹妹。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "曹操（孟德）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p1",
+          "text": {
+            "en": "When Cao Cao faced a criminal charge while still living at home, Xiahou Yuan took the blame for the serious offence in his place, and Cao Cao later secured his release.",
+            "zht": "曹操在家鄉時曾惹上官司，夏侯淵代他承擔重罪，後來曹操設法營救，他才得以免罪。",
+            "zhs": "曹操在家乡时曾惹上官司，夏侯渊代他承担重罪，后来曹操设法营救，他才得以免罪。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p2",
+          "text": {
+            "en": "When Cao Cao raised troops, Xiahou Yuan followed him as Major of a Separate Command and Commandant of Cavalry, later becoming Grand Administrator of Chenliu and then of Yingchuan.",
+            "zht": "曹操起兵時，夏侯淵以別部司馬、騎都尉身份隨從，後升任陳留、潁川太守。",
+            "zhs": "曹操起兵时，夏侯渊以别部司马、骑都尉身份随从，后升任陈留、颍川太守。"
+          },
+          "title": {
+            "en": "Major of a Separate Command, Commandant of Cavalry",
+            "zht": "別部司馬、騎都尉",
+            "zhs": "别部司马、骑都尉"
+          }
+        },
+        {
+          "passageId": "ws9b-p2",
+          "text": {
+            "en": "After Yuan Shao's defeat at Guandu, Cao Cao put Xiahou Yuan in charge of grain for Yan, Yu and Xu provinces, and his unbroken supply lines restored the army's strength.",
+            "zht": "官渡擊敗袁紹後，曹操讓夏侯淵督運兗、豫、徐三州軍糧，他運糧源源不斷，使軍隊重新振作。",
+            "zhs": "官渡击败袁绍后，曹操让夏侯渊督运兖、豫、徐三州军粮，他运粮源源不断，使军队重新振作。"
+          }
+        },
+        {
+          "passageId": "ws9b-p2",
+          "text": {
+            "en": "Returning from the campaign against Chang Xi, Xiahou Yuan was appointed Colonel Who Directs the Army; the army sang of his speed, \"three days, five hundred li; six days, a thousand\".",
+            "zht": "征討昌豨回來後，夏侯淵被任命爲典軍校尉；軍中稱頌他行軍神速：“三日五百，六日一千。”",
+            "zhs": "征讨昌豨回来后，夏侯渊被任命为典军校尉；军中称颂他行军神速：“三日五百，六日一千。”"
+          },
+          "title": {
+            "en": "Colonel Who Directs the Army",
+            "zht": "典軍校尉",
+            "zhs": "典军校尉"
+          }
+        },
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Left at Chang'an as acting General Protecting the Army, Xiahou Yuan defeated Liu Xiong, took Hu and beheaded Liang Xing, and was enfeoffed as Neighbourhood Marquis of Bochang.",
+            "zht": "夏侯淵以代理護軍將軍身份駐守長安，擊破劉雄，攻克鄠縣，斬殺梁興，被封爲博昌亭侯。",
+            "zhs": "夏侯渊以代理护军将军身份驻守长安，击破刘雄，攻克鄠县，斩杀梁兴，被封为博昌亭侯。"
+          },
+          "title": {
+            "en": "Neighbourhood Marquis of Bochang",
+            "zht": "博昌亭侯",
+            "zhs": "博昌亭侯"
+          }
+        },
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "When Jiang Xu sought urgent aid against Ma Chao, Xiahou Yuan set out without waiting for Cao Cao's orders, reasoning that a reply from Ye would come too late.",
+            "zht": "姜叙緊急求救時，夏侯淵認爲等曹操從鄴城回覆必然誤事，便不待命令立即出兵。",
+            "zhs": "姜叙紧急求救时，夏侯渊认为等曹操从邺城回复必然误事，便不待命令立即出兵。"
+          }
+        },
+        {
+          "passageId": "ws9b-p5",
+          "text": {
+            "en": "After crushing Han Sui at the Changli River and scattering the Tuge of Gaoping, Xiahou Yuan was made Provisional Bearer of the Imperial Tally.",
+            "zht": "夏侯淵在長離大破韓遂，又擊散高平屠各之後，被授予假節。",
+            "zhs": "夏侯渊在长离大破韩遂，又击散高平屠各之后，被授予假节。"
+          },
+          "title": {
+            "en": "Provisional Bearer of the Imperial Tally",
+            "zht": "假節",
+            "zhs": "假节"
+          }
+        },
+        {
+          "passageId": "ws9b-p6",
+          "text": {
+            "en": "Cao Cao praised Xiahou Yuan for destroying Song Jian in a single campaign, saying he had \"strode like a tiger through Guanyou\"; whenever Cao Cao received the Qiang and Hu, he used Xiahou Yuan to overawe them.",
+            "zht": "曹操稱讚夏侯淵一舉消滅宋建，“虎步關右，所向無前”；曹操每次接見羌胡，都以夏侯淵來威懾他們。",
+            "zhs": "曹操称赞夏侯渊一举消灭宋建，“虎步关右，所向无前”；曹操每次接见羌胡，都以夏侯渊来威慑他们。"
+          }
+        },
+        {
+          "passageId": "ws9b-p7",
+          "text": {
+            "en": "After Hanzhong was pacified, Cao Cao left Xiahou Yuan to hold it and appointed him General Who Conquers the West.",
+            "zht": "漢中平定後，曹操留夏侯淵鎮守漢中，任命他爲征西將軍。",
+            "zhs": "汉中平定后，曹操留夏侯渊镇守汉中，任命他为征西将军。"
+          },
+          "title": {
+            "en": "General Who Conquers the West",
+            "zht": "征西將軍",
+            "zhs": "征西将军"
+          }
+        },
+        {
+          "passageId": "ws9b-p7",
+          "text": {
+            "en": "Cao Cao repeatedly warned Xiahou Yuan that a commander must temper courage with wisdom and strategy, or he would be no more than a common man.",
+            "zht": "曹操常告誡夏侯淵：爲將者應有怯弱之時，不能只靠勇猛；只知用勇，不過是匹夫之敵。",
+            "zhs": "曹操常告诫夏侯渊：为将者应有怯弱之时，不能只靠勇猛；只知用勇，不过是匹夫之敌。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "于禁（文則）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p2",
+          "text": {
+            "en": "Cao Cao sent Xiahou Yuan to reinforce Yu Jin against the rebel Chang Xi; together they compelled over ten of his strongholds to submit.",
+            "zht": "曹操派夏侯淵協助于禁征討叛將昌豨，二人合力降服了昌豨十餘座營屯。",
+            "zhs": "曹操派夏侯渊协助于禁征讨叛将昌豨，二人合力降服了昌豨十余座营屯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "昌豨",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p2",
+          "text": {
+            "en": "Xiahou Yuan and Yu Jin attacked the rebel Chang Xi and forced more than ten of his strongholds to submit, after which Chang Xi surrendered to Yu Jin.",
+            "zht": "夏侯淵與于禁合擊叛將昌豨，降服其十餘座營屯，昌豨隨後向于禁投降。",
+            "zhs": "夏侯渊与于禁合击叛将昌豨，降服其十余座营屯，昌豨随后向于禁投降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "徐和",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p2",
+          "text": {
+            "en": "Xiahou Yuan crushed the Yellow Turbans of Jinan and Le'an and killed their leader Xu He.",
+            "zht": "夏侯淵大破濟南、樂安黃巾，斬殺其首領徐和。",
+            "zhs": "夏侯渊大破济南、乐安黄巾，斩杀其首领徐和。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "雷緒",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Cao Cao sent Xiahou Yuan to command the generals against Lei Xu, a rebel in Lujiang, and Lei Xu was defeated.",
+            "zht": "曹操派夏侯淵督率諸將征討廬江叛將雷緒，擊敗了他。",
+            "zhs": "曹操派夏侯渊督率诸将征讨庐江叛将雷绪，击败了他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "徐晃（公明）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "As acting Protector of the Army Who Conquers the West, Xiahou Yuan led Xu Huang against the rebels of Taiyuan, taking more than twenty camps.",
+            "zht": "夏侯淵代理征西護軍，督率徐晃征討太原賊寇，攻下二十餘座營屯。",
+            "zhs": "夏侯渊代理征西护军，督率徐晃征讨太原贼寇，攻下二十余座营屯。"
+          }
+        },
+        {
+          "passageId": "ws9b-p7",
+          "text": {
+            "en": "Cao Cao placed Zhang He and Xu Huang under Xiahou Yuan to pacify Ba Commandery.",
+            "zht": "曹操讓夏侯淵督率張郃、徐晃等平定巴郡。",
+            "zhs": "曹操让夏侯渊督率张郃、徐晃等平定巴郡。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "商曜",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Xiahou Yuan's campaign in Taiyuan beheaded the rebel leader Shang Yao and massacred his city.",
+            "zht": "夏侯淵在太原斬殺賊帥商曜，屠滅其城。",
+            "zhs": "夏侯渊在太原斩杀贼帅商曜，屠灭其城。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "韓遂（文約）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Xiahou Yuan accompanied Cao Cao against Han Sui and the others south of the Wei River.",
+            "zht": "夏侯淵隨曹操征討韓遂等人，在渭南交戰。",
+            "zhs": "夏侯渊随曹操征讨韩遂等人，在渭南交战。"
+          }
+        },
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "Xiahou Yuan tried to surprise Han Sui at Xianqin, but Han Sui fled.",
+            "zht": "夏侯淵想襲取駐在顯親的韓遂，韓遂逃走。",
+            "zhs": "夏侯渊想袭取驻在显亲的韩遂，韩遂逃走。"
+          }
+        },
+        {
+          "passageId": "ws9b-p5",
+          "text": {
+            "en": "By burning the Qiang settlements on the Changli River, Xiahou Yuan drew Han Sui into open battle and crushed his army, capturing his standards.",
+            "zht": "夏侯淵攻燒長離諸羌營屯，引韓遂前來救援，在野戰中大破其軍，繳獲他的旌旗。",
+            "zhs": "夏侯渊攻烧长离诸羌营屯，引韩遂前来救援，在野战中大破其军，缴获他的旌旗。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "朱靈（文博）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Xiahou Yuan led Zhu Ling in pacifying Yumi and the Di of Qian, and later commanded Zhu Ling, Lu Zhao and others at Chang'an.",
+            "zht": "夏侯淵督率朱靈平定隃糜和汧縣氐人，後來又督率朱靈、路招等駐守長安。",
+            "zhs": "夏侯渊督率朱灵平定隃糜和汧县氐人，后来又督率朱灵、路招等驻守长安。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "路招",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "As acting General Protecting the Army, Xiahou Yuan commanded Zhu Ling, Lu Zhao and others garrisoning Chang'an.",
+            "zht": "夏侯淵代理護軍將軍，督率朱靈、路招等駐守長安。",
+            "zhs": "夏侯渊代理护军将军，督率朱灵、路招等驻守长安。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "劉雄",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Xiahou Yuan defeated the rebel Liu Xiong in the southern mountains and accepted the surrender of his followers.",
+            "zht": "夏侯淵擊破南山賊劉雄，收降其部衆。",
+            "zhs": "夏侯渊击破南山贼刘雄，收降其部众。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "梁興",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Xiahou Yuan besieged Liang Xing, one of Han Sui and Ma Chao's remaining adherents, at Hu, took the city and beheaded him.",
+            "zht": "夏侯淵在鄠縣圍攻韓遂、馬超的餘黨梁興，攻克城池並將他斬首。",
+            "zhs": "夏侯渊在鄠县围攻韩遂、马超的余党梁兴，攻克城池并将他斩首。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "馬超（孟起）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "When Xiahou Yuan marched to relieve Wei Kang, Ma Chao came out to meet him in battle and Xiahou Yuan's army suffered a setback.",
+            "zht": "夏侯淵救援韋康途中，馬超前來迎戰，夏侯淵軍隊失利。",
+            "zhs": "夏侯渊救援韦康途中，马超前来迎战，夏侯渊军队失利。"
+          }
+        },
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "Ma Chao fled as Xiahou Yuan's vanguard under Zhang He approached, and by the time Xiahou Yuan arrived all the counties had surrendered.",
+            "zht": "夏侯淵派張郃爲前鋒，馬超未戰而逃；夏侯淵到達時，各縣都已投降。",
+            "zhs": "夏侯渊派张郃为前锋，马超未战而逃；夏侯渊到达时，各县都已投降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "韋康（元將）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Xiahou Yuan marched to relieve Wei Kang, Inspector of Liang Province, who was besieged by Ma Chao at Ji, but Wei Kang was defeated before he arrived.",
+            "zht": "馬超在冀城圍攻涼州刺史韋康，夏侯淵前往救援，但尚未趕到，韋康已經失敗。",
+            "zhs": "马超在冀城围攻凉州刺史韦康，夏侯渊前往救援，但尚未赶到，韦康已经失败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "馬超（孟起）",
+      "to": "韋康（元將）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p3",
+          "text": {
+            "en": "Ma Chao besieged Wei Kang, Inspector of Liang Province, at Ji and defeated him.",
+            "zht": "馬超在冀城圍攻涼州刺史韋康，韋康戰敗。",
+            "zhs": "马超在冀城围攻凉州刺史韦康，韦康战败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙衢",
+      "to": "馬超（孟起）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "Zhao Qu and Yin Feng plotted against Ma Chao, tricked him into marching out against Jiang Xu, then killed his wife and all his children.",
+            "zht": "趙衢、尹奉等人謀討馬超，誘騙他出兵攻打姜叙，隨後殺盡了馬超的妻兒。",
+            "zhs": "赵衢、尹奉等人谋讨马超，诱骗他出兵攻打姜叙，随后杀尽了马超的妻儿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "尹奉",
+      "to": "馬超（孟起）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "Yin Feng joined Zhao Qu in plotting against Ma Chao.",
+            "zht": "尹奉與趙衢等人共同謀討馬超。",
+            "zhs": "尹奉与赵衢等人共同谋讨马超。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "姜叙（伯奕）",
+      "to": "馬超（孟起）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "Jiang Xu raised troops at Lu in support of the plot against Ma Chao; when Ma Chao returned from Hanzhong to besiege Mount Qi, Jiang Xu and the others urgently sought aid.",
+            "zht": "姜叙在鹵城起兵響應討伐馬超；馬超從漢中返回圍攻祁山時，姜叙等人緊急求救。",
+            "zhs": "姜叙在卤城起兵响应讨伐马超；马超从汉中返回围攻祁山时，姜叙等人紧急求救。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "姜叙（伯奕）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "Xiahou Yuan marched at once to relieve Jiang Xu and the others besieged by Ma Chao.",
+            "zht": "夏侯淵立即出兵救援被馬超圍攻的姜叙等人。",
+            "zhs": "夏侯渊立即出兵救援被马超围攻的姜叙等人。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "張郃（㑺乂）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p4",
+          "text": {
+            "en": "Xiahou Yuan sent Zhang He ahead with five thousand men through the Chencang road while he followed with the grain; Ma Chao fled before Zhang He.",
+            "zht": "夏侯淵派張郃率五千步騎爲前鋒，從陳倉小道進入，自己在後督運糧草；馬超未戰就逃走了。",
+            "zhs": "夏侯渊派张郃率五千步骑为前锋，从陈仓小道进入，自己在后督运粮草；马超未战就逃走了。"
+          }
+        },
+        {
+          "passageId": "ws9b-p6",
+          "text": {
+            "en": "Xiahou Yuan separately dispatched Zhang He and others to pacify Heguan, and the Qiang west of the river all surrendered.",
+            "zht": "夏侯淵另派張郃等人平定河關，河西諸羌全部投降。",
+            "zhs": "夏侯渊另派张郃等人平定河关，河西诸羌全部投降。"
+          }
+        },
+        {
+          "passageId": "ws9b-p7",
+          "text": {
+            "en": "When Liu Bei attacked at Yangpingguan, Xiahou Yuan had Zhang He defend the eastern perimeter, and was killed after sending half his own troops to reinforce him.",
+            "zht": "劉備進攻陽平關時，夏侯淵讓張郃守衛東面營寨，他分出一半兵力救援張郃，結果戰死。",
+            "zhs": "刘备进攻阳平关时，夏侯渊让张郃守卫东面营寨，他分出一半兵力救援张郃，结果战死。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "千萬",
+      "to": "馬超（孟起）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p5",
+          "text": {
+            "en": "When Xiahou Yuan besieged Xingguo, Qianwan, king of the Di, fled to Ma Chao.",
+            "zht": "夏侯淵圍攻興國時，氐王千萬逃奔馬超。",
+            "zhs": "夏侯渊围攻兴国时，氐王千万逃奔马超。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "宋建",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p6",
+          "text": {
+            "en": "Xiahou Yuan besieged Fuhan, took it after a month, and executed Song Jian, the self-styled King of Heshou, together with his officials.",
+            "zht": "夏侯淵圍攻枹罕，一個多月後攻克，斬殺自稱“河首平漢王”的宋建及其所置丞相以下官員。",
+            "zhs": "夏侯渊围攻枹罕，一个多月后攻克，斩杀自称“河首平汉王”的宋建及其所置丞相以下官员。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "劉備（玄德）",
+      "to": "夏侯淵（妙才）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p7",
+          "text": {
+            "en": "Liu Bei held Xiahou Yuan at a stand-off at Yangpingguan for over a year, then burned his barricades by night and caught him in a sudden attack, killing him.",
+            "zht": "劉備在陽平關與夏侯淵相持一年多，後來夜燒鹿角，突襲夏侯淵，夏侯淵戰死。",
+            "zhs": "刘备在阳平关与夏侯渊相持一年多，后来夜烧鹿角，突袭夏侯渊，夏侯渊战死。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯衡",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Heng, Xiahou Yuan's eldest son, inherited his title and was later made Neighbourhood Marquis of Anning.",
+            "zht": "夏侯衡是夏侯淵的長子，繼承爵位，後轉封安寧亭侯。",
+            "zhs": "夏侯衡是夏侯渊的长子，继承爵位，后转封安宁亭侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹操（孟德）",
+      "to": "夏侯衡",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Heng married the daughter of Cao Cao's younger brother, Marquis Ai of Haiyang, and enjoyed exceptional favour.",
+            "zht": "夏侯衡娶了曹操弟弟海陽哀侯的女兒，恩寵特別隆厚。",
+            "zhs": "夏侯衡娶了曹操弟弟海阳哀侯的女儿，恩宠特别隆厚。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯衡",
+      "to": "夏侯績",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "When Xiahou Heng died, his son Xiahou Ji succeeded him and served as Gentleman-General of the Rapid Tigers.",
+            "zht": "夏侯衡去世後，其子夏侯績繼承爵位，任虎賁中郎將。",
+            "zhs": "夏侯衡去世后，其子夏侯绩继承爵位，任虎贲中郎将。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯績",
+      "to": "夏侯襃",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "When Xiahou Ji died, his son Xiahou Bao succeeded him.",
+            "zht": "夏侯績去世後，其子夏侯襃繼承爵位。",
+            "zhs": "夏侯绩去世后，其子夏侯褒继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯霸（仲權）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Ba was Xiahou Yuan's second son; after his father was killed by Shu, he burned to avenge him.",
+            "zht": "夏侯霸是夏侯淵的次子；父親被蜀軍所害後，他常切齒痛恨，一心想向蜀國報仇。",
+            "zhs": "夏侯霸是夏侯渊的次子；父亲被蜀军所害后，他常切齿痛恨，一心想向蜀国报仇。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯威（季權）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Wei, one of Xiahou Yuan's sons, was chivalrous by nature and rose to Inspector of Jing and Yan provinces.",
+            "zht": "夏侯威是夏侯淵之子，爲人任俠，歷任荊、兗二州刺史。",
+            "zhs": "夏侯威是夏侯渊之子，为人任侠，历任荆、兖二州刺史。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯惠（稚權）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Hui, one of Xiahou Yuan's sons, was known from youth for his talent and learning and became Grand Administrator of Le'an.",
+            "zht": "夏侯惠是夏侯淵之子，年少時以才學著稱，官至樂安太守。",
+            "zhs": "夏侯惠是夏侯渊之子，年少时以才学著称，官至乐安太守。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯和（義權）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou He, Xiahou Yuan's son, was a clear and able debater and rose to Intendant of Henan and Minister of Ceremonies.",
+            "zht": "夏侯和是夏侯淵之子，清談善辯，官至河南尹、太常。",
+            "zhs": "夏侯和是夏侯渊之子，清谈善辩，官至河南尹、太常。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯稱（叔權）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Cheng, Xiahou Yuan's third son, played at war as a boy; when Xiahou Yuan urged him to read military texts, he refused, saying he would rather act himself than learn from others. He died at eighteen.",
+            "zht": "夏侯稱是夏侯淵的第三子，幼時便喜歡玩打仗遊戲；夏侯淵讓他讀兵書，他不肯，說自己能做到，何必學別人。十八歲去世。",
+            "zhs": "夏侯称是夏侯渊的第三子，幼时便喜欢玩打仗游戏；夏侯渊让他读兵书，他不肯，说自己能做到，何必学别人。十八岁去世。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "夏侯榮（幼權）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Rong, Xiahou Yuan's fifth son, was a prodigy; at thirteen he refused to flee the defeat at Hanzhong while his father was in danger and died fighting.",
+            "zht": "夏侯榮是夏侯淵的第五子，自幼聰慧；漢中之敗時年僅十三，因父親身處險境而不肯逃走，奮劍戰死。",
+            "zhs": "夏侯荣是夏侯渊的第五子，自幼聪慧；汉中之败时年仅十三，因父亲身处险境而不肯逃走，奋剑战死。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯霸（仲權）",
+      "to": "夏侯威（季權）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Ba's younger brother Xiahou Wei rose to Inspector of Yan Province.",
+            "zht": "夏侯霸的弟弟夏侯威官至兗州刺史。",
+            "zhs": "夏侯霸的弟弟夏侯威官至兖州刺史。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯威（季權）",
+      "to": "夏侯駿",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Wei's son Xiahou Jun became Inspector of Bing Province.",
+            "zht": "夏侯威之子夏侯駿官至并州刺史。",
+            "zhs": "夏侯威之子夏侯骏官至并州刺史。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯威（季權）",
+      "to": "夏侯莊",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Wei's second son Xiahou Zhuang became Grand Administrator of Huainan.",
+            "zht": "夏侯威的次子夏侯莊官至淮南太守。",
+            "zhs": "夏侯威的次子夏侯庄官至淮南太守。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯莊",
+      "to": "夏侯湛（孝若）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Zhuang's son Xiahou Zhan was renowned for his learning and writing, rising to Chancellor of Nanyang and Cavalier Regular Attendant; he wrote the preface recording his great-uncles' stories.",
+            "zht": "夏侯莊之子夏侯湛以博學和文章著稱，官至南陽相、散騎常侍；他曾爲叔祖們作序記其事蹟。",
+            "zhs": "夏侯庄之子夏侯湛以博学和文章著称，官至南阳相、散骑常侍；他曾为叔祖们作序记其事迹。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯莊",
+      "to": "羊徽瑜",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Zhuang was married to the elder sister of Yang Huiyu, Empress Jingxian of Jin, and through this tie his family flourished.",
+            "zht": "夏侯莊是晉景獻羊皇后的姐夫，夏侯一門因此在當時十分顯盛。",
+            "zhs": "夏侯庄是晋景献羊皇后的姐夫，夏侯一门因此在当时十分显盛。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯霸（仲權）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "During the Huangchu era, Xiahou Ba was granted a title and served as Adjunct General.",
+            "zht": "黃初年間，夏侯霸獲賜爵位，任偏將軍。",
+            "zhs": "黄初年间，夏侯霸获赐爵位，任偏将军。"
+          },
+          "title": {
+            "en": "Adjunct General",
+            "zht": "偏將軍",
+            "zhs": "偏将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯霸（仲權）",
+      "to": "曹芳（蘭卿）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "During the Zhengshi era, Xiahou Ba served as Protector of the Army for the Campaign against Shu and General of the Right, and was promoted to Neighbourhood Marquis of Bochang.",
+            "zht": "正始年間，夏侯霸任討蜀護軍、右將軍，進封博昌亭侯。",
+            "zhs": "正始年间，夏侯霸任讨蜀护军、右将军，进封博昌亭侯。"
+          },
+          "title": {
+            "en": "Protector of the Army for the Campaign against Shu, General of the Right",
+            "zht": "討蜀護軍、右將軍",
+            "zhs": "讨蜀护军、右将军"
+          }
+        },
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "After Cao Shuang's execution, fearing he would be next, Xiahou Ba fled to Shu; in recognition of Xiahou Yuan's merit, his son was spared and exiled to Lelang.",
+            "zht": "曹爽被誅後，夏侯霸疑懼自己受牽連，逃入蜀國；朝廷念夏侯淵的舊功，赦免了他的兒子，將其流放樂浪郡。",
+            "zhs": "曹爽被诛后，夏侯霸疑惧自己受牵连，逃入蜀国；朝廷念夏侯渊的旧功，赦免了他的儿子，将其流放乐浪郡。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹爽（昭伯）",
+      "to": "夏侯霸（仲權）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Ba had long been treated generously by Cao Shuang, so Cao Shuang's execution left him fearing for his own life.",
+            "zht": "夏侯霸一向受曹爽厚待，因此曹爽被誅後，他擔心自身難保。",
+            "zhs": "夏侯霸一向受曹爽厚待，因此曹爽被诛后，他担心自身难保。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯霸（仲權）",
+      "to": "劉禪（公嗣）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "When Xiahou Ba reached Shu, Liu Shan received him, said his father had died in battle rather than by the late emperor's own hand, pointed to his son as a nephew of the Xiahou family, and bestowed generous rank and favour on him.",
+            "zht": "夏侯霸入蜀後，劉禪接見他，解釋說他父親是在戰陣中遇害，並非先帝親手所殺；又指着自己的兒子說“這是夏侯氏的外甥”，給予他豐厚的爵位和恩寵。",
+            "zhs": "夏侯霸入蜀后，刘禅接见他，解释说他父亲是在战阵中遇害，并非先帝亲手所杀；又指着自己的儿子说“这是夏侯氏的外甥”，给予他丰厚的爵位和恩宠。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯霸（仲權）",
+      "to": "郭淮（伯濟）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Ba had long been at odds with Guo Huai, Inspector of Yong Province; when Guo Huai replaced Xiahou Xuan as General Who Conquers the West, Xiahou Ba grew even more uneasy and fled to Shu.",
+            "zht": "夏侯霸一向與雍州刺史郭淮不和；郭淮接替夏侯玄任征西將軍後，夏侯霸更加不安，於是逃奔蜀國。",
+            "zhs": "夏侯霸一向与雍州刺史郭淮不和；郭淮接替夏侯玄任征西将军后，夏侯霸更加不安，于是逃奔蜀国。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯玄（泰初）",
+      "to": "郭淮（伯濟）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "After Xiahou Xuan was recalled east, Guo Huai replaced him as General Who Conquers the West.",
+            "zht": "夏侯玄被召回朝廷後，郭淮接替他任征西將軍。",
+            "zhs": "夏侯玄被召回朝廷后，郭淮接替他任征西将军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯霸（仲權）",
+      "to": "夏侯玄（泰初）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Xuan, General Who Conquers the West, was Xiahou Ba's nephew, and Xiahou Ba served under his command as Protector of the Army for the Campaign against Shu.",
+            "zht": "征西將軍夏侯玄是夏侯霸的侄子，夏侯霸以討蜀護軍身份隸屬於他。",
+            "zhs": "征西将军夏侯玄是夏侯霸的侄子，夏侯霸以讨蜀护军身份隶属于他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯玄（泰初）",
+      "to": "曹爽（昭伯）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Xuan was Cao Shuang's younger cousin on his mother's side, so Cao Shuang's fall led to his recall.",
+            "zht": "夏侯玄是曹爽的表弟，因此曹爽倒臺後，他被召回朝廷。",
+            "zhs": "夏侯玄是曹爽的表弟，因此曹爽倒台后，他被召回朝廷。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "司馬懿（仲達）",
+      "to": "曹爽（昭伯）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Sima Yi executed Cao Shuang and then recalled Xiahou Xuan, which drove Xiahou Ba to flee to Shu.",
+            "zht": "司馬懿誅殺曹爽，隨即召回夏侯玄，夏侯霸因此逃奔蜀國。",
+            "zhs": "司马懿诛杀曹爽，随即召回夏侯玄，夏侯霸因此逃奔蜀国。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張飛（益德）",
+      "to": "夏侯氏",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "In the fifth year of Jian'an, Zhang Fei captured a thirteen-year-old girl of the Xiahou family gathering firewood and, knowing her to be of good family, took her as his wife; their daughter became Liu Shan's empress.",
+            "zht": "建安五年，張飛俘獲了正在打柴的十三四歲的夏侯氏少女，知道她是良家女子，便娶她爲妻；他們的女兒後來成爲劉禪的皇后。",
+            "zhs": "建安五年，张飞俘获了正在打柴的十三四岁的夏侯氏少女，知道她是良家女子，便娶她为妻；他们的女儿后来成为刘禅的皇后。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯霸（仲權）",
+      "to": "夏侯氏",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Lady Xiahou, Zhang Fei's wife, was Xiahou Ba's younger cousin; after Xiahou Yuan was killed, she asked to bury him.",
+            "zht": "張飛之妻夏侯氏是夏侯霸的堂妹；夏侯淵陣亡後，她請求收葬了他。",
+            "zhs": "张飞之妻夏侯氏是夏侯霸的堂妹；夏侯渊阵亡后，她请求收葬了他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張飛（益德）",
+      "to": "劉禪（公嗣）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Zhang Fei's daughter by Lady Xiahou became Liu Shan's empress.",
+            "zht": "張飛與夏侯氏所生的女兒成爲劉禪的皇后。",
+            "zhs": "张飞与夏侯氏所生的女儿成为刘禅的皇后。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惠（稚權）",
+      "to": "鍾毓（稚叔）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Hui repeatedly debated against Zhong Yu at court, and his views were usually adopted.",
+            "zht": "夏侯惠多次與鍾毓辯駁，他的意見大多被採納。",
+            "zhs": "夏侯惠多次与钟毓辩驳，他的意见大多被采纳。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯稱（叔權）",
+      "to": "曹丕（子桓）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Xiahou Cheng was a friend of Cao Pi from the days before either held office.",
+            "zht": "夏侯稱與曹丕是布衣之交。",
+            "zhs": "夏侯称与曹丕是布衣之交。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹操（孟德）",
+      "to": "夏侯稱（叔權）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "When the sixteen-year-old Xiahou Cheng brought down a charging tiger with a single arrow, Cao Cao took his hand and exclaimed, \"Now I have you!\"",
+            "zht": "十六歲的夏侯稱一箭射倒奔虎，名聲傳到曹操那裏，曹操握着他的手高興地說：“我得到你了！”",
+            "zhs": "十六岁的夏侯称一箭射倒奔虎，名声传到曹操那里，曹操握着他的手高兴地说：“我得到你了！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹丕（子桓）",
+      "to": "夏侯榮（幼權）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9b-p8",
+          "text": {
+            "en": "Hearing of the boy Xiahou Rong's memory, Cao Pi invited him and had him recite the names and home districts of over a hundred guests after a single glance at their cards; he made no mistake, and Cao Pi was deeply impressed.",
+            "zht": "曹丕聽說夏侯榮記憶過人，便請他來，讓他看一眼一百多位賓客的名刺後逐一說出其鄉里姓名，夏侯榮無一差錯，曹丕深感驚奇。",
+            "zhs": "曹丕听说夏侯荣记忆过人，便请他来，让他看一眼一百多位宾客的名刺后逐一说出其乡里姓名，夏侯荣无一差错，曹丕深感惊奇。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "夏侯淵（妙才）",
+      "name": { "en": "Xiahou Yuan", "zht": "夏侯淵", "zhs": "夏侯渊" },
+      "courtesyName": { "en": "Miaocai", "zht": "妙才", "zhs": "妙才" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "24th year of Jian'an", "zht": "建安二十四年", "zhs": "建安二十四年" }, "year": 219 },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Qiao", "zht": "譙縣", "zhs": "谯县" }], "position": null, "passageId": "" },
+        { "era": { "en": "6th year of Zhongping", "zht": "中平六年", "zhs": "中平六年" }, "year": 189, "age": null, "location": null, "position": [{ "en": "Commandant of Cavalry", "zht": "騎都尉", "zhs": "骑都尉" }, { "en": "Major of a Separate Command", "zht": "別部司馬", "zhs": "别部司马" }], "passageId": "" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Chenliu State", "zht": "陳留", "zhs": "陈留" }, { "en": "Yingchuan", "zht": "潁川", "zhs": "颍川" }], "position": [{ "en": "Grand Administrator", "zht": "太守", "zhs": "太守" }], "passageId": "" },
+        { "era": { "en": "5th year of Jian'an", "zht": "建安五年", "zhs": "建安五年" }, "year": 200, "age": null, "location": [{ "en": "Guandu", "zht": "官渡", "zhs": "官渡" }], "position": [{ "en": "Acting Colonel Who Supervises the Army", "zht": "行督軍校尉", "zhs": "行督军校尉" }], "passageId": "" },
+        { "era": { "en": "6th year of Jian'an", "zht": "建安六年", "zhs": "建安六年" }, "year": 201, "age": null, "location": [{ "en": "Donghai State", "zht": "東海國", "zhs": "东海国" }], "position": null, "passageId": "" },
+        { "era": { "en": "11th - 12th year of Jian'an", "zht": "建安十一年 - 十二年", "zhs": "建安十一年 - 十二年" }, "year": "206 - 207", "age": null, "location": [{ "en": "Jinan State", "zht": "濟南", "zhs": "济南" }, { "en": "Le'an", "zht": "樂安", "zhs": "乐安" }], "position": [{ "en": "Colonel Who Directs the Army", "zht": "典軍校尉", "zhs": "典军校尉" }], "passageId": "" },
+        { "era": { "en": "14th - 16th year of Jian'an", "zht": "建安十四年 - 十六年", "zhs": "建安十四年 - 十六年" }, "year": "209 - 211", "age": null, "location": [{ "en": "Taiyuan", "zht": "太原", "zhs": "太原" }, { "en": "Hedong", "zht": "河東", "zhs": "河东" }, { "en": "Yumi", "zht": "隃糜", "zhs": "隃糜" }, { "en": "Qian", "zht": "汧", "zhs": "汧" }, { "en": "Anding", "zht": "安定", "zhs": "安定" }], "position": [{ "en": "Acting Commander of the Army", "zht": "行領軍", "zhs": "行领军" }, { "en": "Acting Protector of the Army Who Conquers the West", "zht": "行征西護軍", "zhs": "行征西护军" }], "passageId": "" },
+        { "era": { "en": "17th - 19th year of Jian'an", "zht": "建安十七年 - 十九年", "zhs": "建安十七年 - 十九年" }, "year": "212 - 214", "age": null, "location": [{ "en": "Chang'an", "zht": "長安", "zhs": "长安" }, { "en": "Hu", "zht": "鄠", "zhs": "鄠" }, { "en": "Fucheng", "zht": "鄜城", "zhs": "鄜城" }, { "en": "Xianqin", "zht": "顯親", "zhs": "显亲" }, { "en": "Changli River", "zht": "長離", "zhs": "长离" }, { "en": "Xingguo", "zht": "興國", "zhs": "兴国" }, { "en": "Gaoping", "zht": "高平", "zhs": "高平" }, { "en": "Fuhan", "zht": "枹罕", "zhs": "枹罕" }], "position": [{ "en": "Acting General Protecting the Army", "zht": "行護軍將軍", "zhs": "行护军将军" }, { "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }, { "en": "Provisional Bearer of the Imperial Tally", "zht": "假淵節", "zhs": "假渊节" }], "passageId": "" },
+        { "era": { "en": "20th - 21st year of Jian'an", "zht": "建安二十年 - 二十一年", "zhs": "建安二十年 - 二十一年" }, "year": "215 - 216", "age": null, "location": [{ "en": "Wudu", "zht": "武都", "zhs": "武都" }, { "en": "Xiabian", "zht": "下辨", "zhs": "下辨" }, { "en": "Xiuting", "zht": "休亭", "zhs": "休亭" }, { "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" }, { "en": "Ba", "zht": "巴", "zhs": "巴" }], "position": [{ "en": "Acting General Protector", "zht": "行都護將軍", "zhs": "行都护将军" }, { "en": "General Who Conquers the West", "zht": "征西將軍", "zhs": "征西将军" }], "passageId": "" },
+        { "era": { "en": "23rd - 24th year of Jian'an", "zht": "建安二十三年 - 二十四年", "zhs": "建安二十三年 - 二十四年" }, "year": "218 - 219", "age": null, "location": [{ "en": "Yangpingguan", "zht": "陽平關", "zhs": "阳平关" }], "position": null, "passageId": "" }
+      ]
+    },
+    {
+      "person": "夏侯霸（仲權）",
+      "name": { "en": "Xiahou Ba", "zht": "夏侯霸", "zhs": "夏侯霸" },
+      "courtesyName": { "en": "Zhongquan", "zht": "仲權", "zhs": "仲权" },
+      "born": { "era": { "en": "Before the 4th year of Zhongping", "zht": "中平四年前", "zhs": "中平四年前" }, "year": "<187" },
+      "died": { "era": { "en": "18th year of Yanxi - 2nd year of Jingyao", "zht": "延熙十八年 - 景耀二年", "zhs": "延熙十八年 - 景耀二年" }, "year": "255 - 259" },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Qiao", "zht": "譙縣", "zhs": "谯县" }], "position": null, "passageId": "" },
+        { "era": { "en": "during the Huangchu Era", "zht": "黃初年間", "zhs": "黄初年间" }, "year": "220 - 226", "age": null, "location": null, "position": [{ "en": "Adjunct General", "zht": "偏將軍", "zhs": "偏将军" }, { "en": "Marquis Within the Pass", "zht": "關內侯", "zhs": "关内侯" }], "passageId": "" },
+        { "era": { "en": "4th year of Taihe", "zht": "太和四年", "zhs": "太和四年" }, "year": 240, "age": null, "location": [{ "en": "Xingshi", "zht": "興世", "zhs": "兴世" }], "position": null, "passageId": "" },
+        { "era": { "en": "during the Zhengshi Era", "zht": "正始年間", "zhs": "正始年间" }, "year": "240 - 249", "age": null, "location": [{ "en": "Fuhan", "zht": "枹罕", "zhs": "枹罕" }, { "en": "Tazhong", "zht": "沓中", "zhs": "沓中" }], "position": [{ "en": "Protector of the Army for the Campaign against Shu", "zht": "討蜀護軍", "zhs": "讨蜀护军" }, { "en": "General of the Right", "zht": "右將軍", "zhs": "右将军" }, { "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }], "passageId": "" },
+        { "era": { "en": "1st year of Jiaping", "zht": "嘉平元年", "zhs": "嘉平元年" }, "year": 249, "age": null, "location": [{ "en": "Yinping", "zht": "陰平", "zhs": "阴平" }], "position": null, "passageId": "" },
+        { "era": { "en": "18th year of Yanxi", "zht": "延熙十八年", "zhs": "延熙十八年" }, "year": 255, "age": null, "location": [{ "en": "Didao", "zht": "狄道", "zhs": "狄道" }], "position": [{ "en": "General of Chariots and Cavalry", "zht": "車騎將軍", "zhs": "车骑将军" }], "passageId": "" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws9b-p1",
+      "orig": {
+        "zht": "夏侯淵字妙才，惇族弟也。太祖居家，曾有縣官事，淵代引重罪，太祖營救之，得免。",
+        "zhs": "夏侯渊字妙才，惇族弟也。太祖居家，曾有县官事，渊代引重罪，太祖营救之，得免。"
+      },
+      "vern": {
+        "zht": "夏侯淵，字妙才，是夏侯惇的族弟。太祖還住在家時鄉，曾因事被縣官治罪，夏侯淵代他承擔了重罪，後來太祖營救他，他才得以免罪。",
+        "zhs": "夏侯渊，字妙才，是夏侯惇的族弟。太祖还住在家时乡，曾因事被县官治罪，夏侯渊代他承担了重罪，后来太祖营救他，他才得以免罪。"
+      },
+      "en": "Xiahou Yuan, courtesy name Miaocai, was a younger kinsman of Xiahou Dun. While Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) was still living in his hometown, he once incurred a criminal charge from the county authorities. Xiahou Yuan took responsibility for the serious offence in his place, and Cao Cao later secured his release, sparing him punishment.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：時[[兖|/zh-hant/maps/map-overall?admin=11]]、[[豫|/zh-hant/maps/map-overall?admin=16]]大亂，淵以饑乏，棄其幼子，而活亡弟孤女。",
+          "zhs": "《魏略》曰：时[[兖|/zh-hans/maps/map-overall?admin=11]]、[[豫|/zh-hans/maps/map-overall?admin=16]]大乱，渊以饥乏，弃其幼子，而活亡弟孤女。",
+          "vern": {
+            "zht": "《魏略》記載：當時[[兗|/zh-hant/maps/map-overall?admin=11]]州、[[豫|/zh-hant/maps/map-overall?admin=16]]州大亂，夏侯淵因爲飢餓匱乏，拋棄了自己的幼子，救活了已故弟弟的孤女。",
+            "zhs": "《魏略》记载：当时[[兖|/zh-hans/maps/map-overall?admin=11]]州、[[豫|/zh-hans/maps/map-overall?admin=16]]州大乱，夏侯渊因为饥饿匮乏，抛弃了自己的幼子，救活了已故弟弟的孤女。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: At the time, [[Yan Province|/maps/map-overall?admin=11]] and [[Yu Province|/maps/map-overall?admin=16]] were in great turmoil. Faced with hunger and privation, Yuan abandoned his own young son to keep his late younger brother's orphaned daughter alive."
+        }
+      ]
+    },
+    {
+      "id": "ws9b-p2",
+      "orig": {
+        "zht": "太祖起兵，以別部司馬、[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]從，[[遷|/zh-hant/translations/officials#glossary-reassign]][[陳留|/zh-hant/maps/map-overall?admin=39]]、[[潁川|/zh-hant/maps/map-overall?admin=31]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。及與袁紹戰於[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]，[[行|/zh-hant/translations/officials#glossary-acting]][[督軍校尉|/zh-hant/translations/officials/military#colonels--commandants-208]]。紹破，使督[[兖|/zh-hant/maps/map-overall?admin=11]]、[[豫|/zh-hant/maps/map-overall?admin=16]]、[[徐州|/zh-hant/maps/map-overall?admin=8]]軍糧；時軍食少，淵傳饋相繼，軍以復振。昌狶反，遣于禁擊之，未拔，復遣淵與禁并力，遂擊狶，降其十餘屯，狶詣禁降。淵還，[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]典軍校尉。[[濟南|/zh-hant/maps/map-overall?admin=42]]、[[樂安|/zh-hant/maps/map-overall?admin=47]]黃巾徐和、司馬俱等攻城，殺長吏，淵將[[泰山|/zh-hant/maps/map-overall?admin=33]]、[[齊|/zh-hant/maps/map-overall?admin=43]]、[[平原|/zh-hant/maps/map-overall?admin=153]]郡兵擊，大破之，斬和，平諸縣，收其糧穀以給軍士。",
+        "zhs": "太祖起兵，以别部司马、[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]从，[[迁|/zh-hans/translations/officials#glossary-reassign]][[陈留|/zh-hans/maps/map-overall?admin=39]]、[[颍川|/zh-hans/maps/map-overall?admin=31]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。及与袁绍战于[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]，[[行|/zh-hans/translations/officials#glossary-acting]][[督军校尉|/zh-hans/translations/officials/military#colonels--commandants-208]]。绍破，使督[[兖|/zh-hans/maps/map-overall?admin=11]]、[[豫|/zh-hans/maps/map-overall?admin=16]]、[[徐州|/zh-hans/maps/map-overall?admin=8]]军粮；时军食少，渊传馈相继，军以复振。昌狶反，遣于禁击之，未拔，复遣渊与禁并力，遂击狶，降其十余屯，狶诣禁降。渊还，[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]典军校尉。[[济南|/zh-hans/maps/map-overall?admin=42]]、[[乐安|/zh-hans/maps/map-overall?admin=47]]黄巾徐和、司马俱等攻城，杀长吏，渊将[[泰山|/zh-hans/maps/map-overall?admin=33]]、[[齐|/zh-hans/maps/map-overall?admin=43]]、[[平原|/zh-hans/maps/map-overall?admin=153]]郡兵击，大破之，斩和，平诸县，收其粮谷以给军士。"
+      },
+      "vern": {
+        "zht": "太祖起兵時，夏侯淵以別部司馬、[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]的身份隨從太祖，後升任[[陳留|/zh-hant/maps/map-overall?admin=39]]、[[潁川|/zh-hant/maps/map-overall?admin=31]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。太祖與袁紹在[[官渡|/zh-hant/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]交戰時，夏侯淵爲[[行|/zh-hant/translations/officials#glossary-acting]][[督軍校尉|/zh-hant/translations/officials/military#colonels--commandants-208]]。袁紹被擊破後，太祖派他督管[[兗|/zh-hant/maps/map-overall?admin=11]]州、[[豫|/zh-hant/maps/map-overall?admin=16]]州、[[徐州|/zh-hant/maps/map-overall?admin=8]]的軍糧。當時軍糧短缺，夏侯淵連續轉運供給，軍隊因此重新振作。昌狶反叛，太祖派于禁攻打，未能攻克，又派夏侯淵與于禁合力攻打，降服昌狶的十餘個據點，昌狶也到于禁處投降。夏侯淵返回後，[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]爲典軍校尉。[[濟南|/zh-hant/maps/map-overall?admin=42]]、[[樂安|/zh-hant/maps/map-overall?admin=47]]的黃巾徐和、司馬俱等人攻打縣城，殺死長吏，夏侯淵便率領[[泰山|/zh-hant/maps/map-overall?admin=33]]、[[齊|/zh-hant/maps/map-overall?admin=43]]、[[平原|/zh-hant/maps/map-overall?admin=153]]郡的軍隊出擊，大破敵軍，斬殺徐和，平定各縣，收繳他們的糧谷供給軍士。",
+        "zhs": "太祖起兵时，夏侯渊以别部司马、[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]的身份随从太祖，后升任[[陈留|/zh-hans/maps/map-overall?admin=39]]、[[颍川|/zh-hans/maps/map-overall?admin=31]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。太祖与袁绍在[[官渡|/zh-hans/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]]交战时，夏侯渊为[[行|/zh-hans/translations/officials#glossary-acting]][[督军校尉|/zh-hans/translations/officials/military#colonels--commandants-208]]。袁绍被击破后，太祖派他督管[[兖|/zh-hans/maps/map-overall?admin=11]]州、[[豫|/zh-hans/maps/map-overall?admin=16]]州、[[徐州|/zh-hans/maps/map-overall?admin=8]]的军粮。当时军粮短缺，夏侯渊连续转运供给，军队因此重新振作。昌狶反叛，太祖派于禁攻打，未能攻克，又派夏侯渊与于禁合力攻打，降服昌狶的十余个据点，昌狶也到于禁处投降。夏侯渊返回后，[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]为典军校尉。[[济南|/zh-hans/maps/map-overall?admin=42]]、[[乐安|/zh-hans/maps/map-overall?admin=47]]的黄巾徐和、司马俱等人攻打县城，杀死长吏，夏侯渊便率领[[泰山|/zh-hans/maps/map-overall?admin=33]]、[[齐|/zh-hans/maps/map-overall?admin=43]]、[[平原|/zh-hans/maps/map-overall?admin=153]]郡的军队出击，大破敌军，斩杀徐和，平定各县，收缴他们的粮谷供给军士。"
+      },
+      "en": "When Cao Cao raised troops, Xiahou Yuan served under him as Major of a Separate Command and [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]]. He was later [[promoted|/translations/officials#glossary-reassign]] to [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Chenliu State|/maps/map-overall?admin=39]] and [[Yingchuan|/maps/map-overall?admin=31]] in succession. During the battle against Yuan Shao at [[Guandu|/maps/map-overall?lat=34.81631685&lng=114.04675874&name=Guandu]], he served as [[acting|/translations/officials#glossary-acting]] [[Colonel Who Supervises the Army|/translations/officials/military#colonels--commandants-208]]. After Yuan Shao's defeat, Cao Cao put him in charge of military grain supplies in [[Yan Province|/maps/map-overall?admin=11]], [[Yu Province|/maps/map-overall?admin=16]] and [[Xu Province|/maps/map-overall?admin=8]]. Provisions then were scarce, but Xiahou Yuan kept supplies arriving without interruption, restoring the army's strength. When Chang Xi rebelled, Cao Cao sent Yu Jin against him, but Yu Jin could not defeat him. Cao Cao then sent Xiahou Yuan to reinforce Yu Jin. Together they attacked Chang Xi and compelled more than ten of his strongholds to submit. Chang Xi himself later went to Yu Jin and surrendered. On his return, Xiahou Yuan was [[appointed|/translations/officials#glossary-formally-appoint]] Colonel Who Directs the Army. When Xu He, Sima Ju and other Yellow Turban leaders in [[Jinan State|/maps/map-overall?admin=42]] and [[Le'an|/maps/map-overall?admin=47]] attacked towns and killed their chief officials, Xiahou Yuan led troops from [[Taishan|/maps/map-overall?admin=33]], [[Qi State|/maps/map-overall?admin=43]] and [[Pingyuan|/maps/map-overall?admin=153]] against the rebels and won decisively. Xiahou Yuan killed Xu He, pacified the counties and seized the rebels' grain to provision his soldiers.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：淵為將，赴急疾，常出敵之不意，故軍中為之語曰：「典軍校尉夏侯淵，三日五百，六日一千。」",
+          "zhs": "《魏书》曰：渊为将，赴急疾，常出敌之不意，故军中为之语曰：「典军校尉夏侯渊，三日五百，六日一千。」",
+          "vern": {
+            "zht": "《魏書》記載：夏侯淵擔任將領，遇到緊急情況便迅速奔赴，速度之快常常出乎敵人意料，因此軍中傳開一句話說：「典軍校尉夏侯淵，三天五百里，六天一千里。」",
+            "zhs": "《魏书》记载：夏侯渊担任将领，遇到紧急情况便迅速奔赴，速度之快常常出乎敌人意料，因此军中传开一句话说：「典军校尉夏侯渊，三天五百里，六天一千里。」"
+          },
+          "en": "The Book of Wei states: As a general, Xiahou Yuan moved rapidly wherever an emergency arose, often catching the enemy by surprise. Hence a saying spread through the army: \"Xiahou Yuan, Colonel Who Directs the Army. Five hundred li in three days, a thousand in six.\""
+        }
+      ]
+    },
+    {
+      "id": "ws9b-p3",
+      "orig": {
+        "zht": "十四年，以淵為[[行領軍|/zh-hant/translations/officials/military#central-army-001]]。太祖征孫權還，使淵督諸將擊[[廬江|/zh-hant/maps/map-overall?admin=23]]叛者雷緒，緒破，又[[行|/zh-hant/translations/officials#glossary-acting]]征西[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]，督徐晃擊[[太原|/zh-hant/maps/map-overall?admin=21]]賊，攻下二十餘屯，斬賊帥商曜，屠其城。從征韓遂等，戰於[[渭|/zh-hant/maps/map-overall?water=14]]南。又督朱靈平[[隃糜|/zh-hant/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]、[[汧|/zh-hant/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐。與太祖會[[安定|/zh-hant/maps/map-overall?admin=152]]，降楊秋。十七年，太祖乃還[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，以淵[[行|/zh-hant/translations/officials#glossary-acting]][[護軍將軍|/zh-hant/translations/officials/military#central-army-002]]，督朱靈、路招等屯[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，擊破南山賊劉雄，降其衆。圍遂、超餘黨梁興於[[鄠|/zh-hant/maps/map-overall?lat=34.11510159&lng=108.59571946&name=Hu]]，拔之，斬興，封博昌[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。馬超圍[[涼州|/zh-hant/maps/map-overall?admin=5]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]韋康於兾，淵救康，未到，康敗。去兾二百餘[[里|/zh-hant/translations/officials#glossary-li]]，超來逆戰，軍不利。[[汧|/zh-hant/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐反，淵引軍還。",
+        "zhs": "十四年，以渊为[[行领军|/zh-hans/translations/officials/military#central-army-001]]。太祖征孙权还，使渊督诸将击[[庐江|/zh-hans/maps/map-overall?admin=23]]叛者雷绪，绪破，又[[行|/zh-hans/translations/officials#glossary-acting]]征西[[护军|/zh-hans/translations/officials/military#various-commanders-034]]，督徐晃击[[太原|/zh-hans/maps/map-overall?admin=21]]贼，攻下二十余屯，斩贼帅商曜，屠其城。从征韩遂等，战于[[渭|/zh-hans/maps/map-overall?water=14]]南。又督朱灵平[[隃糜|/zh-hans/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]、[[汧|/zh-hans/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐。与太祖会[[安定|/zh-hans/maps/map-overall?admin=152]]，降杨秋。十七年，太祖乃还[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，以渊[[行|/zh-hans/translations/officials#glossary-acting]][[护军将军|/zh-hans/translations/officials/military#central-army-002]]，督朱灵、路招等屯[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，击破南山贼刘雄，降其众。围遂、超余党梁兴于[[鄠|/zh-hans/maps/map-overall?lat=34.11510159&lng=108.59571946&name=Hu]]，拔之，斩兴，封博昌[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。马超围[[凉州|/zh-hans/maps/map-overall?admin=5]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]韦康于兾，渊救康，未到，康败。去兾二百余[[里|/zh-hans/translations/officials#glossary-li]]，超来逆战，军不利。[[汧|/zh-hans/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐反，渊引军还。"
+      },
+      "vern": {
+        "zht": "建安十四年，夏侯淵爲[[行領軍|/zh-hant/translations/officials/military#central-army-001]]。太祖征討孫權返回後，派夏侯淵督率諸將攻打[[廬江|/zh-hant/maps/map-overall?admin=23]]叛者雷緒。雷緒被擊破後，夏侯淵又爲[[行|/zh-hant/translations/officials#glossary-acting]]征西[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]，督率徐晃攻打[[太原|/zh-hant/maps/map-overall?admin=21]]賊衆，攻下二十餘屯，斬殺賊帥商曜，並屠其城。後他隨太祖徵韓遂等，戰於[[渭|/zh-hant/maps/map-overall?water=14]]南。又督率朱靈平定[[隃糜|/zh-hant/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]、[[汧|/zh-hant/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐。夏侯淵又與太祖在[[安定|/zh-hant/maps/map-overall?admin=152]]會合，降服楊秋。十七年，太祖返回[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]城，任命夏侯淵爲[[行|/zh-hant/translations/officials#glossary-acting]][[護軍將軍|/zh-hant/translations/officials/military#central-army-002]]，督率朱靈、路招等屯駐[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，擊破南山賊劉雄，收降其衆。夏侯淵又在[[鄠|/zh-hant/maps/map-overall?lat=34.11510159&lng=108.59571946&name=Hu]]城圍攻韓遂、馬超餘黨梁興，攻拔其城，斬殺梁興，被封爲博昌[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。馬超將[[涼州|/zh-hant/maps/map-overall?admin=5]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]韋康包圍在冀城，夏侯淵救援韋康，尚未趕到，韋康已經兵敗。在距冀城二百餘[[里|/zh-hant/translations/officials#glossary-li]]處，馬超前來迎戰，夏侯淵軍失利。[[汧|/zh-hant/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐反叛，夏侯淵率軍返回。",
+        "zhs": "建安十四年，夏侯渊为[[行领军|/zh-hans/translations/officials/military#central-army-001]]。太祖征讨孙权返回后，派夏侯渊督率诸将攻打[[庐江|/zh-hans/maps/map-overall?admin=23]]叛者雷绪。雷绪被击破后，夏侯渊又为[[行|/zh-hans/translations/officials#glossary-acting]]征西[[护军|/zh-hans/translations/officials/military#various-commanders-034]]，督率徐晃攻打[[太原|/zh-hans/maps/map-overall?admin=21]]贼众，攻下二十余屯，斩杀贼帅商曜，并屠其城。后他随太祖征韩遂等，战于[[渭|/zh-hans/maps/map-overall?water=14]]南。又督率朱灵平定[[隃糜|/zh-hans/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]]、[[汧|/zh-hans/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐。夏侯渊又与太祖在[[安定|/zh-hans/maps/map-overall?admin=152]]会合，降服杨秋。十七年，太祖返回[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]城，任命夏侯渊为[[行|/zh-hans/translations/officials#glossary-acting]][[护军将军|/zh-hans/translations/officials/military#central-army-002]]，督率朱灵、路招等屯驻[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，击破南山贼刘雄，收降其众。夏侯渊又在[[鄠|/zh-hans/maps/map-overall?lat=34.11510159&lng=108.59571946&name=Hu]]城围攻韩遂、马超余党梁兴，攻拔其城，斩杀梁兴，被封为博昌[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。马超将[[凉州|/zh-hans/maps/map-overall?admin=5]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]韦康包围在冀城，夏侯渊救援韦康，尚未赶到，韦康已经兵败。在距冀城二百余[[里|/zh-hans/translations/officials#glossary-li]]处，马超前来迎战，夏侯渊军失利。[[汧|/zh-hans/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]氐反叛，夏侯渊率军返回。"
+      },
+      "en": "In the fourteenth year of Jian'an, Xiahou Yuan was appointed [[Acting Commander of the Army|/translations/officials/military#central-army-001]]. After returning from his campaign against Sun Quan, Cao Cao sent Xiahou Yuan to command the generals in an attack on Lei Xu, a rebel in [[Lujiang|/maps/map-overall?admin=23]]. Lei Xu was defeated. Xiahou Yuan then became [[acting|/translations/officials#glossary-acting]] [[Protector of the Army|/translations/officials/military#various-commanders-034]] Who Conquers the West and led Xu [[Hu|/maps/map-overall?lat=34.11510159&lng=108.59571946&name=Hu]]ang against the rebels in [[Taiyuan|/maps/map-overall?admin=21]]. They captured more than twenty camps, beheaded the rebel leader Shang Yao and massacred his city. Afterwards, Xiahou Yuan accompanied Cao Cao on the campaign against Han Sui and the others, fighting south of the [[Wei River|/maps/map-overall?water=14]]. He then led Zhu [[Li|/translations/officials#glossary-li]]ng in pacifying [[Yumi|/maps/map-overall?lat=34.63936227&lng=107.17845258&name=Yumi]] and the Di of [[Qian|/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]]. He later joined Cao Cao at [[Anding|/maps/map-overall?admin=152]] and forced Yang Qiu into submission. In the seventeenth year, Cao Cao returned to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]] and appointed Xiahou Yuan [[acting|/translations/officials#glossary-acting]] [[General Protecting the Army|/translations/officials/military#central-army-002]], with command over Zhu Ling, Lu Zhao and others, garissoning at [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]. Thereafter, Xiahou Yuan defeated the rebel Liu Xiong in the southern mountains and accepted the surrender of his followers. He also besieged Liang Xing, one of Han Sui and Ma Chao's remaining adherents, at Hu, took the city and beheaded him. He was enfeoffed as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Bochang. When Ma Chao besieged Wei Kang, [[Inspector|/translations/officials/regional#provinces-014]] of [[Liang Province|/maps/map-overall?admin=5]], at Ji, Xiahou Yuan went to relieve him, but Wei Kang was defeated before he arrived. When Xiahou Yuan was still more than two hundred Li from Ji, Ma Chao came out to meet him in battle, and Xiahou Yuan's army suffered a setback. The Di of [[Qian|/maps/map-overall?lat=34.83685651&lng=106.85666136&name=Qian]] also rebelled, so Yuan led his army back."
+    },
+    {
+      "id": "ws9b-p4",
+      "orig": {
+        "zht": "十九年，趙衢、尹奉等謀討超，姜叙起兵[[西城|/zh-hant/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]以應之。衢等譎說超，使出擊叙，於後盡殺超妻子。超奔[[漢中|/zh-hant/maps/map-overall?admin=110]]，還圍祁山。叙等急求救，諸將議者欲須太祖節度。淵曰：「公在[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，反覆四千[[里|/zh-hant/translations/officials#glossary-li]]，比報，叙等必敗，非救急也。」遂行，使張郃督步騎五千在前，從[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]狹道入，淵自督糧在後。郃至[[渭水|/zh-hant/maps/map-overall?water=14]]上，超將氐羌數千逆郃。未戰，超走，郃進軍收超軍器械。淵到，諸縣皆已降。韓遂在[[顯親|/zh-hant/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]，淵欲襲取之，遂走。",
+        "zhs": "十九年，赵衢、尹奉等谋讨超，姜叙起兵[[西城|/zh-hans/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]以应之。衢等谲说超，使出击叙，于后尽杀超妻子。超奔[[汉中|/zh-hans/maps/map-overall?admin=110]]，还围祁山。叙等急求救，诸将议者欲须太祖节度。渊曰：「公在[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，反复四千[[里|/zh-hans/translations/officials#glossary-li]]，比报，叙等必败，非救急也。」遂行，使张郃督步骑五千在前，从[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]狭道入，渊自督粮在后。郃至[[渭水|/zh-hans/maps/map-overall?water=14]]上，超将氐羌数千逆郃。未战，超走，郃进军收超军器械。渊到，诸县皆已降。韩遂在[[显亲|/zh-hans/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]，渊欲袭取之，遂走。"
+      },
+      "vern": {
+        "zht": "建安十九年，趙衢、尹奉等人謀劃討伐馬超，姜敘在[[西城|/zh-hant/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]起兵響應他們。趙衢等人欺騙說服馬超，讓他出兵攻打姜敘，等他出發後，便把馬超的妻子兒女全部殺死。馬超逃往[[漢中|/zh-hant/maps/map-overall?admin=110]]，又回軍包圍祁山。姜敘等人緊急求救，將領中參與商議的人都想等待太祖的命令。夏侯淵說：“曹公在[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，往返有四千[[里|/zh-hant/translations/officials#glossary-li]]，等到回覆到來，姜敘等人必定已經戰敗，這不是救急的辦法。”於是出發，派張郃統率步兵、騎兵五千人先行，從[[陳倉|/zh-hant/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]狹道進入，夏侯淵則親自在後面督糧。張郃到達[[渭水|/zh-hant/maps/map-overall?water=14]]邊時，馬超率領數千氐、羌士兵迎擊張郃。尚未交戰，馬超就逃走了，張郃進軍收繳了馬超軍的器械。夏侯淵趕到時，各縣都已經投降。韓遂在[[顯親|/zh-hant/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]，夏侯淵想襲擊捉拿他，韓遂便逃走了。",
+        "zhs": "建安十九年，赵衢、尹奉等人谋划讨伐马超，姜叙在[[西城|/zh-hans/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]]起兵响应他们。赵衢等人欺骗说服马超，让他出兵攻打姜叙，等他出发后，便把马超的妻子儿女全部杀死。马超逃往[[汉中|/zh-hans/maps/map-overall?admin=110]]，又回军包围祁山。姜叙等人紧急求救，将领中参与商议的人都想等待太祖的命令。夏侯渊说：“曹公在[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，往返有四千[[里|/zh-hans/translations/officials#glossary-li]]，等到回复到来，姜叙等人必定已经战败，这不是救急的办法。”于是出发，派张郃统率步兵、骑兵五千人先行，从[[陈仓|/zh-hans/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]]狭道进入，夏侯渊则亲自在后面督粮。张郃到达[[渭水|/zh-hans/maps/map-overall?water=14]]边时，马超率领数千氐、羌士兵迎击张郃。尚未交战，马超就逃走了，张郃进军收缴了马超军的器械。夏侯渊赶到时，各县都已经投降。韩遂在[[显亲|/zh-hans/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]，夏侯渊想袭击捉拿他，韩遂便逃走了。"
+      },
+      "en": "In the nineteenth year of Jian'an, Zhao Qu, Yin Feng and others plotted to attack Ma Chao, and Jiang Xu raised troops at [[Xi|/maps/map-overall?lat=34.39898705&lng=105.38784069&name=Xi]] in support. Zhao Qu and his associates tricked Ma Chao into marching out against Jiang Xu, then killed his wife and all his children. Ma Chao fled to [[Hanzhong|/maps/map-overall?admin=110]], then returned to besiege Mount Qi. Jiang Xu and the others urgently sought aid. The generals involved in the deliberations wished to wait for Cao Cao's orders, but Xiahou Yuan said, \"His Excellency is in [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]], and a round trip is four thousand [[Li|/translations/officials#glossary-li]]. By the time a reply arrives, Jiang Xu and the others will surely have been defeated. This is no way to address an emergency.\" He therefore set out, sending Zhang He ahead with five thousand infantry and cavalry through the narrow route from [[Chencang|/maps/map-overall?lat=34.37486808&lng=107.20726452&name=Chencang]], while he himself followed behind, overseeing the grain supplies. When Zhang He reached the [[Wei River|/maps/map-overall?water=14]], Ma Chao led several thousand Di and Qiang troops to meet him. Before battle was joined, Ma Chao fled, and Zhang He advanced and seized his army's weapons and equipment. By the time Xiahou Yuan arrived, all the counties had surrendered. Han Sui was at [[Xianqin|/maps/map-overall?lat=34.9770227&lng=105.58341791&name=Xianqin]]. When Xiahou Yuan sought to take him by surprise and capture him, Han Sui fled."
+    },
+    {
+      "id": "ws9b-p5",
+      "orig": {
+        "zht": "淵收遂軍糧，追至[[略陽|/zh-hant/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]城，去遂二十餘[[里|/zh-hant/translations/officials#glossary-li]]，諸將欲攻之，或言當攻[[興國|/zh-hant/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]氐。淵以為遂兵精，[[興國|/zh-hant/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]城固，攻不可卒拔，不如擊[[長離|/zh-hant/maps/map-overall?water=200]]諸羌。[[長離|/zh-hant/maps/map-overall?water=200]]諸羌多在遂軍，必歸救其家。若捨羌獨守則孤，救[[長離|/zh-hant/maps/map-overall?water=200]]則官兵得與野戰，可必虜也。淵乃留督將守輜重，輕兵步騎到長離，攻燒羌屯，斬獲甚衆。諸羌在遂軍者，各還種落。遂果救長離，與淵軍對陣。諸將見遂衆，惡之，欲結營作塹乃與戰。淵曰：「我轉鬬千[[里|/zh-hant/translations/officials#glossary-li]]，今復作營塹，則士衆罷弊，不可乆。賊雖衆，易與耳。」乃鼔之，大破遂軍，得其旌麾，還[[略陽|/zh-hant/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]，進軍圍[[興國|/zh-hant/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]。氐王千萬逃奔馬超，餘衆降。轉擊[[高平|/zh-hant/maps/map-overall?lat=36.00271276&lng=106.29599643&name=Gaoping]]屠各，皆散走，收其糧穀牛馬。乃[[假淵節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。",
+        "zhs": "渊收遂军粮，追至[[略阳|/zh-hans/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]城，去遂二十余[[里|/zh-hans/translations/officials#glossary-li]]，诸将欲攻之，或言当攻[[兴国|/zh-hans/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]氐。渊以为遂兵精，[[兴国|/zh-hans/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]城固，攻不可卒拔，不如击[[长离|/zh-hans/maps/map-overall?water=200]]诸羌。[[长离|/zh-hans/maps/map-overall?water=200]]诸羌多在遂军，必归救其家。若舍羌独守则孤，救[[长离|/zh-hans/maps/map-overall?water=200]]则官兵得与野战，可必虏也。渊乃留督将守辎重，轻兵步骑到长离，攻烧羌屯，斩获甚众。诸羌在遂军者，各还种落。遂果救长离，与渊军对阵。诸将见遂众，恶之，欲结营作堑乃与战。渊曰：「我转鬬千[[里|/zh-hans/translations/officials#glossary-li]]，今复作营堑，则士众罢弊，不可乆。贼虽众，易与耳。」乃鼔之，大破遂军，得其旌麾，还[[略阳|/zh-hans/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]，进军围[[兴国|/zh-hans/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]。氐王千万逃奔马超，余众降。转击[[高平|/zh-hans/maps/map-overall?lat=36.00271276&lng=106.29599643&name=Gaoping]]屠各，皆散走，收其粮谷牛马。乃[[假渊节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。"
+      },
+      "vern": {
+        "zht": "夏侯淵繳獲了韓遂軍的軍糧，追擊到[[略陽|/zh-hant/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]城，距韓遂二十餘[[里|/zh-hant/translations/officials#glossary-li]]。衆將想要攻打韓遂，有人說應當攻打[[興國|/zh-hant/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]的氐人。夏侯淵認爲，韓遂兵精銳，[[興國|/zh-hant/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]城池堅固，進攻難以迅速得手，不如攻打[[長離|/zh-hant/maps/map-overall?water=200]]各部羌人。[[長離|/zh-hant/maps/map-overall?water=200]]各部的羌人大多在韓遂軍中，必定會回去救自己的家鄉。韓遂如果捨棄這些羌人而獨自堅守，就會勢孤；如果救援[[長離|/zh-hant/maps/map-overall?water=200]]，官軍就能與他在野外作戰，必定可以俘獲他。於是夏侯淵留下督將看守輜重，率領輕裝步兵騎兵趕到[[長離|/zh-hant/maps/map-overall?water=200]]，攻打焚燒羌人屯落，斬殺俘獲很多。在韓遂軍中的衆羌人各自返回本部落。韓遂果然救援[[長離|/zh-hant/maps/map-overall?water=200]]，與夏侯淵軍對陣。衆將見韓遂兵多，感到畏懼，想紮營挖壕後再與韓遂軍交戰。夏侯淵說：“我們轉戰千[[里|/zh-hant/translations/officials#glossary-li]]，現在再紮營挖壕，士兵就會疲憊不堪，不能持久。賊軍雖然衆多，但容易對付。”於是擂鼓進攻，大敗韓遂軍，繳獲了他的指揮旗。夏侯淵回師[[略陽|/zh-hant/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]，進軍圍攻[[興國|/zh-hant/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]。氐王千萬逃奔馬超，其餘部衆投降。又轉攻[[高平|/zh-hant/maps/map-overall?lat=36.00271276&lng=106.29599643&name=Gaoping]]的屠各人，他們都四散逃走。夏侯淵繳獲了他們的糧谷牛馬。於是朝廷授予夏侯淵[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。",
+        "zhs": "夏侯渊缴获了韩遂军的军粮，追击到[[略阳|/zh-hans/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]城，距韩遂二十余[[里|/zh-hans/translations/officials#glossary-li]]。众将想要攻打韩遂，有人说应当攻打[[兴国|/zh-hans/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]的氐人。夏侯渊认为，韩遂兵精锐，[[兴国|/zh-hans/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]城池坚固，进攻难以迅速得手，不如攻打[[长离|/zh-hans/maps/map-overall?water=200]]各部羌人。[[长离|/zh-hans/maps/map-overall?water=200]]各部的羌人大多在韩遂军中，必定会回去救自己的家乡。韩遂如果舍弃这些羌人而独自坚守，就会势孤；如果救援[[长离|/zh-hans/maps/map-overall?water=200]]，官军就能与他在野外作战，必定可以俘获他。于是夏侯渊留下督将看守辎重，率领轻装步兵骑兵赶到[[长离|/zh-hans/maps/map-overall?water=200]]，攻打焚烧羌人屯落，斩杀俘获很多。在韩遂军中的众羌人各自返回本部落。韩遂果然救援[[长离|/zh-hans/maps/map-overall?water=200]]，与夏侯渊军对阵。众将见韩遂兵多，感到畏惧，想扎营挖壕后再与韩遂军交战。夏侯渊说：“我们转战千[[里|/zh-hans/translations/officials#glossary-li]]，现在再扎营挖壕，士兵就会疲惫不堪，不能持久。贼军虽然众多，但容易对付。”于是擂鼓进攻，大败韩遂军，缴获了他的指挥旗。夏侯渊回师[[略阳|/zh-hans/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]]，进军围攻[[兴国|/zh-hans/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]。氐王千万逃奔马超，其余部众投降。又转攻[[高平|/zh-hans/maps/map-overall?lat=36.00271276&lng=106.29599643&name=Gaoping]]的屠各人，他们都四散逃走。夏侯渊缴获了他们的粮谷牛马。于是朝廷授予夏侯渊[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。"
+      },
+      "en": "Xiahou Yuan then seized Han Sui's military provisions and pursued him to the city of [[Lüeyang|/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]], coming within twenty-odd [[Li|/translations/officials#glossary-li]] of him. The generals wished to attack Sui, though some urged an attack on the Di of [[Xingguo|/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]] instead. Yuan judged that Han Sui's troops were elite and [[Xingguo|/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]'s defences strong, so neither could be overcome quickly. He thought it would be better to attack the Qiang tribes along the [[Changli River|/maps/map-overall?water=200]]. Many of their men were serving in Han Sui's army and would certainly return to save their homes. If Han Sui abandoned the Qiang and held his ground alone, he would be isolated; if he went to relieve the tribes at the [[Changli River|/maps/map-overall?water=200]], the army could engage him in the open and most certainly capture him. Xiahou Yuan therefore left commanders to guard the baggage and led light infantry and cavalry to the [[Changli River|/maps/map-overall?water=200]]. He attacked and burnt the Qiang settlements, killing or capturing great numbers. The Qiang serving in Han Sui's army each returned to their own tribes. As expected, Han Sui came to their aid and drew up his army against Xiahou Yuan's. Alarmed at the size of Han Sui's force, the generals wished to establish a camp and dig trenches before giving battle. Xiahou Yuan said, \"We have fought our way over a thousand li. If we now build camps and dig trenches, our men will be exhausted and unable to endure for long. Though the rebels are numerous, they are easy to defeat.\" He then sounded the drums for the attack and crushed Han Sui's army, capturing his command standards. On his return to [[Lüeyang|/maps/map-overall?lat=35.00507573&lng=105.98328385&name=L%C3%BCeyang]], Xiahou Yuan advanced to besiege [[Xingguo|/maps/map-overall?lat=35.06424006&lng=105.7068525&name=Xingguo]]. Qianwan, king of the Di, fled to Ma Chao, and the rest of his followers surrendered. Xiahou Yuan then turned against the Tuge of [[Gaoping|/maps/map-overall?lat=36.00271276&lng=106.29599643&name=Gaoping]], who all scattered and fled. He seized their grain, cattle and horses. Xiahou Yuan was then appointed [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]."
+    },
+    {
+      "id": "ws9b-p6",
+      "orig": {
+        "zht": "初，[[枹罕|/zh-hant/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]宋建因[[涼州|/zh-hant/maps/map-overall?admin=5]]亂，自號河首平漢王。太祖使淵帥諸將討建。淵至，圍[[枹罕|/zh-hant/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]，月餘拔之，斬建及所置[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]]已下。淵別遣張郃等平[[河關|/zh-hant/maps/map-overall?lat=35.81855952&lng=102.88157512&name=Heguan]]，渡河入小湟中，[[河西|/zh-hant/translations/officials#glossary-west-of-the-river-hexi-heyou]]諸羌盡降，[[隴右|/zh-hant/translations/officials#glossary-west-of-the-long-mountains-longxi-longyou]]平。太祖下令曰：「宋建造為亂逆三十餘年，淵一舉滅之，虎步關右，所向無前。仲尼有言：『吾與爾不如也。』」二十一年，增封三百戶，并前八百戶。還擊[[武都|/zh-hant/maps/map-overall?admin=111]]氐羌[[下辯|/zh-hant/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]，收氐穀十餘萬[[斛|/zh-hant/translations/officials#glossary-hu]]。太祖西征張魯，淵等將[[涼州|/zh-hant/maps/map-overall?admin=5]]諸將侯王已下，與太祖會休亭。太祖每引見羌、胡，以淵畏之。",
+        "zhs": "初，[[枹罕|/zh-hans/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]宋建因[[凉州|/zh-hans/maps/map-overall?admin=5]]乱，自号河首平汉王。太祖使渊帅诸将讨建。渊至，围[[枹罕|/zh-hans/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]，月余拔之，斩建及所置[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]]已下。渊别遣张郃等平[[河关|/zh-hans/maps/map-overall?lat=35.81855952&lng=102.88157512&name=Heguan]]，渡河入小湟中，[[河西|/zh-hans/translations/officials#glossary-west-of-the-river-hexi-heyou]]诸羌尽降，[[陇右|/zh-hans/translations/officials#glossary-west-of-the-long-mountains-longxi-longyou]]平。太祖下令曰：「宋建造为乱逆三十余年，渊一举灭之，虎步关右，所向无前。仲尼有言：『吾与尔不如也。』」二十一年，增封三百户，并前八百户。还击[[武都|/zh-hans/maps/map-overall?admin=111]]氐羌[[下辩|/zh-hans/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]，收氐谷十余万[[斛|/zh-hans/translations/officials#glossary-hu]]。太祖西征张鲁，渊等将[[凉州|/zh-hans/maps/map-overall?admin=5]]诸将侯王已下，与太祖会休亭。太祖每引见羌、胡，以渊畏之。"
+      },
+      "vern": {
+        "zht": "當初，[[枹罕|/zh-hant/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]的宋建趁着[[涼州|/zh-hant/maps/map-overall?admin=5]]動亂，自稱河首平漢王。太祖派夏侯淵率領衆將討伐宋建。夏侯淵到達後，包圍[[枹罕|/zh-hant/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]，一個多月後攻克，斬殺宋建及其所任命的[[丞相|/zh-hant/translations/officials/ministers#superior-excellency-001]]以下官員。夏侯淵另派張郃等人平定[[河關|/zh-hant/maps/map-overall?lat=35.81855952&lng=102.88157512&name=Heguan]]，渡過黃河進入小湟中，[[河西|/zh-hant/translations/officials#glossary-west-of-the-river-hexi-heyou]]的羌人全部投降，[[隴右|/zh-hant/translations/officials#glossary-west-of-the-long-mountains-longxi-longyou]]平定。太祖下令說：“宋建作亂叛逆三十多年，夏侯淵一舉消滅了宋建，虎步關右，所向無前。孔子說過：‘我和你都不如他啊。’”建安二十一年，夏侯淵的封邑增加三百戶，連同之前所封共八百戶。夏侯淵回軍後，在[[下辯|/zh-hant/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]進攻[[武都|/zh-hant/maps/map-overall?admin=111]]的氐人、羌人，繳獲氐人糧食十餘萬[[斛|/zh-hant/translations/officials#glossary-hu]]。太祖西征張魯，夏侯淵等率領[[涼州|/zh-hant/maps/map-overall?admin=5]]諸將、侯王以下，與太祖在休亭會合。太祖每次接見羌人、胡人，都用夏侯淵來震懾他們。",
+        "zhs": "当初，[[枹罕|/zh-hans/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]的宋建趁着[[凉州|/zh-hans/maps/map-overall?admin=5]]动乱，自称河首平汉王。太祖派夏侯渊率领众将讨伐宋建。夏侯渊到达后，包围[[枹罕|/zh-hans/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]]，一个多月后攻克，斩杀宋建及其所任命的[[丞相|/zh-hans/translations/officials/ministers#superior-excellency-001]]以下官员。夏侯渊另派张郃等人平定[[河关|/zh-hans/maps/map-overall?lat=35.81855952&lng=102.88157512&name=Heguan]]，渡过黄河进入小湟中，[[河西|/zh-hans/translations/officials#glossary-west-of-the-river-hexi-heyou]]的羌人全部投降，[[陇右|/zh-hans/translations/officials#glossary-west-of-the-long-mountains-longxi-longyou]]平定。太祖下令说：“宋建作乱叛逆三十多年，夏侯渊一举消灭了宋建，虎步关右，所向无前。孔子说过：‘我和你都不如他啊。’”建安二十一年，夏侯渊的封邑增加三百户，连同之前所封共八百户。夏侯渊回军后，在[[下辩|/zh-hans/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]]进攻[[武都|/zh-hans/maps/map-overall?admin=111]]的氐人、羌人，缴获氐人粮食十余万[[斛|/zh-hans/translations/officials#glossary-hu]]。太祖西征张鲁，夏侯渊等率领[[凉州|/zh-hans/maps/map-overall?admin=5]]诸将、侯王以下，与太祖在休亭会合。太祖每次接见羌人、胡人，都用夏侯渊来震慑他们。"
+      },
+      "en": "Earlier, Song Jian of [[Fuhan|/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]] had taken advantage of the turmoil in [[Liang Province|/maps/map-overall?admin=5]] to proclaim himself the Pinghan (Pacifier of Han) King of Heshou (Riverhead). Cao Cao sent Xiahou Yuan to lead the various generals against him. On arrival, Xiahou Yuan besieged [[Fuhan|/maps/map-overall?lat=35.56743884&lng=103.14619729&name=Fuhan]] and took it after just over a month, executing Song Jian and the officials he had appointed, from the [[Chancellor|/translations/officials/ministers#superior-excellency-001]] down. Xiahou Yuan then separately dispatched Zhang He and others to pacify [[Heguan|/maps/map-overall?lat=35.81855952&lng=102.88157512&name=Heguan]]. They crossed the Yellow River into Lesser [[Hu|/translations/officials#glossary-hu]]angzhong, and the various Qiang tribes [[West of the River|/translations/officials#glossary-west-of-the-river-hexi-heyou]] all surrendered. The region [[West of the Long Mountains|/translations/officials#glossary-west-of-the-long-mountains-longxi-longyou]] was pacified. Cao Cao issued an order: \"Song Jian fomented rebellion for more than thirty years, yet Xiahou Yuan destroyed him in a single campaign. He strode like a tiger through Guanyou, and none could stand before him. As Confucius said, 'Neither you nor I can match him.'\" In the twenty-first year of Jian'an, Xiahou Yuan's fief was increased by three hundred households, bringing the total to eight hundred. After his return, he attacked the Di and Qiang of [[Wudu|/maps/map-overall?admin=111]] at [[Xiabian|/maps/map-overall?lat=33.80983291&lng=105.64254196&name=Xiabian]], seizing more than a hundred thousand Hu of grain from the Di tribes. When Cao Cao marched west against Zhang Lu, Xiahou Yuan and the others led the various generals of [[Liang Province|/maps/map-overall?admin=5]], and kings, marquises and those of lesser rank, to join him at Xiuting. Whenever Cao Cao met with the Qiang and Hu tribes, he used Xiahou Yuan to intimidate them."
+    },
+    {
+      "id": "ws9b-p7",
+      "orig": {
+        "zht": "會魯降，[[漢中|/zh-hant/maps/map-overall?admin=110]]平，以淵[[行|/zh-hant/translations/officials#glossary-acting]]都護將軍，督張郃、徐晃等平[[巴|/zh-hant/maps/map-overall?admin=99]]郡。太祖還[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，留淵守[[漢中|/zh-hant/maps/map-overall?admin=110]]，即[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]淵[[征西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-066]]。二十三年，劉備軍[[陽平關|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，淵率諸將拒之，相守連年。二十四年正月，備夜燒圍鹿角。淵使張郃護東圍，自將輕兵護南圍。備挑郃戰，郃軍不利。淵分所將兵半助郃，為備所襲，淵遂戰死。謚曰愍侯。初，淵雖數戰勝，太祖常戒曰：「為將當有怯弱時，不可但恃勇也。將當以勇為本，行之以智計；但知任勇，一匹夫敵耳。」",
+        "zhs": "会鲁降，[[汉中|/zh-hans/maps/map-overall?admin=110]]平，以渊[[行|/zh-hans/translations/officials#glossary-acting]]都护将军，督张郃、徐晃等平[[巴|/zh-hans/maps/map-overall?admin=99]]郡。太祖还[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]，留渊守[[汉中|/zh-hans/maps/map-overall?admin=110]]，即[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]渊[[征西将军|/zh-hans/translations/officials/military#conquering--garrisoning-066]]。二十三年，刘备军[[阳平关|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，渊率诸将拒之，相守连年。二十四年正月，备夜烧围鹿角。渊使张郃护东围，自将轻兵护南围。备挑郃战，郃军不利。渊分所将兵半助郃，为备所袭，渊遂战死。谥曰愍侯。初，渊虽数战胜，太祖常戒曰：「为将当有怯弱时，不可但恃勇也。将当以勇为本，行之以智计；但知任勇，一匹夫敌耳。」"
+      },
+      "vern": {
+        "zht": "適逢張魯投降，[[漢中|/zh-hant/maps/map-overall?admin=110]]平定，太祖任命夏侯淵爲[[行|/zh-hant/translations/officials#glossary-acting]]都護將軍，督率張郃、徐晃等平定[[巴|/zh-hant/maps/map-overall?admin=99]]郡。太祖返回[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]城時，留夏侯淵鎮守[[漢中|/zh-hant/maps/map-overall?admin=110]]，並任命夏侯淵爲[[征西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-066]]。建安二十三年，劉備駐軍[[陽平關|/zh-hant/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，夏侯淵率領諸將抵禦，雙方相持連年。二十四年正月，劉備趁夜焚燒營圍的鹿角。夏侯淵派張郃守衛東面營圍，自己率領輕兵守衛南面營圍。劉備挑動張郃出戰，張郃軍失利。夏侯淵分出自己所率兵力的一半援助張郃，遭劉備突襲，於是戰死。諡爲愍侯。當初，夏侯淵雖然屢次作戰取勝，太祖卻經常告誡他說：“作爲將領，應當有怯弱的時候，不能只仗恃勇敢。將領應當以勇敢爲本，再用智謀來運用它；如果只知道仗恃勇敢，那不過是個匹夫罷了。”",
+        "zhs": "适逢张鲁投降，[[汉中|/zh-hans/maps/map-overall?admin=110]]平定，太祖任命夏侯渊为[[行|/zh-hans/translations/officials#glossary-acting]]都护将军，督率张郃、徐晃等平定[[巴|/zh-hans/maps/map-overall?admin=99]]郡。太祖返回[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]城时，留夏侯渊镇守[[汉中|/zh-hans/maps/map-overall?admin=110]]，并任命夏侯渊为[[征西将军|/zh-hans/translations/officials/military#conquering--garrisoning-066]]。建安二十三年，刘备驻军[[阳平关|/zh-hans/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]，夏侯渊率领诸将抵御，双方相持连年。二十四年正月，刘备趁夜焚烧营围的鹿角。夏侯渊派张郃守卫东面营围，自己率领轻兵守卫南面营围。刘备挑动张郃出战，张郃军失利。夏侯渊分出自己所率兵力的一半援助张郃，遭刘备突袭，于是战死。谥为愍侯。当初，夏侯渊虽然屡次作战取胜，太祖却经常告诫他说：“作为将领，应当有怯弱的时候，不能只仗恃勇敢。将领应当以勇敢为本，再用智谋来运用它；如果只知道仗恃勇敢，那不过是个匹夫罢了。”"
+      },
+      "en": "When Zhang Lu surrendered and [[Hanzhong|/maps/map-overall?admin=110]] was pacified, Cao Cao appointed Xiahou Yuan [[acting|/translations/officials#glossary-acting]] General Protector, placing him in command of Zhang He, Xu Huang and others to pacify [[Ba|/maps/map-overall?admin=99]] Commandery. When Cao Cao returned to [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]], he left Xiahou Yuan to defend [[Hanzhong|/maps/map-overall?admin=110]], and [[appointed|/translations/officials#glossary-formally-appoint]] him [[General Who Conquers the West|/translations/officials/military#conquering--garrisoning-066]]. In the twenty-third year of Jian'an, Liu Bei encamped at [[Yangpingguan|/maps/map-overall?lat=33.16854232&lng=106.61155724&name=Yangpingguan]]. Xiahou Yuan led the generals to oppose him, and the two sides remained at a stand-off from one year into the next. In the first month of the twenty-fourth year, Liu Bei set fire to the camp's antler barricades by night. Yuan sent Zhang He to defend the eastern perimeter, while he himself led lightly armed troops to defend the southern perimeter. Liu Bei provoked Zhang He into battle, and Zhang He's forces were set back. Xiahou Yuan detached half of his own troops to reinforce Zhang He, but was caught by Liu Bei's sudden attack and killed in battle. He was given the posthumous title Marquis Min, the Lamentable Marquis. Although Xiahou Yuan had often won victories, Cao Cao had repeatedly cautioned him: \"A commander must sometimes know when to be cautious; he cannot rely on courage alone. Courage should be his foundation, but it must be directed by wisdom and strategy. If one knows only how to rely on courage, then he is no more than a common man.\""
+    },
+    {
+      "id": "ws9b-p8",
+      "orig": {
+        "zht": "淵妻，太祖內妹。長子衡，尚太祖弟海陽哀[[侯|/zh-hant/translations/officials#glossary-marquis]]女，恩寵特隆。衡襲爵，[[轉|/zh-hant/translations/officials#glossary-transfer]]封安寧[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。黃初中，賜中子霸，太和中，賜霸四弟爵皆[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。霸，正始中為討蜀[[護軍|/zh-hant/translations/officials/military#various-commanders-034]][[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]，進封愽昌[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，素為曹爽所厚。聞爽誅，自疑，亡入蜀。以淵舊勳赦霸子，徙[[樂浪|/zh-hant/maps/map-overall?admin=123]]郡。霸弟威，官至[[兖州|/zh-hant/maps/map-overall?admin=11]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。威弟惠，[[樂安|/zh-hant/maps/map-overall?admin=47]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。惠弟和，[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]。衡薨，子績嗣，為[[虎賁中郎將|/zh-hant/translations/officials/ministers#-nine-ministers-i-163]]。績薨，子襃嗣。",
+        "zhs": "渊妻，太祖内妹。长子衡，尚太祖弟海阳哀[[侯|/zh-hans/translations/officials#glossary-marquis]]女，恩宠特隆。衡袭爵，[[转|/zh-hans/translations/officials#glossary-transfer]]封安宁[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。黄初中，赐中子霸，太和中，赐霸四弟爵皆[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。霸，正始中为讨蜀[[护军|/zh-hans/translations/officials/military#various-commanders-034]][[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]，进封愽昌[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，素为曹爽所厚。闻爽诛，自疑，亡入蜀。以渊旧勋赦霸子，徙[[乐浪|/zh-hans/maps/map-overall?admin=123]]郡。霸弟威，官至[[兖州|/zh-hans/maps/map-overall?admin=11]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。威弟惠，[[乐安|/zh-hans/maps/map-overall?admin=47]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。惠弟和，[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]。衡薨，子绩嗣，为[[虎贲中郎将|/zh-hans/translations/officials/ministers#-nine-ministers-i-163]]。绩薨，子襃嗣。"
+      },
+      "vern": {
+        "zht": "夏侯淵的妻子，是太祖妻子的妹妹。他的長子夏侯衡，娶了太祖的弟弟海陽哀[[侯|/zh-hant/translations/officials#glossary-marquis]]的女兒，極受恩寵。夏侯衡繼承了夏侯淵的爵位，被轉封爲安寧[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。黃初年間，夏侯淵次子夏侯霸被賜予爵位。太和年間，夏侯霸的四個弟弟被賜予爵位，都是[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。夏侯霸在正始年間擔任討蜀[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]、[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]，進封博昌[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，一向受到曹爽的厚待。他聽說曹爽被誅，心有不安，逃入蜀地。夏侯霸的兒子因爲夏侯淵舊日的功勳而被赦免，被流放到[[樂浪|/zh-hant/maps/map-overall?admin=123]]郡。夏侯霸的弟弟夏侯威，官至[[兗州|/zh-hant/maps/map-overall?admin=11]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。夏侯威的弟弟夏侯惠，爲[[樂安|/zh-hant/maps/map-overall?admin=47]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。夏侯惠的弟弟夏侯和，任[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]。夏侯衡去世後，兒子夏侯績繼承爵位，任[[虎賁中郎將|/zh-hant/translations/officials/ministers#-nine-ministers-i-163]]。夏侯績去世後，兒子夏侯褒繼承爵位。",
+        "zhs": "夏侯渊的妻子，是太祖妻子的妹妹。他的长子夏侯衡，娶了太祖的弟弟海阳哀[[侯|/zh-hans/translations/officials#glossary-marquis]]的女儿，极受恩宠。夏侯衡继承了夏侯渊的爵位，被转封为安宁[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。黄初年间，夏侯渊次子夏侯霸被赐予爵位。太和年间，夏侯霸的四个弟弟被赐予爵位，都是[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。夏侯霸在正始年间担任讨蜀[[护军|/zh-hans/translations/officials/military#various-commanders-034]]、[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]，进封博昌[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]，一向受到曹爽的厚待。他听说曹爽被诛，心有不安，逃入蜀地。夏侯霸的儿子因为夏侯渊旧日的功勋而被赦免，被流放到[[乐浪|/zh-hans/maps/map-overall?admin=123]]郡。夏侯霸的弟弟夏侯威，官至[[兖州|/zh-hans/maps/map-overall?admin=11]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。夏侯威的弟弟夏侯惠，为[[乐安|/zh-hans/maps/map-overall?admin=47]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。夏侯惠的弟弟夏侯和，任[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]。夏侯衡去世后，儿子夏侯绩继承爵位，任[[虎贲中郎将|/zh-hans/translations/officials/ministers#-nine-ministers-i-163]]。夏侯绩去世后，儿子夏侯褒继承爵位。"
+      },
+      "en": "Xiahou Yuan's wife was the younger sister of Cao Cao's wife. His eldest son Xiahou Heng married the daughter of Cao Cao's younger brother, [[Marquis|/translations/officials#glossary-marquis]] Ai (the Mourned Marquis) of Haiyang, and enjoyed exceptional favour. Xiahou Heng inherited his father's title and was subsequently [[transferred|/translations/officials#glossary-transfer]] to become [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Anning. During the Huangchu era, Xiahou Yuan's second son Xiahou Ba was granted a title. During the Taihe era, Xiahou Ba's four younger brothers were also granted titles, each becoming a [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]. During the Zhengshi era, Xiahou Ba served as [[Protector of the Army|/translations/officials/military#various-commanders-034]] for the Campaign against Shu and [[General of the Right|/translations/officials/military#four-direction--misc-117]], and was promoted to [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Bochang. He had long been treated generously by Cao Shuang. When Xiahou Ba heard that Cao Shuang had been executed, he feared for his own safety and fled to Shu. In recognition of Xiahou Yuan's past achievements, Xiahou Ba's son was pardoned but exiled to [[Lelang|/maps/map-overall?admin=123]] Commandery. Xiahou Ba's younger brother Xiahou Wei rose to [[Inspector|/translations/officials/regional#provinces-014]] of [[Yan Province|/maps/map-overall?admin=11]]. Xiahou Wei's younger brother Xiahou Hui was [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Le'an|/maps/map-overall?admin=47]], and Xiahou Hui's younger brother Xiahou He was [[Intendant of Henan|/translations/officials/regional#commanderies-032]]. When Xiahou Heng died, his son Xiahou Ji succeeded his title and served as [[Gentleman-General of the Rapid Tigers|/translations/officials/ministers#-nine-ministers-i-163]]. When Xiahou Ji died, his son Xiahou Bao succeeded him.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：霸字仲權。淵為蜀所害，故霸常切齒，欲有報蜀意。黃初中為[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]。子午之役，霸召為前鋒，進至[[興世|/zh-hant/maps/map-overall?lat=33.34760634&lng=107.57842306&name=Xingshi]]圍，安營在曲谷中。蜀人望知其是霸也，指下兵攻之。霸手戰鹿角間，賴救至，然後解。後為[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]，屯[[隴西|/zh-hant/maps/map-overall?admin=150]]，其養士和戎，並得其歡心。至正始中，代夏侯儒為征蜀[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]，統屬[[征西|/zh-hant/translations/officials/military#conquering--garrisoning-066]]。時[[征西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-066]]夏侯玄，於霸為從子，而玄於曹爽為外弟。及司馬宣王誅曹爽，遂召玄，玄來東。\n\n霸聞曹爽被誅而玄又[[徵|/zh-hant/translations/officials#glossary-summon]]，以為禍必轉相及，心旣內恐；又霸先與[[雍州|/zh-hant/maps/map-overall?admin=14]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]郭淮不和，而淮代玄為[[征西|/zh-hant/translations/officials/military#conquering--garrisoning-066]]，霸尤不安，故遂奔蜀。南趣[[陰平|/zh-hant/maps/map-overall?admin=109]]而失道，入窮谷中，糧盡，殺馬步行，足破，卧巖石下，使人求道，未知何之。蜀聞之，乃使人迎霸。初，建安五年，時霸從妹年十三四，在本郡，出行樵採，為張飛所得。飛知其良家女，遂以為妻，產息女，為劉禪皇后。故淵之初亡，飛妻請而葬之。及霸入蜀，禪與相見，釋之曰：「卿父自遇害於行間耳，非我先人之手刃也。」指其兒子以示之曰：「此夏侯氏之甥也。」厚加爵寵。",
+          "zhs": "《魏略》曰：霸字仲权。渊为蜀所害，故霸常切齿，欲有报蜀意。黄初中为[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]。子午之役，霸召为前锋，进至[[兴世|/zh-hans/maps/map-overall?lat=33.34760634&lng=107.57842306&name=Xingshi]]围，安营在曲谷中。蜀人望知其是霸也，指下兵攻之。霸手战鹿角间，赖救至，然后解。后为[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]，屯[[陇西|/zh-hans/maps/map-overall?admin=150]]，其养士和戎，并得其欢心。至正始中，代夏侯儒为征蜀[[护军|/zh-hans/translations/officials/military#various-commanders-034]]，统属[[征西|/zh-hans/translations/officials/military#conquering--garrisoning-066]]。时[[征西将军|/zh-hans/translations/officials/military#conquering--garrisoning-066]]夏侯玄，于霸为从子，而玄于曹爽为外弟。及司马宣王诛曹爽，遂召玄，玄来东。\n\n霸闻曹爽被诛而玄又[[征|/zh-hans/translations/officials#glossary-summon]]，以为祸必转相及，心既内恐；又霸先与[[雍州|/zh-hans/maps/map-overall?admin=14]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]郭淮不和，而淮代玄为[[征西|/zh-hans/translations/officials/military#conquering--garrisoning-066]]，霸尤不安，故遂奔蜀。南趣[[阴平|/zh-hans/maps/map-overall?admin=109]]而失道，入穷谷中，粮尽，杀马步行，足破，卧岩石下，使人求道，未知何之。蜀闻之，乃使人迎霸。初，建安五年，时霸从妹年十三四，在本郡，出行樵采，为张飞所得。飞知其良家女，遂以为妻，产息女，为刘禅皇后。故渊之初亡，飞妻请而葬之。及霸入蜀，禅与相见，释之曰：「卿父自遇害于行间耳，非我先人之手刃也。」指其儿子以示之曰：「此夏侯氏之甥也。」厚加爵宠。",
+          "vern": {
+            "zht": "《魏略》記載：夏侯霸，字仲權。夏侯淵被蜀人所害，因此夏侯霸常常咬牙切齒，懷有報復蜀國之心。黃初年間，夏侯霸任[[偏將軍|/zh-hant/translations/officials/military#four-direction--misc-164]]。子午之役，夏侯霸被召爲前鋒，進至[[興世|/zh-hant/maps/map-overall?lat=33.34760634&lng=107.57842306&name=Xingshi]]圍，在曲谷中安營。蜀人望見並認出這是夏侯霸，就指揮下面的士兵攻擊他。夏侯霸徒手在鹿角間搏鬥，靠救兵到來，才得以解圍。後來他任[[右將軍|/zh-hant/translations/officials/military#four-direction--misc-117]]，屯駐[[隴西|/zh-hant/maps/map-overall?admin=150]]，他供養士卒、和睦戎人，都得到了他們的歡心。到正始年間，夏侯霸接替夏侯儒任徵蜀[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]，受[[征西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-066]]統屬。當時[[征西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-066]]夏侯玄，是夏侯霸的侄子，而夏侯玄又是曹爽的表弟。司馬宣王誅殺曹爽後，徵召夏侯玄，於是夏侯玄東歸。\n\n夏侯霸聽說曹爽被誅、夏侯玄又被徵召，認爲禍患必定會牽連到自己，心懷恐懼，加上先前與[[雍州|/zh-hant/maps/map-overall?admin=14]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]郭淮不和，而郭淮又代替夏侯玄任[[征西將軍|/zh-hant/translations/officials/military#conquering--garrisoning-066]]，夏侯霸更加不安，所以便逃奔蜀國。他向南奔赴[[陰平|/zh-hant/maps/map-overall?admin=109]]卻迷了路，進入荒僻的山谷中，糧食耗盡，殺掉馬匹徒步行走，腳磨破了，躺在岩石下，派人尋找道路，不知道該往哪裏去。蜀國聽說後，就派人迎接夏侯霸。起初建安五年時，夏侯霸十三四歲的堂妹，在本郡外出打柴，被張飛抓走。張飛知道她是良家女子，便娶她爲妻，生下女兒，後來成爲劉禪的皇后。因此，夏侯淵剛去世時，張飛的妻子請求安葬他。夏侯霸入蜀後，劉禪與他相見，寬慰他說：“你的父親只是在軍陣之中遇害罷了，不是我父親親手殺死的。”又指着自己的兒子給他看，說：“這是夏侯氏的外甥。”於是厚賜爵位恩寵。",
+            "zhs": "《魏略》记载：夏侯霸，字仲权。夏侯渊被蜀人所害，因此夏侯霸常常咬牙切齿，怀有报复蜀国之心。黄初年间，夏侯霸任[[偏将军|/zh-hans/translations/officials/military#four-direction--misc-164]]。子午之役，夏侯霸被召为前锋，进至[[兴世|/zh-hans/maps/map-overall?lat=33.34760634&lng=107.57842306&name=Xingshi]]围，在曲谷中安营。蜀人望见并认出这是夏侯霸，就指挥下面的士兵攻击他。夏侯霸徒手在鹿角间搏斗，靠救兵到来，才得以解围。后来他任[[右将军|/zh-hans/translations/officials/military#four-direction--misc-117]]，屯驻[[陇西|/zh-hans/maps/map-overall?admin=150]]，他供养士卒、和睦戎人，都得到了他们的欢心。到正始年间，夏侯霸接替夏侯儒任征蜀[[护军|/zh-hans/translations/officials/military#various-commanders-034]]，受[[征西将军|/zh-hans/translations/officials/military#conquering--garrisoning-066]]统属。当时[[征西将军|/zh-hans/translations/officials/military#conquering--garrisoning-066]]夏侯玄，是夏侯霸的侄子，而夏侯玄又是曹爽的表弟。司马宣王诛杀曹爽后，征召夏侯玄，于是夏侯玄东归。\n\n夏侯霸听说曹爽被诛、夏侯玄又被征召，认为祸患必定会牵连到自己，心怀恐惧，加上先前与[[雍州|/zh-hans/maps/map-overall?admin=14]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]郭淮不和，而郭淮又代替夏侯玄任[[征西将军|/zh-hans/translations/officials/military#conquering--garrisoning-066]]，夏侯霸更加不安，所以便逃奔蜀国。他向南奔赴[[阴平|/zh-hans/maps/map-overall?admin=109]]却迷了路，进入荒僻的山谷中，粮食耗尽，杀掉马匹徒步行走，脚磨破了，躺在岩石下，派人寻找道路，不知道该往哪里去。蜀国听说后，就派人迎接夏侯霸。起初建安五年时，夏侯霸十三四岁的堂妹，在本郡外出打柴，被张飞抓走。张飞知道她是良家女子，便娶她为妻，生下女儿，后来成为刘禅的皇后。因此，夏侯渊刚去世时，张飞的妻子请求安葬他。夏侯霸入蜀后，刘禅与他相见，宽慰他说：“你的父亲只是在军阵之中遇害罢了，不是我父亲亲手杀死的。”又指着自己的儿子给他看，说：“这是夏侯氏的外甥。”于是厚赐爵位恩宠。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Xiahou Ba's courtesy name was Zhongquan. His father Xiahou Yuan had been killed by the men of Shu, so Xiahou Ba often gritted his teeth, intent on avenging him. During the Huangchu era, he became [[Adjunct General|/translations/officials/military#four-direction--misc-164]]. In the Ziwu campaign, Xiahou Ba was summoned to lead the vanguard. He advanced to the fortified camp at [[Xingshi|/maps/map-overall?lat=33.34760634&lng=107.57842306&name=Xingshi]] and pitched camp in a winding valley. The Shu army spotted and recognised him, then directed the soldiers to attack him. Xiahou Ba fought bare-handed among the abatis and was only freed from the enemy when reinforcements arrived. Later, he became [[General of the Right|/translations/officials/military#four-direction--misc-117]] and was stationed in [[Longxi|/maps/map-overall?admin=150]]. By providing for his soldiers and fostering harmony with the Rong tribes, he won their goodwill. During the Zhengshi era, he succeeded Xiahou Ru as [[Protector of the Army|/translations/officials/military#various-commanders-034]] for the Conquest of Shu, under the command of the [[General Who Conquers the West|/translations/officials/military#conquering--garrisoning-066]]. The [[General Who Conquers the West|/translations/officials/military#conquering--garrisoning-066]] at that time was Xiahou Xuan, Xiahou Ba's nephew and Cao Shuang's younger cousin. After Sima Yi (posthumously honoured as King Xuan, the Renowned King) executed Cao Shuang, he summoned Xiahou Xuan, who then returned east. \n\nWhen Xiahou Ba heard that Cao Shuang had been executed and Xiahou Xuan [[recalled|/translations/officials#glossary-summon]], he feared that the calamity would inevitably spread to him. He had also long been at odds with Guo Huai, [[Inspector|/translations/officials/regional#provinces-014]] of [[Yong Province|/maps/map-overall?admin=14]]. When Guo Huai succeeded Xiahou Xuan as [[General Who Conquers the West|/translations/officials/military#conquering--garrisoning-066]], Xiahou Ba grew even more uneasy and fled to Shu. Heading south towards [[Yinping|/maps/map-overall?admin=109]], he lost his way and entered a remote valley. When his provisions ran out, he killed his horse and continued on foot. His feet worn raw, he took shelter beneath a rock. Uncertain of the way out, Xiahou Ba sent men to search for a route. On hearing of this, Shu sent men to receive him. Earlier, in the fifth year of Jian'an, Xiahou Ba's younger female cousin, then thirteen or fourteen, had gone out to gather firewood in her home commandery and was captured by Zhang Fei. Learning that she was from a good family, Zhang Fei married her. She bore a daughter who became Liu Shan's empress. Thus, when Xiahou Yuan was killed, Zhang Fei's wife requested and arranged his burial. After Xiahou Ba entered Shu, Liu Shan met him and reassured him: \"Your father met his death in battle; he was not slain by my father's own hand.\" Pointing to his son, he said, \"Here is a nephew of the Xiahou clan.\" He then lavished titles and favour upon Xiahou Ba."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "世語",
+            "zhs": "世语",
+            "en": "Shiyu / Accounts of this Generation"
+          },
+          "zht": "《世語》曰：威字季權，任俠。貴歷[[荊|/zh-hant/maps/map-overall?admin=2]]、[[兖|/zh-hant/maps/map-overall?admin=11]]二州[[刺史|/zh-hant/translations/officials/regional#provinces-014]]。子駿，[[并州|/zh-hant/maps/map-overall?admin=0]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]。次莊，[[淮南|/zh-hant/maps/map-overall?admin=24]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。莊子湛，字孝若，以才愽文章，至[[南陽|/zh-hant/maps/map-overall?admin=85]][[相|/zh-hant/translations/officials/regional#states-064]]、[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]。莊，晉景羊皇后姊夫也。由此一門侈盛於時。",
+          "zhs": "《世语》曰：威字季权，任侠。贵历[[荆|/zh-hans/maps/map-overall?admin=2]]、[[兖|/zh-hans/maps/map-overall?admin=11]]二州[[刺史|/zh-hans/translations/officials/regional#provinces-014]]。子骏，[[并州|/zh-hans/maps/map-overall?admin=0]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]。次庄，[[淮南|/zh-hans/maps/map-overall?admin=24]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。庄子湛，字孝若，以才愽文章，至[[南阳|/zh-hans/maps/map-overall?admin=85]][[相|/zh-hans/translations/officials/regional#states-064]]、[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]。庄，晋景羊皇后姊夫也。由此一门侈盛于时。",
+          "vern": {
+            "zht": "《世語》記載：夏侯威，字季權，爲人任俠，歷任[[荊|/zh-hant/maps/map-overall?admin=2]]、[[兗|/zh-hant/maps/map-overall?admin=11]]二州[[刺史|/zh-hant/translations/officials/regional#provinces-014]]。他的兒子夏侯駿，任[[幷州|/zh-hant/maps/map-overall?admin=0]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]；次子夏侯莊，任[[淮南|/zh-hant/maps/map-overall?admin=24]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。夏侯莊的兒子夏侯湛，字孝若，因博學多才、文章優美，官至[[南陽|/zh-hant/maps/map-overall?admin=85]][[相|/zh-hant/translations/officials/regional#states-064]]、[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]。夏侯莊，是晉景帝羊皇后的姐夫。因此這一門在當時昌盛顯赫。",
+            "zhs": "《世语》记载：夏侯威，字季权，为人任侠，历任[[荆|/zh-hans/maps/map-overall?admin=2]]、[[兖|/zh-hans/maps/map-overall?admin=11]]二州[[刺史|/zh-hans/translations/officials/regional#provinces-014]]。他的儿子夏侯骏，任[[并州|/zh-hans/maps/map-overall?admin=0]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]；次子夏侯庄，任[[淮南|/zh-hans/maps/map-overall?admin=24]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。夏侯庄的儿子夏侯湛，字孝若，因博学多才、文章优美，官至[[南阳|/zh-hans/maps/map-overall?admin=85]][[相|/zh-hans/translations/officials/regional#states-064]]、[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]。夏侯庄，是晋景帝羊皇后的姐夫。因此这一门在当时昌盛显赫。"
+          },
+          "en": "The Shiyu states: Xiahou Wei, courtesy name Jiquan, was a man of chivalrous spirit. He rose to serve successively as [[Inspector|/translations/officials/regional#provinces-014]] of [[Jing Province|/maps/map-overall?admin=2]] and [[Yan Province|/maps/map-overall?admin=11]]. His son Xiahou Jun was [[Inspector|/translations/officials/regional#provinces-014]] of [[Bing Province|/maps/map-overall?admin=0]], and his second son Xiahou Zhuang was [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Huainan|/maps/map-overall?admin=24]]. Xiahou Zhuang's son Xiahou Zhan, courtesy name Xiaoruo, rose through his talent, wide learning and literary skill to become [[Principality Chancellor|/translations/officials/regional#states-064]] of [[Nanyang|/maps/map-overall?admin=85]] and [[Cavalier Regular Attendant|/translations/officials/departments#chancellery-013]]. Xiahou Zhuang was married to the elder sister of Empress Yang, the wife of Emperor Jing of Jin. Through this connection, the whole family enjoyed great splendour and prominence at the time."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "文章叙錄",
+            "zhs": "文章叙录",
+            "en": "Wenzhang Xulu / Catalogue of Writings"
+          },
+          "zht": "《文章叙錄》曰：惠字稚權，幼以才學見稱，善屬奏議。歷散騎[[黃門侍郎|/zh-hant/translations/officials/departments#chancellery-003]]，與鍾毓數有辯駮，事多見從。[[遷|/zh-hant/translations/officials#glossary-reassign]][[燕|/zh-hant/maps/map-overall?admin=130]][[相|/zh-hant/translations/officials/regional#states-064]]、[[樂安|/zh-hant/maps/map-overall?admin=47]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。年三十七卒。",
+          "zhs": "《文章叙录》曰：惠字稚权，幼以才学见称，善属奏议。历散骑[[黄门侍郎|/zh-hans/translations/officials/departments#chancellery-003]]，与钟毓数有辩駮，事多见从。[[迁|/zh-hans/translations/officials#glossary-reassign]][[燕|/zh-hans/maps/map-overall?admin=130]][[相|/zh-hans/translations/officials/regional#states-064]]、[[乐安|/zh-hans/maps/map-overall?admin=47]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。年三十七卒。",
+          "vern": {
+            "zht": "《文章敘錄》記載：夏侯惠，字稚權，幼年因才學受到稱譽，擅長撰寫奏議。歷任散騎、[[黃門侍郎|/zh-hant/translations/officials/departments#chancellery-003]]，與鍾毓多次辯駁，多能使他折服。調任[[燕|/zh-hant/maps/map-overall?admin=130]][[相|/zh-hant/translations/officials/regional#states-064]]、[[樂安|/zh-hant/maps/map-overall?admin=47]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]。三十七歲時去世。",
+            "zhs": "《文章叙录》记载：夏侯惠，字稚权，幼年因才学受到称誉，擅长撰写奏议。历任散骑、[[黄门侍郎|/zh-hans/translations/officials/departments#chancellery-003]]，与钟毓多次辩驳，多能使他折服。调任[[燕|/zh-hans/maps/map-overall?admin=130]][[相|/zh-hans/translations/officials/regional#states-064]]、[[乐安|/zh-hans/maps/map-overall?admin=47]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]。三十七岁时去世。"
+          },
+          "en": "The Wenzhang Xulu records: Xiahou Hui, courtesy name Zhiquan, was praised from childhood for his talent and learning and excelled at drafting memorials. He served as Cavalier Attendant and [[Attendant Gentleman within the Yellow Gates|/translations/officials/departments#chancellery-003]]. He frequently debated with Zhong Yu and generally won him over. He was later [[promoted|/translations/officials#glossary-reassign]] to serve as [[Principality Chancellor|/translations/officials/regional#states-064]] of [[Yan State|/maps/map-overall?admin=130]] and [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Le'an|/maps/map-overall?admin=47]]. He died at the age of thirty-seven."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "世語",
+            "zhs": "世语",
+            "en": "Shiyu / Accounts of this Generation"
+          },
+          "zht": "《世語》曰：和字義權，清辯有才論。歷[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]、[[太常|/zh-hant/translations/officials/ministers#-nine-ministers-i-120]]。淵弟三子稱，弟五子榮。從孫湛為其序曰：「稱字叔權。自孺子而好合聚童兒，為之渠帥，戲必為軍旅戰陳之事，有違者輒嚴以鞭捶，衆莫敢逆。淵陰奇之，使讀項羽傳及兵書，不肯，曰：『能則自為耳，安能學人？』年十六，淵與之田，見奔虎，稱驅馬逐之，禁之不可，一箭而倒。名聞太祖，太祖把其手，喜曰：『我得汝矣！』與文帝為布衣之交，每讌會，氣陵一坐，辯士不能屈。世之高名者多從之游。年十八卒。\n\n弟榮，字幼權。幼聦惠，七歲能屬文，誦書日千言，經目輒識之。文帝聞而請焉。賔客百餘人，人一奏刺，悉書其鄉邑名氏，世所謂爵里刺也[^1]，客示之，一寓目，使之遍談，不謬一人。帝深奇之。[[漢中|/zh-hant/maps/map-overall?admin=110]]之敗，榮年十三，左右提之走，不肯，曰：『君親在難，焉所逃死！』乃奮劒而戰，遂沒陣。」",
+          "zhs": "《世语》曰：和字义权，清辩有才论。历[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]、[[太常|/zh-hans/translations/officials/ministers#-nine-ministers-i-120]]。渊弟三子称，弟五子荣。从孙湛为其序曰：「称字叔权。自孺子而好合聚童儿，为之渠帅，戏必为军旅战陈之事，有违者辄严以鞭捶，众莫敢逆。渊阴奇之，使读项羽传及兵书，不肯，曰：『能则自为耳，安能学人？』年十六，渊与之田，见奔虎，称驱马逐之，禁之不可，一箭而倒。名闻太祖，太祖把其手，喜曰：『我得汝矣！』与文帝为布衣之交，每讌会，气陵一坐，辩士不能屈。世之高名者多从之游。年十八卒。\n\n弟荣，字幼权。幼聦惠，七岁能属文，诵书日千言，经目辄识之。文帝闻而请焉。賔客百余人，人一奏刺，悉书其乡邑名氏，世所谓爵里刺也[^1]，客示之，一寓目，使之遍谈，不谬一人。帝深奇之。[[汉中|/zh-hans/maps/map-overall?admin=110]]之败，荣年十三，左右提之走，不肯，曰：『君亲在难，焉所逃死！』乃奋劒而战，遂没阵。」",
+          "vern": {
+            "zht": "《世語》記載：夏侯和，字義權，清雅善辯，有才學見識。歷任[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]、[[太常|/zh-hant/translations/officials/ministers#-nine-ministers-i-120]]。夏侯淵的第三個兒子夏侯稱，第五個兒子夏侯榮。夏侯淵的從孫夏侯湛爲夏侯稱作序說：“夏侯稱，字叔權。從幼童時起就喜歡聚集兒童，自己做他們的首領；遊戲時必定做軍隊作戰列陣的事，有違犯的人就用鞭子嚴厲責打，衆兒童中沒有誰敢違抗。夏侯淵暗中覺得他不同尋常，讓他讀《項羽傳》和兵書，夏侯稱不肯，說：‘有才能就自己去做，怎麼能向別人學習？’十六歲時，夏侯淵與他一起打獵，看見一隻奔跑的老虎；夏侯稱驅馬追趕，夏侯淵禁止他也不肯停下，一箭射去，老虎就倒下了。他的名聲傳到太祖那裏，太祖握住他的手，高興地說：‘我得到你了！’夏侯稱與文帝是布衣之交，每次宴飲聚會，氣勢都壓過全座，辯士不能使他屈服。當世有名望的人大多與他交往。十八歲時去世。\n\n弟弟夏侯榮，字幼權。年幼聰慧，七歲就能寫文章，每天誦讀千言，過目就能記住。文帝聽說後請他來見。賓客有一百多人，每人呈上一份名刺，上面都寫着他們的籍貫、姓氏名字，就是世人所說的‘爵里刺’[^1]；賓客們把名刺給他看，他只過目一眼，讓他逐一談論這些人，不弄錯一個人。文帝對此深感驚異。[[漢中|/zh-hant/maps/map-overall?admin=110]]之敗時，夏侯榮十三歲，左右的人拉着他逃走，他不肯，說：‘君主和父親正在危難中，怎麼能逃避死難！’於是奮力揮劍作戰，最終戰死在陣中。”",
+            "zhs": "《世语》记载：夏侯和，字义权，清雅善辩，有才学见识。历任[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]、[[太常|/zh-hans/translations/officials/ministers#-nine-ministers-i-120]]。夏侯渊的第三个儿子夏侯称，第五个儿子夏侯荣。夏侯渊的从孙夏侯湛为夏侯称作序说：“夏侯称，字叔权。从幼童时起就喜欢聚集儿童，自己做他们的首领；游戏时必定做军队作战列阵的事，有违犯的人就用鞭子严厉责打，众儿童中没有谁敢违抗。夏侯渊暗中觉得他不同寻常，让他读《项羽传》和兵书，夏侯称不肯，说：‘有才能就自己去做，怎么能向别人学习？’十六岁时，夏侯渊与他一起打猎，看见一只奔跑的老虎；夏侯称驱马追赶，夏侯渊禁止他也不肯停下，一箭射去，老虎就倒下了。他的名声传到太祖那里，太祖握住他的手，高兴地说：‘我得到你了！’夏侯称与文帝是布衣之交，每次宴饮聚会，气势都压过全座，辩士不能使他屈服。当世有名望的人大多与他交往。十八岁时去世。\n\n弟弟夏侯荣，字幼权。年幼聪慧，七岁就能写文章，每天诵读千言，过目就能记住。文帝听说后请他来见。宾客有一百多人，每人呈上一份名刺，上面都写着他们的籍贯、姓氏名字，就是世人所说的‘爵里刺’[^1]；宾客们把名刺给他看，他只过目一眼，让他逐一谈论这些人，不弄错一个人。文帝对此深感惊异。[[汉中|/zh-hans/maps/map-overall?admin=110]]之败时，夏侯荣十三岁，左右的人拉着他逃走，他不肯，说：‘君主和父亲正在危难中，怎么能逃避死难！’于是奋力挥剑作战，最终战死在阵中。”"
+          },
+          "en": "The Shiyu says: Xiahou He, courtesy name Yiquan, was refined and eloquent, with talent and judgement. He served successively as [[Intendant of Henan|/translations/officials/regional#commanderies-032]] and [[Minister of Ceremonies|/translations/officials/ministers#-nine-ministers-i-120]]. Xiahou Yuan's third son was Xiahou Cheng, and his fifth was Xiahou Rong. Xiahou Yuan's grandnephew Xiahou Zhan wrote a prefatory account for them: \"Xiahou Cheng's courtesy name was Shuquan. From early childhood he liked to gather other boys together and act as their commander. Their games always involved military manoeuvres and battle formations. He punished any who disobeyed with a severe whipping, and none dared defy him. Xiahou Yuan privately thought him extraordinary and told him to read the biography of Xiang Yu and military treatises. He refused, saying, 'If I have the ability, I shall act for myself. Why should I learn from others?' When he was sixteen, he went hunting with Xiahou Yuan and saw a tiger running past. Xiahou Cheng spurred his horse in pursuit and would not stop when forbidden. With a single arrow he brought it down. His fame reached Cao Cao, who took his hand and said with delight, 'Now I have you!' Xiahou Cheng and Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) were friends since they were commoners. At every banquet his force of spirit dominated the company, and even skilled debaters could not best him. Many of the most renowned men of the time sought his company. He died at eighteen. \n\nHis younger brother Xiahou Rong, courtesy name Youquan, was intelligent from childhood. At seven he could compose prose and recite a thousand words of text a day, remembering whatever he had read. Cao Pi heard of him and invited him to visit. There were over a hundred guests, each of whom presented a calling card bearing his native place and full name, of the kind commonly called 'title-and-origin calling card'[^1]. The guests showed him their cards, and he looked at each just once. When asked to speak about them all in turn, Xiahou Rong made no mistake about a single person. The emperor was deeply impressed. At the defeat at [[Hanzhong|/maps/map-overall?admin=110]], Xiahou Rong was thirteen. Those around him tried to pull him away to safety, but he refused, saying, 'My lord and my father are in peril. How can I flee from death?' He then fought with all his strength, sword in hand, and fell in battle.\"",
+          "footnotes": [
+            {
+              "n": 1,
+              "zht": "爵里刺，古代名刺之一種，因上書官爵、鄉里籍貫得名，形制為簡牘中央一行直書而下。",
+              "zhs": "爵里刺，古代名刺之一种，因上书官爵、乡里籍贯得名，形制为简牍中央一行直书而下。",
+              "en": "The title-and-origin calling card was a type of ancient calling card, named for the official rank and native place inscribed upon it. It took the form of a wooden or bamboo slip, with a single vertical line of text running down the centre."
+            }]
+        }
+      ]
+    }
+  ]
+}

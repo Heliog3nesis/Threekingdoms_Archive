@@ -441,81 +441,313 @@
   "relationships": [
     {
       "from": "許褚（仲康）",
-      "to": "曹操",
-      "type": "lord-subordinate",
-      "passageId": "ws18f-p3"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18f-p3",
+          "text": {
+            "en": "When Xu Chu joined him, Cao Cao was impressed and called him \"my Fan Kuai,\" appointing him Commandant and personal guard that same day; after breaking enemy lines in the campaign against Zhang Xiu, he was promoted to Colonel.",
+            "zht": "許褚歸附後，太祖壯之，稱其為「吾之樊噲」，即日拜為都尉，引入宿衛；從征張繡先登破陣後，升任校尉。",
+            "zhs": "许褚归附后，太祖壮之，称其为「吾之樊哙」，即日拜为都尉，引入宿卫；从征张绣先登破阵后，升任校尉。"
+          },
+          "title": {
+            "en": "Commandant, Colonel",
+            "zht": "都尉、校尉",
+            "zhs": "都尉、校尉"
+          }
+        },
+        {
+          "passageId": "ws18f-p4",
+          "text": {
+            "en": "After sensing something amiss and returning to Cao Cao's side, Xu Chu discovered and killed the attendants plotting to assassinate him, earning even greater trust.",
+            "zht": "許褚心覺有異，返回太祖身邊，發現並擊殺謀刺太祖的近侍，因而更受信任。",
+            "zhs": "许褚心觉有异，返回太祖身边，发现并击杀谋刺太祖的近侍，因而更受信任。"
+          }
+        },
+        {
+          "passageId": "ws18f-p5",
+          "text": {
+            "en": "For his valour at the siege of Ye, Xu Chu was granted the rank of Marquis Within the Pass.",
+            "zht": "許褚力戰圍鄴有功，獲賜爵關內侯。",
+            "zhs": "许褚力战围邺有功，获赐爵关内侯。"
+          },
+          "title": {
+            "en": "Marquis Within the Pass",
+            "zht": "關內侯",
+            "zhs": "关内侯"
+          }
+        },
+        {
+          "passageId": "ws18f-p5",
+          "text": {
+            "en": "At Tongguan, as Ma Chao's cavalry charged Cao Cao's rearguard, Xu Chu cut down men swamping their boat and shielded Cao Cao with a saddle held in one hand while poling them to safety with the other.",
+            "zht": "潼關之戰，馬超騎兵衝擊太祖後衛，許褚斬殺攀附船身的士卒，一手舉馬鞍為太祖擋箭，一手撐船渡至對岸。",
+            "zhs": "潼关之战，马超骑兵冲击太祖后卫，许褚斩杀攀附船身的士卒，一手举马鞍为太祖挡箭，一手撑船渡至对岸。"
+          }
+        },
+        {
+          "passageId": "ws18f-p6",
+          "text": {
+            "en": "After personally killing many of Ma Chao's men in the battle following the Tongguan parley, Xu Chu was promoted to Gentleman-General of the Martial Guards.",
+            "zht": "潼關會語後的戰事中，許褚親手斬殺馬超軍多人，升任武衛中郎將。",
+            "zhs": "潼关会语后的战事中，许褚亲手斩杀马超军多人，升任武卫中郎将。"
+          },
+          "title": {
+            "en": "Gentleman-General of the Martial Guards",
+            "zht": "武衛中郎將",
+            "zhs": "武卫中郎将"
+          }
+        },
+        {
+          "passageId": "ws18f-p7",
+          "text": {
+            "en": "Impressed by Xu Chu's principled discretion toward Cao Ren, Cao Cao trusted him all the more and promoted him to General of the Central Vanguard.",
+            "zht": "太祖聞許褚對曹仁謹守分寸一事，愈加信任，升任中堅將軍。",
+            "zhs": "太祖闻许褚对曹仁谨守分寸一事，愈加信任，升任中坚将军。"
+          },
+          "title": {
+            "en": "General of the Central Vanguard",
+            "zht": "中堅將軍",
+            "zhs": "中坚将军"
+          }
+        },
+        {
+          "passageId": "ws18f-p8",
+          "text": {
+            "en": "When Cao Cao died, Xu Chu wailed and wept until he vomited blood.",
+            "zht": "太祖崩逝，許褚號泣至嘔血。",
+            "zhs": "太祖崩逝，许褚号泣至呕血。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
       "to": "張繡",
-      "type": "battlefield-opponents",
-      "passageId": "ws18f-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18f-p3",
+          "text": {
+            "en": "Xu Chu joined the campaign against Zhang Xiu, breaking through the enemy lines and personally killing enemies by the tens of thousands.",
+            "zht": "許褚從征張繡，先登破陣，親斬敵首以萬計。",
+            "zhs": "许褚从征张绣，先登破阵，亲斩敌首以万计。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
-      "to": "袁紹",
-      "type": "battlefield-opponents",
-      "passageId": "ws18f-p4"
+      "to": "袁紹（本初）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18f-p4",
+          "text": {
+            "en": "Xu Chu took part in the campaign against Yuan Shao at Guandu.",
+            "zht": "許褚隨太祖於官渡討伐袁紹。",
+            "zhs": "许褚随太祖于官渡讨伐袁绍。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
       "to": "徐他",
-      "type": "killer-victim",
-      "passageId": "ws18f-p4"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18f-p4",
+          "text": {
+            "en": "When the attendant Xu Ta and others plotted to assassinate Cao Cao, Xu Chu returned unexpectedly and killed them before they could act.",
+            "zht": "近侍徐他等謀刺太祖，許褚意外折返，於其發難前將其擊殺。",
+            "zhs": "近侍徐他等谋刺太祖，许褚意外折返，于其发难前将其击杀。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
-      "to": "韓遂",
-      "type": "battlefield-opponents",
-      "passageId": "ws18f-p5"
+      "to": "馬超（孟起）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18f-p5",
+          "text": {
+            "en": "Xu Chu took part in Cao Cao's campaign against Han Sui and Ma Chao at Tongguan.",
+            "zht": "許褚隨太祖於潼關討伐韓遂、馬超。",
+            "zhs": "许褚随太祖于潼关讨伐韩遂、马超。"
+          }
+        },
+        {
+          "passageId": "ws18f-p6",
+          "text": {
+            "en": "During a horseback parley, Ma Chao, wary of Xu Chu's reputation, asked which rider was the \"Tiger Marquis\"; Xu Chu glared fiercely at him and Ma Chao dared not act. Days later, Xu Chu personally killed many of Ma Chao's men in battle, earning the nickname \"Tiger Fool,\" popularly known as \"Tiger Marquis.\"",
+            "zht": "單馬會語時，馬超久聞許褚之勇，探問「虎侯」何在；許褚瞋目視之，馬超不敢妄動。數日後交戰，許褚親斬馬超軍多人，軍中因其勇猛而戇直，號曰「虎癡」，世人則稱「虎侯」。",
+            "zhs": "单马会语时，马超久闻许褚之勇，探问「虎侯」何在；许褚瞋目视之，马超不敢妄动。数日后交战，许褚亲斩马超军多人，军中因其勇猛而戆直，号曰「虎痴」，世人则称「虎侯」。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
-      "to": "馬超",
-      "type": "battlefield-opponents",
-      "passageId": "ws18f-p5"
+      "to": "韓遂（文約）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18f-p5",
+          "text": {
+            "en": "Xu Chu took part in Cao Cao's campaign against Han Sui and Ma Chao at Tongguan.",
+            "zht": "許褚隨太祖於潼關討伐韓遂、馬超。",
+            "zhs": "许褚随太祖于潼关讨伐韩遂、马超。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
-      "to": "馬超",
-      "type": "rivals",
-      "passageId": "ws18f-p6"
+      "to": "曹仁（子孝）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18f-p7",
+          "text": {
+            "en": "When Cao Ren, visiting court, invited Xu Chu to sit and talk before Cao Cao had emerged, Xu Chu declined, saying only the King's arrival mattered; Cao Ren took offence, though Xu Chu maintained he was simply observing his duty as an inner attendant.",
+            "zht": "曹仁入朝，太祖未出，邀許褚入坐敘話，許褚以王將出為由婉拒，曹仁因此不悅；許褚則自陳僅是恪守內臣本分。",
+            "zhs": "曹仁入朝，太祖未出，邀许褚入坐叙话，许褚以王将出为由婉拒，曹仁因此不悦；许褚则自陈仅是恪守内臣本分。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
-      "to": "曹仁",
-      "type": "strained-colleagues",
-      "passageId": "ws18f-p7"
-    },
-    {
-      "from": "許褚（仲康）",
-      "to": "曹丕",
-      "type": "lord-subordinate",
-      "passageId": "ws18f-p8"
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18f-p8",
+          "text": {
+            "en": "Under Cao Pi, Xu Chu was further enfeoffed as Wansui Neighbourhood Marquis and promoted to General of the Martial Guards, commanding the Central Army's palace guards.",
+            "zht": "文帝踐阼後，許褚進封萬歲亭侯，升任武衛將軍，都督中軍宿衛禁兵。",
+            "zhs": "文帝践阼后，许褚进封万岁亭侯，升任武卫将军，都督中军宿卫禁兵。"
+          },
+          "title": {
+            "en": "Wansui Neighbourhood Marquis, General of the Martial Guards",
+            "zht": "萬歲亭侯、武衛將軍",
+            "zhs": "万岁亭侯、武卫将军"
+          }
+        },
+        {
+          "passageId": "ws18f-p9",
+          "text": {
+            "en": "Xu Chu died and was posthumously honoured as Marquis Zhuang, the Valiant Marquis; his son Xu Yi succeeded him.",
+            "zht": "許褚去世，諡曰壯侯；子許儀嗣。",
+            "zhs": "许褚去世，谥曰壮侯；子许仪嗣。"
+          }
+        }
+      ]
     },
     {
       "from": "許褚（仲康）",
       "to": "許儀",
-      "type": "father-son",
-      "passageId": "ws18f-p9"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18f-p9",
+          "text": {
+            "en": "Xu Yi was Xu Chu's son, who succeeded him.",
+            "zht": "許儀是許褚之子，嗣其爵位。",
+            "zhs": "许仪是许褚之子，嗣其爵位。"
+          }
+        }
+      ]
     },
     {
       "from": "許定",
       "to": "許褚（仲康）",
-      "type": "elder-brother-younger-brother",
-      "passageId": "ws18f-p9"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18f-p9",
+          "text": {
+            "en": "Xu Ding was Xu Chu's elder brother, also honoured for his military merit.",
+            "zht": "許定是許褚兄長，亦以軍功受封。",
+            "zhs": "许定是许褚兄长，亦以军功受封。"
+          }
+        }
+      ]
     },
     {
-      "from": "許儀",
-      "to": "鍾會",
-      "type": "victim-killer",
-      "passageId": "ws18f-p9"
+      "from": "鍾會（士季）",
+      "to": "許儀",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18f-p9",
+          "text": {
+            "en": "Xu Yi was killed by Zhong Hui.",
+            "zht": "許儀為鍾會所殺。",
+            "zhs": "许仪为钟会所杀。"
+          }
+        }
+      ]
     },
     {
       "from": "許儀",
       "to": "許綜",
-      "type": "father-son",
-      "passageId": "ws18f-p9"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18f-p9",
+          "text": {
+            "en": "Xu Zong was Xu Yi's son, who succeeded him at the start of the Taishi era.",
+            "zht": "許綜是許儀之子，於泰始初年嗣其爵位。",
+            "zhs": "许综是许仪之子，于泰始初年嗣其爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹操（孟德）",
+      "to": "曹丕（子桓）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18f-p8",
+          "text": {
+            "en": "Cao Pi was Cao Cao's son; when Cao Cao died, Cao Pi succeeded him as King of Wei and later ascended the throne as Emperor.",
+            "zht": "曹丕是曹操之子；曹操去世後，曹丕嗣位為魏王，後踐阼稱帝。",
+            "zhs": "曹丕是曹操之子；曹操去世后，曹丕嗣位为魏王，后践阼称帝。"
+          }
+        }
+      ]
     }
   ]
 }

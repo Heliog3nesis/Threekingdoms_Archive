@@ -390,94 +390,306 @@
   ],
   "relationships": [
     {
-      "from": "馬騰",
-      "to": "龐悳（令明）",
-      "type": "commander-officer",
-      "passageId": "ws18h-p1"
+      "from": "龐德（令明）",
+      "to": "馬騰（壽成）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p1",
+          "text": {
+            "en": "Pang De followed Ma Teng in campaigns against the rebellious Qiang and Di tribes, repeatedly earning merit and rising to the rank of Colonel.",
+            "zht": "龐德隨馬騰征討叛亂的羌、氐部落，屢立戰功，漸升至校尉。",
+            "zhs": "庞德随马腾征讨叛乱的羌、氐部落，屡立战功，渐升至校尉。"
+          },
+          "title": {
+            "en": "Colonel",
+            "zht": "校尉",
+            "zhs": "校尉"
+          }
+        }
+      ]
     },
     {
-      "from": "馬騰",
-      "to": "馬超",
-      "type": "father-son",
-      "passageId": "ws18h-p2"
+      "from": "馬騰（壽成）",
+      "to": "馬超（孟起）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p2",
+          "text": {
+            "en": "Ma Chao was Ma Teng's son.",
+            "zht": "馬超是馬騰之子。",
+            "zhs": "马超是马腾之子。"
+          }
+        }
+      ]
     },
     {
-      "from": "馬超",
-      "to": "龐悳（令明）",
-      "type": "commander-officer",
-      "passageId": "ws18h-p2"
+      "from": "龐德（令明）",
+      "to": "馬超（孟起）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p2",
+          "text": {
+            "en": "Pang De followed Ma Teng's son Ma Chao against Guo Yuan and Gao Gan at Pingyang, serving as vanguard in routing their forces; he was appointed Gentleman-General and enfeoffed as Capital Neighbourhood Marquis.",
+            "zht": "龐德隨馬騰之子馬超於平陽抵禦郭援、高幹，為軍鋒大破其軍，拜中郎將，封都亭侯。",
+            "zhs": "庞德随马腾之子马超于平阳抵御郭援、高干，为军锋大破其军，拜中郎将，封都亭侯。"
+          },
+          "title": {
+            "en": "Gentleman-General, Capital Neighbourhood Marquis",
+            "zht": "中郎將、都亭侯",
+            "zhs": "中郎将、都亭侯"
+          }
+        },
+        {
+          "passageId": "ws18h-p3",
+          "text": {
+            "en": "When Ma Teng was summoned to court, Pang De remained attached to Ma Chao; after Cao Cao defeated Ma Chao south of the Wei River, Pang De fled with him to Hanyang and then followed him to Hanzhong, serving under Zhang Lu.",
+            "zht": "馬騰徵為衞尉後，龐德留屬馬超；太祖破馬超於渭南，龐德隨其亡入漢陽，後又隨其奔漢中，投靠張魯。",
+            "zhs": "马腾征为卫尉后，庞德留属马超；太祖破马超于渭南，庞德随其亡入汉阳，后又随其奔汉中，投靠张鲁。"
+          }
+        }
+      ]
     },
     {
-      "from": "鍾繇",
+      "from": "鍾繇（元常）",
       "to": "郭援",
-      "type": "uncle-nephew",
-      "passageId": "ws18h-p2"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p2",
+          "text": {
+            "en": "Guo Yuan was Zhong Yao's nephew.",
+            "zht": "郭援是鍾繇之甥。",
+            "zhs": "郭援是钟繇之甥。"
+          }
+        }
+      ]
     },
     {
-      "from": "龐悳（令明）",
+      "from": "龐德（令明）",
       "to": "郭援",
-      "type": "killer-victim",
-      "passageId": "ws18h-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p2",
+          "text": {
+            "en": "Pang De personally beheaded Guo Yuan after routing his forces at Pingyang.",
+            "zht": "龐德於平陽大破郭援軍後，親斬其首。",
+            "zhs": "庞德于平阳大破郭援军后，亲斩其首。"
+          }
+        }
+      ]
     },
     {
-      "from": "張魯",
-      "to": "龐悳（令明）",
-      "type": "lord-subordinate",
-      "passageId": "ws18h-p3"
+      "from": "龐德（令明）",
+      "to": "鍾繇（元常）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18h-p2",
+          "text": {
+            "en": "When Pang De realised the head he had taken was Guo Yuan's, Zhong Yao's own nephew, he apologised; Zhong Yao, weeping, told him a traitor to the state deserved no apology.",
+            "zht": "龐德得知所斬乃鍾繇之甥郭援，向他致歉；鍾繇卻流淚道，郭援雖是甥，然為國賊，不必致歉。",
+            "zhs": "庞德得知所斩乃钟繇之甥郭援，向他致歉；钟繇却流泪道，郭援虽是甥，然为国贼，不必致歉。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "龐悳（令明）",
-      "type": "lord-subordinate",
-      "passageId": "ws18h-p3"
+      "from": "龐德（令明）",
+      "to": "張魯（公祺）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p3",
+          "text": {
+            "en": "After Ma Chao's defeat, Pang De followed him to Hanzhong and served under Zhang Lu.",
+            "zht": "馬超兵敗後，龐德隨其至漢中，投靠張魯。",
+            "zhs": "马超兵败后，庞德随其至汉中，投靠张鲁。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹仁",
-      "to": "龐悳（令明）",
-      "type": "commander-officer",
-      "passageId": "ws18h-p5"
+      "from": "龐德（令明）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p3",
+          "text": {
+            "en": "When Cao Cao pacified Hanzhong, Pang De surrendered with the others; having long heard of his valour, Cao Cao appointed him General Who Champions Righteousness and enfeoffed him as Neighbourhood Marquis of Guanmen with three hundred households.",
+            "zht": "太祖平定漢中，龐德隨衆歸降；太祖素聞其驍勇，拜立義將軍，封關門亭侯，邑三百戶。",
+            "zhs": "太祖平定汉中，庞德随众归降；太祖素闻其骁勇，拜立义将军，封关门亭侯，邑三百户。"
+          },
+          "title": {
+            "en": "General Who Champions Righteousness, Neighbourhood Marquis of Guanmen",
+            "zht": "立義將軍、關門亭侯",
+            "zhs": "立义将军、关门亭侯"
+          }
+        },
+        {
+          "passageId": "ws18h-p4",
+          "text": {
+            "en": "Despite suspicion from Fancheng's generals over his kinsman's presence in Hanzhong, Pang De vowed to kill Guan Yu himself rather than be killed by him, and wounded him in the forehead with an arrow in battle.",
+            "zht": "樊城諸將因其親族在漢中而頗疑之，龐德誓言寧可親手殺關羽，不願被關羽所殺，交戰中更射傷其額。",
+            "zhs": "樊城诸将因其亲族在汉中而颇疑之，庞德誓言宁可亲手杀关羽，不愿被关羽所杀，交战中更射伤其额。"
+          }
+        },
+        {
+          "passageId": "ws18h-p8",
+          "text": {
+            "en": "When Cao Cao heard of Pang De's death, he grieved and wept, ennobled both of Pang De's sons as marquises, and Cao Pi later posthumously honoured him as Marquis Zhuang, the Valiant Marquis.",
+            "zht": "太祖聞龐德死訊，痛惜流涕，封其二子為列侯；文帝即位後，追諡龐德為壯侯。",
+            "zhs": "太祖闻庞德死讯，痛惜流涕，封其二子为列侯；文帝即位后，追谥庞德为壮侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "龐德（令明）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18h-p4",
+          "text": {
+            "en": "Pang De joined Cao Ren in storming Wan and beheading the rebels Hou Yin and Wei Kai, then marched south with him to garrison Fancheng and campaign against Guan Yu.",
+            "zht": "龐德隨曹仁攻破宛城，斬侯音、衞開，其後南下屯駐樊城，共同征討關羽。",
+            "zhs": "庞德随曹仁攻破宛城，斩侯音、卫开，其后南下屯驻樊城，共同征讨关羽。"
+          }
+        }
+      ]
     },
     {
       "from": "龐柔",
-      "to": "龐悳（令明）",
-      "type": "elder cousin-younger cousin",
-      "passageId": "ws18h-p4"
+      "to": "龐德（令明）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18h-p4",
+          "text": {
+            "en": "Pang Rou, Pang De's elder cousin, was then serving in Shu, which made Fancheng's generals deeply suspicious of Pang De.",
+            "zht": "龐柔是龐德的從兄，當時效力於蜀，因此樊城諸將對龐德頗為猜疑。",
+            "zhs": "庞柔是庞德的从兄，当时效力于蜀，因此樊城诸将对庞德颇为猜疑。"
+          }
+        }
+      ]
     },
     {
-      "from": "龐悳（令明）",
-      "to": "關羽",
-      "type": "rivals",
-      "passageId": "ws18h-p4"
+      "from": "關羽（雲長）",
+      "to": "龐德（令明）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p4",
+          "text": {
+            "en": "Pang De wounded Guan Yu in the forehead with an arrow in battle; riding a white horse, he became known among Guan Yu's troops as the \"White Horse General,\" whom all stood in awe of.",
+            "zht": "龐德於交戰中射傷關羽額頭；因常乘白馬，關羽軍中稱其為「白馬將軍」，無不畏憚。",
+            "zhs": "庞德于交战中射伤关羽额头；因常乘白马，关羽军中称其为「白马将军」，无不畏惮。"
+          }
+        },
+        {
+          "passageId": "ws18h-p7",
+          "text": {
+            "en": "After his overturned boat left him without a weapon, Pang De was captured but stood firm and refused to kneel; when Guan Yu offered to spare him if he surrendered, Pang De declared he would rather die a ghost of the state than live as a rebel's general, so Guan Yu had him killed.",
+            "zht": "船覆失去弓箭後，龐德被擒仍立而不跪；關羽許以不死勸降，龐德卻言寧為國家鬼，不為賊將，關羽遂將他殺害。",
+            "zhs": "船覆失去弓箭后，庞德被擒仍立而不跪；关羽许以不死劝降，庞德却言宁为国家鬼，不为贼将，关羽遂将他杀害。"
+          }
+        }
+      ]
     },
     {
-      "from": "關羽",
-      "to": "龐悳（令明）",
-      "type": "killer-victim",
-      "passageId": "ws18h-p7"
-    },
-    {
-      "from": "龐悳（令明）",
+      "from": "龐德（令明）",
       "to": "董衡",
-      "type": "killer-victim",
-      "passageId": "ws18h-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p5",
+          "text": {
+            "en": "When General Dong Heng sought to surrender amid the flood, Pang De had him seized and beheaded.",
+            "zht": "洪水中董衡欲降，龐德將他擒獲斬殺。",
+            "zhs": "洪水中董衡欲降，庞德将他擒获斩杀。"
+          }
+        }
+      ]
     },
     {
-      "from": "龐悳（令明）",
+      "from": "龐德（令明）",
       "to": "董超",
-      "type": "killer-victim",
-      "passageId": "ws18h-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p5",
+          "text": {
+            "en": "When retainer commander Dong Chao also sought to surrender, Pang De had him seized and beheaded alongside Dong Heng.",
+            "zht": "部曲將董超亦欲投降，龐德將他與董衡一併擒殺。",
+            "zhs": "部曲将董超亦欲投降，庞德将他与董衡一并擒杀。"
+          }
+        }
+      ]
     },
     {
-      "from": "龐悳（令明）",
-      "to": "成何",
-      "type": "commander-officer",
-      "passageId": "ws18h-p6"
+      "from": "成何",
+      "to": "龐德（令明）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18h-p6",
+          "text": {
+            "en": "As his arrows ran out and the floodwaters rose, Pang De told his commander Cheng He that a worthy general does not fear death, and that today was his day to die.",
+            "zht": "矢盡水漲之際，龐德對其將成何說，賢將不畏死以求生，今日便是他的死期。",
+            "zhs": "矢尽水涨之际，庞德对其将成何说，贤将不畏死以求生，今日便是他的死期。"
+          }
+        }
+      ]
     },
     {
-      "from": "龐悳（令明）",
+      "from": "龐德（令明）",
       "to": "龐會",
-      "type": "father-son",
-      "passageId": "ws18h-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18h-p8",
+          "text": {
+            "en": "Pang Hui was Pang De's son; bold and resolute like his father, he rose to become Commandant of the Capital and General, and was granted the rank of Marquis.",
+            "zht": "龐會是龐德之子，果烈有父風，官至中尉、將軍，獲封列侯。",
+            "zhs": "庞会是庞德之子，果烈有父风，官至中尉、将军，获封列侯。"
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,8 @@
+
+wei-shu-16d.json / ws16d-p27 ann4 [vern changed]:
+  + zhs link(s): 丹阳→/maps/map-overall?admin=60
+  zht: …就有好名聲，擔任丹陽[[丞|/zh-ha… → …就有好名聲，擔任[[丹陽|/zh-han…
+
+Summary: 0 auto-filled, 0 ambiguous, 0 unresolved, 0 conflicts, 0 count mismatches.
+Vernacular: 41 passage/annotation text(s) with vern, 1 term link(s) added, 1 vern.zht updated, 0 item(s) to check.
+Files written: wei-shu-16d.json (patched)

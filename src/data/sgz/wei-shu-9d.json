@@ -1,0 +1,505 @@
+{
+  "id": "wei-shu-9d",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 9,
+  "num": "9",
+  "label": {
+    "zht": "曹洪傳",
+    "zhs": "曹洪传",
+    "en": "Biography of Cao Hong"
+  },
+  "title": {
+    "zht": "魏書九 · 曹洪傳",
+    "zhs": "魏书九 · 曹洪传",
+    "en": "Book of Wei, Chapter 9 · Biography of Cao Hong"
+  },
+  "relationships": [
+    {
+      "from": "曹操（孟德）",
+      "to": "曹洪（子廉）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Cao Hong was Cao Cao's younger paternal cousin.",
+            "zht": "曹洪是曹操的堂弟。",
+            "zhs": "曹洪是曹操的堂弟。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹鼎",
+      "to": "曹洪（子廉）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Cao Hong's paternal uncle Cao Ding, Director of the Imperial Secretariat, appointed him Chief of Qichun.",
+            "zht": "曹洪的伯父曹鼎任尚書令，任用曹洪爲蘄春縣長。",
+            "zhs": "曹洪的伯父曹鼎任尚书令，任用曹洪为蕲春县长。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "When Cao Cao lost his horse fleeing Xu Rong at Xingyang, Cao Hong gave him his own, saying the realm could do without him but not without Cao Cao, and found a boat to carry them across the Bian River.",
+            "zht": "曹操在滎陽被徐榮擊敗、失去坐騎時，曹洪把自己的馬讓給他，說“天下可無洪，不可無君”，又沿汴水找到船隻，與曹操一同渡河。",
+            "zhs": "曹操在荥阳被徐荣击败、失去坐骑时，曹洪把自己的马让给他，说“天下可无洪，不可无君”，又沿汴水找到船只，与曹操一同渡河。"
+          }
+        },
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Cao Hong raised several thousand troops in Lujiang and Danyang and brought them to join Cao Cao at Longkang.",
+            "zht": "曹洪在廬江、丹楊招募了數千士兵，到龍亢與曹操會合。",
+            "zhs": "曹洪在庐江、丹杨招募了数千士兵，到龙亢与曹操会合。"
+          }
+        },
+        {
+          "passageId": "ws9d-p2",
+          "text": {
+            "en": "For securing Dongping and Fan and keeping the army supplied during the famine, Cao Hong was appointed Soaring Eagle Colonel and later Gentleman-General Who Promotes Valor.",
+            "zht": "曹洪在饑荒中搶先佔據東平、范縣，聚集糧食供應大軍，因功被任命爲鷹揚校尉，後升揚武中郎將。",
+            "zhs": "曹洪在饥荒中抢先占据东平、范县，聚集粮食供应大军，因功被任命为鹰扬校尉，后升扬武中郎将。"
+          },
+          "title": {
+            "en": "Soaring Eagle Colonel, Gentleman-General Who Promotes Valor",
+            "zht": "鷹揚校尉、揚武中郎將",
+            "zhs": "鹰扬校尉、扬武中郎将"
+          }
+        },
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "After defeating Liu Biao's generals, Cao Hong was promoted to General Who Rouses the Vanguard and enfeoffed as Neighbourhood Marquis of Guoming.",
+            "zht": "曹洪擊敗劉表部將後，升任厲鋒將軍，封國明亭侯。",
+            "zhs": "曹洪击败刘表部将后，升任厉锋将军，封国明亭侯。"
+          },
+          "title": {
+            "en": "General Who Rouses the Vanguard, Neighbourhood Marquis of Guoming",
+            "zht": "厲鋒將軍、國明亭侯",
+            "zhs": "厉锋将军、国明亭侯"
+          }
+        },
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "For service in successive campaigns, Cao Hong was appointed General Protector.",
+            "zht": "曹洪因屢次隨軍征伐，被任命爲都護將軍。",
+            "zhs": "曹洪因屡次随军征伐，被任命为都护将军。"
+          },
+          "title": {
+            "en": "General Protector",
+            "zht": "都護將軍",
+            "zhs": "都护将军"
+          }
+        },
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "When Qiao's magistrate assessed property for levies, Cao Hong's wealth was found equal to Cao Cao's, and Cao Cao remarked, \"How could my household's wealth match Zilian's?\"",
+            "zht": "譙縣縣令評估家產時，曹洪的家財與曹操家相當，曹操說：“我家的財產怎能比得上子廉！”",
+            "zhs": "谯县县令评估家产时，曹洪的家财与曹操家相当，曹操说：“我家的财产怎能比得上子廉！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "When Cao Pi ascended the throne, Cao Hong became General of the Guards.",
+            "zht": "曹丕即位後，曹洪任衛將軍。",
+            "zhs": "曹丕即位后，曹洪任卫将军。"
+          },
+          "title": {
+            "en": "General of the Guards",
+            "zht": "衞將軍",
+            "zhs": "衞将军"
+          }
+        },
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "Cao Pi promoted Cao Hong to General of Agile Cavalry, raised him to County Marquis of Yewang and granted him the rank of Specially Advanced.",
+            "zht": "曹丕升曹洪爲驃騎將軍，進封野王侯，位特進。",
+            "zhs": "曹丕升曹洪为骠骑将军，进封野王侯，位特进。"
+          },
+          "title": {
+            "en": "General of Agile Cavalry, County Marquis of Yewang",
+            "zht": "驃騎將軍、野王侯",
+            "zhs": "骠骑将军、野王侯"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹丕（子桓）",
+      "to": "曹洪（子廉）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Pi had resented Cao Hong ever since Hong refused him a loan in his youth; when Hong's retainer broke the law, Cao Pi imprisoned him and sentenced him to death, sparing him only after his mother's intervention, and even then dismissing him and reducing his rank and fief.",
+            "zht": "曹丕年少時向曹洪借錢遭拒，一直懷恨在心；曹洪的門客犯法後，曹丕將曹洪下獄判處死刑，在卞太后干預下才免他一死，但仍罷免官職、削減爵位和封地。",
+            "zhs": "曹丕年少时向曹洪借钱遭拒，一直怀恨在心；曹洪的门客犯法后，曹丕将曹洪下狱判处死刑，在卞太后干预下才免他一死，但仍罢免官职、削减爵位和封地。"
+          }
+        },
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Pi had once asked to borrow a hundred bolts of silk from Cao Hong and been refused; once spared, Cao Hong submitted a humble memorial confessing his greed and thanking him for his life.",
+            "zht": "曹丕在東宮時曾向曹洪借絹一百匹，被拒絕；曹洪獲赦後上書謝罪，自認貪婪，感謝不殺之恩。",
+            "zhs": "曹丕在东宫时曾向曹洪借绢一百匹，被拒绝；曹洪获赦后上书谢罪，自认贪婪，感谢不杀之恩。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "卞太后",
+      "to": "曹洪（子廉）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Empress Dowager Bian threatened to have Empress Guo deposed if Cao Hong died, and told Cao Pi that without Zilian he would not be where he was, securing Cao Hong's release and later the return of his property.",
+            "zht": "卞太后對郭皇后說，若曹洪今日死，明日就讓皇帝廢后；又責備曹丕說“梁、沛之間，非子廉無有今日”，終使曹洪獲釋，後來還歸還了他的財產。",
+            "zhs": "卞太后对郭皇后说，若曹洪今日死，明日就让皇帝废后；又责备曹丕说“梁、沛之间，非子廉无有今日”，终使曹洪获释，后来还归还了他的财产。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "卞太后",
+      "to": "曹丕（子桓）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Empress Dowager Bian, Cao Pi's mother, angrily rebuked him over Cao Hong's death sentence.",
+            "zht": "卞太后是曹丕的母親，因曹洪被判死刑而怒責曹丕。",
+            "zhs": "卞太后是曹丕的母亲，因曹洪被判死刑而怒责曹丕。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郭皇后",
+      "to": "曹洪（子廉）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Pressed by Empress Dowager Bian, Empress Guo wept and pleaded repeatedly with Cao Pi until Cao Hong was spared.",
+            "zht": "在卞太后的壓力下，郭皇后流淚多次向曹丕求情，曹洪才得以免死。",
+            "zhs": "在卞太后的压力下，郭皇后流泪多次向曹丕求情，曹洪才得以免死。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "卞太后",
+      "to": "郭皇后",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Empress Dowager Bian told Empress Guo that if Cao Hong died that day, she would have the emperor depose her the next.",
+            "zht": "卞太后對郭皇后說：“令曹洪今日死，吾明日敕帝廢后矣！”",
+            "zhs": "卞太后对郭皇后说：“令曹洪今日死，吾明日敕帝废后矣！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹洪（子廉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "When Cao Pi had Cao Hong arrested, Cao Zhen, at his side, interceded, warning that Cao Hong would think he had slandered him; Cao Pi retorted that he was handling the matter himself.",
+            "zht": "曹丕逮捕曹洪時，曹真在旁請求說：“現在殺曹洪，曹洪一定以爲是我進的讒言。”曹丕說：“我自己處理此事，與你何干！”",
+            "zhs": "曹丕逮捕曹洪时，曹真在旁请求说：“现在杀曹洪，曹洪一定以为是我进的谗言。”曹丕说：“我自己处理此事，与你何干！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "When Cao Rui ascended the throne, he appointed Cao Hong General of the Rear and made him County Marquis of Lecheng with the rank of Specially Advanced.",
+            "zht": "明帝即位後，任命曹洪爲後將軍，改封樂城侯，位特進。",
+            "zhs": "明帝即位后，任命曹洪为后将军，改封乐城侯，位特进。"
+          },
+          "title": {
+            "en": "General of the Rear, County Marquis of Lecheng",
+            "zht": "後將軍、樂城侯",
+            "zhs": "后将军、乐城侯"
+          }
+        },
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Rui later appointed Cao Hong General of Agile Cavalry once again.",
+            "zht": "明帝後來再次任命曹洪爲驃騎將軍。",
+            "zhs": "明帝后来再次任命曹洪为骠骑将军。"
+          },
+          "title": {
+            "en": "General of Agile Cavalry",
+            "zht": "驃騎將軍",
+            "zhs": "骠骑将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "陳溫（元悌）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Chen Wen, Inspector of Yang Province, had long been on friendly terms with Cao Hong, who went to him with his household troops to recruit soldiers.",
+            "zht": "揚州刺史陳溫一向與曹洪交好，曹洪率家兵一千多人前往他那裏募兵。",
+            "zhs": "扬州刺史陈温一向与曹洪交好，曹洪率家兵一千多人前往他那里募兵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "劉表（景升）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "Cao Hong led a separate campaign against Liu Biao, defeating his generals at Wuyang, Wuyin, Ye, Duyang and Bowang.",
+            "zht": "曹洪單獨率軍征討劉表，在舞陽、舞陰、葉縣、堵陽、博望等地擊敗劉表部將。",
+            "zhs": "曹洪单独率军征讨刘表，在舞阳、舞阴、叶县、堵阳、博望等地击败刘表部将。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹馥",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Hong's son Cao Fu succeeded him.",
+            "zht": "曹洪之子曹馥繼承爵位。",
+            "zhs": "曹洪之子曹馥继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹震",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Cao had set aside households from Cao Hong's fief to enfeoff his son Cao Zhen as a Marquis.",
+            "zht": "曹操曾分出曹洪的封戶，封他的兒子曹震爲列侯。",
+            "zhs": "曹操曾分出曹洪的封户，封他的儿子曹震为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹瑜",
+      "to": "曹洪（子廉）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Hong's clan uncle Cao Yu was upright and respectful, rising to General of the Guards and a Marquis.",
+            "zht": "曹洪的族父曹瑜謹慎篤敬，官至衛將軍，封列侯。",
+            "zhs": "曹洪的族父曹瑜谨慎笃敬，官至卫将军，封列侯。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "曹洪（子廉）",
+      "name": { "en": "Cao Hong", "zht": "曹洪", "zhs": "曹洪" },
+      "courtesyName": { "en": "Zilian", "zht": "子廉", "zhs": "子廉" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "6th year of Taihe", "zht": "太和六年", "zhs": "太和六年" }, "year": 232 },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Qiao", "zht": "譙", "zhs": "谯" }], "position": null, "passageId": "" },
+        { "era": { "en": "Chuping - Xingping era", "zht": "初平 - 興平年間", "zhs": "初平 - 兴平年间" }, "year": "190 - 195", "age": null, "location": [{ "en": "Xingyang", "zht": "熒陽", "zhs": "荧阳" }, { "en": "Qiao", "zht": "譙", "zhs": "谯" }, { "en": "Lujiang", "zht": "廬江", "zhs": "庐江" }, { "en": "Danyang", "zht": "丹陽", "zhs": "丹阳" }, { "en": "Longkang", "zht": "龍亢", "zhs": "龙亢" }], "position": [{ "en": "Soaring Eagle Colonel", "zht": "鷹揚校尉", "zhs": "鹰扬校尉" }, { "en": "Gentleman-General Who Promotes Valor", "zht": "揚武中郎將", "zhs": "扬武中郎将" }], "passageId": "" },
+        { "era": { "en": "2nd year of Jian'an", "zht": "建安二年", "zhs": "建安二年" }, "year": 197, "age": null, "location": [{ "en": "Wuyang", "zht": "舞陽", "zhs": "舞阳" }, { "en": "Wuyin", "zht": "舞陰", "zhs": "舞阴" }, { "en": "Ye", "zht": "葉", "zhs": "叶" }, { "en": "Duyang", "zht": "堵陽", "zhs": "堵阳" }, { "en": "Bowang", "zht": "博望", "zhs": "博望" }], "position": [{ "en": "General Who Rouses the Vanguard", "zht": "厲鋒將軍", "zhs": "厉锋将军" }, { "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }], "passageId": "" },
+        { "era": { "en": "5th - 9th year of Jian'an", "zht": "建安五年 - 建安九年", "zhs": "建安五年 - 建安九年" }, "year": "200 - 204", "age": null, "location": [{ "en": "Guandu", "zht": "官渡", "zhs": "官渡" }, { "en": "Ye", "zht": "葉", "zhs": "叶" }], "position": null, "passageId": "" },
+        { "era": { "en": "20th - 24th year of Jian'an", "zht": "建安二十年 - 建安二十四年", "zhs": "建安二十年 - 建安二十四年" }, "year": "215 - 219", "age": null, "location": [{ "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" }, { "en": "Xiabian", "zht": "下辨", "zhs": "下辨" }, { "en": "Chencang", "zht": "陳倉", "zhs": "陈仓" }], "position": null, "passageId": "" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": null, "position": [{ "en": "General of the Protectorate", "zht": "都護將軍", "zhs": "都护将军" }], "passageId": "" },
+        { "era": { "en": "1st year of Huangchu", "zht": "黃初元年", "zhs": "黄初元年" }, "year": 220, "age": null, "location": null, "position": [{ "en": "General of the Guards", "zht": "衞將軍", "zhs": "衞将军" }, { "en": "General of Agile Cavalry", "zht": "驃騎將軍", "zhs": "骠骑将军" }, { "en": "County Marquis", "zht": "侯", "zhs": "侯" }, { "en": "Specially Advanced", "zht": "特進", "zhs": "特进" }], "passageId": "" },
+        { "era": { "en": "7th year of Taihe", "zht": "太和七年", "zhs": "太和七年" }, "year": 227, "age": null, "location": null, "position": [{ "en": "General of the Rear", "zht": "後將軍", "zhs": "后将军" }, { "en": "General of Agile Cavalry", "zht": "驃騎將軍", "zhs": "骠骑将军" }, { "en": "County Marquis", "zht": "侯", "zhs": "侯" }, { "en": "Specially Advanced", "zht": "特進", "zhs": "特进" }], "passageId": "" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws9d-p1",
+      "orig": {
+        "zht": "曹洪字子廉，太祖從弟也。太祖起義兵討董卓，至[[熒陽|/zh-hant/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]]，為卓將徐榮所敗。太祖失馬，賊追甚急，洪下，以馬授太祖，太祖辭讓，洪曰：「天下可無洪，不可無君。」遂步從到[[汴水|/zh-hant/maps/map-overall?water=87]]，水深不得渡，洪循水得船，與太祖俱濟，還奔[[譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]。[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]陳溫素與洪善，洪將家兵千餘人，就溫募兵，得[[廬江|/zh-hant/maps/map-overall?admin=66]]上甲二千人，東到[[丹楊|/zh-hant/maps/map-overall?admin=60]]復得數千人，與太祖會[[龍亢|/zh-hant/maps/map-overall?lat=33.16930034&lng=116.9087555&name=Longkang]]。",
+        "zhs": "曹洪字子廉，太祖从弟也。太祖起义兵讨董卓，至[[荧阳|/zh-hans/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]]，为卓将徐荣所败。太祖失马，贼追甚急，洪下，以马授太祖，太祖辞让，洪曰：「天下可无洪，不可无君。」遂步从到[[汴水|/zh-hans/maps/map-overall?water=87]]，水深不得渡，洪循水得船，与太祖俱济，还奔[[谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]。[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]陈温素与洪善，洪将家兵千余人，就温募兵，得[[庐江|/zh-hans/maps/map-overall?admin=66]]上甲二千人，东到[[丹杨|/zh-hans/maps/map-overall?admin=60]]复得数千人，与太祖会[[龙亢|/zh-hans/maps/map-overall?lat=33.16930034&lng=116.9087555&name=Longkang]]。"
+      },
+      "vern": {
+        "zht": "曹洪，字子廉，是太祖的堂弟。太祖起義兵討伐董卓，到達[[熒陽|/zh-hant/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]]，被董卓的將領徐榮擊敗。太祖失去了馬，賊兵追得很急，曹洪下馬，把馬讓給太祖，太祖推辭，曹洪說：“天下可以沒有我曹洪，卻不能沒有您。”於是曹洪步行跟隨太祖到了[[汴水|/zh-hant/maps/map-overall?water=87]]，水很深無法渡過，曹洪沿着水邊找到船，與太祖一同渡過[[汴水|/zh-hant/maps/map-overall?water=87]]，奔回[[譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]。[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]陳溫素來與曹洪交好，曹洪率領家兵一千多人，到陳溫那裏招募士兵，招得[[廬江|/zh-hant/maps/map-overall?admin=66]]上等甲士二千人，又東到[[丹楊|/zh-hant/maps/map-overall?admin=60]]招得數千人，與太祖在[[龍亢|/zh-hant/maps/map-overall?lat=33.16930034&lng=116.9087555&name=Longkang]]會合。",
+        "zhs": "曹洪，字子廉，是太祖的堂弟。太祖起义兵讨伐董卓，到达[[荧阳|/zh-hans/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]]，被董卓的将领徐荣击败。太祖失去了马，贼兵追得很急，曹洪下马，把马让给太祖，太祖推辞，曹洪说：“天下可以没有我曹洪，却不能没有您。”于是曹洪步行跟随太祖到了[[汴水|/zh-hans/maps/map-overall?water=87]]，水很深无法渡过，曹洪沿着水边找到船，与太祖一同渡过[[汴水|/zh-hans/maps/map-overall?water=87]]，奔回[[谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]。[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]陈温素来与曹洪交好，曹洪率领家兵一千多人，到陈温那里招募士兵，招得[[庐江|/zh-hans/maps/map-overall?admin=66]]上等甲士二千人，又东到[[丹杨|/zh-hans/maps/map-overall?admin=60]]招得数千人，与太祖在[[龙亢|/zh-hans/maps/map-overall?lat=33.16930034&lng=116.9087555&name=Longkang]]会合。"
+      },
+      "en": "Cao Hong, courtesy name Zilian, was Cao Cao's younger paternal cousin. Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) raised troops against Dong Zhuo, but upon reaching [[Xingyang|/maps/map-overall?lat=34.84990793&lng=113.43360412&name=Xingyang]] was defeated by Dong Zhuo's general Xu Rong. Cao Cao lost his horse, and the enemy pressed hard in pursuit. Cao Hong dismounted and offered him his own horse. Cao Cao declined, but Cao Hong said, \"The realm can do without me, but it cannot do without you.\" Cao Hong then followed on foot to the [[Bian River|/maps/map-overall?water=87]]. The water was too deep to cross, so he searched along the bank and found a boat. He and Cao Cao crossed together and fled back to [[Qiao|/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]. Chen Wen, [[Inspector|/translations/officials/regional#provinces-014]] of [[Yang Province|/maps/map-overall?admin=9]], had long been on friendly terms with Cao Hong. Leading over a thousand household troops, Cao Hong went to Chen Wen to recruit soldiers. He secured two thousand elite armoured troops from [[Lujiang|/maps/map-overall?admin=66]], then travelled east to [[Danyang|/maps/map-overall?admin=60]] and recruited several thousand more before joining Cao Cao at [[Longkang|/maps/map-overall?lat=33.16930034&lng=116.9087555&name=Longkang]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：洪伯父鼎為[[尚書令|/zh-hant/translations/officials/departments#state-affairs-031]]，任洪為[[蘄春|/zh-hant/maps/map-overall?lat=30.11398471&lng=115.36485498&name=Qichun]][[長|/zh-hant/translations/officials/regional#counties-089]]。",
+          "zhs": "《魏书》曰：洪伯父鼎为[[尚书令|/zh-hans/translations/officials/departments#state-affairs-031]]，任洪为[[蕲春|/zh-hans/maps/map-overall?lat=30.11398471&lng=115.36485498&name=Qichun]][[长|/zh-hans/translations/officials/regional#counties-089]]。",
+          "vern": {
+            "zht": "《魏書》記載：曹洪的伯父曹鼎爲[[尚書令|/zh-hant/translations/officials/departments#state-affairs-031]]時，曾任命曹洪爲[[蘄春|/zh-hant/maps/map-overall?lat=30.11398471&lng=115.36485498&name=Qichun]][[長|/zh-hant/translations/officials/regional#counties-089]]。",
+            "zhs": "《魏书》记载：曹洪的伯父曹鼎为[[尚书令|/zh-hans/translations/officials/departments#state-affairs-031]]时，曾任命曹洪为[[蕲春|/zh-hans/maps/map-overall?lat=30.11398471&lng=115.36485498&name=Qichun]][[长|/zh-hans/translations/officials/regional#counties-089]]。"
+          },
+          "en": "The Book of Wei states: Cao Hong's uncle Cao Ding, while serving as [[Director of the Imperial Secretariat|/translations/officials/departments#state-affairs-031]], appointed Cao Hong [[County Chief|/translations/officials/regional#counties-089]] of [[Qichun|/maps/map-overall?lat=30.11398471&lng=115.36485498&name=Qichun]]."
+        }
+      ]
+    },
+    {
+      "id": "ws9d-p2",
+      "orig": {
+        "zht": "太祖征[[徐州|/zh-hant/maps/map-overall?admin=8]]，張邈舉[[兖州|/zh-hant/maps/map-overall?admin=11]]叛迎呂布。時大饑荒，洪將兵在前，先據[[東平|/zh-hant/maps/map-overall?admin=37]]、[[范|/zh-hant/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]]，聚糧穀以繼軍。太祖討邈、布於[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，布破走，遂據[[東阿|/zh-hant/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]，轉擊[[濟陰|/zh-hant/maps/map-overall?admin=38]]、[[山陽|/zh-hant/maps/map-overall?lat=35.22156032&lng=113.27814044&name=Shanyang]]、[[中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]、[[陽武|/zh-hant/maps/map-overall?lat=34.99647244&lng=114.03485542&name=Yangwu]]、[[京|/zh-hant/maps/map-overall?lat=34.67762033&lng=113.43021677&name=Jing]]、[[密|/zh-hant/maps/map-overall?lat=34.45307799&lng=113.52387993&name=Mi]]十餘縣，皆拔之。以前後功[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]鷹揚校尉，[[遷|/zh-hant/translations/officials#glossary-reassign]][[揚武中郎將|/zh-hant/translations/officials/military#gentleman-generals-176]]。",
+        "zhs": "太祖征[[徐州|/zh-hans/maps/map-overall?admin=8]]，张邈举[[兖州|/zh-hans/maps/map-overall?admin=11]]叛迎吕布。时大饥荒，洪将兵在前，先据[[东平|/zh-hans/maps/map-overall?admin=37]]、[[范|/zh-hans/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]]，聚粮谷以继军。太祖讨邈、布于[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，布破走，遂据[[东阿|/zh-hans/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]，转击[[济阴|/zh-hans/maps/map-overall?admin=38]]、[[山阳|/zh-hans/maps/map-overall?lat=35.22156032&lng=113.27814044&name=Shanyang]]、[[中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]、[[阳武|/zh-hans/maps/map-overall?lat=34.99647244&lng=114.03485542&name=Yangwu]]、[[京|/zh-hans/maps/map-overall?lat=34.67762033&lng=113.43021677&name=Jing]]、[[密|/zh-hans/maps/map-overall?lat=34.45307799&lng=113.52387993&name=Mi]]十余县，皆拔之。以前后功[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]鹰扬校尉，[[迁|/zh-hans/translations/officials#glossary-reassign]][[扬武中郎将|/zh-hans/translations/officials/military#gentleman-generals-176]]。"
+      },
+      "vern": {
+        "zht": "太祖征討[[徐州|/zh-hant/maps/map-overall?admin=8]]時，張邈以[[兗州|/zh-hant/maps/map-overall?admin=11]]反叛，迎接呂布。當時正逢大饑荒，曹洪率兵在前，先佔據[[東平|/zh-hant/maps/map-overall?admin=37]]、[[範|/zh-hant/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]]，收集糧食以接濟部隊。太祖在[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]征討張邈、呂布，呂布戰敗逃走，太祖隨即佔據[[東阿|/zh-hant/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]，又轉攻[[濟陰|/zh-hant/maps/map-overall?admin=38]]、[[山陽|/zh-hant/maps/map-overall?lat=35.22156032&lng=113.27814044&name=Shanyang]]、[[中牟|/zh-hant/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]、[[陽武|/zh-hant/maps/map-overall?lat=34.99647244&lng=114.03485542&name=Yangwu]]、[[京|/zh-hant/maps/map-overall?lat=34.67762033&lng=113.43021677&name=Jing]]、[[密|/zh-hant/maps/map-overall?lat=34.45307799&lng=113.52387993&name=Mi]]等十餘縣，全部攻克。曹洪因先後立下的功勞，被任命爲鷹揚校尉，又升爲[[揚武中郎將|/zh-hant/translations/officials/military#gentleman-generals-176]]。",
+        "zhs": "太祖征讨[[徐州|/zh-hans/maps/map-overall?admin=8]]时，张邈以[[兖州|/zh-hans/maps/map-overall?admin=11]]反叛，迎接吕布。当时正逢大饥荒，曹洪率兵在前，先占据[[东平|/zh-hans/maps/map-overall?admin=37]]、[[范|/zh-hans/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]]，收集粮食以接济部队。太祖在[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]征讨张邈、吕布，吕布战败逃走，太祖随即占据[[东阿|/zh-hans/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]，又转攻[[济阴|/zh-hans/maps/map-overall?admin=38]]、[[山阳|/zh-hans/maps/map-overall?lat=35.22156032&lng=113.27814044&name=Shanyang]]、[[中牟|/zh-hans/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]]、[[阳武|/zh-hans/maps/map-overall?lat=34.99647244&lng=114.03485542&name=Yangwu]]、[[京|/zh-hans/maps/map-overall?lat=34.67762033&lng=113.43021677&name=Jing]]、[[密|/zh-hans/maps/map-overall?lat=34.45307799&lng=113.52387993&name=Mi]]等十余县，全部攻克。曹洪因先后立下的功劳，被任命为鹰扬校尉，又升为[[扬武中郎将|/zh-hans/translations/officials/military#gentleman-generals-176]]。"
+      },
+      "en": "While Cao Cao was campaigning against [[Xu Province|/maps/map-overall?admin=8]], Zhang [[Mi|/maps/map-overall?lat=34.45307799&lng=113.52387993&name=Mi]]ao rose in rebellion with [[Yan Province|/maps/map-overall?admin=11]] and welcomed Lü Bu. A severe famine was then raging. Cao Hong led troops ahead, securing [[Dongping State|/maps/map-overall?admin=37]] and [[Fan|/maps/map-overall?lat=35.81058963&lng=116.03226075&name=Fan]] first and gathering grain to supply the army. Cao Cao then attacked Zhang Miao and Lü Bu at [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]. Lü Bu was defeated and fled, and Cao Cao occupied [[Dong'a|/maps/map-overall?lat=36.17486442&lng=116.06783548&name=Dong%27a]]. Cao Cao then turned to attack more than ten counties, including [[Jiyin|/maps/map-overall?admin=38]], [[Shanyang|/maps/map-overall?lat=35.22156032&lng=113.27814044&name=Shanyang]], [[Zhongmu|/maps/map-overall?lat=34.75197436&lng=114.07467163&name=Zhongmu]], [[Yangwu|/maps/map-overall?lat=34.99647244&lng=114.03485542&name=Yangwu]], [[Jing|/maps/map-overall?lat=34.67762033&lng=113.43021677&name=Jing]] and Mi, capturing them all. For his successive achievements, Cao Hong was [[appointed|/translations/officials#glossary-formally-appoint]] Soaring Eagle Colonel and later [[promoted|/translations/officials#glossary-reassign]] to [[Gentleman-General Who Promotes Valor|/translations/officials/military#gentleman-generals-176]]."
+    },
+    {
+      "id": "ws9d-p3",
+      "orig": {
+        "zht": "天子都[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]洪[[諫議大夫|/zh-hant/translations/officials/ministers#-nine-ministers-i-181]]。別征劉表，破表別將於[[舞陽|/zh-hant/maps/map-overall?lat=33.48411673&lng=113.45621345&name=Wuyang]]、[[舞陰|/zh-hant/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]、[[葉|/zh-hant/maps/map-overall?lat=33.50525207&lng=113.2914691&name=Ye]]、[[堵陽|/zh-hant/maps/map-overall?lat=33.23136201&lng=113.04885759&name=Duyang]]、[[博望|/zh-hant/maps/map-overall?lat=33.15217013&lng=112.71539343&name=Bowang]]，有功，[[遷|/zh-hant/translations/officials#glossary-reassign]]厲鋒將軍，封國明[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。累從征伐，[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]都護將軍。文帝即位，為[[衞將軍|/zh-hant/translations/officials/military#various-grand-generals-038]]，[[遷|/zh-hant/translations/officials#glossary-reassign]][[驃騎將軍|/zh-hant/translations/officials/military#various-grand-generals-036]]，進封[[野王|/zh-hant/maps/map-overall?lat=35.0821819&lng=112.9350644&name=Yewang]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]，益邑千戶，并前二千一百戶，位[[特進|/zh-hant/translations/officials/ministers#civil-honorary-officials-118]]；後徙封都陽[[侯|/zh-hant/translations/officials#glossary-county-marquis]]。",
+        "zhs": "天子都[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]洪[[谏议大夫|/zh-hans/translations/officials/ministers#-nine-ministers-i-181]]。别征刘表，破表别将于[[舞阳|/zh-hans/maps/map-overall?lat=33.48411673&lng=113.45621345&name=Wuyang]]、[[舞阴|/zh-hans/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]、[[叶|/zh-hans/maps/map-overall?lat=33.50525207&lng=113.2914691&name=Ye]]、[[堵阳|/zh-hans/maps/map-overall?lat=33.23136201&lng=113.04885759&name=Duyang]]、[[博望|/zh-hans/maps/map-overall?lat=33.15217013&lng=112.71539343&name=Bowang]]，有功，[[迁|/zh-hans/translations/officials#glossary-reassign]]厉锋将军，封国明[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。累从征伐，[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]都护将军。文帝即位，为[[衞将军|/zh-hans/translations/officials/military#various-grand-generals-038]]，[[迁|/zh-hans/translations/officials#glossary-reassign]][[骠骑将军|/zh-hans/translations/officials/military#various-grand-generals-036]]，进封[[野王|/zh-hans/maps/map-overall?lat=35.0821819&lng=112.9350644&name=Yewang]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]，益邑千户，并前二千一百户，位[[特进|/zh-hans/translations/officials/ministers#civil-honorary-officials-118]]；后徙封都阳[[侯|/zh-hans/translations/officials#glossary-county-marquis]]。"
+      },
+      "vern": {
+        "zht": "天子定都[[許|/zh-hant/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，任命曹洪爲[[諫議大夫|/zh-hant/translations/officials/ministers#-nine-ministers-i-181]]。曹洪又另率軍征討劉表，在[[舞陽|/zh-hant/maps/map-overall?lat=33.48411673&lng=113.45621345&name=Wuyang]]、[[舞陰|/zh-hant/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]、[[葉|/zh-hant/maps/map-overall?lat=33.50525207&lng=113.2914691&name=Ye]]、[[堵陽|/zh-hant/maps/map-overall?lat=33.23136201&lng=113.04885759&name=Duyang]]、[[博望|/zh-hant/maps/map-overall?lat=33.15217013&lng=112.71539343&name=Bowang]]擊敗劉表的別將，有功，升任厲鋒將軍，封國明[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。他多次隨從征伐，被任命爲都護將軍。文帝即位，曹洪擔任[[衛將軍|/zh-hant/translations/officials/military#various-grand-generals-038]]，後升任[[驃騎將軍|/zh-hant/translations/officials/military#various-grand-generals-036]]，進封[[野王|/zh-hant/maps/map-overall?lat=35.0821819&lng=112.9350644&name=Yewang]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]，增加食邑一千戶，連同以前的共二千一百戶，賜位[[特進|/zh-hant/translations/officials/ministers#civil-honorary-officials-118]]；後來改封爲都陽[[侯|/zh-hant/translations/officials#glossary-county-marquis]]。",
+        "zhs": "天子定都[[许|/zh-hans/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]]，任命曹洪为[[谏议大夫|/zh-hans/translations/officials/ministers#-nine-ministers-i-181]]。曹洪又另率军征讨刘表，在[[舞阳|/zh-hans/maps/map-overall?lat=33.48411673&lng=113.45621345&name=Wuyang]]、[[舞阴|/zh-hans/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]]、[[叶|/zh-hans/maps/map-overall?lat=33.50525207&lng=113.2914691&name=Ye]]、[[堵阳|/zh-hans/maps/map-overall?lat=33.23136201&lng=113.04885759&name=Duyang]]、[[博望|/zh-hans/maps/map-overall?lat=33.15217013&lng=112.71539343&name=Bowang]]击败刘表的别将，有功，升任厉锋将军，封国明[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。他多次随从征伐，被任命为都护将军。文帝即位，曹洪担任[[卫将军|/zh-hans/translations/officials/military#various-grand-generals-038]]，后升任[[骠骑将军|/zh-hans/translations/officials/military#various-grand-generals-036]]，进封[[野王|/zh-hans/maps/map-overall?lat=35.0821819&lng=112.9350644&name=Yewang]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]，增加食邑一千户，连同以前的共二千一百户，赐位[[特进|/zh-hans/translations/officials/ministers#civil-honorary-officials-118]]；后来改封为都阳[[侯|/zh-hans/translations/officials#glossary-county-marquis]]。"
+      },
+      "en": "When the Emperor established his capital at [[Xu|/maps/map-overall?lat=34.029893&lng=114.02211887&name=Xuchang]], Cao Hong was [[appointed|/translations/officials#glossary-formally-appoint]] [[Counsellor Remonstrant|/translations/officials/ministers#-nine-ministers-i-181]]. He led a separate campaign against Liu Biao, defeating Liu Biao's subordinate generals at [[Wuyang|/maps/map-overall?lat=33.48411673&lng=113.45621345&name=Wuyang]], [[Wuyin|/maps/map-overall?lat=32.97656214&lng=113.25163985&name=Wuyin]], [[Ye|/maps/map-overall?lat=33.50525207&lng=113.2914691&name=Ye]], [[Duyang|/maps/map-overall?lat=33.23136201&lng=113.04885759&name=Duyang]] and [[Bowang|/maps/map-overall?lat=33.15217013&lng=112.71539343&name=Bowang]]. For his achievements, he was [[promoted|/translations/officials#glossary-reassign]] to General Who Rouses the Vanguard and enfeoffed as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Guoming. For his service in successive campaigns, he was later [[appointed|/translations/officials#glossary-formally-appoint]] General Protector. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) ascended the throne, Cao Hong became [[General of the Guards|/translations/officials/military#various-grand-generals-038]]. He was later [[promoted|/translations/officials#glossary-reassign]] to [[General of Agile Cavalry|/translations/officials/military#various-grand-generals-036]] and raised to [[County Marquis|/translations/officials#glossary-county-marquis]] of [[Yewang|/maps/map-overall?lat=35.0821819&lng=112.9350644&name=Yewang]]. His fief was increased by one thousand households, bringing the total to two thousand one hundred, and he was granted the rank of [[Specially Advanced|/translations/officials/ministers#civil-honorary-officials-118]]. He was later relocated to become [[County Marquis|/translations/officials#glossary-county-marquis]] of Duyang."
+    },
+    {
+      "id": "ws9d-p4",
+      "orig": {
+        "zht": "始，洪家富而性吝嗇，文帝少時假求不稱，常恨之，遂以舍客犯法，下獄當死。羣臣並救莫能得。卞太后謂郭后曰：「令曹洪今日死，吾明日勑帝廢后矣。」於是泣涕屢請，乃得免官削爵土。洪先帝功臣，時人多為觖望。明帝即位，[[拜|/zh-hant/translations/officials#glossary-formally-appoint]][[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]，更封[[樂城|/zh-hant/maps/map-overall?lat=29.74018956&lng=106.91005272&name=Lecheng]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]，邑千戶，位[[特進|/zh-hant/translations/officials/ministers#civil-honorary-officials-118]]，復[[拜|/zh-hant/translations/officials#glossary-formally-appoint]][[驃騎將軍|/zh-hant/translations/officials/military#various-grand-generals-036]]。太和六年薨，謚曰恭侯。子馥，嗣侯。初，太祖分洪戶封子震[[列侯|/zh-hant/translations/officials#glossary-marquis]]。洪族父瑜，脩慎篤敬，官至[[衞將軍|/zh-hant/translations/officials/military#various-grand-generals-038]]，封[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "始，洪家富而性吝啬，文帝少时假求不称，常恨之，遂以舍客犯法，下狱当死。群臣并救莫能得。卞太后谓郭后曰：「令曹洪今日死，吾明日勑帝废后矣。」于是泣涕屡请，乃得免官削爵土。洪先帝功臣，时人多为觖望。明帝即位，[[拜|/zh-hans/translations/officials#glossary-formally-appoint]][[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]，更封[[乐城|/zh-hans/maps/map-overall?lat=29.74018956&lng=106.91005272&name=Lecheng]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]，邑千户，位[[特进|/zh-hans/translations/officials/ministers#civil-honorary-officials-118]]，复[[拜|/zh-hans/translations/officials#glossary-formally-appoint]][[骠骑将军|/zh-hans/translations/officials/military#various-grand-generals-036]]。太和六年薨，谥曰恭侯。子馥，嗣侯。初，太祖分洪户封子震[[列侯|/zh-hans/translations/officials#glossary-marquis]]。洪族父瑜，修慎笃敬，官至[[衞将军|/zh-hans/translations/officials/military#various-grand-generals-038]]，封[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "vern": {
+        "zht": "起初，曹洪家境富裕但生性吝嗇。文帝年輕時向他借錢而未能如意，常常對他懷恨在心。後來文帝因曹洪的門客犯法，把曹洪投入監獄，判爲死罪。羣臣去說情，但都沒能成功。卞太后對郭皇后說：“如果曹洪今天被處死，我明天就敕令皇帝廢黜你。”於是郭皇后痛哭流涕，多次向文帝求情，曹洪這才免於一死，但被罷免官職、削減爵位和封邑。曹洪是先帝的功臣，當時的人大多爲此感到失望不滿。明帝即位，任命曹洪爲[[後將軍|/zh-hant/translations/officials/military#four-direction--misc-115]]，改封[[樂城|/zh-hant/maps/map-overall?lat=29.74018956&lng=106.91005272&name=Lecheng]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]，食邑一千戶，加[[特進|/zh-hant/translations/officials/ministers#civil-honorary-officials-118]]之位，後又任命他爲[[驃騎將軍|/zh-hant/translations/officials/military#various-grand-generals-036]]。太和六年，曹洪去世，諡號爲恭侯。他的兒子曹馥繼承侯爵。當初，太祖曾分出曹洪的封戶，封他的兒子曹震爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]。曹洪的族父曹瑜，爲人修身謹慎，篤厚恭敬，官至[[衛將軍|/zh-hant/translations/officials/military#various-grand-generals-038]]，封爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "起初，曹洪家境富裕但生性吝啬。文帝年轻时向他借钱而未能如意，常常对他怀恨在心。后来文帝因曹洪的门客犯法，把曹洪投入监狱，判为死罪。群臣去说情，但都没能成功。卞太后对郭皇后说：“如果曹洪今天被处死，我明天就敕令皇帝废黜你。”于是郭皇后痛哭流涕，多次向文帝求情，曹洪这才免于一死，但被罢免官职、削减爵位和封邑。曹洪是先帝的功臣，当时的人大多为此感到失望不满。明帝即位，任命曹洪为[[后将军|/zh-hans/translations/officials/military#four-direction--misc-115]]，改封[[乐城|/zh-hans/maps/map-overall?lat=29.74018956&lng=106.91005272&name=Lecheng]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]，食邑一千户，加[[特进|/zh-hans/translations/officials/ministers#civil-honorary-officials-118]]之位，后又任命他为[[骠骑将军|/zh-hans/translations/officials/military#various-grand-generals-036]]。太和六年，曹洪去世，谥号为恭侯。他的儿子曹馥继承侯爵。当初，太祖曾分出曹洪的封户，封他的儿子曹震为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。曹洪的族父曹瑜，为人修身谨慎，笃厚恭敬，官至[[卫将军|/zh-hans/translations/officials/military#various-grand-generals-038]]，封为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "en": "Cao Hong's family was wealthy, but he was miserly by nature. In his youth, Cao Pi had once asked him for a loan and was refused. Thereafter, Cao Pi bore him a grudge. When Cao Hong's retainers later broke the law, Cao Pi had him imprisoned and sentenced to death. All the ministers pleaded for him, but none succeeded. Empress Dowager Bian told Empress Guo, \"If Cao Hong dies today, tomorrow I shall order the emperor to depose you.\" Empress Guo then wept bitterly and pleaded repeatedly with the emperor. Only then was Cao Hong spared, though he was dismissed from office and his rank and fief were reduced. Cao Hong had rendered distinguished service to the former emperor, and many at the time felt disappointed and aggrieved on his behalf. When Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) ascended the throne, he [[appointed|/translations/officials#glossary-formally-appoint]] Cao Hong [[General of the Rear|/translations/officials/military#four-direction--misc-115]] and changed his enfeoffment to [[County Marquis|/translations/officials#glossary-county-marquis]] of [[Lecheng|/maps/map-overall?lat=29.74018956&lng=106.91005272&name=Lecheng]], with a fief of one thousand households. Cao Hong was also accorded the rank of [[Specially Advanced|/translations/officials/ministers#civil-honorary-officials-118]] and later [[appointed|/translations/officials#glossary-formally-appoint]] [[General of Agile Cavalry|/translations/officials/military#various-grand-generals-036]]. Cao Hong died in the sixth year of Taihe and was given the posthumous title [[Marquis|/translations/officials#glossary-marquis]] Gong, the Deferential [[Marquis|/translations/officials#glossary-marquis]]. His son Cao Fu succeeded to his title. Earlier, Cao Cao had set aside some households from Cao Hong's fief to enfeoff Cao Hong's son Cao Zhen as a Marquis. Cao Hong's clan uncle Cao Yu was upright and circumspect, earnest and respectful. He rose to [[General of the Guards|/translations/officials/military#various-grand-generals-038]] and was enfeoffed as a Marquis.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：文帝收洪，時曹真在左右，請之曰：「今誅洪，洪必以真為譖也。」帝曰：「我自治之，卿何豫也？」會卞太后責怒帝，言「[[梁|/zh-hant/maps/map-overall?admin=27]]、[[沛|/zh-hant/maps/map-overall?admin=26]]之間，非子廉無有今日」。詔乃釋之。猶尚沒入其財產。太后又以為言，後乃還之。初，太祖為[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]]時，以己率下，每歲發調，使本縣平貲。于時[[譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]][[令|/zh-hant/translations/officials/regional#counties-088]]平洪貲財與公家等，太祖曰：「我家貲郍得如子廉邪！」\n\n文帝在東宮，嘗從洪貸絹百匹，洪不稱意。及洪犯法，自分必死，旣得原，喜，上書謝曰：「臣少不由道，過在人倫，長竊非任，遂蒙含貸。性無檢度知足之分，而有犲狼無厭之質，老惛倍貪，觸突國網，罪迫三千，不在赦宥，當就辜誅，棄諸市朝，猶蒙天恩，骨肉更生。臣仰視天日，愧負靈神，俯惟愆闕，慙愧怖悸，不能雉經以自裁割，謹塗顏闕門，拜章陳情。」",
+          "zhs": "《魏略》曰：文帝收洪，时曹真在左右，请之曰：「今诛洪，洪必以真为谮也。」帝曰：「我自治之，卿何豫也？」会卞太后责怒帝，言「[[梁|/zh-hans/maps/map-overall?admin=27]]、[[沛|/zh-hans/maps/map-overall?admin=26]]之间，非子廉无有今日」。诏乃释之。犹尚没入其财产。太后又以为言，后乃还之。初，太祖为[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]]时，以己率下，每岁发调，使本县平赀。于时[[谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]][[令|/zh-hans/translations/officials/regional#counties-088]]平洪赀财与公家等，太祖曰：「我家赀郍得如子廉邪！」文帝在东宫，尝从洪贷绢百匹，洪不称意。\n\n及洪犯法，自分必死，既得原，喜，上书谢曰：「臣少不由道，过在人伦，长窃非任，遂蒙含贷。性无检度知足之分，而有犲狼无厌之质，老惛倍贪，触突国网，罪迫三千，不在赦宥，当就辜诛，弃诸市朝，犹蒙天恩，骨肉更生。臣仰视天日，愧负灵神，俯惟愆阙，慙愧怖悸，不能雉经以自裁割，谨涂颜阙门，拜章陈情。」",
+          "vern": {
+            "zht": "《魏略》記載：文帝收捕曹洪時，曹真在文帝身邊，替曹洪求情說：“現在如果誅殺曹洪，曹洪一定以爲是我曹真進讒言陷害他。”文帝說：“我自己處置他，你何必參與呢？”此時卞太后也憤怒地責備文帝，說：“[[梁|/zh-hant/maps/map-overall?admin=27]]、[[沛|/zh-hant/maps/map-overall?admin=26]]之間，若不是子廉，就不會有今天。”文帝這才下詔釋放曹洪。但還是把他的財產沒收歸公。太后又爲此事進言，於是財產得以歸還。當初，太祖擔任[[司空|/zh-hant/translations/officials/ministers#three-excellencies-105]]時，以身作則，每年徵發賦調時，都讓本縣評定分別各家資產。當時[[譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]縣縣[[令|/zh-hant/translations/officials/regional#counties-088]]把曹洪的資產評定得與太祖家相等，太祖說：“我家的資產哪能比得上子廉呢！”\n\n文帝在東宮時，曾向曹洪借絹一百匹，曹洪沒有讓他稱心如意。後來曹洪犯法，自料必死無疑。被赦免後，他很高興，上書謝恩說：“臣年輕時沒有遵循正道，在人倫上犯了過錯；長大後竊據了不稱職的職位，卻蒙受了寬容赦免。臣本性沒有檢點約束和知道滿足的本分，反而有豺狼一樣貪得無厭的本性；年老昏亂，加倍貪婪，觸犯國家法網，罪行迫近三千條，不在赦免寬宥的範圍之內，理當被治罪誅殺，棄屍於市，卻仍然蒙受上天的恩德，得以骨肉復生。臣抬頭仰望上天，愧對神明；低頭思量自己的過失，羞愧惶恐，不能上吊自盡以結束自己的生命，只能恭敬地塗污臉面，來到宮門前拜上表章陳述衷情。”",
+            "zhs": "《魏略》记载：文帝收捕曹洪时，曹真在文帝身边，替曹洪求情说：“现在如果诛杀曹洪，曹洪一定以为是我曹真进谗言陷害他。”文帝说：“我自己处置他，你何必参与呢？”此时卞太后也愤怒地责备文帝，说：“[[梁|/zh-hans/maps/map-overall?admin=27]]、[[沛|/zh-hans/maps/map-overall?admin=26]]之间，若不是子廉，就不会有今天。”文帝这才下诏释放曹洪。但还是把他的财产没收归公。太后又为此事进言，于是财产得以归还。当初，太祖担任[[司空|/zh-hans/translations/officials/ministers#three-excellencies-105]]时，以身作则，每年征发赋调时，都让本县评定分别各家资产。当时[[谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]县县[[令|/zh-hans/translations/officials/regional#counties-088]]把曹洪的资产评定得与太祖家相等，太祖说：“我家的资产哪能比得上子廉呢！”\n\n文帝在东宫时，曾向曹洪借绢一百匹，曹洪没有让他称心如意。后来曹洪犯法，自料必死无疑。被赦免后，他很高兴，上书谢恩说：“臣年轻时没有遵循正道，在人伦上犯了过错；长大后窃据了不称职的职位，却蒙受了宽容赦免。臣本性没有检点约束和知道满足的本分，反而有豺狼一样贪得无厌的本性；年老昏乱，加倍贪婪，触犯国家法网，罪行迫近三千条，不在赦免宽宥的范围之内，理当被治罪诛杀，弃尸于市，却仍然蒙受上天的恩德，得以骨肉复生。臣抬头仰望上天，愧对神明；低头思量自己的过失，羞愧惶恐，不能上吊自尽以结束自己的生命，只能恭敬地涂污脸面，来到宫门前拜上表章陈述衷情。”"
+          },
+          "en": "The Weilüe / Brief History of Wei states: When Cao Pi had Cao Hong arrested, Cao Zhen was at his side and pleaded for Cao Hong, saying, \"If you execute Cao Hong now, he will surely believe that I slandered him.\" The emperor replied, \"I am dealing with him myself. What concern is this of yours?\" Empress Dowager Bian then angrily reproached the emperor, saying, \"Had it not been for Zilian between [[Liang|/maps/map-overall?admin=27]] and [[Pei|/maps/map-overall?admin=26]], we would not be where we are today.\" Only then did the emperor issue an edict releasing Cao Hong, though his property was still confiscated. The empress dowager spoke again on his behalf, and his property was subsequently returned. Earlier, when Cao Cao was [[Excellency of Works|/translations/officials/ministers#three-excellencies-105]], he decided to set an example for his subordinates. Each year, when levies were imposed, he had the local county assess household wealth. At that time, the [[Magistrate|/translations/officials/regional#counties-088]] of [[Qiao|/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]] assessed Cao Hong's wealth as equal to Cao Cao's. Cao Cao said, \"How could my family's wealth compare with Zilian's?\" \n\nWhile Cao Pi was in the Eastern Palace, he once asked Cao Hong to lend him a hundred bolts of silk, but Cao Hong did not satisfy his wishes. When Cao Hong later broke the law, he fully expected to die. Overjoyed at his pardon, he submitted a memorial of thanks: \"In my youth, I failed to follow the Way and acted against the moral order. In maturity, I held offices for which I was unfit, yet was repeatedly shown forbearance. By nature, I lack restraint and know no contentment, but harbour instead the insatiable appetite of jackals and wolves. In the confusion of old age, my greed only deepened, until I broke through the net of the state's laws. My offences approached three thousand and were beyond pardon. I deserved death, with my body cast into the marketplace. Yet I received Heaven's grace, and my flesh and bones were granted new life. Looking up at the sky and sun, I am ashamed before the divine; looking down and reflecting upon my faults, I am filled with shame and trembling fear. Unable to take my own life by hanging, I have humbly smeared my face and come to the palace gate, where I bow and present this memorial to lay bare my feelings.\""
+        }
+      ]
+    }
+  ]
+}

@@ -3,12 +3,12 @@
     "id": "wei-shu-18j",
     "order": 18,
     "label": {
-      "zht": "閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zht": "閻溫傳 · 附張恭、孫賔碩、楊阿若、鮑出",
       "zhs": "阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
       "en": "Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
     },
     "title": {
-      "zht": "魏書十八 · 閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zht": "魏書十八 · 閻溫傳 · 附張恭、孫賔碩、楊阿若、鮑出",
       "zhs": "魏书十八 · 阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
       "en": "Book of Wei, Chapter 18 · Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
     }
@@ -135,9 +135,9 @@
               "zhs": "别驾"
             },
             {
-              "en": "County Magistrate",
-              "zht": "令",
-              "zhs": "令"
+              "en": "Interim County Magistrate",
+              "zht": "守令",
+              "zhs": "守令"
             }
           ],
           "passageId": "ws18j-p1",
@@ -157,10 +157,10 @@
               "url": "/translations/officials/regional#provinces-017"
             },
             {
-              "en": "County Magistrate",
-              "zht": "令",
-              "zhs": "令",
-              "url": "/translations/officials/regional?lat=34.59061668&lng=105.70732186"
+              "en": "Interim County Magistrate",
+              "zht": "守令",
+              "zhs": "守令",
+              "url": "/translations/officials#glossary-interim"
             }
           ]
         },
@@ -239,11 +239,18 @@
             "zht": "敦煌",
             "zhs": "敦煌"
           },
-          "position": {
-            "en": "Merit Section Foreman Clerk",
-            "zht": "功曹",
-            "zhs": "功曹"
-          },
+          "position": [
+            {
+              "en": "Merit Section Foreman Clerk",
+              "zht": "功曹",
+              "zhs": "功曹"
+            },
+            {
+              "en": "Acting Chief Clerk",
+              "zht": "行長史",
+              "zhs": "行长史"
+            }
+          ],
           "passageId": "ws18j-p3",
           "resolvedLocations": [
             {
@@ -257,6 +264,12 @@
               "zht": "功曹",
               "zhs": "功曹",
               "url": "/translations/officials/regional#commanderies-038"
+            },
+            {
+              "en": "Acting Chief Clerk",
+              "zht": "行長史",
+              "zhs": "行长史",
+              "url": "/translations/officials/regional#commanderies-041"
             }
           ]
         },
@@ -350,70 +363,508 @@
   ],
   "relationships": [
     {
-      "from": "閻溫（伯儉）",
-      "to": "馬超",
-      "type": "captor-captive",
-      "passageId": "ws18j-p1"
-    },
-    {
-      "from": "閻溫（伯儉）",
-      "to": "馬超",
-      "type": "enemy/defied",
-      "passageId": "ws18j-p2"
+      "from": "馬超（孟起）",
+      "to": "閻溫（伯儉）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p1",
+          "text": {
+            "en": "Yan Wen was captured by Ma Chao's forces while trying to bring word of relief to the besieged provincial seat.",
+            "zht": "閻溫為圍城求援時，為馬超軍所擒獲。",
+            "zhs": "阎温为围城求援时，为马超军所擒获。"
+          }
+        },
+        {
+          "passageId": "ws18j-p2",
+          "text": {
+            "en": "Ma Chao tried to force Yan Wen to tell the defenders that no relief was coming, but Yan Wen instead cried out that rescue was near, and when he refused to be turned, Ma Chao had him killed for his unwavering loyalty.",
+            "zht": "馬超逼迫閻溫向城中宣告援軍不至，閻溫卻高呼救兵將至；因其忠貞不改，馬超遂將他殺害。",
+            "zhs": "马超逼迫阎温向城中宣告援军不至，阎温却高呼救兵将至；因其忠贞不改，马超遂将他杀害。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "張就",
-      "type": "father-son",
-      "passageId": "ws18j-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p3",
+          "text": {
+            "en": "Zhang Jiu was Zhang Gong's son, sent east to petition Cao Cao for a new Grand Administrator of Dunhuang.",
+            "zht": "張就是張恭之子，被派往東方向曹操請求另派敦煌太守。",
+            "zhs": "张就是张恭之子，被派往东方向曹操请求另派敦煌太守。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "張華",
-      "type": "cousins",
-      "passageId": "ws18j-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gong sent his cousin Zhang Hua to attack the rebel-held counties of Shatou and Ganqi.",
+            "zht": "張恭派其從弟張華攻打叛軍所據的沙頭、乾齊二縣。",
+            "zhs": "张恭派其从弟张华攻打叛军所据的沙头、干齐二县。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "馬艾",
-      "type": "superior-subordinate (former)",
-      "passageId": "ws18j-p3"
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p3",
+          "text": {
+            "en": "Zhang Gong served as Merit Section Foreman Clerk under Grand Administrator Ma Ai of Dunhuang before Ma Ai died in office.",
+            "zht": "張恭曾任敦煌太守馬艾麾下功曹，馬艾後卒於任上。",
+            "zhs": "张恭曾任敦煌太守马艾麾下功曹，马艾后死于任上。"
+          }
+        }
+      ]
     },
     {
       "from": "黃華",
       "to": "張就",
-      "type": "captor-captive",
-      "passageId": "ws18j-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p3",
+          "text": {
+            "en": "When Zhang Jiu passed through Jiuquan, Huang Hua detained him and threatened him at swordpoint, but Zhang Jiu never wavered.",
+            "zht": "張就途經酒泉時，為黃華所扣留，以兵刃相脅，張就仍不為所動。",
+            "zhs": "张就途经酒泉时，为黄华所扣留，以兵刃相胁，张就仍不为所动。"
+          }
+        }
+      ]
     },
     {
       "from": "張進",
       "to": "黃華",
-      "type": "allies",
-      "passageId": "ws18j-p4"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Jin of Zhangye depended on Huang Hua's aid; Huang Hua wished to rescue him but feared attack from the rear.",
+            "zht": "張掖的張進倚仗黃華相助；黃華欲往救援，卻顧慮腹背受敵。",
+            "zhs": "张掖的张进倚仗黄华相助；黄华欲往救援，却顾虑腹背受敌。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "黃華",
-      "type": "enemy (military opponent)",
-      "passageId": "ws18j-p4"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gong sent his cousin Zhang Hua to attack Huang Hua's counties of Shatou and Ganqi in Jiuquan, threatening him from the rear and forcing him to abandon his ally.",
+            "zht": "張恭遣從弟張華攻打黃華於酒泉所轄的沙頭、乾齊，自後方施壓，迫使黃華放棄盟友。",
+            "zhs": "张恭遣从弟张华攻打黄华于酒泉所辖的沙头、干齐，自后方施压，迫使黄华放弃盟友。"
+          }
+        }
+      ]
     },
     {
       "from": "黃華",
-      "to": "蘇則",
-      "type": "surrendered to",
-      "passageId": "ws18j-p4"
+      "to": "蘇則（文師）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Fearing attack from the rear, Huang Hua abandoned his ally and surrendered to Su Ze, Grand Administrator of Jincheng.",
+            "zht": "黃華因懼腹背受敵，放棄盟友，向金城太守蘇則投降。",
+            "zhs": "黄华因惧腹背受敌，放弃盟友，向金城太守苏则投降。"
+          }
+        }
+      ]
     },
     {
       "from": "張恭",
       "to": "尹奉",
-      "type": "escorted/protected",
-      "passageId": "ws18j-p4"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gong dispatched two hundred armoured cavalry to escort the newly arriving Grand Administrator, Yin Feng, safely to his post.",
+            "zht": "張恭派遣兩百名甲騎，護送新任太守尹奉安全抵達任所。",
+            "zhs": "张恭派遣两百名甲骑，护送新任太守尹奉安全抵达任所。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張恭",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "In the second year of Huangchu, an edict was issued commending Zhang Gong, enfeoffing him as Marquis Within the Pass and appointing him Colonel of the Western Regions Central Garrison.",
+            "zht": "黃初二年，下詔襃揚張恭，賜爵關內侯，拜西域戊己校尉。",
+            "zhs": "黄初二年，下诏襃扬张恭，赐爵关内侯，拜西域戊己校尉。"
+          },
+          "title": {
+            "en": "Marquis Within the Pass, Colonel of the Western Regions Central Garrison",
+            "zht": "關內侯、西域戊己校尉",
+            "zhs": "关内侯、西域戊己校尉"
+          }
+        }
+      ]
     },
     {
       "from": "張就",
-      "to": "張恭",
-      "type": "son-father",
-      "passageId": "ws18j-p3"
+      "to": "張敩（祖文）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Xiao, courtesy name Zuwen, was Zhang Jiu's son, resolute and upright, who rose to become Grand Administrator of Guanghan.",
+            "zht": "張敩字祖文，是張就之子，弘毅有幹正，官至廣漢太守。",
+            "zhs": "张敩字祖文，是张就之子，弘毅有干正，官至广汉太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Guanghan",
+            "zht": "廣漢太守",
+            "zhs": "广汉太守"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張敩（祖文）",
+      "to": "張固（元安）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Gu, courtesy name Yuan'an, was Zhang Xiao's son and took after him; he served as Gentleman within the Yellow Gates, but died young.",
+            "zht": "張固字元安，是張敩之子，有其父之風，官至黃門郎，早卒。",
+            "zhs": "张固字元安，是张敩之子，有其父之风，官至黄门郎，早卒。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張敩（祖文）",
+      "to": "司馬炎（安世）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "As Grand Administrator of Guanghan, Zhang Xiao arrested one of Wang Jun's aides who lacked proper authority to recruit troops; when Emperor Wu questioned his not reporting it secretly instead, Zhang Xiao explained his reasoning, and the Emperor approved of his response.",
+            "zht": "張敩任廣漢太守時，逮捕了無虎符擅自募兵的王濬從事；晉武帝責其未先密啟便逕自收捕，張敩陳述緣由，帝甚讚許其言。",
+            "zhs": "张敩任广汉太守时，逮捕了无虎符擅自募兵的王濬从事；晋武帝责其未先密启便径自收捕，张敩陈述缘由，帝甚赞许其言。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "唐衡",
+      "to": "趙息",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "After Zhao Xi rebuked his younger brother's arrogance and delayed his letter of thanks, an enraged Tang Heng schemed to become Intendant of Jingzhao and exterminate the entire Zhao clan.",
+            "zht": "趙息因斥責唐衡之弟傲慢無禮，又延誤其謝函，唐衡大怒，遂謀求出任京兆尹，欲滅趙氏滿門。",
+            "zhs": "赵息因斥责唐衡之弟傲慢无礼，又延误其谢函，唐衡大怒，遂谋求出任京兆尹，欲灭赵氏满门。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "唐衡",
+      "to": "趙仲台",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "As part of his revenge on the Zhao clan, Tang Heng had Zhao Zhongtai, then Inspector of Liang Province, recalled by edict and put to death.",
+            "zht": "唐衡為報復趙氏，矯詔徵還時任涼州刺史的趙仲台，將他殺害。",
+            "zhs": "唐衡为报复赵氏，矫诏征还时任凉州刺史的赵仲台，将他杀害。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "孫賓碩",
+      "to": "趙岐",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Recognising the fugitive pancake-seller as no ordinary man, Sun Binshuo took Zhao Qi into his own home and hid him within a double wall for years until his persecutors died; decades later the two met again in Jing Province in tears, and when Sun Binshuo died Zhao Qi observed mourning for him.",
+            "zht": "孫賓碩見販餅者氣度不凡，收留趙岐於家中，藏於複壁數年，直至仇家盡亡；後於荊州重逢，相對流涕，賓碩病逝後，趙岐更為他服喪。",
+            "zhs": "孙宾硕见贩饼者气度不凡，收留赵岐于家中，藏于复壁数年，直至仇家尽亡；后于荆州重逢，相对流涕，宾硕病逝后，赵岐更为他服丧。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙岐",
+      "to": "趙仲台",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhao Qi and Zhao Zhongtai were clansmen of the same generation, both counted as paternal uncles of Zhao Xi; Zhao Zhongtai was killed in Tang Heng's purge of the clan, while Zhao Qi escaped by fleeing in disguise.",
+            "zht": "趙岐與趙仲台同輩族人，皆為趙息之從父；趙仲台於唐衡誅滅趙氏一族時遇害，趙岐則變姓易名逃亡得免。",
+            "zhs": "赵岐与赵仲台同辈族人，皆为赵息之从父；赵仲台于唐衡诛灭赵氏一族时遇害，赵岐则变姓易名逃亡得免。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙岐",
+      "to": "趙息",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhao Qi was Zhao Xi's paternal uncle; it was Zhao Xi's rebuke of Tang Heng's brother that first set off the persecution of the whole Zhao clan.",
+            "zht": "趙岐是趙息的從父；正是趙息斥責唐衡之弟一事，引來唐衡對趙氏滿門的迫害。",
+            "zhs": "赵岐是赵息的从父；正是赵息斥责唐衡之弟一事，引来唐衡对赵氏满门的迫害。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "劉表（景升）",
+      "to": "孫賓碩",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "After Zhao Qi related Sun Binshuo's story to Liu Biao, Liu Biao treated Sun Binshuo with still greater honour.",
+            "zht": "趙岐向劉表述說孫賓碩之事後，劉表對孫賓碩更加禮遇。",
+            "zhs": "赵岐向刘表述说孙宾硕之事后，刘表对孙宾硕更加礼遇。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "徐揖",
+      "to": "黃昂",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Grand Administrator Xu Yi executed the powerful Huang clan of his commandery; the surviving Huang Ang raised over a thousand men with his family's gold and attacked him.",
+            "zht": "太守徐揖誅殺郡中豪族黃氏，倖存的黃昂以家財募得千餘人攻打徐揖。",
+            "zhs": "太守徐揖诛杀郡中豪族黄氏，幸存的黄昂以家财募得千余人攻打徐揖。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "徐揖",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Regarding Huang Ang's rebellion as unjust, Yang Feng warned Xu Yi and left his own family behind to seek relief troops from Zhangye.",
+            "zht": "楊豐認為黃昂舉兵不義，通報徐揖，並拋下妻兒趕赴張掖求援。",
+            "zhs": "杨丰认为黄昂举兵不义，通报徐揖，并抛下妻儿赶赴张掖求援。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "黃昂",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "After Huang Ang put a bounty on his capture, Yang Feng later raised over a thousand cavalry, feigned an army's approach to rout Jiuquan's defenders, and killed the captured Huang Ang in revenge for Xu Yi.",
+            "zht": "黃昂懸賞捉拿楊豐後，楊豐招得千餘騎兵，佯裝大軍逼近使酒泉守軍潰散，並將被擒的黃昂處死，為徐揖報仇。",
+            "zhs": "黄昂悬赏捉拿杨丰后，杨丰招得千余骑兵，佯装大军逼近使酒泉守军溃散，并将被擒的黄昂处死，为徐揖报仇。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "張猛（叔威）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Zhang Meng, Grand Administrator of Wuwei, provisionally appointed Yang Feng Commandant and authorised him to avenge Xu Yi against Huang Ang.",
+            "zht": "武威太守張猛任命楊豐為代理都尉，授權他為徐揖向黃昂復仇。",
+            "zhs": "武威太守张猛任命杨丰为代理都尉，授权他为徐揖向黄昂复仇。"
+          },
+          "title": {
+            "en": "Commandant",
+            "zht": "都尉",
+            "zhs": "都尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "黃華",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Fearing retaliation once Huang Hua returned east to retake the commandery, Yang Feng fled to Dunhuang, only returning once Huang Hua eventually surrendered.",
+            "zht": "黃華還領郡後，楊豐懼其報復，逃往燉煌，直至黃華投降方才返郡。",
+            "zhs": "黄华还领郡后，杨丰惧其报复，逃往燉煌，直至黄华投降方才返郡。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "楊豐（伯陽）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "During the Huangchu era, the commandery and province praised Yang Feng's righteousness and courage, and by imperial edict he was appointed Commandant of Escorting Cavalry.",
+            "zht": "黃初年間，郡州表彰楊豐之義勇，詔拜駙馬都尉。",
+            "zhs": "黄初年间，郡州表彰杨丰之义勇，诏拜驸马都尉。"
+          },
+          "title": {
+            "en": "Commandant of Escorting Cavalry",
+            "zht": "駙馬都尉",
+            "zhs": "驸马都尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鮑出（文才）",
+      "to": "鮑初",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Bao Chu (elder brother) was one of Bao Chu's four brothers; when bandits abducted their mother while gathering food during a famine, the brothers who first returned home dared not pursue, but Bao Chu fought through the bandits alone and won her back.",
+            "zht": "鮑初是鮑出四位兄弟之一；饑荒中採食時，母親為賊人擄走，先歸家的兄弟不敢追趕，鮑出獨自奮戰救回母親。",
+            "zhs": "鲍初是鲍出四位兄弟之一；饥荒中采食时，母亲为贼人掳走，先归家的兄弟不敢追赶，鲍出独自奋战救回母亲。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鮑出（文才）",
+      "to": "鮑雅",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Bao Ya was one of Bao Chu's four brothers, part of the family that fled together to Nanyang after Bao Chu rescued their mother from bandits.",
+            "zht": "鮑雅是鮑出四位兄弟之一，鮑出自賊人手中救回母親後，一家相扶南下客居南陽。",
+            "zhs": "鲍雅是鲍出四位兄弟之一，鲍出自贼人手中救回母亲后，一家相扶南下客居南阳。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鮑出（文才）",
+      "to": "鮑成",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18j-p4",
+          "text": {
+            "en": "Bao Cheng was one of Bao Chu's four brothers; years later, when their mother could no longer walk, Bao Chu carried her home alone in a basket rather than risk a cart on the mountain roads.",
+            "zht": "鮑成是鮑出四位兄弟之一；多年後母親不良於行，鮑出不願以車冒險走山路，遂獨自以籠背負母親返鄉。",
+            "zhs": "鲍成是鲍出四位兄弟之一；多年后母亲不良于行，鲍出不愿以车冒险走山路，遂独自以笼背负母亲返乡。"
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,1125 @@
+{
+  "chapter": {
+    "id": "wei-shu-9e",
+    "order": 9,
+    "label": {
+      "zht": "曹休傳",
+      "zhs": "曹休传",
+      "en": "Biography of Cao Xiu"
+    },
+    "title": {
+      "zht": "魏書九 · 曹休傳",
+      "zhs": "魏书九 · 曹休传",
+      "en": "Book of Wei, Chapter 9 · Biography of Cao Xiu"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 33.86080856,
+      "lng": 115.77227911,
+      "name": "Qiao",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.30897934,
+      "lng": 120.64540456,
+      "name": "Wu",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "2",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.80983291,
+      "lng": 105.64254196,
+      "name": "Xiabian",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "110",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.31264639,
+      "lng": 108.87167209,
+      "name": "Chang'an",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.60565556,
+      "lng": 114.15360904,
+      "name": "Shaoling",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.7347138,
+      "lng": 118.35788473,
+      "name": "Liyang",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.64351707,
+      "lng": 118.35843748,
+      "name": "Dongpu",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.62607288,
+      "lng": 116.60310353,
+      "name": "Wan",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 29.96578318,
+      "lng": 115.69926888,
+      "name": "Xunyang",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.77251326,
+      "lng": 116.76840209,
+      "name": "Shiting",
+      "persons": [
+        "曹休（文烈）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "曹休（文烈）",
+      "name": {
+        "en": "Cao Xiu",
+        "zht": "曹休",
+        "zhs": "曹休"
+      },
+      "courtesyName": {
+        "en": "Wenlie",
+        "zht": "文烈",
+        "zhs": "文烈"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "2nd year of Taihe",
+          "zht": "太和二年",
+          "zhs": "太和二年"
+        },
+        "year": 228
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Qiao",
+              "zht": "譙",
+              "zhs": "谯"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Wu",
+              "zht": "吳",
+              "zhs": "吴"
+            },
+            {
+              "en": "Jing Province",
+              "zht": "荊州",
+              "zhs": "荆州"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.30897934,
+              "lng": 120.64540456,
+              "name": "Wu"
+            },
+            {
+              "kind": "admin",
+              "id": "2"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "23rd - 24th year of Jian'an",
+            "zht": "建安二十三年 - 二十四年",
+            "zhs": "建安二十三年 - 二十四年"
+          },
+          "year": "218 - 219",
+          "age": null,
+          "location": [
+            {
+              "en": "Xiabian",
+              "zht": "下辨",
+              "zhs": "下辨"
+            },
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            },
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            }
+          ],
+          "position": [
+            {
+              "en": "Commandant of Cavalry",
+              "zht": "騎都尉",
+              "zhs": "骑都尉"
+            },
+            {
+              "en": "Commander of the Central Army",
+              "zht": "中領軍",
+              "zhs": "中领军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.80983291,
+              "lng": 105.64254196,
+              "name": "Xiabian"
+            },
+            {
+              "kind": "admin",
+              "id": "110"
+            },
+            {
+              "kind": "town",
+              "lat": 34.31264639,
+              "lng": 108.87167209,
+              "name": "Chang'an"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Commandant of Cavalry",
+              "zht": "騎都尉",
+              "zhs": "骑都尉",
+              "url": "/translations/officials/ministers#-nine-ministers-i-178"
+            },
+            {
+              "en": "Commander of the Central Army",
+              "zht": "中領軍",
+              "zhs": "中领军",
+              "url": "/translations/officials/military#central-army-001"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黄初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            },
+            {
+              "en": "Shaoling",
+              "zht": "召陵",
+              "zhs": "召陵"
+            },
+            {
+              "en": "Liyang",
+              "zht": "歷陽",
+              "zhs": "历阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "General Commanding the Army",
+              "zht": "領軍將軍",
+              "zhs": "领军将军"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            },
+            {
+              "en": "General Who Garrisons the South",
+              "zht": "鎮南將軍",
+              "zhs": "镇南将军"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            },
+            {
+              "en": "General Who Conquers the East",
+              "zht": "征東將軍",
+              "zhs": "征东将军"
+            },
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            },
+            {
+              "en": "Commander of Provincial Forces",
+              "zht": "都督",
+              "zhs": "都督"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            },
+            {
+              "kind": "town",
+              "lat": 33.60565556,
+              "lng": 114.15360904,
+              "name": "Shaoling"
+            },
+            {
+              "kind": "town",
+              "lat": 31.7347138,
+              "lng": 118.35788473,
+              "name": "Liyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General Commanding the Army",
+              "zht": "領軍將軍",
+              "zhs": "领军将军",
+              "url": "/translations/officials/military#central-army-001"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            },
+            {
+              "en": "General Who Garrisons the South",
+              "zht": "鎮南將軍",
+              "zhs": "镇南将军",
+              "url": "/translations/officials/military#conquering--garrisoning-069"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
+            },
+            {
+              "en": "General Who Conquers the East",
+              "zht": "征東將軍",
+              "zhs": "征东将军",
+              "url": "/translations/officials/military#conquering--garrisoning-064"
+            },
+            {
+              "en": "Inspector",
+              "zht": "刺史",
+              "zhs": "刺史",
+              "url": "/translations/officials/regional#provinces-014"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            },
+            {
+              "en": "Commander of Provincial Forces",
+              "zht": "都督",
+              "zhs": "都督",
+              "url": "/translations/officials/military#various-commanders-027"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "3rd year of Huangchu",
+            "zht": "黄初三年",
+            "zhs": "黄初三年"
+          },
+          "year": 222,
+          "age": null,
+          "location": [
+            {
+              "en": "Dongpu",
+              "zht": "洞浦",
+              "zhs": "洞浦"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand General Who Conquers the East",
+              "zht": "征東大將軍",
+              "zhs": "征东大将军"
+            },
+            {
+              "en": "Yellow Yue",
+              "zht": "黃鉞",
+              "zhs": "黄钺"
+            },
+            {
+              "en": "Governor",
+              "zht": "牧",
+              "zhs": "牧"
+            },
+            {
+              "en": "Commander of Provincial Forces",
+              "zht": "都督",
+              "zhs": "都督"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.64351707,
+              "lng": 118.35843748,
+              "name": "Dongpu"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand General Who Conquers the East",
+              "zht": "征東大將軍",
+              "zhs": "征东大将军",
+              "url": "/translations/officials/military#conquering--garrisoning-064"
+            },
+            {
+              "en": "Yellow Yue",
+              "zht": "黃鉞",
+              "zhs": "黄钺",
+              "url": "/translations/officials#glossary-yellow-yue"
+            },
+            {
+              "en": "Governor",
+              "zht": "牧",
+              "zhs": "牧",
+              "url": "/translations/officials/regional#provinces-014"
+            },
+            {
+              "en": "Commander of Provincial Forces",
+              "zht": "都督",
+              "zhs": "都督",
+              "url": "/translations/officials/military#various-commanders-027"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Taihe",
+            "zht": "太和元年",
+            "zhs": "太和元年"
+          },
+          "year": 227,
+          "age": null,
+          "location": [
+            {
+              "en": "Wan",
+              "zht": "皖",
+              "zhs": "皖"
+            }
+          ],
+          "position": [
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯"
+            },
+            {
+              "en": "Grand Marshal",
+              "zht": "大司馬",
+              "zhs": "大司马"
+            },
+            {
+              "en": "Commander of Provincial Forces",
+              "zht": "都督",
+              "zhs": "都督"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 30.62607288,
+              "lng": 116.60310353,
+              "name": "Wan"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯",
+              "url": "/translations/officials#glossary-county-marquis"
+            },
+            {
+              "en": "Grand Marshal",
+              "zht": "大司馬",
+              "zhs": "大司马",
+              "url": "/translations/officials/ministers#superior-excellency-056"
+            },
+            {
+              "en": "Commander of Provincial Forces",
+              "zht": "都督",
+              "zhs": "都督",
+              "url": "/translations/officials/military#various-commanders-027"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd year of Taihe",
+            "zht": "太和二年",
+            "zhs": "太和二年"
+          },
+          "year": 228,
+          "age": null,
+          "location": [
+            {
+              "en": "Xunyang",
+              "zht": "尋陽",
+              "zhs": "寻阳"
+            },
+            {
+              "en": "Shiting",
+              "zht": "石亭",
+              "zhs": "石亭"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 29.96578318,
+              "lng": 115.69926888,
+              "name": "Xunyang"
+            },
+            {
+              "kind": "town",
+              "lat": 30.77251326,
+              "lng": 116.76840209,
+              "name": "Shiting"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "曹操（孟德）",
+      "to": "曹休（文烈）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p1",
+          "text": {
+            "en": "Cao Xiu was the son of one of Cao Cao's clan brothers; Cao Cao called him \"our family's thousand-li horse\" and raised him as his own son.",
+            "zht": "曹休是曹操的族子；曹操稱他爲“吾家千里駒”，待他如同親生兒子。",
+            "zhs": "曹休是曹操的族子；曹操称他为“吾家千里驹”，待他如同亲生儿子。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹丕（子桓）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p1",
+          "text": {
+            "en": "Cao Cao had Cao Xiu live together with Cao Pi.",
+            "zht": "曹操讓曹休與曹丕一同居住。",
+            "zhs": "曹操让曹休与曹丕一同居住。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p1",
+          "text": {
+            "en": "After the clan scattered, Cao Xiu changed his name and made his way north to join Cao Cao, who put him in command of the Tiger and Leopard Cavalry as his personal guard.",
+            "zht": "宗族離散後，曹休改名換姓，輾轉北歸投奔曹操，曹操讓他統領虎豹騎擔任宿衛。",
+            "zhs": "宗族离散后，曹休改名换姓，辗转北归投奔曹操，曹操让他统领虎豹骑担任宿卫。"
+          }
+        },
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Cao Cao made Cao Xiu Commandant of Cavalry on Cao Hong's staff against Wu Lan, telling him that though nominally on the staff, he was in fact the commander.",
+            "zht": "曹操任命曹休爲騎都尉，參曹洪軍事征討吳蘭，並對他說：“你雖是參軍，實際上是統帥。”",
+            "zhs": "曹操任命曹休为骑都尉，参曹洪军事征讨吴兰，并对他说：“你虽是参军，实际上是统帅。”"
+          },
+          "title": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          }
+        },
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "When the armies returned from Hanzhong to Chang'an, Cao Xiu was appointed Commander of the Central Army.",
+            "zht": "大軍從漢中撤回長安後，曹休被任命爲中領軍。",
+            "zhs": "大军从汉中撤回长安后，曹休被任命为中领军。"
+          },
+          "title": {
+            "en": "Commander of the Central Army",
+            "zht": "中領軍",
+            "zhs": "中领军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "When Cao Pi became king, he made Cao Xiu General Commanding the Army and enfeoffed him as Neighbourhood Marquis of Dongyang.",
+            "zht": "曹丕即王位後，任命曹休爲領軍將軍，封東陽亭侯。",
+            "zhs": "曹丕即王位后，任命曹休为领军将军，封东阳亭侯。"
+          },
+          "title": {
+            "en": "General Commanding the Army, Neighbourhood Marquis of Dongyang",
+            "zht": "領軍將軍、東陽亭侯",
+            "zhs": "领军将军、东阳亭侯"
+          }
+        },
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "After Xiahou Dun died, Cao Pi made Cao Xiu General Who Garrisons the South with command of the armies, and came in person to see him off, stepping down from his carriage to clasp his hand.",
+            "zht": "夏侯惇去世後，曹丕任命曹休爲鎮南將軍，都督諸軍事，並親自送行，下車握手而別。",
+            "zhs": "夏侯惇去世后，曹丕任命曹休为镇南将军，都督诸军事，并亲自送行，下车握手而别。"
+          },
+          "title": {
+            "en": "General Who Garrisons the South",
+            "zht": "鎮南將軍",
+            "zhs": "镇南将军"
+          }
+        },
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "Cao Xiu was promoted to General Who Conquers the East and Inspector of Yang Province; when his grief over his mother's death wore him down, Cao Pi sent Xue Qiao to let him go home to bury her, then comforted him in person.",
+            "zht": "曹休升任征東將軍，兼揚州刺史；他因母親去世哀傷過度，曹丕派薛喬讓他回家治喪，事後又親自寬慰他。",
+            "zhs": "曹休升任征东将军，兼扬州刺史；他因母亲去世哀伤过度，曹丕派薛乔让他回家治丧，事后又亲自宽慰他。"
+          },
+          "title": {
+            "en": "General Who Conquers the East, Inspector of Yang Province",
+            "zht": "征東將軍、揚州刺史",
+            "zhs": "征东将军、扬州刺史"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "For Cao Pi's campaign against Sun Quan, Cao Xiu was made Grand General Who Conquers the East with the Yellow Yue, and after defeating Lü Fan he was appointed Governor of Yang Province.",
+            "zht": "曹丕征討孫權時，任命曹休爲征東大將軍，假黃鉞；曹休擊破呂範後，被任命爲揚州牧。",
+            "zhs": "曹丕征讨孙权时，任命曹休为征东大将军，假黄钺；曹休击破吕范后，被任命为扬州牧。"
+          },
+          "title": {
+            "en": "Grand General Who Conquers the East, Governor of Yang Province",
+            "zht": "征東大將軍、揚州牧",
+            "zhs": "征东大将军、扬州牧"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "When Cao Rui ascended the throne, Cao Xiu was advanced to County Marquis of Changping.",
+            "zht": "明帝即位後，曹休進封長平侯。",
+            "zhs": "明帝即位后，曹休进封长平侯。"
+          },
+          "title": {
+            "en": "County Marquis of Changping",
+            "zht": "長平侯",
+            "zhs": "长平侯"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "After defeating Shen De and receiving the surrender of Wu generals, Cao Xiu was promoted to Grand Marshal.",
+            "zht": "曹休擊破審悳，又接受吳將投降後，升任大司馬。",
+            "zhs": "曹休击破审德，又接受吴将投降后，升任大司马。"
+          },
+          "title": {
+            "en": "Grand Marshal",
+            "zht": "大司馬",
+            "zhs": "大司马"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "After the defeat at Shiting, Cao Xiu apologised in a memorial; Cao Rui sent Yang Ji to console him and treated him with still greater honour.",
+            "zht": "石亭戰敗後，曹休上書謝罪；明帝派楊暨前去慰問，對他的禮遇和賞賜更加優厚。",
+            "zhs": "石亭战败后，曹休上书谢罪；明帝派杨暨前去慰问，对他的礼遇和赏赐更加优厚。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹洪（子廉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Hearing that Cao Cao regarded Cao Xiu as the true commander, Cao Hong entrusted him with military affairs and followed his advice to strike Wu Lan.",
+            "zht": "曹洪聽說曹操把曹休視爲實際統帥，便將軍務委託給他，並採納他的建議進擊吳蘭。",
+            "zhs": "曹洪听说曹操把曹休视为实际统帅，便将军务委托给他，并采纳他的建议进击吴兰。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "吳蘭",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Cao Xiu urged an immediate strike on Wu Lan before Shu's forces could gather, and Wu Lan was crushed.",
+            "zht": "曹休主張趁敵軍尚未集結迅速攻擊吳蘭，吳蘭大敗。",
+            "zhs": "曹休主张趁敌军尚未集结迅速攻击吴兰，吴兰大败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "張飛（益德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Cao Xiu read Zhang Fei's show of strength at Gushan as a bluff and predicted he would withdraw once Wu Lan was beaten; Zhang Fei duly withdrew.",
+            "zht": "曹休判斷張飛在固山虛張聲勢，預料吳蘭一敗張飛就會自行退走，結果張飛果然撤退。",
+            "zhs": "曹休判断张飞在固山虚张声势，预料吴兰一败张飞就会自行退走，结果张飞果然撤退。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "Cao Xiu defeated the general Sun Quan had stationed at Liyang and burned the enemy camp at Wuhu.",
+            "zht": "曹休擊敗孫權派駐歷陽的部將，又焚燒了蕪湖的敵營。",
+            "zhs": "曹休击败孙权派驻历阳的部将，又焚烧了芜湖的敌营。"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "Cao Xiu commanded more than twenty armies in Cao Pi's campaign against Sun Quan.",
+            "zht": "在曹丕征討孫權的戰役中，曹休督率二十餘軍。",
+            "zhs": "在曹丕征讨孙权的战役中，曹休督率二十余军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "張遼（文遠）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "In the campaign against Sun Quan, Cao Xiu commanded Zhang Liao and others, together with over twenty armies from the provinces.",
+            "zht": "征討孫權時，曹休督率張遼等人及各州郡二十餘軍。",
+            "zhs": "征讨孙权时，曹休督率张辽等人及各州郡二十余军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "呂範（子衡）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "Cao Xiu attacked Sun Quan's senior general Lü Fan and others at Dongpu and defeated them.",
+            "zht": "曹休在洞浦進攻孫權的大將呂範等人，將他們擊敗。",
+            "zhs": "曹休在洞浦进攻孙权的大将吕范等人，将他们击败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "審悳",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "Cao Xiu defeated the Wu general Shen De, stationed at Wan, and cut off his head.",
+            "zht": "曹休擊破駐守皖城的吳將審悳，將他斬首。",
+            "zhs": "曹休击破驻守皖城的吴将审德，将他斩首。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓綜",
+      "to": "曹休（文烈）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "The Wu general Han Zong led his troops to surrender to Cao Xiu.",
+            "zht": "吳將韓綜率衆向曹休投降。",
+            "zhs": "吴将韩综率众向曹休投降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "翟丹",
+      "to": "曹休（文烈）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "The Wu general Zhai Dan led his troops to surrender to Cao Xiu.",
+            "zht": "吳將翟丹率衆向曹休投降。",
+            "zhs": "吴将翟丹率众向曹休投降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "司馬懿（仲達）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "In Cao Rui's two-pronged campaign against Wu, Sima Yi went down the Han River while Cao Xiu led the armies towards Xunyang.",
+            "zht": "明帝兵分兩路征吳，司馬懿沿漢水而下，曹休督率諸軍向尋陽進發。",
+            "zhs": "明帝兵分两路征吴，司马懿沿汉水而下，曹休督率诸军向寻阳进发。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹肇（長思）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Xiu's son Cao Zhao, courtesy name Changsi, succeeded him.",
+            "zht": "曹休之子曹肇（字長思）繼承爵位。",
+            "zhs": "曹休之子曹肇（字长思）继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹纂",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Pi set aside three hundred households from Cao Xiu's fief to enfeoff his son Cao Zuan, who later served as General Who Annihilates the Wu.",
+            "zht": "曹丕分出曹休的封戶三百，封其子曹纂爲列侯；曹纂後任殄吳將軍。",
+            "zhs": "曹丕分出曹休的封户三百，封其子曹纂为列侯；曹纂后任殄吴将军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹興",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "When Cao Zhao died, his son Cao Xing succeeded him.",
+            "zht": "曹肇去世後，其子曹興繼承爵位。",
+            "zhs": "曹肇去世后，其子曹兴继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹攄（顏遠）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Shu, courtesy name Yanyuan, was Cao Zhao's grandson, a learned and talented official of Jin.",
+            "zht": "曹攄字顏遠，是曹肇之孫，博學有才，仕於晉朝。",
+            "zhs": "曹摅字颜远，是曹肇之孙，博学有才，仕于晋朝。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Zhao served as Cavalier Regular Attendant and Colonel of Garrison Cavalry.",
+            "zht": "曹肇任散騎常侍、屯騎校尉。",
+            "zhs": "曹肇任散骑常侍、屯骑校尉。"
+          },
+          "title": {
+            "en": "Cavalier Regular Attendant, Colonel of Garrison Cavalry",
+            "zht": "散騎常侍、屯騎校尉",
+            "zhs": "散骑常侍、屯骑校尉"
+          }
+        },
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "On his sickbed, Cao Rui was about to entrust Cao Zhao and Cao Yu with affairs after his death, but changed his mind and sent Cao Zhao home to his fief.",
+            "zht": "明帝病重時，原打算把後事託付給曹肇和燕王曹宇等人，後來改變主意，下詔讓曹肇以侯爵身份回府。",
+            "zhs": "明帝病重时，原打算把后事托付给曹肇和燕王曹宇等人，后来改变主意，下诏让曹肇以侯爵身份回府。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹宇（彭祖）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Zhao and Cao Yu, Prince of Yan, were both to be entrusted with affairs after Cao Rui's death, before the emperor changed his mind.",
+            "zht": "明帝原打算把後事託付給曹肇和燕王曹宇等人，後來又改變了主意。",
+            "zhs": "明帝原打算把后事托付给曹肇和燕王曹宇等人，后来又改变了主意。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹攄（顏遠）",
+      "to": "司馬冏（景治）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "When Sima Jiong, Prince of Qi, was regent, Cao Shu served under him as Chief Archivist.",
+            "zht": "齊王司馬冏輔政時，曹攄擔任他的記室督。",
+            "zhs": "齐王司马冏辅政时，曹摅担任他的记室督。"
+          },
+          "title": {
+            "en": "Chief Archivist",
+            "zht": "記室督",
+            "zhs": "记室督"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹攄（顏遠）",
+      "to": "左思（太沖）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Shu and Zuo Si of Qi both served Sima Jiong as Chief Archivists.",
+            "zht": "曹攄與齊人左思同爲司馬冏的記室督。",
+            "zhs": "曹摅与齐人左思同为司马冏的记室督。"
+          }
+        }
+      ]
+    }
+  ]
+}

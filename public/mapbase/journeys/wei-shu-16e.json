@@ -1240,202 +1240,575 @@
   ],
   "relationships": [
     {
-      "from": "鄭渾（文公）",
-      "to": "鄭衆（子師）",
-      "type": "高祖父",
-      "passageId": "ws16e-p1"
-    },
-    {
       "from": "鄭衆（子師）",
-      "to": "鄭興（少贛）",
-      "type": "父",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "鄭泰（公業）",
-      "type": "兄",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "鄭泰（公業）",
-      "to": "荀攸",
-      "type": "同謀",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "鄭泰（公業）",
-      "to": "荀攸",
-      "type": "善",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭泰（公業）",
-      "to": "華歆",
-      "type": "善",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "華歆",
-      "to": "鄭泰（公業）",
-      "type": "善",
-      "passageId": "ws16e-p2"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "鄭袤（林叔）",
-      "type": "從子",
-      "passageId": "ws16e-p2"
-    },
-    {
-      "from": "鄭泰（公業）",
-      "to": "何進",
-      "type": "屬下",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "何進",
-      "to": "董卓",
-      "type": "潛在盟友",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "鄭泰（公業）",
-      "to": "董卓",
-      "type": "屬下",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "鄭泰（公業）",
-      "to": "王允",
-      "type": "同謀",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "鄭泰（公業）",
-      "to": "袁術",
-      "type": "屬下",
-      "passageId": "ws16e-p1"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "袁術",
-      "type": "賓主",
-      "passageId": "ws16e-p2"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "華歆",
-      "type": "投奔",
-      "passageId": "ws16e-p2"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "曹操",
-      "type": "屬下",
-      "passageId": "ws16e-p2"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "梁興",
-      "type": "敵人",
-      "passageId": "ws16e-p3"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "梁興",
-      "type": "敵人",
-      "passageId": "ws16e-p4"
-    },
-    {
-      "from": "夏侯淵",
       "to": "鄭渾（文公）",
-      "type": "協作",
-      "passageId": "ws16e-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Hun's great-great-grandfather Zheng Zhong, courtesy name Zishi, was a renowned Confucian scholar and Minister of Agriculture.",
+            "zht": "鄭渾的高祖父鄭衆，字子師，為著名儒者，官至大司農。",
+            "zhs": "郑浑的高祖父郑众，字子师，为著名儒者，官至大司农。"
+          }
+        }
+      ],
+      "ancestral": true
+    },
+    {
+      "from": "鄭興（少贛）",
+      "to": "鄭衆（子師）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Zhong's father Zheng Xing, courtesy name Shaogan, was a renowned Confucian scholar and Counsellor Remonstrant.",
+            "zht": "鄭衆之父鄭興，字少贛，為著名儒者，官至諫議大夫。",
+            "zhs": "郑众之父郑兴，字少赣，为著名儒者，官至谏议大夫。"
+          }
+        }
+      ],
+      "ancestral": true
     },
     {
       "from": "鄭渾（文公）",
-      "to": "靳富",
-      "type": "敵人",
-      "passageId": "ws16e-p4"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "趙青龍",
-      "type": "敵人",
-      "passageId": "ws16e-p4"
-    },
-    {
-      "from": "程休",
-      "to": "趙青龍",
-      "type": "被殺",
-      "passageId": "ws16e-p4"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "曹操",
-      "type": "屬下",
-      "passageId": "ws16e-p5"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "曹丕",
-      "type": "屬下",
-      "passageId": "ws16e-p5"
-    },
-    {
-      "from": "鄭渾（文公）",
-      "to": "曹叡",
-      "type": "屬下",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭袤（林叔）",
-      "to": "華歆",
-      "type": "見譽",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭袤（林叔）",
-      "to": "鄭默（思元）",
-      "type": "父",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭默（思元）",
-      "to": "鄭質",
-      "type": "弟",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭默（思元）",
-      "to": "鄭舒",
-      "type": "弟",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭默（思元）",
-      "to": "鄭詡",
-      "type": "弟",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭默（思元）",
-      "to": "鄭球",
-      "type": "父",
-      "passageId": "ws16e-p6"
-    },
-    {
-      "from": "鄭球",
-      "to": "鄭豫",
-      "type": "弟",
-      "passageId": "ws16e-p6"
+      "to": "鄭泰（公業）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Hun's elder brother Zheng Tai plotted with Xun You and others to put Dong Zhuo to death.",
+            "zht": "鄭渾之兄鄭泰與荀攸等人合謀誅殺董卓。",
+            "zhs": "郑浑之兄郑泰与荀攸等人合谋诛杀董卓。"
+          }
+        }
+      ]
     },
     {
       "from": "鄭渾（文公）",
       "to": "鄭崇",
-      "type": "父",
-      "passageId": "ws16e-p6"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "After Zheng Hun died, having been so frugal that his family went hungry and cold, his son Zheng Chong was appointed a Court Gentleman.",
+            "zht": "鄭渾去世時家境清貧，妻兒飢寒，其子鄭崇被任命為郎中。",
+            "zhs": "郑浑去世时家境清贫，妻儿饥寒，其子郑崇被任命为郎中。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "鄭袤（林叔）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Zheng Tai's young son Zheng Mao was taken by Zheng Hun to seek refuge in Huainan.",
+            "zht": "鄭泰之幼子鄭袤被鄭渾帶著一同逃往淮南。",
+            "zhs": "郑泰之幼子郑袤被郑浑带着一同逃往淮南。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "鄭袤（林叔）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Zheng Hun took his nephew Zheng Mao, Zheng Tai's young son, with him when he fled to Huainan and then across the Yangtze.",
+            "zht": "鄭渾帶著侄子鄭袤逃往淮南，後又渡江南下。",
+            "zhs": "郑浑带着侄子郑袤逃往淮南，后又渡江南下。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "荀攸（公達）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Tai told his friend Xun You that He Jin was not easy to assist, and plotted with him and others to put Dong Zhuo to death.",
+            "zht": "鄭泰對好友荀攸說何公難以輔佐，並與他等人合謀誅殺董卓。",
+            "zhs": "郑泰对好友荀攸说何公难以辅佐，并与他等人合谋诛杀董卓。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "華歆（子魚）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Tai was good friends with Hua Xin and Xun You.",
+            "zht": "鄭泰與華歆、荀攸交好。",
+            "zhs": "郑泰与华歆、荀攸交好。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "華歆（子魚）",
+      "to": "鄭袤（林叔）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "On seeing Zheng Mao, Hua Xin exclaimed, \"Zheng Gongye will not perish after all!\"",
+            "zht": "華歆見到鄭袤，讚歎道：「鄭公業不死矣！」",
+            "zhs": "华歆见到郑袤，赞叹道：「郑公业不死矣！」"
+          }
+        }
+      ]
+    },
+    {
+      "from": "華歆（子魚）",
+      "to": "鄭渾（文公）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Knowing Yuan Shu was bound to fail, Zheng Hun crossed the Yangtze and joined Hua Xin, Grand Administrator of Yuzhang and a longtime friend of his elder brother, who took him in.",
+            "zht": "鄭渾知袁術必敗，渡江投奔豫章太守華歆，華歆與其兄鄭泰是舊友，收留了他。",
+            "zhs": "郑浑知袁术必败，渡江投奔豫章太守华歆，华歆与其兄郑泰是旧友，收留了他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "何進（遂高）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "He Jin appointed Zheng Tai Imperial Secretariat Attendant Gentleman and Commandant of Imperial Carriages, but Zheng Tai's warning against summoning Dong Zhuo went unheeded, so he resigned and left, saying Lord He was not easy to assist.",
+            "zht": "何進任命鄭泰為尚書侍郎、奉車都尉，但鄭泰勸阻召董卓入京，何進不聽，鄭泰遂辭官而去，說何公難以輔佐。",
+            "zhs": "何进任命郑泰为尚书侍郎、奉车都尉，但郑泰劝阻召董卓入京，何进不听，郑泰遂辞官而去，说何公难以辅佐。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "何進（遂高）",
+      "to": "董卓（仲穎）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "He Jin intended to execute the palace eunuchs and wished to summon Dong Zhuo to assist him.",
+            "zht": "何進打算誅殺宦官，想召董卓入京相助。",
+            "zhs": "何进打算诛杀宦官，想召董卓入京相助。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "董卓（仲穎）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Tai talked Dong Zhuo out of a massive mobilisation against East of the Pass with ten arguments, and Dong Zhuo made him a general in command of the armies sent against it; when told he had ties with the east, Dong Zhuo took away his troops and kept him at court, and Zheng Tai later conspired with Wang Yun to kill him and fled east.",
+            "zht": "鄭泰以十條理由勸阻董卓大舉出兵關東，董卓遂任命他為將、統領東征之軍；有人說他與山東諸侯有聯繫，董卓便收回他的兵馬，將他留在朝中，鄭泰後來與王允合謀刺董，並逃出武關東去。",
+            "zhs": "郑泰以十条理由劝阻董卓大举出兵关东，董卓遂任命他为将、统领东征之军；有人说他与山东诸侯有联系，董卓便收回他的兵马，将他留在朝中，郑泰后来与王允合谋刺董，并逃出武关东去。"
+          },
+          "title": {
+            "en": "Gentleman Consultant",
+            "zht": "議郎",
+            "zhs": "议郎"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "王允（子師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Zheng Tai later conspired with Wang Yun to kill Dong Zhuo, then escaped east through Wuguan.",
+            "zht": "鄭泰後來與王允合謀刺殺董卓，隨後逃出武關東去。",
+            "zhs": "郑泰后来与王允合谋刺杀董卓，随后逃出武关东去。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭泰（公業）",
+      "to": "袁術（公路）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p1",
+          "text": {
+            "en": "Yuan Shu, General of the Rear, appointed Zheng Tai Inspector of Yang Province, but he died on the way before taking office, aged forty-two.",
+            "zht": "後將軍袁術任命鄭泰為揚州刺史，他赴任途中去世，年四十二歲。",
+            "zhs": "后将军袁术任命郑泰为扬州刺史，他赴任途中去世，年四十二岁。"
+          },
+          "title": {
+            "en": "Inspector of Yang Province",
+            "zht": "揚州刺史",
+            "zhs": "扬州刺史"
+          }
+        }
+      ]
+    },
+    {
+      "from": "袁術（公路）",
+      "to": "鄭渾（文公）",
+      "type": "personal",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Yuan Shu received Zheng Hun and his young nephew in Huainan with great courtesy, but Zheng Hun, knowing Yuan Shu was bound to fail, soon left him and crossed the Yangtze.",
+            "zht": "袁術在淮南以厚禮接待鄭渾及其幼侄，但鄭渾知袁術必敗，不久便離開他渡江南下。",
+            "zhs": "袁术在淮南以厚礼接待郑浑及其幼侄，但郑浑知袁术必败，不久便离开他渡江南下。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p2",
+          "text": {
+            "en": "Hearing of Zheng Hun's steadfast conduct, Cao Cao summoned him to his staff and promoted him to County Chief of Xiacai, County Magistrate of Shaoling, and later Intendant of Pingyi; wherever he served he made the people farm and raise silkworms and stopped them abandoning children, and they prospered.",
+            "zht": "曹操聞鄭渾操守堅定，召他為掾屬，後升任下蔡長、邵陵令，又任丞相掾屬、馮翊太守；他所到之處令百姓耕桑、嚴禁棄子，使民生殷實。",
+            "zhs": "曹操闻郑浑操守坚定，召他为掾属，后升任下蔡长、邵陵令，又任丞相掾属、冯翊太守；他所到之处令百姓耕桑、严禁弃子，使民生殷实。"
+          },
+          "title": {
+            "en": "Intendant of Pingyi",
+            "zht": "馮翊太守",
+            "zhs": "冯翊太守"
+          }
+        },
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Cao Cao sent Xiahou Yuan to support Zheng Hun's suppression of Liang Xing's bandits; the mountain bandits were fully pacified and Zheng Hun was transferred to Grand Administrator of Shangdang.",
+            "zht": "曹操派夏侯淵協助鄭渾討伐梁興等盜賊，山賊盡平，鄭渾調任上黨太守。",
+            "zhs": "曹操派夏侯渊协助郑浑讨伐梁兴等盗贼，山贼尽平，郑浑调任上党太守。"
+          },
+          "title": {
+            "en": "Grand Administrator of Shangdang",
+            "zht": "上黨太守",
+            "zhs": "上党太守"
+          }
+        },
+        {
+          "passageId": "ws16e-p5",
+          "text": {
+            "en": "During the Hanzhong campaign Cao Cao appointed Zheng Hun Intendant of Jingzhao; his administration ranked foremost in transporting military grain, and Cao Cao, esteeming him all the more, recalled him to the Chancellor's staff.",
+            "zht": "曹操徵漢中時任命鄭渾為京兆尹，其轄區轉運軍糧居首，曹操益加器重，召回任丞相掾屬。",
+            "zhs": "曹操征汉中时任命郑浑为京兆尹，其辖区转运军粮居首，曹操益加器重，召回任丞相掾属。"
+          },
+          "title": {
+            "en": "Intendant of Jingzhao",
+            "zht": "京兆尹",
+            "zhs": "京兆尹"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p5",
+          "text": {
+            "en": "When Cao Pi ascended the throne, Zheng Hun became Attendant Censor and Commandant of Escorting Cavalry, then Grand Administrator of Yangping and Pei State, where he built embankments and weirs and opened rice paddies.",
+            "zht": "曹丕稱帝后，鄭渾任侍御史、駙馬都尉，後歷任陽平、沛郡太守，在蕭、相二縣之間修築堤堰、開闢稻田。",
+            "zhs": "曹丕称帝后，郑浑任侍御史、驸马都尉，后历任阳平、沛郡太守，在萧、相二县之间修筑堤堰、开辟稻田。"
+          },
+          "title": {
+            "en": "Attendant Censor",
+            "zht": "侍御史",
+            "zhs": "侍御史"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "After Zheng Hun's works in Wei Commandery made it prosperous, Cao Rui issued an edict commending him, proclaimed his achievements throughout the realm, and promoted him to Minister of Works.",
+            "zht": "鄭渾治魏郡成效顯著，曹叡下詔褒獎，將其政績宣示天下，並升他為大司農。",
+            "zhs": "郑浑治魏郡成效显著，曹叡下诏褒奖，将其政绩宣示天下，并升他为大司农。"
+          },
+          "title": {
+            "en": "Minister of Works",
+            "zht": "大司農",
+            "zhs": "大司农"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "梁興",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p3",
+          "text": {
+            "en": "When Liang Xing's band abducted over five thousand households and turned to plundering, Zheng Hun rebuffed advice to retreat, held the commandery, pursued the bandits and broke up their bands by making them exchange captured women.",
+            "zht": "梁興等人擄掠五千餘戶並劫掠地方，鄭渾不採納退守之議，堅守郡城並追剿盜賊，令其交還所掠婦女，使其部眾瓦解。",
+            "zhs": "梁兴等人掳掠五千余户并劫掠地方，郑浑不采纳退守之议，坚守郡城并追剿盗贼，令其交还所掠妇女，使其部众瓦解。"
+          }
+        },
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Liang Xing gathered his remaining followers at Fucheng, and with Xiahou Yuan's help Zheng Hun led the officials and people in the vanguard, beheading Liang Xing and his accomplices.",
+            "zht": "梁興聚集殘部於鄜城，鄭渾在夏侯淵協助下率官民為先鋒，斬殺梁興及其同黨。",
+            "zhs": "梁兴聚集残部于鄜城，郑浑在夏侯渊协助下率官民为先锋，斩杀梁兴及其同党。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯淵（妙才）",
+      "to": "鄭渾（文公）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Cao Cao sent Xiahou Yuan to assist the commandery in attacking Liang Xing's remnants at Fucheng.",
+            "zht": "曹操派夏侯淵協助郡府攻打駐鄜城的梁興殘部。",
+            "zhs": "曹操派夏侯渊协助郡府攻打驻鄜城的梁兴残部。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "靳富",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "When the bandit Jin Fu abducted the Xiayang and Shaoling county officials into Mount Wei, Zheng Hun attacked, defeated him, and rescued the officials.",
+            "zht": "盜賊靳富劫持夏陽、邵陵二縣長吏及百姓入山，鄭渾出兵擊敗他，救出被劫官員。",
+            "zhs": "盗贼靳富劫持夏阳、邵陵二县长吏及百姓入山，郑浑出兵击败他，救出被劫官员。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭渾（文公）",
+      "to": "趙青龍",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "After Zhao Qinglong killed the administrator Cheng Xiu, Zheng Hun sent brave men to take his head.",
+            "zht": "趙青龍殺害左內史程休後，鄭渾派勇士取其首級。",
+            "zhs": "赵青龙杀害左内史程休后，郑浑派勇士取其首级。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙青龍",
+      "to": "程休",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p4",
+          "text": {
+            "en": "Zhao Qinglong killed Cheng Xiu, the administrator of Zuoneishi.",
+            "zht": "趙青龍殺害了左內史程休。",
+            "zhs": "赵青龙杀害了左内史程休。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭袤（林叔）",
+      "to": "鄭默（思元）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "A note records that Zheng Mao's son Zheng Mo, courtesy name Siyuan, upheld the family tradition and rose to Minister of Ceremonies.",
+            "zht": "注載鄭袤之子鄭默，字思元，承繼家風，官至太常。",
+            "zhs": "注载郑袤之子郑默，字思元，承继家风，官至太常。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭質",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's younger brother Zheng Zhi attained ministerial office.",
+            "zht": "鄭默之弟鄭質官至九卿。",
+            "zhs": "郑默之弟郑质官至九卿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭舒",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's younger brother Zheng Shu attained ministerial office.",
+            "zht": "鄭默之弟鄭舒官至九卿。",
+            "zhs": "郑默之弟郑舒官至九卿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭詡",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's younger brother Zheng Xu attained ministerial office.",
+            "zht": "鄭默之弟鄭詡官至九卿。",
+            "zhs": "郑默之弟郑诩官至九卿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭默（思元）",
+      "to": "鄭球",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Mo's son Zheng Qiu was incorruptible and upright, and served as Deputy Director of the Imperial Secretariat.",
+            "zht": "鄭默之子鄭球清廉正直，官至尚書僕射。",
+            "zhs": "郑默之子郑球清廉正直，官至尚书仆射。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "鄭球",
+      "to": "鄭豫",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16e-p6",
+          "text": {
+            "en": "Zheng Qiu's younger brother Zheng Yu served as an Imperial Secretariat.",
+            "zht": "鄭球之弟鄭豫官至尚書。",
+            "zhs": "郑球之弟郑豫官至尚书。"
+          }
+        }
+      ]
     }
   ]
 }

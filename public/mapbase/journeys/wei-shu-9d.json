@@ -1,0 +1,989 @@
+{
+  "chapter": {
+    "id": "wei-shu-9d",
+    "order": 9,
+    "label": {
+      "zht": "曹洪傳",
+      "zhs": "曹洪传",
+      "en": "Biography of Cao Hong"
+    },
+    "title": {
+      "zht": "魏書九 · 曹洪傳",
+      "zhs": "魏书九 · 曹洪传",
+      "en": "Book of Wei, Chapter 9 · Biography of Cao Hong"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 33.86080856,
+      "lng": 115.77227911,
+      "name": "Qiao",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.84990793,
+      "lng": 113.43360412,
+      "name": "Xingyang",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "66",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "60",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.16930034,
+      "lng": 116.9087555,
+      "name": "Longkang",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.48411673,
+      "lng": 113.45621345,
+      "name": "Wuyang",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.97656214,
+      "lng": 113.25163985,
+      "name": "Wuyin",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.50525207,
+      "lng": 113.2914691,
+      "name": "Ye",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.23136201,
+      "lng": 113.04885759,
+      "name": "Duyang",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.15217013,
+      "lng": 112.71539343,
+      "name": "Bowang",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.81631685,
+      "lng": 114.04675874,
+      "name": "Guandu",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "110",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.80983291,
+      "lng": 105.64254196,
+      "name": "Xiabian",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.37486808,
+      "lng": 107.20726452,
+      "name": "Chencang",
+      "persons": [
+        "曹洪（子廉）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "曹洪（子廉）",
+      "name": {
+        "en": "Cao Hong",
+        "zht": "曹洪",
+        "zhs": "曹洪"
+      },
+      "courtesyName": {
+        "en": "Zilian",
+        "zht": "子廉",
+        "zhs": "子廉"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "6th year of Taihe",
+          "zht": "太和六年",
+          "zhs": "太和六年"
+        },
+        "year": 232
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Qiao",
+              "zht": "譙",
+              "zhs": "谯"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "Chuping - Xingping era",
+            "zht": "初平 - 興平年間",
+            "zhs": "初平 - 兴平年间"
+          },
+          "year": "190 - 195",
+          "age": null,
+          "location": [
+            {
+              "en": "Xingyang",
+              "zht": "熒陽",
+              "zhs": "荧阳"
+            },
+            {
+              "en": "Qiao",
+              "zht": "譙",
+              "zhs": "谯"
+            },
+            {
+              "en": "Lujiang",
+              "zht": "廬江",
+              "zhs": "庐江"
+            },
+            {
+              "en": "Danyang",
+              "zht": "丹陽",
+              "zhs": "丹阳"
+            },
+            {
+              "en": "Longkang",
+              "zht": "龍亢",
+              "zhs": "龙亢"
+            }
+          ],
+          "position": [
+            {
+              "en": "Soaring Eagle Colonel",
+              "zht": "鷹揚校尉",
+              "zhs": "鹰扬校尉"
+            },
+            {
+              "en": "Gentleman-General Who Promotes Valor",
+              "zht": "揚武中郎將",
+              "zhs": "扬武中郎将"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.84990793,
+              "lng": 113.43360412,
+              "name": "Xingyang"
+            },
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            },
+            {
+              "kind": "admin",
+              "id": "66"
+            },
+            {
+              "kind": "admin",
+              "id": "60"
+            },
+            {
+              "kind": "town",
+              "lat": 33.16930034,
+              "lng": 116.9087555,
+              "name": "Longkang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Soaring Eagle Colonel",
+              "zht": "鷹揚校尉",
+              "zhs": "鹰扬校尉",
+              "url": null
+            },
+            {
+              "en": "Gentleman-General Who Promotes Valor",
+              "zht": "揚武中郎將",
+              "zhs": "扬武中郎将",
+              "url": "/translations/officials/military#gentleman-generals-176"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd year of Jian'an",
+            "zht": "建安二年",
+            "zhs": "建安二年"
+          },
+          "year": 197,
+          "age": null,
+          "location": [
+            {
+              "en": "Wuyang",
+              "zht": "舞陽",
+              "zhs": "舞阳"
+            },
+            {
+              "en": "Wuyin",
+              "zht": "舞陰",
+              "zhs": "舞阴"
+            },
+            {
+              "en": "Ye",
+              "zht": "葉",
+              "zhs": "叶"
+            },
+            {
+              "en": "Duyang",
+              "zht": "堵陽",
+              "zhs": "堵阳"
+            },
+            {
+              "en": "Bowang",
+              "zht": "博望",
+              "zhs": "博望"
+            }
+          ],
+          "position": [
+            {
+              "en": "General Who Rouses the Vanguard",
+              "zht": "厲鋒將軍",
+              "zhs": "厉锋将军"
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.48411673,
+              "lng": 113.45621345,
+              "name": "Wuyang"
+            },
+            {
+              "kind": "town",
+              "lat": 32.97656214,
+              "lng": 113.25163985,
+              "name": "Wuyin"
+            },
+            {
+              "kind": "town",
+              "lat": 33.50525207,
+              "lng": 113.2914691,
+              "name": "Ye"
+            },
+            {
+              "kind": "town",
+              "lat": 33.23136201,
+              "lng": 113.04885759,
+              "name": "Duyang"
+            },
+            {
+              "kind": "town",
+              "lat": 33.15217013,
+              "lng": 112.71539343,
+              "name": "Bowang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General Who Rouses the Vanguard",
+              "zht": "厲鋒將軍",
+              "zhs": "厉锋将军",
+              "url": null
+            },
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "5th - 9th year of Jian'an",
+            "zht": "建安五年 - 建安九年",
+            "zhs": "建安五年 - 建安九年"
+          },
+          "year": "200 - 204",
+          "age": null,
+          "location": [
+            {
+              "en": "Guandu",
+              "zht": "官渡",
+              "zhs": "官渡"
+            },
+            {
+              "en": "Ye",
+              "zht": "葉",
+              "zhs": "叶"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.81631685,
+              "lng": 114.04675874,
+              "name": "Guandu"
+            },
+            {
+              "kind": "town",
+              "lat": 33.50525207,
+              "lng": 113.2914691,
+              "name": "Ye"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "20th - 24th year of Jian'an",
+            "zht": "建安二十年 - 建安二十四年",
+            "zhs": "建安二十年 - 建安二十四年"
+          },
+          "year": "215 - 219",
+          "age": null,
+          "location": [
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            },
+            {
+              "en": "Xiabian",
+              "zht": "下辨",
+              "zhs": "下辨"
+            },
+            {
+              "en": "Chencang",
+              "zht": "陳倉",
+              "zhs": "陈仓"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "110"
+            },
+            {
+              "kind": "town",
+              "lat": 33.80983291,
+              "lng": 105.64254196,
+              "name": "Xiabian"
+            },
+            {
+              "kind": "town",
+              "lat": 34.37486808,
+              "lng": 107.20726452,
+              "name": "Chencang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "General of the Protectorate",
+              "zht": "都護將軍",
+              "zhs": "都护将军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "General of the Protectorate",
+              "zht": "都護將軍",
+              "zhs": "都护将军",
+              "url": null
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黃初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "General of the Guards",
+              "zht": "衞將軍",
+              "zhs": "衞将军"
+            },
+            {
+              "en": "General of Agile Cavalry",
+              "zht": "驃騎將軍",
+              "zhs": "骠骑将军"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯"
+            },
+            {
+              "en": "Specially Advanced",
+              "zht": "特進",
+              "zhs": "特进"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "General of the Guards",
+              "zht": "衞將軍",
+              "zhs": "衞将军",
+              "url": "/translations/officials/military#various-grand-generals-038"
+            },
+            {
+              "en": "General of Agile Cavalry",
+              "zht": "驃騎將軍",
+              "zhs": "骠骑将军",
+              "url": "/translations/officials/military#various-grand-generals-036"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯",
+              "url": "/translations/officials#glossary-county-marquis"
+            },
+            {
+              "en": "Specially Advanced",
+              "zht": "特進",
+              "zhs": "特进",
+              "url": "/translations/officials/ministers#civil-honorary-officials-118"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "7th year of Taihe",
+            "zht": "太和七年",
+            "zhs": "太和七年"
+          },
+          "year": 227,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "General of the Rear",
+              "zht": "後將軍",
+              "zhs": "后将军"
+            },
+            {
+              "en": "General of Agile Cavalry",
+              "zht": "驃騎將軍",
+              "zhs": "骠骑将军"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯"
+            },
+            {
+              "en": "Specially Advanced",
+              "zht": "特進",
+              "zhs": "特进"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "General of the Rear",
+              "zht": "後將軍",
+              "zhs": "后将军",
+              "url": "/translations/officials/military#four-direction--misc-115"
+            },
+            {
+              "en": "General of Agile Cavalry",
+              "zht": "驃騎將軍",
+              "zhs": "骠骑将军",
+              "url": "/translations/officials/military#various-grand-generals-036"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯",
+              "url": "/translations/officials#glossary-county-marquis"
+            },
+            {
+              "en": "Specially Advanced",
+              "zht": "特進",
+              "zhs": "特进",
+              "url": "/translations/officials/ministers#civil-honorary-officials-118"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "曹操（孟德）",
+      "to": "曹洪（子廉）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Cao Hong was Cao Cao's younger paternal cousin.",
+            "zht": "曹洪是曹操的堂弟。",
+            "zhs": "曹洪是曹操的堂弟。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹鼎",
+      "to": "曹洪（子廉）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Cao Hong's paternal uncle Cao Ding, Director of the Imperial Secretariat, appointed him Chief of Qichun.",
+            "zht": "曹洪的伯父曹鼎任尚書令，任用曹洪爲蘄春縣長。",
+            "zhs": "曹洪的伯父曹鼎任尚书令，任用曹洪为蕲春县长。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "When Cao Cao lost his horse fleeing Xu Rong at Xingyang, Cao Hong gave him his own, saying the realm could do without him but not without Cao Cao, and found a boat to carry them across the Bian River.",
+            "zht": "曹操在滎陽被徐榮擊敗、失去坐騎時，曹洪把自己的馬讓給他，說“天下可無洪，不可無君”，又沿汴水找到船隻，與曹操一同渡河。",
+            "zhs": "曹操在荥阳被徐荣击败、失去坐骑时，曹洪把自己的马让给他，说“天下可无洪，不可无君”，又沿汴水找到船只，与曹操一同渡河。"
+          }
+        },
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Cao Hong raised several thousand troops in Lujiang and Danyang and brought them to join Cao Cao at Longkang.",
+            "zht": "曹洪在廬江、丹楊招募了數千士兵，到龍亢與曹操會合。",
+            "zhs": "曹洪在庐江、丹杨招募了数千士兵，到龙亢与曹操会合。"
+          }
+        },
+        {
+          "passageId": "ws9d-p2",
+          "text": {
+            "en": "For securing Dongping and Fan and keeping the army supplied during the famine, Cao Hong was appointed Soaring Eagle Colonel and later Gentleman-General Who Promotes Valor.",
+            "zht": "曹洪在饑荒中搶先佔據東平、范縣，聚集糧食供應大軍，因功被任命爲鷹揚校尉，後升揚武中郎將。",
+            "zhs": "曹洪在饥荒中抢先占据东平、范县，聚集粮食供应大军，因功被任命为鹰扬校尉，后升扬武中郎将。"
+          },
+          "title": {
+            "en": "Soaring Eagle Colonel, Gentleman-General Who Promotes Valor",
+            "zht": "鷹揚校尉、揚武中郎將",
+            "zhs": "鹰扬校尉、扬武中郎将"
+          }
+        },
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "After defeating Liu Biao's generals, Cao Hong was promoted to General Who Rouses the Vanguard and enfeoffed as Neighbourhood Marquis of Guoming.",
+            "zht": "曹洪擊敗劉表部將後，升任厲鋒將軍，封國明亭侯。",
+            "zhs": "曹洪击败刘表部将后，升任厉锋将军，封国明亭侯。"
+          },
+          "title": {
+            "en": "General Who Rouses the Vanguard, Neighbourhood Marquis of Guoming",
+            "zht": "厲鋒將軍、國明亭侯",
+            "zhs": "厉锋将军、国明亭侯"
+          }
+        },
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "For service in successive campaigns, Cao Hong was appointed General Protector.",
+            "zht": "曹洪因屢次隨軍征伐，被任命爲都護將軍。",
+            "zhs": "曹洪因屡次随军征伐，被任命为都护将军。"
+          },
+          "title": {
+            "en": "General Protector",
+            "zht": "都護將軍",
+            "zhs": "都护将军"
+          }
+        },
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "When Qiao's magistrate assessed property for levies, Cao Hong's wealth was found equal to Cao Cao's, and Cao Cao remarked, \"How could my household's wealth match Zilian's?\"",
+            "zht": "譙縣縣令評估家產時，曹洪的家財與曹操家相當，曹操說：“我家的財產怎能比得上子廉！”",
+            "zhs": "谯县县令评估家产时，曹洪的家财与曹操家相当，曹操说：“我家的财产怎能比得上子廉！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "When Cao Pi ascended the throne, Cao Hong became General of the Guards.",
+            "zht": "曹丕即位後，曹洪任衛將軍。",
+            "zhs": "曹丕即位后，曹洪任卫将军。"
+          },
+          "title": {
+            "en": "General of the Guards",
+            "zht": "衞將軍",
+            "zhs": "衞将军"
+          }
+        },
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "Cao Pi promoted Cao Hong to General of Agile Cavalry, raised him to County Marquis of Yewang and granted him the rank of Specially Advanced.",
+            "zht": "曹丕升曹洪爲驃騎將軍，進封野王侯，位特進。",
+            "zhs": "曹丕升曹洪为骠骑将军，进封野王侯，位特进。"
+          },
+          "title": {
+            "en": "General of Agile Cavalry, County Marquis of Yewang",
+            "zht": "驃騎將軍、野王侯",
+            "zhs": "骠骑将军、野王侯"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹丕（子桓）",
+      "to": "曹洪（子廉）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Pi had resented Cao Hong ever since Hong refused him a loan in his youth; when Hong's retainer broke the law, Cao Pi imprisoned him and sentenced him to death, sparing him only after his mother's intervention, and even then dismissing him and reducing his rank and fief.",
+            "zht": "曹丕年少時向曹洪借錢遭拒，一直懷恨在心；曹洪的門客犯法後，曹丕將曹洪下獄判處死刑，在卞太后干預下才免他一死，但仍罷免官職、削減爵位和封地。",
+            "zhs": "曹丕年少时向曹洪借钱遭拒，一直怀恨在心；曹洪的门客犯法后，曹丕将曹洪下狱判处死刑，在卞太后干预下才免他一死，但仍罢免官职、削减爵位和封地。"
+          }
+        },
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Pi had once asked to borrow a hundred bolts of silk from Cao Hong and been refused; once spared, Cao Hong submitted a humble memorial confessing his greed and thanking him for his life.",
+            "zht": "曹丕在東宮時曾向曹洪借絹一百匹，被拒絕；曹洪獲赦後上書謝罪，自認貪婪，感謝不殺之恩。",
+            "zhs": "曹丕在东宫时曾向曹洪借绢一百匹，被拒绝；曹洪获赦后上书谢罪，自认贪婪，感谢不杀之恩。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "卞太后",
+      "to": "曹洪（子廉）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Empress Dowager Bian threatened to have Empress Guo deposed if Cao Hong died, and told Cao Pi that without Zilian he would not be where he was, securing Cao Hong's release and later the return of his property.",
+            "zht": "卞太后對郭皇后說，若曹洪今日死，明日就讓皇帝廢后；又責備曹丕說“梁、沛之間，非子廉無有今日”，終使曹洪獲釋，後來還歸還了他的財產。",
+            "zhs": "卞太后对郭皇后说，若曹洪今日死，明日就让皇帝废后；又责备曹丕说“梁、沛之间，非子廉无有今日”，终使曹洪获释，后来还归还了他的财产。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "卞太后",
+      "to": "曹丕（子桓）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Empress Dowager Bian, Cao Pi's mother, angrily rebuked him over Cao Hong's death sentence.",
+            "zht": "卞太后是曹丕的母親，因曹洪被判死刑而怒責曹丕。",
+            "zhs": "卞太后是曹丕的母亲，因曹洪被判死刑而怒责曹丕。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郭皇后",
+      "to": "曹洪（子廉）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Pressed by Empress Dowager Bian, Empress Guo wept and pleaded repeatedly with Cao Pi until Cao Hong was spared.",
+            "zht": "在卞太后的壓力下，郭皇后流淚多次向曹丕求情，曹洪才得以免死。",
+            "zhs": "在卞太后的压力下，郭皇后流泪多次向曹丕求情，曹洪才得以免死。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "卞太后",
+      "to": "郭皇后",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Empress Dowager Bian told Empress Guo that if Cao Hong died that day, she would have the emperor depose her the next.",
+            "zht": "卞太后對郭皇后說：“令曹洪今日死，吾明日敕帝廢后矣！”",
+            "zhs": "卞太后对郭皇后说：“令曹洪今日死，吾明日敕帝废后矣！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹洪（子廉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "When Cao Pi had Cao Hong arrested, Cao Zhen, at his side, interceded, warning that Cao Hong would think he had slandered him; Cao Pi retorted that he was handling the matter himself.",
+            "zht": "曹丕逮捕曹洪時，曹真在旁請求說：“現在殺曹洪，曹洪一定以爲是我進的讒言。”曹丕說：“我自己處理此事，與你何干！”",
+            "zhs": "曹丕逮捕曹洪时，曹真在旁请求说：“现在杀曹洪，曹洪一定以为是我进的谗言。”曹丕说：“我自己处理此事，与你何干！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "When Cao Rui ascended the throne, he appointed Cao Hong General of the Rear and made him County Marquis of Lecheng with the rank of Specially Advanced.",
+            "zht": "明帝即位後，任命曹洪爲後將軍，改封樂城侯，位特進。",
+            "zhs": "明帝即位后，任命曹洪为后将军，改封乐城侯，位特进。"
+          },
+          "title": {
+            "en": "General of the Rear, County Marquis of Lecheng",
+            "zht": "後將軍、樂城侯",
+            "zhs": "后将军、乐城侯"
+          }
+        },
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Rui later appointed Cao Hong General of Agile Cavalry once again.",
+            "zht": "明帝後來再次任命曹洪爲驃騎將軍。",
+            "zhs": "明帝后来再次任命曹洪为骠骑将军。"
+          },
+          "title": {
+            "en": "General of Agile Cavalry",
+            "zht": "驃騎將軍",
+            "zhs": "骠骑将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "陳溫（元悌）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p1",
+          "text": {
+            "en": "Chen Wen, Inspector of Yang Province, had long been on friendly terms with Cao Hong, who went to him with his household troops to recruit soldiers.",
+            "zht": "揚州刺史陳溫一向與曹洪交好，曹洪率家兵一千多人前往他那裏募兵。",
+            "zhs": "扬州刺史陈温一向与曹洪交好，曹洪率家兵一千多人前往他那里募兵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "劉表（景升）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9d-p3",
+          "text": {
+            "en": "Cao Hong led a separate campaign against Liu Biao, defeating his generals at Wuyang, Wuyin, Ye, Duyang and Bowang.",
+            "zht": "曹洪單獨率軍征討劉表，在舞陽、舞陰、葉縣、堵陽、博望等地擊敗劉表部將。",
+            "zhs": "曹洪单独率军征讨刘表，在舞阳、舞阴、叶县、堵阳、博望等地击败刘表部将。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹馥",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Hong's son Cao Fu succeeded him.",
+            "zht": "曹洪之子曹馥繼承爵位。",
+            "zhs": "曹洪之子曹馥继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹洪（子廉）",
+      "to": "曹震",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Cao had set aside households from Cao Hong's fief to enfeoff his son Cao Zhen as a Marquis.",
+            "zht": "曹操曾分出曹洪的封戶，封他的兒子曹震爲列侯。",
+            "zhs": "曹操曾分出曹洪的封户，封他的儿子曹震为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹瑜",
+      "to": "曹洪（子廉）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9d-p4",
+          "text": {
+            "en": "Cao Hong's clan uncle Cao Yu was upright and respectful, rising to General of the Guards and a Marquis.",
+            "zht": "曹洪的族父曹瑜謹慎篤敬，官至衛將軍，封列侯。",
+            "zhs": "曹洪的族父曹瑜谨慎笃敬，官至卫将军，封列侯。"
+          }
+        }
+      ]
+    }
+  ]
+}

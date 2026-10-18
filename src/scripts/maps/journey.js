@@ -448,12 +448,14 @@ async function getResolvedLocationKingdom(entry) {
   }
   if (entry.kind === 'admin') {
     const adminFeatures = await fetchAdminBoundaries();
-    const raw = adminFeatures.find(f => f.properties?.id === entry.id);
+    // Journey data stores ids as strings ("141") while the GeoJSON uses
+    // numbers (141) - same normalisation as showAdminBoundaryById.
+    const raw = adminFeatures.find(f => f.properties?.id === Number(entry.id));
     return raw ? getAdminKingdom(raw.properties) : 'unknown';
   }
   if (entry.kind === 'water') {
     const waterFeatures = await fetchWaterBodies();
-    const raw = waterFeatures.find(f => f.properties?.id === entry.id);
+    const raw = waterFeatures.find(f => f.properties?.id === Number(entry.id));
     return raw?.properties?.kingdom || 'unknown';
   }
   return 'unknown';
@@ -530,6 +532,13 @@ function renderJourneyStopEntry(stop) {
 // earlier one wins per the specified tie-break rule - order in a
 // timeline being what actually happened matters more here than
 // proximity by index count alone.
+// The person's own state, from the book their chapter belongs to
+// ("wei-shu-9f" -> wei). Null for anything that isn't one of the three.
+function getChapterKingdom(chapterId) {
+  const match = /^(wei|shu|wu)-shu-/.exec(chapterId ?? '');
+  return match ? match[1] : null;
+}
+
 function resolveKingdomsWithNeighborFallback(rawKingdoms) {
   return rawKingdoms.map((k, i) => {
     if (k && k !== 'unknown') return k;
@@ -642,7 +651,17 @@ async function showJourneyPanel() {
   // the card - an explanation for a symbol that isn't present would just
   // be confusing clutter.
   const hasUncertainYear = [born?.year, died?.year, ...stopGroups.map(g => g.year)].some(y => y && /\?/.test(y));
-  const rawKingdoms = await Promise.all(stopGroups.map(computeGroupKingdom));
+  // A group with no location at all takes the person's own state (the
+  // book their biography sits in) rather than a neighbor's - otherwise a
+  // Wei general's undated-location year right after a campaign into Wu
+  // territory would borrow Wu's color. Groups whose location exists but
+  // doesn't resolve still use the neighbor fallback.
+  const bookKingdom = getChapterKingdom(currentJourneyChapter?.id ?? currentJourneyId);
+  const rawKingdoms = await Promise.all(stopGroups.map(async group => {
+    const hasLocation = group.entries.some(stop => (Array.isArray(stop.location) ? stop.location : [stop.location]).some(Boolean));
+    if (!hasLocation && bookKingdom) return bookKingdom;
+    return computeGroupKingdom(group);
+  }));
   const kingdoms = resolveKingdomsWithNeighborFallback(rawKingdoms);
   const timelineHtml = stopGroups.map((group, i) => renderJourneyStopGroup(group, kingdoms[i])).join('');
 

@@ -1,0 +1,132 @@
+/* compare.css — officials compare page (all three languages) */
+
+.cmp-toolbar {
+  padding: 1rem 2rem; border-bottom: 0.5px solid var(--color-border); background: #111111;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.cmp-picker { position: relative; flex: 1; min-width: 240px; max-width: 560px; }
+.cmp-picker .search-input { padding: 9px 12px; }
+.cmp-dropdown {
+  display: none; position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 20;
+  background: #121212; border: 0.5px solid var(--color-border); border-radius: var(--radius-md);
+  max-height: 360px; overflow-y: auto; box-shadow: 0 10px 24px rgba(0,0,0,0.5);
+}
+.cmp-dd-item {
+  width: 100%; display: flex; align-items: center; gap: 10px; padding: 8px 12px;
+  background: none; border: none; border-bottom: 0.5px solid #222; cursor: pointer; text-align: left;
+  color: var(--color-text-primary); font-family: var(--font-sans);
+}
+.cmp-dd-item:hover { background: #1b1b1b; }
+.cmp-dd-item.added { opacity: 0.55; cursor: default; }
+.cmp-dd-grade {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #1d1d1d;
+  color: var(--archive-gold-soft, #d0aa6b); font-size: 13px; display: flex; align-items: center; justify-content: center;
+}
+.cmp-dd-main { flex: 1; min-width: 0; display: flex; align-items: baseline; gap: 8px; overflow: hidden; }
+.cmp-dd-name { font-size: 15px; white-space: nowrap; }
+.cmp-dd-alt { font-size: 13px; color: var(--color-text-tertiary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cmp-dd-cat { flex-shrink: 0; font-size: 12px; color: var(--color-text-tertiary); }
+.cmp-dd-empty { padding: 10px 12px; color: var(--color-text-tertiary); font-size: 14px; }
+.cmp-msg { display: none; position: absolute; top: calc(100% + 4px); left: 0; font-size: 13px; color: #f0c9a8; }
+
+.cmp-clear {
+  font-size: 13px; padding: 5px 12px; border-radius: var(--radius-md); cursor: pointer;
+  background: none; border: 0.5px solid var(--color-border); color: var(--color-text-tertiary); font-family: var(--font-sans);
+}
+.cmp-clear:hover { color: var(--color-text-secondary); border-color: var(--color-text-tertiary); }
+
+.cmp-body { padding: 1.5rem 2rem 3rem; flex: 1; }
+.cmp-empty { max-width: 520px; margin: 3rem auto; text-align: center; color: var(--color-text-secondary); }
+.cmp-empty-title { font-size: 22px; color: var(--color-text-primary); margin-bottom: 8px; }
+.cmp-empty p { font-size: 15px; line-height: 1.6; }
+
+/* table: every row is its own grid with the same columns */
+.cmp-table { border: 0.5px solid var(--color-border); border-radius: var(--radius-lg, 12px); }
+.cmp-row {
+  display: grid; grid-template-columns: 150px repeat(var(--cmp-n), minmax(0, 1fr));
+  border-top: 0.5px solid #232323;
+}
+.cmp-row:first-child { border-top: none; }
+.cmp-label { padding: 12px 14px; font-size: 13px; letter-spacing: 0.04em; color: var(--color-text-tertiary); }
+.cmp-zh .cmp-label { font-family: 'LXGW WenKai', serif; font-size: 16px; letter-spacing: 0; }
+.cmp-cell { padding: 12px 14px; font-size: 15px; line-height: 1.55; color: var(--color-text-primary); border-left: 0.5px solid #1e1e1e; min-width: 0; }
+.cmp-zh .cmp-cell { font-family: 'LXGW WenKai', serif; font-size: 17px; }
+.cmp-muted { color: var(--color-text-tertiary); }
+.zh { font-family: 'LXGW WenKai', serif; }
+
+.cmp-head { position: sticky; top: var(--cmp-sticky-top, 0px); z-index: 5; background: #0d0d0d; border-radius: var(--radius-lg, 12px) var(--radius-lg, 12px) 0 0; }
+.cmp-head-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.cmp-name { font-size: 19px; font-weight: 500; color: var(--color-text-primary); text-decoration: none; line-height: 1.3; }
+.cmp-name.zh { font-size: 22px; }
+.cmp-name:hover { color: var(--archive-gold-soft, #d0aa6b); }
+.cmp-alt { font-size: 14px; color: var(--color-text-tertiary); margin: 2px 0 8px; }
+.cmp-alt.zh { font-size: 16px; }
+.cmp-chip { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 20px; background: #1a1a1a; color: var(--color-text-tertiary); font-family: var(--font-sans); }
+.cmp-remove { background: none; border: none; color: var(--color-text-tertiary); cursor: pointer; padding: 2px; font-size: 16px; line-height: 1; }
+.cmp-remove:hover { color: var(--color-text-primary); }
+
+.cmp-bc { font-size: 14px; color: var(--archive-gold-soft, #d0aa6b); }
+.cmp-zh .cmp-bc { font-size: 16px; }
+.cmp-bc-sep { color: var(--color-text-tertiary); margin: 0 5px; }
+.cmp-bc-self { color: var(--color-text-primary); }
+
+.cmp-grade { display: flex; align-items: flex-end; gap: 12px; margin: 2px 0 6px; }
+.cmp-grade-bar { display: flex; align-items: flex-end; gap: 3px; height: 30px; }
+.cmp-grade-step { width: 9px; border-radius: 2px 2px 1px 1px; background: #242424; }
+.cmp-grade-step.lit { background: rgba(208,170,107,0.45); }
+.cmp-grade-step.top { background: var(--archive-gold-soft, #d0aa6b); }
+.cmp-grade-num { font-size: 26px; line-height: 1; font-weight: 500; color: var(--archive-gold-soft, #d0aa6b); }
+.cmp-grade-text { font-size: 14px; color: var(--color-text-secondary); }
+
+.cmp-names { background: rgba(255,255,255,0.012); }
+.cmp-kingdoms { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: 10px; }
+.cmp-kingdoms .pill {
+  font-size: 14px; background: transparent; border: 1px solid #2c2c2c;
+  color: var(--color-text-tertiary); opacity: 0.7;
+}
+.cmp-kingdoms .pill:hover { opacity: 1; }
+.cmp-kingdoms .pill .ti { font-size: 13px; }
+.cmp-kingdoms .pill.on { opacity: 1; font-weight: 500; }
+.cmp-kingdoms .pill-kingdom-wei.on { background: rgba(110,193,255,0.22); border-color: #6EC1FF; color: #d6eeff; }
+.cmp-kingdoms .pill-kingdom-shu.on { background: rgba(110,212,160,0.22); border-color: #6ED4A0; color: #d4f5e3; }
+.cmp-kingdoms .pill-kingdom-wu.on  { background: rgba(212,128,122,0.24); border-color: #D4807A; color: #fadcd9; }
+.cmp-name-pair { display: flex; flex-direction: column; margin-bottom: 8px; }
+.cmp-name-pair:last-child { margin-bottom: 0; }
+.cmp-name-alt { font-size: 13px; color: var(--color-text-tertiary); }
+.cmp-name-alt.zh { font-size: 15px; }
+
+.cmp-prose p { margin: 0 0 6px; }
+.cmp-prose p:last-child { margin-bottom: 0; }
+.cmp-notes summary { cursor: pointer; color: var(--color-text-tertiary); font-size: 14px; }
+.cmp-notes[open] summary { margin-bottom: 6px; }
+.cmp-notes p { font-size: 14px; color: var(--color-text-secondary); }
+
+/* muted scrollbars (page, swipe strip, picker) instead of the browser's bright default */
+html:has(.cmp-body), .cmp-scroll, .cmp-dropdown {
+  scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.16) transparent;
+}
+html:has(.cmp-body)::-webkit-scrollbar, .cmp-scroll::-webkit-scrollbar, .cmp-dropdown::-webkit-scrollbar { width: 8px; height: 6px; }
+html:has(.cmp-body)::-webkit-scrollbar-track, .cmp-scroll::-webkit-scrollbar-track, .cmp-dropdown::-webkit-scrollbar-track { background: transparent; }
+html:has(.cmp-body)::-webkit-scrollbar-thumb, .cmp-scroll::-webkit-scrollbar-thumb, .cmp-dropdown::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+html:has(.cmp-body)::-webkit-scrollbar-thumb:hover, .cmp-scroll::-webkit-scrollbar-thumb:hover, .cmp-dropdown::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.28); }
+
+/* ── mobile: labels above rows, two columns visible, swipe for the rest ── */
+@media (max-width: 720px) {
+  .cmp-toolbar { padding: 0.75rem 16px; gap: 10px; }
+  .cmp-picker { min-width: 100%; max-width: none; }
+  .cmp-body { padding: 1rem 0 2.5rem; }
+  .cmp-scroll { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 0 16px; }
+  .cmp-table { width: max-content; min-width: 100%; }
+  .cmp-row { grid-template-columns: repeat(var(--cmp-n), calc((100vw - 40px) / 2)); }
+  .cmp-label {
+    grid-column: 1 / -1; position: sticky; left: 0; width: calc(100vw - 34px);
+    padding: 10px 12px 2px; background: #0b0b0b;
+  }
+  .cmp-head .cmp-label { display: none; }
+  .cmp-head { position: static; }
+  .cmp-cell { scroll-snap-align: start; padding: 8px 12px 12px; font-size: 14px; }
+  .cmp-zh .cmp-cell { font-size: 16px; }
+  .cmp-kingdoms { flex-direction: row; display: inline-flex; margin: 0 0 0 10px; vertical-align: middle; }
+  .cmp-name { font-size: 17px; }
+  .cmp-name.zh { font-size: 19px; }
+}

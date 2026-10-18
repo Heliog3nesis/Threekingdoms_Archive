@@ -3405,20 +3405,985 @@
     },
     "aliases": []
   },
-  "史渙": {
-    "name": {
-      "zht": "史渙",
-      "zhs": "史涣",
-      "en": "Shi Huan"
-    },
-    "courtesyName": null,
-    "aliases": []
-  },
   "孔羨": {
     "name": {
       "zht": "孔羨",
       "zhs": "孔羡",
       "en": "Kong Xian"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯嬰": {
+    "name": {
+      "zht": "夏侯嬰",
+      "zhs": "夏侯婴",
+      "en": "Xiahou Ying"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "韓浩（元嗣）": {
+    "name": {
+      "zht": "韓浩",
+      "zhs": "韩浩",
+      "en": "Han Hao"
+    },
+    "courtesyName": {
+      "zht": "元嗣",
+      "zhs": "元嗣",
+      "en": "Yuansi"
+    },
+    "aliases": []
+  },
+  "張邈（孟卓）": {
+    "name": {
+      "zht": "張邈",
+      "zhs": "张邈",
+      "en": "Zhang Miao"
+    },
+    "courtesyName": {
+      "zht": "孟卓",
+      "zhs": "孟卓",
+      "en": "Mengzhuo"
+    },
+    "aliases": []
+  },
+  "王匡（公節）": {
+    "name": {
+      "zht": "王匡",
+      "zhs": "王匡",
+      "en": "Wang Kuang"
+    },
+    "courtesyName": {
+      "zht": "公節",
+      "zhs": "公节",
+      "en": "Gongjie"
+    },
+    "aliases": []
+  },
+  "杜陽": {
+    "name": {
+      "zht": "杜陽",
+      "zhs": "杜阳",
+      "en": "Du Yang"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "韓榮": {
+    "name": {
+      "zht": "韓榮",
+      "zhs": "韩荣",
+      "en": "Han Rong"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "史靜": {
+    "name": {
+      "zht": "史靜",
+      "zhs": "史静",
+      "en": "Shi Jing"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯廉": {
+    "name": {
+      "zht": "夏侯廉",
+      "zhs": "夏侯廉",
+      "en": "Xiahou Lian"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯充": {
+    "name": {
+      "zht": "夏侯充",
+      "zhs": "夏侯充",
+      "en": "Xiahou Chong"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯廙": {
+    "name": {
+      "zht": "夏侯廙",
+      "zhs": "夏侯廙",
+      "en": "Xiahou Yi"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯劭": {
+    "name": {
+      "zht": "夏侯劭",
+      "zhs": "夏侯劭",
+      "en": "Xiahou Shao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯楙（子林）": {
+    "name": {
+      "zht": "夏侯楙",
+      "zhs": "夏侯楙",
+      "en": "Xiahou Mao"
+    },
+    "courtesyName": {
+      "zht": "子林",
+      "zhs": "子林",
+      "en": "Zilin"
+    },
+    "aliases": []
+  },
+  "清河公主": {
+    "name": {
+      "zht": "清河公主",
+      "zhs": "清河公主",
+      "en": "Princess of Qinghe"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "段默": {
+    "name": {
+      "zht": "段默",
+      "zhs": "段默",
+      "en": "Duan Mo"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯子臧": {
+    "name": {
+      "zht": "夏侯子臧",
+      "zhs": "夏侯子臧",
+      "en": "Xiahou Zizang"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯子江": {
+    "name": {
+      "zht": "夏侯子江",
+      "zhs": "夏侯子江",
+      "en": "Xiahou Zijiang"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯佐": {
+    "name": {
+      "zht": "夏侯佐",
+      "zhs": "夏侯佐",
+      "en": "Xiahou Zuo"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯霸（仲權）": {
+    "name": {
+      "zht": "夏侯霸",
+      "zhs": "夏侯霸",
+      "en": "Xiahou Ba"
+    },
+    "courtesyName": {
+      "zht": "仲權",
+      "zhs": "仲权",
+      "en": "Zhongquan"
+    },
+    "aliases": []
+  },
+  "雷緒": {
+    "name": {
+      "zht": "雷緒",
+      "zhs": "雷绪",
+      "en": "Lei Xu"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "路招": {
+    "name": {
+      "zht": "路招",
+      "zhs": "路招",
+      "en": "Lu Zhao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "劉雄": {
+    "name": {
+      "zht": "劉雄",
+      "zhs": "刘雄",
+      "en": "Liu Xiong"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "韋康（元將）": {
+    "name": {
+      "zht": "韋康",
+      "zhs": "韦康",
+      "en": "Wei Kang"
+    },
+    "courtesyName": {
+      "zht": "元將",
+      "zhs": "元将",
+      "en": "Yuanjiang"
+    },
+    "aliases": []
+  },
+  "趙衢": {
+    "name": {
+      "zht": "趙衢",
+      "zhs": "赵衢",
+      "en": "Zhao Qu"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "姜叙（伯奕）": {
+    "name": {
+      "zht": "姜叙",
+      "zhs": "姜叙",
+      "en": "Jiang Xu"
+    },
+    "courtesyName": {
+      "zht": "伯奕",
+      "zhs": "伯奕",
+      "en": "Boyi"
+    },
+    "aliases": []
+  },
+  "千萬": {
+    "name": {
+      "zht": "千萬",
+      "zhs": "千万",
+      "en": "Qianwan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "宋建": {
+    "name": {
+      "zht": "宋建",
+      "zhs": "宋建",
+      "en": "Song Jian"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯衡": {
+    "name": {
+      "zht": "夏侯衡",
+      "zhs": "夏侯衡",
+      "en": "Xiahou Heng"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯績": {
+    "name": {
+      "zht": "夏侯績",
+      "zhs": "夏侯绩",
+      "en": "Xiahou Ji"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯襃": {
+    "name": {
+      "zht": "夏侯襃",
+      "zhs": "夏侯褒",
+      "en": "Xiahou Bao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯威（季權）": {
+    "name": {
+      "zht": "夏侯威",
+      "zhs": "夏侯威",
+      "en": "Xiahou Wei"
+    },
+    "courtesyName": {
+      "zht": "季權",
+      "zhs": "季权",
+      "en": "Jiquan"
+    },
+    "aliases": []
+  },
+  "夏侯惠（稚權）": {
+    "name": {
+      "zht": "夏侯惠",
+      "zhs": "夏侯惠",
+      "en": "Xiahou Hui"
+    },
+    "courtesyName": {
+      "zht": "稚權",
+      "zhs": "稚权",
+      "en": "Zhiquan"
+    },
+    "aliases": []
+  },
+  "夏侯和（義權）": {
+    "name": {
+      "zht": "夏侯和",
+      "zhs": "夏侯和",
+      "en": "Xiahou He"
+    },
+    "courtesyName": {
+      "zht": "義權",
+      "zhs": "义权",
+      "en": "Yiquan"
+    },
+    "aliases": []
+  },
+  "夏侯稱（叔權）": {
+    "name": {
+      "zht": "夏侯稱",
+      "zhs": "夏侯称",
+      "en": "Xiahou Cheng"
+    },
+    "courtesyName": {
+      "zht": "叔權",
+      "zhs": "叔权",
+      "en": "Shuquan"
+    },
+    "aliases": []
+  },
+  "夏侯榮（幼權）": {
+    "name": {
+      "zht": "夏侯榮",
+      "zhs": "夏侯荣",
+      "en": "Xiahou Rong"
+    },
+    "courtesyName": {
+      "zht": "幼權",
+      "zhs": "幼权",
+      "en": "Youquan"
+    },
+    "aliases": []
+  },
+  "夏侯駿": {
+    "name": {
+      "zht": "夏侯駿",
+      "zhs": "夏侯骏",
+      "en": "Xiahou Jun"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯莊": {
+    "name": {
+      "zht": "夏侯莊",
+      "zhs": "夏侯庄",
+      "en": "Xiahou Zhuang"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "夏侯湛（孝若）": {
+    "name": {
+      "zht": "夏侯湛",
+      "zhs": "夏侯湛",
+      "en": "Xiahou Zhan"
+    },
+    "courtesyName": {
+      "zht": "孝若",
+      "zhs": "孝若",
+      "en": "Xiaoruo"
+    },
+    "aliases": []
+  },
+  "羊徽瑜": {
+    "name": {
+      "zht": "羊徽瑜",
+      "zhs": "羊徽瑜",
+      "en": "Yang Huiyu"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹爽（昭伯）": {
+    "name": {
+      "zht": "曹爽",
+      "zhs": "曹爽",
+      "en": "Cao Shuang"
+    },
+    "courtesyName": {
+      "zht": "昭伯",
+      "zhs": "昭伯",
+      "en": "Zhaobo"
+    },
+    "aliases": []
+  },
+  "夏侯玄（泰初）": {
+    "name": {
+      "zht": "夏侯玄",
+      "zhs": "夏侯玄",
+      "en": "Xiahou Xuan"
+    },
+    "courtesyName": {
+      "zht": "泰初",
+      "zhs": "泰初",
+      "en": "Taichu"
+    },
+    "aliases": []
+  },
+  "曹芳（蘭卿）": {
+    "name": {
+      "zht": "曹芳",
+      "zhs": "曹芳",
+      "en": "Cao Fang"
+    },
+    "courtesyName": {
+      "zht": "蘭卿",
+      "zhs": "兰卿",
+      "en": "Lanqing"
+    },
+    "aliases": []
+  },
+  "劉禪（公嗣）": {
+    "name": {
+      "zht": "劉禪",
+      "zhs": "刘禅",
+      "en": "Liu Shan"
+    },
+    "courtesyName": {
+      "zht": "公嗣",
+      "zhs": "公嗣",
+      "en": "Gongsi"
+    },
+    "aliases": []
+  },
+  "夏侯氏": {
+    "name": {
+      "zht": "夏侯氏",
+      "zhs": "夏侯氏",
+      "en": "Lady Xiahou"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "鍾毓（稚叔）": {
+    "name": {
+      "zht": "鍾毓",
+      "zhs": "钟毓",
+      "en": "Zhong Yu"
+    },
+    "courtesyName": {
+      "zht": "稚叔",
+      "zhs": "稚叔",
+      "en": "Zhishu"
+    },
+    "aliases": []
+  },
+  "曹褒": {
+    "name": {
+      "zht": "曹褒",
+      "zhs": "曹褒",
+      "en": "Cao Bao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹熾": {
+    "name": {
+      "zht": "曹熾",
+      "zhs": "曹炽",
+      "en": "Cao Chi"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹彰（子文）": {
+    "name": {
+      "zht": "曹彰",
+      "zhs": "曹彰",
+      "en": "Cao Zhang"
+    },
+    "courtesyName": {
+      "zht": "子文",
+      "zhs": "子文",
+      "en": "Ziwen"
+    },
+    "aliases": []
+  },
+  "呂由": {
+    "name": {
+      "zht": "呂由",
+      "zhs": "吕由",
+      "en": "Lü You"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "劉何": {
+    "name": {
+      "zht": "劉何",
+      "zhs": "刘何",
+      "en": "Liu He"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "韓荀": {
+    "name": {
+      "zht": "韓荀",
+      "zhs": "韩荀",
+      "en": "Han Xun"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "牛金": {
+    "name": {
+      "zht": "牛金",
+      "zhs": "牛金",
+      "en": "Niu Jin"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "田銀": {
+    "name": {
+      "zht": "田銀",
+      "zhs": "田银",
+      "en": "Tian Yin"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "蘇伯": {
+    "name": {
+      "zht": "蘇伯",
+      "zhs": "苏伯",
+      "en": "Su Bo"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "侯音": {
+    "name": {
+      "zht": "侯音",
+      "zhs": "侯音",
+      "en": "Hou Yin"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "陳邵": {
+    "name": {
+      "zht": "陳邵",
+      "zhs": "陈邵",
+      "en": "Chen Shao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "高遷": {
+    "name": {
+      "zht": "高遷",
+      "zhs": "高迁",
+      "en": "Gao Qian"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹泰": {
+    "name": {
+      "zht": "曹泰",
+      "zhs": "曹泰",
+      "en": "Cao Tai"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹初": {
+    "name": {
+      "zht": "曹初",
+      "zhs": "曹初",
+      "en": "Cao Chu"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹楷": {
+    "name": {
+      "zht": "曹楷",
+      "zhs": "曹楷",
+      "en": "Cao Kai"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹範": {
+    "name": {
+      "zht": "曹範",
+      "zhs": "曹范",
+      "en": "Cao Fan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹演": {
+    "name": {
+      "zht": "曹演",
+      "zhs": "曹演",
+      "en": "Cao Yan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹亮": {
+    "name": {
+      "zht": "曹亮",
+      "zhs": "曹亮",
+      "en": "Cao Liang"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "陳溫（元悌）": {
+    "name": {
+      "zht": "陳溫",
+      "zhs": "陈温",
+      "en": "Chen Wen"
+    },
+    "courtesyName": {
+      "zht": "元悌",
+      "zhs": "元悌",
+      "en": "Yuanti"
+    },
+    "aliases": []
+  },
+  "卞太后": {
+    "name": {
+      "zht": "卞太后",
+      "zhs": "卞太后",
+      "en": "Empress Dowager Bian"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "郭皇后": {
+    "name": {
+      "zht": "郭皇后",
+      "zhs": "郭皇后",
+      "en": "Empress Guo"
+    },
+    "courtesyName": null,
+    "aliases": [
+      "郭后"
+    ]
+  },
+  "曹馥": {
+    "name": {
+      "zht": "曹馥",
+      "zhs": "曹馥",
+      "en": "Cao Fu"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹震": {
+    "name": {
+      "zht": "曹震",
+      "zhs": "曹震",
+      "en": "Cao Zhen"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹瑜": {
+    "name": {
+      "zht": "曹瑜",
+      "zhs": "曹瑜",
+      "en": "Cao Yu"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹鼎": {
+    "name": {
+      "zht": "曹鼎",
+      "zhs": "曹鼎",
+      "en": "Cao Ding"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "吳蘭": {
+    "name": {
+      "zht": "吳蘭",
+      "zhs": "吴兰",
+      "en": "Wu Lan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "審悳": {
+    "name": {
+      "zht": "審悳",
+      "zhs": "审悳",
+      "en": "Shen De"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "韓綜": {
+    "name": {
+      "zht": "韓綜",
+      "zhs": "韩综",
+      "en": "Han Zong"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "翟丹": {
+    "name": {
+      "zht": "翟丹",
+      "zhs": "翟丹",
+      "en": "Zhai Dan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹肇（長思）": {
+    "name": {
+      "zht": "曹肇",
+      "zhs": "曹肇",
+      "en": "Cao Zhao"
+    },
+    "courtesyName": {
+      "zht": "長思",
+      "zhs": "长思",
+      "en": "Changsi"
+    },
+    "aliases": []
+  },
+  "曹興": {
+    "name": {
+      "zht": "曹興",
+      "zhs": "曹兴",
+      "en": "Cao Xing"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹纂": {
+    "name": {
+      "zht": "曹纂",
+      "zhs": "曹纂",
+      "en": "Cao Zuan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹攄（顏遠）": {
+    "name": {
+      "zht": "曹攄",
+      "zhs": "曹摅",
+      "en": "Cao Shu"
+    },
+    "courtesyName": {
+      "zht": "顏遠",
+      "zhs": "颜远",
+      "en": "Yanyuan"
+    },
+    "aliases": []
+  },
+  "曹宇（彭祖）": {
+    "name": {
+      "zht": "曹宇",
+      "zhs": "曹宇",
+      "en": "Cao Yu"
+    },
+    "courtesyName": {
+      "zht": "彭祖",
+      "zhs": "彭祖",
+      "en": "Pengzu"
+    },
+    "aliases": []
+  },
+  "司馬冏（景治）": {
+    "name": {
+      "zht": "司馬冏",
+      "zhs": "司马冏",
+      "en": "Sima Jiong"
+    },
+    "courtesyName": {
+      "zht": "景治",
+      "zhs": "景治",
+      "en": "Jingzhi"
+    },
+    "aliases": []
+  },
+  "左思（太沖）": {
+    "name": {
+      "zht": "左思",
+      "zhs": "左思",
+      "en": "Zuo Si"
+    },
+    "courtesyName": {
+      "zht": "太沖",
+      "zhs": "太冲",
+      "en": "Taichong"
+    },
+    "aliases": []
+  },
+  "曹邵": {
+    "name": {
+      "zht": "曹邵",
+      "zhs": "曹邵",
+      "en": "Cao Shao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "秦伯南": {
+    "name": {
+      "zht": "秦伯南",
+      "zhs": "秦伯南",
+      "en": "Qin Bonan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "黃琬（子琰）": {
+    "name": {
+      "zht": "黃琬",
+      "zhs": "黄琬",
+      "en": "Huang Wan"
+    },
+    "courtesyName": {
+      "zht": "子琰",
+      "zhs": "子琰",
+      "en": "Ziyan"
+    },
+    "aliases": []
+  },
+  "高詳": {
+    "name": {
+      "zht": "高詳",
+      "zhs": "高详",
+      "en": "Gao Xiang"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "費耀": {
+    "name": {
+      "zht": "費耀",
+      "zhs": "费耀",
+      "en": "Fei Yao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "陳羣（長文）": {
+    "name": {
+      "zht": "陳羣",
+      "zhs": "陈群",
+      "en": "Chen Qun"
+    },
+    "courtesyName": {
+      "zht": "長文",
+      "zhs": "长文",
+      "en": "Changwen"
+    },
+    "aliases": []
+  },
+  "楊條": {
+    "name": {
+      "zht": "楊條",
+      "zhs": "杨条",
+      "en": "Yang Tiao"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "王生": {
+    "name": {
+      "zht": "王生",
+      "zhs": "王生",
+      "en": "Wang Sheng"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹遵": {
+    "name": {
+      "zht": "曹遵",
+      "zhs": "曹遵",
+      "en": "Cao Zun"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "朱讚": {
+    "name": {
+      "zht": "朱讚",
+      "zhs": "朱赞",
+      "en": "Zhu Zan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹羲": {
+    "name": {
+      "zht": "曹羲",
+      "zhs": "曹羲",
+      "en": "Cao Xi"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹訓": {
+    "name": {
+      "zht": "曹訓",
+      "zhs": "曹训",
+      "en": "Cao Xun"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹則": {
+    "name": {
+      "zht": "曹則",
+      "zhs": "曹则",
+      "en": "Cao Ze"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹彥": {
+    "name": {
+      "zht": "曹彥",
+      "zhs": "曹彦",
+      "en": "Cao Yan"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹皚": {
+    "name": {
+      "zht": "曹皚",
+      "zhs": "曹皑",
+      "en": "Cao Ai"
+    },
+    "courtesyName": null,
+    "aliases": []
+  },
+  "曹彬": {
+    "name": {
+      "zht": "曹彬",
+      "zhs": "曹彬",
+      "en": "Cao Bin"
     },
     "courtesyName": null,
     "aliases": []

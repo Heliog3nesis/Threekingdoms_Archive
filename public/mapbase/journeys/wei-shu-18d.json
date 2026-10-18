@@ -411,93 +411,310 @@
   "relationships": [
     {
       "from": "文聘（仲業）",
-      "to": "劉表",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p1"
+      "to": "劉表（景升）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p1",
+          "text": {
+            "en": "Wen Pin served as a general under Liu Biao, guarding his northern front.",
+            "zht": "文聘任劉表部將，鎮守其北境。",
+            "zhs": "文聘任刘表部将，镇守其北境。"
+          }
+        }
+      ]
     },
     {
-      "from": "劉表",
+      "from": "劉表（景升）",
       "to": "劉琮",
-      "type": "father-son",
-      "passageId": "ws18d-p1"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p1",
+          "text": {
+            "en": "Liu Cong succeeded his father Liu Biao as governor of Jing Province.",
+            "zht": "劉琮繼承其父劉表，成為荊州之主。",
+            "zhs": "刘琮继承其父刘表，成为荆州之主。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
       "to": "劉琮",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p1"
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p1",
+          "text": {
+            "en": "When Liu Cong surrendered Jing Province to Cao Cao and summoned Wen Pin to join him, Wen Pin declined, saying he could only await punishment for failing to preserve the province.",
+            "zht": "劉琮舉荊州降曹操，召文聘同行，文聘婉拒，稱自己未能保全州境，只能待罪。",
+            "zhs": "刘琮举荆州降曹操，召文聘同行，文聘婉拒，称自己未能保全州境，只能待罪。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "曹操",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p2"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p2",
+          "text": {
+            "en": "When Wen Pin finally came before Cao Cao and explained his grief at having failed to preserve Jing Province, Cao Cao was deeply moved and declared him a truly loyal servant of the state.",
+            "zht": "文聘終於前來拜見曹操，訴說未能保全荊州的愧疚，曹操深受感動，稱讚他真乃國家忠臣。",
+            "zhs": "文聘终于前来拜见曹操，诉说未能保全荆州的愧疚，曹操深受感动，称赞他真乃国家忠臣。"
+          }
+        },
+        {
+          "passageId": "ws18d-p3",
+          "text": {
+            "en": "After joining Cao Chun in pursuing Liu Bei at Changban, Wen Pin was made Grand Administrator of Jiangxia, placed in command of the northern forces, and enfeoffed as Marquis Within the Pass.",
+            "zht": "文聘隨曹純於長阪追討劉備後，獲任江夏太守，統領北兵，賜爵關內侯。",
+            "zhs": "文聘随曹纯于长阪追讨刘备后，获任江夏太守，统领北兵，赐爵关内侯。"
+          },
+          "title": {
+            "en": "Grand Administrator of Jiangxia, Marquis Within the Pass",
+            "zht": "江夏太守、關內侯",
+            "zhs": "江夏太守、关内侯"
+          }
+        },
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Together with Yue Jin, Wen Pin campaigned against Guan Yu at Xunkou and burned his supply ships at Jingcheng, for which he was advanced to Yanshou Neighbourhood Marquis and General Who Suppresses the Rebels.",
+            "zht": "文聘與樂進於尋口討關羽，並於荊城焚燬其船，因功進封延壽亭侯，加討逆將軍。",
+            "zhs": "文聘与乐进于寻口讨关羽，并于荆城焚毁其船，因功进封延寿亭侯，加讨逆将军。"
+          },
+          "title": {
+            "en": "Yanshou Neighbourhood Marquis, General Who Suppresses the Rebels",
+            "zht": "延壽亭侯、討逆將軍",
+            "zhs": "延寿亭侯、讨逆将军"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "曹純",
-      "type": "comrades",
-      "passageId": "ws18d-p3"
+      "to": "曹純（子和）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p3",
+          "text": {
+            "en": "Wen Pin joined Cao Chun in pursuing Liu Bei at Changban.",
+            "zht": "文聘與曹純於長阪共同追討劉備。",
+            "zhs": "文聘与曹纯于长阪共同追讨刘备。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "劉備",
-      "type": "battlefield-opponents",
-      "passageId": "ws18d-p3"
+      "to": "劉備（玄德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p3",
+          "text": {
+            "en": "Wen Pin pursued and attacked Liu Bei at Changban.",
+            "zht": "文聘於長阪追擊劉備。",
+            "zhs": "文聘于长阪追击刘备。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "樂進",
-      "type": "comrades",
-      "passageId": "ws18d-p5"
+      "to": "樂進（文謙）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Together with Yue Jin, Wen Pin campaigned against Guan Yu at Xunkou.",
+            "zht": "文聘與樂進於尋口討伐關羽。",
+            "zhs": "文聘与乐进于寻口讨伐关羽。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "關羽",
-      "type": "battlefield-opponents",
-      "passageId": "ws18d-p5"
+      "to": "關羽（雲長）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Wen Pin campaigned against Guan Yu at Xunkou, attacking his supply train and burning his ships at Jingcheng.",
+            "zht": "文聘於尋口討伐關羽，攻其輜重，於荊城焚燬其船。",
+            "zhs": "文聘于寻口讨伐关羽，攻其辎重，于荆城焚毁其船。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "曹丕",
-      "type": "lord-subordinate",
-      "passageId": "ws18d-p5"
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "When Cao Pi ascended the throne, Wen Pin was advanced to Chang'an Township Marquis and made Provisional Bearer of the Tally.",
+            "zht": "文帝踐阼，文聘進爵長安鄉侯，假節。",
+            "zhs": "文帝践阼，文聘进爵长安乡侯，假节。"
+          },
+          "title": {
+            "en": "Chang'an Township Marquis, Provisional Bearer of the Tally",
+            "zht": "長安鄉侯、假節",
+            "zhs": "长安乡侯、假节"
+          }
+        },
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "After besieging Jiangling with Xiahou Shang, Wen Pin held Shifan at Miankou with an independent command, and for his merits defending against the enemy was promoted General of the Rear and enfeoffed Marquis of Xinye.",
+            "zht": "文聘與夏侯尚圍江陵後，別屯沔口，據守石梵，自當一隊，禦賊有功，遷後將軍，封新野侯。",
+            "zhs": "文聘与夏侯尚围江陵后，别屯沔口，据守石梵，自当一队，御贼有功，迁后将军，封新野侯。"
+          },
+          "title": {
+            "en": "General of the Rear, Marquis of Xinye",
+            "zht": "後將軍、新野侯",
+            "zhs": "后将军、新野侯"
+          }
+        },
+        {
+          "passageId": "ws18d-p5",
+          "text": {
+            "en": "For successfully defending Shiyang against Sun Quan's siege, Wen Pin's fief was increased by five hundred households, to nineteen hundred in total.",
+            "zht": "文聘力守石陽卻敵有功，增邑五百戶，共計一千九百戶。",
+            "zhs": "文聘力守石阳却敌有功，增邑五百户，共计一千九百户。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "夏侯尚",
-      "type": "comrades",
-      "passageId": "ws18d-p5"
+      "to": "夏侯尚（伯仁）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p4",
+          "text": {
+            "en": "Together with Xiahou Shang, Wen Pin besieged Jiangling.",
+            "zht": "文聘與夏侯尚共同圍攻江陵。",
+            "zhs": "文聘与夏侯尚共同围攻江陵。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "孫權",
-      "type": "battlefield-opponents",
-      "passageId": "ws18d-p6"
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18d-p5",
+          "text": {
+            "en": "Sun Quan personally led fifty thousand troops to besiege Wen Pin at Shiyang; Wen Pin held firm for over twenty days until Sun Quan withdrew, then pursued and defeated the retreating Wu troops.",
+            "zht": "孫權親率五萬大軍圍攻文聘於石陽，文聘堅守二十餘日，孫權方才撤退，文聘更追擊破敵。",
+            "zhs": "孙权亲率五万大军围攻文聘于石阳，文聘坚守二十余日，孙权方才撤退，文聘更追击破敌。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "岱",
-      "type": "father-son",
-      "passageId": "ws18d-p9"
+      "to": "文岱",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "Wen Dai was Wen Pin's son, enfeoffed as a marquis with part of his father's fief; he died before his father.",
+            "zht": "文岱是文聘之子，獲分其父食邑封為列侯，先於其父去世。",
+            "zhs": "文岱是文聘之子，获分其父食邑封为列侯，先于其父去世。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "厚",
-      "type": "uncle-nephew",
-      "passageId": "ws18d-p9"
+      "to": "文厚",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "Wen Hou was Wen Pin's nephew, granted the rank of Marquis Within the Pass.",
+            "zht": "文厚是文聘之姪，獲賜爵關內侯。",
+            "zhs": "文厚是文聘之侄，获赐爵关内侯。"
+          }
+        }
+      ]
     },
     {
       "from": "文聘（仲業）",
-      "to": "休",
-      "type": "adoptive-father-son",
-      "passageId": "ws18d-p9"
+      "to": "文休",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "As his son Wen Dai had already died, Wen Pin's adopted son Wen Xiu succeeded him upon his own death.",
+            "zht": "因子文岱已先亡，文聘去世後由養子文休嗣位。",
+            "zhs": "因子文岱已先亡，文聘去世后由养子文休嗣位。"
+          }
+        }
+      ]
     },
     {
-      "from": "休",
-      "to": "武",
-      "type": "father-son",
-      "passageId": "ws18d-p9"
+      "from": "文休",
+      "to": "文武",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18d-p6",
+          "text": {
+            "en": "Wen Wu succeeded his father Wen Xiu upon his death.",
+            "zht": "文休去世後，子文武嗣位。",
+            "zhs": "文休去世后，子文武嗣位。"
+          }
+        }
+      ]
     }
   ]
 }

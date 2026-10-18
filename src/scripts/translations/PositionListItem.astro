@@ -22,7 +22,7 @@ const allNames = [
   ...(pos.name.wei ?? []),
   ...(pos.name.shu ?? []),
   ...(pos.name.wu  ?? []),
-];
+].flatMap((n: any) => [n, ...(n?.aliases ?? [])]);
 
 const nameEn  = allNames.map((n: any) => stripHtml(n.en)).join(' ').toLowerCase();
 const nameZht = allNames.map((n: any) => stripHtml(n.zht ?? n.zhs)).join(' ');

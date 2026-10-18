@@ -1,0 +1,1864 @@
+{
+  "chapter": {
+    "id": "wei-shu-9c",
+    "order": 9,
+    "label": {
+      "zht": "曹仁傳 · 附曹純",
+      "zhs": "曹仁传 · 附曹纯",
+      "en": "Biography of Cao Ren · with Cao Chun"
+    },
+    "title": {
+      "zht": "魏書九 · 曹仁傳 · 附曹純",
+      "zhs": "魏书九 · 曹仁传 · 附曹纯",
+      "en": "Book of Wei, Chapter 9 · Biography of Cao Ren · with Cao Chun"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 33.86080856,
+      "lng": 115.77227911,
+      "name": "Qiao",
+      "persons": [
+        "曹仁（子孝）",
+        "曹純（子和）"
+      ]
+    },
+    {
+      "kind": "water",
+      "id": "43",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "water",
+      "id": "39",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "8",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.35221866,
+      "lng": 117.93768412,
+      "name": "Fei",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.32124106,
+      "lng": 118.18296699,
+      "name": "Hua",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.7066027,
+      "lng": 120.21513573,
+      "name": "Jimo",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.1238282,
+      "lng": 118.35003654,
+      "name": "Kaiyang",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.3227675,
+      "lng": 115.46063374,
+      "name": "Juyang",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.029893,
+      "lng": 114.02211887,
+      "name": "Xuchang",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "85",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.16733518,
+      "lng": 113.32487537,
+      "name": "Shequan",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.45307799,
+      "lng": 113.52387993,
+      "name": "Mi",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 36.34516886,
+      "lng": 113.10383412,
+      "name": "Huguan",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.34078806,
+      "lng": 112.18710173,
+      "name": "Jiangling",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.59426174,
+      "lng": 110.32268475,
+      "name": "Tongguan",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "156",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.62795047,
+      "lng": 117.88668775,
+      "name": "Juchao",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.04746989,
+      "lng": 112.06874333,
+      "name": "Fancheng",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.98790226,
+      "lng": 112.53739567,
+      "name": "Wan",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.00162374,
+      "lng": 112.14985623,
+      "name": "Xiangyang",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.84240763,
+      "lng": 118.43140573,
+      "name": "Wujiang",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.92537649,
+      "lng": 117.12596313,
+      "name": "Hefei",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.2019282,
+      "lng": 117.97307792,
+      "name": "Ruxukou",
+      "persons": [
+        "曹仁（子孝）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.42565297,
+      "lng": 115.07977176,
+      "name": "Xiangyi",
+      "persons": [
+        "曹純（子和）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 38.0926547,
+      "lng": 116.68045911,
+      "name": "Nanpi",
+      "persons": [
+        "曹純（子和）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 41.4602169,
+      "lng": 120.39183453,
+      "name": "Liucheng",
+      "persons": [
+        "曹純（子和）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.87339199,
+      "lng": 112.03128322,
+      "name": "Changban",
+      "persons": [
+        "曹純（子和）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "曹仁（子孝）",
+      "name": {
+        "en": "Cao Ren",
+        "zht": "曹仁",
+        "zhs": "曹仁"
+      },
+      "courtesyName": {
+        "en": "Zixiao",
+        "zht": "子孝",
+        "zhs": "子孝"
+      },
+      "born": {
+        "era": {
+          "en": "1st year of Jianning",
+          "zht": "建寧元年",
+          "zhs": "建宁元年"
+        },
+        "year": 168
+      },
+      "died": {
+        "era": {
+          "en": "4th year of Huangchu",
+          "zht": "黄初四年",
+          "zhs": "黄初四年"
+        },
+        "year": 223
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Qiao",
+              "zht": "譙",
+              "zhs": "谯"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Huai River",
+              "zht": "淮水",
+              "zhs": "淮水"
+            },
+            {
+              "en": "Si River",
+              "zht": "泗水",
+              "zhs": "泗水"
+            }
+          ],
+          "position": [
+            {
+              "en": "Major of a Separate Command",
+              "zht": "別部司馬",
+              "zhs": "别部司马"
+            },
+            {
+              "en": "Acting Colonel Who Rouses the Vanguard",
+              "zht": "行厲鋒校尉",
+              "zhs": "行厉锋校尉"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "water",
+              "id": "43"
+            },
+            {
+              "kind": "water",
+              "id": "39"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Major of a Separate Command",
+              "zht": "別部司馬",
+              "zhs": "别部司马",
+              "url": null
+            },
+            {
+              "en": "Acting Colonel Who Rouses the Vanguard",
+              "zht": "行厲鋒校尉",
+              "zhs": "行厉锋校尉",
+              "url": "/translations/officials#glossary-acting"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "4th year of Chuping - 1st year of Jian'an",
+            "zht": "初平四年 - 建安元年",
+            "zhs": "初平四年 - 建安元年"
+          },
+          "year": "193 - 196",
+          "age": null,
+          "location": [
+            {
+              "en": "Xu Province",
+              "zht": "徐州",
+              "zhs": "徐州"
+            },
+            {
+              "en": "Fei",
+              "zht": "費",
+              "zhs": "费"
+            },
+            {
+              "en": "Hua",
+              "zht": "華",
+              "zhs": "华"
+            },
+            {
+              "en": "Jimo",
+              "zht": "即墨",
+              "zhs": "即墨"
+            },
+            {
+              "en": "Kaiyang",
+              "zht": "開陽",
+              "zhs": "开阳"
+            },
+            {
+              "en": "Juyang",
+              "zht": "句陽",
+              "zhs": "句阳"
+            },
+            {
+              "en": "Xuchang",
+              "zht": "許",
+              "zhs": "许"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守"
+            },
+            {
+              "en": "Gentleman Consultant",
+              "zht": "議郎",
+              "zhs": "议郎"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "8"
+            },
+            {
+              "kind": "town",
+              "lat": 35.35221866,
+              "lng": 117.93768412,
+              "name": "Fei"
+            },
+            {
+              "kind": "town",
+              "lat": 35.32124106,
+              "lng": 118.18296699,
+              "name": "Hua"
+            },
+            {
+              "kind": "town",
+              "lat": 36.7066027,
+              "lng": 120.21513573,
+              "name": "Jimo"
+            },
+            {
+              "kind": "town",
+              "lat": 35.1238282,
+              "lng": 118.35003654,
+              "name": "Kaiyang"
+            },
+            {
+              "kind": "town",
+              "lat": 35.3227675,
+              "lng": 115.46063374,
+              "name": "Juyang"
+            },
+            {
+              "kind": "town",
+              "lat": 34.029893,
+              "lng": 114.02211887,
+              "name": "Xuchang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator",
+              "zht": "太守",
+              "zhs": "太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "Gentleman Consultant",
+              "zht": "議郎",
+              "zhs": "议郎",
+              "url": "/translations/officials/ministers#-nine-ministers-i-182"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd - 3rd year of Jian'an",
+            "zht": "建安二年 - 三年",
+            "zhs": "建安二年 - 三年"
+          },
+          "year": "197 - 198",
+          "age": null,
+          "location": [
+            {
+              "en": "Nanyang",
+              "zht": "南陽",
+              "zhs": "南阳"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "85"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "4th - 5th year of Jian'an",
+            "zht": "建安四年 - 建安五年",
+            "zhs": "建安四年 - 建安五年"
+          },
+          "year": "199 - 200",
+          "age": null,
+          "location": [
+            {
+              "en": "Shequan",
+              "zht": "射犬",
+              "zhs": "射犬"
+            },
+            {
+              "en": "Mi",
+              "zht": "密縣",
+              "zhs": "密县"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.16733518,
+              "lng": 113.32487537,
+              "name": "Shequan"
+            },
+            {
+              "kind": "town",
+              "lat": 34.45307799,
+              "lng": 113.52387993,
+              "name": "Mi"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "10th - 14th year of Jian'an",
+            "zht": "建安十年 - 十四年",
+            "zhs": "建安十年 - 十四年"
+          },
+          "year": "205 - 209",
+          "age": null,
+          "location": [
+            {
+              "en": "Huguan",
+              "zht": "壺關",
+              "zhs": "壶关"
+            },
+            {
+              "en": "Jiangling",
+              "zht": "江陵",
+              "zhs": "江陵"
+            }
+          ],
+          "position": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯"
+            },
+            {
+              "en": "Acting General Who Conquers the South",
+              "zht": "行征南將軍",
+              "zhs": "行征南将军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 36.34516886,
+              "lng": 113.10383412,
+              "name": "Huguan"
+            },
+            {
+              "kind": "town",
+              "lat": 30.34078806,
+              "lng": 112.18710173,
+              "name": "Jiangling"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Capital Neighbourhood Marquis",
+              "zht": "都亭侯",
+              "zhs": "都亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            },
+            {
+              "en": "Acting General Who Conquers the South",
+              "zht": "行征南將軍",
+              "zhs": "行征南将军",
+              "url": "/translations/officials/military#conquering--garrisoning-065"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "16th year of Jian'an",
+            "zht": "建安十六年",
+            "zhs": "建安十六年"
+          },
+          "year": 211,
+          "age": null,
+          "location": [
+            {
+              "en": "Tongguan",
+              "zht": "潼關",
+              "zhs": "潼关"
+            },
+            {
+              "en": "Hejian",
+              "zht": "河間",
+              "zhs": "河间"
+            }
+          ],
+          "position": [
+            {
+              "en": "Acting General Who Pacifies the West",
+              "zht": "行安西將軍",
+              "zhs": "行安西将军"
+            },
+            {
+              "en": "Acting General of Brave Cavalry",
+              "zht": "行驍騎將軍",
+              "zhs": "行骁骑将军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.59426174,
+              "lng": 110.32268475,
+              "name": "Tongguan"
+            },
+            {
+              "kind": "admin",
+              "id": "156"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Acting General Who Pacifies the West",
+              "zht": "行安西將軍",
+              "zhs": "行安西将军",
+              "url": "/translations/officials/military#pacifying--subduing-093"
+            },
+            {
+              "en": "Acting General of Brave Cavalry",
+              "zht": "行驍騎將軍",
+              "zhs": "行骁骑将军",
+              "url": "/translations/officials/military#four-direction--misc-133"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "21st - 25th year of Jian'an",
+            "zht": "建安二十一年 - 二十五年",
+            "zhs": "建安二十一年 - 二十五年"
+          },
+          "year": "216 - 220",
+          "age": null,
+          "location": [
+            {
+              "en": "Juchao",
+              "zht": "居巢",
+              "zhs": "居巢"
+            },
+            {
+              "en": "Fancheng",
+              "zht": "樊",
+              "zhs": "樊"
+            },
+            {
+              "en": "Wan",
+              "zht": "宛",
+              "zhs": "宛"
+            },
+            {
+              "en": "Luoyang",
+              "zht": "洛陽/雒陽",
+              "zhs": "洛阳/雒阳"
+            }
+          ],
+          "position": [
+            {
+              "en": "General Who Conquers the South",
+              "zht": "征南將軍",
+              "zhs": "征南将军"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.62795047,
+              "lng": 117.88668775,
+              "name": "Juchao"
+            },
+            {
+              "kind": "town",
+              "lat": 32.04746989,
+              "lng": 112.06874333,
+              "name": "Fancheng"
+            },
+            {
+              "kind": "town",
+              "lat": 32.98790226,
+              "lng": 112.53739567,
+              "name": "Wan"
+            },
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General Who Conquers the South",
+              "zht": "征南將軍",
+              "zhs": "征南将军",
+              "url": "/translations/officials/military#conquering--garrisoning-065"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st - 4th year of Huangchu",
+            "zht": "黃初元年 - 四年",
+            "zhs": "黄初元年 - 四年"
+          },
+          "year": "220 - 223",
+          "age": null,
+          "location": [
+            {
+              "en": "Xiangyang",
+              "zht": "襄陽",
+              "zhs": "襄阳"
+            },
+            {
+              "en": "Wujiang",
+              "zht": "烏江",
+              "zhs": "乌江"
+            },
+            {
+              "en": "Hefei",
+              "zht": "合淝",
+              "zhs": "合淝"
+            },
+            {
+              "en": "Ruxukou",
+              "zht": "濡須口",
+              "zhs": "濡须口"
+            }
+          ],
+          "position": [
+            {
+              "en": "General of Chariots and Cavalry",
+              "zht": "車騎將軍",
+              "zhs": "车骑将军"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯"
+            },
+            {
+              "en": "Grand General",
+              "zht": "大將軍",
+              "zhs": "大将军"
+            },
+            {
+              "en": "Grand Marshal",
+              "zht": "大司馬",
+              "zhs": "大司马"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 32.00162374,
+              "lng": 112.14985623,
+              "name": "Xiangyang"
+            },
+            {
+              "kind": "town",
+              "lat": 31.84240763,
+              "lng": 118.43140573,
+              "name": "Wujiang"
+            },
+            {
+              "kind": "town",
+              "lat": 31.92537649,
+              "lng": 117.12596313,
+              "name": "Hefei"
+            },
+            {
+              "kind": "town",
+              "lat": 31.2019282,
+              "lng": 117.97307792,
+              "name": "Ruxukou"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General of Chariots and Cavalry",
+              "zht": "車騎將軍",
+              "zhs": "车骑将军",
+              "url": "/translations/officials/military#various-grand-generals-037"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "侯",
+              "zhs": "侯",
+              "url": "/translations/officials#glossary-county-marquis"
+            },
+            {
+              "en": "Grand General",
+              "zht": "大將軍",
+              "zhs": "大将军",
+              "url": "/translations/officials/ministers#superior-excellency-064"
+            },
+            {
+              "en": "Grand Marshal",
+              "zht": "大司馬",
+              "zhs": "大司马",
+              "url": "/translations/officials/ministers#superior-excellency-056"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "曹純（子和）",
+      "name": {
+        "en": "Cao Chun",
+        "zht": "曹純",
+        "zhs": "曹纯"
+      },
+      "courtesyName": {
+        "en": "Zihe",
+        "zht": "子和",
+        "zhs": "子和"
+      },
+      "born": {
+        "era": {
+          "en": "3rd year of Jianning",
+          "zht": "建寧三年",
+          "zhs": "建宁三年"
+        },
+        "year": 170
+      },
+      "died": {
+        "era": {
+          "en": "15th year of Jian'an",
+          "zht": "建安十五年",
+          "zhs": "建安十五年"
+        },
+        "year": 210
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Qiao",
+              "zht": "譙",
+              "zhs": "谯"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "4th year of Zhongping",
+            "zht": "中平四年",
+            "zhs": "中平四年"
+          },
+          "year": 187,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "黃門侍郎",
+              "zhs": "黄门侍郎"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Attendant Gentleman within the Yellow Gates",
+              "zht": "黃門侍郎",
+              "zhs": "黄门侍郎",
+              "url": "/translations/officials/departments#chancellery-003"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "6th year of Zhongping",
+            "zht": "中平六年",
+            "zhs": "中平六年"
+          },
+          "year": 189,
+          "age": null,
+          "location": [
+            {
+              "en": "Xiangyi",
+              "zht": "襄邑",
+              "zhs": "襄邑"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.42565297,
+              "lng": 115.07977176,
+              "name": "Xiangyi"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "10th - 13th year of Jian'an",
+            "zht": "建安十年 - 十三年",
+            "zhs": "建安十年 - 十三年"
+          },
+          "year": "205 - 208",
+          "age": null,
+          "location": [
+            {
+              "en": "Nanpi",
+              "zht": "南皮",
+              "zhs": "南皮"
+            },
+            {
+              "en": "Liucheng",
+              "zht": "柳城",
+              "zhs": "柳城"
+            },
+            {
+              "en": "Changban",
+              "zht": "長坂",
+              "zhs": "长坂"
+            },
+            {
+              "en": "Qiao",
+              "zht": "譙",
+              "zhs": "谯"
+            }
+          ],
+          "position": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 38.0926547,
+              "lng": 116.68045911,
+              "name": "Nanpi"
+            },
+            {
+              "kind": "town",
+              "lat": 41.4602169,
+              "lng": 120.39183453,
+              "name": "Liucheng"
+            },
+            {
+              "kind": "town",
+              "lat": 30.87339199,
+              "lng": 112.03128322,
+              "name": "Changban"
+            },
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "曹操（孟德）",
+      "to": "曹仁（子孝）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p1",
+          "text": {
+            "en": "Cao Ren was Cao Cao's younger paternal cousin.",
+            "zht": "曹仁是曹操的堂弟。",
+            "zhs": "曹仁是曹操的堂弟。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹褒",
+      "to": "曹熾",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p1",
+          "text": {
+            "en": "Cao Ren's grandfather Cao Bao was Grand Administrator of Yingchuan, and his son Cao Chi was Cao Ren's father.",
+            "zht": "曹仁的祖父曹褒任潁川太守，曹褒之子曹熾是曹仁的父親。",
+            "zhs": "曹仁的祖父曹褒任颍川太守，曹褒之子曹炽是曹仁的父亲。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹熾",
+      "to": "曹仁（子孝）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p1",
+          "text": {
+            "en": "Cao Ren's father Cao Chi served as Palace Attendant and Colonel of the Changshui Garrison.",
+            "zht": "曹仁的父親曹熾任侍中、長水校尉。",
+            "zhs": "曹仁的父亲曹炽任侍中、长水校尉。"
+          }
+        },
+        {
+          "passageId": "ws9c-p7",
+          "text": {
+            "en": "On becoming king, Cao Pi posthumously honoured Cao Ren's father Cao Chi as County Marquis Mu of Chen and assigned ten households to guard his tomb.",
+            "zht": "曹丕即王位後，追賜曹仁之父曹熾諡號陳穆侯，並設守冢十家。",
+            "zhs": "曹丕即王位后，追赐曹仁之父曹炽谥号陈穆侯，并设守冢十家。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹熾",
+      "to": "曹純（子和）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "Cao Chun lost his father at fourteen and lived apart from his elder brother Cao Ren, managing the family estate and its hundreds of servants and retainers with skill.",
+            "zht": "曹純十四歲喪父，與同胞兄長曹仁分居，繼承父業，管理數以百計的僮僕賓客，井井有條。",
+            "zhs": "曹纯十四岁丧父，与同胞兄长曹仁分居，继承父业，管理数以百计的僮仆宾客，井井有条。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "曹純（子和）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "Cao Chun was Cao Ren's younger brother.",
+            "zht": "曹純是曹仁的弟弟。",
+            "zhs": "曹纯是曹仁的弟弟。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p1",
+          "text": {
+            "en": "Cao Ren gathered over a thousand young men and joined Cao Cao, who made him Major of a Separate Command and acting Colonel Who Rouses the Vanguard.",
+            "zht": "曹仁暗中聚集一千多名青年，後來追隨曹操，任別部司馬，代理厲鋒校尉。",
+            "zhs": "曹仁暗中聚集一千多名青年，后来追随曹操，任别部司马，代理厉锋校尉。"
+          },
+          "title": {
+            "en": "Major of a Separate Command",
+            "zht": "別部司馬",
+            "zhs": "别部司马"
+          }
+        },
+        {
+          "passageId": "ws9c-p2",
+          "text": {
+            "en": "For repeated merit Cao Ren was appointed Grand Administrator of Guangyang, but Cao Cao, valuing his courage, kept him at court as a Gentleman Consultant commanding the cavalry.",
+            "zht": "曹仁屢立戰功，被任命爲廣陽太守；曹操器重他的勇略，不讓他赴任，而以議郎身份督率騎兵。",
+            "zhs": "曹仁屡立战功，被任命为广阳太守；曹操器重他的勇略，不让他赴任，而以议郎身份督率骑兵。"
+          },
+          "title": {
+            "en": "Grand Administrator of Guangyang",
+            "zht": "廣陽太守",
+            "zhs": "广阳太守"
+          }
+        },
+        {
+          "passageId": "ws9c-p2",
+          "text": {
+            "en": "When Zhang Xiu pursued the withdrawing army and morale collapsed, Cao Ren rallied the troops; Cao Cao admired his valour.",
+            "zht": "張繡追擊撤退的大軍，士卒喪氣，曹仁激勵將士奮戰；曹操讚賞他的勇氣。",
+            "zhs": "张绣追击撤退的大军，士卒丧气，曹仁激励将士奋战；曹操赞赏他的勇气。"
+          }
+        },
+        {
+          "passageId": "ws9c-p3",
+          "text": {
+            "en": "During the stalemate at Guandu, Cao Ren advised striking Liu Bei before he could make use of Yuan Shao's troops; Cao Cao approved and sent him with cavalry.",
+            "zht": "官渡相持時，曹仁建議趁劉備尚未能駕馭袁紹的軍隊時出擊；曹操採納了他的意見，派他率騎兵進擊。",
+            "zhs": "官渡相持时，曹仁建议趁刘备尚未能驾驭袁绍的军队时出击；曹操采纳了他的意见，派他率骑兵进击。"
+          }
+        },
+        {
+          "passageId": "ws9c-p4",
+          "text": {
+            "en": "At the siege of Huguan, Cao Ren persuaded Cao Cao to withdraw his order to bury the defenders alive; the city surrendered, and Cao Cao enfeoffed him as Capital Neighbourhood Marquis.",
+            "zht": "圍攻壺關時，曹仁勸曹操收回城破坑殺的命令；壺關投降，曹操封他爲都亭侯。",
+            "zhs": "围攻壶关时，曹仁劝曹操收回城破坑杀的命令；壶关投降，曹操封他为都亭侯。"
+          },
+          "title": {
+            "en": "Capital Neighbourhood Marquis",
+            "zht": "都亭侯",
+            "zhs": "都亭侯"
+          }
+        },
+        {
+          "passageId": "ws9c-p5",
+          "text": {
+            "en": "After Cao Ren's sally to rescue Niu Jin at Jiangling, Cao Cao esteemed his valour all the more and made him Neighbourhood Marquis of Anping.",
+            "zht": "曹仁在江陵出城救出牛金後，曹操更加讚賞他的勇氣，轉封他爲安平亭侯。",
+            "zhs": "曹仁在江陵出城救出牛金后，曹操更加赞赏他的勇气，转封他为安平亭侯。"
+          },
+          "title": {
+            "en": "Neighbourhood Marquis of Anping",
+            "zht": "安平亭侯",
+            "zhs": "安平亭侯"
+          }
+        },
+        {
+          "passageId": "ws9c-p6",
+          "text": {
+            "en": "After putting down Hou Yin's rebellion at Wan, Cao Ren was formally appointed General Who Conquers the South.",
+            "zht": "平定侯音在宛城的叛亂後，曹仁被正式任命爲征南將軍。",
+            "zhs": "平定侯音在宛城的叛乱后，曹仁被正式任命为征南将军。"
+          },
+          "title": {
+            "en": "General Who Conquers the South",
+            "zht": "征南將軍",
+            "zhs": "征南将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p7",
+          "text": {
+            "en": "On becoming king, Cao Pi appointed Cao Ren General of Chariots and Cavalry in command of Jing, Yang and Yi provinces and advanced him to County Marquis of Chen.",
+            "zht": "曹丕即王位後，任命曹仁爲車騎將軍，都督荊、揚、益三州諸軍事，進封陳侯。",
+            "zhs": "曹丕即王位后，任命曹仁为车骑将军，都督荆、扬、益三州诸军事，进封陈侯。"
+          },
+          "title": {
+            "en": "General of Chariots and Cavalry, County Marquis of Chen",
+            "zht": "車騎將軍、陳侯",
+            "zhs": "车骑将军、陈侯"
+          }
+        },
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "Cao Pi sent an envoy to appoint Cao Ren Grand General in the field.",
+            "zht": "曹丕派使者前往軍中，任命曹仁爲大將軍。",
+            "zhs": "曹丕派使者前往军中，任命曹仁为大将军。"
+          },
+          "title": {
+            "en": "Grand General",
+            "zht": "大將軍",
+            "zhs": "大将军"
+          }
+        },
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "Ordered to move his garrison to Linying, Cao Ren was promoted to Grand Marshal.",
+            "zht": "曹仁奉詔移駐臨潁，升任大司馬。",
+            "zhs": "曹仁奉诏移驻临颍，升任大司马。"
+          },
+          "title": {
+            "en": "Grand Marshal",
+            "zht": "大司馬",
+            "zhs": "大司马"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹丕（子桓）",
+      "to": "曹仁（子孝）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p7",
+          "text": {
+            "en": "Writing to admonish Cao Zhang, Cao Pi held up Cao Ren, the General Who Conquers the South, as the model of a general who observes the law.",
+            "zht": "曹丕寫信告誡曹彰，以征南將軍曹仁作爲爲將奉法的榜樣。",
+            "zhs": "曹丕写信告诫曹彰，以征南将军曹仁作为为将奉法的榜样。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹丕（子桓）",
+      "to": "曹彰（子文）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p7",
+          "text": {
+            "en": "When Cao Zhang campaigned north against the Wuhuan, his brother Cao Pi, then in the Eastern Palace, wrote urging him to observe the law as Cao Ren did.",
+            "zht": "曹彰北征烏丸時，其兄曹丕尚在東宮，寫信告誡他要像曹仁那樣奉法爲將。",
+            "zhs": "曹彰北征乌丸时，其兄曹丕尚在东宫，写信告诫他要像曹仁那样奉法为将。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "陶謙（恭祖）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p2",
+          "text": {
+            "en": "Cao Ren crushed Tao Qian's forces at Pengcheng, and defeated the generals Tao Qian sent to relieve Fei, Hua, Jimo and Kaiyang.",
+            "zht": "曹仁在彭城大破陶謙軍，又擊敗陶謙派去救援費、華、即墨、開陽等縣的將領。",
+            "zhs": "曹仁在彭城大破陶谦军，又击败陶谦派去救援费、华、即墨、开阳等县的将领。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "呂由",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p2",
+          "text": {
+            "en": "Leading a separate force, Cao Ren defeated Tao Qian's general Lü You.",
+            "zht": "曹仁率別軍擊破陶謙部將呂由。",
+            "zhs": "曹仁率别军击破陶谦部将吕由。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "劉何",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p2",
+          "text": {
+            "en": "Cao Ren took Gouyang and captured Lü Bu's general Liu He alive.",
+            "zht": "曹仁攻克句陽，生擒呂布部將劉何。",
+            "zhs": "曹仁攻克句阳，生擒吕布部将刘何。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "張繡",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p2",
+          "text": {
+            "en": "Cao Ren overran the counties around Zhang Xiu, and when Zhang Xiu pursued the withdrawing army, Cao Ren rallied the troops to defeat him.",
+            "zht": "曹仁攻掠張繡周邊各縣；張繡追擊撤軍時，曹仁激勵將士將他擊破。",
+            "zhs": "曹仁攻掠张绣周边各县；张绣追击撤军时，曹仁激励将士将他击破。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "劉備（玄德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p3",
+          "text": {
+            "en": "Sent with cavalry against Liu Bei, who was rousing the counties south of Xu for Yuan Shao, Cao Ren drove him off and recovered all the revolted counties.",
+            "zht": "劉備爲袁紹攻掠許都以南各縣，曹仁率騎兵出擊，打跑劉備，收復了全部叛縣。",
+            "zhs": "刘备为袁绍攻掠许都以南各县，曹仁率骑兵出击，打跑刘备，收复了全部叛县。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "韓荀",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p3",
+          "text": {
+            "en": "Cao Ren crushed Yuan Shao's general Han Xun at Mount Jiluo, after which Yuan Shao dared not send out detached forces again.",
+            "zht": "曹仁在雞洛山大破袁紹部將韓荀，袁紹從此不敢再分兵出擊。",
+            "zhs": "曹仁在鸡洛山大破袁绍部将韩荀，袁绍从此不敢再分兵出击。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "史渙（公劉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p3",
+          "text": {
+            "en": "Cao Ren joined Shi Huan and others in raiding Yuan Shao's supply wagons and burning his grain.",
+            "zht": "曹仁與史渙等人一同截擊袁紹的運糧車隊，燒燬其糧草。",
+            "zhs": "曹仁与史涣等人一同截击袁绍的运粮车队，烧毁其粮草。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "周瑜（公瑾）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p4",
+          "text": {
+            "en": "Left to hold Jiangling, Cao Ren faced Zhou Yu's army of tens of thousands, and charged out himself to rescue Niu Jin from its vanguard.",
+            "zht": "曹仁留守江陵，抵禦周瑜數萬大軍，並親自衝出城外，從其前鋒中救出牛金。",
+            "zhs": "曹仁留守江陵，抵御周瑜数万大军，并亲自冲出城外，从其前锋中救出牛金。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "牛金",
+      "to": "曹仁（子孝）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p4",
+          "text": {
+            "en": "Cao Ren sent his unit commander Niu Jin with three hundred volunteers to challenge Zhou Yu's vanguard, and they were surrounded.",
+            "zht": "曹仁派部曲將牛金率三百人出城挑戰周瑜的前鋒，結果被包圍。",
+            "zhs": "曹仁派部曲将牛金率三百人出城挑战周瑜的前锋，结果被包围。"
+          }
+        },
+        {
+          "passageId": "ws9c-p5",
+          "text": {
+            "en": "Seeing Niu Jin about to be overwhelmed, Cao Ren rode out with a few dozen horsemen and charged twice into the enemy ranks to bring him and his men back.",
+            "zht": "眼見牛金將被殲滅，曹仁率數十騎出城，兩度衝入敵陣，救出牛金及其部下。",
+            "zhs": "眼见牛金将被歼灭，曹仁率数十骑出城，两度冲入敌阵，救出牛金及其部下。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "陳矯（季弼）",
+      "to": "曹仁（子孝）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p5",
+          "text": {
+            "en": "Cao Ren's Chief Clerk Chen Jiao tried to stop him riding out to save Niu Jin, then on his return exclaimed, \"General, you are truly divine!\"",
+            "zht": "長史陳矯曾勸阻曹仁出城救援牛金，見他回來後感嘆道：“將軍真天人也！”",
+            "zhs": "长史陈矫曾劝阻曹仁出城救援牛金，见他回来后感叹道：“将军真天人也！”"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "馬超（孟起）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p6",
+          "text": {
+            "en": "As acting General Who Pacifies the West, Cao Ren held Tongguan and defeated Ma Chao south of the Wei River.",
+            "zht": "曹仁代理安西將軍，督率諸將據守潼關，在渭南擊破馬超。",
+            "zhs": "曹仁代理安西将军，督率诸将据守潼关，在渭南击破马超。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "田銀",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p6",
+          "text": {
+            "en": "When Su Bo and Tian Yin rebelled, Cao Ren commanded seven armies against them and defeated them.",
+            "zht": "蘇伯、田銀造反，曹仁都督七軍將他們擊破。",
+            "zhs": "苏伯、田银造反，曹仁都督七军将他们击破。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "蘇伯",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p6",
+          "text": {
+            "en": "When Su Bo and Tian Yin rebelled, Cao Ren commanded seven armies against them and defeated them.",
+            "zht": "蘇伯、田銀造反，曹仁都督七軍將他們擊破。",
+            "zhs": "苏伯、田银造反，曹仁都督七军将他们击破。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "侯音",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p6",
+          "text": {
+            "en": "When Hou Yin rebelled at Wan, Cao Ren led the armies against him, defeated him and beheaded him.",
+            "zht": "侯音據宛城叛亂，曹仁率軍將他擊破並斬首。",
+            "zhs": "侯音据宛城叛乱，曹仁率军将他击破并斩首。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "關羽（雲長）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p6",
+          "text": {
+            "en": "With Fancheng surrounded by floodwaters and by Guan Yu's boats, Cao Ren held the city with a few thousand men until Xu Huang's relief let him break out, and Guan Yu withdrew.",
+            "zht": "樊城被洪水和關羽的戰船重重包圍，曹仁以數千人堅守，直到徐晃援軍到來才突圍而出，關羽撤退。",
+            "zhs": "樊城被洪水和关羽的战船重重包围，曹仁以数千人坚守，直到徐晃援军到来才突围而出，关羽撤退。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "徐晃（公明）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p6",
+          "text": {
+            "en": "Xu Huang's relief force attacked Guan Yu from outside, allowing Cao Ren to break out of Fancheng.",
+            "zht": "徐晃援軍從外圍進攻關羽，使曹仁得以突圍出城。",
+            "zhs": "徐晃援军从外围进攻关羽，使曹仁得以突围出城。"
+          }
+        },
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "Cao Ren and Xu Huang defeated Sun Quan's general Chen Shao and entered Xiangyang.",
+            "zht": "曹仁與徐晃擊敗孫權部將陳邵，進入襄陽。",
+            "zhs": "曹仁与徐晃击败孙权部将陈邵，进入襄阳。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "陳邵",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "When Sun Quan's general Chen Shao occupied Xiangyang, Cao Ren was ordered to attack him and, with Xu Huang, defeated him.",
+            "zht": "孫權部將陳邵佔據襄陽，曹仁奉詔討伐，與徐晃一同將他擊敗。",
+            "zhs": "孙权部将陈邵占据襄阳，曹仁奉诏讨伐，与徐晃一同将他击败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "高遷",
+      "to": "曹仁（子孝）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "Cao Ren sent General Gao Qian and others to move the people south of the Han River who had submitted to the north bank.",
+            "zht": "曹仁派將軍高遷等人把漢水以南歸附的百姓遷到漢水以北。",
+            "zhs": "曹仁派将军高迁等人把汉水以南归附的百姓迁到汉水以北。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "曹泰",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "Cao Ren's son Cao Tai succeeded him, rose to General Who Garrisons the East and was later made County Marquis of Ningling.",
+            "zht": "曹仁之子曹泰繼承爵位，官至鎮東將軍，後轉封寧陵侯。",
+            "zhs": "曹仁之子曹泰继承爵位，官至镇东将军，后转封宁陵侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹泰",
+      "to": "曹初",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "When Cao Tai died, his son Cao Chu succeeded him.",
+            "zht": "曹泰去世後，其子曹初繼承爵位。",
+            "zhs": "曹泰去世后，其子曹初继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "曹楷",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "Cao Ren's son Cao Kai, Cao Tai's younger brother, was given a separate fief as a Marquis.",
+            "zht": "曹仁之子、曹泰之弟曹楷另獲封地，爲列侯。",
+            "zhs": "曹仁之子、曹泰之弟曹楷另获封地，为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹仁（子孝）",
+      "to": "曹範",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p8",
+          "text": {
+            "en": "Cao Ren's son Cao Fan, Cao Tai's younger brother, was given a separate fief as a Marquis.",
+            "zht": "曹仁之子、曹泰之弟曹範另獲封地，爲列侯。",
+            "zhs": "曹仁之子、曹泰之弟曹范另获封地，为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹純（子和）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "At eighteen Cao Chun became a Gentleman of the Yellow Gates, and at twenty he followed Cao Cao to Xiangyi to recruit troops, thereafter accompanying him on campaign.",
+            "zht": "曹純十八歲任黃門侍郎，二十歲隨曹操到襄邑募兵，從此常隨征戰。",
+            "zhs": "曹纯十八岁任黄门侍郎，二十岁随曹操到襄邑募兵，从此常随征战。"
+          }
+        },
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "Cao Chun served as Gentleman Consultant assisting the Excellency of Works on military affairs, and commanded the Tiger and Leopard Cavalry.",
+            "zht": "曹純以議郎身份參司空軍事，統率虎豹騎。",
+            "zhs": "曹纯以议郎身份参司空军事，统率虎豹骑。"
+          },
+          "title": {
+            "en": "Gentleman Consultant",
+            "zht": "議郎",
+            "zhs": "议郎"
+          }
+        },
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "At Nanpi, Cao Chun dissuaded Cao Cao from easing the attack, and his horsemen cut off Yuan Tan's head.",
+            "zht": "在南皮，曹純勸阻曹操放緩攻勢，其部下騎兵斬殺了袁譚。",
+            "zhs": "在南皮，曹纯劝阻曹操放缓攻势，其部下骑兵斩杀了袁谭。"
+          }
+        },
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "For his successive achievements, Cao Chun was enfeoffed as Neighbourhood Marquis of Gaoling with three hundred households.",
+            "zht": "曹純因前後戰功，被封爲高陵亭侯，食邑三百戶。",
+            "zhs": "曹纯因前后战功，被封为高陵亭侯，食邑三百户。"
+          },
+          "title": {
+            "en": "Neighbourhood Marquis of Gaoling",
+            "zht": "高陵亭侯",
+            "zhs": "高陵亭侯"
+          }
+        },
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "After Cao Chun died, Cao Cao found no one fit to replace him at the head of the Tiger and Leopard Cavalry and declared he would command it himself.",
+            "zht": "曹純去世後，曹操認爲無人能接替他統率虎豹騎，說道：“難道我不配當督嗎！”便不再另選。",
+            "zhs": "曹纯去世后，曹操认为无人能接替他统率虎豹骑，说道：“难道我不配当督吗！”便不再另选。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹純（子和）",
+      "to": "袁譚（顯思）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "Cavalrymen under Cao Chun's command cut off Yuan Tan's head at Nanpi.",
+            "zht": "曹純麾下的騎兵在南皮斬殺了袁譚。",
+            "zhs": "曹纯麾下的骑兵在南皮斩杀了袁谭。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹純（子和）",
+      "to": "蹋頓",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "During the northern campaign against the three commanderies, Cao Chun's cavalry captured the Chanyu Tadun.",
+            "zht": "北征三郡時，曹純的騎兵俘獲了單于蹋頓。",
+            "zhs": "北征三郡时，曹纯的骑兵俘获了单于蹋顿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹純（子和）",
+      "to": "劉備（玄德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "Cao Chun pursued Liu Bei at Changban, captured his two daughters and his baggage, and took in his scattered soldiers.",
+            "zht": "曹純在長坂追擊劉備，俘獲他的兩個女兒和輜重，收編了他的散兵。",
+            "zhs": "曹纯在长坂追击刘备，俘获他的两个女儿和辎重，收编了他的散兵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹純（子和）",
+      "to": "曹演",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "Cao Chun's son Cao Yan succeeded him, rose to General Commanding the Army and became Township Marquis of Pingle.",
+            "zht": "曹純之子曹演繼承爵位，官至領軍將軍，進封平樂鄉侯。",
+            "zhs": "曹纯之子曹演继承爵位，官至领军将军，进封平乐乡侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹演",
+      "to": "曹亮",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9c-p9",
+          "text": {
+            "en": "When Cao Yan died, his son Cao Liang succeeded him.",
+            "zht": "曹演去世後，其子曹亮繼承爵位。",
+            "zhs": "曹演去世后，其子曹亮继承爵位。"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+/* compare-entry.css — "+ Compare" toggles, the floating Compare pill and the
+   hub's Compare button. Loaded by compare-store.js wherever picks are made. */
+
+.compare-toggle {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 13px; padding: 4px 10px; border-radius: 20px;
+  border: 0.5px solid var(--color-border); background: #161616;
+  color: var(--color-text-secondary); cursor: pointer; white-space: nowrap;
+  font-family: var(--font-sans); transition: border-color .15s, color .15s;
+}
+.compare-toggle:hover { border-color: var(--archive-gold-soft, #d0aa6b); color: var(--archive-gold-soft, #d0aa6b); }
+.compare-toggle.on { border-color: var(--archive-gold-soft, #d0aa6b); color: var(--archive-gold-soft, #d0aa6b); background: rgba(208,170,107,0.08); }
+.compare-toggle .ti { font-size: 14px; }
+
+.det-hdr-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+
+.compare-fab {
+  position: fixed; right: 20px; bottom: 20px; z-index: 50;
+  display: none; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 24px;
+  background: #15120c; border: 0.5px solid var(--archive-gold-soft, #d0aa6b);
+  color: var(--archive-gold-soft, #d0aa6b); font-size: 15px; text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+.compare-fab:hover { background: #211a10; }
+.compare-fab-warn::before {
+  content: attr(data-msg);
+  position: absolute; right: 0; bottom: calc(100% + 8px);
+  white-space: nowrap; font-size: 13px; padding: 6px 10px; border-radius: 8px;
+  background: #2a1a12; border: 0.5px solid #c98a5a; color: #f0c9a8;
+}
+
+.search-btn.compare-btn {
+  display: inline-flex; align-items: center; gap: 6px; text-decoration: none; white-space: nowrap;
+  background: transparent; color: var(--archive-gold-soft, #d0aa6b);
+  border: 1px solid rgba(208,170,107,.55);
+}
+.search-btn.compare-btn:hover { background: rgba(208,170,107,.1); }
+.compare-btn .compare-count:empty { display: none; }
+
+@media (max-width: 720px) {
+  .compare-fab { right: 12px; bottom: 12px; padding: 9px 14px; font-size: 14px; }
+  .compare-fab-warn::before { white-space: normal; width: 220px; }
+}

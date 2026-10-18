@@ -143,9 +143,10 @@
             ],
             "shu": [
               {
-                "zht": "前、後、左、右護軍護軍",
-                "zhs": "前、后、左、右护军护军",
-                "en": "Protector of the Front/Rear/Left/Right Army"
+                "zht": "前、後、左、右護軍",
+                "zhs": "前、后、左、右护军",
+                "en": "Protector of the Front/Rear/Left/Right Army",
+                "aliases": [ { "zht": "前護軍", "zhs": "前护军", "en": "Protector of the Front Army" }, { "zht": "後護軍", "zhs": "后护军", "en": "Protector of the Rear Army" }, { "zht": "左護軍", "zhs": "左护军", "en": "Protector of the Left Army" }, { "zht": "右護軍", "zhs": "右护军", "en": "Protector of the Right Army" } ]
               },
               {
                 "zht": "護軍",
@@ -165,14 +166,16 @@
               {
                 "zht": "中、後典軍",
                 "zhs": "中、后典军",
-                "en": "Director of the Central/Rear Army"
+                "en": "Director of the Central/Rear Army",
+                "aliases": [ { "zht": "中典軍", "zhs": "中典军", "en": "Director of the Central Army" }, { "zht": "後典軍", "zhs": "后典军", "en": "Director of the Rear Army" } ]
               }
             ],
             "wu": [
               {
                 "zht": "中、左、右護軍",
                 "zhs": "中、左、右护军",
-                "en": "Protector of the Central/Left/Right Army"
+                "en": "Protector of the Central/Left/Right Army",
+                "aliases": [ { "zht": "中護軍", "zhs": "中护军", "en": "Protector of the Central Army" }, { "zht": "左護軍", "zhs": "左护军", "en": "Protector of the Left Army" }, { "zht": "右護軍", "zhs": "右护军", "en": "Protector of the Right Army" } ]
               },
               {
                 "zht": "護軍",
@@ -925,6 +928,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "minor",
+          "reportsTo": { "en": "Five Colonels", "zht": "五校尉", "zhs": "五校尉" },
           "name": {
             "wei": [
               {
@@ -972,6 +976,7 @@
           "hasMultipleNames": true,
           "gradeNum": null,
           "tier": "minor",
+          "reportsTo": { "en": "Five Colonels", "zht": "五校尉", "zhs": "五校尉" },
           "name": {
             "wei": [
               {
@@ -1024,6 +1029,7 @@
           "hasMultipleNames": false,
           "gradeNum": 9,
           "tier": "minor",
+          "reportsTo": { "en": "Five Colonels", "zht": "五校尉", "zhs": "五校尉" },
           "name": {
             "wei": [
               {
@@ -1521,6 +1527,7 @@
           "hasMultipleNames": true,
           "gradeNum": 4,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -1589,6 +1596,7 @@
           "hasMultipleNames": false,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -1636,6 +1644,7 @@
           "hasMultipleNames": false,
           "gradeNum": 4,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -1694,6 +1703,7 @@
           "hasMultipleNames": false,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -1780,6 +1790,7 @@
           "hasMultipleNames": false,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -1866,6 +1877,7 @@
           "hasMultipleNames": true,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -1890,7 +1902,8 @@
               {
                 "zht": "中、左、右典軍",
                 "zhs": "中、左、右典军",
-                "en": "Director of the Central/Left/Right Army"
+                "en": "Director of the Central/Left/Right Army",
+                "aliases": [ { "zht": "中典軍", "zhs": "中典军", "en": "Director of the Central Army" }, { "zht": "左典軍", "zhs": "左典军", "en": "Director of the Left Army" }, { "zht": "右典軍", "zhs": "右典军", "en": "Director of the Right Army" } ]
               }
             ]
           },
@@ -2061,7 +2074,8 @@
               {
                 "zht": "左、右車騎將軍",
                 "zhs": "左、右车骑将军",
-                "en": "General of Chariots and Cavalry on the Left/Right"
+                "en": "General of Chariots and Cavalry on the Left/Right",
+                "aliases": [ { "zht": "左車騎將軍", "zhs": "左车骑将军", "en": "General of Chariots and Cavalry on the Left" }, { "zht": "右車騎將軍", "zhs": "右车骑将军", "en": "General of Chariots and Cavalry on the Right" } ]
               }
             ],
             "wu": [
@@ -2431,6 +2445,7 @@
           "hasMultipleNames": false,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2478,6 +2493,7 @@
           "hasMultipleNames": false,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2525,6 +2541,7 @@
           "hasMultipleNames": true,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2544,7 +2561,8 @@
               {
                 "zht": "中﹑左﹑右司馬",
                 "zhs": "中﹑左﹑右司马",
-                "en": "Major on the Middle/Left/Right"
+                "en": "Major on the Middle/Left/Right",
+                "aliases": [ { "zht": "中司馬", "zhs": "中司马", "en": "Major on the Middle" }, { "zht": "左司馬", "zhs": "左司马", "en": "Major on the Left" }, { "zht": "右司馬", "zhs": "右司马", "en": "Major on the Right" } ]
               }
             ]
           },
@@ -2572,6 +2590,7 @@
           "hasMultipleNames": false,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2619,19 +2638,22 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "正﹑行參軍",
                 "zhs": "正﹑行参军",
-                "en": "Main & Acting Army Adjutant"
+                "en": "Main & Acting Army Adjutant",
+                "aliases": [ { "zht": "正參軍", "zhs": "正参军", "en": "Main Army Adjutant" }, { "zht": "行參軍", "zhs": "行参军", "en": "Acting Army Adjutant" } ]
               }
             ],
             "shu": [
               {
                 "zht": "正﹑行參軍",
                 "zhs": "正﹑行参军",
-                "en": "Main & Acting Army Adjutant"
+                "en": "Main & Acting Army Adjutant",
+                "aliases": [ { "zht": "正參軍", "zhs": "正参军", "en": "Main Army Adjutant" }, { "zht": "行參軍", "zhs": "行参军", "en": "Acting Army Adjutant" } ]
               }
             ],
             "wu": [
@@ -2672,6 +2694,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2729,17 +2752,17 @@
               {
                 "zht": "門吏",
                 "zhs": "门吏",
-                "en": "Staff Attendant<br> <br>Staff Documents Clerk"
+                "en": "Staff Attendant"
               },
               {
                 "zht": "門下書吏",
                 "zhs": "门下书吏",
-                "en": "Staff Foreman Clerk"
+                "en": "Staff Documents Clerk"
               },
               {
                 "zht": "門令史",
                 "zhs": "门令史",
-                "en": ""
+                "en": "Staff Foreman Clerk"
               }
             ],
             "shu": [
@@ -2787,6 +2810,7 @@
           "hasMultipleNames": true,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2834,6 +2858,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2881,6 +2906,7 @@
           "hasMultipleNames": true,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -2928,6 +2954,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -3043,6 +3070,7 @@
           "hasMultipleNames": false,
           "gradeNum": 8,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -3100,12 +3128,14 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "西、東閣下祭酒",
                 "zhs": "西、东阁下祭酒",
-                "en": "Western/Eastern Pavillion Libationer"
+                "en": "Western/Eastern Pavillion Libationer",
+                "aliases": [ { "zht": "西閣下祭酒", "zhs": "西阁下祭酒", "en": "Western Pavillion Libationer" }, { "zht": "東閣下祭酒", "zhs": "东阁下祭酒", "en": "Eastern Pavillion Libationer" } ]
               }
             ],
             "shu": [
@@ -3153,6 +3183,7 @@
           "hasMultipleNames": true,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -3205,17 +3236,20 @@
           "hasMultipleNames": true,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "戶曹令史、屬",
                 "zhs": "户曹令史、属",
-                "en": "Civil Affairs Section Foreman Clerk/ Assistant"
+                "en": "Civil Affairs Section Foreman Clerk/ Assistant",
+                "aliases": [ { "zht": "戶曹令史", "zhs": "户曹令史", "en": "Civil Affairs Section Foreman Clerk" }, { "zht": "戶曹屬", "zhs": "户曹属", "en": "Civil Affairs Section Assistant" } ]
               },
               {
                 "zht": "倉曹令史、屬",
                 "zhs": "仓曹令史、属",
-                "en": "Granaries Section Foreman Clerk/ Assistant"
+                "en": "Granaries Section Foreman Clerk/ Assistant",
+                "aliases": [ { "zht": "倉曹令史", "zhs": "仓曹令史", "en": "Granaries Section Foreman Clerk" }, { "zht": "倉曹屬", "zhs": "仓曹属", "en": "Granaries Section Assistant" } ]
               }
             ],
             "shu": [
@@ -3263,12 +3297,14 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "兵﹑鎧﹑士﹑賊曹令史",
                 "zhs": "兵﹑铠﹑士﹑贼曹令史",
-                "en": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk"
+                "en": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk",
+                "aliases": [ { "zht": "兵曹令史", "zhs": "兵曹令史", "en": "Military Section Foreman Clerk" }, { "zht": "鎧曹令史", "zhs": "铠曹令史", "en": "Armor Section Foreman Clerk" }, { "zht": "士曹令史", "zhs": "士曹令史", "en": "Serviceman Section Foreman Clerk" }, { "zht": "賊曹令史", "zhs": "贼曹令史", "en": "Banditry Section Foreman Clerk" } ]
               }
             ],
             "shu": [
@@ -3310,6 +3346,7 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -3363,17 +3400,20 @@
           "hasMultipleNames": true,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "西曹掾、令史﹑學事",
                 "zhs": "西曹掾、令史﹑学事",
-                "en": "Western Section Administrator/Foreman Clerk/ Apprentice"
+                "en": "Western Section Administrator/Foreman Clerk/ Apprentice",
+                "aliases": [ { "zht": "西曹掾", "zhs": "西曹掾", "en": "Western Section Administrator" }, { "zht": "西曹令史", "zhs": "西曹令史", "en": "Western Section Foreman Clerk" }, { "zht": "西曹學事", "zhs": "西曹学事", "en": "Western Section Apprentice" } ]
               },
               {
                 "zht": "東曹掾、令史﹑學事",
                 "zhs": "东曹掾、令史﹑学事",
-                "en": "Eastern Section Administrator/Foreman Clerk/ Apprentice"
+                "en": "Eastern Section Administrator/Foreman Clerk/ Apprentice",
+                "aliases": [ { "zht": "東曹掾", "zhs": "东曹掾", "en": "Eastern Section Administrator" }, { "zht": "東曹令史", "zhs": "东曹令史", "en": "Eastern Section Foreman Clerk" }, { "zht": "東曹學事", "zhs": "东曹学事", "en": "Eastern Section Apprentice" } ]
               }
             ],
             "shu": [
@@ -3387,7 +3427,8 @@
               {
                 "zht": "東西曹掾",
                 "zhs": "东西曹掾",
-                "en": "Western/Eastern Section Administrator"
+                "en": "Western/Eastern Section Administrator",
+                "aliases": [ { "zht": "西曹掾", "zhs": "西曹掾", "en": "Western Section Administrator" }, { "zht": "東曹掾", "zhs": "东曹掾", "en": "Eastern Section Administrator" } ]
               },
               {
                 "zht": "書部從事",
@@ -3955,6 +3996,7 @@
           "hasMultipleNames": false,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4002,6 +4044,7 @@
           "hasMultipleNames": false,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4049,6 +4092,7 @@
           "hasMultipleNames": true,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4068,7 +4112,8 @@
               {
                 "zht": "中﹑左﹑右司馬",
                 "zhs": "中﹑左﹑右司马",
-                "en": "Major on the Middle/Left/Right"
+                "en": "Major on the Middle/Left/Right",
+                "aliases": [ { "zht": "中司馬", "zhs": "中司马", "en": "Major on the Middle" }, { "zht": "左司馬", "zhs": "左司马", "en": "Major on the Left" }, { "zht": "右司馬", "zhs": "右司马", "en": "Major on the Right" } ]
               }
             ]
           },
@@ -4096,6 +4141,7 @@
           "hasMultipleNames": false,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4143,19 +4189,22 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "正﹑行參軍",
                 "zhs": "正﹑行参军",
-                "en": "Main & Acting Army Adjutant"
+                "en": "Main & Acting Army Adjutant",
+                "aliases": [ { "zht": "正參軍", "zhs": "正参军", "en": "Main Army Adjutant" }, { "zht": "行參軍", "zhs": "行参军", "en": "Acting Army Adjutant" } ]
               }
             ],
             "shu": [
               {
                 "zht": "正﹑行參軍",
                 "zhs": "正﹑行参军",
-                "en": "Main & Acting Army Adjutant"
+                "en": "Main & Acting Army Adjutant",
+                "aliases": [ { "zht": "正參軍", "zhs": "正参军", "en": "Main Army Adjutant" }, { "zht": "行參軍", "zhs": "行参军", "en": "Acting Army Adjutant" } ]
               }
             ],
             "wu": [
@@ -4196,6 +4245,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4253,17 +4303,17 @@
               {
                 "zht": "門吏",
                 "zhs": "门吏",
-                "en": "Staff Attendant<br> <br>Staff Documents Clerk"
+                "en": "Staff Attendant"
               },
               {
                 "zht": "門下書吏",
                 "zhs": "门下书吏",
-                "en": "Staff Foreman Clerk"
+                "en": "Staff Documents Clerk"
               },
               {
                 "zht": "門令史",
                 "zhs": "门令史",
-                "en": ""
+                "en": "Staff Foreman Clerk"
               }
             ],
             "shu": [
@@ -4311,6 +4361,7 @@
           "hasMultipleNames": true,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4358,6 +4409,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4405,6 +4457,7 @@
           "hasMultipleNames": true,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4452,6 +4505,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4567,6 +4621,7 @@
           "hasMultipleNames": false,
           "gradeNum": 8,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4624,6 +4679,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4671,6 +4727,7 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4708,17 +4765,20 @@
           "hasMultipleNames": true,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "戶曹令史、屬",
                 "zhs": "户曹令史、属",
-                "en": "Civil Affairs Section Foreman Clerk/ Assistant"
+                "en": "Civil Affairs Section Foreman Clerk/ Assistant",
+                "aliases": [ { "zht": "戶曹令史", "zhs": "户曹令史", "en": "Civil Affairs Section Foreman Clerk" }, { "zht": "戶曹屬", "zhs": "户曹属", "en": "Civil Affairs Section Assistant" } ]
               },
               {
                 "zht": "倉曹令史、屬",
                 "zhs": "仓曹令史、属",
-                "en": "Granaries Section Foreman Clerk/ Assistant"
+                "en": "Granaries Section Foreman Clerk/ Assistant",
+                "aliases": [ { "zht": "倉曹令史", "zhs": "仓曹令史", "en": "Granaries Section Foreman Clerk" }, { "zht": "倉曹屬", "zhs": "仓曹属", "en": "Granaries Section Assistant" } ]
               }
             ],
             "shu": [
@@ -4766,12 +4826,14 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "兵﹑鎧﹑士﹑賊曹令史",
                 "zhs": "兵﹑铠﹑士﹑贼曹令史",
-                "en": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk"
+                "en": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk",
+                "aliases": [ { "zht": "兵曹令史", "zhs": "兵曹令史", "en": "Military Section Foreman Clerk" }, { "zht": "鎧曹令史", "zhs": "铠曹令史", "en": "Armor Section Foreman Clerk" }, { "zht": "士曹令史", "zhs": "士曹令史", "en": "Serviceman Section Foreman Clerk" }, { "zht": "賊曹令史", "zhs": "贼曹令史", "en": "Banditry Section Foreman Clerk" } ]
               }
             ],
             "shu": [
@@ -4813,6 +4875,7 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -4866,17 +4929,20 @@
           "hasMultipleNames": true,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "西曹掾、令史﹑學事",
                 "zhs": "西曹掾、令史﹑学事",
-                "en": "Western Section Administrator/Foreman Clerk/ Apprentice"
+                "en": "Western Section Administrator/Foreman Clerk/ Apprentice",
+                "aliases": [ { "zht": "西曹掾", "zhs": "西曹掾", "en": "Western Section Administrator" }, { "zht": "西曹令史", "zhs": "西曹令史", "en": "Western Section Foreman Clerk" }, { "zht": "西曹學事", "zhs": "西曹学事", "en": "Western Section Apprentice" } ]
               },
               {
                 "zht": "東曹掾、令史﹑學事",
                 "zhs": "东曹掾、令史﹑学事",
-                "en": "Eastern Section Administrator/Foreman Clerk/ Apprentice"
+                "en": "Eastern Section Administrator/Foreman Clerk/ Apprentice",
+                "aliases": [ { "zht": "東曹掾", "zhs": "东曹掾", "en": "Eastern Section Administrator" }, { "zht": "東曹令史", "zhs": "东曹令史", "en": "Eastern Section Foreman Clerk" }, { "zht": "東曹學事", "zhs": "东曹学事", "en": "Eastern Section Apprentice" } ]
               }
             ],
             "shu": [
@@ -4890,7 +4956,8 @@
               {
                 "zht": "東西曹掾",
                 "zhs": "东西曹掾",
-                "en": "Western/Eastern Section Administrator"
+                "en": "Western/Eastern Section Administrator",
+                "aliases": [ { "zht": "西曹掾", "zhs": "西曹掾", "en": "Western Section Administrator" }, { "zht": "東曹掾", "zhs": "东曹掾", "en": "Eastern Section Administrator" } ]
               },
               {
                 "zht": "書部從事",
@@ -5281,6 +5348,7 @@
           "hasMultipleNames": false,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5328,6 +5396,7 @@
           "hasMultipleNames": false,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5375,6 +5444,7 @@
           "hasMultipleNames": true,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5394,7 +5464,8 @@
               {
                 "zht": "中﹑左﹑右司馬",
                 "zhs": "中﹑左﹑右司马",
-                "en": "Major on the Middle/Left/Right"
+                "en": "Major on the Middle/Left/Right",
+                "aliases": [ { "zht": "中司馬", "zhs": "中司马", "en": "Major on the Middle" }, { "zht": "左司馬", "zhs": "左司马", "en": "Major on the Left" }, { "zht": "右司馬", "zhs": "右司马", "en": "Major on the Right" } ]
               }
             ]
           },
@@ -5422,6 +5493,7 @@
           "hasMultipleNames": false,
           "gradeNum": 6,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5469,19 +5541,22 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "正﹑行參軍",
                 "zhs": "正﹑行参军",
-                "en": "Main & Acting Army Adjutant"
+                "en": "Main & Acting Army Adjutant",
+                "aliases": [ { "zht": "正參軍", "zhs": "正参军", "en": "Main Army Adjutant" }, { "zht": "行參軍", "zhs": "行参军", "en": "Acting Army Adjutant" } ]
               }
             ],
             "shu": [
               {
                 "zht": "正﹑行參軍",
                 "zhs": "正﹑行参军",
-                "en": "Main & Acting Army Adjutant"
+                "en": "Main & Acting Army Adjutant",
+                "aliases": [ { "zht": "正參軍", "zhs": "正参军", "en": "Main Army Adjutant" }, { "zht": "行參軍", "zhs": "行参军", "en": "Acting Army Adjutant" } ]
               }
             ],
             "wu": [
@@ -5522,6 +5597,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5579,17 +5655,17 @@
               {
                 "zht": "門吏",
                 "zhs": "门吏",
-                "en": "Staff Attendant<br> <br>Staff Documents Clerk"
+                "en": "Staff Attendant"
               },
               {
                 "zht": "門下書吏",
                 "zhs": "门下书吏",
-                "en": "Staff Foreman Clerk"
+                "en": "Staff Documents Clerk"
               },
               {
                 "zht": "門令史",
                 "zhs": "门令史",
-                "en": ""
+                "en": "Staff Foreman Clerk"
               }
             ],
             "shu": [
@@ -5631,6 +5707,7 @@
           "hasMultipleNames": true,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5678,6 +5755,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5725,6 +5803,7 @@
           "hasMultipleNames": true,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5772,6 +5851,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5819,6 +5899,7 @@
           "hasMultipleNames": false,
           "gradeNum": 8,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5876,6 +5957,7 @@
           "hasMultipleNames": false,
           "gradeNum": 7,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5923,6 +6005,7 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
@@ -5960,12 +6043,14 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": [
               {
                 "zht": "兵﹑鎧﹑士﹑賊曹令史",
                 "zhs": "兵﹑铠﹑士﹑贼曹令史",
-                "en": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk"
+                "en": "Military Section/ Armor Section/ Serviceman Section/ Banditry Section Foreman Clerk",
+                "aliases": [ { "zht": "兵曹令史", "zhs": "兵曹令史", "en": "Military Section Foreman Clerk" }, { "zht": "鎧曹令史", "zhs": "铠曹令史", "en": "Armor Section Foreman Clerk" }, { "zht": "士曹令史", "zhs": "士曹令史", "en": "Serviceman Section Foreman Clerk" }, { "zht": "賊曹令史", "zhs": "贼曹令史", "en": "Banditry Section Foreman Clerk" } ]
               }
             ],
             "shu": [
@@ -7036,12 +7121,12 @@
               {
                 "zht": "建武將軍",
                 "zhs": "建武将军",
-                "en": "General Who Establishes Valor"
+                "en": "General Who Establishes Valour"
               },
               {
                 "zht": "奮武將軍",
                 "zhs": "奋武将军",
-                "en": "General Who Inspires Valor"
+                "en": "General Who Inspires Valour"
               }
             ],
             "shu": null,
@@ -7054,12 +7139,12 @@
               {
                 "zht": "建武將軍",
                 "zhs": "建武将军",
-                "en": "General Who Establishes Valor"
+                "en": "General Who Establishes Valour"
               },
               {
                 "zht": "奮武將軍",
                 "zhs": "奋武将军",
-                "en": "General Who Inspires Valor"
+                "en": "General Who Inspires Valour"
               }
             ]
           },
@@ -7107,7 +7192,7 @@
               {
                 "zht": "揚武將軍",
                 "zhs": "扬武将军",
-                "en": "General Who Promotes Valor"
+                "en": "General Who Promotes Valour"
               }
             ],
             "shu": [
@@ -7129,7 +7214,7 @@
               {
                 "zht": "揚武將軍",
                 "zhs": "扬武将军",
-                "en": "General Who Promotes Valor"
+                "en": "General Who Promotes Valour"
               }
             ],
             "wu": [
@@ -7151,7 +7236,7 @@
               {
                 "zht": "揚武將軍",
                 "zhs": "扬武将军",
-                "en": "General Who Promotes Valor"
+                "en": "General Who Promotes Valour"
               }
             ]
           },
@@ -7174,7 +7259,7 @@
           "displayName": {
             "zht": "振武將軍",
             "zhs": "振武将军",
-            "en": "General Who Rallies Valor"
+            "en": "General Who Rallies Valour"
           },
           "hasMultipleNames": true,
           "gradeNum": 4,
@@ -7184,7 +7269,7 @@
               {
                 "zht": "振武將軍",
                 "zhs": "振武将军",
-                "en": "General Who Rallies Valor"
+                "en": "General Who Rallies Valour"
               },
               {
                 "zht": "廣威將軍",
@@ -7194,7 +7279,7 @@
               {
                 "zht": "廣武將軍",
                 "zhs": "广武将军",
-                "en": "General Who Expands Valor"
+                "en": "General Who Expands Valour"
               }
             ],
             "shu": null,
@@ -7419,7 +7504,8 @@
               {
                 "zht": "正﹑行參軍",
                 "zhs": "正﹑行参军",
-                "en": "Main & Acting Army Adjutant"
+                "en": "Main & Acting Army Adjutant",
+                "aliases": [ { "zht": "正參軍", "zhs": "正参军", "en": "Main Army Adjutant" }, { "zht": "行參軍", "zhs": "行参军", "en": "Acting Army Adjutant" } ]
               }
             ],
             "shu": [
@@ -7511,7 +7597,7 @@
         {
           "id": "four-direction--misc-145",
           "displayName": {
-            "zht": "鷹揚將軍<",
+            "zht": "鷹揚將軍",
             "zhs": "鹰扬将军",
             "en": "Soaring Eagle General"
           },
@@ -7615,7 +7701,7 @@
           "displayName": {
             "zht": "昭武將軍",
             "zhs": "昭武将军",
-            "en": "General Who Illuminates Valor"
+            "en": "General Who Illuminates Valour"
           },
           "hasMultipleNames": true,
           "gradeNum": 5,
@@ -7625,11 +7711,11 @@
               {
                 "zht": "昭武將軍",
                 "zhs": "昭武将军",
-                "en": "General Who Illuminates Valor"
+                "en": "General Who Illuminates Valour"
               },
               {
-                "zht": "昭烈將軍<br> <br>昭德將軍",
-                "zhs": "昭烈将军<br> <br>昭德将军",
+                "zht": "昭烈將軍",
+                "zhs": "昭烈将军",
                 "en": "General Who Illuminates Ferocity"
               },
               {
@@ -7645,7 +7731,7 @@
             ],
             "shu": [
               {
-                "zht": "昭文將軍 ",
+                "zht": "昭文將軍",
                 "zhs": "昭文将军",
                 "en": "General Who Illuminates Brilliance"
               },
@@ -7659,12 +7745,12 @@
               {
                 "zht": "昭武將軍",
                 "zhs": "昭武将军",
-                "en": "General Who Illuminates Valor"
+                "en": "General Who Illuminates Valour"
               },
               {
                 "zht": "厲武將軍",
                 "zhs": "厉武将军",
-                "en": "General Who Rouses Valor"
+                "en": "General Who Rouses Valour"
               }
             ]
           },
@@ -7904,7 +7990,7 @@
               {
                 "zht": "綏武將軍",
                 "zhs": "绥武将军",
-                "en": "General of Calming Valor"
+                "en": "General of Calming Valour"
               },
               {
                 "zht": "撫戎將軍",
@@ -8318,6 +8404,7 @@
           "hasMultipleNames": true,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": null,
             "shu": [
@@ -8365,6 +8452,7 @@
           "hasMultipleNames": true,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": null,
             "shu": [
@@ -8406,18 +8494,19 @@
           "displayName": {
             "zht": "翊武將軍",
             "zhs": "翊武将军",
-            "en": "General Who Supports Valor"
+            "en": "General Who Supports Valour"
           },
           "hasMultipleNames": true,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": null,
             "shu": [
               {
                 "zht": "翊武將軍",
                 "zhs": "翊武将军",
-                "en": "General Who Supports Valor"
+                "en": "General Who Supports Valour"
               },
               {
                 "zht": "綏軍將軍",
@@ -8451,6 +8540,7 @@
           "hasMultipleNames": true,
           "gradeNum": 5,
           "tier": "secondary",
+          "reportsTo": "category",
           "name": {
             "wei": null,
             "shu": [
@@ -8982,6 +9072,7 @@
           "hasMultipleNames": false,
           "gradeNum": null,
           "tier": "secondary",
+          "reportsTo": "secondary",
           "name": {
             "wei": null,
             "shu": null,
@@ -9089,7 +9180,7 @@
               {
                 "zht": "昭武中郎將",
                 "zhs": "昭武中郎将",
-                "en": "Gentleman-General Who Illuminates Valor"
+                "en": "Gentleman-General Who Illuminates Valour"
               },
               {
                 "zht": "武猛中郎將",
@@ -9101,17 +9192,17 @@
               {
                 "zht": "定武中郎將",
                 "zhs": "定武中郎将",
-                "en": "Gentleman-General Who Secures with Valor"
+                "en": "Gentleman-General Who Secures with Valour"
               },
               {
                 "zht": "昭武中郎將",
                 "zhs": "昭武中郎将",
-                "en": "Gentleman-General Who Illuminates Valor"
+                "en": "Gentleman-General Who Illuminates Valour"
               },
               {
                 "zht": "威武中郎將",
                 "zhs": "威武中郎将",
-                "en": "Gentleman-General Who Awes with Valor"
+                "en": "Gentleman-General Who Awes with Valour"
               }
             ]
           },
@@ -9157,22 +9248,22 @@
               {
                 "zht": "揚武中郎將",
                 "zhs": "扬武中郎将",
-                "en": "Gentleman-General Who Promotes Valor"
+                "en": "Gentleman-General Who Promotes Valour"
               },
               {
                 "zht": "建武中郎將",
                 "zhs": "建武中郎将",
-                "en": "Gentleman-General Who Establishes Valor"
+                "en": "Gentleman-General Who Establishes Valour"
               },
               {
                 "zht": "奮武中郎將",
                 "zhs": "奋武中郎将",
-                "en": "Gentleman-General Who Inspires Valor"
+                "en": "Gentleman-General Who Inspires Valour"
               },
               {
                 "zht": "立武中郎將",
                 "zhs": "立武中郎将",
-                "en": "Gentleman-General Who Champions Valor"
+                "en": "Gentleman-General Who Champions Valour"
               },
               {
                 "zht": "建威中郎將",
@@ -10140,7 +10231,8 @@
               {
                 "zht": "鹽府校尉 / 司鹽校尉",
                 "zhs": "盐府校尉 / 司盐校尉",
-                "en": "Colonel of the Salt Bureau / Colonel for Salt Affairs"
+                "en": "Colonel of the Salt Bureau / Colonel for Salt Affairs",
+                "aliases": [ { "zht": "鹽府校尉", "zhs": "盐府校尉", "en": "Colonel of the Salt Bureau" }, { "zht": "司鹽校尉", "zhs": "司盐校尉", "en": "Colonel for Salt Affairs" } ]
               }
             ],
             "wu": [
@@ -10266,8 +10358,8 @@
             "wei": null,
             "shu": [
               {
-                "zht": "昭信校尉<br> <br>宣信校尉",
-                "zhs": "昭信校尉<br> <br>宣信校尉",
+                "zht": "昭信校尉",
+                "zhs": "昭信校尉",
                 "en": "Colonel Who Illuminates Trust"
               },
               {
@@ -10373,7 +10465,7 @@
           "displayName": {
             "zht": "奮武校尉",
             "zhs": "奋武校尉",
-            "en": "Colonel Who Inspires Valor"
+            "en": "Colonel Who Inspires Valour"
           },
           "hasMultipleNames": true,
           "gradeNum": null,
@@ -10385,7 +10477,7 @@
               {
                 "zht": "奮武校尉",
                 "zhs": "奋武校尉",
-                "en": "Colonel Who Inspires Valor"
+                "en": "Colonel Who Inspires Valour"
               },
               {
                 "zht": "奮威校尉",
@@ -10395,12 +10487,12 @@
               {
                 "zht": "建武校尉",
                 "zhs": "建武校尉",
-                "en": "Colonel Who Establishes Valor"
+                "en": "Colonel Who Establishes Valour"
               },
               {
                 "zht": "立武校尉",
                 "zhs": "立武校尉",
-                "en": "Colonel Who Champions Valor"
+                "en": "Colonel Who Champions Valour"
               },
               {
                 "zht": "武猛校尉",
@@ -11080,7 +11172,7 @@
           "displayName": {
             "zht": "揚武都尉",
             "zhs": "扬武都尉",
-            "en": "Commandant Who Promotes Valor"
+            "en": "Commandant Who Promotes Valour"
           },
           "hasMultipleNames": true,
           "gradeNum": null,
@@ -11092,12 +11184,12 @@
               {
                 "zht": "揚武都尉",
                 "zhs": "扬武都尉",
-                "en": "Commandant Who Promotes Valor"
+                "en": "Commandant Who Promotes Valour"
               },
               {
                 "zht": "建武都尉",
                 "zhs": "建武都尉",
-                "en": "Commandant Who Establishes Valor"
+                "en": "Commandant Who Establishes Valour"
               },
               {
                 "zht": "承烈都尉",

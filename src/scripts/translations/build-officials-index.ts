@@ -13,7 +13,7 @@ import palaceData from '../../data/officials/rear-eastern-palace-database.json';
 // Map each loaded JSON file to the category page it belongs to.
 // 'nobility' has no backing file yet (WIP) — omitted, so it's silently
 // skipped rather than erroring.
-const fileMap: Record<string, any> = {
+export const fileMap: Record<string, any> = {
   departments: centralCourtData,
   ministers:   excellenciesData,
   military:    militaryData,
@@ -59,7 +59,9 @@ function namePairs(pos: any): { en: string; zht: string; zhs: string; kingdoms: 
   const indexByKey = new Map<string, number>();
 
   for (const [kingdom, arr] of sources) {
-    for (const n of arr) {
+    // A grouped name (e.g. 前、後、左、右護軍) carries its individual titles
+    // as aliases — search those instead, so each title matches on its own.
+    for (const n of arr.flatMap((n: any) => n?.aliases?.length ? n.aliases : [n])) {
       const en = stripHtml(n?.en);
       const zht = stripHtml(n?.zht ?? n?.en);
       const zhs = stripHtml(n?.zhs ?? n?.en);
@@ -125,26 +127,46 @@ function kingdomsFor(pos: any): string[] {
   return kingdoms;
 }
 
+// Pages whose categories have no single head office (military: peer generals
+// sharing one staff list) — the category label itself roots the chain.
+const categoryRootPages = new Set(['military']);
+
 export function buildAllPositions(): any[] {
   const allPositions: any[] = [];
 
   function withHierarchy(positions: any[]): any[] {
     let lastDignitary: any = null;
     let lastSecondary: any = null;
+    let lastSecondaryChain: any[] = [];
     const out: any[] = [];
 
     for (const pos of positions) {
       let superiors: any[] = [];
+      // reportsTo overrides the tier-order chain (search breadcrumb only;
+      // list indentation still follows tier):
+      //   "category"            — answers to the category as a whole (e.g.
+      //                           staff shared by every general listed above)
+      //   "secondary"           — answers to the nearest secondary above,
+      //                           though listed at the same tier
+      //   { en, zht, zhs }      — answers to a named group of the secondaries
+      //                           above (e.g. staff shared by the Five Colonels)
+      const reportsTo = pos.reportsTo;
+      const toCategory = reportsTo === 'category';
 
-      if (pos.tier === 'dignitary') {
+      if (reportsTo && typeof reportsTo === 'object') {
+        superiors = [...lastSecondaryChain, { displayName: reportsTo }];
+      } else if (reportsTo === 'secondary' && lastSecondary) {
+        superiors = [...lastSecondaryChain, lastSecondary];
+      } else if (pos.tier === 'dignitary') {
         lastDignitary = pos;
         lastSecondary = null;
       } else if (pos.tier === 'secondary') {
-        if (lastDignitary) superiors = [lastDignitary];
+        if (lastDignitary && !toCategory) superiors = [lastDignitary];
         lastSecondary = pos;
-      } else if (pos.tier === 'minor') {
+        lastSecondaryChain = superiors;
+      } else if (pos.tier === 'minor' && !toCategory) {
         if (lastSecondary) {
-          superiors = lastDignitary ? [lastDignitary, lastSecondary] : [lastSecondary];
+          superiors = [...lastSecondaryChain, lastSecondary];
         } else if (lastDignitary) {
           superiors = [lastDignitary];
         }
@@ -167,7 +189,10 @@ export function buildAllPositions(): any[] {
       }
       groups.push(...withHierarchy(cat.positions ?? []));
 
-      for (const { pos, superiors } of groups) {
+      const root = categoryRootPages.has(pageId) ? [{ displayName: cat.label }] : [];
+
+      for (const { pos, superiors: chain } of groups) {
+        const superiors = [...root, ...chain];
         allPositions.push({
           id: pos.id,
           nameEn:  firstName(pos, 'en'),

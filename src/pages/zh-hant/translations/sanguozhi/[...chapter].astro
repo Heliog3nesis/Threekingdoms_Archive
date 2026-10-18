@@ -22,6 +22,7 @@ import {
   biographyCount,
   renderAppraisalSubjects,
 } from '../../../../scripts/translations/chapterFormat';
+import { buildPersonIndex } from '../../../../scripts/translations/sgzPersonIndex';
 
 const TEXT_TITLE = { zht: '三國志', zhs: '三国志', en: 'Records of the Three Kingdoms' };
 
@@ -117,22 +118,8 @@ const chapterUrl = (id: string) => `${baseUrl}/${id}`;
 const translatedChapters = chapters.filter((c: any) => c.passages && c.passages.length > 0 && !isAppraisal(c));
 const coverChapters = translatedChapters.length > 0 ? translatedChapters : chapters;
 
-// Person index for the cover's search panel — one entry per translated
-// chapter, its main subject (already have a clean zht/zhs/en via
-// ch.label). Previously this also indexed every other person named in
-// a chapter's journeyOverviews/relationships data as a searchable
-// "mention", but that needs more work (dedup, disambiguation) before
-// it's ready — for now the search only covers biography titles.
-// Chinese-only display (this is the zh-hant page), always the
-// traditional form. `zhs` and `en` aren't shown but are kept so a query
-// typed in simplified Chinese or English/pinyin still matches.
-type PersonEntry = { zh: string; zhs: string; en: string; chapterId: string; bookZh: string };
-const personIndex: PersonEntry[] = chapters
-  .filter((ch: any) => ch.passages && ch.passages.length > 0 && !isAppraisal(ch))
-  .map((ch: any) => ({
-    zh: cn(ch.label), zhs: ch.label.zhs, en: ch.label.en || ch.title?.en || '',
-    chapterId: ch.id, bookZh: cn(ch.bookLabel),
-  }));
+// Person index for the cover's "Find a person" search
+const personIndex = buildPersonIndex(chapters);
 
 // Whether the current chapter has any vernacular (白話) text — the 白話 view
 // button is only shown when it does.
@@ -502,6 +489,7 @@ const clientData = JSON.stringify({
     isAppraisal,
     renderAppraisalSubjects,
   } from '../../../../scripts/translations/chapterFormat';
+  import { searchPeople, renderPeople } from '../../../../scripts/translations/sgzPersonSearch';
 
   const dataEl = document.getElementById('sgz-data');
   const DATA = JSON.parse(dataEl ? dataEl.textContent ?? '{}' : '{}');
@@ -764,18 +752,6 @@ const clientData = JSON.stringify({
     });
   }
 
-  // Renders one search result — a chapter's biography title. (This used
-  // to also index secondary figures mentioned within a chapter, but that
-  // needs more work — dedup, disambiguation — before it's ready, so for
-  // now the index only covers biography titles, one per chapter.)
-  function renderPersonResult(p: any): string {
-    return `
-      <a href="${baseUrl}/${p.chapterId}" class="person-result" data-sgz-link data-chapter="${p.chapterId}">
-        <span class="pr-zh" lang="zh-hant">${esc(p.zh)}</span>
-        <span class="pr-context" lang="zh-hant">${esc(p.bookZh)}</span>
-      </a>`;
-  }
-
   // Wired fresh every time the cover renders (renderRoute calls this
   // unconditionally, same as the annotation/view-toggle handlers) —
   // the search input itself gets recreated whenever you navigate back
@@ -785,21 +761,12 @@ const clientData = JSON.stringify({
     const results = document.getElementById('person-search-results');
     if (!input || !results) return; // not on the cover page right now
 
+    const chapterList = results.innerHTML; // shown again when the box is cleared
     input.addEventListener('input', () => {
-      const raw = input.value.trim();
-      const q = raw.toLowerCase();
-      if (!q) {
-        results.innerHTML = (personIndex || []).map(renderPersonResult).join('');
-        return;
-      }
-      const matches = (personIndex || []).filter((p: any) =>
-        (p.zh && p.zh.includes(raw)) ||
-        (p.zhs && p.zhs.includes(raw)) ||
-        (p.en && p.en.toLowerCase().includes(q))
-      ).slice(0, 40);
-      results.innerHTML = matches.length
-        ? matches.map(renderPersonResult).join('')
-        : '<div class="person-search-empty">查無結果。</div>';
+      const q = input.value.trim();
+      results.innerHTML = q
+        ? renderPeople(searchPeople(personIndex.people, q), 'zht', personIndex.chapterLinks, baseUrl)
+        : chapterList;
     });
   }
 
@@ -958,6 +925,22 @@ const clientData = JSON.stringify({
 .pr-zh { font-family: 'LXGW WenKai', serif; font-size: 18px; color: var(--color-text-primary); }
 .pr-context { font-size: 13.5px; color: var(--color-text-tertiary); flex-shrink: 0; margin-left: auto; }
 .person-search-empty { font-size: 13.5px; color: var(--color-text-tertiary); font-style: italic; padding: 0.5rem 0; }
+.person-hit { padding: 0.7rem 1rem; border: 0.5px solid var(--color-border); border-radius: var(--radius-lg, var(--radius-md)); }
+.ph-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.ph-name { font-size: 15px; color: var(--color-text-primary); }
+.ph-name-zh { font-family: 'LXGW WenKai', serif; font-size: 18px; }
+.ph-alt { font-size: 13.5px; color: var(--color-text-secondary); }
+.ph-alt-zh { font-family: 'LXGW WenKai', serif; font-size: 15.5px; }
+.ph-cz { font-size: 12.5px; color: var(--color-text-tertiary); }
+.ph-cz [lang] { font-family: 'LXGW WenKai', serif; font-size: 14px; }
+.ph-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
+.ph-bio { font-size: 15px; color: var(--archive-gold-soft, #d0aa6b); text-decoration: none; padding: 2px 10px; border: 0.5px solid rgba(208,170,107,0.45); border-radius: 20px; }
+.ph-bio:hover { background: rgba(208,170,107,0.08); }
+.ph-mentions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.ph-mentions-label { font-size: 14px; color: var(--color-text-tertiary); margin-right: 2px; }
+.ph-chip { font-size: 14.5px; color: var(--color-text-secondary); text-decoration: none; padding: 2px 9px; border: 0.5px solid var(--color-border); border-radius: 20px; }
+.ph-chip:hover { border-color: var(--archive-gold-soft, #d0aa6b); color: var(--archive-gold-soft, #d0aa6b); }
+.ph-bio[lang], .ph-chip[lang], .ph-mentions-label { font-family: 'LXGW WenKai', serif; }
 
 .chapter-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem 2rem 1.5rem; border-bottom: 0.5px solid var(--color-border); }
 .ch-title-group { min-width: 0; }

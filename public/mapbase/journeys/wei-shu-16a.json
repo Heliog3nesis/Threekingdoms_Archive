@@ -374,116 +374,345 @@
     {
       "from": "任峻（伯達）",
       "to": "楊原",
-      "type": "served under",
-      "passageId": "ws16a-p1"
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p1",
+          "text": {
+            "en": "Ren Jun urged the fearful Magistrate of Zhongmu, Yang Yuan, to rally the counties east of the passes against Dong Zhuo instead of fleeing; Yang Yuan took his advice and made him Registrar.",
+            "zht": "中牟令楊原懼亂欲棄官逃走，任峻勸他號召關東諸縣共討董卓，楊原採納其計，任命任峻為主簿。",
+            "zhs": "中牟令杨原惧乱欲弃官逃走，任峻劝他号召关东诸县共讨董卓，杨原采纳其计，任命任峻为主簿。"
+          },
+          "title": {
+            "en": "Registrar",
+            "zht": "主簿",
+            "zhs": "主簿"
+          }
+        }
+      ]
     },
     {
       "from": "任峻（伯達）",
-      "to": "曹操",
-      "type": "pledged allegiance to",
-      "passageId": "ws16a-p2"
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p2",
+          "text": {
+            "en": "When the people of Zhongmu did not know whom to follow, Ren Jun brought his whole commandery and several hundred clansmen and retainers over to Cao Cao, who was delighted, made him Commandant of Cavalry, and trusted him to guard the base and provision the army on campaign.",
+            "zht": "中牟百姓不知所從，任峻率全郡及數百宗族部曲投奔曹操，曹操大喜，任命他為騎都尉，並委以留守後方、供應軍糧之任。",
+            "zhs": "中牟百姓不知所从，任峻率全郡及数百宗族部曲投奔曹操，曹操大喜，任命他为骑都尉，并委以留守后方、供应军粮之任。"
+          },
+          "title": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          }
+        },
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Cao Cao made Ren Jun Gentleman-General Directing Agriculture; grain soon filled every granary where he served, and at Guandu he was put in charge of military equipment and supply convoys, defeating repeated enemy raids with a defensive wagon formation.",
+            "zht": "曹操任命任峻為典農中郎將，數年之間所在積粟，倉廩皆滿；官渡之戰中又督運軍資糧草，以方陣結營擊退敵軍屢次劫掠。",
+            "zhs": "曹操任命任峻为典农中郎将，数年之间所在积粟，仓廪皆满；官渡之战中又督运军资粮草，以方阵结营击退敌军屡次劫掠。"
+          },
+          "title": {
+            "en": "Gentleman-General Directing Agriculture",
+            "zht": "典農中郎將",
+            "zhs": "典农中郎将"
+          }
+        },
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "For his great achievements Cao Cao memorialised to enfeoff Ren Jun as Capital Neighbourhood Marquis and promoted him to Colonel of the Changshui Regiment, usually approving his counsel; when Ren Jun died in the ninth year of Jian'an, Cao Cao wept for him for a long while.",
+            "zht": "曹操因任峻功勳卓著，上表封他為都亭侯，遷長水校尉，其建言多被採納；建安九年任峻去世，曹操為之流涕良久。",
+            "zhs": "曹操因任峻功勋卓著，上表封他为都亭侯，迁长水校尉，其建言多被采纳；建安九年任峻去世，曹操为之流涕良久。"
+          },
+          "title": {
+            "en": "Colonel of the Changshui Regiment",
+            "zht": "長水校尉",
+            "zhs": "长水校尉"
+          }
+        }
+      ]
     },
     {
       "from": "任峻（伯達）",
       "to": "張奮",
-      "type": "consulted with",
-      "passageId": "ws16a-p2"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p2",
+          "text": {
+            "en": "When the people of Zhongmu did not know whom to follow, Ren Jun alone consulted his fellow commandery native Zhang Fen, and together they brought the whole commandery over to Cao Cao.",
+            "zht": "中牟百姓不知所從，唯任峻與同郡人張奮商議，二人遂率全郡歸附曹操。",
+            "zhs": "中牟百姓不知所从，唯任峻与同郡人张奋商议，二人遂率全郡归附曹操。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
+      "from": "曹操（孟德）",
       "to": "任峻（伯達）",
-      "type": "gave cousin in marriage to",
-      "passageId": "ws16a-p2"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p2",
+          "text": {
+            "en": "Cao Cao gave Ren Jun a younger cousin in marriage, making them kin by marriage.",
+            "zht": "曹操將族妹嫁給任峻，二人結為姻親。",
+            "zhs": "曹操将族妹嫁给任峻，二人结为姻亲。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "任峻（伯達）",
-      "type": "appointed",
-      "passageId": "ws16a-p3"
+      "from": "任峻（伯達）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "When Cao Pi later honoured meritorious officials, he bestowed on the late Ren Jun the posthumous title Marquis Cheng, the Accomplished Marquis.",
+            "zht": "曹丕後來追錄功臣，追諡已故的任峻為成侯。",
+            "zhs": "曹丕后来追录功臣，追谥已故的任峻为成侯。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "棗祗",
-      "type": "appointed",
-      "passageId": "ws16a-p3"
-    },
-    {
-      "from": "曹操",
-      "to": "任峻（伯達）",
-      "type": "enfeoffed",
-      "passageId": "ws16a-p4"
-    },
-    {
-      "from": "曹操",
-      "to": "任峻（伯達）",
-      "type": "promoted",
-      "passageId": "ws16a-p4"
-    },
-    {
-      "from": "曹丕",
-      "to": "任峻（伯達）",
-      "type": "bestowed posthumous title on",
-      "passageId": "ws16a-p4"
-    },
-    {
-      "from": "曹丕",
-      "to": "任覽",
-      "type": "enfeoffed",
-      "passageId": "ws16a-p4"
+      "from": "任覽",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "Cao Pi enfeoffed Ren Jun's second son, Ren Lan, as Marquis Within the Pass.",
+            "zht": "曹丕封任峻次子任覽為關內侯。",
+            "zhs": "曹丕封任峻次子任览为关内侯。"
+          },
+          "title": {
+            "en": "Marquis Within the Pass",
+            "zht": "關內侯",
+            "zhs": "关内侯"
+          }
+        }
+      ]
     },
     {
       "from": "任峻（伯達）",
       "to": "任先",
-      "type": "father of",
-      "passageId": "ws16a-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "Ren Jun's son Ren Xian succeeded him but died without an heir, and the marquisate was abolished.",
+            "zht": "任峻之子任先襲爵，去世後無嗣，封國被廢除。",
+            "zhs": "任峻之子任先袭爵，去世后无嗣，封国被废除。"
+          }
+        }
+      ]
     },
     {
       "from": "任峻（伯達）",
       "to": "任覽",
-      "type": "father of",
-      "passageId": "ws16a-p4"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p4",
+          "text": {
+            "en": "Ren Jun's second son, Ren Lan, was later enfeoffed as Marquis Within the Pass.",
+            "zht": "任峻次子任覽後來被封為關內侯。",
+            "zhs": "任峻次子任览后来被封为关内侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "棗祗",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Zhi joined Cao Cao in raising righteous troops, stayed loyal when Yuan Shao tried to win him over, held Dong'a for Cao Cao during Lü Bu's revolt, and pressed his agricultural-colony scheme against doubt until Cao Cao adopted it and made him Commandant Directing Agriculture; that year brought a great harvest.",
+            "zht": "棗祗追隨曹操舉義兵，袁紹欲羅致而始終不改，呂布叛亂時固守東阿，又力排眾議推行屯田，曹操終採納其策，任為典農都尉，當年即獲大豐收。",
+            "zhs": "枣祗追随曹操举义兵，袁绍欲罗致而始终不改，吕布叛乱时固守东阿，又力排众议推行屯田，曹操终采纳其策，任为典农都尉，当年即获大丰收。"
+          },
+          "title": {
+            "en": "Commandant Directing Agriculture",
+            "zht": "典農都尉",
+            "zhs": "典农都尉"
+          }
+        },
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "After Zao Zhi died young, Cao Cao issued an order acknowledging that his posthumous honours had not matched his merit, and granting his son Chuzhong a rank and fief so that sacrifices to him could continue.",
+            "zht": "棗祗早逝後，曹操下令承認對他的追贈不足以酬其功，並封其子處中為侯，使祭祀得以延續。",
+            "zhs": "枣祗早逝后，曹操下令承认对他的追赠不足以酬其功，并封其子处中为侯，使祭祀得以延续。"
+          }
+        }
+      ]
     },
     {
       "from": "棗祗",
       "to": "棗處中",
-      "type": "father of",
-      "passageId": "ws16a-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Cao Cao granted Zao Zhi's son Chuzhong a nobility rank and fief so that sacrifices to his father could continue in perpetuity.",
+            "zht": "曹操封棗祗之子處中爵位與封邑，使其父祭祀永不斷絕。",
+            "zhs": "曹操封枣祗之子处中爵位与封邑，使其父祭祀永不断绝。"
+          }
+        }
+      ]
     },
     {
       "from": "棗祗",
       "to": "棗據（道彥）",
-      "type": "grandfather of",
-      "passageId": "ws16a-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "A note on the Zao family records that Zao Zhi's grandson Zao Ju, courtesy name Daoyan, served under Jin as Inspector of Ji Province.",
+            "zht": "有註記載棗祗之孫棗據，字道彥，仕晉為冀州刺史。",
+            "zhs": "有注记载枣祗之孙枣据，字道彦，仕晋为冀州刺史。"
+          }
+        }
+      ]
     },
     {
       "from": "棗據（道彥）",
       "to": "棗嵩（臺產）",
-      "type": "father of",
-      "passageId": "ws16a-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Ju's son Zao Song, courtesy name Taichan, was Cavalier Regular Attendant.",
+            "zht": "棗據之子棗嵩，字臺產，官至散騎常侍。",
+            "zhs": "枣据之子枣嵩，字台产，官至散骑常侍。"
+          }
+        }
+      ]
     },
     {
       "from": "棗據（道彥）",
       "to": "棗腆（玄方）",
-      "type": "father of",
-      "passageId": "ws16a-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Ju's son Zao Tian, courtesy name Xuanfang, was Grand Administrator of Xiangcheng.",
+            "zht": "棗據之子棗腆，字玄方，官至襄城太守。",
+            "zhs": "枣据之子枣腆，字玄方，官至襄城太守。"
+          }
+        }
+      ]
     },
     {
       "from": "棗嵩（臺產）",
       "to": "棗腆（玄方）",
-      "type": "younger brother of",
-      "passageId": "ws16a-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Zao Song and Zao Tian were brothers, both known for their talent and writings.",
+            "zht": "棗嵩與棗腆為兄弟，皆以才學文章聞名。",
+            "zhs": "枣嵩与枣腆为兄弟，皆以才学文章闻名。"
+          }
+        }
+      ]
     },
     {
-      "from": "荀彧",
+      "from": "荀彧（文若）",
       "to": "棗祗",
-      "type": "discussed with",
-      "passageId": "ws16a-p3"
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Unsure of Zao Zhi's levy proposal, Cao Cao sent him to discuss it with Xun Yu; doubts were raised, but Zao Zhi remained confident and returned to present his calculations.",
+            "zht": "曹操對棗祗的租牛徵谷之議猶豫，派他與荀彧商議；雖有疑慮，棗祗仍堅信己見，歸而陳述其計算與方案。",
+            "zhs": "曹操对枣祗的租牛征谷之议犹豫，派他与荀彧商议；虽有疑虑，枣祗仍坚信己见，归而陈述其计算与方案。"
+          }
+        }
+      ]
     },
     {
       "from": "侯聲",
-      "to": "荀彧",
-      "type": "raised doubts in",
-      "passageId": "ws16a-p3"
+      "to": "荀彧（文若）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Military Libationer Hou Sheng argued that Zao Zhi's proposal benefited the government at the tenants' expense, and his arguments made Xun Yu doubt it.",
+            "zht": "軍祭酒侯聲認為棗祗之議利官而不利佃戶，其說使荀彧對此議產生疑慮。",
+            "zhs": "军祭酒侯声认为枣祗之议利官而不利佃户，其说使荀彧对此议产生疑虑。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "侯聲",
+      "to": "棗祗",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16a-p3",
+          "text": {
+            "en": "Hou Sheng opposed Zao Zhi's proposal to levy grain in proportion to the harvest, until Zao Zhi's calculations won Cao Cao over.",
+            "zht": "侯聲反對棗祗按收成徵糧之議，直至棗祗的計算說服曹操。",
+            "zhs": "侯声反对枣祗按收成征粮之议，直至枣祗的计算说服曹操。"
+          }
+        }
+      ]
     }
   ]
 }

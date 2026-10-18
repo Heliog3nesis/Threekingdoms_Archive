@@ -20,7 +20,7 @@
       "lng": 116.11731326,
       "name": "Mo",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -29,7 +29,7 @@
       "lng": 114.04675874,
       "name": "Guandu",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -38,14 +38,14 @@
       "lng": 114.3635467,
       "name": "Ye",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
       "kind": "admin",
       "id": "155",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -54,14 +54,14 @@
       "lng": 117.05461025,
       "name": "Yongnu",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
       "kind": "admin",
       "id": "46",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "lng": 120.39183453,
       "name": "Liucheng",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -79,73 +79,21 @@
       "lng": 116.22674698,
       "name": "Mount Tianzhu",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
       "kind": "water",
       "id": "14",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
       "kind": "admin",
       "id": "152",
       "persons": [
-        "張郃（儁乂）"
-      ]
-    },
-    {
-      "kind": "town",
-      "lat": 35.81855952,
-      "lng": 102.88157512,
-      "name": "Heguan",
-      "persons": [
-        "張郃（儁乂）"
-      ]
-    },
-    {
-      "kind": "town",
-      "lat": 34.30099179,
-      "lng": 106.94900224,
-      "name": "Sanguan",
-      "persons": [
-        "張郃（儁乂）"
-      ]
-    },
-    {
-      "kind": "town",
-      "lat": 33.16854232,
-      "lng": 106.61155724,
-      "name": "Yangpingguan",
-      "persons": [
-        "張郃（儁乂）"
-      ]
-    },
-    {
-      "kind": "admin",
-      "id": "110",
-      "persons": [
-        "張郃（儁乂）"
-      ]
-    },
-    {
-      "kind": "town",
-      "lat": 31.00817404,
-      "lng": 107.1663695,
-      "name": "Dangqu",
-      "persons": [
-        "張郃（儁乂）"
-      ]
-    },
-    {
-      "kind": "town",
-      "lat": 33.07615412,
-      "lng": 107.04307789,
-      "name": "Nanzheng",
-      "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -154,7 +102,59 @@
       "lng": 107.20726452,
       "name": "Chencang",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.81855952,
+      "lng": 102.88157512,
+      "name": "Heguan",
+      "persons": [
+        "張郃（㑺乂）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.30099179,
+      "lng": 106.94900224,
+      "name": "Sanguan",
+      "persons": [
+        "張郃（㑺乂）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.16854232,
+      "lng": 106.61155724,
+      "name": "Yangpingguan",
+      "persons": [
+        "張郃（㑺乂）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "110",
+      "persons": [
+        "張郃（㑺乂）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.00817404,
+      "lng": 107.1663695,
+      "name": "Dangqu",
+      "persons": [
+        "張郃（㑺乂）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.07615412,
+      "lng": 107.04307789,
+      "name": "Nanzheng",
+      "persons": [
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -163,7 +163,7 @@
       "lng": 114.02211887,
       "name": "Xuchang",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -172,14 +172,14 @@
       "lng": 112.18710173,
       "name": "Jiangling",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
       "kind": "admin",
       "id": "2",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -188,7 +188,7 @@
       "lng": 112.10704664,
       "name": "Qikou",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -197,21 +197,21 @@
       "lng": 106.19109543,
       "name": "Jieting",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
       "kind": "admin",
       "id": "149",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
       "kind": "admin",
       "id": "148",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -220,7 +220,7 @@
       "lng": 112.41910274,
       "name": "Henan",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -229,7 +229,7 @@
       "lng": 112.5823423,
       "name": "Luoyang",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -238,7 +238,7 @@
       "lng": 108.78715169,
       "name": "Ziwu Valley",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -247,7 +247,7 @@
       "lng": 105.98328385,
       "name": "Lüeyang",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     },
     {
@@ -256,13 +256,13 @@
       "lng": 105.55193491,
       "name": "Mumen",
       "persons": [
-        "張郃（儁乂）"
+        "張郃（㑺乂）"
       ]
     }
   ],
   "journeyOverviews": [
     {
-      "person": "張郃（儁乂）",
+      "person": "張郃（㑺乂）",
       "name": {
         "en": "Zhang He",
         "zht": "張郃",
@@ -270,8 +270,8 @@
       },
       "courtesyName": {
         "en": "Junyi",
-        "zht": "儁乂",
-        "zhs": "俊乂"
+        "zht": "㑺乂",
+        "zhs": "㑺乂"
       },
       "born": {
         "era": {
@@ -560,6 +560,11 @@
               "zhs": "安定"
             },
             {
+              "en": "Chencang",
+              "zht": "陳倉",
+              "zhs": "陈仓"
+            },
+            {
               "en": "Heguan",
               "zht": "河關",
               "zhs": "河关"
@@ -575,6 +580,12 @@
             {
               "kind": "admin",
               "id": "152"
+            },
+            {
+              "kind": "town",
+              "lat": 34.37486808,
+              "lng": 107.20726452,
+              "name": "Chencang"
             },
             {
               "kind": "town",
@@ -996,118 +1007,400 @@
   ],
   "relationships": [
     {
-      "from": "張郃",
-      "to": "韓馥",
-      "type": "下屬",
-      "passageId": "ws17d-p1"
+      "from": "張郃（㑺乂）",
+      "to": "韓馥（文節）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p1",
+          "text": {
+            "en": "Zhang He answered the call to campaign against the Yellow Turbans and became an army Major under Han Fu.",
+            "zht": "張郃響應招募討伐黃巾軍，任司馬，爲韓馥部下。",
+            "zhs": "张郃响应招募讨伐黄巾军，任司马，为韩馥部下。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
-      "to": "袁紹",
-      "type": "效忠",
-      "passageId": "ws17d-p1"
+      "from": "張郃（㑺乂）",
+      "to": "袁紹（本初）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p1",
+          "text": {
+            "en": "When Han Fu was defeated, Zhang He brought his troops to Yuan Shao, who appointed him Colonel and, after his great merit in defeating Gongsun Zan, promoted him to Gentleman-General.",
+            "zht": "韓馥兵敗後，張郃率兵歸附袁紹；袁紹任他爲校尉，因擊敗公孫瓚戰功卓著，升任中郎將。",
+            "zhs": "韩馥兵败后，张郃率兵归附袁绍；袁绍任他为校尉，因击败公孙瓒战功卓著，升任中郎将。"
+          }
+        },
+        {
+          "passageId": "ws17d-p2",
+          "text": {
+            "en": "At Guandu, Zhang He gave Yuan Shao sound strategic advice that went unheeded; after the ensuing defeat, slander from the jealous Guo Tu left Zhang He fearing for his life, and he surrendered to Cao Cao instead.",
+            "zht": "官渡之戰中，張郃向袁紹進諫良策卻不被採納；戰敗後又遭郭圖嫉恨誣陷，張郃心懷恐懼，遂轉而投降曹操。",
+            "zhs": "官渡之战中，张郃向袁绍进谏良策却不被采纳；战败后又遭郭图嫉恨诬陷，张郃心怀恐惧，遂转而投降曹操。"
+          }
+        }
+      ]
     },
     {
-      "from": "袁紹",
-      "to": "公孫瓚",
-      "type": "交戰",
-      "passageId": "ws17d-p1"
+      "from": "張郃（㑺乂）",
+      "to": "公孫瓚（伯珪）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p1",
+          "text": {
+            "en": "Yuan Shao sent Zhang He to resist Gongsun Zan, and after Gongsun Zan's defeat Zhang He was rewarded for his great merit in the campaign.",
+            "zht": "袁紹派張郃抵禦公孫瓚，公孫瓚敗後，張郃以戰功卓著獲得晉升。",
+            "zhs": "袁绍派张郃抵御公孙瓒，公孙瓒败后，张郃以战功卓著获得晋升。"
+          }
+        }
+      ]
     },
     {
-      "from": "太祖",
-      "to": "袁紹",
-      "type": "交戰",
-      "passageId": "ws17d-p2"
+      "from": "郭圖（公則）",
+      "to": "張郃（㑺乂）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p2",
+          "text": {
+            "en": "When Zhang He's advice to relieve Chunyu Qiong at Wuchao was overruled in favour of Guo Tu's own plan, and that plan then failed, an ashamed Guo Tu twice slandered Zhang He to Yuan Shao — first blaming his strategy, then falsely accusing him of gloating over the army's defeat — driving Zhang He to defect to Cao Cao out of fear.",
+            "zht": "張郃建議救援烏巢的淳于瓊不被採納，反用郭圖之計，計策失敗後，郭圖羞慚，竟兩度誣陷張郃——先責其計策有誤，繼而誣稱他因軍敗而口出不遜——致使張郃恐懼而投奔曹操。",
+            "zhs": "张郃建议救援乌巢的淳于琼不被采纳，反用郭图之计，计策失败后，郭图羞惭，竟两度诬陷张郃——先责其计策有误，继而诬称他因军败而口出不逊——致使张郃恐惧而投奔曹操。"
+          }
+        }
+      ]
     },
     {
-      "from": "郭圖",
-      "to": "張郃",
-      "type": "中傷",
-      "passageId": "ws17d-p2"
+      "from": "張郃（㑺乂）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p3",
+          "text": {
+            "en": "Cao Cao was delighted to gain Zhang He, comparing him favourably to Weizi and Han Xin for recognising when to change allegiance, and appointed him Adjunct General and Capital Neighbourhood Marquis.",
+            "zht": "太祖得張郃甚喜，以微子去殷、韓信歸漢比擬其識時知變，拜爲偏將軍，封都亭侯。",
+            "zhs": "太祖得张郃甚喜，以微子去殷、韩信归汉比拟其识时知变，拜为偏将军，封都亭侯。"
+          },
+          "title": {
+            "en": "Adjunct General",
+            "zht": "偏將軍",
+            "zhs": "偏将军"
+          }
+        },
+        {
+          "passageId": "ws17d-p3",
+          "text": {
+            "en": "Zhang He went on to win a long string of victories under Cao Cao — at Ye, Yongnu, Liucheng, against Guan Cheng, Chen Lan, Ma Chao, Han Sui, and more — earning promotion to General Who Subdues the Di.",
+            "zht": "張郃隨太祖屢立戰功——克鄴、破雍奴、討柳城、擊管承、陳蘭、馬超、韓遂等——因功升任平狄將軍。",
+            "zhs": "张郃随太祖屡立战功——克邺、破雍奴、讨柳城、击管承、陈兰、马超、韩遂等——因功升任平狄将军。"
+          }
+        },
+        {
+          "passageId": "ws17d-p4",
+          "text": {
+            "en": "In the Hanzhong campaign against Zhang Lu and then Liu Bei, Cao Cao repeatedly gave Zhang He independent command, and appointed him General Who Sweeps the Bandits.",
+            "zht": "征討張魯及劉備的漢中之役中，太祖屢次委張郃以獨立領軍之責，並拜爲蕩寇將軍。",
+            "zhs": "征讨张鲁及刘备的汉中之役中，太祖屡次委张郃以独立领军之责，并拜为荡寇将军。"
+          }
+        },
+        {
+          "passageId": "ws17d-p5",
+          "text": {
+            "en": "After Xiahou Yuan's death, Cao Cao confirmed Zhang He's battlefield elevation to command by sending an envoy to grant him the Imperial Tally.",
+            "zht": "夏侯淵陣亡後，太祖派使者授予張郃節杖，追認衆將推舉他爲主帥之事。",
+            "zhs": "夏侯渊阵亡后，太祖派使者授予张郃节杖，追认众将推举他为主帅之事。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
-      "to": "太祖",
-      "type": "投降",
-      "passageId": "ws17d-p3"
+      "from": "張郃（㑺乂）",
+      "to": "夏侯淵（妙才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p4",
+          "text": {
+            "en": "Left to jointly defend Hanzhong against Liu Bei, Zhang He and Xiahou Yuan fought side by side until Xiahou Yuan was killed in battle; an annotation notes that Liu Bei had feared Zhang He more than Xiahou Yuan all along, remarking after the killing, \"We should have taken their foremost man — what use was there in this one?\"",
+            "zht": "張郃與夏侯淵同守漢中抵禦劉備，並肩作戰直至夏侯淵陣亡；有註稱劉備一向忌憚張郃更甚於夏侯淵，殺淵後言：「當得其魁，用此何為邪！」",
+            "zhs": "张郃与夏侯渊同守汉中抵御刘备，并肩作战直至夏侯渊阵亡；有注称刘备一向忌惮张郃更甚于夏侯渊，杀渊后言：「当得其魁，用此何为邪！」"
+          }
+        }
+      ]
     },
     {
-      "from": "太祖",
-      "to": "袁譚",
-      "type": "交戰",
-      "passageId": "ws17d-p3"
+      "from": "劉備（玄德）",
+      "to": "張郃（㑺乂）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p4",
+          "text": {
+            "en": "Liu Bei launched a massed night attack against Zhang He's camp at Guangshi that failed to break him; an annotation records that Liu Bei feared Zhang He more than the nominal commander Xiahou Yuan.",
+            "zht": "劉備率精兵夜襲張郃駐守的廣石，未能得手；有註記劉備對張郃的忌憚更甚於名義主帥夏侯淵。",
+            "zhs": "刘备率精兵夜袭张郃驻守的广石，未能得手；有注记刘备对张郃的忌惮更甚于名义主帅夏侯渊。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
-      "to": "張遼",
-      "type": "同袍",
-      "passageId": "ws17d-p3"
+      "from": "張飛（益德）",
+      "to": "張郃（㑺乂）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p4",
+          "text": {
+            "en": "Advancing to Dangqu, Zhang He was repulsed by Liu Bei's general Zhang Fei and withdrew to Nanzheng.",
+            "zht": "張郃進軍宕渠，被劉備部將張飛所拒，退回南鄭。",
+            "zhs": "张郃进军宕渠，被刘备部将张飞所拒，退回南郑。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
-      "to": "夏侯淵",
-      "type": "同袍",
-      "passageId": "ws17d-p4"
+      "from": "郭淮（伯濟）",
+      "to": "張郃（㑺乂）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p5",
+          "text": {
+            "en": "When Xiahou Yuan's death left the army in panic, Guo Huai rallied the officers by declaring that only the renowned Zhang He, whom even Liu Bei feared, could steady them, and had him nominated commander.",
+            "zht": "夏侯淵陣亡、全軍震恐之際，郭淮向衆將宣稱唯有連劉備都忌憚的名將張郃能安定軍心，遂推舉他爲主帥。",
+            "zhs": "夏侯渊阵亡、全军震恐之际，郭淮向众将宣称唯有连刘备都忌惮的名将张郃能安定军心，遂推举他为主帅。"
+          }
+        }
+      ]
     },
     {
-      "from": "劉備",
-      "to": "夏侯淵",
-      "type": "交戰",
-      "passageId": "ws17d-p4"
+      "from": "張郃（㑺乂）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p6",
+          "text": {
+            "en": "When Cao Pi succeeded as King and then ascended the throne, he promoted Zhang He to General of the Left and then Marquis of Mo, and sent him on campaigns against the Lushui Hu, the Eastern Qiang, and Jiangling.",
+            "zht": "曹丕即王位及即帝位後，先後升張郃爲左將軍、進封鄚侯，並遣他征討盧水胡、東羌及江陵。",
+            "zhs": "曹丕即王位及即帝位后，先后升张郃为左将军、进封鄚侯，并遣他征讨卢水胡、东羌及江陵。"
+          },
+          "title": {
+            "en": "General of the Left",
+            "zht": "左將軍",
+            "zhs": "左将军"
+          }
+        }
+      ]
     },
     {
-      "from": "郭淮",
-      "to": "張郃",
-      "type": "推舉",
-      "passageId": "ws17d-p5"
+      "from": "張郃（㑺乂）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p6",
+          "text": {
+            "en": "On his accession, Emperor Ming sent Zhang He to garrison Jing Province, where he helped defeat Sun Quan's general Liu A.",
+            "zht": "明帝即位後，派張郃鎮守荊州，協同擊破孫權部將劉阿等人。",
+            "zhs": "明帝即位后，派张郃镇守荆州，协同击破孙权部将刘阿等人。"
+          }
+        },
+        {
+          "passageId": "ws17d-p7",
+          "text": {
+            "en": "After Zhang He crushed Ma Su at Jieting and pacified the commanderies that had risen for Zhuge Liang, Emperor Ming issued an edict praising him extravagantly and increased his fief to four thousand three hundred households.",
+            "zht": "張郃於街亭大破馬謖並平定響應諸葛亮的諸郡後，明帝下詔盛讚其功，增邑至四千三百戶。",
+            "zhs": "张郃于街亭大破马谡并平定响应诸葛亮的诸郡后，明帝下诏盛赞其功，增邑至四千三百户。"
+          }
+        },
+        {
+          "passageId": "ws17d-p8",
+          "text": {
+            "en": "When Zhuge Liang attacked Chencang, Emperor Ming personally saw Zhang He off with a banquet and an honour guard; Zhang He correctly predicted Zhuge Liang's swift withdrawal for lack of supplies, and was rewarded with promotion to General of Chariots and Cavalry Who Conquers the West.",
+            "zht": "諸葛亮進攻陳倉時，明帝親自設宴爲張郃送行並派衛隊隨行；張郃準確預判諸葛亮糧盡必退，因功升任征西車騎將軍。",
+            "zhs": "诸葛亮进攻陈仓时，明帝亲自设宴为张郃送行并派卫队随行；张郃准确预判诸葛亮粮尽必退，因功升任征西车骑将军。"
+          }
+        }
+      ]
     },
     {
-      "from": "文帝",
-      "to": "張郃",
-      "type": "君臣",
-      "passageId": "ws17d-p6"
+      "from": "張郃（㑺乂）",
+      "to": "司馬懿（仲達）",
+      "type": "colleagues",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p6",
+          "text": {
+            "en": "Zhang He joined Sima Yi in attacking and defeating Sun Quan's general Liu A near Qikou.",
+            "zht": "張郃與司馬懿合力進攻並擊破孫權部將劉阿等人於祁口附近。",
+            "zhs": "张郃与司马懿合力进攻并击破孙权部将刘阿等人于祁口附近。"
+          }
+        },
+        {
+          "passageId": "ws17d-p10",
+          "text": {
+            "en": "When Zhuge Liang's army withdrew, Zhang He warned Sima Yi that military law forbade pursuing a retreating enemy, but Sima Yi overruled him; forced to advance, Zhang He was struck by an ambush arrow and died.",
+            "zht": "諸葛亮撤軍時，張郃以軍法不可追擊退軍相諫，司馬懿不聽；張郃不得已進軍，遭伏兵飛矢射中而亡。",
+            "zhs": "诸葛亮撤军时，张郃以军法不可追击退军相谏，司马懿不听；张郃不得已进军，遭伏兵飞矢射中而亡。"
+          }
+        }
+      ]
     },
     {
-      "from": "明帝",
-      "to": "張郃",
-      "type": "君臣",
-      "passageId": "ws17d-p6"
+      "from": "曹真（子丹）",
+      "to": "張郃（㑺乂）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p6",
+          "text": {
+            "en": "Zhang He and Cao Zhen were jointly ordered to campaign against the Lushui Hu and the Eastern Qiang, and were together summoned to court.",
+            "zht": "張郃與曹真奉詔一同征討盧水胡及東羌，並一同奉召入朝。",
+            "zhs": "张郃与曹真奉诏一同征讨卢水胡及东羌，并一同奉召入朝。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
-      "to": "司馬宣王",
-      "type": "同袍",
-      "passageId": "ws17d-p6"
+      "from": "張郃（㑺乂）",
+      "to": "夏侯尚（伯仁）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p6",
+          "text": {
+            "en": "Zhang He was sent south to join Xiahou Shang in attacking Jiangling, separately leading a force across the river to seize the enemy's island encampments.",
+            "zht": "張郃奉遣南下與夏侯尚合攻江陵，並單獨率軍渡江奪取敵方洲上營壘。",
+            "zhs": "张郃奉遣南下与夏侯尚合攻江陵，并单独率军渡江夺取敌方洲上营垒。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
-      "to": "馬謖",
-      "type": "交戰",
-      "passageId": "ws17d-p7"
+      "from": "張郃（㑺乂）",
+      "to": "馬謖（幼常）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p7",
+          "text": {
+            "en": "At Jieting, Zhang He cut off the water supply to Ma Su's hillside position and routed him decisively.",
+            "zht": "街亭一役，張郃截斷馬謖屯兵南山之水源，將其一舉擊潰。",
+            "zhs": "街亭一役，张郃截断马谡屯兵南山之水源，将其一举击溃。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
-      "to": "諸葛亮",
-      "type": "交戰",
-      "passageId": "ws17d-p7"
+      "from": "張郃（㑺乂）",
+      "to": "諸葛亮（孔明）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17d-p7",
+          "text": {
+            "en": "Zhang He decisively defeated Zhuge Liang's vanguard under Ma Su at Jieting, forcing Zhuge Liang's whole northern expedition to withdraw.",
+            "zht": "張郃於街亭大敗諸葛亮先鋒馬謖，迫使諸葛亮此次北伐全軍撤退。",
+            "zhs": "张郃于街亭大败诸葛亮先锋马谡，迫使诸葛亮此次北伐全军撤退。"
+          }
+        },
+        {
+          "passageId": "ws17d-p8",
+          "text": {
+            "en": "Zhang He correctly judged that Zhuge Liang's army, besieging Chencang far from its supply base, could not sustain the attack for ten days; his rapid advance alone was enough to make Zhuge Liang withdraw before battle was even joined.",
+            "zht": "張郃準確判斷諸葛亮孤軍深入陳倉、糧草難支十日；其急速進軍未及交戰，諸葛亮已然退兵。",
+            "zhs": "张郃准确判断诸葛亮孤军深入陈仓、粮草难支十日；其急速进军未及交战，诸葛亮已然退兵。"
+          }
+        },
+        {
+          "passageId": "ws17d-p9",
+          "text": {
+            "en": "So skilled was Zhang He at reading terrain and battle conditions that even Zhuge Liang was wary of him.",
+            "zht": "張郃善料戰勢地形，算無遺策，即使諸葛亮亦對他心存忌憚。",
+            "zhs": "张郃善料战势地形，算无遗策，即使诸葛亮亦对他心存忌惮。"
+          }
+        },
+        {
+          "passageId": "ws17d-p10",
+          "text": {
+            "en": "In Zhuge Liang's final northern campaign, Zhang He pursued his withdrawing army to Mumen, where he was killed by an arrow in the ensuing ambush.",
+            "zht": "諸葛亮最後一次北伐時，張郃追擊其退軍至木門，於伏擊中中箭身亡。",
+            "zhs": "诸葛亮最后一次北伐时，张郃追击其退军至木门，于伏击中中箭身亡。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
+      "from": "張郃（㑺乂）",
       "to": "卑湛",
-      "type": "推薦",
-      "passageId": "ws17d-p9"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p9",
+          "text": {
+            "en": "Though a military commander, Zhang He delighted in the company of Confucian scholars, and recommended his fellow townsman Bei Zhan as learned and upright; Emperor Ming, commending Zhang He's regard for the court even while in the field, appointed Bei Zhan an Erudite.",
+            "zht": "張郃雖爲武將卻愛樂儒士，舉薦同鄉卑湛經明行修；明帝嘉許張郃在外領兵仍心繫朝廷之意，擢卑湛爲博士。",
+            "zhs": "张郃虽为武将却爱乐儒士，举荐同乡卑湛经明行修；明帝嘉许张郃在外领兵仍心系朝廷之意，擢卑湛为博士。"
+          }
+        }
+      ]
     },
     {
-      "from": "張郃",
+      "from": "張郃（㑺乂）",
       "to": "張雄",
-      "type": "父子",
-      "passageId": "ws17d-p9"
-    },
-    {
-      "from": "張郃",
-      "to": "諸葛亮",
-      "type": "交戰",
-      "passageId": "ws17d-p9"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17d-p10",
+          "text": {
+            "en": "After Zhang He died from a battle wound, his son Zhang Xiong succeeded him as marquis.",
+            "zht": "張郃因戰傷去世後，其子張雄襲爵。",
+            "zhs": "张郃因战伤去世后，其子张雄袭爵。"
+          }
+        }
+      ]
     }
   ]
 }

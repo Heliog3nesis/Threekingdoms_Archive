@@ -390,7 +390,7 @@
     "kingdom": "wei"
   },
   {
-    "person": "張郃（儁乂）",
+    "person": "張郃（㑺乂）",
     "name": {
       "en": "Zhang He",
       "zht": "張郃",
@@ -398,8 +398,8 @@
     },
     "courtesyName": {
       "en": "Junyi",
-      "zht": "儁乂",
-      "zhs": "俊乂"
+      "zht": "㑺乂",
+      "zhs": "㑺乂"
     },
     "chapterId": "wei-shu-17d",
     "chapterOrder": 17,
@@ -760,7 +760,7 @@
     "chapterId": "wei-shu-18i",
     "chapterOrder": 18,
     "chapterLabel": {
-      "zht": "龐淯傳 · 附张猛、赵娥",
+      "zht": "龐淯傳 · 附張猛、趙娥",
       "zhs": "庞淯传 · 附张猛、赵娥",
       "en": "Biography of Pang Yu · with Zhang Meng and Zhao E"
     },
@@ -786,7 +786,7 @@
     "chapterId": "wei-shu-18j",
     "chapterOrder": 18,
     "chapterLabel": {
-      "zht": "閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zht": "閻溫傳 · 附張恭、孫賔碩、楊阿若、鮑出",
       "zhs": "阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
       "en": "Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
     },
@@ -812,7 +812,7 @@
     "chapterId": "wei-shu-18j",
     "chapterOrder": 18,
     "chapterLabel": {
-      "zht": "閻溫傳 · 附张恭、孫賔碩、楊阿若、鮑出",
+      "zht": "閻溫傳 · 附張恭、孫賔碩、楊阿若、鮑出",
       "zhs": "阎温传 · 附张恭、孙宾硕、杨阿若、鲍出",
       "en": "Biography of Yan Wen · with Zhang Gong, Sun Binshuo, Yang Aruo, and Bao Chu"
     },
@@ -820,6 +820,266 @@
       "en": "Book of Wei, Chapter 18",
       "zht": "魏書十八",
       "zhs": "魏书十八"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "夏侯惇（元讓）",
+    "name": {
+      "en": "Xiahou Dun",
+      "zht": "夏侯惇",
+      "zhs": "夏侯惇"
+    },
+    "courtesyName": {
+      "en": "Yuanrang",
+      "zht": "元讓",
+      "zhs": "元让"
+    },
+    "chapterId": "wei-shu-9a",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "夏侯惇傳 · 附韓浩、史渙",
+      "zhs": "夏侯惇传 · 附韩浩、史涣",
+      "en": "Biography of Xiahou Dun · with Han Hao and Shi Huan"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "韓浩（元嗣）",
+    "name": {
+      "en": "Han Hao",
+      "zht": "韓浩",
+      "zhs": "韩浩"
+    },
+    "courtesyName": {
+      "en": "Yuansi",
+      "zht": "元嗣",
+      "zhs": "元嗣"
+    },
+    "chapterId": "wei-shu-9a",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "夏侯惇傳 · 附韓浩、史渙",
+      "zhs": "夏侯惇传 · 附韩浩、史涣",
+      "en": "Biography of Xiahou Dun · with Han Hao and Shi Huan"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "史渙（公劉）",
+    "name": {
+      "en": "Shi Huan",
+      "zht": "史渙",
+      "zhs": "史涣"
+    },
+    "courtesyName": {
+      "en": "Gongliu",
+      "zht": "公劉",
+      "zhs": "公刘"
+    },
+    "chapterId": "wei-shu-9a",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "夏侯惇傳 · 附韓浩、史渙",
+      "zhs": "夏侯惇传 · 附韩浩、史涣",
+      "en": "Biography of Xiahou Dun · with Han Hao and Shi Huan"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "夏侯淵（妙才）",
+    "name": {
+      "en": "Xiahou Yuan",
+      "zht": "夏侯淵",
+      "zhs": "夏侯渊"
+    },
+    "courtesyName": {
+      "en": "Miaocai",
+      "zht": "妙才",
+      "zhs": "妙才"
+    },
+    "chapterId": "wei-shu-9b",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "夏侯淵傳 · 附夏侯霸",
+      "zhs": "夏侯渊传 · 附夏侯霸",
+      "en": "Biography of Xiahou Yuan · with Xiahou Ba"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "夏侯霸（仲權）",
+    "name": {
+      "en": "Xiahou Ba",
+      "zht": "夏侯霸",
+      "zhs": "夏侯霸"
+    },
+    "courtesyName": {
+      "en": "Zhongquan",
+      "zht": "仲權",
+      "zhs": "仲权"
+    },
+    "chapterId": "wei-shu-9b",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "夏侯淵傳 · 附夏侯霸",
+      "zhs": "夏侯渊传 · 附夏侯霸",
+      "en": "Biography of Xiahou Yuan · with Xiahou Ba"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "曹仁（子孝）",
+    "name": {
+      "en": "Cao Ren",
+      "zht": "曹仁",
+      "zhs": "曹仁"
+    },
+    "courtesyName": {
+      "en": "Zixiao",
+      "zht": "子孝",
+      "zhs": "子孝"
+    },
+    "chapterId": "wei-shu-9c",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "曹仁傳 · 附曹純",
+      "zhs": "曹仁传 · 附曹纯",
+      "en": "Biography of Cao Ren · with Cao Chun"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "曹純（子和）",
+    "name": {
+      "en": "Cao Chun",
+      "zht": "曹純",
+      "zhs": "曹纯"
+    },
+    "courtesyName": {
+      "en": "Zihe",
+      "zht": "子和",
+      "zhs": "子和"
+    },
+    "chapterId": "wei-shu-9c",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "曹仁傳 · 附曹純",
+      "zhs": "曹仁传 · 附曹纯",
+      "en": "Biography of Cao Ren · with Cao Chun"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "曹洪（子廉）",
+    "name": {
+      "en": "Cao Hong",
+      "zht": "曹洪",
+      "zhs": "曹洪"
+    },
+    "courtesyName": {
+      "en": "Zilian",
+      "zht": "子廉",
+      "zhs": "子廉"
+    },
+    "chapterId": "wei-shu-9d",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "曹洪傳",
+      "zhs": "曹洪传",
+      "en": "Biography of Cao Hong"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "曹休（文烈）",
+    "name": {
+      "en": "Cao Xiu",
+      "zht": "曹休",
+      "zhs": "曹休"
+    },
+    "courtesyName": {
+      "en": "Wenlie",
+      "zht": "文烈",
+      "zhs": "文烈"
+    },
+    "chapterId": "wei-shu-9e",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "曹休傳",
+      "zhs": "曹休传",
+      "en": "Biography of Cao Xiu"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
+    },
+    "kingdom": "wei"
+  },
+  {
+    "person": "曹真（子丹）",
+    "name": {
+      "en": "Cao Zhen",
+      "zht": "曹真",
+      "zhs": "曹真"
+    },
+    "courtesyName": {
+      "en": "Zidan",
+      "zht": "子丹",
+      "zhs": "子丹"
+    },
+    "chapterId": "wei-shu-9f",
+    "chapterOrder": 9,
+    "chapterLabel": {
+      "zht": "曹真傳",
+      "zhs": "曹真传",
+      "en": "Biography of Cao Zhen"
+    },
+    "chapterTag": {
+      "en": "Book of Wei, Chapter 9",
+      "zht": "魏書九",
+      "zhs": "魏书九"
     },
     "kingdom": "wei"
   }

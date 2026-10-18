@@ -77,14 +77,29 @@
 //      overwritten on every run — edit vern.zhs, not vern.zht. Link URLs
 //      are swapped to the matching /zh-hant/ URL of the original zht tag
 //      at the same position (falling back to a plain prefix swap).
+//      The Traditional follows the 里/裏 rule: 里 for the distance unit
+//      (after a numeral/多/余/数/几, or a [[里|…glossary-li]] link) and in
+//      鄉里/閭里; OpenCC's 裏 everywhere else.
 //   c. Passages listed in SKIP_VERN_LINKING (hand-reviewed, false links
 //      removed on purpose) are not auto-linked again; their vern.zht is
 //      still regenerated from vern.zhs (step b). See the constant below.
+//      For a single term, use SKIP_VERN_TERMS instead.
+//   d. Variant spellings (VERN_CHAR_VARIANTS, variantPatterns): when the
+//      vernacular writes a term the way the house style wants rather than
+//      the way the original does — 兾州 → 冀州, 炖煌 → 敦煌, 庞悳 → 庞德,
+//      假進节 → 假节, 樊 → 樊城 (never 樊哙), 江夏平春 → 江夏郡平春县 — the
+//      vernacular's form is linked to the original tag's URL (counted like
+//      any other term), and the original spelling is not flagged as absent.
+//
+// Files are patched in place (only the changed string values), so a file's
+// hand-made layout survives; a file is re-serialised only if that fails.
 // Passages/annotations that don't have a vern object yet get an empty
 // placeholder (after "orig" for a passage, after "zhs" for an annotation).
 //
 // Usage (run from the project root, i.e. the "web" folder):
-//   node scripts/link-terms.mjs
+//   node scripts/link-terms.mjs                    all chapters
+//   node scripts/link-terms.mjs wei-shu-18         only files whose name contains it
+//   node scripts/link-terms.mjs --dry-run [...]    report what would change, write nothing
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -119,8 +134,31 @@ const OFFICIALS_FILES = {
 // leaves a term alone if a tag with that exact label is already in the text.
 const SKIP_VERN_LINKING = {
   'ws18b-p4': '孤军独守: 守 = "hold out", not the office 太守 (it would be linked as 守)',
-  'ws18e-p5': '汝南、颍川: the original 汝/潁 are rivers, so linking the 汝 of 汝南 is misleading',
+  'ws18e-p5': '汝南、颍川: the original 汝/潁 are rivers, so linking the 汝 of 汝南 is misleading (颍 of 颍川 linked by hand)',
 };
+
+// Single terms the editor decided NOT to link in one passage/annotation
+// ("ws16c-p12" for a passage, "ws16c-p12 ann2" for its 2nd annotation).
+// Unlike SKIP_VERN_LINKING, every other term there is still linked.
+const SKIP_VERN_TERMS = {
+  'ws16a-p3 ann1': ['令'], // 1 character, count differs: left unlinked
+  'ws16a-p3 ann2': ['襄城'], // vernacular has 襄阳, linked by hand
+  'ws16e-p1 ann2': ['山东'], // vernacular words it differently
+  'ws16e-p4': ['长'], // 1 character, count differs: left unlinked
+  'ws16f-p4 ann2': ['石'], // 二千石 not kept in the vernacular
+  'ws18c-p2': ['徐'],
+  'ws18c-p8 ann1': ['青'],
+  'ws18c-p10 ann1': ['青'],
+};
+
+// Variant spellings: the original's form -> the form the vernacular uses.
+const VERN_CHAR_VARIANTS = [
+  ['兾', '冀'], ['炖煌', '敦煌'], ['燉煌', '敦煌'], ['庞悳', '庞德'], ['隷', '隶'],
+  ['衞', '卫'], ['衛', '卫'], ['鴈', '雁'], ['潁', '颍'],
+];
+
+const DRY_RUN = process.argv.includes('--dry-run');
+const FILE_FILTERS = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 
 const LANGS = ['zht', 'zhs', 'en'];
 const ADMIN_SUFFIXES = { zht: ['縣', '郡', '國'], zhs: ['县', '郡', '国'] };
@@ -528,18 +566,64 @@ function convertVernToTraditional(zhsText, urlMap) {
   });
   const converted = toTraditional(masked);
   let i = 0;
-  return converted.replace(/([^]*)/g, (_m, label) => {
+  const restored = converted.replace(/([^]*)/g, (_m, label) => {
     const url = urls[i++];
     if (url === undefined) return `[[${label}]]`;
     return `[[${label}|${urlMap.get(url) ?? swapToTraditionalPrefix(url)}]]`;
   });
+  return applyLiRule(restored);
+}
+
+// 里/裏 in the Traditional: OpenCC writes 裏 ("inside") for every 里, but the
+// distance unit (after a numeral/多/余/数/几, or linked to the 里 glossary
+// entry) and 鄉里/閭里 keep 里.
+function applyLiRule(zht) {
+  return zht
+    .replace(/\[\[裏(\|[^\]]*glossary-li[^\]]*)\]\]/g, '[[里$1]]')
+    .replace(/(?<=[一二三四五六七八九十百千萬万兩两數数多餘余幾几鄉乡閭闾])裏/g, '里');
+}
+
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// The spellings (as regex sources) the vernacular may use for an original
+// term, most specific first: character variants (VERN_CHAR_VARIANTS),
+// 假X节 -> 假节, 樊 -> 樊城, and for a map location of 3–6 characters the
+// hometown phrase with 郡/国/尹 and 县 written out (江夏平春 -> 江夏郡平春县).
+function variantPatterns(label, url) {
+  let base = label;
+  for (const [from, to] of VERN_CHAR_VARIANTS) base = base.split(from).join(to);
+  const chars = [...base];
+  const out = [];
+  if (/^假.节$/u.test(base)) out.push(escapeRe('假节'));
+  if (base === '樊') out.push(escapeRe('樊城'));
+  if (url.includes('/maps/') && url.includes('lat=') && chars.length >= 3 && chars.length <= 6) {
+    for (const cut of [2, 3]) {
+      if (cut < chars.length) {
+        const head = chars.slice(0, cut).join('');
+        const tail = chars.slice(cut).join('');
+        out.push(`${escapeRe(head)}(?:郡|国|尹)?${escapeRe(tail)}县?`);
+      }
+    }
+  }
+  if (base !== label) out.push(escapeRe(base));
+  return out;
+}
+
+// The exact text in `plain` that stands for `label` under another spelling,
+// or null.
+function findVariant(label, url, plain) {
+  for (const src of variantPatterns(label, url)) {
+    const m = new RegExp(src, 'u').exec(plain);
+    if (m && m[0] !== label) return m[0];
+  }
+  return null;
 }
 
 // Links the terms of ONE unit (a whole passage/annotation, or one paragraph
 // of a multi-paragraph annotation): every resolved tag in `origText` is
 // searched for in `vernText`. Returns the vernacular text with links added
 // and how many were added. `flag(kind, extra)` records anything to check.
-function linkVernUnit(origText, vernText, flag) {
+function linkVernUnit(origText, vernText, flag, skipTerms = []) {
   // Distinct terms in the original, with how many times each is tagged.
   const termMap = new Map();
   for (const { label, url } of resolvedTags(origText)) {
@@ -548,6 +632,16 @@ function linkVernUnit(origText, vernText, flag) {
     if (!t.urls.includes(url)) t.urls.push(url);
     termMap.set(label, t);
   }
+  // A term the vernacular spells another way is searched for (and linked)
+  // under that spelling instead; the original spelling is dropped.
+  const plainVern = vernText.replace(/\[\[([^|\]]*)(?:\|[^\]]*)?\]\]/g, '$1');
+  for (const t of [...termMap.values()]) {
+    const form = findVariant(t.label, t.urls[0], plainVern);
+    if (!form || termMap.has(form)) continue;
+    termMap.delete(t.label);
+    termMap.set(form, { ...t, label: form, aliasOf: t.label });
+  }
+  const skip = new Set(skipTerms);
   const terms = [...termMap.values()].sort((a, b) => b.label.length - a.label.length);
 
   const parts = splitByTags(vernText);
@@ -564,6 +658,7 @@ function linkVernUnit(origText, vernText, flag) {
   const linkSet = new Set();
   for (const t of terms) {
     if (reviewed.has(t.label)) continue;
+    if (skip.has(t.label) || skip.has(t.aliasOf)) continue; // editor: leave unlinked
     const found = plainCount.get(t.label) ?? 0;
     if (found === 0) {
       flag('absent', { label: t.label, orig: t.count });
@@ -617,6 +712,9 @@ function processVern(target, origZhs, origZht, loc, report) {
 
   origZhs = origZhs ?? '';
   let newZhs = vern.zhs;
+  const before = { zhs: vern.zhs, zht: vern.zht };
+  const where = loc.annotation ? `${loc.passage} ann${loc.annotation}` : loc.passage;
+  const skipTerms = SKIP_VERN_TERMS[where] ?? [];
 
   if (!loc.annotation && Object.hasOwn(SKIP_VERN_LINKING, loc.passage)) {
     // Hand-reviewed passage: leave vern.zhs (and its links) exactly as it is.
@@ -635,13 +733,13 @@ function processVern(target, origZhs, origZht, loc, report) {
 
     if (paired) {
       textIdx.forEach((pi, k) => {
-        const r = linkVernUnit(origParas[k], pieces[pi], flag(k + 1));
+        const r = linkVernUnit(origParas[k], pieces[pi], flag(k + 1), skipTerms);
         pieces[pi] = r.text;
         stats.tagsAdded += r.added;
       });
       newZhs = pieces.join('');
     } else {
-      const r = linkVernUnit(origZhs, vern.zhs, flag(null));
+      const r = linkVernUnit(origZhs, vern.zhs, flag(null), skipTerms);
       stats.tagsAdded += r.added;
       newZhs = r.text;
     }
@@ -651,10 +749,70 @@ function processVern(target, origZhs, origZht, loc, report) {
   const newZht = convertVernToTraditional(newZhs, buildZhtUrlMap(origZhs, origZht ?? ''));
   if (newZht !== vern.zht) stats.zhtUpdated++;
   vern.zht = newZht;
+  if (vern.zhs !== before.zhs || vern.zht !== before.zht) {
+    stats.changes.push({ file: loc.file, where, before, after: { zhs: vern.zhs, zht: vern.zht } });
+  }
+}
+
+// Every string in a JSON value, in the order it's written in the file
+// (object keys included), paired with its new value; null if the two
+// values' shapes differ (keys added/removed/reordered).
+function stringSlots(a, b, out = []) {
+  if (typeof a === 'string' && typeof b === 'string') {
+    out.push([a, b]);
+    return out;
+  }
+  if (a && b && typeof a === 'object' && typeof b === 'object') {
+    const ka = Object.keys(a);
+    const kb = Object.keys(b);
+    if (Array.isArray(a) !== Array.isArray(b) || ka.length !== kb.length || ka.some((k, i) => k !== kb[i])) return null;
+    for (const k of ka) {
+      if (!Array.isArray(a)) out.push([k, k]);
+      if (stringSlots(a[k], b[k], out) === null) return null;
+    }
+    return out;
+  }
+  return a === b ? out : null;
+}
+
+// Writes `data` back to `filePath`, replacing only the changed string
+// values inside the original text (walking its string tokens in order), so
+// the file's own layout is kept; falls back to re-serialising the whole
+// file when that isn't possible.
+function writeChapter(filePath, raw, data) {
+  const slots = stringSlots(JSON.parse(raw), data);
+  if (slots) {
+    const chunks = [];
+    let pos = 0;
+    let ok = true;
+    for (const [oldStr, newStr] of slots) {
+      const start = raw.indexOf('"', pos);
+      if (start < 0) { ok = false; break; }
+      let end = start + 1;
+      while (end < raw.length && raw[end] !== '"') end += raw[end] === '\\' ? 2 : 1;
+      end++;
+      if (JSON.parse(raw.slice(start, end)) !== oldStr) { ok = false; break; }
+      if (oldStr !== newStr) {
+        chunks.push(raw.slice(pos, start), JSON.stringify(newStr));
+        pos = end;
+      } else {
+        chunks.push(raw.slice(pos, end));
+        pos = end;
+      }
+    }
+    const patched = chunks.join('') + raw.slice(pos);
+    if (ok && JSON.stringify(JSON.parse(patched)) === JSON.stringify(data)) {
+      fs.writeFileSync(filePath, patched, 'utf-8');
+      return 'patched';
+    }
+  }
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
+  return 'rewritten';
 }
 
 function processChapterFile(filePath, sources, report) {
-  const data = readJson(filePath);
+  const raw = fs.readFileSync(filePath, 'utf-8');
+  const data = JSON.parse(raw);
   let changed = false;
   const fileName = path.basename(filePath);
 
@@ -698,7 +856,7 @@ function processChapterFile(filePath, sources, report) {
   }
 
   if (changed) {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
+    report.files.push({ file: fileName, how: DRY_RUN ? 'would change' : writeChapter(filePath, raw, data) });
   }
   return changed;
 }
@@ -766,13 +924,35 @@ function printReport(report) {
     for (const f of flags) lines.push(`  ${f.para ? `[¶${f.para}] ` : ''}${vernLine[f.kind](f)}`);
   }
 
+  // What changed in each vernacular: links added/removed, Traditional text.
+  const tagLabels = (t) => resolvedTags(t).map((x) => `${x.label}→${x.url.replace(/^\/zh-han[st]/, '')}`);
+  const minus = (a, b) => {
+    const rest = [...b];
+    return a.filter((x) => { const i = rest.indexOf(x); if (i < 0) return true; rest.splice(i, 1); return false; });
+  };
+  const firstDiff = (a, b) => {
+    let i = 0;
+    while (i < a.length && a[i] === b[i]) i++;
+    return `…${a.slice(Math.max(0, i - 8), i + 12)}… → …${b.slice(Math.max(0, i - 8), i + 12)}…`;
+  };
+  for (const c of report.vern.changes) {
+    lines.push(`\n${c.file} / ${c.where} [vern ${DRY_RUN ? 'would change' : 'changed'}]:`);
+    const added = minus(tagLabels(c.after.zhs), tagLabels(c.before.zhs));
+    const removed = minus(tagLabels(c.before.zhs), tagLabels(c.after.zhs));
+    if (added.length) lines.push(`  + zhs link(s): ${added.join(', ')}`);
+    if (removed.length) lines.push(`  - zhs link(s): ${removed.join(', ')}`);
+    if (!added.length && !removed.length && c.before.zhs !== c.after.zhs) lines.push(`  zhs: ${firstDiff(c.before.zhs, c.after.zhs)}`);
+    if (c.before.zht !== c.after.zht) lines.push(`  zht: ${firstDiff(c.before.zht ?? '', c.after.zht)}`);
+  }
+
   const v = report.vern;
   const summary =
     `\nSummary: ${report.filled.length} auto-filled, ${report.ambiguous.length} ambiguous, ${report.unresolved.length} unresolved, ${report.conflict.length} conflicts, ${report.countMismatch.length} count mismatches.\n` +
     `Vernacular: ${v.items} passage/annotation text(s) with vern, ${v.tagsAdded} term link(s) added, ${v.zhtUpdated} vern.zht updated, ${v.flags.length} item(s) to check.\n` +
     (v.skipped.length
       ? `Vernacular linking skipped for ${v.skipped.length} hand-reviewed passage(s) (SKIP_VERN_LINKING): ${v.skipped.join(', ')}\n`
-      : '');
+      : '') +
+    `${DRY_RUN ? 'DRY RUN — nothing written. Would change' : 'Files written'}: ${report.files.length ? report.files.map((f) => `${f.file}${DRY_RUN ? '' : ` (${f.how})`}`).join(', ') : 'none'}\n`;
   const output = lines.join('\n') + '\n' + summary;
 
   console.log(output);
@@ -810,12 +990,15 @@ function main() {
     process.exit(1);
   }
 
-  const files = fs.readdirSync(SGZ_DIR).filter((f) => f.endsWith('.json'));
+  const files = fs.readdirSync(SGZ_DIR)
+    .filter((f) => f.endsWith('.json'))
+    .filter((f) => FILE_FILTERS.length === 0 || FILE_FILTERS.some((x) => f.includes(x)));
   console.log(`\nScanning ${files.length} chapter file(s) in src/data/sgz...`);
 
   const report = {
     filled: [], ambiguous: [], unresolved: [], conflict: [], countMismatch: [],
-    vern: { items: 0, tagsAdded: 0, zhtUpdated: 0, flags: [], skipped: [] },
+    vern: { items: 0, tagsAdded: 0, zhtUpdated: 0, flags: [], skipped: [], changes: [] },
+    files: [],
   };
   for (const file of files) {
     processChapterFile(path.join(SGZ_DIR, file), sources, report);

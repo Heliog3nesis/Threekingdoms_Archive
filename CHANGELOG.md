@@ -9,6 +9,14 @@ hotfix for bugs.
 [<img src="./.github/badges/readme.svg" height="22">](./README.md)
 
 ---
+### v2.26.10 · 2026-10-18
+**<img src="./.github/badges/translations.svg" width="123">**
+  - Fixed bugs in Officials Table
+  - Added comparison tool for officials
+  - Started Records of the Three Kingdoms translations: Book of Wei Chapter 9
+  - Added person search for Records of the Three Kingdoms translations
+
+---
 ### v2.26.09b · 2026-09-27
 **<img src="./.github/badges/maps.svg" width="62">**
   - Bugfix

@@ -1,0 +1,64 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import ContactModal from '../../../components/Contactmodal.astro';
+import { t } from '../../../i18n/index.js';
+import { url } from '../../../utils/url';
+import '../../../scripts/translations/officials.css';
+import '../../../scripts/translations/compare.css';
+
+const lang = 'en';
+const strings = t(lang);
+const s = strings.officials;
+---
+
+<Base title={`Compare Positions · ${strings.siteTitle}`} lang="en">
+  <div class="site" data-lang={lang}>
+    <Nav lang={lang} strings={strings} />
+
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href={url('/translations')} class="bc-link">{strings.nav.translations}</a>
+        <span class="bc-sep">›</span>
+        <a href={url('/translations/officials')} class="bc-link">{s.title}</a>
+        <span class="bc-sep">›</span>
+        <span class="bc-cur">Compare</span>
+      </div>
+      <h1 class="page-title">Compare Positions</h1>
+      <p class="page-sub">Side by side, up to four at a time</p>
+    </div>
+
+    <div class="cmp-toolbar">
+      <div class="cmp-picker">
+        <input type="text" id="cmp-input" class="search-input" placeholder="Add a position to compare, e.g. 太尉, Grand Commandant..." autocomplete="off" />
+        <div class="cmp-dropdown" id="cmp-dropdown"></div>
+        <div class="cmp-msg" id="cmp-msg"></div>
+      </div>
+      <button class="cmp-clear" id="cmp-clear" type="button">Clear all</button>
+    </div>
+
+    <div class="cmp-body">
+      <div class="cmp-empty" id="cmp-empty" style="display:none;">
+        <div class="cmp-empty-title">Nothing to compare yet</div>
+        <p>Search above, or use the + Compare button on any position, to add up to four positions.</p>
+      </div>
+      <div id="cmp-root"></div>
+    </div>
+
+    <footer class="site-footer">
+      <span class="footer-quote">{strings.footer.quoteBySection?.translations ?? strings.footer.quote}</span>
+      <div class="footer-right">
+        <span class="footer-copy">{strings.footer.copyright} © {new Date().getFullYear()}</span>
+        <a href={strings.footer.github} class="footer-github" target="_blank" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <ContactModal strings={strings} />
+  </div>
+</Base>
+
+<script>
+  import '../../../scripts/translations/compare-module.js';
+</script>

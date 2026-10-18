@@ -1,0 +1,1051 @@
+{
+  "id": "wei-shu-9a",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 9,
+  "num": "9",
+  "label": {
+    "zht": "夏侯惇傳 · 附韓浩、史渙",
+    "zhs": "夏侯惇传 · 附韩浩、史涣",
+    "en": "Biography of Xiahou Dun · with Han Hao and Shi Huan"
+  },
+  "title": {
+    "zht": "魏書九 · 夏侯惇傳 · 附韓浩、史渙",
+    "zhs": "魏书九 · 夏侯惇传 · 附韩浩、史涣",
+    "en": "Book of Wei, Chapter 9 · Biography of Xiahou Dun · with Han Hao and Shi Huan"
+  },
+  "relationships": [
+    {
+      "from": "夏侯嬰",
+      "to": "夏侯惇（元讓）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Xiahou Dun was a descendant of Xiahou Ying, who had helped Liu Bang found the Han dynasty.",
+            "zht": "夏侯惇是西漢開國功臣夏侯嬰的後代。",
+            "zhs": "夏侯惇是西汉开国功臣夏侯婴的后代。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "From the time Cao Cao first raised troops, Xiahou Dun served him as an assistant general on campaign; when Cao Cao was acting General Who Inspires Valour, he made Xiahou Dun his Major and detached him to garrison Baima.",
+            "zht": "曹操起兵之初，夏侯惇常以副將身份隨從征戰；曹操代理奮武將軍時，任命夏侯惇爲司馬，讓他單獨駐守白馬。",
+            "zhs": "曹操起兵之初，夏侯惇常以副将身份随从征战；曹操代理奋武将军时，任命夏侯惇为司马，让他单独驻守白马。"
+          },
+          "title": {
+            "en": "Major",
+            "zht": "司馬",
+            "zhs": "司马"
+          }
+        },
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Xiahou Dun was promoted to Colonel Who Breaks the Charge, concurrently Grand Administrator of Dong Commandery.",
+            "zht": "夏侯惇升任折衝校尉，兼任東郡太守。",
+            "zhs": "夏侯惇升任折冲校尉，兼任东郡太守。"
+          },
+          "title": {
+            "en": "Colonel Who Breaks the Charge, Grand Administrator of Dong",
+            "zht": "折衝校尉、東郡太守",
+            "zhs": "折冲校尉、东郡太守"
+          }
+        },
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "When Cao Cao campaigned against Tao Qian, he left Xiahou Dun to hold Puyang; after Zhang Miao rebelled, Xiahou Dun hurried with a light force towards Juancheng, where Cao Cao's family was.",
+            "zht": "曹操征討陶謙時，留夏侯惇守衛濮陽；張邈叛變後，夏侯惇輕裝趕赴曹操家屬所在的鄄城。",
+            "zhs": "曹操征讨陶谦时，留夏侯惇守卫濮阳；张邈叛变后，夏侯惇轻装赶赴曹操家属所在的鄄城。"
+          }
+        },
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "After losing his left eye to a stray arrow in the campaign against Lü Bu, Xiahou Dun was made Grand Administrator of Chenliu and Jiyin, given the title General Who Establishes Valour, and enfeoffed as Township Marquis of Gao'an.",
+            "zht": "夏侯惇隨曹操征討呂布時被流矢射傷左眼，後兼任陳留、濟陰太守，加建武將軍，封高安鄉侯。",
+            "zhs": "夏侯惇随曹操征讨吕布时被流矢射伤左眼，后兼任陈留、济阴太守，加建武将军，封高安乡侯。"
+          },
+          "title": {
+            "en": "General Who Establishes Valour, Township Marquis of Gao'an",
+            "zht": "建武將軍、高安鄉侯",
+            "zhs": "建武将军、高安乡侯"
+          }
+        },
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "After Ye fell, Cao Cao promoted Xiahou Dun to General Who Subdues the Waves while he remained Intendant of Henan, authorising him to act as circumstances required without being bound by regulations.",
+            "zht": "鄴城攻破後，曹操升夏侯惇爲伏波將軍，仍兼河南尹，並允許他隨機行事，不受條例約束。",
+            "zhs": "邺城攻破后，曹操升夏侯惇为伏波将军，仍兼河南尹，并允许他随机行事，不受条例约束。"
+          },
+          "title": {
+            "en": "General Who Subdues the Waves",
+            "zht": "伏波將軍",
+            "zhs": "伏波将军"
+          }
+        },
+        {
+          "passageId": "ws9a-p4",
+          "text": {
+            "en": "Cao Cao left Xiahou Dun in command of twenty-six armies at Juchao and bestowed musicians on him; at Mo Lake he had him ride in his own carriage and enter his private chambers, a favour no other general enjoyed.",
+            "zht": "曹操讓夏侯惇統率二十六軍留駐居巢，並賜給他樂伎名倡；在摩陂時又常召他同乘一車，准許他出入臥室，諸將無人能比。",
+            "zhs": "曹操让夏侯惇统率二十六军留驻居巢，并赐给他乐伎名倡；在摩陂时又常召他同乘一车，准许他出入卧室，诸将无人能比。"
+          }
+        },
+        {
+          "passageId": "ws9a-p4",
+          "text": {
+            "en": "Alone among the generals still holding a Han title, Xiahou Dun asked to take a Wei post instead; Cao Cao replied that the best rulers treat their ministers as teachers and the next as friends, but on his insistence appointed him General of the Front.",
+            "zht": "當時諸將都已接受魏國官號，唯獨夏侯惇仍任漢官，他上疏請求改受魏職；曹操說最上等的君主以臣爲師，其次以臣爲友，但在夏侯惇堅持下，任命他爲前將軍。",
+            "zhs": "当时诸将都已接受魏国官号，唯独夏侯惇仍任汉官，他上疏请求改受魏职；曹操说最上等的君主以臣为师，其次以臣为友，但在夏侯惇坚持下，任命他为前将军。"
+          },
+          "title": {
+            "en": "General of the Front",
+            "zht": "前將軍",
+            "zhs": "前将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p4",
+          "text": {
+            "en": "When Cao Pi succeeded as King of Wei, he appointed Xiahou Dun Grand General; Xiahou Dun died a few months later.",
+            "zht": "曹丕繼位爲魏王，任命夏侯惇爲大將軍；數月後夏侯惇去世。",
+            "zhs": "曹丕继位为魏王，任命夏侯惇为大将军；数月后夏侯惇去世。"
+          },
+          "title": {
+            "en": "Grand General",
+            "zht": "大將軍",
+            "zhs": "大将军"
+          }
+        },
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Remembering Xiahou Dun's achievements, Cao Pi set aside a thousand households from his fief and made his seven sons and two grandsons Marquises Within the Pass.",
+            "zht": "曹丕追念夏侯惇的功勳，分出他的封邑一千戶，賜他七個兒子和兩個孫子爲關內侯。",
+            "zhs": "曹丕追念夏侯惇的功勋，分出他的封邑一千户，赐他七个儿子和两个孙子为关内侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂布（奉先）",
+      "to": "夏侯惇（元讓）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Lü Bu clashed with Xiahou Dun on the road to Juancheng, seized his baggage at Puyang, and sent officers who feigned surrender and took him hostage for ransom.",
+            "zht": "呂布在趕往鄄城的途中與夏侯惇交戰，隨後襲取他在濮陽的輜重，又派部將詐降，劫持夏侯惇索要財物。",
+            "zhs": "吕布在赶往鄄城的途中与夏侯惇交战，随后袭取他在濮阳的辎重，又派部将诈降，劫持夏侯惇索要财物。"
+          }
+        },
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "Xiahou Dun lost his left eye to a stray arrow while campaigning against Lü Bu with Cao Cao.",
+            "zht": "夏侯惇隨曹操征討呂布時，被流矢射中，傷了左眼。",
+            "zhs": "夏侯惇随曹操征讨吕布时，被流矢射中，伤了左眼。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張邈（孟卓）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "While Cao Cao was away fighting Tao Qian, Zhang Miao rebelled against him and welcomed Lü Bu.",
+            "zht": "曹操征討陶謙期間，張邈背叛曹操，迎接呂布。",
+            "zhs": "曹操征讨陶谦期间，张邈背叛曹操，迎接吕布。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張邈（孟卓）",
+      "to": "呂布（奉先）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Zhang Miao rebelled against Cao Cao and welcomed Lü Bu into Yan Province.",
+            "zht": "張邈背叛曹操，迎呂布入兗州。",
+            "zhs": "张邈背叛曹操，迎吕布入兖州。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "夏侯惇（元讓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p2",
+          "text": {
+            "en": "When Xiahou Dun was taken hostage, his general Han Hao steadied the army, then ordered an attack on the captors regardless of Dun's safety and beheaded them all, freeing him.",
+            "zht": "夏侯惇被劫持時，部將韓浩穩住軍心，不顧夏侯惇安危下令進攻劫持者，將他們全部斬首，夏侯惇因此獲救。",
+            "zhs": "夏侯惇被劫持时，部将韩浩稳住军心，不顾夏侯惇安危下令进攻劫持者，将他们全部斩首，夏侯惇因此获救。"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Hearing of Han Hao's reputation, Xiahou Dun asked to meet him, was greatly impressed, and gave him troops to follow him on campaign.",
+            "zht": "夏侯惇聽說韓浩的名聲，請他相見，對他十分賞識，讓他領兵隨從征伐。",
+            "zhs": "夏侯惇听说韩浩的名声，请他相见，对他十分赏识，让他领兵随从征伐。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p2",
+          "text": {
+            "en": "Cao Cao told Han Hao that his handling of the hostage crisis could serve as a model for all ages, and decreed that hostage-takers must henceforth be attacked without regard for the hostage.",
+            "zht": "曹操對韓浩說，他處理劫質之事的做法可爲萬世法則，並下令此後凡有劫持人質者，一律合力攻擊，不顧人質。",
+            "zhs": "曹操对韩浩说，他处理劫质之事的做法可为万世法则，并下令此后凡有劫持人质者，一律合力攻击，不顾人质。"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "When the court debated policy, Han Hao urged that farming be made the priority; Cao Cao approved and promoted him to Protector of the Army.",
+            "zht": "朝中商議政策得失時，韓浩主張應當急於屯田；曹操稱善，升他爲護軍。",
+            "zhs": "朝中商议政策得失时，韩浩主张应当急于屯田；曹操称善，升他为护军。"
+          },
+          "title": {
+            "en": "Protector of the Army",
+            "zht": "護軍",
+            "zhs": "护军"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao supported the Liucheng campaign and followed Cao Cao to victory; his post was then raised to Protector of the Central Army, and he was enfeoffed as a Marquis.",
+            "zht": "韓浩支持征討柳城，隨曹操破城；之後官職改爲中護軍，封列侯。",
+            "zhs": "韩浩支持征讨柳城，随曹操破城；之后官职改为中护军，封列侯。"
+          },
+          "title": {
+            "en": "Protector of the Central Army",
+            "zht": "中護軍",
+            "zhs": "中护军"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "When advisers proposed leaving Han Hao to command the armies in Hanzhong, Cao Cao refused, saying he could not do without his Protector of the Army, and he grieved deeply at Han Hao's death.",
+            "zht": "有人建議留韓浩統領諸軍鎮守漢中，曹操說：“我怎能沒有護軍！”便帶他一同返回；韓浩去世時，曹操深感惋惜。",
+            "zhs": "有人建议留韩浩统领诸军镇守汉中，曹操说：“我怎能没有护军！”便带他一同返回；韩浩去世时，曹操深感惋惜。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "王匡（公節）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Grand Administrator Wang Kuang made Han Hao an Attendant Officer and had him lead troops against Dong Zhuo at Mengjin.",
+            "zht": "太守王匡任命韓浩爲從事，讓他領兵在盟津抵禦董卓。",
+            "zhs": "太守王匡任命韩浩为从事，让他领兵在盟津抵御董卓。"
+          },
+          "title": {
+            "en": "Attendant Officer",
+            "zht": "從事",
+            "zhs": "从事"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "董卓（仲穎）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao held Mengjin against Dong Zhuo; Dong Zhuo seized Han Hao's maternal uncle Du Yang and used him to summon Han Hao, but Han Hao refused.",
+            "zht": "韓浩在盟津抵禦董卓；董卓扣押韓浩的舅舅杜陽，讓他招降韓浩，韓浩不從。",
+            "zhs": "韩浩在盟津抵御董卓；董卓扣押韩浩的舅舅杜阳，让他招降韩浩，韩浩不从。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "董卓（仲穎）",
+      "to": "杜陽",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Dong Zhuo seized Du Yang, Prefect of Heyin, and tried to use him to win over his nephew Han Hao.",
+            "zht": "董卓扣押河陰令杜陽，想借他招降外甥韓浩。",
+            "zhs": "董卓扣押河阴令杜阳，想借他招降外甥韩浩。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜陽",
+      "to": "韓浩（元嗣）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Du Yang was Han Hao's maternal uncle; even when Dong Zhuo held Du Yang captive, Han Hao would not go over to Dong Zhuo.",
+            "zht": "杜陽是韓浩的舅舅；即使杜陽被董卓扣押，韓浩也不肯投靠董卓。",
+            "zhs": "杜阳是韩浩的舅舅；即使杜阳被董卓扣押，韩浩也不肯投靠董卓。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "袁術（公路）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Admiring Han Hao's defiance of Dong Zhuo, Yuan Shu made him Commandant of Cavalry.",
+            "zht": "袁術聽說韓浩不屈於董卓，十分讚賞，任命他爲騎都尉。",
+            "zhs": "袁术听说韩浩不屈于董卓，十分赞赏，任命他为骑都尉。"
+          },
+          "title": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "史渙（公劉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao and Shi Huan were both renowned for loyalty and courage, and as Protector and Commander of the Central Army they both commanded the imperial guards.",
+            "zht": "韓浩與史渙都以忠誠勇敢著稱，分別官至中護軍、中領軍，共同掌管禁軍。",
+            "zhs": "韩浩与史涣都以忠诚勇敢著称，分别官至中护军、中领军，共同掌管禁军。"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "When Shi Huan judged the Liucheng campaign too risky and wanted to remonstrate together, Han Hao answered that as the central army's commanders they should not dampen the troops' spirit, and both followed Cao Cao to victory.",
+            "zht": "史渙認爲征討柳城路遠深入，想與韓浩一起勸諫；韓浩說二人身爲中軍主將，不宜動搖軍心，於是一同隨曹操攻破柳城。",
+            "zhs": "史涣认为征讨柳城路远深入，想与韩浩一起劝谏；韩浩说二人身为中军主将，不宜动摇军心，于是一同随曹操攻破柳城。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "韓榮",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao had no son, so his adopted son Han Rong succeeded him.",
+            "zht": "韓浩沒有兒子，由養子韓榮繼承爵位。",
+            "zhs": "韩浩没有儿子，由养子韩荣继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "史渙（公劉）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Shi Huan joined Cao Cao as a retainer when he first raised troops, served as acting Colonel of the Central Army, and supervised the generals on campaign; trusted by Cao Cao, he was made Commander of the Central Army and enfeoffed as a Marquis.",
+            "zht": "曹操起兵之初，史渙以門客身份追隨，代理中軍校尉，隨軍征伐時常監督諸將；深受信任，轉任中領軍，封列侯。",
+            "zhs": "曹操起兵之初，史涣以门客身份追随，代理中军校尉，随军征伐时常监督诸将；深受信任，转任中领军，封列侯。"
+          },
+          "title": {
+            "en": "Commander of the Central Army",
+            "zht": "中領軍",
+            "zhs": "中领军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "史渙（公劉）",
+      "to": "史靜",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Shi Huan died in the fourteenth year of Jian'an, and his son Shi Jing succeeded him.",
+            "zht": "史渙於建安十四年去世，其子史靜繼承爵位。",
+            "zhs": "史涣于建安十四年去世，其子史静继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯淵（妙才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "Because Xiahou Yuan and Xiahou Dun both served as generals, the army called Dun \"Blind Xiahou\" to tell them apart; Dun hated the name and would smash his mirror in anger.",
+            "zht": "夏侯淵與夏侯惇同爲將軍，軍中稱夏侯惇爲“盲夏侯”以示區別；夏侯惇對此十分厭惡，每次照鏡都氣得把鏡子摔在地上。",
+            "zhs": "夏侯渊与夏侯惇同为将军，军中称夏侯惇为“盲夏侯”以示区别；夏侯惇对此十分厌恶，每次照镜都气得把镜子摔在地上。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯廉",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Dun's younger brother Xiahou Lian had been enfeoffed as a Marquis in his own right.",
+            "zht": "夏侯惇的弟弟夏侯廉早已因自身功勞封爲列侯。",
+            "zhs": "夏侯惇的弟弟夏侯廉早已因自身功劳封为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯充",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Dun's son Xiahou Chong succeeded him.",
+            "zht": "夏侯惇之子夏侯充繼承爵位。",
+            "zhs": "夏侯惇之子夏侯充继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯充",
+      "to": "夏侯廙",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "When Xiahou Chong died, his son Xiahou Yi succeeded him.",
+            "zht": "夏侯充去世後，其子夏侯廙繼承爵位。",
+            "zhs": "夏侯充去世后，其子夏侯廙继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯廙",
+      "to": "夏侯劭",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "When Xiahou Yi died, his son Xiahou Shao succeeded him.",
+            "zht": "夏侯廙去世後，其子夏侯劭繼承爵位。",
+            "zhs": "夏侯廙去世后，其子夏侯劭继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯佐",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Zuo, Township Marquis of Gao'an and Xiahou Dun's grandson, died in the second year of Taishi without an heir; Emperor Wu of Jin then ordered a close relative of Dun to continue the line.",
+            "zht": "高安鄉侯夏侯佐是夏侯惇之孫，泰始二年去世，沒有後嗣；晉武帝下詔選夏侯惇的近親承襲封爵。",
+            "zhs": "高安乡侯夏侯佐是夏侯惇之孙，泰始二年去世，没有后嗣；晋武帝下诏选夏侯惇的近亲承袭封爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯楙（子林）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Mao, courtesy name Zilin, was Xiahou Dun's second son, and had been enfeoffed as a Marquis in his own right.",
+            "zht": "夏侯楙字子林，是夏侯惇的次子，早已因自身功勞封爲列侯。",
+            "zhs": "夏侯楙字子林，是夏侯惇的次子，早已因自身功劳封为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹操（孟德）",
+      "to": "清河公主",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "The Princess of Qinghe was Cao Cao's daughter, whom he married to Xiahou Mao.",
+            "zht": "清河公主是曹操的女兒，曹操把她嫁給了夏侯楙。",
+            "zhs": "清河公主是曹操的女儿，曹操把她嫁给了夏侯楙。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "清河公主",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Cao Cao married his daughter, the Princess of Qinghe, to Xiahou Mao; because Xiahou Mao kept many concubines in the west, the couple fell out, and his brothers later had the princess submit their slander against him.",
+            "zht": "曹操把女兒清河公主嫁給夏侯楙；夏侯楙在西方時蓄養了許多伎妾，公主因此與他不和，後來他的弟弟們還讓公主出面上奏誹謗他。",
+            "zhs": "曹操把女儿清河公主嫁给夏侯楙；夏侯楙在西方时蓄养了许多伎妾，公主因此与他不和，后来他的弟弟们还让公主出面上奏诽谤他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹丕（子桓）",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Cao Pi had been close to Xiahou Mao since their youth.",
+            "zht": "曹丕年少時就與夏侯楙親近。",
+            "zhs": "曹丕年少时就与夏侯楙亲近。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "On ascending the throne, Cao Pi made Xiahou Mao General Who Pacifies the West with the Imperial Tally, succeeding Xiahou Yuan in command of Guanzhong, though he had no military talent.",
+            "zht": "曹丕即位後，任命夏侯楙爲安西將軍，持節，接替夏侯淵都督關中；但夏侯楙並無武略。",
+            "zhs": "曹丕即位后，任命夏侯楙为安西将军，持节，接替夏侯渊都督关中；但夏侯楙并无武略。"
+          },
+          "title": {
+            "en": "General Who Pacifies the West",
+            "zht": "安西將軍",
+            "zhs": "安西将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "When Cao Rui campaigned west in the second year of Taihe and Xiahou Mao was reported on, he recalled him to serve in the Imperial Secretariat.",
+            "zht": "太和二年明帝西征，有人告發夏侯楙，明帝召他回朝任尚書。",
+            "zhs": "太和二年明帝西征，有人告发夏侯楙，明帝召他回朝任尚书。"
+          },
+          "title": {
+            "en": "Imperial Secretariat",
+            "zht": "尚書",
+            "zhs": "尚书"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹叡（元仲）",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Cao Rui had Xiahou Mao arrested over a slanderous memorial and meant to put him to death, but after hearing Duan Mo he ordered an inquiry that exposed Mao's brothers as its authors.",
+            "zht": "明帝因誹謗的奏章下詔逮捕夏侯楙，本想殺他；聽了段默的意見後，下詔追查，查明是夏侯楙的弟弟們捏造的。",
+            "zhs": "明帝因诽谤的奏章下诏逮捕夏侯楙，本想杀他；听了段默的意见后，下诏追查，查明是夏侯楙的弟弟们捏造的。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "段默",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "As Colonel of the Changshui Garrison, Duan Mo was consulted by Cao Rui on whether to execute Xiahou Mao, and Cao Rui accepted his view.",
+            "zht": "長水校尉段默受明帝詢問是否該殺夏侯楙，明帝採納了他的意見。",
+            "zhs": "长水校尉段默受明帝询问是否该杀夏侯楙，明帝采纳了他的意见。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "段默",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Duan Mo argued that the charges against Xiahou Mao arose from the princess's quarrel with him, and urged mercy in light of his father's part in founding the realm, saving his life.",
+            "zht": "段默認爲指控夏侯楙的言辭出於公主與他不和而生的誣陷，又念及其父有平定天下之功，請明帝三思，夏侯楙因此得免。",
+            "zhs": "段默认为指控夏侯楙的言辞出于公主与他不和而生的诬陷，又念及其父有平定天下之功，请明帝三思，夏侯楙因此得免。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "夏侯子臧",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Zizang was one of Xiahou Mao's younger brothers, whom Mao repeatedly rebuked for disregarding propriety.",
+            "zht": "子臧是夏侯楙的弟弟之一，夏侯楙曾多次責備他們不守禮法。",
+            "zhs": "子臧是夏侯楙的弟弟之一，夏侯楙曾多次责备他们不守礼法。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "夏侯子江",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Zijiang was one of Xiahou Mao's younger brothers, whom Mao repeatedly rebuked for disregarding propriety.",
+            "zht": "子江是夏侯楙的弟弟之一，夏侯楙曾多次責備他們不守禮法。",
+            "zhs": "子江是夏侯楙的弟弟之一，夏侯楙曾多次责备他们不守礼法。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯子臧",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Fearing punishment after Xiahou Mao's rebukes, Zizang and Zijiang fabricated slander against him and had the princess submit it; Cao Rui's inquiry exposed them.",
+            "zht": "子臧、子江害怕被夏侯楙懲治，便共同捏造誹謗之辭，讓公主上奏；明帝追查後，真相大白。",
+            "zhs": "子臧、子江害怕被夏侯楙惩治，便共同捏造诽谤之辞，让公主上奏；明帝追查后，真相大白。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯子江",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Fearing punishment after Xiahou Mao's rebukes, Zijiang and Zizang fabricated slander against him and had the princess submit it; Cao Rui's inquiry exposed them.",
+            "zht": "子江、子臧害怕被夏侯楙懲治，便共同捏造誹謗之辭，讓公主上奏；明帝追查後，真相大白。",
+            "zhs": "子江、子臧害怕被夏侯楙惩治，便共同捏造诽谤之辞，让公主上奏；明帝追查后，真相大白。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "夏侯惇（元讓）",
+      "name": { "en": "Xiahou Dun", "zht": "夏侯惇", "zhs": "夏侯惇" },
+      "courtesyName": { "en": "Yuanrang", "zht": "元讓", "zhs": "元让" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "1st year of Yankang", "zht": "延康元年", "zhs": "延康元年" }, "year": 220 },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Qiao", "zht": "譙", "zhs": "谯" }], "position": null, "passageId": "" },
+        { "era": { "en": "Around 1st year of Chuping", "zht": "~初平元年", "zhs": "~初平元年" }, "year": 190, "age": null, "location": [{ "en": "Baima", "zht": "白馬", "zhs": "白马" }, { "en": "Dong", "zht": "東", "zhs": "东" }], "position": [{ "en": "Major", "zht": "司馬", "zhs": "司马" }, { "en": "Colonel Who Breaks the Charge", "zht": "折衝校尉", "zhs": "折冲校尉" }, { "en": "Grand Administrator (concurrent)", "zht": "領太守", "zhs": "领太守" }], "passageId": "" },
+        { "era": { "en": "1st year of Xingping", "zht": "興平元年", "zhs": "兴平元年" }, "year": 194, "age": null, "location": [{ "en": "Puyang", "zht": "濮陽", "zhs": "濮阳" }, { "en": "Juancheng", "zht": "鄄城", "zhs": "鄄城" }], "position": null, "passageId": "" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Chenliu State", "zht": "陳留", "zhs": "陈留" }, { "en": "Jiyin", "zht": "濟陰", "zhs": "济阴" }], "position": [{ "en": "Grand Administrator (concurrent)", "zht": "領太守", "zhs": "领太守" }, { "en": "General Who Establishes Valour", "zht": "建武將軍", "zhs": "建武将军" }, { "en": "Township Marquis", "zht": "鄉侯", "zhs": "乡侯" }], "passageId": "" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Henan", "zht": "河南", "zhs": "河南" }], "position": [{ "en": "Intendant of Henan (concurrent)", "zht": "領河南尹", "zhs": "领河南尹" }], "passageId": "" },
+        { "era": { "en": "7th year of Jian'an", "zht": "建安七年", "zhs": "建安七年" }, "year": 202, "age": null, "location": [{ "en": "Bowang", "zht": "博望", "zhs": "博望" }], "position": null, "passageId": "" },
+        { "era": { "en": "9th - 10th year of Jian'an", "zht": "建安九年 - 十年", "zhs": "建安九年 - 十年" }, "year": "204 - 205", "age": null, "location": [{ "en": "Hedong", "zht": "河東", "zhs": "河东" }], "position": [{ "en": "Intendant of Henan (concurrent)", "zht": "領河南尹", "zhs": "领河南尹" }, { "en": "General Who Subdues the Waves", "zht": "伏波將軍", "zhs": "伏波将军" }], "passageId": "" },
+        { "era": { "en": "20th year of Jian'an", "zht": "建安二十年", "zhs": "建安二十年" }, "year": 215, "age": null, "location": [{ "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" }, { "en": "Yangpingguan", "zht": "陽平關", "zhs": "阳平关" }], "position": null, "passageId": "" },
+        { "era": { "en": "21st - 22nd year of Jian'an", "zht": "建安二十一年 - 二十二年", "zhs": "建安二十一年 - 二十二年" }, "year": "216 - 217", "age": null, "location": [{ "en": "Ruxukou", "zht": "濡須口", "zhs": "濡须口" }, { "en": "Juchao", "zht": "居巢", "zhs": "居巢" }], "position": null, "passageId": "" },
+        { "era": { "en": "24th year of Jian'an", "zht": "建安二十四年", "zhs": "建安二十四年" }, "year": 219, "age": null, "location": [{ "en": "Mo Lake", "zht": "摩陂", "zhs": "摩陂" }, { "en": "Shouchun", "zht": "壽春", "zhs": "寿春" }, { "en": "Shaoling", "zht": "召陵", "zhs": "召陵" }], "position": [{ "en": "General of the Front", "zht": "前將軍", "zhs": "前将军" }], "passageId": "" },
+        { "era": { "en": "1st year of Yankang", "zht": "延康元年", "zhs": "延康元年" }, "year": 220, "age": null, "location": null, "position": [{ "en": "Grand General", "zht": "大將軍", "zhs": "大将军" }], "passageId": "" }
+      ]
+    },
+    {
+      "person": "韓浩（元嗣）",
+      "name": { "en": "Han Hao", "zht": "韓浩", "zhs": "韩浩" },
+      "courtesyName": { "en": "Yuansi", "zht": "元嗣", "zhs": "元嗣" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Henei", "zht": "河內", "zhs": "河内" }], "position": null, "passageId": "" },
+        { "era": { "en": "1st year of Xingping", "zht": "興平元年", "zhs": "兴平元年" }, "year": 194, "age": null, "location": [{ "en": "Puyang", "zht": "濮陽", "zhs": "濮阳" }, { "en": "Juancheng", "zht": "鄄城", "zhs": "鄄城" }], "position": null, "passageId": "" },
+        { "era": { "en": "12th year of Jian'an", "zht": "建安十二年", "zhs": "建安十二年" }, "year": 207, "age": null, "location": [{ "en": "Liucheng", "zht": "柳城", "zhs": "柳城" }], "position": [{ "en": "Protector of the Central Army", "zht": "中護軍", "zhs": "中护军" }, { "en": "Marquis", "zht": "列侯", "zhs": "列侯" }], "passageId": "" },
+        { "era": { "en": "20th year of Jian'an", "zht": "建安二十年", "zhs": "建安二十年" }, "year": 215, "age": null, "location": [{ "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" }], "position": null, "passageId": "" }
+      ]
+    },
+    {
+      "person": "史渙（公劉）",
+      "name": { "en": "Shi Huan", "zht": "史渙", "zhs": "史涣" },
+      "courtesyName": { "en": "Gongliu", "zht": "公劉", "zhs": "公刘" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "14th year of Jian'an", "zht": "建安十四年", "zhs": "建安十四年" }, "year": 209 },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Pei State", "zht": "沛國", "zhs": "沛国" }], "position": null, "passageId": "" },
+        { "era": { "en": "4th year of Jian'an", "zht": "建安四年", "zhs": "建安四年" }, "year": 199, "age": null, "location": [{ "en": "Shequan", "zht": "射犬", "zhs": "射犬" }], "position": null, "passageId": "" },
+        { "era": { "en": "5th year of Jian'an", "zht": "建安五年", "zhs": "建安五年" }, "year": 200, "age": null, "location": [{ "en": "Guandu", "zht": "官渡", "zhs": "官渡" }, { "en": "Gushi", "zht": "故市", "zhs": "故市" }], "position": null, "passageId": "" },
+        { "era": { "en": "12th year of Jian'an", "zht": "建安十二年", "zhs": "建安十二年" }, "year": 207, "age": null, "location": [{ "en": "Liucheng", "zht": "柳城", "zhs": "柳城" }], "position": [{ "en": "Commander of the Central Army", "zht": "中領軍", "zhs": "中领军" }, { "en": "Marquis", "zht": "列侯", "zhs": "列侯" }], "passageId": "" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws9a-p1",
+      "orig": {
+        "zht": "夏侯惇字元讓，[[沛國譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]人，夏侯嬰之後也。年十四，就師學，人有辱其師者，惇殺之，由是以烈氣聞。太祖初起，惇常為裨將，從征伐。太祖[[行|/zh-hant/translations/officials#glossary-acting]][[奮武將軍|/zh-hant/translations/officials/military#four-direction--misc-136]]，以惇為[[司馬|/zh-hant/translations/officials/military#four-direction--misc-142]]，別屯[[白馬|/zh-hant/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]，[[遷|/zh-hant/translations/officials#glossary-reassign]][[折衝校尉|/zh-hant/translations/officials/military#colonels--commandants-205]]，[[領|/zh-hant/translations/officials#glossary-concurrently-oversee]][[東|/zh-hant/maps/map-overall?admin=40]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。太祖征陶謙，留惇守[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]。張邈叛迎呂布，太祖家在[[鄄城|/zh-hant/maps/map-overall?lat=35.6673251&lng=115.51879929&name=Juancheng]]，惇輕軍往赴，適與布會，交戰。布退還，遂入[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，襲得惇軍輜重。遣將偽降，共執持惇，責以寶貨，惇軍中震恐。",
+        "zhs": "夏侯惇字元让，[[沛国谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]人，夏侯婴之后也。年十四，就师学，人有辱其师者，惇杀之，由是以烈气闻。太祖初起，惇常为裨将，从征伐。太祖[[行|/zh-hans/translations/officials#glossary-acting]][[奋武将军|/zh-hans/translations/officials/military#four-direction--misc-136]]，以惇为[[司马|/zh-hans/translations/officials/military#four-direction--misc-142]]，别屯[[白马|/zh-hans/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]，[[迁|/zh-hans/translations/officials#glossary-reassign]][[折冲校尉|/zh-hans/translations/officials/military#colonels--commandants-205]]，[[领|/zh-hans/translations/officials#glossary-concurrently-oversee]][[东|/zh-hans/maps/map-overall?admin=40]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。太祖征陶谦，留惇守[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]。张邈叛迎吕布，太祖家在[[鄄城|/zh-hans/maps/map-overall?lat=35.6673251&lng=115.51879929&name=Juancheng]]，惇轻军往赴，适与布会，交战。布退还，遂入[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，袭得惇军辎重。遣将伪降，共执持惇，责以宝货，惇军中震恐。"
+      },
+      "vern": {
+        "zht": "夏侯惇，字元讓，[[沛國譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]縣人。是西漢夏侯嬰的後代。十四歲時，跟着老師學習。有一個人污辱了他的老師，夏侯惇就把那人殺了，從此以剛烈的氣概聞名。自太祖曹操舉兵起事開始，夏侯惇就經常充當副將，隨從太祖南征北戰。太祖代理[[奮武將軍|/zh-hant/translations/officials/military#four-direction--misc-136]]時，以夏侯惇爲[[司馬|/zh-hant/translations/officials/military#four-direction--misc-142]]，讓他單獨率一支軍隊駐紮在[[白馬|/zh-hant/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]縣。後來他升任[[折衝校尉|/zh-hant/translations/officials/military#colonels--commandants-205]]，兼任[[東|/zh-hant/maps/map-overall?admin=40]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。太祖進攻陶謙，留下夏侯惇守衛[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]縣。張邈背叛太祖迎接呂布，當時太祖的家屬在[[鄄城|/zh-hant/maps/map-overall?lat=35.6673251&lng=115.51879929&name=Juancheng]]。夏侯惇輕裝趕去援救，剛好在途中與呂布遭遇，雙方一陣激戰。呂布撤退，然後攻入[[濮陽|/zh-hant/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，襲取了夏侯惇的軍用物資。又派部將假裝投降，趁機劫持夏侯惇爲人質，以此索求寶物財貨。軍中將士都大爲震驚。",
+        "zhs": "夏侯惇，字元让，[[沛国谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]县人。是西汉夏侯婴的后代。十四岁时，跟着老师学习。有一个人污辱了他的老师，夏侯惇就把那人杀了，从此以刚烈的气概闻名。自太祖曹操举兵起事开始，夏侯惇就经常充当副将，随从太祖南征北战。太祖代理[[奋武将军|/zh-hans/translations/officials/military#four-direction--misc-136]]时，以夏侯惇为[[司马|/zh-hans/translations/officials/military#four-direction--misc-142]]，让他单独率一支军队驻扎在[[白马|/zh-hans/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]县。后来他升任[[折冲校尉|/zh-hans/translations/officials/military#colonels--commandants-205]]，兼任[[东|/zh-hans/maps/map-overall?admin=40]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。太祖进攻陶谦，留下夏侯惇守卫[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]县。张邈背叛太祖迎接吕布，当时太祖的家属在[[鄄城|/zh-hans/maps/map-overall?lat=35.6673251&lng=115.51879929&name=Juancheng]]。夏侯惇轻装赶去援救，刚好在途中与吕布遭遇，双方一阵激战。吕布撤退，然后攻入[[濮阳|/zh-hans/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]，袭取了夏侯惇的军用物资。又派部将假装投降，趁机劫持夏侯惇为人质，以此索求宝物财货。军中将士都大为震惊。"
+      },
+      "en": "Xiahou Dun, courtesy name Yuanrang, was from [[Qiao, Pei|/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]], and a descendant of Xiahou Ying. At fourteen, he went to study under a teacher. When someone insulted his teacher, Xiahou Dun killed him, and thereafter became known for his fierce mettle. When Cao Cao (posthumously honoured as Taizu, the Grand Progenitor) first raised troops, Xiahou Dun regularly served as an assistant general, and followed him on campaigns. When Cao Cao was the [[acting|/translations/officials#glossary-acting]] [[General Who Inspires Valour|/translations/officials/military#four-direction--misc-136]], he appointed Xiahou Dun as [[Major|/translations/officials/military#four-direction--misc-142]] and detached him to garrison at [[Baima|/maps/map-overall?lat=35.56235226&lng=114.65338913&name=Baima]]. Xiahou Dun was later [[promoted|/translations/officials#glossary-reassign]] to [[Colonel Who Breaks the Charge|/translations/officials/military#colonels--commandants-205]], [[concurrently|/translations/officials#glossary-concurrently-oversee]] serving as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Dong|/maps/map-overall?admin=40]] Commandery. When Cao Cao campaigned against Tao Qian, he left Xiahou Dun to defend [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]]. Zhang Miao rebelled and welcomed Lü Bu. As Cao Cao's family was then in [[Juancheng|/maps/map-overall?lat=35.6673251&lng=115.51879929&name=Juancheng]], Xiahou Dun hurried there with a light force. He encountered Lü Bu on the way, and they fought. Lü Bu withdrew, then entered [[Puyang|/maps/map-overall?lat=35.61104535&lng=114.9728879&name=Puyang]] and seized Xiahou Dun's supplies in a surprise attack. Lü Bu then sent officers to feign surrender, and together they seized Dun as a hostage and demanded valuables as ransom. Xiahou Dun's army was thrown into panic."
+    },
+    {
+      "id": "ws9a-p2",
+      "orig": {
+        "zht": "惇將韓浩乃勒兵屯惇營門，召軍吏諸將，皆案甲當部不得動，諸營乃定。遂詣惇所，叱持質者曰：「汝等凶逆，乃敢執劫將軍，復欲望生邪！且吾受命討賊，寧能以一將軍之故，而縱汝乎？」因涕泣謂惇曰：「當柰國法何！」促召兵擊持質者。持質者惶遽叩頭，言「我但欲乞資用去耳」！浩數責，皆斬之。惇旣免，太祖聞之，謂浩曰：「卿此可為萬世法。」乃著令，自今已後有持質者，皆當并擊，勿顧質。由是劫質者遂絕。",
+        "zhs": "惇将韩浩乃勒兵屯惇营门，召军吏诸将，皆案甲当部不得动，诸营乃定。遂诣惇所，叱持质者曰：「汝等凶逆，乃敢执劫将军，复欲望生邪！且吾受命讨贼，宁能以一将军之故，而纵汝乎？」因涕泣谓惇曰：「当柰国法何！」促召兵击持质者。持质者惶遽叩头，言「我但欲乞资用去耳」！浩数责，皆斩之。惇既免，太祖闻之，谓浩曰：「卿此可为万世法。」乃著令，自今已后有持质者，皆当并击，勿顾质。由是劫质者遂绝。"
+      },
+      "vern": {
+        "zht": "夏侯惇的部將韓浩率兵守在軍營門口，並召集軍中將領，讓他們命令士兵留在各自的營中不準亂動。各營的軍隊才安定下來。韓浩再趕到夏侯惇那裏，呵斥劫持夏侯惇的人說：“你們這些兇惡的叛逆者，居然敢劫持領兵大將！你們還想活麼？而且我奉命討伐逆賊，難道會因爲一個將軍就放縱你們的行爲嗎？”又流着淚對夏侯惇說：“國法如此，我也沒有辦法！”說完立即召集士兵殺向劫持者。劫持者嚇得趕忙跪地叩頭，說：“我們只想要離開的路費！”韓浩數落痛罵一番，把劫持者全都殺了。夏侯惇得救後，太祖聽說了這件事，對韓浩說：“您對這件事的處理，可以作爲千秋萬代的榜樣！”於是發佈命令：“從今以後如有劫持人質的，都應當全力攻擊，不要顧及人質的安全。”從此，劫持人質的事就絕跡了。",
+        "zhs": "夏侯惇的部将韩浩率兵守在军营门口，并召集军中将领，让他们命令士兵留在各自的营中不准乱动。各营的军队才安定下来。韩浩再赶到夏侯惇那里，呵斥劫持夏侯惇的人说：“你们这些凶恶的叛逆者，居然敢劫持领兵大将！你们还想活么？而且我奉命讨伐逆贼，难道会因为一个将军就放纵你们的行为吗？”又流着泪对夏侯惇说：“国法如此，我也没有办法！”说完立即召集士兵杀向劫持者。劫持者吓得赶忙跪地叩头，说：“我们只想要离开的路费！”韩浩数落痛骂一番，把劫持者全都杀了。夏侯惇得救后，太祖听说了这件事，对韩浩说：“您对这件事的处理，可以作为千秋万代的榜样！”于是发布命令：“从今以后如有劫持人质的，都应当全力攻击，不要顾及人质的安全。”从此，劫持人质的事就绝迹了。"
+      },
+      "en": "Han Hao, a general under Xiahou Dun, ordered troops to station at Xiahou Dun's camp gate. He also summoned all the officers and generals and ordered each to keep his men in place. Only then did the army settle down. Han Hao then went to Xiahou Dun and shouted at his captors: \"You vile rebels dare seize the general, yet still hope to live! I have orders to suppress rebels. How could I let you escape for the sake of a single general?\" Then, weeping, he said to Xiahou Dun, \"What am I to do about the law of the state?\" He at once called the troops to attack. Terrified, the captors knelt and pleaded, \"We sought only enough money to leave.\" Han Hao denounced them and had them all beheaded. After Xiahou Dun was freed, Cao Cao heard what had happened and said to Han Hao, \"Your conduct may serve as a model for all ages.\" He then issued an ordinance that henceforth, whenever anyone took a hostage, the captors were to be attacked without regard for the hostage. From that time, hostage-taking ceased. ",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "孫盛",
+            "zhs": "孙盛",
+            "en": "Sun Sheng"
+          },
+          "zht": "孫盛曰：案光武紀，建武九年，盜劫陰貴人母弟，吏以不得拘質迫盜，盜遂殺之也。然則合擊者，乃古制也。自安、順已降，政教陵遲，劫質不避王公，而有司莫能遵奉國憲者，浩始復斬之，故魏武嘉焉。",
+          "zhs": "孙盛曰：案光武纪，建武九年，盗劫阴贵人母弟，吏以不得拘质迫盗，盗遂杀之也。然则合击者，乃古制也。自安、顺已降，政教陵迟，劫质不避王公，而有司莫能遵奉国宪者，浩始复斩之，故魏武嘉焉。",
+          "vern": {
+            "zht": "孫盛說：按《光武紀》記載，建武九年，盜賊劫持了陰貴人的母親和弟弟。官吏因爲顧忌人質，不敢逼迫強盜，強盜就把人質殺了。其實對劫持人質者一併攻擊，本就是古代的制度。自漢安帝、順帝以後，政教衰敗，劫持人質者連王公都不避忌，而官府卻沒有人能遵奉國法來制裁他們。韓浩開始重新斬殺劫持人質者，所以魏武帝讚賞他。",
+            "zhs": "孙盛说：按《光武纪》记载，建武九年，盗贼劫持了阴贵人的母亲和弟弟。官吏因为顾忌人质，不敢逼迫强盗，强盗就把人质杀了。其实对劫持人质者一并攻击，本就是古代的制度。自汉安帝、顺帝以后，政教衰败，劫持人质者连王公都不避忌，而官府却没有人能遵奉国法来制裁他们。韩浩开始重新斩杀劫持人质者，所以魏武帝赞赏他。"
+          },
+          "en": "Sun Sheng said: According to the Annals of Emperor Guangwu, the Illustrious Martial Emperor, in the ninth year of Jianwu, bandits seized the mother and younger brother of Honoured Lady Yin. The officials dared not press the bandits for fear of endangering the hostages, yet the bandits killed them anyway. Bbut to attack the captors, regardless of the hostage, was the ancient rule. From the reigns of Emperors An and Shun onwards, government and moral instruction declined. Hostage-takers spared not even princes and dukes, yet no officials could uphold the laws of the state. Han Hao was the first to resume executing them, and so Cao Cao (posthumously honoured as Emperor Wu, the Martial Emperor) praised him.\""
+        }
+      ]
+    },
+    {
+      "id": "ws9a-p3",
+      "orig": {
+        "zht": "太祖自[[徐州|/zh-hant/maps/map-overall?admin=8]]還，惇從征呂布，為流矢所中，傷左目。復[[領|/zh-hant/translations/officials#glossary-concurrently-oversee]][[陳留|/zh-hant/maps/map-overall?admin=39]]、[[濟陰|/zh-hant/maps/map-overall?admin=38]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]，加[[建武將軍|/zh-hant/translations/officials/military#four-direction--misc-136]]，封高安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。時大旱，蝗蟲起，惇乃斷太壽水作陂，身自負土，率將士勸種稻，民賴其利。[[轉|/zh-hant/translations/officials#glossary-transfer]][[領|/zh-hant/translations/officials#glossary-concurrently-oversee]][[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]。太祖平河北，為大軍後拒。[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]破，[[遷|/zh-hant/translations/officials#glossary-reassign]][[伏波將軍|/zh-hant/translations/officials/military#four-direction--misc-152]]，[[領|/zh-hant/translations/officials#glossary-concurrently-oversee]]尹如故，使得以便宜從事，不拘科制。建安十二年，錄惇前後功，增封邑千八百戶，并前二千五百戶。",
+        "zhs": "太祖自[[徐州|/zh-hans/maps/map-overall?admin=8]]还，惇从征吕布，为流矢所中，伤左目。复[[领|/zh-hans/translations/officials#glossary-concurrently-oversee]][[陈留|/zh-hans/maps/map-overall?admin=39]]、[[济阴|/zh-hans/maps/map-overall?admin=38]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]，加[[建武将军|/zh-hans/translations/officials/military#four-direction--misc-136]]，封高安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。时大旱，蝗虫起，惇乃断太寿水作陂，身自负土，率将士劝种稻，民赖其利。[[转|/zh-hans/translations/officials#glossary-transfer]][[领|/zh-hans/translations/officials#glossary-concurrently-oversee]][[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]。太祖平河北，为大军后拒。[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]破，[[迁|/zh-hans/translations/officials#glossary-reassign]][[伏波将军|/zh-hans/translations/officials/military#four-direction--misc-152]]，[[领|/zh-hans/translations/officials#glossary-concurrently-oversee]]尹如故，使得以便宜从事，不拘科制。建安十二年，录惇前后功，增封邑千八百户，并前二千五百户。"
+      },
+      "vern": {
+        "zht": "太祖從[[徐州|/zh-hant/maps/map-overall?admin=8]]回來，夏侯惇跟隨太祖去征討呂布。作戰時被流箭射中，傷了左眼。此後他又兼任[[陳留|/zh-hant/maps/map-overall?admin=39]]郡、[[濟陰|/zh-hant/maps/map-overall?admin=38]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]，加[[建武將軍|/zh-hant/translations/officials/military#four-direction--misc-136]]，高安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。時值大旱，蝗災四起，夏侯惇組織人力截斷太壽附近的河水修成一個池堰；他親自擔土，又率領將士鼓勵農民種稻，百姓都從中受益。不久夏侯惇轉任[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]。太祖平定河北，夏侯惇擔任大軍的後衛。攻克[[鄴|/zh-hant/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]後，他升任[[伏波將軍|/zh-hant/translations/officials/military#four-direction--misc-152]]，依然兼任[[河南尹|/zh-hant/translations/officials/regional#commanderies-032]]，太祖還讓他根據實際情況自行處理事務，不必拘泥於規章制度。建安十二年，太祖依據夏侯惇前後的功勳，給他增加封邑一千八百戶，加上以前的共有二千五百戶。",
+        "zhs": "太祖从[[徐州|/zh-hans/maps/map-overall?admin=8]]回来，夏侯惇跟随太祖去征讨吕布。作战时被流箭射中，伤了左眼。此后他又兼任[[陈留|/zh-hans/maps/map-overall?admin=39]]郡、[[济阴|/zh-hans/maps/map-overall?admin=38]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]，加[[建武将军|/zh-hans/translations/officials/military#four-direction--misc-136]]，高安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。时值大旱，蝗灾四起，夏侯惇组织人力截断太寿附近的河水修成一个池堰；他亲自担土，又率领将士鼓励农民种稻，百姓都从中受益。不久夏侯惇转任[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]。太祖平定河北，夏侯惇担任大军的后卫。攻克[[邺|/zh-hans/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]]后，他升任[[伏波将军|/zh-hans/translations/officials/military#four-direction--misc-152]]，依然兼任[[河南尹|/zh-hans/translations/officials/regional#commanderies-032]]，太祖还让他根据实际情况自行处理事务，不必拘泥于规章制度。建安十二年，太祖依据夏侯惇前后的功勋，给他增加封邑一千八百户，加上以前的共有二千五百户。"
+      },
+      "en": "When Cao Cao returned from [[Xu Province|/maps/map-overall?admin=8]], Xiahou Dun accompanied him on the campaign against Lü Bu. A stray arrow struck him, injuring his left eye. He was again appointed [[concurrently|/translations/officials#glossary-concurrently-oversee]] as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Chenliu State|/maps/map-overall?admin=39]] and [[Jiyin|/maps/map-overall?admin=38]], received the title [[General Who Establishes Valour|/translations/officials/military#four-direction--misc-136]], and enfeoffed as [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]] of Gao'an. At the time, a severe drought and swarms of locusts afflicted the region. Xiahou Dun dammed the river at Taishou to create a reservoir, personally carrying earth and leading his officers and soldiers in promoting rice cultivation. The people benefited from his efforts. He was then [[transferred|/translations/officials#glossary-transfer]] to [[concurrently|/translations/officials#glossary-concurrently-oversee]] serve as [[Intendant of Henan|/translations/officials/regional#commanderies-032]]. When Cao Cao pacified the lands north of the Yellow River, Xiahou Dun was the army's rearguard. After [[Ye|/maps/map-overall?lat=36.29000818&lng=114.3635467&name=Ye]] fell, he was [[promoted|/translations/officials#glossary-reassign]] to [[General Who Subdues the Waves|/translations/officials/military#four-direction--misc-152]] while [[concurrently|/translations/officials#glossary-concurrently-oversee]] retaining his post as Intendant of Henan. He was authorised to act as circumstances required, without being constrained by regulations. In the twelfth year of Jian'an, in recognition of his services over the years, his fief was increased by 1800 households, bringing the total to 2500.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：時夏侯淵與惇俱為將軍，軍中號惇為盲夏侯。惇惡之，每照鏡，恚怒，輒撲鏡於地。",
+          "zhs": "《魏略》曰：时夏侯渊与惇俱为将军，军中号惇为盲夏侯。惇恶之，每照镜，恚怒，辄扑镜于地。",
+          "vern": {
+            "zht": "《魏略》記載：當時夏侯淵和夏侯惇都是將軍，軍中稱夏侯惇爲“盲夏侯”。夏侯惇厭惡這個綽號，每次照鏡子就憤怒不已，總是把鏡子摔在地上。",
+            "zhs": "《魏略》记载：当时夏侯渊和夏侯惇都是将军，军中称夏侯惇为“盲夏侯”。夏侯惇厌恶这个绰号，每次照镜子就愤怒不已，总是把镜子摔在地上。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: At the time, Xiahou Yuan and Xiahou Dun were both generals, and the army nicknamed Xiahou Dun \"the Blind Xiahou\". Xiahou Dun hated the name. Whenever he looked in a mirror, he would fly into a rage and threw it to the ground."
+        }
+      ]
+    },
+    {
+      "id": "ws9a-p4",
+      "orig": {
+        "zht": "二十一年，從征孫權還，使惇都督二十六軍，留[[居巢|/zh-hant/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]。賜伎樂名倡，令曰：「魏絳以和戎之功，猶受金石之樂，況將軍乎！」二十四年，太祖軍於[[摩陂|/zh-hant/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]，召惇常與同載，特見親重，出入卧內，諸將莫得比也。[[拜|/zh-hant/translations/officials#glossary-formally-appoint]][[前將軍|/zh-hant/translations/officials/military#four-direction--misc-114]]，督諸軍還[[壽春|/zh-hant/maps/map-overall?lat=32.56634501&lng=116.80475418&name=Shouchun]]，徙屯[[召陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]。文帝即王位，[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]惇[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]，數月薨。",
+        "zhs": "二十一年，从征孙权还，使惇都督二十六军，留[[居巢|/zh-hans/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]。赐伎乐名倡，令曰：「魏绛以和戎之功，犹受金石之乐，况将军乎！」二十四年，太祖军于[[摩陂|/zh-hans/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]，召惇常与同载，特见亲重，出入卧内，诸将莫得比也。[[拜|/zh-hans/translations/officials#glossary-formally-appoint]][[前将军|/zh-hans/translations/officials/military#four-direction--misc-114]]，督诸军还[[寿春|/zh-hans/maps/map-overall?lat=32.56634501&lng=116.80475418&name=Shouchun]]，徙屯[[召陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]。文帝即王位，[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]惇[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]，数月薨。"
+      },
+      "vern": {
+        "zht": "建安二十一年，夏侯惇隨太祖征討孫權。回程時，太祖讓他指揮二十六路人馬，駐守在[[居巢|/zh-hant/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]，又賞賜給他各種樂妓和有名的倡優，下令說：“春秋時的魏絳憑藉與戎狄議和的功勞，尚且能得到鐘鼎樂器的賞賜，何況將軍你呢！！”建安二十四年，太祖在[[摩陂|/zh-hant/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]駐軍時，常招呼夏侯惇與他同乘一輛車，對他格外親近器重，夏侯惇可以自由出入曹操的臥室，其他將領沒有誰能比得上這種待遇。他後來任[[前將軍|/zh-hant/translations/officials/military#four-direction--misc-114]]，指揮各路軍隊回到[[壽春|/zh-hant/maps/map-overall?lat=32.56634501&lng=116.80475418&name=Shouchun]]，又轉移到[[召陵|/zh-hant/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]駐紮。魏文帝即王位，任命夏侯惇爲[[大將軍|/zh-hant/translations/officials/ministers#superior-excellency-064]]，數月後去世。",
+        "zhs": "建安二十一年，夏侯惇随太祖征讨孙权。回程时，太祖让他指挥二十六路人马，驻守在[[居巢|/zh-hans/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]，又赏赐给他各种乐妓和有名的倡优，下令说：“春秋时的魏绛凭借与戎狄议和的功劳，尚且能得到钟鼎乐器的赏赐，何况将军你呢！！”建安二十四年，太祖在[[摩陂|/zh-hans/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]]驻军时，常招呼夏侯惇与他同乘一辆车，对他格外亲近器重，夏侯惇可以自由出入曹操的卧室，其他将领没有谁能比得上这种待遇。他后来任[[前将军|/zh-hans/translations/officials/military#four-direction--misc-114]]，指挥各路军队回到[[寿春|/zh-hans/maps/map-overall?lat=32.56634501&lng=116.80475418&name=Shouchun]]，又转移到[[召陵|/zh-hans/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]驻扎。魏文帝即王位，任命夏侯惇为[[大将军|/zh-hans/translations/officials/ministers#superior-excellency-064]]，数月后去世。"
+      },
+      "en": "In the twenty-first year of Jian'an, Xiahou Dun accompanied Cao Cao on the campaign against Sun Quan. On their return, Cao Cao placed him in command of twenty-six armies and left him to garrison [[Juchao|/maps/map-overall?lat=31.62795047&lng=117.88668775&name=Juchao]]. Cao Cao also bestowed upon him musicians and celebrated performers, declaring: \"Even Wei Jiang received the music of bells and stone chimes for his service in making peace with the Rong. How much more deserving are you, General!\" In the twenty-fourth year, while Taizu was encamped at [[Mo Lake|/maps/map-overall?lat=33.92967724&lng=113.38240652&name=Mo%20Lake]], he often summoned Xiahou Dun to ride in his carriage with him. He treated him with exceptional intimacy and esteem, allowing him to enter his private chambers. No other general enjoyed comparable favour. Xiahou Dun was later [[appointed|/translations/officials#glossary-formally-appoint]] [[General of the Front|/translations/officials/military#four-direction--misc-114]] and led the armies back to [[Shouchun|/maps/map-overall?lat=32.56634501&lng=116.80475418&name=Shouchun]], then relocated to garrison at [[Shaoling|/maps/map-overall?lat=33.60565556&lng=114.15360904&name=Shaoling]]. When Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) succeeded as king, he [[appointed|/translations/officials#glossary-formally-appoint]] Xiahou Dun [[Grand General|/translations/officials/ministers#superior-excellency-064]]. Xiahou Dun died a few months later.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：時諸將皆受魏官號，惇獨漢官，乃上疏自陳不當不臣之禮。太祖曰：「吾聞太上師臣，其次友臣。夫臣者，貴德之人也，區區之魏，而臣足以屈君乎？」惇固請，乃[[拜|/zh-hant/translations/officials#glossary-formally-appoint]]為[[前將軍|/zh-hant/translations/officials/military#four-direction--misc-114]]。",
+          "zhs": "《魏书》曰：时诸将皆受魏官号，惇独汉官，乃上疏自陈不当不臣之礼。太祖曰：「吾闻太上师臣，其次友臣。夫臣者，贵德之人也，区区之魏，而臣足以屈君乎？」惇固请，乃[[拜|/zh-hans/translations/officials#glossary-formally-appoint]]为[[前将军|/zh-hans/translations/officials/military#four-direction--misc-114]]。",
+          "vern": {
+            "zht": "《魏書》記載：當時各位將領都接受了魏國的官號，只有夏侯惇是漢朝的官職，於是他上疏陳述自己的想法，認爲自己身份不當，有違臣子之禮。太祖說：“我聽說最好的君主把臣子當作老師，其次是把臣子當作朋友。所謂臣子，是崇尚重視道德的人。區區魏國之臣，不是委屈您了嗎？”夏侯惇堅決請求，於是被任命爲[[前將軍|/zh-hant/translations/officials/military#four-direction--misc-114]]。",
+            "zhs": "《魏书》记载：当时各位将领都接受了魏国的官号，只有夏侯惇是汉朝的官职，于是他上疏陈述自己的想法，认为自己身份不当，有违臣子之礼。太祖说：“我听说最好的君主把臣子当作老师，其次是把臣子当作朋友。所谓臣子，是崇尚重视道德的人。区区魏国之臣，不是委屈您了吗？”夏侯惇坚决请求，于是被任命为[[前将军|/zh-hans/translations/officials/military#four-direction--misc-114]]。"
+          },
+          "en": "The Book of Wei states: At the time, all the generals had accepted official titles from Wei, while Xiahou Dun alone still held office under the Han. He therefore submitted a memorial, stating that for a subject of Wei to hold a Han office was improper. Cao Cao said, \"I have heard that the greatest rulers treat their ministers as teachers, and the next best as friends. A minister is a man esteemed for his virtue. Would it not be beneath your dignity to become a subject of so insignificant a state as Wei?\" Xiahou Dun persisted in his request and was [[appointed|/translations/officials#glossary-formally-appoint]] [[General of the Front|/translations/officials/military#four-direction--misc-114]]."
+        }
+      ]
+    },
+    {
+      "id": "ws9a-p5",
+      "orig": {
+        "zht": "惇雖在軍旅，親迎師受業。性清儉，有餘財輒以分施，不足資之於官，不治產業。謚曰忠侯。子充嗣。帝追思惇功，欲使子孫畢侯，分惇邑千戶，賜惇七子二孫爵皆[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。惇弟廉及子楙素自封[[列侯|/zh-hant/translations/officials#glossary-marquis]]。初，太祖以女妻楙，即[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主也。楙歷位[[侍中|/zh-hant/translations/officials/departments#chancellery-001]][[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]、[[安西|/zh-hant/translations/officials/military#pacifying--subduing-093]][[鎮東將軍|/zh-hant/translations/officials/military#conquering--garrisoning-068]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。充薨，子廙嗣。廙薨，子劭嗣。",
+        "zhs": "惇虽在军旅，亲迎师受业。性清俭，有余财辄以分施，不足资之于官，不治产业。谥曰忠侯。子充嗣。帝追思惇功，欲使子孙毕侯，分惇邑千户，赐惇七子二孙爵皆[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。惇弟廉及子楙素自封[[列侯|/zh-hans/translations/officials#glossary-marquis]]。初，太祖以女妻楙，即[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主也。楙历位[[侍中|/zh-hans/translations/officials/departments#chancellery-001]][[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]、[[安西|/zh-hans/translations/officials/military#pacifying--subduing-093]][[镇东将军|/zh-hans/translations/officials/military#conquering--garrisoning-068]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。充薨，子廙嗣。廙薨，子劭嗣。"
+      },
+      "vern": {
+        "zht": "夏侯惇雖然長期在軍隊，但卻能親自迎接老師學習。他品行清正廉潔，有多餘的財產就分發給衆人，不依靠權勢貪污受賄，也沒有置辦產業。死後諡爲忠侯。兒子夏侯充，繼承了他的爵位。文帝感念夏侯惇的功績，想讓他的子孫們都封侯。於是分出夏侯惇的封邑一千戶，用來封他的七個兒子、兩個孫子爲[[關內侯|/zh-hant/translations/officials#glossary-marquis-within-the-pass]]。夏侯惇的弟弟夏侯廉以及夏侯廉的兒子夏侯楙，此前早已封了[[列侯|/zh-hant/translations/officials#glossary-marquis]]。起初，太祖將女兒[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主嫁給夏侯楙爲妻。夏侯楙歷任[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]、[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]，[[安西|/zh-hant/translations/officials/military#pacifying--subduing-093]]將軍、[[鎮東將軍|/zh-hant/translations/officials/military#conquering--garrisoning-068]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。夏侯充死後，兒子夏侯廙繼承了爵位。夏侯廙死後，兒子夏侯邵繼承了爵位。",
+        "zhs": "夏侯惇虽然长期在军队，但却能亲自迎接老师学习。他品行清正廉洁，有多余的财产就分发给众人，不依靠权势贪污受贿，也没有置办产业。死后谥为忠侯。儿子夏侯充，继承了他的爵位。文帝感念夏侯惇的功绩，想让他的子孙们都封侯。于是分出夏侯惇的封邑一千户，用来封他的七个儿子、两个孙子为[[关内侯|/zh-hans/translations/officials#glossary-marquis-within-the-pass]]。夏侯惇的弟弟夏侯廉以及夏侯廉的儿子夏侯楙，此前早已封了[[列侯|/zh-hans/translations/officials#glossary-marquis]]。起初，太祖将女儿[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主嫁给夏侯楙为妻。夏侯楙历任[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]、[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]，[[安西|/zh-hans/translations/officials/military#pacifying--subduing-093]]将军、[[镇东将军|/zh-hans/translations/officials/military#conquering--garrisoning-068]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]。夏侯充死后，儿子夏侯廙继承了爵位。夏侯廙死后，儿子夏侯邵继承了爵位。"
+      },
+      "en": "Though serving in the army, Xiahou Dun personally welcomed teachers and studied under them. Frugal and incorruptible by nature, he distributed any surplus wealth he had. When his means fell short, he drew on his official allowance, and acquired no estates. He was posthumously titled [[Marquis|/translations/officials#glossary-marquis]] Zhong, the Loyal Marquis, and his son Xiahou Chong succeeded him. Remembering Xiahou Dun's achievements, the emperor wished to make all his descendants marquises. He therefore set aside a thousand households from Dun's fief and granted each of Dun's seven sons and two grandsons the title of [[Marquis Within the Pass|/translations/officials#glossary-marquis-within-the-pass]]. Xiahou Dun's younger brother Xiahou Lian and Xiahou Dun's son Xiahou Mao had already been enfeoffed as Marquis earlier. Previously, Cao Cao had married his daughter, the Princess of [[Qinghe|/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]], to Xiahou Mao. Xiahou Mao successively served as [[Palace Attendant|/translations/officials/departments#chancellery-001]], [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]], [[General Who Pacifies the West|/translations/officials/military#pacifying--subduing-093]] and [[General Who Garrisons the East|/translations/officials/military#conquering--garrisoning-068]], and [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]. When Xiahou Chong died, his son Xiahou Yi succeeded him. When Xiahou Yi died, his son Xiahou Shao succeeded him.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏略 (魚豢)",
+            "zhs": "魏略 (鱼豢)",
+            "en": "Weilüe / Brief History of Wei (Yu Huan)"
+          },
+          "zht": "《魏略》曰：楙字子林，惇中子也。文帝少與楙親，及即位，以為[[安西將軍|/zh-hant/translations/officials/military#pacifying--subduing-093]]、[[持節|/zh-hant/translations/officials#glossary-bearer-of-the-imperial-tally]]，承夏侯淵處都督[[關中|/zh-hant/translations/officials#glossary-inside-the-pass-guanzhong]]。楙性無武略，而好治生。至太和二年，明帝西征，人有白楙者，遂召還為[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。楙在西時，多畜伎妾，公主由此與楙不和。其後羣弟不遵禮度，楙數切責，弟懼見治，乃共構楙以誹謗，令主奏之，有詔收楙。帝意欲殺之，以問[[長水校尉|/zh-hant/translations/officials/military#central-army-014]][[京兆|/zh-hant/maps/map-overall?admin=142]]段默，默以為「此必[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主與楙不睦，出於譖構，兾不推實耳。且伏波與先帝有定天下之功，宜加三思」。帝意解，曰：「吾亦以為然。」乃發詔推問為公主作表者，果其羣弟子臧、子江所構也。",
+          "zhs": "《魏略》曰：楙字子林，惇中子也。文帝少与楙亲，及即位，以为[[安西将军|/zh-hans/translations/officials/military#pacifying--subduing-093]]、[[持节|/zh-hans/translations/officials#glossary-bearer-of-the-imperial-tally]]，承夏侯渊处都督[[关中|/zh-hans/translations/officials#glossary-inside-the-pass-guanzhong]]。楙性无武略，而好治生。至太和二年，明帝西征，人有白楙者，遂召还为[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。楙在西时，多畜伎妾，公主由此与楙不和。其后群弟不遵礼度，楙数切责，弟惧见治，乃共构楙以诽谤，令主奏之，有诏收楙。帝意欲杀之，以问[[长水校尉|/zh-hans/translations/officials/military#central-army-014]][[京兆|/zh-hans/maps/map-overall?admin=142]]段默，默以为「此必[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主与楙不睦，出于谮构，兾不推实耳。且伏波与先帝有定天下之功，宜加三思」。帝意解，曰：「吾亦以为然。」乃发诏推问为公主作表者，果其群弟子臧、子江所构也。",
+          "vern": {
+            "zht": "《魏略》記載：夏侯楙字子林，是夏侯惇的二兒子。文帝年少時與楙親近，等到他即位後，任命他爲[[安西將軍|/zh-hant/translations/officials/military#pacifying--subduing-093]]、[[持節|/zh-hant/translations/officials#glossary-bearer-of-the-imperial-tally]]，接替夏侯淵統領[[關中|/zh-hant/translations/officials#glossary-inside-the-pass-guanzhong]]。夏侯楙生性沒有軍事謀略，卻喜歡經營家業謀生計。到了太和二年，明帝西征，有人告發楙，於是明帝將他召回擔任[[尚書|/zh-hant/translations/officials/departments#state-affairs-033]]。夏侯楙此前在西邊任職時，養了很多歌妓和妾室，公主因此與他不和。此後夏侯楙的幾個弟弟不遵守禮儀法度，夏侯楙多次嚴厲斥責他們，弟弟們害怕被治罪，於是共同誣陷夏侯楙誹謗，鼓動公主上奏請求下詔逮捕楙。明帝打算殺掉夏侯楙，就此事詢問[[長水校尉|/zh-hant/translations/officials/military#central-army-014]][[京兆|/zh-hant/maps/map-overall?admin=142]]人段默，段默認爲：“這一定是[[清河|/zh-hant/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主與夏侯楙關係不和睦而誣陷他，只希望朝廷不去查究實情罷了。況且伏波將軍與先帝有平定天下的功勞，應該再三考慮。” 明帝心消解，說：“我也認爲是這樣。” 於是下詔查問替公主起草表章的人，果然是他的幾個弟弟子臧、子江所誣陷的。",
+            "zhs": "《魏略》记载：夏侯楙字子林，是夏侯惇的二儿子。文帝年少时与楙亲近，等到他即位后，任命他为[[安西将军|/zh-hans/translations/officials/military#pacifying--subduing-093]]、[[持节|/zh-hans/translations/officials#glossary-bearer-of-the-imperial-tally]]，接替夏侯渊统领[[关中|/zh-hans/translations/officials#glossary-inside-the-pass-guanzhong]]。夏侯楙生性没有军事谋略，却喜欢经营家业谋生计。到了太和二年，明帝西征，有人告发楙，于是明帝将他召回担任[[尚书|/zh-hans/translations/officials/departments#state-affairs-033]]。夏侯楙此前在西边任职时，养了很多歌妓和妾室，公主因此与他不和。此后夏侯楙的几个弟弟不遵守礼仪法度，夏侯楙多次严厉斥责他们，弟弟们害怕被治罪，于是共同诬陷夏侯楙诽谤，鼓动公主上奏请求下诏逮捕楙。明帝打算杀掉夏侯楙，就此事询问[[长水校尉|/zh-hans/translations/officials/military#central-army-014]][[京兆|/zh-hans/maps/map-overall?admin=142]]人段默，段默认为：“这一定是[[清河|/zh-hans/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]]公主与夏侯楙关系不和睦而诬陷他，只希望朝廷不去查究实情罢了。况且伏波将军与先帝有平定天下的功劳，应该再三考虑。” 明帝心消解，说：“我也认为是这样。” 于是下诏查问替公主起草表章的人，果然是他的几个弟弟子臧、子江所诬陷的。"
+          },
+          "en": "The Weilüe / Brief History of Wei states: Xiahou Mao, courtesy name Zilin, was Xiahou Dun's second son. Cao Pi had been close to Xiahou Mao in his youth. On taking the throne, he appointed Xiahou Mao [[General Who Pacifies the West|/translations/officials/military#pacifying--subduing-093]] and [[Bearer of the Imperial Tally|/translations/officials#glossary-bearer-of-the-imperial-tally]], succeeding Xiahou Yuan in commanding [[Guanzhong|/translations/officials#glossary-inside-the-pass-guanzhong]]. Xiahou Mao had no aptitude for military strategy, but enjoyed managing enterprises and estates. In the second year of Taihe, Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) campaigned in the west. Someone brought accusations against Mao, who was then recalled to become [[Imperial Secretariat|/translations/officials/departments#state-affairs-033]]. While stationed in the west,  Xiahou Mao had kept many singing girls and concubines, which caused discord between him and the princess. Later, his younger brothers flouted propriety and the law, and Xiahou Mao repeatedly rebuked them severely. Fearing punishment, they conspired to accuse him falsely of slander and induced the princess to submit a memorial against him. An edict was issued for Xiahou Mao's arrest. The emperor intended to put him to death and consulted Duan Mo of [[Jingzhao|/maps/map-overall?admin=142]], [[Colonel of the Changshui Regiment|/translations/officials/military#central-army-014]]. Duan Mo said, \"This must be a false accusation arising from discord between Princess [[Qinghe|/maps/map-overall?lat=36.91514604&lng=115.75902922&name=Qinghe]] and Xiahou Mao, in the hope that the truth will not be investigated. Moreover, Xiahou Mao's father, the General Who Subdues the Waves, helped the late emperor pacify the realm. Your Majesty should consider this most carefully.\" The emperor relented, saying, \"I think so too.\" He then issued an edict ordering an inquiry into who had drafted the princess's memorial. It proved to be a fabrication by Xiahou Mao's younger brothers Zizang and Zijiang."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "晉陽秋",
+            "zhs": "晋阳秋",
+            "en": "Jin Yang Qiu / Annals of Jin (Sun Sheng)"
+          },
+          "zht": "《晉陽秋》曰：泰始二年，高安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]夏侯佐卒，惇之孫也，嗣絕。詔曰：「惇，魏之元功，勳書竹帛。昔庭堅不祀，猶或悼之，況朕受禪於魏，而可以忘其功臣哉！宜擇惇近屬紹封之。」",
+          "zhs": "《晋阳秋》曰：泰始二年，高安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]夏侯佐卒，惇之孙也，嗣绝。诏曰：「惇，魏之元功，勋书竹帛。昔庭坚不祀，犹或悼之，况朕受禅于魏，而可以忘其功臣哉！宜择惇近属绍封之。」",
+          "vern": {
+            "zht": "《晉陽秋》記載：泰始二年，高安[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]夏侯佐去世，他是夏侯惇的孫子，他這一支的子嗣斷絕了。晉武帝詔書說：“夏侯惇是曹魏的首功之臣，他的功績記載在史冊上。從前庭堅無人祭祀，人們尚且爲此哀傷，何況我從魏朝接受禪讓，怎麼可以忘記魏朝的功臣呢？應該選擇夏侯惇的近支親屬夏侯劭來繼承爵位。”",
+            "zhs": "《晋阳秋》记载：泰始二年，高安[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]夏侯佐去世，他是夏侯惇的孙子，他这一支的子嗣断绝了。晋武帝诏书说：“夏侯惇是曹魏的首功之臣，他的功绩记载在史册上。从前庭坚无人祭祀，人们尚且为此哀伤，何况我从魏朝接受禅让，怎么可以忘记魏朝的功臣呢？应该选择夏侯惇的近支亲属夏侯劭来继承爵位。”"
+          },
+          "en": "The Jin Yang Qiu / Annals of Jin states: In the second year of Taishi, Xiahou Zuo, [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]] of Gao'an and grandson of Xiahou Dun, died without an heir. An edict declared: \"Xiahou Dun was among Wei's foremost men of merit, his achievements recorded on bamboo and silk. In former times, people mourned that Tingjian had no one to offer him sacrifices. Since I received the throne through Wei's abdication, how could I forget its meritorious servants? A close kinsman of Xiahou Dun should be chosen to succeed to his title.\""
+        }
+      ]
+    },
+    {
+      "id": "ws9a-p6",
+      "orig": {
+        "zht": "韓浩者，[[河內|/zh-hant/maps/map-overall?admin=55]]人，及[[沛國|/zh-hant/maps/map-overall?admin=26]]史渙與浩，俱以忠勇顯。浩至[[中護軍|/zh-hant/translations/officials/military#central-army-002]]，渙至[[中領軍|/zh-hant/translations/officials/military#central-army-001]]，皆掌禁兵，封[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "韩浩者，[[河内|/zh-hans/maps/map-overall?admin=55]]人，及[[沛国|/zh-hans/maps/map-overall?admin=26]]史涣与浩，俱以忠勇显。浩至[[中护军|/zh-hans/translations/officials/military#central-army-002]]，涣至[[中领军|/zh-hans/translations/officials/military#central-army-001]]，皆掌禁兵，封[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "vern": {
+        "zht": "韓浩是[[河內|/zh-hant/maps/map-overall?admin=55]]人。當時[[沛國|/zh-hant/maps/map-overall?admin=26]]的史渙與韓浩都因忠誠勇敢而著稱。韓浩官至[[中護軍|/zh-hant/translations/officials/military#central-army-002]]，史渙官至[[中領軍|/zh-hant/translations/officials/military#central-army-001]]，二人都掌管京城禁軍，併爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]。",
+        "zhs": "韩浩是[[河内|/zh-hans/maps/map-overall?admin=55]]人。当时[[沛国|/zh-hans/maps/map-overall?admin=26]]的史涣与韩浩都因忠诚勇敢而著称。韩浩官至[[中护军|/zh-hans/translations/officials/military#central-army-002]]，史涣官至[[中领军|/zh-hans/translations/officials/military#central-army-001]]，二人都掌管京城禁军，并为[[列侯|/zh-hans/translations/officials#glossary-marquis]]。"
+      },
+      "en": "Han Hao was from [[Henei|/maps/map-overall?admin=55]]. Both he and Shi Huan of [[Pei State|/maps/map-overall?admin=26]] were renowned for their loyalty and courage. Han Hao rose to [[Protector of the Central Army|/translations/officials/military#central-army-002]], and Shi Huan to [[Commander of the Central Army|/translations/officials/military#central-army-001]]. Both commanded the imperial guards and were enfeoffed as [[Marquis|/translations/officials#glossary-marquis]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：韓浩字元嗣。漢末起兵，縣近山藪，多寇，浩聚徒衆為縣藩衞。[[太守|/zh-hant/translations/officials/regional#commanderies-039]]王匡以為從事，將兵拒董卓於盟津。時浩舅杜陽為[[河陰|/zh-hant/maps/map-overall?lat=34.88551256&lng=112.44611858&name=Heyin]][[令|/zh-hant/translations/officials/regional#counties-088]]，卓執之，使招浩，浩不從。袁術聞而壯之，以為[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。夏侯惇聞其名，請與相見，大奇之，使領兵從征伐。時大議損益，浩以為當急田。太祖善之，[[遷|/zh-hant/translations/officials#glossary-reassign]][[護軍|/zh-hant/translations/officials/military#various-commanders-034]]。太祖欲討[[柳城|/zh-hant/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，領軍史渙以為道遠深入，非完計也，欲與浩共諫。浩曰：「今兵勢彊盛，威加四海，戰勝攻取，無不如志，不以此時遂除天下之患，將為後憂。且公神武，舉無遺策，吾與君為中軍主，不宜沮衆。」\n\n遂從破[[柳城|/zh-hant/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，改其官為[[中護軍|/zh-hant/translations/officials/military#central-army-002]]，置[[長史|/zh-hant/translations/officials/military#central-army-003]]、[[司馬|/zh-hant/translations/officials/military#central-army-004]]。從討張魯，魯降。議者以浩智略足以綏邊，欲留使都督諸軍，鎮[[漢中|/zh-hant/maps/map-overall?admin=110]]。太祖曰：「吾安可以無[[護軍|/zh-hant/translations/officials/military#central-army-002]]？」乃與俱還。其見親任如此。及薨，太祖愍惜之。無子，以養子榮嗣。\n\n史渙字公劉。少任俠，有雄氣。太祖初起，以客從，[[行|/zh-hant/translations/officials#glossary-acting]]中軍校尉，從征伐，常監諸將，見親信，[[轉|/zh-hant/translations/officials#glossary-transfer]][[拜|/zh-hant/translations/officials#glossary-formally-appoint]][[中領軍|/zh-hant/translations/officials/military#central-army-001]]。十四年薨。子靜嗣。",
+          "zhs": "《魏书》曰：韩浩字元嗣。汉末起兵，县近山薮，多寇，浩聚徒众为县藩衞。[[太守|/zh-hans/translations/officials/regional#commanderies-039]]王匡以为从事，将兵拒董卓于盟津。时浩舅杜阳为[[河阴|/zh-hans/maps/map-overall?lat=34.88551256&lng=112.44611858&name=Heyin]][[令|/zh-hans/translations/officials/regional#counties-088]]，卓执之，使招浩，浩不从。袁术闻而壮之，以为[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。夏侯惇闻其名，请与相见，大奇之，使领兵从征伐。时大议损益，浩以为当急田。太祖善之，[[迁|/zh-hans/translations/officials#glossary-reassign]][[护军|/zh-hans/translations/officials/military#various-commanders-034]]。太祖欲讨[[柳城|/zh-hans/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，领军史涣以为道远深入，非完计也，欲与浩共谏。浩曰：「今兵势彊盛，威加四海，战胜攻取，无不如志，不以此时遂除天下之患，将为后忧。且公神武，举无遗策，吾与君为中军主，不宜沮众。」\n\n遂从破[[柳城|/zh-hans/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，改其官为[[中护军|/zh-hans/translations/officials/military#central-army-002]]，置[[长史|/zh-hans/translations/officials/military#central-army-003]]、[[司马|/zh-hans/translations/officials/military#central-army-004]]。从讨张鲁，鲁降。议者以浩智略足以绥边，欲留使都督诸军，镇[[汉中|/zh-hans/maps/map-overall?admin=110]]。太祖曰：「吾安可以无[[护军|/zh-hans/translations/officials/military#central-army-002]]？」乃与俱还。其见亲任如此。及薨，太祖愍惜之。无子，以养子荣嗣。\n\n史涣字公刘。少任侠，有雄气。太祖初起，以客从，[[行|/zh-hans/translations/officials#glossary-acting]]中军校尉，从征伐，常监诸将，见亲信，[[转|/zh-hans/translations/officials#glossary-transfer]][[拜|/zh-hans/translations/officials#glossary-formally-appoint]][[中领军|/zh-hans/translations/officials/military#central-army-001]]。十四年薨。子静嗣。",
+          "vern": {
+            "zht": "《魏書》記載：韓浩字元嗣，漢朝末年起兵，他所在的縣靠近山林湖澤，有很多賊寇，他便聚集部衆，爲本縣維護治安。[[太守|/zh-hant/translations/officials/regional#commanderies-039]]王匡任用他爲從事，讓他率軍隊在盟津抵禦董卓。當時韓浩的舅舅杜陽擔任[[河陰|/zh-hant/maps/map-overall?lat=34.88551256&lng=112.44611858&name=Heyin]]縣[[令|/zh-hant/translations/officials/regional#counties-088]]，董卓抓住了他，讓他招降韓浩，韓浩沒有聽從。袁術聽說了這件事之後，認爲他是勇士，任命他爲[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]。夏侯惇聽聞他的名聲，邀請他來見面，對他大爲稱奇，讓他率軍隊跟隨自己征戰討伐。當時大家廣泛討論治國措施的利弊，韓浩認爲應以農事爲重，太祖贊同他的觀點。後來韓浩升任[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]。太祖想要討伐[[柳城|/zh-hant/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，領軍史渙認爲路途遙遠，深入敵境，不是周全的計策，想和韓浩一起勸諫太祖。韓浩說：“如今軍隊勢力強盛，聲威遍佈四海，作戰獲勝、攻克城池，沒有不稱心如意的，如果不趁此時徹底消除天下的禍患，將會成爲日後的憂患。況且曹公神明威武，做任何決策都不會有遺漏和失誤，我和您作爲中軍主帥，不應該挫傷衆人的士氣。”\n\n於是跟隨太祖攻破[[柳城|/zh-hant/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，太祖改其職爲[[中護軍|/zh-hant/translations/officials/military#central-army-002]]，爲他配置了[[長史|/zh-hant/translations/officials/military#central-army-003]]、[[司馬|/zh-hant/translations/officials/military#central-army-004]]。後來韓浩跟隨討伐張魯。張魯投降後，參與商議的人認爲韓浩的智謀才略足以安定邊境，想留下他統領各路軍隊，鎮守[[漢中|/zh-hant/maps/map-overall?admin=110]]。太祖說：“我怎麼能沒有[[護軍|/zh-hant/translations/officials/military#various-commanders-034]]呢？”於是和他一起返回。韓浩被太祖親近信任到了這樣的程度。等到他去世的時候，太祖很憐憫惋惜他。他沒有兒子，養子韓榮繼承了爵位。\n\n史渙字公劉，年少時行俠仗義，有英雄氣概。太祖剛起兵時，他以門客的身份跟隨太祖，爲[[行|/zh-hant/translations/officials#glossary-acting]]中軍校尉，跟隨太祖征戰討伐，經常監督衆將領，很受太祖的親近信任，他後來轉[[中領軍|/zh-hant/translations/officials/military#central-army-001]]。建安十四年去世，兒子史靜繼承了爵位。",
+            "zhs": "《魏书》记载：韩浩字元嗣，汉朝末年起兵，他所在的县靠近山林湖泽，有很多贼寇，他便聚集部众，为本县维护治安。[[太守|/zh-hans/translations/officials/regional#commanderies-039]]王匡任用他为从事，让他率军队在盟津抵御董卓。当时韩浩的舅舅杜阳担任[[河阴|/zh-hans/maps/map-overall?lat=34.88551256&lng=112.44611858&name=Heyin]]县[[令|/zh-hans/translations/officials/regional#counties-088]]，董卓抓住了他，让他招降韩浩，韩浩没有听从。袁术听说了这件事之后，认为他是勇士，任命他为[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]。夏侯惇听闻他的名声，邀请他来见面，对他大为称奇，让他率军队跟随自己征战讨伐。当时大家广泛讨论治国措施的利弊，韩浩认为应以农事为重，太祖赞同他的观点。后来韩浩升任[[护军|/zh-hans/translations/officials/military#various-commanders-034]]。太祖想要讨伐[[柳城|/zh-hans/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，领军史涣认为路途遥远，深入敌境，不是周全的计策，想和韩浩一起劝谏太祖。韩浩说：“如今军队势力强盛，声威遍布四海，作战获胜、攻克城池，没有不称心如意的，如果不趁此时彻底消除天下的祸患，将会成为日后的忧患。况且曹公神明威武，做任何决策都不会有遗漏和失误，我和您作为中军主帅，不应该挫伤众人的士气。”\n\n于是跟随太祖攻破[[柳城|/zh-hans/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]，太祖改其职为[[中护军|/zh-hans/translations/officials/military#central-army-002]]，为他配置了[[长史|/zh-hans/translations/officials/military#central-army-003]]、[[司马|/zh-hans/translations/officials/military#central-army-004]]。后来韩浩跟随讨伐张鲁。张鲁投降后，参与商议的人认为韩浩的智谋才略足以安定边境，想留下他统领各路军队，镇守[[汉中|/zh-hans/maps/map-overall?admin=110]]。太祖说：“我怎么能没有[[护军|/zh-hans/translations/officials/military#various-commanders-034]]呢？”于是和他一起返回。韩浩被太祖亲近信任到了这样的程度。等到他去世的时候，太祖很怜悯惋惜他。他没有儿子，养子韩荣继承了爵位。\n\n史涣字公刘，年少时行侠仗义，有英雄气概。太祖刚起兵时，他以门客的身份跟随太祖，为[[行|/zh-hans/translations/officials#glossary-acting]]中军校尉，跟随太祖征战讨伐，经常监督众将领，很受太祖的亲近信任，他后来转[[中领军|/zh-hans/translations/officials/military#central-army-001]]。建安十四年去世，儿子史静继承了爵位。"
+          },
+          "en": "The Book of Wei states: Han Hao, courtesy name Yuansi, raised troops towards the end of the Han. His county lay near mountains and marshes and was frequently troubled by bandits, so he gathered a group of followers to defend it. The [[Grand Administrator|/translations/officials/regional#commanderies-039]] Wang Kuang appointed him an Aide and put him in command of troops resisting Dong Zhuo at Mengjin. At the time, Han Hao's maternal uncle Du Yang was [[County Magistrate|/translations/officials/regional#counties-088]] of [[Heyin|/maps/map-overall?lat=34.88551256&lng=112.44611858&name=Heyin]]. Dong Zhuo seized him and ordered him to summon Han Hao to surrender, but Han Hao refused. Yuan Shu heard of this, admired his courage and appointed him [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]]. Xiahou Dun, hearing of his reputation, invited him to a meeting. Greatly impressed, he had Han Hao lead troops on campaigns with him. At the time, there was widespread debate over reforms, and Han Hao argued that agriculture should take priority. Cao Cao approved and later [[promoted|/translations/officials#glossary-reassign]] him to [[Protector of the Army|/translations/officials/military#various-commanders-034]]. When Cao Cao planned to attack [[Liucheng|/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]], Shi Huan, Commander of the Army, considered it unsound to travel so far into enemy territory and wanted Han Hao to join him in remonstrating. Han Hao said, \"Our forces are now strong, and our might is felt throughout the Four Seas. We win our battles and take our objectives; everything goes as we wish. If we do not seize this moment to rid the realm of its troubles, they will become a source of worry later. Moreover, our lord is brilliant and formidable in war, and his plans never fail. You and I command the central army and should not dampen the men's spirits.\" \n\nHan Hao then accompanied Cao Cao in defeating the enemy at [[Liucheng|/maps/map-overall?lat=41.4602169&lng=120.39183453&name=Liucheng]]. His office was changed to [[Protector of the Central Army|/translations/officials/military#central-army-002]], with a [[Chief Clerk|/translations/officials/military#central-army-003]] and a [[Major|/translations/officials/military#central-army-004]] appointed to his staff. He later took part in the campaign against Zhang Lu, who surrendered. As they deliberated over their future course, those present judged Han Hao's wisdom and strategic ability sufficient to secure the frontier, and proposed leaving him to command the armies and hold [[Hanzhong|/maps/map-overall?admin=110]]. Cao Cao said, \"How can I do without my [[Protector of the Army|/translations/officials/military#central-army-002]]?\" So he returned together with Han Hao. Such was the intimacy and trust Han Hao enjoyed. When Han Hao died, Cao Cao mourned him deeply. He had no son of his own, and his adopted son Han Rong succeeded him. \n\nShi Huan, courtesy name Gongliu, was chivalrous in his youth and possessed a heroic spirit. When Cao Cao first raised troops, Huan joined him as a retainer and served as [[acting|/translations/officials#glossary-acting]] Colonel of the Central Army. He accompanied Cao Cao on campaigns and regularly supervised the generals. Enjoying Cao Cao's confidence and trust, he was later [[transferred|/translations/officials#glossary-transfer]] and [[appointed|/translations/officials#glossary-formally-appoint]] [[Commander of the Central Army|/translations/officials/military#central-army-001]]. He died in the fourteenth year of Jiann'an, and his son Shi Jing succeeded him."
+        }
+      ]
+    }
+  ]
+}

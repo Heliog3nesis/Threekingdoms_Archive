@@ -1,0 +1,1854 @@
+{
+  "chapter": {
+    "id": "wei-shu-9a",
+    "order": 9,
+    "label": {
+      "zht": "夏侯惇傳 · 附韓浩、史渙",
+      "zhs": "夏侯惇传 · 附韩浩、史涣",
+      "en": "Biography of Xiahou Dun · with Han Hao and Shi Huan"
+    },
+    "title": {
+      "zht": "魏書九 · 夏侯惇傳 · 附韓浩、史渙",
+      "zhs": "魏书九 · 夏侯惇传 · 附韩浩、史涣",
+      "en": "Book of Wei, Chapter 9 · Biography of Xiahou Dun · with Han Hao and Shi Huan"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 33.86080856,
+      "lng": 115.77227911,
+      "name": "Qiao",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.56235226,
+      "lng": 114.65338913,
+      "name": "Baima",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "40",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.61104535,
+      "lng": 114.9728879,
+      "name": "Puyang",
+      "persons": [
+        "夏侯惇（元讓）",
+        "韓浩（元嗣）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.6673251,
+      "lng": 115.51879929,
+      "name": "Juancheng",
+      "persons": [
+        "夏侯惇（元讓）",
+        "韓浩（元嗣）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "39",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "38",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "56",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.15217013,
+      "lng": 112.71539343,
+      "name": "Bowang",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "57",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "110",
+      "persons": [
+        "夏侯惇（元讓）",
+        "韓浩（元嗣）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.16854232,
+      "lng": 106.61155724,
+      "name": "Yangpingguan",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.2019282,
+      "lng": 117.97307792,
+      "name": "Ruxukou",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.62795047,
+      "lng": 117.88668775,
+      "name": "Juchao",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.92967724,
+      "lng": 113.38240652,
+      "name": "Mo Lake",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 32.56634501,
+      "lng": 116.80475418,
+      "name": "Shouchun",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.60565556,
+      "lng": 114.15360904,
+      "name": "Shaoling",
+      "persons": [
+        "夏侯惇（元讓）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "55",
+      "persons": [
+        "韓浩（元嗣）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 41.4602169,
+      "lng": 120.39183453,
+      "name": "Liucheng",
+      "persons": [
+        "韓浩（元嗣）",
+        "史渙（公劉）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "26",
+      "persons": [
+        "史渙（公劉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.16733518,
+      "lng": 113.32487537,
+      "name": "Shequan",
+      "persons": [
+        "史渙（公劉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.81631685,
+      "lng": 114.04675874,
+      "name": "Guandu",
+      "persons": [
+        "史渙（公劉）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.79738574,
+      "lng": 113.47134429,
+      "name": "Gushi",
+      "persons": [
+        "史渙（公劉）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "夏侯惇（元讓）",
+      "name": {
+        "en": "Xiahou Dun",
+        "zht": "夏侯惇",
+        "zhs": "夏侯惇"
+      },
+      "courtesyName": {
+        "en": "Yuanrang",
+        "zht": "元讓",
+        "zhs": "元让"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "1st year of Yankang",
+          "zht": "延康元年",
+          "zhs": "延康元年"
+        },
+        "year": 220
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Qiao",
+              "zht": "譙",
+              "zhs": "谯"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "Around 1st year of Chuping",
+            "zht": "~初平元年",
+            "zhs": "~初平元年"
+          },
+          "year": 190,
+          "age": null,
+          "location": [
+            {
+              "en": "Baima",
+              "zht": "白馬",
+              "zhs": "白马"
+            },
+            {
+              "en": "Dong",
+              "zht": "東",
+              "zhs": "东"
+            }
+          ],
+          "position": [
+            {
+              "en": "Major",
+              "zht": "司馬",
+              "zhs": "司马"
+            },
+            {
+              "en": "Colonel Who Breaks the Charge",
+              "zht": "折衝校尉",
+              "zhs": "折冲校尉"
+            },
+            {
+              "en": "Grand Administrator (concurrent)",
+              "zht": "領太守",
+              "zhs": "领太守"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.56235226,
+              "lng": 114.65338913,
+              "name": "Baima"
+            },
+            {
+              "kind": "admin",
+              "id": "40"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Major",
+              "zht": "司馬",
+              "zhs": "司马",
+              "url": "/translations/officials/military#four-direction--misc-142"
+            },
+            {
+              "en": "Colonel Who Breaks the Charge",
+              "zht": "折衝校尉",
+              "zhs": "折冲校尉",
+              "url": "/translations/officials/military#colonels--commandants-205"
+            },
+            {
+              "en": "Grand Administrator (concurrent)",
+              "zht": "領太守",
+              "zhs": "领太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Xingping",
+            "zht": "興平元年",
+            "zhs": "兴平元年"
+          },
+          "year": 194,
+          "age": null,
+          "location": [
+            {
+              "en": "Puyang",
+              "zht": "濮陽",
+              "zhs": "濮阳"
+            },
+            {
+              "en": "Juancheng",
+              "zht": "鄄城",
+              "zhs": "鄄城"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.61104535,
+              "lng": 114.9728879,
+              "name": "Puyang"
+            },
+            {
+              "kind": "town",
+              "lat": 35.6673251,
+              "lng": 115.51879929,
+              "name": "Juancheng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Chenliu State",
+              "zht": "陳留",
+              "zhs": "陈留"
+            },
+            {
+              "en": "Jiyin",
+              "zht": "濟陰",
+              "zhs": "济阴"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Administrator (concurrent)",
+              "zht": "領太守",
+              "zhs": "领太守"
+            },
+            {
+              "en": "General Who Establishes Valour",
+              "zht": "建武將軍",
+              "zhs": "建武将军"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "39"
+            },
+            {
+              "kind": "admin",
+              "id": "38"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Administrator (concurrent)",
+              "zht": "領太守",
+              "zhs": "领太守",
+              "url": "/translations/officials/regional#commanderies-039"
+            },
+            {
+              "en": "General Who Establishes Valour",
+              "zht": "建武將軍",
+              "zhs": "建武将军",
+              "url": "/translations/officials/military#four-direction--misc-136"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Henan",
+              "zht": "河南",
+              "zhs": "河南"
+            }
+          ],
+          "position": [
+            {
+              "en": "Intendant of Henan (concurrent)",
+              "zht": "領河南尹",
+              "zhs": "领河南尹"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "56"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Intendant of Henan (concurrent)",
+              "zht": "領河南尹",
+              "zhs": "领河南尹",
+              "url": "/translations/officials/regional#commanderies-032"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "7th year of Jian'an",
+            "zht": "建安七年",
+            "zhs": "建安七年"
+          },
+          "year": 202,
+          "age": null,
+          "location": [
+            {
+              "en": "Bowang",
+              "zht": "博望",
+              "zhs": "博望"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.15217013,
+              "lng": 112.71539343,
+              "name": "Bowang"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "9th - 10th year of Jian'an",
+            "zht": "建安九年 - 十年",
+            "zhs": "建安九年 - 十年"
+          },
+          "year": "204 - 205",
+          "age": null,
+          "location": [
+            {
+              "en": "Hedong",
+              "zht": "河東",
+              "zhs": "河东"
+            }
+          ],
+          "position": [
+            {
+              "en": "Intendant of Henan (concurrent)",
+              "zht": "領河南尹",
+              "zhs": "领河南尹"
+            },
+            {
+              "en": "General Who Subdues the Waves",
+              "zht": "伏波將軍",
+              "zhs": "伏波将军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "57"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Intendant of Henan (concurrent)",
+              "zht": "領河南尹",
+              "zhs": "领河南尹",
+              "url": "/translations/officials/regional#commanderies-032"
+            },
+            {
+              "en": "General Who Subdues the Waves",
+              "zht": "伏波將軍",
+              "zhs": "伏波将军",
+              "url": "/translations/officials/military#four-direction--misc-152"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": 215,
+          "age": null,
+          "location": [
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            },
+            {
+              "en": "Yangpingguan",
+              "zht": "陽平關",
+              "zhs": "阳平关"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "110"
+            },
+            {
+              "kind": "town",
+              "lat": 33.16854232,
+              "lng": 106.61155724,
+              "name": "Yangpingguan"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "21st - 22nd year of Jian'an",
+            "zht": "建安二十一年 - 二十二年",
+            "zhs": "建安二十一年 - 二十二年"
+          },
+          "year": "216 - 217",
+          "age": null,
+          "location": [
+            {
+              "en": "Ruxukou",
+              "zht": "濡須口",
+              "zhs": "濡须口"
+            },
+            {
+              "en": "Juchao",
+              "zht": "居巢",
+              "zhs": "居巢"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.2019282,
+              "lng": 117.97307792,
+              "name": "Ruxukou"
+            },
+            {
+              "kind": "town",
+              "lat": 31.62795047,
+              "lng": 117.88668775,
+              "name": "Juchao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "24th year of Jian'an",
+            "zht": "建安二十四年",
+            "zhs": "建安二十四年"
+          },
+          "year": 219,
+          "age": null,
+          "location": [
+            {
+              "en": "Mo Lake",
+              "zht": "摩陂",
+              "zhs": "摩陂"
+            },
+            {
+              "en": "Shouchun",
+              "zht": "壽春",
+              "zhs": "寿春"
+            },
+            {
+              "en": "Shaoling",
+              "zht": "召陵",
+              "zhs": "召陵"
+            }
+          ],
+          "position": [
+            {
+              "en": "General of the Front",
+              "zht": "前將軍",
+              "zhs": "前将军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.92967724,
+              "lng": 113.38240652,
+              "name": "Mo Lake"
+            },
+            {
+              "kind": "town",
+              "lat": 32.56634501,
+              "lng": 116.80475418,
+              "name": "Shouchun"
+            },
+            {
+              "kind": "town",
+              "lat": 33.60565556,
+              "lng": 114.15360904,
+              "name": "Shaoling"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General of the Front",
+              "zht": "前將軍",
+              "zhs": "前将军",
+              "url": "/translations/officials/military#four-direction--misc-114"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Yankang",
+            "zht": "延康元年",
+            "zhs": "延康元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Grand General",
+              "zht": "大將軍",
+              "zhs": "大将军"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Grand General",
+              "zht": "大將軍",
+              "zhs": "大将军",
+              "url": "/translations/officials/ministers#superior-excellency-064"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "person": "韓浩（元嗣）",
+      "name": {
+        "en": "Han Hao",
+        "zht": "韓浩",
+        "zhs": "韩浩"
+      },
+      "courtesyName": {
+        "en": "Yuansi",
+        "zht": "元嗣",
+        "zhs": "元嗣"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Henei",
+              "zht": "河內",
+              "zhs": "河内"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "55"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "1st year of Xingping",
+            "zht": "興平元年",
+            "zhs": "兴平元年"
+          },
+          "year": 194,
+          "age": null,
+          "location": [
+            {
+              "en": "Puyang",
+              "zht": "濮陽",
+              "zhs": "濮阳"
+            },
+            {
+              "en": "Juancheng",
+              "zht": "鄄城",
+              "zhs": "鄄城"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.61104535,
+              "lng": 114.9728879,
+              "name": "Puyang"
+            },
+            {
+              "kind": "town",
+              "lat": 35.6673251,
+              "lng": 115.51879929,
+              "name": "Juancheng"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "12th year of Jian'an",
+            "zht": "建安十二年",
+            "zhs": "建安十二年"
+          },
+          "year": 207,
+          "age": null,
+          "location": [
+            {
+              "en": "Liucheng",
+              "zht": "柳城",
+              "zhs": "柳城"
+            }
+          ],
+          "position": [
+            {
+              "en": "Protector of the Central Army",
+              "zht": "中護軍",
+              "zhs": "中护军"
+            },
+            {
+              "en": "Marquis",
+              "zht": "列侯",
+              "zhs": "列侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 41.4602169,
+              "lng": 120.39183453,
+              "name": "Liucheng"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Protector of the Central Army",
+              "zht": "中護軍",
+              "zhs": "中护军",
+              "url": "/translations/officials/military#central-army-002"
+            },
+            {
+              "en": "Marquis",
+              "zht": "列侯",
+              "zhs": "列侯",
+              "url": "/translations/officials#glossary-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "20th year of Jian'an",
+            "zht": "建安二十年",
+            "zhs": "建安二十年"
+          },
+          "year": 215,
+          "age": null,
+          "location": [
+            {
+              "en": "Hanzhong",
+              "zht": "漢中",
+              "zhs": "汉中"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "110"
+            }
+          ],
+          "positionLinks": []
+        }
+      ]
+    },
+    {
+      "person": "史渙（公劉）",
+      "name": {
+        "en": "Shi Huan",
+        "zht": "史渙",
+        "zhs": "史涣"
+      },
+      "courtesyName": {
+        "en": "Gongliu",
+        "zht": "公劉",
+        "zhs": "公刘"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "14th year of Jian'an",
+          "zht": "建安十四年",
+          "zhs": "建安十四年"
+        },
+        "year": 209
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Pei State",
+              "zht": "沛國",
+              "zhs": "沛国"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "26"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "4th year of Jian'an",
+            "zht": "建安四年",
+            "zhs": "建安四年"
+          },
+          "year": 199,
+          "age": null,
+          "location": [
+            {
+              "en": "Shequan",
+              "zht": "射犬",
+              "zhs": "射犬"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 35.16733518,
+              "lng": 113.32487537,
+              "name": "Shequan"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "5th year of Jian'an",
+            "zht": "建安五年",
+            "zhs": "建安五年"
+          },
+          "year": 200,
+          "age": null,
+          "location": [
+            {
+              "en": "Guandu",
+              "zht": "官渡",
+              "zhs": "官渡"
+            },
+            {
+              "en": "Gushi",
+              "zht": "故市",
+              "zhs": "故市"
+            }
+          ],
+          "position": null,
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.81631685,
+              "lng": 114.04675874,
+              "name": "Guandu"
+            },
+            {
+              "kind": "town",
+              "lat": 34.79738574,
+              "lng": 113.47134429,
+              "name": "Gushi"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "12th year of Jian'an",
+            "zht": "建安十二年",
+            "zhs": "建安十二年"
+          },
+          "year": 207,
+          "age": null,
+          "location": [
+            {
+              "en": "Liucheng",
+              "zht": "柳城",
+              "zhs": "柳城"
+            }
+          ],
+          "position": [
+            {
+              "en": "Commander of the Central Army",
+              "zht": "中領軍",
+              "zhs": "中领军"
+            },
+            {
+              "en": "Marquis",
+              "zht": "列侯",
+              "zhs": "列侯"
+            }
+          ],
+          "passageId": "",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 41.4602169,
+              "lng": 120.39183453,
+              "name": "Liucheng"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Commander of the Central Army",
+              "zht": "中領軍",
+              "zhs": "中领军",
+              "url": "/translations/officials/military#central-army-001"
+            },
+            {
+              "en": "Marquis",
+              "zht": "列侯",
+              "zhs": "列侯",
+              "url": "/translations/officials#glossary-marquis"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "夏侯嬰",
+      "to": "夏侯惇（元讓）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "ancestral": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Xiahou Dun was a descendant of Xiahou Ying, who had helped Liu Bang found the Han dynasty.",
+            "zht": "夏侯惇是西漢開國功臣夏侯嬰的後代。",
+            "zhs": "夏侯惇是西汉开国功臣夏侯婴的后代。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "From the time Cao Cao first raised troops, Xiahou Dun served him as an assistant general on campaign; when Cao Cao was acting General Who Inspires Valour, he made Xiahou Dun his Major and detached him to garrison Baima.",
+            "zht": "曹操起兵之初，夏侯惇常以副將身份隨從征戰；曹操代理奮武將軍時，任命夏侯惇爲司馬，讓他單獨駐守白馬。",
+            "zhs": "曹操起兵之初，夏侯惇常以副将身份随从征战；曹操代理奋武将军时，任命夏侯惇为司马，让他单独驻守白马。"
+          },
+          "title": {
+            "en": "Major",
+            "zht": "司馬",
+            "zhs": "司马"
+          }
+        },
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Xiahou Dun was promoted to Colonel Who Breaks the Charge, concurrently Grand Administrator of Dong Commandery.",
+            "zht": "夏侯惇升任折衝校尉，兼任東郡太守。",
+            "zhs": "夏侯惇升任折冲校尉，兼任东郡太守。"
+          },
+          "title": {
+            "en": "Colonel Who Breaks the Charge, Grand Administrator of Dong",
+            "zht": "折衝校尉、東郡太守",
+            "zhs": "折冲校尉、东郡太守"
+          }
+        },
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "When Cao Cao campaigned against Tao Qian, he left Xiahou Dun to hold Puyang; after Zhang Miao rebelled, Xiahou Dun hurried with a light force towards Juancheng, where Cao Cao's family was.",
+            "zht": "曹操征討陶謙時，留夏侯惇守衛濮陽；張邈叛變後，夏侯惇輕裝趕赴曹操家屬所在的鄄城。",
+            "zhs": "曹操征讨陶谦时，留夏侯惇守卫濮阳；张邈叛变后，夏侯惇轻装赶赴曹操家属所在的鄄城。"
+          }
+        },
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "After losing his left eye to a stray arrow in the campaign against Lü Bu, Xiahou Dun was made Grand Administrator of Chenliu and Jiyin, given the title General Who Establishes Valour, and enfeoffed as Township Marquis of Gao'an.",
+            "zht": "夏侯惇隨曹操征討呂布時被流矢射傷左眼，後兼任陳留、濟陰太守，加建武將軍，封高安鄉侯。",
+            "zhs": "夏侯惇随曹操征讨吕布时被流矢射伤左眼，后兼任陈留、济阴太守，加建武将军，封高安乡侯。"
+          },
+          "title": {
+            "en": "General Who Establishes Valour, Township Marquis of Gao'an",
+            "zht": "建武將軍、高安鄉侯",
+            "zhs": "建武将军、高安乡侯"
+          }
+        },
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "After Ye fell, Cao Cao promoted Xiahou Dun to General Who Subdues the Waves while he remained Intendant of Henan, authorising him to act as circumstances required without being bound by regulations.",
+            "zht": "鄴城攻破後，曹操升夏侯惇爲伏波將軍，仍兼河南尹，並允許他隨機行事，不受條例約束。",
+            "zhs": "邺城攻破后，曹操升夏侯惇为伏波将军，仍兼河南尹，并允许他随机行事，不受条例约束。"
+          },
+          "title": {
+            "en": "General Who Subdues the Waves",
+            "zht": "伏波將軍",
+            "zhs": "伏波将军"
+          }
+        },
+        {
+          "passageId": "ws9a-p4",
+          "text": {
+            "en": "Cao Cao left Xiahou Dun in command of twenty-six armies at Juchao and bestowed musicians on him; at Mo Lake he had him ride in his own carriage and enter his private chambers, a favour no other general enjoyed.",
+            "zht": "曹操讓夏侯惇統率二十六軍留駐居巢，並賜給他樂伎名倡；在摩陂時又常召他同乘一車，准許他出入臥室，諸將無人能比。",
+            "zhs": "曹操让夏侯惇统率二十六军留驻居巢，并赐给他乐伎名倡；在摩陂时又常召他同乘一车，准许他出入卧室，诸将无人能比。"
+          }
+        },
+        {
+          "passageId": "ws9a-p4",
+          "text": {
+            "en": "Alone among the generals still holding a Han title, Xiahou Dun asked to take a Wei post instead; Cao Cao replied that the best rulers treat their ministers as teachers and the next as friends, but on his insistence appointed him General of the Front.",
+            "zht": "當時諸將都已接受魏國官號，唯獨夏侯惇仍任漢官，他上疏請求改受魏職；曹操說最上等的君主以臣爲師，其次以臣爲友，但在夏侯惇堅持下，任命他爲前將軍。",
+            "zhs": "当时诸将都已接受魏国官号，唯独夏侯惇仍任汉官，他上疏请求改受魏职；曹操说最上等的君主以臣为师，其次以臣为友，但在夏侯惇坚持下，任命他为前将军。"
+          },
+          "title": {
+            "en": "General of the Front",
+            "zht": "前將軍",
+            "zhs": "前将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p4",
+          "text": {
+            "en": "When Cao Pi succeeded as King of Wei, he appointed Xiahou Dun Grand General; Xiahou Dun died a few months later.",
+            "zht": "曹丕繼位爲魏王，任命夏侯惇爲大將軍；數月後夏侯惇去世。",
+            "zhs": "曹丕继位为魏王，任命夏侯惇为大将军；数月后夏侯惇去世。"
+          },
+          "title": {
+            "en": "Grand General",
+            "zht": "大將軍",
+            "zhs": "大将军"
+          }
+        },
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Remembering Xiahou Dun's achievements, Cao Pi set aside a thousand households from his fief and made his seven sons and two grandsons Marquises Within the Pass.",
+            "zht": "曹丕追念夏侯惇的功勳，分出他的封邑一千戶，賜他七個兒子和兩個孫子爲關內侯。",
+            "zhs": "曹丕追念夏侯惇的功勋，分出他的封邑一千户，赐他七个儿子和两个孙子为关内侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂布（奉先）",
+      "to": "夏侯惇（元讓）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Lü Bu clashed with Xiahou Dun on the road to Juancheng, seized his baggage at Puyang, and sent officers who feigned surrender and took him hostage for ransom.",
+            "zht": "呂布在趕往鄄城的途中與夏侯惇交戰，隨後襲取他在濮陽的輜重，又派部將詐降，劫持夏侯惇索要財物。",
+            "zhs": "吕布在赶往鄄城的途中与夏侯惇交战，随后袭取他在濮阳的辎重，又派部将诈降，劫持夏侯惇索要财物。"
+          }
+        },
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "Xiahou Dun lost his left eye to a stray arrow while campaigning against Lü Bu with Cao Cao.",
+            "zht": "夏侯惇隨曹操征討呂布時，被流矢射中，傷了左眼。",
+            "zhs": "夏侯惇随曹操征讨吕布时，被流矢射中，伤了左眼。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張邈（孟卓）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "While Cao Cao was away fighting Tao Qian, Zhang Miao rebelled against him and welcomed Lü Bu.",
+            "zht": "曹操征討陶謙期間，張邈背叛曹操，迎接呂布。",
+            "zhs": "曹操征讨陶谦期间，张邈背叛曹操，迎接吕布。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張邈（孟卓）",
+      "to": "呂布（奉先）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p1",
+          "text": {
+            "en": "Zhang Miao rebelled against Cao Cao and welcomed Lü Bu into Yan Province.",
+            "zht": "張邈背叛曹操，迎呂布入兗州。",
+            "zhs": "张邈背叛曹操，迎吕布入兖州。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "夏侯惇（元讓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p2",
+          "text": {
+            "en": "When Xiahou Dun was taken hostage, his general Han Hao steadied the army, then ordered an attack on the captors regardless of Dun's safety and beheaded them all, freeing him.",
+            "zht": "夏侯惇被劫持時，部將韓浩穩住軍心，不顧夏侯惇安危下令進攻劫持者，將他們全部斬首，夏侯惇因此獲救。",
+            "zhs": "夏侯惇被劫持时，部将韩浩稳住军心，不顾夏侯惇安危下令进攻劫持者，将他们全部斩首，夏侯惇因此获救。"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Hearing of Han Hao's reputation, Xiahou Dun asked to meet him, was greatly impressed, and gave him troops to follow him on campaign.",
+            "zht": "夏侯惇聽說韓浩的名聲，請他相見，對他十分賞識，讓他領兵隨從征伐。",
+            "zhs": "夏侯惇听说韩浩的名声，请他相见，对他十分赏识，让他领兵随从征伐。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p2",
+          "text": {
+            "en": "Cao Cao told Han Hao that his handling of the hostage crisis could serve as a model for all ages, and decreed that hostage-takers must henceforth be attacked without regard for the hostage.",
+            "zht": "曹操對韓浩說，他處理劫質之事的做法可爲萬世法則，並下令此後凡有劫持人質者，一律合力攻擊，不顧人質。",
+            "zhs": "曹操对韩浩说，他处理劫质之事的做法可为万世法则，并下令此后凡有劫持人质者，一律合力攻击，不顾人质。"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "When the court debated policy, Han Hao urged that farming be made the priority; Cao Cao approved and promoted him to Protector of the Army.",
+            "zht": "朝中商議政策得失時，韓浩主張應當急於屯田；曹操稱善，升他爲護軍。",
+            "zhs": "朝中商议政策得失时，韩浩主张应当急于屯田；曹操称善，升他为护军。"
+          },
+          "title": {
+            "en": "Protector of the Army",
+            "zht": "護軍",
+            "zhs": "护军"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao supported the Liucheng campaign and followed Cao Cao to victory; his post was then raised to Protector of the Central Army, and he was enfeoffed as a Marquis.",
+            "zht": "韓浩支持征討柳城，隨曹操破城；之後官職改爲中護軍，封列侯。",
+            "zhs": "韩浩支持征讨柳城，随曹操破城；之后官职改为中护军，封列侯。"
+          },
+          "title": {
+            "en": "Protector of the Central Army",
+            "zht": "中護軍",
+            "zhs": "中护军"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "When advisers proposed leaving Han Hao to command the armies in Hanzhong, Cao Cao refused, saying he could not do without his Protector of the Army, and he grieved deeply at Han Hao's death.",
+            "zht": "有人建議留韓浩統領諸軍鎮守漢中，曹操說：“我怎能沒有護軍！”便帶他一同返回；韓浩去世時，曹操深感惋惜。",
+            "zhs": "有人建议留韩浩统领诸军镇守汉中，曹操说：“我怎能没有护军！”便带他一同返回；韩浩去世时，曹操深感惋惜。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "王匡（公節）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Grand Administrator Wang Kuang made Han Hao an Attendant Officer and had him lead troops against Dong Zhuo at Mengjin.",
+            "zht": "太守王匡任命韓浩爲從事，讓他領兵在盟津抵禦董卓。",
+            "zhs": "太守王匡任命韩浩为从事，让他领兵在盟津抵御董卓。"
+          },
+          "title": {
+            "en": "Attendant Officer",
+            "zht": "從事",
+            "zhs": "从事"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "董卓（仲穎）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao held Mengjin against Dong Zhuo; Dong Zhuo seized Han Hao's maternal uncle Du Yang and used him to summon Han Hao, but Han Hao refused.",
+            "zht": "韓浩在盟津抵禦董卓；董卓扣押韓浩的舅舅杜陽，讓他招降韓浩，韓浩不從。",
+            "zhs": "韩浩在盟津抵御董卓；董卓扣押韩浩的舅舅杜阳，让他招降韩浩，韩浩不从。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "董卓（仲穎）",
+      "to": "杜陽",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Dong Zhuo seized Du Yang, Prefect of Heyin, and tried to use him to win over his nephew Han Hao.",
+            "zht": "董卓扣押河陰令杜陽，想借他招降外甥韓浩。",
+            "zhs": "董卓扣押河阴令杜阳，想借他招降外甥韩浩。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜陽",
+      "to": "韓浩（元嗣）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Du Yang was Han Hao's maternal uncle; even when Dong Zhuo held Du Yang captive, Han Hao would not go over to Dong Zhuo.",
+            "zht": "杜陽是韓浩的舅舅；即使杜陽被董卓扣押，韓浩也不肯投靠董卓。",
+            "zhs": "杜阳是韩浩的舅舅；即使杜阳被董卓扣押，韩浩也不肯投靠董卓。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "袁術（公路）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Admiring Han Hao's defiance of Dong Zhuo, Yuan Shu made him Commandant of Cavalry.",
+            "zht": "袁術聽說韓浩不屈於董卓，十分讚賞，任命他爲騎都尉。",
+            "zhs": "袁术听说韩浩不屈于董卓，十分赞赏，任命他为骑都尉。"
+          },
+          "title": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "史渙（公劉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao and Shi Huan were both renowned for loyalty and courage, and as Protector and Commander of the Central Army they both commanded the imperial guards.",
+            "zht": "韓浩與史渙都以忠誠勇敢著稱，分別官至中護軍、中領軍，共同掌管禁軍。",
+            "zhs": "韩浩与史涣都以忠诚勇敢著称，分别官至中护军、中领军，共同掌管禁军。"
+          }
+        },
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "When Shi Huan judged the Liucheng campaign too risky and wanted to remonstrate together, Han Hao answered that as the central army's commanders they should not dampen the troops' spirit, and both followed Cao Cao to victory.",
+            "zht": "史渙認爲征討柳城路遠深入，想與韓浩一起勸諫；韓浩說二人身爲中軍主將，不宜動搖軍心，於是一同隨曹操攻破柳城。",
+            "zhs": "史涣认为征讨柳城路远深入，想与韩浩一起劝谏；韩浩说二人身为中军主将，不宜动摇军心，于是一同随曹操攻破柳城。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓浩（元嗣）",
+      "to": "韓榮",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Han Hao had no son, so his adopted son Han Rong succeeded him.",
+            "zht": "韓浩沒有兒子，由養子韓榮繼承爵位。",
+            "zhs": "韩浩没有儿子，由养子韩荣继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "史渙（公劉）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Shi Huan joined Cao Cao as a retainer when he first raised troops, served as acting Colonel of the Central Army, and supervised the generals on campaign; trusted by Cao Cao, he was made Commander of the Central Army and enfeoffed as a Marquis.",
+            "zht": "曹操起兵之初，史渙以門客身份追隨，代理中軍校尉，隨軍征伐時常監督諸將；深受信任，轉任中領軍，封列侯。",
+            "zhs": "曹操起兵之初，史涣以门客身份追随，代理中军校尉，随军征伐时常监督诸将；深受信任，转任中领军，封列侯。"
+          },
+          "title": {
+            "en": "Commander of the Central Army",
+            "zht": "中領軍",
+            "zhs": "中领军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "史渙（公劉）",
+      "to": "史靜",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p6",
+          "text": {
+            "en": "Shi Huan died in the fourteenth year of Jian'an, and his son Shi Jing succeeded him.",
+            "zht": "史渙於建安十四年去世，其子史靜繼承爵位。",
+            "zhs": "史涣于建安十四年去世，其子史静继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯淵（妙才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p3",
+          "text": {
+            "en": "Because Xiahou Yuan and Xiahou Dun both served as generals, the army called Dun \"Blind Xiahou\" to tell them apart; Dun hated the name and would smash his mirror in anger.",
+            "zht": "夏侯淵與夏侯惇同爲將軍，軍中稱夏侯惇爲“盲夏侯”以示區別；夏侯惇對此十分厭惡，每次照鏡都氣得把鏡子摔在地上。",
+            "zhs": "夏侯渊与夏侯惇同为将军，军中称夏侯惇为“盲夏侯”以示区别；夏侯惇对此十分厌恶，每次照镜都气得把镜子摔在地上。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯廉",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Dun's younger brother Xiahou Lian had been enfeoffed as a Marquis in his own right.",
+            "zht": "夏侯惇的弟弟夏侯廉早已因自身功勞封爲列侯。",
+            "zhs": "夏侯惇的弟弟夏侯廉早已因自身功劳封为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯充",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Dun's son Xiahou Chong succeeded him.",
+            "zht": "夏侯惇之子夏侯充繼承爵位。",
+            "zhs": "夏侯惇之子夏侯充继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯充",
+      "to": "夏侯廙",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "When Xiahou Chong died, his son Xiahou Yi succeeded him.",
+            "zht": "夏侯充去世後，其子夏侯廙繼承爵位。",
+            "zhs": "夏侯充去世后，其子夏侯廙继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯廙",
+      "to": "夏侯劭",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "When Xiahou Yi died, his son Xiahou Shao succeeded him.",
+            "zht": "夏侯廙去世後，其子夏侯劭繼承爵位。",
+            "zhs": "夏侯廙去世后，其子夏侯劭继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯佐",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Zuo, Township Marquis of Gao'an and Xiahou Dun's grandson, died in the second year of Taishi without an heir; Emperor Wu of Jin then ordered a close relative of Dun to continue the line.",
+            "zht": "高安鄉侯夏侯佐是夏侯惇之孫，泰始二年去世，沒有後嗣；晉武帝下詔選夏侯惇的近親承襲封爵。",
+            "zhs": "高安乡侯夏侯佐是夏侯惇之孙，泰始二年去世，没有后嗣；晋武帝下诏选夏侯惇的近亲承袭封爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯惇（元讓）",
+      "to": "夏侯楙（子林）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Xiahou Mao, courtesy name Zilin, was Xiahou Dun's second son, and had been enfeoffed as a Marquis in his own right.",
+            "zht": "夏侯楙字子林，是夏侯惇的次子，早已因自身功勞封爲列侯。",
+            "zhs": "夏侯楙字子林，是夏侯惇的次子，早已因自身功劳封为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹操（孟德）",
+      "to": "清河公主",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "The Princess of Qinghe was Cao Cao's daughter, whom he married to Xiahou Mao.",
+            "zht": "清河公主是曹操的女兒，曹操把她嫁給了夏侯楙。",
+            "zhs": "清河公主是曹操的女儿，曹操把她嫁给了夏侯楙。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "清河公主",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Cao Cao married his daughter, the Princess of Qinghe, to Xiahou Mao; because Xiahou Mao kept many concubines in the west, the couple fell out, and his brothers later had the princess submit their slander against him.",
+            "zht": "曹操把女兒清河公主嫁給夏侯楙；夏侯楙在西方時蓄養了許多伎妾，公主因此與他不和，後來他的弟弟們還讓公主出面上奏誹謗他。",
+            "zhs": "曹操把女儿清河公主嫁给夏侯楙；夏侯楙在西方时蓄养了许多伎妾，公主因此与他不和，后来他的弟弟们还让公主出面上奏诽谤他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹丕（子桓）",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Cao Pi had been close to Xiahou Mao since their youth.",
+            "zht": "曹丕年少時就與夏侯楙親近。",
+            "zhs": "曹丕年少时就与夏侯楙亲近。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "On ascending the throne, Cao Pi made Xiahou Mao General Who Pacifies the West with the Imperial Tally, succeeding Xiahou Yuan in command of Guanzhong, though he had no military talent.",
+            "zht": "曹丕即位後，任命夏侯楙爲安西將軍，持節，接替夏侯淵都督關中；但夏侯楙並無武略。",
+            "zhs": "曹丕即位后，任命夏侯楙为安西将军，持节，接替夏侯渊都督关中；但夏侯楙并无武略。"
+          },
+          "title": {
+            "en": "General Who Pacifies the West",
+            "zht": "安西將軍",
+            "zhs": "安西将军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "When Cao Rui campaigned west in the second year of Taihe and Xiahou Mao was reported on, he recalled him to serve in the Imperial Secretariat.",
+            "zht": "太和二年明帝西征，有人告發夏侯楙，明帝召他回朝任尚書。",
+            "zhs": "太和二年明帝西征，有人告发夏侯楙，明帝召他回朝任尚书。"
+          },
+          "title": {
+            "en": "Imperial Secretariat",
+            "zht": "尚書",
+            "zhs": "尚书"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹叡（元仲）",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Cao Rui had Xiahou Mao arrested over a slanderous memorial and meant to put him to death, but after hearing Duan Mo he ordered an inquiry that exposed Mao's brothers as its authors.",
+            "zht": "明帝因誹謗的奏章下詔逮捕夏侯楙，本想殺他；聽了段默的意見後，下詔追查，查明是夏侯楙的弟弟們捏造的。",
+            "zhs": "明帝因诽谤的奏章下诏逮捕夏侯楙，本想杀他；听了段默的意见后，下诏追查，查明是夏侯楙的弟弟们捏造的。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "段默",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "As Colonel of the Changshui Garrison, Duan Mo was consulted by Cao Rui on whether to execute Xiahou Mao, and Cao Rui accepted his view.",
+            "zht": "長水校尉段默受明帝詢問是否該殺夏侯楙，明帝採納了他的意見。",
+            "zhs": "长水校尉段默受明帝询问是否该杀夏侯楙，明帝采纳了他的意见。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "段默",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Duan Mo argued that the charges against Xiahou Mao arose from the princess's quarrel with him, and urged mercy in light of his father's part in founding the realm, saving his life.",
+            "zht": "段默認爲指控夏侯楙的言辭出於公主與他不和而生的誣陷，又念及其父有平定天下之功，請明帝三思，夏侯楙因此得免。",
+            "zhs": "段默认为指控夏侯楙的言辞出于公主与他不和而生的诬陷，又念及其父有平定天下之功，请明帝三思，夏侯楙因此得免。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "夏侯子臧",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Zizang was one of Xiahou Mao's younger brothers, whom Mao repeatedly rebuked for disregarding propriety.",
+            "zht": "子臧是夏侯楙的弟弟之一，夏侯楙曾多次責備他們不守禮法。",
+            "zhs": "子臧是夏侯楙的弟弟之一，夏侯楙曾多次责备他们不守礼法。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯楙（子林）",
+      "to": "夏侯子江",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Zijiang was one of Xiahou Mao's younger brothers, whom Mao repeatedly rebuked for disregarding propriety.",
+            "zht": "子江是夏侯楙的弟弟之一，夏侯楙曾多次責備他們不守禮法。",
+            "zhs": "子江是夏侯楙的弟弟之一，夏侯楙曾多次责备他们不守礼法。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯子臧",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Fearing punishment after Xiahou Mao's rebukes, Zizang and Zijiang fabricated slander against him and had the princess submit it; Cao Rui's inquiry exposed them.",
+            "zht": "子臧、子江害怕被夏侯楙懲治，便共同捏造誹謗之辭，讓公主上奏；明帝追查後，真相大白。",
+            "zhs": "子臧、子江害怕被夏侯楙惩治，便共同捏造诽谤之辞，让公主上奏；明帝追查后，真相大白。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "夏侯子江",
+      "to": "夏侯楙（子林）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9a-p5",
+          "text": {
+            "en": "Fearing punishment after Xiahou Mao's rebukes, Zijiang and Zizang fabricated slander against him and had the princess submit it; Cao Rui's inquiry exposed them.",
+            "zht": "子江、子臧害怕被夏侯楙懲治，便共同捏造誹謗之辭，讓公主上奏；明帝追查後，真相大白。",
+            "zhs": "子江、子臧害怕被夏侯楙惩治，便共同捏造诽谤之辞，让公主上奏；明帝追查后，真相大白。"
+          }
+        }
+      ]
+    }
+  ]
+}

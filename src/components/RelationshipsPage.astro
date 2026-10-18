@@ -282,12 +282,14 @@ function loadGraph() {
   const groups = new Map();
   for (const e of edges) { const k = [e.a, e.b].sort().join('||'); (groups.get(k) || groups.set(k, []).get(k)).push(e); }
   for (const g of groups.values()) g.forEach((e, idx) => { e.slot = idx - (g.length - 1) / 2; e.canon = e.a < e.b; });
+  markMinorRelatives();
   selected = null;
   hiddenTypes = new Set(); hiddenTones = new Set(); showAncestors = false;
   initPositions();
   setGravity();
   simulate(560);
   reduceCrossings();
+  placeMinorRelatives();
   buildScene();
   buildLegend();
   $('rel-search').value = '';
@@ -296,15 +298,59 @@ function loadGraph() {
   fitView();
 }
 
+// In a large family (more than MINOR_KIN_FAMILY people linked by kinship), relatives who only
+// appear as someone's kin — no biography of their own, no other kind of relationship, e.g. an
+// heir who merely "succeeded him" — would bury the overview in family trees. They stay out of
+// the overview (and its layout) and only appear when one of their immediate relatives, or they
+// themselves, are the person in focus. Smaller families keep every member on the map.
+const MINOR_KIN_FAMILY = 10;
+function markMinorRelatives() {
+  const kinAdj = new Map(), otherLink = new Set();
+  for (const e of edges) {
+    if (e.t === 'kinship' && !e.anc) {
+      (kinAdj.get(e.a) || kinAdj.set(e.a, []).get(e.a)).push(e.b);
+      (kinAdj.get(e.b) || kinAdj.set(e.b, []).get(e.b)).push(e.a);
+    } else if (e.t !== 'kinship') { otherLink.add(e.a); otherLink.add(e.b); }
+  }
+  const seen = new Set();
+  for (const start of kinAdj.keys()) {
+    if (seen.has(start)) continue;
+    const family = [start]; seen.add(start);
+    for (let i = 0; i < family.length; i++) for (const o of kinAdj.get(family[i])) if (!seen.has(o)) { seen.add(o); family.push(o); }
+    if (family.length <= MINOR_KIN_FAMILY) continue;
+    for (const id of family) { const n = nodesById.get(id); if (!n.subject && !otherLink.has(id)) n.minor = true; }
+  }
+  for (const e of edges) e.minor = !!(e.u.minor || e.v.minor);
+}
+// Rough spot for each minor relative next to their nearest regular relative, so that when they
+// do appear (in focus) they slide in from their own family rather than from across the map.
+function placeMinorRelatives() {
+  const minors = [...nodesById.values()].filter((n) => n.minor);
+  for (let pass = 0, left = minors; pass < 6 && left.length; pass++) {
+    left = left.filter((m) => {
+      let anchor = null;
+      for (const f of edges) {
+        if (f.t !== 'kinship') continue;
+        const o = f.a === m.id ? f.v : f.b === m.id ? f.u : null;
+        if (o && (!o.minor || o.placed)) { anchor = o; break; }
+      }
+      if (!anchor) return true;
+      const a = Math.random() * Math.PI * 2;
+      m.x = anchor.x + Math.cos(a) * 120; m.y = anchor.y + Math.sin(a) * 120; m.placed = true;
+      return false;
+    });
+  }
+}
+
 // ------------------------------------------------------------------ layout: mind-map start + force relaxation
 const SECTOR = { service: -Math.PI / 2, kinship: Math.PI, colleagues: 0, personal: Math.PI / 2 };   // where each type fans out from the centre
 function initPositions() {
-  const nodes = [...nodesById.values()];
+  const nodes = [...nodesById.values()].filter((n) => !n.minor);
   // With many biography subjects merged into one graph, the most-connected person (usually
   // the shared overlord) makes a far better hub than picking an arbitrary one of them.
   const centre = nodes.slice().sort((a, b) => b.deg - a.deg)[0];
   const adj = new Map(nodes.map((n) => [n.id, []]));
-  for (const e of edges) { adj.get(e.a).push({ to: e.b, e }); adj.get(e.b).push({ to: e.a, e }); }
+  for (const e of edges) { if (e.minor) continue; adj.get(e.a).push({ to: e.b, e }); adj.get(e.b).push({ to: e.a, e }); }
   const prio = { service: 0, kinship: 1, colleagues: 2, personal: 3 };
   const level = new Map([[centre.id, 0]]), kind = new Map(), children = new Map();
   const queue = [centre.id];
@@ -365,8 +411,10 @@ function initPositions() {
 function visibleEdge(e) {
   // a mixed edge is both blue and red, so it only disappears once both are switched off
   const toneHidden = e.p === 'mixed' ? hiddenTones.has('positive') && hiddenTones.has('negative') : hiddenTones.has(e.p);
-  return !hiddenTypes.has(e.t) && !toneHidden && (showAncestors || !e.anc);
+  return !hiddenTypes.has(e.t) && !toneHidden && (showAncestors || !e.anc) && (!e.minor || minorInView(e));
 }
+// a minor relative's link only shows while one of its two people is the person in focus
+function minorInView(e) { return !!focusNode && (e.a === focusNode.id || e.b === focusNode.id); }
 // A mixed-polarity edge's stroke is a per-edge gradient (its coordinates are kept in sync with
 // the edge's own endpoints every render(), same as the path `d`), not a plain hex colour.
 function edgeColor(e) { return e.p === 'mixed' ? `url(#edge-grad-${e.i})` : TONE[e.p]; }
@@ -380,7 +428,7 @@ function importance(n) {
 }
 function radius(n) { return n.subject ? 21 : 7 + importance(n) * 11; }
 function tick(a) {
-  const nodes = [...nodesById.values()];
+  const nodes = [...nodesById.values()].filter((n) => !n.minor);
   for (let i = 0; i < nodes.length; i++) {
     const p = nodes[i];
     for (let j = i + 1; j < nodes.length; j++) {
@@ -398,6 +446,7 @@ function tick(a) {
     }
   }
   for (const e of edges) {
+    if (e.minor) continue;
     const p = e.u, q = e.v; const dx = q.x - p.x, dy = q.y - p.y; const d = Math.sqrt(dx * dx + dy * dy) || 1;
     // minor figures (low importance on either end) don't need as much personal space — only
     // edges between two well-documented people get the full-length spring.
@@ -426,9 +475,10 @@ function simulate(steps) { for (let i = 0; i < steps; i++) tick(Math.max(0.03, 1
 // crosses the fewest lines (with a small penalty for stretching its own lines and a hard floor
 // on how close it may sit to another node), so the web reads more like a constellation.
 function reduceCrossings(passes = 6) {
-  const nodes = [...nodesById.values()];
+  const nodes = [...nodesById.values()].filter((n) => !n.minor);
+  const layoutEdges = edges.filter((e) => !e.minor);
   const inc = new Map(nodes.map((n) => [n, []]));
-  for (const e of edges) { inc.get(e.u).push(e); inc.get(e.v).push(e); }
+  for (const e of layoutEdges) { inc.get(e.u).push(e); inc.get(e.v).push(e); }
   const cross = (a, b, c, d) => {
     const o = (p, q, r) => (q.x - p.x) * (r.y - p.y) - (q.y - p.y) * (r.x - p.x);
     return o(c, d, a) * o(c, d, b) < 0 && o(a, b, c) * o(a, b, d) < 0;
@@ -438,7 +488,7 @@ function reduceCrossings(passes = 6) {
     for (const e of inc.get(n)) {
       const d = Math.hypot(e.u.x - e.v.x, e.u.y - e.v.y);
       c += Math.abs(d - restLength(e)) * 0.12;
-      for (const f of edges) {
+      for (const f of layoutEdges) {
         if (f === e || f.u === e.u || f.u === e.v || f.v === e.u || f.v === e.v) continue;
         if (cross(e.u, e.v, f.u, f.v)) c += 60;
       }
@@ -880,7 +930,7 @@ function dismiss() {
   if (focusNode && selected?.kind === 'edge') { selected = { kind: 'node', ref: focusNode }; applyHighlight(); showDetail(); syncUrl(); }
   else clearSelection();
 }
-function clearSelection() { selected = null; exitFocus(); hideDetail(); applyHighlight(); syncUrl(); }
+function clearSelection() { selected = null; exitFocus(); hideDetail(); applyVisibility(); syncUrl(); }
 // keep the whole map in view when the canvas is resized, until the reader has moved or zoomed it themselves
 let userView = false;
 if (typeof ResizeObserver !== 'undefined') new ResizeObserver(() => { if (!userView && nodesById.size) fitView(); else render(); }).observe(wrap);
@@ -915,7 +965,7 @@ function attachNodeDrag(g, n) {
 function select(sel) {
   selected = sel;
   if (sel.kind === 'node') enterFocus(sel.ref);
-  applyHighlight(); showDetail(); syncUrl();
+  applyVisibility(); showDetail(); syncUrl();
 }
 function hideDetail() { const d = $('rel-detail'); d.hidden = true; d.innerHTML = ''; $('rel-hint').style.display = ''; }
 const toneDot = (tone) => `<i class="rel-dot" style="background:${toneSwatchCSS(tone)}"></i>`;

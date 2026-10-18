@@ -1503,346 +1503,789 @@
   ],
   "relationships": [
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "楊奉",
-      "type": "subordinate then persuaded to follow Cao Cao",
-      "passageId": "ws17e-p1"
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p1",
+          "text": {
+            "en": "Xu Huang earned merit and rank under Yang Feng, and persuaded him to escort the emperor back to Luoyang; when court infighting then led Xu Huang to urge Yang Feng to submit to Cao Cao, Yang Feng at first agreed but changed his mind, and Cao Cao's subsequent attack on him left Xu Huang going over to Cao Cao alone.",
+            "zht": "徐晃隨楊奉立功受爵，並勸楊奉護送天子還洛陽；後因朝中紛爭，徐晃又勸楊奉歸順曹操，楊奉本已答應卻又反悔，太祖遂討伐楊奉，徐晃轉而獨自投奔曹操。",
+            "zhs": "徐晃随杨奉立功受爵，并劝杨奉护送天子还洛阳；后因朝中纷争，徐晃又劝杨奉归顺曹操，杨奉本已答应却又反悔，太祖遂讨伐杨奉，徐晃转而独自投奔曹操。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "太祖（曹操）",
-      "type": "subordinate",
-      "passageId": "ws17e-p1"
+      "from": "徐晃（公明）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p1",
+          "text": {
+            "en": "When Yang Feng wavered over submitting to Cao Cao, Xu Huang went over to Cao Cao alone.",
+            "zht": "楊奉在歸順曹操一事上反覆，徐晃遂轉而獨自投奔曹操。",
+            "zhs": "杨奉在归顺曹操一事上反复，徐晃遂转而独自投奔曹操。"
+          }
+        },
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Given his own command, Xu Huang won a long string of victories for Cao Cao — against Lü Bu's generals, at Baima and Yanjin, and against Yuan Shao's supply lines — earning the greatest merit and enfeoffment as Capital Neighbourhood Marquis.",
+            "zht": "徐晃獲授兵權後屢立戰功——降呂布部將、克白馬延津、截袁紹糧道——以功勞最大獲封都亭侯。",
+            "zhs": "徐晃获授兵权后屡立战功——降吕布部将、克白马延津、截袁绍粮道——以功劳最大获封都亭侯。"
+          }
+        },
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "At Yiyang, Xu Huang accepted a besieged garrison's surrender against Cao Cao's standing order and persuaded him that mercy here would encourage other cities to submit rather than fight to the death; Cao Cao agreed.",
+            "zht": "易陽之圍，徐晃違例接受守軍投降，並說服曹操寬待降者可使其他城池望風歸順而非死守；曹操從其言。",
+            "zhs": "易阳之围，徐晃违例接受守军投降，并说服曹操宽待降者可使其他城池望风归顺而非死守；曹操从其言。"
+          }
+        },
+        {
+          "passageId": "ws17e-p4",
+          "text": {
+            "en": "At Tongguan, Xu Huang correctly judged that Han Sui and Ma Chao had left the Puban ford undefended, and led four thousand men across to outflank them at Cao Cao's approval.",
+            "zht": "潼關之役，徐晃準確判斷韓遂、馬超未派兵扼守蒲阪渡口，率四千人渡河奇襲，獲曹操採納。",
+            "zhs": "潼关之役，徐晃准确判断韩遂、马超未派兵扼守蒲阪渡口，率四千人渡河奇袭，获曹操采纳。"
+          }
+        },
+        {
+          "passageId": "ws17e-p6",
+          "text": {
+            "en": "After Xu Huang alone routed Liu Bei's forces at the Mamingge plank road, Cao Cao was overjoyed, granted him the Imperial Tally, and declared it \"the finest of fine achievements.\"",
+            "zht": "徐晃於馬鳴閣棧道獨力擊破劉備軍後，曹操大喜，授以節杖，稱其為「善之善者也」。",
+            "zhs": "徐晃于马鸣阁栈道独力击破刘备军后，曹操大喜，授以节杖，称其为「善之善者也」。"
+          }
+        },
+        {
+          "passageId": "ws17e-p8",
+          "text": {
+            "en": "After Xu Huang drove into Guan Yu's siege lines and relieved Fancheng and Xiangyang, Cao Cao declared his feat unmatched in thirty years of campaigning, surpassing even Sun Wu and Rangju, went seven li out to welcome him with a banquet, and likened his unshaken discipline to that of the Han general Zhou Yafu.",
+            "zht": "徐晃攻破關羽包圍圈、解樊城與襄陽之圍後，曹操盛讚其功乃三十年用兵所未見，勝過孫武、穰苴，親出七里設宴相迎，並讚其軍紀嚴整有周亞夫之風。",
+            "zhs": "徐晃攻破关羽包围圈、解樊城与襄阳之围后，曹操盛赞其功乃三十年用兵所未见，胜过孙武、穰苴，亲出七里设宴相迎，并赞其军纪严整有周亚夫之风。"
+          }
+        }
+      ]
     },
     {
-      "from": "李傕",
-      "to": "郭汜",
-      "type": "co-rebel",
-      "passageId": "ws17e-p1"
+      "from": "徐晃（公明）",
+      "to": "呂布（奉先）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang took part in the campaign against Lü Bu.",
+            "zht": "徐晃隨太祖征討呂布。",
+            "zhs": "徐晃随太祖征讨吕布。"
+          }
+        }
+      ]
     },
     {
-      "from": "韓暹",
-      "to": "董承",
-      "type": "conflict",
-      "passageId": "ws17e-p1"
-    },
-    {
-      "from": "徐晃",
-      "to": "呂布",
-      "type": "military enemy",
-      "passageId": "ws17e-p2"
-    },
-    {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "趙庶",
-      "type": "secured surrender of",
-      "passageId": "ws17e-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang independently secured the surrender of Lü Bu's general Zhao Shu.",
+            "zht": "徐晃單獨領兵迫使呂布部將趙庶投降。",
+            "zhs": "徐晃单独领兵迫使吕布部将赵庶投降。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "李鄒",
-      "type": "secured surrender of",
-      "passageId": "ws17e-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang independently secured the surrender of Lü Bu's general Li Zou.",
+            "zht": "徐晃單獨領兵迫使呂布部將李鄒投降。",
+            "zhs": "徐晃单独领兵迫使吕布部将李邹投降。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "史渙",
-      "type": "joint military operation",
-      "passageId": "ws17e-p2"
+      "from": "徐晃（公明）",
+      "to": "史渙（公劉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang and Shi Huan jointly slew Sui Gu in Henei and later jointly raided Yuan Shao's supply wagons at Gushi.",
+            "zht": "徐晃與史渙合力於河內擊殺眭固，後又合力在故市截擊袁紹運糧車隊。",
+            "zhs": "徐晃与史涣合力于河内击杀眭固，后又合力在故市截击袁绍运粮车队。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "眭固",
-      "type": "military enemy",
-      "passageId": "ws17e-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang and Shi Huan slew Sui Gu in Henei.",
+            "zht": "徐晃與史渙在河內擊殺眭固。",
+            "zhs": "徐晃与史涣在河内击杀眭固。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "劉備",
-      "type": "military enemy",
-      "passageId": "ws17e-p2"
+      "from": "徐晃（公明）",
+      "to": "劉備（玄德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang took part in defeating Liu Bei.",
+            "zht": "徐晃隨太祖擊敗劉備。",
+            "zhs": "徐晃随太祖击败刘备。"
+          }
+        },
+        {
+          "passageId": "ws17e-p6",
+          "text": {
+            "en": "When Liu Bei sent Chen Shi to cut the Mamingge plank road into Hanzhong, Xu Huang routed them alone, prompting Cao Cao's highest praise.",
+            "zht": "劉備遣陳式斷絕通往漢中的馬鳴閣棧道，徐晃獨力擊破，獲曹操盛讚。",
+            "zhs": "刘备遣陈式断绝通往汉中的马鸣阁栈道，徐晃独力击破，获曹操盛赞。"
+          }
+        },
+        {
+          "passageId": "ws17e-p9",
+          "text": {
+            "en": "Xu Huang joined Xiahou Shang in defeating Liu Bei's forces at Shangyong.",
+            "zht": "徐晃與夏侯尚在上庸擊破劉備軍。",
+            "zhs": "徐晃与夏侯尚在上庸击破刘备军。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "顏良",
-      "type": "military enemy",
-      "passageId": "ws17e-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang took part in defeating Yan Liang and capturing Baima.",
+            "zht": "徐晃隨太祖擊敗顏良，攻克白馬。",
+            "zhs": "徐晃随太祖击败颜良，攻克白马。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "文醜",
-      "type": "military enemy",
-      "passageId": "ws17e-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang took part in defeating Wen Chou at Yanjin.",
+            "zht": "徐晃隨太祖在延津擊敗文醜。",
+            "zhs": "徐晃随太祖在延津击败文丑。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "曹洪",
-      "type": "joint military operation",
-      "passageId": "ws17e-p2"
+      "from": "徐晃（公明）",
+      "to": "曹洪（子廉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang joined Cao Hong in defeating the rebel Zhu Bi at Yinqiang.",
+            "zht": "徐晃與曹洪合力在㶏強擊破賊寇祝臂。",
+            "zhs": "徐晃与曹洪合力在㶏强击破贼寇祝臂。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "祝臂",
-      "type": "military enemy",
-      "passageId": "ws17e-p2"
+      "from": "徐晃（公明）",
+      "to": "袁紹（本初）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p2",
+          "text": {
+            "en": "Xu Huang and Shi Huan raided Yuan Shao's supply wagons at Gushi, earning the greatest merit in the campaign.",
+            "zht": "徐晃與史渙在故市截擊袁紹的運糧車隊，功勞最大。",
+            "zhs": "徐晃与史涣在故市截击袁绍的运粮车队，功劳最大。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "袁紹",
-      "type": "military enemy",
-      "passageId": "ws17e-p2"
-    },
-    {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "韓範",
-      "type": "feigned surrender then accepted",
-      "passageId": "ws17e-p2"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "Though Han Fan had feigned surrender and held out at Yiyang, Xu Huang accepted his eventual surrender against Cao Cao's standing order, arguing that mercy here would encourage other cities to submit peacefully — advice Cao Cao heeded.",
+            "zht": "韓範詐降據守易陽，徐晃仍違例接受其最終投降，並說服曹操此舉可使他城望風歸順，曹操從之。",
+            "zhs": "韩范诈降据守易阳，徐晃仍违例接受其最终投降，并说服曹操此举可使他城望风归顺，曹操从之。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "袁譚",
-      "type": "military enemy",
-      "passageId": "ws17e-p3"
+      "from": "徐晃（公明）",
+      "to": "袁譚（顯思）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "Xu Huang took part in defeating Yuan Tan at Nanpi.",
+            "zht": "徐晃隨太祖在南皮擊敗袁譚。",
+            "zhs": "徐晃随太祖在南皮击败袁谭。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "蹋頓",
-      "type": "military enemy",
-      "passageId": "ws17e-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "Xu Huang took part in the campaign against the Wuhuan chieftain Tadun.",
+            "zht": "徐晃隨太祖征討烏丸首領蹋頓。",
+            "zhs": "徐晃随太祖征讨乌丸首领蹋顿。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "滿寵",
-      "type": "joint military operation",
-      "passageId": "ws17e-p3"
+      "from": "徐晃（公明）",
+      "to": "滿寵（伯寧）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "Xu Huang joined Man Chong in an early campaign against Guan Yu at Hanjin.",
+            "zht": "徐晃與滿寵在漢津合力征討關羽。",
+            "zhs": "徐晃与满宠在汉津合力征讨关羽。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "關羽",
-      "type": "military enemy",
-      "passageId": "ws17e-p3"
+      "from": "徐晃（公明）",
+      "to": "關羽（雲長）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "Xu Huang and Man Chong campaigned against Guan Yu at Hanjin.",
+            "zht": "徐晃與滿寵在漢津征討關羽。",
+            "zhs": "徐晃与满宠在汉津征讨关羽。"
+          }
+        },
+        {
+          "passageId": "ws17e-p7",
+          "text": {
+            "en": "At the siege of Fancheng, Xu Huang feinted at one camp while secretly striking another; when Guan Yu personally led out troops to save it, Xu Huang routed him and pursued the broken army into the Han River, drowning many.",
+            "zht": "樊城之圍，徐晃虛攻一營而暗襲另一營；關羽親率兵馬來救，徐晃擊退並追擊潰軍入漢水，敵軍多溺死。",
+            "zhs": "樊城之围，徐晃虚攻一营而暗袭另一营；关羽亲率兵马来救，徐晃击退并追击溃军入汉水，敌军多溺死。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "曹仁",
-      "type": "joint military operation",
-      "passageId": "ws17e-p3"
+      "from": "徐晃（公明）",
+      "to": "曹仁（子孝）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "Xu Huang joined Cao Ren in attacking Zhou Yu at Jiangling.",
+            "zht": "徐晃與曹仁在江陵合力攻擊周瑜。",
+            "zhs": "徐晃与曹仁在江陵合力攻击周瑜。"
+          }
+        },
+        {
+          "passageId": "ws17e-p6",
+          "text": {
+            "en": "Xu Huang was sent to reinforce Cao Ren's defence against Guan Yu's siege of Fancheng.",
+            "zht": "徐晃奉遣協助曹仁抵禦關羽對樊城的圍攻。",
+            "zhs": "徐晃奉遣协助曹仁抵御关羽对樊城的围攻。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "周瑜",
-      "type": "military enemy",
-      "passageId": "ws17e-p3"
+      "from": "徐晃（公明）",
+      "to": "周瑜（公瑾）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p3",
+          "text": {
+            "en": "Xu Huang joined Cao Ren in attacking Zhou Yu at Jiangling.",
+            "zht": "徐晃與曹仁在江陵合力攻擊周瑜。",
+            "zhs": "徐晃与曹仁在江陵合力攻击周瑜。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "商曜",
-      "type": "military enemy",
-      "passageId": "ws17e-p4"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p4",
+          "text": {
+            "en": "Xu Huang besieged and captured Daling, beheading the rebel leader Shang Yao.",
+            "zht": "徐晃圍攻大陵並攻克之，斬殺叛軍首領商曜。",
+            "zhs": "徐晃围攻大陵并攻克之，斩杀叛军首领商曜。"
+          }
+        }
+      ]
     },
     {
-      "from": "韓遂",
-      "to": "馬超",
-      "type": "co-rebel",
-      "passageId": "ws17e-p4"
+      "from": "徐晃（公明）",
+      "to": "韓遂（文約）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p4",
+          "text": {
+            "en": "When Han Sui and Ma Chao rebelled west of the Pass, Xu Huang's crossing at Puban outflanked them and let Cao Cao's army cross to defeat them.",
+            "zht": "韓遂、馬超於關右反叛，徐晃自蒲阪渡河奇襲，使太祖大軍得以渡河將其擊破。",
+            "zhs": "韩遂、马超于关右反叛，徐晃自蒲阪渡河奇袭，使太祖大军得以渡河将其击破。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "韓遂",
-      "type": "military enemy",
-      "passageId": "ws17e-p4"
+      "from": "徐晃（公明）",
+      "to": "馬超（孟起）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p4",
+          "text": {
+            "en": "Xu Huang's flanking crossing at Puban enabled Cao Cao's army to cross the river and defeat Ma Chao's forces.",
+            "zht": "徐晃自蒲阪渡河奇襲，使太祖大軍得以渡河擊破馬超軍。",
+            "zhs": "徐晃自蒲阪渡河奇袭，使太祖大军得以渡河击破马超军。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "馬超",
-      "type": "military enemy",
-      "passageId": "ws17e-p4"
-    },
-    {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "梁興",
-      "type": "military enemy",
-      "passageId": "ws17e-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p5",
+          "text": {
+            "en": "Liang Xing attacked Xu Huang's unfinished camp by night but was routed; Xu Huang later joined Xiahou Yuan in hunting him down and beheading him.",
+            "zht": "梁興夜襲徐晃未築成的營壘，反被擊退；徐晃後又與夏侯淵合力將其擒斬。",
+            "zhs": "梁兴夜袭徐晃未筑成的营垒，反被击退；徐晃后又与夏侯渊合力将其擒斩。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "夏侯淵",
-      "type": "joint military operation",
-      "passageId": "ws17e-p5"
+      "from": "徐晃（公明）",
+      "to": "夏侯淵（妙才）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p5",
+          "text": {
+            "en": "Xu Huang and Xiahou Yuan jointly pacified the Di tribes and hunted down Liang Xing together.",
+            "zht": "徐晃與夏侯淵合力平定氐族部落，並一同擒斬梁興。",
+            "zhs": "徐晃与夏侯渊合力平定氐族部落，并一同擒斩梁兴。"
+          }
+        },
+        {
+          "passageId": "ws17e-p6",
+          "text": {
+            "en": "Xu Huang and Xiahou Yuan were jointly left to resist Liu Bei at Yangpingguan.",
+            "zht": "徐晃與夏侯淵同守陽平關抵禦劉備。",
+            "zhs": "徐晃与夏侯渊同守阳平关抵御刘备。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "張魯",
-      "type": "military enemy",
-      "passageId": "ws17e-p5"
+      "from": "徐晃（公明）",
+      "to": "張魯（公祺）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p5",
+          "text": {
+            "en": "Xu Huang took part in the campaign against Zhang Lu.",
+            "zht": "徐晃隨太祖征討張魯。",
+            "zhs": "徐晃随太祖征讨张鲁。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "張順",
-      "type": "relieved from siege",
-      "passageId": "ws17e-p5"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p5",
+          "text": {
+            "en": "Xu Huang relieved General Zhang Shun from a siege.",
+            "zht": "徐晃出兵解救被圍困的將軍張順。",
+            "zhs": "徐晃出兵解救被围困的将军张顺。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "陳福",
-      "type": "military enemy",
-      "passageId": "ws17e-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p5",
+          "text": {
+            "en": "Xu Huang attacked and destroyed more than thirty camps held by the rebel Chen Fu and others.",
+            "zht": "徐晃攻破賊寇陳福等人三十餘座營寨。",
+            "zhs": "徐晃攻破贼寇陈福等人三十余座营寨。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "夏侯淵",
-      "type": "joint military operation",
-      "passageId": "ws17e-p6"
-    },
-    {
-      "from": "徐晃",
-      "to": "劉備",
-      "type": "military enemy",
-      "passageId": "ws17e-p6"
-    },
-    {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "陳式",
-      "type": "military enemy",
-      "passageId": "ws17e-p6"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p6",
+          "text": {
+            "en": "When Chen Shi and more than ten encampments tried to cut the Mamingge plank road, Xu Huang alone routed them, and many enemy soldiers died fleeing into the ravines.",
+            "zht": "陳式率十餘營欲斷馬鳴閣棧道，徐晃獨力將其擊破，敵軍潰逃入山谷者多死。",
+            "zhs": "陈式率十余营欲断马鸣阁栈道，徐晃独力将其击破，敌军溃逃入山谷者多死。"
+          }
+        }
+      ]
     },
     {
-      "from": "徐晃",
-      "to": "曹仁",
-      "type": "military support",
-      "passageId": "ws17e-p6"
-    },
-    {
-      "from": "徐晃",
-      "to": "關羽",
-      "type": "military enemy",
-      "passageId": "ws17e-p6"
-    },
-    {
-      "from": "徐晃",
-      "to": "于禁",
-      "type": "colleague",
-      "passageId": "ws17e-p6"
-    },
-    {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "呂常",
-      "type": "contemporary",
-      "passageId": "ws17e-p6"
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p6",
+          "text": {
+            "en": "While Xu Huang moved to relieve Fancheng, Guan Yu was simultaneously besieging General Lü Chang at Xiangyang.",
+            "zht": "徐晃赴援樊城之際，關羽同時圍困將軍呂常於襄陽。",
+            "zhs": "徐晃赴援樊城之际，关羽同时围困将军吕常于襄阳。"
+          }
+        }
+      ]
     },
     {
-      "from": "太祖（曹操）",
-      "to": "徐商",
-      "type": "sent to support Xu Huang",
-      "passageId": "ws17e-p7"
+      "from": "徐晃（公明）",
+      "to": "夏侯尚（伯仁）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p9",
+          "text": {
+            "en": "Xu Huang joined Xiahou Shang in defeating Liu Bei's forces at Shangyong.",
+            "zht": "徐晃與夏侯尚在上庸合力擊破劉備軍。",
+            "zhs": "徐晃与夏侯尚在上庸合力击破刘备军。"
+          }
+        }
+      ]
     },
     {
-      "from": "太祖（曹操）",
-      "to": "呂建",
-      "type": "sent to support Xu Huang",
-      "passageId": "ws17e-p7"
+      "from": "徐晃（公明）",
+      "to": "諸葛瑾（子瑜）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p9",
+          "text": {
+            "en": "When Emperor Ming came to the throne, Xu Huang repelled the Wu general Zhuge Jin at Xiangyang.",
+            "zht": "明帝即位後，徐晃在襄陽抵禦吳將諸葛瑾。",
+            "zhs": "明帝即位后，徐晃在襄阳抵御吴将诸葛瑾。"
+          }
+        }
+      ]
     },
     {
-      "from": "太祖（曹操）",
-      "to": "殷署",
-      "type": "sent to support Xu Huang",
-      "passageId": "ws17e-p7"
-    },
-    {
-      "from": "太祖（曹操）",
-      "to": "朱蓋",
-      "type": "sent to support Xu Huang",
-      "passageId": "ws17e-p7"
-    },
-    {
-      "from": "徐晃",
-      "to": "關羽",
-      "type": "military enemy",
-      "passageId": "ws17e-p7"
-    },
-    {
-      "from": "徐晃",
-      "to": "周亞夫",
-      "type": "comparison by Cao Cao",
-      "passageId": "ws17e-p8"
-    },
-    {
-      "from": "徐晃",
-      "to": "夏侯尚",
-      "type": "joint military operation",
-      "passageId": "ws17e-p9"
-    },
-    {
-      "from": "徐晃",
-      "to": "劉備",
-      "type": "military enemy",
-      "passageId": "ws17e-p9"
-    },
-    {
-      "from": "徐晃",
-      "to": "諸葛瑾",
-      "type": "military enemy",
-      "passageId": "ws17e-p9"
-    },
-    {
-      "from": "徐晃",
+      "from": "徐晃（公明）",
       "to": "徐蓋",
-      "type": "father-son",
-      "passageId": "ws17e-p10"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p10",
+          "text": {
+            "en": "Xu Huang's son Xu Gai succeeded him as marquis.",
+            "zht": "徐晃之子徐蓋襲爵。",
+            "zhs": "徐晃之子徐盖袭爵。"
+          }
+        }
+      ]
     },
     {
       "from": "徐蓋",
       "to": "徐霸",
-      "type": "father-son",
-      "passageId": "ws17e-p10"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p10",
+          "text": {
+            "en": "After Xu Gai's death, his son Xu Ba succeeded him.",
+            "zht": "徐蓋去世後，其子徐霸襲爵。",
+            "zhs": "徐盖去世后，其子徐霸袭爵。"
+          }
+        }
+      ]
     },
     {
-      "from": "朱靈",
-      "to": "袁紹",
-      "type": "subordinate then left",
-      "passageId": "ws17e-p11"
+      "from": "朱靈（文博）",
+      "to": "袁紹（本初）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "Zhu Ling served as a general under Yuan Shao and earned merit commanding three encampments sent to aid Cao Cao's campaign against Tao Qian.",
+            "zht": "朱靈初為袁紹部將，曾統三營助太祖征討陶謙而立功。",
+            "zhs": "朱灵初为袁绍部将，曾统三营助太祖征讨陶谦而立功。"
+          }
+        }
+      ]
     },
     {
-      "from": "朱靈",
-      "to": "太祖（曹操）",
-      "type": "subordinate",
-      "passageId": "ws17e-p11"
+      "from": "朱靈（文博）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "When Yuan Shao's other generals returned home after the campaign, Zhu Ling declared none compared to Lord Cao and chose to remain in his service, taking his admiring troops with him.",
+            "zht": "袁紹所遣諸將戰後各自歸還，朱靈獨稱無人可比曹公，遂留而不去，所部士卒亦皆相隨。",
+            "zhs": "袁绍所遣诸将战后各自归还，朱灵独称无人可比曹公，遂留而不去，所部士卒亦皆相随。"
+          }
+        },
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "After Zhu Ling executed the mutinous Cheng Ang and wrote in guilt-ridden remorse, Cao Cao personally reassured him, citing the Han general Deng Yu's own setback as proof that one reversal need not diminish a commander's reputation.",
+            "zht": "朱靈斬殺叛變的程昂後，來信深自引咎，太祖親筆寬慰，舉東漢鄧禹曾遭挫敗為例，說明一時失利無損將領名譽。",
+            "zhs": "朱灵斩杀叛变的程昂后，来信深自引咎，太祖亲笔宽慰，举东汉邓禹曾遭挫败为例，说明一时失利无损将领名誉。"
+          }
+        }
+      ]
     },
     {
-      "from": "朱靈",
-      "to": "陶謙",
-      "type": "military enemy",
-      "passageId": "ws17e-p11"
+      "from": "朱靈（文博）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "On ascending the throne, Cao Pi issued a lavish edict praising Zhu Ling's decades of service as surpassing famous ministers of old, enfeoffed him Marquis of Shu, and — learning his one wish was to be enfeoffed in his native Gaotang instead — granted it.",
+            "zht": "曹丕即位後頒詔盛讚朱靈多年戎馬之功超越古之名臣，封其為鄃侯；得知朱靈素願改封故鄉高唐，即予以改封。",
+            "zhs": "曹丕即位后颁诏盛赞朱灵多年戎马之功超越古之名臣，封其为鄃侯；得知朱灵素愿改封故乡高唐，即予以改封。"
+          }
+        }
+      ]
     },
     {
-      "from": "朱靈",
+      "from": "朱靈（文博）",
+      "to": "陶謙（恭祖）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "Yuan Shao sent Zhu Ling to command three encampments aiding Cao Cao's campaign against Tao Qian.",
+            "zht": "袁紹派朱靈統三營助太祖征討陶謙。",
+            "zhs": "袁绍派朱灵统三营助太祖征讨陶谦。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "朱靈（文博）",
       "to": "季雍",
-      "type": "military enemy",
-      "passageId": "ws17e-p11"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "Yuan Shao sent Zhu Ling to attack Ji Yong, who had rebelled and surrendered the city of Shu to Gongsun Zan; Zhu Ling fought his way in and captured Ji Yong alive.",
+            "zht": "季雍以鄃城叛袁紹降公孫瓚，袁紹遣朱靈攻之；朱靈力戰破城，生擒季雍。",
+            "zhs": "季雍以鄃城叛袁绍降公孙瓒，袁绍遣朱灵攻之；朱灵力战破城，生擒季雍。"
+          }
+        }
+      ]
     },
     {
-      "from": "季雍",
-      "to": "公孫瓚",
-      "type": "rebel and ally",
-      "passageId": "ws17e-p11"
+      "from": "公孫瓚（伯珪）",
+      "to": "朱靈（文博）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "To sway Zhu Ling from besieging Shu, Gongsun Zan placed his mother and younger brother atop the city wall and called out to him; Zhu Ling wept but fought on regardless, and his family died in the city's fall.",
+            "zht": "公孫瓚為動搖攻城的朱靈，將其母弟置於城牆之上呼喚誘勸；朱靈望城涕泣仍奮力攻城，其家人終於城破時盡死。",
+            "zhs": "公孙瓒为动摇攻城的朱灵，将其母弟置于城墙之上呼唤诱劝；朱灵望城涕泣仍奋力攻城，其家人终于城破时尽死。"
+          }
+        }
+      ]
     },
     {
-      "from": "朱靈",
+      "from": "朱靈（文博）",
       "to": "程昂",
-      "type": "rebel subordinate",
-      "passageId": "ws17e-p11"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "When the Gentleman-General Cheng Ang mutinied among the new Ji Province recruits under his command, Zhu Ling swiftly beheaded him.",
+            "zht": "中郎將程昂在朱靈所統冀州新兵中反叛，朱靈即斬之。",
+            "zhs": "中郎将程昂在朱灵所统冀州新兵中反叛，朱灵即斩之。"
+          }
+        }
+      ]
     },
     {
-      "from": "朱靈",
-      "to": "鄧禹",
-      "type": "historical comparison",
-      "passageId": "ws17e-p11"
-    },
-    {
-      "from": "朱靈",
+      "from": "朱靈（文博）",
       "to": "朱術",
-      "type": "father-son",
-      "passageId": "ws17e-p11"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws17e-p11",
+          "text": {
+            "en": "After Zhu Ling's death, his son Zhu Shu succeeded him as marquis.",
+            "zht": "朱靈去世後，其子朱術襲爵。",
+            "zhs": "朱灵去世后，其子朱术袭爵。"
+          }
+        }
+      ]
     }
   ]
 }

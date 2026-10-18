@@ -8,7 +8,7 @@
       "en": "Biography of Su Ze"
     },
     "title": {
-      "zht": "魏書十六 · 苏则传",
+      "zht": "魏書十六 · 蘇則傳",
       "zhs": "魏书十六 · 苏则传",
       "en": "Book of Wei, Chapter 16 · Biography of Su Ze"
     }
@@ -390,184 +390,479 @@
   ],
   "relationships": [
     {
-      "from": "蘇則（文師）",
-      "to": "師亮",
-      "type": "refugee and host",
-      "passageId": "ws16b-p1"
-    },
-    {
-      "from": "蘇則（文師）",
-      "to": "吉茂",
-      "type": "retreat companion",
-      "passageId": "ws16b-p1"
-    },
-    {
-      "from": "曹操",
+      "from": "師亮",
       "to": "蘇則（文師）",
-      "type": "superior and subordinate",
-      "passageId": "ws16b-p2"
+      "type": "personal",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p1",
+          "text": {
+            "en": "Fleeing the chaos, Su Ze sought refuge with the wealthy Shi Liang in Anding, who did not treat him as well as he had expected; Su Ze vowed indignantly to return as Grand Administrator and humble such men, and when he did, he sent a messenger to reassure the fearful Shi Liang and treated him with courtesy.",
+            "zht": "蘇則避亂寄居安定，投靠富人師亮，師亮待他不如所望，蘇則憤然發誓日後必回任太守以折辱此輩；後來他果然出任安定太守，師亮等人懼而欲逃，蘇則遣使安撫，並以禮相待。",
+            "zhs": "苏则避乱寄居安定，投靠富人师亮，师亮待他不如所望，苏则愤然发誓日后必回任太守以折辱此辈；后来他果然出任安定太守，师亮等人惧而欲逃，苏则遣使安抚，并以礼相待。"
+          }
+        }
+      ]
     },
     {
-      "from": "張魯",
-      "to": "曹操",
-      "type": "enemy",
-      "passageId": "ws16b-p2"
+      "from": "蘇則（文師）",
+      "to": "吉茂（叔暢）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p1",
+          "text": {
+            "en": "Su Ze withdrew with his fellow townsman Ji Mao to Mount Taibai, where they took delight in their books.",
+            "zht": "蘇則與同鄉吉茂一同隱居太白山，以讀書為樂。",
+            "zhs": "苏则与同乡吉茂一同隐居太白山，以读书为乐。"
+          }
+        },
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "When Ji Mao mocked him for rising no further than a Palace Attendant who \"bears a chamber pot\", Su Ze laughed and retorted that he could not match Ji Mao's leisurely rides in a deer cart.",
+            "zht": "吉茂譏笑蘇則官至侍中不過是「捧虎子」，蘇則笑答自己實在比不上吉茂悠然乘坐鹿車。",
+            "zhs": "吉茂讥笑苏则官至侍中不过是「捧虎子」，苏则笑答自己实在比不上吉茂悠然乘坐鹿车。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p2",
+          "text": {
+            "en": "When Cao Cao campaigned against Zhang Lu he passed through Su Ze's commandery, was pleased on meeting him, and made him guide to the army; Su Ze afterwards pacified the Di of Xiabian, reopened the route West of the River, and was transferred to Grand Administrator of Jincheng, where he restored the shattered population.",
+            "zht": "曹操徵張魯途經蘇則所在郡，與之相見甚悅，任命他為軍導；張魯敗後，蘇則安撫下辯氐人，重開河西之路，遷任金城太守，安撫戰亂後離散的百姓。",
+            "zhs": "曹操征张鲁途经苏则所在郡，与之相见甚悦，任命他为军导；张鲁败后，苏则安抚下辩氐人，重开河西之路，迁任金城太守，安抚战乱后离散的百姓。"
+          },
+          "title": {
+            "en": "Grand Administrator of Jincheng",
+            "zht": "金城太守",
+            "zhs": "金城太守"
+          }
+        }
+      ]
     },
     {
       "from": "蘇則（文師）",
       "to": "李越",
-      "type": "enemy",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "曹丕",
-      "to": "蘇則（文師）",
-      "type": "ruler and subject",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "麴演",
-      "to": "蘇則（文師）",
-      "type": "enemy",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "張進",
-      "to": "杜通",
-      "type": "captor",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "黃華",
-      "to": "辛機",
-      "type": "rejected",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "毌丘興",
-      "to": "蘇則（文師）",
-      "type": "ally",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "曹丕",
-      "to": "張既",
-      "type": "ruler and subject",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "韓遂",
-      "to": "蘇則（文師）",
-      "type": "historical relation",
-      "passageId": "ws16b-p3"
-    },
-    {
-      "from": "郝昭",
-      "to": "蘇則（文師）",
-      "type": "ally",
-      "passageId": "ws16b-p4"
-    },
-    {
-      "from": "魏平",
-      "to": "蘇則（文師）",
-      "type": "ally",
-      "passageId": "ws16b-p4"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "When Li Yue rebelled in Longxi, Su Ze led the Qiang and Hu in besieging him, and Li Yue promptly sought to submit.",
+            "zht": "李越在隴西反叛，蘇則率羌胡圍攻，李越隨即請降。",
+            "zhs": "李越在陇西反叛，苏则率羌胡围攻，李越随即请降。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇則（文師）",
-      "to": "麴演",
-      "type": "enemy",
-      "passageId": "ws16b-p5"
+      "to": "麹演",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "After Cao Cao's death Qu Yan of Xiping rebelled; Su Ze marched against him and Qu Yan begged to surrender, but later rebelled again.",
+            "zht": "曹操死後西平麴演反叛，蘇則出兵征討，麴演懼敗請降，後又再度反叛。",
+            "zhs": "曹操死后西平麹演反叛，苏则出兵征讨，麹演惧败请降，后又再度反叛。"
+          }
+        },
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "When Qu Yan came with three thousand troops claiming to reinforce him but intending treachery, Su Ze lured him to a meeting, beheaded him, and displayed his head before the troops.",
+            "zht": "麴演率三千步騎前來，佯稱助戰實懷奸謀，蘇則誘他會面，將其斬首示眾。",
+            "zhs": "麹演率三千步骑前来，佯称助战实怀奸谋，苏则诱他会面，将其斩首示众。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇則（文師）",
       "to": "張進",
-      "type": "enemy",
-      "passageId": "ws16b-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "Su Ze and the other forces besieged Zhangye and took it, executing Zhang Jin and his supporters.",
+            "zht": "蘇則與諸軍圍攻張掖，攻克後誅殺張進及其黨羽。",
+            "zhs": "苏则与诸军围攻张掖，攻克后诛杀张进及其党羽。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張進",
+      "to": "杜通",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Zhang Jin seized Du Tong, Grand Administrator of his native Zhangye, and proclaimed himself Grand Administrator.",
+            "zht": "張進擒獲本郡張掖太守杜通，自稱太守。",
+            "zhs": "张进擒获本郡张掖太守杜通，自称太守。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "黃華",
+      "to": "辛機",
+      "type": "service",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Huang Hua refused to acknowledge Xin Ji, Grand Administrator of his native Jiuquan, and proclaimed himself Grand Administrator.",
+            "zht": "黃華不肯承認本郡酒泉太守辛機，自稱太守。",
+            "zhs": "黄华不肯承认本郡酒泉太守辛机，自称太守。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇則（文師）",
       "to": "黃華",
-      "type": "enemy",
-      "passageId": "ws16b-p5"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "With Qu Yan's army defeated, Huang Hua took fright, released his captives, and begged to surrender, and the lands West of the River were pacified.",
+            "zht": "麴演軍敗後，黃華恐懼，釋放所俘之人請降，河西遂告平定。",
+            "zhs": "麹演军败后，黄华恐惧，释放所俘之人请降，河西遂告平定。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "毌丘興",
+      "to": "蘇則（文師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Guanqiu Xing, Grand Administrator of Wuwei, sent Su Ze an urgent appeal for help against the rebels and later joined him in attacking Zhang Jin.",
+            "zht": "武威太守毌丘興向蘇則急請援助，後又與他聯軍攻打張進。",
+            "zhs": "武威太守毌丘兴向苏则急请援助，后又与他联军攻打张进。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郝昭（伯道）",
+      "to": "蘇則（文師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p4",
+          "text": {
+            "en": "Hao Zhao agreed with Su Ze's plan to act on their own authority and raised troops to relieve Wuwei.",
+            "zht": "郝昭贊同蘇則先發制敵之策，與他一同出兵解武威之圍。",
+            "zhs": "郝昭赞同苏则先发制敌之策，与他一同出兵解武威之围。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "魏平",
+      "to": "蘇則（文師）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p4",
+          "text": {
+            "en": "Wei Ping agreed with Su Ze's plan to act on their own authority and raised troops to relieve Wuwei.",
+            "zht": "魏平贊同蘇則先發制敵之策，與他一同出兵解武威之圍。",
+            "zhs": "魏平赞同苏则先发制敌之策，与他一同出兵解武威之围。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇則（文師）",
-      "to": "董昭",
-      "type": "colleague",
-      "passageId": "ws16b-p6"
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "For pacifying Qu Yan, Cao Pi appointed Su Ze Colonel Protecting the Qiang and enfeoffed him as Marquis Within the Pass; Cao Pi also privately sought the Inspector's opinion on raising his rank.",
+            "zht": "曹丕因蘇則平定麴演之功，任命他為護羌校尉，封關內侯，並私下詢問雍州刺史是否應進其爵邑。",
+            "zhs": "曹丕因苏则平定麹演之功，任命他为护羌校尉，封关内侯，并私下询问雍州刺史是否应进其爵邑。"
+          },
+          "title": {
+            "en": "Colonel Protecting the Qiang",
+            "zht": "護羌校尉",
+            "zhs": "护羌校尉"
+          }
+        },
+        {
+          "passageId": "ws16b-p5",
+          "text": {
+            "en": "After Su Ze pacified the lands West of the River, he was advanced to Capital Neighbourhood Marquis.",
+            "zht": "蘇則平定河西后，進封都亭侯。",
+            "zhs": "苏则平定河西后，进封都亭侯。"
+          }
+        },
+        {
+          "passageId": "ws16b-p7",
+          "text": {
+            "en": "Su Ze told Cao Pi that pearls sought by purchase were not worth prizing and knelt to plead for the hunt officials' lives over an escaped deer; Cao Pi called him an upright minister and pardoned them, but afterwards grew wary of him.",
+            "zht": "蘇則勸曹丕求購寶珠不足貴，又在獵場逃鹿事件中叩首為眾官請命；曹丕稱他為正直之臣而赦免眾人，此後卻對他心存忌憚。",
+            "zhs": "苏则劝曹丕求购宝珠不足贵，又在猎场逃鹿事件中叩首为众官请命；曹丕称他为正直之臣而赦免众人，此后却对他心存忌惮。"
+          }
+        },
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "In the fourth year of Huangchu, Su Ze was demoted to Principality Chancellor of Dongping and died on the way to his post; he was posthumously titled Marquis Gang.",
+            "zht": "黃初四年，蘇則被貶為東平相，赴任途中病逝，追諡剛侯。",
+            "zhs": "黄初四年，苏则被贬为东平相，赴任途中病逝，追谥刚侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張既（德容）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Cao Pi consulted Inspector Zhang Ji in confidence about whether Su Ze deserved a higher rank and fief.",
+            "zht": "曹丕密詢雍州刺史張既，蘇則之功是否應增加爵邑。",
+            "zhs": "曹丕密询雍州刺史张既，苏则之功是否应增加爵邑。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張既（德容）",
+      "to": "蘇則（文師）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p3",
+          "text": {
+            "en": "Asked for his view, Zhang Ji praised Su Ze for restoring Jincheng's population, winning back the Qiang, and putting down Qu Yan with utmost loyalty, and endorsed raising his rank.",
+            "zht": "張既奉詢時盛讚蘇則安撫金城遺民、招撫羌人、討平麴演，忠節備至，並贊同增其爵邑。",
+            "zhs": "张既奉询时盛赞苏则安抚金城遗民、招抚羌人、讨平麹演，忠节备至，并赞同增其爵邑。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇則（文師）",
-      "to": "曹植",
-      "type": "shared mourner",
-      "passageId": "ws16b-p6"
+      "to": "董昭（公仁）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "When Dong Zhao laid his head on Su Ze's knees, Su Ze pushed him off, saying his knees were no pillow for a sycophant.",
+            "zht": "董昭將頭枕在蘇則膝上，蘇則推開他，說自己的膝蓋不是給諂媚之人當枕頭的。",
+            "zhs": "董昭将头枕在苏则膝上，苏则推开他，说自己的膝盖不是给谄媚之人当枕头的。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹丕",
-      "to": "蘇則（文師）",
-      "type": "ruler and subject",
-      "passageId": "ws16b-p6"
+      "from": "蘇則（文師）",
+      "to": "曹植（子建）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "On hearing that Wei had supplanted the Han, Su Ze and Cao Zhi both donned mourning dress and wept bitterly.",
+            "zht": "聽聞魏代漢，蘇則與曹植都身著喪服，痛哭流涕。",
+            "zhs": "听闻魏代汉，苏则与曹植都身着丧服，痛哭流涕。"
+          }
+        }
+      ]
     },
     {
-      "from": "傅巽",
+      "from": "傅巽（公悌）",
       "to": "蘇則（文師）",
-      "type": "colleague",
-      "passageId": "ws16b-p6"
-    },
-    {
-      "from": "吉茂",
-      "to": "蘇則（文師）",
-      "type": "fellow townsman",
-      "passageId": "ws16b-p6"
-    },
-    {
-      "from": "曹丕",
-      "to": "蘇則（文師）",
-      "type": "ruler and subject",
-      "passageId": "ws16b-p7"
-    },
-    {
-      "from": "曹丕",
-      "to": "蘇則（文師）",
-      "type": "ruler and subject",
-      "passageId": "ws16b-p8"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p6",
+          "text": {
+            "en": "When Su Ze thought Cao Pi's remark about someone weeping at the abdication was aimed at him and was about to answer forthrightly, Palace Attendant Fu Xun pinched him and signalled that it was not.",
+            "zht": "曹丕說有人在禪讓時哭泣，蘇則以為指自己，正欲直言相對，侍中傅巽掐他並示意並非說他。",
+            "zhs": "曹丕说有人在禅让时哭泣，苏则以为指自己，正欲直言相对，侍中傅巽掐他并示意并非说他。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇則（文師）",
       "to": "蘇怡",
-      "type": "father and son",
-      "passageId": "ws16b-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Ze's son Su Yi succeeded him as marquis.",
+            "zht": "蘇則之子蘇怡襲爵。",
+            "zhs": "苏则之子苏怡袭爵。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "蘇則（文師）",
+      "to": "蘇愉（休豫）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Yi died without a son, so Su Ze's younger son Su Yu inherited the fief and later became Minister of Ceremonies.",
+            "zht": "蘇怡無子而卒，蘇則次子蘇愉繼承封爵，後官至太常。",
+            "zhs": "苏怡无子而卒，苏则次子苏愉继承封爵，后官至太常。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇怡",
       "to": "蘇愉（休豫）",
-      "type": "brother",
-      "passageId": "ws16b-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Yi died without a son, so his younger brother Su Yu inherited the fief.",
+            "zht": "蘇怡無子而卒，其弟蘇愉繼承封爵。",
+            "zhs": "苏怡无子而卒，其弟苏愉继承封爵。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇愉（休豫）",
       "to": "蘇紹（世嗣）",
-      "type": "father and son",
-      "passageId": "ws16b-p8"
-    },
-    {
-      "from": "蘇紹（世嗣）",
-      "to": "石崇",
-      "type": "wife's elder brother",
-      "passageId": "ws16b-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Yu's son Su Shao, courtesy name Shisi, served as tutor to the Prince of Wu.",
+            "zht": "蘇愉之子蘇紹，字世嗣，曾任吳王師。",
+            "zhs": "苏愉之子苏绍，字世嗣，曾任吴王师。"
+          }
+        }
+      ]
     },
     {
       "from": "蘇紹（世嗣）",
       "to": "蘇慎",
-      "type": "brother",
-      "passageId": "ws16b-p8"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Su Shao's younger brother Su Shen was General of the Central Guards on the Left.",
+            "zht": "蘇紹之弟蘇慎官至左中郎將。",
+            "zhs": "苏绍之弟苏慎官至左中郎将。"
+          }
+        }
+      ]
     },
     {
-      "from": "山濤",
+      "from": "蘇紹（世嗣）",
+      "to": "石崇（季倫）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "Shi Chong's wife was Su Shao's elder sister, making them brothers-in-law.",
+            "zht": "石崇之妻為蘇紹之姊，二人為姻親。",
+            "zhs": "石崇之妻为苏绍之姊，二人为姻亲。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "山濤（巨源）",
       "to": "蘇愉（休豫）",
-      "type": "praiser",
-      "passageId": "ws16b-p8"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16b-p8",
+          "text": {
+            "en": "In The Explanation of Matters, Shan Tao praised Su Yu as loyal and steadfast, with sound judgement.",
+            "zht": "山濤在《啟事》中稱讚蘇愉忠貞堅定，識見明達。",
+            "zhs": "山涛在《启事》中称赞苏愉忠贞坚定，识见明达。"
+          }
+        }
+      ]
     }
   ]
 }

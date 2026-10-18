@@ -3,12 +3,12 @@
     "id": "wei-shu-18i",
     "order": 18,
     "label": {
-      "zht": "龐淯傳 · 附张猛、赵娥",
+      "zht": "龐淯傳 · 附張猛、趙娥",
       "zhs": "庞淯传 · 附张猛、赵娥",
       "en": "Biography of Pang Yu · with Zhang Meng and Zhao E"
     },
     "title": {
-      "zht": "魏書十八 · 龐淯傳 · 附张猛、赵娥",
+      "zht": "魏書十八 · 龐淯傳 · 附張猛、趙娥",
       "zhs": "魏书十八 · 庞淯传 · 附张猛、赵娥",
       "en": "Book of Wei, Chapter 18 · Biography of Pang Yu · with Zhang Meng and Zhao E"
     }
@@ -138,9 +138,9 @@
               "zhs": "从事"
             },
             {
-              "en": "Chief",
-              "zht": "縣長",
-              "zhs": "县长"
+              "en": "Interim Chief",
+              "zht": "守縣長",
+              "zhs": "守县长"
             }
           ],
           "passageId": "ws18i-p1",
@@ -160,10 +160,10 @@
               "url": null
             },
             {
-              "en": "Chief",
-              "zht": "縣長",
-              "zhs": "县长",
-              "url": "/translations/officials/regional#counties-089"
+              "en": "Interim Chief",
+              "zht": "守縣長",
+              "zhs": "守县长",
+              "url": "/translations/officials#glossary-interim"
             }
           ]
         },
@@ -333,56 +333,272 @@
     {
       "from": "龐淯（子異）",
       "to": "邯鄲商",
-      "type": "served-under",
-      "passageId": "ws18i-p1"
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p1",
+          "text": {
+            "en": "When Inspector Handan Shang was killed in Zhang Meng's rebellion, Pang Yu abandoned his post and rushed day and night to mourn him, defying Zhang Meng's threat of death for doing so.",
+            "zht": "武威太守張猛叛亂殺害刺史邯鄲商後，龐淯棄官晝夜奔走，不顧張猛「敢臨喪者死」之令，前往哭喪。",
+            "zhs": "武威太守张猛叛乱杀害刺史邯郸商后，庞淯弃官昼夜奔走，不顾张猛「敢临丧者死」之令，前往哭丧。"
+          }
+        }
+      ]
     },
     {
       "from": "龐淯（子異）",
-      "to": "張猛",
-      "type": "enemy",
-      "passageId": "ws18i-p1"
+      "to": "張猛（叔威）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18i-p1",
+          "text": {
+            "en": "Pang Yu went to Zhang Meng's gate with a hidden dagger, intending to kill him for murdering Handan Shang, but Zhang Meng, recognising his righteousness, spared him.",
+            "zht": "龐淯懷匕首至張猛門前，欲乘機刺殺以報邯鄲商之仇，張猛因其義烈而赦免了他。",
+            "zhs": "庞淯怀匕首至张猛门前，欲乘机刺杀以报邯郸商之仇，张猛因其义烈而赦免了他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張猛（叔威）",
+      "to": "邯鄲商",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p1",
+          "text": {
+            "en": "Longtime rivals since youth, Zhang Meng and Handan Shang grew bitterly hostile once posted together; when Handan Shang plotted to kill him first, Zhang Meng mustered troops, captured him, and handed him to custody, where he was killed attempting to escape.",
+            "zht": "張猛與邯鄲商自幼不睦，同赴任後嫌隙日深；邯鄲商先謀害張猛，張猛遂發兵擒之，交付看管，邯鄲商越獄時被殺。",
+            "zhs": "张猛与邯郸商自幼不睦，同赴任后嫌隙日深；邯郸商先谋害张猛，张猛遂发兵擒之，交付看管，邯郸商越狱时被杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓遂（文約）",
+      "to": "張猛（叔威）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18i-p1",
+          "text": {
+            "en": "The following year, Han Sui personally campaigned against Zhang Meng; as his own officials and people turned against him under the pressure, Zhang Meng, facing certain defeat, set fire to a tower and died in the flames rather than let his head be carried past his father's grave.",
+            "zht": "次年，韓遂親自征討張猛；其官民懼而叛之，張猛自知必敗，不願首級被攜過亡父墓前，遂登樓縱火自焚而死。",
+            "zhs": "次年，韩遂亲自征讨张猛；其官民惧而叛之，张猛自知必败，不愿首级被携过亡父墓前，遂登楼纵火自焚而死。"
+          }
+        }
+      ]
     },
     {
       "from": "龐淯（子異）",
       "to": "徐揖",
-      "type": "served-under",
-      "passageId": "ws18i-p2"
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p2",
+          "text": {
+            "en": "Grand Administrator Xu Yi appointed Pang Yu Registrar; when Huang Ang besieged the city, Pang Yu slipped out to seek aid, and after Xu Yi died in the siege, he retrieved his body and mourned him for three years.",
+            "zht": "太守徐揖任命龐淯為主簿。黃昂圍城時，龐淯突圍求援；徐揖城陷身死後，龐淯收殮其遺體，為他服喪三年。",
+            "zhs": "太守徐揖任命庞淯为主簿。黄昂围城时，庞淯突围求援；徐揖城陷身死后，庞淯收殓其遗体，为他服丧三年。"
+          },
+          "title": {
+            "en": "Registrar",
+            "zht": "主簿",
+            "zhs": "主簿"
+          }
+        }
+      ]
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p2",
+          "text": {
+            "en": "Cao Cao, hearing of Pang Yu's devotion, recruited him to his staff.",
+            "zht": "曹操聞龐淯之忠義，辟他為掾屬。",
+            "zhs": "曹操闻庞淯之忠义，辟他为掾属。"
+          },
+          "title": {
+            "en": "Aide",
+            "zht": "掾屬",
+            "zhs": "掾属"
+          }
+        }
+      ]
+    },
+    {
+      "from": "龐淯（子異）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p2",
+          "text": {
+            "en": "When Cao Pi ascended the throne, Pang Yu was appointed Commandant of Escorting Cavalry, then transferred to Grand Administrator of Xihai and bestowed Marquis Within the Pass, and later recalled to serve as Palace Attendant Counsellor.",
+            "zht": "文帝踐阼，龐淯拜駙馬都尉，遷西海太守，賜爵關內侯，後徵拜中散大夫。",
+            "zhs": "文帝践阼，庞淯拜驸马都尉，迁西海太守，赐爵关内侯，后征拜中散大夫。"
+          },
+          "title": {
+            "en": "Commandant of Escorting Cavalry, Grand Administrator of Xihai, Marquis Within the Pass, Palace Attendant Counsellor",
+            "zht": "駙馬都尉、西海太守、關內侯、中散大夫",
+            "zhs": "驸马都尉、西海太守、关内侯、中散大夫"
+          }
+        }
+      ]
     },
     {
       "from": "龐淯（子異）",
       "to": "黃昂",
-      "type": "enemy",
-      "passageId": "ws18i-p2"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18i-p2",
+          "text": {
+            "en": "When Huang Ang rebelled and besieged the commandery seat, Pang Yu scaled the wall by night to seek relief from neighbouring commanderies.",
+            "zht": "黃昂反叛圍城時，龐淯夜間縋城突圍，向鄰郡求援。",
+            "zhs": "黄昂反叛围城时，庞淯夜间缒城突围，向邻郡求援。"
+          }
+        }
+      ]
     },
     {
       "from": "龐淯（子異）",
       "to": "龐曾",
-      "type": "father-son",
-      "passageId": "ws18i-p2"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p2",
+          "text": {
+            "en": "Pang Zeng was Pang Yu's son, who succeeded him upon his death.",
+            "zht": "龐曾是龐淯之子，於龐淯去世後承襲其位。",
+            "zhs": "庞曾是庞淯之子，于庞淯去世后承袭其位。"
+          }
+        }
+      ]
     },
     {
       "from": "龐淯（子異）",
       "to": "趙安",
-      "type": "grandfather-grandson",
-      "passageId": "ws18i-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p3",
+          "text": {
+            "en": "Zhao An, Pang Yu's maternal grandfather, was killed by his fellow county-man Li Shou.",
+            "zht": "趙安是龐淯外祖父，為同縣李壽所殺。",
+            "zhs": "赵安是庞淯外祖父，为同县李寿所杀。"
+          }
+        }
+      ]
     },
     {
       "from": "趙娥",
       "to": "趙安",
-      "type": "father-daughter",
-      "passageId": "ws18i-p3"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p3",
+          "text": {
+            "en": "Zhao An was Zhao E's father; when her three brothers all died before avenging him, she resolved to avenge him herself.",
+            "zht": "趙安是趙娥之父；趙娥三位兄弟相繼病死，未能為父報仇，趙娥遂決意親自復仇。",
+            "zhs": "赵安是赵娥之父；赵娥三位兄弟相继病死，未能为父报仇，赵娥遂决意亲自复仇。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "李壽",
+      "to": "趙安",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p3",
+          "text": {
+            "en": "Zhao An was killed by his fellow county-man Li Shou, setting off the feud his daughter Zhao E would later avenge.",
+            "zht": "趙安為同縣李壽所殺，種下其女趙娥日後復仇之因。",
+            "zhs": "赵安为同县李寿所杀，种下其女赵娥日后复仇之因。"
+          }
+        }
+      ]
     },
     {
       "from": "趙娥",
       "to": "李壽",
-      "type": "enemy",
-      "passageId": "ws18i-p3"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p3",
+          "text": {
+            "en": "Zhao E stabbed Li Shou to death in broad daylight to avenge her father, then calmly turned herself in and asked to be executed.",
+            "zht": "趙娥為報父仇，於白日刺殺李壽，事後從容自首，請求受戮。",
+            "zhs": "赵娥为报父仇，于白日刺杀李寿，事后从容自首，请求受戮。"
+          }
+        }
+      ]
     },
     {
-      "from": "龐淯（子異）",
-      "to": "趙娥",
-      "type": "mother-son",
-      "passageId": "ws18i-p3"
+      "from": "趙娥",
+      "to": "龐淯（子異）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18i-p3",
+          "text": {
+            "en": "Zhao E was Pang Yu's mother.",
+            "zht": "趙娥是龐淯之母。",
+            "zhs": "赵娥是庞淯之母。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "趙娥",
+      "to": "龐子夏",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18i-p3",
+          "text": {
+            "en": "Zhao E was the wife of Pang Zixia of Biaoshi.",
+            "zht": "趙娥是表氏龐子夏之妻。",
+            "zhs": "赵娥是表氏庞子夏之妻。"
+          }
+        }
+      ]
     }
   ]
 }

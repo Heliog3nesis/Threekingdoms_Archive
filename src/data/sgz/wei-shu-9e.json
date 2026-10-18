@@ -1,0 +1,698 @@
+{
+  "id": "wei-shu-9e",
+  "book": "Book of Wei",
+  "bookLabel": {
+    "zht": "魏書",
+    "zhs": "魏书",
+    "en": "Book of Wei"
+  },
+  "order": 9,
+  "num": "9",
+  "label": {
+    "zht": "曹休傳",
+    "zhs": "曹休传",
+    "en": "Biography of Cao Xiu"
+  },
+  "title": {
+    "zht": "魏書九 · 曹休傳",
+    "zhs": "魏书九 · 曹休传",
+    "en": "Book of Wei, Chapter 9 · Biography of Cao Xiu"
+  },
+  "relationships": [
+    {
+      "from": "曹操（孟德）",
+      "to": "曹休（文烈）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p1",
+          "text": {
+            "en": "Cao Xiu was the son of one of Cao Cao's clan brothers; Cao Cao called him \"our family's thousand-li horse\" and raised him as his own son.",
+            "zht": "曹休是曹操的族子；曹操稱他爲“吾家千里駒”，待他如同親生兒子。",
+            "zhs": "曹休是曹操的族子；曹操称他为“吾家千里驹”，待他如同亲生儿子。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹丕（子桓）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p1",
+          "text": {
+            "en": "Cao Cao had Cao Xiu live together with Cao Pi.",
+            "zht": "曹操讓曹休與曹丕一同居住。",
+            "zhs": "曹操让曹休与曹丕一同居住。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p1",
+          "text": {
+            "en": "After the clan scattered, Cao Xiu changed his name and made his way north to join Cao Cao, who put him in command of the Tiger and Leopard Cavalry as his personal guard.",
+            "zht": "宗族離散後，曹休改名換姓，輾轉北歸投奔曹操，曹操讓他統領虎豹騎擔任宿衛。",
+            "zhs": "宗族离散后，曹休改名换姓，辗转北归投奔曹操，曹操让他统领虎豹骑担任宿卫。"
+          }
+        },
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Cao Cao made Cao Xiu Commandant of Cavalry on Cao Hong's staff against Wu Lan, telling him that though nominally on the staff, he was in fact the commander.",
+            "zht": "曹操任命曹休爲騎都尉，參曹洪軍事征討吳蘭，並對他說：“你雖是參軍，實際上是統帥。”",
+            "zhs": "曹操任命曹休为骑都尉，参曹洪军事征讨吴兰，并对他说：“你虽是参军，实际上是统帅。”"
+          },
+          "title": {
+            "en": "Commandant of Cavalry",
+            "zht": "騎都尉",
+            "zhs": "骑都尉"
+          }
+        },
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "When the armies returned from Hanzhong to Chang'an, Cao Xiu was appointed Commander of the Central Army.",
+            "zht": "大軍從漢中撤回長安後，曹休被任命爲中領軍。",
+            "zhs": "大军从汉中撤回长安后，曹休被任命为中领军。"
+          },
+          "title": {
+            "en": "Commander of the Central Army",
+            "zht": "中領軍",
+            "zhs": "中领军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "When Cao Pi became king, he made Cao Xiu General Commanding the Army and enfeoffed him as Neighbourhood Marquis of Dongyang.",
+            "zht": "曹丕即王位後，任命曹休爲領軍將軍，封東陽亭侯。",
+            "zhs": "曹丕即王位后，任命曹休为领军将军，封东阳亭侯。"
+          },
+          "title": {
+            "en": "General Commanding the Army, Neighbourhood Marquis of Dongyang",
+            "zht": "領軍將軍、東陽亭侯",
+            "zhs": "领军将军、东阳亭侯"
+          }
+        },
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "After Xiahou Dun died, Cao Pi made Cao Xiu General Who Garrisons the South with command of the armies, and came in person to see him off, stepping down from his carriage to clasp his hand.",
+            "zht": "夏侯惇去世後，曹丕任命曹休爲鎮南將軍，都督諸軍事，並親自送行，下車握手而別。",
+            "zhs": "夏侯惇去世后，曹丕任命曹休为镇南将军，都督诸军事，并亲自送行，下车握手而别。"
+          },
+          "title": {
+            "en": "General Who Garrisons the South",
+            "zht": "鎮南將軍",
+            "zhs": "镇南将军"
+          }
+        },
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "Cao Xiu was promoted to General Who Conquers the East and Inspector of Yang Province; when his grief over his mother's death wore him down, Cao Pi sent Xue Qiao to let him go home to bury her, then comforted him in person.",
+            "zht": "曹休升任征東將軍，兼揚州刺史；他因母親去世哀傷過度，曹丕派薛喬讓他回家治喪，事後又親自寬慰他。",
+            "zhs": "曹休升任征东将军，兼扬州刺史；他因母亲去世哀伤过度，曹丕派薛乔让他回家治丧，事后又亲自宽慰他。"
+          },
+          "title": {
+            "en": "General Who Conquers the East, Inspector of Yang Province",
+            "zht": "征東將軍、揚州刺史",
+            "zhs": "征东将军、扬州刺史"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "For Cao Pi's campaign against Sun Quan, Cao Xiu was made Grand General Who Conquers the East with the Yellow Yue, and after defeating Lü Fan he was appointed Governor of Yang Province.",
+            "zht": "曹丕征討孫權時，任命曹休爲征東大將軍，假黃鉞；曹休擊破呂範後，被任命爲揚州牧。",
+            "zhs": "曹丕征讨孙权时，任命曹休为征东大将军，假黄钺；曹休击破吕范后，被任命为扬州牧。"
+          },
+          "title": {
+            "en": "Grand General Who Conquers the East, Governor of Yang Province",
+            "zht": "征東大將軍、揚州牧",
+            "zhs": "征东大将军、扬州牧"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "When Cao Rui ascended the throne, Cao Xiu was advanced to County Marquis of Changping.",
+            "zht": "明帝即位後，曹休進封長平侯。",
+            "zhs": "明帝即位后，曹休进封长平侯。"
+          },
+          "title": {
+            "en": "County Marquis of Changping",
+            "zht": "長平侯",
+            "zhs": "长平侯"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "After defeating Shen De and receiving the surrender of Wu generals, Cao Xiu was promoted to Grand Marshal.",
+            "zht": "曹休擊破審悳，又接受吳將投降後，升任大司馬。",
+            "zhs": "曹休击破审德，又接受吴将投降后，升任大司马。"
+          },
+          "title": {
+            "en": "Grand Marshal",
+            "zht": "大司馬",
+            "zhs": "大司马"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "After the defeat at Shiting, Cao Xiu apologised in a memorial; Cao Rui sent Yang Ji to console him and treated him with still greater honour.",
+            "zht": "石亭戰敗後，曹休上書謝罪；明帝派楊暨前去慰問，對他的禮遇和賞賜更加優厚。",
+            "zhs": "石亭战败后，曹休上书谢罪；明帝派杨暨前去慰问，对他的礼遇和赏赐更加优厚。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹洪（子廉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Hearing that Cao Cao regarded Cao Xiu as the true commander, Cao Hong entrusted him with military affairs and followed his advice to strike Wu Lan.",
+            "zht": "曹洪聽說曹操把曹休視爲實際統帥，便將軍務委託給他，並採納他的建議進擊吳蘭。",
+            "zhs": "曹洪听说曹操把曹休视为实际统帅，便将军务委托给他，并采纳他的建议进击吴兰。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "吳蘭",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Cao Xiu urged an immediate strike on Wu Lan before Shu's forces could gather, and Wu Lan was crushed.",
+            "zht": "曹休主張趁敵軍尚未集結迅速攻擊吳蘭，吳蘭大敗。",
+            "zhs": "曹休主张趁敌军尚未集结迅速攻击吴兰，吴兰大败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "張飛（益德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p2",
+          "text": {
+            "en": "Cao Xiu read Zhang Fei's show of strength at Gushan as a bluff and predicted he would withdraw once Wu Lan was beaten; Zhang Fei duly withdrew.",
+            "zht": "曹休判斷張飛在固山虛張聲勢，預料吳蘭一敗張飛就會自行退走，結果張飛果然撤退。",
+            "zhs": "曹休判断张飞在固山虚张声势，预料吴兰一败张飞就会自行退走，结果张飞果然撤退。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p3",
+          "text": {
+            "en": "Cao Xiu defeated the general Sun Quan had stationed at Liyang and burned the enemy camp at Wuhu.",
+            "zht": "曹休擊敗孫權派駐歷陽的部將，又焚燒了蕪湖的敵營。",
+            "zhs": "曹休击败孙权派驻历阳的部将，又焚烧了芜湖的敌营。"
+          }
+        },
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "Cao Xiu commanded more than twenty armies in Cao Pi's campaign against Sun Quan.",
+            "zht": "在曹丕征討孫權的戰役中，曹休督率二十餘軍。",
+            "zhs": "在曹丕征讨孙权的战役中，曹休督率二十余军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "張遼（文遠）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "In the campaign against Sun Quan, Cao Xiu commanded Zhang Liao and others, together with over twenty armies from the provinces.",
+            "zht": "征討孫權時，曹休督率張遼等人及各州郡二十餘軍。",
+            "zhs": "征讨孙权时，曹休督率张辽等人及各州郡二十余军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "呂範（子衡）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "Cao Xiu attacked Sun Quan's senior general Lü Fan and others at Dongpu and defeated them.",
+            "zht": "曹休在洞浦進攻孫權的大將呂範等人，將他們擊敗。",
+            "zhs": "曹休在洞浦进攻孙权的大将吕范等人，将他们击败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "審悳",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "Cao Xiu defeated the Wu general Shen De, stationed at Wan, and cut off his head.",
+            "zht": "曹休擊破駐守皖城的吳將審悳，將他斬首。",
+            "zhs": "曹休击破驻守皖城的吴将审德，将他斩首。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "韓綜",
+      "to": "曹休（文烈）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "The Wu general Han Zong led his troops to surrender to Cao Xiu.",
+            "zht": "吳將韓綜率衆向曹休投降。",
+            "zhs": "吴将韩综率众向曹休投降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "翟丹",
+      "to": "曹休（文烈）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "The Wu general Zhai Dan led his troops to surrender to Cao Xiu.",
+            "zht": "吳將翟丹率衆向曹休投降。",
+            "zhs": "吴将翟丹率众向曹休投降。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "司馬懿（仲達）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p4",
+          "text": {
+            "en": "In Cao Rui's two-pronged campaign against Wu, Sima Yi went down the Han River while Cao Xiu led the armies towards Xunyang.",
+            "zht": "明帝兵分兩路征吳，司馬懿沿漢水而下，曹休督率諸軍向尋陽進發。",
+            "zhs": "明帝兵分两路征吴，司马懿沿汉水而下，曹休督率诸军向寻阳进发。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹肇（長思）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Xiu's son Cao Zhao, courtesy name Changsi, succeeded him.",
+            "zht": "曹休之子曹肇（字長思）繼承爵位。",
+            "zhs": "曹休之子曹肇（字长思）继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹休（文烈）",
+      "to": "曹纂",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Pi set aside three hundred households from Cao Xiu's fief to enfeoff his son Cao Zuan, who later served as General Who Annihilates the Wu.",
+            "zht": "曹丕分出曹休的封戶三百，封其子曹纂爲列侯；曹纂後任殄吳將軍。",
+            "zhs": "曹丕分出曹休的封户三百，封其子曹纂为列侯；曹纂后任殄吴将军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹興",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "When Cao Zhao died, his son Cao Xing succeeded him.",
+            "zht": "曹肇去世後，其子曹興繼承爵位。",
+            "zhs": "曹肇去世后，其子曹兴继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹攄（顏遠）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Shu, courtesy name Yanyuan, was Cao Zhao's grandson, a learned and talented official of Jin.",
+            "zht": "曹攄字顏遠，是曹肇之孫，博學有才，仕於晉朝。",
+            "zhs": "曹摅字颜远，是曹肇之孙，博学有才，仕于晋朝。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "mixed",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Zhao served as Cavalier Regular Attendant and Colonel of Garrison Cavalry.",
+            "zht": "曹肇任散騎常侍、屯騎校尉。",
+            "zhs": "曹肇任散骑常侍、屯骑校尉。"
+          },
+          "title": {
+            "en": "Cavalier Regular Attendant, Colonel of Garrison Cavalry",
+            "zht": "散騎常侍、屯騎校尉",
+            "zhs": "散骑常侍、屯骑校尉"
+          }
+        },
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "On his sickbed, Cao Rui was about to entrust Cao Zhao and Cao Yu with affairs after his death, but changed his mind and sent Cao Zhao home to his fief.",
+            "zht": "明帝病重時，原打算把後事託付給曹肇和燕王曹宇等人，後來改變主意，下詔讓曹肇以侯爵身份回府。",
+            "zhs": "明帝病重时，原打算把后事托付给曹肇和燕王曹宇等人，后来改变主意，下诏让曹肇以侯爵身份回府。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹肇（長思）",
+      "to": "曹宇（彭祖）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Zhao and Cao Yu, Prince of Yan, were both to be entrusted with affairs after Cao Rui's death, before the emperor changed his mind.",
+            "zht": "明帝原打算把後事託付給曹肇和燕王曹宇等人，後來又改變了主意。",
+            "zhs": "明帝原打算把后事托付给曹肇和燕王曹宇等人，后来又改变了主意。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹攄（顏遠）",
+      "to": "司馬冏（景治）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "When Sima Jiong, Prince of Qi, was regent, Cao Shu served under him as Chief Archivist.",
+            "zht": "齊王司馬冏輔政時，曹攄擔任他的記室督。",
+            "zhs": "齐王司马冏辅政时，曹摅担任他的记室督。"
+          },
+          "title": {
+            "en": "Chief Archivist",
+            "zht": "記室督",
+            "zhs": "记室督"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹攄（顏遠）",
+      "to": "左思（太沖）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9e-p5",
+          "text": {
+            "en": "Cao Shu and Zuo Si of Qi both served Sima Jiong as Chief Archivists.",
+            "zht": "曹攄與齊人左思同爲司馬冏的記室督。",
+            "zhs": "曹摅与齐人左思同为司马冏的记室督。"
+          }
+        }
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "曹休（文烈）",
+      "name": { "en": "Cao Xiu", "zht": "曹休", "zhs": "曹休" },
+      "courtesyName": { "en": "Wenlie", "zht": "文烈", "zhs": "文烈" },
+      "born": { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null },
+      "died": { "era": { "en": "2nd year of Taihe", "zht": "太和二年", "zhs": "太和二年" }, "year": 228 },
+      "stops": [
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Qiao", "zht": "譙", "zhs": "谯" }], "position": null, "passageId": "" },
+        { "era": { "en": "unknown", "zht": "不詳", "zhs": "不详" }, "year": null, "age": null, "location": [{ "en": "Wu", "zht": "吳", "zhs": "吴" }, { "en": "Jing Province", "zht": "荊州", "zhs": "荆州" }], "position": null, "passageId": "" },
+        { "era": { "en": "23rd - 24th year of Jian'an", "zht": "建安二十三年 - 二十四年", "zhs": "建安二十三年 - 二十四年" }, "year": "218 - 219", "age": null, "location": [{ "en": "Xiabian", "zht": "下辨", "zhs": "下辨" }, { "en": "Hanzhong", "zht": "漢中", "zhs": "汉中" }, { "en": "Chang'an", "zht": "長安", "zhs": "长安" }], "position": [{ "en": "Commandant of Cavalry", "zht": "騎都尉", "zhs": "骑都尉" }, { "en": "Commander of the Central Army", "zht": "中領軍", "zhs": "中领军" }], "passageId": "" },
+        { "era": { "en": "1st year of Huangchu", "zht": "黄初元年", "zhs": "黄初元年" }, "year": 220, "age": null, "location": [{ "en": "Luoyang", "zht": "洛陽/雒陽", "zhs": "洛阳/雒阳" }, { "en": "Shaoling", "zht": "召陵", "zhs": "召陵" }, { "en": "Liyang", "zht": "歷陽", "zhs": "历阳" }], "position": [{ "en": "General Commanding the Army", "zht": "領軍將軍", "zhs": "领军将军" }, { "en": "Neighbourhood Marquis", "zht": "亭侯", "zhs": "亭侯" }, { "en": "General Who Garrisons the South", "zht": "鎮南將軍", "zhs": "镇南将军" }, { "en": "Provisional Bearer of the Imperial Tally", "zht": "假節", "zhs": "假节" }, { "en": "General Who Conquers the East", "zht": "征東將軍", "zhs": "征东将军" }, { "en": "Inspector", "zht": "刺史", "zhs": "刺史" }, { "en": "Township Marquis", "zht": "鄉侯", "zhs": "乡侯" }, { "en": "Commander of Provincial Forces", "zht": "都督", "zhs": "都督" }], "passageId": "" },
+        { "era": { "en": "3rd year of Huangchu", "zht": "黄初三年", "zhs": "黄初三年" }, "year": 222, "age": null, "location": [{ "en": "Dongpu", "zht": "洞浦", "zhs": "洞浦" }], "position": [{ "en": "Grand General Who Conquers the East", "zht": "征東大將軍", "zhs": "征东大将军" }, { "en": "Yellow Yue", "zht": "黃鉞", "zhs": "黄钺" }, { "en": "Governor", "zht": "牧", "zhs": "牧" }, { "en": "Commander of Provincial Forces", "zht": "都督", "zhs": "都督" }], "passageId": "" },
+        { "era": { "en": "1st year of Taihe", "zht": "太和元年", "zhs": "太和元年" }, "year": 227, "age": null, "location": [{ "en": "Wan", "zht": "皖", "zhs": "皖" }], "position": [{ "en": "County Marquis", "zht": "侯", "zhs": "侯" }, { "en": "Grand Marshal", "zht": "大司馬", "zhs": "大司马" }, { "en": "Commander of Provincial Forces", "zht": "都督", "zhs": "都督" }], "passageId": "" },
+        { "era": { "en": "2nd year of Taihe", "zht": "太和二年", "zhs": "太和二年" }, "year": 228, "age": null, "location": [{ "en": "Xunyang", "zht": "尋陽", "zhs": "寻阳" }, { "en": "Shiting", "zht": "石亭", "zhs": "石亭" }], "position": null, "passageId": "" }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "id": "ws9e-p1",
+      "orig": {
+        "zht": "曹休字文烈，太祖族子也。天下亂，宗族各散去鄉里。休年十餘歲，喪父，獨與一客擔喪假葬，攜將老母，渡江至[[吳|/zh-hant/maps/map-overall?lat=31.30897934&lng=120.64540456&name=Wu]]。以太祖舉義兵，易姓名轉至[[荊州|/zh-hant/maps/map-overall?admin=2]]，閒行北歸，見太祖。太祖謂左右曰：「此吾家千[[里|/zh-hant/translations/officials#glossary-li]]駒也。」使與文帝同止，見待如子。常從征伐，使領虎豹騎宿衞。",
+        "zhs": "曹休字文烈，太祖族子也。天下乱，宗族各散去乡里。休年十余岁，丧父，独与一客担丧假葬，携将老母，渡江至[[吴|/zh-hans/maps/map-overall?lat=31.30897934&lng=120.64540456&name=Wu]]。以太祖举义兵，易姓名转至[[荆州|/zh-hans/maps/map-overall?admin=2]]，闲行北归，见太祖。太祖谓左右曰：「此吾家千[[里|/zh-hans/translations/officials#glossary-li]]驹也。」使与文帝同止，见待如子。常从征伐，使领虎豹骑宿衞。"
+      },
+      "vern": {
+        "zht": "曹休，字文烈，是太祖同族兄弟之子。天下大亂，宗族中人各自離散，離開鄉里。曹休十多歲時父親就去世了，他獨自與一個門客抬着靈柩將父親暫且安葬，又帶着母親渡過長江到了[[吳|/zh-hant/maps/map-overall?lat=31.30897934&lng=120.64540456&name=Wu]]地。因爲太祖興起義兵，他改名換姓輾轉到了[[荊州|/zh-hant/maps/map-overall?admin=2]]，又從小路暗中北上，見到了太祖。太祖對左右的人說：“這是我們家的千[[里|/zh-hant/translations/officials#glossary-li]]駒啊！”讓他與文帝同住，對待他如同對待自己的兒子。曹休經常隨從征伐，太祖讓他統領虎豹騎，負責宿衛。",
+        "zhs": "曹休，字文烈，是太祖同族兄弟之子。天下大乱，宗族中人各自离散，离开乡里。曹休十多岁时父亲就去世了，他独自与一个门客抬着灵柩将父亲暂且安葬，又带着母亲渡过长江到了[[吴|/zh-hans/maps/map-overall?lat=31.30897934&lng=120.64540456&name=Wu]]地。因为太祖兴起义兵，他改名换姓辗转到了[[荆州|/zh-hans/maps/map-overall?admin=2]]，又从小路暗中北上，见到了太祖。太祖对左右的人说：“这是我们家的千[[里|/zh-hans/translations/officials#glossary-li]]驹啊！”让他与文帝同住，对待他如同对待自己的儿子。曹休经常随从征伐，太祖让他统领虎豹骑，负责宿卫。"
+      },
+      "en": "Cao Xiu, courtesy name Wenlie, was the son of one of the clan brothers of Cao Cao (posthumously honoured as Taizu, the Grand Progenitor). When disorder swept the realm, the clan scattered, leaving their native homes. Cao Xiu was in his teens when his father died. With only a single retainer to help him, he carried the coffin and buried his father temporarily. He then took his aged mother across the Yangtze to [[Wu|/maps/map-overall?lat=31.30897934&lng=120.64540456&name=Wu]]. When Cao Cao raised troops in the cause of righteousness, Cao Xiu changed his name and made his way to [[Jing Province|/maps/map-overall?admin=2]], then travelled secretly north by secluded routes to join him. Cao Cao told his attendants, \"Here is our family's thousand-[[Li|/translations/officials#glossary-li]] horse.\" He had Cao Xiu live with Cao Pi (posthumously honoured as Emperor Wen, the Civil Emperor) and treated him as his own son. Cao Xiu regularly accompanied Cao Cao on campaigns, and Cao Cao put him in command of the Tiger and Leopard Cavalry to serve as his personal guard.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：休祖父嘗為[[吳|/zh-hant/maps/map-overall?admin=69]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。休於[[太守|/zh-hant/translations/officials/regional#commanderies-039]]舍見壁上祖父畫像，下榻拜涕泣，同坐者皆嘉歎焉。",
+          "zhs": "《魏书》曰：休祖父尝为[[吴|/zh-hans/maps/map-overall?admin=69]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。休于[[太守|/zh-hans/translations/officials/regional#commanderies-039]]舍见壁上祖父画像，下榻拜涕泣，同坐者皆嘉叹焉。",
+          "vern": {
+            "zht": "《魏書》記載：曹休的祖父曾任[[吳|/zh-hant/maps/map-overall?admin=69]]郡[[太守|/zh-hant/translations/officials/regional#commanderies-039]]。曹休在[[太守|/zh-hant/translations/officials/regional#commanderies-039]]官舍的牆壁上看見祖父的畫像，離座下拜，流淚哭泣，在座的人都稱讚感嘆。",
+            "zhs": "《魏书》记载：曹休的祖父曾任[[吴|/zh-hans/maps/map-overall?admin=69]]郡[[太守|/zh-hans/translations/officials/regional#commanderies-039]]。曹休在[[太守|/zh-hans/translations/officials/regional#commanderies-039]]官舍的墙壁上看见祖父的画像，离座下拜，流泪哭泣，在座的人都称赞感叹。"
+          },
+          "en": "The Book of Wei states: Cao Xiu's grandfather had once served as [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Wu|/maps/map-overall?admin=69]] Commandery. At the [[Grand Administrator|/translations/officials/regional#commanderies-039]]'s residence, Cao Xiu saw his grandfather's portrait on the wall. He rose from his seat, bowed down and wept. All those seated with him praised him with admiration."
+        }
+      ]
+    },
+    {
+      "id": "ws9e-p2",
+      "orig": {
+        "zht": "劉備遣將吳蘭屯下辯，太祖遣曹洪征之，以休為[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]，參洪軍事。太祖謂休曰：「汝雖參軍，其實帥也。」洪聞此令，亦委事於休。備遣張飛屯固山，欲斷軍後。衆議狐疑，休曰：「賊實斷道者，當伏兵潛行。今乃先張聲勢，此其不能也。宜及其未集，促擊蘭，蘭破則飛自走矣。」洪從之，進兵擊蘭，大破之，飛果走。",
+        "zhs": "刘备遣将吴兰屯下辩，太祖遣曹洪征之，以休为[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]，参洪军事。太祖谓休曰：「汝虽参军，其实帅也。」洪闻此令，亦委事于休。备遣张飞屯固山，欲断军后。众议狐疑，休曰：「贼实断道者，当伏兵潜行。今乃先张声势，此其不能也。宜及其未集，促击兰，兰破则飞自走矣。」洪从之，进兵击兰，大破之，飞果走。"
+      },
+      "vern": {
+        "zht": "劉備派將領吳蘭駐紮在下辯，太祖派曹洪征討他，以曹休爲[[騎都尉|/zh-hant/translations/officials/ministers#-nine-ministers-i-178]]，參與曹洪的軍事。太祖對曹休說：“你雖然只是參軍，實際上你纔是統帥。”曹洪聽到這道命令，也把軍務委託給曹休。劉備派張飛駐紮在固山，想截斷曹軍後路。衆人議論紛紛，遲疑不定。曹休說：“敵軍如果真的想截斷道路，就應當隱蔽軍隊悄悄行進。如今他們卻先大張聲勢，這說明他們做不到。應當趁他們尚未集結，急速攻打吳蘭。吳蘭一破，張飛自然退走。”曹洪聽從了他的意見，進兵攻打吳蘭，大破吳蘭軍，張飛果然退走。",
+        "zhs": "刘备派将领吴兰驻扎在下辩，太祖派曹洪征讨他，以曹休为[[骑都尉|/zh-hans/translations/officials/ministers#-nine-ministers-i-178]]，参与曹洪的军事。太祖对曹休说：“你虽然只是参军，实际上你才是统帅。”曹洪听到这道命令，也把军务委托给曹休。刘备派张飞驻扎在固山，想截断曹军后路。众人议论纷纷，迟疑不定。曹休说：“敌军如果真的想截断道路，就应当隐蔽军队悄悄行进。如今他们却先大张声势，这说明他们做不到。应当趁他们尚未集结，急速攻打吴兰。吴兰一破，张飞自然退走。”曹洪听从了他的意见，进兵攻打吴兰，大破吴兰军，张飞果然退走。"
+      },
+      "en": "When Liu Bei sent his general Wu Lan to garrison Xiabian, Cao Cao sent Cao Hong against him and appointed Cao Xiu [[Commandant of Cavalry|/translations/officials/ministers#-nine-ministers-i-178]] to assist Cao Hong in military affairs. Cao Cao told Xiu, \"Though you serve on the staff, you are in fact the commander.\" Upon hearing this order, Cao Hong also entrusted Cao Xiu with military affairs. Thereafter, Liu Bei sent Zhang Fei to garrison Gushan, intending to cut off the army's line of retreat. While the others debated in uncertainty, Cao Xiu said, \"If the enemy truly intended to cut off the road, they would conceal their troops and advance in secret. Instead, they first make a great show of strength. This shows that they cannot do it. We should strike Wu Lan swiftly before their forces assemble. Once Wu Lan is defeated, Zhang Fei will surely withdraw by himself.\" Cao Hong followed his advice, advanced against Wu Lan and crushed him. Zhang Fei duly withdrew."
+    },
+    {
+      "id": "ws9e-p3",
+      "orig": {
+        "zht": "太祖拔[[漢中|/zh-hant/maps/map-overall?admin=110]]，諸軍還[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，拜休[[中領軍|/zh-hant/translations/officials/military#central-army-001]]。文帝即王位，為[[領軍將軍|/zh-hant/translations/officials/military#central-army-001]]，錄前後功，封東陽[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。夏侯惇薨，以休為[[鎮南將軍|/zh-hant/translations/officials/military#conquering--garrisoning-069]]，[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]][[都督諸軍事|/zh-hant/translations/officials/military#various-commanders-027]]，車駕臨送，上乃下輿執手而別。孫權遣將屯[[歷陽|/zh-hant/maps/map-overall?lat=31.7347138&lng=118.35788473&name=Liyang]]，休到，擊破之，又別遣兵渡江，燒賊[[蕪湖|/zh-hant/maps/map-overall?lat=31.34534905&lng=118.37630622&name=Wuhu]]營數千家。遷[[征東將軍|/zh-hant/translations/officials/military#conquering--garrisoning-064]]，領[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，進封安陽[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。",
+        "zhs": "太祖拔[[汉中|/zh-hans/maps/map-overall?admin=110]]，诸军还[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，拜休[[中领军|/zh-hans/translations/officials/military#central-army-001]]。文帝即王位，为[[领军将军|/zh-hans/translations/officials/military#central-army-001]]，录前后功，封东阳[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。夏侯惇薨，以休为[[镇南将军|/zh-hans/translations/officials/military#conquering--garrisoning-069]]，[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]][[都督诸军事|/zh-hans/translations/officials/military#various-commanders-027]]，车驾临送，上乃下舆执手而别。孙权遣将屯[[历阳|/zh-hans/maps/map-overall?lat=31.7347138&lng=118.35788473&name=Liyang]]，休到，击破之，又别遣兵渡江，烧贼[[芜湖|/zh-hans/maps/map-overall?lat=31.34534905&lng=118.37630622&name=Wuhu]]营数千家。迁[[征东将军|/zh-hans/translations/officials/military#conquering--garrisoning-064]]，领[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，进封安阳[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。"
+      },
+      "vern": {
+        "zht": "太祖攻取[[漢中|/zh-hant/maps/map-overall?admin=110]]後，各路軍隊返回[[長安|/zh-hant/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，曹休被任命爲[[中領軍|/zh-hant/translations/officials/military#central-army-001]]。文帝即王位後，任命曹休爲[[領軍將軍|/zh-hant/translations/officials/military#central-army-001]]，並以他前後的功勞，封他爲東陽[[亭侯|/zh-hant/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。夏侯惇去世後，文帝任命曹休爲[[鎮南將軍|/zh-hant/translations/officials/military#conquering--garrisoning-069]]，授予他[[假節|/zh-hant/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，[[都督諸軍事|/zh-hant/translations/officials/military#various-commanders-027]]；又乘車親臨送行，下車握着他的手與他告別。孫權派將領屯駐[[歷陽|/zh-hant/maps/map-overall?lat=31.7347138&lng=118.35788473&name=Liyang]]，曹休趕到後，擊破了敵軍，又另派軍隊渡江，燒燬敵人在[[蕪湖|/zh-hant/maps/map-overall?lat=31.34534905&lng=118.37630622&name=Wuhu]]的營寨數千家。後來升任[[征東將軍|/zh-hant/translations/officials/military#conquering--garrisoning-064]]，兼任[[揚州|/zh-hant/maps/map-overall?admin=9]][[刺史|/zh-hant/translations/officials/regional#provinces-014]]，進封爲安陽[[鄉侯|/zh-hant/translations/officials#glossary-capital-township-township-marquis]]。",
+        "zhs": "太祖攻取[[汉中|/zh-hans/maps/map-overall?admin=110]]后，各路军队返回[[长安|/zh-hans/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]]，曹休被任命为[[中领军|/zh-hans/translations/officials/military#central-army-001]]。文帝即王位后，任命曹休为[[领军将军|/zh-hans/translations/officials/military#central-army-001]]，并以他前后的功劳，封他为东阳[[亭侯|/zh-hans/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]]。夏侯惇去世后，文帝任命曹休为[[镇南将军|/zh-hans/translations/officials/military#conquering--garrisoning-069]]，授予他[[假节|/zh-hans/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]]，[[都督诸军事|/zh-hans/translations/officials/military#various-commanders-027]]；又乘车亲临送行，下车握着他的手与他告别。孙权派将领屯驻[[历阳|/zh-hans/maps/map-overall?lat=31.7347138&lng=118.35788473&name=Liyang]]，曹休赶到后，击破了敌军，又另派军队渡江，烧毁敌人在[[芜湖|/zh-hans/maps/map-overall?lat=31.34534905&lng=118.37630622&name=Wuhu]]的营寨数千家。后来升任[[征东将军|/zh-hans/translations/officials/military#conquering--garrisoning-064]]，兼任[[扬州|/zh-hans/maps/map-overall?admin=9]][[刺史|/zh-hans/translations/officials/regional#provinces-014]]，进封为安阳[[乡侯|/zh-hans/translations/officials#glossary-capital-township-township-marquis]]。"
+      },
+      "en": "After Cao Cao captured [[Hanzhong|/maps/map-overall?admin=110]], the armies returned to [[Chang'an|/maps/map-overall?lat=34.31264639&lng=108.87167209&name=Chang%27an]], and Cao Xiu was appointed [[Commander of the Central Army|/translations/officials/military#central-army-001]]. When Cao Pi succeeded as king, he appointed Cao Xiu [[General Commanding the Army|/translations/officials/military#central-army-001]] and, in recognition of his past and recent services, enfeoffed him as [[Neighbourhood Marquis|/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis]] of Dongyang. After Xiahou Dun died, Cao Xiu was appointed [[General Who Garrisons the South|/translations/officials/military#conquering--garrisoning-069]], [[Provisional Bearer of the Imperial Tally|/translations/officials#glossary-provisional-bearer-of-the-imperial-tally]] and [[Commander of Provincial Forces|/translations/officials/military#various-commanders-027]]. The emperor came in person to see him off, stepping down from his carriage to clasp Cao Xiu's hand in farewell. Later, Sun Quan sent a general to garrison at [[Liyang|/maps/map-overall?lat=31.7347138&lng=118.35788473&name=Liyang]]. Upon arrival, Cao Xiu defeated him, then sent a separate detachment across the river and burned several thousand dwellings in the enemy camp at [[Wuhu|/maps/map-overall?lat=31.34534905&lng=118.37630622&name=Wuhu]]. He was promoted to [[General Who Conquers the East|/translations/officials/military#conquering--garrisoning-064]], concurrently serving as [[Inspector|/translations/officials/regional#provinces-014]] of [[Yang Province|/maps/map-overall?admin=9]], and advanced to [[Township Marquis|/translations/officials#glossary-capital-township-township-marquis]] of Anyang.",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "魏書 (王沈)",
+            "zhs": "魏書 (王沈)",
+            "en": "Book of Wei (Wang Chen)"
+          },
+          "zht": "《魏書》曰：休喪母至孝。帝使[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]奪喪服，使飲酒食肉，休受詔而形體益憔悴。乞歸[[譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]葬母，帝復遣[[越騎校尉|/zh-hant/translations/officials/military#central-army-013]]薛喬奉詔節其憂哀，使歸家治喪，一宿便葬，葬訖詣行在所。帝見，親自寬慰之。其見愛重如此。",
+          "zhs": "《魏书》曰：休丧母至孝。帝使[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]夺丧服，使饮酒食肉，休受诏而形体益憔悴。乞归[[谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]葬母，帝复遣[[越骑校尉|/zh-hans/translations/officials/military#central-army-013]]薛乔奉诏节其忧哀，使归家治丧，一宿便葬，葬讫诣行在所。帝见，亲自宽慰之。其见爱重如此。",
+          "vern": {
+            "zht": "《魏書》記載：曹休母親去世後，極爲盡孝。文帝派[[侍中|/zh-hant/translations/officials/departments#chancellery-001]]奪去他的喪服，讓他飲酒喫肉；曹休接受了詔令，身體卻更加消瘦憔悴。他請求回[[譙|/zh-hant/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]縣安葬母親，文帝又派[[越騎校尉|/zh-hant/translations/officials/military#central-army-013]]薛喬帶着詔書勸慰他節哀自抑，讓他回家辦理喪事。曹休只過了一夜就下葬，安葬完畢後，就到皇帝所在的地方拜見。文帝見到他，親自寬慰他。皇帝對他的寵愛和器重到了這種程度。",
+            "zhs": "《魏书》记载：曹休母亲去世后，极为尽孝。文帝派[[侍中|/zh-hans/translations/officials/departments#chancellery-001]]夺去他的丧服，让他饮酒吃肉；曹休接受了诏令，身体却更加消瘦憔悴。他请求回[[谯|/zh-hans/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]]县安葬母亲，文帝又派[[越骑校尉|/zh-hans/translations/officials/military#central-army-013]]薛乔带着诏书劝慰他节哀自抑，让他回家办理丧事。曹休只过了一夜就下葬，安葬完毕后，就到皇帝所在的地方拜见。文帝见到他，亲自宽慰他。皇帝对他的宠爱和器重到了这种程度。"
+          },
+          "en": "The Book of Wei states: When Cao Xiu's mother died, he mourned her with the utmost filial devotion. The emperor sent a [[Palace Attendant|/translations/officials/departments#chancellery-001]] to remove his mourning robes and make him drink wine and eat meat. Cao Xiu obeyed the edict, yet grew still more gaunt and haggard. He requested leave to return to [[Qiao|/maps/map-overall?lat=33.86080856&lng=115.77227911&name=Qiao]] to bury his mother. The emperor then sent Xue Qiao, [[Colonel of the Elite Cavalry|/translations/officials/military#central-army-013]], bearing an edict urging him to moderate his grief, and permitted him to return home to conduct the funeral. After only one night, Cao Xiu buried her, then went to where the emperor was. The emperor received him and comforted him in person. Such was the affection and esteem in which he was held."
+        }
+      ]
+    },
+    {
+      "id": "ws9e-p4",
+      "orig": {
+        "zht": "帝征孫權，以休為[[征東大將軍|/zh-hant/translations/officials/military#conquering--garrisoning-064]]，[[假黃鉞|/zh-hant/translations/officials#glossary-yellow-yue]]，督張遼等及諸州郡二十餘軍，擊權大將呂範等於[[洞浦|/zh-hant/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]，破之。拜[[揚州|/zh-hant/maps/map-overall?admin=9]][[牧|/zh-hant/translations/officials/regional#provinces-014]]。明帝即位，進封[[長平|/zh-hant/maps/map-overall?lat=33.84322217&lng=114.59923499&name=Changping]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]。吳將審悳屯[[皖|/zh-hant/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]，休擊破之，斬悳首，吳將韓綜、翟丹等前後率衆詣休降。增邑四百，并前二千五百戶，遷[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]，[[都督|/zh-hant/translations/officials/military#various-commanders-027]][[揚州|/zh-hant/maps/map-overall?admin=9]]如故。太和二年，帝為二道征吳，遣司馬宣王從[[漢水|/zh-hant/maps/map-overall?water=52]]下，督休諸軍向[[尋陽|/zh-hant/maps/map-overall?lat=29.96578318&lng=115.69926888&name=Xunyang]]。賊將偽降，休深入，戰不利，退還宿[[石亭|/zh-hant/maps/map-overall?lat=30.77251326&lng=116.76840209&name=Shiting]]。軍夜驚，士卒亂，棄甲兵輜重甚多。休上書謝罪，帝遣[[屯騎校尉|/zh-hant/translations/officials/military#central-army-011]]楊曁慰諭，禮賜益隆。",
+        "zhs": "帝征孙权，以休为[[征东大将军|/zh-hans/translations/officials/military#conquering--garrisoning-064]]，[[假黄钺|/zh-hans/translations/officials#glossary-yellow-yue]]，督张辽等及诸州郡二十余军，击权大将吕范等于[[洞浦|/zh-hans/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]，破之。拜[[扬州|/zh-hans/maps/map-overall?admin=9]][[牧|/zh-hans/translations/officials/regional#provinces-014]]。明帝即位，进封[[长平|/zh-hans/maps/map-overall?lat=33.84322217&lng=114.59923499&name=Changping]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]。吴将审悳屯[[皖|/zh-hans/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]，休击破之，斩悳首，吴将韩综、翟丹等前后率众诣休降。增邑四百，并前二千五百户，迁[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]，[[都督|/zh-hans/translations/officials/military#various-commanders-027]][[扬州|/zh-hans/maps/map-overall?admin=9]]如故。太和二年，帝为二道征吴，遣司马宣王从[[汉水|/zh-hans/maps/map-overall?water=52]]下，督休诸军向[[寻阳|/zh-hans/maps/map-overall?lat=29.96578318&lng=115.69926888&name=Xunyang]]。贼将伪降，休深入，战不利，退还宿[[石亭|/zh-hans/maps/map-overall?lat=30.77251326&lng=116.76840209&name=Shiting]]。军夜惊，士卒乱，弃甲兵辎重甚多。休上书谢罪，帝遣[[屯骑校尉|/zh-hans/translations/officials/military#central-army-011]]杨曁慰谕，礼赐益隆。"
+      },
+      "vern": {
+        "zht": "文帝征討孫權時，以曹休爲[[征東大將軍|/zh-hant/translations/officials/military#conquering--garrisoning-064]]，[[假黃鉞|/zh-hant/translations/officials#glossary-yellow-yue]]，統領張遼等人以及各州郡的二十多支軍隊，在[[洞浦|/zh-hant/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]攻擊孫權的大將呂範等人。曹休擊敗了他們，隨後被任命爲[[揚州|/zh-hant/maps/map-overall?admin=9]][[牧|/zh-hant/translations/officials/regional#provinces-014]]。明帝即位後，曹休進封[[長平|/zh-hant/maps/map-overall?lat=33.84322217&lng=114.59923499&name=Changping]][[侯|/zh-hant/translations/officials#glossary-county-marquis]]。吳將審悳屯駐[[皖|/zh-hant/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]城，曹休擊潰了他，斬下審悳首級，吳將韓綜、翟丹等人先後率衆到曹休處投降。曹休的封邑增加了四百戶，合併以前的共二千五百戶，並升任[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]]，照舊[[都督|/zh-hant/translations/officials/military#various-commanders-027]][[揚州|/zh-hant/maps/map-overall?admin=9]]軍事。太和二年，明帝分兩路征討吳國，派司馬宣王沿[[漢水|/zh-hant/maps/map-overall?water=52]]順流而下，又督令曹休所部各軍向[[尋陽|/zh-hant/maps/map-overall?lat=29.96578318&lng=115.69926888&name=Xunyang]]進發。賊將假意投降，曹休深入，交戰不利，退回宿營於[[石亭|/zh-hant/maps/map-overall?lat=30.77251326&lng=116.76840209&name=Shiting]]。夜間軍中驚亂，士兵潰亂，丟棄了大量鎧甲、兵器和輜重。曹休上書謝罪，明帝派[[屯騎校尉|/zh-hant/translations/officials/military#central-army-011]]楊曁去安慰開導，禮遇和賞賜更加優厚。",
+        "zhs": "文帝征讨孙权时，以曹休为[[征东大将军|/zh-hans/translations/officials/military#conquering--garrisoning-064]]，[[假黄钺|/zh-hans/translations/officials#glossary-yellow-yue]]，统领张辽等人以及各州郡的二十多支军队，在[[洞浦|/zh-hans/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]]攻击孙权的大将吕范等人。曹休击败了他们，随后被任命为[[扬州|/zh-hans/maps/map-overall?admin=9]][[牧|/zh-hans/translations/officials/regional#provinces-014]]。明帝即位后，曹休进封[[长平|/zh-hans/maps/map-overall?lat=33.84322217&lng=114.59923499&name=Changping]][[侯|/zh-hans/translations/officials#glossary-county-marquis]]。吴将审悳屯驻[[皖|/zh-hans/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]城，曹休击溃了他，斩下审悳首级，吴将韩综、翟丹等人先后率众到曹休处投降。曹休的封邑增加了四百户，合并以前的共二千五百户，并升任[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]]，照旧[[都督|/zh-hans/translations/officials/military#various-commanders-027]][[扬州|/zh-hans/maps/map-overall?admin=9]]军事。太和二年，明帝分两路征讨吴国，派司马宣王沿[[汉水|/zh-hans/maps/map-overall?water=52]]顺流而下，又督令曹休所部各军向[[寻阳|/zh-hans/maps/map-overall?lat=29.96578318&lng=115.69926888&name=Xunyang]]进发。贼将假意投降，曹休深入，交战不利，退回宿营于[[石亭|/zh-hans/maps/map-overall?lat=30.77251326&lng=116.76840209&name=Shiting]]。夜间军中惊乱，士兵溃乱，丢弃了大量铠甲、兵器和辎重。曹休上书谢罪，明帝派[[屯骑校尉|/zh-hans/translations/officials/military#central-army-011]]杨曁去安慰开导，礼遇和赏赐更加优厚。"
+      },
+      "en": "When the emperor campaigned against Sun Quan, he appointed Cao Xiu [[Grand General Who Conquers the East|/translations/officials/military#conquering--garrisoning-064]] with provisional [[Yellow Yue|/translations/officials#glossary-yellow-yue]], and placed him in command of Zhang Liao and others, together with more than twenty armies from the provinces and commanderies. Cao Xiu attacked Sun Quan's senior general Lü Fan and others at [[Dongpu|/maps/map-overall?lat=31.64351707&lng=118.35843748&name=Dongpu]] and defeated them. He was then appointed [[Governor|/translations/officials/regional#provinces-014]] of [[Yang Province|/maps/map-overall?admin=9]]. When Cao Rui (posthumously honoured as Emperor Ming, the Radiant Emperor) ascended the throne, Cao Xiu was advanced to [[County Marquis|/translations/officials#glossary-county-marquis]] of [[Changping|/maps/map-overall?lat=33.84322217&lng=114.59923499&name=Changping]]. The Wu general Shen De was stationed at [[Wan|/maps/map-overall?lat=30.62607288&lng=116.60310353&name=Wan]]. Cao Xiu defeated him and cut off his head. The Wu generals Han Zong, Zhai Dan and others subsequently led their troops to surrender to Cao Xiu in succession. Cao Xiu's fief was enlarged by four hundred households, bringing the total to two thousand five hundred, and he was promoted to [[Grand Marshal|/translations/officials/ministers#superior-excellency-056]] and remained [[Commander of Provincial Forces|/translations/officials/military#various-commanders-027]] in [[Yang Province|/maps/map-overall?admin=9]]. In the second year of Taihe, the emperor launched a two-pronged campaign against Wu, sending Sima Yi (posthumously honoured as King Xuan, the Renowned King) downstream along the [[Han River|/maps/map-overall?water=52]] and ordering the armies under Cao Xiu to advance towards [[Xunyang|/maps/map-overall?lat=29.96578318&lng=115.69926888&name=Xunyang]]. An enemy general feigned surrender, and Cao Xiu advanced deep into enemy territory. The battle went against him, and he withdrew to camp at [[Shiting|/maps/map-overall?lat=30.77251326&lng=116.76840209&name=Shiting]]. Thereafter, the army was thrown into panic one night, and the troops fell into disorder. They abandoned great quantities of armour, weapons and baggage. Cao Xiu submitted a memorial apologising for his failure. The emperor sent Yang Ji, [[Colonel of Garrison Cavalry|/translations/officials/military#central-army-011]], to console and reassure him, and treated him with still greater honours and gifts."
+    },
+    {
+      "id": "ws9e-p5",
+      "orig": {
+        "zht": "休因此癰發背薨，謚曰壯侯。子肇嗣。肇有當世才度，為[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]、[[屯騎校尉|/zh-hant/translations/officials/military#central-army-011]]。明帝寢疾，方與[[燕|/zh-hant/maps/map-overall?admin=130]]王宇等屬以後事。帝意尋變，詔肇以侯歸第。正始中薨。追贈[[衞將軍|/zh-hant/translations/officials/military#various-grand-generals-038]]。子興嗣。初，文帝分休戶三百封肇弟纂為[[列侯|/zh-hant/translations/officials#glossary-marquis]]，後為[[殄吳將軍|/zh-hant/translations/officials/military#four-direction--misc-155]]，薨，追贈[[前將軍|/zh-hant/translations/officials/military#four-direction--misc-114]]。",
+        "zhs": "休因此痈发背薨，谥曰壮侯。子肇嗣。肇有当世才度，为[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]、[[屯骑校尉|/zh-hans/translations/officials/military#central-army-011]]。明帝寝疾，方与[[燕|/zh-hans/maps/map-overall?admin=130]]王宇等属以后事。帝意寻变，诏肇以侯归第。正始中薨。追赠[[衞将军|/zh-hans/translations/officials/military#various-grand-generals-038]]。子兴嗣。初，文帝分休户三百封肇弟纂为[[列侯|/zh-hans/translations/officials#glossary-marquis]]，后为[[殄吴将军|/zh-hans/translations/officials/military#four-direction--misc-155]]，薨，追赠[[前将军|/zh-hans/translations/officials/military#four-direction--misc-114]]。"
+      },
+      "vern": {
+        "zht": "此戰後，曹休背上長了癰瘡，後來病發去世，被諡爲壯侯。他的兒子曹肇繼承爵位。曹肇有當世的才能和氣度，擔任[[散騎常侍|/zh-hant/translations/officials/departments#chancellery-013]]、[[屯騎校尉|/zh-hant/translations/officials/military#central-army-011]]。明帝臥病在牀，正要向[[燕|/zh-hant/maps/map-overall?admin=130]]王曹宇等人託付後事。之後明帝卻又改變主意，下詔讓曹肇以侯爵身份回府。曹肇在正始年間去世，被追贈爲[[衛將軍|/zh-hant/translations/officials/military#various-grand-generals-038]]。他的兒子曹興繼承爵位。當初，文帝從曹休的封邑中分出三百戶，封曹肇的弟弟曹纂爲[[列侯|/zh-hant/translations/officials#glossary-marquis]]；曹纂後來擔任[[殄吳將軍|/zh-hant/translations/officials/military#four-direction--misc-155]]，去世後被追贈爲[[前將軍|/zh-hant/translations/officials/military#four-direction--misc-114]]。",
+        "zhs": "此战后，曹休背上长了痈疮，后来病发去世，被谥为壮侯。他的儿子曹肇继承爵位。曹肇有当世的才能和气度，担任[[散骑常侍|/zh-hans/translations/officials/departments#chancellery-013]]、[[屯骑校尉|/zh-hans/translations/officials/military#central-army-011]]。明帝卧病在床，正要向[[燕|/zh-hans/maps/map-overall?admin=130]]王曹宇等人托付后事。之后明帝却又改变主意，下诏让曹肇以侯爵身份回府。曹肇在正始年间去世，被追赠为[[卫将军|/zh-hans/translations/officials/military#various-grand-generals-038]]。他的儿子曹兴继承爵位。当初，文帝从曹休的封邑中分出三百户，封曹肇的弟弟曹纂为[[列侯|/zh-hans/translations/officials#glossary-marquis]]；曹纂后来担任[[殄吴将军|/zh-hans/translations/officials/military#four-direction--misc-155]]，去世后被追赠为[[前将军|/zh-hans/translations/officials/military#four-direction--misc-114]]。"
+      },
+      "en": "Following this, Cao Xiu developed an abscess on his back and died. He was given the posthumous title Marquis Zhuang, the Valiant Marquis. His son Cao Zhao succeeded him. Cao Zhao was distinguished in his day for his talent and bearing, and served as [[Cavalier Regular Attendant|/translations/officials/departments#chancellery-013]] and [[Colonel of Garrison Cavalry|/translations/officials/military#central-army-011]]. When Cao Rui lay ill, he was about to entrust Cao Zhao, Yu, Prince of [[Yan|/maps/map-overall?admin=130]], and others with affairs after his death. The emperor soon changed his mind, however, and ordered Cao Zhao to return to his fiefdom as a marquis. Cao Zhao died during the Zhengshi era and was posthumously appointed [[General of the Guards|/translations/officials/military#various-grand-generals-038]]. His son Cao Xing succeeded him. Earlier, Cao Pi had set aside three hundred households from Cao Xiu's fief to enfeoff Cao Zhao's younger brother Cao Zuan as a [[Marquis|/translations/officials#glossary-marquis]]. Cao Zuan later served as [[General Who Annihilates the Wu|/translations/officials/military#four-direction--misc-155]]. After his death, he was posthumously appointed [[General of the Front|/translations/officials/military#four-direction--misc-114]].",
+      "annotations": [
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "世語",
+            "zhs": "世语",
+            "en": "Shiyu / Accounts of this Generation"
+          },
+          "zht": "《世語》曰：肇字長思。",
+          "zhs": "《世语》曰：肇字长思。",
+          "vern": {
+            "zht": "《世語》記載：曹肇，字長思。",
+            "zhs": "《世语》记载：曹肇，字长思。"
+          },
+          "en": "The Shiyu states: Cao Zhao's courtesy name was Changsi."
+        },
+        {
+          "annotator": {
+            "zht": "裴松之",
+            "zhs": "裴松之",
+            "en": "Pei Songzhi"
+          },
+          "source": {
+            "zht": "文士傳",
+            "zhs": "文士传",
+            "en": "Biographies of Scholars"
+          },
+          "zht": "張隱《文士傳》曰：肇孫攄，字顏遠，少厲志操，博學有才藻。仕晉，辟公府，歷洛陽令，有能名。[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]][[齊|/zh-hant/maps/map-overall?admin=43]]王冏輔政，攄與[[齊|/zh-hant/maps/map-overall?admin=43]]人左思俱為[[記室督|/zh-hant/translations/officials/military#various-grand-generals-055]]。從中郎出為[[襄陽|/zh-hant/maps/map-overall?admin=89]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]、[[征南|/zh-hant/translations/officials/military#conquering--garrisoning-065]][[司馬|/zh-hant/translations/officials/military#conquering--garrisoning-074]]。值天下亂，攄討賊向吳，戰敗死。",
+          "zhs": "张隐《文士传》曰：肇孙摅，字颜远，少厉志操，博学有才藻。仕晋，辟公府，历洛阳令，有能名。[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]][[齐|/zh-hans/maps/map-overall?admin=43]]王冏辅政，摅与[[齐|/zh-hans/maps/map-overall?admin=43]]人左思俱为[[记室督|/zh-hans/translations/officials/military#various-grand-generals-055]]。从中郎出为[[襄阳|/zh-hans/maps/map-overall?admin=89]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]、[[征南|/zh-hans/translations/officials/military#conquering--garrisoning-065]][[司马|/zh-hans/translations/officials/military#conquering--garrisoning-074]]。值天下乱，摅讨贼向吴，战败死。",
+          "vern": {
+            "zht": "張隱《文士傳》記載：曹肇的孫子曹攄，字顏遠，年少時砥礪志向節操，博學而有文采。在晉朝做官，被公府徵召，曾任洛陽令，有能幹的名聲。[[大司馬|/zh-hant/translations/officials/ministers#superior-excellency-056]][[齊|/zh-hant/maps/map-overall?admin=43]]王冏輔政，曹攄與[[齊|/zh-hant/maps/map-overall?admin=43]]人左思都擔任[[記室督|/zh-hant/translations/officials/military#various-grand-generals-055]]。後來由中郎出任[[襄陽|/zh-hant/maps/map-overall?admin=89]][[太守|/zh-hant/translations/officials/regional#commanderies-039]]、[[征南|/zh-hant/translations/officials/military#conquering--garrisoning-065]][[司馬|/zh-hant/translations/officials/military#conquering--garrisoning-074]]。適逢天下動亂，曹攄討伐賊寇，前往吳地，戰敗而死。",
+            "zhs": "张隐《文士传》记载：曹肇的孙子曹摅，字颜远，年少时砥砺志向节操，博学而有文采。在晋朝做官，被公府征召，曾任洛阳令，有能干的名声。[[大司马|/zh-hans/translations/officials/ministers#superior-excellency-056]][[齐|/zh-hans/maps/map-overall?admin=43]]王冏辅政，曹摅与[[齐|/zh-hans/maps/map-overall?admin=43]]人左思都担任[[记室督|/zh-hans/translations/officials/military#various-grand-generals-055]]。后来由中郎出任[[襄阳|/zh-hans/maps/map-overall?admin=89]][[太守|/zh-hans/translations/officials/regional#commanderies-039]]、[[征南|/zh-hans/translations/officials/military#conquering--garrisoning-065]][[司马|/zh-hans/translations/officials/military#conquering--garrisoning-074]]。适逢天下动乱，曹摅讨伐贼寇，前往吴地，战败而死。"
+          },
+          "en": "Zhang Yin's Biographies of Literary Men states: Cao Zhao's grandson Shu, courtesy name Yanyuan, cultivated his resolve and integrity from youth. He possessed broad learning and was gifted in literary composition. He served the Jin dynasty, was recruited to the staff of an Excellency, and later served as Magistrate of Luoyang, earning a reputation for ability. When Sima Jiong, [[Grand Marshal|/translations/officials/ministers#superior-excellency-056]] and Prince of [[Qi State|/maps/map-overall?admin=43]], assisted in governing, Cao Shu and Zuo Si of [[Qi State|/maps/map-overall?admin=43]] both served as [[Commander of the Record Keepers|/translations/officials/military#various-grand-generals-055]]. Cao Shu later left his post as Gentleman of the Household to become [[Grand Administrator|/translations/officials/regional#commanderies-039]] of [[Xiangyang|/maps/map-overall?admin=89]] and [[Major|/translations/officials/military#conquering--garrisoning-074]] to the [[General Who Conquers the South|/translations/officials/military#conquering--garrisoning-065]]. Amid the turmoil throughout the realm, Cao Shu went to Wu to campaign against rebels. He was defeated and killed in battle."
+        }
+      ]
+    }
+  ]
+}

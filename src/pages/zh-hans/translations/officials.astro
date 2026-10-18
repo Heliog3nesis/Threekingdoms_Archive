@@ -112,6 +112,7 @@ const officialsPayload = utf8ToBase64(JSON.stringify({ allPositions, categories,
         />
         <button class="search-clear" id="search-clear" style="display:none;">✕</button>
         <button class="search-btn" id="search-btn">{s.searchBtn}</button>
+        <a class="search-btn compare-btn" id="compare-btn" href={url('/zh-hans/translations/officials/compare')}><i class="ti ti-columns-3" aria-hidden="true"></i>比较 <span class="compare-count" id="compare-count"></span></a>
       </div>
       <div class="search-dropdown" id="search-dropdown" style="display:none;">
         <div class="dropdown-warning" id="search-dropdown-warning" style="display:none;"></div>
@@ -208,6 +209,7 @@ const officialsPayload = utf8ToBase64(JSON.stringify({ allPositions, categories,
 <script>
   // @ts-nocheck
   import { initSearch } from '../../../scripts/translations/search-module.js';
+  import { bindCount } from '../../../scripts/translations/compare-store.js';
   import { renderSalaryTab, renderGlossaryTab } from '../../../scripts/translations/tab-content-renderers.js';
 
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -283,6 +285,8 @@ const officialsPayload = utf8ToBase64(JSON.stringify({ allPositions, categories,
     onShowResults: goToResults,
     onClearResults: () => {},
   });
+
+  bindCount(document.getElementById('compare-count'));
 
   document.getElementById('search-btn').addEventListener('click', () => {
     const query = document.getElementById('search-input').value;

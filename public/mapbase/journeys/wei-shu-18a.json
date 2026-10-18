@@ -265,7 +265,7 @@
               "en": "Magistrate of Yingyin",
               "zht": "潁陰令",
               "zhs": "颍阴令",
-              "url": "/translations/officials/regional/?lat=34.02016403&lng=113.81293408"
+              "url": "/translations/officials/regional#counties-088"
             },
             {
               "en": "Gentleman-General",
@@ -841,98 +841,318 @@
     {
       "from": "李乾",
       "to": "李典（曼成）",
-      "type": "uncle-nephew",
-      "passageId": "ws18a-p1"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p1",
+          "text": {
+            "en": "Li Qian was Li Dian's paternal uncle.",
+            "zht": "李乾是李典的叔父（從父）。",
+            "zhs": "李乾是李典的叔父（从父）。"
+          }
+        }
+      ]
     },
     {
       "from": "李乾",
       "to": "李整",
-      "type": "father-son",
-      "passageId": "ws18a-p2"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p2",
+          "text": {
+            "en": "Li Zheng was Li Qian's son and took command of his father's troops.",
+            "zht": "李整是李乾之子，接管了父親的部隊。",
+            "zhs": "李整是李乾之子，接管了父亲的部队。"
+          }
+        }
+      ]
     },
     {
       "from": "李典（曼成）",
       "to": "李禎",
-      "type": "father-son",
-      "passageId": "ws18a-p7"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p7",
+          "text": {
+            "en": "Li Zhen was Li Dian's son and succeeded to his marquisate.",
+            "zht": "李禎是李典之子，繼承了他的爵位。",
+            "zhs": "李祯是李典之子，继承了他的爵位。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "李乾",
-      "type": "lord-subordinate",
-      "passageId": "ws18a-p1"
+      "from": "李乾",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p1",
+          "text": {
+            "en": "Li Qian joined Cao Cao with his retainers and fought for him at Shouzhang.",
+            "zht": "李乾率部衆追隨曹操，在壽張擊敗黃巾軍。",
+            "zhs": "李乾率部众追随曹操，在寿张击败黄巾军。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "李整",
-      "type": "lord-subordinate",
-      "passageId": "ws18a-p2"
+      "from": "李整",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p2",
+          "text": {
+            "en": "Cao Cao put Li Zheng in command of Li Qian's troops.",
+            "zht": "曹操讓李整統領李乾的舊部。",
+            "zhs": "曹操让李整统领李乾的旧部。"
+          }
+        }
+      ]
     },
     {
-      "from": "曹操",
-      "to": "李典（曼成）",
-      "type": "lord-subordinate",
-      "passageId": "ws18a-p3"
+      "from": "李典（曼成）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p2",
+          "text": {
+            "en": "Cao Cao appointed Li Dian Magistrate of Yingyin and Gentleman-General, and later Grand Administrator of Lihu.",
+            "zht": "曹操任命李典爲潁陰令、中郎將，後升任離狐太守。",
+            "zhs": "曹操任命李典为颍阴令、中郎将，后升任离狐太守。"
+          },
+          "title": {
+            "en": "Magistrate of Yingyin, Gentleman-General, Grand Administrator of Lihu",
+            "zht": "潁陰令、中郎將、離狐太守",
+            "zhs": "颍阴令、中郎将、离狐太守"
+          }
+        },
+        {
+          "passageId": "ws18a-p3",
+          "text": {
+            "en": "Cao Cao made Li Dian Assistant General, stationed at Anmin.",
+            "zht": "曹操任命李典爲裨將軍，駐紮安民。",
+            "zhs": "曹操任命李典为裨将军，驻扎安民。"
+          },
+          "title": {
+            "en": "Assistant General",
+            "zht": "裨將軍",
+            "zhs": "裨将军"
+          }
+        },
+        {
+          "passageId": "ws18a-p4",
+          "text": {
+            "en": "Cao Cao promoted Li Dian to General Who Captures the Enemies and enfeoffed him as a Capital Neighbourhood Marquis.",
+            "zht": "曹操升任李典爲捕虜將軍，封都亭侯。",
+            "zhs": "曹操升任李典为捕虏将军，封都亭侯。"
+          },
+          "title": {
+            "en": "General Who Captures the Enemies, Capital Neighbourhood Marquis",
+            "zht": "捕虜將軍、都亭侯",
+            "zhs": "捕虏将军、都亭侯"
+          }
+        },
+        {
+          "passageId": "ws18a-p6",
+          "text": {
+            "en": "Cao Cao promoted Li Dian to General Who Defeats the Enemies.",
+            "zht": "曹操升任李典爲破虜將軍。",
+            "zhs": "曹操升任李典为破虏将军。"
+          },
+          "title": {
+            "en": "General Who Defeats the Enemies",
+            "zht": "破虜將軍",
+            "zhs": "破虏将军"
+          }
+        }
+      ]
     },
     {
-      "from": "呂布",
-      "to": "薛蘭",
-      "type": "lord-subordinate",
-      "passageId": "ws18a-p1"
+      "from": "薛蘭",
+      "to": "呂布（奉先）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p1",
+          "text": {
+            "en": "Xue Lan was Lü Bu's Deputy Aide.",
+            "zht": "薛蘭是呂布的別駕。",
+            "zhs": "薛兰是吕布的别驾。"
+          }
+        }
+      ]
     },
     {
-      "from": "呂布",
-      "to": "李封",
-      "type": "lord-subordinate",
-      "passageId": "ws18a-p1"
+      "from": "李封",
+      "to": "呂布（奉先）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p1",
+          "text": {
+            "en": "Li Feng was Lü Bu's Administrative Aide.",
+            "zht": "李封是呂布的治中。",
+            "zhs": "李封是吕布的治中。"
+          }
+        }
+      ]
     },
     {
       "from": "薛蘭",
       "to": "李乾",
-      "type": "killer-victim",
-      "passageId": "ws18a-p1"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p1",
+          "text": {
+            "en": "Xue Lan and Li Feng killed Li Qian when he refused to defect to Lü Bu.",
+            "zht": "薛蘭與李封因李乾不肯叛變，將他殺害。",
+            "zhs": "薛兰与李封因李乾不肯叛变，将他杀害。"
+          }
+        }
+      ]
     },
     {
       "from": "李封",
       "to": "李乾",
-      "type": "killer-victim",
-      "passageId": "ws18a-p1"
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws18a-p1",
+          "text": {
+            "en": "Li Feng and Xue Lan killed Li Qian when he refused to defect to Lü Bu.",
+            "zht": "李封與薛蘭因李乾不肯叛變，將他殺害。",
+            "zhs": "李封与薛兰因李乾不肯叛变，将他杀害。"
+          }
+        }
+      ]
     },
     {
       "from": "李典（曼成）",
-      "to": "程昱",
-      "type": "comrades",
-      "passageId": "ws18a-p3"
+      "to": "程昱（仲德）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18a-p3",
+          "text": {
+            "en": "Li Dian and Cheng Yu were sent to ship supplies at Liyang, and together defeated Gao Fan, who was blocking the river.",
+            "zht": "李典與程昱受命在黎陽運糧，合力擊敗封鎖水道的高蕃。",
+            "zhs": "李典与程昱受命在黎阳运粮，合力击败封锁水道的高蕃。"
+          }
+        }
+      ]
     },
     {
       "from": "李典（曼成）",
-      "to": "夏侯惇",
-      "type": "comrades",
-      "passageId": "ws18a-p4"
+      "to": "夏侯惇（元讓）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18a-p4",
+          "text": {
+            "en": "Li Dian was sent to assist Xiahou Dun against Liu Bei at Ye.",
+            "zht": "李典受命隨夏侯惇在葉縣抵禦劉備。",
+            "zhs": "李典受命随夏侯惇在叶县抵御刘备。"
+          }
+        }
+      ]
     },
     {
       "from": "李典（曼成）",
-      "to": "于禁",
-      "type": "comrades",
-      "passageId": "ws18a-p4"
+      "to": "于禁（文則）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18a-p4",
+          "text": {
+            "en": "Yu Jin fell into Liu Bei's ambush with Xiahou Dun, and Li Dian went to rescue them.",
+            "zht": "于禁隨夏侯惇追擊劉備而中伏，李典率兵救援。",
+            "zhs": "于禁随夏侯惇追击刘备而中伏，李典率兵救援。"
+          }
+        }
+      ]
     },
     {
       "from": "李典（曼成）",
-      "to": "樂進",
-      "type": "strained comrades",
-      "passageId": "ws18a-p6"
+      "to": "樂進（文謙）",
+      "type": "colleagues",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18a-p6",
+          "text": {
+            "en": "Yue Jin and Li Dian were on bad terms with each other, but when Sun Quan besieged Hefei, Li Dian resolved not to let personal grievance override the interests of the state, and the two fought side by side to rout the invading army.",
+            "zht": "樂進與李典向來不和；然孫權圍攻合肥時，李典決意不以私怨廢公義，二人遂並肩作戰，合力擊退來犯之敵。",
+            "zhs": "乐进与李典向来不和；然孙权围攻合肥时，李典决意不以私怨废公义，二人遂并肩作战，合力击退来犯之敌。"
+          }
+        }
+      ]
     },
     {
       "from": "李典（曼成）",
-      "to": "張遼",
-      "type": "strained comrades",
-      "passageId": "ws18a-p6"
+      "to": "張遼（文遠）",
+      "type": "colleagues",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18a-p6",
+          "text": {
+            "en": "Though Li Dian bore a grudge against Zhang Liao, when Sun Quan besieged Hefei he declared, \"This is a matter of state — how could I let a private grievance override the greater good?\" and fought alongside him, helping rout Sun Quan's army.",
+            "zht": "李典雖與張遼有私怨，然孫權圍攻合肥時，他表示：「此國家大事，豈可以私怨而廢公義？」遂與張遼並肩作戰，合力擊退孫權大軍。",
+            "zhs": "李典虽与张辽有私怨，然孙权围攻合肥时，他表示：「此国家大事，岂可以私怨而废公义？」遂与张辽并肩作战，合力击退孙权大军。"
+          }
+        }
+      ]
     },
     {
-      "from": "樂進",
-      "to": "張遼",
-      "type": "strained comrades",
-      "passageId": "ws18a-p6"
+      "from": "樂進（文謙）",
+      "to": "張遼（文遠）",
+      "type": "colleagues",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws18a-p6",
+          "text": {
+            "en": "Zhang Liao and Yue Jin were on uneasy terms when they garrisoned Hefei together with Li Dian; when Sun Quan besieged the city, Zhang Liao feared the three of them would not cooperate, but they set their differences aside and won a decisive victory together.",
+            "zht": "張遼與樂進同鎮合肥時素來不睦；孫權來犯時，張遼恐三人難以同心禦敵，然三人終棄前嫌，合力大破敵軍。",
+            "zhs": "张辽与乐进同镇合肥时素来不睦；孙权来犯时，张辽恐三人难以同心御敌，然三人终弃前嫌，合力大破敌军。"
+          }
+        }
+      ]
     }
   ]
 }

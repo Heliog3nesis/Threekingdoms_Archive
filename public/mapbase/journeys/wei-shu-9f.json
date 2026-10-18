@@ -1,0 +1,1444 @@
+{
+  "chapter": {
+    "id": "wei-shu-9f",
+    "order": 9,
+    "label": {
+      "zht": "曹真傳",
+      "zhs": "曹真传",
+      "en": "Biography of Cao Zhen"
+    },
+    "title": {
+      "zht": "魏書九 · 曹真傳",
+      "zhs": "魏书九 · 曹真传",
+      "en": "Book of Wei, Chapter 9 · Biography of Cao Zhen"
+    }
+  },
+  "pins": [
+    {
+      "kind": "town",
+      "lat": 33.86080856,
+      "lng": 115.77227911,
+      "name": "Qiao",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 39.44483391,
+      "lng": 114.29041788,
+      "name": "Lingqiu",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.80983291,
+      "lng": 105.64254196,
+      "name": "下辨",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.31264639,
+      "lng": 108.87167209,
+      "name": "Chang'an",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.16854232,
+      "lng": 106.61155724,
+      "name": "Yangpingguan",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "111",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.37486808,
+      "lng": 107.20726452,
+      "name": "Chencang",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "admin",
+      "id": "141",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 31.62661897,
+      "lng": 118.48800336,
+      "name": "Niuzhu",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 30.34078806,
+      "lng": 112.18710173,
+      "name": "Jiangling",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.26350531,
+      "lng": 107.81047146,
+      "name": "Meiguo",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 35.92712007,
+      "lng": 107.34478513,
+      "name": "Yuezhicheng",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 34.69341538,
+      "lng": 112.5823423,
+      "name": "Luoyang",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    },
+    {
+      "kind": "town",
+      "lat": 33.97844028,
+      "lng": 108.78715169,
+      "name": "Ziwu Valley",
+      "persons": [
+        "曹真（子丹）"
+      ]
+    }
+  ],
+  "journeyOverviews": [
+    {
+      "person": "曹真（子丹）",
+      "name": {
+        "en": "Cao Zhen",
+        "zht": "曹真",
+        "zhs": "曹真"
+      },
+      "courtesyName": {
+        "en": "Zidan",
+        "zht": "子丹",
+        "zhs": "子丹"
+      },
+      "born": {
+        "era": {
+          "en": "unknown",
+          "zht": "不詳",
+          "zhs": "不详"
+        },
+        "year": null
+      },
+      "died": {
+        "era": {
+          "en": "5th year of Taihe",
+          "zht": "太和五年",
+          "zhs": "太和五年"
+        },
+        "year": 231
+      },
+      "stops": [
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Qiao",
+              "zht": "譙縣",
+              "zhs": "谯县"
+            }
+          ],
+          "position": null,
+          "passageId": "ws9f-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.86080856,
+              "lng": 115.77227911,
+              "name": "Qiao"
+            }
+          ],
+          "positionLinks": []
+        },
+        {
+          "era": {
+            "en": "unknown",
+            "zht": "不詳",
+            "zhs": "不详"
+          },
+          "year": null,
+          "age": null,
+          "location": [
+            {
+              "en": "Lingqiu",
+              "zht": "靈丘",
+              "zhs": "灵丘"
+            }
+          ],
+          "position": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯"
+            }
+          ],
+          "passageId": "ws9f-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 39.44483391,
+              "lng": 114.29041788,
+              "name": "Lingqiu"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Neighbourhood Marquis",
+              "zht": "亭侯",
+              "zhs": "亭侯",
+              "url": "/translations/officials#glossary-capital-neighbourhood-neighbourhood-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "23rd - 24th year of Jian'an",
+            "zht": "建安二十三 - 二十四年",
+            "zhs": "建安二十三 - 二十四年"
+          },
+          "year": "218 - 219",
+          "age": null,
+          "location": [
+            {
+              "en": "Xiabian",
+              "zht": "下辯",
+              "zhs": "下辩"
+            },
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            },
+            {
+              "en": "Yangpingguan",
+              "zht": "陽平",
+              "zhs": "阳平"
+            },
+            {
+              "en": "Wudu",
+              "zht": "武都",
+              "zhs": "武都"
+            },
+            {
+              "en": "Chencang",
+              "zht": "陳倉",
+              "zhs": "陈仓"
+            }
+          ],
+          "position": [
+            {
+              "en": "General of the Central Vanguard",
+              "zht": "中堅將軍",
+              "zhs": "中坚将军"
+            },
+            {
+              "en": "Commander of the Central Army",
+              "zht": "中領軍",
+              "zhs": "中领军"
+            },
+            {
+              "en": "Protector of the Army",
+              "zht": "護軍",
+              "zhs": "护军"
+            }
+          ],
+          "passageId": "ws9f-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 33.80983291,
+              "lng": 105.64254196,
+              "name": "下辨"
+            },
+            {
+              "kind": "town",
+              "lat": 34.31264639,
+              "lng": 108.87167209,
+              "name": "Chang'an"
+            },
+            {
+              "kind": "town",
+              "lat": 33.16854232,
+              "lng": 106.61155724,
+              "name": "Yangpingguan"
+            },
+            {
+              "kind": "admin",
+              "id": "111"
+            },
+            {
+              "kind": "town",
+              "lat": 34.37486808,
+              "lng": 107.20726452,
+              "name": "Chencang"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General of the Central Vanguard",
+              "zht": "中堅將軍",
+              "zhs": "中坚将军",
+              "url": "/translations/officials/military#four-direction--misc-132"
+            },
+            {
+              "en": "Commander of the Central Army",
+              "zht": "中領軍",
+              "zhs": "中领军",
+              "url": "/translations/officials/military#central-army-001"
+            },
+            {
+              "en": "Protector of the Army",
+              "zht": "護軍",
+              "zhs": "护军",
+              "url": "/translations/officials/military#various-commanders-034"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Huangchu",
+            "zht": "黃初元年",
+            "zhs": "黄初元年"
+          },
+          "year": 220,
+          "age": null,
+          "location": [
+            {
+              "en": "Jiuquan",
+              "zht": "酒泉",
+              "zhs": "酒泉"
+            }
+          ],
+          "position": [
+            {
+              "en": "General Who Garrisons the West",
+              "zht": "鎮西將軍",
+              "zhs": "镇西将军"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            },
+            {
+              "en": "Commander",
+              "zht": "都督",
+              "zhs": "都督"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯"
+            }
+          ],
+          "passageId": "ws9f-p2",
+          "resolvedLocations": [
+            {
+              "kind": "admin",
+              "id": "141"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "General Who Garrisons the West",
+              "zht": "鎮西將軍",
+              "zhs": "镇西将军",
+              "url": "/translations/officials/military#conquering--garrisoning-070"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
+            },
+            {
+              "en": "Commander",
+              "zht": "都督",
+              "zhs": "都督",
+              "url": "/translations/officials/military#various-commanders-027"
+            },
+            {
+              "en": "Township Marquis",
+              "zht": "鄉侯",
+              "zhs": "乡侯",
+              "url": "/translations/officials#glossary-capital-township-township-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "3rd year of Huangchu",
+            "zht": "黃初三年",
+            "zhs": "黄初三年"
+          },
+          "year": 221,
+          "age": null,
+          "location": [
+            {
+              "en": "Niuzhu",
+              "zht": "牛渚",
+              "zhs": "牛渚"
+            },
+            {
+              "en": "Jiangling",
+              "zht": "江陵",
+              "zhs": "江陵"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand General of the Upper Army",
+              "zht": "上軍大將軍",
+              "zhs": "上军大将军"
+            },
+            {
+              "en": "Commander",
+              "zht": "都督",
+              "zhs": "都督"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节"
+            },
+            {
+              "en": "Grand General of the Central Army",
+              "zht": "中軍大將軍",
+              "zhs": "中军大将军"
+            },
+            {
+              "en": "Palace Aide",
+              "zht": "給事中",
+              "zhs": "给事中"
+            }
+          ],
+          "passageId": "ws9f-p2",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 31.62661897,
+              "lng": 118.48800336,
+              "name": "Niuzhu"
+            },
+            {
+              "kind": "town",
+              "lat": 30.34078806,
+              "lng": 112.18710173,
+              "name": "Jiangling"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand General of the Upper Army",
+              "zht": "上軍大將軍",
+              "zhs": "上军大将军",
+              "url": "/translations/officials/military#various-grand-generals-040"
+            },
+            {
+              "en": "Commander",
+              "zht": "都督",
+              "zhs": "都督",
+              "url": "/translations/officials/military#various-commanders-027"
+            },
+            {
+              "en": "Provisional Bearer of the Imperial Tally",
+              "zht": "假節",
+              "zhs": "假节",
+              "url": "/translations/officials#glossary-provisional-bearer-of-the-imperial-tally"
+            },
+            {
+              "en": "Grand General of the Central Army",
+              "zht": "中軍大將軍",
+              "zhs": "中军大将军",
+              "url": "/translations/officials/military#various-grand-generals-039"
+            },
+            {
+              "en": "Palace Aide",
+              "zht": "給事中",
+              "zhs": "给事中",
+              "url": "/translations/officials/departments#chancellery-018"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "1st year of Taihe",
+            "zht": "太和元年",
+            "zhs": "太和元年"
+          },
+          "year": 226,
+          "age": null,
+          "location": null,
+          "position": [
+            {
+              "en": "Grand General",
+              "zht": "大將軍",
+              "zhs": "大将军"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯"
+            }
+          ],
+          "passageId": "ws9f-p3",
+          "resolvedLocations": [],
+          "positionLinks": [
+            {
+              "en": "Grand General",
+              "zht": "大將軍",
+              "zhs": "大将军",
+              "url": "/translations/officials/ministers#superior-excellency-064"
+            },
+            {
+              "en": "County Marquis",
+              "zht": "縣侯",
+              "zhs": "县侯",
+              "url": "/translations/officials#glossary-county-marquis"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "2nd year of Taihe",
+            "zht": "太和二年",
+            "zhs": "太和二年"
+          },
+          "year": 228,
+          "age": null,
+          "location": [
+            {
+              "en": "Meiguo",
+              "zht": "郿",
+              "zhs": "郿"
+            },
+            {
+              "en": "Yuezhicheng",
+              "zht": "月支城",
+              "zhs": "月支城"
+            }
+          ],
+          "position": [
+            {
+              "en": "Commander",
+              "zht": "都督",
+              "zhs": "都督"
+            }
+          ],
+          "passageId": "ws9f-p3",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.26350531,
+              "lng": 107.81047146,
+              "name": "Meiguo"
+            },
+            {
+              "kind": "town",
+              "lat": 35.92712007,
+              "lng": 107.34478513,
+              "name": "Yuezhicheng"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Commander",
+              "zht": "都督",
+              "zhs": "都督",
+              "url": "/translations/officials/military#various-commanders-027"
+            }
+          ]
+        },
+        {
+          "era": {
+            "en": "4th year of Taihe",
+            "zht": "太和四年",
+            "zhs": "太和四年"
+          },
+          "year": 230,
+          "age": null,
+          "location": [
+            {
+              "en": "Luoyang",
+              "zht": "洛陽",
+              "zhs": "洛阳"
+            },
+            {
+              "en": "Chang'an",
+              "zht": "長安",
+              "zhs": "长安"
+            },
+            {
+              "en": "Ziwu Valley",
+              "zht": "子午谷",
+              "zhs": "子午谷"
+            }
+          ],
+          "position": [
+            {
+              "en": "Grand Marshal",
+              "zht": "大司馬",
+              "zhs": "大司马"
+            }
+          ],
+          "passageId": "ws9f-p4",
+          "resolvedLocations": [
+            {
+              "kind": "town",
+              "lat": 34.69341538,
+              "lng": 112.5823423,
+              "name": "Luoyang"
+            },
+            {
+              "kind": "town",
+              "lat": 34.31264639,
+              "lng": 108.87167209,
+              "name": "Chang'an"
+            },
+            {
+              "kind": "town",
+              "lat": 33.97844028,
+              "lng": 108.78715169,
+              "name": "Ziwu Valley"
+            }
+          ],
+          "positionLinks": [
+            {
+              "en": "Grand Marshal",
+              "zht": "大司馬",
+              "zhs": "大司马",
+              "url": "/translations/officials/ministers#superior-excellency-056"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "曹操（孟德）",
+      "to": "曹真（子丹）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Cao Zhen was the son of one of Cao Cao's clansmen; Cao Cao took pity on the orphaned boy, adopted him and raised him as one of his own sons.",
+            "zht": "曹真是曹操的族子；曹操憐惜他年少喪父，將他收養，待他與自己的兒子一樣。",
+            "zhs": "曹真是曹操的族子；曹操怜惜他年少丧父，将他收养，待他与自己的儿子一样。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹邵",
+      "to": "曹真（子丹）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Cao Zhen's father Cao Shao recruited followers when Cao Cao raised troops and was killed by the provincial and commandery authorities, leaving Cao Zhen an orphan.",
+            "zht": "曹真之父曹邵在曹操起兵時招募徒衆，被州郡官府所殺，曹真從小成了孤兒。",
+            "zhs": "曹真之父曹邵在曹操起兵时招募徒众，被州郡官府所杀，曹真从小成了孤儿。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "秦伯南",
+      "to": "曹真（子丹）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "According to the Weilüe, Cao Zhen was born a Qin and his father was Qin Bonan; Cao Cao changed his surname in gratitude for his father's sacrifice.",
+            "zht": "據《魏略》記載，曹真本姓秦，父親是秦伯南；曹操感念他父親的恩德，爲他改姓曹。",
+            "zhs": "据《魏略》记载，曹真本姓秦，父亲是秦伯南；曹操感念他父亲的恩德，为他改姓曹。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "秦伯南",
+      "to": "曹操（孟德）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Qin Bonan, an old friend of Cao Cao, took him in when Yuan Shu's men were pursuing him, told them he himself was Cao Cao, and was killed in his place.",
+            "zht": "秦伯南向來與曹操交好；袁術部下追殺曹操時，秦伯南開門收留他，並對追兵自稱是曹操，結果被殺。",
+            "zhs": "秦伯南向来与曹操交好；袁术部下追杀曹操时，秦伯南开门收留他，并对追兵自称是曹操，结果被杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹邵",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Loyal and capable, Cao Shao was trusted by Cao Cao and raised followers to accompany him when he took up arms in the Chuping era.",
+            "zht": "曹邵忠厚有才智，深得曹操信任；初平年間曹操起兵時，他招募徒衆跟隨曹操。",
+            "zhs": "曹邵忠厚有才智，深得曹操信任；初平年间曹操起兵时，他招募徒众跟随曹操。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "黃琬（子琰）",
+      "to": "曹邵",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "When Huang Wan, Inspector of Yu Province, tried to harm Cao Cao, Cao Cao escaped but Cao Shao was killed.",
+            "zht": "豫州刺史黃琬想加害曹操，曹操躲過一劫，曹邵卻獨自遇害。",
+            "zhs": "豫州刺史黄琬想加害曹操，曹操躲过一劫，曹邵却独自遇害。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹丕（子桓）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Cao Cao had Cao Zhen live together with Cao Pi.",
+            "zht": "曹操讓曹真與曹丕一同居住。",
+            "zhs": "曹操让曹真与曹丕一同居住。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹操（孟德）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p1",
+          "text": {
+            "en": "Impressed when Cao Zhen shot down a pursuing tiger, Cao Cao placed him in command of the Tiger and Leopard Cavalry.",
+            "zht": "曹真在打獵時回身射倒追趕他的老虎，曹操讚賞他的勇猛，讓他統領虎豹騎。",
+            "zhs": "曹真在打猎时回身射倒追赶他的老虎，曹操赞赏他的勇猛，让他统领虎豹骑。"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "After capturing the rebel town of Lingqiu, Cao Zhen was enfeoffed as Neighbourhood Marquis of Lingshou.",
+            "zht": "曹真攻克靈丘賊寇後，被封爲靈壽亭侯。",
+            "zhs": "曹真攻克灵丘贼寇后，被封为灵寿亭侯。"
+          },
+          "title": {
+            "en": "Neighbourhood Marquis of Lingshou",
+            "zht": "靈壽亭侯",
+            "zhs": "灵寿亭侯"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "After defeating one of Liu Bei's generals at Xiabian, Cao Zhen was appointed General of the Central Vanguard, and at Chang'an became Commander of the Central Army.",
+            "zht": "曹真在下辯擊破劉備部將後，被任命爲中堅將軍，到長安後兼任中領軍。",
+            "zhs": "曹真在下辩击破刘备部将后，被任命为中坚将军，到长安后兼任中领军。"
+          },
+          "title": {
+            "en": "General of the Central Vanguard, Commander of the Central Army",
+            "zht": "中堅將軍、中領軍",
+            "zhs": "中坚将军、中领军"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Worried after Xiahou Yuan's death, Cao Cao made Cao Zhen Protector of the Army for the expedition against Shu, and later sent him to Wudu to bring Cao Hong and the others back to Chencang.",
+            "zht": "夏侯淵陣亡後，曹操憂心忡忡，任命曹真爲征蜀護軍；後來又派他到武都接曹洪等人回駐陳倉。",
+            "zhs": "夏侯渊阵亡后，曹操忧心忡忡，任命曹真为征蜀护军；后来又派他到武都接曹洪等人回驻陈仓。"
+          },
+          "title": {
+            "en": "Protector of the Army for the Expedition against Shu",
+            "zht": "征蜀護軍",
+            "zhs": "征蜀护军"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹丕（子桓）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "When Cao Pi became king, he appointed Cao Zhen General Who Garrisons the West with command of Yong and Liang provinces, and advanced him to Township Marquis of Dong.",
+            "zht": "曹丕即王位後，任命曹真爲鎮西將軍，都督雍、涼二州諸軍事，進封東鄉侯。",
+            "zhs": "曹丕即王位后，任命曹真为镇西将军，都督雍、凉二州诸军事，进封东乡侯。"
+          },
+          "title": {
+            "en": "General Who Garrisons the West, Township Marquis of Dong",
+            "zht": "鎮西將軍、東鄉侯",
+            "zhs": "镇西将军、东乡侯"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "On his return to the capital, Cao Zhen was appointed Grand General of the Upper Army and Commander of All Forces.",
+            "zht": "曹真回到京城後，被任命爲上軍大將軍，都督中外諸軍事。",
+            "zhs": "曹真回到京城后，被任命为上军大将军，都督中外诸军事。"
+          },
+          "title": {
+            "en": "Grand General of the Upper Army",
+            "zht": "上軍大將軍",
+            "zhs": "上军大将军"
+          }
+        },
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "After the victory at Niuzhu, Cao Zhen was made Grand General of the Central Army with the additional office of Palace Aide.",
+            "zht": "牛渚大捷後，曹真轉任中軍大將軍，加給事中。",
+            "zhs": "牛渚大捷后，曹真转任中军大将军，加给事中。"
+          },
+          "title": {
+            "en": "Grand General of the Central Army",
+            "zht": "中軍大將軍",
+            "zhs": "中军大将军"
+          }
+        },
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "On his deathbed, Cao Pi named Cao Zhen, Chen Qun and Sima Yi to receive his testamentary edict and assist in governing.",
+            "zht": "曹丕病重時，曹真與陳羣、司馬懿等人一同接受遺詔輔政。",
+            "zhs": "曹丕病重时，曹真与陈群、司马懿等人一同接受遗诏辅政。"
+          }
+        },
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Pi set aside two hundred households from Cao Zhen's fief to enfeoff his younger brother Cao Bin as a Marquis.",
+            "zht": "曹丕分出曹真的封戶二百，封他的弟弟曹彬爲列侯。",
+            "zhs": "曹丕分出曹真的封户二百，封他的弟弟曹彬为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "When Cao Rui ascended the throne, he advanced Cao Zhen to County Marquis of Shaoling and promoted him to Grand General.",
+            "zht": "明帝即位後，曹真進封邵陵侯，升任大將軍。",
+            "zhs": "明帝即位后，曹真进封邵陵侯，升任大将军。"
+          },
+          "title": {
+            "en": "County Marquis of Shaoling, Grand General",
+            "zht": "邵陵侯、大將軍",
+            "zhs": "邵陵侯、大将军"
+          }
+        },
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Rui sent Cao Zhen to lead the armies at Meiguo against Zhuge Liang's first northern campaign.",
+            "zht": "諸葛亮第一次北伐時，明帝派曹真督率諸軍駐守郿縣。",
+            "zhs": "诸葛亮第一次北伐时，明帝派曹真督率诸军驻守郿县。"
+          }
+        },
+        {
+          "passageId": "ws9f-p4",
+          "text": {
+            "en": "Cao Zhen was promoted to Grand Marshal and granted the right to wear his sword and shoes in the palace hall and to attend court without quickening his step.",
+            "zht": "曹真升任大司馬，獲准佩劍穿履上殿、入朝不必小步快走。",
+            "zhs": "曹真升任大司马，获准佩剑穿履上殿、入朝不必小步快走。"
+          },
+          "title": {
+            "en": "Grand Marshal",
+            "zht": "大司馬",
+            "zhs": "大司马"
+          }
+        },
+        {
+          "passageId": "ws9f-p4",
+          "text": {
+            "en": "Cao Rui accepted Cao Zhen's plan to invade Shu along several routes and saw him off in person, but recalled him when thirty days of rain cut the plank roads.",
+            "zht": "明帝採納曹真多路伐蜀的計劃，親自爲他送行；後因連降大雨三十多天、棧道斷絕，下詔讓曹真撤軍。",
+            "zhs": "明帝采纳曹真多路伐蜀的计划，亲自为他送行；后因连降大雨三十多天、栈道断绝，下诏让曹真撤军。"
+          }
+        },
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Rui granted Cao Zhen's request to share his fief with the sons of Cao Zun and Zhu Zan, likening him to Shuxiang and Yan Ping.",
+            "zht": "明帝准許曹真分出封邑給曹遵、朱讚的兒子，稱讚他有叔向撫孤之仁、晏平仲久要之分。",
+            "zhs": "明帝准许曹真分出封邑给曹遵、朱赞的儿子，称赞他有叔向抚孤之仁、晏平仲久要之分。"
+          }
+        },
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Rui visited the ailing Cao Zhen at his residence; after his death he praised his loyalty and modesty and enfeoffed all five of his sons as Marquises.",
+            "zht": "曹真病重時，明帝親自到他府上探望；曹真死後，明帝下詔稱讚他忠節謙遜，把他的五個兒子都封爲列侯。",
+            "zhs": "曹真病重时，明帝亲自到他府上探望；曹真死后，明帝下诏称赞他忠节谦逊，把他的五个儿子都封为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "劉備（玄德）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Zhen defeated one of Liu Bei's subordinate generals at Xiabian, and later Liu Bei's general Gao Xiang at Yangping.",
+            "zht": "曹真在下辯擊敗劉備的部將，後來又在陽平擊敗劉備部將高詳。",
+            "zhs": "曹真在下辩击败刘备的部将，后来又在阳平击败刘备部将高详。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "高詳",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Commanding Xu Huang and others, Cao Zhen defeated Liu Bei's general Gao Xiang at Yangping.",
+            "zht": "曹真督率徐晃等人，在陽平擊敗劉備部將高詳。",
+            "zhs": "曹真督率徐晃等人，在阳平击败刘备部将高详。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "徐晃（公明）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "As Protector of the Army for the expedition against Shu, Cao Zhen commanded Xu Huang and others in defeating Gao Xiang at Yangping.",
+            "zht": "曹真任征蜀護軍，督率徐晃等人在陽平擊敗高詳。",
+            "zhs": "曹真任征蜀护军，督率徐晃等人在阳平击败高详。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹洪（子廉）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Cao sent Cao Zhen to Wudu to meet Cao Hong and the others and bring them back to garrison Chencang.",
+            "zht": "曹操派曹真到武都迎接曹洪等人，回駐陳倉。",
+            "zhs": "曹操派曹真到武都迎接曹洪等人，回驻陈仓。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "費耀",
+      "to": "曹真（子丹）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "When Zhang Jin and others rebelled in Jiuquan, Cao Zhen sent Fei Yao against them.",
+            "zht": "張進等人在酒泉造反，曹真派費耀前去討伐。",
+            "zhs": "张进等人在酒泉造反，曹真派费曜前去讨伐。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "費耀",
+      "to": "張進",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Fei Yao defeated the Jiuquan rebels and beheaded Zhang Jin and the others.",
+            "zht": "費耀擊破酒泉叛軍，斬殺張進等人。",
+            "zhs": "费曜击破酒泉叛军，斩杀张进等人。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "張進",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "When Zhang Jin rebelled in Jiuquan, Cao Zhen sent Fei Yao to crush the rebellion.",
+            "zht": "張進在酒泉造反，曹真派費耀將其討平。",
+            "zhs": "张进在酒泉造反，曹真派费曜将其讨平。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "夏侯尚（伯仁）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Zhen joined Xiahou Shang and others in the campaign against Sun Quan, defeating the garrison at Niuzhu.",
+            "zht": "曹真與夏侯尚等人一同征討孫權，擊破牛渚的守軍。",
+            "zhs": "曹真与夏侯尚等人一同征讨孙权，击破牛渚的守军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "孫權（仲謀）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p2",
+          "text": {
+            "en": "Cao Zhen campaigned against Sun Quan and defeated his garrison at Niuzhu.",
+            "zht": "曹真征討孫權，擊破牛渚屯軍。",
+            "zhs": "曹真征讨孙权，击破牛渚屯军。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "陳羣（長文）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen, Chen Qun and Sima Yi together received Cao Pi's testamentary edict to assist in governing.",
+            "zht": "曹真與陳羣、司馬懿一同接受曹丕遺詔輔政。",
+            "zhs": "曹真与陈群、司马懿一同接受曹丕遗诏辅政。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "司馬懿（仲達）",
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen and Sima Yi together received Cao Pi's testamentary edict to assist in governing.",
+            "zht": "曹真與司馬懿一同接受曹丕遺詔輔政。",
+            "zhs": "曹真与司马懿一同接受曹丕遗诏辅政。"
+          }
+        },
+        {
+          "passageId": "ws9f-p4",
+          "text": {
+            "en": "In the invasion of Shu, Cao Zhen marched along the Ziwu Road while Sima Yi went up the Han River, planning to meet at Nanzheng.",
+            "zht": "伐蜀時，曹真從子午道南下，司馬懿沿漢水逆流而上，約定在南鄭會師。",
+            "zhs": "伐蜀时，曹真从子午道南下，司马懿沿汉水逆流而上，约定在南郑会师。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "諸葛亮（孔明）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "When Zhuge Liang besieged Qishan and three commanderies rose for him, Cao Zhen led the armies that pacified them.",
+            "zht": "諸葛亮圍攻祁山，三郡起而響應，曹真率軍平定了三郡。",
+            "zhs": "诸葛亮围攻祁山，三郡起而响应，曹真率军平定了三郡。"
+          }
+        },
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Predicting that Zhuge Liang would come through Chencang next, Cao Zhen had it fortified, and Zhuge Liang's siege there the following spring failed.",
+            "zht": "曹真預料諸葛亮下次必從陳倉出兵，事先加固城防；次年春諸葛亮果然圍攻陳倉，未能攻克。",
+            "zhs": "曹真预料诸葛亮下次必从陈仓出兵，事先加固城防；次年春诸葛亮果然围攻陈仓，未能攻克。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "張郃（㑺乂）",
+      "to": "馬謖（幼常）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Sent by Cao Rui against Zhuge Liang's general Ma Su, Zhang He decisively defeated him.",
+            "zht": "張郃奉明帝之命進攻諸葛亮部將馬謖，將他大敗。",
+            "zhs": "张郃奉明帝之命进攻诸葛亮部将马谡，将他大败。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "楊條",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "When Cao Zhen besieged Yuezhicheng, Yang Tiao told his followers he wished to surrender now the Grand General had come in person, and came out bound.",
+            "zht": "曹真圍攻月支城，楊條對部衆說：“大將軍親自來了，我願早日投降。”便自縛出城。",
+            "zhs": "曹真围攻月支城，杨条对部众说：“大将军亲自来了，我愿早日投降。”便自缚出城。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郝昭（伯道）",
+      "to": "曹真（子丹）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen sent the general Hao Zhao, with Wang Sheng, to defend Chencang and repair its fortifications, and Zhuge Liang could not take it.",
+            "zht": "曹真派將軍郝昭與王生守衛陳倉、修治城防，諸葛亮未能攻克。",
+            "zhs": "曹真派将军郝昭与王生守卫陈仓、修治城防，诸葛亮未能攻克。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "王生",
+      "to": "曹真（子丹）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Cao Zhen sent the general Wang Sheng, with Hao Zhao, to defend Chencang and repair its fortifications.",
+            "zht": "曹真派將軍王生與郝昭守衛陳倉、修治城防。",
+            "zhs": "曹真派将军王生与郝昭守卫陈仓、修治城防。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "郝昭（伯道）",
+      "to": "諸葛亮（孔明）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p3",
+          "text": {
+            "en": "Zhuge Liang besieged Chencang the following spring, but Hao Zhao's defences held.",
+            "zht": "次年春諸葛亮圍攻陳倉，郝昭嚴陣以待，諸葛亮未能攻克。",
+            "zhs": "次年春诸葛亮围攻陈仓，郝昭严阵以待，诸葛亮未能攻克。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹遵",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Zun was Cao Zhen's kinsman.",
+            "zht": "曹遵是曹真的同宗族人。",
+            "zhs": "曹遵是曹真的同宗族人。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹遵",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In his youth Cao Zhen served Cao Cao alongside his kinsman Cao Zun; after Cao Zun died young, Cao Zhen asked to divide his own fief to enfeoff Zun's son.",
+            "zht": "曹真年少時與同宗曹遵一同侍奉曹操；曹遵早逝後，曹真請求分出自己的封邑封給曹遵的兒子。",
+            "zhs": "曹真年少时与同宗曹遵一同侍奉曹操；曹遵早逝后，曹真请求分出自己的封邑封给曹遵的儿子。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "朱讚",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In his youth Cao Zhen served Cao Cao alongside his fellow townsman Zhu Zan; after Zhu Zan died young, Cao Zhen asked to divide his own fief to enfeoff Zan's son.",
+            "zht": "曹真年少時與同鄉朱讚一同侍奉曹操；朱讚早逝後，曹真請求分出自己的封邑封給朱讚的兒子。",
+            "zhs": "曹真年少时与同乡朱赞一同侍奉曹操；朱赞早逝后，曹真请求分出自己的封邑封给朱赞的儿子。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹爽（昭伯）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Zhen's son Cao Shuang succeeded him.",
+            "zht": "曹真之子曹爽繼承爵位。",
+            "zhs": "曹真之子曹爽继承爵位。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹羲",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Xi as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹羲爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹羲为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹訓",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Xun as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹訓爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹训为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹則",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Ze as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹則爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹则为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹彥",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Yan as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹彥爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹彦为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹皚",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "In memory of Cao Zhen, Cao Rui enfeoffed his son Cao Ai as a Marquis.",
+            "zht": "明帝追念曹真之功，封其子曹皚爲列侯。",
+            "zhs": "明帝追念曹真之功，封其子曹皑为列侯。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "曹真（子丹）",
+      "to": "曹彬",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws9f-p5",
+          "text": {
+            "en": "Cao Zhen's younger brother Cao Bin was enfeoffed as a Marquis from part of Cao Zhen's fief.",
+            "zht": "曹真的弟弟曹彬從曹真的封邑中分得封戶，被封爲列侯。",
+            "zhs": "曹真的弟弟曹彬从曹真的封邑中分得封户，被封为列侯。"
+          }
+        }
+      ]
+    }
+  ]
+}

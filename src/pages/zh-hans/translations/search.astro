@@ -94,6 +94,7 @@ const officialsPayload = utf8ToBase64(JSON.stringify({ allPositions, categories,
 <script>
   // @ts-nocheck
   import { searchPositions } from '../../../scripts/translations/search-module.js';
+  import { wireToggles, syncAllToggles, mountCompareFab } from '../../../scripts/translations/compare-store.js';
 
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const PAGE_SIZE = 15;
@@ -380,6 +381,7 @@ function shiPhraseFor(p) {
               </div>
               ${kingdomBadgesHtml(p)}
               <span class="result-card-cat">${catLabelFor(p)}</span>
+              <button type="button" class="compare-toggle" data-compare-id="${p.id}"></button>
             </div>
             ${descHtml}
             ${breadcrumbHtml ? `<br>${breadcrumbHtml}` : ''}
@@ -388,12 +390,15 @@ function shiPhraseFor(p) {
     }</div>`;
 
     renderPagination(filtered.length);
+    syncAllToggles(lang, container);
   }
 
   buildCategoryFilters();
   buildRankFilters();
   buildGradeClassFilters();
   wireFilterCheckboxes();
+  wireToggles(lang, document.getElementById('results-container'));
+  mountCompareFab(lang);
   renderResults();
 </script>
 

@@ -8,7 +8,7 @@
       "en": "Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
     },
     "title": {
-      "zht": "魏書十六 · 杜畿子恕传 · 附孟康、樂詳",
+      "zht": "魏書十六 · 杜畿子恕傳 · 附孟康、樂詳",
       "zhs": "魏书十六 · 杜畿子恕传 · 附孟康、乐详",
       "en": "Book of Wei, Chapter 16 · Biography of Du Shu, son of Du Ji · with Meng Kang, Yue Xiang"
     }
@@ -513,9 +513,9 @@
               "zhs": "守"
             },
             {
-              "en": "Colonel Directing Agriculture",
-              "zht": "典農校尉",
-              "zhs": "典农校尉"
+              "en": "Colonel Directing Agriculture (concurrent)",
+              "zht": "領典農校尉",
+              "zhs": "领典农校尉"
             }
           ],
           "passageId": "",
@@ -533,9 +533,9 @@
               "url": "/translations/officials/regional#commanderies-039"
             },
             {
-              "en": "Colonel Directing Agriculture",
-              "zht": "典農校尉",
-              "zhs": "典农校尉",
+              "en": "Colonel Directing Agriculture (concurrent)",
+              "zht": "領典農校尉",
+              "zhs": "领典农校尉",
               "url": "/translations/officials/ministers#-nine-ministers-iii-242"
             }
           ]
@@ -617,213 +617,598 @@
   "relationships": [
     {
       "from": "杜恕（務伯）",
-      "to": "李豐",
-      "type": "childhood friends and later rivals",
-      "passageId": "ws16d-p1"
-    },
-    {
-      "from": "辛毗",
-      "to": "杜恕（務伯）",
-      "type": "held in high regard",
-      "passageId": "ws16d-p1"
-    },
-    {
-      "from": "呂昭（子展）",
-      "to": "呂巽（長悌）",
-      "type": "father-son",
-      "passageId": "ws16d-p1"
-    },
-    {
-      "from": "呂昭（子展）",
-      "to": "呂安（仲悌）",
-      "type": "father-son",
-      "passageId": "ws16d-p1"
-    },
-    {
-      "from": "呂昭（子展）",
-      "to": "呂粹（季悌）",
-      "type": "father-son",
-      "passageId": "ws16d-p1"
-    },
-    {
-      "from": "呂粹（季悌）",
-      "to": "呂預（景虞）",
-      "type": "father-son",
-      "passageId": "ws16d-p1"
-    },
-    {
-      "from": "呂安（仲悌）",
-      "to": "嵇康",
-      "type": "close friend",
-      "passageId": "ws16d-p1"
+      "to": "曹叡（元仲）",
+      "type": "service",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "During the Taihe era Du Shu served Cao Rui as Cavalier Attendant Gentleman and Attendant Gentleman within the Yellow Gates; Cao Rui, considering him the son of a great minister, promoted him despite his lack of early reputation.",
+            "zht": "太和年間杜恕侍奉曹叡，任散騎侍郎、黃門侍郎；曹叡因他是大臣之子而加以提拔，雖然他早年並無聲名。",
+            "zhs": "太和年间杜恕侍奉曹叡，任散骑侍郎、黄门侍郎；曹叡因他是大臣之子而加以提拔，虽然他早年并无声名。"
+          },
+          "title": {
+            "en": "Attendant Gentleman within the Yellow Gates",
+            "zht": "黃門侍郎",
+            "zhs": "黄门侍郎"
+          }
+        },
+        {
+          "passageId": "ws16d-p23",
+          "text": {
+            "en": "For eight years at court, Du Shu submitted uncompromising and forthright memorials on economy, official assessment and the ruler's use of ministers.",
+            "zht": "杜恕在朝八年，屢次上疏直言，論財用、考課及君主用臣之道，無所迴避。",
+            "zhs": "杜恕在朝八年，屡次上疏直言，论财用、考课及君主用臣之道，无所回避。"
+          }
+        },
+        {
+          "passageId": "ws16d-p24",
+          "text": {
+            "en": "Because he would not conform to his contemporaries' ways, Du Shu was repeatedly sent out of the capital, as Grand Administrator of Hongnong and Hedong, Protector of the Provincial Army north of the Huai, and Inspector of You Province with the Imperial Tally.",
+            "zht": "杜恕在朝不肯隨俗，屢被外放，歷任弘農太守、河東太守、淮北都督護軍，後出任幽州刺史，持節，領護烏丸校尉。",
+            "zhs": "杜恕在朝不肯随俗，屡被外放，历任弘农太守、河东太守、淮北都督护军，后出任幽州刺史，持节，领护乌丸校尉。"
+          },
+          "title": {
+            "en": "Inspector of You Province",
+            "zht": "幽州刺史",
+            "zhs": "幽州刺史"
+          }
+        }
+      ]
     },
     {
       "from": "杜恕（務伯）",
-      "to": "曹叡",
-      "type": "minister to sovereign",
-      "passageId": "ws16d-p4"
+      "to": "李豐（安國）",
+      "type": "personal",
+      "polarity": "mixed",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Du Shu and Li Feng had been close since childhood, but as adults their aims diverged sharply: Li Feng assiduously cultivated his reputation while Du Shu was unrestrained, and Li Feng regarded Du Shu with hostility, rising at court while Du Shu stayed at home; they later served together at court.",
+            "zht": "杜恕與李豐自幼親近，成年後志趣迥異：李豐刻意修飾名聲，杜恕則不拘小節，李豐因此敵視杜恕；李豐在朝中顯達時杜恕仍閒居在家，後來二人同朝為官。",
+            "zhs": "杜恕与李丰自幼亲近，成年后志趣迥异：李丰刻意修饰名声，杜恕则不拘小节，李丰因此敌视杜恕；李丰在朝中显达时杜恕仍闲居在家，后来二人同朝为官。"
+          }
+        }
+      ]
     },
     {
-      "from": "李豐",
+      "from": "辛毗（佐治）",
       "to": "杜恕（務伯）",
-      "type": "colleague",
-      "passageId": "ws16d-p12"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Because Du Shu cultivated no private connections and spoke forthrightly for the public good, Palace Attendant Xin Pi and others held him in high regard.",
+            "zht": "杜恕在朝不結私黨、一心為公，敢於直言，侍中辛毗等人因此十分敬重他。",
+            "zhs": "杜恕在朝不结私党、一心为公，敢于直言，侍中辛毗等人因此十分敬重他。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "杜恕（務伯）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p4",
+          "text": {
+            "en": "Du Shu objected to giving Lü Zhao, General Who Garrisons the North, charge of Ji Province as well, arguing that a man of his abilities could readily be replaced and that civil and military offices should be separate.",
+            "zht": "杜恕反對讓鎮北將軍呂昭兼領冀州，認為以他的才幹不難另擇他人，並主張文武分職。",
+            "zhs": "杜恕反对让镇北将军吕昭兼领冀州，认为以他的才干不难另择他人，并主张文武分职。"
+          }
+        }
+      ]
     },
     {
       "from": "袁侃",
       "to": "杜恕（務伯）",
-      "type": "colleague and close friend",
-      "passageId": "ws16d-p12"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p12",
+          "text": {
+            "en": "Yuan Kan, a Gentleman within the Yellow Gates, was Du Shu's colleague and close friend, and later warned him to be careful in dealing with Cheng Xi, which Du Shu ignored.",
+            "zht": "黃門侍郎袁侃是杜恕的同僚與摯友，後來曾勸他謹慎對待程喜，杜恕卻不以為意。",
+            "zhs": "黄门侍郎袁侃是杜恕的同僚与挚友，后来曾劝他谨慎对待程喜，杜恕却不以为意。"
+          }
+        }
+      ]
     },
     {
       "from": "荀俁",
       "to": "杜恕（務伯）",
-      "type": "colleague and close friend",
-      "passageId": "ws16d-p12"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p12",
+          "text": {
+            "en": "Xun Yu, later Grand Administrator of Dong Commandery, was Du Shu's colleague and close friend.",
+            "zht": "荀俁是杜恕的同僚與摯友，後任東郡太守。",
+            "zhs": "荀俁是杜恕的同僚与挚友，后任东郡太守。"
+          }
+        }
+      ]
     },
     {
       "from": "廉昭",
       "to": "曹璠",
-      "type": "accused colleague",
-      "passageId": "ws16d-p14"
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p14",
+          "text": {
+            "en": "Imperial Secretariat Gentleman Lian Zhao submitted a memorial accusing Cao Fan, the Imperial Secretariat Left Assistant, of imposing punishments contrary to imperial edicts, and Cao Fan was tried and questioned.",
+            "zht": "尚書郎廉昭上奏彈劾尚書左丞曹璠用刑違背詔令，曹璠因此受到審訊。",
+            "zhs": "尚书郎廉昭上奏弹劾尚书左丞曹璠用刑违背诏令，曹璠因此受到审讯。"
+          }
+        }
+      ]
     },
     {
-      "from": "陳矯",
+      "from": "廉昭",
+      "to": "陳矯（季弼）",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p14",
+          "text": {
+            "en": "Lian Zhao's accusation drew in the Director of the Imperial Secretariat, Chen Jiao, who submitted a memorial declaring he dared not evade punishment nor impose heavy penalties.",
+            "zht": "廉昭的彈劾牽涉尚書令陳矯，陳矯上奏表示不敢逃避責罰，也不敢加重處罰。",
+            "zhs": "廉昭的弹劾牵涉尚书令陈矫，陈矫上奏表示不敢逃避责罚，也不敢加重处罚。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "杜恕（務伯）",
       "to": "廉昭",
-      "type": "accused by",
-      "passageId": "ws16d-p14"
-    },
-    {
-      "from": "竇嘉",
-      "to": "郭躬",
-      "type": "recruited innocent nephew of",
-      "passageId": "ws16d-p21"
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p13",
+          "text": {
+            "en": "Du Shu submitted a memorial remonstrating strongly against Lian Zhao, an outspoken official promoted for his abilities, urging the emperor not to let men like him sow confusion among the great ministers.",
+            "zht": "杜恕上疏強烈諫止，批評因才幹受提拔的廉昭好評議時事，請求皇帝勿讓此類人攪亂大臣。",
+            "zhs": "杜恕上疏强烈谏止，批评因才干受提拔的廉昭好评议时事，请求皇帝勿让此类人搅乱大臣。"
+          }
+        }
+      ]
     },
     {
       "from": "孔羨",
-      "to": "司馬懿",
-      "type": "recruited younger brother of",
-      "passageId": "ws16d-p21"
+      "to": "司馬通",
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p21",
+          "text": {
+            "en": "Kong Xian, Colonel of the Capital, recruited the Grand General Sima Yi's arrogant and unruly younger brother Sima Tong, and the responsible officials stayed silent; Du Shu cited this as worse than yielding to private solicitation.",
+            "zht": "司隸校尉孔羨辟用大將軍司馬懿驕縱不羈的弟弟司馬通，有司緘口不言；杜恕認為此事比順從私托更為惡劣。",
+            "zhs": "司隶校尉孔羡辟用大将军司马懿骄纵不羁的弟弟司马通，有司缄口不言；杜恕认为此事比顺从私托更为恶劣。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "司馬懿（仲達）",
+      "to": "司馬通",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p21",
+          "text": {
+            "en": "A note identifies Sima Tong as King Xuan's fifth younger brother, an aide to the Colonel of the Capital.",
+            "zht": "注稱司馬通為宣王司馬懿的五弟，曾任司隸校尉屬官。",
+            "zhs": "注称司马通为宣王司马懿的五弟，曾任司隶校尉属官。"
+          }
+        }
+      ]
     },
     {
       "from": "司馬通",
       "to": "司馬順",
-      "type": "father-son",
-      "passageId": "ws16d-p21"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p21",
+          "text": {
+            "en": "Sima Tong's son Sima Shun was enfeoffed as Neighbourhood Marquis of Longyang, but when Jin accepted Wei's abdication he refused to recognise the new mandate and was stripped of his title and exiled to Wuwei.",
+            "zht": "司馬通之子司馬順封隆陽亭侯，晉受魏禪時他拒不承認天命，被削爵流放武威。",
+            "zhs": "司马通之子司马顺封隆阳亭侯，晋受魏禅时他拒不承认天命，被削爵流放武威。"
+          }
+        }
+      ]
     },
     {
       "from": "杜恕（務伯）",
       "to": "孟康（公休）",
-      "type": "successor as Grand Administrator of Hongnong",
-      "passageId": "ws16d-p24"
-    },
-    {
-      "from": "杜恕（務伯）",
-      "to": "程喜",
-      "type": "colleague and later impeached by",
-      "passageId": "ws16d-p24"
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p24",
+          "text": {
+            "en": "When Du Shu was transferred from Hongnong, Meng Kang succeeded him as Grand Administrator, governing with integrity, frugality and benevolence that won the praise of officials and people.",
+            "zht": "杜恕自弘農調任後，孟康繼任太守，為政清廉簡樸、仁厚有方，官民稱頌。",
+            "zhs": "杜恕自弘农调任后，孟康继任太守，为政清廉简朴、仁厚有方，官民称颂。"
+          }
+        }
+      ]
     },
     {
       "from": "程喜",
       "to": "杜恕（務伯）",
-      "type": "colleague and later impeacher",
-      "passageId": "ws16d-p24"
+      "type": "colleagues",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "After Du Shu's provincial authorities executed a young attendant of a Xianbei chieftain's son without a memorial, Cheng Xi, General Who Conquers the North, impeached him; Du Shu was sentenced to death, then pardoned for his father's sake, reduced to commoner status and exiled to Zhangwu.",
+            "zht": "鮮卑首領之子的隨從被幽州官府未經上奏擅自處死，北征將軍程喜彈劾杜恕，杜恕被判死罪，因其父杜畿殉職之功獲赦，廢為庶人，流放章武郡。",
+            "zhs": "鲜卑首领之子的随从被幽州官府未经上奏擅自处死，北征将军程喜弹劾杜恕，杜恕被判死罪，因其父杜畿殉职之功获赦，废为庶人，流放章武郡。"
+          }
+        },
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "Cheng Xi had wanted Du Shu to humble himself and apologise, and when Du Shu refused he drew up a harsh indictment against him.",
+            "zht": "程喜本想讓杜恕低頭謝罪，杜恕不從，他便寫下措辭嚴厲的彈劾文書。",
+            "zhs": "程喜本想让杜恕低头谢罪，杜恕不从，他便写下措辞严厉的弹劾文书。"
+          }
+        }
+      ]
     },
     {
       "from": "宋權",
       "to": "程喜",
-      "type": "subordinate",
-      "passageId": "ws16d-p25"
+      "type": "colleagues",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "Major Song Quan conveyed Cheng Xi's wish that Du Shu apologise.",
+            "zht": "軍司馬宋權轉達了程喜希望杜恕謝罪的意思。",
+            "zhs": "军司马宋权转达了程喜希望杜恕谢罪的意思。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "宋權",
+      "to": "杜恕（務伯）",
+      "type": "colleagues",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p25",
+          "text": {
+            "en": "Du Shu replied to Song Quan in a letter explaining that he acted on his own convictions and would bear the consequences himself, whether or not Cheng Xi understood.",
+            "zht": "杜恕致書宋權，說明自己依己見行事，無論程喜是否理解，後果皆由自己承擔。",
+            "zhs": "杜恕致书宋权，说明自己依己见行事，无论程喜是否理解，后果皆由自己承担。"
+          }
+        }
+      ]
     },
     {
       "from": "阮武（文業）",
       "to": "杜恕（務伯）",
-      "type": "friend and advisor",
-      "passageId": "ws16d-p26"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p26",
+          "text": {
+            "en": "When both were recalled and stood before the Commandant of Justice, Ruan Wu counselled Du Shu that he had talent but lacked firmness and singleness of purpose, and urged him to use his leisure to set forth a teaching of his own; Du Shu then wrote the Discourse on Fundamentals in exile.",
+            "zht": "二人同被召至廷尉，阮武勸告杜恕有才而少堅定、專一，請他利用閒暇著書立說；杜恕在流放期間遂作《體論》。",
+            "zhs": "二人同被召至廷尉，阮武劝告杜恕有才而少坚定、专一，请他利用闲暇著书立说；杜恕在流放期间遂作《体论》。"
+          }
+        }
+      ]
     },
     {
       "from": "杜恕（務伯）",
       "to": "杜預（元凱）",
-      "type": "father-son",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "In the second year of Ganlu, Yue Xiang's memorial on Du Ji's achievements moved the court to enfeoff Du Shu's son Du Yu as Neighbourhood Marquis of Fengle.",
+            "zht": "甘露二年，樂詳上表陳述杜畿的功績，朝廷感動，封杜恕之子杜預為豐樂亭侯。",
+            "zhs": "甘露二年，乐详上表陈述杜畿的功绩，朝廷感动，封杜恕之子杜预为丰乐亭侯。"
+          }
+        }
+      ]
     },
     {
       "from": "杜預（元凱）",
       "to": "杜錫（世嘏）",
-      "type": "father-son",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Yu's son Du Xi, courtesy name Shigu, served as Imperial Secretariat Left Assistant.",
+            "zht": "杜預之子杜錫，字世嘏，官至尚書左丞。",
+            "zhs": "杜预之子杜锡，字世嘏，官至尚书左丞。"
+          }
+        }
+      ]
     },
     {
       "from": "杜預（元凱）",
-      "to": "司馬懿",
-      "type": "son-in-law to",
-      "passageId": "ws16d-p27"
+      "to": "司馬懿（仲達）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Yu was Sima Yi's son-in-law, and later rendered distinguished service to the house of Jin.",
+            "zht": "杜預是司馬懿的女婿，後來為晉室立下殊勳。",
+            "zhs": "杜预是司马懿的女婿，后来为晋室立下殊勋。"
+          }
+        }
+      ]
     },
     {
-      "from": "杜畿",
-      "to": "杜恕（務伯）",
-      "type": "father-son",
-      "passageId": "ws16d-p24"
-    },
-    {
-      "from": "杜畿",
+      "from": "杜畿（伯侯）",
       "to": "杜理（務仲）",
-      "type": "father-son",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Ji's son Du Li, courtesy name Wuzhong, was keenly perceptive but died aged twenty-one.",
+            "zht": "杜畿之子杜理，字務仲，敏銳有識，二十一歲去世。",
+            "zhs": "杜畿之子杜理，字务仲，敏锐有识，二十一岁去世。"
+          }
+        }
+      ]
     },
     {
-      "from": "杜畿",
+      "from": "杜畿（伯侯）",
       "to": "杜寬（務叔）",
-      "type": "father-son",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Ji's son Du Kuan, courtesy name Wushu, was a learned, withdrawn scholar who died aged forty-two.",
+            "zht": "杜畿之子杜寬，字務叔，博學淡泊，四十二歲去世。",
+            "zhs": "杜畿之子杜宽，字务叔，博学淡泊，四十二岁去世。"
+          }
+        }
+      ]
     },
     {
-      "from": "杜畿",
+      "from": "謝該",
       "to": "樂詳（文載）",
-      "type": "appointed Scholar Libationer",
-      "passageId": "ws16d-p27"
+      "type": "personal",
+      "polarity": "positive",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Yue Xiang travelled on foot from Nanyang to seek out Xie Gai, who was well versed in the Zuo Tradition, and had his doubts and difficulties resolved.",
+            "zht": "樂詳聞知南郡謝該精通《左傳》，徒步自南陽前往拜訪，請教疑難，得其解答。",
+            "zhs": "乐详闻知南郡谢该精通《左传》，徒步自南阳前往拜访，请教疑难，得其解答。"
+          }
+        }
+      ]
     },
     {
-      "from": "樂詳（文載）",
-      "to": "謝該",
-      "type": "sought teaching from",
-      "passageId": "ws16d-p27"
-    },
-    {
-      "from": "杜武（世將）",
-      "to": "司馬倫",
-      "type": "executed by",
-      "passageId": "ws16d-p27"
+      "from": "司馬倫（子彝）",
+      "to": "杜武（世將）",
+      "type": "personal",
+      "polarity": "negative",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Du Wu, Du Yu's elder cousin, served as Gentleman within the Yellow Gates but was unjustly executed by Sima Lun, Prince of Zhao.",
+            "zht": "杜預的堂兄杜武官至黃門侍郎，卻被趙王司馬倫冤殺。",
+            "zhs": "杜预的堂兄杜武官至黄门侍郎，却被赵王司马伦冤杀。"
+          }
+        }
+      ]
     },
     {
       "from": "阮武（文業）",
       "to": "阮炳（叔文）",
-      "type": "younger brother",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Wu's younger brother Ruan Bing, courtesy name Shuwen, served as Intendant of Henan and compiled a volume of prescriptions.",
+            "zht": "阮武之弟阮炳，字叔文，官至河南尹，並編有醫方一卷。",
+            "zhs": "阮武之弟阮炳，字叔文，官至河南尹，并编有医方一卷。"
+          }
+        }
+      ]
     },
     {
       "from": "阮炳（叔文）",
       "to": "阮坦（弘舒）",
-      "type": "father-son",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Bing's son Ruan Tan, courtesy name Hongshu, served under Jin as Junior Tutor of the Crown Prince and General Who Subdues the East.",
+            "zht": "阮炳之子阮坦，字弘舒，仕晉官至太子少傅、征東將軍。",
+            "zhs": "阮炳之子阮坦，字弘舒，仕晋官至太子少傅、征东将军。"
+          }
+        }
+      ]
     },
     {
       "from": "阮坦（弘舒）",
       "to": "阮柯（士度）",
-      "type": "younger brother",
-      "passageId": "ws16d-p27"
-    },
-    {
-      "from": "杜乂（弘治）",
-      "to": "阮坦（弘舒）",
-      "type": "adopted son",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Tan's younger brother Ruan Ke, courtesy name Shidu, ended up inheriting the fief that Ruan Tan felt should have been his.",
+            "zht": "阮坦之弟阮柯，字士度，最終繼承了阮坦自認應由自己承襲的封爵。",
+            "zhs": "阮坦之弟阮柯，字士度，最终继承了阮坦自认应由自己承袭的封爵。"
+          }
+        }
+      ]
     },
     {
       "from": "阮諶（士信）",
       "to": "阮武（文業）",
-      "type": "father-son",
-      "passageId": "ws16d-p27"
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p27",
+          "text": {
+            "en": "Ruan Wu's father Ruan Chen, courtesy name Shixin, declined every summons and compiled the Illustrations of the Three Rites.",
+            "zht": "阮武之父阮諶，字士信，屢召不仕，撰有《三禮圖》。",
+            "zhs": "阮武之父阮谌，字士信，屡召不仕，撰有《三礼图》。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂巽（長悌）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Zhao's eldest son Lü Xun served on the Chancellor's staff and enjoyed Sima Zhao's favour.",
+            "zht": "呂昭長子呂巽任相國掾屬，受司馬昭寵信。",
+            "zhs": "吕昭长子吕巽任相国掾属，受司马昭宠信。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂安（仲悌）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Zhao's second son Lü An was a close friend of Ji Kang and was executed with him.",
+            "zht": "呂昭次子呂安與嵇康交好，與他一同被殺。",
+            "zhs": "吕昭次子吕安与嵇康交好，与他一同被杀。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂昭（子展）",
+      "to": "呂粹（季悌）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Zhao's son Lü Cui, courtesy name Jiti, served as Intendant of Henan.",
+            "zht": "呂昭之子呂粹，字季悌，官至河南尹。",
+            "zhs": "吕昭之子吕粹，字季悌，官至河南尹。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂粹（季悌）",
+      "to": "呂預（景虞）",
+      "type": "kinship",
+      "polarity": "neutral",
+      "directed": true,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü Cui's son Lü Yu, courtesy name Jingyu, served as Deputy Imperial Censor.",
+            "zht": "呂粹之子呂預，字景虞，官至御史中丞。",
+            "zhs": "吕粹之子吕预，字景虞，官至御史中丞。"
+          }
+        }
+      ]
+    },
+    {
+      "from": "呂安（仲悌）",
+      "to": "嵇康（叔夜）",
+      "type": "personal",
+      "polarity": "positive",
+      "directed": false,
+      "notes": [
+        {
+          "passageId": "ws16d-p1",
+          "text": {
+            "en": "Lü An was a close friend of Ji Kang and was executed together with him.",
+            "zht": "呂安與嵇康交厚，二人一同被殺。",
+            "zhs": "吕安与嵇康交厚，二人一同被杀。"
+          }
+        }
+      ]
     }
   ]
 }

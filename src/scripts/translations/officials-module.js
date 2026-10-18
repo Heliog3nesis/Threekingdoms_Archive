@@ -2,6 +2,9 @@
 // All browser-side logic for the officials category page.
 // Serves EN, ZH-HANT and ZH-HANS versions via data-lang on .site
 
+import { splitRank } from './officials-rank.js';
+import { wireToggles, syncToggle, mountCompareFab } from './compare-store.js';
+
 async function initModule() {
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
@@ -300,7 +303,15 @@ function showPosition(pos) {
   currentPos = pos;
   panelPosition.style.display = 'block';
   renderPosition(pos, pageLang);
+  const compareBtn = document.getElementById('compare-toggle');
+  if (compareBtn) {
+    compareBtn.dataset.compareId = pos.id;
+    syncToggle(compareBtn, pageLang);
+  }
 }
+
+wireToggles(pageLang, panelPosition);
+mountCompareFab(pageLang);
 
 // close buttons
 document.getElementById('mobile-close').addEventListener('click', () => { hideAll(); setMobileView('list'); });
@@ -403,28 +414,7 @@ function renderPosition(pos, lang) {
     </div>` : '';
 
   const rankArr = pos.rank ? (pos.rank[langKey] ?? pos.rank.en ?? []) : ['?'];
-  let gradeText = '?', salaryText = '?';
-  if (rankArr.length > 0) {
-    const full = rankArr.join(' ');
-    const zhMatch = full.match(/^(.*?[一二三四五六七八九]品)/);
-    const enMatch = full.match(/^(.*?(?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth)\s+grade)/i);
-    const match = zhMatch ?? enMatch;
-    if (match) {
-      gradeText  = match[1].trim();
-      salaryText = full.slice(match[1].length).replace(/^[,，\s]+/, '').trim();
-    } else {
-      gradeText  = '?';
-      salaryText = full;
-    }
-    salaryText = salaryText
-      .replace(/,?\s*\(Shu\)/g, '<br>(Shu)')
-      .replace(/,?\s*\(Wu\)/g, '<br>(Wu)')
-      .replace(/,?\s*（蜀）/g, '<br>（蜀）')
-      .replace(/,?\s*（吳）/g, '<br>（吳）')
-      .replace(/,?\s*（吴）/g, '<br>（吴）')
-      .replace(/\bshi\b,/g, '<em>shi,</em>')
-      .replace(/\bshi\b(?!,)/g, '<em>shi</em>');
-  }
+  const { gradeText, salaryText } = splitRank(rankArr);
   const gradeInlineHtml = pos.gradeNum
     ? `<span class="gc ${gradeClass(pos.gradeNum)}">${pos.gradeNum}</span> ${gradeText}`
     : gradeText;
